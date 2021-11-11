@@ -1,0 +1,4051 @@
+/* TODO: COLOR PALETTE - DASHBOARD */
+
+:root {
+  /* FIXME: COLOR PALETTE - PRIMARY */
+
+  --color-primary: #ffffff;
+  --color-secondary: #000000;
+
+  /* FIXME: COLOR PALETTE - HEADINGS - H1, H2, H3, H4, H5, H6 */
+
+  --color-headings: #000000;
+
+  /* FIXME: COLOR PALETTE - ICONS */
+
+  --color-icons__collapsible: lightgrey;
+
+  /* FIXME: COLOR PALETTE - BLOCKS */
+
+  --color-chevron__background: #232323;
+
+  /* FIXME: COLOUR PALETTE - COLLAPSIBLES */
+
+  --color-collapsible__heading: green;
+
+  /* COLOUR PALETTE - BUTTONS */
+
+  --color-button__one-background: #000000;
+  --color-button__one-background-hover: #a9a9a9;
+  --color-button__one-text: #ffffff;
+  --color-button__one-text-hover: #000000;
+
+  /* FIXME: COLOR PALETTE - NAVIGATION */
+
+  --color-nav__background: #ffffff;
+  --color-nav__item: #000000;
+  --color-nav__item-hover: #a9a9a9;
+  --color-nav__item-border: #f0f0f0;
+
+  /* FIXME: COLOR PALETTE - HERO / TOP BANNER */
+
+  --color-hero__banner-heading: #000000;
+  --color-hero__banner-tagline: #000000;
+
+  /* FIXME: COLOR PALETTE - CLOSING BANNER */
+
+  --color-closing__banner-header: #ffffff;
+
+  /* FIXME: COLOR PALETTE - BLOCK (FEATURE) - "ONS STORIE" */
+
+  --color-feature__background: #e9f0f1;
+  --color-feature__link: #556b2f;
+  --color-feature__link-hover: #a9a9a9;
+
+  /* COLOR PALETTE - BLOCK (CLOTHING) - DAMES STYLE */
+
+  --color-clothing__product__01__background: #ffffff;
+  --color-clothing__product__01__heading: #ffffff;
+  --color-clothing__product__01__navigation: #ffffff;
+  --color-clothing__product__01__link: #ffffff;
+
+  /* FIXME: COLOR PALETTE - BLOCK (TESTIMONIALS) - "JOU TERUGVOER" */
+
+  --color-testimonial__background: #ffffff;
+  --color-testimonial__link: #000000;
+  --color-testimonial__link-hover: #a9a9a9;
+
+  /* FIXME: COLOR PALETTE - BLOCK (NAVIGATION) - "GAAN NOORD" */
+
+  --color-nav__noord-background: #ffffff;
+  --color-nav__noord-link: #000000;
+  --color-nav__noord-link-hover: #a9a9a9;
+
+  /* FIXME: COLOR PALETTE - FOOTER */
+
+  --color-footer__background: #ffffff;
+  --color-footer__anchor-links: #000000;
+  --color-footer__anchor-links-hover: #a9a9a9;
+  --color-footer__collapsible-border: #f0f0f0;
+  --color-footer__contact-headings: #000000;
+  --color-footer__copyright: #000000;
+}
+
+/* *,
+*::after,
+*::before {
+  box-sizing: border-box;
+} */
+
+/* TYPOGRAPHY */
+
+/* 1. Standard Font-Size :  62.5% of 16px (Std Size) = 10px */
+
+html {
+  font-size: 62.5%;
+}
+
+/* 2. Standard Typography */
+
+body {
+  font-family: Alice, Open Sans, Arial, Helvetica, sans-serif;
+  font-size: 2.5rem;
+}
+
+/* TODO: Company Logo */
+
+.km__logo {
+  width: 60px;
+  height: 60px;
+  padding-left: 1.5rem;
+}
+
+/* Question 1: When you select and Highlight Text on the website how must it appear? */
+
+/* TODO: PAGE LINKS */
+
+/* 1. Remove the text "Underline" from all anchor (a) / link elements */
+
+a {
+  text-decoration: none;
+}
+
+/* TODO: GRID LAYOUT */
+
+/* MOBILE (FIRST) : Screen sizes between 320px - 768px */
+
+.grid {
+  display: grid;
+}
+
+/* MEDIA QUERY (GRID) - TABLET / LAPTOP / PC - Screen sizes larger than 768px */
+
+@media screen and (min-width: 768px) {
+  .grid--1x2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* TODO: BLOCKS */
+
+.block {
+  --padding-vertical: 2rem;
+  padding: var(--padding-vertical) 2rem;
+}
+
+.block--dark {
+  background: var(--color-chevron__background);
+  color: #7b858b;
+}
+
+.block--dark h1,
+.block--dark h2,
+.block--dark h3 {
+  color: var(--color-headings);
+}
+
+/* TODO: CONTAINER - TO SET THE MAXIMUM PAGE WIDTH TO PLACE ALL ELEMENTS IN */
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+/* TODO: BUTTONS - "PLAAS IN MANDJIE EN BESTEL */
+
+/* MOBILE (FIRST) : Screen sizes between 320px - 768px */
+
+/* Setting up the button structure */
+
+.button__properties {
+  width: 100%;
+  text-align: center;
+}
+
+.button {
+  border-radius: 10px;
+  border: 1px solid #000000;
+  cursor: pointer;
+  font-size: 1.7rem;
+  font-weight: 500;
+  margin: 1rem;
+  /* outline-color: aqua;
+  outline-style: groove;
+  outline-width: 1px; */
+  outline: 0;
+  padding: 1rem 3vw;
+  text-align: center;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+/* Setting up the button skins */
+
+.button--one {
+  background: var(--color-button__one-background);
+  color: var(--color-button__one-text);
+  transition: color 1s;
+}
+
+.button--one:hover {
+  background: var(--color-button__one-background-hover);
+  color: var(--color-button__one-text-hover);
+  border: 1px solid var(--color-button__one-background-hover);
+}
+
+/* MEDIA QUERY (BUTTON) - TABLET / LAPTOP / PC - Screen sizes larger than 768px */
+
+@media screen and (min-width: 768px) {
+  .button {
+    font-size: 1.5rem;
+  }
+}
+
+/* _______________________________________________________________________________________ */
+
+/* FIXME: SECTION 1 - TOP NAVIGATION                                                       */
+
+/* _______________________________________________________________________________________ */
+
+/* _______________________________________________________________________________________ */
+/* TODO: MOBILE (FIRST) : Screen sizes between 320px - 768px                               */
+/* _______________________________________________________________________________________ */
+
+.navigation {
+  background: var(--color-nav__background);
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 1rem 2rem;
+  align-items: center;
+}
+
+.navigation__brand-logo {
+  transform: translateY(5px);
+}
+
+/* _______________________________________________________________________________________ */
+/* NAVIGATION COMPONENT - TODO: ICONS                                                      */
+/* _______________________________________________________________________________________ */
+
+/* 1. Setting up the Icon Structure */
+
+.icon {
+  width: 40px;
+  height: 40px;
+}
+
+/* 2.  Setting up the Icon Skins */
+
+.icon--white {
+  fill: var(--color-icons__collapsible);
+}
+
+/* _______________________________________________________________________________________ */
+/* NAVIGATION COMPONENT - TODO: COLLAPSIBLE MENUS                                          */
+/* _______________________________________________________________________________________ */
+
+.collapsible__header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.collapsible__heading {
+  margin: 0;
+  font-size: 2.5rem;
+  color: var(--color-collapsible__heading);
+  justify-self: center;
+}
+
+.collapsible__chevron {
+  transform: rotate(-90deg);
+  transition: transform 0.4s;
+  cursor: pointer;
+}
+
+.collapsible__content {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: all 0.5s;
+  margin-top: 0.5rem;
+  line-height: 1.3;
+}
+
+.collapsible--expanded .collapsible__chevron {
+  transform: rotate(0);
+}
+
+.collapsible--expanded .collapsible__content {
+  max-height: 100vh;
+  opacity: 1;
+}
+
+/* _______________________________________________________________________________________ */
+/* NAVIGATION COMPONENT - TODO: LISTS & LIST ITEMS                                         */
+/* _______________________________________________________________________________________ */
+
+/* 1.  Setting up the list Structure */
+
+.list {
+  list-style: none;
+  padding-left: 0;
+}
+
+/* 2. Setting up the List Skins */
+
+.navigation__list {
+  width: 100%;
+  margin: 1px;
+}
+
+.navigation__list-item {
+  padding: 1.5rem 1.5rem;
+  border-bottom: 1px solid var(--color-nav__item-border);
+}
+
+.navigation__list-item > a {
+  color: var(--color-nav__item);
+  font-size: 1.7rem;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  transition: color 0.4s;
+  text-transform: uppercase;
+}
+
+.navigation__list-item > a:hover {
+  color: var(--color-nav__item-hover);
+}
+
+/* __________________________________________________________________________________________ */
+/* TODO: MEDIA QUERY (TOP NAVIGATION) - TABLET / LAPTOP / PC - Screen sizes larger than 768px */
+/* __________________________________________________________________________________________ */
+
+@media screen and (min-width: 768px) {
+  .collapsible__chevron {
+    display: none;
+  }
+
+  .navigation__list {
+    width: auto;
+    display: flex;
+    font-size: 2.2rem;
+    max-height: 100%;
+    opacity: 1;
+  }
+
+  .navigation__list-item {
+    border: 0;
+  }
+
+  .navigation__list-item > a {
+    font-size: 1.5rem;
+  }
+}
+
+/* _______________________________________________________________________________________ */
+
+/* FIXME: SECTION 2 - HERO BANNER (TOP) */
+
+/* _______________________________________________________________________________________ */
+
+/* _______________________________________________________________________________________ */
+/* TODO: MOBILE (FIRST) : Screen sizes between 320px - 768px                               */
+/* _______________________________________________________________________________________ */
+
+.hero__banner {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+.hero__image {
+  width: 100%;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+.hero__logo {
+  width: 70vw;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.hero__heading {
+  position: absolute;
+  font-size: 1.3rem;
+  font-weight: 500;
+  text-align: center;
+  color: var(--color-hero__banner-heading);
+  top: 0;
+  left: 80px;
+  right: 80px;
+}
+
+.hero__tagline {
+  position: absolute;
+  font-size: 1.3rem;
+  font-weight: 500;
+  text-align: center;
+  color: var(--color-hero__banner-tagline);
+  top: 15px;
+  left: 80px;
+  right: 80px;
+}
+
+/* _________________________________________________________________________________________ */
+/* TODO: MEDIA QUERY (HERO - BANNER) - TABLET / LAPTOP / PC - Screen sizes larger than 768px */
+/* _________________________________________________________________________________________ */
+
+@media screen and (min-width: 768px) {
+  .hero__heading {
+    font-size: 2rem;
+    top: 10px;
+  }
+
+  .hero__tagline {
+    font-size: 2rem;
+    top: 35px;
+  }
+}
+
+/* _______________________________________________________________________________________ */
+
+/* FIXME: SECTION 3 - BLOCK FEATURE (ARTICLE) - "ONS STORIE" */
+
+/* _______________________________________________________________________________________ */
+
+/* _______________________________________________________________________________________ */
+/* TODO: MOBILE (first) : Screen sizes between 320px - 768px */
+/* _______________________________________________________________________________________ */
+
+/* _______________________________________________________________________________________ */
+/* BLOCK FEATURE COMPONENT - TODO: GRID LAYOUT */
+/* _______________________________________________________________________________________ */
+
+.feature__grid {
+  display: grid;
+}
+
+/* _______________________________________________________________________________________ */
+
+.feature__block {
+  width: 100%;
+  background: var(--color-feature__background);
+}
+
+.feature {
+  row-gap: 5rem;
+  column-gap: 5rem;
+  margin: -5.58px 5rem;
+}
+
+.feature__image {
+  width: 100%;
+}
+
+.feature__content {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.feature__heading {
+  font-size: 5rem;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.feature__story {
+  font-size: 2.2rem;
+  margin-bottom: 0;
+}
+
+/* _________________________________________________________________________________________ */
+/* TODO: MEDIA QUERY (BLOCK FEATURE) - TABLET / LAPTOP / PC - Screen sizes larger than 768px */
+/* _________________________________________________________________________________________ */
+
+@media screen and (min-width: 768px) {
+  .feature__content {
+    align-self: center;
+  }
+
+  .feature__heading {
+    margin-top: 7rem;
+  }
+
+  .feature__story {
+    font-size: 2.6rem;
+  }
+
+  .feature__grid--1x2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* _______________________________________________________________________________________ */
+/* BLOCK FEATURE COMPONENT - TODO: NAVIGATION ( "GAAN NOORD" ) - LINK TO TOP OF PAGE       */
+/* _______________________________________________________________________________________ */
+
+/* _______________________________________________________________________________________ */
+/* TODO: MOBILE (first) : Screen sizes between 320px - 768px                               */
+/* _______________________________________________________________________________________ */
+
+.block__navigation__gaan__noord {
+  --padding-vertical: 2rem;
+  padding: var(--padding-vertical) 2rem;
+  text-align: center;
+}
+
+.container__navigation__gaan__noord {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+.navigation__gaan__noord__ons__storie {
+  background: var(--color-feature__background);
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.navigation__gaan__noord__ons_storie__header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.navigation__gaan__noord__other__header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.navigation__gaan__noord__other {
+  background: var(--color-nav__noord-background);
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.navigation__gaan__noord-image {
+  width: 35px;
+  height: 35px;
+  padding-right: 2rem;
+}
+
+.navigation__gaan__noord-link {
+  color: var(--color-nav__noord-link);
+  font-size: 2rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.navigation__gaan__noord-link:hover {
+  color: var(--color-nav__noord-link-hover);
+}
+
+/* _____________________________________________________________________________________________________ */
+/* TODO: MEDIA QUERY (NAVIGATION - "ONS STORIE") - TABLET / LAPTOP / PC - Screen sizes larger than 768px */
+/* _____________________________________________________________________________________________________ */
+
+@media screen and (min-width: 768px) {
+  .navigation__gaan__noord__ons__storie {
+    margin-top: 3rem;
+  }
+
+  .navigation__gaan__noord__other {
+    margin-top: 5rem;
+  }
+
+  .navigation__gaan__noord-link {
+    font-size: 2.5rem;
+  }
+}
+
+/* _______________________________________________________________________________________ */
+
+/* FIXME: SECTION 4 (PRE-ORDERS) - VOORAFBESTELLINGS (BANNER)                              */
+
+/* _______________________________________________________________________________________ */
+
+/* _______________________________________________________________________________________ */
+/* TODO: MOBILE (first) : Screen sizes between 320px - 768px                               */
+/* _______________________________________________________________________________________ */
+
+.voorafbestellings__banner {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+.voorafbestellings__bannner {
+  margin-top: 0;
+}
+
+.voorafbestellings__image {
+  width: 100%;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+.voorafbestellings__header__01 {
+  position: absolute;
+  font-size: 2rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  color: var(--color-closing__banner-header);
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.voorafbestellings__header__02 {
+  position: absolute;
+  font-size: 1.5rem;
+  font-weight: 400;
+  text-transform: none;
+  letter-spacing: 4px;
+  color: var(--color-closing__banner-header);
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* ______________________________________________________________________________________________________ */
+/* TODO: MEDIA QUERY (VOORAFBESTELLINGS - BANNER) - TABLET / LAPTOP / PC - Screen sizes larger than 768px */
+/* ______________________________________________________________________________________________________ */
+
+@media screen and (min-width: 768px) {
+  .voorafbestellings__header__01 {
+    font-size: 5rem;
+  }
+
+  .voorafbestellings__header__02 {
+    font-size: 3rem;
+  }
+}
+
+/* _______________________________________________________________________________________ */
+/* VOORAFBESTELLINGS COMPONENT - TODO: LINKS TO DOWNLOADABLE PDF - BANNER */
+/* _______________________________________________________________________________________ */
+
+/* _______________________________________________________________________________________ */
+/* TODO: MOBILE (first) : Screen sizes between 320px - 768px                               */
+/* _______________________________________________________________________________________ */
+
+.voorafbestellings__links__banner {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+.voorafbestellings__links__bannner {
+  margin-top: 0;
+}
+
+.voorafbestellings__links__image {
+  width: 100%;
+  position: relative;
+  top: -0.6rem;
+  left: 0;
+}
+
+.voorafbestellings__links__header__01 {
+  position: absolute;
+  font-size: 2rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  color: var(--color-closing__banner-header);
+  top: 3%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.voorafbestellings__links__header__02 {
+  position: absolute;
+  font-size: 1.5rem;
+  font-weight: 400;
+  text-transform: none;
+  letter-spacing: 4px;
+  color: var(--color-closing__banner-header);
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* border: 1px solid yellow; */
+}
+
+/* _____________________________________________________________________________________________________ */
+/* TODO: MEDIA QUERY (VOORAFBESTELLINGS - LINKS) - TABLET / LAPTOP / PC - Screen sizes larger than 768px */
+/* _____________________________________________________________________________________________________ */
+
+@media screen and (min-width: 768px) {
+  .voorafbestellings__links__header__01 {
+    font-size: 5rem;
+  }
+
+  .voorafbestellings__links__header__02 {
+    font-size: 3rem;
+  }
+}
+
+/* _______________________________________________________________________________________ */
+/* NAVIGATION COMPONENT 1 - TODO: DOWNLOAD VOORAFBESTELLING BROSJURE - DAMES               */
+/* _______________________________________________________________________________________ */
+
+.voorafbestellings__brochure__links {
+  background: #1a354a;
+  display: flex;
+  row-gap: 0;
+  column-gap: 3rem;
+  justify-content: center;
+  /* margin: -0.6rem 0; */
+  margin-top: -0.6rem;
+  margin-bottom: -2.5rem;
+}
+/* _______________________________________________________________________________________ */
+/* TODO: MOBILE (first) : Screen sizes between 320px - 768px                               */
+/* _______________________________________________________________________________________ */
+
+.navigation__download__brochure__preorder__dames__background-all {
+  background: #1a354a;
+  padding-top: 1rem;
+}
+
+.navigation__download__brochure__preorder__dames__background-link {
+  background: #1a354a;
+}
+
+.navigation__download__brochure__preorder__dames__checkout {
+  background: #1a354a;
+  display: flex;
+  justify-content: center;
+  margin-top: 0;
+}
+
+.navigation__download__brochure__preorder__dames__checkout-image {
+  width: 35px;
+  height: 35px;
+  padding-right: 2rem;
+}
+
+.navigation__download__brochure__preorder__dames__checkout-link {
+  color: #ffffff;
+  font-size: 1.4rem;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.navigation__download__brochure__preorder__dames__checkout-link:hover {
+  color: var(--color-nav__noord-link-hover);
+}
+
+/* _____________________________________________________________________________________________________________________ */
+/* TODO: MEDIA QUERY (VOORAFBESTELLINGS - NAVIGATION 1 - DAMES) - TABLET / LAPTOP / PC - Screen sizes larger than 768px  */
+/* _____________________________________________________________________________________________________________________ */
+
+@media screen and (min-width: 768px) {
+  .navigation__download__brochure__preorder__dames__checkout {
+    margin-top: 0;
+  }
+
+  .navigation__download__brochure__preorder__dames__checkout-link {
+    font-size: 2.2rem;
+  }
+}
+
+/* _______________________________________________________________________________________ */
+/* NAVIGATION COMPONENT 2 - TODO: DOWNLOAD VOORAFBESTELLING BROSJURE - KINDERS             */
+/* _______________________________________________________________________________________ */
+
+/* _______________________________________________________________________________________ */
+/* TODO: MOBILE (first) : Screen sizes between 320px - 768px */
+/* _______________________________________________________________________________________ */
+
+.navigation__download__brochure__preorder__kinders__background-all {
+  background: #1a354a;
+  padding-top: 1rem;
+}
+
+.navigation__download__brochure__preorder__kinders__background-link {
+  background: #1a354a;
+}
+
+.navigation__download__brochure__preorder__kinders__checkout {
+  background: #1a354a;
+  display: flex;
+  justify-content: center;
+  margin-top: 0;
+}
+
+.navigation__download__brochure__preorder__kinders__checkout-image {
+  width: 35px;
+  height: 35px;
+  padding-right: 2rem;
+}
+
+.navigation__download__brochure__preorder__kinders__checkout-link {
+  color: #ffffff;
+  font-size: 1.4rem;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.navigation__download__brochure__preorder__kinders__checkout-link:hover {
+  color: var(--color-nav__noord-link-hover);
+}
+
+/* _______________________________________________________________________________________________________________________ */
+/* TODO: MEDIA QUERY (VOORAFBESTELLINGS - NAVIGATION 2 - KINDERS) - TABLET / LAPTOP / PC - Screen sizes larger than 768px  */
+/* _______________________________________________________________________________________________________________________ */
+
+@media screen and (min-width: 768px) {
+  .navigation__download__brochure__preorder__kinders__checkout {
+    margin-top: 0;
+  }
+
+  .navigation__download__brochure__preorder__kinders__checkout-link {
+    font-size: 2.2rem;
+  }
+}
+
+/* _______________________________________________________________________________________ */
+
+/* FIXME: SECTION 5 (NOTIFICATION STRIP 1) - PRODUCT PRICING NOTIFICIATION                 */
+
+/* _______________________________________________________________________________________ */
+
+/* _______________________________________________________________________________________ */
+/* TODO: MOBILE (first) : Screen sizes between 320px - 768px                               */
+/* _______________________________________________________________________________________ */
+
+.notification__top__banner {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+.notification__top__bannner {
+  margin-top: 0;
+}
+
+.notification__top__image {
+  width: 100%;
+  position: relative;
+  top: -1.15rem;
+  left: 0;
+  /* border: 1px solid red; */
+}
+
+.notification__top__header__01 {
+  position: absolute;
+  font-size: 1.5rem;
+  font-weight: 700;
+  width: fit-content;
+  /* text-transform: uppercase; */
+  letter-spacing: 2px;
+  color: #000000;
+  top: 15%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* border: 1px solid yellow; */
+}
+
+/* ________________________________________________________________________________________________ */
+/* TODO: MEDIA QUERY (NOTIFICATION STRIP 1) - TABLET / LAPTOP / PC - Screen sizes larger than 768px */
+/* ________________________________________________________________________________________________ */
+
+@media screen and (min-width: 768px) {
+  .notification__top__header__01 {
+    font-size: 2.5rem;
+    top: 25%;
+  }
+}
+
+/* _______________________________________________________________________________________ */
+
+/* FIXME: SECTION 6 (PRODUCTS BLOCK) - PART 1 - DAMES PRODUKTE                             */
+
+/* _______________________________________________________________________________________ */
+
+/* _______________________________________________________________________________________ */
+/* TODO: MOBILE (first) : Screen sizes between 320px - 768px                               */
+/* _______________________________________________________________________________________ */
+
+/* _______________________________________________________________________________________ */
+/* PRODUCT BLOCK COMPONENT - TODO: SETUP THE PRODUCT BLOCK                                 */
+/* _______________________________________________________________________________________ */
+
+.block__products {
+  /* --padding-vertical: 2rem; */
+  --padding-vertical: 0;
+  /* padding: var(--padding-vertical) 2rem; */
+  padding: var(--padding-vertical);
+  text-align: center;
+}
+
+.block__products__header {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.block__products__heading {
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.block__products__tagline {
+  font-size: 2rem;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/* _______________________________________________________________________________________ */
+/* PRODUCT BLOCK COMPONENT - TODO: SETUP THE PRODUCT CONTAINER                             */
+/* (TO SET THE MAXIMUM PAGE WIDTH TO PLACE ALL ELEMENTS IN)                                */
+/* _______________________________________________________________________________________ */
+
+.container__products {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+/* _______________________________________________________________________________________ */
+/* PRODUCT BLOCK COMPONENT - TODO: SETUP THE PRODUCT GRID LAYOUT                           */
+/* _______________________________________________________________________________________ */
+
+.grid__products {
+  display: grid;
+}
+
+/* _______________________________________________________________________________________ */
+/* PRODUCT BLOCK COMPONENT - TODO: SETUP THE PRODUCT CATEGORY HEADING - PRODUCTS (DAMES)   */
+/* TO SET RELATIVE POSITIONING OF TEXT OVER IMAGE - For Mobile Screens                     */
+/* _______________________________________________________________________________________ */
+
+.category__dames__background {
+  background: var(--color-clothing__product__01__background);
+}
+
+.category__dames {
+  position: relative;
+  top: 0;
+  left: 0;
+  margin-top: 2rem;
+}
+
+.category__dames__image {
+  position: relative;
+  top: 0;
+  left: 0;
+  text-align: center;
+  width: 380px;
+  height: 95px;
+}
+
+.category__dames__text {
+  width: 100vw;
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* _______________________________________________________________________________________ */
+/* PRODUCT BLOCK COMPONENT - TODO: SETUP THE PRODUCT CATEGORY HEADING - PRODUCTS (KINDERS) */
+/* TO SET RELATIVE POSITIONING OF TEXT OVER IMAGE - For Mobile Screens                     */
+/* _______________________________________________________________________________________ */
+
+.category__kinders__background {
+  background: var(--color-clothing__product__01__background);
+}
+
+.category__kinders {
+  position: relative;
+  top: 0;
+  left: 0;
+  margin-top: 2rem;
+}
+
+.category__kinders__image {
+  position: relative;
+  top: 0;
+  left: 0;
+  text-align: center;
+  width: 380px;
+  height: 95px;
+}
+
+.category__kinders__text {
+  width: 100vw;
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* _______________________________________________________________________________________ */
+/* PRODUCT BLOCK COMPONENT - TODO: SETUP GENERAL PRODUCT CARD & SPECIFICATIONS             */
+/* ALL PRODUCTS USE THE SAME PRODUCT CARD STYLES                                           */
+/* _______________________________________________________________________________________ */
+
+/* _______________________________________________________________________________________ */
+/* FIXME: PRODUCT 1 - CARD & SPECIFICATIONS - "SPATSEL" (DAMES)                            */
+/* _______________________________________________________________________________________ */
+
+.background__product-01 {
+  width: auto;
+  background: var(--color-clothing__product__01__heading);
+}
+
+.spacing__product-01 {
+  row-gap: 5rem;
+  column-gap: 2rem;
+  margin: 0 5rem;
+}
+
+.image__product-01 {
+  width: 100%;
+}
+
+.product-01__content {
+  text-align: center;
+}
+
+.product-01__name {
+  font-size: 4rem;
+  font-weight: 700;
+  margin-top: 0;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.product-01__specifications {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 3px;
+  text-transform: lowercase;
+}
+
+.product-01__specifications-list {
+  list-style-type: none;
+  font-size: 1.5rem;
+  line-height: 1.5;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+.product-01__sizes {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 3px;
+  text-transform: lowercase;
+}
+
+.product-01__sizes-list {
+  text-align: center;
+  font-size: 1.5rem;
+  line-height: 1.5;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/* .product-01__colours {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 3px;
+  text-transform: lowercase;
+} */
+
+/* .product-01__colours-list {
+  text-align: centre;
+  font-size: 1.7rem;
+  line-height: 1.5;
+  margin-top: 0;
+  margin-bottom: 0;
+} */
+
+/* .product-01__category {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 3px;
+  text-transform: lowercase;
+} */
+
+/* .product-01__category-name {
+  text-align: centre;
+  font-size: 1.7rem;
+  line-height: 1.5;
+  margin-top: 0;
+  margin-bottom: 0;
+} */
+
+/* .product-01__product__number {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 3px;
+  text-transform: lowercase;
+} */
+
+/* .product-01__sku {
+  text-align: centre;
+  font-size: 1.7rem;
+  line-height: 1.5;
+  margin-top: 0;
+  margin-bottom: 0;
+} */
+
+/* .product-01__range {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 3px;
+  text-transform: lowercase;
+} */
+
+/* .product-01__range-name {
+  text-align: centre;
+  font-size: 1.7rem;
+  line-height: 1.5;
+  margin-top: 0;
+  margin-bottom: 0;
+} */
+
+/* .product-01__price-heading {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 3px;
+  text-transform: lowercase;
+} */
+
+.product-01__price {
+  text-align: center;
+  font-size: 5rem;
+  font-weight: 700;
+  line-height: 1.5;
+  margin-top: 2rem;
+  margin-bottom: 0;
+}
+
+/* _______________________________________________________________________________________ */
+/* FIXME: PRODUCT 2 - CARD & SPECIFICATIONS - "ELEGANT" (DAMES)                            */
+/* _______________________________________________________________________________________ */
+
+.background__product-02 {
+  width: auto;
+  background: var(--color-clothing__product__01__heading);
+}
+
+.spacing__product-02 {
+  row-gap: 5rem;
+  column-gap: 2rem;
+  margin: 0 5rem;
+}
+
+.image__product-02 {
+  width: 100%;
+}
+
+.product-02__content {
+  text-align: center;
+}
+
+.product-02__name {
+  font-size: 4rem;
+  font-weight: 700;
+  margin-top: 0;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.product-02__specifications {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 3px;
+  text-transform: lowercase;
+}
+
+.product-02__specifications-list {
+  list-style-type: none;
+  font-size: 1.5rem;
+  line-height: 1.5;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+.product-02__sizes {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 3px;
+  text-transform: lowercase;
+}
+
+.product-02__sizes-list {
+  text-align: center;
+  font-size: 1.5rem;
+  line-height: 1.5;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/* .product-02__colours {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 3px;
+  text-transform: lowercase;
+} */
+
+/* .product-02__colours-list {
+  text-align: centre;
+  font-size: 1.7rem;
+  line-height: 1.5;
+  margin-top: 0;
+  margin-bottom: 0;
+} */
+
+/* .product-02__category {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 3px;
+  text-transform: lowercase;
+} */
+
+/* .product-02__category-name {
+  text-align: centre;
+  font-size: 1.7rem;
+  line-height: 1.5;
+  margin-top: 0;
+  margin-bottom: 0;
+} */
+
+/* .product-02__product__number {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 3px;
+  text-transform: lowercase;
+} */
+
+/* .product-02__sku {
+  text-align: centre;
+  font-size: 1.7rem;
+  line-height: 1.5;
+  margin-top: 0;
+  margin-bottom: 0;
+} */
+
+/* .product-02__range {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 3px;
+  text-transform: lowercase;
+} */
+
+/* .product-02__range-name {
+  text-align: centre;
+  font-size: 1.7rem;
+  line-height: 1.5;
+  margin-top: 0;
+  margin-bottom: 0;
+} */
+
+/* .product-02__price-heading {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 3px;
+  text-transform: lowercase;
+} */
+
+.product-02__price {
+  text-align: center;
+  font-size: 5rem;
+  font-weight: 700;
+  line-height: 1.5;
+  margin-top: 2rem;
+  margin-bottom: 0;
+}
+
+/* _______________________________________________________________________________________ */
+/* FIXME: PRODUCT 3 - CARD & SPECIFICATIONS - "BLARE" (DAMES)                              */
+/* _______________________________________________________________________________________ */
+
+.background__product-03 {
+  width: auto;
+  background: var(--color-clothing__product__01__heading);
+}
+
+.spacing__product-03 {
+  row-gap: 5rem;
+  column-gap: 2rem;
+  margin: 0 5rem;
+}
+
+.image__product-03 {
+  width: 100%;
+}
+
+.product-03__content {
+  text-align: center;
+}
+
+.product-03__name {
+  font-size: 4rem;
+  font-weight: 700;
+  margin-top: 0;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.product-03__specifications {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 3px;
+  text-transform: lowercase;
+}
+
+.product-03__specifications-list {
+  list-style-type: none;
+  font-size: 1.5rem;
+  line-height: 1.5;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+.product-03__sizes {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 3px;
+  text-transform: lowercase;
+}
+
+.product-03__sizes-list {
+  text-align: center;
+  font-size: 1.5rem;
+  line-height: 1.5;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/* .product-03__colours {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 3px;
+  text-transform: lowercase;
+} */
+
+/* .product-03__colours-list {
+  text-align: centre;
+  font-size: 1.7rem;
+  line-height: 1.5;
+  margin-top: 0;
+  margin-bottom: 0;
+} */
+
+/* .product-03__category {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 3px;
+  text-transform: lowercase;
+} */
+
+/* .product-03__category-name {
+  text-align: centre;
+  font-size: 1.7rem;
+  line-height: 1.5;
+  margin-top: 0;
+  margin-bottom: 0;
+} */
+
+/* .product-03__product__number {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 3px;
+  text-transform: lowercase;
+} */
+
+/* .product-03__sku {
+  text-align: centre;
+  font-size: 1.7rem;
+  line-height: 1.5;
+  margin-top: 0;
+  margin-bottom: 0;
+} */
+
+/* .product-03__range {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 3px;
+  text-transform: lowercase;
+} */
+
+/* .product-03__range-name {
+  text-align: centre;
+  font-size: 1.7rem;
+  line-height: 1.5;
+  margin-top: 0;
+  margin-bottom: 0;
+} */
+
+/* .product-03__price-heading {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 3px;
+  text-transform: lowercase;
+} */
+
+.product-03__price {
+  text-align: center;
+  font-size: 5rem;
+  font-weight: 700;
+  line-height: 1.5;
+  margin-top: 2rem;
+  margin-bottom: 0;
+}
+
+/* _______________________________________________________________________________________ */
+/* FIXME: PRODUCT 4 - CARD & SPECIFICATIONS - "KOMPAS" (DAMES)                             */
+/* _______________________________________________________________________________________ */
+
+.background__product-04 {
+  width: auto;
+  background: var(--color-clothing__product__01__heading);
+}
+
+.spacing__product-04 {
+  row-gap: 5rem;
+  column-gap: 2rem;
+  margin: 0 5rem;
+}
+
+.image__product-04 {
+  width: 100%;
+}
+
+.product-04__content {
+  text-align: center;
+}
+
+.product-04__name {
+  font-size: 4rem;
+  font-weight: 700;
+  margin-top: 0;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.product-04__specifications {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 3px;
+  text-transform: lowercase;
+}
+
+.product-04__specifications-list {
+  list-style-type: none;
+  font-size: 1.5rem;
+  line-height: 1.5;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+.product-04__sizes {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 3px;
+  text-transform: lowercase;
+}
+
+.product-04__sizes-list {
+  text-align: center;
+  font-size: 1.5rem;
+  line-height: 1.5;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/* .product-04__colours {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 3px;
+  text-transform: lowercase;
+} */
+
+/* .product-04__colours-list {
+  text-align: centre;
+  font-size: 1.7rem;
+  line-height: 1.5;
+  margin-top: 0;
+  margin-bottom: 0;
+} */
+
+/* .product-04__category {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 3px;
+  text-transform: lowercase;
+} */
+
+/* .product-04__category-name {
+  text-align: centre;
+  font-size: 1.7rem;
+  line-height: 1.5;
+  margin-top: 0;
+  margin-bottom: 0;
+} */
+
+/* .product-04__product__number {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 3px;
+  text-transform: lowercase;
+} */
+
+/* .product-04__sku {
+  text-align: centre;
+  font-size: 1.7rem;
+  line-height: 1.5;
+  margin-top: 0;
+  margin-bottom: 0;
+} */
+
+/* .product-04__range {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 3px;
+  text-transform: lowercase;
+} */
+
+/* .product-04__range-name {
+  text-align: centre;
+  font-size: 1.7rem;
+  line-height: 1.5;
+  margin-top: 0;
+  margin-bottom: 0;
+} */
+
+/* .product-04__price-heading {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 3px;
+  text-transform: lowercase;
+} */
+
+.product-04__price {
+  text-align: center;
+  font-size: 5rem;
+  font-weight: 700;
+  line-height: 1.5;
+  margin-top: 2rem;
+  margin-bottom: 0;
+}
+
+/* _______________________________________________________________________________________ */
+/* FIXME: PRODUCT 5 - CARD & SPECIFICATIONS - "REBEL" (DAMES)                              */
+/* _______________________________________________________________________________________ */
+
+.background__product-05 {
+  width: auto;
+  background: var(--color-clothing__product__01__heading);
+}
+
+.spacing__product-05 {
+  row-gap: 5rem;
+  column-gap: 2rem;
+  margin: 0 5rem;
+}
+
+.image__product-05 {
+  width: 100%;
+}
+
+.product-05__content {
+  text-align: center;
+}
+
+.product-05__name {
+  font-size: 4rem;
+  font-weight: 700;
+  margin-top: 0;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.product-05__specifications {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 3px;
+  text-transform: lowercase;
+}
+
+.product-05__specifications-list {
+  list-style-type: none;
+  font-size: 1.5rem;
+  line-height: 1.5;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+.product-05__sizes {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 3px;
+  text-transform: lowercase;
+}
+
+.product-05__sizes-list {
+  text-align: center;
+  font-size: 1.5rem;
+  line-height: 1.5;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/* .product-05__colours {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 3px;
+  text-transform: lowercase;
+} */
+
+/* .product-05__colours-list {
+  text-align: centre;
+  font-size: 1.7rem;
+  line-height: 1.5;
+  margin-top: 0;
+  margin-bottom: 0;
+} */
+
+/* .product-05__category {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 3px;
+  text-transform: lowercase;
+} */
+
+/* .product-05__category-name {
+  text-align: centre;
+  font-size: 1.7rem;
+  line-height: 1.5;
+  margin-top: 0;
+  margin-bottom: 0;
+} */
+
+/* .product-05__product__number {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 3px;
+  text-transform: lowercase;
+} */
+
+/* .product-05__sku {
+  text-align: centre;
+  font-size: 1.7rem;
+  line-height: 1.5;
+  margin-top: 0;
+  margin-bottom: 0;
+} */
+
+/* .product-05__range {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 3px;
+  text-transform: lowercase;
+} */
+
+/* .product-05__range-name {
+  text-align: centre;
+  font-size: 1.7rem;
+  line-height: 1.5;
+  margin-top: 0;
+  margin-bottom: 0;
+} */
+
+/* .product-05__price-heading {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 3px;
+  text-transform: lowercase;
+} */
+
+.product-05__price {
+  text-align: center;
+  font-size: 5rem;
+  font-weight: 700;
+  line-height: 1.5;
+  margin-top: 2rem;
+  margin-bottom: 0;
+}
+
+/* _______________________________________________________________________________________ */
+/* FIXME: PRODUCT 6 - CARD & SPECIFICATIONS - "KHAKI ROKKIE" (DAMES)                       */
+/* _______________________________________________________________________________________ */
+
+.background__product-06 {
+  width: auto;
+  background: var(--color-clothing__product__01__heading);
+}
+
+.spacing__product-06 {
+  row-gap: 5rem;
+  column-gap: 2rem;
+  margin: 0 5rem;
+}
+
+.image__product-06 {
+  width: 100%;
+}
+
+.product-06__content {
+  text-align: center;
+}
+
+.product-06__name {
+  font-size: 4rem;
+  font-weight: 700;
+  margin-top: 0;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.product-06__specifications {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 3px;
+  text-transform: lowercase;
+}
+
+.product-06__specifications-list {
+  list-style-type: none;
+  font-size: 1.5rem;
+  line-height: 1.5;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+.product-06__sizes {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 3px;
+  text-transform: lowercase;
+}
+
+.product-06__sizes-list {
+  text-align: center;
+  font-size: 1.5rem;
+  line-height: 1.5;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/* .product-06__colours {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 3px;
+  text-transform: lowercase;
+} */
+
+/* .product-06__colours-list {
+  text-align: centre;
+  font-size: 1.7rem;
+  line-height: 1.5;
+  margin-top: 0;
+  margin-bottom: 0;
+} */
+
+/* .product-06__category {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 3px;
+  text-transform: lowercase;
+} */
+
+/* .product-06__category-name {
+  text-align: centre;
+  font-size: 1.7rem;
+  line-height: 1.5;
+  margin-top: 0;
+  margin-bottom: 0;
+} */
+
+/* .product-06__product__number {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 3px;
+  text-transform: lowercase;
+} */
+
+/* .product-06__sku {
+  text-align: centre;
+  font-size: 1.7rem;
+  line-height: 1.5;
+  margin-top: 0;
+  margin-bottom: 0;
+} */
+
+/* .product-06__range {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 3px;
+  text-transform: lowercase;
+} */
+
+/* .product-06__range-name {
+  text-align: centre;
+  font-size: 1.7rem;
+  line-height: 1.5;
+  margin-top: 0;
+  margin-bottom: 0;
+} */
+
+/* .product-06__price-heading {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 3px;
+  text-transform: lowercase;
+} */
+
+.product-06__price {
+  text-align: center;
+  font-size: 5rem;
+  font-weight: 700;
+  line-height: 1.5;
+  margin-top: 2rem;
+  margin-bottom: 0;
+}
+
+/* _______________________________________________________________________________________ */
+/* FIXME: PRODUCT 7 - CARD & SPECIFICATIONS - "BLOMMETJIE" (KINDERS)                       */
+/* _______________________________________________________________________________________ */
+
+.background__product-07 {
+  width: auto;
+  background: var(--color-clothing__product__01__heading);
+}
+
+.spacing__product-07 {
+  row-gap: 5rem;
+  column-gap: 2rem;
+  margin: 0 5rem;
+}
+
+.image__product-07 {
+  width: 100%;
+}
+
+.product-07__content {
+  text-align: center;
+}
+
+.product-07__name {
+  font-size: 4rem;
+  font-weight: 700;
+  margin-top: 0;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.product-07__specifications {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 3px;
+  text-transform: lowercase;
+}
+
+.product-07__specifications-list {
+  list-style-type: none;
+  font-size: 1.5rem;
+  line-height: 1.5;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+.product-07__sizes {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 3px;
+  text-transform: lowercase;
+}
+
+.product-07__sizes-list {
+  text-align: center;
+  font-size: 1.5rem;
+  line-height: 1.5;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/* .product-07__colours {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 3px;
+  text-transform: lowercase;
+} */
+
+/* .product-07__colours-list {
+  text-align: centre;
+  font-size: 1.7rem;
+  line-height: 1.5;
+  margin-top: 0;
+  margin-bottom: 0;
+} */
+
+/* .product-07__category {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 3px;
+  text-transform: lowercase;
+} */
+
+/* .product-07__category-name {
+  text-align: centre;
+  font-size: 1.7rem;
+  line-height: 1.5;
+  margin-top: 0;
+  margin-bottom: 0;
+} */
+
+/* .product-07__product__number {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 3px;
+  text-transform: lowercase;
+} */
+
+/* .product-07__sku {
+  text-align: centre;
+  font-size: 1.7rem;
+  line-height: 1.5;
+  margin-top: 0;
+  margin-bottom: 0;
+} */
+
+/* .product-07__range {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 3px;
+  text-transform: lowercase;
+} */
+
+/* .product-07__range-name {
+  text-align: centre;
+  font-size: 1.7rem;
+  line-height: 1.5;
+  margin-top: 0;
+  margin-bottom: 0;
+} */
+
+/* .product-07__price-heading {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 3px;
+  text-transform: lowercase;
+} */
+
+.product-07__price {
+  text-align: center;
+  font-size: 5rem;
+  font-weight: 700;
+  line-height: 1.5;
+  margin-top: 2rem;
+  margin-bottom: 0;
+}
+
+/* _______________________________________________________________________________________ */
+/* FIXME: PRODUCT 8 - CARD & SPECIFICATIONS - "ELEGANTJIE" (KINDERS)                       */
+/* _______________________________________________________________________________________ */
+
+.background__product-08 {
+  width: auto;
+  background: var(--color-clothing__product__01__heading);
+}
+
+.spacing__product-08 {
+  row-gap: 5rem;
+  column-gap: 2rem;
+  margin: 0 5rem;
+}
+
+.image__product-08 {
+  width: 100%;
+}
+
+.product-08__content {
+  text-align: center;
+}
+
+.product-08__name {
+  font-size: 4rem;
+  font-weight: 700;
+  margin-top: 0;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.product-08__specifications {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 3px;
+  text-transform: lowercase;
+}
+
+.product-08__specifications-list {
+  list-style-type: none;
+  font-size: 1.5rem;
+  line-height: 1.5;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+.product-08__sizes {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 3px;
+  text-transform: lowercase;
+}
+
+.product-08__sizes-list {
+  text-align: center;
+  font-size: 1.5rem;
+  line-height: 1.5;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/* .product-08__colours {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 3px;
+  text-transform: lowercase;
+} */
+
+/* .product-08__colours-list {
+  text-align: centre;
+  font-size: 1.7rem;
+  line-height: 1.5;
+  margin-top: 0;
+  margin-bottom: 0;
+} */
+
+/* .product-08__category {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 3px;
+  text-transform: lowercase;
+} */
+
+/* .product-08__category-name {
+  text-align: centre;
+  font-size: 1.7rem;
+  line-height: 1.5;
+  margin-top: 0;
+  margin-bottom: 0;
+} */
+
+/* .product-08__product__number {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 3px;
+  text-transform: lowercase;
+} */
+
+/* .product-08__sku {
+  text-align: centre;
+  font-size: 1.7rem;
+  line-height: 1.5;
+  margin-top: 0;
+  margin-bottom: 0;
+} */
+
+/* .product-08__range {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 3px;
+  text-transform: lowercase;
+} */
+
+/* .product-08__range-name {
+  text-align: centre;
+  font-size: 1.7rem;
+  line-height: 1.5;
+  margin-top: 0;
+  margin-bottom: 0;
+} */
+
+/* .product-08__price-heading {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 3px;
+  text-transform: lowercase;
+} */
+
+.product-08__price {
+  text-align: center;
+  font-size: 5rem;
+  font-weight: 700;
+  line-height: 1.5;
+  margin-top: 2rem;
+  margin-bottom: 0;
+}
+
+/* _______________________________________________________________________________________ */
+/* FIXME: PRODUCT 9 - CARD & SPECIFICATIONS - "NAALDEKOKER" (KINDERS)                      */
+/* _______________________________________________________________________________________ */
+
+.background__product-09 {
+  width: auto;
+  background: var(--color-clothing__product__01__heading);
+}
+
+.spacing__product-09 {
+  row-gap: 5rem;
+  column-gap: 2rem;
+  margin: 0 5rem;
+}
+
+.image__product-09 {
+  width: 100%;
+}
+
+.product-09__content {
+  text-align: center;
+}
+
+.product-09__name {
+  font-size: 4rem;
+  font-weight: 700;
+  margin-top: 0;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.product-09__specifications {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 3px;
+  text-transform: lowercase;
+}
+
+.product-09__specifications-list {
+  list-style-type: none;
+  font-size: 1.5rem;
+  line-height: 1.5;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+.product-09__sizes {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 3px;
+  text-transform: lowercase;
+}
+
+.product-09__sizes-list {
+  text-align: center;
+  font-size: 1.5rem;
+  line-height: 1.5;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/* .product-09__colours {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 3px;
+  text-transform: lowercase;
+} */
+
+/* .product-09__colours-list {
+  text-align: centre;
+  font-size: 1.7rem;
+  line-height: 1.5;
+  margin-top: 0;
+  margin-bottom: 0;
+} */
+
+/* .product-09__category {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 3px;
+  text-transform: lowercase;
+} */
+
+/* .product-09__category-name {
+  text-align: centre;
+  font-size: 1.7rem;
+  line-height: 1.5;
+  margin-top: 0;
+  margin-bottom: 0;
+} */
+
+/* .product-09__product__number {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 3px;
+  text-transform: lowercase;
+} */
+
+/* .product-09__sku {
+  text-align: centre;
+  font-size: 1.7rem;
+  line-height: 1.5;
+  margin-top: 0;
+  margin-bottom: 0;
+} */
+
+/* .product-09__range {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 3px;
+  text-transform: lowercase;
+} */
+
+/* .product-09__range-name {
+  text-align: centre;
+  font-size: 1.7rem;
+  line-height: 1.5;
+  margin-top: 0;
+  margin-bottom: 0;
+} */
+
+/* .product-09__price-heading {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 3px;
+  text-transform: lowercase;
+} */
+
+.product-09__price {
+  text-align: center;
+  font-size: 5rem;
+  font-weight: 700;
+  line-height: 1.5;
+  margin-top: 2rem;
+  margin-bottom: 0;
+}
+
+/* _______________________________________________________________________________________ */
+/* FIXME: PRODUCT 10 - CARD & SPECIFICATIONS - "KUNS" (KINDERS)                            */
+/* _______________________________________________________________________________________ */
+
+.background__product-10 {
+  width: auto;
+  background: var(--color-clothing__product__01__heading);
+}
+
+.spacing__product-10 {
+  row-gap: 5rem;
+  column-gap: 2rem;
+  margin: 0 5rem;
+}
+
+.image__product-10 {
+  width: 100%;
+}
+
+.product-10__content {
+  text-align: center;
+}
+
+.product-10__name {
+  font-size: 4rem;
+  font-weight: 700;
+  margin-top: 0;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.product-10__specifications {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 3px;
+  text-transform: lowercase;
+}
+
+.product-10__specifications-list {
+  list-style-type: none;
+  font-size: 1.5rem;
+  line-height: 1.5;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+.product-10__sizes {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 3px;
+  text-transform: lowercase;
+}
+
+.product-10__sizes-list {
+  text-align: center;
+  font-size: 1.5rem;
+  line-height: 1.5;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/* .product-10__colours {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 3px;
+  text-transform: lowercase;
+} */
+
+/* .product-10__colours-list {
+  text-align: centre;
+  font-size: 1.7rem;
+  line-height: 1.5;
+  margin-top: 0;
+  margin-bottom: 0;
+} */
+
+/* .product-10__category {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 3px;
+  text-transform: lowercase;
+} */
+
+/* .product-10__category-name {
+  text-align: centre;
+  font-size: 1.7rem;
+  line-height: 1.5;
+  margin-top: 0;
+  margin-bottom: 0;
+} */
+
+/* .product-10__product__number {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 3px;
+  text-transform: lowercase;
+} */
+
+/* .product-10__sku {
+  text-align: centre;
+  font-size: 1.7rem;
+  line-height: 1.5;
+  margin-top: 0;
+  margin-bottom: 0;
+} */
+
+/* .product-10__range {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 3px;
+  text-transform: lowercase;
+} */
+
+/* .product-10__range-name {
+  text-align: centre;
+  font-size: 1.7rem;
+  line-height: 1.5;
+  margin-top: 0;
+  margin-bottom: 0;
+} */
+
+/* .product-10__price-heading {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 3px;
+  text-transform: lowercase;
+} */
+
+.product-10__price {
+  text-align: center;
+  font-size: 5rem;
+  font-weight: 700;
+  line-height: 1.5;
+  margin-top: 2rem;
+  margin-bottom: 0;
+}
+
+/* __________________________________________________________________________________________________________ */
+/* PRODUCT BLOCK COMPONENT - TODO: NAVIGATION (DOWNLOAD BROCHURE) - "lAAI BROSJURE AF                         */
+/* ALL PRODUCTS USE THE SAME NAVIGATION (DOWNLOAD BROCHURE) - LINK TO MOODBOARD BROCHURE & MANUAL ORDER FORM  */
+/* __________________________________________________________________________________________________________ */
+
+.navigation__download__brochure__background-all {
+  background: var(--color-clothing__product__01__navigation);
+  padding-top: 1rem;
+  padding-bottom: 3rem;
+}
+
+.navigation__download__brochure__background-link
+  .navigation__shopping__cart__checkout {
+  background: var(--color-clothing__product__01__link);
+}
+
+.navigation__download__brochure__checkout {
+  background: var(--color-nav__noord-background);
+  display: flex;
+  justify-content: center;
+  margin-top: 0;
+}
+
+.navigation__download__brochure__checkout-image {
+  width: 35px;
+  height: 35px;
+  padding-right: 2rem;
+}
+
+.navigation__download__brochure__checkout-link {
+  color: var(--color-nav__noord-link);
+  font-size: 1.7rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.navigation__download__brochure__checkout-link:hover {
+  color: var(--color-nav__noord-link-hover);
+}
+
+/* __________________________________________________________________________________________________________ */
+/* PRODUCT BLOCK COMPONENT - TODO: NAVIGATION (SHOPPING CART) - "SIT IN JOU MANDJIE EN BESTEL                 */
+/* ALL PRODUCTS USE THE SAME NAVIGATION (SHOPPING CART) - LINK TO THE ORDER FORM                              */
+/* __________________________________________________________________________________________________________ */
+
+.navigation__shopping__cart__background-all {
+  background: var(--color-clothing__product__01__navigation);
+}
+
+.navigation__shopping__cart__background-link
+  .navigation__shopping__cart__checkout {
+  background: var(--color-clothing__product__01__link);
+}
+
+.navigation__shopping__cart__checkout {
+  background: var(--color-nav__noord-background);
+  display: flex;
+  justify-content: center;
+  margin-top: -6rem;
+}
+
+.navigation__shopping__cart__checkout-image {
+  width: 35px;
+  height: 35px;
+  padding-right: 2rem;
+}
+
+.navigation__shopping__cart__checkout-link {
+  color: var(--color-nav__noord-link);
+  font-size: 1.7rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.navigation__shopping__cart__checkout-link:hover {
+  color: var(--color-nav__noord-link-hover);
+}
+
+/* _____________________________________________________________________________________________ */
+/* TODO: MEDIA QUERY (BLOCK - CLOTHING) - TABLET / LAPTOP / PC - Screen sizes larger than 768px  */
+/* _____________________________________________________________________________________________ */
+
+@media screen and (min-width: 768px) {
+  .product-01__name,
+  .product-02__name,
+  .product-03__name,
+  .product-04__name,
+  .product-05__name,
+  .product-06__name,
+  .product-07__name,
+  .product-08__name,
+  .product-09__name,
+  .product-10__name {
+    margin-top: 8rem;
+  }
+
+  .product-01__specifications-list,
+  .product-02__specifications-list,
+  .product-03__specifications-list,
+  .product-04__specifications-list,
+  .product-05__specifications-list,
+  .product-06__specifications-list,
+  .product-07__specifications-list,
+  .product-08__specifications-list,
+  .product-09__specifications-list,
+  .product-10__specifications-list {
+    font-size: 1.6rem;
+  }
+
+  .product-01__sizes-list,
+  .product-02__sizes-list,
+  .product-03__sizes-list,
+  .product-04__sizes-list,
+  .product-05__sizes-list,
+  .product-06__sizes-list,
+  .product-07__sizes-list,
+  .product-08__sizes-list,
+  .product-09__sizes-list,
+  .product-10__sizes-list {
+    font-size: 1.6rem;
+  }
+
+  .grid--1x2__products {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .navigation__shopping__cart__checkout {
+    margin-top: -7rem;
+  }
+
+  .navigation__shopping__cart__checkout-link {
+    font-size: 2.2rem;
+  }
+
+  .navigation__download__brochure__checkout {
+    margin-top: 0;
+  }
+
+  .navigation__download__brochure__checkout-link {
+    font-size: 2.2rem;
+  }
+}
+
+/* _______________________________________________________________________________________ */
+
+/* FIXME: SECTION 7 (NOTIFICATION STRIP 2) - AFLEWERINGSKOSTES                             */
+
+/* _______________________________________________________________________________________ */
+
+/* _______________________________________________________________________________________ */
+/* TODO: MOBILE (first) : Screen sizes between 320px - 768px                               */
+/* _______________________________________________________________________________________ */
+
+/* _______________________________________________________________________________________ */
+/* TODO: SECTION (NOTIFICATION BANNER) - AFLEWERINGSKOSTES                                 */
+/* _______________________________________________________________________________________ */
+
+.notification__bottom__banner {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+.notification__bottom__bannner {
+  margin-top: 0;
+}
+
+.notification__bottom__image {
+  width: 100%;
+  position: relative;
+  top: 0;
+  left: 0;
+  margin-bottom: -0.58rem;
+  /* border: 1px solid red; */
+}
+
+/* _______________________________________________________________________________________ */
+/* NAVIGATION COMPONENT 1 TODO: DOWNLOAD AFLEWERINGSKOSTE BROCHURE                         */
+/* _______________________________________________________________________________________ */
+
+/* _______________________________________________________________________________________ */
+/* TODO: MOBILE (first) : Screen sizes between 320px - 768px                               */
+/* _______________________________________________________________________________________ */
+
+.navigation__download__afleweringskoste__brochure__background-all {
+  position: absolute;
+  width: fit-content;
+  font-size: 1.4rem;
+  font-weight: 700;
+  text-transform: none;
+  letter-spacing: 1px;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+}
+
+.navigation__download__afleweringskoste__brochure__background-all {
+  background: transparent;
+}
+
+.navigation__download__afleweringskoste__brochure__background-link {
+  background: transparent;
+}
+
+.navigation__download__afleweringskoste__brochure__checkout {
+  background: transparent;
+  display: flex;
+  justify-content: center;
+  margin-top: 5px;
+}
+
+.navigation__download__afleweringskoste__brochure__checkout-image {
+  width: 35px;
+  height: 35px;
+  padding-right: 2rem;
+}
+
+.navigation__download__afleweringskoste__brochure__checkout-link {
+  color: #000000;
+  text-transform: none;
+}
+
+.afleweringskoste__download__link {
+  margin-top: 1rem;
+}
+
+.navigation__download__afleweringskoste__brochure__checkout-link:hover {
+  color: var(--color-nav__noord-link-hover);
+}
+
+/* _____________________________________________________________________________________________ */
+/* TODO: MEDIA QUERY (AFLEWERINGSKOSTE) - TABLET / LAPTOP / PC - Screen sizes larger than 768px  */
+/* _____________________________________________________________________________________________ */
+
+@media screen and (min-width: 768px) {
+  .navigation__download__afleweringskoste__brochure__background-all {
+    top: 70%;
+  }
+
+  .navigation__download__afleweringskoste__brochure__checkout {
+    margin-top: 0;
+  }
+
+  .navigation__download__afleweringskoste__brochure__checkout-link {
+    font-size: 2.5rem;
+  }
+}
+
+/* _______________________________________________________________________________________ */
+
+/* FIXME: SECTION 8 (ONLINE FORM) - BESTELVORM */
+
+/* _______________________________________________________________________________________ */
+
+/* _______________________________________________________________________________________ */
+/* TODO: MOBILE (first) : Screen sizes between 320px - 768px                               */
+/* _______________________________________________________________________________________ */
+
+/* _______________________________________________________________________________________ */
+/* FORM COMPONENT - TODO: SECTION BANNER - BESTELVORM (BANNER)                             */
+/* _______________________________________________________________________________________ */
+
+.bestelvorm__banner {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+.bestelvorm__bannner {
+  margin-top: 0;
+}
+
+.bestelvorm__image {
+  width: 100%;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+.bestelvorm__header__01 {
+  position: absolute;
+  font-size: 2rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  color: var(--color-closing__banner-header);
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.bestelvorm__header__02 {
+  position: absolute;
+  font-size: 1.5rem;
+  font-weight: 400;
+  text-transform: none;
+  letter-spacing: 4px;
+  color: var(--color-closing__banner-header);
+  top: 72%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* _______________________________________________________________________________________ */
+/* FORM COMPONENT - TODO: FORM STRUCTURE - BESTELVORM (STRUKTUUR)                          */
+/* _______________________________________________________________________________________ */
+
+/* _______________________________________________________________________________________ */
+/* SETTING FORM RULES - TODO: FORM ELEMENT - LABEL                                         */
+/* _______________________________________________________________________________________ */
+
+.form__header__01 {
+  font-size: 1.7rem;
+  text-align: center;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #1a354a;
+  margin-top: 0;
+}
+
+.form__header__02 {
+  font-size: 1.3rem;
+  text-align: center;
+  font-weight: 500;
+  text-transform: None;
+  color: #1a354a;
+  margin-top: -2.5rem;
+}
+
+.form__category__header {
+  font-size: 1.7rem;
+  text-align: center;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: #1a354a;
+  margin-top: -1rem;
+  margin-bottom: 1rem;
+}
+
+.form__category__sub__header {
+  font-size: 1.3rem;
+  text-align: center;
+  font-weight: 500;
+  text-transform: none;
+  color: #1a354a;
+  margin-top: -1rem;
+  margin-bottom: 1rem;
+}
+
+.form__category__header__02 {
+  font-size: 1.7rem;
+  text-align: center;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: #1a354a;
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+}
+
+.form__category__sub__header__02 {
+  font-size: 1.3rem;
+  text-align: center;
+  font-weight: 500;
+  text-transform: none;
+  color: #1a354a;
+  margin-top: -1rem;
+  margin-bottom: 2rem;
+}
+
+.header__postnet__options {
+  font-size: 1.3rem;
+  text-align: center;
+  font-weight: 500;
+  text-transform: none;
+  color: #1a354a;
+  margin-top: -1rem;
+  margin-bottom: 2rem;
+}
+
+.form__category__header__03 {
+  font-size: 1.7rem;
+  text-align: center;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: #1a354a;
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+}
+
+.form__category__sub__header__03 {
+  font-size: 1.3rem;
+  text-align: center;
+  font-weight: 500;
+  text-transform: none;
+  color: #1a354a;
+  margin-top: -1rem;
+  margin-bottom: 2rem;
+}
+
+.form__category__header__04 {
+  font-size: 1.7rem;
+  text-align: center;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: #1a354a;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.form__category__sub__header__04 {
+  font-size: 1.3rem;
+  text-align: center;
+  font-weight: 500;
+  text-transform: none;
+  color: #1a354a;
+  margin-top: -1rem;
+  margin-bottom: 1rem;
+}
+
+.form__category__header__05 {
+  font-size: 1.7rem;
+  text-align: center;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: #1a354a;
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+}
+
+/* ___________________________________________________________________________________________ */
+/* SETTING FORM RULES - TODO: ELEMENT - INPUT TYPES                                            */
+/* Various Input Types are available: https://www.w3schools.com/html/html_form_input_types.asp */
+/* ___________________________________________________________________________________________ */
+
+#adres,
+#poskode,
+#naam,
+#van,
+#selfoon,
+#epos {
+  font-size: 1.4rem;
+}
+
+/* _______________________________________________________________________________________ */
+/* "TEXT" TYPE - FIXME: NORMAL APPEARANCE                                                  */
+/* _______________________________________________________________________________________ */
+
+input[type="text"] {
+  text-align: center;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 1rem 1rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: border-color 0.5s, box-shadow 0.5s;
+}
+
+/* _______________________________________________________________________________________ */
+/* "TEXT" TYPE - FIXME: FOCUSSED / SELECTED APPEARANCE                                     */
+/* _______________________________________________________________________________________ */
+
+input[type="text"]:focus {
+  border-color: #7db0fb;
+  outline: 0;
+  box-shadow: 0 0 0 2px #1a354a;
+}
+
+/* _______________________________________________________________________________________ */
+/* "DATE" TYPE - FIXME: NORMAL APPEARANCE                                                  */
+/* _______________________________________________________________________________________ */
+
+input[type="date"] {
+  text-align: center;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 1rem 1rem;
+  font-size: 1.7rem;
+  cursor: pointer;
+  transition: border-color 0.5s, box-shadow 0.5s;
+}
+
+/* _______________________________________________________________________________________ */
+/* "DATE" TYPE - FIXME: FOCUSSED / SELECTED APPEARANCE                                     */
+/* _______________________________________________________________________________________ */
+
+input[type="date"]:focus {
+  border-color: #7db0fb;
+  outline: 0;
+  box-shadow: 0 0 0 2px #1a354a;
+}
+
+/* _______________________________________________________________________________________ */
+/* "TEL" TYPE - FIXME: NORMAL APPEARANCE                                                   */
+/* _______________________________________________________________________________________ */
+
+input[type="tel"] {
+  text-align: center;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 1rem 1rem;
+  font-size: 1.7rem;
+  cursor: pointer;
+  transition: border-color 0.5s, box-shadow 0.5s;
+}
+
+/* _______________________________________________________________________________________ */
+/* "TEL" TYPE - FIXME: FOCUSSED / SELECTED APPEARANCE                                      */
+/* _______________________________________________________________________________________ */
+
+input[type="tel"]:focus {
+  border-color: #7db0fb;
+  outline: 0;
+  box-shadow: 0 0 0 2px #1a354a;
+}
+
+/* _______________________________________________________________________________________ */
+/* "EMAIL" TYPE - FIXME: NORMAL APPEARANCE                                                 */
+/* _______________________________________________________________________________________ */
+
+input[type="email"] {
+  text-align: center;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 1rem 1rem;
+  font-size: 1.7rem;
+  cursor: pointer;
+  transition: border-color 0.5s, box-shadow 0.5s;
+}
+
+/* _______________________________________________________________________________________ */
+/* "EMAIL" TYPE - FIXME: FOCUSSED / SELECTED APPEARANCE                                    */
+/* _______________________________________________________________________________________ */
+
+input[type="email"]:focus {
+  border-color: #7db0fb;
+  outline: 0;
+  box-shadow: 0 0 0 2px #1a354a;
+}
+
+/* _______________________________________________________________________________________ */
+/* FORM ELEMENTS (SELECT) - FIXME: DROPDOWN LISTS - STYLING                                 */
+/* _______________________________________________________________________________________ */
+
+select {
+  display: block;
+  color: #1a354a;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: border-color 0.5s, box-shadow 0.5s;
+}
+
+select:hover {
+  border-color: #7db0fb;
+  outline: 0;
+  box-shadow: 0 0 0 2px #1a354a;
+}
+
+label {
+  display: block;
+  padding: 1.5rem;
+  font-size: 1.8rem;
+  font-weight: 800;
+  text-transform: none;
+  color: #1a354a;
+  cursor: pointer;
+}
+
+.product__styles {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.product__sizes {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.product__quantities {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form__group__products {
+  color: #1a354a;
+  font-size: 1.4rem;
+  font-weight: 500;
+  padding: 1rem 1rem;
+  margin-left: 0;
+  margin-bottom: 1.5rem;
+}
+
+.form__group__sizes {
+  color: #1a354a;
+  font-size: 1.4rem;
+  font-weight: 500;
+  padding: 1rem 1rem;
+  margin-left: 0;
+  margin-bottom: 1.5rem;
+}
+
+.form__group__quantities {
+  color: #1a354a;
+  font-size: 1.4rem;
+  font-weight: 500;
+  padding: 1rem 1rem;
+  margin-left: 0;
+  margin-bottom: 1.5rem;
+}
+
+.form__option {
+  color: #1a354a;
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+
+/* ___________________________________________________________________________________________________________________________________ */
+/* Setting Rules - TODO: Textarea (selfe as Input Element) - Define the Size of the Input Text Box in Col (Characters) and Row (rows)  */
+/* ___________________________________________________________________________________________________________________________________ */
+
+/* _______________________________________________________________________________________ */
+/* "TEXTAREA" TYPE - FIXME: NORMAL APPEARANCE                                              */
+/* _______________________________________________________________________________________ */
+
+textarea {
+  resize: none;
+  text-align: center;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 1rem 1rem;
+  font-size: 1.7rem;
+  cursor: pointer;
+  transition: border-color 0.5s, box-shadow 0.5s;
+  margin-bottom: -2rem;
+}
+
+/* _______________________________________________________________________________________ */
+/* "TEXTAREA" TYPE - FIXME: FOCUSSED / SELECTED APPEARANCE                                 */
+/* _______________________________________________________________________________________ */
+
+textarea:focus {
+  border-color: #7db0fb;
+  outline: 0;
+  box-shadow: 0 0 0 2px #1a354a;
+}
+
+/* _______________________________________________________________________________________ */
+/* SETTING FORM RULES - FIXME: BUTTONS (STYLING)                                            */
+/* _______________________________________________________________________________________ */
+
+button {
+  background: #1a354a;
+  color: #ffffff;
+  border: 0;
+  border-radius: 5px;
+  font-size: 1.7rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  padding: 1rem 1.5rem;
+  margin-top: 2rem;
+  margin-right: 2rem;
+  margin-bottom: 1.5rem;
+  outline: 0;
+  cursor: pointer;
+}
+
+/* _______________________________________________________________________________________ */
+/* SETTING FORM RULES - FIXME: OTHER FORM STYLING                                          */
+/* _______________________________________________________________________________________ */
+
+.form__style {
+  text-align: center;
+  line-height: 2;
+  padding: 2rem;
+  /* cursor: pointer; */
+}
+
+.form__group {
+  font-size: 1.5rem;
+  padding: 1rem 1rem;
+  margin-top: -4rem;
+  margin-bottom: 2rem;
+}
+
+.form__group__2,
+.form__group__3 {
+  display: block;
+}
+
+.form_checkbox_terms,
+.form_checkbox_details,
+.form_checkbox_newsletter {
+  display: flex;
+  /* text-align: none;
+  justify-content: none; */
+  padding-left: 10vw;
+}
+
+.form_checkbox_delivery1,
+.form_checkbox_delivery2 {
+  display: flex;
+  /* text-align: none;
+  justify-content: none; */
+  padding-left: 10vw;
+}
+
+#confirm_terms,
+#confirm_details,
+#confirm_newsletter {
+  width: 20px;
+  height: 20px;
+  padding: 0;
+  margin: 0;
+  vertical-align: bottom;
+  position: relative;
+  top: 2rem;
+  right: 2rem;
+}
+
+#confirm_delivery1,
+#confirm_delivery2 {
+  width: 20px;
+  height: 20px;
+  padding: 0;
+  margin: 0;
+  vertical-align: bottom;
+  position: relative;
+  top: 2rem;
+  right: 2rem;
+}
+
+.checkbox_label_style {
+  display: block;
+  padding-left: 0;
+  text-indent: 0;
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+/* _______________________________________________________________________________________ */
+/* TODO: MEDIA QUERY (ORDER FORM) - TABLET / LAPTOP / PC - Screen sizes larger than 768px  */
+/* _______________________________________________________________________________________ */
+
+@media screen and (min-width: 768px) {
+  .bestelvorm__header__01 {
+    font-size: 6rem;
+  }
+
+  .bestelvorm__header__02 {
+    font-size: 3rem;
+  }
+
+  label {
+    display: inline-block;
+    padding-right: 3rem;
+    font-size: 1.8rem;
+    font-weight: 800;
+  }
+
+  select {
+    display: inline-block;
+  }
+
+  input {
+    display: inline-block;
+  }
+
+  input {
+    align-items: center;
+    justify-content: center;
+  }
+
+  button {
+    margin-bottom: 2rem;
+    margin-top: 3rem;
+  }
+
+  .aflewerings__details {
+    margin-top: -2rem;
+    margin-bottom: -3rem;
+  }
+
+  .kontak__details {
+    margin-top: -2.5rem;
+    margin-bottom: -2rem;
+  }
+
+  .form__group__2 {
+    display: inline-block;
+  }
+
+  .form__group__3 {
+    display: inline-block;
+  }
+
+  .form__header__01 {
+    font-size: 2.2rem;
+    font-weight: 800;
+  }
+
+  .form__header__02 {
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+
+  .form__category__header {
+    font-size: 2.2rem;
+    font-weight: 800;
+    margin-bottom: 0.5rem;
+  }
+
+  .form__category__sub__header {
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-bottom: 2rem;
+  }
+
+  .form__category__header__02 {
+    font-size: 2.2rem;
+    font-weight: 800;
+    margin-bottom: 0.5rem;
+  }
+
+  .form__category__sub__header__02 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-bottom: 6rem;
+  }
+
+  .header__postnet__options {
+    font-size: 1.5rem;
+    text-align: center;
+    font-weight: 500;
+    text-transform: none;
+    color: #1a354a;
+    margin-top: -1rem;
+    margin-bottom: 2rem;
+  }
+
+  .form__category__header__03 {
+    font-size: 2.2rem;
+    font-weight: 800;
+    margin-bottom: 0.5rem;
+  }
+
+  .form__category__sub__header__03 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-bottom: 5rem;
+  }
+
+  .form__category__header__04 {
+    font-size: 2.2rem;
+    font-weight: 800;
+    margin-bottom: 1rem;
+  }
+
+  .form__category__sub__header__04 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-bottom: 1.5rem;
+  }
+
+  .form__category__header__05 {
+    margin-top: 0;
+    font-size: 2.2rem;
+    font-weight: 800;
+    margin-bottom: 1rem;
+  }
+
+  .product__styles,
+  .product__sizes,
+  .product__quantities {
+    width: auto;
+    display: inline-block;
+    /* align-items: none;
+    justify-content: none; */
+  }
+
+  .form__group__products {
+    margin-left: 0;
+  }
+
+  .form__group__sizes {
+    margin-left: 3rem;
+  }
+
+  .form__group__quantities {
+    margin-left: 3rem;
+  }
+
+  #confirm_terms,
+  #confirm_details,
+  #confirm_newsletter {
+    left: 28%;
+  }
+
+  #confirm_delivery1,
+  #confirm_delivery2 {
+    left: 28%;
+  }
+
+  .checkbox_label_style {
+    font-size: 1.6rem;
+    font-weight: 600;
+    padding-left: 30%;
+  }
+}
+
+/* _______________________________________________________________________________________ */
+/* FORM COMPONENT - TODO: LINKS TO DOWNLOADABLE PDF (ONS TERME) & "GAAN NOORD" NAVIGATION  */
+/* _______________________________________________________________________________________ */
+
+/* _______________________________________________________________________________________ */
+/* TODO: MOBILE (first) : Screen sizes between 320px - 768px                               */
+/* _______________________________________________________________________________________ */
+
+/* _______________________________________________________________________________________ */
+/* FORM NAVIGATION COMPONENT 1 - FIXME: DOWNLOAD "ONS TERME" BROCHURE                       */
+/* _______________________________________________________________________________________ */
+
+.form__navigation__links {
+  background: #1a354a;
+  display: flex;
+  row-gap: 0;
+  column-gap: 3rem;
+  justify-content: center;
+  /* margin: -0.6rem 0; */
+  margin-top: 0;
+}
+
+.form__navigation__links,
+.form__navigation__download__onsterme__background-all,
+.form__navigation__gaannoord__background-all {
+  margin-bottom: -1.8rem;
+  /* height: 30px; */
+}
+
+/* _______________________________________________________________________________________ */
+/* TODO: MOBILE (first) : Screen sizes between 320px - 768px */
+/* _______________________________________________________________________________________ */
+
+.form__navigation__download__onsterme__background-all {
+  background: #1a354a;
+  padding-top: 1rem;
+}
+
+.form__navigation__download__onsterme__background-link {
+  background: #1a354a;
+}
+
+.form__navigation__download__onsterme__checkout {
+  background: #1a354a;
+  display: flex;
+  justify-content: center;
+  margin-top: 0;
+}
+
+.form__navigation__download__onsterme__checkout-image {
+  width: 35px;
+  height: 35px;
+  padding-right: 2rem;
+}
+
+.form__navigation__download__onsterme__checkout-link {
+  color: #ffffff;
+  font-size: 1.4rem;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.form__navigation__download__onsterme__checkout-link:hover {
+  color: var(--color-nav__noord-link-hover);
+}
+
+/* ____________________________________________________________________________________________ */
+/* TODO: MEDIA QUERY (FORM NAVIGATION) - TABLET / LAPTOP / PC - Screen sizes larger than 768px  */
+/* ____________________________________________________________________________________________ */
+
+@media screen and (min-width: 768px) {
+  .form__navigation__download__onsterme__checkout {
+    margin-top: 0;
+  }
+
+  .form__navigation__download__onsterme__checkout-link {
+    font-size: 2.2rem;
+  }
+}
+
+/* _______________________________________________________________________________________ */
+/* FORM NAVIGATION COMPONENT 2 - TODO: "GAAN NOORD" NAVIGATION                             */
+/* _______________________________________________________________________________________ */
+
+/* _______________________________________________________________________________________ */
+/* TODO: MOBILE (first) : Screen sizes between 320px - 768px                               */
+/* _______________________________________________________________________________________ */
+
+.form__navigation__gaannoord__background-all {
+  background: #1a354a;
+  padding-top: 1rem;
+}
+
+.form__navigation__gaannoord__background-link {
+  background: #1a354a;
+}
+
+.form__navigation__gaannoord__checkout {
+  background: #1a354a;
+  display: flex;
+  justify-content: center;
+  margin-top: 0;
+}
+
+.form__navigation__gaannoord__checkout-image {
+  width: 35px;
+  height: 35px;
+  padding-right: 2rem;
+}
+
+.form__navigation__gaannoord__checkout-link {
+  color: #ffffff;
+  font-size: 1.4rem;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.form__navigation__gaannoord__checkout-link:hover {
+  color: var(--color-nav__noord-link-hover);
+}
+
+/* ____________________________________________________________________________________________ */
+/* TODO: MEDIA QUERY (FORM NAVIGATION) - TABLET / LAPTOP / PC - Screen sizes larger than 768px  */
+/* ____________________________________________________________________________________________ */
+
+@media screen and (min-width: 768px) {
+  .form__navigation__gaannoord__checkout {
+    margin-top: 0;
+  }
+
+  .form__navigation__gaannoord__checkout-link {
+    font-size: 2.2rem;
+  }
+}
+
+/* _______________________________________________________________________________________ */
+
+/* FIXME: SECTION 9 - HERVERKOPERS */
+
+/* _______________________________________________________________________________________ */
+
+/* _______________________________________________________________________________________ */
+/* TODO: MOBILE (first) : Screen sizes between 320px - 768px                               */
+/* _______________________________________________________________________________________ */
+
+.herverkopers__banner {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+.herverkopers__bannner {
+  margin-top: 0;
+}
+
+.herverkopers__image {
+  width: 100%;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+.herverkopers__header__01 {
+  position: absolute;
+  font-size: 2rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  color: var(--color-closing__banner-header);
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.herverkopers__header__02 {
+  position: absolute;
+  font-size: 1.5rem;
+  font-weight: 400;
+  text-transform: none;
+  letter-spacing: 4px;
+  color: var(--color-closing__banner-header);
+  top: 72%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* _________________________________________________________________________________________ */
+/* TODO: MEDIA QUERY (HERVERKOPERS) - TABLET / LAPTOP / PC - Screen sizes larger than 768px  */
+/* _________________________________________________________________________________________ */
+
+@media screen and (min-width: 768px) {
+  .herverkopers__header__01 {
+    font-size: 6rem;
+  }
+
+  .herverkopers__header__02 {
+    font-size: 3rem;
+  }
+}
+
+/* _________________________________________________________________________________________ */
+
+/* FIXME: SECTION 10 (TESTIMONIAL SECTION BLOCK) - JOU TERUGVOER                             */
+
+/* _________________________________________________________________________________________ */
+
+/* _________________________________________________________________________________________ */
+/* TODO: MOBILE (first) : Screen sizes between 320px - 768px                                 */
+/* _________________________________________________________________________________________ */
+
+.block {
+  text-align: center;
+}
+
+.block__heading {
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  margin-top: -3rem;
+  margin-bottom: 0;
+}
+
+.block__tagline {
+  font-size: 2rem;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.testimonial__block {
+  width: 100%;
+  background: var(--color-testimonial__background);
+}
+
+.testimonial {
+  row-gap: 5rem;
+  column-gap: 5rem;
+  margin: -1rem 5rem;
+}
+
+.testimonial__image__1 {
+  width: 100%;
+}
+
+.testimonial__image__2 {
+  width: 100%;
+}
+
+/* _________________________________________________________________________________________ */
+/* FIXME: Dashboard - Relative Positioning of Text Over Image 2                              */
+/* _________________________________________________________________________________________ */
+
+.testimonial__positioning {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+.testimonial__image__2 {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+.testimonial__text__positioning__1 {
+  width: 20vh;
+  font-size: 1.5rem;
+  position: absolute;
+  top: 30%;
+  left: 27%;
+  transform: translate(-50%, -50%);
+}
+
+.testimonial__text__positioning__2 {
+  width: 20vh;
+  font-size: 1.5rem;
+  position: absolute;
+  top: 65%;
+  left: 27%;
+  transform: translate(-50%, -50%);
+}
+
+.testimonial__text__positioning__3 {
+  width: 22vh;
+  font-size: 1.5rem;
+  position: absolute;
+  top: 25%;
+  left: 74%;
+  transform: translate(-50%, -50%);
+}
+
+.testimonial__text__positioning__4 {
+  width: 20vh;
+  font-size: 1.5rem;
+  position: absolute;
+  top: 62%;
+  left: 73%;
+  transform: translate(-50%, -50%);
+}
+
+/* ________________________________________________________________________________________________ */
+/* TODO: MEDIA QUERY (BLOCK - TESTIMONIAL) - TABLET / LAPTOP / PC - Screen sizes larger than 768px  */
+/* ________________________________________________________________________________________________ */
+
+/* _________________________________________________________________________________________ */
+/* FIXME: Dashboard - Relative Positioning of Text Over Image 2 - larger screens             */
+/* _________________________________________________________________________________________ */
+
+@media screen and (min-width: 768px) {
+  .block__heading {
+    margin-top: -1rem;
+  }
+
+  .testimonial {
+    margin: -5rem 5rem;
+    margin-bottom: 1rem;
+  }
+
+  .testimonial__text__positioning__1 {
+    width: 20vh;
+    font-size: 1.7rem;
+    position: absolute;
+    top: 30%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+  }
+
+  .testimonial__text__positioning__2 {
+    width: 20vh;
+    font-size: 1.7rem;
+    position: absolute;
+    top: 65%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+  }
+
+  .testimonial__text__positioning__3 {
+    width: 22vh;
+    font-size: 1.7rem;
+    position: absolute;
+    top: 25%;
+    left: 72%;
+    transform: translate(-50%, -50%);
+  }
+
+  .testimonial__text__positioning__4 {
+    width: 20vh;
+    font-size: 1.7rem;
+    position: absolute;
+    top: 62%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+/* _________________________________________________________________________________________ */
+
+/* FIXME: SECTION 11 - CLOSING BANNER - KONTAK ONS                                           */
+
+/* _________________________________________________________________________________________ */
+
+/* _________________________________________________________________________________________ */
+/* TODO: MOBILE (FIRST) : Screen sizes between 320px - 768px                                 */
+/* _________________________________________________________________________________________ */
+
+.closing__banner {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+.closing__banner {
+  margin-top: 0;
+}
+
+.closing__image {
+  width: 100%;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+.closing__header {
+  position: absolute;
+  font-size: 2rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  color: var(--color-closing__banner-header);
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* _____________________________________________________________________________________________ */
+/* TODO: MEDIA QUERY (CLOSING - BANNER) - TABLET / LAPTOP / PC - Screen sizes larger than 768px  */
+/* _____________________________________________________________________________________________ */
+
+@media screen and (min-width: 768px) {
+  .closing__header {
+    font-size: 6rem;
+  }
+}
+
+/* _____________________________________________________________________________________________ */
+
+/* FIXME: SECTION 12 - FOOTER                                                                    */
+
+/* _____________________________________________________________________________________________ */
+
+/* _____________________________________________________________________________________________ */
+/* TODO: MOBILE (FIRST) : Screen sizes between 320px - 768px                                     */
+/* _____________________________________________________________________________________________ */
+
+.footer {
+  background: var(--color-footer__background);
+  /* padding: 1.5rem 2rem; */
+}
+
+.footer a {
+  color: var(--color-footer__anchor-links);
+  transition: color 0.4s;
+  letter-spacing: 1.5px;
+}
+
+.footer a:hover {
+  color: var(--color-footer__anchor-links-hover);
+}
+
+.footer__section {
+  padding-top: 3rem;
+  padding-left: 1.5rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid var(--color-footer__collapsible-border);
+}
+
+.footer__section .list {
+  margin: 0;
+}
+
+.collapsible__content {
+  text-align: left;
+}
+
+.footer__heading {
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+}
+
+.footer__brand {
+  margin-top: 5rem;
+  text-align: center;
+}
+
+.footer__brand img {
+  width: 100%;
+  max-width: 275px;
+}
+
+.footer__socialmedia {
+  font-size: 2.5rem;
+  font-weight: 600;
+  text-align: center;
+  width: 100%;
+  margin-top: 4rem;
+}
+
+.facebook,
+.instagram,
+.twitter,
+.youtube {
+  width: 40px;
+  height: 40px;
+}
+
+.footer__contactus {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 600;
+  width: 100%;
+  margin-top: 1rem;
+}
+
+.footer__socialmedia,
+.footer__email,
+.footer__mobile {
+  color: var(--color-footer__contact-headings);
+}
+
+.contact__email {
+  font-weight: 500;
+  font-size: 2.2rem;
+  letter-spacing: 0.5rem;
+}
+
+.contact__mobile {
+  font-weight: 500;
+  font-size: 2.5rem;
+  letter-spacing: 0.5rem;
+}
+
+.footer__copyright {
+  font-size: 2.2rem;
+  font-weight: 600;
+  text-align: center;
+  color: var(--color-footer__copyright);
+  margin-top: 5rem;
+  padding-bottom: 0;
+  opacity: 1;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+/* _____________________________________________________________________________________________ */
+/* TODO: MEDIA QUERY (FOOTER) - TABLET / LAPTOP / PC - Screen sizes larger than 768px            */
+/* _____________________________________________________________________________________________ */
+
+@media screen and (min-width: 768px) {
+  .footer__sections {
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+  }
+
+  .footer .collapsible__chevron {
+    display: none;
+  }
+
+  .footer .collapsible__content {
+    opacity: 1;
+    max-height: 100%;
+    font-size: 2rem;
+  }
+
+  .footer_marketing {
+    order: -1;
+    margin-top: 0;
+    margin-right: 7rem;
+  }
+
+  .footer__brand {
+    margin-top: 2rem;
+    margin-bottom: 0;
+    padding-top: 1rem;
+  }
+
+  .footer__socialmedia {
+    font-size: 2rem;
+    margin-top: 0;
+  }
+
+  .facebook,
+  .instagram,
+  .twitter,
+  .youtube {
+    width: 35px;
+    height: 35px;
+  }
+
+  .footer__contactus {
+    text-align: left;
+    font-size: 2rem;
+    font-weight: 600;
+    width: 100%;
+  }
+
+  .contact__email {
+    font-weight: 500;
+    font-size: 2rem;
+    letter-spacing: normal;
+  }
+
+  .contact__mobile {
+    font-weight: 500;
+    font-size: 2rem;
+    letter-spacing: normal;
+  }
+
+  .socialmedia__title {
+    margin-top: 1rem;
+  }
+
+  .contact__title {
+    margin-top: 2rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .footer__copyright {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-top: 2rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+
+  .footer__section {
+    border: 0;
+  }
+
+  .footer__heading {
+    font-size: 2rem;
+  }
+}

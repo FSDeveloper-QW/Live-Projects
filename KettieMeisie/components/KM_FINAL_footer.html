@@ -1,0 +1,329 @@
+<!-- _________________________________________________________________________________ -->
+<!-- TODO: HTML SECTION - STRUCTURE -->
+<!-- _________________________________________________________________________________ -->
+
+<body>
+  <!-- FIXME: SECTION 10 - FOOTER -->
+  <footer class="block block--dark footer">
+    <div class="container grid footer__sections">
+      <!-- Section 1 -->
+      <section class="collapsible collapsible--expanded footer__section">
+        <div class="collapsible__header">
+          <h2 class="collapsible__heading footer__heading">MEER OOR ONS</h2>
+          <svg class="icon icon--white collapsible__chevron">
+            <use xlink:href="images/sprite.svg#chevron"></use>
+          </svg>
+        </div>
+        <div class="collapsible__content">
+          <ul class="list">
+            <li><a href="#section-storie">Ons Storie</a></li>
+            <li>
+              <a href="pdf/KM_terme.pdf" target="_blank">Ons Terme</a>
+            </li>
+            <li>
+              <a href="pdf/KM_bankrekening.pdf" target="_blank">Bankrekening</a>
+            </li>
+            <li><a href="#section-herverkopers">Herverkopers</a></li>
+            <li><a href="#section-terugvoer">Jou Terugvoer</a></li>
+            <li><a href="#section-bestelvorm">Bestel Nou</a></li>
+          </ul>
+        </div>
+      </section>
+      <!-- Section 2 -->
+      <section class="collapsible footer__section">
+        <div class="collapsible__header">
+          <h2 class="collapsible__heading footer__heading">DAMES</h2>
+          <svg class="icon icon--white collapsible__chevron">
+            <use xlink:href="images/sprite.svg#chevron"></use>
+          </svg>
+        </div>
+        <div class="collapsible__content">
+          <ul class="list">
+            <li><a href="#section-spatsel">Spatsel</a></li>
+            <li><a href="#section-elegant">Elegant</a></li>
+            <li><a href="#section-blare">Blare</a></li>
+            <li><a href="#section-kompas">Kompas</a></li>
+            <li><a href="#section-rebel">Rebel</a></li>
+            <li><a href="#section-khakirokkie">Khaki Rokkie</a></li>
+          </ul>
+        </div>
+      </section>
+      <!-- Section 3 -->
+      <section class="collapsible footer__section">
+        <div class="collapsible__header">
+          <h2 class="collapsible__heading footer__heading">KINDERS</h2>
+          <svg class="icon icon--white collapsible__chevron">
+            <use xlink:href="images/sprite.svg#chevron"></use>
+          </svg>
+        </div>
+        <div class="collapsible__content">
+          <ul class="list">
+            <li><a href="#section-blommetjie">Blommetjie</a></li>
+            <li><a href="#section-elegantjie">Elegantjie</a></li>
+            <li><a href="#section-naaldekoker">Naaldekoker</a></li>
+            <li><a href="#section-kuns">Kuns</a></li>
+          </ul>
+        </div>
+      </section>
+      <div class="footer_marketing">
+        <div class="footer__brand">
+          <a href="#"><img src="images/KM_logo_text.png" alt="" /></a>
+        </div>
+        <div class="footer__socialmedia">
+          <p class="socialmedia__title">SOSIALE MEDIA</p>
+          <a href="https://www.facebook.com/jouwarenoord" target="_blank"
+            ><img
+              class="facebook"
+              src="images/black2_facebook.png"
+              alt="Facebook"
+          /></a>
+          <a href="https://www.instagram.com/kettiemeisie/" target="_blank"
+            ><img
+              class="instagram"
+              src="images/black2_instagram.png"
+              alt="Instagram"
+          /></a>
+          <a href="https://twitter.com/KettieLtd" target="_blank"
+            ><img class="twitter" src="images/black2_twitter.png" alt="Twitter"
+          /></a>
+          <a
+            href="https://www.youtube.com/channel/UC2EDBZN2j_p5tp7HquAfvPQ"
+            target="_blank"
+            ><img class="youtube" src="images/black2_youtube.png" alt="YouTube"
+          /></a>
+        </div>
+      </div>
+      <div class="footer__contactus">
+        <div class="footer__email">
+          <p class="contact__title">STUUR E-POS</p>
+          <a class="contact__email" href="mailto:sales@kettiemeisie.com"
+            >sales@kettiemeisie.com</a
+          >
+        </div>
+        <div class="footer__mobile">
+          <p class="contact__title">KONTAK ONS</p>
+          <div>
+            <a
+              class="contact__mobile"
+              href="https://wa.me/27673716894"
+              target="_blank"
+              >067 371 6894</a
+            >
+          </div>
+          <div>
+            <a
+              class="contact__mobile"
+              href="https://wa.me/27606209866"
+              target="_blank"
+              >060 620 9866</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    <div>
+      <p class="footer__copyright">© 2021 Kettie Meisie (Pty) Ltd</p>
+    </div>
+  </footer>
+</body>
+
+<!-- _________________________________________________________________________________ -->
+<!-- TODO: CSS SECTION - STYLES (PASTE BELOW IN CSS FILE) -->
+<!-- _________________________________________________________________________________ -->
+
+<style>
+  /* ________________________________________________________________________________________________________________________ */
+
+  /* FIXME: SECTION 10 - FOOTER */
+
+  /* ________________________________________________________________________________________________________________________ */
+
+  /* TODO: MOBILE (FIRST) : Screen sizes between 320px - 768px */
+
+  .footer {
+    background: var(--color-footer__background);
+    /* padding: 1.5rem 2rem; */
+  }
+
+  .footer a {
+    color: var(--color-footer__anchor-links);
+    transition: color 0.4s;
+    letter-spacing: 1.5px;
+  }
+
+  .footer a:hover {
+    color: var(--color-footer__anchor-links-hover);
+  }
+
+  .footer__section {
+    padding-top: 3rem;
+    padding-left: 1.5rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid var(--color-footer__collapsible-border);
+  }
+
+  .footer__section .list {
+    margin: 0;
+  }
+
+  .collapsible__content {
+    text-align: left;
+  }
+
+  .footer__heading {
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+  }
+
+  .footer__brand {
+    margin-top: 5rem;
+    text-align: center;
+  }
+
+  .footer__brand img {
+    width: 100%;
+    max-width: 275px;
+  }
+
+  .footer__socialmedia {
+    font-size: 2.5rem;
+    font-weight: 600;
+    text-align: center;
+    width: 100%;
+    margin-top: 4rem;
+  }
+
+  .facebook,
+  .instagram,
+  .twitter,
+  .youtube {
+    width: 40px;
+    height: 40px;
+  }
+
+  .footer__contactus {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 600;
+    width: 100%;
+    margin-top: 1rem;
+  }
+
+  .footer__socialmedia,
+  .footer__email,
+  .footer__mobile {
+    color: var(--color-footer__contact-headings);
+  }
+
+  .contact__email {
+    font-weight: 500;
+    font-size: 2.2rem;
+    letter-spacing: 0.5rem;
+  }
+
+  .contact__mobile {
+    font-weight: 500;
+    font-size: 2.5rem;
+    letter-spacing: 0.5rem;
+  }
+
+  .footer__copyright {
+    font-size: 2.2rem;
+    font-weight: 600;
+    text-align: center;
+    color: var(--color-footer__copyright);
+    margin-top: 5rem;
+    padding-bottom: 0;
+    opacity: 1;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+
+  /* TODO: MEDIA QUERY (FOOTER) - TABLET / LAPTOP / PC - Screen sizes larger than 768px */
+
+  @media screen and (min-width: 768px) {
+    .footer__sections {
+      grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+    }
+
+    .footer .collapsible__chevron {
+      display: none;
+    }
+
+    .footer .collapsible__content {
+      opacity: 1;
+      max-height: 100%;
+      font-size: 2rem;
+    }
+
+    .footer_marketing {
+      order: -1;
+      margin-top: 0;
+      margin-right: 7rem;
+    }
+
+    .footer__brand {
+      margin-top: 2rem;
+      margin-bottom: 0;
+      padding-top: 1rem;
+    }
+
+    .footer__socialmedia {
+      font-size: 2rem;
+      margin-top: 0;
+    }
+
+    .facebook,
+    .instagram,
+    .twitter,
+    .youtube {
+      width: 35px;
+      height: 35px;
+    }
+
+    .footer__contactus {
+      text-align: left;
+      font-size: 2rem;
+      font-weight: 600;
+      width: 100%;
+    }
+
+    .contact__email {
+      font-weight: 500;
+      font-size: 2rem;
+      letter-spacing: normal;
+    }
+
+    .contact__mobile {
+      font-weight: 500;
+      font-size: 2rem;
+      letter-spacing: normal;
+    }
+
+    .socialmedia__title {
+      margin-top: 1rem;
+    }
+
+    .contact__title {
+      margin-top: 2rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .footer__copyright {
+      font-size: 2rem;
+      font-weight: 600;
+      margin-top: 2rem;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+    }
+
+    .footer__section {
+      border: 0;
+    }
+
+    .footer__heading {
+      font-size: 2rem;
+    }
+  }
+</style>

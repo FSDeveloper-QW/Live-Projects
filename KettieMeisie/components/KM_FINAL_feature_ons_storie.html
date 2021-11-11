@@ -1,0 +1,207 @@
+<!-- _________________________________________________________________________________ -->
+<!-- TODO: HTML SECTION - STRUCTURE -->
+<!-- _________________________________________________________________________________ -->
+
+<!-- FIXME: SECTION 3 - BLOCK FEATURE (ARTICLE) - "ONS STORIE" -->
+<section id="section-storie" class="feature__block">
+  <article class="feature__grid feature__grid--1x2 feature">
+    <picture data-aos="zoom-in-right" data-aos-duration="3000">
+      <img class="feature__image" src="images/KM_motivation.webp" alt="" />
+    </picture>
+    <div
+      class="feature__content"
+      data-aos="zoom-out-left"
+      data-aos-duration="3000"
+    >
+      <h2 class="feature__heading">ons storie</h2>
+      <p class="feature__story">
+        "Kettie Meisie" is iemand wat in haarself glo, na haar binneste stem
+        luister en haar ware noord volg. Nie een "Kettie Meisie" se noord is
+        dieselfde nie, en dit maak haar uniek, spesiaal en besonders. Haar
+        innerlike skoonheid, menswees en omgee vir ander, leef sy daagliks
+        nederig en onvoorwaardelik uit. Die "Kettie Meisie" klerereeks
+        verteenwoordig daardie soeke na haar ware noord, wat geïnspireer word
+        deur die keuses van haar hart, die daaglikse besluite wat sy neem en die
+        vreeslose treë wat sy stap in die rigting van haar ware noord ...
+      </p>
+      <!-- FIXME: SECTION 4 - NAVIGATION (LINK TO TOP OF PAGE) - "GAAN NOORD" -->
+      <section
+        class="
+          block__navigation__gaan__noord
+          container__navigation__gaan__noord
+          navigation__gaan__noord__ons__storie
+        "
+      >
+        <div class="navigation__gaan__noord__ons_storie__header">
+          <div class="navigation__gaan__noord__ons__storie">
+            <div>
+              <img
+                class="navigation__gaan__noord-image"
+                src="images/KM_kompas.webp"
+                alt=""
+              />
+            </div>
+            <div>
+              <a href="#" class="navigation__gaan__noord-link">gaan noord</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </article>
+</section>
+
+<!-- _________________________________________________________________________________ -->
+<!-- TODO: CSS SECTION - STYLES (PASTE BELOW IN CSS FILE) -->
+<!-- _________________________________________________________________________________ -->
+
+<style>
+  /* ________________________________________________________________________________________________________________________ */
+
+  /* FIXME: SECTION 3 - BLOCK FEATURE (ARTICLE) - ONS STORIE */
+
+  /* ________________________________________________________________________________________________________________________ */
+
+  /* TODO: MOBILE (first) : Screen sizes between 320px - 768px */
+
+  /* -------------------------------------------------------- */
+  /* BLOCK FEATURE (ARTICLE) COMPONENT - TODO: GRID LAYOUT */
+  /* -------------------------------------------------------- */
+
+  .feature__grid {
+    display: grid;
+  }
+
+  /* -------------------------------------------------------- */
+
+  .feature__block {
+    width: 100%;
+    background: var(--color-feature__background);
+  }
+
+  .feature {
+    row-gap: 5rem;
+    column-gap: 5rem;
+    margin: -5.58px 5rem;
+  }
+
+  .feature__image {
+    width: 100%;
+  }
+
+  .feature__content {
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+
+  .feature__heading {
+    font-size: 5rem;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .feature__story {
+    font-size: 2.2rem;
+    margin-bottom: 0;
+  }
+
+  /* .nav__ons__storie .nav__noord {
+  background: var(--color-feature__background);
+} */
+
+  /* TODO: MEDIA QUERY (BLOCK FEATURE) - TABLET / LAPTOP / PC - Screen sizes larger than 768px */
+
+  @media screen and (min-width: 768px) {
+    .feature__content {
+      align-self: center;
+    }
+
+    .feature__heading {
+      margin-top: 7rem;
+    }
+
+    .feature__story {
+      font-size: 2.6rem;
+    }
+
+    .feature__grid--1x2 {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  /* ________________________________________________________________________________________________________________________ */
+
+  /* FIXME: SECTION 4 - NAVIGATION (LINK TO TOP OF PAGE) - "GAAN NOORD" */
+
+  /* ________________________________________________________________________________________________________________________ */
+
+  /* TODO: MOBILE (first) : Screen sizes between 320px - 768px */
+
+  .block__navigation__gaan__noord {
+    --padding-vertical: 2rem;
+    padding: var(--padding-vertical) 2rem;
+    text-align: center;
+  }
+
+  .container__navigation__gaan__noord {
+    max-width: 1140px;
+    margin: 0 auto;
+  }
+
+  .navigation__gaan__noord__ons__storie {
+    background: var(--color-feature__background);
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+  }
+
+  .navigation__gaan__noord__ons_storie__header {
+    text-align: center;
+    margin-bottom: 4rem;
+  }
+
+  .navigation__gaan__noord__other__header {
+    text-align: center;
+    margin-bottom: 4rem;
+  }
+
+  .navigation__gaan__noord__other {
+    background: var(--color-nav__noord-background);
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+  }
+
+  .navigation__gaan__noord-image {
+    width: 35px;
+    height: 35px;
+    padding-right: 2rem;
+  }
+
+  .navigation__gaan__noord-link {
+    color: var(--color-nav__noord-link);
+    font-size: 2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+
+  .navigation__gaan__noord-link:hover {
+    color: var(--color-nav__noord-link-hover);
+  }
+
+  /* MEDIA QUERY (NAVIGATION - NOORD) - TABLET / LAPTOP / PC - Screen sizes larger than 768px */
+
+  @media screen and (min-width: 768px) {
+    .navigation__gaan__noord__ons__storie {
+      margin-top: 3rem;
+    }
+
+    .navigation__gaan__noord__other {
+      margin-top: 5rem;
+    }
+
+    .navigation__gaan__noord-link {
+      font-size: 2.5rem;
+    }
+  }
+</style>
