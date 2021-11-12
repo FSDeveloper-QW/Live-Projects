@@ -582,7 +582,7 @@ a {
 /* TODO: MOBILE (first) : Screen sizes between 320px - 768px                               */
 /* _______________________________________________________________________________________ */
 
-.voorafbestellings__banner {
+/* .voorafbestellings__banner {
   position: relative;
   top: 0;
   left: 0;
@@ -621,13 +621,13 @@ a {
   top: 70%;
   left: 50%;
   transform: translate(-50%, -50%);
-}
+} */
 
 /* ______________________________________________________________________________________________________ */
 /* TODO: MEDIA QUERY (VOORAFBESTELLINGS - BANNER) - TABLET / LAPTOP / PC - Screen sizes larger than 768px */
 /* ______________________________________________________________________________________________________ */
 
-@media screen and (min-width: 768px) {
+/* @media screen and (min-width: 768px) {
   .voorafbestellings__header__01 {
     font-size: 5rem;
   }
@@ -635,7 +635,7 @@ a {
   .voorafbestellings__header__02 {
     font-size: 3rem;
   }
-}
+} */
 
 /* _______________________________________________________________________________________ */
 /* VOORAFBESTELLINGS COMPONENT - TODO: LINKS TO DOWNLOADABLE PDF - BANNER */
@@ -645,7 +645,7 @@ a {
 /* TODO: MOBILE (first) : Screen sizes between 320px - 768px                               */
 /* _______________________________________________________________________________________ */
 
-.voorafbestellings__links__banner {
+/* .voorafbestellings__links__banner {
   position: relative;
   top: 0;
   left: 0;
@@ -684,14 +684,13 @@ a {
   top: 35%;
   left: 50%;
   transform: translate(-50%, -50%);
-  /* border: 1px solid yellow; */
-}
+} */
 
 /* _____________________________________________________________________________________________________ */
 /* TODO: MEDIA QUERY (VOORAFBESTELLINGS - LINKS) - TABLET / LAPTOP / PC - Screen sizes larger than 768px */
 /* _____________________________________________________________________________________________________ */
 
-@media screen and (min-width: 768px) {
+/* @media screen and (min-width: 768px) {
   .voorafbestellings__links__header__01 {
     font-size: 5rem;
   }
@@ -699,27 +698,27 @@ a {
   .voorafbestellings__links__header__02 {
     font-size: 3rem;
   }
-}
+} */
 
 /* _______________________________________________________________________________________ */
 /* NAVIGATION COMPONENT 1 - TODO: DOWNLOAD VOORAFBESTELLING BROSJURE - DAMES               */
 /* _______________________________________________________________________________________ */
 
-.voorafbestellings__brochure__links {
+/* .voorafbestellings__brochure__links {
   background: #1a354a;
   display: flex;
   row-gap: 0;
   column-gap: 3rem;
   justify-content: center;
-  /* margin: -0.6rem 0; */
   margin-top: -0.6rem;
   margin-bottom: -2.5rem;
-}
+} */
+
 /* _______________________________________________________________________________________ */
 /* TODO: MOBILE (first) : Screen sizes between 320px - 768px                               */
 /* _______________________________________________________________________________________ */
 
-.navigation__download__brochure__preorder__dames__background-all {
+/* .navigation__download__brochure__preorder__dames__background-all {
   background: #1a354a;
   padding-top: 1rem;
 }
@@ -750,13 +749,13 @@ a {
 
 .navigation__download__brochure__preorder__dames__checkout-link:hover {
   color: var(--color-nav__noord-link-hover);
-}
+} */
 
 /* _____________________________________________________________________________________________________________________ */
 /* TODO: MEDIA QUERY (VOORAFBESTELLINGS - NAVIGATION 1 - DAMES) - TABLET / LAPTOP / PC - Screen sizes larger than 768px  */
 /* _____________________________________________________________________________________________________________________ */
 
-@media screen and (min-width: 768px) {
+/* @media screen and (min-width: 768px) {
   .navigation__download__brochure__preorder__dames__checkout {
     margin-top: 0;
   }
@@ -764,7 +763,7 @@ a {
   .navigation__download__brochure__preorder__dames__checkout-link {
     font-size: 2.2rem;
   }
-}
+} */
 
 /* _______________________________________________________________________________________ */
 /* NAVIGATION COMPONENT 2 - TODO: DOWNLOAD VOORAFBESTELLING BROSJURE - KINDERS             */
@@ -774,7 +773,7 @@ a {
 /* TODO: MOBILE (first) : Screen sizes between 320px - 768px */
 /* _______________________________________________________________________________________ */
 
-.navigation__download__brochure__preorder__kinders__background-all {
+/* .navigation__download__brochure__preorder__kinders__background-all {
   background: #1a354a;
   padding-top: 1rem;
 }
@@ -805,13 +804,13 @@ a {
 
 .navigation__download__brochure__preorder__kinders__checkout-link:hover {
   color: var(--color-nav__noord-link-hover);
-}
+} */
 
 /* _______________________________________________________________________________________________________________________ */
 /* TODO: MEDIA QUERY (VOORAFBESTELLINGS - NAVIGATION 2 - KINDERS) - TABLET / LAPTOP / PC - Screen sizes larger than 768px  */
 /* _______________________________________________________________________________________________________________________ */
 
-@media screen and (min-width: 768px) {
+/* @media screen and (min-width: 768px) {
   .navigation__download__brochure__preorder__kinders__checkout {
     margin-top: 0;
   }
@@ -819,11 +818,259 @@ a {
   .navigation__download__brochure__preorder__kinders__checkout-link {
     font-size: 2.2rem;
   }
+} */
+
+/* _______________________________________________________________________________________ */
+
+/* FIXME: SECTION 5 (COMPETITIONS) - KOMPETISIES (BANNER)                                  */
+
+/* _______________________________________________________________________________________ */
+
+/* _______________________________________________________________________________________ */
+/* TODO: MOBILE (first) : Screen sizes between 320px - 768px                               */
+/* _______________________________________________________________________________________ */
+
+.kompetisies__banner {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+.kompetisies__bannner {
+  margin-top: 0;
+}
+
+.kompetisies__image {
+  width: 100%;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+.kompetisies__header__01 {
+  position: absolute;
+  font-size: 1.4rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  color: var(--color-closing__banner-header);
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.kompetisies__header__02 {
+  position: absolute;
+  font-size: 1.5rem;
+  font-weight: 400;
+  text-transform: none;
+  letter-spacing: 4px;
+  color: var(--color-closing__banner-header);
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* ______________________________________________________________________________________________________ */
+/* TODO: MEDIA QUERY (KOMPETISIES - BANNER) - TABLET / LAPTOP / PC - Screen sizes larger than 768px       */
+/* ______________________________________________________________________________________________________ */
+
+@media screen and (min-width: 768px) {
+  .kompetisies__header__01 {
+    font-size: 4rem;
+  }
+
+  .kompetisies__header__02 {
+    font-size: 3rem;
+  }
+}
+
+/* _______________________________________________________________________________________ */
+/* KOMPETISIES COMPONENT - TODO: LINKS TO DOWNLOADABLE PDF - BANNER                        */
+/* _______________________________________________________________________________________ */
+
+/* _______________________________________________________________________________________ */
+/* TODO: MOBILE (first) : Screen sizes between 320px - 768px                               */
+/* _______________________________________________________________________________________ */
+
+.kompetisies__links__banner {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+.kompetisies__links__bannner {
+  margin-top: 0;
+}
+
+.kompetisies__links__image {
+  width: 100%;
+  position: relative;
+  top: -0.6rem;
+  left: 0;
+}
+
+.kompetisies__links__header__01 {
+  position: absolute;
+  font-size: 2rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  color: var(--color-closing__banner-header);
+  top: 3%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.kompetisies__links__header__02 {
+  position: absolute;
+  font-size: 1.5rem;
+  font-weight: 400;
+  text-transform: none;
+  letter-spacing: 4px;
+  color: var(--color-closing__banner-header);
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* _____________________________________________________________________________________________________ */
+/* TODO: MEDIA QUERY (VOORAFBESTELLINGS - LINKS) - TABLET / LAPTOP / PC - Screen sizes larger than 768px */
+/* _____________________________________________________________________________________________________ */
+
+@media screen and (min-width: 768px) {
+  .kompetisies__links__header__01 {
+    font-size: 5rem;
+  }
+
+  .kompetisies__links__header__02 {
+    font-size: 3rem;
+  }
+}
+
+/* _______________________________________________________________________________________ */
+/* NAVIGATION COMPONENT 1 - TODO: DOWNLOAD KOMPETISIE BROSJURE - LAERSKOLE                 */
+/* _______________________________________________________________________________________ */
+
+.kompetisies__brochure__links {
+  background: #1a354a;
+  display: flex;
+  row-gap: 0;
+  column-gap: 3rem;
+  justify-content: center;
+  margin-top: -0.6rem;
+  margin-bottom: -2.5rem;
+}
+
+/* _______________________________________________________________________________________ */
+/* TODO: MOBILE (first) : Screen sizes between 320px - 768px                               */
+/* _______________________________________________________________________________________ */
+
+.navigation__download__brochure__kompetisies__laerskole__background-all {
+  background: #1a354a;
+  padding-top: 1rem;
+}
+
+.navigation__download__brochure__kompetisies__laerskole__background-link {
+  background: #1a354a;
+}
+
+.navigation__download__brochure__kompetisies__laerskole__checkout {
+  background: #1a354a;
+  display: flex;
+  justify-content: center;
+  margin-top: 0;
+}
+
+.navigation__download__brochure__kompetisies__laerskole__checkout-image {
+  width: 35px;
+  height: 35px;
+  padding-right: 2rem;
+}
+
+.navigation__download__brochure__kompetisies__laerskole__checkout-link {
+  color: #ffffff;
+  font-size: 1.4rem;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.navigation__download__brochure__kompetisies__laerskole__checkout-link:hover {
+  color: var(--color-nav__noord-link-hover);
+}
+
+/* _____________________________________________________________________________________________________________________ */
+/* TODO: MEDIA QUERY (COMPETITION - NAVIGATION 1 - LAERSKOLE - TABLET / LAPTOP / PC - Screen sizes larger than 768px     */
+/* _____________________________________________________________________________________________________________________ */
+
+@media screen and (min-width: 768px) {
+  .navigation__download__brochure__kompetisies__laerskole__checkout {
+    margin-top: 0;
+  }
+
+  .navigation__download__brochure__kompetisies__laerskole__checkout-link {
+    font-size: 2.2rem;
+  }
+}
+
+/* _______________________________________________________________________________________ */
+/* NAVIGATION COMPONENT 2 - TODO: DOWNLOAD KOMPETISIES BROSJURE - HOERSKOLE                */
+/* _______________________________________________________________________________________ */
+
+/* _______________________________________________________________________________________ */
+/* TODO: MOBILE (first) : Screen sizes between 320px - 768px                               */
+/* _______________________________________________________________________________________ */
+
+.navigation__download__brochure__kompetisies__hoerskole__background-all {
+  background: #1a354a;
+  padding-top: 1rem;
+}
+
+.navigation__download__brochure__kompetisies__hoerskole__background-link {
+  background: #1a354a;
+}
+
+.navigation__download__brochure__kompetisies__hoerskole__checkout {
+  background: #1a354a;
+  display: flex;
+  justify-content: center;
+  margin-top: 0;
+}
+
+.navigation__download__brochure__kompetisies__hoerskole__checkout-image {
+  width: 35px;
+  height: 35px;
+  padding-right: 2rem;
+}
+
+.navigation__download__brochure__kompetisies__hoerskole__checkout-link {
+  color: #ffffff;
+  font-size: 1.4rem;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.navigation__download__brochure__kompetisies__hoerskole__checkout-link:hover {
+  color: var(--color-nav__noord-link-hover);
+}
+
+/* _______________________________________________________________________________________________________________________ */
+/* TODO: MEDIA QUERY (VOORAFBESTELLINGS - NAVIGATION 2 - KINDERS) - TABLET / LAPTOP / PC - Screen sizes larger than 768px  */
+/* _______________________________________________________________________________________________________________________ */
+
+@media screen and (min-width: 768px) {
+  .navigation__download__brochure__kompetisies__hoerskole__checkout {
+    margin-top: 0;
+  }
+
+  .navigation__download__brochure__kompetisies__hoerskole__checkout-link {
+    font-size: 2.2rem;
+  }
 }
 
 /* _______________________________________________________________________________________ */
 
-/* FIXME: SECTION 5 (NOTIFICATION STRIP 1) - PRODUCT PRICING NOTIFICIATION                 */
+/* FIXME: SECTION 6 (NOTIFICATION STRIP 1) - PRODUCT PRICING NOTIFICIATION                 */
 
 /* _______________________________________________________________________________________ */
 
@@ -876,7 +1123,7 @@ a {
 
 /* _______________________________________________________________________________________ */
 
-/* FIXME: SECTION 6 (PRODUCTS BLOCK) - PART 1 - DAMES PRODUKTE                             */
+/* FIXME: SECTION 7 (PRODUCTS BLOCK) - PART 1, 2, 3 - DAMES, KINDERS & HOEDJIE PRODUKTE    */
 
 /* _______________________________________________________________________________________ */
 
@@ -2533,6 +2780,1131 @@ a {
   margin-bottom: 0;
 }
 
+/* _______________________________________________________________________________________ */
+/* FIXME: PRODUCT 11 - CARD & SPECIFICATIONS - "KHAKI'Q ROKKIE" (KINDERS)                  */
+/* _______________________________________________________________________________________ */
+
+.background__product-11 {
+  width: auto;
+  background: var(--color-clothing__product__01__heading);
+}
+
+.spacing__product-11 {
+  row-gap: 5rem;
+  column-gap: 2rem;
+  margin: 0 5rem;
+}
+
+.image__product-11 {
+  width: 100%;
+}
+
+.product-11__content {
+  text-align: center;
+}
+
+.product-11__name {
+  font-size: 4rem;
+  font-weight: 700;
+  margin-top: 0;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.product-11__specifications {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 3px;
+  text-transform: lowercase;
+}
+
+.product-11__specifications-list {
+  list-style-type: none;
+  font-size: 1.5rem;
+  line-height: 1.5;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+.product-11__sizes {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 3px;
+  text-transform: lowercase;
+}
+
+.product-11__sizes-list {
+  text-align: center;
+  font-size: 1.5rem;
+  line-height: 1.5;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/* .product-11__colours {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 3px;
+  text-transform: lowercase;
+} */
+
+/* .product-11__colours-list {
+  text-align: centre;
+  font-size: 1.7rem;
+  line-height: 1.5;
+  margin-top: 0;
+  margin-bottom: 0;
+} */
+
+/* .product-11__category {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 3px;
+  text-transform: lowercase;
+} */
+
+/* .product-11__category-name {
+  text-align: centre;
+  font-size: 1.7rem;
+  line-height: 1.5;
+  margin-top: 0;
+  margin-bottom: 0;
+} */
+
+/* .product-11__product__number {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 3px;
+  text-transform: lowercase;
+} */
+
+/* .product-11__sku {
+  text-align: centre;
+  font-size: 1.7rem;
+  line-height: 1.5;
+  margin-top: 0;
+  margin-bottom: 0;
+} */
+
+/* .product-11__range {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 3px;
+  text-transform: lowercase;
+} */
+
+/* .product-11__range-name {
+  text-align: centre;
+  font-size: 1.7rem;
+  line-height: 1.5;
+  margin-top: 0;
+  margin-bottom: 0;
+} */
+
+/* .product-11__price-heading {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 3px;
+  text-transform: lowercase;
+} */
+
+.product-11__price {
+  text-align: center;
+  font-size: 5rem;
+  font-weight: 700;
+  line-height: 1.5;
+  margin-top: 2rem;
+  margin-bottom: 0;
+}
+
+/* _______________________________________________________________________________________ */
+/* FIXME: PRODUCT 12 - CARD & SPECIFICATIONS - HOEDJIES - NONNATJIE                        */
+/* _______________________________________________________________________________________ */
+
+.background__product-12 {
+  width: auto;
+  background: var(--color-clothing__product__01__heading);
+}
+
+.spacing__product-12 {
+  row-gap: 5rem;
+  column-gap: 2rem;
+  margin: 0 5rem;
+}
+
+.image__product-12 {
+  width: 100%;
+}
+
+.product-12__content {
+  text-align: center;
+}
+
+.product-12__name {
+  font-size: 4rem;
+  font-weight: 700;
+  margin-top: 0;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.product-12__history {
+  list-style: none;
+  font-size: 1.5rem;
+  line-height: 1.5;
+  margin-top: -2rem;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+.product-12__specifications {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 3px;
+  text-transform: lowercase;
+}
+
+.product-12__specifications-list {
+  list-style-type: none;
+  font-size: 1.5rem;
+  line-height: 1.5;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+.product-12__sizes {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 3px;
+  text-transform: lowercase;
+}
+
+.product-12__sizes-list {
+  text-align: center;
+  font-size: 1.5rem;
+  line-height: 1.5;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/* .product-12__colours {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 3px;
+  text-transform: lowercase;
+} */
+
+/* .product-12__colours-list {
+  text-align: centre;
+  font-size: 1.7rem;
+  line-height: 1.5;
+  margin-top: 0;
+  margin-bottom: 0;
+} */
+
+/* .product-12__category {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 3px;
+  text-transform: lowercase;
+} */
+
+/* .product-12__category-name {
+  text-align: centre;
+  font-size: 1.7rem;
+  line-height: 1.5;
+  margin-top: 0;
+  margin-bottom: 0;
+} */
+
+/* .product-12__product__number {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 3px;
+  text-transform: lowercase;
+} */
+
+/* .product-12__sku {
+  text-align: centre;
+  font-size: 1.7rem;
+  line-height: 1.5;
+  margin-top: 0;
+  margin-bottom: 0;
+} */
+
+/* .product-12__range {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 3px;
+  text-transform: lowercase;
+} */
+
+/* .product-12__range-name {
+  text-align: centre;
+  font-size: 1.7rem;
+  line-height: 1.5;
+  margin-top: 0;
+  margin-bottom: 0;
+} */
+
+/* .product-12__price-heading {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 3px;
+  text-transform: lowercase;
+} */
+
+.product-12__price {
+  text-align: center;
+  font-size: 5rem;
+  font-weight: 700;
+  line-height: 1.5;
+  margin-top: 2rem;
+  margin-bottom: 0;
+}
+
+/* _______________________________________________________________________________________ */
+/* FIXME: PRODUCT 13 - CARD & SPECIFICATIONS - HOEDJIES - SARAH DE JAGER                   */
+/* _______________________________________________________________________________________ */
+
+.background__product-13 {
+  width: auto;
+  background: var(--color-clothing__product__01__heading);
+}
+
+.spacing__product-13 {
+  row-gap: 5rem;
+  column-gap: 2rem;
+  margin: 0 5rem;
+}
+
+.image__product-13 {
+  width: 100%;
+}
+
+.product-13__content {
+  text-align: center;
+}
+
+.product-13__name {
+  font-size: 4rem;
+  font-weight: 700;
+  margin-top: 0;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.product-13__history {
+  list-style: none;
+  font-size: 1.5rem;
+  line-height: 1.5;
+  margin-top: -2rem;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+.product-13__specifications {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 3px;
+  text-transform: lowercase;
+}
+
+.product-13__specifications-list {
+  list-style-type: none;
+  font-size: 1.5rem;
+  line-height: 1.5;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+.product-13__sizes {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 3px;
+  text-transform: lowercase;
+}
+
+.product-13__sizes-list {
+  text-align: center;
+  font-size: 1.5rem;
+  line-height: 1.5;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/* .product-13__colours {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 3px;
+  text-transform: lowercase;
+} */
+
+/* .product-13__colours-list {
+  text-align: centre;
+  font-size: 1.7rem;
+  line-height: 1.5;
+  margin-top: 0;
+  margin-bottom: 0;
+} */
+
+/* .product-13__category {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 3px;
+  text-transform: lowercase;
+} */
+
+/* .product-13__category-name {
+  text-align: centre;
+  font-size: 1.7rem;
+  line-height: 1.5;
+  margin-top: 0;
+  margin-bottom: 0;
+} */
+
+/* .product-13__product__number {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 3px;
+  text-transform: lowercase;
+} */
+
+/* .product-13__sku {
+  text-align: centre;
+  font-size: 1.7rem;
+  line-height: 1.5;
+  margin-top: 0;
+  margin-bottom: 0;
+} */
+
+/* .product-13__range {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 3px;
+  text-transform: lowercase;
+} */
+
+/* .product-13__range-name {
+  text-align: centre;
+  font-size: 1.7rem;
+  line-height: 1.5;
+  margin-top: 0;
+  margin-bottom: 0;
+} */
+
+/* .product-13__price-heading {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 3px;
+  text-transform: lowercase;
+} */
+
+.product-13__price {
+  text-align: center;
+  font-size: 5rem;
+  font-weight: 700;
+  line-height: 1.5;
+  margin-top: 2rem;
+  margin-bottom: 0;
+}
+
+/* _______________________________________________________________________________________ */
+/* FIXME: PRODUCT 14 - CARD & SPECIFICATIONS - HOEDJIES - KATRIEN                          */
+/* _______________________________________________________________________________________ */
+
+.background__product-14 {
+  width: auto;
+  background: var(--color-clothing__product__01__heading);
+}
+
+.spacing__product-14 {
+  row-gap: 5rem;
+  column-gap: 2rem;
+  margin: 0 5rem;
+}
+
+.image__product-14 {
+  width: 100%;
+}
+
+.product-14__content {
+  text-align: center;
+}
+
+.product-14__name {
+  font-size: 4rem;
+  font-weight: 700;
+  margin-top: 0;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.product-14__history {
+  list-style: none;
+  font-size: 1.5rem;
+  line-height: 1.5;
+  margin-top: -2rem;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+.product-14__specifications {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 3px;
+  text-transform: lowercase;
+}
+
+.product-14__specifications-list {
+  list-style-type: none;
+  font-size: 1.5rem;
+  line-height: 1.5;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+.product-14__sizes {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 3px;
+  text-transform: lowercase;
+}
+
+.product-14__sizes-list {
+  text-align: center;
+  font-size: 1.5rem;
+  line-height: 1.5;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/* .product-14__colours {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 3px;
+  text-transform: lowercase;
+} */
+
+/* .product-14__colours-list {
+  text-align: centre;
+  font-size: 1.7rem;
+  line-height: 1.5;
+  margin-top: 0;
+  margin-bottom: 0;
+} */
+
+/* .product-14__category {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 3px;
+  text-transform: lowercase;
+} */
+
+/* .product-14__category-name {
+  text-align: centre;
+  font-size: 1.7rem;
+  line-height: 1.5;
+  margin-top: 0;
+  margin-bottom: 0;
+} */
+
+/* .product-14__product__number {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 3px;
+  text-transform: lowercase;
+} */
+
+/* .product-14__sku {
+  text-align: centre;
+  font-size: 1.7rem;
+  line-height: 1.5;
+  margin-top: 0;
+  margin-bottom: 0;
+} */
+
+/* .product-14__range {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 3px;
+  text-transform: lowercase;
+} */
+
+/* .product-14__range-name {
+  text-align: centre;
+  font-size: 1.7rem;
+  line-height: 1.5;
+  margin-top: 0;
+  margin-bottom: 0;
+} */
+
+/* .product-14__price-heading {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 3px;
+  text-transform: lowercase;
+} */
+
+.product-14__price {
+  text-align: center;
+  font-size: 5rem;
+  font-weight: 700;
+  line-height: 1.5;
+  margin-top: 2rem;
+  margin-bottom: 0;
+}
+
+/* _______________________________________________________________________________________ */
+/* FIXME: PRODUCT 15 - CARD & SPECIFICATIONS - HOEDJIES - VOSHAARNOOI                      */
+/* _______________________________________________________________________________________ */
+
+.background__product-15 {
+  width: auto;
+  background: var(--color-clothing__product__01__heading);
+}
+
+.spacing__product-15 {
+  row-gap: 5rem;
+  column-gap: 2rem;
+  margin: 0 5rem;
+}
+
+.image__product-15 {
+  width: 100%;
+}
+
+.product-15__content {
+  text-align: center;
+}
+
+.product-15__name {
+  font-size: 4rem;
+  font-weight: 700;
+  margin-top: 0;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.product-15__history {
+  list-style: none;
+  font-size: 1.5rem;
+  line-height: 1.5;
+  margin-top: -2rem;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+.product-15__specifications {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 3px;
+  text-transform: lowercase;
+}
+
+.product-15__specifications-list {
+  list-style-type: none;
+  font-size: 1.5rem;
+  line-height: 1.5;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+.product-15__sizes {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 3px;
+  text-transform: lowercase;
+}
+
+.product-15__sizes-list {
+  text-align: center;
+  font-size: 1.5rem;
+  line-height: 1.5;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/* .product-15__colours {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 3px;
+  text-transform: lowercase;
+} */
+
+/* .product-15__colours-list {
+  text-align: centre;
+  font-size: 1.7rem;
+  line-height: 1.5;
+  margin-top: 0;
+  margin-bottom: 0;
+} */
+
+/* .product-15__category {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 3px;
+  text-transform: lowercase;
+} */
+
+/* .product-15__category-name {
+  text-align: centre;
+  font-size: 1.7rem;
+  line-height: 1.5;
+  margin-top: 0;
+  margin-bottom: 0;
+} */
+
+/* .product-15__product__number {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 3px;
+  text-transform: lowercase;
+} */
+
+/* .product-15__sku {
+  text-align: centre;
+  font-size: 1.7rem;
+  line-height: 1.5;
+  margin-top: 0;
+  margin-bottom: 0;
+} */
+
+/* .product-15__range {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 3px;
+  text-transform: lowercase;
+} */
+
+/* .product-15__range-name {
+  text-align: centre;
+  font-size: 1.7rem;
+  line-height: 1.5;
+  margin-top: 0;
+  margin-bottom: 0;
+} */
+
+/* .product-15__price-heading {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 3px;
+  text-transform: lowercase;
+} */
+
+.product-15__price {
+  text-align: center;
+  font-size: 5rem;
+  font-weight: 700;
+  line-height: 1.5;
+  margin-top: 2rem;
+  margin-bottom: 0;
+}
+
+/* _______________________________________________________________________________________ */
+/* FIXME: PRODUCT 16 - CARD & SPECIFICATIONS - HOEDJIES - SPOOKMEISIE                      */
+/* _______________________________________________________________________________________ */
+
+.background__product-16 {
+  width: auto;
+  background: var(--color-clothing__product__01__heading);
+}
+
+.spacing__product-16 {
+  row-gap: 5rem;
+  column-gap: 2rem;
+  margin: 0 5rem;
+}
+
+.image__product-16 {
+  width: 100%;
+}
+
+.product-16__content {
+  text-align: center;
+}
+
+.product-16__name {
+  font-size: 4rem;
+  font-weight: 700;
+  margin-top: 0;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.product-16__history {
+  list-style: none;
+  font-size: 1.5rem;
+  line-height: 1.5;
+  margin-top: -2rem;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+.product-16__specifications {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 3px;
+  text-transform: lowercase;
+}
+
+.product-16__specifications-list {
+  list-style-type: none;
+  font-size: 1.5rem;
+  line-height: 1.5;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+.product-16__sizes {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 3px;
+  text-transform: lowercase;
+}
+
+.product-16__sizes-list {
+  text-align: center;
+  font-size: 1.5rem;
+  line-height: 1.5;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/* .product-16__colours {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 3px;
+  text-transform: lowercase;
+} */
+
+/* .product-16__colours-list {
+  text-align: centre;
+  font-size: 1.7rem;
+  line-height: 1.5;
+  margin-top: 0;
+  margin-bottom: 0;
+} */
+
+/* .product-16__category {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 3px;
+  text-transform: lowercase;
+} */
+
+/* .product-16__category-name {
+  text-align: centre;
+  font-size: 1.7rem;
+  line-height: 1.5;
+  margin-top: 0;
+  margin-bottom: 0;
+} */
+
+/* .product-16__product__number {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 3px;
+  text-transform: lowercase;
+} */
+
+/* .product-16__sku {
+  text-align: centre;
+  font-size: 1.7rem;
+  line-height: 1.5;
+  margin-top: 0;
+  margin-bottom: 0;
+} */
+
+/* .product-16__range {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 3px;
+  text-transform: lowercase;
+} */
+
+/* .product-16__range-name {
+  text-align: centre;
+  font-size: 1.7rem;
+  line-height: 1.5;
+  margin-top: 0;
+  margin-bottom: 0;
+} */
+
+/* .product-16__price-heading {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 3px;
+  text-transform: lowercase;
+} */
+
+.product-16__price {
+  text-align: center;
+  font-size: 5rem;
+  font-weight: 700;
+  line-height: 1.5;
+  margin-top: 2rem;
+  margin-bottom: 0;
+}
+
+/* _______________________________________________________________________________________ */
+/* FIXME: PRODUCT 17 - CARD & SPECIFICATIONS - HOEDJIES - SPROETJIES                       */
+/* _______________________________________________________________________________________ */
+
+.background__product-17 {
+  width: auto;
+  background: var(--color-clothing__product__01__heading);
+}
+
+.spacing__product-17 {
+  row-gap: 5rem;
+  column-gap: 2rem;
+  margin: 0 5rem;
+}
+
+.image__product-17 {
+  width: 100%;
+}
+
+.product-17__content {
+  text-align: center;
+}
+
+.product-17__name {
+  font-size: 4rem;
+  font-weight: 700;
+  margin-top: 0;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.product-17__history {
+  list-style: none;
+  font-size: 1.5rem;
+  line-height: 1.5;
+  margin-top: -2rem;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+.product-17__specifications {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 3px;
+  text-transform: lowercase;
+}
+
+.product-17__specifications-list {
+  list-style-type: none;
+  font-size: 1.5rem;
+  line-height: 1.5;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+.product-17__sizes {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 3px;
+  text-transform: lowercase;
+}
+
+.product-17__sizes-list {
+  text-align: center;
+  font-size: 1.5rem;
+  line-height: 1.5;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/* .product-17__colours {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 3px;
+  text-transform: lowercase;
+} */
+
+/* .product-17__colours-list {
+  text-align: centre;
+  font-size: 1.7rem;
+  line-height: 1.5;
+  margin-top: 0;
+  margin-bottom: 0;
+} */
+
+/* .product-17__category {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 3px;
+  text-transform: lowercase;
+} */
+
+/* .product-17__category-name {
+  text-align: centre;
+  font-size: 1.7rem;
+  line-height: 1.5;
+  margin-top: 0;
+  margin-bottom: 0;
+} */
+
+/* .product-17__product__number {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 3px;
+  text-transform: lowercase;
+} */
+
+/* .product-17__sku {
+  text-align: centre;
+  font-size: 1.7rem;
+  line-height: 1.5;
+  margin-top: 0;
+  margin-bottom: 0;
+} */
+
+/* .product-17__range {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 3px;
+  text-transform: lowercase;
+} */
+
+/* .product-17__range-name {
+  text-align: centre;
+  font-size: 1.7rem;
+  line-height: 1.5;
+  margin-top: 0;
+  margin-bottom: 0;
+} */
+
+/* .product-17__price-heading {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 3px;
+  text-transform: lowercase;
+} */
+
+.product-17__price {
+  text-align: center;
+  font-size: 5rem;
+  font-weight: 700;
+  line-height: 1.5;
+  margin-top: 2rem;
+  margin-bottom: 0;
+}
+
 /* __________________________________________________________________________________________________________ */
 /* PRODUCT BLOCK COMPONENT - TODO: NAVIGATION (DOWNLOAD BROCHURE) - "lAAI BROSJURE AF                         */
 /* ALL PRODUCTS USE THE SAME NAVIGATION (DOWNLOAD BROCHURE) - LINK TO MOODBOARD BROCHURE & MANUAL ORDER FORM  */
@@ -2625,7 +3997,14 @@ a {
   .product-07__name,
   .product-08__name,
   .product-09__name,
-  .product-10__name {
+  .product-10__name,
+  .product-11__name,
+  .product-12__name,
+  .product-13__name,
+  .product-14__name,
+  .product-15__name,
+  .product-16__name,
+  .product-17__name {
     margin-top: 8rem;
   }
 
@@ -2638,7 +4017,14 @@ a {
   .product-07__specifications-list,
   .product-08__specifications-list,
   .product-09__specifications-list,
-  .product-10__specifications-list {
+  .product-10__specifications-list,
+  .product-11__specifications-list,
+  .product-12__specifications-list,
+  .product-13__specifications-list,
+  .product-14__specifications-list,
+  .product-15__specifications-list,
+  .product-16__specifications-list,
+  .product-17__specifications-list {
     font-size: 1.6rem;
   }
 
@@ -2651,7 +4037,14 @@ a {
   .product-07__sizes-list,
   .product-08__sizes-list,
   .product-09__sizes-list,
-  .product-10__sizes-list {
+  .product-10__sizes-list,
+  .product-11__sizes-list,
+  .product-12__sizes-list,
+  .product-13__sizes-list,
+  .product-14__sizes-list,
+  .product-15__sizes-list,
+  .product-16__sizes-list,
+  .product-17__sizes-list {
     font-size: 1.6rem;
   }
 
@@ -2678,7 +4071,7 @@ a {
 
 /* _______________________________________________________________________________________ */
 
-/* FIXME: SECTION 7 (NOTIFICATION STRIP 2) - AFLEWERINGSKOSTES                             */
+/* FIXME: SECTION 8 (NOTIFICATION STRIP 2) - AFLEWERINGSKOSTES                             */
 
 /* _______________________________________________________________________________________ */
 
@@ -2784,7 +4177,7 @@ a {
 
 /* _______________________________________________________________________________________ */
 
-/* FIXME: SECTION 8 (ONLINE FORM) - BESTELVORM */
+/* FIXME: SECTION 9 (ONLINE FORM) - BESTELVORM */
 
 /* _______________________________________________________________________________________ */
 
@@ -3586,7 +4979,7 @@ button {
 
 /* _______________________________________________________________________________________ */
 
-/* FIXME: SECTION 9 - HERVERKOPERS */
+/* FIXME: SECTION 10 - HERVERKOPERS */
 
 /* _______________________________________________________________________________________ */
 
@@ -3651,7 +5044,7 @@ button {
 
 /* _________________________________________________________________________________________ */
 
-/* FIXME: SECTION 10 (TESTIMONIAL SECTION BLOCK) - JOU TERUGVOER                             */
+/* FIXME: SECTION 11 (TESTIMONIAL SECTION BLOCK) - JOU TERUGVOER                             */
 
 /* _________________________________________________________________________________________ */
 
@@ -3804,7 +5197,7 @@ button {
 
 /* _________________________________________________________________________________________ */
 
-/* FIXME: SECTION 11 - CLOSING BANNER - KONTAK ONS                                           */
+/* FIXME: SECTION 12 - CLOSING BANNER - KONTAK ONS                                           */
 
 /* _________________________________________________________________________________________ */
 
@@ -3853,7 +5246,7 @@ button {
 
 /* _____________________________________________________________________________________________ */
 
-/* FIXME: SECTION 12 - FOOTER                                                                    */
+/* FIXME: SECTION 13 - FOOTER                                                                    */
 
 /* _____________________________________________________________________________________________ */
 
@@ -3869,7 +5262,7 @@ button {
 .footer a {
   color: var(--color-footer__anchor-links);
   transition: color 0.4s;
-  letter-spacing: 1.5px;
+  letter-spacing: 1px;
 }
 
 .footer a:hover {
@@ -3894,7 +5287,7 @@ button {
 .footer__heading {
   text-transform: uppercase;
   font-weight: 600;
-  letter-spacing: 1.5px;
+  letter-spacing: 1px;
 }
 
 .footer__brand {
@@ -3945,7 +5338,7 @@ button {
 
 .contact__mobile {
   font-weight: 500;
-  font-size: 2.5rem;
+  font-size: 2.2rem;
   letter-spacing: 0.5rem;
 }
 
@@ -3977,13 +5370,14 @@ button {
   .footer .collapsible__content {
     opacity: 1;
     max-height: 100%;
-    font-size: 2rem;
+    font-size: 1.8rem;
   }
 
   .footer_marketing {
     order: -1;
     margin-top: 0;
-    margin-right: 7rem;
+    padding-right: 3rem;
+    /* margin-right: 2rem; */
   }
 
   .footer__brand {
@@ -4006,21 +5400,22 @@ button {
   }
 
   .footer__contactus {
-    text-align: left;
+    text-align: center;
     font-size: 2rem;
     font-weight: 600;
     width: 100%;
   }
 
   .contact__email {
+    text-align: center;
     font-weight: 500;
-    font-size: 2rem;
+    font-size: 1.8rem;
     letter-spacing: normal;
   }
 
   .contact__mobile {
     font-weight: 500;
-    font-size: 2rem;
+    font-size: 1.8rem;
     letter-spacing: normal;
   }
 
@@ -4036,7 +5431,7 @@ button {
   .footer__copyright {
     font-size: 2rem;
     font-weight: 600;
-    margin-top: 2rem;
+    margin-top: -2.2rem;
     letter-spacing: 2px;
     text-transform: uppercase;
   }
