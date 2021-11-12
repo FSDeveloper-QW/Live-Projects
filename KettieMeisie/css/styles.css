@@ -595,25 +595,25 @@ a {
 .voorafbestellings__image {
   width: 100%;
   position: relative;
-  top: 0;
+  top: 0.6rem;
   left: 0;
 }
 
 .voorafbestellings__header__01 {
   position: absolute;
-  font-size: 2rem;
+  font-size: 1.4rem;
   font-weight: 500;
   text-transform: uppercase;
   letter-spacing: 4px;
   color: var(--color-closing__banner-header);
-  top: 60%;
+  top: 63%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
 
 .voorafbestellings__header__02 {
   position: absolute;
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   font-weight: 400;
   text-transform: none;
   letter-spacing: 4px;
@@ -906,7 +906,7 @@ a {
 .kompetisies__links__image {
   width: 100%;
   position: relative;
-  top: -0.6rem;
+  top: -0.5rem;
   left: 0;
 }
 
