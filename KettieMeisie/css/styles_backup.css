@@ -1159,6 +1159,7 @@ a {
   font-size: 2rem;
   margin-top: 0;
   margin-bottom: 0;
+  text-transform: uppercase;
 }
 
 /* _______________________________________________________________________________________ */
@@ -1179,23 +1180,23 @@ a {
   display: grid;
 }
 
-/* _______________________________________________________________________________________ */
-/* PRODUCT BLOCK COMPONENT - TODO: SETUP THE PRODUCT CATEGORY HEADING - PRODUCTS (DAMES)   */
-/* TO SET RELATIVE POSITIONING OF TEXT OVER IMAGE - For Mobile Screens                     */
-/* _______________________________________________________________________________________ */
+/* ___________________________________________________________________________________________________ */
+/* PRODUCT BLOCK COMPONENT - TODO: SETUP THE PRODUCT CATEGORY HEADING - PRODUCTS (DAMES - STYWE PAS)   */
+/* TO SET RELATIVE POSITIONING OF TEXT OVER IMAGE - For Mobile Screens                                 */
+/* ___________________________________________________________________________________________________ */
 
-.category__dames__background {
+.category__stywe_pas__background {
   background: var(--color-clothing__product__01__background);
 }
 
-.category__dames {
+.category__stywe_pas {
   position: relative;
   top: 0;
   left: 0;
   margin-top: 2rem;
 }
 
-.category__dames__image {
+.category__stywe_pas__image {
   position: relative;
   top: 0;
   left: 0;
@@ -1204,7 +1205,106 @@ a {
   height: 95px;
 }
 
-.category__dames__text {
+.category__stywe_pas__text {
+  width: 100vw;
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* _________________________________________________________________________________________________ */
+/* PRODUCT BLOCK COMPONENT - TODO: SETUP THE PRODUCT CATEGORY HEADING - PRODUCTS (DAMES - T-HEMDE)   */
+/* TO SET RELATIVE POSITIONING OF TEXT OVER IMAGE - For Mobile Screens                               */
+/* _________________________________________________________________________________________________ */
+
+.category__t-hemde__background {
+  background: var(--color-clothing__product__01__background);
+}
+
+.category__t-hemde {
+  position: relative;
+  top: 0;
+  left: 0;
+  margin-top: 2rem;
+}
+
+.category__t-hemde__image {
+  position: relative;
+  top: 0;
+  left: 0;
+  text-align: center;
+  width: 380px;
+  height: 95px;
+}
+
+.category__t-hemde__text {
+  width: 100vw;
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* ___________________________________________________________________________________________________ */
+/* PRODUCT BLOCK COMPONENT - TODO: SETUP THE PRODUCT CATEGORY HEADING - PRODUCTS (DAMES - WINTER)      */
+/* TO SET RELATIVE POSITIONING OF TEXT OVER IMAGE - For Mobile Screens                                 */
+/* ___________________________________________________________________________________________________ */
+
+.category__winter__background {
+  background: var(--color-clothing__product__01__background);
+}
+
+.category__winter {
+  position: relative;
+  top: 0;
+  left: 0;
+  margin-top: 2rem;
+}
+
+.category__winter__image {
+  position: relative;
+  top: 0;
+  left: 0;
+  text-align: center;
+  width: 380px;
+  height: 95px;
+}
+
+.category__winter__text {
+  width: 100vw;
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* ___________________________________________________________________________________________________ */
+/* PRODUCT BLOCK COMPONENT - TODO: SETUP THE PRODUCT CATEGORY HEADING - PRODUCTS (DAMES - SPORT)       */
+/* TO SET RELATIVE POSITIONING OF TEXT OVER IMAGE - For Mobile Screens                                 */
+/* ___________________________________________________________________________________________________ */
+
+.category__sport__background {
+  background: var(--color-clothing__product__01__background);
+}
+
+.category__sport {
+  position: relative;
+  top: 0;
+  left: 0;
+  margin-top: 2rem;
+}
+
+.category__sport__image {
+  position: relative;
+  top: 0;
+  left: 0;
+  text-align: center;
+  width: 380px;
+  height: 95px;
+}
+
+.category__sport__text {
   width: 100vw;
   position: absolute;
   top: 45%;
@@ -1245,6 +1345,39 @@ a {
   transform: translate(-50%, -50%);
 }
 
+/* ___________________________________________________________________________________________________ */
+/* PRODUCT BLOCK COMPONENT - TODO: SETUP THE PRODUCT CATEGORY HEADING - PRODUCTS (HOEDJIES)            */
+/* TO SET RELATIVE POSITIONING OF TEXT OVER IMAGE - For Mobile Screens                                 */
+/* ___________________________________________________________________________________________________ */
+
+.category__hoedjies__background {
+  background: var(--color-clothing__product__01__background);
+}
+
+.category__hoedjies {
+  position: relative;
+  top: 0;
+  left: 0;
+  margin-top: 2rem;
+}
+
+.category__hoedjies__image {
+  position: relative;
+  top: 0;
+  left: 0;
+  text-align: center;
+  width: 380px;
+  height: 95px;
+}
+
+.category__hoedjies__text {
+  width: 100vw;
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 /* _______________________________________________________________________________________ */
 /* PRODUCT BLOCK COMPONENT - TODO: SETUP GENERAL PRODUCT CARD & SPECIFICATIONS             */
 /* ALL PRODUCTS USE THE SAME PRODUCT CARD STYLES                                           */
@@ -1271,6 +1404,7 @@ a {
 
 .product-01__content {
   text-align: center;
+  margin-top: -3rem;
 }
 
 .product-01__name {
@@ -1399,7 +1533,7 @@ a {
   font-size: 5rem;
   font-weight: 700;
   line-height: 1.5;
-  margin-top: 2rem;
+  margin-top: 1rem;
   margin-bottom: 0;
 }
 
@@ -1424,6 +1558,7 @@ a {
 
 .product-02__content {
   text-align: center;
+  margin-top: -3rem;
 }
 
 .product-02__name {
@@ -1552,7 +1687,7 @@ a {
   font-size: 5rem;
   font-weight: 700;
   line-height: 1.5;
-  margin-top: 2rem;
+  margin-top: 1rem;
   margin-bottom: 0;
 }
 
@@ -1577,6 +1712,7 @@ a {
 
 .product-03__content {
   text-align: center;
+  margin-top: -3rem;
 }
 
 .product-03__name {
@@ -1705,7 +1841,7 @@ a {
   font-size: 5rem;
   font-weight: 700;
   line-height: 1.5;
-  margin-top: 2rem;
+  margin-top: 1rem;
   margin-bottom: 0;
 }
 
@@ -1730,6 +1866,7 @@ a {
 
 .product-04__content {
   text-align: center;
+  margin-top: -3rem;
 }
 
 .product-04__name {
@@ -1858,7 +1995,7 @@ a {
   font-size: 5rem;
   font-weight: 700;
   line-height: 1.5;
-  margin-top: 2rem;
+  margin-top: 1rem;
   margin-bottom: 0;
 }
 
@@ -1883,6 +2020,7 @@ a {
 
 .product-05__content {
   text-align: center;
+  margin-top: -3rem;
 }
 
 .product-05__name {
@@ -2011,7 +2149,7 @@ a {
   font-size: 5rem;
   font-weight: 700;
   line-height: 1.5;
-  margin-top: 2rem;
+  margin-top: 1rem;
   margin-bottom: 0;
 }
 
@@ -2036,6 +2174,7 @@ a {
 
 .product-06__content {
   text-align: center;
+  margin-top: -3rem;
 }
 
 .product-06__name {
@@ -2164,7 +2303,7 @@ a {
   font-size: 5rem;
   font-weight: 700;
   line-height: 1.5;
-  margin-top: 2rem;
+  margin-top: 1rem;
   margin-bottom: 0;
 }
 
@@ -2189,6 +2328,7 @@ a {
 
 .product-07__content {
   text-align: center;
+  margin-top: -3rem;
 }
 
 .product-07__name {
@@ -2317,7 +2457,7 @@ a {
   font-size: 5rem;
   font-weight: 700;
   line-height: 1.5;
-  margin-top: 2rem;
+  margin-top: 1rem;
   margin-bottom: 0;
 }
 
@@ -2342,6 +2482,7 @@ a {
 
 .product-08__content {
   text-align: center;
+  margin-top: -3rem;
 }
 
 .product-08__name {
@@ -2470,7 +2611,7 @@ a {
   font-size: 5rem;
   font-weight: 700;
   line-height: 1.5;
-  margin-top: 2rem;
+  margin-top: 1rem;
   margin-bottom: 0;
 }
 
@@ -2495,6 +2636,7 @@ a {
 
 .product-09__content {
   text-align: center;
+  margin-top: -3rem;
 }
 
 .product-09__name {
@@ -2623,7 +2765,7 @@ a {
   font-size: 5rem;
   font-weight: 700;
   line-height: 1.5;
-  margin-top: 2rem;
+  margin-top: 1rem;
   margin-bottom: 0;
 }
 
@@ -2648,6 +2790,7 @@ a {
 
 .product-10__content {
   text-align: center;
+  margin-top: -3rem;
 }
 
 .product-10__name {
@@ -2776,7 +2919,7 @@ a {
   font-size: 5rem;
   font-weight: 700;
   line-height: 1.5;
-  margin-top: 2rem;
+  margin-top: 1rem;
   margin-bottom: 0;
 }
 
@@ -2801,6 +2944,7 @@ a {
 
 .product-11__content {
   text-align: center;
+  margin-top: -3rem;
 }
 
 .product-11__name {
@@ -2929,7 +3073,7 @@ a {
   font-size: 5rem;
   font-weight: 700;
   line-height: 1.5;
-  margin-top: 2rem;
+  margin-top: 1rem;
   margin-bottom: 0;
 }
 
@@ -2954,6 +3098,7 @@ a {
 
 .product-12__content {
   text-align: center;
+  margin-top: -3rem;
 }
 
 .product-12__name {
@@ -3091,7 +3236,7 @@ a {
   font-size: 5rem;
   font-weight: 700;
   line-height: 1.5;
-  margin-top: 2rem;
+  margin-top: 1rem;
   margin-bottom: 0;
 }
 
@@ -3116,6 +3261,7 @@ a {
 
 .product-13__content {
   text-align: center;
+  margin-top: -3rem;
 }
 
 .product-13__name {
@@ -3253,7 +3399,7 @@ a {
   font-size: 5rem;
   font-weight: 700;
   line-height: 1.5;
-  margin-top: 2rem;
+  margin-top: 1rem;
   margin-bottom: 0;
 }
 
@@ -3278,6 +3424,7 @@ a {
 
 .product-14__content {
   text-align: center;
+  margin-top: -3rem;
 }
 
 .product-14__name {
@@ -3415,7 +3562,7 @@ a {
   font-size: 5rem;
   font-weight: 700;
   line-height: 1.5;
-  margin-top: 2rem;
+  margin-top: 1rem;
   margin-bottom: 0;
 }
 
@@ -3440,6 +3587,7 @@ a {
 
 .product-15__content {
   text-align: center;
+  margin-top: -3rem;
 }
 
 .product-15__name {
@@ -3577,7 +3725,7 @@ a {
   font-size: 5rem;
   font-weight: 700;
   line-height: 1.5;
-  margin-top: 2rem;
+  margin-top: 1rem;
   margin-bottom: 0;
 }
 
@@ -3602,6 +3750,7 @@ a {
 
 .product-16__content {
   text-align: center;
+  margin-top: -3rem;
 }
 
 .product-16__name {
@@ -3739,7 +3888,7 @@ a {
   font-size: 5rem;
   font-weight: 700;
   line-height: 1.5;
-  margin-top: 2rem;
+  margin-top: 1rem;
   margin-bottom: 0;
 }
 
@@ -3764,6 +3913,7 @@ a {
 
 .product-17__content {
   text-align: center;
+  margin-top: -3rem;
 }
 
 .product-17__name {
@@ -3901,7 +4051,1855 @@ a {
   font-size: 5rem;
   font-weight: 700;
   line-height: 1.5;
-  margin-top: 2rem;
+  margin-top: 1rem;
+  margin-bottom: 0;
+}
+
+/* _______________________________________________________________________________________ */
+/* FIXME: PRODUCT 18 - CARD & SPECIFICATIONS - "EK IS" (DAMES)                            */
+/* _______________________________________________________________________________________ */
+
+.background__product-18 {
+  width: auto;
+  background: var(--color-clothing__product__01__heading);
+}
+
+.spacing__product-18 {
+  row-gap: 5rem;
+  column-gap: 2rem;
+  margin: 0 5rem;
+}
+
+.image__product-18 {
+  width: 100%;
+}
+
+.product-18__content {
+  text-align: center;
+  margin-top: -3rem;
+}
+
+.product-18__name {
+  font-size: 4rem;
+  font-weight: 700;
+  margin-top: 0;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.product-18__specifications {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 3px;
+  text-transform: lowercase;
+}
+
+.product-18__specifications-list {
+  list-style-type: none;
+  font-size: 1.5rem;
+  line-height: 1.5;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+.product-18__sizes {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 3px;
+  text-transform: lowercase;
+}
+
+.product-18__sizes-list {
+  text-align: center;
+  font-size: 1.5rem;
+  line-height: 1.5;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/* .product-18__colours {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 3px;
+  text-transform: lowercase;
+} */
+
+/* .product-18__colours-list {
+  text-align: centre;
+  font-size: 1.7rem;
+  line-height: 1.5;
+  margin-top: 0;
+  margin-bottom: 0;
+} */
+
+/* .product-18__category {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 3px;
+  text-transform: lowercase;
+} */
+
+/* .product-18__category-name {
+  text-align: centre;
+  font-size: 1.7rem;
+  line-height: 1.5;
+  margin-top: 0;
+  margin-bottom: 0;
+} */
+
+/* .product-18__product__number {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 3px;
+  text-transform: lowercase;
+} */
+
+/* .product-18__sku {
+  text-align: centre;
+  font-size: 1.7rem;
+  line-height: 1.5;
+  margin-top: 0;
+  margin-bottom: 0;
+} */
+
+/* .product-18__range {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 3px;
+  text-transform: lowercase;
+} */
+
+/* .product-18__range-name {
+  text-align: centre;
+  font-size: 1.7rem;
+  line-height: 1.5;
+  margin-top: 0;
+  margin-bottom: 0;
+} */
+
+/* .product-18__price-heading {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 3px;
+  text-transform: lowercase;
+} */
+
+.product-18__price {
+  text-align: center;
+  font-size: 5rem;
+  font-weight: 700;
+  line-height: 1.5;
+  margin-top: 1rem;
+  margin-bottom: 0;
+}
+
+/* _______________________________________________________________________________________ */
+/* FIXME: PRODUCT 19 - CARD & SPECIFICATIONS - "JOU STORIE" (DAMES)                            */
+/* _______________________________________________________________________________________ */
+
+.background__product-19 {
+  width: auto;
+  background: var(--color-clothing__product__01__heading);
+}
+
+.spacing__product-19 {
+  row-gap: 5rem;
+  column-gap: 2rem;
+  margin: 0 5rem;
+}
+
+.image__product-19 {
+  width: 100%;
+}
+
+.product-19__content {
+  text-align: center;
+  margin-top: -3rem;
+}
+
+.product-19__name {
+  font-size: 4rem;
+  font-weight: 700;
+  margin-top: 0;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.product-19__specifications {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 3px;
+  text-transform: lowercase;
+}
+
+.product-19__specifications-list {
+  list-style-type: none;
+  font-size: 1.5rem;
+  line-height: 1.5;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+.product-19__sizes {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 3px;
+  text-transform: lowercase;
+}
+
+.product-19__sizes-list {
+  text-align: center;
+  font-size: 1.5rem;
+  line-height: 1.5;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/* .product-19__colours {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 3px;
+  text-transform: lowercase;
+} */
+
+/* .product-19__colours-list {
+  text-align: centre;
+  font-size: 1.7rem;
+  line-height: 1.5;
+  margin-top: 0;
+  margin-bottom: 0;
+} */
+
+/* .product-19__category {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 3px;
+  text-transform: lowercase;
+} */
+
+/* .product-19__category-name {
+  text-align: centre;
+  font-size: 1.7rem;
+  line-height: 1.5;
+  margin-top: 0;
+  margin-bottom: 0;
+} */
+
+/* .product-19__product__number {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 3px;
+  text-transform: lowercase;
+} */
+
+/* .product-19__sku {
+  text-align: centre;
+  font-size: 1.7rem;
+  line-height: 1.5;
+  margin-top: 0;
+  margin-bottom: 0;
+} */
+
+/* .product-19__range {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 3px;
+  text-transform: lowercase;
+} */
+
+/* .product-19__range-name {
+  text-align: centre;
+  font-size: 1.7rem;
+  line-height: 1.5;
+  margin-top: 0;
+  margin-bottom: 0;
+} */
+
+/* .product-19__price-heading {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 3px;
+  text-transform: lowercase;
+} */
+
+.product-19__price {
+  text-align: center;
+  font-size: 5rem;
+  font-weight: 700;
+  line-height: 1.5;
+  margin-top: 1rem;
+  margin-bottom: 0;
+}
+
+/* _______________________________________________________________________________________ */
+/* FIXME: PRODUCT 20 - CARD & SPECIFICATIONS - "LUKRAAK" (DAMES)                            */
+/* _______________________________________________________________________________________ */
+
+.background__product-20 {
+  width: auto;
+  background: var(--color-clothing__product__01__heading);
+}
+
+.spacing__product-20 {
+  row-gap: 5rem;
+  column-gap: 2rem;
+  margin: 0 5rem;
+}
+
+.image__product-20 {
+  width: 100%;
+}
+
+.product-20__content {
+  text-align: center;
+  margin-top: -3rem;
+}
+
+.product-20__name {
+  font-size: 4rem;
+  font-weight: 700;
+  margin-top: 0;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.product-20__specifications {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 3px;
+  text-transform: lowercase;
+}
+
+.product-20__specifications-list {
+  list-style-type: none;
+  font-size: 1.5rem;
+  line-height: 1.5;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+.product-20__sizes {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 3px;
+  text-transform: lowercase;
+}
+
+.product-20__sizes-list {
+  text-align: center;
+  font-size: 1.5rem;
+  line-height: 1.5;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/* .product-20__colours {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 3px;
+  text-transform: lowercase;
+} */
+
+/* .product-20__colours-list {
+  text-align: centre;
+  font-size: 1.7rem;
+  line-height: 1.5;
+  margin-top: 0;
+  margin-bottom: 0;
+} */
+
+/* .product-20__category {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 3px;
+  text-transform: lowercase;
+} */
+
+/* .product-20__category-name {
+  text-align: centre;
+  font-size: 1.7rem;
+  line-height: 1.5;
+  margin-top: 0;
+  margin-bottom: 0;
+} */
+
+/* .product-20__product__number {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 3px;
+  text-transform: lowercase;
+} */
+
+/* .product-20__sku {
+  text-align: centre;
+  font-size: 1.7rem;
+  line-height: 1.5;
+  margin-top: 0;
+  margin-bottom: 0;
+} */
+
+/* .product-20__range {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 3px;
+  text-transform: lowercase;
+} */
+
+/* .product-20__range-name {
+  text-align: centre;
+  font-size: 1.7rem;
+  line-height: 1.5;
+  margin-top: 0;
+  margin-bottom: 0;
+} */
+
+/* .product-20__price-heading {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 3px;
+  text-transform: lowercase;
+} */
+
+.product-20__price {
+  text-align: center;
+  font-size: 5rem;
+  font-weight: 700;
+  line-height: 1.5;
+  margin-top: 1rem;
+  margin-bottom: 0;
+}
+
+/* _______________________________________________________________________________________ */
+/* FIXME: PRODUCT 21 - CARD & SPECIFICATIONS - "SONSKYN" (DAMES)                            */
+/* _______________________________________________________________________________________ */
+
+.background__product-21 {
+  width: auto;
+  background: var(--color-clothing__product__01__heading);
+}
+
+.spacing__product-21 {
+  row-gap: 5rem;
+  column-gap: 2rem;
+  margin: 0 5rem;
+}
+
+.image__product-21 {
+  width: 100%;
+}
+
+.product-21__content {
+  text-align: center;
+  margin-top: -3rem;
+}
+
+.product-21__name {
+  font-size: 4rem;
+  font-weight: 700;
+  margin-top: 0;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.product-21__specifications {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 3px;
+  text-transform: lowercase;
+}
+
+.product-21__specifications-list {
+  list-style-type: none;
+  font-size: 1.5rem;
+  line-height: 1.5;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+.product-21__sizes {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 3px;
+  text-transform: lowercase;
+}
+
+.product-21__sizes-list {
+  text-align: center;
+  font-size: 1.5rem;
+  line-height: 1.5;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/* .product-21__colours {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 3px;
+  text-transform: lowercase;
+} */
+
+/* .product-21__colours-list {
+  text-align: centre;
+  font-size: 1.7rem;
+  line-height: 1.5;
+  margin-top: 0;
+  margin-bottom: 0;
+} */
+
+/* .product-21__category {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 3px;
+  text-transform: lowercase;
+} */
+
+/* .product-21__category-name {
+  text-align: centre;
+  font-size: 1.7rem;
+  line-height: 1.5;
+  margin-top: 0;
+  margin-bottom: 0;
+} */
+
+/* .product-21__product__number {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 3px;
+  text-transform: lowercase;
+} */
+
+/* .product-21__sku {
+  text-align: centre;
+  font-size: 1.7rem;
+  line-height: 1.5;
+  margin-top: 0;
+  margin-bottom: 0;
+} */
+
+/* .product-21__range {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 3px;
+  text-transform: lowercase;
+} */
+
+/* .product-21__range-name {
+  text-align: centre;
+  font-size: 1.7rem;
+  line-height: 1.5;
+  margin-top: 0;
+  margin-bottom: 0;
+} */
+
+/* .product-21__price-heading {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 3px;
+  text-transform: lowercase;
+} */
+
+.product-21__price {
+  text-align: center;
+  font-size: 5rem;
+  font-weight: 700;
+  line-height: 1.5;
+  margin-top: 1rem;
+  margin-bottom: 0;
+}
+
+/* _______________________________________________________________________________________ */
+/* FIXME: PRODUCT 22 - CARD & SPECIFICATIONS - "VREES LAAT JOU UITMIS" (DAMES)                            */
+/* _______________________________________________________________________________________ */
+
+.background__product-22 {
+  width: auto;
+  background: var(--color-clothing__product__01__heading);
+}
+
+.spacing__product-22 {
+  row-gap: 5rem;
+  column-gap: 2rem;
+  margin: 0 5rem;
+}
+
+.image__product-22 {
+  width: 100%;
+}
+
+.product-22__content {
+  text-align: center;
+  margin-top: -3rem;
+}
+
+.product-22__name {
+  font-size: 4rem;
+  font-weight: 700;
+  margin-top: 0;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.product-22__specifications {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 3px;
+  text-transform: lowercase;
+}
+
+.product-22__specifications-list {
+  list-style-type: none;
+  font-size: 1.5rem;
+  line-height: 1.5;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+.product-22__sizes {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 3px;
+  text-transform: lowercase;
+}
+
+.product-22__sizes-list {
+  text-align: center;
+  font-size: 1.5rem;
+  line-height: 1.5;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/* .product-22__colours {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 3px;
+  text-transform: lowercase;
+} */
+
+/* .product-22__colours-list {
+  text-align: centre;
+  font-size: 1.7rem;
+  line-height: 1.5;
+  margin-top: 0;
+  margin-bottom: 0;
+} */
+
+/* .product-22__category {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 3px;
+  text-transform: lowercase;
+} */
+
+/* .product-22__category-name {
+  text-align: centre;
+  font-size: 1.7rem;
+  line-height: 1.5;
+  margin-top: 0;
+  margin-bottom: 0;
+} */
+
+/* .product-22__product__number {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 3px;
+  text-transform: lowercase;
+} */
+
+/* .product-22__sku {
+  text-align: centre;
+  font-size: 1.7rem;
+  line-height: 1.5;
+  margin-top: 0;
+  margin-bottom: 0;
+} */
+
+/* .product-22__range {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 3px;
+  text-transform: lowercase;
+} */
+
+/* .product-22__range-name {
+  text-align: centre;
+  font-size: 1.7rem;
+  line-height: 1.5;
+  margin-top: 0;
+  margin-bottom: 0;
+} */
+
+/* .product-22__price-heading {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 3px;
+  text-transform: lowercase;
+} */
+
+.product-22__price {
+  text-align: center;
+  font-size: 5rem;
+  font-weight: 700;
+  line-height: 1.5;
+  margin-top: 1rem;
+  margin-bottom: 0;
+}
+
+/* _______________________________________________________________________________________ */
+/* FIXME: PRODUCT 23 - CARD & SPECIFICATIONS - "SKOENLAPPER" (KINDERS)                            */
+/* _______________________________________________________________________________________ */
+
+.background__product-23 {
+  width: auto;
+  background: var(--color-clothing__product__01__heading);
+}
+
+.spacing__product-23 {
+  row-gap: 5rem;
+  column-gap: 2rem;
+  margin: 0 5rem;
+}
+
+.image__product-23 {
+  width: 100%;
+}
+
+.product-23__content {
+  text-align: center;
+  margin-top: -3rem;
+}
+
+.product-23__name {
+  font-size: 4rem;
+  font-weight: 700;
+  margin-top: 0;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.product-23__specifications {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 3px;
+  text-transform: lowercase;
+}
+
+.product-23__specifications-list {
+  list-style-type: none;
+  font-size: 1.5rem;
+  line-height: 1.5;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+.product-23__sizes {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 3px;
+  text-transform: lowercase;
+}
+
+.product-23__sizes-list {
+  text-align: center;
+  font-size: 1.5rem;
+  line-height: 1.5;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/* .product-23__colours {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 3px;
+  text-transform: lowercase;
+} */
+
+/* .product-23__colours-list {
+  text-align: centre;
+  font-size: 1.7rem;
+  line-height: 1.5;
+  margin-top: 0;
+  margin-bottom: 0;
+} */
+
+/* .product-23__category {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 3px;
+  text-transform: lowercase;
+} */
+
+/* .product-23__category-name {
+  text-align: centre;
+  font-size: 1.7rem;
+  line-height: 1.5;
+  margin-top: 0;
+  margin-bottom: 0;
+} */
+
+/* .product-23__product__number {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 3px;
+  text-transform: lowercase;
+} */
+
+/* .product-23__sku {
+  text-align: centre;
+  font-size: 1.7rem;
+  line-height: 1.5;
+  margin-top: 0;
+  margin-bottom: 0;
+} */
+
+/* .product-23__range {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 3px;
+  text-transform: lowercase;
+} */
+
+/* .product-23__range-name {
+  text-align: centre;
+  font-size: 1.7rem;
+  line-height: 1.5;
+  margin-top: 0;
+  margin-bottom: 0;
+} */
+
+/* .product-23__price-heading {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 3px;
+  text-transform: lowercase;
+} */
+
+.product-23__price {
+  text-align: center;
+  font-size: 5rem;
+  font-weight: 700;
+  line-height: 1.5;
+  margin-top: 1rem;
+  margin-bottom: 0;
+}
+
+/* _______________________________________________________________________________________ */
+/* FIXME: PRODUCT 24 - CARD & SPECIFICATIONS - STYWE PAS - "EK IS" (DAMESSNIT)             */
+/* _______________________________________________________________________________________ */
+
+.background__product-24 {
+  width: auto;
+  background: var(--color-clothing__product__01__heading);
+}
+
+.spacing__product-24 {
+  row-gap: 5rem;
+  column-gap: 2rem;
+  margin: 0 5rem;
+}
+
+.image__product-24 {
+  width: 100%;
+}
+
+.product-24__content {
+  text-align: center;
+  margin-top: -3rem;
+}
+
+.product-24__name {
+  font-size: 4rem;
+  font-weight: 700;
+  margin-top: 0;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.product-24__specifications {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 3px;
+  text-transform: lowercase;
+}
+
+.product-24__specifications-list {
+  list-style-type: none;
+  font-size: 1.5rem;
+  line-height: 1.5;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+.product-24__sizes {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 3px;
+  text-transform: lowercase;
+}
+
+.product-24__sizes-list {
+  text-align: center;
+  font-size: 1.5rem;
+  line-height: 1.5;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/* .product-24__colours {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 3px;
+  text-transform: lowercase;
+} */
+
+/* .product-24__colours-list {
+  text-align: centre;
+  font-size: 1.7rem;
+  line-height: 1.5;
+  margin-top: 0;
+  margin-bottom: 0;
+} */
+
+/* .product-24__category {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 3px;
+  text-transform: lowercase;
+} */
+
+/* .product-24__category-name {
+  text-align: centre;
+  font-size: 1.7rem;
+  line-height: 1.5;
+  margin-top: 0;
+  margin-bottom: 0;
+} */
+
+/* .product-24__product__number {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 3px;
+  text-transform: lowercase;
+} */
+
+/* .product-24__sku {
+  text-align: centre;
+  font-size: 1.7rem;
+  line-height: 1.5;
+  margin-top: 0;
+  margin-bottom: 0;
+} */
+
+/* .product-24__range {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 3px;
+  text-transform: lowercase;
+} */
+
+/* .product-24__range-name {
+  text-align: centre;
+  font-size: 1.7rem;
+  line-height: 1.5;
+  margin-top: 0;
+  margin-bottom: 0;
+} */
+
+/* .product-24__price-heading {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 3px;
+  text-transform: lowercase;
+} */
+
+.product-24__price {
+  text-align: center;
+  font-size: 5rem;
+  font-weight: 700;
+  line-height: 1.5;
+  margin-top: 1rem;
+  margin-bottom: 0;
+}
+
+/* ____________________________________________________________________________________________ */
+/* FIXME: PRODUCT 25 - CARD & SPECIFICATIONS - STYWE PAS - "JOU STORIE" (DAMESSNIT)             */
+/* ____________________________________________________________________________________________ */
+
+.background__product-25 {
+  width: auto;
+  background: var(--color-clothing__product__01__heading);
+}
+
+.spacing__product-25 {
+  row-gap: 5rem;
+  column-gap: 2rem;
+  margin: 0 5rem;
+}
+
+.image__product-25 {
+  width: 100%;
+}
+
+.product-25__content {
+  text-align: center;
+  margin-top: -3rem;
+}
+
+.product-25__name {
+  font-size: 4rem;
+  font-weight: 700;
+  margin-top: 0;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.product-25__specifications {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 3px;
+  text-transform: lowercase;
+}
+
+.product-25__specifications-list {
+  list-style-type: none;
+  font-size: 1.5rem;
+  line-height: 1.5;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+.product-25__sizes {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 3px;
+  text-transform: lowercase;
+}
+
+.product-25__sizes-list {
+  text-align: center;
+  font-size: 1.5rem;
+  line-height: 1.5;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/* .product-25__colours {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 3px;
+  text-transform: lowercase;
+} */
+
+/* .product-25__colours-list {
+  text-align: centre;
+  font-size: 1.7rem;
+  line-height: 1.5;
+  margin-top: 0;
+  margin-bottom: 0;
+} */
+
+/* .product-25__category {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 3px;
+  text-transform: lowercase;
+} */
+
+/* .product-25__category-name {
+  text-align: centre;
+  font-size: 1.7rem;
+  line-height: 1.5;
+  margin-top: 0;
+  margin-bottom: 0;
+} */
+
+/* .product-25__product__number {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 3px;
+  text-transform: lowercase;
+} */
+
+/* .product-25__sku {
+  text-align: centre;
+  font-size: 1.7rem;
+  line-height: 1.5;
+  margin-top: 0;
+  margin-bottom: 0;
+} */
+
+/* .product-25__range {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 3px;
+  text-transform: lowercase;
+} */
+
+/* .product-25__range-name {
+  text-align: centre;
+  font-size: 1.7rem;
+  line-height: 1.5;
+  margin-top: 0;
+  margin-bottom: 0;
+} */
+
+/* .product-25__price-heading {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 3px;
+  text-transform: lowercase;
+} */
+
+.product-25__price {
+  text-align: center;
+  font-size: 5rem;
+  font-weight: 700;
+  line-height: 1.5;
+  margin-top: 1rem;
+  margin-bottom: 0;
+}
+
+/* ____________________________________________________________________________________________ */
+/* FIXME: PRODUCT 26 - CARD & SPECIFICATIONS - STYWE PAS - "SONSKYN" (DAMESSNIT)                */
+/* ____________________________________________________________________________________________ */
+
+.background__product-26 {
+  width: auto;
+  background: var(--color-clothing__product__01__heading);
+}
+
+.spacing__product-26 {
+  row-gap: 5rem;
+  column-gap: 2rem;
+  margin: 0 5rem;
+}
+
+.image__product-26 {
+  width: 100%;
+}
+
+.product-26__content {
+  text-align: center;
+  margin-top: -3rem;
+}
+
+.product-26__name {
+  font-size: 4rem;
+  font-weight: 700;
+  margin-top: 0;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.product-26__specifications {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 3px;
+  text-transform: lowercase;
+}
+
+.product-26__specifications-list {
+  list-style-type: none;
+  font-size: 1.5rem;
+  line-height: 1.5;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+.product-26__sizes {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 3px;
+  text-transform: lowercase;
+}
+
+.product-26__sizes-list {
+  text-align: center;
+  font-size: 1.5rem;
+  line-height: 1.5;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/* .product-26__colours {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 3px;
+  text-transform: lowercase;
+} */
+
+/* .product-26__colours-list {
+  text-align: centre;
+  font-size: 1.7rem;
+  line-height: 1.5;
+  margin-top: 0;
+  margin-bottom: 0;
+} */
+
+/* .product-26__category {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 3px;
+  text-transform: lowercase;
+} */
+
+/* .product-26__category-name {
+  text-align: centre;
+  font-size: 1.7rem;
+  line-height: 1.5;
+  margin-top: 0;
+  margin-bottom: 0;
+} */
+
+/* .product-26__product__number {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 3px;
+  text-transform: lowercase;
+} */
+
+/* .product-26__sku {
+  text-align: centre;
+  font-size: 1.7rem;
+  line-height: 1.5;
+  margin-top: 0;
+  margin-bottom: 0;
+} */
+
+/* .product-26__range {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 3px;
+  text-transform: lowercase;
+} */
+
+/* .product-26__range-name {
+  text-align: centre;
+  font-size: 1.7rem;
+  line-height: 1.5;
+  margin-top: 0;
+  margin-bottom: 0;
+} */
+
+/* .product-26__price-heading {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 3px;
+  text-transform: lowercase;
+} */
+
+.product-26__price {
+  text-align: center;
+  font-size: 5rem;
+  font-weight: 700;
+  line-height: 1.5;
+  margin-top: 1rem;
+  margin-bottom: 0;
+}
+
+/* ____________________________________________________________________________________________ */
+/* FIXME: PRODUCT 27 - CARD & SPECIFICATIONS - STYWE PAS - "SPATSEL" (DAMESSNIT)                */
+/* ____________________________________________________________________________________________ */
+
+.background__product-27 {
+  width: auto;
+  background: var(--color-clothing__product__01__heading);
+}
+
+.spacing__product-27 {
+  row-gap: 5rem;
+  column-gap: 2rem;
+  margin: 0 5rem;
+}
+
+.image__product-27 {
+  width: 100%;
+}
+
+.product-27__content {
+  text-align: center;
+  margin-top: -3rem;
+}
+
+.product-27__name {
+  font-size: 4rem;
+  font-weight: 700;
+  margin-top: 0;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.product-27__specifications {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 3px;
+  text-transform: lowercase;
+}
+
+.product-27__specifications-list {
+  list-style-type: none;
+  font-size: 1.5rem;
+  line-height: 1.5;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+.product-27__sizes {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 3px;
+  text-transform: lowercase;
+}
+
+.product-27__sizes-list {
+  text-align: center;
+  font-size: 1.5rem;
+  line-height: 1.5;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/* .product-27__colours {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 3px;
+  text-transform: lowercase;
+} */
+
+/* .product-27__colours-list {
+  text-align: centre;
+  font-size: 1.7rem;
+  line-height: 1.5;
+  margin-top: 0;
+  margin-bottom: 0;
+} */
+
+/* .product-27__category {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 3px;
+  text-transform: lowercase;
+} */
+
+/* .product-27__category-name {
+  text-align: centre;
+  font-size: 1.7rem;
+  line-height: 1.5;
+  margin-top: 0;
+  margin-bottom: 0;
+} */
+
+/* .product-27__product__number {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 3px;
+  text-transform: lowercase;
+} */
+
+/* .product-27__sku {
+  text-align: centre;
+  font-size: 1.7rem;
+  line-height: 1.5;
+  margin-top: 0;
+  margin-bottom: 0;
+} */
+
+/* .product-27__range {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 3px;
+  text-transform: lowercase;
+} */
+
+/* .product-27__range-name {
+  text-align: centre;
+  font-size: 1.7rem;
+  line-height: 1.5;
+  margin-top: 0;
+  margin-bottom: 0;
+} */
+
+/* .product-27__price-heading {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 3px;
+  text-transform: lowercase;
+} */
+
+.product-27__price {
+  text-align: center;
+  font-size: 5rem;
+  font-weight: 700;
+  line-height: 1.5;
+  margin-top: 1rem;
+  margin-bottom: 0;
+}
+
+/* ____________________________________________________________________________________________ */
+/* FIXME: PRODUCT 28 - CARD & SPECIFICATIONS - STYWE PAS - "ELEGANT" (DAMESSNIT)                */
+/* ____________________________________________________________________________________________ */
+
+.background__product-28 {
+  width: auto;
+  background: var(--color-clothing__product__01__heading);
+}
+
+.spacing__product-28 {
+  row-gap: 5rem;
+  column-gap: 2rem;
+  margin: 0 5rem;
+}
+
+.image__product-28 {
+  width: 100%;
+}
+
+.product-28__content {
+  text-align: center;
+  margin-top: -3rem;
+}
+
+.product-28__name {
+  font-size: 4rem;
+  font-weight: 700;
+  margin-top: 0;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.product-28__specifications {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 3px;
+  text-transform: lowercase;
+}
+
+.product-28__specifications-list {
+  list-style-type: none;
+  font-size: 1.5rem;
+  line-height: 1.5;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+.product-28__sizes {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 3px;
+  text-transform: lowercase;
+}
+
+.product-28__sizes-list {
+  text-align: center;
+  font-size: 1.5rem;
+  line-height: 1.5;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/* .product-28__colours {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 3px;
+  text-transform: lowercase;
+} */
+
+/* .product-28__colours-list {
+  text-align: centre;
+  font-size: 1.7rem;
+  line-height: 1.5;
+  margin-top: 0;
+  margin-bottom: 0;
+} */
+
+/* .product-28__category {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 3px;
+  text-transform: lowercase;
+} */
+
+/* .product-28__category-name {
+  text-align: centre;
+  font-size: 1.7rem;
+  line-height: 1.5;
+  margin-top: 0;
+  margin-bottom: 0;
+} */
+
+/* .product-28__product__number {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 3px;
+  text-transform: lowercase;
+} */
+
+/* .product-28__sku {
+  text-align: centre;
+  font-size: 1.7rem;
+  line-height: 1.5;
+  margin-top: 0;
+  margin-bottom: 0;
+} */
+
+/* .product-28__range {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 3px;
+  text-transform: lowercase;
+} */
+
+/* .product-28__range-name {
+  text-align: centre;
+  font-size: 1.7rem;
+  line-height: 1.5;
+  margin-top: 0;
+  margin-bottom: 0;
+} */
+
+/* .product-28__price-heading {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 3px;
+  text-transform: lowercase;
+} */
+
+.product-28__price {
+  text-align: center;
+  font-size: 5rem;
+  font-weight: 700;
+  line-height: 1.5;
+  margin-top: 1rem;
+  margin-bottom: 0;
+}
+
+/* ____________________________________________________________________________________________ */
+/* FIXME: PRODUCT 29 - CARD & SPECIFICATIONS - STYWE PAS - "REBEL" (DAMESSNIT)                  */
+/* ____________________________________________________________________________________________ */
+
+.background__product-29 {
+  width: auto;
+  background: var(--color-clothing__product__01__heading);
+}
+
+.spacing__product-29 {
+  row-gap: 5rem;
+  column-gap: 2rem;
+  margin: 0 5rem;
+}
+
+.image__product-29 {
+  width: 100%;
+}
+
+.product-29__content {
+  text-align: center;
+  margin-top: -3rem;
+}
+
+.product-29__name {
+  font-size: 4rem;
+  font-weight: 700;
+  margin-top: 0;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.product-29__specifications {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 3px;
+  text-transform: lowercase;
+}
+
+.product-29__specifications-list {
+  list-style-type: none;
+  font-size: 1.5rem;
+  line-height: 1.5;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+.product-29__sizes {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 3px;
+  text-transform: lowercase;
+}
+
+.product-29__sizes-list {
+  text-align: center;
+  font-size: 1.5rem;
+  line-height: 1.5;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/* .product-29__colours {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 3px;
+  text-transform: lowercase;
+} */
+
+/* .product-29__colours-list {
+  text-align: centre;
+  font-size: 1.7rem;
+  line-height: 1.5;
+  margin-top: 0;
+  margin-bottom: 0;
+} */
+
+/* .product-29__category {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 3px;
+  text-transform: lowercase;
+} */
+
+/* .product-29__category-name {
+  text-align: centre;
+  font-size: 1.7rem;
+  line-height: 1.5;
+  margin-top: 0;
+  margin-bottom: 0;
+} */
+
+/* .product-29__product__number {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 3px;
+  text-transform: lowercase;
+} */
+
+/* .product-29__sku {
+  text-align: centre;
+  font-size: 1.7rem;
+  line-height: 1.5;
+  margin-top: 0;
+  margin-bottom: 0;
+} */
+
+/* .product-29__range {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 3px;
+  text-transform: lowercase;
+} */
+
+/* .product-29__range-name {
+  text-align: centre;
+  font-size: 1.7rem;
+  line-height: 1.5;
+  margin-top: 0;
+  margin-bottom: 0;
+} */
+
+/* .product-29__price-heading {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 3px;
+  text-transform: lowercase;
+} */
+
+.product-29__price {
+  text-align: center;
+  font-size: 5rem;
+  font-weight: 700;
+  line-height: 1.5;
+  margin-top: 1rem;
   margin-bottom: 0;
 }
 
@@ -4004,7 +6002,19 @@ a {
   .product-14__name,
   .product-15__name,
   .product-16__name,
-  .product-17__name {
+  .product-17__name,
+  .product-18__name,
+  .product-19__name,
+  .product-20__name,
+  .product-21__name,
+  .product-22__name,
+  .product-23__name,
+  .product-24__name,
+  .product-25__name,
+  .product-26__name,
+  .product-27__name,
+  .product-28__name,
+  .product-29__name {
     margin-top: 8rem;
   }
 
@@ -4024,7 +6034,19 @@ a {
   .product-14__specifications-list,
   .product-15__specifications-list,
   .product-16__specifications-list,
-  .product-17__specifications-list {
+  .product-17__specifications-list,
+  .product-18__specifications-list,
+  .product-19__specifications-list,
+  .product-20__specifications-list,
+  .product-21__specifications-list,
+  .product-22__specifications-list,
+  .product-23__specifications-list,
+  .product-24__specifications-list,
+  .product-25__specifications-list,
+  .product-26__specifications-list,
+  .product-27__specifications-list,
+  .product-28__specifications-list,
+  .product-29__specifications-list {
     font-size: 1.6rem;
   }
 
@@ -4044,7 +6066,19 @@ a {
   .product-14__sizes-list,
   .product-15__sizes-list,
   .product-16__sizes-list,
-  .product-17__sizes-list {
+  .product-17__sizes-list,
+  .product-18__sizes-list,
+  .product-19__sizes-list,
+  .product-20__sizes-list,
+  .product-21__sizes-list,
+  .product-22__sizes-list,
+  .product-23__sizes-list,
+  .product-24__sizes-list,
+  .product-25__sizes-list,
+  .product-26__sizes-list,
+  .product-27__sizes-list,
+  .product-28__sizes-list,
+  .product-29__sizes-list {
     font-size: 1.6rem;
   }
 
@@ -5114,16 +7148,16 @@ button {
 }
 
 .testimonial__text__positioning__2 {
-  width: 20vh;
+  width: 30vh;
   font-size: 1.5rem;
   position: absolute;
   top: 65%;
-  left: 27%;
+  left: 32%;
   transform: translate(-50%, -50%);
 }
 
 .testimonial__text__positioning__3 {
-  width: 22vh;
+  width: 20vh;
   font-size: 1.5rem;
   position: absolute;
   top: 25%;
@@ -5132,7 +7166,7 @@ button {
 }
 
 .testimonial__text__positioning__4 {
-  width: 20vh;
+  width: 25vh;
   font-size: 1.5rem;
   position: absolute;
   top: 62%;
@@ -5159,7 +7193,7 @@ button {
   }
 
   .testimonial__text__positioning__1 {
-    width: 20vh;
+    width: 21vh;
     font-size: 1.7rem;
     position: absolute;
     top: 30%;
@@ -5168,7 +7202,7 @@ button {
   }
 
   .testimonial__text__positioning__2 {
-    width: 20vh;
+    width: 26vh;
     font-size: 1.7rem;
     position: absolute;
     top: 65%;
@@ -5186,7 +7220,7 @@ button {
   }
 
   .testimonial__text__positioning__4 {
-    width: 20vh;
+    width: 26vh;
     font-size: 1.7rem;
     position: absolute;
     top: 62%;
@@ -5272,6 +7306,27 @@ button {
 .footer__section {
   padding-top: 3rem;
   padding-left: 1.5rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid var(--color-footer__collapsible-border);
+}
+
+.footer__section__winter {
+  padding-top: 0;
+  padding-left: 0;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid var(--color-footer__collapsible-border);
+}
+
+.footer__section__sport {
+  padding-top: 0;
+  padding-left: 0;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid var(--color-footer__collapsible-border);
+}
+
+.footer__section__hoedjies {
+  padding-top: 3rem;
+  padding-left: 0;
   padding-bottom: 1.5rem;
   border-bottom: 1px solid var(--color-footer__collapsible-border);
 }
@@ -5371,6 +7426,18 @@ button {
     opacity: 1;
     max-height: 100%;
     font-size: 1.8rem;
+  }
+
+  .footer__section__winter {
+    padding-top: 0;
+  }
+
+  .footer__section__sport {
+    padding-top: 0;
+  }
+
+  .footer__section__hoedjies {
+    padding-top: 0;
   }
 
   .footer_marketing {
