@@ -5903,6 +5903,622 @@ a {
   margin-bottom: 0;
 }
 
+/* ____________________________________________________________________________________________ */
+/* FIXME: PRODUCT 30 - CARD & SPECIFICATIONS - STYWE PAS - "JANIEN" (DAMES)                     */
+/* ____________________________________________________________________________________________ */
+
+.background__product-30 {
+  width: auto;
+  background: var(--color-clothing__product__01__heading);
+}
+
+.spacing__product-30 {
+  row-gap: 5rem;
+  column-gap: 2rem;
+  margin: 0 5rem;
+}
+
+.image__product-30 {
+  width: 100%;
+}
+
+.product-30__content {
+  text-align: center;
+  margin-top: -3rem;
+}
+
+.product-30__name {
+  font-size: 4rem;
+  font-weight: 700;
+  margin-top: 0;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.product-30__specifications {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 3px;
+  text-transform: lowercase;
+}
+
+.product-30__specifications-list {
+  list-style-type: none;
+  font-size: 1.5rem;
+  line-height: 1.5;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+.product-30__sizes {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 3px;
+  text-transform: lowercase;
+}
+
+.product-30__sizes-list {
+  text-align: center;
+  font-size: 1.5rem;
+  line-height: 1.5;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/* .product-30__colours {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 3px;
+  text-transform: lowercase;
+} */
+
+/* .product-30__colours-list {
+  text-align: centre;
+  font-size: 1.7rem;
+  line-height: 1.5;
+  margin-top: 0;
+  margin-bottom: 0;
+} */
+
+/* .product-30__category {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 3px;
+  text-transform: lowercase;
+} */
+
+/* .product-30__category-name {
+  text-align: centre;
+  font-size: 1.7rem;
+  line-height: 1.5;
+  margin-top: 0;
+  margin-bottom: 0;
+} */
+
+/* .product-30__product__number {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 3px;
+  text-transform: lowercase;
+} */
+
+/* .product-30__sku {
+  text-align: centre;
+  font-size: 1.7rem;
+  line-height: 1.5;
+  margin-top: 0;
+  margin-bottom: 0;
+} */
+
+/* .product-30__range {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 3px;
+  text-transform: lowercase;
+} */
+
+/* .product-30__range-name {
+  text-align: centre;
+  font-size: 1.7rem;
+  line-height: 1.5;
+  margin-top: 0;
+  margin-bottom: 0;
+} */
+
+/* .product-30__price-heading {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 3px;
+  text-transform: lowercase;
+} */
+
+.product-30__price {
+  text-align: center;
+  font-size: 5rem;
+  font-weight: 700;
+  line-height: 1.5;
+  margin-top: 1rem;
+  margin-bottom: 0;
+}
+
+/* ____________________________________________________________________________________________ */
+/* FIXME: PRODUCT 31 - CARD & SPECIFICATIONS - STYWE PAS - "AYLEN" (DAMES)                      */
+/* ____________________________________________________________________________________________ */
+
+.background__product-31 {
+  width: auto;
+  background: var(--color-clothing__product__01__heading);
+}
+
+.spacing__product-31 {
+  row-gap: 5rem;
+  column-gap: 2rem;
+  margin: 0 5rem;
+}
+
+.image__product-31 {
+  width: 100%;
+}
+
+.product-31__content {
+  text-align: center;
+  margin-top: -3rem;
+}
+
+.product-31__name {
+  font-size: 4rem;
+  font-weight: 700;
+  margin-top: 0;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.product-31__specifications {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 3px;
+  text-transform: lowercase;
+}
+
+.product-31__specifications-list {
+  list-style-type: none;
+  font-size: 1.5rem;
+  line-height: 1.5;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+.product-31__sizes {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 3px;
+  text-transform: lowercase;
+}
+
+.product-31__sizes-list {
+  text-align: center;
+  font-size: 1.5rem;
+  line-height: 1.5;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/* .product-31__colours {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 3px;
+  text-transform: lowercase;
+} */
+
+/* .product-31__colours-list {
+  text-align: centre;
+  font-size: 1.7rem;
+  line-height: 1.5;
+  margin-top: 0;
+  margin-bottom: 0;
+} */
+
+/* .product-31__category {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 3px;
+  text-transform: lowercase;
+} */
+
+/* .product-31__category-name {
+  text-align: centre;
+  font-size: 1.7rem;
+  line-height: 1.5;
+  margin-top: 0;
+  margin-bottom: 0;
+} */
+
+/* .product-31__product__number {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 3px;
+  text-transform: lowercase;
+} */
+
+/* .product-31__sku {
+  text-align: centre;
+  font-size: 1.7rem;
+  line-height: 1.5;
+  margin-top: 0;
+  margin-bottom: 0;
+} */
+
+/* .product-31__range {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 3px;
+  text-transform: lowercase;
+} */
+
+/* .product-31__range-name {
+  text-align: centre;
+  font-size: 1.7rem;
+  line-height: 1.5;
+  margin-top: 0;
+  margin-bottom: 0;
+} */
+
+/* .product-31__price-heading {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 3px;
+  text-transform: lowercase;
+} */
+
+.product-31__price {
+  text-align: center;
+  font-size: 5rem;
+  font-weight: 700;
+  line-height: 1.5;
+  margin-top: 1rem;
+  margin-bottom: 0;
+}
+
+/* ____________________________________________________________________________________________ */
+/* FIXME: PRODUCT 32 - CARD & SPECIFICATIONS - STYWE PAS - "JANIEN" (KINDERS)                   */
+/* ____________________________________________________________________________________________ */
+
+.background__product-32 {
+  width: auto;
+  background: var(--color-clothing__product__01__heading);
+}
+
+.spacing__product-32 {
+  row-gap: 5rem;
+  column-gap: 2rem;
+  margin: 0 5rem;
+}
+
+.image__product-32 {
+  width: 100%;
+}
+
+.product-32__content {
+  text-align: center;
+  margin-top: -3rem;
+}
+
+.product-32__name {
+  font-size: 4rem;
+  font-weight: 700;
+  margin-top: 0;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.product-32__specifications {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 3px;
+  text-transform: lowercase;
+}
+
+.product-32__specifications-list {
+  list-style-type: none;
+  font-size: 1.5rem;
+  line-height: 1.5;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+.product-32__sizes {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 3px;
+  text-transform: lowercase;
+}
+
+.product-32__sizes-list {
+  text-align: center;
+  font-size: 1.5rem;
+  line-height: 1.5;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/* .product-32__colours {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 3px;
+  text-transform: lowercase;
+} */
+
+/* .product-32__colours-list {
+  text-align: centre;
+  font-size: 1.7rem;
+  line-height: 1.5;
+  margin-top: 0;
+  margin-bottom: 0;
+} */
+
+/* .product-32__category {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 3px;
+  text-transform: lowercase;
+} */
+
+/* .product-32__category-name {
+  text-align: centre;
+  font-size: 1.7rem;
+  line-height: 1.5;
+  margin-top: 0;
+  margin-bottom: 0;
+} */
+
+/* .product-32__product__number {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 3px;
+  text-transform: lowercase;
+} */
+
+/* .product-32__sku {
+  text-align: centre;
+  font-size: 1.7rem;
+  line-height: 1.5;
+  margin-top: 0;
+  margin-bottom: 0;
+} */
+
+/* .product-32__range {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 3px;
+  text-transform: lowercase;
+} */
+
+/* .product-32__range-name {
+  text-align: centre;
+  font-size: 1.7rem;
+  line-height: 1.5;
+  margin-top: 0;
+  margin-bottom: 0;
+} */
+
+/* .product-32__price-heading {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 3px;
+  text-transform: lowercase;
+} */
+
+.product-32__price {
+  text-align: center;
+  font-size: 5rem;
+  font-weight: 700;
+  line-height: 1.5;
+  margin-top: 1rem;
+  margin-bottom: 0;
+}
+
+/* ____________________________________________________________________________________________ */
+/* FIXME: PRODUCT 33 - CARD & SPECIFICATIONS - STYWE PAS - "AYLEN" (KINDERS)                    */
+/* ____________________________________________________________________________________________ */
+
+.background__product-33 {
+  width: auto;
+  background: var(--color-clothing__product__01__heading);
+}
+
+.spacing__product-33 {
+  row-gap: 5rem;
+  column-gap: 2rem;
+  margin: 0 5rem;
+}
+
+.image__product-33 {
+  width: 100%;
+}
+
+.product-33__content {
+  text-align: center;
+  margin-top: -3rem;
+}
+
+.product-33__name {
+  font-size: 4rem;
+  font-weight: 700;
+  margin-top: 0;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.product-33__specifications {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 3px;
+  text-transform: lowercase;
+}
+
+.product-33__specifications-list {
+  list-style-type: none;
+  font-size: 1.5rem;
+  line-height: 1.5;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+.product-33__sizes {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 3px;
+  text-transform: lowercase;
+}
+
+.product-33__sizes-list {
+  text-align: center;
+  font-size: 1.5rem;
+  line-height: 1.5;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/* .product-33__colours {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 3px;
+  text-transform: lowercase;
+} */
+
+/* .product-33__colours-list {
+  text-align: centre;
+  font-size: 1.7rem;
+  line-height: 1.5;
+  margin-top: 0;
+  margin-bottom: 0;
+} */
+
+/* .product-33__category {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 3px;
+  text-transform: lowercase;
+} */
+
+/* .product-33__category-name {
+  text-align: centre;
+  font-size: 1.7rem;
+  line-height: 1.5;
+  margin-top: 0;
+  margin-bottom: 0;
+} */
+
+/* .product-33__product__number {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 3px;
+  text-transform: lowercase;
+} */
+
+/* .product-33__sku {
+  text-align: centre;
+  font-size: 1.7rem;
+  line-height: 1.5;
+  margin-top: 0;
+  margin-bottom: 0;
+} */
+
+/* .product-33__range {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 3px;
+  text-transform: lowercase;
+} */
+
+/* .product-33__range-name {
+  text-align: centre;
+  font-size: 1.7rem;
+  line-height: 1.5;
+  margin-top: 0;
+  margin-bottom: 0;
+} */
+
+/* .product-33__price-heading {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 3px;
+  text-transform: lowercase;
+} */
+
+.product-33__price {
+  text-align: center;
+  font-size: 5rem;
+  font-weight: 700;
+  line-height: 1.5;
+  margin-top: 1rem;
+  margin-bottom: 0;
+}
+
 /* __________________________________________________________________________________________________________ */
 /* PRODUCT BLOCK COMPONENT - TODO: NAVIGATION (DOWNLOAD BROCHURE) - "lAAI BROSJURE AF                         */
 /* ALL PRODUCTS USE THE SAME NAVIGATION (DOWNLOAD BROCHURE) - LINK TO MOODBOARD BROCHURE & MANUAL ORDER FORM  */
@@ -6014,7 +6630,11 @@ a {
   .product-26__name,
   .product-27__name,
   .product-28__name,
-  .product-29__name {
+  .product-29__name,
+  .product-30__name,
+  .product-31__name,
+  .product-32__name,
+  .product-33__name {
     margin-top: 8rem;
   }
 
@@ -6046,7 +6666,11 @@ a {
   .product-26__specifications-list,
   .product-27__specifications-list,
   .product-28__specifications-list,
-  .product-29__specifications-list {
+  .product-29__specifications-list,
+  .product-30__specifications-list,
+  .product-31__specifications-list,
+  .product-32__specifications-list,
+  .product-33__specifications-list {
     font-size: 1.6rem;
   }
 
@@ -6078,7 +6702,11 @@ a {
   .product-26__sizes-list,
   .product-27__sizes-list,
   .product-28__sizes-list,
-  .product-29__sizes-list {
+  .product-29__sizes-list,
+  .product-30__sizes-list,
+  .product-31__sizes-list,
+  .product-32__sizes-list,
+  .product-33__sizes-list {
     font-size: 1.6rem;
   }
 
@@ -6254,7 +6882,7 @@ a {
 
 .bestelvorm__header__02 {
   position: absolute;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-weight: 400;
   text-transform: none;
   letter-spacing: 4px;
@@ -7331,6 +7959,13 @@ button {
   border-bottom: 1px solid var(--color-footer__collapsible-border);
 }
 
+.footer__section__wenners {
+  padding-top: 5rem;
+  padding-left: 0;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid var(--color-footer__collapsible-border);
+}
+
 .footer__section .list {
   margin: 0;
 }
@@ -7438,6 +8073,10 @@ button {
 
   .footer__section__hoedjies {
     padding-top: 0;
+  }
+
+  .footer__section__wenners {
+    padding-top: 1.5rem;
   }
 
   .footer_marketing {
