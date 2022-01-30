@@ -1,0 +1,143 @@
+/* _________________________________________________________________ */
+/* TODO: Setting the Global Styling of the Page                      */
+/* _________________________________________________________________ */
+
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+}
+
+/* _________________________________________________________________ */
+/* TODO: Setting Global Typogrpahy                                   */
+/* _________________________________________________________________ */
+
+/* _________________________________________________________________ */
+/* FIXME:  1. Standard Font-Size :  62.5% of 16px (Std Size) = 10px  */
+/* _________________________________________________________________ */
+
+html {
+  font-size: 62.5%;
+}
+
+/* _________________________________________________________________ */
+/* FIXME:  2. Standard Font-Type                                     */
+/* _________________________________________________________________ */
+
+body {
+  font-family: montserrat;
+}
+
+/* _________________________________________________________________ */
+/* FIXME:  3. Navigation Bar Styling                                 */
+/* _________________________________________________________________ */
+
+nav {
+  height: 8rem;
+  width: 100%;
+  background: #34495e;
+}
+
+label.logo {
+  font-size: 3.5rem;
+  font-weight: bold;
+  color: white;
+  padding: 0 10rem;
+  line-height: 8rem;
+}
+
+nav ul {
+  float: right;
+  margin-right: 4rem;
+}
+
+nav li {
+  display: inline-block;
+  margin: 0 0.8rem;
+  line-height: 8rem;
+}
+
+nav a {
+  color: white;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  border: 0.1rem solid transparent;
+  padding: 0.7rem 1rem;
+  border-radius: 0.3rem;
+}
+
+a.active,
+a:hover {
+  border: 0.1rem solid white;
+  transition: 0.5s;
+}
+
+nav #icon {
+  color: white;
+  font-size: 3rem;
+  line-height: 8rem;
+  float: right;
+  margin-right: 4rem;
+  cursor: pointer;
+  display: none;
+}
+
+/* _________________________________________________________________ */
+/* TODO:  Responsive Layout / Media Query 1 - Max Width 1048px       */
+/* _________________________________________________________________ */
+
+@media (max-width: 1048px) {
+  label.logo {
+    font-size: 3.2rem;
+    padding-left: 6rem;
+  }
+  nav ul {
+    margin-right: 2rem;
+  }
+  nav a {
+    font-size: 1.7rem;
+  }
+}
+
+/* _________________________________________________________________ */
+/* TODO:  Responsive Layout / Media Query 2 - Max Width 909px        */
+/* _________________________________________________________________ */
+
+@media (max-width: 909px) {
+  nav #icon {
+    display: block;
+  }
+  nav ul {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #2f3640;
+    top: 8rem;
+    left: -100%;
+    text-align: center;
+    transition: all 0.5s;
+  }
+  nav li {
+    display: block;
+    margin: 5rem 0;
+    line-height: 3rem;
+  }
+  nav a {
+    font-size: 2rem;
+  }
+  a.active,
+  a:hover {
+    border: none;
+    color: #3498db;
+  }
+  nav ul.show {
+    left: 0;
+  }
+}
+
+section {
+  background: url(picture.jpg) no-repeat;
+  background-size: cover;
+  height: calc(100vh - 8rem);
+}
