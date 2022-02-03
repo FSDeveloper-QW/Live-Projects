@@ -533,7 +533,7 @@
 // while (i < 5) {
 //   console.log(i);
 //   i++; // if you forget to include this line, it will cause an infinite loop
-}
+// }
 
 // TODO: Example 2 of an infinte loop that can crash your PC
 // Using the WHILE Statement
@@ -552,3 +552,81 @@
 
 // FIXME: RULE OF THUMB - Avoid Infinite Loops
 
+// FIXME: FOR ... IN LOOP
+
+// Use them to iterate over the properties of an object
+// or elements in an array
+
+// TODO: Example: properties of an object
+
+// const person = {
+//   name: "Quintus",
+//   age: 49,
+// };
+
+// for (let key in person) console.log(key, person[key]);
+
+// Dot Notation
+
+// person.name
+
+// Bracket Notation
+
+// person['name']
+
+// TODO: Example: elements in an array
+
+// const colors = ["red", "green", "blue"];
+
+// for (let index in colors) console.log(index, colors[index]);
+
+// FIXME: For ... Of Loops [New in ES6]
+// Used element of Arrays
+
+// for (let color of colors) console.log(color);
+
+// FIXME: Break and continue
+// 2 Keywords "break" & "continue" that can change how any loop behaves
+// applies to all kinds of loops
+
+// let i = 0;
+// while (i <= 10) {
+//   if (i === 5) break;
+//   if (i % 2 === 0) {
+//     i++;
+//     continue;
+//   }
+
+//   console.log(i);
+//   i++;
+// }
+
+// TODO: Excercise 1 = Max of Two Numbers
+// Write a function that takes two numbers and return the
+// maximum of the two numbers
+
+// let x = 5;
+// let y = 2;
+
+// if (x > y) console.log(x);
+// else console.log(y);
+
+// let number = max(8, 9);
+// console.log(number);
+
+// FIXME: Option 1 to write the code
+
+// function max(x, y) {
+//   if (x > y) return x;
+//   else return y;
+// }
+
+// Answer Returns '7"
+
+// FIXME: Option 2 to write the code (Cleanest Way)
+// use conditional operator
+// Syntax (condition) ? x : y
+
+// function max(x, y) {
+//   return (x > y) ? x : y;
+// }
