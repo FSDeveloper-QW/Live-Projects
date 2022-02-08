@@ -23,11 +23,18 @@
 //   lastName2 = "Du Plessis";
 // console.log(firstName2, lastName2);
 
+// let firstName = "Joe",
+//   lastName = "Soap";
+// console.log(firstName, lastName);
+
 // TODO: LESSON 2 - CONSTANTS
 
 // Use "const" for setting constants
 
 // const interestRate = "0.3";
+// console.log(interestRate);
+
+// const interestRate = "3.5%";
 // console.log(interestRate);
 
 // TODO: LESSON 3 - PRIMITIVE / VALUE TYPES (OF VARIABLES)
@@ -63,6 +70,14 @@
 
 // console.log(person);
 
+// let name = "Joe";
+// let age = 45;
+// let person = {
+//   name: "Joe",
+//   age: 30,
+// };
+// console.log(person);
+
 // FIXME: There are 2 Ways to work with the Properties of an Object
 
 // FIXME: Option 1 - Dot Notation (DEFAULT USE)
@@ -70,11 +85,21 @@
 
 // console.log(person.name);
 
+// person.name = "Joe";
+// console.log(person.name);
+
 // FIXME: Option 2 - Bracket Notation (WHEN A SELECTION NEEDS TO BE MADE)
 
 // person["name"] = "Daleen";
 
+// person["name"] = "Maki";
+// console.log[person.name];
+
 // Or written differently
+
+// let selection = "name";
+// person[selection] = "Joe";
+// console.log(person.name);
 
 // let selection = "name";
 // person[selection] = "Daleen";
@@ -87,10 +112,16 @@
 
 // console.log(selectedColors);
 
+// let selectedColors = ["red", "blue", "green"];
+// console.log(selectedColors);
+
 // FIXME: On the Console you will note that each color has an index number e.g 0 = red, 1=blue, 2=green
 // How to Log a specific INDEX Number
 
 // console.log(selectedColors[2]);
+
+// console.log(selectedColors[1]);
+// console.log(selectedColors.length);
 
 // FIXME: Different way to write it
 
@@ -112,6 +143,10 @@
 //   console.log("Hello World");
 // } //  the " () " is part of the Syntax of a function
 
+// function greet() {
+//   console.log("Hello World");
+// }
+
 // greet();
 
 // FIXME: Function Type 1 - More advance Example - Performing a task (displaying something on the console)
@@ -123,6 +158,12 @@
 
 // greet("Quintus");
 
+// function greet(name) {
+//   console.log("Hello " + name);
+// }
+
+// greet("Joe");
+
 // FIXME: Function Type 1 - Even more advance example - Performing a task (displaying something on the console)
 
 // function greet(name, lastName, age) {
@@ -130,6 +171,12 @@
 // }
 
 // greet("Quintus", "Williamson", 49);
+
+// function greet(name, surname, age) {
+//   console.log("Hello " + name + " " + surname + " " + age);
+// }
+
+// greet("Joe", "Soap", 45);
 
 // FIXME: Function Type 2 - Calculation a Value
 
@@ -151,8 +198,8 @@
 
 // FIXME: Type 1 - Arithmetix Operators
 
-// let x = 10; // Variable 1
-// let y = 3; // Variable 2
+// let x = 5; // Variable 1
+// let y = 8; // Variable 2
 
 // FIXME:  The Easy Straighforward Operators
 
@@ -171,10 +218,10 @@
 
 // FIXME: Decrement Operator - Indicated as (--)
 
-// console.log(y);
-// console.log(--y);
-// console.log(y--);
-// console.log(y);
+// console.log(x);
+// console.log(--x);
+// console.log(x--);
+// console.log(x);
 
 // FIXME: Type 2 - Assignment Operators / Assign a new value to x
 // '=' and '+=', '-+', '*=' etc are Assignement operators
@@ -185,6 +232,10 @@
 // Normal Way to Write code
 // console.log((x = x + 5));   // Answer = 15
 
+// let x = 13;
+// console.log((x = x + 5));
+// console.log((x %= 5));
+
 // Better Way to write code
 // console.log((x += 5)); // Answer =15
 // console.log((x -= 5)); // Answer =5
@@ -193,9 +244,14 @@
 
 // FIXME: Type 3 - Comparison Operators (Returns Boolean Values - True or False)
 
-// let x = 1;
+// let x = 5;
 
 // Relational Operaters (< / > / >= / <=)
+
+// console.log(x > 4);
+// console.log(x < 4);
+// console.log(x >= 4);
+// console.log(x <= 4);
 
 // console.log(x > 0);
 // console.log(x >= 1);
@@ -211,6 +267,11 @@
 
 // Strict Equality Operators FIXME: Values on each of the === have the same "TYPE" and "VALUE"
 // FIXME: BEST PRACTICE IS TO USE THE STRICT EQUALITY OPERATOR
+
+// console.log(1 == 1);
+// console.log("1" == 1);
+// console.log(1 != 1);
+// console.log("1" != 1);
 
 // console.log(1 === 1); //  Will Return TRUE
 // console.log("1" === 1); //  Will Return FALSE as '1' is a string and not Number
@@ -233,7 +294,7 @@
 // the conditions that is set is if "points > 100"
 // READS LIKE AN IF STATEMENT
 
-// let type = points > 100 ? "gold" : "silver";
+// let type = points > 100 ? "gold customer" : "silver customer";
 
 // console.log(type);
 
@@ -246,6 +307,9 @@
 
 // console.log(true && true); // Will Return TRUE
 // console.log(false && true); // Will Return FALSE
+
+// console.log(true && true);
+// console.log(false && true);
 
 // FIXME: Real World Example - Approving a client Loan
 // Build an APP to evaluate if client have HIGH INCOME and
@@ -264,7 +328,7 @@
 // let goodCreditScore = true;
 // let eligibleForLoan = highIncome || goodCreditScore;
 
-// console.log(eligibleForLoan);  // Returns TRUE
+// console.log(eligibleForLoan); // Returns TRUE
 
 // TODO: Logical Operator NOT (Display as '!' exclamation mark)
 
@@ -318,8 +382,8 @@
 // R => 00000011  (Calculate each Vertical Line of 1 and 2 to get R)
 // R = Binary Number for the decimal number 00000011, which is 3
 
-// console.log(1 | 2); // Bitwise Operator OR (use only one '|' - Single Vertical Line)
 // console.log(1 & 2); // Bitwise Operator AND (use only one '&' - Single Ampersand)
+// console.log(1 | 2); // Bitwise Operator OR (use only one '|' - Single Vertical Line)
 
 // TODO: REAL WORLD EXAMPLE (OF BITWISE OPERATORS)
 // ACCESS CONTROL SYSTEM
@@ -429,10 +493,14 @@
 // else if (hour >= 12 && hour < 18) console.log("Good Afternoon!");
 // else console.log("Good Evening!");
 
+// if (hour >= 6 && hour < 12) console.log("Good Morning!");
+// else if (hour >= 12 && hour < 18) console.log("Good Afternoon!");
+// else console.log("Good Evening!");
+
 // FIXME: Example (SWITCH ... CASE) :
 // See if User is a GUEST, MODERATOR or ADMIN
 
-// let role = "ADMIN"; // Set the variable
+// let role = "MODERATOR"; // Set the variable
 
 // Syntax: switch (viariable);
 
@@ -444,7 +512,7 @@
 //     console.log("MODERATOR USER");
 //     break;
 //   case "ADMIN":
-//     console: log("ADMIN USER");
+//     console.log("ADMIN USER");
 //     break;
 //   default:
 //     console.log("UNKNOWN ROLE");
@@ -452,6 +520,11 @@
 
 // FIXME:  Implement same example with IF ... Else
 // Using the Strict Equality Operator (===)
+
+// if (role === "GUEST") console.log("GUEST USER");
+// else if (role === "MODERATOR") console.log("MODERATOR USER");
+// else if (role === "ADMIN") console.log("ADMIN USER");
+// else console.log("UNKNOWN USER");
 
 // if (role === "GUEST") {
 //   console.log("GUEST USER");
@@ -485,7 +558,7 @@
 // condition => how many times must this loop run
 //incrementExpression => use the Increment Operator (++)
 
-// for (let i = 0; i < 5; i++) {
+// for (let x = 0; x < 3; x++) {
 //   console.log("Hello World");
 // }
 
@@ -505,21 +578,21 @@
 
 // SYNTAX :  while (condition) {Statment; increment}
 
-// let i = 0;
-// while (i <= 5) {
-//   if (i % 2 !== 0) console.log(i);
-//   i++;
+// let x = 0;
+// while (x < 3) {
+//   console.log("Hello World");
+//   x++;
 // }
 
 //FIXME: DO ... WHILE Statements
 // Getting the Same Results as Above with a DO ... WHILE Loop
 // Slightly different than a WHILE Loop
 
-// let i = 0;
+// let x = 0;
 // do {
-//   if (i % 2 !== 0) console.log(i);
-//   i++;
-// } while (i <= 5);
+//   console.log("Hello World");
+//   x++;
+// } while (x < 3);
 
 // DO ... WHILE Statements is not used that much in coding
 
@@ -560,8 +633,9 @@
 // TODO: Example: properties of an object
 
 // const person = {
-//   name: "Quintus",
-//   age: 49,
+//   name: "Joe",
+//   surname: "Soap",
+//   age: 40,
 // };
 
 // for (let key in person) console.log(key, person[key]);
@@ -591,8 +665,8 @@
 
 // let i = 0;
 // while (i <= 10) {
-//   if (i === 5) break;
-//   if (i % 2 === 0) {
+//   if (i === 2) break;
+//   if (i % 3 === 0) {
 //     i++;
 //     continue;
 //   }
@@ -611,7 +685,7 @@
 // if (x > y) console.log(x);
 // else console.log(y);
 
-// let number = max(8, 9);
+// let number = max(20, 17);
 // console.log(number);
 
 // FIXME: Option 1 to write the code
@@ -628,5 +702,27 @@
 // Syntax (condition) ? x : y
 
 // function max(x, y) {
-//   return (x > y) ? x : y;
+//   return x > y ? x : y;
 // }
+
+// TODO: Exercise 2 - Landscape or Portriat
+
+// console.log(isLandscape(800, 600));
+
+// Option 1 to Write Code
+// function isLandscape(width, height) {
+//   if (width > height) return true;
+//   else return false;
+// }
+
+// Option 2 to write code
+// function isLandscape(width, height) {
+//   return width > height ? true : false;
+// }
+
+// Option 3 to write code
+// function isLandscape(width, height) {
+//   return width > height;
+// }
+
+// TODO: Exercise 3 - fizzbuzz algorythm
