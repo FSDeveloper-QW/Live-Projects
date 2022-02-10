@@ -1,0 +1,1502 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Navigation Bar 2</title>
+
+    <!-- -------------------------------------------------------- -->
+    <!-- TODO: Link Google Font - Roboto                          -->
+    <!-- -------------------------------------------------------- -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- -------------------------------------------------------- -->
+    <!-- TODO: Link Font Awesome Icons                            -->
+    <!-- -------------------------------------------------------- -->
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <!-- -------------------------------------------------------- -->
+    <!-- TODO: Link CSS Style Sheet                               -->
+    <!-- -------------------------------------------------------- -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- -------------------------------------------------------- -->
+    <!-- TODO: RESPONSIVE NAVIGATION                              -->
+    <!-- -------------------------------------------------------- -->
+
+    <header class="header">
+      <div class="container">
+        <!-- <div class="header_left">
+          <a href="#" class="logo"
+            ><img class="logo_size" src="images/Shopmax PNG Logo (White).png"
+          /></a>
+        </div> -->
+        <div class="header_left">
+          <a href="#" class="logo"><h2 class="logo_style">shopmax</h2></a>
+        </div>
+        <div class="header_right">
+          <label for="navTrigger" class="nav_icon">
+            <i class="fa fa-bars"></i>
+          </label>
+          <input id="navTrigger" type="checkbox" name="" />
+          <nav class="main_nav">
+            <ul>
+              <li>
+                <a href="#">shop now</a>
+                <i class="fa fa-sort-desc"></i>
+                <ul>
+                  <li>
+                    <a href="#">professional services</a>
+                    <i class="fa fa-sort-desc"></i>
+                    <ul>
+                      <li><a href="#">business support services</a></li>
+                      <li><a href="#">it cloud and web services</a></li>
+                      <li>
+                        <a href="#">financial planning, insurance and risk</a>
+                      </li>
+                      <li><a href="#">logistics and courier services</a></li>
+                      <li><a href="#">professional property services</a></li>
+                      <li><a href="#">property maintenance services</a></li>
+                      <li><a href="#">legal services</a></li>
+                      <li><a href="#">health care services</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="#">general services</a>
+                    <i class="fa fa-sort-desc"></i>
+                    <ul>
+                      <li><a href="#">category 1</a></li>
+                      <li><a href="#">category 2</a></li>
+                      <li><a href="#">category 3</a></li>
+                      <li><a href="#">category 4</a></li>
+                      <li><a href="#">category 5</a></li>
+                      <li><a href="#">category 6</a></li>
+                      <li><a href="#">category 7</a></li>
+                      <li><a href="#">category 8</a></li>
+                      <li><a href="#">category 9</a></li>
+                      <li><a href="#">category 10</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="#">products (marketplace)</a>
+                    <i class="fa fa-sort-desc"></i>
+                    <ul>
+                      <li><a href="#">arts and crafts</a></li>
+                      <li><a href="#">baking products</a></li>
+                      <li><a href="#">beverages and wines</a></li>
+                      <li><a href="#">canvases</a></li>
+                      <li><a href="#">clothing</a></li>
+                      <li><a href="#">food products</a></li>
+                      <li><a href="#">footwear</a></li>
+                      <li><a href="#">games</a></li>
+                      <li><a href="#">gifts</a></li>
+                      <li><a href="#">home décor</a></li>
+                      <li><a href="#">jewelry and accessories</a></li>
+                      <li><a href="#">painting</a></li>
+                      <li><a href="#">properties</a></li>
+                      <li><a href="#">toys</a></li>
+                      <li><a href="#">vehicles</a></li>
+                      <li><a href="#">wood and steel furniture</a></li>
+                      <li><a href="#">other marketplace products</a></li>
+                      <li><a href="#">all used/2nd hand products</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="#">Products (shopmax)</a>
+                    <i class="fa fa-sort-desc"></i>
+                    <ul>
+                      <li>
+                        <a href="#">mobile</a>
+                        <i class="fa fa-sort-desc"></i>
+                        <ul>
+                          <li>
+                            <a href="#">laptops</a>
+                            <i class="fa fa-sort-desc"></i>
+                            <ul>
+                              <li><a href="#">acer</a></li>
+                              <li><a href="#">apple</a></li>
+                              <li><a href="#">asus</a></li>
+                              <li><a href="#">dell</a></li>
+                              <li><a href="#">hp</a></li>
+                              <li><a href="#">huawei</a></li>
+                              <li><a href="#">lenovo</a></li>
+                              <li><a href="#">mecer</a></li>
+                              <li><a href="#">msi</a></li>
+                              <li><a href="#">other laptops</a></li>
+                            </ul>
+                          </li>
+                          <li>
+                            <a href="#">phones</a>
+                            <i class="fa fa-sort-desc"></i>
+                            <ul>
+                              <li><a href="#">apple</a></li>
+                              <li><a href="#">huawei</a></li>
+                              <li><a href="#">oppo</a></li>
+                              <li><a href="#">samsung</a></li>
+                              <li><a href="#">xiaomi</a></li>
+                              <li><a href="#">other phones</a></li>
+                            </ul>
+                          </li>
+                          <li>
+                            <a href="#">tablets</a>
+                            <i class="fa fa-sort-desc"></i>
+                            <ul>
+                              <li><a href="#">apple</a></li>
+                              <li><a href="#">huawei</a></li>
+                              <li><a href="#">lenovo</a></li>
+                              <li><a href="#">mecer</a></li>
+                              <li><a href="#">samsung</a></li>
+                              <li><a href="#">other tablets</a></li>
+                            </ul>
+                          </li>
+                          <li>
+                            <a href="#">watches</a>
+                            <i class="fa fa-sort-desc"></i>
+                            <ul>
+                              <li><a href="#">apple</a></li>
+                              <li><a href="#">fitbit</a></li>
+                              <li><a href="#">garmin</a></li>
+                              <li><a href="#">huawei</a></li>
+                              <li><a href="#">polar</a></li>
+                              <li><a href="#">samsung</a></li>
+                              <li><a href="#">suunto</a></li>
+                              <li><a href="#">other watches</a></li>
+                            </ul>
+                          </li>
+                          <li>
+                            <a href="#">data and airtime</a>
+                            <i class="fa fa-sort-desc"></i>
+                            <ul>
+                              <li><a href="#">cell c</a></li>
+                              <li><a href="#">mtn</a></li>
+                              <li><a href="#">rain</a></li>
+                              <li><a href="#">telkom</a></li>
+                              <li><a href="#">vodacom</a></li>
+                              <li><a href="#">other networks</a></li>
+                            </ul>
+                          </li>
+                          <li>
+                            <a href="#">mobile accessories</a>
+                            <i class="fa fa-sort-desc"></i>
+                            <ul>
+                              <li><a href="#">cases</a></li>
+                              <li><a href="#">chargers</a></li>
+                              <li><a href="#">earphones</a></li>
+                              <li><a href="#">screen protectors</a></li>
+                              <li><a href="#">speakers</a></li>
+                              <li><a href="#">storage</a></li>
+                              <li><a href="#">stylus pens</a></li>
+                              <li><a href="#">other mobile accessories</a></li>
+                            </ul>
+                          </li>
+                        </ul>
+                      </li>
+                      <li>
+                        <a href="#">office</a>
+                        <i class="fa fa-sort-desc"></i>
+                        <ul>
+                          <li><a href="#">advertise and signage (lfd's)</a></li>
+                          <li><a href="#">cabling and networks</a></li>
+                          <li>
+                            <a href="#">desktop pc's</a>
+                            <i class="fa fa-sort-desc"></i>
+                            <ul>
+                              <li><a href="#">acer</a></li>
+                              <li><a href="#">apple</a></li>
+                              <li><a href="#">dell</a></li>
+                              <li><a href="#">hp</a></li>
+                              <li><a href="#">lenovo</a></li>
+                              <li><a href="#">mecer</a></li>
+                              <li><a href="#">other desktop pc's</a></li>
+                            </ul>
+                          </li>
+                          <li><a href="#">dictation and recording</a></li>
+                          <li>
+                            <a href="#">office furniture</a>
+                            <i class="fa fa-sort-desc"></i>
+                            <ul>
+                              <li><a href="#">accessories</a></li>
+                              <li><a href="#">boardroom</a></li>
+                              <li><a href="#">canteen and chill areas</a></li>
+                              <li><a href="#">desks</a></li>
+                              <li><a href="#">education and training</a></li>
+                              <li>
+                                <a href="#"
+                                  >filing, steel furniture and lockers</a
+                                >
+                              </li>
+                              <li><a href="#">home office</a></li>
+                              <li><a href="#">office machines</a></li>
+                              <li><a href="#">paintings and decorations</a></li>
+                              <li><a href="#">pot plants</a></li>
+                              <li><a href="#">presentation and display</a></li>
+                              <li><a href="#">public seating</a></li>
+                              <li><a href="#">reception</a></li>
+                              <li><a href="#">seating</a></li>
+                              <li><a href="#">other office furniture</a></li>
+                            </ul>
+                          </li>
+                          <li>
+                            <a href="#">pc components</a>
+                            <i class="fa fa-sort-desc"></i>
+                            <ul>
+                              <li><a href="#">cases</a></li>
+                              <li><a href="#">cooling solutions</a></li>
+                              <li><a href="#">graphics cards</a></li>
+                              <li><a href="#">memory cards</a></li>
+                              <li><a href="#">motherboards</a></li>
+                              <li><a href="#">networking cards</a></li>
+                              <li><a href="#">power supply (psu)</a></li>
+                              <li><a href="#">processor (cpu)</a></li>
+                              <li><a href="#">sound and tv cards</a></li>
+                              <li><a href="#">storage (sata)</a></li>
+                              <li><a href="#">storage (ssd)</a></li>
+                              <li><a href="#">other pc components</a></li>
+                            </ul>
+                          </li>
+                          <li>
+                            <a href="#">pc peripherals</a>
+                            <i class="fa fa-sort-desc"></i>
+                            <ul>
+                              <li><a href="#">headsets</a></li>
+                              <li><a href="#">joysticks and wheels</a></li>
+                              <li><a href="#">keyboards and mice</a></li>
+                              <li><a href="#">monitors</a></li>
+                              <li><a href="#">optical drives</a></li>
+                              <li><a href="#">speakers</a></li>
+                              <li><a href="#">storage (flash card)</a></li>
+                              <li><a href="#">storage (nas)</a></li>
+                              <li><a href="#">storage (optical)</a></li>
+                              <li><a href="#">storage (usb flash)</a></li>
+                              <li><a href="#">webcams</a></li>
+                              <li><a href="#">other peripherals</a></li>
+                            </ul>
+                          </li>
+                          <li>
+                            <a href="#">point-of-sale (pos)</a>
+                            <i class="fa fa-sort-desc"></i>
+                            <ul>
+                              <li><a href="#">barcode scanners</a></li>
+                              <li><a href="#">biometric readers</a></li>
+                              <li><a href="#">card printers</a></li>
+                              <li><a href="#">card readers</a></li>
+                              <li><a href="#">cash drawers</a></li>
+                              <li><a href="#">pole displays</a></li>
+                              <li><a href="#">pos mobile printers</a></li>
+                              <li><a href="#">pos software</a></li>
+                              <li><a href="#">pos tablets</a></li>
+                              <li><a href="#">pos terminals</a></li>
+                              <li>
+                                <a href="#">receipt and label printers</a>
+                              </li>
+                              <li><a href="#">touch screen monitors</a></li>
+                              <li><a href="#">signature pads</a></li>
+                              <li><a href="#">other pos products</a></li>
+                            </ul>
+                          </li>
+                          <li>
+                            <a href="#">printers</a>
+                            <i class="fa fa-sort-desc"></i>
+                            <ul>
+                              <li><a href="#">3d printers</a></li>
+                              <li><a href="#">bizhub</a></li>
+                              <li><a href="#">brother</a></li>
+                              <li><a href="#">canon</a></li>
+                              <li><a href="#">epson</a></li>
+                              <li><a href="#">hp</a></li>
+                              <li><a href="#">lexmark</a></li>
+                              <li><a href="#">oki</a></li>
+                              <li><a href="#">samsung</a></li>
+                              <li><a href="#">other printers</a></li>
+                            </ul>
+                          </li>
+                          <li>
+                            <a href="#">projectors</a>
+                            <i class="fa fa-sort-desc"></i>
+                            <ul>
+                              <li><a href="#">acer</a></li>
+                              <li><a href="#">canon</a></li>
+                              <li><a href="#">dell</a></li>
+                              <li><a href="#">epson</a></li>
+                              <li><a href="#">nec</a></li>
+                              <li><a href="#">other projectors</a></li>
+                            </ul>
+                          </li>
+                          <li>
+                            <a href="#">security solutions</a>
+                            <i class="fa fa-sort-desc"></i>
+                            <ul>
+                              <li><a href="#">access control</a></li>
+                              <li><a href="#">security cameras</a></li>
+                              <li><a href="#">security accessories</a></li>
+                              <li><a href="#">security software</a></li>
+                              <li><a href="#">storage and recordings</a></li>
+                              <li><a href="#">tracking devices</a></li>
+                              <li><a href="#">other security equipment</a></li>
+                            </ul>
+                          </li>
+                          <li>
+                            <a href="#">servers</a>
+                            <i class="fa fa-sort-desc"></i>
+                            <ul>
+                              <li><a href="#">cabinets and racks</a></li>
+                              <li><a href="#">dell</a></li>
+                              <li><a href="#">hp</a></li>
+                              <li><a href="#">huawei</a></li>
+                              <li><a href="#">intel</a></li>
+                              <li><a href="#">lenovo</a></li>
+                              <li><a href="#">server accessories</a></li>
+                              <li><a href="#">server backup solutions</a></li>
+                              <li><a href="#">server software</a></li>
+                              <li><a href="#">server storage</a></li>
+                              <li><a href="#">other server equipment</a></li>
+                            </ul>
+                          </li>
+                          <li>
+                            <a href="#">software</a>
+                            <i class="fa fa-sort-desc"></i>
+                            <ul>
+                              <li><a href="#">accounting</a></li>
+                              <li><a href="#">anti-virus and protection</a></li>
+                              <li><a href="#">graphic design</a></li>
+                              <li><a href="#">legal and dictation</a></li>
+                              <li><a href="#">operating systems</a></li>
+                              <li><a href="#">productivity</a></li>
+                              <li><a href="#">other software</a></li>
+                            </ul>
+                          </li>
+                          <li><a href="#">special plugs and adaptors</a></li>
+                          <li>
+                            <a href="#">stationery</a>
+                            <i class="fa fa-sort-desc"></i>
+                            <ul>
+                              <li><a href="#">books and pads</a></li>
+                              <li><a href="#">canteen and janitorial</a></li>
+                              <li>
+                                <a href="#">diaries, journals and planners</a>
+                              </li>
+                              <li>
+                                <a href="#"
+                                  >electrical appliances and accessories</a
+                                >
+                              </li>
+                              <li><a href="#">envelopes</a></li>
+                              <li><a href="#">filing and storage</a></li>
+                              <li>
+                                <a href="#">labels and labeling machines</a>
+                              </li>
+                              <li>
+                                <a href="#">office machines and accessories</a>
+                              </li>
+                              <li>
+                                <a href="#"
+                                  >office supplies and desk accessories</a
+                                >
+                              </li>
+                              <li><a href="#">presentation</a></li>
+                              <li><a href="#">printing consumables</a></li>
+                              <li><a href="#">printing and other paper</a></li>
+                              <li><a href="#">rubber stamps</a></li>
+                              <li><a href="#">security</a></li>
+                              <li><a href="#">warehouse and packaging</a></li>
+                              <li><a href="#">wellbeing and safety</a></li>
+                              <li><a href="#">writing and correction</a></li>
+                              <li><a href="#">other stationery</a></li>
+                            </ul>
+                          </li>
+                          <li><a href="#">streaming solutions</a></li>
+                          <li><a href="#">telephony solutions</a></li>
+                          <li><a href="#">tv brackets</a></li>
+                          <li><a href="#">ups solutions</a></li>
+                          <li><a href="#">video conferencing</a></li>
+                        </ul>
+                      </li>
+                      <li>
+                        <a href="#">essential</a>
+                        <i class="fa fa-sort-desc"></i>
+                        <ul>
+                          <li>
+                            <a href="#">covid-19, cleaning and ppe</a>
+                            <i class="fa fa-sort-desc"></i>
+                            <ul>
+                              <li><a href="#">coverall suits</a></li>
+                              <li><a href="#">disinfectants</a></li>
+                              <li><a href="#">face masks</a></li>
+                              <li><a href="#">face shields</a></li>
+                              <li><a href="#">high pressure sprayers</a></li>
+                              <li><a href="#">nitrile and latex gloves</a></li>
+                              <li><a href="#">paper towel stands</a></li>
+                              <li><a href="#">protective eyewear</a></li>
+                              <li><a href="#">protective goggles</a></li>
+                              <li><a href="#">hand sanitisers</a></li>
+                              <li><a href="#">multi-purpose sanitisers</a></li>
+                              <li><a href="#">sanitising dispensers</a></li>
+                              <li><a href="#">sanitising pens</a></li>
+                              <li><a href="#">shoe covers</a></li>
+                              <li><a href="#">surgical gowns</a></li>
+                              <li><a href="#">surgical sleeves</a></li>
+                              <li><a href="#">surgical mop caps</a></li>
+                              <li><a href="#">thermometers</a></li>
+                              <li>
+                                <a href="#">transparent shields and barriers</a>
+                              </li>
+                              <li><a href="#">wet wipes</a></li>
+                              <li><a href="#">other cleaning products</a></li>
+                            </ul>
+                          </li>
+                          <li>
+                            <a href="#">emergency products</a>
+                            <i class="fa fa-sort-desc"></i>
+                            <ul>
+                              <li><a href="#">first-aid kits</a></li>
+                              <li><a href="#">72-hour survival bags</a></li>
+                              <li><a href="#">water supplies</a></li>
+                              <li><a href="#">dry food supplies</a></li>
+                              <li>
+                                <a href="#">emergency tools and gadgets</a>
+                              </li>
+                              <li><a href="#">other emergency products</a></li>
+                            </ul>
+                          </li>
+                          <li>
+                            <a href="#">energy products</a>
+                            <i class="fa fa-sort-desc"></i>
+                            <ul>
+                              <li><a href="#">batteries</a></li>
+                              <li><a href="#">bulk fuel (diesel)</a></li>
+                              <li><a href="#">bulk fuel (paraffin)</a></li>
+                              <li><a href="#">bulk fuel (petrol)</a></li>
+                              <li><a href="#">generators</a></li>
+                              <li><a href="#">inverters</a></li>
+                              <li><a href="#">lpg (gas)</a></li>
+                              <li><a href="#">oil (lubricants)</a></li>
+                              <li><a href="#">power banks</a></li>
+                              <li><a href="#">solar geysers</a></li>
+                              <li><a href="#">solar panels</a></li>
+                              <li><a href="#">water tanks</a></li>
+                              <li><a href="#">other energy products</a></li>
+                            </ul>
+                          </li>
+                          <li><a href="#">health care</a></li>
+                          <li><a href="#">medication</a></li>
+                          <li><a href="#">toiletries</a></li>
+                          <li><a href="#">other essentials</a></li>
+                        </ul>
+                      </li>
+                      <li>
+                        <a href="#">clothing and footwear</a>
+                        <i class="fa fa-sort-desc"></i>
+                        <ul>
+                          <li>
+                            <a href="#">ladies</a>
+                            <i class="fa fa-sort-desc"></i>
+                            <ul>
+                              <li>
+                                <a href="#">shoes</a>
+                                <i class="fa fa-sort-desc"></i>
+                                <ul>
+                                  <li><a href="#">boots</a></li>
+                                  <li><a href="#">flats</a></li>
+                                  <li><a href="#">flip flops</a></li>
+                                  <li><a href="#">heels</a></li>
+                                  <li><a href="#">pumps</a></li>
+                                  <li><a href="#">sandals</a></li>
+                                  <li><a href="#">sneakers</a></li>
+                                  <li><a href="#">trainers</a></li>
+                                </ul>
+                              </li>
+                              <li>
+                                <a href="#">bottoms</a>
+                                <i class="fa fa-sort-desc"></i>
+                                <ul>
+                                  <li><a href="#">jeans</a></li>
+                                  <li><a href="#">shorts</a></li>
+                                  <li><a href="#">skirts</a></li>
+                                  <li><a href="#">trousers</a></li>
+                                </ul>
+                              </li>
+                              <li>
+                                <a href="#">dresses</a>
+                                <i class="fa fa-sort-desc"></i>
+                                <ul>
+                                  <li><a href="#">casual</a></li>
+                                  <li><a href="#">formal</a></li>
+                                  <li><a href="#">jumpsuits</a></li>
+                                  <li><a href="#">occasion</a></li>
+                                  <li><a href="#">playsuits</a></li>
+                                </ul>
+                              </li>
+                              <li>
+                                <a href="#">tops</a>
+                                <i class="fa fa-sort-desc"></i>
+                                <ul>
+                                  <li><a href="#">blouses</a></li>
+                                  <li><a href="#">camis</a></li>
+                                  <li><a href="#">hoodies</a></li>
+                                  <li><a href="#">knitwear</a></li>
+                                  <li><a href="#">shirts</a></li>
+                                  <li><a href="#">sweats</a></li>
+                                  <li><a href="#">t-shirts</a></li>
+                                  <li><a href="#">vests</a></li>
+                                </ul>
+                              </li>
+                              <li>
+                                <a href="#">jackets and coats</a>
+                                <i class="fa fa-sort-desc"></i>
+                                <ul>
+                                  <li><a href="#">coats</a></li>
+                                  <li><a href="#">jackets</a></li>
+                                </ul>
+                              </li>
+                              <li>
+                                <a href="#">lingerie and sleepwear</a>
+                                <i class="fa fa-sort-desc"></i>
+                                <ul>
+                                  <li><a href="#">bras</a></li>
+                                  <li><a href="#">panties</a></li>
+                                  <li><a href="#">sleepwear</a></li>
+                                  <li><a href="#">socks</a></li>
+                                  <li><a href="#">stockings</a></li>
+                                </ul>
+                              </li>
+                              <li>
+                                <a href="#">sports</a>
+                                <i class="fa fa-sort-desc"></i>
+                                <ul>
+                                  <li><a href="#">bottoms</a></li>
+                                  <li><a href="#">hoodies</a></li>
+                                  <li><a href="#">sweats</a></li>
+                                  <li><a href="#">jackets</a></li>
+                                  <li><a href="#">sports bras</a></li>
+                                  <li><a href="#">t-shirts</a></li>
+                                  <li><a href="#">trainers</a></li>
+                                </ul>
+                              </li>
+                              <li>
+                                <a href="#">swimwear</a>
+                                <i class="fa fa-sort-desc"></i>
+                                <ul>
+                                  <li><a href="#">bikinis</a></li>
+                                  <li><a href="#">kaftans</a></li>
+                                  <li><a href="#">cover-ups</a></li>
+                                  <li><a href="#">one piece</a></li>
+                                  <li><a href="#">other swimwear</a></li>
+                                </ul>
+                              </li>
+                              <li>
+                                <a href="#">ladies accessories</a>
+                                <i class="fa fa-sort-desc"></i>
+                                <ul>
+                                  <li><a href="#">bags and purses</a></li>
+                                  <li><a href="#">belts</a></li>
+                                  <li><a href="#">eyewear</a></li>
+                                  <li><a href="#">headwear</a></li>
+                                  <li><a href="#">jewellery</a></li>
+                                  <li><a href="#">scarves</a></li>
+                                  <li>
+                                    <a href="#">other fashion accessories</a>
+                                  </li>
+                                </ul>
+                              </li>
+                              <li>
+                                <a href="#">ladies beauty products</a>
+                                <i class="fa fa-sort-desc"></i>
+                                <ul>
+                                  <li><a href="#">beauty accessories</a></li>
+                                  <li><a href="#">eyes</a></li>
+                                  <li><a href="#">face</a></li>
+                                  <li><a href="#">fragrances</a></li>
+                                  <li><a href="#">gift sets</a></li>
+                                  <li><a href="#">haircare</a></li>
+                                  <li><a href="#">lips</a></li>
+                                  <li><a href="#">nailcare</a></li>
+                                  <li><a href="#">nutricosmetics</a></li>
+                                  <li><a href="#">skincare</a></li>
+                                </ul>
+                              </li>
+                            </ul>
+                          </li>
+                          <li>
+                            <a href="#">mens</a>
+                            <i class="fa fa-sort-desc"></i>
+                            <ul>
+                              <li>
+                                <a href="#">shoes</a>
+                                <i class="fa fa-sort-desc"></i>
+                                <ul>
+                                  <li><a href="#">boots</a></li>
+                                  <li><a href="#">formal shoes</a></li>
+                                  <li><a href="#">sandals</a></li>
+                                  <li><a href="#">flip flops</a></li>
+                                  <li><a href="#">slip-ons</a></li>
+                                  <li><a href="#">loafers</a></li>
+                                  <li><a href="#">sneakers</a></li>
+                                  <li><a href="#">trainers</a></li>
+                                </ul>
+                              </li>
+                              <li>
+                                <a href="#">bottoms</a>
+                                <i class="fa fa-sort-desc"></i>
+                                <ul>
+                                  <li><a href="#">jeans</a></li>
+                                  <li><a href="#">pants</a></li>
+                                  <li><a href="#">chinos</a></li>
+                                  <li><a href="#">shorts</a></li>
+                                </ul>
+                              </li>
+                              <li>
+                                <a href="#">tops</a>
+                                <i class="fa fa-sort-desc"></i>
+                                <ul>
+                                  <li><a href="#">hoodies</a></li>
+                                  <li><a href="#">sweats</a></li>
+                                  <li><a href="#">knitwear</a></li>
+                                  <li><a href="#">shirts</a></li>
+                                  <li><a href="#">t-shirts</a></li>
+                                  <li><a href="#">vests</a></li>
+                                </ul>
+                              </li>
+                              <li>
+                                <a href="#">jackets and coats</a>
+                                <i class="fa fa-sort-desc"></i>
+                                <ul>
+                                  <li><a href="#">casual jackets</a></li>
+                                </ul>
+                              </li>
+                              <li>
+                                <a href="#">formal wear</a>
+                                <i class="fa fa-sort-desc"></i>
+                                <ul>
+                                  <li><a href="#">formal blazers</a></li>
+                                  <li><a href="#">formal jackets</a></li>
+                                  <li><a href="#">formal pants</a></li>
+                                  <li><a href="#">formal shirts</a></li>
+                                </ul>
+                              </li>
+                              <li>
+                                <a href="#">underwear and sleepwear</a>
+                                <i class="fa fa-sort-desc"></i>
+                                <ul>
+                                  <li><a href="#">sleepwear</a></li>
+                                  <li><a href="#">socks</a></li>
+                                  <li><a href="#">underwear</a></li>
+                                </ul>
+                              </li>
+                              <li>
+                                <a href="#">sports</a>
+                                <i class="fa fa-sort-desc"></i>
+                                <ul>
+                                  <li><a href="#">hoodies</a></li>
+                                  <li><a href="#">sweats</a></li>
+                                  <li><a href="#">sports jackets</a></li>
+                                  <li><a href="#">sweatpants</a></li>
+                                  <li><a href="#">shorts</a></li>
+                                  <li><a href="#">t-shirts</a></li>
+                                  <li><a href="#">trainers</a></li>
+                                </ul>
+                              </li>
+                              <li>
+                                <a href="#">swimwear</a>
+                                <i class="fa fa-sort-desc"></i>
+                                <ul>
+                                  <li><a href="#">mens swimwear</a></li>
+                                </ul>
+                              </li>
+                              <li>
+                                <a href="#">mens accessories</a>
+                                <i class="fa fa-sort-desc"></i>
+                                <ul>
+                                  <li><a href="#">bags and wallets</a></li>
+                                  <li><a href="#">belts</a></li>
+                                  <li><a href="#">eyewear</a></li>
+                                  <li><a href="#">headwear</a></li>
+                                </ul>
+                              </li>
+                              <li>
+                                <a href="#">mens grooming products</a>
+                                <i class="fa fa-sort-desc"></i>
+                                <ul>
+                                  <li><a href="#">fragrances</a></li>
+                                  <li><a href="#">haircare</a></li>
+                                  <li><a href="#">nutricosmetics</a></li>
+                                  <li><a href="#">skincare</a></li>
+                                </ul>
+                              </li>
+                            </ul>
+                          </li>
+                          <li>
+                            <a href="#">kids</a>
+                            <i class="fa fa-sort-desc"></i>
+                            <ul>
+                              <li>
+                                <a href="#">baby girls (0-2 years)</a>
+                                <i class="fa fa-sort-desc"></i>
+                                <ul>
+                                  <li><a href="#">baby girl accessories</a></li>
+                                  <li><a href="#">babygrows</a></li>
+                                  <li><a href="#">sleepsuits</a></li>
+                                  <li><a href="#">dresses</a></li>
+                                  <li><a href="#">skirts</a></li>
+                                  <li><a href="#">jackets</a></li>
+                                  <li><a href="#">knitwear</a></li>
+                                  <li><a href="#">pants</a></li>
+                                  <li><a href="#">jeans</a></li>
+                                  <li><a href="#">sets</a></li>
+                                  <li><a href="#">shoes</a></li>
+                                  <li><a href="#">shorts</a></li>
+                                  <li><a href="#">swimwear</a></li>
+                                  <li><a href="#">tops</a></li>
+                                </ul>
+                              </li>
+                              <li>
+                                <a href="#">baby boys (0-2 years)</a>
+                                <i class="fa fa-sort-desc"></i>
+                                <ul>
+                                  <li><a href="#">baby boy accessories</a></li>
+                                  <li><a href="#">babygrows</a></li>
+                                  <li><a href="#">sleepsuits</a></li>
+                                  <li><a href="#">jackets</a></li>
+                                  <li><a href="#">knitwear</a></li>
+                                  <li><a href="#">pants</a></li>
+                                  <li><a href="#">jeans</a></li>
+                                  <li><a href="#">sets</a></li>
+                                  <li><a href="#">shoes</a></li>
+                                  <li><a href="#">shorts</a></li>
+                                  <li><a href="#">swimwear</a></li>
+                                  <li><a href="#">tops</a></li>
+                                </ul>
+                              </li>
+                              <li>
+                                <a href="#">girls (2 - 8 years)</a>
+                                <i class="fa fa-sort-desc"></i>
+                                <ul>
+                                  <li><a href="#">girls accessories</a></li>
+                                  <li><a href="#">dresses</a></li>
+                                  <li><a href="#">skirts</a></li>
+                                  <li><a href="#">jackets</a></li>
+                                  <li><a href="#">knitwear</a></li>
+                                  <li><a href="#">pants</a></li>
+                                  <li><a href="#">jeans</a></li>
+                                  <li><a href="#">sets</a></li>
+                                  <li><a href="#">shoes</a></li>
+                                  <li><a href="#">shorts</a></li>
+                                  <li><a href="#">sleepwear</a></li>
+                                  <li><a href="#">underwear</a></li>
+                                  <li><a href="#">swimwear</a></li>
+                                  <li><a href="#">tops</a></li>
+                                </ul>
+                              </li>
+                              <li>
+                                <a href="#">boys (2-8 years)</a>
+                                <i class="fa fa-sort-desc"></i>
+                                <ul>
+                                  <li><a href="#">boys accessories</a></li>
+                                  <li><a href="#">jackets</a></li>
+                                  <li><a href="#">knitwear</a></li>
+                                  <li><a href="#">pants</a></li>
+                                  <li><a href="#">jeans</a></li>
+                                  <li><a href="#">sets</a></li>
+                                  <li><a href="#">shoes</a></li>
+                                  <li><a href="#">shorts</a></li>
+                                  <li><a href="#">sleepwear</a></li>
+                                  <li><a href="#">underwear</a></li>
+                                  <li><a href="#">swimwear</a></li>
+                                  <li><a href="#">tops</a></li>
+                                </ul>
+                              </li>
+                              <li>
+                                <a href="#">girls (8 - 16 years)</a>
+                                <i class="fa fa-sort-desc"></i>
+                                <ul>
+                                  <li><a href="#">girls accessories</a></li>
+                                  <li><a href="#">dresses</a></li>
+                                  <li><a href="#">skirts</a></li>
+                                  <li><a href="#">jackets</a></li>
+                                  <li><a href="#">knitwear</a></li>
+                                  <li><a href="#">pants</a></li>
+                                  <li><a href="#">jeans</a></li>
+                                  <li><a href="#">sets</a></li>
+                                  <li><a href="#">shoes</a></li>
+                                  <li><a href="#">shorts</a></li>
+                                  <li><a href="#">sleepwear</a></li>
+                                  <li><a href="#">underwear</a></li>
+                                  <li><a href="#">swimwear</a></li>
+                                  <li><a href="#">tops</a></li>
+                                </ul>
+                              </li>
+                              <li>
+                                <a href="#">boys (8-16 years)</a>
+                                <i class="fa fa-sort-desc"></i>
+                                <ul>
+                                  <li><a href="#">boys accessories</a></li>
+                                  <li><a href="#">jackets</a></li>
+                                  <li><a href="#">knitwear</a></li>
+                                  <li><a href="#">pants</a></li>
+                                  <li><a href="#">jeans</a></li>
+                                  <li><a href="#">sets</a></li>
+                                  <li><a href="#">shoes</a></li>
+                                  <li><a href="#">shorts</a></li>
+                                  <li><a href="#">sleepwear</a></li>
+                                  <li><a href="#">underwear</a></li>
+                                  <li><a href="#">swimwear</a></li>
+                                  <li><a href="#">tops</a></li>
+                                </ul>
+                              </li>
+                            </ul>
+                          </li>
+                        </ul>
+                      </li>
+                      <li>
+                        <a href="#">food, beverages and groceries</a>
+                        <i class="fa fa-sort-desc"></i>
+                        <ul>
+                          <li>
+                            <a href="#">fresh produce</a>
+                            <i class="fa fa-sort-desc"></i>
+                            <ul>
+                              <li><a href="#">fruits</a></li>
+                              <li><a href="#">vegetables</a></li>
+                            </ul>
+                          </li>
+                          <li>
+                            <a href="#">bakery</a>
+                            <i class="fa fa-sort-desc"></i>
+                            <ul>
+                              <li><a href="#">breads</a></li>
+                              <li><a href="#">confectionary</a></li>
+                              <li><a href="#">rolls</a></li>
+                            </ul>
+                          </li>
+                          <li>
+                            <a href="#">diary and eggs</a>
+                            <i class="fa fa-sort-desc"></i>
+                            <ul>
+                              <li><a href="#">butter</a></li>
+                              <li><a href="#">cheese</a></li>
+                              <li><a href="#">eggs</a></li>
+                              <li><a href="#">milk</a></li>
+                              <li><a href="#">yoghurt</a></li>
+                            </ul>
+                          </li>
+                          <li>
+                            <a href="#">deli and party</a>
+                            <i class="fa fa-sort-desc"></i>
+                            <ul>
+                              <li><a href="#">cold meats</a></li>
+                              <li><a href="#">dips</a></li>
+                              <li><a href="#">spreads</a></li>
+                            </ul>
+                          </li>
+                          <li><a href="#">readymade meals</a></li>
+                          <li><a href="#">desserts</a></li>
+                          <li>
+                            <a href="#">meats, poultry and fish</a>
+                            <i class="fa fa-sort-desc"></i>
+                            <ul>
+                              <li><a href="#">beef</a></li>
+                              <li><a href="#">chicken</a></li>
+                              <li><a href="#">fish</a></li>
+                              <li><a href="#">lamb</a></li>
+                              <li><a href="#">other meats</a></li>
+                            </ul>
+                          </li>
+                          <li>
+                            <a href="#">frozen foods</a>
+                            <i class="fa fa-sort-desc"></i>
+                            <ul>
+                              <li><a href="#">frozen chicken</a></li>
+                              <li><a href="#">frozen chips/potatoes</a></li>
+                              <li><a href="#">frozen fish</a></li>
+                              <li><a href="#">frozen fruits</a></li>
+                              <li><a href="#">frozen meals</a></li>
+                              <li><a href="#">frozen meat</a></li>
+                              <li><a href="#">frozen pastry</a></li>
+                              <li><a href="#">frozen vegetables</a></li>
+                              <li><a href="#">ice cream</a></li>
+                              <li><a href="#">other frozen products</a></li>
+                            </ul>
+                          </li>
+                          <li>
+                            <a href="#">beverages</a>
+                            <i class="fa fa-sort-desc"></i>
+                            <ul>
+                              <li><a href="#">energy drinks</a></li>
+                              <li><a href="#">fruit juices</a></li>
+                              <li><a href="#">mixers</a></li>
+                              <li><a href="#">non-alcoholic beverages</a></li>
+                              <li><a href="#">soft drinks</a></li>
+                              <li><a href="#">water</a></li>
+                              <li><a href="#">other beverages</a></li>
+                            </ul>
+                          </li>
+                          <li>
+                            <a href="#">tobacco products</a>
+                            <i class="fa fa-sort-desc"></i>
+                            <ul>
+                              <li><a href="#">cigarettes</a></li>
+                              <li><a href="#">e-cigarettes</a></li>
+                              <li><a href="#">lighters</a></li>
+                              <li><a href="#">matches</a></li>
+                              <li><a href="#">other tobacco products</a></li>
+                            </ul>
+                          </li>
+                          <li>
+                            <a href="#">beer, cider and seltzer</a>
+                            <i class="fa fa-sort-desc"></i>
+                            <ul>
+                              <li><a href="#">beers</a></li>
+                              <li><a href="#">ciders</a></li>
+                              <li><a href="#">spirit coolers</a></li>
+                              <li><a href="#">seltzer</a></li>
+                            </ul>
+                          </li>
+                          <li>
+                            <a href="#">wines</a>
+                            <i class="fa fa-sort-desc"></i>
+                            <ul>
+                              <li><a href="#">champagne</a></li>
+                              <li><a href="#">red wines</a></li>
+                              <li><a href="#">rosé wines</a></li>
+                              <li><a href="#">white wines</a></li>
+                              <li><a href="#">other wines</a></li>
+                            </ul>
+                          </li>
+                          <li>
+                            <a href="#">spirits</a>
+                            <i class="fa fa-sort-desc"></i>
+                            <ul>
+                              <li><a href="#">brandy</a></li>
+                              <li><a href="#">gin</a></li>
+                              <li><a href="#">rum</a></li>
+                              <li><a href="#">tequila</a></li>
+                              <li><a href="#">vodka</a></li>
+                              <li><a href="#">whisky</a></li>
+                              <li><a href="#">other spirits</a></li>
+                            </ul>
+                          </li>
+                          <li>
+                            <a href="#">snacks</a>
+                            <i class="fa fa-sort-desc"></i>
+                            <ul>
+                              <li><a href="#">biltong</a></li>
+                              <li><a href="#">chips</a></li>
+                              <li><a href="#">chocolates</a></li>
+                              <li><a href="#">cookies and biscuits</a></li>
+                              <li><a href="#">droëwors</a></li>
+                              <li><a href="#">peanuts and raisins</a></li>
+                              <li><a href="#">popcorn</a></li>
+                              <li><a href="#">pretzels</a></li>
+                              <li><a href="#">sweets</a></li>
+                              <li><a href="#">other snacks</a></li>
+                            </ul>
+                          </li>
+                          <li>
+                            <a href="#">food cupboards</a>
+                            <i class="fa fa-sort-desc"></i>
+                            <ul>
+                              <li><a href="#">baking products</a></li>
+                              <li><a href="#">breakfast cereals</a></li>
+                              <li><a href="#">canned foods</a></li>
+                              <li><a href="#">coffee</a></li>
+                              <li><a href="#">hot drinks</a></li>
+                              <li><a href="#">pasta</a></li>
+                              <li><a href="#">sauces</a></li>
+                              <li><a href="#">spices</a></li>
+                              <li><a href="#">sugar</a></li>
+                              <li><a href="#">sweeteners</a></li>
+                              <li><a href="#">tea</a></li>
+                              <li><a href="#">other cupboard foods</a></li>
+                            </ul>
+                          </li>
+                          <li><a href="#">household and cleaning</a></li>
+                          <li><a href="#">personal care and hygiene</a></li>
+                          <li>
+                            <a href="#">baby care</a>
+                            <i class="fa fa-sort-desc"></i>
+                            <ul>
+                              <li><a href="#">baby food</a></li>
+                              <li><a href="#">baby health</a></li>
+                              <li><a href="#">baby nappies</a></li>
+                              <li><a href="#">other baby care products</a></li>
+                            </ul>
+                          </li>
+                          <li><a href="#">pharmacy and health</a></li>
+                          <li>
+                            <a href="#">pet care</a>
+                            <i class="fa fa-sort-desc"></i>
+                            <ul>
+                              <li><a href="#">pet food</a></li>
+                              <li><a href="#">pet health</a></li>
+                              <li><a href="#">other pet care products</a></li>
+                            </ul>
+                          </li>
+                          <li>
+                            <a href="#">braai and outdoors</a>
+                            <i class="fa fa-sort-desc"></i>
+                            <ul>
+                              <li><a href="#">braai metal grids</a></li>
+                              <li><a href="#">braai tongs</a></li>
+                              <li><a href="#">charcoal</a></li>
+                              <li><a href="#">fire starters</a></li>
+                              <li><a href="#">fire wood</a></li>
+                              <li><a href="#">pool cleaners</a></li>
+                              <li><a href="#">pool accessories</a></li>
+                              <li><a href="#">other braai accessories</a></li>
+                            </ul>
+                          </li>
+                        </ul>
+                      </li>
+                      <li>
+                        <a href="#">home and living</a>
+                        <i class="fa fa-sort-desc"></i>
+                        <ul>
+                          <li>
+                            <a href="#">bathrooms</a>
+                            <i class="fa fa-sort-desc"></i>
+                            <ul>
+                              <li><a href="#">bath accessories</a></li>
+                              <li><a href="#">shower accessories</a></li>
+                              <li><a href="#">toilet accessories</a></li>
+                            </ul>
+                          </li>
+                          <li>
+                            <a href="#">bedrooms</a>
+                            <i class="fa fa-sort-desc"></i>
+                            <ul>
+                              <li><a href="#">beds and mattresses</a></li>
+                              <li><a href="#">bedding and cushions</a></li>
+                            </ul>
+                          </li>
+                          <li>
+                            <a href="#">cookware</a>
+                            <i class="fa fa-sort-desc"></i>
+                            <ul>
+                              <li><a href="#">dinnerware</a></li>
+                              <li><a href="#">homeware</a></li>
+                              <li><a href="#">pots and pans</a></li>
+                              <li><a href="#">pressure cookers</a></li>
+                            </ul>
+                          </li>
+                          <li>
+                            <a href="#">dining rooms</a>
+                            <i class="fa fa-sort-desc"></i>
+                            <ul>
+                              <li><a href="#">dining chairs</a></li>
+                              <li><a href="#">dining tables</a></li>
+                            </ul>
+                          </li>
+                          <li><a href="#">dstv and tv boxes</a></li>
+                          <li>
+                            <a href="#">kitchen</a>
+                            <i class="fa fa-sort-desc"></i>
+                            <ul>
+                              <li><a href="#">coffee makers</a></li>
+                              <li><a href="#">deep fryers</a></li>
+                              <li><a href="#">dish washers</a></li>
+                              <li><a href="#">fridges and freezers</a></li>
+                              <li><a href="#">grills</a></li>
+                              <li><a href="#">kettles</a></li>
+                              <li><a href="#">microwaves</a></li>
+                              <li><a href="#">mixers and blenders</a></li>
+                              <li><a href="#">sandwich makers</a></li>
+                              <li><a href="#">steamers</a></li>
+                              <li><a href="#">stoves and hotplates</a></li>
+                              <li><a href="#">toasters</a></li>
+                            </ul>
+                          </li>
+                          <li>
+                            <a href="#">laundry</a>
+                            <i class="fa fa-sort-desc"></i>
+                            <ul>
+                              <li><a href="#">irons and accessories</a></li>
+                              <li><a href="#">tumble dryers</a></li>
+                              <li><a href="#">washing accessories</a></li>
+                              <li><a href="#">washing machines</a></li>
+                            </ul>
+                          </li>
+                          <li>
+                            <a href="#">lounge</a>
+                            <i class="fa fa-sort-desc"></i>
+                            <ul>
+                              <li><a href="#">air conditioning</a></li>
+                              <li><a href="#">desks and chairs</a></li>
+                              <li><a href="#">fans and heaters</a></li>
+                              <li><a href="#">lounge suites</a></li>
+                              <li><a href="#">tv stands</a></li>
+                            </ul>
+                          </li>
+                          <li>
+                            <a href="#">patio and pools</a>
+                            <i class="fa fa-sort-desc"></i>
+                            <ul>
+                              <li><a href="#">benches</a></li>
+                              <li><a href="#">braai accessories</a></li>
+                              <li><a href="#">jungle gyms</a></li>
+                              <li><a href="#">patio chairs</a></li>
+                              <li><a href="#">patio sets</a></li>
+                              <li><a href="#">pools and accessories</a></li>
+                              <li><a href="#">shading</a></li>
+                            </ul>
+                          </li>
+                          <li><a href="#">sound equipment</a></li>
+                          <li><a href="#">speakers</a></li>
+                          <li>
+                            <a href="#">television</a>
+                            <i class="fa fa-sort-desc"></i>
+                            <ul>
+                              <li><a href="#">hisense</a></li>
+                              <li><a href="#">lg</a></li>
+                              <li><a href="#">samsung</a></li>
+                              <li><a href="#">other tv's</a></li>
+                            </ul>
+                          </li>
+                          <li>
+                            <a href="#">home accessories</a>
+                            <i class="fa fa-sort-desc"></i>
+                            <ul>
+                              <li><a href="#">plants</a></li>
+                              <li><a href="#">paintings</a></li>
+                              <li><a href="#">decorations</a></li>
+                            </ul>
+                          </li>
+                        </ul>
+                      </li>
+                      <li>
+                        <a href="#">hobbies</a>
+                        <i class="fa fa-sort-desc"></i>
+                        <ul>
+                          <li>
+                            <a href="#">books</a>
+                            <i class="fa fa-sort-desc"></i>
+                            <ul>
+                              <li><a href="#">business books</a></li>
+                              <li><a href="#">educational books</a></li>
+                              <li><a href="#">it books</a></li>
+                              <li><a href="#">legal books</a></li>
+                              <li><a href="#">other books</a></li>
+                            </ul>
+                          </li>
+                          <li>
+                            <a href="#">cameras</a>
+                            <i class="fa fa-sort-desc"></i>
+                            <ul>
+                              <li><a href="#">canon</a></li>
+                              <li><a href="#">kodak</a></li>
+                              <li><a href="#">nikon</a></li>
+                              <li><a href="#">sony</a></li>
+                              <li><a href="#">camera accessories</a></li>
+                              <li><a href="#">other cameras</a></li>
+                            </ul>
+                          </li>
+                          <li>
+                            <a href="#">gaming</a>
+                            <i class="fa fa-sort-desc"></i>
+                            <ul>
+                              <li><a href="#">arcade machines</a></li>
+                              <li><a href="#">board games</a></li>
+                              <li><a href="#">card games</a></li>
+                              <li><a href="#">casino games</a></li>
+                              <li><a href="#">chess games</a></li>
+                              <li><a href="#">gaming acessories</a></li>
+                              <li><a href="#">gaming consoles</a></li>
+                              <li><a href="#">handheld</a></li>
+                              <li><a href="#">nintendo games</a></li>
+                              <li><a href="#">pc games</a></li>
+                              <li><a href="#">playstation games</a></li>
+                              <li><a href="#">retro gaming</a></li>
+                              <li><a href="#">xbox games</a></li>
+                              <li><a href="#">other games</a></li>
+                            </ul>
+                          </li>
+                          <li>
+                            <a href="#">radio control</a>
+                            <i class="fa fa-sort-desc"></i>
+                            <ul>
+                              <li><a href="#">boats and cars</a></li>
+                              <li><a href="#">drones</a></li>
+                              <li><a href="#">planes</a></li>
+                              <li><a href="#">rc accessories</a></li>
+                              <li><a href="#">other radio control</a></li>
+                            </ul>
+                          </li>
+                          <li>
+                            <a href="#">toys</a>
+                            <i class="fa fa-sort-desc"></i>
+                            <ul>
+                              <li><a href="#">babies</a></li>
+                              <li><a href="#">boys</a></li>
+                              <li><a href="#">girls</a></li>
+                            </ul>
+                          </li>
+                          <li><a href="#">other hobbies</a></li>
+                        </ul>
+                      </li>
+                      <li>
+                        <a href="#">outdoors</a>
+                        <i class="fa fa-sort-desc"></i>
+                        <ul>
+                          <li>
+                            <a href="#">camping</a>
+                            <i class="fa fa-sort-desc"></i>
+                            <ul>
+                              <li><a href="#">cooking</a></li>
+                              <li><a href="#">furniture</a></li>
+                              <li><a href="#">gadgets</a></li>
+                              <li><a href="#">hygine</a></li>
+                              <li><a href="#">insect protection</a></li>
+                              <li><a href="#">lighting</a></li>
+                              <li><a href="#">refrigeration</a></li>
+                              <li><a href="#">sleeping</a></li>
+                              <li><a href="#">storage</a></li>
+                              <li><a href="#">tents</a></li>
+                              <li><a href="#">camping accessories</a></li>
+                            </ul>
+                          </li>
+                          <li>
+                            <a href="#">off-road vehicles</a>
+                            <i class="fa fa-sort-desc"></i>
+                            <ul>
+                              <li><a href="#">bakkies</a></li>
+                              <li><a href="#">caravans</a></li>
+                              <li><a href="#">electric scooters</a></li>
+                              <li><a href="#">golf carts</a></li>
+                              <li><a href="#">motorbikes</a></li>
+                              <li><a href="#">motorhomes</a></li>
+                              <li><a href="#">mountain bikes</a></li>
+                              <li><a href="#">quad bikes</a></li>
+                              <li><a href="#">segways</a></li>
+                              <li><a href="#">suv's</a></li>
+                              <li><a href="#">trailers</a></li>
+                              <li><a href="#">off-road accessories</a></li>
+                            </ul>
+                          </li>
+                          <li>
+                            <a href="#">outdoor gear</a>
+                            <i class="fa fa-sort-desc"></i>
+                            <ul>
+                              <li><a href="#">clothing</a></li>
+                              <li><a href="#">footwear</a></li>
+                              <li><a href="#">head gear</a></li>
+                              <li><a href="#">other outdoor gear</a></li>
+                            </ul>
+                          </li>
+                          <li><a href="#">self-defence</a></li>
+                          <li>
+                            <a href="#">shoot and hunt</a>
+                            <i class="fa fa-sort-desc"></i>
+                            <ul>
+                              <li><a href="#">air guns and rifles</a></li>
+                              <li><a href="#">crossbow</a></li>
+                              <li><a href="#">guns and ammo</a></li>
+                              <li><a href="#">knives</a></li>
+                              <li><a href="#">pepper spray guns</a></li>
+                              <li><a href="#">stun guns</a></li>
+                              <li><a href="#">survival gear</a></li>
+                              <li><a href="#">tactical gear</a></li>
+                              <li><a href="#">other shoot and hunt</a></li>
+                            </ul>
+                          </li>
+                          <li>
+                            <a href="#">water sports</a>
+                            <i class="fa fa-sort-desc"></i>
+                            <ul>
+                              <li><a href="#">beach accessories</a></li>
+                              <li><a href="#">boats</a></li>
+                              <li><a href="#">bodyboards</a></li>
+                              <li><a href="#">canoes</a></li>
+                              <li><a href="#">fishing gear</a></li>
+                              <li><a href="#">jetski's</a></li>
+                              <li><a href="#">kayaks</a></li>
+                              <li><a href="#">kite surfing</a></li>
+                              <li><a href="#">life jackets</a></li>
+                              <li><a href="#">sup boards</a></li>
+                              <li><a href="#">surfboards</a></li>
+                              <li><a href="#">wetsuits</a></li>
+                              <li><a href="#">other watersports</a></li>
+                            </ul>
+                          </li>
+                        </ul>
+                      </li>
+                      <li>
+                        <a href="#">sports</a>
+                        <i class="fa fa-sort-desc"></i>
+                        <ul>
+                          <li><a href="#">athletics</a></li>
+                          <li><a href="#">baseball</a></li>
+                          <li><a href="#">basketball</a></li>
+                          <li><a href="#">boxing</a></li>
+                          <li><a href="#">cricket</a></li>
+                          <li><a href="#">cycling</a></li>
+                          <li><a href="#">fighting</a></li>
+                          <li><a href="#">fitness and gym</a></li>
+                          <li><a href="#">golfing</a></li>
+                          <li><a href="#">hockey</a></li>
+                          <li><a href="#">ice skating</a></li>
+                          <li>
+                            <a href="#">indoor table sports</a>
+                            <i class="fa fa-sort-desc"></i>
+                            <ul>
+                              <li><a href="#">air hockey tables</a></li>
+                              <li><a href="#">darts and accessories</a></li>
+                              <li><a href="#">pool tables</a></li>
+                              <li><a href="#">snooker tables</a></li>
+                              <li><a href="#">soccer tables</a></li>
+                              <li><a href="#">table tennis tables</a></li>
+                              <li><a href="#">other table sports</a></li>
+                            </ul>
+                          </li>
+                          <li><a href="#">netball</a></li>
+                          <li><a href="#">nutrition</a></li>
+                          <li><a href="#">roller skating</a></li>
+                          <li><a href="#">rugby</a></li>
+                          <li><a href="#">running</a></li>
+                          <li><a href="#">skateboarding</a></li>
+                          <li><a href="#">soccer</a></li>
+                          <li><a href="#">squash</a></li>
+                          <li><a href="#">swimming</a></li>
+                          <li><a href="#">tennis</a></li>
+                        </ul>
+                      </li>
+                      <li>
+                        <a href="#">diy projects</a>
+                        <i class="fa fa-sort-desc"></i>
+                        <ul>
+                          <li>
+                            <a href="#">gardening</a>
+                            <i class="fa fa-sort-desc"></i>
+                            <ul>
+                              <li><a href="#">blowers and chainsaws</a></li>
+                              <li><a href="#">lawnmovers</a></li>
+                              <li><a href="#">trimmers and cutters</a></li>
+                              <li><a href="#">garden accessories</a></li>
+                            </ul>
+                          </li>
+                          <li>
+                            <a href="#">building materials</a>
+                            <i class="fa fa-sort-desc"></i>
+                            <ul>
+                              <li><a href="#">materials category 01</a></li>
+                              <li><a href="#">materials category 02</a></li>
+                              <li><a href="#">materials category 03</a></li>
+                              <li><a href="#">materials category 04</a></li>
+                              <li><a href="#">materials category 05</a></li>
+                              <li><a href="#">materials category 06</a></li>
+                              <li><a href="#">materials category 07</a></li>
+                              <li><a href="#">materials category 08</a></li>
+                              <li><a href="#">materials category 09</a></li>
+                              <li><a href="#">materials category 10</a></li>
+                            </ul>
+                          </li>
+                          <li>
+                            <a href="#">tools</a>
+                            <i class="fa fa-sort-desc"></i>
+                            <ul>
+                              <li><a href="#">tools category 01</a></li>
+                              <li><a href="#">tools category 02</a></li>
+                              <li><a href="#">tools category 03</a></li>
+                              <li><a href="#">tools category 04</a></li>
+                              <li><a href="#">tools category 05</a></li>
+                              <li><a href="#">tools category 06</a></li>
+                              <li><a href="#">tools category 07</a></li>
+                              <li><a href="#">tools category 08</a></li>
+                              <li><a href="#">tools category 09</a></li>
+                              <li><a href="#">tools category 10</a></li>
+                            </ul>
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="#">selling plans</a>
+                <i class="fa fa-sort-desc"></i>
+                <ul>
+                  <li><a href="#">become a reseller</a></li>
+                  <li><a href="#">sell your product</a></li>
+                  <li><a href="#">sell your general service</a></li>
+                  <li>
+                    <a href="#">sell your professional service</a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="#">investing plans</a>
+                <i class="fa fa-sort-desc"></i>
+                <ul>
+                  <li><a href="#">bronze investment plan</a></li>
+                  <li><a href="#">silver investment plan</a></li>
+                  <li><a href="#">gold investment plan</a></li>
+                  <li><a href="#">platinum investment plan</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#">skynamo</a>
+                <i class="fa fa-sort-desc"></i>
+                <ul>
+                  <li><a href="#">crm & sales solution</a></li>
+                  <li><a href="#">skynamo website</a></li>
+                  <li><a href="#">skynamo pricing</a></li>
+                  <li><a href="#">request a demo</a></li>
+                  <li><a href="#">contact skynamo</a></li>
+                  <li><a href="#">compliant device list</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#">seller zone</a>
+                <i class="fa fa-sort-desc"></i>
+                <ul>
+                  <li><a href="#">selling plans</a></li>
+                  <li><a href="#">find a reseller (SAN)</a></li>
+                  <li><a href="#">find a service provider (SPN)</a></li>
+                  <li><a href="#">ads - marketplace products</a></li>
+                  <li><a href="#">ads - marketplace services</a></li>
+                  <li><a href="#">ads - professional services</a></li>
+                  <li><a href="#">login - sellers</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#">investor zone</a>
+                <i class="fa fa-sort-desc"></i>
+                <ul>
+                  <li><a href="#">investing plans</a></li>
+                  <li><a href="#">investors list - bronze</a></li>
+                  <li><a href="#">investors list - silver</a></li>
+                  <li><a href="#">investors list - gold</a></li>
+                  <li><a href="#">investors list - platinum</a></li>
+                  <li><a href="#">login - investors</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#">shopper zone</a>
+                <i class="fa fa-sort-desc"></i>
+                <ul>
+                  <li><a href="#">register - shopper</a></li>
+                  <li><a href="#">register - promotions</a></li>
+                  <li><a href="#">get a product quote</a></li>
+                  <li><a href="#">get a service quote</a></li>
+                  <li><a href="#">get a gift voucher</a></li>
+                  <li><a href="#">place a pre-order</a></li>
+                  <li><a href="#">login - shopper</a></li>
+                </ul>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+  </body>
+</html>
