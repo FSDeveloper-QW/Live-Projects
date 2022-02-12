@@ -1,0 +1,303 @@
+/* ------------------------------------------------------------------------- */
+/* TODO: Step 1 - Define the GLOBAL STYLES of the Page                       */
+/* ------------------------------------------------------------------------- */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "roboto", "open sans", sans-serif;
+}
+
+/* ------------------------------------------------------------------------- */
+/* Set the Standard Font-Size :  62.5% of 16px (Std Size) = 10px             */
+/* ------------------------------------------------------------------------- */
+
+html {
+  font-size: 62.5%;
+}
+
+/* ------------------------------------------------------------------------- */
+/* FIXME:  SECTION 1 - HERO BANNER (MAIN BANNER)                             */
+/* ------------------------------------------------------------------------- */
+
+.banner-container {
+  /* A - Set MARGINS (Top/Bottom & Left/Right / Top, Right, Bottom, Left    */
+  /* A - Set the WIDTH of the containter to stretch across the page         */
+  margin: 0 0 -0.3rem 0;
+  padding: 0 0 0 0;
+  width: 100vw;
+}
+
+.banner-hero img {
+  /* A - Set the WIDTH of the image to stretch across the container         */
+  /* B - Use OBJECT-FIT (COVER) to fit the image perfectly in the container */
+  width: 100vw;
+  object-fit: cover;
+}
+
+/* ------------------------------------------------------------------------- */
+/* FIXME:  SECTION 2 - NAVIGATION                                            */
+/* ------------------------------------------------------------------------- */
+
+/* ------------------------------------------------------------------------- */
+/* TODO: NAVIGATION - Define the WEBSITE VERSION STYLES                      */
+/* ------------------------------------------------------------------------- */
+
+/* FIXME:  Styling "navbar-container"                                        */
+
+.navbar-container {
+  /* A - Set MARGINS (Top/Bottom & Left/Right / Top, Right, Bottom, Left    */
+  /* B - DISPLAY items next to each other by using FLEXBOX                   */
+  /* C - JUSTIFY-CONTENT so that there is enough SPACE-BETWEEN items         */
+  /* D - ALIGN-ITEMS to the CENTER to align in middle of Brand Title/Logo    */
+  /* E - Set the Color of the Background                                     */
+  /* F - Set the Color of the Text-Links                                     */
+  /* G - Set the WIDTH of the Container to stretch across the page           */
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  color: white;
+  width: 100vw;
+}
+
+/* FIXME:  OPTION 1 : Make "navbar-container" STICKY ON SCROLL               */
+/* Use this option when there is nothing above the navbor                    */
+
+.navbar-container {
+  /* A - Add the BROWSER COMPATIBILITY Sets for STICKY                       */
+  /* A - Set the POSITION of the navbar to FIXED or STICKY                   */
+  /* FIXED - No items above NAVBAR / STICKY - There are Items above NAVBAR   */
+  /* B - Set the position on TOP to ZERO                                     */
+  position: -webkit-sticky;
+  position: -moz-sticky;
+  position: -ms-sticky;
+  position: -o-sticky;
+  position: sticky;
+  top: 0%;
+}
+
+/* ------------------------------------------------------------------------- */
+
+/* FIXME:  Option 1 : Styling "navbar-brand" if BRAND is TEXT                */
+
+/* .navbar-brand { */
+/* A - Increase the FONT-SIZE if the "BRAND" is text                       */
+/* B - Add some Margin so that it is not close to the edge                 */
+/* C - Use TEXT-TRANSFORM to make all text UPPERCASE                       */
+/* font-size: 1.5rem;
+    margin: 0.5rem;
+    text-transform: uppercase;
+  } */
+
+/* FIXME:  Option 2 : Styling "navbar-brand" if BRAND is LOGO              */
+
+.navbar-brand img {
+  /* A - Set the dimensions of the picture-container - WIDTH & HEIGHT          */
+  /* B - Use OBJECT-FIT (COVER) to fit the image perfectly in the container    */
+  /* C - Add some MARGIN to get it away from the Left Edge                     */
+  width: 144px;
+  height: 30px;
+  object-fit: cover;
+  margin: 0.5rem 1rem;
+}
+
+/* -------------------------------------------------------------------------- */
+
+/* FIXME:  Styling "navbar-links"                                             */
+
+/* Syling UNORDERED LIST */
+
+.navbar-links ul {
+  /* A - Set all MARGINS & PADDING for the elements                          */
+  /* B - DISPLAY the items next to each other using FLEXBOX                  */
+  margin: 0.5rem 1rem;
+  padding: 0 1rem;
+  display: flex;
+}
+
+/* Styling LIST ITEMS */
+
+.navbar-links li {
+  /* A - Remove all "bullet points" by setting LIST-STYLE to NONE            */
+  /* B - Set the FONT-SIZE : Page Default : 1rem = 10px                      */
+  /* C - Set LETTER-SPACING : 0, 0.1rem, 0.2rem, 0.3rem etc                  */
+  /* A - Remove all "bullet points" by setting LIST-STYLE to NONE            */
+  list-style: none;
+  font-size: 1.2rem;
+  letter-spacing: 0.1rem;
+}
+
+/* Styling the ANCHORS within the LIST ITEMS */
+
+.navbar-links li a {
+  /* A - Remove the "underline" by setting TEXT-DECORATION to NONE           */
+  /* B - Set the COLOR of the Anchor Elements                                */
+  /* C - Set a little PADDING between each of the Anchor Elements            */
+  /* D - DISPLAY the Anchor Elements as a block so that they show larger     */
+  /* E - Use TEXT-TRANSFORM to make all text UPPERCASE                       */
+  text-decoration: none;
+  color: white;
+  padding: 0 1rem;
+  display: block;
+  text-transform: uppercase;
+}
+
+/* Styling the LIST ITEMS with ANIMATION effects on HOVER */
+
+.navbar-links li:hover {
+  /* A - Change the BACKGROUND-COLOR when you hover over them with mouse     */
+  background-color: #555;
+}
+
+/* -------------------------------------------------------------------------- */
+
+/* FIXME:  Implement and Style the HAMBURGER "Toggle Button"                  */
+
+.toggle-button {
+  /* A - POSITION the "toggle button" ABSOLUTELY to the RIGHT                */
+  /* B - POSITION it from the TOP so that its close the the middle           */
+  /* C - POSITION it a bit away from the RIGHT                               */
+  /* D - Set DISPLAY to NONE as is shouldm't appear on Website Version       */
+  /* E - Set FLEX-DIRECTION to COLUMN so SPANs appear on-top of each other   */
+  /* F - Set JUSTIFY-CONTENT to get even SPACE-BETWEEN Hamburger Bar's       */
+  /* G - Set WIDTH and HEIGHT of the Hamburger Icon                          */
+  position: absolute;
+  top: 1rem;
+  right: 2rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+}
+
+/* Styling the BARS of the HAMBURGER "Toggle Button" */
+
+.toggle-button .bar {
+  /* A - Set HEIGHT & WIDTH of each bar within the container                 */
+  /* B - Set the BACKGROUND-COLOR                                            */
+  /* C - Set BORDER-RADIUS to round the corners of the Bars                  */
+  height: 3px;
+  width: 100%;
+  background-color: white;
+  border-radius: 10px;
+}
+
+/* ------------------------------------------------------------------------- */
+/* TODO: NAVIGATION - Define the MOBILE VERSION STYLES                       */
+/* ------------------------------------------------------------------------- */
+
+@media (max-width: 775px) {
+  /* DISPLAY the "Toggle Button", when screen size is less than 400px        */
+  /* POSITION the "Toggle Button" a bit away from the RIGHT                  */
+  .toggle-button {
+    display: flex;
+    right: 3rem;
+  }
+
+  .navbar-links {
+    /* A - Don't Display "navbar-links" when screen size is less than 400px */
+    /* B - Let each of links span to 100% of its container                  */
+    display: none;
+    width: 100%;
+  }
+
+  .navbar-container {
+    /* A - Change the FLEX-Direction to Column for Mobile Version           */
+    /* B - ALIGN-ITEMS at the start of the Flex (in essence to the LEFT)    */
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar-links ul {
+    /* A - Set MARGINS and PADDING to ZERO                                  */
+    /* B - Set the WIDTH                                                    */
+    /* C - Change the FLEX-Direction to Column for Mobile Version           */
+    margin: 0 0;
+    padding: 0 0;
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .navbar-links li {
+    /* A - Algin the List Items in the Centre                              */
+    text-align: center;
+  }
+
+  .navbar-links li a {
+    /* A - Set PADDING of ANCHOR Elements to decrease the space in between */
+    padding: 0.5rem 1rem;
+  }
+
+  .navbar-links.active {
+    /* A - Determine What happens to the Links when they are active?       */
+    display: flex;
+  }
+}
+
+/* ------------------------------------------------------------------------- */
+/* FIXME:  SECTION 3 - CONTENT PAGE                                          */
+/* ------------------------------------------------------------------------- */
+
+.page-container {
+  /* A - Set MARGINS (Top/Bottom & Left/Right / Top, Right, Bottom, Left    */
+  /* margin: 5.6rem 0.5rem; ---- When STICKY is changed to FIXED            */
+  margin: 0 0 0 0;
+  padding: 0 2rem 0 0;
+  width: 100vw;
+}
+
+.page-title {
+  /* A - Set the FONT-FAMILY if not set globally                            */
+  /* B - Set the FONT-SIZE : Page Default : 1rem = 10px                     */
+  /* C - Set the COLOR : choose any color [color name / hex / RGB]          */
+  /*     To Make color TRANSPARENT use RGA (0-1) : rgb (77, 0, 255, 0.5)    */
+  /* D - Set TEXT-ALIGN : left, right, center, justify                      */
+  /* E - Set TEXT-TRANSFORM : none, capitalize, lowercase, uppercase        */
+  /* F - Set LETTER-SPACING : 0, 0.1rem, 0.2rem, 0.3rem etc                 */
+  /* A - Set MARGINS (Top/Bottom & Left/Right / Top, Right, Bottom, Left  */
+  font-family: "roboto";
+  font-size: 2rem;
+  color: black;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  margin: 2rem 0;
+}
+
+.page-content {
+  /* A - Set the FONT-FAMILY if not set globally                           */
+  /* B - Set the FONT-STYLE : normal, italic, oblique, oblique 10deg       */
+  /* C - Set the FONT-SIZE : Page Default : 1rem = 10px                    */
+  /* D - Set the FONT-WEIGHT : normal, bold, 100, 300, 500, 700 etc.       */
+  /* E - Set the COLOR : choose any color [color name / hex / RGB]         */
+  /*     To Make color TRANSPARENT use RGA (0-1) : rgb (77, 0, 255, 0.5)   */
+  /* F - Set TEXT-ALIGN : left, right, center, justify                     */
+  /* G - Set TEXT-DECORATION : none,underline,double,dashed,dotted etc.    */
+  /* H - Set TEXT-TRANSFORM : none, capitalize, lowercase, uppercase       */
+  /* I - Set TEXT-SHADOW with offset-x | offset-y | blur-radius | color    */
+  /* J - Set LINE-HEIGHT (spacing) : 1rem, 1.25rem, 1.5rem etc             */
+  /* K - Set LETTER-SPACING : 0, 0.1rem, 0.2rem, 0.3rem etc                */
+  /* L - Set WORD-SPACING : 0, 0.1rem, 0.2rem, 0.3 etc                     */
+  /* A - Set MARGINS (Top/Bottom & Left/Right / Top, Right, Bottom, Left  */
+  font-family: "open sans";
+  font-style: normal;
+  font-size: 1.2rem;
+  font-weight: normal;
+  color: black;
+  text-align: justify;
+  text-decoration: none;
+  text-transform: none;
+  text-shadow: 0 0 0 0 white;
+  line-height: 1.5rem;
+  letter-spacing: 0;
+  word-spacing: 0;
+  margin: 2rem 1rem;
+}

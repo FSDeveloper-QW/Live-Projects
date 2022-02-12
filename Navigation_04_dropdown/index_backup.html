@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- --------------------------------------------------------------- -->
+    <!-- TODO: STEP 1 : Provide a Title for the Training                 -->
+    <!-- --------------------------------------------------------------- -->
+    <title>Advance CSS Dropdown Menu</title>
+
+    <!-- -------------------------------------------------------------- -->
+    <!-- TODO: STEP 2 : Link Google Font for Site - Roboto & Open Sans   -->
+    <!-- --------------------------------------------------------------- -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&family=Roboto:wght@100;300;400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- --------------------------------------------------------------- -->
+    <!-- TODO: STEP 3 : Link CSS Styles File                             -->
+    <!-- --------------------------------------------------------------- -->
+    <link rel="stylesheet" href="styles.css" />
+
+    <!-- --------------------------------------------------------------- -->
+    <!-- TODO: STEP 4 : Link JavaScript File                             -->
+    <!-- --------------------------------------------------------------- -->
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="navbar-container">
+      <!-- class="Header" -->
+      <div class="navbar-links">
+        <div class="navbarDropdown" data-dropdown>
+          <button class="navbar-button" data-dropdown-button>
+            shop products
+          </button>
+          <div class="navbar-dropdown-menu" menuContent-grid-1x1>
+            <!-- <div class="menu-header">shopper zone</div> -->
+            <div class="menu-links">
+              <a href="#" class="menu-item">shopper - Login</a>
+              <a href="#" class="menu-item">shopper - registration</a>
+              <a href="#" class="menu-item">promotions - registration</a>
+              <a href="#" class="menu-item">get a product quote</a>
+              <a href="#" class="menu-item">get a service quote</a>
+              <a href="#" class="menu-item">get a gift voucher</a>
+              <a href="#" class="menu-item">place a pre-order</a>
+            </div>
+          </div>
+        </div>
+        <div class="navbarDropdown" data-dropdown>
+          <button class="navbar-button" data-dropdown-button>
+            selling plans
+          </button>
+          <div class="navbar-dropdown-menu" menuContent-grid-1x1>
+            <!-- <div class="menu-header">shopper zone</div> -->
+            <div class="menu-links">
+              <a href="#" class="menu-item"
+                ><strong style="color: #f88e20">free setup</strong> - become a
+                reseller</a
+              >
+              <a href="#" class="menu-item"
+                ><strong style="color: #8b3365">R30 pm</strong> - list and sell
+                your product</a
+              >
+              <a href="#" class="menu-item"
+                ><strong style="color: #544179">R45 pm</strong> - list and sell
+                your general service</a
+              >
+              <a href="#" class="menu-item"
+                ><strong style="color: #01a7cf">R75 pm</strong> - list and sell
+                your professional service</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="navbarDropdown" data-dropdown>
+          <button class="navbar-button" data-dropdown-button>
+            investing plans
+          </button>
+          <div class="navbar-dropdown-menu" menuContent-grid-1x1>
+            <!-- <div class="menu-header">shopper zone</div> -->
+            <div class="menu-links">
+              <a href="#" class="menu-item"
+                ><strong style="color: #986c43">R 300 (once-off)</strong> -
+                bronze plan</a
+              >
+              <a href="#" class="menu-item"
+                ><strong style="color: #7d7d7d">R 600 (once-off)</strong> -
+                silver plan</a
+              >
+              <a href="#" class="menu-item"
+                ><strong style="color: #dc9d04">R1500 (once-off)</strong> - gold
+                plan</a
+              >
+              <a href="#" class="menu-item"
+                ><strong style="color: #434343">R3000 (once-off)</strong> -
+                platinum plan</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="navbarDropdown" data-dropdown>
+          <button class="navbar-button" data-dropdown-button>
+            skynamo crm
+          </button>
+          <div class="navbar-dropdown-menu" menuContent-grid-1x1>
+            <!-- <div class="menu-header">shopper zone</div> -->
+            <div class="menu-links">
+              <a href="#" class="menu-item">crm & sales solution</a>
+              <a href="#" class="menu-item">skynamo website</a>
+              <a href="#" class="menu-item">skynamo pricing</a>
+              <a href="#" class="menu-item">request a demo</a>
+              <a href="#" class="menu-item">contact skynamo</a>
+              <a href="#" class="menu-item">compliant device list</a>
+            </div>
+          </div>
+        </div>
+        <div class="navbarDropdown" data-dropdown>
+          <button class="navbar-button" data-dropdown-button>
+            seller zone
+          </button>
+          <div class="navbar-dropdown-menu" menuContent-grid-1x1>
+            <!-- <div class="menu-header">shopper zone</div> -->
+            <div class="menu-links">
+              <a href="#" class="menu-item">seller - Login</a>
+              <a href="#" class="menu-item">selling plans</a>
+              <a href="#" class="menu-item">find a reseller (SAN)</a>
+              <a href="#" class="menu-item">find a service provider (SPN)</a>
+              <a href="#" class="menu-item">ads - marketplace products</a>
+              <a href="#" class="menu-item">ads - marketplace services</a>
+              <a href="#" class="menu-item">ads - professional services</a>
+            </div>
+          </div>
+        </div>
+        <div class="navbarDropdown" data-dropdown>
+          <button class="navbar-button" data-dropdown-button>
+            investor zone
+          </button>
+          <div class="navbar-dropdown-menu" menuContent-grid-1x1>
+            <!-- <div class="menu-header">shopper zone</div> -->
+            <div class="menu-links">
+              <a href="#" class="menu-item">investor - login</a>
+              <a href="#" class="menu-item">investing plans</a>
+              <a href="#" class="menu-item">investors list - bronze</a>
+              <a href="#" class="menu-item">investors list - silver</a>
+              <a href="#" class="menu-item">investors list - gold</a>
+              <a href="#" class="menu-item">investors list - platinum</a>
+            </div>
+          </div>
+        </div>
+        <div class="navbarDropdown" data-dropdown>
+          <button class="navbar-button" data-dropdown-button>
+            shopper zone
+          </button>
+          <div class="navbar-dropdown-menu" menuContent-grid-1x1>
+            <!-- <div class="menu-header">shopper zone</div> -->
+            <div class="menu-links">
+              <a href="#" class="menu-item">shopper - Login</a>
+              <a href="#" class="menu-item">shopper - registration</a>
+              <a href="#" class="menu-item">promotions - registration</a>
+              <a href="#" class="menu-item">get a product quote</a>
+              <a href="#" class="menu-item">get a service quote</a>
+              <a href="#" class="menu-item">get a gift voucher</a>
+              <a href="#" class="menu-item">place a pre-order</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

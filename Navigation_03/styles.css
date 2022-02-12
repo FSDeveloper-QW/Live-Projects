@@ -1,0 +1,181 @@
+/* ------------------------------------------------------------------------- */
+/* TODO: Step 1 - Define the GLOBAL STYLES of the Page                       */
+/* ------------------------------------------------------------------------- */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* ------------------------------------------------------------------------- */
+/* TODO: Step 2 - Define the WEBSITE VERSION STYLES of the Page              */
+/* ------------------------------------------------------------------------- */
+
+/* FIXME:  Styling "navbar-Container                                         */
+
+.navbar-container {
+  /* A - DISPLAY items next to each other by using FLEXBOX                   */
+  /* B - JUSTIFY-CONTENT so that there is enough SPACE-BETWEEN items         */
+  /* C - ALIGN-ITEMS to the CENTER to align in middle of Brand Title/Logo    */
+  /* D - Set the Color of the Background                                     */
+  /* E - Set the Color of the Text-Links                                     */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  color: white;
+}
+
+/* ------------------------------------------------------------------------- */
+
+/* FIXME:  Option 1 : Styling "navbar-brand" if BRAND is TEXT                */
+
+/* .navbar-brand { */
+/* A - Increase the FONT-SIZE if the "BRAND" is text                       */
+/* B - Add some Margin so that it is not close to the edge                 */
+/* C - Use TEXT-TRANSFORM to make all text UPPERCASE                       */
+/* font-size: 1.5rem;
+  margin: 0.5rem;
+  text-transform: uppercase;
+} */
+
+/* FIXME:  Option 2 : Styling "navbar-brand" if BRAND is LOGO                */
+
+.navbar-brand img {
+  /* A - Set the dimensions of the picture-container - WIDTH & HEIGHT          */
+  /* B - Use OBJECT-FIT (COVER) to fit the image perfectly in the container    */
+  /* C - Add some MARGIN to get it away from the Left Edge                    */
+  width: 144px;
+  height: 30px;
+  object-fit: cover;
+  margin: 0.5rem;
+}
+
+/* -------------------------------------------------------------------------- */
+
+/* FIXME:  Styling "navbar-links"                                             */
+
+/* Syling UNORDERED LIST */
+
+.navbar-links ul {
+  /* A - Remove all MARGINS & PADDING for the elements                       */
+  /* B - DISPLAY the items next to each other using FLEXBOX                  */
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+/* Styling LIST ITEMS */
+
+.navbar-links li {
+  /* A - Remove all "bullet points" by setting LIST-STYLE to NONE            */
+  list-style: none;
+}
+
+/* Styling the ANCHORS within the LIST ITEMS */
+
+.navbar-links li a {
+  /* A - Remove the "underline" by setting TEXT-DECORATION to NONE           */
+  /* B - Set the COLOR of the Anchor Elements                                */
+  /* C - Set a little PADDING between each of the Anchor Elements            */
+  /* D - DISPLAY the Anchor Elements as a block so that they show larger     */
+  /* E - Use TEXT-TRANSFORM to make all text UPPERCASE                       */
+  text-decoration: none;
+  color: white;
+  padding: 1rem;
+  display: block;
+  text-transform: uppercase;
+}
+
+/* Styling the LIST ITEMS with ANIMATION effects on HOVER */
+
+.navbar-links li:hover {
+  /* A - Change the BACKGROUND-COLOR when you hover over them with mouse     */
+  background-color: #555;
+}
+
+/* -------------------------------------------------------------------------- */
+
+/* FIXME:  Implement and Style the HAMBURGER "Toggle Button"                  */
+
+.toggle-button {
+  /* A - POSITION the "toggle button" ABSOLUTELY to the RIGHT                */
+  /* B - POSITION it from the TOP so that its close the the middle           */
+  /* C - POSITION it a bit away from the RIGHT                               */
+  /* D - Set DISPLAY to NONE as is shouldm't appear on Website Version       */
+  /* E - Set FLEX-DIRECTION to COLUMN so SPANs appear on-top of each other   */
+  /* F - Set JUSTIFY-CONTENT to get even SPACE-BETWEEN Hamburger Bar's       */
+  /* G - Set WIDTH and HEIGHT of the Hamburger Icon                          */
+  position: absolute;
+  top: 0.75rem;
+  right: 1rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+}
+
+/* Styling the BARS of the HAMBURGER "Toggle Button" */
+
+.toggle-button .bar {
+  /* A - Set HEIGHT & WIDTH of each bar within the container                 */
+  /* B - Set the BACKGROUND-COLOR                                            */
+  /* C - Set BORDER-RADIUS to round the corners of the Bars                  */
+  height: 3px;
+  width: 100%;
+  background-color: white;
+  border-radius: 10px;
+}
+
+/* ------------------------------------------------------------------------- */
+/* TODO: Step 3 - Define the MOBILE VERSION STYLES of the Page               */
+/* ------------------------------------------------------------------------- */
+
+@media (max-width: 400px) {
+  /* Display the "Toggle Button", when screen size is less than 400px        */
+  .toggle-button {
+    display: flex;
+  }
+
+  .navbar-links {
+    /* A - Don't Display "navbar-links" when screen size is less than 400px */
+    /* B - Let each of links span to 100% of its container                  */
+    display: none;
+    width: 100%;
+  }
+
+  .navbar-container {
+    /* A - Change the FLEX-Direction to Column for Mobile Version           */
+    /* B - ALIGN-ITEMS at the start of the Flex (in essence to the LEFT)    */
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar-links ul {
+    /* A - Change the FLEX-Direction to Column for Mobile Version           */
+    /* B - Set the WIDTH                                                    */
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .navbar-links li {
+    /* A - Algin the List Items in the Centre                              */
+    text-align: center;
+  }
+
+  .navbar-links li a {
+    /* A - Set PADDING of ANCHOR Elements to decrease the space in between */
+    padding: 0.5rem 1rem;
+  }
+
+  .navbar-links.active {
+    /* A - Determine What happens to the Links when they are active?       */
+    display: flex;
+  }
+}
