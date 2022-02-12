@@ -1,5 +1,5 @@
 /* ------------------------------------------------------------------------- */
-/* TODO: Step 1 - Define the GLOBAL STYLES of the Page                       */
+/* TODO:   GLOBAL STYLES FOR WEBSITE                                         */
 /* ------------------------------------------------------------------------- */
 
 * {
@@ -13,7 +13,7 @@ body {
 }
 
 /* ------------------------------------------------------------------------- */
-/* Set the Standard Font-Size :  62.5% of 16px (Std Size) = 10px             */
+/* FIXME:   STANDARD FONT-SITE : 62.5% of 16px (Std Size) = 10px             */
 /* ------------------------------------------------------------------------- */
 
 html {
@@ -21,14 +21,14 @@ html {
 }
 
 /* ------------------------------------------------------------------------- */
-/* FIXME:  SECTION - NAVIGATION                                            */
+/* TODO:  SECTION - NAVIGATION                                               */
 /* ------------------------------------------------------------------------- */
 
 /* ------------------------------------------------------------------------- */
 /* TODO: NAVIGATION - Define the WEBSITE VERSION STYLES                      */
 /* ------------------------------------------------------------------------- */
 
-/* FIXME:  Styling "navbar-container"                                        */
+/* FIXME:   NAVBAR=CONTAINER */
 
 .navbar-container {
   /* A - Set MARGINS (Top/Bottom & Left/Right / Top, Right, Bottom, Left     */
@@ -43,7 +43,7 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #333;
+  background-color: black;
   color: white;
   width: 100vw;
 }
@@ -66,11 +66,7 @@ html {
 
 /* -------------------------------------------------------------------------- */
 
-/* FIXME:  Styling "navbar-links"                                             */
-
-/* Syling BUTTONS */
-
-/* class="Header" */
+/* FIXME:   NAVBAR-LINKS */
 
 .navbar-links {
   /* A - Set MARGINS (Top/Bottom & Left/Right / Top, Right, Bottom, Left     */
@@ -78,15 +74,17 @@ html {
   /* C - ALIGN-ITEMS to the BASELINE                                         */
   /* D - Set the BACKGROUND-COLOR                                            */
   /* E - Set a GAP between the various Links                                 */
-  margin: 0.5rem 0 0 0.5rem;
-  padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+  margin: 1rem 0 1rem 0;
+  padding: 0.5rem 0.5rem 0 0.5rem;
   display: flex;
   align-items: baseline;
-  background-color: #333;
+  background-color: black;
   gap: 3rem;
 }
 
-/* class="link" */
+/* -------------------------------------------------------------------------- */
+
+/* FIXME:   NAVBAR-BUTTON = menu-item */
 
 .navbar-button {
   /* A - Set the BACKGROUND colour of the button                           */
@@ -102,37 +100,40 @@ html {
   /* J - Set the CURSOR to POINTER when mouse move over button             */
   /* K - Set PADDING around text inside button - Top, Right, Bottom, Left  */
   /* L - Set LETTER-SPACING : 0, 0.1rem, 0.2rem, 0.3rem etc                */
-  /* I - Set the FONT-WEIGHT : normal, bold, 100, 300, 500, 700 etc.       */
+  /* M - Set MARGINS (Top/Bottom & Left/Right / Top, Right, Bottom, Left   */
   background: none;
   border: none;
   text-decoration: none;
   text-transform: uppercase;
   color: white;
-  font-family: "roboto";
+  font-family: "open sans";
   font-style: normal;
-  font-size: 1.5rem;
+  font-size: 1.05rem;
   font-weight: normal;
   cursor: pointer;
-  padding: 0.5rem 1rem 0.5rem 1rem;
-  letter-spacing: 0.1rem;
-  margin: 0 0 0.5rem 0;
+  padding: 0 0 0.5rem 1rem;
+  letter-spacing: 0.015rem;
+  margin: 0 0 0 0;
 }
 
 .navbarDropdown.active > .navbar-button,
 .navbar-button:hover {
-  /* E - Set the COLOR or BACKGROUND-COLOR for HOVER                       */
-  color: #555;
-  /* background-color: #555; */
+  /* A - Set the COLOR or BACKGROUND-COLOR for HOVER                          */
+  color: darkgrey;
 }
 
-/* class="dropdown" */
+/* -------------------------------------------------------------------------- */
+/* TODO:    JAVASCRIPT CODE: use navbarDropdown in JavaScript Code            */
+/* -------------------------------------------------------------------------- */
 
 .navbarDropdown {
-  /* A - CRITICAL: Set the POSITION to RELATIVE in order to ABSOLUTELY position DROPDOWN-MENU     */
+  /* A - CRITICAL: Set the POSITION to RELATIVE in order to ABSOLUTELY position DROPDOWN-MENU */
   position: relative;
 }
 
-/* class="dropdown-menu" */
+/* -------------------------------------------------------------------------- */
+
+/* FIXME:   DROPDOWN-MENU */
 
 .navbar-dropdown-menu {
   /* A - CRITICAL: Set the POSITION to ABSOLUTE for proper positioning under the Dropdown Button  */
@@ -149,7 +150,7 @@ html {
   left: 0.8rem;
   top: calc(100% + 0.05rem);
   background-color: #555;
-  padding: 1rem 1rem 1rem 1rem;
+  padding: 1.5rem 1rem 1rem 0.5rem;
   border-radius: 0.25rem;
   box-shadow: 0 2px 15px 0 rgb(0, 0, 0, 0.8);
   opacity: 0;
@@ -158,17 +159,17 @@ html {
   transition: opacity 175ms ease-in-out, transform 175ms ease-in-out;
 }
 
-/* FIXME: ACTION AND STYLES WHEN THE DROPDOWN-MENU IS ACTIVE  */
+/* -------------------------------------------------------------------------- */
 
-/* .navbar-dropdown-menu.active { */
-/* A - Set OPACITY to ONE so that the Dropdown-Menu can display when it is ACTIVE           */
-/* opacity: 1;
-  } */
+/* FIXME: ACTION AND STYLES WHEN THE DROPDOWN-MENU IS ACTIVE                  */
 
-/* HOW TO READ BELOW STATEMENT: Select the "navbar-button" link that is inside the "navbar-dropdown" */
-/* to display the "navbar-dropdown-menu", whenever the "navbar-button" link is FOCUSSED              */
+/* HOW TO READ BELOW STATEMENT: Select the "navbar-button" link that is       */
+/* inside the "navbar-dropdown" */
+/* to display the "navbar-dropdown-menu", whenever the "navbar-button"        */
+/* link is FOCUSSED */
 
 .navbarDropdown.active > .navbar-button + .navbar-dropdown-menu {
+  /* A - Set OPACITY to 1 so that the Dropdown-Menu can display when ACTIVE   */
   opacity: 1;
   transform: translateY(0);
   pointer-events: auto;
@@ -176,138 +177,62 @@ html {
 
 /* -------------------------------------------------------------------------- */
 
-/* FIXME:  Styling "drowpdown-menuContent"                                    */
+/* FIXME:   MENU-CONTENT-GRID */
 
-/* FIXME: Dropdown - Menu : 1 Column */
-
-.menuContent-grid-1x1 {
-  /* A - Set the DISPLAY to GRID                                                         */
-  /* B - Set the amount of Columns with GRID-TEMPLATE-COLUMNS and set to MAX-CONTENT     */
-  /* C - Set the GAP size between each column                                            */
-  /* D - Set the DISPLAY to GRID                                                         */
-  display: grid;
-  grid-template-columns: repeat(1, max-content);
-  gap: 2rem;
-}
-
-/* FIXME: Dropdown - Menu : 2 Columns */
-
-.menuContent-grid-1x2 {
-  /* A - Set the DISPLAY to GRID                                                         */
-  /* B - Set the amount of Columns with GRID-TEMPLATE-COLUMNS and set to MAX-CONTENT     */
-  /* C - Set the GAP size between each column                                            */
-  /* D - Set the DISPLAY to GRID                                                         */
+.menuContent-grid {
+  /* A - Set the DISPLAY to GRID                                              */
+  /* B - Set amount of Columns with GRID-TEMPLATE-COLUMNS and to MAX-CONTENT  */
+  /* C - Set the GAP size between each column                                 */
+  /* D - Set the DISPLAY to GRID                                              */
   display: grid;
   grid-template-columns: repeat(2, max-content);
   gap: 2rem;
 }
 
-/* FIXME: Dropdown - Menu : 3 Columns */
+/* -------------------------------------------------------------------------- */
 
-.menuContent-grid-1x3 {
-  /* A - Set the DISPLAY to GRID                                                         */
-  /* B - Set the amount of Columns with GRID-TEMPLATE-COLUMNS and set to MAX-CONTENT     */
-  /* C - Set the GAP size between each column                                            */
-  /* D - Set the DISPLAY to GRID                                                         */
-  display: grid;
-  grid-template-columns: repeat(3, max-content);
-  gap: 2rem;
-}
-
-/* FIXME: Dropdown - Menu : 4 Columns */
-
-.menuContent-grid-1x4 {
-  /* A - Set the DISPLAY to GRID                                                         */
-  /* B - Set the amount of Columns with GRID-TEMPLATE-COLUMNS and set to MAX-CONTENT     */
-  /* C - Set the GAP size between each column                                            */
-  /* D - Set the DISPLAY to GRID                                                         */
-  display: grid;
-  grid-template-columns: repeat(4, max-content);
-  gap: 2rem;
-}
-
-/* FIXME: Styling Dropdown-Menu-Links */
+/* FIXME:   MENU-LINKS */
 
 .menu-links {
-  /* A - Set the DISPLAY to FLEX                                                         */
-  /* B - Set FLEX-DIRECTION to Column => to display the items on top of each other       */
-  /* C - Set the GAP size between each item within the column                            */
+  /* A - Set the DISPLAY to FLEX                                              */
+  /* B - Set FLEX-DIRECTION to Column to display the items on top of another  */
+  /* C - Set the GAP size between each item within the column                 */
   display: flex;
   flex-direction: column;
-  gap: 1rem;
-}
-
-/* FIXME: Styling Dropdown-Menu-Header */
-
-.menu-header {
-  /* A - Remove all "bullet points" by setting LIST-STYLE to NONE                       */
-  /* B - Remove the "underline" by setting TEXT-DECORATION to NONE                      */
-  /* C - Set the COLOR of the Anchor Elements                                           */
-  /* D - Use TEXT-TRANSFORM to make all text UPPERCASE                                  */
-  /* E - Set WIDTH to MAX-CONTENT to fit all text in one line                           */
-  /* F - Set the FONT-SIZE : Page Default : 1rem = 10px                                 */
-  /* G - Set LETTER-SPACING : 0, 0.1rem, 0.2rem, 0.3rem etc                             */
-  /* H - Set the FONT-FAMILY if not set globally                                        */
-  /* I - Set the FONT-WEIGHT for the menu-items                                         */
-  /* A - Set MARGINS (Top/Bottom & Left/Right / Top, Right, Bottom, Left                */
-  list-style: none;
-  text-decoration: none;
-  color: white;
-  text-transform: uppercase;
-  width: max-content;
-  font-size: 1.2rem;
-  letter-spacing: 0.1rem;
-  font-family: "roboto";
-  font-weight: 700;
-  margin: 0 0 1.2rem 0;
-}
-
-/* FIXME: Styling Dropdown-Menu-Items */
-
-.menu-item {
-  /* A - Remove all "bullet points" by setting LIST-STYLE to NONE                       */
-  /* B - Remove the "underline" by setting TEXT-DECORATION to NONE                      */
-  /* C - Set the COLOR of the Anchor Elements                                           */
-  /* D - Use TEXT-TRANSFORM to make all text UPPERCASE                                  */
-  /* E - Set WIDTH to MAX-CONTENT to fit all text in one line                           */
-  /* F - Set the FONT-SIZE : Page Default : 1rem = 10px                                 */
-  /* G - Set LETTER-SPACING : 0, 0.1rem, 0.2rem, 0.3rem etc                             */
-  /* H - Set the FONT-FAMILY if not set globally                                        */
-  /* I - Set the FONT-WEIGHT for the menu-items                                         */
-  list-style: none;
-  text-decoration: none;
-  color: white;
-  text-transform: uppercase;
-  width: max-content;
-  font-size: 1rem;
-  letter-spacing: 0.015rem;
-  font-family: "open sans";
-  font-weight: 200;
-}
-
-.menu-item a {
-  /* A - Remove all "bullet points" by setting LIST-STYLE to NONE                       */
-  /* B - Remove the "underline" by setting TEXT-DECORATION to NONE                      */
-  /* C - Set the COLOR of the Anchor Elements                                           */
-  /* D - Use TEXT-TRANSFORM to make all text UPPERCASE                                  */
-  /* E - Set WIDTH to MAX-CONTENT to fit all text in one line                           */
-  /* F - Set the FONT-SIZE : Page Default : 1rem = 10px                                 */
-  /* G - Set LETTER-SPACING : 0, 0.1rem, 0.2rem, 0.3rem etc                             */
-  /* H - Set the FONT-FAMILY if not set globally                                        */
-  /* I - Set the FONT-WEIGHT for the menu-items                                         */
-  list-style: none;
-  text-decoration: none;
-  color: white;
-  text-transform: uppercase;
-  width: max-content;
-  font-size: 1rem;
-  letter-spacing: 0.015rem;
-  font-family: "open sans";
-  font-weight: 200;
-  transition: all 0.3s ease-out;
+  gap: 0.3rem;
 }
 
 .menu-links a:hover {
-  /* C - Set the COLOR of the Anchor Elements                                           */
+  /* A - Set the COLOR of the Anchor Elements on HOVER                        */
   color: darkgray;
 }
+
+/* -------------------------------------------------------------------------- */
+
+/* FIXME:   MENU-HEADER */
+
+.menu-header {
+  /* A - Remove all "bullet points" by setting LIST-STYLE to NONE             */
+  /* B - Remove the "underline" by setting TEXT-DECORATION to NONE            */
+  /* C - Set the COLOR of the Anchor Elements                                 */
+  /* D - Use TEXT-TRANSFORM to make all text UPPERCASE                        */
+  /* E - Set WIDTH to MAX-CONTENT to fit all text in one line                 */
+  /* F - Set the FONT-SIZE : Page Default : 1rem = 10px                       */
+  /* G - Set LETTER-SPACING : 0, 0.1rem, 0.2rem, 0.3rem etc                   */
+  /* H - Set the FONT-FAMILY if not set globally                              */
+  /* I - Set the FONT-WEIGHT for the menu-items                               */
+  /* j - Set MARGINS (Top/Bottom & Left/Right / Top, Right, Bottom, Left      */
+  list-style: none;
+  text-decoration: none;
+  color: #01a7cf;
+  /* color: white; */
+  text-transform: uppercase;
+  width: max-content;
+  font-size: 1.2rem;
+  letter-spacing: 0.2rem;
+  font-family: "roboto";
+  font-weight: 700;
+  margin: 0.5rem 0 1rem 1rem;
+}
+
+/* -------------------------------------------------------------------------- */
