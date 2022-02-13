@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+    <!-- TODO:   STANDARD META DATA - BASIC REQUIREMENT                                                         -->
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+    <!-- TODO:   STANDARD META DATA - MOBILE SPECIFIC                                                           -->
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+    <!-- TODO:   SEARCH ENGINE OPTIMIZATION (SEO)                                                               -->
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+    <!-- FIXME:  PART 1 - SEARCH ENGINE OPTIMIZATION (SEO) : USING OPEN GRAPH PROTOCOL - https://ogp.me/        -->
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+
+    <meta
+      property="og:title"
+      content="ENTER THE NAME OF YOUR WEBSITE FOR GOOGLE SEARCH ENGINES TO INDEX"
+    />
+    <meta
+      property="og:description"
+      content="ENTER A SHORT DESCRIPTION OF YOUR BUSINESS FOR GOOGLE SEARCH ENGINES TO INDEX"
+    />
+    <meta
+      property="og:url"
+      content="ENTER FULL URL OF YOUR WEBSITE HERE FOR GOOGLE SEARCH ENGINE TO INDEX"
+    />
+    <meta
+      property="og:type"
+      content="SPECIFY THE TYPE OF OBJECT PRESENTED WITH THIS HTML FILE - EXAMPLE (website)"
+    />
+    <meta
+      property="og:image"
+      content="ENTER THE URL TO TO YOUR COMPANY LOGO FOR GOOGLE SEARCH ENGINE TO INDEX"
+    />
+    <meta
+      property="og:locale"
+      content="SPECIFY THE LANGUAGE AND COUNTRY - EXAMPLE (en_ZA)"
+    />
+    <meta
+      name="author"
+      content="ENTER DETAILS OF THE PERSON OR COMPANY WHO DESIGN THIS PAGE (IF REQUIRED) "
+    />
+
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+    <!-- FIXME:  PART 2 - SEARCH ENGINE OPTIMIZATION (SEO) : STANDARD HTML TOOLS - DESCRIPTION                  -->
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+
+    <meta
+      name="description"
+      content="ENTER A SHORT DESCRIPTION OF YOUR BUSINESS FOR GOOGLE SEARCH ENGINES TO INDEX"
+    />
+
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+    <!-- FIXME:  PART 3 - SEARCH ENGINE OPTIMIZATION (SEO) : STANDARD HTML TOOLS - KEYWORDS                     -->
+    <!-- Provide keywords relevent to the items displayed on the website in order to pop-up in google searches  -->
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+
+    <meta
+      name="keywords"
+      content="EXAMPLES (SPACE IN BETWEEN KEYWORDS - [REMOVE BRACKETS]: [NAME OF COMPANY] [SERVICES] [PRODUCTS] [ADD MORE]"
+    />
+
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+    <!-- TODO:   PROVIDE A TITLE FOR YOUR PAGE - APPEARS IN BROWSER TAB                                         -->
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+
+    <title>ENTER TITLE HERE</title>
+
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+    <!-- TODO:   PROVIDE A LOGO ICON FOR YOUR PAGE - APPEARS IN BROWSER TAB                                     -->
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+
+    <link rel="shortcut icon" href="images/logo.ico" />
+
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+    <!-- TODO:   LINK GOOGLE FONTS - TO USE CERTAIN FONTS ON YOUR PAGE - https://fonts.google.com/              -->
+    <!-- MY FONTS: ROBOTO (HEADINGS) / OPEN SANS (CONTENT) / OTHER : ALICE, MONTSERRAT, POPPINS                 -->
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alice&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+    <!-- TODO:   CSS STYLE SHEET (INTERNAL) - LINK YOUR HTML DOCUMENT TO YOUR OWN CSS STYLE SHEET               -->
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+
+    <link rel="stylesheet" href="css/styles.css" />
+
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+    <!-- TODO:   CSS STYLE SHEET (EXTERNAL) - LINK TO NORMALISE.CSS STYLE SHEET (ONLY IF REQUIRED)              -->
+    <!-- ALWAYS DOWNLOAD THE LATEST FILE (BEFORE YOU START):  https://necolas.github.io/normalize.css/          -->
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+
+    <link rel="stylesheet" href="css/normalize.css" />
+
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+    <!-- TODO:   LINK YOUR HTML DOCUMENT TO ANIMATE ON SCROLL (AOS) FOR ALL PAGE ANIMATIONS                     -->
+    <!-- JAVASCRIPT INCLUDED AT END OF HTML DOCUMENT / WEBSITE: https://michalsnik.github.io/aos/               -->
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+    <!-- FIXME:  ADD ADDITIONAL THIRD PARTY TOOLS                                                               -->
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+    <!-- FIXME:  ADD ADDITIONAL THIRD PARTY TOOLS                                                               -->
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+  </head>
+  <!-- -------------------------------------------------------------------------------------------------------- -->
+  <!--                              ===== TODO: CODING START BELOW TODO: =====                                  -->
+  <!-- -------------------------------------------------------------------------------------------------------- -->
+  <body>
+    <div class="navbar-container">
+      <div class="navbar-links">
+        <div class="navbarDropdown" data-dropdown>
+          <button class="navbar-button" data-dropdown-button>
+            shop products
+          </button>
+          <div class="navbar-dropdown-menu menuContent-grid">
+            <div>
+              <div class="menu-header">marketplace</div>
+              <div class="menu-links">
+                <a href="#" class="navbar-button">arts and crafts</a>
+                <a href="#" class="navbar-button">baking products</a>
+                <a href="#" class="navbar-button">beverages and wines</a>
+                <a href="#" class="navbar-button">canvases</a>
+                <a href="#" class="navbar-button">clothing</a>
+                <a href="#" class="navbar-button">food products</a>
+                <a href="#" class="navbar-button">footwear</a>
+                <a href="#" class="navbar-button">games</a>
+                <a href="#" class="navbar-button">gifts</a>
+                <a href="#" class="navbar-button">home décor</a>
+                <a href="#" class="navbar-button">jewelry and accessories</a>
+                <a href="#" class="navbar-button">paintings</a>
+                <a href="#" class="navbar-button">properties</a>
+                <a href="#" class="navbar-button">toys</a>
+                <a href="#" class="navbar-button">vehicles</a>
+                <a href="#" class="navbar-button">wood and steel furniture</a>
+                <a href="#" class="navbar-button">other marketplace products</a>
+                <a href="#" class="navbar-button"
+                  >all used and 2nd hand products</a
+                >
+              </div>
+            </div>
+            <div>
+              <div class="menu-header">shopmax</div>
+              <div class="menu-links">
+                <a href="#" class="navbar-button">mobile</a>
+                <a href="#" class="navbar-button">office</a>
+                <a href="#" class="navbar-button">essential</a>
+                <a href="#" class="navbar-button">clothing and footwear</a>
+                <a href="#" class="navbar-button"
+                  >food, beverages and groceries</a
+                >
+                <a href="#" class="navbar-button">home and living</a>
+                <a href="#" class="navbar-button">hobbies</a>
+                <a href="#" class="navbar-button">outdoors</a>
+                <a href="#" class="navbar-button">sports</a>
+                <a href="#" class="navbar-button">diy projects</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="navbarDropdown" data-dropdown>
+          <button class="navbar-button" data-dropdown-button>
+            shop services
+          </button>
+          <div class="navbar-dropdown-menu menuContent-grid">
+            <div>
+              <div class="menu-header">general services</div>
+              <div class="menu-links">
+                <a href="#" class="navbar-button"
+                  >Home or office installations</a
+                >
+                <a href="#" class="navbar-button">Home or office cleaning</a>
+                <a href="#" class="navbar-button">Laundry services</a>
+                <a href="#" class="navbar-button">Gardening & landscaping</a>
+                <a href="#" class="navbar-button">Event planning services</a>
+                <a href="#" class="navbar-button">Catering services</a>
+                <a href="#" class="navbar-button"
+                  >Hair, nails and beauty therapy</a
+                >
+                <a href="#" class="navbar-button">Spa Treatments</a>
+                <a href="#" class="navbar-button">Printing services</a>
+                <a href="#" class="navbar-button">Electronic repairs</a>
+                <a href="#" class="navbar-button">Vehicle repairs</a>
+                <a href="#" class="navbar-button">Steelwork services</a>
+                <a href="#" class="navbar-button">Woodwork services</a>
+                <a href="#" class="navbar-button">Personal training services</a>
+                <a href="#" class="navbar-button">Coaching services</a>
+                <a href="#" class="navbar-button"
+                  >Tailor & upholstery Services</a
+                >
+                <a href="#" class="navbar-button"
+                  >House and Pet Sitting Services</a
+                >
+                <a href="#" class="navbar-button">Other general services</a>
+              </div>
+            </div>
+            <div>
+              <div class="menu-header">professional services</div>
+              <div class="menu-links">
+                <a href="#" class="navbar-button">business support services</a>
+                <a href="#" class="navbar-button">it cloud and web services</a>
+                <a href="#" class="navbar-button"
+                  >financial planning, insurance and risk</a
+                >
+                <a href="#" class="navbar-button"
+                  >logistics and courier services</a
+                >
+                <a href="#" class="navbar-button"
+                  >professional property services</a
+                >
+                <a href="#" class="navbar-button"
+                  >property maintenance services</a
+                >
+                <a href="#" class="navbar-button">legal services</a>
+                <a href="#" class="navbar-button">health care services</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="navbarDropdown" data-dropdown>
+          <button class="navbar-button" data-dropdown-button>
+            selling plans
+          </button>
+          <div class="navbar-dropdown-menu menuContent-grid">
+            <div>
+              <!-- <div class="menu-header">shopper zone</div> -->
+              <div class="menu-links">
+                <a href="#" class="navbar-button">become a reseller</a>
+                <a href="#" class="navbar-button">sell your product</a>
+                <a href="#" class="navbar-button">sell your general service</a>
+                <a href="#" class="navbar-button"
+                  >sell your professional service</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="navbarDropdown" data-dropdown>
+          <button class="navbar-button" data-dropdown-button>
+            investing plans
+          </button>
+          <div class="navbar-dropdown-menu menuContent-grid">
+            <div>
+              <!-- <div class="menu-header">shopper zone</div> -->
+              <div class="menu-links">
+                <a href="#" class="navbar-button">bronze plan</a>
+                <a href="#" class="navbar-button">silver plan</a>
+                <a href="#" class="navbar-button">gold plan</a>
+                <a href="#" class="navbar-button">platinum plan</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="navbarDropdown" data-dropdown>
+          <button class="navbar-button" data-dropdown-button>
+            skynamo crm
+          </button>
+          <div class="navbar-dropdown-menu menuContent-grid">
+            <div>
+              <!-- <div class="menu-header">shopper zone</div> -->
+              <div class="menu-links">
+                <a href="#" class="navbar-button">crm & sales solution</a>
+                <a href="#" class="navbar-button">skynamo website</a>
+                <a href="#" class="navbar-button">skynamo pricing</a>
+                <a href="#" class="navbar-button">request a demo</a>
+                <a href="#" class="navbar-button">contact skynamo</a>
+                <a href="#" class="navbar-button">compliant device list</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="navbarDropdown" data-dropdown>
+          <button class="navbar-button" data-dropdown-button>
+            seller zone
+          </button>
+          <div class="navbar-dropdown-menu menuContent-grid">
+            <div>
+              <!-- <div class="menu-header">shopper zone</div> -->
+              <div class="menu-links">
+                <a href="#" class="navbar-button">seller - Login</a>
+                <a href="#" class="navbar-button">selling plans</a>
+                <a href="#" class="navbar-button">find a reseller (SAN)</a>
+                <a href="#" class="navbar-button"
+                  >find a service provider (SPN)</a
+                >
+                <a href="#" class="navbar-button">ads - marketplace products</a>
+                <a href="#" class="navbar-button">ads - marketplace services</a>
+                <a href="#" class="navbar-button"
+                  >ads - professional services</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="navbarDropdown" data-dropdown>
+          <button class="navbar-button" data-dropdown-button>
+            investor zone
+          </button>
+          <div class="navbar-dropdown-menu menuContent-grid">
+            <div>
+              <!-- <div class="menu-header">shopper zone</div> -->
+              <div class="menu-links">
+                <a href="#" class="navbar-button">investor - login</a>
+                <a href="#" class="navbar-button">investing plans</a>
+                <a href="#" class="navbar-button">investors list - bronze</a>
+                <a href="#" class="navbar-button">investors list - silver</a>
+                <a href="#" class="navbar-button">investors list - gold</a>
+                <a href="#" class="navbar-button">investors list - platinum</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="navbarDropdown" data-dropdown>
+          <button class="navbar-button" data-dropdown-button>
+            shopper zone
+          </button>
+          <div class="navbar-dropdown-menu menuContent-grid">
+            <div>
+              <!-- <div class="menu-header">shopper zone</div> -->
+              <div class="menu-links">
+                <a href="#" class="navbar-button">shopper - Login</a>
+                <a href="#" class="navbar-button">shopper - registration</a>
+                <a href="#" class="navbar-button">promotions - registration</a>
+                <a href="#" class="navbar-button">get a product quote</a>
+                <a href="#" class="navbar-button">get a service quote</a>
+                <a href="#" class="navbar-button">get a gift voucher</a>
+                <a href="#" class="navbar-button">place a pre-order</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+    <!-- TODO:   JAVASCRIPT (OWN) - LINK ALL YOUR JAVASCRIPT FILES TO THE HTML DOCUMENT                         -->
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+
+    <script src="script.js" defer></script>
+
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+    <!-- TODO:   JAVASCRIPT (THIRD PARTIES) - LINK TO ALL THIRD PARTY JAVASCRIPT CODENT                         -->
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+    <!-- FIXME:  ANIMATE ON SCROLL (AOS) SCRIPT - ANIMATIONS FOR WEBSITE - https://michalsnik.github.io/aos/    -->
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+    <!-- FIXME:  ADDITIONAL THIRD PARTY SCRIPTS                                                                 -->
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+    <!-- FIXME:  ADDITIONAL THIRD PARTY SCRIPTS                                                                 -->
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+  </body>
+</html>
