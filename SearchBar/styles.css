@@ -1,0 +1,41 @@
+.search-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.input {
+  font-size: 1rem;
+}
+
+/* Cards to be displayed in GRID with each one to be at least 200px */
+/* with AUTO-FILL the amount of cards changes, as the screen size changes */
+.user-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 0.25rem;
+  margin-top: 1rem;
+}
+
+.card {
+  border: 1px solid black;
+  background-color: white;
+  padding: 0.5rem;
+}
+
+/* Styling the header inside of the card by using " > " */
+.card > .header {
+  margin-bottom: 0.25rem;
+}
+
+/* Styling the body inside of the card by using " > " */
+.card > .body {
+  font-size: 0.8rem;
+  color: #777;
+}
+
+/* To hide all the cards which are not searched for */
+
+.hide {
+  display: none;
+}
