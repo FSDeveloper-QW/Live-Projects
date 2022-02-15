@@ -1,0 +1,1090 @@
+/* ================================================================================================ */
+/* TODO: STYLING OPTIONS                                               FIXME: ROOT & BASE STYLING   */
+/* ================================================================================================ */
+
+* {
+  font-family: "roboto", "open sans", sans-serif;
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
+  box-sizing: border-box;
+}
+
+html {
+  /* 1. Set the Font Size Standard to REM = 62.5% of 16px = 10px = 1rem                      */
+  /* 2. Set the SCROLL BEHAVIOUR to AUTO / SMOOTH                                            */
+  /*    Sets the behavior for scrolling box when scrolling is triggered by the navigation    */
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  background: black;
+}
+
+/*                                                                                                     TODO:  OPTION 1 : REGTANGULAR SEARCH BAR (SQUARE ICON RIGHT) */
+
+/* ================================================================================================ */
+/* FIXME:  This will create a RECTANGULAR SEARCH BAR with a SQUARE SEARCH ICON ON THE RIGHT FIXME:  */
+/* ================================================================================================ */
+
+/*                            TODO: SEARCH BAR - OPTION 1                                           */
+
+/* ================================================================================================ */
+/* TODO: STYLING OPTIONS                                             FIXME: SEARCHBAR - CONTAINER   */
+/* ================================================================================================ */
+/* 01. Set POSITION to specifies the type of positioning method used or the container               */
+/* 02. MARGIN (OUTSIDE): Adds a margin around the input field                                       */
+/* 03. PADDING (INSIDE): This adds inner spacing to the input field                                 */
+/* 04. BORDER: Sets the BORDER-WIDTH, BORDER-STYLE and BORDER-COLOR of the input box                */
+/*     Styles - none, hidden, dotted, dashed, solid, double, groove, ridge, inset, outset           */
+/* 05. Set BOX-SHADOW to set a shadow around the input box                                          */
+/*     Syntax: offset-x | offset-y | blur-radius | spread-radius | rgb (r, g, b, transparancy       */
+/* 06. BORDER-RADIUS sets how round the corners of the input box must be                            */
+/*     Can set Individually: Top-Left / Top-rigth / Bottom-Right / Bottom-Left                      */
+/* 07. Set the WIDTH of the input box to any size required                                          */
+/* 08. Set the HEIGHT of the input box                                                              */
+/* 09. Set the FONT-FAMILY to be used for the page (i.e. Google Fonts)                              */
+/* 10. Set the FONT-SIZE to be used as the standard for the page [1.6rem = 16px]                    */
+/* 11. Set the FONT-STYLE : normal, italic, oblique, oblique 10deg                                  */
+/* 12. Set the FONT-WEIGHT : normal, bold, 100, 300, 500, 700 etc.                                  */
+/* 13. Set the COLOR of the text when you you type in input field                                   */
+/* ================================================================================================ */
+/* ================================================================================================ */
+
+/* margin: 0.5rem 0.5rem 0.5rem 0.5rem;
+  padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+  border: 0.1rem solid rgb(0, 0, 0, 0.2);
+  box-shadow: 0rem 0.1rem 1.5rem 0rem rgb(0, 0, 0, 0.2);
+  border-radius: 0.5rem 0.5rem 0.5rem 0.5rem;
+  width: 50%;
+  height: 3rem;
+  font-family: "roboto", "open sans", sans-serif;
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: normal;
+  color: lightslategray;
+  cursor: pointer; */
+
+/* ================================================================================================ */
+/* ================================================================================================ */
+
+.searchbar-container {
+  position: relative;
+  margin: 30px auto;
+  width: 500px;
+  height: 60px;
+}
+
+/* ================================================================================================ */
+/* TODO: STYLING OPTIONS                                                 FIXME: SEARCHBAR - INPUT   */
+/* ================================================================================================ */
+/* 01. Set POSITION to specifies the type of positioning method used or the container               */
+/* 02. MARGIN (OUTSIDE): Adds a margin around the input field                                       */
+/* 03. PADDING (INSIDE): This adds inner spacing to the input field                                 */
+/* 04. BORDER: Sets the BORDER-WIDTH, BORDER-STYLE and BORDER-COLOR of the input box                */
+/*     Styles - none, hidden, dotted, dashed, solid, double, groove, ridge, inset, outset           */
+/* 05. Set BOX-SHADOW to set a shadow around the input box                                          */
+/*     Syntax: offset-x | offset-y | blur-radius | spread-radius | rgb (r, g, b, transparancy       */
+/* 06. BORDER-RADIUS sets how round the corners of the input box must be                            */
+/*     Can set Individually: Top-Left / Top-rigth / Bottom-Right / Bottom-Left                      */
+/* 07. Set the WIDTH of the input box to any size required                                          */
+/* 08. Set the HEIGHT of the input box                                                              */
+/* 09. Set the FONT-FAMILY to be used for the page (i.e. Google Fonts)                              */
+/* 10. Set the FONT-SIZE to be used as the standard for the page [1.6rem = 16px]                    */
+/* 11. Set the FONT-STYLE : normal, italic, oblique, oblique 10deg                                  */
+/* 12. Set the FONT-WEIGHT : normal, bold, 100, 300, 500, 700 etc.                                  */
+/* 13. Set the COLOR of the text when you you type in input field                                   */
+/* ================================================================================================ */
+/* ================================================================================================ */
+
+/* margin: 0.5rem 0.5rem 0.5rem 0.5rem;
+  padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+  border: 0.1rem solid rgb(0, 0, 0, 0.2);
+  box-shadow: 0rem 0.1rem 1.5rem 0rem rgb(0, 0, 0, 0.2);
+  border-radius: 0.5rem 0.5rem 0.5rem 0.5rem;
+  width: 50%;
+  height: 3rem;
+  font-family: "roboto", "open sans", sans-serif;
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: normal;
+  color: lightslategray;
+  cursor: pointer; */
+
+/* ================================================================================================ */
+/* ================================================================================================ */
+
+.searchbar-input {
+  border: 0;
+  outline: none;
+  color: #8b7d77;
+}
+
+.searchbar-container .searchbar-input {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 10px 10px;
+  border-radius: 3px;
+  font-size: 18px;
+  padding-right: 80px;
+}
+
+/* ================================================================================================ */
+/* TODO: STYLING OPTIONS                                                 FIXME: SEARCHBAR - BUTTON  */
+/* ================================================================================================ */
+/* 01. Set POSITION to specifies the type of positioning method used or the container               */
+/* 02. MARGIN (OUTSIDE): Adds a margin around the input field                                       */
+/* 03. PADDING (INSIDE): This adds inner spacing to the input field                                 */
+/* 04. BORDER: Sets the BORDER-WIDTH, BORDER-STYLE and BORDER-COLOR of the input box                */
+/*     Styles - none, hidden, dotted, dashed, solid, double, groove, ridge, inset, outset           */
+/* 05. Set BOX-SHADOW to set a shadow around the input box                                          */
+/*     Syntax: offset-x | offset-y | blur-radius | spread-radius | rgb (r, g, b, transparancy       */
+/* 06. BORDER-RADIUS sets how round the corners of the input box must be                            */
+/*     Can set Individually: Top-Left / Top-rigth / Bottom-Right / Bottom-Left                      */
+/* 07. Set the WIDTH of the input box to any size required                                          */
+/* 08. Set the HEIGHT of the input box                                                              */
+/* 09. Set the FONT-FAMILY to be used for the page (i.e. Google Fonts)                              */
+/* 10. Set the FONT-SIZE to be used as the standard for the page [1.6rem = 16px]                    */
+/* 11. Set the FONT-STYLE : normal, italic, oblique, oblique 10deg                                  */
+/* 12. Set the FONT-WEIGHT : normal, bold, 100, 300, 500, 700 etc.                                  */
+/* 13. Set the COLOR of the text when you you type in input field                                   */
+/* ================================================================================================ */
+/* ================================================================================================ */
+
+/* margin: 0.5rem 0.5rem 0.5rem 0.5rem;
+  padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+  border: 0.1rem solid rgb(0, 0, 0, 0.2);
+  box-shadow: 0rem 0.1rem 1.5rem 0rem rgb(0, 0, 0, 0.2);
+  border-radius: 0.5rem 0.5rem 0.5rem 0.5rem;
+  width: 50%;
+  height: 3rem;
+  font-family: "roboto", "open sans", sans-serif;
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: normal;
+  color: lightslategray;
+  cursor: pointer; */
+
+/* ================================================================================================ */
+/* ================================================================================================ */
+
+.searchbar-container .searchbar-button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 60px;
+  height: 100%;
+  background: #7690da;
+  z-index: 1;
+  cursor: pointer;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+
+.searchbar-container .searchbar-button:hover {
+  background: #708bd2;
+}
+
+.searchbar-container .searchbar-button .fa {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 20px;
+}
+
+/*                                                                                                     TODO:  OPTION 2 - REGTANGULAR SEARCH BAR (SQUARE ICON LEFT) */
+
+/* ================================================================================================ */
+/* FIXME:  This will create a RECTANGULAR SEARCH BAR with a SQUARE SEARCH ICON ON THE LEFT  FIXME:  */
+/* ================================================================================================ */
+
+/*                            TODO: SEARCH BAR - OPTION 2                                           */
+
+/* ================================================================================================ */
+/* TODO: STYLING OPTIONS                                             FIXME: SEARCHBAR - CONTAINER   */
+/* ================================================================================================ */
+/* 01. Set POSITION to specifies the type of positioning method used or the container               */
+/* 02. MARGIN (OUTSIDE): Adds a margin around the input field                                       */
+/* 03. PADDING (INSIDE): This adds inner spacing to the input field                                 */
+/* 04. BORDER: Sets the BORDER-WIDTH, BORDER-STYLE and BORDER-COLOR of the input box                */
+/*     Styles - none, hidden, dotted, dashed, solid, double, groove, ridge, inset, outset           */
+/* 05. Set BOX-SHADOW to set a shadow around the input box                                          */
+/*     Syntax: offset-x | offset-y | blur-radius | spread-radius | rgb (r, g, b, transparancy       */
+/* 06. BORDER-RADIUS sets how round the corners of the input box must be                            */
+/*     Can set Individually: Top-Left / Top-rigth / Bottom-Right / Bottom-Left                      */
+/* 07. Set the WIDTH of the input box to any size required                                          */
+/* 08. Set the HEIGHT of the input box                                                              */
+/* 09. Set the FONT-FAMILY to be used for the page (i.e. Google Fonts)                              */
+/* 10. Set the FONT-SIZE to be used as the standard for the page [1.6rem = 16px]                    */
+/* 11. Set the FONT-STYLE : normal, italic, oblique, oblique 10deg                                  */
+/* 12. Set the FONT-WEIGHT : normal, bold, 100, 300, 500, 700 etc.                                  */
+/* 13. Set the COLOR of the text when you you type in input field                                   */
+/* ================================================================================================ */
+/* ================================================================================================ */
+
+/* margin: 0.5rem 0.5rem 0.5rem 0.5rem;
+  padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+  border: 0.1rem solid rgb(0, 0, 0, 0.2);
+  box-shadow: 0rem 0.1rem 1.5rem 0rem rgb(0, 0, 0, 0.2);
+  border-radius: 0.5rem 0.5rem 0.5rem 0.5rem;
+  width: 50%;
+  height: 3rem;
+  font-family: "roboto", "open sans", sans-serif;
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: normal;
+  color: lightslategray;
+  cursor: pointer; */
+
+/* ================================================================================================ */
+/* ================================================================================================ */
+
+.searchbar-container-02 {
+  position: relative;
+  margin: 30px auto;
+  width: 500px;
+  height: 60px;
+}
+
+/* ================================================================================================ */
+/* TODO: STYLING OPTIONS                                                 FIXME: SEARCHBAR - INPUT   */
+/* ================================================================================================ */
+/* 01. Set POSITION to specifies the type of positioning method used or the container               */
+/* 02. MARGIN (OUTSIDE): Adds a margin around the input field                                       */
+/* 03. PADDING (INSIDE): This adds inner spacing to the input field                                 */
+/* 04. BORDER: Sets the BORDER-WIDTH, BORDER-STYLE and BORDER-COLOR of the input box                */
+/*     Styles - none, hidden, dotted, dashed, solid, double, groove, ridge, inset, outset           */
+/* 05. Set BOX-SHADOW to set a shadow around the input box                                          */
+/*     Syntax: offset-x | offset-y | blur-radius | spread-radius | rgb (r, g, b, transparancy       */
+/* 06. BORDER-RADIUS sets how round the corners of the input box must be                            */
+/*     Can set Individually: Top-Left / Top-rigth / Bottom-Right / Bottom-Left                      */
+/* 07. Set the WIDTH of the input box to any size required                                          */
+/* 08. Set the HEIGHT of the input box                                                              */
+/* 09. Set the FONT-FAMILY to be used for the page (i.e. Google Fonts)                              */
+/* 10. Set the FONT-SIZE to be used as the standard for the page [1.6rem = 16px]                    */
+/* 11. Set the FONT-STYLE : normal, italic, oblique, oblique 10deg                                  */
+/* 12. Set the FONT-WEIGHT : normal, bold, 100, 300, 500, 700 etc.                                  */
+/* 13. Set the COLOR of the text when you you type in input field                                   */
+/* ================================================================================================ */
+/* ================================================================================================ */
+
+/* margin: 0.5rem 0.5rem 0.5rem 0.5rem;
+    padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+    border: 0.1rem solid rgb(0, 0, 0, 0.2);
+    box-shadow: 0rem 0.1rem 1.5rem 0rem rgb(0, 0, 0, 0.2);
+    border-radius: 0.5rem 0.5rem 0.5rem 0.5rem;
+    width: 50%;
+    height: 3rem;
+    font-family: "roboto", "open sans", sans-serif;
+    font-size: 1.2rem;
+    font-style: normal;
+    font-weight: normal;
+    color: lightslategray;
+    cursor: pointer; */
+
+/* ================================================================================================ */
+/* ================================================================================================ */
+
+.searchbar-input-02 {
+  border: 0;
+  outline: none;
+  color: #8b7d77;
+}
+
+.searchbar-container-02 .searchbar-input-02 {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 10px 10px;
+  border-radius: 3px;
+  font-size: 18px;
+  padding-left: 80px;
+}
+
+/* ================================================================================================ */
+/* TODO: STYLING OPTIONS                                                 FIXME: SEARCHBAR - BUTTON  */
+/* ================================================================================================ */
+/* 01. Set POSITION to specifies the type of positioning method used or the container               */
+/* 02. MARGIN (OUTSIDE): Adds a margin around the input field                                       */
+/* 03. PADDING (INSIDE): This adds inner spacing to the input field                                 */
+/* 04. BORDER: Sets the BORDER-WIDTH, BORDER-STYLE and BORDER-COLOR of the input box                */
+/*     Styles - none, hidden, dotted, dashed, solid, double, groove, ridge, inset, outset           */
+/* 05. Set BOX-SHADOW to set a shadow around the input box                                          */
+/*     Syntax: offset-x | offset-y | blur-radius | spread-radius | rgb (r, g, b, transparancy       */
+/* 06. BORDER-RADIUS sets how round the corners of the input box must be                            */
+/*     Can set Individually: Top-Left / Top-rigth / Bottom-Right / Bottom-Left                      */
+/* 07. Set the WIDTH of the input box to any size required                                          */
+/* 08. Set the HEIGHT of the input box                                                              */
+/* 09. Set the FONT-FAMILY to be used for the page (i.e. Google Fonts)                              */
+/* 10. Set the FONT-SIZE to be used as the standard for the page [1.6rem = 16px]                    */
+/* 11. Set the FONT-STYLE : normal, italic, oblique, oblique 10deg                                  */
+/* 12. Set the FONT-WEIGHT : normal, bold, 100, 300, 500, 700 etc.                                  */
+/* 13. Set the COLOR of the text when you you type in input field                                   */
+/* ================================================================================================ */
+/* ================================================================================================ */
+
+/* margin: 0.5rem 0.5rem 0.5rem 0.5rem;
+    padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+    border: 0.1rem solid rgb(0, 0, 0, 0.2);
+    box-shadow: 0rem 0.1rem 1.5rem 0rem rgb(0, 0, 0, 0.2);
+    border-radius: 0.5rem 0.5rem 0.5rem 0.5rem;
+    width: 50%;
+    height: 3rem;
+    font-family: "roboto", "open sans", sans-serif;
+    font-size: 1.2rem;
+    font-style: normal;
+    font-weight: normal;
+    color: lightslategray;
+    cursor: pointer; */
+
+/* ================================================================================================ */
+/* ================================================================================================ */
+
+.searchbar-container-02 .searchbar-button-02 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 60px;
+  height: 100%;
+  background: #7690da;
+  z-index: 1;
+  cursor: pointer;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+
+.searchbar-container-02 .searchbar-button-02:hover {
+  background: #708bd2;
+}
+
+.searchbar-container-02 .searchbar-button-02 .fa {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 20px;
+}
+
+/*                                                                                                     TODO:  OPTION 3 - ROUND CORNER SEARCH BAR (ROUND ICON RIGHT) */
+
+/* ================================================================================================ */
+/* FIXME:  This will create a ROUND SEARCH BAR with a ROUND SEARCH ICON ON THE RIGHT        FIXME:  */
+/* ================================================================================================ */
+
+/*                            TODO: SEARCH BAR - OPTION 3                                           */
+
+/* ================================================================================================ */
+/* TODO: STYLING OPTIONS                                             FIXME: SEARCHBAR - CONTAINER   */
+/* ================================================================================================ */
+/* 01. Set POSITION to specifies the type of positioning method used or the container               */
+/* 02. MARGIN (OUTSIDE): Adds a margin around the input field                                       */
+/* 03. PADDING (INSIDE): This adds inner spacing to the input field                                 */
+/* 04. BORDER: Sets the BORDER-WIDTH, BORDER-STYLE and BORDER-COLOR of the input box                */
+/*     Styles - none, hidden, dotted, dashed, solid, double, groove, ridge, inset, outset           */
+/* 05. Set BOX-SHADOW to set a shadow around the input box                                          */
+/*     Syntax: offset-x | offset-y | blur-radius | spread-radius | rgb (r, g, b, transparancy       */
+/* 06. BORDER-RADIUS sets how round the corners of the input box must be                            */
+/*     Can set Individually: Top-Left / Top-rigth / Bottom-Right / Bottom-Left                      */
+/* 07. Set the WIDTH of the input box to any size required                                          */
+/* 08. Set the HEIGHT of the input box                                                              */
+/* 09. Set the FONT-FAMILY to be used for the page (i.e. Google Fonts)                              */
+/* 10. Set the FONT-SIZE to be used as the standard for the page [1.6rem = 16px]                    */
+/* 11. Set the FONT-STYLE : normal, italic, oblique, oblique 10deg                                  */
+/* 12. Set the FONT-WEIGHT : normal, bold, 100, 300, 500, 700 etc.                                  */
+/* 13. Set the COLOR of the text when you you type in input field                                   */
+/* ================================================================================================ */
+/* ================================================================================================ */
+
+/* margin: 0.5rem 0.5rem 0.5rem 0.5rem;
+  padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+  border: 0.1rem solid rgb(0, 0, 0, 0.2);
+  box-shadow: 0rem 0.1rem 1.5rem 0rem rgb(0, 0, 0, 0.2);
+  border-radius: 0.5rem 0.5rem 0.5rem 0.5rem;
+  width: 50%;
+  height: 3rem;
+  font-family: "roboto", "open sans", sans-serif;
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: normal;
+  color: lightslategray;
+  cursor: pointer; */
+
+/* ================================================================================================ */
+/* ================================================================================================ */
+
+.searchbar-container-03 {
+  position: relative;
+  margin: 30px auto;
+  width: 500px;
+  height: 60px;
+}
+
+/* ================================================================================================ */
+/* TODO: STYLING OPTIONS                                                 FIXME: SEARCHBAR - INPUT   */
+/* ================================================================================================ */
+/* 01. Set POSITION to specifies the type of positioning method used or the container               */
+/* 02. MARGIN (OUTSIDE): Adds a margin around the input field                                       */
+/* 03. PADDING (INSIDE): This adds inner spacing to the input field                                 */
+/* 04. BORDER: Sets the BORDER-WIDTH, BORDER-STYLE and BORDER-COLOR of the input box                */
+/*     Styles - none, hidden, dotted, dashed, solid, double, groove, ridge, inset, outset           */
+/* 05. Set BOX-SHADOW to set a shadow around the input box                                          */
+/*     Syntax: offset-x | offset-y | blur-radius | spread-radius | rgb (r, g, b, transparancy       */
+/* 06. BORDER-RADIUS sets how round the corners of the input box must be                            */
+/*     Can set Individually: Top-Left / Top-rigth / Bottom-Right / Bottom-Left                      */
+/* 07. Set the WIDTH of the input box to any size required                                          */
+/* 08. Set the HEIGHT of the input box                                                              */
+/* 09. Set the FONT-FAMILY to be used for the page (i.e. Google Fonts)                              */
+/* 10. Set the FONT-SIZE to be used as the standard for the page [1.6rem = 16px]                    */
+/* 11. Set the FONT-STYLE : normal, italic, oblique, oblique 10deg                                  */
+/* 12. Set the FONT-WEIGHT : normal, bold, 100, 300, 500, 700 etc.                                  */
+/* 13. Set the COLOR of the text when you you type in input field                                   */
+/* ================================================================================================ */
+/* ================================================================================================ */
+
+/* margin: 0.5rem 0.5rem 0.5rem 0.5rem;
+    padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+    border: 0.1rem solid rgb(0, 0, 0, 0.2);
+    box-shadow: 0rem 0.1rem 1.5rem 0rem rgb(0, 0, 0, 0.2);
+    border-radius: 0.5rem 0.5rem 0.5rem 0.5rem;
+    width: 50%;
+    height: 3rem;
+    font-family: "roboto", "open sans", sans-serif;
+    font-size: 1.2rem;
+    font-style: normal;
+    font-weight: normal;
+    color: lightslategray;
+    cursor: pointer; */
+
+/* ================================================================================================ */
+/* ================================================================================================ */
+
+.searchbar-input-03 {
+  border: 0;
+  outline: none;
+  color: #8b7d77;
+}
+
+.searchbar-container-03 .searchbar-input-03 {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 10px 10px;
+  border-radius: 50px;
+  font-size: 18px;
+  padding-right: 80px;
+}
+
+/* ================================================================================================ */
+/* TODO: STYLING OPTIONS                                                 FIXME: SEARCHBAR - BUTTON  */
+/* ================================================================================================ */
+/* 01. Set POSITION to specifies the type of positioning method used or the container               */
+/* 02. MARGIN (OUTSIDE): Adds a margin around the input field                                       */
+/* 03. PADDING (INSIDE): This adds inner spacing to the input field                                 */
+/* 04. BORDER: Sets the BORDER-WIDTH, BORDER-STYLE and BORDER-COLOR of the input box                */
+/*     Styles - none, hidden, dotted, dashed, solid, double, groove, ridge, inset, outset           */
+/* 05. Set BOX-SHADOW to set a shadow around the input box                                          */
+/*     Syntax: offset-x | offset-y | blur-radius | spread-radius | rgb (r, g, b, transparancy       */
+/* 06. BORDER-RADIUS sets how round the corners of the input box must be                            */
+/*     Can set Individually: Top-Left / Top-rigth / Bottom-Right / Bottom-Left                      */
+/* 07. Set the WIDTH of the input box to any size required                                          */
+/* 08. Set the HEIGHT of the input box                                                              */
+/* 09. Set the FONT-FAMILY to be used for the page (i.e. Google Fonts)                              */
+/* 10. Set the FONT-SIZE to be used as the standard for the page [1.6rem = 16px]                    */
+/* 11. Set the FONT-STYLE : normal, italic, oblique, oblique 10deg                                  */
+/* 12. Set the FONT-WEIGHT : normal, bold, 100, 300, 500, 700 etc.                                  */
+/* 13. Set the COLOR of the text when you you type in input field                                   */
+/* ================================================================================================ */
+/* ================================================================================================ */
+
+/* margin: 0.5rem 0.5rem 0.5rem 0.5rem;
+    padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+    border: 0.1rem solid rgb(0, 0, 0, 0.2);
+    box-shadow: 0rem 0.1rem 1.5rem 0rem rgb(0, 0, 0, 0.2);
+    border-radius: 0.5rem 0.5rem 0.5rem 0.5rem;
+    width: 50%;
+    height: 3rem;
+    font-family: "roboto", "open sans", sans-serif;
+    font-size: 1.2rem;
+    font-style: normal;
+    font-weight: normal;
+    color: lightslategray;
+    cursor: pointer; */
+
+/* ================================================================================================ */
+/* ================================================================================================ */
+
+.searchbar-container-03 .searchbar-button-03 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 60px;
+  height: 100%;
+  background: #7690da;
+  z-index: 1;
+  cursor: pointer;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+  border-radius: 50%;
+}
+
+.searchbar-container-03 .searchbar-button-03:hover {
+  background: #708bd2;
+}
+
+.searchbar-container-03 .searchbar-button-03 .fa {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 20px;
+}
+
+/*                                                                                                     TODO:  OPTION 4 - ROUND CORNER SEARCH BAR (ROUND ICON LEFT) */
+
+/* ================================================================================================ */
+/* FIXME:   This will create a ROUND SEARCH BAR with a ROUND SEARCH ICON ON THE LEFT        FIXME:  */
+/* ================================================================================================ */
+
+/*                            TODO: SEARCH BAR - OPTION 4                                           */
+
+/* ================================================================================================ */
+/* TODO: STYLING OPTIONS                                             FIXME: SEARCHBAR - CONTAINER   */
+/* ================================================================================================ */
+/* 01. Set POSITION to specifies the type of positioning method used or the container               */
+/* 02. MARGIN (OUTSIDE): Adds a margin around the input field                                       */
+/* 03. PADDING (INSIDE): This adds inner spacing to the input field                                 */
+/* 04. BORDER: Sets the BORDER-WIDTH, BORDER-STYLE and BORDER-COLOR of the input box                */
+/*     Styles - none, hidden, dotted, dashed, solid, double, groove, ridge, inset, outset           */
+/* 05. Set BOX-SHADOW to set a shadow around the input box                                          */
+/*     Syntax: offset-x | offset-y | blur-radius | spread-radius | rgb (r, g, b, transparancy       */
+/* 06. BORDER-RADIUS sets how round the corners of the input box must be                            */
+/*     Can set Individually: Top-Left / Top-rigth / Bottom-Right / Bottom-Left                      */
+/* 07. Set the WIDTH of the input box to any size required                                          */
+/* 08. Set the HEIGHT of the input box                                                              */
+/* 09. Set the FONT-FAMILY to be used for the page (i.e. Google Fonts)                              */
+/* 10. Set the FONT-SIZE to be used as the standard for the page [1.6rem = 16px]                    */
+/* 11. Set the FONT-STYLE : normal, italic, oblique, oblique 10deg                                  */
+/* 12. Set the FONT-WEIGHT : normal, bold, 100, 300, 500, 700 etc.                                  */
+/* 13. Set the COLOR of the text when you you type in input field                                   */
+/* ================================================================================================ */
+/* ================================================================================================ */
+
+/* margin: 0.5rem 0.5rem 0.5rem 0.5rem;
+  padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+  border: 0.1rem solid rgb(0, 0, 0, 0.2);
+  box-shadow: 0rem 0.1rem 1.5rem 0rem rgb(0, 0, 0, 0.2);
+  border-radius: 0.5rem 0.5rem 0.5rem 0.5rem;
+  width: 50%;
+  height: 3rem;
+  font-family: "roboto", "open sans", sans-serif;
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: normal;
+  color: lightslategray;
+  cursor: pointer; */
+
+/* ================================================================================================ */
+/* ================================================================================================ */
+
+.searchbar-container-04 {
+  position: relative;
+  margin: 30px auto;
+  width: 500px;
+  height: 60px;
+}
+
+/* ================================================================================================ */
+/* TODO: STYLING OPTIONS                                                 FIXME: SEARCHBAR - INPUT   */
+/* ================================================================================================ */
+/* 01. Set POSITION to specifies the type of positioning method used or the container               */
+/* 02. MARGIN (OUTSIDE): Adds a margin around the input field                                       */
+/* 03. PADDING (INSIDE): This adds inner spacing to the input field                                 */
+/* 04. BORDER: Sets the BORDER-WIDTH, BORDER-STYLE and BORDER-COLOR of the input box                */
+/*     Styles - none, hidden, dotted, dashed, solid, double, groove, ridge, inset, outset           */
+/* 05. Set BOX-SHADOW to set a shadow around the input box                                          */
+/*     Syntax: offset-x | offset-y | blur-radius | spread-radius | rgb (r, g, b, transparancy       */
+/* 06. BORDER-RADIUS sets how round the corners of the input box must be                            */
+/*     Can set Individually: Top-Left / Top-rigth / Bottom-Right / Bottom-Left                      */
+/* 07. Set the WIDTH of the input box to any size required                                          */
+/* 08. Set the HEIGHT of the input box                                                              */
+/* 09. Set the FONT-FAMILY to be used for the page (i.e. Google Fonts)                              */
+/* 10. Set the FONT-SIZE to be used as the standard for the page [1.6rem = 16px]                    */
+/* 11. Set the FONT-STYLE : normal, italic, oblique, oblique 10deg                                  */
+/* 12. Set the FONT-WEIGHT : normal, bold, 100, 300, 500, 700 etc.                                  */
+/* 13. Set the COLOR of the text when you you type in input field                                   */
+/* ================================================================================================ */
+/* ================================================================================================ */
+
+/* margin: 0.5rem 0.5rem 0.5rem 0.5rem;
+    padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+    border: 0.1rem solid rgb(0, 0, 0, 0.2);
+    box-shadow: 0rem 0.1rem 1.5rem 0rem rgb(0, 0, 0, 0.2);
+    border-radius: 0.5rem 0.5rem 0.5rem 0.5rem;
+    width: 50%;
+    height: 3rem;
+    font-family: "roboto", "open sans", sans-serif;
+    font-size: 1.2rem;
+    font-style: normal;
+    font-weight: normal;
+    color: lightslategray;
+    cursor: pointer; */
+
+/* ================================================================================================ */
+/* ================================================================================================ */
+
+.searchbar-input-04 {
+  border: 0;
+  outline: none;
+  color: #8b7d77;
+}
+
+.searchbar-container-04 .searchbar-input-04 {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 10px 10px;
+  border-radius: 50px;
+  font-size: 18px;
+  padding-left: 80px;
+}
+
+/* ================================================================================================ */
+/* TODO: STYLING OPTIONS                                                 FIXME: SEARCHBAR - BUTTON  */
+/* ================================================================================================ */
+/* 01. Set POSITION to specifies the type of positioning method used or the container               */
+/* 02. MARGIN (OUTSIDE): Adds a margin around the input field                                       */
+/* 03. PADDING (INSIDE): This adds inner spacing to the input field                                 */
+/* 04. BORDER: Sets the BORDER-WIDTH, BORDER-STYLE and BORDER-COLOR of the input box                */
+/*     Styles - none, hidden, dotted, dashed, solid, double, groove, ridge, inset, outset           */
+/* 05. Set BOX-SHADOW to set a shadow around the input box                                          */
+/*     Syntax: offset-x | offset-y | blur-radius | spread-radius | rgb (r, g, b, transparancy       */
+/* 06. BORDER-RADIUS sets how round the corners of the input box must be                            */
+/*     Can set Individually: Top-Left / Top-rigth / Bottom-Right / Bottom-Left                      */
+/* 07. Set the WIDTH of the input box to any size required                                          */
+/* 08. Set the HEIGHT of the input box                                                              */
+/* 09. Set the FONT-FAMILY to be used for the page (i.e. Google Fonts)                              */
+/* 10. Set the FONT-SIZE to be used as the standard for the page [1.6rem = 16px]                    */
+/* 11. Set the FONT-STYLE : normal, italic, oblique, oblique 10deg                                  */
+/* 12. Set the FONT-WEIGHT : normal, bold, 100, 300, 500, 700 etc.                                  */
+/* 13. Set the COLOR of the text when you you type in input field                                   */
+/* ================================================================================================ */
+/* ================================================================================================ */
+
+/* margin: 0.5rem 0.5rem 0.5rem 0.5rem;
+    padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+    border: 0.1rem solid rgb(0, 0, 0, 0.2);
+    box-shadow: 0rem 0.1rem 1.5rem 0rem rgb(0, 0, 0, 0.2);
+    border-radius: 0.5rem 0.5rem 0.5rem 0.5rem;
+    width: 50%;
+    height: 3rem;
+    font-family: "roboto", "open sans", sans-serif;
+    font-size: 1.2rem;
+    font-style: normal;
+    font-weight: normal;
+    color: lightslategray;
+    cursor: pointer; */
+
+/* ================================================================================================ */
+/* ================================================================================================ */
+
+.searchbar-container-04 .searchbar-button-04 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 60px;
+  height: 100%;
+  background: #7690da;
+  z-index: 1;
+  cursor: pointer;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+  border-radius: 50%;
+}
+
+.searchbar-container-04 .searchbar-button-04:hover {
+  background: #708bd2;
+}
+
+.searchbar-container-04 .searchbar-button-04 .fa {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 20px;
+}
+
+/*                                                                                                     TODO:  OPTION 5 - ROUND SEARCH BAR (REGTANGULAR SEARCH TEXT RIGHT) */
+
+/* ================================================================================================ */
+/* FIXME:  This will create a ROUND SEARCH BAR with REGTANGULAR "SEARCH" TEXT ON THE RIGHT  FIXME:  */
+/* ================================================================================================ */
+
+/*                            TODO: SEARCH BAR - OPTION 5                                           */
+
+/* ================================================================================================ */
+/* TODO: STYLING OPTIONS                                             FIXME: SEARCHBAR - CONTAINER   */
+/* ================================================================================================ */
+/* 01. Set POSITION to specifies the type of positioning method used or the container               */
+/* 02. MARGIN (OUTSIDE): Adds a margin around the input field                                       */
+/* 03. PADDING (INSIDE): This adds inner spacing to the input field                                 */
+/* 04. BORDER: Sets the BORDER-WIDTH, BORDER-STYLE and BORDER-COLOR of the input box                */
+/*     Styles - none, hidden, dotted, dashed, solid, double, groove, ridge, inset, outset           */
+/* 05. Set BOX-SHADOW to set a shadow around the input box                                          */
+/*     Syntax: offset-x | offset-y | blur-radius | spread-radius | rgb (r, g, b, transparancy       */
+/* 06. BORDER-RADIUS sets how round the corners of the input box must be                            */
+/*     Can set Individually: Top-Left / Top-rigth / Bottom-Right / Bottom-Left                      */
+/* 07. Set the WIDTH of the input box to any size required                                          */
+/* 08. Set the HEIGHT of the input box                                                              */
+/* 09. Set the FONT-FAMILY to be used for the page (i.e. Google Fonts)                              */
+/* 10. Set the FONT-SIZE to be used as the standard for the page [1.6rem = 16px]                    */
+/* 11. Set the FONT-STYLE : normal, italic, oblique, oblique 10deg                                  */
+/* 12. Set the FONT-WEIGHT : normal, bold, 100, 300, 500, 700 etc.                                  */
+/* 13. Set the COLOR of the text when you you type in input field                                   */
+/* ================================================================================================ */
+/* ================================================================================================ */
+
+/* margin: 0.5rem 0.5rem 0.5rem 0.5rem;
+  padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+  border: 0.1rem solid rgb(0, 0, 0, 0.2);
+  box-shadow: 0rem 0.1rem 1.5rem 0rem rgb(0, 0, 0, 0.2);
+  border-radius: 0.5rem 0.5rem 0.5rem 0.5rem;
+  width: 50%;
+  height: 3rem;
+  font-family: "roboto", "open sans", sans-serif;
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: normal;
+  color: lightslategray;
+  cursor: pointer; */
+
+/* ================================================================================================ */
+/* ================================================================================================ */
+
+.searchbar-container-05 {
+  position: relative;
+  margin: 30px auto;
+  width: 500px;
+  height: 60px;
+}
+
+/* ================================================================================================ */
+/* TODO: STYLING OPTIONS                                                 FIXME: SEARCHBAR - INPUT   */
+/* ================================================================================================ */
+/* 01. Set POSITION to specifies the type of positioning method used or the container               */
+/* 02. MARGIN (OUTSIDE): Adds a margin around the input field                                       */
+/* 03. PADDING (INSIDE): This adds inner spacing to the input field                                 */
+/* 04. BORDER: Sets the BORDER-WIDTH, BORDER-STYLE and BORDER-COLOR of the input box                */
+/*     Styles - none, hidden, dotted, dashed, solid, double, groove, ridge, inset, outset           */
+/* 05. Set BOX-SHADOW to set a shadow around the input box                                          */
+/*     Syntax: offset-x | offset-y | blur-radius | spread-radius | rgb (r, g, b, transparancy       */
+/* 06. BORDER-RADIUS sets how round the corners of the input box must be                            */
+/*     Can set Individually: Top-Left / Top-rigth / Bottom-Right / Bottom-Left                      */
+/* 07. Set the WIDTH of the input box to any size required                                          */
+/* 08. Set the HEIGHT of the input box                                                              */
+/* 09. Set the FONT-FAMILY to be used for the page (i.e. Google Fonts)                              */
+/* 10. Set the FONT-SIZE to be used as the standard for the page [1.6rem = 16px]                    */
+/* 11. Set the FONT-STYLE : normal, italic, oblique, oblique 10deg                                  */
+/* 12. Set the FONT-WEIGHT : normal, bold, 100, 300, 500, 700 etc.                                  */
+/* 13. Set the COLOR of the text when you you type in input field                                   */
+/* ================================================================================================ */
+/* ================================================================================================ */
+
+/* margin: 0.5rem 0.5rem 0.5rem 0.5rem;
+    padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+    border: 0.1rem solid rgb(0, 0, 0, 0.2);
+    box-shadow: 0rem 0.1rem 1.5rem 0rem rgb(0, 0, 0, 0.2);
+    border-radius: 0.5rem 0.5rem 0.5rem 0.5rem;
+    width: 50%;
+    height: 3rem;
+    font-family: "roboto", "open sans", sans-serif;
+    font-size: 1.2rem;
+    font-style: normal;
+    font-weight: normal;
+    color: lightslategray;
+    cursor: pointer; */
+
+/* ================================================================================================ */
+/* ================================================================================================ */
+
+.searchbar-input-05 {
+  border: 0;
+  outline: none;
+  color: #8b7d77;
+}
+
+.searchbar-container-05 .searchbar-input-05 {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 10px 10px;
+  border-radius: 3px;
+  font-size: 18px;
+  padding-right: 145px;
+}
+
+/* ================================================================================================ */
+/* TODO: STYLING OPTIONS                                                 FIXME: SEARCHBAR - BUTTON  */
+/* ================================================================================================ */
+/* 01. Set POSITION to specifies the type of positioning method used or the container               */
+/* 02. MARGIN (OUTSIDE): Adds a margin around the input field                                       */
+/* 03. PADDING (INSIDE): This adds inner spacing to the input field                                 */
+/* 04. BORDER: Sets the BORDER-WIDTH, BORDER-STYLE and BORDER-COLOR of the input box                */
+/*     Styles - none, hidden, dotted, dashed, solid, double, groove, ridge, inset, outset           */
+/* 05. Set BOX-SHADOW to set a shadow around the input box                                          */
+/*     Syntax: offset-x | offset-y | blur-radius | spread-radius | rgb (r, g, b, transparancy       */
+/* 06. BORDER-RADIUS sets how round the corners of the input box must be                            */
+/*     Can set Individually: Top-Left / Top-rigth / Bottom-Right / Bottom-Left                      */
+/* 07. Set the WIDTH of the input box to any size required                                          */
+/* 08. Set the HEIGHT of the input box                                                              */
+/* 09. Set the FONT-FAMILY to be used for the page (i.e. Google Fonts)                              */
+/* 10. Set the FONT-SIZE to be used as the standard for the page [1.6rem = 16px]                    */
+/* 11. Set the FONT-STYLE : normal, italic, oblique, oblique 10deg                                  */
+/* 12. Set the FONT-WEIGHT : normal, bold, 100, 300, 500, 700 etc.                                  */
+/* 13. Set the COLOR of the text when you you type in input field                                   */
+/* ================================================================================================ */
+/* ================================================================================================ */
+
+/* margin: 0.5rem 0.5rem 0.5rem 0.5rem;
+    padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+    border: 0.1rem solid rgb(0, 0, 0, 0.2);
+    box-shadow: 0rem 0.1rem 1.5rem 0rem rgb(0, 0, 0, 0.2);
+    border-radius: 0.5rem 0.5rem 0.5rem 0.5rem;
+    width: 50%;
+    height: 3rem;
+    font-family: "roboto", "open sans", sans-serif;
+    font-size: 1.2rem;
+    font-style: normal;
+    font-weight: normal;
+    color: lightslategray;
+    cursor: pointer; */
+
+/* ================================================================================================ */
+/* ================================================================================================ */
+
+.searchbar-container-05 .searchbar-button-05 {
+  position: absolute;
+  top: 8px;
+  right: 5px;
+  width: 125px;
+  height: 45px;
+  background: #7690da;
+  z-index: 1;
+  cursor: pointer;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+  border-radius: 3px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.searchbar-container-05 .searchbar-button-05:hover {
+  background: #708bd2;
+}
+
+.searchbar-container-05 .searchbar-button-05 .fa {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 20px;
+}
+
+/*                                                                                                     TODO:  OPTION 6 - ROUND SEARCH BAR (ROUND SEARCH TEXT RIGHT) */
+
+/* ================================================================================================ */
+/* FIXME:  This will create a ROUND SEARCH BAR with ROUND "SEARCH" TEXT ON THE RIGHT        FIXME:  */
+/* ================================================================================================ */
+
+/*                            TODO: SEARCH BAR - OPTION 6                                           */
+
+/* ================================================================================================ */
+/* TODO: STYLING OPTIONS                                             FIXME: SEARCHBAR - CONTAINER   */
+/* ================================================================================================ */
+/* 01. Set POSITION to specifies the type of positioning method used or the container               */
+/* 02. MARGIN (OUTSIDE): Adds a margin around the input field                                       */
+/* 03. PADDING (INSIDE): This adds inner spacing to the input field                                 */
+/* 04. BORDER: Sets the BORDER-WIDTH, BORDER-STYLE and BORDER-COLOR of the input box                */
+/*     Styles - none, hidden, dotted, dashed, solid, double, groove, ridge, inset, outset           */
+/* 05. Set BOX-SHADOW to set a shadow around the input box                                          */
+/*     Syntax: offset-x | offset-y | blur-radius | spread-radius | rgb (r, g, b, transparancy       */
+/* 06. BORDER-RADIUS sets how round the corners of the input box must be                            */
+/*     Can set Individually: Top-Left / Top-rigth / Bottom-Right / Bottom-Left                      */
+/* 07. Set the WIDTH of the input box to any size required                                          */
+/* 08. Set the HEIGHT of the input box                                                              */
+/* 09. Set the FONT-FAMILY to be used for the page (i.e. Google Fonts)                              */
+/* 10. Set the FONT-SIZE to be used as the standard for the page [1.6rem = 16px]                    */
+/* 11. Set the FONT-STYLE : normal, italic, oblique, oblique 10deg                                  */
+/* 12. Set the FONT-WEIGHT : normal, bold, 100, 300, 500, 700 etc.                                  */
+/* 13. Set the COLOR of the text when you you type in input field                                   */
+/* ================================================================================================ */
+/* ================================================================================================ */
+
+/* margin: 0.5rem 0.5rem 0.5rem 0.5rem;
+  padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+  border: 0.1rem solid rgb(0, 0, 0, 0.2);
+  box-shadow: 0rem 0.1rem 1.5rem 0rem rgb(0, 0, 0, 0.2);
+  border-radius: 0.5rem 0.5rem 0.5rem 0.5rem;
+  width: 50%;
+  height: 3rem;
+  font-family: "roboto", "open sans", sans-serif;
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: normal;
+  color: lightslategray;
+  cursor: pointer; */
+
+/* ================================================================================================ */
+/* ================================================================================================ */
+
+.searchbar-container-06 {
+  position: relative;
+  margin: 30px auto;
+  width: 500px;
+  height: 60px;
+}
+
+/* ================================================================================================ */
+/* TODO: STYLING OPTIONS                                                 FIXME: SEARCHBAR - INPUT   */
+/* ================================================================================================ */
+/* 01. Set POSITION to specifies the type of positioning method used or the container               */
+/* 02. MARGIN (OUTSIDE): Adds a margin around the input field                                       */
+/* 03. PADDING (INSIDE): This adds inner spacing to the input field                                 */
+/* 04. BORDER: Sets the BORDER-WIDTH, BORDER-STYLE and BORDER-COLOR of the input box                */
+/*     Styles - none, hidden, dotted, dashed, solid, double, groove, ridge, inset, outset           */
+/* 05. Set BOX-SHADOW to set a shadow around the input box                                          */
+/*     Syntax: offset-x | offset-y | blur-radius | spread-radius | rgb (r, g, b, transparancy       */
+/* 06. BORDER-RADIUS sets how round the corners of the input box must be                            */
+/*     Can set Individually: Top-Left / Top-rigth / Bottom-Right / Bottom-Left                      */
+/* 07. Set the WIDTH of the input box to any size required                                          */
+/* 08. Set the HEIGHT of the input box                                                              */
+/* 09. Set the FONT-FAMILY to be used for the page (i.e. Google Fonts)                              */
+/* 10. Set the FONT-SIZE to be used as the standard for the page [1.6rem = 16px]                    */
+/* 11. Set the FONT-STYLE : normal, italic, oblique, oblique 10deg                                  */
+/* 12. Set the FONT-WEIGHT : normal, bold, 100, 300, 500, 700 etc.                                  */
+/* 13. Set the COLOR of the text when you you type in input field                                   */
+/* ================================================================================================ */
+/* ================================================================================================ */
+
+/* margin: 0.5rem 0.5rem 0.5rem 0.5rem;
+    padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+    border: 0.1rem solid rgb(0, 0, 0, 0.2);
+    box-shadow: 0rem 0.1rem 1.5rem 0rem rgb(0, 0, 0, 0.2);
+    border-radius: 0.5rem 0.5rem 0.5rem 0.5rem;
+    width: 50%;
+    height: 3rem;
+    font-family: "roboto", "open sans", sans-serif;
+    font-size: 1.2rem;
+    font-style: normal;
+    font-weight: normal;
+    color: lightslategray;
+    cursor: pointer; */
+
+/* ================================================================================================ */
+/* ================================================================================================ */
+
+.searchbar-input-06 {
+  border: 0;
+  outline: none;
+  color: #8b7d77;
+}
+
+.searchbar-container-06 .searchbar-input-06 {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 10px 10px;
+  border-radius: 50px;
+  font-size: 18px;
+  padding-right: 145px;
+}
+
+/* ================================================================================================ */
+/* TODO: STYLING OPTIONS                                                 FIXME: SEARCHBAR - BUTTON  */
+/* ================================================================================================ */
+/* 01. Set POSITION to specifies the type of positioning method used or the container               */
+/* 02. MARGIN (OUTSIDE): Adds a margin around the input field                                       */
+/* 03. PADDING (INSIDE): This adds inner spacing to the input field                                 */
+/* 04. BORDER: Sets the BORDER-WIDTH, BORDER-STYLE and BORDER-COLOR of the input box                */
+/*     Styles - none, hidden, dotted, dashed, solid, double, groove, ridge, inset, outset           */
+/* 05. Set BOX-SHADOW to set a shadow around the input box                                          */
+/*     Syntax: offset-x | offset-y | blur-radius | spread-radius | rgb (r, g, b, transparancy       */
+/* 06. BORDER-RADIUS sets how round the corners of the input box must be                            */
+/*     Can set Individually: Top-Left / Top-rigth / Bottom-Right / Bottom-Left                      */
+/* 07. Set the WIDTH of the input box to any size required                                          */
+/* 08. Set the HEIGHT of the input box                                                              */
+/* 09. Set the FONT-FAMILY to be used for the page (i.e. Google Fonts)                              */
+/* 10. Set the FONT-SIZE to be used as the standard for the page [1.6rem = 16px]                    */
+/* 11. Set the FONT-STYLE : normal, italic, oblique, oblique 10deg                                  */
+/* 12. Set the FONT-WEIGHT : normal, bold, 100, 300, 500, 700 etc.                                  */
+/* 13. Set the COLOR of the text when you you type in input field                                   */
+/* ================================================================================================ */
+/* ================================================================================================ */
+
+/* margin: 0.5rem 0.5rem 0.5rem 0.5rem;
+    padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+    border: 0.1rem solid rgb(0, 0, 0, 0.2);
+    box-shadow: 0rem 0.1rem 1.5rem 0rem rgb(0, 0, 0, 0.2);
+    border-radius: 0.5rem 0.5rem 0.5rem 0.5rem;
+    width: 50%;
+    height: 3rem;
+    font-family: "roboto", "open sans", sans-serif;
+    font-size: 1.2rem;
+    font-style: normal;
+    font-weight: normal;
+    color: lightslategray;
+    cursor: pointer; */
+
+/* ================================================================================================ */
+/* ================================================================================================ */
+
+.searchbar-container-06 .searchbar-button-06 {
+  position: absolute;
+  top: 8px;
+  right: 5px;
+  width: 125px;
+  height: 45px;
+  background: #7690da;
+  z-index: 1;
+  cursor: pointer;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+  border-radius: 25px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.searchbar-container-06 .searchbar-button-06:hover {
+  background: #708bd2;
+}
+
+.searchbar-container-06 .searchbar-button-06 .fa {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 20px;
+}
