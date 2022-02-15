@@ -67,8 +67,7 @@ body {
   /* 12. Set the COLOR of the text on the page                                               */
   margin: 0 0 0 0;
   padding: 0 0 0 0;
-  font-family: "roboto", "open sans", "montserrat", "poppins", "alice", serif,
-    sans-serif;
+  font-family: "roboto", "open sans", "montserrat", "poppins", serif, sans-serif;
   font-size: 1.6rem;
   font-style: normal;
   font-weight: normal;
