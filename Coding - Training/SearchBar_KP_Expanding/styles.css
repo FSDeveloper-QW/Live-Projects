@@ -8,11 +8,15 @@
 
 :root {
   /* Setting basic colour palettes */
-  --color-background: white;
+  /* --color-background: white;
   --color-headers: black;
   --color-text: black;
   --color-hover: lightgray;
-  --color-horisontalruler: #888;
+  --color-horisontalruler: #888; */
+  /* FIXME: Project Color */
+  --clr-primary: #ee6352;
+  --clr-body: #333;
+  --clr-background: #ddd;
 }
 
 /* --------------------------------------------------------------------------------------------------------------------- */
@@ -55,7 +59,7 @@ body {
   /* 10. Set LIST-STYLE to NONE to remove all "bullet points" of Lists automatically         */
   /* 11. Set the BACKGROUND-COLOR of the page                                                */
   /* 12. Set the COLOR of the text on the page                                               */
-  margin: 0 0 0 0;
+  /* margin: 0 0 0 0;
   padding: 0 0 0 0;
   font-family: "roboto", "open sans", "montserrat", "poppins", serif, sans-serif;
   font-size: 1.6rem;
@@ -67,15 +71,25 @@ body {
   word-spacing: normal;
   list-style: none;
   background-color: var(--color-background);
-  color: var(--color-text);
+  color: var(--color-text); */
+  /* FIXME: Project Settings */
+  font-family: "open sans";
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.125em;
+  line-height: 1.6;
+  color: var(--clr-body);
+  background: var(--clr-background);
 }
 
-main {
-  /* 1. Set the initial DISPLAY option for the page - The display property sets whether       */
-  /* an element is treated as a block or inline element and the layout used for its children  */
-  /* Display Options: none, block, inline, inline-block, flex, inline-flex, grid, inline-grid */
-  display: block;
-}
+/* main { */
+/* 1. Set the initial DISPLAY option for the page - The display property sets whether       */
+/* an element is treated as a block or inline element and the layout used for its children  */
+/* Display Options: none, block, inline, inline-block, flex, inline-flex, grid, inline-grid */
+/* display: block;
+} */
 
 /* ---------------------------------- */
 /* FIXME:  HEADING ELEMENTS : H1 - H6 */
@@ -346,6 +360,137 @@ p {
 /* --------------------------------------------------------------------------------------------------------------------- */
 /* TODO:  STYLES (SECTION 1) -                                                                   FIXME:  SECTION 1       */
 /* --------------------------------------------------------------------------------------------------------------------- */
+
+.content {
+  background: white;
+  width: 70vw;
+  padding: 3em;
+  box-shadow: 0 0 3em rgb(0, 0, 0, 0.15);
+  position: relative;
+}
+
+.search-bar {
+  /* NOTES: search-bar acts as a "container" */
+  /* NOTES: set a fix size variable for the search-bar "container" alone : --size: 60px  */
+  /* 1.  Set a BORDER around the container to see the ouline of the full container */
+  /* 2.  Use DISPLAY: FLEX to stretch INPUT and SUBMIT elements across the containter */
+  /* 3.  Set a BORDER-RADIUS on the search-bar "container"   */
+  /* 4.  Set the HEIGHT to the variable size (60px) */
+  /* 5.  Add some internal PADDING for the search-bar "container */
+  /* 6.  Set the WIDTH to the variable size (60px) */
+  /* 7.  Set the POSITION to RELATIVE to act as the "ANCHOR" */
+  /* 8.  Do a Transitioning on the WIDTH with cubic-bezier */
+  /* 9.  Set any OVERFLOW to HIDDEN */
+  /*  */
+  --size: 60px;
+  border: 2px solid var(--clr-primary);
+  display: flex;
+  border-radius: 50px;
+  height: var(--size);
+  padding: 0.3rem 0.3rem 0.3rem 0.3rem;
+  width: var(--size);
+  position: relative;
+  transition: width 500ms cubic-bezier(0.15, 0.8, 0.3, 1.125);
+  overflow: hidden;
+}
+
+/* SASS Code - Syntactically awesome style sheets - Allows you to NEST classes */
+/* EXAMPLE:  &__input = .search-bar__input */
+
+.search-bar__input {
+  /* NOTES: search-bar INPUT Field */
+  /* 1.  Use FLEX-GROW to set the flex grow factor of a flex item (i.e the input field) */
+  /*     The FLEX-GROW setting of 1 moves the input field as far as possible to the right */
+  /* 2.  Set FONT-Size to any REM value */
+  /* 3.  Set the Internal PADDING of the INPUT Field - Top / Right / Bottom / Left */
+  /* 4.  Remove the BORDER around the INPUT field */
+  /* 5.  Set the BACKGROUND of the INPUT field to tranparent */
+  /* 6.  Set the temporary BACKGROUND color again to work on the Element */
+  /* 7.  Set the POSITION to ABSOLUTE to resolve some display issues */
+  /* 8.  Set the TOP, BOTTOM and LEFT to ZERO to align the input to the "container" */
+  /* 9.  Set the LINE-HEIGHT to the variable size (60px) and do the CALC Function */
+  /* 10. Set the OPACITY to ZERO */
+  /* 11. Set the CURSOR to POINTER */
+  flex-grow: 1;
+  font-size: 1.5rem;
+  padding: 0 0.5rem 0 0.5rem;
+  border: 0;
+  /* background: transparent; */
+  /* background: lightblue; */
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  line-height: calc(var(--size) - 3px);
+  opacity: 0;
+  cursor: pointer;
+}
+
+.search-bar__input:focus {
+  /* NOTES: The focussed-state of the INPUT Field */
+  /* 1.  Set the OUTLINE to zero when focussed */
+  outline: 0;
+}
+
+.search-bar__submit {
+  /* NOTES: search-bar SUBMIT Field - Button */
+  /* 1.  Set FONT-Size of the BUTTOM to the same size as the INPUT */
+  /* 2.  Change the CURSOR style to pointer when you move over the BUTTON */
+  /* 3.  Remove the BORDER around the BUTTON */
+  /* 4.  Set the BACKGROUND of the BUTTON to tranparent */
+  /* 5.  Give the BUTTON a BORDER-RADIUS of 50% to display it as a perfect circle */
+  /* 6.  Set the WIDTH and HEIGHT to the search-bar Container Variable (60px) */
+  /* 7.  In order to ensure that the BUTTON stays within the boundaries
+         of the container use the CALC function on the WIDTH & HEIGHT*/
+  /* 8.  Set MARGIN-LEFT */
+  /* 9.  Set a TRANSITION on the BACKGROUND */
+  font-size: 1.5rem;
+  cursor: pointer;
+  border: 0;
+  background: transparent;
+  border-radius: 50%;
+  width: calc(var(--size) - 10px);
+  height: calc(var(--size) - 10px);
+  margin-left: auto;
+  transition: background 150ms ease-in-out;
+}
+
+.search-bar:focus-within {
+  /* NOTES: How does FOCUS-WITHIN WORK? - If the parent has anything inside of it
+     which is Gains Focus we can change the style of that Parent  */
+  /* 1.  Set the BOX-SHADOW to any value to understand how it will work */
+  /* 2.  Set the WIDTH  */
+  /*  */
+  /* box-shadow: 10px 10px 30px black; */
+  width: 100%;
+}
+
+.search-bar:focus-within .search-bar__input {
+  /* 1.  Set the OPACITY to 1 when Focussed within is set on the INPUT */
+  /* 2.  Set the CURSOR back to its initial setting */
+  /* 3.  Set the BACKGROUND color to what you need */
+  /* 4.  Set the WIDTH with the CALC Function */
+  opacity: 1;
+  cursor: initial;
+  /* background: lightblue; */
+  width: calc(100% - var(--size));
+}
+
+.search-bar:focus-within .search-bar__submit {
+  /* 1.   Set the BACKGROUND of the BUTTON to the primary variable color
+          when Focussed within */
+  /* 2.  Set the Yext Color to White */
+  background: var(--clr-primary);
+  color: white;
+}
+
+.search-bar:focus-within .search-bar__submit:focus,
+.search-bar:focus-within .search-bar__submit:hover {
+  /* 1.  Set the OUTLINE to ZERO on focus state */
+  /* 2.  Add a BOX-SHADOW on focus state */
+  outline: 0;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+}
 
 /* ----------------------------------------------------------------------------------------- */
 /* FIXME:  STYLES (SECTION 1) - MOBILE / SMALLER SCREENS STYLING       TODO: MOBILE FIRST    */
