@@ -48,15 +48,42 @@
 /* FIXME:  UNIVERSAL SELECTORS */
 /* --------------------------- */
 
-*,
+/* *,
 *::before,
 *::after {
+  box-sizing: border-box;
+  margin: 0rem 0rem 0rem 0rem;
+  padding: 0rem 0rem 0rem 0rem;
+  font-family: "roboto", "open sans", "montserrat", "poppins", "raleway", serif,
+    sans-serif;
+} */
+
+* {
+  /* ======================================================================================= */
   /* The ::before selector inserts something before the content of each selected element(s)  */
   /* The ::after selector inserts something after the content of each selected element(s)    */
-  /* 1. BOX-SIZING - Set how the total WIDTH and HEIGHT of an element is calculated          */
-  /*    BORDER-BOX ensures PADDING & BORDERS are included in box, while margins are excluded */
+  /* 1.  BOX-SIZING - Set how the total WIDTH and HEIGHT of an element is calculated         */
+  /*     BORDER-BOX - PADDING & BORDERS are included insie box, while margins are outside    */
   /*    (the element within the box shrinks as the padding and borders increase)             */
+  /* 3.  Set all MARGINS and PADDING to Zero - Top-Rigth-Bottom-Left                         */
+  /* 4.  Set the FONT-FAMILY to be used for the page (i.e. Google Fonts)                     */
+  /* ======================================================================================= */
+  /*                         FIXME: Best Font Combinations FIXME:                            */
+  /* 1.  Roboto (Headings) / Open Sans (Content)                                             */
+  /* 2.  Montserrat (Headings = 30px : Content = 16px)  / "Roboto" or "Open Sans"            */
+  /* 3.  Poppins (Headings or Content) / Raleway (Headings or Content)                       */
+  /* ======================================================================================= */
   box-sizing: border-box;
+  margin: 0rem 0rem 0rem 0rem;
+  padding: 0rem 0rem 0rem 0rem;
+  font-family: "roboto", "open sans", "montserrat", "poppins", "raleway",
+    "alice", serif, sans-serif;
+  /* ======================================================================================= */
+  /* FIXME: Potential nice gradient backgorunds for the whole site / sections to work with   */
+  /* ======================================================================================= */
+  /* background: linear-gradient(315deg, #ffffff, #d7e1ec); */
+  /* background: linear-gradient(315deg, #ffffff 0%, #d7e1ec 74%); */
+  /* background: #d8d8d8; */
 }
 
 html {
@@ -80,9 +107,9 @@ body {
   /* 10. Set LIST-STYLE to NONE to remove all "bullet points" of Lists automatically         */
   /* 11. Set the BACKGROUND-COLOR of the page                                                */
   /* 12. Set the COLOR of the text on the page                                               */
-  margin: 0 0 0 0;
+  /* margin: 0 0 0 0;
   padding: 0 0 0 0;
-  font-family: "roboto", "open sans", "montserrat", "poppins", serif, sans-serif;
+  font-family: "roboto", "open sans", "montserrat", "poppins", serif, sans-serif; */
   font-size: 1.6rem;
   font-style: normal;
   font-weight: normal;
@@ -102,6 +129,10 @@ main {
   display: block;
 }
 
+/* ========================================================================================= */
+/* ================================ START OF HEADING ELEMENTS ============================== */
+/* ========================================================================================= */
+
 /* ---------------------------------- */
 /* FIXME:  HEADING ELEMENTS : H1 - H6 */
 /* ---------------------------------- */
@@ -120,7 +151,7 @@ h6 {
   /* 2.  Set all MARGINS - Top-Rigth-Bottom-Left                                             */
   /* 3.  Set the FONT-WEIGHT : normal, bold, 100, 300, 500, 700 etc.                         */
   font-family: "roboto";
-  margin: 0 0 2rem 0;
+  margin: 0rem 0rem 2rem 0rem;
   font-weight: 300;
 }
 
@@ -203,7 +234,9 @@ h6 {
   }
 }
 
+/* ========================================================================================= */
 /* ================================== END OF HEADING ELEMENTS ============================== */
+/* ========================================================================================= */
 
 /* ---------------------------------- */
 /* FIXME:  PARAGRAPH ELEMENTS (TEXT)  */
@@ -213,7 +246,7 @@ p {
   /* 1.  Set the FONT-FAMILY to be used for the page (i.e. Google Fonts)                     */
   /* 2.  Set all MARGINS - Top-Rigth-Bottom-Left                                             */
   font-family: "open sans";
-  margin: 0 0 2.5rem 0;
+  margin: 0rem 0rem 2.5rem 0rem;
 }
 
 /* ------------------------------- */
@@ -264,9 +297,9 @@ hr {
   /* 1.  Set all MARGINS and PADDING as required - Top-Rigth-Bottom-Left                    */
   /* 2.  Set BORDER-WIDTH options: thin, medium, thick, px, rem / Top-Rigth-Bottom-Left     */
   /* 3. Set the thickness, style and COLOR of the line with BORDER-TOP                      */
-  margin: 3rem 0 3.5rem 0;
-  padding: 0 0 0 0;
-  border-width: 0 0 0 0;
+  margin: 3rem 0rem 3.5rem 0rem;
+  padding: 0rem 0rem 0rem 0rem;
+  border-width: 0rem 0rem 0rem 0rem;
   border-top: 1px solid var(--color-horisontalruler);
 }
 
@@ -276,7 +309,7 @@ hr {
 
 button {
   /* 1.  Set all MARGINS as required for BUTTONS - Top-Rigth-Bottom-Left                    */
-  margin: 0 0 1rem 0;
+  margin: 0rem 0rem 1rem 0rem;
 }
 
 input,
@@ -284,14 +317,14 @@ textarea,
 select,
 fieldset {
   /* 1.  Set all MARGINS as required for FORM ELEMENTS - Top-Rigth-Bottom-Left              */
-  margin: 0 0 1.5rem 0;
+  margin: 0rem 0rem 1.5rem 0rem;
 }
 
 ul,
 ol,
 dl {
   /* 1.  Set all MARGINS as required for LISTS ELEMENTS - Top-Rigth-Bottom-Left             */
-  margin: 0 0 2.5rem 0;
+  margin: 0rem 0rem 2.5rem 0rem;
 }
 
 blockquote,
@@ -299,7 +332,7 @@ figure,
 table,
 form {
   /* 1.  Set all MARGINS as required for OTHER ELEMENTS - Top-Rigth-Bottom-Left             */
-  margin: 0 0 2.5rem 0;
+  margin: 0rem 0rem 2.5rem 0rem;
 }
 
 /* --------------------------------------------------------------------------------------------------------------------- */
@@ -313,7 +346,7 @@ form {
 /* HTML CONTAINER ELEMENTS : <div> <nav> <article> <section> <header> <footer> <form> etc.  */
 /* ---------------------------------------------------------------------------------------- */
 
-.container {
+.for-container {
   /* 1. Set POSITION to specifies the type of positioning method used for the container     */
   /*    Position options - static, relative, fixed, absolute or sticky                      */
   /* 2. Set MARGINS (Top/Bottom & Left/Right / Top, Right, Bottom, Left                     */
@@ -325,8 +358,8 @@ form {
   /* 8. Set the Color of the Container's Content or Links                                   */
   /* 9. Set the WIDTH of the Container to stretch across the page or use MAX-WIDTH: 1200px  */
   position: relative;
-  margin: 0 0 0 0;
-  padding: 0 0 0 0;
+  margin: 0rem 0rem 0rem 0rem;
+  padding: 0rem 0rem 0rem 0rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -347,7 +380,7 @@ form {
 /* This container is a Standard set by W3 with left and right padding set to 16px           */
 /* ---------------------------------------------------------------------------------------- */
 
-.w3-container {
+.for-w3-container {
   /* 1. Set POSITION to specifies the type of positioning method used for the container     */
   /*    Position options - static, relative, fixed, absolute or sticky                      */
   /* 2. Set MARGINS (Top/Bottom & Left/Right / Top, Right, Bottom, Left                     */
@@ -359,8 +392,8 @@ form {
   /* 8. Set the Color of the Container's Content or Links                                   */
   /* 9. Set the WIDTH of the Container to stretch across the page or use MAX-WIDTH: 1200px  */
   position: relative;
-  margin: 0 0 0 0;
-  padding: 0 16px 0 16px;
+  margin: 0rem 0rem 0rem 0rem;
+  padding: 0rem 1.6rem 0rem 1.6rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -378,8 +411,8 @@ form {
 /* styling in order to make your container "STICKY ON SCROLL"                               */
 /* ---------------------------------------------------------------------------------------- */
 
-.container,
-.w3-container {
+.for-container,
+.for-w3-container {
   /* 10.  Add the BROWSER COMPATIBILITY Sets for STICKY CONTAINERS                          */
   /* 11. Set the POSITION of the container to FIXED or STICKY                               */
   /* 12. When to use FIXED - There are NO elements above the CONTAINTER (ITS ON TOP)        */
@@ -395,7 +428,7 @@ form {
 
 /* ================= FIXME:: STICKY IMPLEMENTED - COPY AND PASTE FIXME: =================== */
 
-.container {
+.for-container {
   /* 1. Set POSITION to specifies the type of positioning method used for the container     */
   /*    Position options - static, relative, fixed, absolute or sticky                      */
   /* 2. Set MARGINS (Top/Bottom & Left/Right / Top, Right, Bottom, Left                     */
@@ -419,8 +452,8 @@ form {
   position: -o-sticky;
   position: sticky;
   top: 0%;
-  margin: 0 0 0 0;
-  padding: 0 0 0 0;
+  margin: 0rem 0rem 0rem 0rem;
+  padding: 0rem 0rem 0rem 0rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -445,7 +478,7 @@ form {
 /* placed inside columns and rows.                                                          */
 /* ---------------------------------------------------------------------------------------- */
 
-.grid-container {
+.for-grid-container {
   /* 1.  Set POSITION to specifies the type of positioning method used for the container      */
   /*     Position options - static, relative, fixed, absolute or sticky                       */
   /* 2.  Set the WIDTH of the Container to stretch across the page or use MAX-WIDTH: 1200px   */
@@ -461,7 +494,7 @@ form {
   /* 10. GRID-TEMPLATE-ROWS defines the height of each rows                                   */
   position: relative;
   max-width: 100vw;
-  margin: 0 auto 0 auto;
+  margin: 0rem auto 0rem auto;
   padding: 2rem 2rem 2rem 2rem;
   text-align: center;
   display: grid;
@@ -481,23 +514,23 @@ form {
 
 /* grids to 3 columns above mobile sizes */
 @media (min-width: 600px) {
-  .grid-container {
+  .for-grid-container {
     grid-template-columns: repeat(3, 1fr);
     padding: 10px 0;
   }
-  .grid-container.full {
+  .for-grid-container.full {
     grid-template-columns: 1fr;
   }
-  .grid-container.halves {
+  .for-grid-container.halves {
     grid-template-columns: repeat(2, 1fr);
   }
-  .grid-container.thirds {
+  .for-grid-container.thirds {
     grid-template-columns: repeat(3, 1fr);
   }
-  .grid-container.quarters {
+  .for-grid-container.quarters {
     grid-template-columns: repeat(4, 1fr);
   }
-  .grid-container.fifths {
+  .for-grid-container.fifths {
     grid-template-columns: repeat(5, 1fr);
   }
 }
@@ -1029,4 +1062,6 @@ form {
 /* TODO:  ANY STYLES RELATED TO ANY JAVASCRIPT / THIRD PARTY CODE                                 FIXME:  JAVASCRIPT     */
 /* --------------------------------------------------------------------------------------------------------------------- */
 
+/* ========================================================================================= */
 /* ================================ TODO: PROJECT END TODO: ================================ */
+/* ========================================================================================= */

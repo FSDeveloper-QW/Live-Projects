@@ -8,11 +8,21 @@
 
 :root {
   /* Setting basic colour palettes */
-  --color-background: white;
+  /* --color-background: white;
   --color-headers: black;
   --color-text: black;
   --color-hover: lightgray;
-  --color-horisontalruler: #888;
+  --color-horisontalruler: #888; */
+  /* Setting selling plans colour palettes */
+  /* --color-resellers: #f88e20;
+  --color-sellproduct: #8b3365;
+  --color-generalservices: #544179;
+  --color-professionalservices: #01a7cf; */
+  /* Setting investing plans colour palettes */
+  /* --color-bronze: #986c43;
+  --color-silver: #7d7d7d;
+  --color-gold: #dc9d04;
+  --color-platinum: #434343; */
   /* Setting Social Media colour palettes */
   --color-facebook1: #1877f2;
   --color-facebook2: #3b5998;
@@ -38,15 +48,42 @@
 /* FIXME:  UNIVERSAL SELECTORS */
 /* --------------------------- */
 
-*,
+/* *,
 *::before,
 *::after {
+  box-sizing: border-box;
+  margin: 0rem 0rem 0rem 0rem;
+  padding: 0rem 0rem 0rem 0rem;
+  font-family: "roboto", "open sans", "montserrat", "poppins", "raleway", serif,
+    sans-serif;
+} */
+
+* {
+  /* ======================================================================================= */
   /* The ::before selector inserts something before the content of each selected element(s)  */
   /* The ::after selector inserts something after the content of each selected element(s)    */
-  /* 1. BOX-SIZING - Set how the total WIDTH and HEIGHT of an element is calculated          */
-  /*    BORDER-BOX ensures PADDING & BORDERS are included in box, while margins are excluded */
+  /* 1.  BOX-SIZING - Set how the total WIDTH and HEIGHT of an element is calculated         */
+  /*     BORDER-BOX - PADDING & BORDERS are included insie box, while margins are outside    */
   /*    (the element within the box shrinks as the padding and borders increase)             */
+  /* 3.  Set all MARGINS and PADDING to Zero - Top-Rigth-Bottom-Left                         */
+  /* 4.  Set the FONT-FAMILY to be used for the page (i.e. Google Fonts)                     */
+  /* ======================================================================================= */
+  /*                         FIXME: Best Font Combinations FIXME:                            */
+  /* 1.  Roboto (Headings) / Open Sans (Content)                                             */
+  /* 2.  Montserrat (Headings = 30px : Content = 16px)  / "Roboto" or "Open Sans"            */
+  /* 3.  Poppins (Headings or Content) / Raleway (Headings or Content)                       */
+  /* ======================================================================================= */
   box-sizing: border-box;
+  margin: 0rem 0rem 0rem 0rem;
+  padding: 0rem 0rem 0rem 0rem;
+  font-family: "roboto", "open sans", "montserrat", "poppins", "raleway",
+    "alice", serif, sans-serif;
+  /* ======================================================================================= */
+  /* FIXME: Potential nice gradient backgorunds for the whole site / sections to work with   */
+  /* ======================================================================================= */
+  /* background: linear-gradient(315deg, #ffffff, #d7e1ec); */
+  /* background: linear-gradient(315deg, #ffffff 0%, #d7e1ec 74%); */
+  /* background: #d8d8d8; */
 }
 
 html {
@@ -70,9 +107,9 @@ body {
   /* 10. Set LIST-STYLE to NONE to remove all "bullet points" of Lists automatically         */
   /* 11. Set the BACKGROUND-COLOR of the page                                                */
   /* 12. Set the COLOR of the text on the page                                               */
-  margin: 0 0 0 0;
+  /* margin: 0 0 0 0;
   padding: 0 0 0 0;
-  font-family: "roboto", "open sans", "montserrat", "poppins", serif, sans-serif;
+  font-family: "roboto", "open sans", "montserrat", "poppins", serif, sans-serif; */
   font-size: 1.6rem;
   font-style: normal;
   font-weight: normal;
@@ -81,8 +118,8 @@ body {
   letter-spacing: normal;
   word-spacing: normal;
   list-style: none;
-  background-color: var(--color-background);
-  color: var(--color-text);
+  /* background-color: var(--color-background);
+  color: var(--color-text); */
 }
 
 main {
@@ -91,6 +128,10 @@ main {
   /* Display Options: none, block, inline, inline-block, flex, inline-flex, grid, inline-grid */
   display: block;
 }
+
+/* ========================================================================================= */
+/* ================================ START OF HEADING ELEMENTS ============================== */
+/* ========================================================================================= */
 
 /* ---------------------------------- */
 /* FIXME:  HEADING ELEMENTS : H1 - H6 */
@@ -110,7 +151,7 @@ h6 {
   /* 2.  Set all MARGINS - Top-Rigth-Bottom-Left                                             */
   /* 3.  Set the FONT-WEIGHT : normal, bold, 100, 300, 500, 700 etc.                         */
   font-family: "roboto";
-  margin: 0 0 2rem 0;
+  margin: 0rem 0rem 2rem 0rem;
   font-weight: 300;
 }
 
@@ -193,164 +234,9 @@ h6 {
   }
 }
 
+/* ========================================================================================= */
 /* ================================== END OF HEADING ELEMENTS ============================== */
-
-/* ---------------------------------- */
-/* FIXME:  PARAGRAPH ELEMENTS (TEXT)  */
-/* ---------------------------------- */
-
-p {
-  /* 1.  Set the FONT-FAMILY to be used for the page (i.e. Google Fonts)                     */
-  /* 2.  Set all MARGINS - Top-Rigth-Bottom-Left                                             */
-  font-family: "open sans";
-  /* margin: 0 0 2.5rem 0; */
-}
-
-/* --------------------------------------------------------------------------------------------------------------------- */
-/* TODO:   BASIC CONTAINTER STYLES                                                               FIXME:  BASIC CONTAINER */
-/* --------------------------------------------------------------------------------------------------------------------- */
-
-/* ---------------------------------------------------------------------------------------- */
-/* FIXME:  GENERAL NOTE: Use code to setup a basic container for each section of your page  */
-/* A Container provides equality ito margins, paddings, alignments, fonts & colors for all  */
-/* HTML CONTAINTER ELEMENTS setup within the container.  It can be used with following      */
-/* HTML CONTAINER ELEMENTS : <div> <nav> <article> <section> <header> <footer> <form> etc.  */
-/* ---------------------------------------------------------------------------------------- */
-
-/* .main-container { */
-/* 1. Set POSITION to specifies the type of positioning method used for the container     */
-/*    Position options - static, relative, fixed, absolute or sticky                      */
-/* 2. Set MARGINS (Top/Bottom & Left/Right / Top, Right, Bottom, Left                     */
-/* 3. Set PADDING (Top/Bottom & Left/Right / Top, Right, Bottom, Left                     */
-/* 4. DISPLAY items next to each other by using FLEXBOX                                   */
-/* 5. JUSTIFY-CONTENT so items have equal SPACE-BETWEEN them or are in the CENTER         */
-/* 6. ALIGN-ITEMS in CENTER of container                                                  */
-/* 7. Set the Color of the Container's Background                                         */
-/* 8. Set the Color of the Container's Content or Links                                   */
-/* 9. Set the WIDTH of the Container to stretch across the page or use MAX-WIDTH: 1200px  */
-/* position: relative;
-  margin: 0 0 0 0;
-  padding: 0 0 0 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: black;
-  color: white;
-  width: 100vw; */
-/* } */
-
-/* --------------------------------------------------------------------------------------------------------------------- */
-/* TODO:   STICKY / FIXED CONTAINTER STYLES - ADD CODE TO BASIC CONTAINER OR W3-CONTAINTER      FIXME:  STICKY CONTAINER */
-/* --------------------------------------------------------------------------------------------------------------------- */
-
-/* ================= FIXME:: STICKY IMPLEMENTED - COPY AND PASTE FIXME: =================== */
-
-/* .sticky.container { */
-/* 1. Set POSITION to specifies the type of positioning method used for the container     */
-/*    Position options - static, relative, fixed, absolute or sticky                      */
-/* 2. Set MARGINS (Top/Bottom & Left/Right / Top, Right, Bottom, Left                     */
-/* 3. Set PADDING (Top/Bottom & Left/Right / Top, Right, Bottom, Left                     */
-/* 4. DISPLAY items next to each other by using FLEXBOX                                   */
-/* 5. JUSTIFY-CONTENT so items have equal SPACE-BETWEEN them or are in the CENTER         */
-/* 6. ALIGN-ITEMS in CENTER of container                                                  */
-/* 7. Set the Color of the Container's Background                                         */
-/* 8. Set the Color of the Container's Content or Links                                   */
-/* 9. Set the WIDTH of the Container to stretch across the page or use MAX-WIDTH: 1200px  */
-/* 10.  Add the BROWSER COMPATIBILITY Sets for STICKY CONTAINERS                          */
-/* 11. Set the POSITION of the container to FIXED or STICKY                               */
-/* 12. When to use FIXED - There are NO elements above the CONTAINTER (ITS ON TOP)        */
-/* 13. When to use STICKY - There are elements above the CONTAINTER (e.g. HERO BANNER)    */
-/* 14. Set the position on TOP to ZERO %                                                  */
-/* position: relative; */
-/* position: fixed; */
-/* position: -webkit-sticky;
-  position: -moz-sticky;
-  position: -ms-sticky;
-  position: -o-sticky;
-  position: sticky;
-  top: 0%;
-  margin: 0 0 0 0;
-  padding: 0 0 0 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: black;
-  color: white;
-  width: 100vw; */
-/* } */
-
-/* =========================== END OF IMPLEMENTED STICK CONTAINER ======================== */
-
-/* --------------------------------------------------------------------------------------------------------------------- */
-/* TODO:   GRID-CONTAINTER STYLES                                                                 FIXME:  GRID-CONTAINER */
-/* --------------------------------------------------------------------------------------------------------------------- */
-
-/* ----------------------------------------------------------------------------------------- */
-/* FIXME:  GRID-CONTAINER : MOBILE / SMALLER SCREENS STYLING           TODO: MOBILE FIRST    */
-/* ----------------------------------------------------------------------------------------- */
-
-/* ---------------------------------------------------------------------------------------- */
-/* FIXME:  GENERAL NOTE: To make an HTML element behave as a grid container, you have to    */
-/* set the display property to grid or inline-grid. Grid containers consist of grid items,  */
-/* placed inside columns and rows.                                                          */
-/* ---------------------------------------------------------------------------------------- */
-
-/* .grid-container { */
-/* 1.  Set POSITION to specifies the type of positioning method used for the container      */
-/*     Position options - static, relative, fixed, absolute or sticky                       */
-/* 2.  Set the WIDTH of the Container to stretch across the page or use MAX-WIDTH: 1200px   */
-/* 3.  Set MARGINS (Top/Bottom & Left/Right / Top, Right, Bottom, Left                      */
-/* 4.  Set PADDING (Top/Bottom & Left/Right / Top, Right, Bottom, Left                      */
-/* 5.  Use TEXT-AlIGN to set the horizontal alignment of the content inside a block element */
-/*     Text-Align (OPTIONS) : start, end, left, right, center, justify, justify-all etc.    */
-/* 6.  DISPLAY items in COLUMNS and ROWS by setting display to GRID or INLINE GRID          */
-/* 7.  Set the SPACE BETWEE COLUMS by using the GRID-GAP property                           */
-/* 8.  Set the SPACE BETWEE ROWS by using the GRID property                                 */
-/* 9.  Use min 200px wide colums auto-fit into width of the page with GRID-TEMPLATE-COLUMNS */
-/*     EXAMPLE: grid-template-columns: auto auto auto, will make 3 columns the same width   */
-/* 10. GRID-TEMPLATE-ROWS defines the height of each rows                                   */
-/* position: relative;
-  max-width: 100vw;
-  margin: 0 auto 0 auto;
-  padding: 2rem 2rem 2rem 2rem;
-  text-align: center;
-  display: grid;
-  grid-gap: 2rem;
-  gap: 2rem;
-  grid-template-columns: minmax(20rem, 1fr);
-  grid-template-rows: auto;
-} */
-
-/* ------------------------------------------------------------------------------------------ */
-/* FIXME:  GRID-CONTAINER : WEBSITE / LARGER SCREENS STYLING           TODO: LARGER SCREENS   */
-/* ------------------------------------------------------------------------------------------ */
-
-/* -------------------------------------------- */
-/* FIXME:  OTHER GRID LAYOUTS - LARGER SCREENS  */
-/* -------------------------------------------- */
-
-/* grids to 3 columns above mobile sizes */
-/* @media (min-width: 600px) {
-  .grid-container {
-    grid-template-columns: repeat(3, 1fr);
-    padding: 10px 0;
-  }
-  .grid-container.full {
-    grid-template-columns: 1fr;
-  }
-  .grid-container.halves {
-    grid-template-columns: repeat(2, 1fr);
-  }
-  .grid-container.thirds {
-    grid-template-columns: repeat(3, 1fr);
-  }
-  .grid-container.quarters {
-    grid-template-columns: repeat(4, 1fr);
-  }
-  .grid-container.fifths {
-    grid-template-columns: repeat(5, 1fr);
-  }
-} */
+/* ========================================================================================= */
 
 /* --------------------------------------------------------------------------------------------------------------------- */
 /*                                                                                               FIXME:  PROJECT STYLES  */
@@ -409,4 +295,206 @@ p {
 /* TODO:  ANY STYLES RELATED TO ANY JAVASCRIPT / THIRD PARTY CODE                                 FIXME:  JAVASCRIPT     */
 /* --------------------------------------------------------------------------------------------------------------------- */
 
+/* ========================================================================================= */
 /* ================================ TODO: PROJECT END TODO: ================================ */
+/* ========================================================================================= */
+
+/* --------------------------------------------------------------------------------------------------------------------- */
+/* TODO:   BASIC CONTAINTER STYLES                                                               FIXME:  BASIC CONTAINER */
+/* --------------------------------------------------------------------------------------------------------------------- */
+
+/* ---------------------------------------------------------------------------------------- */
+/* FIXME:  GENERAL NOTE: Use code to setup a basic container for each section of your page  */
+/* A Container provides equality ito margins, paddings, alignments, fonts & colors for all  */
+/* HTML CONTAINTER ELEMENTS setup within the container.  It can be used with following      */
+/* HTML CONTAINER ELEMENTS : <div> <nav> <article> <section> <header> <footer> <form> etc.  */
+/* ---------------------------------------------------------------------------------------- */
+
+/* .for-container { */
+/* 1. Set POSITION to specifies the type of positioning method used for the container     */
+/*    Position options - static, relative, fixed, absolute or sticky                      */
+/* 2. Set MARGINS (Top/Bottom & Left/Right / Top, Right, Bottom, Left                     */
+/* 3. Set PADDING (Top/Bottom & Left/Right / Top, Right, Bottom, Left                     */
+/* 4. DISPLAY items next to each other by using FLEXBOX                                   */
+/* 5. JUSTIFY-CONTENT so items have equal SPACE-BETWEEN them or are in the CENTER         */
+/* 6. ALIGN-ITEMS in CENTER of container                                                  */
+/* 7. Set the Color of the Container's Background                                         */
+/* 8. Set the Color of the Container's Content or Links                                   */
+/* 9. Set the WIDTH of the Container to stretch across the page or use MAX-WIDTH: 1200px  */
+/* position: relative;
+  margin: 0rem 0rem 0rem 0rem;
+  padding: 0rem 0rem 0rem 0rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  color: white;
+  width: 100vw;
+} */
+
+/* --------------------------------------------------------------------------------------------------------------------- */
+/* TODO:   W3-CONTAINER  STYLES (WEB STANDARD BY W3 WITH LEFT AND RIGHT PADDING SET TO 16px)     FIXME:  W3-CONTAINER    */
+/* --------------------------------------------------------------------------------------------------------------------- */
+
+/* ---------------------------------------------------------------------------------------- */
+/* FIXME:  GENERAL NOTE: Use code to setup a basic container for each section of your page  */
+/* A Container provides equality ito margins, paddings, alignments, fonts & colors for all  */
+/* HTML CONTAINTER ELEMENTS setup within the container.  It can be used with following      */
+/* HTML CONTAINER ELEMENTS : <div> <nav> <article> <section> <header> <footer> <form> etc.  */
+/* This container is a Standard set by W3 with left and right padding set to 16px           */
+/* ---------------------------------------------------------------------------------------- */
+
+/* .for-w3-container { */
+/* 1. Set POSITION to specifies the type of positioning method used for the container     */
+/*    Position options - static, relative, fixed, absolute or sticky                      */
+/* 2. Set MARGINS (Top/Bottom & Left/Right / Top, Right, Bottom, Left                     */
+/* 3. Set PADDING (Top/Bottom & Left/Right / Top, Right, Bottom, Left                     */
+/* 4. DISPLAY items next to each other by using FLEXBOX                                   */
+/* 5. JUSTIFY-CONTENT so items have equal SPACE-BETWEEN them or are in the CENTER         */
+/* 6. ALIGN-ITEMS in CENTER of container                                                  */
+/* 7. Set the Color of the Container's Background                                         */
+/* 8. Set the Color of the Container's Content or Links                                   */
+/* 9. Set the WIDTH of the Container to stretch across the page or use MAX-WIDTH: 1200px  */
+/* position: relative;
+  margin: 0rem 0rem 0rem 0rem;
+  padding: 0rem 1.6rem 0rem 1.6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  color: white;
+  width: 100vw;
+} */
+
+/* --------------------------------------------------------------------------------------------------------------------- */
+/* TODO:   STICKY / FIXED CONTAINTER STYLES - ADD CODE TO BASIC CONTAINER OR W3-CONTAINTER      FIXME:  STICKY CONTAINER */
+/* --------------------------------------------------------------------------------------------------------------------- */
+
+/* ---------------------------------------------------------------------------------------- */
+/* FIXME:  GENERAL NOTE: Simply Add the styles below to any of the above 2 containers'      */
+/* styling in order to make your container "STICKY ON SCROLL"                               */
+/* ---------------------------------------------------------------------------------------- */
+
+/* .for-container,
+.for-w3-container { */
+/* 10.  Add the BROWSER COMPATIBILITY Sets for STICKY CONTAINERS                          */
+/* 11. Set the POSITION of the container to FIXED or STICKY                               */
+/* 12. When to use FIXED - There are NO elements above the CONTAINTER (ITS ON TOP)        */
+/* 13. When to use STICKY - There are elements above the CONTAINTER (e.g. HERO BANNER)    */
+/* 14. Set the position on TOP to ZERO %                                                  */
+/* position: -webkit-sticky;
+  position: -moz-sticky;
+  position: -ms-sticky;
+  position: -o-sticky;
+  position: sticky;
+  top: 0%;
+} */
+
+/* ================= FIXME:: STICKY IMPLEMENTED - COPY AND PASTE FIXME: =================== */
+
+/* .for-container { */
+/* 1. Set POSITION to specifies the type of positioning method used for the container     */
+/*    Position options - static, relative, fixed, absolute or sticky                      */
+/* 2. Set MARGINS (Top/Bottom & Left/Right / Top, Right, Bottom, Left                     */
+/* 3. Set PADDING (Top/Bottom & Left/Right / Top, Right, Bottom, Left                     */
+/* 4. DISPLAY items next to each other by using FLEXBOX                                   */
+/* 5. JUSTIFY-CONTENT so items have equal SPACE-BETWEEN them or are in the CENTER         */
+/* 6. ALIGN-ITEMS in CENTER of container                                                  */
+/* 7. Set the Color of the Container's Background                                         */
+/* 8. Set the Color of the Container's Content or Links                                   */
+/* 9. Set the WIDTH of the Container to stretch across the page or use MAX-WIDTH: 1200px  */
+/* 10.  Add the BROWSER COMPATIBILITY Sets for STICKY CONTAINERS                          */
+/* 11. Set the POSITION of the container to FIXED or STICKY                               */
+/* 12. When to use FIXED - There are NO elements above the CONTAINTER (ITS ON TOP)        */
+/* 13. When to use STICKY - There are elements above the CONTAINTER (e.g. HERO BANNER)    */
+/* 14. Set the position on TOP to ZERO %                                                  */
+/* position: relative; */
+/* position: fixed; */
+/* position: -webkit-sticky;
+  position: -moz-sticky;
+  position: -ms-sticky;
+  position: -o-sticky;
+  position: sticky;
+  top: 0%;
+  margin: 0rem 0rem 0rem 0rem;
+  padding: 0rem 0rem 0rem 0rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  color: white;
+  width: 100vw;
+} */
+
+/* =========================== END OF IMPLEMENTED STICK CONTAINER ======================== */
+
+/* --------------------------------------------------------------------------------------------------------------------- */
+/* TODO:   GRID-CONTAINTER STYLES                                                                 FIXME:  GRID-CONTAINER */
+/* --------------------------------------------------------------------------------------------------------------------- */
+
+/* ----------------------------------------------------------------------------------------- */
+/* FIXME:  GRID-CONTAINER : MOBILE / SMALLER SCREENS STYLING           TODO: MOBILE FIRST    */
+/* ----------------------------------------------------------------------------------------- */
+
+/* ---------------------------------------------------------------------------------------- */
+/* FIXME:  GENERAL NOTE: To make an HTML element behave as a grid container, you have to    */
+/* set the display property to grid or inline-grid. Grid containers consist of grid items,  */
+/* placed inside columns and rows.                                                          */
+/* ---------------------------------------------------------------------------------------- */
+
+/* .for-grid-container { */
+/* 1.  Set POSITION to specifies the type of positioning method used for the container      */
+/*     Position options - static, relative, fixed, absolute or sticky                       */
+/* 2.  Set the WIDTH of the Container to stretch across the page or use MAX-WIDTH: 1200px   */
+/* 3.  Set MARGINS (Top/Bottom & Left/Right / Top, Right, Bottom, Left                      */
+/* 4.  Set PADDING (Top/Bottom & Left/Right / Top, Right, Bottom, Left                      */
+/* 5.  Use TEXT-AlIGN to set the horizontal alignment of the content inside a block element */
+/*     Text-Align (OPTIONS) : start, end, left, right, center, justify, justify-all etc.    */
+/* 6.  DISPLAY items in COLUMNS and ROWS by setting display to GRID or INLINE GRID          */
+/* 7.  Set the SPACE BETWEE COLUMS by using the GRID-GAP property                           */
+/* 8.  Set the SPACE BETWEE ROWS by using the GRID property                                 */
+/* 9.  Use min 200px wide colums auto-fit into width of the page with GRID-TEMPLATE-COLUMNS */
+/*     EXAMPLE: grid-template-columns: auto auto auto, will make 3 columns the same width   */
+/* 10. GRID-TEMPLATE-ROWS defines the height of each rows                                   */
+/* position: relative;
+  max-width: 100vw;
+  margin: 0rem auto 0rem auto;
+  padding: 2rem 2rem 2rem 2rem;
+  text-align: center;
+  display: grid;
+  grid-gap: 2rem;
+  gap: 2rem;
+  grid-template-columns: minmax(20rem, 1fr);
+  grid-template-rows: auto;
+} */
+
+/* ------------------------------------------------------------------------------------------ */
+/* FIXME:  GRID-CONTAINER : WEBSITE / LARGER SCREENS STYLING           TODO: LARGER SCREENS   */
+/* ------------------------------------------------------------------------------------------ */
+
+/* -------------------------------------------- */
+/* FIXME:  OTHER GRID LAYOUTS - LARGER SCREENS  */
+/* -------------------------------------------- */
+
+/* grids to 3 columns above mobile sizes */
+/* @media (min-width: 600px) {
+  .for-grid-container {
+    grid-template-columns: repeat(3, 1fr);
+    padding: 10px 0;
+  }
+  .for-grid-container.full {
+    grid-template-columns: 1fr;
+  }
+  .for-grid-container.halves {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .for-grid-container.thirds {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .for-grid-container.quarters {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .for-grid-container.fifths {
+    grid-template-columns: repeat(5, 1fr);
+  }
+} */
