@@ -1,0 +1,547 @@
+/* --------------------------------------------------------------------------------------------------------------------- */
+/* TODO:  SETTING ROOT VARIABLES                                                                 FIXME:  ROOT VARIABLES  */
+/* --------------------------------------------------------------------------------------------------------------------- */
+
+/* GENERAL NOTE - When seting the COLOR : choose any color [color name / hex / RGB]         */
+/* To make your color appear TRANSPARENT you need to use RGA (0-1 is tranparency factor)    */
+/* EXAMPLE: rgb (77, 0, 255, 0.5) => 0.5 is the "transparency factor"                       */
+
+:root {
+  /* Setting basic colour palettes */
+  /* --color-background: white;
+    --color-headers: black;
+    --color-text: black;
+    --color-hover: lightgray;
+    --color-horisontalruler: #888; */
+  /* Setting Social Media colour palettes */
+  --color-facebook1: #1877f2;
+  --color-facebook2: #3b5998;
+  --color-instagram: #c32aa3;
+  --color-pinterest: #bd081c;
+  --color-twitter: #1da1f2;
+  --color-linkedin: #0a66c2;
+  --color-youtube: #ff0000;
+  --color-whatsapp: #25d366;
+  --color-telegram: #0088cc;
+  --color-signal: #3a76f0;
+  --color-skype: #00aff0;
+  --color-snapchat: #fffc00;
+  --color-tiktok: #010101;
+  --color-android: #a4c639;
+}
+
+/* --------------------------------------------------------------------------------------------------------------------- */
+/* TODO:  STANDARD CSS BASE STYLES                                                               FIXME:  BASE STYLES     */
+/* --------------------------------------------------------------------------------------------------------------------- */
+
+/* --------------------------- */
+/* FIXME:  UNIVERSAL SELECTORS */
+/* --------------------------- */
+
+* {
+  /* The ::before selector inserts something before the content of each selected element(s)  */
+  /* The ::after selector inserts something after the content of each selected element(s)    */
+  /* 1. BOX-SIZING - Set how the total WIDTH and HEIGHT of an element is calculated          */
+  /*    BORDER-BOX ensures PADDING & BORDERS are included in box, while margins are excluded */
+  /*    (the element within the box shrinks as the padding and borders increase)             */
+  box-sizing: border-box;
+  /* FIXME: PROJECT ELEMENTS - ::before & ::after has been removed / May as a result of SPAN ELEMENT */
+  margin: 0rem 0rem 0rem 0rem;
+  padding: 0rem 0rem 0rem 0rem;
+  font-family: "poppins", sans-serif;
+}
+
+html {
+  /* 1. Set the Font Size Standard to REM = 62.5% of 16px = 10px = 1rem                      */
+  /* 2. Set the SCROLL BEHAVIOUR to AUTO / SMOOTH                                            */
+  /*    Sets the behavior for scrolling box when scrolling is triggered by the navigation    */
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  /* FIXME: PROJECT ELEMENTS */
+  display: grid;
+  width: 100%;
+  height: 100%;
+  place-items: center;
+  background: linear-gradient(315deg, #ffffff, #d7e1ec);
+}
+
+/* body { */
+/* 1.  Set all MARGINS and PADDING to Zero - Top-Rigth-Bottom-Left                         */
+/* 2.  Set the FONT-FAMILY to be used for the page (i.e. Google Fonts)                     */
+/* 3.  Set the FONT-SIZE to be used as the standard for the page [1.6rem = 16px]           */
+/* 4.  Set the FONT-STYLE : normal, italic, oblique, oblique 10deg                         */
+/* 5.  Set the FONT-WEIGHT : normal, bold, 100, 300, 500, 700 etc.                         */
+/* 6.  Set TEXT-DECORATION : none, underline, double, dashed, dotted, wavy, solid, etc.    */
+/* 7.  Set LINE-HEIGHT (spacing) : 1rem, 1.25rem, 1.4rem, 1.5rem etc                       */
+/* 8.  Set LETTER-SPACING : normal, 0.1rem, 0.2rem, 0.3rem etc                             */
+/* 9.  Set WORD-SPACING : normal, 0.1rem, 0.2rem, 0.3 etc                                  */
+/* 10. Set LIST-STYLE to NONE to remove all "bullet points" of Lists automatically         */
+/* 11. Set the BACKGROUND-COLOR of the page                                                */
+/* 12. Set the COLOR of the text on the page                                               */
+/* margin: 0 0 0 0;
+    padding: 0 0 0 0;
+    font-family: "roboto", "open sans", "montserrat", "poppins", serif, sans-serif;
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: none;
+    line-height: 1.6;
+    letter-spacing: normal;
+    word-spacing: normal;
+    list-style: none;
+    background-color: var(--color-background);
+    color: var(--color-text); */
+/* } */
+
+main {
+  /* 1. Set the initial DISPLAY option for the page - The display property sets whether       */
+  /* an element is treated as a block or inline element and the layout used for its children  */
+  /* Display Options: none, block, inline, inline-block, flex, inline-flex, grid, inline-grid */
+  display: block;
+}
+
+/* ---------------------------------- */
+/* FIXME:  HEADING ELEMENTS : H1 - H6 */
+/* ---------------------------------- */
+
+/* ----------------------------------------------------------------------------------------- */
+/* FIXME:  HEADING ELEMENTS : MOBILE / SMALLER SCREENS STYLING         TODO: MOBILE FIRST    */
+/* ----------------------------------------------------------------------------------------- */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  /* 1.  Set the FONT-FAMILY to be used for the page (i.e. Google Fonts)                     */
+  /* 2.  Set all MARGINS - Top-Rigth-Bottom-Left                                             */
+  /* 3.  Set the FONT-WEIGHT : normal, bold, 100, 300, 500, 700 etc.                         */
+  font-family: "roboto";
+  margin: 0 0 2rem 0;
+  font-weight: 300;
+}
+
+h1 {
+  /* 1.  Set the FONT-SIZE to be used as the standard for the page [1.6rem = 16px]           */
+  /* 2.  Set LINE-HEIGHT (spacing) : 1rem, 1.25rem, 1.4rem, 1.5rem etc                       */
+  /* 3.  Set LETTER-SPACING : normal, 0.1rem, 0.2rem, 0.3rem etc                             */
+  font-size: 4rem;
+  line-height: 1.2;
+  letter-spacing: 0.1rem;
+}
+
+h2 {
+  /* 1.  Set the FONT-SIZE to be used as the standard for the page [1.6rem = 16px]           */
+  /* 2.  Set LINE-HEIGHT (spacing) : 1rem, 1.25rem, 1.4rem, 1.5rem etc                       */
+  /* 3.  Set LETTER-SPACING : normal, 0.1rem, 0.2rem, 0.3rem etc                             */
+  font-size: 3.6rem;
+  line-height: 1.25;
+  letter-spacing: 0.1rem;
+}
+
+h3 {
+  /* 1.  Set the FONT-SIZE to be used as the standard for the page [1.6rem = 16px]           */
+  /* 2.  Set LINE-HEIGHT (spacing) : 1rem, 1.25rem, 1.4rem, 1.5rem etc                       */
+  /* 3.  Set LETTER-SPACING : normal, 0.1rem, 0.2rem, 0.3rem etc                             */
+  font-size: 3rem;
+  line-height: 1.3;
+  letter-spacing: 0.1rem;
+}
+
+h4 {
+  /* 1.  Set the FONT-SIZE to be used as the standard for the page [1.6rem = 16px]           */
+  /* 2.  Set LINE-HEIGHT (spacing) : 1rem, 1.25rem, 1.4rem, 1.5rem etc                       */
+  /* 3.  Set LETTER-SPACING : normal, 0.1rem, 0.2rem, 0.3rem etc                             */
+  font-size: 2.4rem;
+  line-height: 1.35;
+  letter-spacing: 0.08rem;
+}
+
+h5 {
+  /* 1.  Set the FONT-SIZE to be used as the standard for the page [1.6rem = 16px]           */
+  /* 2.  Set LINE-HEIGHT (spacing) : 1rem, 1.25rem, 1.4rem, 1.5rem etc                       */
+  /* 3.  Set LETTER-SPACING : normal, 0.1rem, 0.2rem, 0.3rem etc                             */
+  font-size: 1.8rem;
+  line-height: 1.5;
+  letter-spacing: 0.05rem;
+}
+
+h6 {
+  /* 1.  Set the FONT-SIZE to be used as the standard for the page [1.6rem = 16px]           */
+  /* 2.  Set LINE-HEIGHT (spacing) : 1rem, 1.25rem, 1.4rem, 1.5rem etc                       */
+  /* 3.  Set LETTER-SPACING : normal, 0.1rem, 0.2rem, 0.3rem etc                             */
+  font-size: 1.5rem;
+  line-height: 1.6;
+  letter-spacing: 0;
+}
+
+/* ----------------------------------------------------------------------------------------- */
+/* FIXME:  HEADING ELEMENTS : WEBSITE / LARGER SCREENS STYLING         TODO: LARGER SCREENS  */
+/* ----------------------------------------------------------------------------------------- */
+
+@media (min-width: 600px) {
+  h1 {
+    font-size: 5rem;
+  }
+  h2 {
+    font-size: 4.2rem;
+  }
+  h3 {
+    font-size: 3.6rem;
+  }
+  h4 {
+    font-size: 3rem;
+  }
+  h5 {
+    font-size: 2.4rem;
+  }
+  h6 {
+    font-size: 1.5rem;
+  }
+}
+
+/* ================================== END OF HEADING ELEMENTS ============================== */
+
+/* ---------------------------------- */
+/* FIXME:  PARAGRAPH ELEMENTS (TEXT)  */
+/* ---------------------------------- */
+
+p {
+  /* 1.  Set the FONT-FAMILY to be used for the page (i.e. Google Fonts)                     */
+  /* 2.  Set all MARGINS - Top-Rigth-Bottom-Left                                             */
+  font-family: "open sans";
+  /* margin: 0 0 2.5rem 0; */
+}
+
+/* --------------------------------------------------------------------------------------------------------------------- */
+/* TODO:   BASIC CONTAINTER STYLES                                                               FIXME:  BASIC CONTAINER */
+/* --------------------------------------------------------------------------------------------------------------------- */
+
+/* ---------------------------------------------------------------------------------------- */
+/* FIXME:  GENERAL NOTE: Use code to setup a basic container for each section of your page  */
+/* A Container provides equality ito margins, paddings, alignments, fonts & colors for all  */
+/* HTML CONTAINTER ELEMENTS setup within the container.  It can be used with following      */
+/* HTML CONTAINER ELEMENTS : <div> <nav> <article> <section> <header> <footer> <form> etc.  */
+/* ---------------------------------------------------------------------------------------- */
+
+/* .main-container { */
+/* 1. Set POSITION to specifies the type of positioning method used for the container     */
+/*    Position options - static, relative, fixed, absolute or sticky                      */
+/* 2. Set MARGINS (Top/Bottom & Left/Right / Top, Right, Bottom, Left                     */
+/* 3. Set PADDING (Top/Bottom & Left/Right / Top, Right, Bottom, Left                     */
+/* 4. DISPLAY items next to each other by using FLEXBOX                                   */
+/* 5. JUSTIFY-CONTENT so items have equal SPACE-BETWEEN them or are in the CENTER         */
+/* 6. ALIGN-ITEMS in CENTER of container                                                  */
+/* 7. Set the Color of the Container's Background                                         */
+/* 8. Set the Color of the Container's Content or Links                                   */
+/* 9. Set the WIDTH of the Container to stretch across the page or use MAX-WIDTH: 1200px  */
+/* position: relative;
+      margin: 0 0 0 0;
+      padding: 0 0 0 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: black;
+      color: white;
+      width: 100vw; */
+/* } */
+
+/* --------------------------------------------------------------------------------------------------------------------- */
+/* TODO:   STICKY / FIXED CONTAINTER STYLES - ADD CODE TO BASIC CONTAINER OR W3-CONTAINTER      FIXME:  STICKY CONTAINER */
+/* --------------------------------------------------------------------------------------------------------------------- */
+
+/* ================= FIXME:: STICKY IMPLEMENTED - COPY AND PASTE FIXME: =================== */
+
+/* .sticky.container { */
+/* 1. Set POSITION to specifies the type of positioning method used for the container     */
+/*    Position options - static, relative, fixed, absolute or sticky                      */
+/* 2. Set MARGINS (Top/Bottom & Left/Right / Top, Right, Bottom, Left                     */
+/* 3. Set PADDING (Top/Bottom & Left/Right / Top, Right, Bottom, Left                     */
+/* 4. DISPLAY items next to each other by using FLEXBOX                                   */
+/* 5. JUSTIFY-CONTENT so items have equal SPACE-BETWEEN them or are in the CENTER         */
+/* 6. ALIGN-ITEMS in CENTER of container                                                  */
+/* 7. Set the Color of the Container's Background                                         */
+/* 8. Set the Color of the Container's Content or Links                                   */
+/* 9. Set the WIDTH of the Container to stretch across the page or use MAX-WIDTH: 1200px  */
+/* 10.  Add the BROWSER COMPATIBILITY Sets for STICKY CONTAINERS                          */
+/* 11. Set the POSITION of the container to FIXED or STICKY                               */
+/* 12. When to use FIXED - There are NO elements above the CONTAINTER (ITS ON TOP)        */
+/* 13. When to use STICKY - There are elements above the CONTAINTER (e.g. HERO BANNER)    */
+/* 14. Set the position on TOP to ZERO %                                                  */
+/* position: relative; */
+/* position: fixed; */
+/* position: -webkit-sticky;
+      position: -moz-sticky;
+      position: -ms-sticky;
+      position: -o-sticky;
+      position: sticky;
+      top: 0%;
+      margin: 0 0 0 0;
+      padding: 0 0 0 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: black;
+      color: white;
+      width: 100vw; */
+/* } */
+
+/* =========================== END OF IMPLEMENTED STICK CONTAINER ======================== */
+
+/* --------------------------------------------------------------------------------------------------------------------- */
+/* TODO:   GRID-CONTAINTER STYLES                                                                 FIXME:  GRID-CONTAINER */
+/* --------------------------------------------------------------------------------------------------------------------- */
+
+/* ----------------------------------------------------------------------------------------- */
+/* FIXME:  GRID-CONTAINER : MOBILE / SMALLER SCREENS STYLING           TODO: MOBILE FIRST    */
+/* ----------------------------------------------------------------------------------------- */
+
+/* ---------------------------------------------------------------------------------------- */
+/* FIXME:  GENERAL NOTE: To make an HTML element behave as a grid container, you have to    */
+/* set the display property to grid or inline-grid. Grid containers consist of grid items,  */
+/* placed inside columns and rows.                                                          */
+/* ---------------------------------------------------------------------------------------- */
+
+/* .grid-container { */
+/* 1.  Set POSITION to specifies the type of positioning method used for the container      */
+/*     Position options - static, relative, fixed, absolute or sticky                       */
+/* 2.  Set the WIDTH of the Container to stretch across the page or use MAX-WIDTH: 1200px   */
+/* 3.  Set MARGINS (Top/Bottom & Left/Right / Top, Right, Bottom, Left                      */
+/* 4.  Set PADDING (Top/Bottom & Left/Right / Top, Right, Bottom, Left                      */
+/* 5.  Use TEXT-AlIGN to set the horizontal alignment of the content inside a block element */
+/*     Text-Align (OPTIONS) : start, end, left, right, center, justify, justify-all etc.    */
+/* 6.  DISPLAY items in COLUMNS and ROWS by setting display to GRID or INLINE GRID          */
+/* 7.  Set the SPACE BETWEE COLUMS by using the GRID-GAP property                           */
+/* 8.  Set the SPACE BETWEE ROWS by using the GRID property                                 */
+/* 9.  Use min 200px wide colums auto-fit into width of the page with GRID-TEMPLATE-COLUMNS */
+/*     EXAMPLE: grid-template-columns: auto auto auto, will make 3 columns the same width   */
+/* 10. GRID-TEMPLATE-ROWS defines the height of each rows                                   */
+/* position: relative;
+      max-width: 100vw;
+      margin: 0 auto 0 auto;
+      padding: 2rem 2rem 2rem 2rem;
+      text-align: center;
+      display: grid;
+      grid-gap: 2rem;
+      gap: 2rem;
+      grid-template-columns: minmax(20rem, 1fr);
+      grid-template-rows: auto;
+    } */
+
+/* ------------------------------------------------------------------------------------------ */
+/* FIXME:  GRID-CONTAINER : WEBSITE / LARGER SCREENS STYLING           TODO: LARGER SCREENS   */
+/* ------------------------------------------------------------------------------------------ */
+
+/* -------------------------------------------- */
+/* FIXME:  OTHER GRID LAYOUTS - LARGER SCREENS  */
+/* -------------------------------------------- */
+
+/* grids to 3 columns above mobile sizes */
+/* @media (min-width: 600px) {
+      .grid-container {
+        grid-template-columns: repeat(3, 1fr);
+        padding: 10px 0;
+      }
+      .grid-container.full {
+        grid-template-columns: 1fr;
+      }
+      .grid-container.halves {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .grid-container.thirds {
+        grid-template-columns: repeat(3, 1fr);
+      }
+      .grid-container.quarters {
+        grid-template-columns: repeat(4, 1fr);
+      }
+      .grid-container.fifths {
+        grid-template-columns: repeat(5, 1fr);
+      }
+    } */
+
+/* --------------------------------------------------------------------------------------------------------------------- */
+/*                                                                                               FIXME:  PROJECT STYLES  */
+/* --------------------------------------------------------------------------------------------------------------------- */
+
+/* ===================== TODO: MY SPECIFIC PROJECT STYLES BELOW TODO: ====================== */
+
+/* --------------------------------------------------------------------------------------------------------------------- */
+/* TODO:  SOCIAL MEDIA ICONS - WITH TOOL TIPS                                                    FIXME:  SECTION 1       */
+/* --------------------------------------------------------------------------------------------------------------------- */
+
+/* ----------------------------------------------------------------------------------------- */
+/* FIXME:  STYLES (SECTION 1) - MOBILE / SMALLER SCREENS STYLING       TODO: MOBILE FIRST    */
+/* ----------------------------------------------------------------------------------------- */
+
+.social-media__container {
+  display: inline-flex;
+}
+
+.social-media__container .icon {
+  margin: 0rem 2rem 0rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  /* The z-index property specifies the stack order of an element. 
+       z-index only works on positioned elements (position: absolute,
+       position: relative, position: fixed, or position: sticky) and
+       flex items (elements that are direct children of display:flex elements) */
+  z-index: 2;
+  cursor: pointer;
+}
+
+.social-media__container .icon span {
+  position: relative;
+  display: block;
+  width: 6rem;
+  height: 6rem;
+  background: #ffffff;
+  border-radius: 50%;
+  z-index: 2;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.social-media__container .icon:hover span i {
+  color: #ffffff;
+}
+
+.social-media__container .icon span i {
+  font-size: 2.5rem;
+  line-height: 6rem;
+}
+
+.social-media__container .icon .tooltip {
+  position: absolute;
+  top: 0rem;
+  background: #ffffff;
+  color: #ffffff;
+  font-size: 2rem;
+  padding: 1rem 1.8rem 1rem 1.8rem;
+  border-radius: 25px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.4s cubic-bezier(0.68, -0.55, -0.265, 1.55);
+}
+
+.social-media__container .icon:hover .tooltip {
+  top: -7rem;
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.social-media__container .icon .tooltip:before {
+  position: absolute;
+  content: "";
+  width: 1.5rem;
+  height: 1.5rem;
+  background: #ffffff;
+  bottom: -0.8rem;
+  left: 50%;
+  transform: translateX(-50%) rotate(45deg);
+}
+
+.social-media__container .icon:hover span,
+.social-media__container .icon:hover .tooltip {
+  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.4);
+}
+
+.social-media__container .facebook:hover span,
+.social-media__container .facebook:hover .tooltip,
+.social-media__container .facebook:hover .tooltip:before {
+  background: var(--color-facebook2);
+}
+.social-media__container .instagram:hover span,
+.social-media__container .instagram:hover .tooltip,
+.social-media__container .instagram:hover .tooltip:before {
+  background: var(--color-instagram);
+}
+.social-media__container .twitter:hover span,
+.social-media__container .twitter:hover .tooltip,
+.social-media__container .twitter:hover .tooltip:before {
+  background: var(--color-twitter);
+}
+.social-media__container .linkedin:hover span,
+.social-media__container .linkedin:hover .tooltip,
+.social-media__container .linkedin:hover .tooltip:before {
+  background: var(--color-linkedin);
+}
+.social-media__container .youtube:hover span,
+.social-media__container .youtube:hover .tooltip,
+.social-media__container .youtube:hover .tooltip:before {
+  background: var(--color-youtube);
+}
+.social-media__container .whatsapp:hover span,
+.social-media__container .whatsapp:hover .tooltip,
+.social-media__container .whatsapp:hover .tooltip:before {
+  background: var(--color-whatsapp);
+}
+.social-media__container .telegram:hover span,
+.social-media__container .telegram:hover .tooltip,
+.social-media__container .telegram:hover .tooltip:before {
+  background: var(--color-telegram);
+}
+.social-media__container .skype:hover span,
+.social-media__container .skype:hover .tooltip,
+.social-media__container .skype:hover .tooltip:before {
+  background: var(--color-skype);
+}
+.social-media__container .snapchat:hover span,
+.social-media__container .snapchat:hover .tooltip,
+.social-media__container .snapchat:hover .tooltip:before {
+  background: var(--color-snapchat);
+}
+.social-media__container .android:hover span,
+.social-media__container .android:hover .tooltip,
+.social-media__container .android:hover .tooltip:before {
+  background: var(--color-android);
+}
+
+/* ----------------------------------------------------------------------------------------- */
+/* FIXME:  STYLES (SECTION 1) - WEBSITE / LARGER SCREENS STYLING       TODO: LARGER SCREENS  */
+/* ----------------------------------------------------------------------------------------- */
+
+/* ----------------------------------------------------------------------------------------- */
+/* ANTICIPATED BREAK POINT 1 : FIXME:  Larger than MOBILE screens - 400px / 40rem            */
+/* ----------------------------------------------------------------------------------------- */
+
+@media (min-width: 400px) {
+}
+
+/* ----------------------------------------------------------------------------------------- */
+/* ANTICIPATED BREAK POINT 2 : FIXME:  Larger than PHABLET screens - 550px / 55rem           */
+/* ----------------------------------------------------------------------------------------- */
+
+@media (min-width: 550px) {
+}
+
+/* ----------------------------------------------------------------------------------------- */
+/* ANTICIPATED BREAK POINT 3 : FIXME:  Larger than TABLET screens - 750px / 75rem            */
+/* ----------------------------------------------------------------------------------------- */
+
+@media (min-width: 750px) {
+}
+
+/* ----------------------------------------------------------------------------------------- */
+/* ANTICIPATED BREAK POINT 4 : FIXME:  Larger than Desktop/Laptop screens - 1000px / 100rem  */
+/* ----------------------------------------------------------------------------------------- */
+
+@media (min-width: 1000px) {
+}
+
+/* ----------------------------------------------------------------------------------------- */
+/* ANTICIPATED BREAK POINT 5 : FIXME:  Larger than HD Desktop/Laptop screens -1200px/120rem  */
+/* ----------------------------------------------------------------------------------------- */
+
+@media (min-width: 1200px) {
+}
+
+/* --------------------------------------------------------------------------------------------------------------------- */
+/* TODO:  ANY STYLES RELATED TO ANY JAVASCRIPT / THIRD PARTY CODE                                 FIXME:  JAVASCRIPT     */
+/* --------------------------------------------------------------------------------------------------------------------- */
+
+/* ================================ TODO: PROJECT END TODO: ================================ */
