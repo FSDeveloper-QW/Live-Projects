@@ -23,6 +23,21 @@
   --color-silver: #7d7d7d;
   --color-gold: #dc9d04;
   --color-platinum: #434343;
+  /* Setting Social Media colour palettes */
+  --color-facebook1: #1877f2;
+  --color-facebook2: #3b5998;
+  --color-instagram: #c32aa3;
+  --color-pinterest: #bd081c;
+  --color-twitter: #1da1f2;
+  --color-linkedin: #0a66c2;
+  --color-youtube: #ff0000;
+  --color-whatsapp: #25d366;
+  --color-telegram: #0088cc;
+  --color-signal: #3a76f0;
+  --color-skype: #00aff0;
+  --color-snapchat: #fffc00;
+  --color-tiktok: #010101;
+  --color-android: #a4c639;
 }
 
 /* --------------------------------------------------------------------------------------------------------------------- */

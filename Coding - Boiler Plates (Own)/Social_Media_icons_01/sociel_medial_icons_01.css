@@ -6,29 +6,14 @@
 /* To make your color appear TRANSPARENT you need to use RGA (0-1 is tranparency factor)    */
 /* EXAMPLE: rgb (77, 0, 255, 0.5) => 0.5 is the "transparency factor"                       */
 
-:root {
-  /* Setting basic colour palettes */
-  --color-background: white;
+/* :root { */
+/* Setting basic colour palettes */
+/* --color-background: white;
   --color-headers: black;
   --color-text: black;
   --color-hover: lightgray;
   --color-horisontalruler: #888;
-  /* Setting Social Media colour palettes */
-  --color-facebook1: #1877f2;
-  --color-facebook2: #3b5998;
-  --color-instagram: #c32aa3;
-  --color-pinterest: #bd081c;
-  --color-twitter: #1da1f2;
-  --color-linkedin: #0a66c2;
-  --color-youtube: #ff0000;
-  --color-whatsapp: #25d366;
-  --color-telegram: #0088cc;
-  --color-signal: #3a76f0;
-  --color-skype: #00aff0;
-  --color-snapchat: #fffc00;
-  --color-tiktok: #010101;
-  --color-android: #a4c639;
-}
+} */
 
 /* --------------------------------------------------------------------------------------------------------------------- */
 /* TODO:  STANDARD CSS BASE STYLES                                                               FIXME:  BASE STYLES     */
@@ -81,8 +66,10 @@ body {
   letter-spacing: normal;
   word-spacing: normal;
   list-style: none;
-  background-color: var(--color-background);
-  color: var(--color-text);
+  /* background-color: var(--color-background);
+  color: var(--color-text); */
+  /* FIXME:  Project Styles */
+  background: #d8d8d8;
 }
 
 main {
@@ -229,14 +216,14 @@ p {
 /* 8. Set the Color of the Container's Content or Links                                   */
 /* 9. Set the WIDTH of the Container to stretch across the page or use MAX-WIDTH: 1200px  */
 /* position: relative;
-  margin: 0 0 0 0;
-  padding: 0 0 0 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: black;
-  color: white;
-  width: 100vw; */
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: white;
+    width: 100vw; */
 /* } */
 
 /* --------------------------------------------------------------------------------------------------------------------- */
@@ -264,19 +251,19 @@ p {
 /* position: relative; */
 /* position: fixed; */
 /* position: -webkit-sticky;
-  position: -moz-sticky;
-  position: -ms-sticky;
-  position: -o-sticky;
-  position: sticky;
-  top: 0%;
-  margin: 0 0 0 0;
-  padding: 0 0 0 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: black;
-  color: white;
-  width: 100vw; */
+    position: -moz-sticky;
+    position: -ms-sticky;
+    position: -o-sticky;
+    position: sticky;
+    top: 0%;
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: white;
+    width: 100vw; */
 /* } */
 
 /* =========================== END OF IMPLEMENTED STICK CONTAINER ======================== */
@@ -310,16 +297,16 @@ p {
 /*     EXAMPLE: grid-template-columns: auto auto auto, will make 3 columns the same width   */
 /* 10. GRID-TEMPLATE-ROWS defines the height of each rows                                   */
 /* position: relative;
-  max-width: 100vw;
-  margin: 0 auto 0 auto;
-  padding: 2rem 2rem 2rem 2rem;
-  text-align: center;
-  display: grid;
-  grid-gap: 2rem;
-  gap: 2rem;
-  grid-template-columns: minmax(20rem, 1fr);
-  grid-template-rows: auto;
-} */
+    max-width: 100vw;
+    margin: 0 auto 0 auto;
+    padding: 2rem 2rem 2rem 2rem;
+    text-align: center;
+    display: grid;
+    grid-gap: 2rem;
+    gap: 2rem;
+    grid-template-columns: minmax(20rem, 1fr);
+    grid-template-rows: auto;
+  } */
 
 /* ------------------------------------------------------------------------------------------ */
 /* FIXME:  GRID-CONTAINER : WEBSITE / LARGER SCREENS STYLING           TODO: LARGER SCREENS   */
@@ -331,26 +318,26 @@ p {
 
 /* grids to 3 columns above mobile sizes */
 /* @media (min-width: 600px) {
-  .grid-container {
-    grid-template-columns: repeat(3, 1fr);
-    padding: 10px 0;
-  }
-  .grid-container.full {
-    grid-template-columns: 1fr;
-  }
-  .grid-container.halves {
-    grid-template-columns: repeat(2, 1fr);
-  }
-  .grid-container.thirds {
-    grid-template-columns: repeat(3, 1fr);
-  }
-  .grid-container.quarters {
-    grid-template-columns: repeat(4, 1fr);
-  }
-  .grid-container.fifths {
-    grid-template-columns: repeat(5, 1fr);
-  }
-} */
+    .grid-container {
+      grid-template-columns: repeat(3, 1fr);
+      padding: 10px 0;
+    }
+    .grid-container.full {
+      grid-template-columns: 1fr;
+    }
+    .grid-container.halves {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    .grid-container.thirds {
+      grid-template-columns: repeat(3, 1fr);
+    }
+    .grid-container.quarters {
+      grid-template-columns: repeat(4, 1fr);
+    }
+    .grid-container.fifths {
+      grid-template-columns: repeat(5, 1fr);
+    }
+  } */
 
 /* --------------------------------------------------------------------------------------------------------------------- */
 /*                                                                                               FIXME:  PROJECT STYLES  */
@@ -359,8 +346,120 @@ p {
 /* ===================== TODO: MY SPECIFIC PROJECT STYLES BELOW TODO: ====================== */
 
 /* --------------------------------------------------------------------------------------------------------------------- */
-/* TODO:  STYLES (SECTION 1) -                                                                   FIXME:  SECTION 1       */
+/* TODO:  SOCIAL MEDIA ICONS - Plain Hover and Animation Effect - HTML & CSS                     FIXME:  SECTION 1       */
 /* --------------------------------------------------------------------------------------------------------------------- */
+
+:root {
+  --color-facebook1: #1877f2;
+  --color-facebook2: #3b5998;
+  --color-instagram: #c32aa3;
+  --color-pinterest: #bd081c;
+  --color-twitter: #1da1f2;
+  --color-linkedin: #0a66c2;
+  --color-youtube: #ff0000;
+  --color-whatsapp: #25d366;
+  --color-telegram: #0088cc;
+  --color-signal: #3a76f0;
+  --color-skype: #00aff0;
+  --color-snapchat: #fffc00;
+  --color-tiktok: #010101;
+  --color-android: #a4c639;
+}
+
+.social-media ul {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: 0rem 0rem 0rem 0rem;
+  padding: 0rem 0rem 0rem 0rem;
+
+  /* Translate (width, height) */
+  transform: translate(-50%, -50%);
+  display: flex;
+}
+
+.social-media ul li {
+  list-style: none;
+  margin: 0rem 1.5rem 0rem 1.5rem;
+}
+
+.social-media ul li .fa {
+  font-size: 3rem;
+  line-height: 6rem;
+  transition: 0.6s;
+  color: #000000;
+}
+
+.social-media ul li .fa:hover {
+  color: #ffffff;
+}
+
+.social-media ul li a {
+  position: relative;
+  display: block;
+  width: 6rem;
+  height: 6rem;
+  border-radius: 50%;
+  background-color: #ffffff;
+  text-align: center;
+  transition: 0.6s;
+  box-shadow: 0 5px 4px rgba(0, 0, 0, 0.35);
+}
+
+.social-media ul li a:hover {
+  /* Translate (width, height) */
+  transform: translate(0, -1rem);
+}
+
+/* Implement on hover - Facebook Color  */
+.social-media ul li:nth-child(1) a:hover {
+  background-color: var(--color-facebook1);
+}
+
+/* Implement on hover - Instagram Color  */
+.social-media ul li:nth-child(2) a:hover {
+  background-color: var(--color-instagram);
+}
+
+/* Implement on hover - Twitter Color  */
+.social-media ul li:nth-child(3) a:hover {
+  background-color: var(--color-twitter);
+}
+
+/* Implement on hover - LinkedIn Color  */
+.social-media ul li:nth-child(4) a:hover {
+  background-color: var(--color-linkedin);
+}
+
+/* Implement on hover - YouTube Color  */
+.social-media ul li:nth-child(5) a:hover {
+  background-color: var(--color-youtube);
+}
+
+/* Implement on hover - WhatsApp Color  */
+.social-media ul li:nth-child(6) a:hover {
+  background-color: var(--color-whatsapp);
+}
+
+/* Implement on hover - Telegram Color  */
+.social-media ul li:nth-child(7) a:hover {
+  background-color: var(--color-telegram);
+}
+
+/* Implement on hover - Skype Color  */
+.social-media ul li:nth-child(8) a:hover {
+  background-color: var(--color-skype);
+}
+
+/* Implement on hover - SnapChat Color  */
+.social-media ul li:nth-child(9) a:hover {
+  background-color: var(--color-snapchat);
+}
+
+/* Implement on hover - Android Color  */
+.social-media ul li:nth-child(10) a:hover {
+  background-color: var(--color-android);
+}
 
 /* ----------------------------------------------------------------------------------------- */
 /* FIXME:  STYLES (SECTION 1) - MOBILE / SMALLER SCREENS STYLING       TODO: MOBILE FIRST    */
