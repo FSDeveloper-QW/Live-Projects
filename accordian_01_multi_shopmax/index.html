@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+    <!-- TODO:   STANDARD META DATA - BASIC REQUIREMENT                                                         -->
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+    <!-- TODO:   STANDARD META DATA - MOBILE SPECIFIC                                                           -->
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+    <!-- FIXME:  PART 2 - SEARCH ENGINE OPTIMIZATION (SEO) : STANDARD HTML TOOLS - DESCRIPTION                  -->
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+
+    <meta
+      name="description"
+      content="ENTER A SHORT DESCRIPTION OF YOUR BUSINESS FOR GOOGLE SEARCH ENGINES TO INDEX"
+    />
+
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+    <!-- TODO:   PROVIDE A TITLE FOR YOUR PAGE - APPEARS IN BROWSER TAB                                         -->
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+
+    <title>SHOPMAX TESTING MULTI-LEVEL ACCORDION FOR NAVIGATION</title>
+
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+    <!-- TODO:   LINK GOOGLE FONTS - TO USE CERTAIN FONTS ON YOUR PAGE - https://fonts.google.com/              -->
+    <!-- MY FONTS: ROBOTO, OPEN SANS, MONTSERRAT, POPPINS, RALEWAY, ALICE (ALL REGULAR)                         -->
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alice&family=Montserrat&family=Open+Sans&family=Poppins&family=Raleway&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+    <!-- TODO:   LINK FONT AWESOME ICONS TO YOUR PROJECT - SYNTAX TO USE IN CODE:                               -->
+    <!-- https://www.w3schools.com/icons/fontawesome_icons_intro.asp                                            -->
+    <!-- TO VIEW THE LIST OF FREE ICONS TO USE : https://fontawesome.com/search?m=free                          -->
+    <!-- TODO: COPY AND PASTE: TODO:  <i class="fa fa-iconname"></i>                                            -->
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+    <!-- TODO:   CSS STYLE SHEET (INTERNAL) - LINK YOUR HTML DOCUMENT TO YOUR OWN CSS STYLE SHEET               -->
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="styles.scss" />
+
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+    <!-- TODO:   CSS STYLE SHEET (EXTERNAL) - LINK TO NORMALISE.CSS STYLE SHEET (ONLY IF REQUIRED)              -->
+    <!-- ALWAYS DOWNLOAD THE LATEST FILE (BEFORE YOU START):  https://necolas.github.io/normalize.css/          -->
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+
+    <link rel="stylesheet" href="normalize.css" />
+
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+    <!-- TODO:   LINK YOUR HTML DOCUMENT TO ANIMATE ON SCROLL (AOS) FOR ALL PAGE ANIMATIONS                     -->
+    <!-- JAVASCRIPT INCLUDED AT END OF HTML DOCUMENT / WEBSITE: https://michalsnik.github.io/aos/               -->
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  </head>
+  <!-- -------------------------------------------------------------------------------------------------------- -->
+  <!--                              ===== TODO: CODING START BELOW TODO: =====                                  -->
+  <!-- -------------------------------------------------------------------------------------------------------- -->
+  <body>
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+    <!-- TODO:   SHOPMAX TESTING MULTI-LEVEL ACCORDION FOR NAVIGATION                                           -->
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+    <!--                              ===== FIXME: MY COMMENTS FIXME: =====                                     -->
+    <!--                                                                                                        -->
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+
+    <header role="banner">
+      <nav class="nav" role="navigation">
+        <ul class="nav__list">
+          <li>
+            <!-- --------------------------------------------------------------------------------------------- -->
+            <!--                 TODO:  PRODUCT GROUP (TOP NAVIGATION) - SHOPMAX PRODUCTS  TODO:               -->
+            <!-- --------------------------------------------------------------------------------------------- -->
+            <input id="shopmax-products" type="checkbox" hidden />
+            <label for="shopmax-products"
+              ><span class="fa fa-angle-right"></span>shopmax products</label
+            >
+            <ul class="topnav_shopmax_products">
+              <!-- ------------------------------------------------------------------------------------------- -->
+              <!--                     TODO:  PRODUCT CATEGORY 01 - MOBILE PRODUCTS  TODO:                     -->
+              <!-- ------------------------------------------------------------------------------------------- -->
+              <!-- <li><a href="#">1st level item</a></li> -->
+              <li>
+                <input id="mobile-products" type="checkbox" hidden />
+                <label for="mobile-products"
+                  ><span class="fa fa-angle-right"></span>mobile products</label
+                >
+                <ul class="subnav_01_mobile_products">
+                  <!-- <li><a href="#">2nd level nav item</a></li>
+                  <li><a href="#">2nd level nav item</a></li>
+                  <li><a href="#">2nd level nav item</a></li> -->
+                  <li>
+                    <!-- ------------------------------------------------------------------------------------ -->
+                    <!--            FIXME:  MOBILE PRODUCTS - PRODUCT TYPE 01 - LAPTOPS  FIXME:               -->
+                    <!-- ------------------------------------------------------------------------------------ -->
+                    <input id="laptops" type="checkbox" hidden />
+                    <label for="laptops"
+                      ><span class="fa fa-angle-right"></span>laptops</label
+                    >
+                    <ul class="subnav_01_mobile_products_01_laptops">
+                      <li><a href="#">acer</a></li>
+                      <li><a href="#">apple</a></li>
+                      <li><a href="#">asus</a></li>
+                      <li><a href="#">dell</a></li>
+                      <li><a href="#">hp</a></li>
+                      <li><a href="#">huawei</a></li>
+                      <li><a href="#">lenovo</a></li>
+                      <li><a href="#">mecer</a></li>
+                      <li><a href="#">msi</a></li>
+                      <li><a href="#">other laptops</a></li>
+                      <!-- <li>
+                        <input id="sub-sub-sub-group-1" type="checkbox" hidden />
+                        <label for="sub-sub-sub-group-1"
+                          ><span class="fa fa-angle-right"></span> Forth
+                          level</label
+                        >
+                        <ul class="sub-sub-sub-group-list">
+                          <li><a href="#">4th level nav item</a></li>
+                          <li><a href="#">4th level nav item</a></li>
+                          <li><a href="#">4th level nav item</a></li>
+                          <li>
+                            <input id="sub-sub-sub-sub-group-1" type="checkbox" hidden />
+                            <label for="sub-sub-sub-sub-group-1"
+                              ><span class="fa fa-angle-right"></span> Fifth
+                              level</label
+                            >
+                            <ul class="sub-sub-sub-sub-group-list">
+                              <li><a href="#">5th level nav item</a></li>
+                              <li><a href="#">5th level nav item</a></li>
+                              <li><a href="#">5th level nav item</a></li>
+                          </li>
+                      </li> -->
+                    </ul>
+                    <!-- ------------------------------------------------------------------------------------ -->
+                    <!--            FIXME:  MOBILE PRODUCTS - PRODUCT TYPE 02 - PHONES  FIXME:                -->
+                    <!-- ------------------------------------------------------------------------------------ -->
+                    <input id="phones" type="checkbox" hidden />
+                    <label for="phones"
+                      ><span class="fa fa-angle-right"></span>phones</label
+                    >
+                    <ul class="subnav_01_mobile_products_02_phones">
+                      <li><a href="#">apple</a></li>
+                      <li><a href="#">huawei</a></li>
+                      <li><a href="#">oppo</a></li>
+                      <li><a href="#">samsung</a></li>
+                      <li><a href="#">xiaomi</a></li>
+                      <li><a href="#">other phones</a></li>
+                    </ul>
+                    <!-- ------------------------------------------------------------------------------------ -->
+                    <!--            FIXME:  MOBILE PRODUCTS - PRODUCT TYPE 03 - TABLETS  FIXME:               -->
+                    <!-- ------------------------------------------------------------------------------------ -->
+                    <input id="tablets" type="checkbox" hidden />
+                    <label for="tablets"
+                      ><span class="fa fa-angle-right"></span>tablets</label
+                    >
+                    <ul class="subnav_01_mobile_products_03_tablets">
+                      <li><a href="#">apple</a></li>
+                      <li><a href="#">huawei</a></li>
+                      <li><a href="#">Lenovo</a></li>
+                      <li><a href="#">mecer</a></li>
+                      <li><a href="#">samsung</a></li>
+                      <li><a href="#">other tablets</a></li>
+                    </ul>
+                    <!-- ------------------------------------------------------------------------------------ -->
+                    <!--            FIXME:  MOBILE PRODUCTS - PRODUCT TYPE 04 - WATCHES  FIXME:               -->
+                    <!-- ------------------------------------------------------------------------------------ -->
+                    <input id="watches" type="checkbox" hidden />
+                    <label for="watches"
+                      ><span class="fa fa-angle-right"></span>watches</label
+                    >
+                    <ul class="subnav_01_mobile_products_04_watches">
+                      <li><a href="#">apple</a></li>
+                      <li><a href="#">fitbit</a></li>
+                      <li><a href="#">garmin</a></li>
+                      <li><a href="#">huawei</a></li>
+                      <li><a href="#">polar</a></li>
+                      <li><a href="#">samsung</a></li>
+                      <li><a href="#">suunto</a></li>
+                      <li><a href="#">other watches</a></li>
+                    </ul>
+                    <!-- ------------------------------------------------------------------------------------ -->
+                    <!--        FIXME:  MOBILE PRODUCTS - PRODUCT TYPE 05 - DATA AND AIRTIME  FIXME:          -->
+                    <!-- ------------------------------------------------------------------------------------ -->
+                    <input id="airtime" type="checkbox" hidden />
+                    <label for="airtime"
+                      ><span class="fa fa-angle-right"></span>data and
+                      airtime</label
+                    >
+                    <ul class="subnav_01_mobile_products_05_airtime">
+                      <li><a href="#">cell c</a></li>
+                      <li><a href="#">mtn</a></li>
+                      <li><a href="#">rain</a></li>
+                      <li><a href="#">telkom</a></li>
+                      <li><a href="#">vodacom</a></li>
+                      <li><a href="#">other networks</a></li>
+                    </ul>
+                    <!-- ------------------------------------------------------------------------------------ -->
+                    <!--      FIXME:  MOBILE PRODUCTS - PRODUCT TYPE 06 - MOBILE ACCESSORIES  FIXME:          -->
+                    <!-- ------------------------------------------------------------------------------------ -->
+                    <input id="mobile-accessories" type="checkbox" hidden />
+                    <label for="mobile-accessories"
+                      ><span class="fa fa-angle-right"></span>mobile
+                      accessories</label
+                    >
+                    <ul class="subnav_01_mobile_products_06_accessories">
+                      <li><a href="#">cases</a></li>
+                      <li><a href="#">chargers</a></li>
+                      <li><a href="#">earphones</a></li>
+                      <li><a href="#">screen protectors</a></li>
+                      <li><a href="#">speakers</a></li>
+                      <li><a href="#">storage</a></li>
+                      <li><a href="#">stylus pens</a></li>
+                      <li><a href="#">other mobile accessories</a></li>
+                    </ul>
+                    <!-- ------------------------------------------------------------------------------------ -->
+                    <!--      FIXME:  MOBILE PRODUCTS - PRODUCT TYPE X - ADD MORE BELOW  FIXME:               -->
+                    <!-- ------------------------------------------------------------------------------------ -->
+                  </li>
+                </ul>
+              </li>
+
+              <!-- TODO: OFFICE PRODUCTS TODO: -->
+            </ul>
+          </li>
+
+          <!-- <li>
+              <input id="group-2" type="checkbox" hidden />
+              <label for="group-2"><span class="fa fa-angle-right"></span> First level</label>
+              <ul class="group-list">
+                <li>
+                  <li><a href="#">1st level item</a></li>
+                  <li><a href="#">1st level item</a></li>
+                  <input id="sub-group-2" type="checkbox" hidden />
+                  <label for="sub-group-2"><span class="fa fa-angle-right"></span> Second level</label>
+                  <ul class="sub-group-list">
+                    <li><a href="#">2nd level nav item</a></li>
+                    <li><a href="#">2nd level nav item</a></li>
+                    <li>
+                      <input id="sub-sub-group-2" type="checkbox" hidden />
+                      <label for="sub-sub-group-2"><span class="fa fa-angle-right"></span> Third level</label>
+                      <ul class="sub-sub-group-list">
+                        <li><a href="#">3rd level nav item</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <input id="group-3" type="checkbox" hidden />
+              <label for="group-3"><span class="fa fa-angle-right"></span> First level</label>
+              <ul class="group-list">
+                <li>
+                  <li><a href="#">1st level item</a></li>
+                  <li><a href="#">1st level item</a></li>
+                  <input id="sub-group-3" type="checkbox" hidden />
+                  <label for="sub-group-3"><span class="fa fa-angle-right"></span> Second level</label>
+                  <ul class="sub-group-list">
+                    <li><a href="#">2nd level nav item</a></li>
+                    <li><a href="#">2nd level nav item</a></li>
+                    <li><a href="#">2nd level nav item</a></li>
+                    <li>
+                      <input id="sub-sub-group-3" type="checkbox" hidden />
+                      <label for="sub-sub-group-3"><span class="fa fa-angle-right"></span> Third level</label>
+                      <ul class="sub-sub-group-list">
+                        <li><a href="#">3rd level nav item</a></li>
+                        <li><a href="#">3rd level nav item</a></li>
+                        <li><a href="#">3rd level nav item</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <input id="group-4" type="checkbox" hidden />
+              <label for="group-4"><span class="fa fa-angle-right"></span> First level</label>
+              <ul class="group-list">
+                <li>
+                  <li><a href="#">1st level item</a></li>
+                  <input id="sub-group-4" type="checkbox" hidden />
+                  <label for="sub-group-4"><span class="fa fa-angle-right"></span> Second level</label>
+                  <ul class="sub-group-list">
+                    <li><a href="#">2nd level nav item</a></li>
+                    <li><a href="#">2nd level nav item</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li> -->
+        </ul>
+      </nav>
+      <!-- <footer>
+        <ul class="soc-media">
+          <li>
+            <a href="https://twitter.com/alexdevero" target="_blank"
+              ><span class="fa fa-twitter"></span
+            ></a>
+          </li>
+          <li>
+            <a href="https://www.facebook.com/deveroalex" target="_blank"
+              ><span class="fa fa-facebook"></span
+            ></a>
+          </li>
+          <li>
+            <a href="https://plus.google.com/+AlexDevero" target="_blank"
+              ><span class="fa fa-google-plus"></span
+            ></a>
+          </li>
+          <li>
+            <a href="http://blog.alexdevero.com" target="_blank"
+              ><span class="fa fa-globe"></span
+            ></a>
+          </li>
+        </ul>
+      </footer> -->
+    </header>
+
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+    <!--                              ===== FIXME: MY COMMENTS FIXME: =====                                     -->
+    <!--                                                                                                        -->
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+    <!--                              ===== FIXME: MY COMMENTS FIXME: =====                                     -->
+    <!--                                                                                                        -->
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+    <!-- TODO:   JAVASCRIPT (OWN) - LINK ALL YOUR JAVASCRIPT FILES TO THE HTML DOCUMENT                         -->
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+
+    <script src="js/script.js" defer></script>
+
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+    <!-- TODO:   JAVASCRIPT (THIRD PARTIES) - LINK TO ALL THIRD PARTY JAVASCRIPT CODENT                         -->
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+    <!-- FIXME:  ANIMATE ON SCROLL (AOS) SCRIPT - ANIMATIONS FOR WEBSITE - https://michalsnik.github.io/aos/    -->
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+    <!-- FIXME:  ADDITIONAL THIRD PARTY SCRIPTS                                                                 -->
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+    <!-- FIXME:  ADDITIONAL THIRD PARTY SCRIPTS                                                                 -->
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+  </body>
+  <!-- ------------------------------------------------------------------------------------------------------ -->
+  <!--                              ===== FIXME: MY COMMENTS FIXME: =====                                     -->
+  <!--  TEMPLATE TO USE FOR COMMENTING                                                                        -->
+  <!-- ------------------------------------------------------------------------------------------------------ -->
+</html>
