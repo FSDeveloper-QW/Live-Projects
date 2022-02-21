@@ -1,3 +1,261 @@
+/* ------------------------------------------------------------------------- */
+/* TODO:   GLOBAL STYLES FOR WEBSITE                                         */
+/* ------------------------------------------------------------------------- */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "roboto", "open sans", sans-serif;
+}
+
+/* ------------------------------------------------------------------------- */
+/* FIXME:   STANDARD FONT-SITE : 62.5% of 16px (Std Size) = 10px             */
+/* ------------------------------------------------------------------------- */
+
+html {
+  font-size: 62.5%;
+}
+
+/* ------------------------------------------------------------------------- */
+/* TODO:  SECTION - NAVIGATION                                               */
+/* ------------------------------------------------------------------------- */
+
+/* ------------------------------------------------------------------------- */
+/* TODO: NAVIGATION - Define the WEBSITE VERSION STYLES                      */
+/* ------------------------------------------------------------------------- */
+
+/* FIXME:   NAVBAR=CONTAINER */
+
+.navbar-container {
+  /* A - Set MARGINS (Top/Bottom & Left/Right / Top, Right, Bottom, Left     */
+  /* B - DISPLAY items next to each other by using FLEXBOX                   */
+  /* C - JUSTIFY-CONTENT so there is enough SPACE-BETWEEN items / centre     */
+  /* D - ALIGN-ITEMS to the CENTER to align in middle of Brand Title/Logo    */
+  /* E - Set the Color of the Background                                     */
+  /* F - Set the Color of the Text-Links                                     */
+  /* G - Set the WIDTH of the Container to stretch across the page           */
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  color: white;
+  width: 100vw;
+}
+
+/* FIXME:  OPTION 1 : Make "navbar-container" STICKY ON SCROLL               */
+/* Use this option when there is nothing above the navbor                    */
+
+.navbar-container {
+  /* A - Add the BROWSER COMPATIBILITY Sets for STICKY                       */
+  /* A - Set the POSITION of the navbar to FIXED or STICKY                   */
+  /* FIXED - No items above NAVBAR / STICKY - There are Items above NAVBAR   */
+  /* B - Set the position on TOP to ZERO                                     */
+  position: -webkit-sticky;
+  position: -moz-sticky;
+  position: -ms-sticky;
+  position: -o-sticky;
+  position: sticky;
+  top: 0%;
+}
+
+/* -------------------------------------------------------------------------- */
+
+/* FIXME:   NAVBAR-LINKS */
+
+.navbar-links {
+  /* A - Set MARGINS (Top/Bottom & Left/Right / Top, Right, Bottom, Left     */
+  /* B - DISPLAY items next to each other by using FLEXBOX                   */
+  /* C - ALIGN-ITEMS to the BASELINE                                         */
+  /* D - Set the BACKGROUND-COLOR                                            */
+  /* E - Set a GAP between the various Links                                 */
+  margin: 0.5rem auto 1rem auto;
+  padding: 0.5rem 0.5rem 0 0.5rem;
+  display: flex;
+  align-items: baseline;
+  background-color: black;
+  gap: 2rem;
+}
+
+/* TODO: MEDIA QUERY */
+
+@media (max-width: 768px) {
+  .navbar-links,
+  .navbar-button,
+  .navbarDropdown,
+  .navbar-dropdown-menu,
+  .menuContent-grid,
+  .menu-links,
+  .menu-header {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 0.5rem;
+  }
+}
+
+/* -------------------------------------------------------------------------- */
+
+/* FIXME:   NAVBAR-BUTTON = menu-item */
+
+.navbar-button {
+  /* A - Set the BACKGROUND colour of the button                           */
+  /* B - Set the BORDER around the button to NONE or i.e 1px solid black   */
+  /* C - Set TEXT-DECORATION : none,underline,double,dashed,dotted etc.    */
+  /* D - Set TEXT-TRANSFORM : none, capitalize, lowercase, uppercase       */
+  /* E - Set the text COLOR : choose any color [color name / hex / RGB]    */
+  /*     To Make color TRANSPARENT use RGA (0-1) : rgb (77, 0, 255, 0.5)   */
+  /* F - Set the FONT-FAMILY if not set globally                           */
+  /* G - Set the FONT-STYLE : normal, italic, oblique, oblique 10deg       */
+  /* H - Set the FONT-SIZE : Page Default : 1rem = 10px                    */
+  /* I - Set the FONT-WEIGHT : normal, bold, 100, 300, 500, 700 etc.       */
+  /* J - Set the CURSOR to POINTER when mouse move over button             */
+  /* K - Set PADDING around text inside button - Top, Right, Bottom, Left  */
+  /* L - Set LETTER-SPACING : 0, 0.1rem, 0.2rem, 0.3rem etc                */
+  /* M - Set MARGINS (Top/Bottom & Left/Right / Top, Right, Bottom, Left   */
+  background: none;
+  border: none;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: white;
+  font-family: "open sans";
+  font-style: normal;
+  font-size: 1rem;
+  font-weight: normal;
+  cursor: pointer;
+  padding: 0 0 0.5rem 1rem;
+  letter-spacing: 0.05rem;
+  margin: 0 0 0 0;
+}
+
+.navbarDropdown.active > .navbar-button,
+.navbar-button:hover {
+  /* A - Set the COLOR or BACKGROUND-COLOR for HOVER                          */
+  color: darkgrey;
+}
+
+/* -------------------------------------------------------------------------- */
+/* TODO:    JAVASCRIPT CODE: use navbarDropdown in JavaScript Code            */
+/* -------------------------------------------------------------------------- */
+
+.navbarDropdown {
+  /* A - CRITICAL: Set the POSITION to RELATIVE in order to ABSOLUTELY position DROPDOWN-MENU */
+  position: relative;
+}
+
+/* -------------------------------------------------------------------------- */
+
+/* FIXME:   DROPDOWN-MENU */
+
+.navbar-dropdown-menu {
+  /* A - CRITICAL: Set the POSITION to ABSOLUTE for proper positioning under the Dropdown Button  */
+  /* B - Set LEFT margin to the value that align with the Button-Text                             */
+  /* C - Set TOP margin to always be 100% + Some Padding                                          */
+  /* D - Set the BACKGROUND-COLOR                                                                 */
+  /* E - Set PADDING around text inside the dropdown-menu                                         */
+  /* F - Set BORDER-RADIUS to give the dropdown-menu some RONND CORNERS                           */
+  /* G - Set BOX-SHADOW to give it a nice shadow: with offset-x | offset-y | blur-radius | spread-radius | color  */
+  /* H - Set OPACITY to ZERO so that it doesn't display when you move around with your mouse      */
+  /* I - Implement some ANIMATION by doing a TRANSITION on the OPACITY element                    */
+  /* J - Set POINTER-EVENT to none so that nothing can happen when you click the button           */
+  position: absolute;
+  left: 0.8rem;
+  top: calc(100% + 0.05rem);
+  background-color: #555;
+  padding: 1.5rem 0.1rem 1rem 0.1rem;
+  border-radius: 0.25rem;
+  box-shadow: 0 2px 15px 0 rgb(0, 0, 0, 0.8);
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(-0.5rem);
+  transition: opacity 175ms ease-in-out, transform 175ms ease-in-out;
+}
+
+/* -------------------------------------------------------------------------- */
+
+/* FIXME: ACTION AND STYLES WHEN THE DROPDOWN-MENU IS ACTIVE                  */
+
+/* HOW TO READ BELOW STATEMENT: Select the "navbar-button" link that is       */
+/* inside the "navbar-dropdown" */
+/* to display the "navbar-dropdown-menu", whenever the "navbar-button"        */
+/* link is FOCUSSED */
+
+.navbarDropdown.active > .navbar-button + .navbar-dropdown-menu {
+  /* A - Set OPACITY to 1 so that the Dropdown-Menu can display when ACTIVE   */
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+/* -------------------------------------------------------------------------- */
+
+/* FIXME:   MENU-CONTENT-GRID */
+
+.menuContent-grid {
+  /* A - Set the DISPLAY to GRID                                              */
+  /* B - Set amount of Columns with GRID-TEMPLATE-COLUMNS and to MAX-CONTENT  */
+  /* C - Set the GAP size between each column                                 */
+  /* D - Set the DISPLAY to GRID                                              */
+  display: grid;
+  grid-template-columns: repeat(2, max-content);
+  gap: 2rem;
+}
+
+/* -------------------------------------------------------------------------- */
+
+/* FIXME:   MENU-LINKS */
+
+.menu-links {
+  /* A - Set the DISPLAY to FLEX                                              */
+  /* B - Set FLEX-DIRECTION to Column to display the items on top of another  */
+  /* C - Set the GAP size between each item within the column                 */
+  display: flex;
+  flex-direction: column;
+  gap: 0.1rem;
+}
+
+.menu-links a:hover {
+  /* A - Set the COLOR of the Anchor Elements on HOVER                        */
+  color: darkgray;
+}
+
+/* -------------------------------------------------------------------------- */
+
+/* FIXME:   MENU-HEADER */
+
+.menu-header {
+  /* A - Remove all "bullet points" by setting LIST-STYLE to NONE             */
+  /* B - Remove the "underline" by setting TEXT-DECORATION to NONE            */
+  /* C - Set the COLOR of the Anchor Elements                                 */
+  /* D - Use TEXT-TRANSFORM to make all text UPPERCASE                        */
+  /* E - Set WIDTH to MAX-CONTENT to fit all text in one line                 */
+  /* F - Set the FONT-SIZE : Page Default : 1rem = 10px                       */
+  /* G - Set LETTER-SPACING : 0, 0.1rem, 0.2rem, 0.3rem etc                   */
+  /* H - Set the FONT-FAMILY if not set globally                              */
+  /* I - Set the FONT-WEIGHT for the menu-items                               */
+  /* j - Set MARGINS (Top/Bottom & Left/Right / Top, Right, Bottom, Left      */
+  list-style: none;
+  text-decoration: none;
+  color: #01a7cf;
+  /* color: white; */
+  text-transform: uppercase;
+  width: max-content;
+  font-size: 1.2rem;
+  letter-spacing: 0.2rem;
+  font-family: "roboto";
+  font-weight: 700;
+  margin: 0.5rem 0 1rem 1rem;
+}
+
+/* -------------------------------------------------------------------------- */
+
+/* FIXME:  STYLES OF ACCORDIAN MENU BELOW */
+
 /* ===================================================================================================================== */
 /*                                         TODO:  INDEX OF CSS STYLES  TODO:                                             */
 /*         SHOPMAX MULIT-LEVEL ACCORDION NAVIGATION FOR SHOPPING CART ITEMS (WITH DROP-DOWNS) - ALL PRODUCT CATEGORIES   */
@@ -87,6 +345,7 @@
   font-family: "roboto", "open sans", "montserrat", "poppins", "raleway",
     "alice", serif, sans-serif;
   letter-spacing: 0.025rem;
+  list-style: none;
 }
 
 html {
@@ -277,17 +536,12 @@ a {
 header {
   font-size: 1.1rem;
   text-transform: uppercase;
-  margin-right: auto;
-  margin-left: auto;
+  margin: -0.5rem -1.3rem 0 0.7rem;
   max-width: remy(360px);
   box-shadow: 0 3px 12px rgba(0, 0, 0, 0.25);
 }
 
 /** Styling top level items */
-
-/* ================================================================================= */
-/*               FIXME:  NAVIGATION - SHOPMAX PRODUCTS  FIXME:                       */
-/* ================================================================================= */
 
 .nav a,
 .nav label {
@@ -296,6 +550,7 @@ header {
   /* padding: 0.85rem; */
   color: var(--color-level-0-text);
   background-color: var(--color-level-0-background);
+  /* background-color: red; */
   box-shadow: inset 0 -1px lighten(var(--color-level-0-background), 3%);
   transition: all 0.25s ease-in;
 }
@@ -325,286 +580,9 @@ header {
 }
 
 /* ================================================================================= */
-/*               FIXME:  NAVIGATION - SHOPMAX SERVICES  FIXME:                       */
-/* ================================================================================= */
-
-.nav_02 a,
-.nav_02 label {
-  display: block;
-  padding: 0.9rem 2rem 0.9rem 1.5rem;
-  /* padding: 0.85rem; */
-  color: var(--color-level-0-text);
-  background-color: var(--color-level-0-background);
-  box-shadow: inset 0 -1px lighten(var(--color-level-0-background), 3%);
-  transition: all 0.25s ease-in;
-}
-
-.nav_02 a:focus {
-  color: var(--color-text-focus-and-hover);
-  background: darken(#151515, 7%);
-}
-
-.nav_02 a:hover {
-  color: var(--color-text-focus-and-hover);
-  background: darken(#151515, 7%);
-}
-
-.nav_02 label:focus {
-  color: var(--color-text-focus-and-hover);
-  background: darken(#151515, 7%);
-}
-
-.nav_02 label:hover {
-  color: var(--color-text-focus-and-hover);
-  background: darken(#151515, 7%);
-}
-
-.nav_02 label {
-  cursor: pointer;
-}
-
-/* ================================================================================= */
-/*                  FIXME:  NAVIGATION - SELLING PLANS  FIXME:                       */
-/* ================================================================================= */
-
-.nav_03 a,
-.nav_03 label {
-  display: block;
-  padding: 0.9rem 2rem 0.9rem 1.5rem;
-  /* padding: 0.85rem; */
-  color: var(--color-level-0-text);
-  background-color: var(--color-level-0-background);
-  box-shadow: inset 0 -1px lighten(var(--color-level-0-background), 3%);
-  transition: all 0.25s ease-in;
-}
-
-.nav_03 a:focus {
-  color: var(--color-text-focus-and-hover);
-  background: darken(#151515, 7%);
-}
-
-.nav_03 a:hover {
-  color: var(--color-text-focus-and-hover);
-  background: darken(#151515, 7%);
-}
-
-.nav_03 label:focus {
-  color: var(--color-text-focus-and-hover);
-  background: darken(#151515, 7%);
-}
-
-.nav_03 label:hover {
-  color: var(--color-text-focus-and-hover);
-  background: darken(#151515, 7%);
-}
-
-.nav_03 label {
-  cursor: pointer;
-}
-
-/* ================================================================================= */
-/*                  FIXME:  NAVIGATION - INVESTING PLANS  FIXME:                     */
-/* ================================================================================= */
-
-.nav_04 a,
-.nav_04 label {
-  display: block;
-  padding: 0.9rem 2rem 0.9rem 1.5rem;
-  /* padding: 0.85rem; */
-  color: var(--color-level-0-text);
-  background-color: var(--color-level-0-background);
-  box-shadow: inset 0 -1px lighten(var(--color-level-0-background), 3%);
-  transition: all 0.25s ease-in;
-}
-
-.nav_04 a:focus {
-  color: var(--color-text-focus-and-hover);
-  background: darken(#151515, 7%);
-}
-
-.nav_04 a:hover {
-  color: var(--color-text-focus-and-hover);
-  background: darken(#151515, 7%);
-}
-
-.nav_04 label:focus {
-  color: var(--color-text-focus-and-hover);
-  background: darken(#151515, 7%);
-}
-
-.nav_04 label:hover {
-  color: var(--color-text-focus-and-hover);
-  background: darken(#151515, 7%);
-}
-
-.nav_04 label {
-  cursor: pointer;
-}
-
-/* ================================================================================= */
-/*                    FIXME:  NAVIGATION - SKYNAMO CRM  FIXME:                       */
-/* ================================================================================= */
-
-.nav_05 a,
-.nav_05 label {
-  display: block;
-  padding: 0.9rem 2rem 0.9rem 1.5rem;
-  /* padding: 0.85rem; */
-  color: var(--color-level-0-text);
-  background-color: var(--color-level-0-background);
-  box-shadow: inset 0 -1px lighten(var(--color-level-0-background), 3%);
-  transition: all 0.25s ease-in;
-}
-
-.nav_05 a:focus {
-  color: var(--color-text-focus-and-hover);
-  background: darken(#151515, 7%);
-}
-
-.nav_05 a:hover {
-  color: var(--color-text-focus-and-hover);
-  background: darken(#151515, 7%);
-}
-
-.nav_05 label:focus {
-  color: var(--color-text-focus-and-hover);
-  background: darken(#151515, 7%);
-}
-
-.nav_05 label:hover {
-  color: var(--color-text-focus-and-hover);
-  background: darken(#151515, 7%);
-}
-
-.nav_05 label {
-  cursor: pointer;
-}
-
-/* ================================================================================= */
-/*                    FIXME:  NAVIGATION - SELLER ZONE  FIXME:                       */
-/* ================================================================================= */
-
-.nav_06 a,
-.nav_06 label {
-  display: block;
-  padding: 0.9rem 2rem 0.9rem 1.5rem;
-  /* padding: 0.85rem; */
-  color: var(--color-level-0-text);
-  background-color: var(--color-level-0-background);
-  box-shadow: inset 0 -1px lighten(var(--color-level-0-background), 3%);
-  transition: all 0.25s ease-in;
-}
-
-.nav_06 a:focus {
-  color: var(--color-text-focus-and-hover);
-  background: darken(#151515, 7%);
-}
-
-.nav_06 a:hover {
-  color: var(--color-text-focus-and-hover);
-  background: darken(#151515, 7%);
-}
-
-.nav_06 label:focus {
-  color: var(--color-text-focus-and-hover);
-  background: darken(#151515, 7%);
-}
-
-.nav_06 label:hover {
-  color: var(--color-text-focus-and-hover);
-  background: darken(#151515, 7%);
-}
-
-.nav_06 label {
-  cursor: pointer;
-}
-
-/* ================================================================================= */
-/*                  FIXME:  NAVIGATION - INVESTORS ZONE  FIXME:                      */
-/* ================================================================================= */
-
-.nav_07 a,
-.nav_07 label {
-  display: block;
-  padding: 0.9rem 2rem 0.9rem 1.5rem;
-  /* padding: 0.85rem; */
-  color: var(--color-level-0-text);
-  background-color: var(--color-level-0-background);
-  box-shadow: inset 0 -1px lighten(var(--color-level-0-background), 3%);
-  transition: all 0.25s ease-in;
-}
-
-.nav_07 a:focus {
-  color: var(--color-text-focus-and-hover);
-  background: darken(#151515, 7%);
-}
-
-.nav_07 a:hover {
-  color: var(--color-text-focus-and-hover);
-  background: darken(#151515, 7%);
-}
-
-.nav_07 label:focus {
-  color: var(--color-text-focus-and-hover);
-  background: darken(#151515, 7%);
-}
-
-.nav_07 label:hover {
-  color: var(--color-text-focus-and-hover);
-  background: darken(#151515, 7%);
-}
-
-.nav_07 label {
-  cursor: pointer;
-}
-
-/* ================================================================================= */
-/*                   FIXME:  NAVIGATION - SHOPPER ZONE  FIXME:                       */
-/* ================================================================================= */
-
-.nav_08 a,
-.nav_08 label {
-  display: block;
-  padding: 0.9rem 2rem 0.9rem 1.5rem;
-  /* padding: 0.85rem; */
-  color: var(--color-level-0-text);
-  background-color: var(--color-level-0-background);
-  box-shadow: inset 0 -1px lighten(var(--color-level-0-background), 3%);
-  transition: all 0.25s ease-in;
-}
-
-.nav_08 a:focus {
-  color: var(--color-text-focus-and-hover);
-  background: darken(#151515, 7%);
-}
-
-.nav_08 a:hover {
-  color: var(--color-text-focus-and-hover);
-  background: darken(#151515, 7%);
-}
-
-.nav_08 label:focus {
-  color: var(--color-text-focus-and-hover);
-  background: darken(#151515, 7%);
-}
-
-.nav_08 label:hover {
-  color: var(--color-text-focus-and-hover);
-  background: darken(#151515, 7%);
-}
-
-.nav_08 label {
-  cursor: pointer;
-}
-
-/* ================================================================================= */
 /*           ACCORDIAN STYLE MULTI-LEVEL DROPDOWN MENU (HTML, CSS, SCSS)             */
 /* TODO:       (TOP) MAIN NAVIGATION PRODUCT GROUP (SHOPMAX PRODUCTS)          TODO: */
 /*                            FIRST LEVEL NAVIGATION                                 */
-/* ================================================================================= */
-
-/* ================================================================================= */
-/*                        FIXME:  SHOPMAX PRODUCTS  FIXME:                           */
 /* ================================================================================= */
 
 .topnav_shopmax_products {
@@ -636,258 +614,6 @@ header {
 }
 
 .topnav_shopmax_products label:hover {
-  background: darken(#252525, 7%);
-}
-
-/* ================================================================================= */
-/*                        FIXME:  SHOPMAX SERVICES  FIXME:                           */
-/* ================================================================================= */
-
-.topnav_shopmax_services {
-  font-size: 0.9rem;
-  text-transform: uppercase;
-}
-
-.topnav_shopmax_services a,
-.topnav_shopmax_services label {
-  padding-left: 1.5rem;
-  /* This Sets the Line height for the Product Categories Below */
-  line-height: 1rem;
-  /* background: #252525; */
-  background: var(--color-level-1-background);
-  color: var(--color-level-1-text);
-  box-shadow: inset 0 -1px lighten(#252525, 7%);
-}
-
-.topnav_shopmax_services a:focus {
-  background: darken(#252525, 7%);
-}
-
-.topnav_shopmax_services a:hover {
-  background: darken(#252525, 7%);
-}
-
-.topnav_shopmax_services label:focus {
-  background: darken(#252525, 7%);
-}
-
-.topnav_shopmax_services label:hover {
-  background: darken(#252525, 7%);
-}
-
-/* ================================================================================= */
-/*                            FIXME:  SELLING PLANS FIXME:                           */
-/* ================================================================================= */
-
-.topnav_shopmax_selling-plans {
-  font-size: 0.9rem;
-  text-transform: uppercase;
-}
-
-.topnav_shopmax_selling-plans a,
-.topnav_shopmax_selling-plans label {
-  padding-left: 1.5rem;
-  /* This Sets the Line height for the Product Categories Below */
-  line-height: 1rem;
-  /* background: #252525; */
-  background: var(--color-level-1-background);
-  color: var(--color-level-1-text);
-  box-shadow: inset 0 -1px lighten(#252525, 7%);
-}
-
-.topnav_shopmax_selling-plans a:focus {
-  background: darken(#252525, 7%);
-}
-
-.topnav_shopmax_selling-plans a:hover {
-  background: darken(#252525, 7%);
-}
-
-.topnav_shopmax_selling-plans label:focus {
-  background: darken(#252525, 7%);
-}
-
-.topnav_shopmax_selling-plans label:hover {
-  background: darken(#252525, 7%);
-}
-
-/* ================================================================================= */
-/*                         FIXME:  INVESTING PLANS  FIXME:                           */
-/* ================================================================================= */
-
-.topnav_shopmax_investing-plans {
-  font-size: 0.9rem;
-  text-transform: uppercase;
-}
-
-.topnav_shopmax_investing-plans a,
-.topnav_shopmax_investing-plans label {
-  padding-left: 1.5rem;
-  /* This Sets the Line height for the Product Categories Below */
-  line-height: 1rem;
-  /* background: #252525; */
-  background: var(--color-level-1-background);
-  color: var(--color-level-1-text);
-  box-shadow: inset 0 -1px lighten(#252525, 7%);
-}
-
-.topnav_shopmax_investing-plans a:focus {
-  background: darken(#252525, 7%);
-}
-
-.topnav_shopmax_investing-plans a:hover {
-  background: darken(#252525, 7%);
-}
-
-.topnav_shopmax_investing-plans label:focus {
-  background: darken(#252525, 7%);
-}
-
-.topnav_shopmax_investing-plans label:hover {
-  background: darken(#252525, 7%);
-}
-
-/* ================================================================================= */
-/*                           FIXME:  SKYNAMO CRM  FIXME:                             */
-/* ================================================================================= */
-
-.topnav_shopmax_skynamo-crm {
-  font-size: 0.9rem;
-  text-transform: uppercase;
-}
-
-.topnav_shopmax_skynamo-crm a,
-.topnav_shopmax_skynamo-crm label {
-  padding-left: 1.5rem;
-  /* This Sets the Line height for the Product Categories Below */
-  line-height: 1rem;
-  /* background: #252525; */
-  background: var(--color-level-1-background);
-  color: var(--color-level-1-text);
-  box-shadow: inset 0 -1px lighten(#252525, 7%);
-}
-
-.topnav_shopmax_skynamo-crm a:focus {
-  background: darken(#252525, 7%);
-}
-
-.topnav_shopmax_skynamo-crm a:hover {
-  background: darken(#252525, 7%);
-}
-
-.topnav_shopmax_skynamo-crm label:focus {
-  background: darken(#252525, 7%);
-}
-
-.topnav_shopmax_skynamo-crm label:hover {
-  background: darken(#252525, 7%);
-}
-
-/* ================================================================================= */
-/*                           FIXME:  SELLER ZONE  FIXME:                             */
-/* ================================================================================= */
-
-.topnav_shopmax_seller-zone {
-  font-size: 0.9rem;
-  text-transform: uppercase;
-}
-
-.topnav_shopmax_seller-zone a,
-.topnav_shopmax_seller-zone label {
-  padding-left: 1.5rem;
-  /* This Sets the Line height for the Product Categories Below */
-  line-height: 1rem;
-  /* background: #252525; */
-  background: var(--color-level-1-background);
-  color: var(--color-level-1-text);
-  box-shadow: inset 0 -1px lighten(#252525, 7%);
-}
-
-.topnav_shopmax_seller-zone a:focus {
-  background: darken(#252525, 7%);
-}
-
-.topnav_shopmax_seller-zone a:hover {
-  background: darken(#252525, 7%);
-}
-
-.topnav_shopmax_seller-zone label:focus {
-  background: darken(#252525, 7%);
-}
-
-.topnav_shopmax_seller-zone label:hover {
-  background: darken(#252525, 7%);
-}
-
-/* ================================================================================= */
-/*                          FIXME:  INVESTORS ZONE  FIXME:                           */
-/* ================================================================================= */
-
-.topnav_shopmax_investor-zone {
-  font-size: 0.9rem;
-  text-transform: uppercase;
-}
-
-.topnav_shopmax_investor-zone a,
-.topnav_shopmax_investor-zone label {
-  padding-left: 1.5rem;
-  /* This Sets the Line height for the Product Categories Below */
-  line-height: 1rem;
-  /* background: #252525; */
-  background: var(--color-level-1-background);
-  color: var(--color-level-1-text);
-  box-shadow: inset 0 -1px lighten(#252525, 7%);
-}
-
-.topnav_shopmax_investor-zone a:focus {
-  background: darken(#252525, 7%);
-}
-
-.topnav_shopmax_investor-zone a:hover {
-  background: darken(#252525, 7%);
-}
-
-.topnav_shopmax_investor-zone label:focus {
-  background: darken(#252525, 7%);
-}
-
-.topnav_shopmax_investor-zone label:hover {
-  background: darken(#252525, 7%);
-}
-
-/* ================================================================================= */
-/*                           FIXME:  SHOPPER ZONE  FIXME:                            */
-/* ================================================================================= */
-
-.topnav_shopmax_shopper-zone {
-  font-size: 0.9rem;
-  text-transform: uppercase;
-}
-
-.topnav_shopmax_shopper-zone a,
-.topnav_shopmax_shopper-zone label {
-  padding-left: 1.5rem;
-  /* This Sets the Line height for the Product Categories Below */
-  line-height: 1rem;
-  /* background: #252525; */
-  background: var(--color-level-1-background);
-  color: var(--color-level-1-text);
-  box-shadow: inset 0 -1px lighten(#252525, 7%);
-}
-
-.topnav_shopmax_shopper-zone a:focus {
-  background: darken(#252525, 7%);
-}
-
-.topnav_shopmax_shopper-zone a:hover {
-  background: darken(#252525, 7%);
-}
-
-.topnav_shopmax_shopper-zone label:focus {
-  background: darken(#252525, 7%);
-}
-
-.topnav_shopmax_shopper-zone label:hover {
   background: darken(#252525, 7%);
 }
 
@@ -4599,14 +4325,7 @@ header {
 .topnav_marketplace_products,
 .subnav_00_marketplace_products,
 .shopmax-products,
-.topnav_shopmax_services,
 .topnav_shopmax_products,
-.topnav_shopmax_selling-plans,
-.topnav_shopmax_investing-plans,
-.topnav_shopmax_skynamo-crm,
-.topnav_shopmax_seller-zone,
-.topnav_shopmax_investor-zone,
-.topnav_shopmax_shopper-zone,
 .subnav_01_mobile_products,
 .subnav_01_mobile_products_01_laptops,
 .subnav_01_mobile_products_02_phones,
@@ -4722,10 +4441,6 @@ header {
 /* ==============TODO: START OF CHECKBOX SPECIAL FEATURES TODO: ================== */
 /* =============================================================================== */
 
-/* ================================================================================= */
-/*                      FIXME:  SHOPMAX PRODUCTS  FIXME:                             */
-/* ================================================================================= */
-
 .nav__list input[type="checkbox"]:checked + label + ul {
   /* reset the height when checkbox is checked */
   max-height: 1000px;
@@ -4739,146 +4454,6 @@ label > span {
 }
 
 .nav__list input[type="checkbox"]:checked + label > span {
-  transform: rotate(90deg);
-}
-
-/* ================================================================================= */
-/*                      FIXME:  SHOPMAX SERVICES  FIXME:                             */
-/* ================================================================================= */
-
-.nav_02__list input[type="checkbox"]:checked + label + ul {
-  /* reset the height when checkbox is checked */
-  max-height: 1000px;
-}
-
-/** Rotating chevron icon */
-
-label > span {
-  float: right;
-  transition: transform 0.65s ease;
-}
-
-.nav_02__list input[type="checkbox"]:checked + label > span {
-  transform: rotate(90deg);
-}
-
-/* ================================================================================= */
-/*                     FIXME:  SHOPMAX SELLING PLANS  FIXME:                         */
-/* ================================================================================= */
-
-.nav_03__list input[type="checkbox"]:checked + label + ul {
-  /* reset the height when checkbox is checked */
-  max-height: 1000px;
-}
-
-/** Rotating chevron icon */
-
-label > span {
-  float: right;
-  transition: transform 0.65s ease;
-}
-
-.nav_03__list input[type="checkbox"]:checked + label > span {
-  transform: rotate(90deg);
-}
-
-/* ================================================================================= */
-/*                         FIXME:  INVESTING PLANS  FIXME:                           */
-/* ================================================================================= */
-
-.nav_04__list input[type="checkbox"]:checked + label + ul {
-  /* reset the height when checkbox is checked */
-  max-height: 1000px;
-}
-
-/** Rotating chevron icon */
-
-label > span {
-  float: right;
-  transition: transform 0.65s ease;
-}
-
-.nav_04__list input[type="checkbox"]:checked + label > span {
-  transform: rotate(90deg);
-}
-
-/* ================================================================================= */
-/*                           FIXME:  SKYNAMO CRM  FIXME:                             */
-/* ================================================================================= */
-
-.nav_05__list input[type="checkbox"]:checked + label + ul {
-  /* reset the height when checkbox is checked */
-  max-height: 1000px;
-}
-
-/** Rotating chevron icon */
-
-label > span {
-  float: right;
-  transition: transform 0.65s ease;
-}
-
-.nav_05__list input[type="checkbox"]:checked + label > span {
-  transform: rotate(90deg);
-}
-
-/* ================================================================================= */
-/*                           FIXME:  SELLER ZONE  FIXME:                             */
-/* ================================================================================= */
-
-.nav_06__list input[type="checkbox"]:checked + label + ul {
-  /* reset the height when checkbox is checked */
-  max-height: 1000px;
-}
-
-/** Rotating chevron icon */
-
-label > span {
-  float: right;
-  transition: transform 0.65s ease;
-}
-
-.nav_06__list input[type="checkbox"]:checked + label > span {
-  transform: rotate(90deg);
-}
-
-/* ================================================================================= */
-/*                          FIXME:  INVESTORS ZONE  FIXME:                           */
-/* ================================================================================= */
-
-.nav_07__list input[type="checkbox"]:checked + label + ul {
-  /* reset the height when checkbox is checked */
-  max-height: 1000px;
-}
-
-/** Rotating chevron icon */
-
-label > span {
-  float: right;
-  transition: transform 0.65s ease;
-}
-
-.nav_07__list input[type="checkbox"]:checked + label > span {
-  transform: rotate(90deg);
-}
-
-/* ================================================================================= */
-/*                           FIXME:  SHOPPER ZONE  FIXME:                            */
-/* ================================================================================= */
-
-.nav_08__list input[type="checkbox"]:checked + label + ul {
-  /* reset the height when checkbox is checked */
-  max-height: 1000px;
-}
-
-/** Rotating chevron icon */
-
-label > span {
-  float: right;
-  transition: transform 0.65s ease;
-}
-
-.nav_08__list input[type="checkbox"]:checked + label > span {
   transform: rotate(90deg);
 }
 
