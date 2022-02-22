@@ -1,0 +1,172 @@
+/* ===================================================================================================================== */
+/* TODO:  STYLING FOR BASIC RESPONSIVE POPUP MODAL - HTML, CSS & JAVASCRIPT                                              */
+/* ===================================================================================================================== */
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  font-family: "roboto", sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+}
+
+/* ===================================================================================================================== */
+/* TODO:  PART 1 - THE MODAL CONTAINTER                                                                                  */
+/* ===================================================================================================================== */
+
+/* ===================================================================================================================== */
+/* FIXME:  SPECIAL NOTES - MODAL__CONTAINER                                              FIXME:  WHEN NOT ACTIVE  FIXME: */
+/* ===================================================================================================================== */
+/* 01.  You want to fix the Modal's position in order to stay in position if you scroll up and down on the page          */
+/* 02.  To completely center your modal on the viewing space set both TOP and LEFT to 50% and the use 
+        TRANSFORM: TRANSLATE (X-axis, Y-axis) to perfectly center it                                                     */
+/* 03.  Also utilise the "SCALE()" function to HIDE (0) or SHOW (1) the Modal by DEFAULT                                 */
+/* 04.  You can also do TRANSITION-EFFECTS with the SCALE() Function to make it appear smoother                          */
+/* 05.  Give the Modal a high Z-INDEX so that it sits on top of everything else                                          */
+/* 06.  Always set a BACKGROUND-COLOUR so that it stands out on the OVERLAY                                              */
+/* ===================================================================================================================== */
+
+.modal__container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: 200ms ease-in-out;
+  border: 1px solid black;
+  border-radius: 10px;
+  z-index: 10;
+  background-color: white;
+  width: 100vw;
+  /* width: 100vw; */
+  max-width: 80%;
+  /* max-width: 100%; */
+}
+
+/* ===================================================================================================================== */
+/* FIXME:  SPECIAL NOTES - MODAL__CONTAINER (ALSO REFERENCED IN JAVASCRIPT CODE)             FIXME:  WHEN ACTIVE  FIXME: */
+/* ===================================================================================================================== */
+/* 01.  Set "SCALE()" function to 1 in order for the Modal to SHOW (VISIBLE) when ACTIVE                                 */
+/* ===================================================================================================================== */
+
+.modal__container.active {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+/* ===================================================================================================================== */
+/* TODO:  PART 2 - THE MODAL HEADER                                                                                      */
+/* ===================================================================================================================== */
+
+/* ===================================================================================================================== */
+/* FIXME:  SPECIAL NOTES - MODAL__HEADER                                                                                 */
+/* ===================================================================================================================== */
+/* 01.  Use JUSITFY CONTENT with SPACE-BETWEEN to give each element equal space across the width                         */
+/* 02.  ALIGN-ITEMS to the CENTER                                                                                        */
+/* 03.  Set some internal PADDING for the HEADER                                                                         */
+/* ===================================================================================================================== */
+
+.modal__header {
+  display: flex;
+  padding: 1rem 1.5rem 1rem 1.5rem;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid black;
+}
+
+/* ===================================================================================================================== */
+/* TODO:  PART 3 - THE MODAL TITLE (WITHIN THE MODAL HEADER)                                                             */
+/* ===================================================================================================================== */
+
+/* ===================================================================================================================== */
+/* FIXME:  SPECIAL NOTES - MODAL__TITLE                                                                                  */
+/* ===================================================================================================================== */
+/* 01.                                                                                                                   */
+/* ===================================================================================================================== */
+
+.modal__header .modal__title {
+  font-size: 1.25rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+}
+
+/* ===================================================================================================================== */
+/* TODO:  PART 4 - THE MODAL CLOSE BUTTON (WITHIN THE MODAL HEADER) - "X" AS REPRESENTED BY THE HTML ENTITY (&times;)    */
+/* ===================================================================================================================== */
+
+/* ===================================================================================================================== */
+/* FIXME:  SPECIAL NOTES - MODAL__CLOSE-BUTTON                                                                           */
+/* ===================================================================================================================== */
+/* 01.  Set the CURSOR to POINTER so that people can know they can click on the button                                   */
+/* 02.  Remove both the BORDER and OUTLINE of the button                                                                 */
+/* 03.  Set the BACKGROUND to NONE or TRANSPARENT                                                                        */
+/* 04.  Set the FONT-SIZE and FONT-WEIGHT to easier see the button "X"                                                   */
+/* ===================================================================================================================== */
+
+.modal__header .modal__close-button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background: none;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+/* ===================================================================================================================== */
+/* TODO:  PART 5 - THE MODAL BODY (WITHIN THE MODAL CONTAINER)                                                           */
+/* ===================================================================================================================== */
+
+/* ===================================================================================================================== */
+/* FIXME:  SPECIAL NOTES - MODAL__BODY                                                                                   */
+/* ===================================================================================================================== */
+/* 01.  Set some internal PADDING around the text                                                                        */
+/* ===================================================================================================================== */
+
+.modal__body {
+  padding: 1rem 1.5rem 1rem 1.5rem;
+}
+
+/* ===================================================================================================================== */
+/* TODO:  PART 6 - THE MODAL OVERLAY                                                     FIXME:  WHEN NOT ACTIVE  FIXME: */
+/* ===================================================================================================================== */
+
+/* ===================================================================================================================== */
+/* FIXME:  SPECIAL NOTES - MODAL__OVERLAY                                                                                */
+/* ===================================================================================================================== */
+/* 01.  To style on ID use hashtag "#"                                                                                   */
+/* 02.  You want to fix the overlays position in order to follow you around as you scroll up and down on the page        */
+/* 03.  Set to default OPACITY to ZERO so that the modal doesn't show when it is not selected or clicked                 */
+/* 04.  To ensure that the MODAL always stays in the middle of the Screen, set TOP, RIGHT, BOTTOM, LEFT to ZERO          */
+/* 05.  Set a BACKGROUND-COLOUR to anything                                                                              */
+/* 06.  You need to set POINTER-EVENTS to NONE, to ensure nothing happens to the overlay when anything is clicked        */
+/* ===================================================================================================================== */
+
+#modal__overlay {
+  position: fixed;
+  opacity: 0;
+  transition: 200ms ease-in-out;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  pointer-events: none;
+}
+
+/* ===================================================================================================================== */
+/* FIXME:  SPECIAL NOTES - MODAL__OVERLAY (ALSO REFERENCED IN JAVASCRIPT CODE)               FIXME:  WHEN ACTIVE  FIXME: */
+/* ===================================================================================================================== */
+/* 01.  When the OVERLAY is ACTIVE you want to be able to respond to all pointer events, i.e "clicks"                    */
+/* 02.  When the OVERLAY is ACTIVE the MODAL POPUP must be visible, i.e its OPACITY needs to be 1                        */
+/* ===================================================================================================================== */
+
+#modal__overlay.active {
+  opacity: 1;
+  pointer-events: all;
+}
