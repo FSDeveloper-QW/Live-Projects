@@ -1,5 +1,5 @@
 /* ===================================================================================================================== */
-/* TODO:  STYLING FOR SHOPMAX - LOGO - SEARCH BAR - SOCIAL MEDIA                                                         */
+/* TODO:  STYLING FOR 2ND COMPONENT :  SHOPMAX - LOGO, SEARCH BAR AND SOCIAL MEDIA LINKS                                 */
 /* ===================================================================================================================== */
 
 *,
@@ -18,17 +18,7 @@ body {
 }
 
 /* ===================================================================================================================== */
-/* TODO:  PART 1 - CONTAINER (ALL) - HAVE THE LOGO, SEARCH BAR and SOCIAL MEDIA LINKS INSIDE                             */
-/* ===================================================================================================================== */
-
-/* ===================================================================================================================== */
-/* FIXME:  SPECIAL NOTES (PART 1)                                                                                        */
-/* ===================================================================================================================== */
-/* 01.            */
-/* 02.            */
-/* 03             */
-/* 04.            */
-/* 05.            */
+/* TODO:  PART 1 - CONTAINER (ALL) - HOLDING ALL ELEMENTS TOGETHER (LOGO, SEARCH BAR and SOCIAL MEDIA LINKS)             */
 /* ===================================================================================================================== */
 
 .container_all {
@@ -43,17 +33,7 @@ body {
 }
 
 /* ===================================================================================================================== */
-/* TODO:  PART 2 - CONTAINER (LOGO) - COMPANY LOGO                                                                                                     */
-/* ===================================================================================================================== */
-
-/* ===================================================================================================================== */
-/* FIXME:  SPECIAL NOTES (PART 2)                                                                                        */
-/* ===================================================================================================================== */
-/* 01.            */
-/* 02.            */
-/* 03             */
-/* 04.            */
-/* 05.            */
+/* TODO:  PART 2 - CONTAINER (LOGO) - SHOPMAX LOGO                                                                       */
 /* ===================================================================================================================== */
 
 .container_image {
@@ -63,11 +43,24 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
+  width: 50vw;
   /* border: 1px solid red; */
 }
 
+.container_image .logo {
+  display: block;
+  width: 14rem;
+  margin: auto;
+  /* max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto; */
+  /* border: 1px solid purple; */
+}
+
+/* ========================================================= */
 /* FIXME:  SHOPMAX LOGO SCALING (100%) = FACTOR 4.91         */
+/* ========================================================= */
 /* WIDTH = 50rem (500px) ==>  HEIGTH = 10.185rem (101.85px)  */
 /* WIDTH = 45rem (450px) ==>  HEIGTH =  9.167rem  (91.67px)  */
 /* WIDTH = 40rem (400px) ==>  HEIGTH =  8.148rem  (81.48px)  */
@@ -77,30 +70,13 @@ body {
 /* WIDTH = 20rem (200px) ==>  HEIGTH =  4.074rem  (40.74px)  */
 /* WIDTH = 15rem (150px) ==>  HEIGTH =  3.056rem  (30.56px)  */
 /* WIDTH = 10rem (100px) ==>  HEIGTH =  2.037rem  (20.37px)  */
-
-.container_image .logo {
-  /* width: 80%; */
-  width: 20rem;
-  height: 4.074rem;
-  margin: auto;
-  display: block;
-  /* border: 1px solid purple; */
-}
+/* ========================================================= */
 
 /* ===================================================================================================================== */
-/* TODO:  PART 3 - CONTAINER (SEARCH) - SEARCH BAR                                                                                                      */
+/* TODO:  PART 3 - CONTAINER (SEARCH) - SEARCH BAR                                                                       */
 /* ===================================================================================================================== */
 
-/* ===================================================================================================================== */
-/* FIXME:  SPECIAL NOTES (PART 3)                                                                                        */
-/* ===================================================================================================================== */
-/* 01.            */
-/* 02.            */
-/* 03             */
-/* 04.            */
-/* 05.            */
-/* ===================================================================================================================== */
-
+/* MAIN CONTAINER - HOLDING ALL SEARCH COMPONENTS TOGETHER  */
 .container_search {
   position: relative;
   margin: 0.2rem 0.5rem 0.2rem 0.5rem;
@@ -108,58 +84,32 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
+  width: 100vw;
+  z-index: 1;
   /* border: 1px solid blue; */
 }
 
-/* .container_search .logo {
-  width: 30%;
-  margin: auto;
-  display: block;
-  border: 1px solid purple;
-} */
-
-/* ============================= */
-
+/* SUB-CONTAINER - HOLDING ALL ELEMENTS TOGETHER */
 .container {
-  /* 1.  Set the POSITION, LEFT and TOP to center the content in middel */
-  /* 2.  Use the TRANSFORM property for TRANSLATE */
   position: relative;
   top: 0%;
   left: 0%;
   transform: translate(0%, 0%);
   margin: 0rem 0rem 0rem 0rem;
   padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+  /* max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto; */
   /* justify-content: center;
   align-items: center; */
+  /* border: 1px solid blue; */
 }
 
-/* .title { */
-/* 1.  Set the color of the TEXT */
-/* 2.  Set TEXT-TRANSFORM to uppercase */
-/* 3.  TEXT-ALIGN the text to center */
-/* 4.  Set the bottom MARGIN for some spacing between Text and Other Conent */
-/* 5.  Set FONT-SIZE and FONT-FAMILY */
-/* 6.  Set the TEXT-SHADOW */
-/* color: #fff;
-  text-transform: uppercase;
-  text-align: center;
-  margin: 0 0 3rem 0;
-  font-size: 3.8rem;
-  font-family: "roboto", sans-serif;
-  text-shadow: 0px 5px 2px rgba(0, 0, 0, 0.4);
-} */
-
 .form_group {
-  /* 1.  Set the BACKGROUND-COLOR */
-  /* 2.  Set the DISPLAY to flex to position items next to each other */
-  /* 3.  Set the WIDTH and HEIGHT of the form=group */
-  /* 4.  Add some Internal Padding for the form-group - Top / right / bottom / left */
-  /* 5.  Set a BORDER-RADIUS to round the edges of the form-group "container" */
-  /* 6.  Add a BOX-SHADOW around the form-group "container */
   background-color: #fff;
   display: flex;
-  width: 50vw;
+  width: 68rem;
   height: 3rem;
   padding: 0.3rem 0.8rem 0.3rem 0rem;
   border-radius: 2rem;
@@ -168,16 +118,7 @@ body {
 }
 
 .dropdown {
-  /* 1.  Set the POSITION to RELATIVE for the the List Items to be position  */
-  /* 2.  Set the WIDTH of the "Dropdown" */
-  /* 3.  Set the PADDING of the "Dropdown" */
-  /* 4.  Set the text color of the "Dropdown" items */
-  /* 5.  Set a BORDER to the right */
-  /* 6.  Set the CURSOR to POINTER */
   position: relative;
-  /* top: 1%;
-  left: 1%;
-  transform: translate(-1%, -1%); */
   width: 20rem;
   padding: 0rem 0.5rem 0rem 0.5rem;
   color: #000000;
@@ -188,21 +129,11 @@ body {
 }
 
 .default_option {
-  /* 1.  Set the PADDING for the "CATEGORY" */
-  /* 2.  TRANSFORM the text to UPPERCASE */
   padding: 0.3rem 0.2rem 0.3rem 0.5rem;
   text-transform: lowercase;
 }
 
 .dropdown_list ul {
-  /* 1.  Remove the "Bullet Point" by setting LIST STYLE */
-  /* 2.  Set the BACKGROUND COLOR of the dropdown list */
-  /* 3.  Set the text color of the unordered list */
-  /* 4.  TRANSFORM the text to UPPERCASE */
-  /* 5.  Set POSITION to ABSOLUTE */
-  /* 6.  Set TOP, LEFT, WIDTH */
-  /* 7.  Set the BORDER-RADIUS of the dropdown box */
-  /* 8.  Set initial DISPLAY of the Dropdown-list to none - Should only appear on click */
   margin: 1rem 0rem 0rem -0.4rem;
   padding: 0.5rem 0.5rem 0.5rem 0.5rem;
   list-style: none;
@@ -218,7 +149,7 @@ body {
 }
 
 /* ==================================================================== */
-/* TODO: JavaScript ELement Below                                       */
+/* TODO:  STYLING REQUIRED FOR JAVASCRIPT SCRIPT USED (BELOW)           */
 /* ==================================================================== */
 
 /* GENERAL NOTE:  By using the JQUERY JavaSCript Library will ensure
@@ -233,13 +164,13 @@ body {
 /* ==================================================================== */
 /* ==================================================================== */
 
+/* 1.  Set the PADDING of the List-Items */
 .dropdown_list ul li {
-  /* 1.  Set the PADDING of the List-Items */
   padding: 0.5rem 0.2rem 0.5rem 0.2rem;
 }
 
+/* 2.  Set a MARGIN to the right of the LIST ICONS - WHEN APPLICABLE  */
 .dropdown_list ul li i {
-  /* 1.  Set a MARGIN to the right of the LIST ICONS  */
   margin-right: 0.75rem;
 }
 
@@ -271,16 +202,19 @@ body {
 }
 
 .search {
-  /* 1.  Set the search "containers" WIDTH and HEIGHT */
   width: 50vw;
   height: 100%;
 }
 
+/* ================================================== */
+/*               NOTES INPUT FIELD (BELOW)            */
+/* 1.  Set the search INPUT FIELD's WIDTH and HEIGHT  */
+/* 2.  Remove the BORDER of the INPUT FIELD           */
+/* 3.  Set the inner PADDING of the INPUT FIELD       */
+/* 4.  Set the text COLOR of INPUT FIELD              */
+/* ================================================== */
+
 .search_input {
-  /* 1.  Set the search INPUT FIELD's WIDTH and HEIGHT */
-  /* 2.  Remove the BORDER of the INPUT FIELD */
-  /* 3.  Set the inner PADDING of the INPUT FIELD */
-  /* 4.  Set the text COLOR of INPUT FIELD */
   width: 100%;
   height: 100%;
   border: 0;
@@ -290,9 +224,16 @@ body {
   color: #000000;
 }
 
+/* ================================================== */
+/*     NOTES SEARCH BUTTON (MAGNIFYING GLASS) BELOW)  */
+/* 1.  Set BACKGROUND-COLOR of SEARCH-SUBMIT Button   */
+/* 2.  Set BORDER, WIDTH and HEIGHT of the Button     */
+/* 3.  Set FONT-SIZE of the Font Awesome Search Icon  */
+/* 4.  Set COLOR of the Font Awesome Search Icon      */
+/* 5.  Set HOVER properties Of the Search Icon        */
+/* ================================================== */
+
 .search_submit {
-  /* 1.  Set the BACKGROUND-COLOR of the SEARCH-SUBMIT Button */
-  /* 2.  Set the BORDER, WIDTH and HEIGHT of the Button */
   background-color: #fff;
   border: none;
   width: 50px;
@@ -301,13 +242,11 @@ body {
 }
 
 .search_submit .fa-search {
-  /* 1.  Set the FONT-SIZE of the Font Awesome Search Icon */
   font-size: 1.8rem;
   color: #dc143c;
 }
 
 .search_submit .fa-search:hover {
-  /* 1.  Set the Hover Properties of the Search Icon */
   font-size: 2rem;
   color: #000000;
 }
@@ -321,35 +260,9 @@ button:focus {
 /* TODO:  PART 4 - CONTAINER (SOCIAL) - SOCIAL MEDIA LINKS                                                                                                      */
 /* ===================================================================================================================== */
 
-/* ===================================================================================================================== */
-/* FIXME:  SPECIAL NOTES (PART 4)                                                                                        */
-/* ===================================================================================================================== */
-/* 01.            */
-/* 02.            */
-/* 03             */
-/* 04.            */
-/* 05.            */
-/* ===================================================================================================================== */
-
-.container_social {
-  position: relative;
-  margin: 0.2rem 0.5rem 0.2rem 0.5rem;
-  padding: 0rem 0rem 0rem 0rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  /* border: 1px solid green; */
-}
-
-/* .container_social .logo {
-  width: 30%;
-  margin: auto;
-  display: block;
-  border: 1px solid purple;
-} */
-
-/* THE INTERNAL ITEMS */
+/* ==================================== */
+/* COLOURS USED FOR SOCIAL MEDIA LINKS  */
+/* ==================================== */
 
 :root {
   --color-facebook1: #1877f2;
@@ -363,18 +276,18 @@ button:focus {
   --color-shopping: #555555;
 }
 
-/* body { */
-/* margin: 0 0 0 0;
-  padding: 0 0 0 0;
-  font-size: 1.6rem;
-  font-style: normal;
-  font-weight: normal;
-  text-decoration: none;
-  line-height: 1.6;
-  letter-spacing: normal;
-  word-spacing: normal;
-  list-style: none; */
-/* } */
+/* MAIN CONTAINER - HOLDING ALL SOCIAL MEDIA COMPONENTS TOGETHER  */
+.container_social {
+  position: relative;
+  margin: 0.2rem 0.5rem 0.2rem 0.5rem;
+  padding: 0rem 0rem 0rem 0rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  z-index: 0;
+  /* border: 1px solid green; */
+}
 
 /* NOTE: Translate (width, height) */
 .social-media ul {
@@ -466,95 +379,135 @@ button:focus {
 }
 
 /* ===================================================================================================================== */
-/* TODO:  PART 5 - RESPONSIVE VIEW (MEDIA QUERY)                                                                                                      */
+/* TODO:  PART 5 - RESPONSIVE / MOBILE VIEW (ALL MEDIA QUERIES) - FOR 2ND COMPONENT                                      */
 /* ===================================================================================================================== */
 
-/* ===================================================================================================================== */
-/* FIXME:  SPECIAL NOTES (PART 5)                                                                                        */
-/* ===================================================================================================================== */
-/* 01.            */
-/* 02.            */
-/* 03             */
-/* 04.            */
-/* 05.            */
-/* ===================================================================================================================== */
-
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 775px) {
   .container_all {
     display: flex;
     flex-direction: column;
   }
 }
 
-/* ===================================================================================================================== */
-/* TODO:  PART 6 - SOCIAL MEDIA ICONS                                                                                                     */
-/* ===================================================================================================================== */
+@media screen and (max-width: 1035px) {
+  .form_group {
+    width: 48rem;
+  }
 
-/* ===================================================================================================================== */
-/* FIXME:  SPECIAL NOTES (PART 6)                                                                                        */
-/* ===================================================================================================================== */
-/* 01.            */
-/* 02.            */
-/* 03             */
-/* 04.            */
-/* 05.            */
-/* ===================================================================================================================== */
+  .dropdown {
+    width: 26.5rem;
+  }
+}
 
-/* ===================================================================================================================== */
-/* TODO:  PART 7 -                                                                                                       */
-/* ===================================================================================================================== */
+@media screen and (max-width: 1000px) {
+  .form_group {
+    width: 43rem;
+  }
 
-/* ===================================================================================================================== */
-/* FIXME:  SPECIAL NOTES (PART 7)                                                                                        */
-/* ===================================================================================================================== */
-/* 01.            */
-/* 02.            */
-/* 03             */
-/* 04.            */
-/* 05.            */
-/* ===================================================================================================================== */
+  .dropdown {
+    width: 31rem;
+  }
+}
 
-/* ===================================================================================================================== */
-/* TODO:  PART 8 -                                                                                                       */
-/* ===================================================================================================================== */
+@media screen and (max-width: 950px) {
+  .form_group {
+    width: 38rem;
+  }
 
-/* ===================================================================================================================== */
-/* FIXME:  SPECIAL NOTES (PART 8)                                                                                        */
-/* ===================================================================================================================== */
-/* 01.            */
-/* 02.            */
-/* 03             */
-/* 04.            */
-/* 05.            */
-/* ===================================================================================================================== */
+  .dropdown {
+    width: 36.5rem;
+  }
+}
 
-/* ===================================================================================================================== */
-/* TODO:  PART 9 -                                                                                                       */
-/* ===================================================================================================================== */
+@media screen and (max-width: 900px) {
+  .form_group {
+    width: 35rem;
+  }
 
-/* ===================================================================================================================== */
-/* FIXME:  SPECIAL NOTES (PART 9)                                                                                        */
-/* ===================================================================================================================== */
-/* 01.            */
-/* 02.            */
-/* 03             */
-/* 04.            */
-/* 05.            */
-/* ===================================================================================================================== */
+  .dropdown {
+    width: 41rem;
+  }
+}
 
-/* ===================================================================================================================== */
-/* TODO:  PART 10 -                                                                                                      */
-/* ===================================================================================================================== */
+@media screen and (max-width: 860px) {
+  .form_group {
+    width: 32rem;
+  }
 
-/* ===================================================================================================================== */
-/* FIXME:  SPECIAL NOTES (PART 10)                                                                                       */
-/* ===================================================================================================================== */
-/* 01.            */
-/* 02.            */
-/* 03             */
-/* 04.            */
-/* 05.            */
-/* ===================================================================================================================== */
+  .dropdown {
+    width: 47.5rem;
+  }
+}
+
+@media screen and (max-width: 835px) {
+  .form_group {
+    width: 27rem;
+  }
+
+  .dropdown {
+    width: 75rem;
+  }
+}
+
+@media screen and (max-width: 775px) {
+  .form_group {
+    width: 31rem;
+  }
+
+  .dropdown {
+    width: 47rem;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .dropdown {
+    width: 42.5rem;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .dropdown {
+    width: 39.5rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .dropdown {
+    width: 36.5rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .dropdown {
+    width: 31rem;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .dropdown {
+    width: 26rem;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .dropdown {
+    width: 23.5rem;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .form_group {
+    width: 25rem;
+  }
+
+  .dropdown {
+    width: 33rem;
+  }
+
+  .social-media ul li {
+    margin: 0rem 0.35rem 0rem 0.35rem;
+  }
+}
 
 /* ===================================================================================================================== */
 /*                                                                                            TODO:  STYLING ENDS  TODO: */
