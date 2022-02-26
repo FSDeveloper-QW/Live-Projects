@@ -1,0 +1,5210 @@
+/* ===================================================================================================================== */
+/* TODO:  STYLING FOR COMPONENT 3 - SHOPMAX FINAL NAVIGATION                                                             */
+/* ===================================================================================================================== */
+
+/* ---------------------------------------------------------------------------------------------------------------------- */
+/* TODO:  SETTING ROOT VARIABLES                                                                 FIXME:  ROOT VARIABLES   */
+/* ---------------------------------------------------------------------------------------------------------------------- */
+
+/* GENERAL NOTE - When seting the COLOR : choose any color [color name / hex / RGB]         */
+/* To make your color appear TRANSPARENT you need to use RGA (0-1 is tranparency factor)    */
+/* EXAMPLE: rgb (77, 0, 255, 0.5) => 0.5 is the "transparency factor"                       */
+
+:root {
+  /* TEXT COLOR FOR ALL NAVIGATION ITEMS (ALL LEVELS) - SET IN "NAV" CLASS */
+  --color-text-for-all-menu-items: #ffffff;
+
+  /* TEXT COLOR FOR ALL NAVIGATION ITEMS (ALL LEVELS) - FOR "FOCUS" AND "HOVER" STATE */
+  /* --color-text-focus-and-hover: rgba(255, 255, 255, 0.5); */
+  --color-text-focus-and-hover: #dc143c;
+
+  /* BACKGROUND COLOR FOR TOP NAVIGATION (LEVEL 0) - SET IN "NAV" CLASS */
+  /* --color-level-0-background: #151515; */
+  --color-level-0-background: white;
+
+  /* TEXT COLOR FOR TOP NAVIGATION (LEVEL 0) - SET IN "NAV" CLASS */
+  /* --color-level-0-text: #ffffff; */
+  --color-level-0-text: black;
+
+  /* BACKGROUND COLOR FOR TOP NAVIGATION (LEVEL 1) - MAIN CATEGORY */
+  /* --color-level-1-background: #252525; */
+  --color-level-1-background: #fffcff;
+
+  /* TEXT COLOR FOR TOP NAVIGATION (LEVEL 1) - MAIN CATEGORY */
+  /* --color-level-1-text: #ffffff; */
+  --color-level-1-text: black;
+
+  /* BACKGROUND COLOUR FOR NAVIGATION ITEMS (LEVEL 2) - MAIN CATEGORY'S SUB-CATEGORY COLOR */
+  /* --color-level-2-background: #353535; */
+  --color-level-2-background: #e0dce0;
+
+  /* TEXT COLOR FOR NAVIGATION ITEMS (LEVEL 2) - MAIN CATEGORY'S SUB-CATEGORY COLOR */
+  /* --color-level-2-text: #ffffff; */
+  --color-level-2-text: black;
+
+  /* BACKGROUND COLOUR FOR NAVIGATION ITEMS (LEVEL 3) - SUB-CATEGORY'S SUB CATEGORY COLOR (PRODUCT TYPE 1) */
+  /* --color-level-3-background: #454545; */
+  --color-level-3-background: #c1bcc2;
+
+  /* TEXT COLOR FOR NAVIGATION ITEMS (LEVEL 3) - SUB-CATEGORY'S SUB CATEGORY COLOR (PRODUCT TYPE 1) */
+  /* --color-level-3-text: #ffffff; */
+  --color-level-3-text: black;
+
+  /* BACKGROUND COLOUR FOR NAVIGATION ITEMS (LEVEL 4) - SUB-CATEGORY'S x 3 (PRODUCT TYPE 2 - CLOTHING) */
+  /* --color-level-4-background: #555555; */
+  --color-level-4-background: #a29da3;
+
+  /* TEXT COLOR FOR NAVIGATION ITEMS (LEVEL 4) - SUB-CATEGORY'S x 3 (PRODUCT TYPE 2 - CLOTHING) */
+  /* --color-level-4-text: #ffffff; */
+  --color-level-4-text: black;
+}
+
+/* --------------------------------------------------------------------------------------------------------------------- */
+/* TODO:  STANDARD CSS BASE STYLES                                                               FIXME:  BASE STYLES     */
+/* --------------------------------------------------------------------------------------------------------------------- */
+
+/* --------------------------- */
+/* FIXME:  UNIVERSAL SELECTORS */
+/* --------------------------- */
+
+* {
+  box-sizing: border-box;
+  margin: 0rem 0rem 0rem 0rem;
+  padding: 0rem 0rem 0rem 0rem;
+  /* font-family: "roboto", "open sans", "montserrat", "poppins", "raleway",
+    "alice", serif, sans-serif; */
+  letter-spacing: 0.025rem;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: normal;
+  text-decoration: none;
+  line-height: 1.6;
+  letter-spacing: normal;
+  word-spacing: normal;
+  list-style: none;
+}
+
+main {
+  display: block;
+}
+
+/* ===================================================================================================================== */
+/* TODO:  MAIN CONTAINER (ALL) - HOLDS ALL CONTAINERS                                                                    */
+/* ===================================================================================================================== */
+
+/* ===================================================================================================================== */
+/* FIXME:  SPECIAL NOTES - CONTAINER (ALL)                                                                               */
+/* ===================================================================================================================== */
+/* 01.            */
+/* 02.            */
+/* 03             */
+/* 04.            */
+/* 05.            */
+/* ===================================================================================================================== */
+
+.container_all {
+  position: relative;
+  margin: 0rem 0rem 0rem 0rem;
+  padding: 0rem 0rem 0rem 0rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 100vw;
+  border: 5px solid rgba(0, 0, 0, 0.5);
+}
+
+/* ===================================================================================================================== */
+/* TODO:  NAVIGATION PART 01 - SHOP PRODUCTS                                                                             */
+/* ===================================================================================================================== */
+
+/* ===================================================================================================================== */
+/* FIXME:  SPECIAL NOTES - SHOP PRODUCTS                                                                                 */
+/* ===================================================================================================================== */
+/* 01.            */
+/* 02.            */
+/* 03             */
+/* 04.            */
+/* 05.            */
+/* ===================================================================================================================== */
+
+.container_01 {
+  position: relative;
+  margin: 0rem 0rem 0rem 0rem;
+  padding: 0rem 0rem 0rem 0rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  border: 1px solid red;
+}
+
+/* FIXME:  SHOPMAX LOGO SCALING (100%) = FACTOR 4.91         */
+/* WIDTH = 50rem (500px) ==>  HEIGTH = 10.185rem (101.85px)  */
+/* WIDTH = 40rem (400px) ==>  HEIGTH =  8.148rem  (81.48px)  */
+/* WIDTH = 30rem (300px) ==>  HEIGTH =  6.111rem  (61.11px)  */
+/* WIDTH = 20rem (200px) ==>  HEIGTH =  4.074rem  (40.74px)  */
+/* WIDTH = 10rem (100px) ==>  HEIGTH =  2.037rem  (20.37px)  */
+
+/* .container_01 .logo {
+    width: 30%;
+    margin: auto;
+    display: block;
+    border: 1px solid purple;
+  } */
+
+/* ===================================================================================================================== */
+/*           ACCORDIAN STYLE MULTI-LEVEL DROPDOWN MENU (HTML, CSS, SCSS)                                                 */
+/*           TODO:      (TOP) MAIN NAVIGATION PRODUCT GROUP        TODO:                                                 */
+/*            BASE LEVEL (0) STYLING - APPLICABLE TO ALL TOP NAVIGATION                                                  */
+/* ===================================================================================================================== */
+
+a {
+  text-decoration: none;
+}
+
+/** Hidden fallback */
+
+[hidden] {
+  display: none;
+  visibility: hidden;
+}
+
+/** Styling navigation */
+
+header {
+  font-size: 1.25rem;
+  font-family: "poppins", sans-serif;
+  text-transform: uppercase;
+  margin: 0rem 0rem 0rem 0rem;
+  padding: 0rem 0rem 0rem 0rem;
+  /* margin-right: auto;
+  margin-left: auto; */
+  /* max-width: remy(360px); */
+  width: 100%;
+  margin: auto;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.25);
+  /* border: 5px solid purple; */
+}
+
+.nav__list,
+.nav_02__list,
+.nav_03__list,
+.nav_04__list,
+.nav_05__list,
+.nav_06__list,
+.nav_07__list,
+.nav_08__list {
+  list-style: none;
+  width: 100%;
+  font-family: "poppins", sans-serif;
+  font-weight: 100;
+}
+
+/* ================================================================================= */
+/*               FIXME:  NAVIGATION - SHOPMAX PRODUCTS  FIXME:                       */
+/*                          STYLING TOP LEVEL ITEMS                                  */
+/* ================================================================================= */
+
+.nav a,
+.nav label {
+  display: block;
+  padding: 0.9rem 2rem 0.9rem 1.5rem;
+  /* padding: 0.85rem; */
+  color: var(--color-level-0-text);
+  background-color: var(--color-level-0-background);
+  box-shadow: inset 0 -1px lighten(var(--color-level-0-background), 3%);
+  transition: all 0.25s ease-in;
+}
+
+.nav a:focus {
+  color: var(--color-text-focus-and-hover);
+  background: darken(#151515, 7%);
+}
+
+.nav a:hover {
+  color: var(--color-text-focus-and-hover);
+  background: darken(#151515, 7%);
+}
+
+.nav label:focus {
+  color: var(--color-text-focus-and-hover);
+  background: darken(#151515, 7%);
+}
+
+.nav label:hover {
+  color: var(--color-text-focus-and-hover);
+  background: darken(#151515, 7%);
+}
+
+.nav label {
+  cursor: pointer;
+}
+
+/* ===================================================================================================================== */
+/*           ACCORDIAN STYLE MULTI-LEVEL DROPDOWN MENU (HTML, CSS, SCSS)                                                 */
+/* TODO:       (TOP) MAIN NAVIGATION PRODUCT GROUP (SHOPMAX PRODUCTS)          TODO:                                     */
+/*                            FIRST LEVEL NAVIGATION                                                                     */
+/* ===================================================================================================================== */
+
+/* ================================================================================= */
+/*                        FIXME:  SHOPMAX PRODUCTS  FIXME:                           */
+/*                             FIRST LEVEL NAVIGATION                                */
+/* ================================================================================= */
+
+.topnav_shopmax_products {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+}
+
+.topnav_shopmax_products a,
+.topnav_shopmax_products label {
+  padding-left: 1.5rem;
+  /* This Sets the Line height for the Product Categories Below */
+  line-height: 1rem;
+  /* background: #252525; */
+  background: var(--color-level-1-background);
+  color: var(--color-level-1-text);
+  box-shadow: inset 0 -1px lighten(#252525, 7%);
+}
+
+.topnav_shopmax_products a:focus {
+  background: darken(#252525, 7%);
+}
+
+.topnav_shopmax_products a:hover {
+  background: darken(#252525, 7%);
+}
+
+.topnav_shopmax_products label:focus {
+  background: darken(#252525, 7%);
+}
+
+.topnav_shopmax_products label:hover {
+  background: darken(#252525, 7%);
+}
+
+/* ====================================================================================== */
+/* TODO:              SHOP PRODUCTS- LIST OF MAIN PRODUCT CATEGORIES                TODO: */
+/*                             SECOND LEVEL NAVIGATION                                    */
+/* ====================================================================================== */
+
+/* ====================================================================================== */
+/* ====================  CATEGORY: MARKETPLACE - PRODUCTS =============================== */
+/* ====================================================================================== */
+
+.subnav_00_marketplace_products {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+}
+
+.subnav_00_marketplace_products a,
+.subnav_00_marketplace_products label {
+  padding-left: 2rem;
+  line-height: 0.2rem;
+  background: var(--color-level-2-background);
+  color: var(--color-level-2-text);
+  box-shadow: inset 0 -1px lighten(#353535, 7%);
+}
+
+.subnav_00_marketplace_products a:focus {
+  background: darken(#353535, 7%);
+}
+
+.subnav_00_marketplace_products a:hover {
+  background: darken(#353535, 7%);
+}
+
+.subnav_00_marketplace_products label:focus {
+  background: darken(#353535, 7%);
+}
+
+.subnav_00_marketplace_products label:hover {
+  background: darken(#353535, 7%);
+}
+
+/* ====================================================================================== */
+/* ========================  CATEGORY: MOBILE PRODUCTS  ================================= */
+/* ====================================================================================== */
+
+.subnav_01_mobile_products {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+}
+
+.subnav_01_mobile_products a,
+.subnav_01_mobile_products label {
+  padding-left: 2rem;
+  line-height: 0.2rem;
+  background: var(--color-level-2-background);
+  color: var(--color-level-2-text);
+  box-shadow: inset 0 -1px lighten(#353535, 7%);
+}
+
+.subnav_01_mobile_products a:focus {
+  background: darken(#353535, 7%);
+}
+
+.subnav_01_mobile_products a:hover {
+  background: darken(#353535, 7%);
+}
+
+.subnav_01_mobile_products label:focus {
+  background: darken(#353535, 7%);
+}
+
+.subnav_01_mobile_products label:hover {
+  background: darken(#353535, 7%);
+}
+
+/* ====================================================================================== */
+/* ========================  CATEGORY: OFFICE PRODUCTS ================================== */
+/* ====================================================================================== */
+
+.subnav_02_office_products {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+}
+
+.subnav_02_office_products a,
+.subnav_02_office_products label {
+  padding-left: 2rem;
+  line-height: 0.2rem;
+  background: var(--color-level-2-background);
+  color: var(--color-level-2-text);
+  box-shadow: inset 0 -1px lighten(#353535, 7%);
+}
+
+.subnav_02_office_products a:focus {
+  background: darken(#353535, 7%);
+}
+
+.subnav_02_office_products a:hover {
+  background: darken(#353535, 7%);
+}
+
+.subnav_02_office_products label:focus {
+  background: darken(#353535, 7%);
+}
+
+.subnav_02_office_products label:hover {
+  background: darken(#353535, 7%);
+}
+
+/* ====================================================================================== */
+/* ======================  CATEGORY: ESSENTIAL PRODUCTS ================================= */
+/* ====================================================================================== */
+
+.subnav_03_essential_products {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+}
+
+.subnav_03_essential_products a,
+.subnav_03_essential_products label {
+  padding-left: 2rem;
+  line-height: 0.2rem;
+  background: var(--color-level-2-background);
+  color: var(--color-level-2-text);
+  box-shadow: inset 0 -1px lighten(#353535, 7%);
+}
+
+.subnav_03_essential_products a:focus {
+  background: darken(#353535, 7%);
+}
+
+.subnav_03_essential_products a:hover {
+  background: darken(#353535, 7%);
+}
+
+.subnav_03_essential_products label:focus {
+  background: darken(#353535, 7%);
+}
+
+.subnav_03_essential_products label:hover {
+  background: darken(#353535, 7%);
+}
+
+/* ====================================================================================== */
+/* ========================  CATEGORY: HOME AND LIVING ================================== */
+/* ====================================================================================== */
+
+.subnav_04_home-and-living_products {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+}
+
+.subnav_04_home-and-living_products a,
+.subnav_04_home-and-living_products label {
+  padding-left: 2rem;
+  line-height: 0.2rem;
+  background: var(--color-level-2-background);
+  color: var(--color-level-2-text);
+  box-shadow: inset 0 -1px lighten(#353535, 7%);
+}
+
+.subnav_04_home-and-living_products a:focus {
+  background: darken(#353535, 7%);
+}
+
+.subnav_04_home-and-living_products a:hover {
+  background: darken(#353535, 7%);
+}
+
+.subnav_04_home-and-living_products label:focus {
+  background: darken(#353535, 7%);
+}
+
+.subnav_04_home-and-living_products label:hover {
+  background: darken(#353535, 7%);
+}
+
+/* ====================================================================================== */
+/* ===========================  CATEGORY: HOBBIES ======================================= */
+/* ====================================================================================== */
+
+.subnav_05_hobbies {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+}
+
+.subnav_05_hobbies a,
+.subnav_05_hobbies label {
+  padding-left: 2rem;
+  line-height: 0.2rem;
+  background: var(--color-level-2-background);
+  color: var(--color-level-2-text);
+  box-shadow: inset 0 -1px lighten(#353535, 7%);
+}
+
+.subnav_05_hobbies a:focus {
+  background: darken(#353535, 7%);
+}
+
+.subnav_05_hobbies a:hover {
+  background: darken(#353535, 7%);
+}
+
+.subnav_05_hobbies label:focus {
+  background: darken(#353535, 7%);
+}
+
+.subnav_05_hobbies label:hover {
+  background: darken(#353535, 7%);
+}
+
+/* ====================================================================================== */
+/* ===========================  CATEGORY: OUTDOORS ====================================== */
+/* ====================================================================================== */
+
+.subnav_06_outdoors {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+}
+
+.subnav_06_outdoors a,
+.subnav_06_outdoors label {
+  padding-left: 2rem;
+  line-height: 0.2rem;
+  background: var(--color-level-2-background);
+  color: var(--color-level-2-text);
+  box-shadow: inset 0 -1px lighten(#353535, 7%);
+}
+
+.subnav_06_outdoors a:focus {
+  background: darken(#353535, 7%);
+}
+
+.subnav_06_outdoors a:hover {
+  background: darken(#353535, 7%);
+}
+
+.subnav_06_outdoors label:focus {
+  background: darken(#353535, 7%);
+}
+
+.subnav_06_outdoors label:hover {
+  background: darken(#353535, 7%);
+}
+
+/* ====================================================================================== */
+/* ============================  CATEGORY: SPORTS ======================================= */
+/* ====================================================================================== */
+
+.subnav_07_sports {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+}
+
+.subnav_07_sports a,
+.subnav_07_sports label {
+  padding-left: 2rem;
+  line-height: 0.2rem;
+  background: var(--color-level-2-background);
+  color: var(--color-level-2-text);
+  box-shadow: inset 0 -1px lighten(#353535, 7%);
+}
+
+.subnav_07_sports a:focus {
+  background: darken(#353535, 7%);
+}
+
+.subnav_07_sports a:hover {
+  background: darken(#353535, 7%);
+}
+
+.subnav_07_sports label:focus {
+  background: darken(#353535, 7%);
+}
+
+.subnav_07_sports label:hover {
+  background: darken(#353535, 7%);
+}
+
+/* ====================================================================================== */
+/* ==========================  CATEGORY: DIY PROJECTS  ================================== */
+/* ====================================================================================== */
+
+.subnav_08_diy {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+}
+
+.subnav_08_diy a,
+.subnav_08_diy label {
+  padding-left: 2rem;
+  line-height: 0.2rem;
+  background: var(--color-level-2-background);
+  color: var(--color-level-2-text);
+  box-shadow: inset 0 -1px lighten(#353535, 7%);
+}
+
+.subnav_08_diy a:focus {
+  background: darken(#353535, 7%);
+}
+
+.subnav_08_diy a:hover {
+  background: darken(#353535, 7%);
+}
+
+.subnav_08_diy label:focus {
+  background: darken(#353535, 7%);
+}
+
+.subnav_08_diy label:hover {
+  background: darken(#353535, 7%);
+}
+
+/* ====================================================================================== */
+/* ================  CATEGORY: FOOD, BEVERAGES AND GROCERIES ============================ */
+/* ====================================================================================== */
+
+.subnav_09_groceries {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+}
+
+.subnav_09_groceries a,
+.subnav_09_groceries label {
+  padding-left: 2rem;
+  line-height: 0.2rem;
+  background: var(--color-level-2-background);
+  color: var(--color-level-2-text);
+  box-shadow: inset 0 -1px lighten(#353535, 7%);
+}
+
+.subnav_09_groceries a:focus {
+  background: darken(#353535, 7%);
+}
+
+.subnav_09_groceries a:hover {
+  background: darken(#353535, 7%);
+}
+
+.subnav_09_groceries label:focus {
+  background: darken(#353535, 7%);
+}
+
+.subnav_09_groceries label:hover {
+  background: darken(#353535, 7%);
+}
+
+/* ====================================================================================== */
+/* =====================  CATEGORY: CLOTHING & FOOTWEAR ================================= */
+/* ====================================================================================== */
+
+.subnav_10_clothing-and-footwear {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+}
+
+.subnav_10_clothing-and-footwear a,
+.subnav_10_clothing-and-footwear label {
+  padding-left: 2rem;
+  line-height: 0.2rem;
+  background: var(--color-level-2-background);
+  color: var(--color-level-2-text);
+  box-shadow: inset 0 -1px lighten(#353535, 7%);
+}
+
+.subnav_10_clothing-and-footwear a:focus {
+  background: darken(#353535, 7%);
+}
+
+.subnav_10_clothing-and-footwear a:hover {
+  background: darken(#353535, 7%);
+}
+
+.subnav_10_clothing-and-footwear label:focus {
+  background: darken(#353535, 7%);
+}
+
+.subnav_10_clothing-and-footwear label:hover {
+  background: darken(#353535, 7%);
+}
+
+/* ===============================================================================    TODO:   MOBILE PRODUCTS */
+/* =============== START OF PRODUCT CATEGORY 01 - MOBILE PRODUCTS ================ */
+/* =============================================================================== */
+
+/* ===============================================================================    FIXME:  LAPTOPS */
+/* FIXME:         1ST PRODUCT TYPE OF MOBILE PRODUCTS (LAPTOPS)             FIXME: */
+/*                           THIRD LEVEL NAVIGATION                                */
+/* =============================================================================== */
+
+.subnav_01_mobile_products_01_laptops {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+}
+
+.subnav_01_mobile_products_01_laptops a,
+.subnav_01_mobile_products_01_laptops label {
+  padding-left: 2.5rem;
+  line-height: 0.2rem;
+  background: var(--color-level-3-background);
+  color: var(--color-level-3-text);
+  box-shadow: inset 0 -1px lighten(#454545, 7%);
+}
+
+.subnav_01_mobile_products_01_laptops a:focus {
+  background: darken(#454545, 7%);
+}
+
+.subnav_01_mobile_products_01_laptops a:hover {
+  background: darken(#454545, 7%);
+}
+
+.subnav_01_mobile_products_01_laptops label:focus {
+  background: darken(#454545, 7%);
+}
+
+.subnav_01_mobile_products_01_laptops label:hover {
+  background: darken(#454545, 7%);
+}
+
+/* ===============================================================================    FIXME:  PHONES */
+/* FIXME:           2ND PRODUCT TYPE OF MOBILE PRODUCTS (PHONES)            FIXME: */
+/*                           THIRD LEVEL NAVIGATION                                */
+/* =============================================================================== */
+
+.subnav_01_mobile_products_02_phones {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+}
+
+.subnav_01_mobile_products_02_phones a,
+.subnav_01_mobile_products_02_phones label {
+  padding-left: 2.5rem;
+  line-height: 0.2rem;
+  background: var(--color-level-3-background);
+  color: var(--color-level-3-text);
+  box-shadow: inset 0 -1px lighten(#454545, 7%);
+}
+
+.subnav_01_mobile_products_02_phones a:focus {
+  background: darken(#454545, 7%);
+}
+
+.subnav_01_mobile_products_02_phones a:hover {
+  background: darken(#454545, 7%);
+}
+
+.subnav_01_mobile_products_02_phones label:focus {
+  background: darken(#454545, 7%);
+}
+
+.subnav_01_mobile_products_02_phones label:hover {
+  background: darken(#454545, 7%);
+}
+
+/* ===============================================================================    FIXME:  TABLETS */
+/* FIXME:          3RD PRODUCT TYPE OF MOBILE PRODUCTS (TABLETS)            FIXME: */
+/*                           THIRD LEVEL NAVIGATION                                */
+/* =============================================================================== */
+
+.subnav_01_mobile_products_03_tablets {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+}
+
+.subnav_01_mobile_products_03_tablets a,
+.subnav_01_mobile_products_03_tablets label {
+  padding-left: 2.5rem;
+  line-height: 0.2rem;
+  background: var(--color-level-3-background);
+  color: var(--color-level-3-text);
+  box-shadow: inset 0 -1px lighten(#454545, 7%);
+}
+
+.subnav_01_mobile_products_03_tablets a:focus {
+  background: darken(#454545, 7%);
+}
+
+.subnav_01_mobile_products_03_tablets a:hover {
+  background: darken(#454545, 7%);
+}
+
+.subnav_01_mobile_products_03_tablets label:focus {
+  background: darken(#454545, 7%);
+}
+
+.subnav_01_mobile_products_03_tablets label:hover {
+  background: darken(#454545, 7%);
+}
+
+/* ===============================================================================    FIXME:  WATCHES */
+/* FIXME:          4TH PRODUCT TYPE OF MOBILE PRODUCTS (WATCHES)            FIXME: */
+/*                           THIRD LEVEL NAVIGATION                                */
+/* =============================================================================== */
+
+.subnav_01_mobile_products_04_watches {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+}
+
+.subnav_01_mobile_products_04_watches a,
+.subnav_01_mobile_products_04_watches label {
+  padding-left: 2.5rem;
+  line-height: 0.2rem;
+  background: var(--color-level-3-background);
+  color: var(--color-level-3-text);
+  box-shadow: inset 0 -1px lighten(#454545, 7%);
+}
+
+.subnav_01_mobile_products_04_watches a:focus {
+  background: darken(#454545, 7%);
+}
+
+.subnav_01_mobile_products_04_watches a:hover {
+  background: darken(#454545, 7%);
+}
+
+.subnav_01_mobile_products_04_watches label:focus {
+  background: darken(#454545, 7%);
+}
+
+.subnav_01_mobile_products_04_watches label:hover {
+  background: darken(#454545, 7%);
+}
+
+/* ===============================================================================    FIXME:  DATA AND AIRTIME */
+/* FIXME:       5TH PRODUCT TYPE OF MOBILE PRODUCTS (DATA & AIRTIME)        FIXME: */
+/*                           THIRD LEVEL NAVIGATION                                */
+/* =============================================================================== */
+
+.subnav_01_mobile_products_05_airtime {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+}
+
+.subnav_01_mobile_products_05_airtime a,
+.subnav_01_mobile_products_05_airtime label {
+  padding-left: 2.5rem;
+  line-height: 0.2rem;
+  background: var(--color-level-3-background);
+  color: var(--color-level-3-text);
+  box-shadow: inset 0 -1px lighten(#454545, 7%);
+}
+
+.subnav_01_mobile_products_05_airtime a:focus {
+  background: darken(#454545, 7%);
+}
+
+.subnav_01_mobile_products_05_airtime a:hover {
+  background: darken(#454545, 7%);
+}
+
+.subnav_01_mobile_products_05_airtime label:focus {
+  background: darken(#454545, 7%);
+}
+
+.subnav_01_mobile_products_05_airtime label:hover {
+  background: darken(#454545, 7%);
+}
+
+/* ===============================================================================    FIXME:  MOBILE ACCESSORIES */
+/* FIXME:     6TH PRODUCT TYPE OF MOBILE PRODUCTS (MOBILE ACCESSORIES)      FIXME: */
+/*                           THIRD LEVEL NAVIGATION                                */
+/* =============================================================================== */
+
+.subnav_01_mobile_products_06_accessories {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+}
+
+.subnav_01_mobile_products_06_accessories a,
+.subnav_01_mobile_products_06_accessories label {
+  padding-left: 2.5rem;
+  line-height: 0.2rem;
+  background: var(--color-level-3-background);
+  color: var(--color-level-3-text);
+  box-shadow: inset 0 -1px lighten(#454545, 7%);
+}
+
+.subnav_01_mobile_products_06_accessories a:focus {
+  background: darken(#454545, 7%);
+}
+
+.subnav_01_mobile_products_06_accessories a:hover {
+  background: darken(#454545, 7%);
+}
+
+.subnav_01_mobile_products_06_accessories label:focus {
+  background: darken(#454545, 7%);
+}
+
+.subnav_01_mobile_products_06_accessories label:hover {
+  background: darken(#454545, 7%);
+}
+
+/* =============================================================================== */
+/* ================ END OF PRODUCT CATEGORY 01 - MOBILE PRODUCTS ================= */
+/* =============================================================================== */
+
+/* ===============================================================================    TODO:   OFFICE PRODUCTS */
+/* =============== START OF PRODUCT CATEGORY 02 - OFFICE PRODUCTS ================ */
+/* =============================================================================== */
+
+/* ===============================================================================    FIXME:  DESKTOP PC'S */
+/* FIXME:         1ST PRODUCT TYPE OF OFFICE PRODUCTS (DESKTOP PC'S)        FIXME: */
+/*                           THIRD LEVEL NAVIGATION                                */
+/* =============================================================================== */
+
+.subnav_02_office_products_01_desktop-pc {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+}
+
+.subnav_02_office_products_01_desktop-pc a,
+.subnav_02_office_products_01_desktop-pc label {
+  padding-left: 2.5rem;
+  line-height: 0.2rem;
+  background: var(--color-level-3-background);
+  color: var(--color-level-3-text);
+  box-shadow: inset 0 -1px lighten(#454545, 7%);
+}
+
+.subnav_02_office_products_01_desktop-pc a:focus {
+  background: darken(#454545, 7%);
+}
+
+.subnav_02_office_products_01_desktop-pc a:hover {
+  background: darken(#454545, 7%);
+}
+
+.subnav_02_office_products_01_desktop-pc label:focus {
+  background: darken(#454545, 7%);
+}
+
+.subnav_02_office_products_01_desktop-pc label:hover {
+  background: darken(#454545, 7%);
+}
+
+/* ===============================================================================    FIXME:  PC COMPONENTS */
+/* FIXME:        2ND PRODUCT TYPE OF OFFICE PRODUCTS (PC COMPONENTS)        FIXME: */
+/*                           THIRD LEVEL NAVIGATION                                */
+/* =============================================================================== */
+
+.subnav_02_office_products_02_pc-components {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+}
+
+.subnav_02_office_products_02_pc-components a,
+.subnav_02_office_products_02_pc-components label {
+  padding-left: 2.5rem;
+  line-height: 0.2rem;
+  background: var(--color-level-3-background);
+  color: var(--color-level-3-text);
+  box-shadow: inset 0 -1px lighten(#454545, 7%);
+}
+
+.subnav_02_office_products_02_pc-components a:focus {
+  background: darken(#454545, 7%);
+}
+
+.subnav_02_office_products_02_pc-components a:hover {
+  background: darken(#454545, 7%);
+}
+
+.subnav_02_office_products_02_pc-components label:focus {
+  background: darken(#454545, 7%);
+}
+
+.subnav_02_office_products_02_pc-components label:hover {
+  background: darken(#454545, 7%);
+}
+
+/* ===============================================================================    FIXME:  PC PERIPHERALS */
+/* FIXME:      3RD PRODUCT TYPE OF OFFICE PRODUCTS (PC PERIPHERALS)         FIXME: */
+/*                           THIRD LEVEL NAVIGATION                                */
+/* =============================================================================== */
+
+.subnav_02_office_products_03_pc-peripherals {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+}
+
+.subnav_02_office_products_03_pc-peripherals a,
+.subnav_02_office_products_03_pc-peripherals label {
+  padding-left: 2.5rem;
+  line-height: 0.2rem;
+  background: var(--color-level-3-background);
+  color: var(--color-level-3-text);
+  box-shadow: inset 0 -1px lighten(#454545, 7%);
+}
+
+.subnav_02_office_products_03_pc-peripherals a:focus {
+  background: darken(#454545, 7%);
+}
+
+.subnav_02_office_products_03_pc-peripherals a:hover {
+  background: darken(#454545, 7%);
+}
+
+.subnav_02_office_products_03_pc-peripherals label:focus {
+  background: darken(#454545, 7%);
+}
+
+.subnav_02_office_products_03_pc-peripherals label:hover {
+  background: darken(#454545, 7%);
+}
+
+/* ===============================================================================    FIXME:  SERVERS */
+/* FIXME:          4TH PRODUCT TYPE OF OFFICE PRODUCTS (SERVERS)            FIXME: */
+/*                           THIRD LEVEL NAVIGATION                                */
+/* =============================================================================== */
+
+.subnav_02_office_products_04_servers {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+}
+
+.subnav_02_office_products_04_servers a,
+.subnav_02_office_products_04_servers label {
+  padding-left: 2.5rem;
+  line-height: 0.2rem;
+  background: var(--color-level-3-background);
+  color: var(--color-level-3-text);
+  box-shadow: inset 0 -1px lighten(#454545, 7%);
+}
+
+.subnav_02_office_products_04_servers a:focus {
+  background: darken(#454545, 7%);
+}
+
+.subnav_02_office_products_04_servers a:hover {
+  background: darken(#454545, 7%);
+}
+
+.subnav_02_office_products_04_servers label:focus {
+  background: darken(#454545, 7%);
+}
+
+.subnav_02_office_products_04_servers label:hover {
+  background: darken(#454545, 7%);
+}
+
+/* ===============================================================================    FIXME:  POINT-OF-SALE (POS) */
+/* FIXME:            5TH PRODUCT TYPE OF OFFICE PRODUCTS (POS)              FIXME: */
+/*                           THIRD LEVEL NAVIGATION                                */
+/* =============================================================================== */
+
+.subnav_02_office_products_05_pos {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+}
+
+.subnav_02_office_products_05_pos a,
+.subnav_02_office_products_05_pos label {
+  padding-left: 2.5rem;
+  line-height: 0.2rem;
+  background: var(--color-level-3-background);
+  color: var(--color-level-3-text);
+  box-shadow: inset 0 -1px lighten(#454545, 7%);
+}
+
+.subnav_02_office_products_05_pos a:focus {
+  background: darken(#454545, 7%);
+}
+
+.subnav_02_office_products_05_pos a:hover {
+  background: darken(#454545, 7%);
+}
+
+.subnav_02_office_products_05_pos label:focus {
+  background: darken(#454545, 7%);
+}
+
+.subnav_02_office_products_05_pos label:hover {
+  background: darken(#454545, 7%);
+}
+
+/* ===============================================================================    FIXME:  SECURITY & SURVEILLANCE */
+/* FIXME:     6TH PRODUCT TYPE OF OFFICE PRODUCTS (SECURITY SOLUTIONS)      FIXME: */
+/*                           THIRD LEVEL NAVIGATION                                */
+/* =============================================================================== */
+
+.subnav_02_office_products_06_security-hardware {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+}
+
+.subnav_02_office_products_06_security-hardware a,
+.subnav_02_office_products_06_security-hardware label {
+  padding-left: 2.5rem;
+  line-height: 0.2rem;
+  background: var(--color-level-3-background);
+  color: var(--color-level-3-text);
+  box-shadow: inset 0 -1px lighten(#454545, 7%);
+}
+
+.subnav_02_office_products_06_security-hardware a:focus {
+  background: darken(#454545, 7%);
+}
+
+.subnav_02_office_products_06_security-hardware a:hover {
+  background: darken(#454545, 7%);
+}
+
+.subnav_02_office_products_06_security-hardware label:focus {
+  background: darken(#454545, 7%);
+}
+
+.subnav_02_office_products_06_security-hardware label:hover {
+  background: darken(#454545, 7%);
+}
+
+/* ===============================================================================    FIXME:  PRINTERS */
+/* FIXME:         7TH PRODUCT TYPE OF OFFICE PRODUCTS (PRINTERS)            FIXME: */
+/*                           THIRD LEVEL NAVIGATION                                */
+/* =============================================================================== */
+
+.subnav_02_office_products_07_printers {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+}
+
+.subnav_02_office_products_07_printers a,
+.subnav_02_office_products_07_printers label {
+  padding-left: 2.5rem;
+  line-height: 0.2rem;
+  background: var(--color-level-3-background);
+  color: var(--color-level-3-text);
+  box-shadow: inset 0 -1px lighten(#454545, 7%);
+}
+
+.subnav_02_office_products_07_printers a:focus {
+  background: darken(#454545, 7%);
+}
+
+.subnav_02_office_products_07_printers a:hover {
+  background: darken(#454545, 7%);
+}
+
+.subnav_02_office_products_07_printers label:focus {
+  background: darken(#454545, 7%);
+}
+
+.subnav_02_office_products_07_printers label:hover {
+  background: darken(#454545, 7%);
+}
+
+/* ===============================================================================    FIXME:  PROJECTORS */
+/* FIXME:         8TH PRODUCT TYPE OF OFFICE PRODUCTS (PROJECTORS)          FIXME: */
+/*                           THIRD LEVEL NAVIGATION                                */
+/* =============================================================================== */
+
+.subnav_02_office_products_08_projectors {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+}
+
+.subnav_02_office_products_08_projectors a,
+.subnav_02_office_products_08_projectors label {
+  padding-left: 2.5rem;
+  line-height: 0.2rem;
+  background: var(--color-level-3-background);
+  color: var(--color-level-3-text);
+  box-shadow: inset 0 -1px lighten(#454545, 7%);
+}
+
+.subnav_02_office_products_08_projectors a:focus {
+  background: darken(#454545, 7%);
+}
+
+.subnav_02_office_products_08_projectors a:hover {
+  background: darken(#454545, 7%);
+}
+
+.subnav_02_office_products_08_projectors label:focus {
+  background: darken(#454545, 7%);
+}
+
+.subnav_02_office_products_08_projectors label:hover {
+  background: darken(#454545, 7%);
+}
+
+/* ===============================================================================    FIXME:  SOFTWARE */
+/* FIXME:          9TH PRODUCT TYPE OF OFFICE PRODUCTS (SOFTWARE)           FIXME: */
+/*                           THIRD LEVEL NAVIGATION                                */
+/* =============================================================================== */
+
+.subnav_02_office_products_09_software {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+}
+
+.subnav_02_office_products_09_software a,
+.subnav_02_office_products_09_software label {
+  padding-left: 2.5rem;
+  line-height: 0.2rem;
+  background: var(--color-level-3-background);
+  color: var(--color-level-3-text);
+  box-shadow: inset 0 -1px lighten(#454545, 7%);
+}
+
+.subnav_02_office_products_09_software a:focus {
+  background: darken(#454545, 7%);
+}
+
+.subnav_02_office_products_09_software a:hover {
+  background: darken(#454545, 7%);
+}
+
+.subnav_02_office_products_09_software label:focus {
+  background: darken(#454545, 7%);
+}
+
+.subnav_02_office_products_09_software label:hover {
+  background: darken(#454545, 7%);
+}
+
+/* ===============================================================================    FIXME:  OFFICE STATIONERY */
+/* FIXME:      10TH PRODUCT TYPE OF OFFICE PRODUCTS (OFFICE STATIONERY)     FIXME: */
+/*                           THIRD LEVEL NAVIGATION                                */
+/* =============================================================================== */
+
+.subnav_02_office_products_10_stationery {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+}
+
+.subnav_02_office_products_10_stationery a,
+.subnav_02_office_products_10_stationery label {
+  padding-left: 2.5rem;
+  line-height: 0.2rem;
+  background: var(--color-level-3-background);
+  color: var(--color-level-3-text);
+  box-shadow: inset 0 -1px lighten(#454545, 7%);
+}
+
+.subnav_02_office_products_10_stationery a:focus {
+  background: darken(#454545, 7%);
+}
+
+.subnav_02_office_products_10_stationery a:hover {
+  background: darken(#454545, 7%);
+}
+
+.subnav_02_office_products_10_stationery label:focus {
+  background: darken(#454545, 7%);
+}
+
+.subnav_02_office_products_10_stationery label:hover {
+  background: darken(#454545, 7%);
+}
+
+/* ===============================================================================    FIXME:  OFFICE FURNITURE */
+/* FIXME:      11TH PRODUCT TYPE OF OFFICE PRODUCTS (OFFICE FURNITURE)      FIXME: */
+/*                           THIRD LEVEL NAVIGATION                                */
+/* =============================================================================== */
+
+.subnav_02_office_products_11_office-furniture {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+}
+
+.subnav_02_office_products_11_office-furniture a,
+.subnav_02_office_products_11_office-furniture label {
+  padding-left: 2.5rem;
+  line-height: 0.2rem;
+  background: var(--color-level-3-background);
+  color: var(--color-level-3-text);
+  box-shadow: inset 0 -1px lighten(#454545, 7%);
+}
+
+.subnav_02_office_products_11_office-furniture a:focus {
+  background: darken(#454545, 7%);
+}
+
+.subnav_02_office_products_11_office-furniture a:hover {
+  background: darken(#454545, 7%);
+}
+
+.subnav_02_office_products_11_office-furniture label:focus {
+  background: darken(#454545, 7%);
+}
+
+.subnav_02_office_products_11_office-furniture label:hover {
+  background: darken(#454545, 7%);
+}
+
+/* =============================================================================== */
+/* ================ END OF PRODUCT CATEGORY 02 - OFFICE PRODUCTS ================= */
+/* =============================================================================== */
+
+/* ===============================================================================    TODO:   ESSENTIAL PRODUCTS */
+/* ============= START OF PRODUCT CATEGORY 03 - ESSENTIAL PRODUCTS =============== */
+/* =============================================================================== */
+
+/* ===============================================================================    FIXME:  COVID-19, CLEANING, PPE */
+/* FIXME:  1ST PRODUCT TYPE OF ESSENTIAL PRODUCTS (COVID-19, CLEANING, PPE) FIXME: */
+/*                           THIRD LEVEL NAVIGATION                                */
+/* =============================================================================== */
+
+.subnav_03_essential_products_01_ppe {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+}
+
+.subnav_03_essential_products_01_ppe a,
+.subnav_03_essential_products_01_ppe label {
+  padding-left: 2.5rem;
+  line-height: 0.2rem;
+  background: var(--color-level-3-background);
+  color: var(--color-level-3-text);
+  box-shadow: inset 0 -1px lighten(#454545, 7%);
+}
+
+.subnav_03_essential_products_01_ppe a:focus {
+  background: darken(#454545, 7%);
+}
+
+.subnav_03_essential_products_01_ppe a:hover {
+  background: darken(#454545, 7%);
+}
+
+.subnav_03_essential_products_01_ppe label:focus {
+  background: darken(#454545, 7%);
+}
+
+.subnav_03_essential_products_01_ppe label:hover {
+  background: darken(#454545, 7%);
+}
+
+/* ===============================================================================    FIXME:  EMERGENCY PRODUCTS */
+/* FIXME:    2ND PRODUCT TYPE OF ESSENTIAL PRODUCTS (EMERGENCY PRODUCTS)    FIXME: */
+/*                           THIRD LEVEL NAVIGATION                                */
+/* =============================================================================== */
+
+.subnav_03_essential_products_02_emergency-products {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+}
+
+.subnav_03_essential_products_02_emergency-products a,
+.subnav_03_essential_products_02_emergency-products label {
+  padding-left: 2.5rem;
+  line-height: 0.2rem;
+  background: var(--color-level-3-background);
+  color: var(--color-level-3-text);
+  box-shadow: inset 0 -1px lighten(#454545, 7%);
+}
+
+.subnav_03_essential_products_02_emergency-products a:focus {
+  background: darken(#454545, 7%);
+}
+
+.subnav_03_essential_products_02_emergency-products a:hover {
+  background: darken(#454545, 7%);
+}
+
+.subnav_03_essential_products_02_emergency-products label:focus {
+  background: darken(#454545, 7%);
+}
+
+.subnav_03_essential_products_02_emergency-products label:hover {
+  background: darken(#454545, 7%);
+}
+
+/* ===============================================================================    FIXME:  ENERGY PRODUCTS */
+/* FIXME:    3RD PRODUCT TYPE OF ESSENTIAL PRODUCTS (ENERGY PRODUCTS)       FIXME: */
+/*                           THIRD LEVEL NAVIGATION                                */
+/* =============================================================================== */
+
+.subnav_03_essential_products_03_energy-products {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+}
+
+.subnav_03_essential_products_03_energy-products a,
+.subnav_03_essential_products_03_energy-products label {
+  padding-left: 2.5rem;
+  line-height: 0.2rem;
+  background: var(--color-level-3-background);
+  color: var(--color-level-3-text);
+  box-shadow: inset 0 -1px lighten(#454545, 7%);
+}
+
+.subnav_03_essential_products_03_energy-products a:focus {
+  background: darken(#454545, 7%);
+}
+
+.subnav_03_essential_products_03_energy-products a:hover {
+  background: darken(#454545, 7%);
+}
+
+.subnav_03_essential_products_03_energy-products label:focus {
+  background: darken(#454545, 7%);
+}
+
+.subnav_03_essential_products_03_energy-products label:hover {
+  background: darken(#454545, 7%);
+}
+
+/* =============================================================================== */
+/* ============= END OF PRODUCT CATEGORY 03 - ESSENTIAL PRODUCTS ================= */
+/* =============================================================================== */
+
+/* ===============================================================================    TODO:   HOME AND LIVING */
+/* ============== START OF PRODUCT CATEGORY 04 - HOME AND LIVING ================ */
+/* =============================================================================== */
+
+/* ===============================================================================    FIXME:  BATHROOMS */
+/* FIXME:     1ST PRODUCT TYPE OF HOME AND LIVING PRODUCTS (BATHROOMS)      FIXME: */
+/*                           THIRD LEVEL NAVIGATION                                */
+/* =============================================================================== */
+
+.subnav_04_home-and-living_products_01_bathroom {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+}
+
+.subnav_04_home-and-living_products_01_bathroom a,
+.subnav_04_home-and-living_products_01_bathroom label {
+  padding-left: 2.5rem;
+  line-height: 0.2rem;
+  background: var(--color-level-3-background);
+  color: var(--color-level-3-text);
+  box-shadow: inset 0 -1px lighten(#454545, 7%);
+}
+
+.subnav_04_home-and-living_products_01_bathroom a:focus {
+  background: darken(#454545, 7%);
+}
+
+.subnav_04_home-and-living_products_01_bathroom a:hover {
+  background: darken(#454545, 7%);
+}
+
+.subnav_04_home-and-living_products_01_bathroom label:focus {
+  background: darken(#454545, 7%);
+}
+
+.subnav_04_home-and-living_products_01_bathroom label:hover {
+  background: darken(#454545, 7%);
+}
+
+/* ===============================================================================    FIXME:  BEDROOMS */
+/* FIXME:     2ND PRODUCT TYPE OF HOME AND LIVING PRODUCTS (BEDROOMS)       FIXME: */
+/*                           THIRD LEVEL NAVIGATION                                */
+/* =============================================================================== */
+
+.subnav_04_home-and-living_products_02_bedrooms {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+}
+
+.subnav_04_home-and-living_products_02_bedrooms a,
+.subnav_04_home-and-living_products_02_bedrooms label {
+  padding-left: 2.5rem;
+  line-height: 0.2rem;
+  background: var(--color-level-3-background);
+  color: var(--color-level-3-text);
+  box-shadow: inset 0 -1px lighten(#454545, 7%);
+}
+
+.subnav_04_home-and-living_products_02_bedrooms a:focus {
+  background: darken(#454545, 7%);
+}
+
+.subnav_04_home-and-living_products_02_bedrooms a:hover {
+  background: darken(#454545, 7%);
+}
+
+.subnav_04_home-and-living_products_02_bedrooms label:focus {
+  background: darken(#454545, 7%);
+}
+
+.subnav_04_home-and-living_products_02_bedrooms label:hover {
+  background: darken(#454545, 7%);
+}
+
+/* ===============================================================================    FIXME:  COOKWARE */
+/* FIXME:     3RD PRODUCT TYPE OF HOME AND LIVING PRODUCTS (COOKWARE)       FIXME: */
+/*                           THIRD LEVEL NAVIGATION                                */
+/* =============================================================================== */
+
+.subnav_04_home-and-living_products_03_cookware {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+}
+
+.subnav_04_home-and-living_products_03_cookware a,
+.subnav_04_home-and-living_products_03_cookware label {
+  padding-left: 2.5rem;
+  line-height: 0.2rem;
+  background: var(--color-level-3-background);
+  color: var(--color-level-3-text);
+  box-shadow: inset 0 -1px lighten(#454545, 7%);
+}
+
+.subnav_04_home-and-living_products_03_cookware a:focus {
+  background: darken(#454545, 7%);
+}
+
+.subnav_04_home-and-living_products_03_cookware a:hover {
+  background: darken(#454545, 7%);
+}
+
+.subnav_04_home-and-living_products_03_cookware label:focus {
+  background: darken(#454545, 7%);
+}
+
+.subnav_04_home-and-living_products_03_cookware label:hover {
+  background: darken(#454545, 7%);
+}
+
+/* ===============================================================================    FIXME:  DINING ROOMS */
+/* FIXME:   4TH PRODUCT TYPE OF HOME AND LIVING PRODUCTS (DINING ROOMS)     FIXME: */
+/*                           THIRD LEVEL NAVIGATION                                */
+/* =============================================================================== */
+
+.subnav_04_home-and-living_products_04_diningroom {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+}
+
+.subnav_04_home-and-living_products_04_diningroom a,
+.subnav_04_home-and-living_products_04_diningroom label {
+  padding-left: 2.5rem;
+  line-height: 0.2rem;
+  background: var(--color-level-3-background);
+  color: var(--color-level-3-text);
+  box-shadow: inset 0 -1px lighten(#454545, 7%);
+}
+
+.subnav_04_home-and-living_products_04_diningroom a:focus {
+  background: darken(#454545, 7%);
+}
+
+.subnav_04_home-and-living_products_04_diningroom a:hover {
+  background: darken(#454545, 7%);
+}
+
+.subnav_04_home-and-living_products_04_diningroom label:focus {
+  background: darken(#454545, 7%);
+}
+
+.subnav_04_home-and-living_products_04_diningroom label:hover {
+  background: darken(#454545, 7%);
+}
+
+/* ===============================================================================    FIXME:  KITCHEN */
+/* FIXME:     5TH PRODUCT TYPE OF HOME AND LIVING PRODUCTS (KITCHEN)        FIXME: */
+/*                           THIRD LEVEL NAVIGATION                                */
+/* =============================================================================== */
+
+.subnav_04_home-and-living_products_05_kitchen {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+}
+
+.subnav_04_home-and-living_products_05_kitchen a,
+.subnav_04_home-and-living_products_05_kitchen label {
+  padding-left: 2.5rem;
+  line-height: 0.2rem;
+  background: var(--color-level-3-background);
+  color: var(--color-level-3-text);
+  box-shadow: inset 0 -1px lighten(#454545, 7%);
+}
+
+.subnav_04_home-and-living_products_05_kitchen a:focus {
+  background: darken(#454545, 7%);
+}
+
+.subnav_04_home-and-living_products_05_kitchen a:hover {
+  background: darken(#454545, 7%);
+}
+
+.subnav_04_home-and-living_products_05_kitchen label:focus {
+  background: darken(#454545, 7%);
+}
+
+.subnav_04_home-and-living_products_05_kitchen label:hover {
+  background: darken(#454545, 7%);
+}
+
+/* ===============================================================================    FIXME:  LAUNDRY */
+/* FIXME:     6TH PRODUCT TYPE OF HOME AND LIVING PRODUCTS (LAUNDRY)        FIXME: */
+/*                           THIRD LEVEL NAVIGATION                                */
+/* =============================================================================== */
+
+.subnav_04_home-and-living_products_06_laundry {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+}
+
+.subnav_04_home-and-living_products_06_laundry a,
+.subnav_04_home-and-living_products_06_laundry label {
+  padding-left: 2.5rem;
+  line-height: 0.2rem;
+  background: var(--color-level-3-background);
+  color: var(--color-level-3-text);
+  box-shadow: inset 0 -1px lighten(#454545, 7%);
+}
+
+.subnav_04_home-and-living_products_06_laundry a:focus {
+  background: darken(#454545, 7%);
+}
+
+.subnav_04_home-and-living_products_06_laundry a:hover {
+  background: darken(#454545, 7%);
+}
+
+.subnav_04_home-and-living_products_06_laundry label:focus {
+  background: darken(#454545, 7%);
+}
+
+.subnav_04_home-and-living_products_06_laundry label:hover {
+  background: darken(#454545, 7%);
+}
+
+/* ===============================================================================    FIXME:  LOUNGE */
+/* FIXME:      7TH PRODUCT TYPE OF HOME AND LIVING PRODUCTS (LOUNGE)        FIXME: */
+/*                           THIRD LEVEL NAVIGATION                                */
+/* =============================================================================== */
+
+.subnav_04_home-and-living_products_07_lounge {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+}
+
+.subnav_04_home-and-living_products_07_lounge a,
+.subnav_04_home-and-living_products_07_lounge label {
+  padding-left: 2.5rem;
+  line-height: 0.2rem;
+  background: var(--color-level-3-background);
+  color: var(--color-level-3-text);
+  box-shadow: inset 0 -1px lighten(#454545, 7%);
+}
+
+.subnav_04_home-and-living_products_07_lounge a:focus {
+  background: darken(#454545, 7%);
+}
+
+.subnav_04_home-and-living_products_07_lounge a:hover {
+  background: darken(#454545, 7%);
+}
+
+.subnav_04_home-and-living_products_07_lounge label:focus {
+  background: darken(#454545, 7%);
+}
+
+.subnav_04_home-and-living_products_07_lounge label:hover {
+  background: darken(#454545, 7%);
+}
+
+/* ===============================================================================    FIXME:  PATIO AND POOLS */
+/* FIXME:  8TH PRODUCT TYPE OF HOME AND LIVING PRODUCTS (PATIO AND POOLS)   FIXME: */
+/*                           THIRD LEVEL NAVIGATION                                */
+/* =============================================================================== */
+
+.subnav_04_home-and-living_products_08_patio-and-pools {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+}
+
+.subnav_04_home-and-living_products_08_patio-and-pools a,
+.subnav_04_home-and-living_products_08_patio-and-pools label {
+  padding-left: 2.5rem;
+  line-height: 0.2rem;
+  background: var(--color-level-3-background);
+  color: var(--color-level-3-text);
+  box-shadow: inset 0 -1px lighten(#454545, 7%);
+}
+
+.subnav_04_home-and-living_products_08_patio-and-pools a:focus {
+  background: darken(#454545, 7%);
+}
+
+.subnav_04_home-and-living_products_08_patio-and-pools a:hover {
+  background: darken(#454545, 7%);
+}
+
+.subnav_04_home-and-living_products_08_patio-and-pools label:focus {
+  background: darken(#454545, 7%);
+}
+
+.subnav_04_home-and-living_products_08_patio-and-pools label:hover {
+  background: darken(#454545, 7%);
+}
+
+/* ===============================================================================    FIXME:  HOME ACCESSORIES */
+/* FIXME:  9TH PRODUCT TYPE OF HOME AND LIVING PRODUCTS (HOME ACCESSORIES)  FIXME: */
+/*                           THIRD LEVEL NAVIGATION                                */
+/* =============================================================================== */
+
+.subnav_04_home-and-living_products_09_home-accessories {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+}
+
+.subnav_04_home-and-living_products_09_home-accessories a,
+.subnav_04_home-and-living_products_09_home-accessories label {
+  padding-left: 2.5rem;
+  line-height: 0.2rem;
+  background: var(--color-level-3-background);
+  color: var(--color-level-3-text);
+  box-shadow: inset 0 -1px lighten(#454545, 7%);
+}
+
+.subnav_04_home-and-living_products_09_home-accessories a:focus {
+  background: darken(#454545, 7%);
+}
+
+.subnav_04_home-and-living_products_09_home-accessories a:hover {
+  background: darken(#454545, 7%);
+}
+
+.subnav_04_home-and-living_products_09_home-accessories label:focus {
+  background: darken(#454545, 7%);
+}
+
+.subnav_04_home-and-living_products_09_home-accessories label:hover {
+  background: darken(#454545, 7%);
+}
+
+/* ===============================================================================    FIXME:  TELEVISION */
+/* FIXME:     10TH PRODUCT TYPE OF HOME AND LIVING PRODUCTS (TELEVISION)    FIXME: */
+/*                           THIRD LEVEL NAVIGATION                                */
+/* =============================================================================== */
+
+.subnav_04_home-and-living_products_10_television {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+}
+
+.subnav_04_home-and-living_products_10_television a,
+.subnav_04_home-and-living_products_10_television label {
+  padding-left: 2.5rem;
+  line-height: 0.2rem;
+  background: var(--color-level-3-background);
+  color: var(--color-level-3-text);
+  box-shadow: inset 0 -1px lighten(#454545, 7%);
+}
+
+.subnav_04_home-and-living_products_10_television a:focus {
+  background: darken(#454545, 7%);
+}
+
+.subnav_04_home-and-living_products_10_television a:hover {
+  background: darken(#454545, 7%);
+}
+
+.subnav_04_home-and-living_products_10_television label:focus {
+  background: darken(#454545, 7%);
+}
+
+.subnav_04_home-and-living_products_10_television label:hover {
+  background: darken(#454545, 7%);
+}
+
+/* =============================================================================== */
+/* =============== END OF PRODUCT CATEGORY 04 - HOME AND LIVING ================== */
+/* =============================================================================== */
+
+/* ===============================================================================    TODO:   HOBBIES */
+/* ================== START OF PRODUCT CATEGORY 05 - HOBBIES ===================== */
+/* =============================================================================== */
+
+/* ===============================================================================    FIXME:  BOOKS */
+/* FIXME:              1ST PRODUCT TYPE OF HOBBIES (BOOKS)                  FIXME: */
+/*                           THIRD LEVEL NAVIGATION                                */
+/* =============================================================================== */
+
+.subnav_05_hobbies_01_books {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+}
+
+.subnav_05_hobbies_01_books a,
+.subnav_05_hobbies_01_books label {
+  padding-left: 2.5rem;
+  line-height: 0.2rem;
+  background: var(--color-level-3-background);
+  color: var(--color-level-3-text);
+  box-shadow: inset 0 -1px lighten(#454545, 7%);
+}
+
+.subnav_05_hobbies_01_books a:focus {
+  background: darken(#454545, 7%);
+}
+
+.subnav_05_hobbies_01_books a:hover {
+  background: darken(#454545, 7%);
+}
+
+.subnav_05_hobbies_01_books label:focus {
+  background: darken(#454545, 7%);
+}
+
+.subnav_05_hobbies_01_books label:hover {
+  background: darken(#454545, 7%);
+}
+
+/* ===============================================================================    FIXME:  CAMERAS */
+/* FIXME:              2ND PRODUCT TYPE OF HOBBIES (CAMERAS)                FIXME: */
+/*                           THIRD LEVEL NAVIGATION                                */
+/* =============================================================================== */
+
+.subnav_05_hobbies_02_cameras {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+}
+
+.subnav_05_hobbies_02_cameras a,
+.subnav_05_hobbies_02_cameras label {
+  padding-left: 2.5rem;
+  line-height: 0.2rem;
+  background: var(--color-level-3-background);
+  color: var(--color-level-3-text);
+  box-shadow: inset 0 -1px lighten(#454545, 7%);
+}
+
+.subnav_05_hobbies_02_cameras a:focus {
+  background: darken(#454545, 7%);
+}
+
+.subnav_05_hobbies_02_cameras a:hover {
+  background: darken(#454545, 7%);
+}
+
+.subnav_05_hobbies_02_cameras label:focus {
+  background: darken(#454545, 7%);
+}
+
+.subnav_05_hobbies_02_cameras label:hover {
+  background: darken(#454545, 7%);
+}
+
+/* ===============================================================================    FIXME:  GAMING */
+/* FIXME:              3RD PRODUCT TYPE OF HOBBIES (GAMING)                 FIXME: */
+/*                           THIRD LEVEL NAVIGATION                                */
+/* =============================================================================== */
+
+.subnav_05_hobbies_03_gaming {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+}
+
+.subnav_05_hobbies_03_gaming a,
+.subnav_05_hobbies_03_gaming label {
+  padding-left: 2.5rem;
+  line-height: 0.2rem;
+  background: var(--color-level-3-background);
+  color: var(--color-level-3-text);
+  box-shadow: inset 0 -1px lighten(#454545, 7%);
+}
+
+.subnav_05_hobbies_03_gaming a:focus {
+  background: darken(#454545, 7%);
+}
+
+.subnav_05_hobbies_03_gaming a:hover {
+  background: darken(#454545, 7%);
+}
+
+.subnav_05_hobbies_03_gaming label:focus {
+  background: darken(#454545, 7%);
+}
+
+.subnav_05_hobbies_03_gaming label:hover {
+  background: darken(#454545, 7%);
+}
+
+/* ===============================================================================    FIXME:  RADIO CONTROL */
+/* FIXME:           4TH PRODUCT TYPE OF HOBBIES (RADIO CONTROL)             FIXME: */
+/*                           THIRD LEVEL NAVIGATION                                */
+/* =============================================================================== */
+
+.subnav_05_hobbies_04_radio-control {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+}
+
+.subnav_05_hobbies_04_radio-control a,
+.subnav_05_hobbies_04_radio-control label {
+  padding-left: 2.5rem;
+  line-height: 0.2rem;
+  background: var(--color-level-3-background);
+  color: var(--color-level-3-text);
+  box-shadow: inset 0 -1px lighten(#454545, 7%);
+}
+
+.subnav_05_hobbies_04_radio-control a:focus {
+  background: darken(#454545, 7%);
+}
+
+.subnav_05_hobbies_04_radio-control a:hover {
+  background: darken(#454545, 7%);
+}
+
+.subnav_05_hobbies_04_radio-control label:focus {
+  background: darken(#454545, 7%);
+}
+
+.subnav_05_hobbies_04_radio-control label:hover {
+  background: darken(#454545, 7%);
+}
+
+/* ===============================================================================    FIXME:  TOYS */
+/* FIXME:              5TH PRODUCT TYPE OF HOBBIES (TOYS)                   FIXME: */
+/*                           THIRD LEVEL NAVIGATION                                */
+/* =============================================================================== */
+
+.subnav_05_hobbies_05_toys {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+}
+
+.subnav_05_hobbies_05_toys a,
+.subnav_05_hobbies_05_toys label {
+  padding-left: 2.5rem;
+  line-height: 0.2rem;
+  background: var(--color-level-3-background);
+  color: var(--color-level-3-text);
+  box-shadow: inset 0 -1px lighten(#454545, 7%);
+}
+
+.subnav_05_hobbies_05_toys a:focus {
+  background: darken(#454545, 7%);
+}
+
+.subnav_05_hobbies_05_toys a:hover {
+  background: darken(#454545, 7%);
+}
+
+.subnav_05_hobbies_05_toys label:focus {
+  background: darken(#454545, 7%);
+}
+
+.subnav_05_hobbies_05_toys label:hover {
+  background: darken(#454545, 7%);
+}
+
+/* =============================================================================== */
+/* =================== END OF PRODUCT CATEGORY 05 - HOBBIES ====================== */
+/* =============================================================================== */
+
+/* ===============================================================================    TODO:   OUTDOORS */
+/* ================== START OF PRODUCT CATEGORY 06 - OUTDOORS ==================== */
+/* =============================================================================== */
+
+/* ===============================================================================    FIXME:  CAMPING */
+/* FIXME:             1ST PRODUCT TYPE OF OUTDOORS (CAMPING)                FIXME: */
+/*                           THIRD LEVEL NAVIGATION                                */
+/* =============================================================================== */
+
+.subnav_06_outdoors_01_camping {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+}
+
+.subnav_06_outdoors_01_camping a,
+.subnav_06_outdoors_01_camping label {
+  padding-left: 2.5rem;
+  line-height: 0.2rem;
+  background: var(--color-level-3-background);
+  color: var(--color-level-3-text);
+  box-shadow: inset 0 -1px lighten(#454545, 7%);
+}
+
+.subnav_06_outdoors_01_camping a:focus {
+  background: darken(#454545, 7%);
+}
+
+.subnav_06_outdoors_01_camping a:hover {
+  background: darken(#454545, 7%);
+}
+
+.subnav_06_outdoors_01_camping label:focus {
+  background: darken(#454545, 7%);
+}
+
+.subnav_06_outdoors_01_camping label:hover {
+  background: darken(#454545, 7%);
+}
+
+/* ===============================================================================    FIXME:  OFF-ROAD VEHICLES */
+/* FIXME:         2ND PRODUCT TYPE OF OUTDOORS (OFF-ROAD VEHICLES)          FIXME: */
+/*                           THIRD LEVEL NAVIGATION                                */
+/* =============================================================================== */
+
+.subnav_06_outdoors_02_offroad-vehicles {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+}
+
+.subnav_06_outdoors_02_offroad-vehicles a,
+.subnav_06_outdoors_02_offroad-vehicles label {
+  padding-left: 2.5rem;
+  line-height: 0.2rem;
+  background: var(--color-level-3-background);
+  color: var(--color-level-3-text);
+  box-shadow: inset 0 -1px lighten(#454545, 7%);
+}
+
+.subnav_06_outdoors_02_offroad-vehicles a:focus {
+  background: darken(#454545, 7%);
+}
+
+.subnav_06_outdoors_02_offroad-vehicles a:hover {
+  background: darken(#454545, 7%);
+}
+
+.subnav_06_outdoors_02_offroad-vehicles label:focus {
+  background: darken(#454545, 7%);
+}
+
+.subnav_06_outdoors_02_offroad-vehicles label:hover {
+  background: darken(#454545, 7%);
+}
+
+/* ===============================================================================    FIXME:  OUTDOOR GEAR */
+/* FIXME:            3RD PRODUCT TYPE OF OUTDOORS (OUTDOOR GEAR)            FIXME: */
+/*                           THIRD LEVEL NAVIGATION                                */
+/* =============================================================================== */
+
+.subnav_06_outdoors_03_outdoor-gear {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+}
+
+.subnav_06_outdoors_03_outdoor-gear a,
+.subnav_06_outdoors_03_outdoor-gear label {
+  padding-left: 2.5rem;
+  line-height: 0.2rem;
+  background: var(--color-level-3-background);
+  color: var(--color-level-3-text);
+  box-shadow: inset 0 -1px lighten(#454545, 7%);
+}
+
+.subnav_06_outdoors_03_outdoor-gear a:focus {
+  background: darken(#454545, 7%);
+}
+
+.subnav_06_outdoors_03_outdoor-gear a:hover {
+  background: darken(#454545, 7%);
+}
+
+.subnav_06_outdoors_03_outdoor-gear label:focus {
+  background: darken(#454545, 7%);
+}
+
+.subnav_06_outdoors_03_outdoor-gear label:hover {
+  background: darken(#454545, 7%);
+}
+
+/* ===============================================================================    FIXME:  SHOOT AND HUNT */
+/* FIXME:         4TH PRODUCT TYPE OF OUTDOORS (SHOOT AND HUNT)             FIXME: */
+/*                           THIRD LEVEL NAVIGATION                                */
+/* =============================================================================== */
+
+.subnav_06_outdoors_04_shoot-and-hunt {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+}
+
+.subnav_06_outdoors_04_shoot-and-hunt a,
+.subnav_06_outdoors_04_shoot-and-hunt label {
+  padding-left: 2.5rem;
+  line-height: 0.2rem;
+  background: var(--color-level-3-background);
+  color: var(--color-level-3-text);
+  box-shadow: inset 0 -1px lighten(#454545, 7%);
+}
+
+.subnav_06_outdoors_04_shoot-and-hunt a:focus {
+  background: darken(#454545, 7%);
+}
+
+.subnav_06_outdoors_04_shoot-and-hunt a:hover {
+  background: darken(#454545, 7%);
+}
+
+.subnav_06_outdoors_04_shoot-and-hunt label:focus {
+  background: darken(#454545, 7%);
+}
+
+.subnav_06_outdoors_04_shoot-and-hunt label:hover {
+  background: darken(#454545, 7%);
+}
+
+/* ===============================================================================    FIXME:  WATER SPORTS */
+/* FIXME:            5TH PRODUCT TYPE OF OUTDOORS (WATER SPORTS)            FIXME: */
+/*                           THIRD LEVEL NAVIGATION                                */
+/* =============================================================================== */
+
+.subnav_06_outdoors_05_water-sports {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+}
+
+.subnav_06_outdoors_05_water-sports a,
+.subnav_06_outdoors_05_water-sports label {
+  padding-left: 2.5rem;
+  line-height: 0.2rem;
+  background: var(--color-level-3-background);
+  color: var(--color-level-3-text);
+  box-shadow: inset 0 -1px lighten(#454545, 7%);
+}
+
+.subnav_06_outdoors_05_water-sports a:focus {
+  background: darken(#454545, 7%);
+}
+
+.subnav_06_outdoors_05_water-sports a:hover {
+  background: darken(#454545, 7%);
+}
+
+.subnav_06_outdoors_05_water-sports label:focus {
+  background: darken(#454545, 7%);
+}
+
+.subnav_06_outdoors_05_water-sports label:hover {
+  background: darken(#454545, 7%);
+}
+
+/* =============================================================================== */
+/* =================== END OF PRODUCT CATEGORY 06 - OUTDOORS ===================== */
+/* =============================================================================== */
+
+/* ===============================================================================    TODO:   SPORTS */
+/* ================== START OF PRODUCT CATEGORY 07 - SPORTS ====================== */
+/* =============================================================================== */
+
+/* ===============================================================================    FIXME:  INDOOR TABLE SPORTS */
+/* FIXME:        1ST PRODUCT TYPE OF SPORT (INDOOR TABLE SPORTS)            FIXME: */
+/*                           THIRD LEVEL NAVIGATION                                */
+/* =============================================================================== */
+
+.subnav_07_sports_01_table-sports {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+}
+
+.subnav_07_sports_01_table-sports a,
+.subnav_07_sports_01_table-sports label {
+  padding-left: 2.5rem;
+  line-height: 0.2rem;
+  background: var(--color-level-3-background);
+  color: var(--color-level-3-text);
+  box-shadow: inset 0 -1px lighten(#454545, 7%);
+}
+
+.subnav_07_sports_01_table-sports a:focus {
+  background: darken(#454545, 7%);
+}
+
+.subnav_07_sports_01_table-sports a:hover {
+  background: darken(#454545, 7%);
+}
+
+.subnav_07_sports_01_table-sports label:focus {
+  background: darken(#454545, 7%);
+}
+
+.subnav_07_sports_01_table-sports label:hover {
+  background: darken(#454545, 7%);
+}
+
+/* =============================================================================== */
+/* =================== END OF PRODUCT CATEGORY 07 - SPORTS ======================= */
+/* =============================================================================== */
+
+/* ===============================================================================    TODO:   DIY PROJECTS */
+/* ============= START OF PRODUCT CATEGORY 08 - DIY PROJECTS ===================== */
+/* =============================================================================== */
+
+/* ===============================================================================    FIXME:  GARDENING */
+/* FIXME:           1ST PRODUCT TYPE OF DIY PROJECTS (GARDENING)            FIXME: */
+/*                           THIRD LEVEL NAVIGATION                                */
+/* =============================================================================== */
+
+.subnav_08_diy_01_gardening {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+}
+
+.subnav_08_diy_01_gardening a,
+.subnav_08_diy_01_gardening label {
+  padding-left: 2.5rem;
+  line-height: 0.2rem;
+  background: var(--color-level-3-background);
+  color: var(--color-level-3-text);
+  box-shadow: inset 0 -1px lighten(#454545, 7%);
+}
+
+.subnav_08_diy_01_gardening a:focus {
+  background: darken(#454545, 7%);
+}
+
+.subnav_08_diy_01_gardening a:hover {
+  background: darken(#454545, 7%);
+}
+
+.subnav_08_diy_01_gardening label:focus {
+  background: darken(#454545, 7%);
+}
+
+.subnav_08_diy_01_gardening label:hover {
+  background: darken(#454545, 7%);
+}
+
+/* ===============================================================================    FIXME:  BUILDING MATERIALS */
+/* FIXME:       2ND PRODUCT TYPE OF DIY PROJECTS (BUILDING MATERIALS)       FIXME: */
+/*                           THIRD LEVEL NAVIGATION                                */
+/* =============================================================================== */
+
+.subnav_08_diy_02_building-materials {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+}
+
+.subnav_08_diy_02_building-materials a,
+.subnav_08_diy_02_building-materials label {
+  padding-left: 2.5rem;
+  line-height: 0.2rem;
+  background: var(--color-level-3-background);
+  color: var(--color-level-3-text);
+  box-shadow: inset 0 -1px lighten(#454545, 7%);
+}
+
+.subnav_08_diy_02_building-materials a:focus {
+  background: darken(#454545, 7%);
+}
+
+.subnav_08_diy_02_building-materials a:hover {
+  background: darken(#454545, 7%);
+}
+
+.subnav_08_diy_02_building-materials label:focus {
+  background: darken(#454545, 7%);
+}
+
+.subnav_08_diy_02_building-materials label:hover {
+  background: darken(#454545, 7%);
+}
+
+/* ===============================================================================    FIXME:  TOOLS */
+/* FIXME:            3RD PRODUCT TYPE OF DIY PROJECTS (TOOLS)               FIXME: */
+/*                           THIRD LEVEL NAVIGATION                                */
+/* =============================================================================== */
+
+.subnav_08_diy_03_tools {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+}
+
+.subnav_08_diy_03_tools a,
+.subnav_08_diy_03_tools label {
+  padding-left: 2.5rem;
+  line-height: 0.2rem;
+  background: var(--color-level-3-background);
+  color: var(--color-level-3-text);
+  box-shadow: inset 0 -1px lighten(#454545, 7%);
+}
+
+.subnav_08_diy_03_tools a:focus {
+  background: darken(#454545, 7%);
+}
+
+.subnav_08_diy_03_tools a:hover {
+  background: darken(#454545, 7%);
+}
+
+.subnav_08_diy_03_tools label:focus {
+  background: darken(#454545, 7%);
+}
+
+.subnav_08_diy_03_tools label:hover {
+  background: darken(#454545, 7%);
+}
+
+/* =============================================================================== */
+/* ============== END OF PRODUCT CATEGORY 08 - DIY PROJECTS ====================== */
+/* =============================================================================== */
+
+/* ===============================================================================    TODO:   FOOD, BEVERAGES AND CROGERIES */
+/* ======= START OF PRODUCT CATEGORY 10 - FOOD, BEVERAGES AND CROGERIES ========== */
+/* =============================================================================== */
+
+/* ===============================================================================    FIXME:  FRESH PRODUCE */
+/* FIXME:       1ST PRODUCT TYPE OF FOOD & BEVERAGES (FRESH PRODUCE)        FIXME: */
+/*                           THIRD LEVEL NAVIGATION                                */
+/* =============================================================================== */
+
+.subnav_09_groceries_01_fresh-produce {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+}
+
+.subnav_09_groceries_01_fresh-produce a,
+.subnav_09_groceries_01_fresh-produce label {
+  padding-left: 2.5rem;
+  line-height: 0.2rem;
+  background: var(--color-level-3-background);
+  color: var(--color-level-3-text);
+  box-shadow: inset 0 -1px lighten(#454545, 7%);
+}
+
+.subnav_09_groceries_01_fresh-produce a:focus {
+  background: darken(#454545, 7%);
+}
+
+.subnav_09_groceries_01_fresh-produce a:hover {
+  background: darken(#454545, 7%);
+}
+
+.subnav_09_groceries_01_fresh-produce label:focus {
+  background: darken(#454545, 7%);
+}
+
+.subnav_09_groceries_01_fresh-produce label:hover {
+  background: darken(#454545, 7%);
+}
+
+/* ===============================================================================    FIXME:  BAKERY */
+/* FIXME:         2ND PRODUCT TYPE OF FOOD & BEVERAGES (BAKERY)             FIXME: */
+/*                           THIRD LEVEL NAVIGATION                                */
+/* =============================================================================== */
+
+.subnav_09_groceries_02_bakery {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+}
+
+.subnav_09_groceries_02_bakery a,
+.subnav_09_groceries_02_bakery label {
+  padding-left: 2.5rem;
+  line-height: 0.2rem;
+  background: var(--color-level-3-background);
+  color: var(--color-level-3-text);
+  box-shadow: inset 0 -1px lighten(#454545, 7%);
+}
+
+.subnav_09_groceries_02_bakery a:focus {
+  background: darken(#454545, 7%);
+}
+
+.subnav_09_groceries_02_bakery a:hover {
+  background: darken(#454545, 7%);
+}
+
+.subnav_09_groceries_02_bakery label:focus {
+  background: darken(#454545, 7%);
+}
+
+.subnav_09_groceries_02_bakery label:hover {
+  background: darken(#454545, 7%);
+}
+
+/* ===============================================================================    FIXME:  DAIRY AND EGGS */
+/* FIXME:       3RD PRODUCT TYPE OF FOOD & BEVERAGES (DAIRY AND EGGS)       FIXME: */
+/*                           THIRD LEVEL NAVIGATION                                */
+/* =============================================================================== */
+
+.subnav_09_groceries_03_dairy-eggs {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+}
+
+.subnav_09_groceries_03_dairy-eggs a,
+.subnav_09_groceries_03_dairy-eggs label {
+  padding-left: 2.5rem;
+  line-height: 0.2rem;
+  background: var(--color-level-3-background);
+  color: var(--color-level-3-text);
+  box-shadow: inset 0 -1px lighten(#454545, 7%);
+}
+
+.subnav_09_groceries_03_dairy-eggs a:focus {
+  background: darken(#454545, 7%);
+}
+
+.subnav_09_groceries_03_dairy-eggs a:hover {
+  background: darken(#454545, 7%);
+}
+
+.subnav_09_groceries_03_dairy-eggs label:focus {
+  background: darken(#454545, 7%);
+}
+
+.subnav_09_groceries_03_dairy-eggs label:hover {
+  background: darken(#454545, 7%);
+}
+
+/* ===============================================================================    FIXME:  DELI AND PARTY */
+/* FIXME:       4TH PRODUCT TYPE OF FOOD & BEVERAGES (DELI AND PARTY)       FIXME: */
+/*                           THIRD LEVEL NAVIGATION                                */
+/* =============================================================================== */
+
+.subnav_09_groceries_04_deli {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+}
+
+.subnav_09_groceries_04_deli a,
+.subnav_09_groceries_04_deli label {
+  padding-left: 2.5rem;
+  line-height: 0.2rem;
+  background: var(--color-level-3-background);
+  color: var(--color-level-3-text);
+  box-shadow: inset 0 -1px lighten(#454545, 7%);
+}
+
+.subnav_09_groceries_04_deli a:focus {
+  background: darken(#454545, 7%);
+}
+
+.subnav_09_groceries_04_deli a:hover {
+  background: darken(#454545, 7%);
+}
+
+.subnav_09_groceries_04_deli label:focus {
+  background: darken(#454545, 7%);
+}
+
+.subnav_09_groceries_04_deli label:hover {
+  background: darken(#454545, 7%);
+}
+
+/* ===============================================================================    FIXME:  MEATS, POULTRY & FISH */
+/* FIXME:  5TH PRODUCT TYPE OF FOOD & BEVERAGES (MEATS, POULTRY & FISH)     FIXME: */
+/*                           THIRD LEVEL NAVIGATION                                */
+/* =============================================================================== */
+
+.subnav_09_groceries_05_meats-poultry-fish {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+}
+
+.subnav_09_groceries_05_meats-poultry-fish a,
+.subnav_09_groceries_05_meats-poultry-fish label {
+  padding-left: 2.5rem;
+  line-height: 0.2rem;
+  background: var(--color-level-3-background);
+  color: var(--color-level-3-text);
+  box-shadow: inset 0 -1px lighten(#454545, 7%);
+}
+
+.subnav_09_groceries_05_meats-poultry-fish a:focus {
+  background: darken(#454545, 7%);
+}
+
+.subnav_09_groceries_05_meats-poultry-fish a:hover {
+  background: darken(#454545, 7%);
+}
+
+.subnav_09_groceries_05_meats-poultry-fish label:focus {
+  background: darken(#454545, 7%);
+}
+
+.subnav_09_groceries_05_meats-poultry-fish label:hover {
+  background: darken(#454545, 7%);
+}
+
+/* ===============================================================================    FIXME:  FROZEN FOODS */
+/* FIXME:       6TH PRODUCT TYPE OF FOOD & BEVERAGES (FROZEN FOODS)         FIXME: */
+/*                           THIRD LEVEL NAVIGATION                                */
+/* =============================================================================== */
+
+.subnav_09_groceries_06_frozen-foods {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+}
+
+.subnav_09_groceries_06_frozen-foods a,
+.subnav_09_groceries_06_frozen-foods label {
+  padding-left: 2.5rem;
+  line-height: 0.2rem;
+  background: var(--color-level-3-background);
+  color: var(--color-level-3-text);
+  box-shadow: inset 0 -1px lighten(#454545, 7%);
+}
+
+.subnav_09_groceries_06_frozen-foods a:focus {
+  background: darken(#454545, 7%);
+}
+
+.subnav_09_groceries_06_frozen-foods a:hover {
+  background: darken(#454545, 7%);
+}
+
+.subnav_09_groceries_06_frozen-foods label:focus {
+  background: darken(#454545, 7%);
+}
+
+.subnav_09_groceries_06_frozen-foods label:hover {
+  background: darken(#454545, 7%);
+}
+
+/* ===============================================================================    FIXME:  BEVERAGES*/
+/* FIXME:         7TH PRODUCT TYPE OF FOOD & BEVERAGES (BEVERAGES)          FIXME: */
+/*                           THIRD LEVEL NAVIGATION                                */
+/* =============================================================================== */
+
+.subnav_09_groceries_07_beverages {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+}
+
+.subnav_09_groceries_07_beverages a,
+.subnav_09_groceries_07_beverages label {
+  padding-left: 2.5rem;
+  line-height: 0.2rem;
+  background: var(--color-level-3-background);
+  color: var(--color-level-3-text);
+  box-shadow: inset 0 -1px lighten(#454545, 7%);
+}
+
+.subnav_09_groceries_07_beverages a:focus {
+  background: darken(#454545, 7%);
+}
+
+.subnav_09_groceries_07_beverages a:hover {
+  background: darken(#454545, 7%);
+}
+
+.subnav_09_groceries_07_beverages label:focus {
+  background: darken(#454545, 7%);
+}
+
+.subnav_09_groceries_07_beverages label:hover {
+  background: darken(#454545, 7%);
+}
+
+/* ===============================================================================    FIXME:  TABACCO PRODUCTS */
+/* FIXME:    8TH PRODUCT TYPE OF FOOD & BEVERAGES (TABACCO PRODUCTS)        FIXME: */
+/*                           THIRD LEVEL NAVIGATION                                */
+/* =============================================================================== */
+
+.subnav_09_groceries_08_tobacco {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+}
+
+.subnav_09_groceries_08_tobacco a,
+.subnav_09_groceries_08_tobacco label {
+  padding-left: 2.5rem;
+  line-height: 0.2rem;
+  background: var(--color-level-3-background);
+  color: var(--color-level-3-text);
+  box-shadow: inset 0 -1px lighten(#454545, 7%);
+}
+
+.subnav_09_groceries_08_tobacco a:focus {
+  background: darken(#454545, 7%);
+}
+
+.subnav_09_groceries_08_tobacco a:hover {
+  background: darken(#454545, 7%);
+}
+
+.subnav_09_groceries_08_tobacco label:focus {
+  background: darken(#454545, 7%);
+}
+
+.subnav_09_groceries_08_tobacco label:hover {
+  background: darken(#454545, 7%);
+}
+
+/* ===============================================================================    FIXME:  BEER, CIDER AND SELTZER */
+/* FIXME:  9TH PRODUCT TYPE OF FOOD & BEVERAGES (BEER, CIDER AND SELTZER)   FIXME: */
+/*                           THIRD LEVEL NAVIGATION                                */
+/* =============================================================================== */
+
+.subnav_09_groceries_09_beer-cider-seltzer {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+}
+
+.subnav_09_groceries_09_beer-cider-seltzer a,
+.subnav_09_groceries_09_beer-cider-seltzer label {
+  padding-left: 2.5rem;
+  line-height: 0.2rem;
+  background: var(--color-level-3-background);
+  color: var(--color-level-3-text);
+  box-shadow: inset 0 -1px lighten(#454545, 7%);
+}
+
+.subnav_09_groceries_09_beer-cider-seltzer a:focus {
+  background: darken(#454545, 7%);
+}
+
+.subnav_09_groceries_09_beer-cider-seltzer a:hover {
+  background: darken(#454545, 7%);
+}
+
+.subnav_09_groceries_09_beer-cider-seltzer label:focus {
+  background: darken(#454545, 7%);
+}
+
+.subnav_09_groceries_09_beer-cider-seltzer label:hover {
+  background: darken(#454545, 7%);
+}
+
+/* ===============================================================================    FIXME:  WINES */
+/* FIXME:          10TH PRODUCT TYPE OF FOOD & BEVERAGES (WINES)            FIXME: */
+/*                           THIRD LEVEL NAVIGATION                                */
+/* =============================================================================== */
+
+.subnav_09_groceries_10_wines {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+}
+
+.subnav_09_groceries_10_wines a,
+.subnav_09_groceries_10_wines label {
+  padding-left: 2.5rem;
+  line-height: 0.2rem;
+  background: var(--color-level-3-background);
+  color: var(--color-level-3-text);
+  box-shadow: inset 0 -1px lighten(#454545, 7%);
+}
+
+.subnav_09_groceries_10_wines a:focus {
+  background: darken(#454545, 7%);
+}
+
+.subnav_09_groceries_10_wines a:hover {
+  background: darken(#454545, 7%);
+}
+
+.subnav_09_groceries_10_wines label:focus {
+  background: darken(#454545, 7%);
+}
+
+.subnav_09_groceries_10_wines label:hover {
+  background: darken(#454545, 7%);
+}
+
+/* ===============================================================================    FIXME:  SPIRITS */
+/* FIXME:       11TH PRODUCT TYPE OF FOOD & BEVERAGES (SPIRITS)             FIXME: */
+/*                           THIRD LEVEL NAVIGATION                                */
+/* =============================================================================== */
+
+.subnav_09_groceries_11_spirits {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+}
+
+.subnav_09_groceries_11_spirits a,
+.subnav_09_groceries_11_spirits label {
+  padding-left: 2.5rem;
+  line-height: 0.2rem;
+  background: var(--color-level-3-background);
+  color: var(--color-level-3-text);
+  box-shadow: inset 0 -1px lighten(#454545, 7%);
+}
+
+.subnav_09_groceries_11_spirits a:focus {
+  background: darken(#454545, 7%);
+}
+
+.subnav_09_groceries_11_spirits a:hover {
+  background: darken(#454545, 7%);
+}
+
+.subnav_09_groceries_11_spirits label:focus {
+  background: darken(#454545, 7%);
+}
+
+.subnav_09_groceries_11_spirits label:hover {
+  background: darken(#454545, 7%);
+}
+
+/* ===============================================================================    FIXME:  SNACKS */
+/* FIXME:          12TH PRODUCT TYPE OF FOOD & BEVERAGES (SNACKS)           FIXME: */
+/*                           THIRD LEVEL NAVIGATION                                */
+/* =============================================================================== */
+
+.subnav_09_groceries_12_snacks {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+}
+
+.subnav_09_groceries_12_snacks a,
+.subnav_09_groceries_12_snacks label {
+  padding-left: 2.5rem;
+  line-height: 0.2rem;
+  background: var(--color-level-3-background);
+  color: var(--color-level-3-text);
+  box-shadow: inset 0 -1px lighten(#454545, 7%);
+}
+
+.subnav_09_groceries_12_snacks a:focus {
+  background: darken(#454545, 7%);
+}
+
+.subnav_09_groceries_12_snacks a:hover {
+  background: darken(#454545, 7%);
+}
+
+.subnav_09_groceries_12_snacks label:focus {
+  background: darken(#454545, 7%);
+}
+
+.subnav_09_groceries_12_snacks label:hover {
+  background: darken(#454545, 7%);
+}
+
+/* ===============================================================================    FIXME:  FOOD CUPBOARD */
+/* FIXME:      13TH PRODUCT TYPE OF FOOD & BEVERAGES (FOOD CUPBOARD)        FIXME: */
+/*                           THIRD LEVEL NAVIGATION                                */
+/* =============================================================================== */
+
+.subnav_09_groceries_13_food-cupboard {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+}
+
+.subnav_09_groceries_13_food-cupboard a,
+.subnav_09_groceries_13_food-cupboard label {
+  padding-left: 2.5rem;
+  line-height: 0.2rem;
+  background: var(--color-level-3-background);
+  color: var(--color-level-3-text);
+  box-shadow: inset 0 -1px lighten(#454545, 7%);
+}
+
+.subnav_09_groceries_13_food-cupboard a:focus {
+  background: darken(#454545, 7%);
+}
+
+.subnav_09_groceries_13_food-cupboard a:hover {
+  background: darken(#454545, 7%);
+}
+
+.subnav_09_groceries_13_food-cupboard label:focus {
+  background: darken(#454545, 7%);
+}
+
+.subnav_09_groceries_13_food-cupboard label:hover {
+  background: darken(#454545, 7%);
+}
+
+/* ===============================================================================    FIXME:  BABY CARE */
+/* FIXME:         14TH PRODUCT TYPE OF FOOD & BEVERAGES (BABY CARE)         FIXME: */
+/*                           THIRD LEVEL NAVIGATION                                */
+/* =============================================================================== */
+
+.subnav_09_groceries_14_baby-care {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+}
+
+.subnav_09_groceries_14_baby-care a,
+.subnav_09_groceries_14_baby-care label {
+  padding-left: 2.5rem;
+  line-height: 0.2rem;
+  background: var(--color-level-3-background);
+  color: var(--color-level-3-text);
+  box-shadow: inset 0 -1px lighten(#454545, 7%);
+}
+
+.subnav_09_groceries_14_baby-care a:focus {
+  background: darken(#454545, 7%);
+}
+
+.subnav_09_groceries_14_baby-care a:hover {
+  background: darken(#454545, 7%);
+}
+
+.subnav_09_groceries_14_baby-care label:focus {
+  background: darken(#454545, 7%);
+}
+
+.subnav_09_groceries_14_baby-care label:hover {
+  background: darken(#454545, 7%);
+}
+
+/* ===============================================================================    FIXME:  PET CARE */
+/* FIXME:         15TH PRODUCT TYPE OF FOOD & BEVERAGES (PET CARE)          FIXME: */
+/*                           THIRD LEVEL NAVIGATION                                */
+/* =============================================================================== */
+
+.subnav_09_groceries_15_pet-care {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+}
+
+.subnav_09_groceries_15_pet-care a,
+.subnav_09_groceries_15_pet-care label {
+  padding-left: 2.5rem;
+  line-height: 0.2rem;
+  background: var(--color-level-3-background);
+  color: var(--color-level-3-text);
+  box-shadow: inset 0 -1px lighten(#454545, 7%);
+}
+
+.subnav_09_groceries_15_pet-care a:focus {
+  background: darken(#454545, 7%);
+}
+
+.subnav_09_groceries_15_pet-care a:hover {
+  background: darken(#454545, 7%);
+}
+
+.subnav_09_groceries_15_pet-care label:focus {
+  background: darken(#454545, 7%);
+}
+
+.subnav_09_groceries_15_pet-care label:hover {
+  background: darken(#454545, 7%);
+}
+
+/* ===============================================================================    FIXME:  BRAAI AND OUTDOORS */
+/* FIXME:   16TH PRODUCT TYPE OF FOOD & BEVERAGES (BRAAI AND OUTDOORS)      FIXME: */
+/*                           THIRD LEVEL NAVIGATION                                */
+/* =============================================================================== */
+
+.subnav_09_groceries_16_braai {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+}
+
+.subnav_09_groceries_16_braai a,
+.subnav_09_groceries_16_braai label {
+  padding-left: 2.5rem;
+  line-height: 0.2rem;
+  background: var(--color-level-3-background);
+  color: var(--color-level-3-text);
+  box-shadow: inset 0 -1px lighten(#454545, 7%);
+}
+
+.subnav_09_groceries_16_braai a:focus {
+  background: darken(#454545, 7%);
+}
+
+.subnav_09_groceries_16_braai a:hover {
+  background: darken(#454545, 7%);
+}
+
+.subnav_09_groceries_16_braai label:focus {
+  background: darken(#454545, 7%);
+}
+
+.subnav_09_groceries_16_braai label:hover {
+  background: darken(#454545, 7%);
+}
+
+/* =============================================================================== */
+/* ======== END OF PRODUCT CATEGORY 10 - FOOD, BEVERAGES AND CROGERIES =========== */
+/* =============================================================================== */
+
+/* ===============================================================================    TODO:   CLOTHING AND FOOTWEAR */
+/* ========= START OF PRODUCT CATEGORY 09 - CLOTHING AND FOOTWEAR ================ */
+/* =============================================================================== */
+
+/* ===============================================================================    FIXME:  LADIES */
+/* FIXME:       1ST MAIN CATEGORY OF CLOTHING AND FOOTWEAR (LADIES)         FIXME: */
+/*                           THIRD LEVEL NAVIGATION                                */
+/* =============================================================================== */
+
+.subnav_10_clothing_01_ladies-main {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+}
+
+.subnav_10_clothing_01_ladies-main a,
+.subnav_10_clothing_01_ladies-main label {
+  padding-left: 2.5rem;
+  line-height: 0.2rem;
+  background: var(--color-level-3-background);
+  color: var(--color-level-3-text);
+  box-shadow: inset 0 -1px lighten(#454545, 7%);
+}
+
+.subnav_10_clothing_01_ladies-main a:focus {
+  background: darken(#454545, 7%);
+}
+
+.subnav_10_clothing_01_ladies-main a:hover {
+  background: darken(#454545, 7%);
+}
+
+.subnav_10_clothing_01_ladies-main label:focus {
+  background: darken(#454545, 7%);
+}
+
+.subnav_10_clothing_01_ladies-main label:hover {
+  background: darken(#454545, 7%);
+}
+
+/* ===============================================================================    FIXME:  MEN */
+/* FIXME:         2ND MAIN CATEGORY OF CLOTHING AND FOOTWEAR (MEN)          FIXME: */
+/*                           THIRD LEVEL NAVIGATION                                */
+/* =============================================================================== */
+
+.subnav_10_clothing_02_mens-main {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+}
+
+.subnav_10_clothing_02_mens-main a,
+.subnav_10_clothing_02_mens-main label {
+  padding-left: 2.5rem;
+  line-height: 0.2rem;
+  background: var(--color-level-3-background);
+  color: var(--color-level-3-text);
+  box-shadow: inset 0 -1px lighten(#454545, 7%);
+}
+
+.subnav_10_clothing_02_mens-main a:focus {
+  background: darken(#454545, 7%);
+}
+
+.subnav_10_clothing_02_mens-main a:hover {
+  background: darken(#454545, 7%);
+}
+
+.subnav_10_clothing_02_mens-main label:focus {
+  background: darken(#454545, 7%);
+}
+
+.subnav_10_clothing_02_mens-main label:hover {
+  background: darken(#454545, 7%);
+}
+
+/* ===============================================================================    FIXME:  KIDS */
+/* FIXME:       3RD MAIN CATEGORY OF CLOTHING AND FOOTWEAR (KIDS)           FIXME: */
+/*                           THIRD LEVEL NAVIGATION                                */
+/* =============================================================================== */
+
+.subnav_10_clothing_03_kids-main {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+}
+
+.subnav_10_clothing_03_kids-main a,
+.subnav_10_clothing_03_kids-main label {
+  padding-left: 2.5rem;
+  line-height: 0.2rem;
+  background: var(--color-level-3-background);
+  color: var(--color-level-3-text);
+  box-shadow: inset 0 -1px lighten(#454545, 7%);
+}
+
+.subnav_10_clothing_03_kids-main a:focus {
+  background: darken(#454545, 7%);
+}
+
+.subnav_10_clothing_03_kids-main a:hover {
+  background: darken(#454545, 7%);
+}
+
+.subnav_10_clothing_03_kids-main label:focus {
+  background: darken(#454545, 7%);
+}
+
+.subnav_10_clothing_03_kids-main label:hover {
+  background: darken(#454545, 7%);
+}
+
+/* ================================================================================================= */
+/* ==================== TODO:  FORTH LEVEL NAVIGATION START  TODO:  ================================ */
+/* ================================================================================================= */
+
+/* =============================================================================== */
+/* =============================== TODO:  LADIES  TODO:  ========================= */
+/* =============================================================================== */
+
+/* ===============================================================================    FIXME:  LADIES SHOES */
+/* FIXME:       CLOTHING - LADIES MAIN PRODUCT CATEGORY 01 (SHOES)          FIXME: */
+/*                           FORTH LEVEL NAVIGATION                                */
+/* =============================================================================== */
+
+.subnav_10_clothing_01_product_category_01_ladies-shoes {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+}
+
+.subnav_10_clothing_01_product_category_01_ladies-shoes a,
+.subnav_10_clothing_01_product_category_01_ladies-shoes label {
+  padding-left: 3rem;
+  line-height: 0.2rem;
+  background: var(--color-level-4-background);
+  color: var(--color-level-4-text);
+  box-shadow: inset 0 -1px lighten(#555555, 7%);
+}
+
+.subnav_10_clothing_01_product_category_01_ladies-shoes a:focus {
+  background: darken(#555555, 7%);
+}
+
+.subnav_10_clothing_01_product_category_01_ladies-shoes a:hover {
+  background: darken(#555555, 7%);
+}
+
+.subnav_10_clothing_01_product_category_01_ladies-shoes label:focus {
+  background: darken(#555555, 7%);
+}
+
+.subnav_10_clothing_01_product_category_01_ladies-shoes label:hover {
+  background: darken(#555555, 7%);
+}
+
+/* ===============================================================================    FIXME:  LADIES BOTTOMS */
+/* FIXME:       CLOTHING - LADIES MAIN PRODUCT CATEGORY 02 (BOTTOMS)        FIXME: */
+/*                           FORTH LEVEL NAVIGATION                                */
+/* =============================================================================== */
+
+.subnav_10_clothing_01_product_category_02_ladies-bottoms {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+}
+
+.subnav_10_clothing_01_product_category_02_ladies-bottoms a,
+.subnav_10_clothing_01_product_category_02_ladies-bottoms label {
+  padding-left: 3rem;
+  line-height: 0.2rem;
+  background: var(--color-level-4-background);
+  color: var(--color-level-4-text);
+  box-shadow: inset 0 -1px lighten(#555555, 7%);
+}
+
+.subnav_10_clothing_01_product_category_02_ladies-bottoms a:focus {
+  background: darken(#555555, 7%);
+}
+
+.subnav_10_clothing_01_product_category_02_ladies-bottoms a:hover {
+  background: darken(#555555, 7%);
+}
+
+.subnav_10_clothing_01_product_category_02_ladies-bottoms label:focus {
+  background: darken(#555555, 7%);
+}
+
+.subnav_10_clothing_01_product_category_02_ladies-bottoms label:hover {
+  background: darken(#555555, 7%);
+}
+
+/* ===============================================================================    FIXME:  LADIES DRESSES */
+/* FIXME:       CLOTHING - LADIES MAIN PRODUCT CATEGORY 03 (DRESSES)        FIXME: */
+/*                           FORTH LEVEL NAVIGATION                                */
+/* =============================================================================== */
+
+.subnav_10_clothing_01_product_category_03_ladies-dresses {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+}
+
+.subnav_10_clothing_01_product_category_03_ladies-dresses a,
+.subnav_10_clothing_01_product_category_03_ladies-dresses label {
+  padding-left: 3rem;
+  line-height: 0.2rem;
+  background: var(--color-level-4-background);
+  color: var(--color-level-4-text);
+  box-shadow: inset 0 -1px lighten(#555555, 7%);
+}
+
+.subnav_10_clothing_01_product_category_03_ladies-dresses a:focus {
+  background: darken(#555555, 7%);
+}
+
+.subnav_10_clothing_01_product_category_03_ladies-dresses a:hover {
+  background: darken(#555555, 7%);
+}
+
+.subnav_10_clothing_01_product_category_03_ladies-dresses label:focus {
+  background: darken(#555555, 7%);
+}
+
+.subnav_10_clothing_01_product_category_03_ladies-dresses label:hover {
+  background: darken(#555555, 7%);
+}
+
+/* ===============================================================================    FIXME:  LADIES TOPS */
+/* FIXME:       CLOTHING - LADIES MAIN PRODUCT CATEGORY 04 (TOPS)           FIXME: */
+/*                           FORTH LEVEL NAVIGATION                                */
+/* =============================================================================== */
+
+.subnav_10_clothing_01_product_category_04_ladies-tops {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+}
+
+.subnav_10_clothing_01_product_category_04_ladies-tops a,
+.subnav_10_clothing_01_product_category_04_ladies-tops label {
+  padding-left: 3rem;
+  line-height: 0.2rem;
+  background: var(--color-level-4-background);
+  color: var(--color-level-4-text);
+  box-shadow: inset 0 -1px lighten(#555555, 7%);
+}
+
+.subnav_10_clothing_01_product_category_04_ladies-tops a:focus {
+  background: darken(#555555, 7%);
+}
+
+.subnav_10_clothing_01_product_category_04_ladies-tops a:hover {
+  background: darken(#555555, 7%);
+}
+
+.subnav_10_clothing_01_product_category_04_ladies-tops label:focus {
+  background: darken(#555555, 7%);
+}
+
+.subnav_10_clothing_01_product_category_04_ladies-tops label:hover {
+  background: darken(#555555, 7%);
+}
+
+/* ===============================================================================    FIXME:  LADIES JACKETS */
+/* FIXME:       CLOTHING - LADIES MAIN PRODUCT CATEGORY 05 (JACKETS)        FIXME: */
+/*                           FORTH LEVEL NAVIGATION                                */
+/* =============================================================================== */
+
+.subnav_10_clothing_01_product_category_05_ladies-jackets {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+}
+
+.subnav_10_clothing_01_product_category_05_ladies-jackets a,
+.subnav_10_clothing_01_product_category_05_ladies-jackets label {
+  padding-left: 3rem;
+  line-height: 0.2rem;
+  background: var(--color-level-4-background);
+  color: var(--color-level-4-text);
+  box-shadow: inset 0 -1px lighten(#555555, 7%);
+}
+
+.subnav_10_clothing_01_product_category_05_ladies-jackets a:focus {
+  background: darken(#555555, 7%);
+}
+
+.subnav_10_clothing_01_product_category_05_ladies-jackets a:hover {
+  background: darken(#555555, 7%);
+}
+
+.subnav_10_clothing_01_product_category_05_ladies-jackets label:focus {
+  background: darken(#555555, 7%);
+}
+
+.subnav_10_clothing_01_product_category_05_ladies-jackets label:hover {
+  background: darken(#555555, 7%);
+}
+
+/* ===============================================================================    FIXME:  LADIES LINGERIE & SLEEPWEAR */
+/* FIXME:       CLOTHING - LADIES MAIN PRODUCT CATEGORY 06 (LINGERIE)       FIXME: */
+/*                           FORTH LEVEL NAVIGATION                                */
+/* =============================================================================== */
+
+.subnav_10_clothing_01_product_category_06_ladies-lingerie {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+}
+
+.subnav_10_clothing_01_product_category_06_ladies-lingerie a,
+.subnav_10_clothing_01_product_category_06_ladies-lingerie label {
+  padding-left: 3rem;
+  line-height: 0.2rem;
+  background: var(--color-level-4-background);
+  color: var(--color-level-4-text);
+  box-shadow: inset 0 -1px lighten(#555555, 7%);
+}
+
+.subnav_10_clothing_01_product_category_06_ladies-lingerie a:focus {
+  background: darken(#555555, 7%);
+}
+
+.subnav_10_clothing_01_product_category_06_ladies-lingerie a:hover {
+  background: darken(#555555, 7%);
+}
+
+.subnav_10_clothing_01_product_category_06_ladies-lingerie label:focus {
+  background: darken(#555555, 7%);
+}
+
+.subnav_10_clothing_01_product_category_06_ladies-lingerie label:hover {
+  background: darken(#555555, 7%);
+}
+
+/* ===============================================================================    FIXME:  LADIES SPORTS */
+/* FIXME:       CLOTHING - LADIES MAIN PRODUCT CATEGORY 07 (SPORTS)         FIXME: */
+/*                           FORTH LEVEL NAVIGATION                                */
+/* =============================================================================== */
+
+.subnav_10_clothing_01_product_category_07_ladies-sports {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+}
+
+.subnav_10_clothing_01_product_category_07_ladies-sports a,
+.subnav_10_clothing_01_product_category_07_ladies-sports label {
+  padding-left: 3rem;
+  line-height: 0.2rem;
+  background: var(--color-level-4-background);
+  color: var(--color-level-4-text);
+  box-shadow: inset 0 -1px lighten(#555555, 7%);
+}
+
+.subnav_10_clothing_01_product_category_07_ladies-sports a:focus {
+  background: darken(#555555, 7%);
+}
+
+.subnav_10_clothing_01_product_category_07_ladies-sports a:hover {
+  background: darken(#555555, 7%);
+}
+
+.subnav_10_clothing_01_product_category_07_ladies-sports label:focus {
+  background: darken(#555555, 7%);
+}
+
+.subnav_10_clothing_01_product_category_07_ladies-sports label:hover {
+  background: darken(#555555, 7%);
+}
+
+/* ===============================================================================    FIXME:  LADIES SWIMWEAR */
+/* FIXME:       CLOTHING - LADIES MAIN PRODUCT CATEGORY 08 (SWIMWEAR)       FIXME: */
+/*                           FORTH LEVEL NAVIGATION                                */
+/* =============================================================================== */
+
+.subnav_10_clothing_01_product_category_08_ladies-swimwear {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+}
+
+.subnav_10_clothing_01_product_category_08_ladies-swimwear a,
+.subnav_10_clothing_01_product_category_08_ladies-swimwear label {
+  padding-left: 3rem;
+  line-height: 0.2rem;
+  background: var(--color-level-4-background);
+  color: var(--color-level-4-text);
+  box-shadow: inset 0 -1px lighten(#555555, 7%);
+}
+
+.subnav_10_clothing_01_product_category_08_ladies-swimwear a:focus {
+  background: darken(#555555, 7%);
+}
+
+.subnav_10_clothing_01_product_category_08_ladies-swimwear a:hover {
+  background: darken(#555555, 7%);
+}
+
+.subnav_10_clothing_01_product_category_08_ladies-swimwear label:focus {
+  background: darken(#555555, 7%);
+}
+
+.subnav_10_clothing_01_product_category_08_ladies-swimwear label:hover {
+  background: darken(#555555, 7%);
+}
+
+/* ===============================================================================    FIXME:  LADIES ACCESSORIES */
+/* FIXME:    CLOTHING - LADIES MAIN PRODUCT CATEGORY 09 (ACCESSORIES)       FIXME: */
+/*                           FORTH LEVEL NAVIGATION                                */
+/* =============================================================================== */
+
+.subnav_10_clothing_01_product_category_09_ladies-accessories {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+}
+
+.subnav_10_clothing_01_product_category_09_ladies-accessories a,
+.subnav_10_clothing_01_product_category_09_ladies-accessories label {
+  padding-left: 3rem;
+  line-height: 0.2rem;
+  background: var(--color-level-4-background);
+  color: var(--color-level-4-text);
+  box-shadow: inset 0 -1px lighten(#555555, 7%);
+}
+
+.subnav_10_clothing_01_product_category_09_ladies-accessories a:focus {
+  background: darken(#555555, 7%);
+}
+
+.subnav_10_clothing_01_product_category_09_ladies-accessories a:hover {
+  background: darken(#555555, 7%);
+}
+
+.subnav_10_clothing_01_product_category_09_ladies-accessories label:focus {
+  background: darken(#555555, 7%);
+}
+
+.subnav_10_clothing_01_product_category_09_ladies-accessories label:hover {
+  background: darken(#555555, 7%);
+}
+
+/* ===============================================================================    FIXME:  LADIES BEAUTY PRODUCTS */
+/* FIXME:  CLOTHING - LADIES MAIN PRODUCT CATEGORY 10 (BEAUTY PRODUCTS)     FIXME: */
+/*                           FORTH LEVEL NAVIGATION                                */
+/* =============================================================================== */
+
+.subnav_10_clothing_01_product_category_10_ladies-beauty-products {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+}
+
+.subnav_10_clothing_01_product_category_10_ladies-beauty-products a,
+.subnav_10_clothing_01_product_category_10_ladies-beauty-products label {
+  padding-left: 3rem;
+  line-height: 0.2rem;
+  background: var(--color-level-4-background);
+  color: var(--color-level-4-text);
+  box-shadow: inset 0 -1px lighten(#555555, 7%);
+}
+
+.subnav_10_clothing_01_product_category_10_ladies-beauty-products a:focus {
+  background: darken(#555555, 7%);
+}
+
+.subnav_10_clothing_01_product_category_10_ladies-beauty-products a:hover {
+  background: darken(#555555, 7%);
+}
+
+.subnav_10_clothing_01_product_category_10_ladies-beauty-products label:focus {
+  background: darken(#555555, 7%);
+}
+
+.subnav_10_clothing_01_product_category_10_ladies-beauty-products label:hover {
+  background: darken(#555555, 7%);
+}
+
+/* =============================================================================== */
+/* =============================  TODO:  MENS  TODO:  ============================ */
+/* =============================================================================== */
+
+/* ===============================================================================    FIXME:  MENS SHOES */
+/* FIXME:       CLOTHING - MENS MAIN PRODUCT CATEGORY 01 (SHOES)            FIXME: */
+/*                           FORTH LEVEL NAVIGATION                                */
+/* =============================================================================== */
+
+.subnav_10_clothing_02_product_category_01_mens-shoes {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+}
+
+.subnav_10_clothing_02_product_category_01_mens-shoes a,
+.subnav_10_clothing_02_product_category_01_mens-shoes label {
+  padding-left: 3rem;
+  line-height: 0.2rem;
+  background: var(--color-level-4-background);
+  color: var(--color-level-4-text);
+  box-shadow: inset 0 -1px lighten(#555555, 7%);
+}
+
+.subnav_10_clothing_02_product_category_01_mens-shoes a:focus {
+  background: darken(#555555, 7%);
+}
+
+.subnav_10_clothing_02_product_category_01_mens-shoes a:hover {
+  background: darken(#555555, 7%);
+}
+
+.subnav_10_clothing_02_product_category_01_mens-shoes label:focus {
+  background: darken(#555555, 7%);
+}
+
+.subnav_10_clothing_02_product_category_01_mens-shoes label:hover {
+  background: darken(#555555, 7%);
+}
+
+/* ===============================================================================    FIXME:  MENS BOTTOMS */
+/* FIXME:       CLOTHING - MENS MAIN PRODUCT CATEGORY 02 (BOTTOMS)          FIXME: */
+/*                           FORTH LEVEL NAVIGATION                                */
+/* =============================================================================== */
+
+.subnav_10_clothing_02_product_category_02_mens-bottoms {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+}
+
+.subnav_10_clothing_02_product_category_02_mens-bottoms a,
+.subnav_10_clothing_02_product_category_02_mens-bottoms label {
+  padding-left: 3rem;
+  line-height: 0.2rem;
+  background: var(--color-level-4-background);
+  color: var(--color-level-4-text);
+  box-shadow: inset 0 -1px lighten(#555555, 7%);
+}
+
+.subnav_10_clothing_02_product_category_02_mens-bottoms a:focus {
+  background: darken(#555555, 7%);
+}
+
+.subnav_10_clothing_02_product_category_02_mens-bottoms a:hover {
+  background: darken(#555555, 7%);
+}
+
+.subnav_10_clothing_02_product_category_02_mens-bottoms label:focus {
+  background: darken(#555555, 7%);
+}
+
+.subnav_10_clothing_02_product_category_02_mens-bottoms label:hover {
+  background: darken(#555555, 7%);
+}
+
+/* ===============================================================================    FIXME:  MENS FORMAL WEAR */
+/* FIXME:     CLOTHING - MENS MAIN PRODUCT CATEGORY 03 (FORMAL WEAR)        FIXME: */
+/*                           FORTH LEVEL NAVIGATION                                */
+/* =============================================================================== */
+
+.subnav_10_clothing_02_product_category_03_mens-formal {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+}
+
+.subnav_10_clothing_02_product_category_03_mens-formal a,
+.subnav_10_clothing_02_product_category_03_mens-formal label {
+  padding-left: 3rem;
+  line-height: 0.2rem;
+  background: var(--color-level-4-background);
+  color: var(--color-level-4-text);
+  box-shadow: inset 0 -1px lighten(#555555, 7%);
+}
+
+.subnav_10_clothing_02_product_category_03_mens-formal a:focus {
+  background: darken(#555555, 7%);
+}
+
+.subnav_10_clothing_02_product_category_03_mens-formal a:hover {
+  background: darken(#555555, 7%);
+}
+
+.subnav_10_clothing_02_product_category_03_mens-formal label:focus {
+  background: darken(#555555, 7%);
+}
+
+.subnav_10_clothing_02_product_category_03_mens-formal label:hover {
+  background: darken(#555555, 7%);
+}
+
+/* ===============================================================================    FIXME:  MENS TOPS */
+/* FIXME:       CLOTHING - MENS MAIN PRODUCT CATEGORY 04 (TOPS)             FIXME: */
+/*                           FORTH LEVEL NAVIGATION                                */
+/* =============================================================================== */
+
+.subnav_10_clothing_02_product_category_04_mens-tops {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+}
+
+.subnav_10_clothing_02_product_category_04_mens-tops a,
+.subnav_10_clothing_02_product_category_04_mens-tops label {
+  padding-left: 3rem;
+  line-height: 0.2rem;
+  background: var(--color-level-4-background);
+  color: var(--color-level-4-text);
+  box-shadow: inset 0 -1px lighten(#555555, 7%);
+}
+
+.subnav_10_clothing_02_product_category_04_mens-tops a:focus {
+  background: darken(#555555, 7%);
+}
+
+.subnav_10_clothing_02_product_category_04_mens-tops a:hover {
+  background: darken(#555555, 7%);
+}
+
+.subnav_10_clothing_02_product_category_04_mens-tops label:focus {
+  background: darken(#555555, 7%);
+}
+
+.subnav_10_clothing_02_product_category_04_mens-tops label:hover {
+  background: darken(#555555, 7%);
+}
+
+/* ===============================================================================    FIXME:  MENS JACKETS */
+/* FIXME:       CLOTHING - MENS MAIN PRODUCT CATEGORY 05 (JACKETS)          FIXME: */
+/*                           FORTH LEVEL NAVIGATION                                */
+/* =============================================================================== */
+
+.subnav_10_clothing_02_product_category_05_mens-jackets {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+}
+
+.subnav_10_clothing_02_product_category_05_mens-jackets a,
+.subnav_10_clothing_02_product_category_05_mens-jackets label {
+  padding-left: 3rem;
+  line-height: 0.2rem;
+  background: var(--color-level-4-background);
+  color: var(--color-level-4-text);
+  box-shadow: inset 0 -1px lighten(#555555, 7%);
+}
+
+.subnav_10_clothing_02_product_category_05_mens-jackets a:focus {
+  background: darken(#555555, 7%);
+}
+
+.subnav_10_clothing_02_product_category_05_mens-jackets a:hover {
+  background: darken(#555555, 7%);
+}
+
+.subnav_10_clothing_02_product_category_05_mens-jackets label:focus {
+  background: darken(#555555, 7%);
+}
+
+.subnav_10_clothing_02_product_category_05_mens-jackets label:hover {
+  background: darken(#555555, 7%);
+}
+
+/* ===============================================================================    FIXME:  MENS UNDERWEAR & SLEEPWEAR */
+/* FIXME:       CLOTHING - MENS MAIN PRODUCT CATEGORY 06 (UNDERWEAR)        FIXME: */
+/*                           FORTH LEVEL NAVIGATION                                */
+/* =============================================================================== */
+
+.subnav_10_clothing_02_product_category_06_mens-underwear {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+}
+
+.subnav_10_clothing_02_product_category_06_mens-underwear a,
+.subnav_10_clothing_02_product_category_06_mens-underwear label {
+  padding-left: 3rem;
+  line-height: 0.2rem;
+  background: var(--color-level-4-background);
+  color: var(--color-level-4-text);
+  box-shadow: inset 0 -1px lighten(#555555, 7%);
+}
+
+.subnav_10_clothing_02_product_category_06_mens-underwear a:focus {
+  background: darken(#555555, 7%);
+}
+
+.subnav_10_clothing_02_product_category_06_mens-underwear a:hover {
+  background: darken(#555555, 7%);
+}
+
+.subnav_10_clothing_02_product_category_06_mens-underwear label:focus {
+  background: darken(#555555, 7%);
+}
+
+.subnav_10_clothing_02_product_category_06_mens-underwear label:hover {
+  background: darken(#555555, 7%);
+}
+
+/* ===============================================================================    FIXME:  MENS SPORTS */
+/* FIXME:       CLOTHING - MENS MAIN PRODUCT CATEGORY 07 (SPORTS)           FIXME: */
+/*                           FORTH LEVEL NAVIGATION                                */
+/* =============================================================================== */
+
+.subnav_10_clothing_02_product_category_07_mens-sports {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+}
+
+.subnav_10_clothing_02_product_category_07_mens-sports a,
+.subnav_10_clothing_02_product_category_07_mens-sports label {
+  padding-left: 3rem;
+  line-height: 0.2rem;
+  background: var(--color-level-4-background);
+  color: var(--color-level-4-text);
+  box-shadow: inset 0 -1px lighten(#555555, 7%);
+}
+
+.subnav_10_clothing_02_product_category_07_mens-sports a:focus {
+  background: darken(#555555, 7%);
+}
+
+.subnav_10_clothing_02_product_category_07_mens-sports a:hover {
+  background: darken(#555555, 7%);
+}
+
+.subnav_10_clothing_02_product_category_07_mens-sports label:focus {
+  background: darken(#555555, 7%);
+}
+
+.subnav_10_clothing_02_product_category_07_mens-sports label:hover {
+  background: darken(#555555, 7%);
+}
+
+/* ===============================================================================    FIXME:  MENS SWIMWEAR */
+/* FIXME:       CLOTHING - MENS MAIN PRODUCT CATEGORY 08 (SWIMWEAR)       FIXME: */
+/*                           FORTH LEVEL NAVIGATION                                */
+/* =============================================================================== */
+
+.subnav_10_clothing_02_product_category_08_mens-swimwear {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+}
+
+.subnav_10_clothing_02_product_category_08_mens-swimwear a,
+.subnav_10_clothing_02_product_category_08_mens-swimwear label {
+  padding-left: 3rem;
+  line-height: 0.2rem;
+  background: var(--color-level-4-background);
+  color: var(--color-level-4-text);
+  box-shadow: inset 0 -1px lighten(#555555, 7%);
+}
+
+.subnav_10_clothing_02_product_category_08_mens-swimwear a:focus {
+  background: darken(#555555, 7%);
+}
+
+.subnav_10_clothing_02_product_category_08_mens-swimwear a:hover {
+  background: darken(#555555, 7%);
+}
+
+.subnav_10_clothing_02_product_category_08_mens-swimwear label:focus {
+  background: darken(#555555, 7%);
+}
+
+.subnav_10_clothing_02_product_category_08_mens-swimwear label:hover {
+  background: darken(#555555, 7%);
+}
+
+/* ===============================================================================    FIXME:  MENS ACCESSORIES */
+/* FIXME:    CLOTHING - MENS MAIN PRODUCT CATEGORY 09 (ACCESSORIES)         FIXME: */
+/*                           FORTH LEVEL NAVIGATION                                */
+/* =============================================================================== */
+
+.subnav_10_clothing_02_product_category_09_mens-accessories {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+}
+
+.subnav_10_clothing_02_product_category_09_mens-accessories a,
+.subnav_10_clothing_02_product_category_09_mens-accessories label {
+  padding-left: 3rem;
+  line-height: 0.2rem;
+  background: var(--color-level-4-background);
+  color: var(--color-level-4-text);
+  box-shadow: inset 0 -1px lighten(#555555, 7%);
+}
+
+.subnav_10_clothing_02_product_category_09_mens-accessories a:focus {
+  background: darken(#555555, 7%);
+}
+
+.subnav_10_clothing_02_product_category_09_mens-accessories a:hover {
+  background: darken(#555555, 7%);
+}
+
+.subnav_10_clothing_02_product_category_09_mens-accessories label:focus {
+  background: darken(#555555, 7%);
+}
+
+.subnav_10_clothing_02_product_category_09_mens-accessories label:hover {
+  background: darken(#555555, 7%);
+}
+
+/* ===============================================================================    FIXME:  MENS GROOMING PRODUCTS */
+/* FIXME:  CLOTHING - MENS MAIN PRODUCT CATEGORY 10 (GROOMING PRODUCTS)     FIXME: */
+/*                           FORTH LEVEL NAVIGATION                                */
+/* =============================================================================== */
+
+.subnav_10_clothing_02_product_category_10_mens-grooming-products {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+}
+
+.subnav_10_clothing_02_product_category_10_mens-grooming-products a,
+.subnav_10_clothing_02_product_category_10_mens-grooming-products label {
+  padding-left: 3rem;
+  line-height: 0.2rem;
+  background: var(--color-level-4-background);
+  color: var(--color-level-4-text);
+  box-shadow: inset 0 -1px lighten(#555555, 7%);
+}
+
+.subnav_10_clothing_02_product_category_10_mens-grooming-products a:focus {
+  background: darken(#555555, 7%);
+}
+
+.subnav_10_clothing_02_product_category_10_mens-grooming-products a:hover {
+  background: darken(#555555, 7%);
+}
+
+.subnav_10_clothing_02_product_category_10_mens-grooming-products label:focus {
+  background: darken(#555555, 7%);
+}
+
+.subnav_10_clothing_02_product_category_10_mens-grooming-products label:hover {
+  background: darken(#555555, 7%);
+}
+
+/* =============================================================================== */
+/* =============================  TODO:  KIDS  TODO:  ============================ */
+/* =============================================================================== */
+
+/* ===============================================================================    FIXME:  BABY GIRLS (0-2 YEARS) */
+/* FIXME: CLOTHING - KIDS MAIN PRODUCT CATEGORY 01 - BABY GIRLS (0-2 YEARS) FIXME: */
+/*                           FORTH LEVEL NAVIGATION                                */
+/* =============================================================================== */
+
+.subnav_10_clothing_03_product_category_01_kids-baby-girls-0-2 {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+}
+
+.subnav_10_clothing_03_product_category_01_kids-baby-girls-0-2 a,
+.subnav_10_clothing_03_product_category_01_kids-baby-girls-0-2 label {
+  padding-left: 3rem;
+  line-height: 0.2rem;
+  background: var(--color-level-4-background);
+  color: var(--color-level-4-text);
+  box-shadow: inset 0 -1px lighten(#555555, 7%);
+}
+
+.subnav_10_clothing_03_product_category_01_kids-baby-girls-0-2 a:focus {
+  background: darken(#555555, 7%);
+}
+
+.subnav_10_clothing_03_product_category_01_kids-baby-girls-0-2 a:hover {
+  background: darken(#555555, 7%);
+}
+
+.subnav_10_clothing_03_product_category_01_kids-baby-girls-0-2 label:focus {
+  background: darken(#555555, 7%);
+}
+
+.subnav_10_clothing_03_product_category_01_kids-baby-girls-0-2 label:hover {
+  background: darken(#555555, 7%);
+}
+
+/* ===============================================================================    FIXME:  BABY BOYS (0-2 YEARS) */
+/* FIXME: CLOTHING - KIDS MAIN PRODUCT CATEGORY 02 - BABY BOYS (0-2 YEARS)  FIXME: */
+/*                           FORTH LEVEL NAVIGATION                                */
+/* =============================================================================== */
+
+.subnav_10_clothing_03_product_category_02_kids-baby-boys-0-2 {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+}
+
+.subnav_10_clothing_03_product_category_02_kids-baby-boys-0-2 a,
+.subnav_10_clothing_03_product_category_02_kids-baby-boys-0-2 label {
+  padding-left: 3rem;
+  line-height: 0.2rem;
+  background: var(--color-level-4-background);
+  color: var(--color-level-4-text);
+  box-shadow: inset 0 -1px lighten(#555555, 7%);
+}
+
+.subnav_10_clothing_03_product_category_02_kids-baby-boys-0-2 a:focus {
+  background: darken(#555555, 7%);
+}
+
+.subnav_10_clothing_03_product_category_02_kids-baby-boys-0-2 a:hover {
+  background: darken(#555555, 7%);
+}
+
+.subnav_10_clothing_03_product_category_02_kids-baby-boys-0-2 label:focus {
+  background: darken(#555555, 7%);
+}
+
+.subnav_10_clothing_03_product_category_02_kids-baby-boys-0-2 label:hover {
+  background: darken(#555555, 7%);
+}
+
+/* ===============================================================================    FIXME:  GIRLS (2 - 8 YEARS) */
+/* FIXME: CLOTHING - KIDS MAIN PRODUCT CATEGORY 03 - GIRLS (2 - 8 YEARS)    FIXME: */
+/*                           FORTH LEVEL NAVIGATION                                */
+/* =============================================================================== */
+
+.subnav_10_clothing_03_product_category_03_kids-girls-2-8 {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+}
+
+.subnav_10_clothing_03_product_category_03_kids-girls-2-8 a,
+.subnav_10_clothing_03_product_category_03_kids-girls-2-8 label {
+  padding-left: 3rem;
+  line-height: 0.2rem;
+  background: var(--color-level-4-background);
+  color: var(--color-level-4-text);
+  box-shadow: inset 0 -1px lighten(#555555, 7%);
+}
+
+.subnav_10_clothing_03_product_category_03_kids-girls-2-8 a:focus {
+  background: darken(#555555, 7%);
+}
+
+.subnav_10_clothing_03_product_category_03_kids-girls-2-8 a:hover {
+  background: darken(#555555, 7%);
+}
+
+.subnav_10_clothing_03_product_category_03_kids-girls-2-8 label:focus {
+  background: darken(#555555, 7%);
+}
+
+.subnav_10_clothing_03_product_category_03_kids-girls-2-8 label:hover {
+  background: darken(#555555, 7%);
+}
+
+/* ===============================================================================    FIXME:  BOYS (2 - 8 YEARS) */
+/* FIXME: CLOTHING - KIDS MAIN PRODUCT CATEGORY 04 - BOYS (2 - 8 YEARS)     FIXME: */
+/*                           FORTH LEVEL NAVIGATION                                */
+/* =============================================================================== */
+
+.subnav_10_clothing_03_product_category_04_kids-boys-2-8 {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+}
+
+.subnav_10_clothing_03_product_category_04_kids-boys-2-8 a,
+.subnav_10_clothing_03_product_category_04_kids-boys-2-8 label {
+  padding-left: 3rem;
+  line-height: 0.2rem;
+  background: var(--color-level-4-background);
+  color: var(--color-level-4-text);
+  box-shadow: inset 0 -1px lighten(#555555, 7%);
+}
+
+.subnav_10_clothing_03_product_category_04_kids-boys-2-8 a:focus {
+  background: darken(#555555, 7%);
+}
+
+.subnav_10_clothing_03_product_category_04_kids-boys-2-8 a:hover {
+  background: darken(#555555, 7%);
+}
+
+.subnav_10_clothing_03_product_category_04_kids-boys-2-8 label:focus {
+  background: darken(#555555, 7%);
+}
+
+.subnav_10_clothing_03_product_category_04_kids-boys-2-8 label:hover {
+  background: darken(#555555, 7%);
+}
+
+/* ===============================================================================    FIXME:  GIRLS (8 - 16 YEARS) */
+/* FIXME: CLOTHING - KIDS MAIN PRODUCT CATEGORY 05 - GIRLS (8 - 16 YEARS)   FIXME: */
+/*                           FORTH LEVEL NAVIGATION                                */
+/* =============================================================================== */
+
+.subnav_10_clothing_03_product_category_05_kids-girls-8-16 {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+}
+
+.subnav_10_clothing_03_product_category_05_kids-girls-8-16 a,
+.subnav_10_clothing_03_product_category_05_kids-girls-8-16 label {
+  padding-left: 3rem;
+  line-height: 0.2rem;
+  background: var(--color-level-4-background);
+  color: var(--color-level-4-text);
+  box-shadow: inset 0 -1px lighten(#555555, 7%);
+}
+
+.subnav_10_clothing_03_product_category_05_kids-girls-8-16 a:focus {
+  background: darken(#555555, 7%);
+}
+
+.subnav_10_clothing_03_product_category_05_kids-girls-8-16 a:hover {
+  background: darken(#555555, 7%);
+}
+
+.subnav_10_clothing_03_product_category_05_kids-girls-8-16 label:focus {
+  background: darken(#555555, 7%);
+}
+
+.subnav_10_clothing_03_product_category_05_kids-girls-8-16 label:hover {
+  background: darken(#555555, 7%);
+}
+
+/* ===============================================================================    FIXME:  BOYS (8 - 16 YEARS) */
+/* FIXME:  CLOTHING - KIDS MAIN PRODUCT CATEGORY 06 - BOYS (8 - 16 YEARS)   FIXME: */
+/*                           FORTH LEVEL NAVIGATION                                */
+/* =============================================================================== */
+
+.subnav_10_clothing_03_product_category_06_kids-boys-8-16 {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+}
+
+.subnav_10_clothing_03_product_category_06_kids-boys-8-16 a,
+.subnav_10_clothing_03_product_category_06_kids-boys-8-16 label {
+  padding-left: 3rem;
+  line-height: 0.2rem;
+  background: var(--color-level-4-background);
+  color: var(--color-level-4-text);
+  box-shadow: inset 0 -1px lighten(#555555, 7%);
+}
+
+.subnav_10_clothing_03_product_category_06_kids-boys-8-16 a:focus {
+  background: darken(#555555, 7%);
+}
+
+.subnav_10_clothing_03_product_category_06_kids-boys-8-16 a:hover {
+  background: darken(#555555, 7%);
+}
+
+.subnav_10_clothing_03_product_category_06_kids-boys-8-16 label:focus {
+  background: darken(#555555, 7%);
+}
+
+.subnav_10_clothing_03_product_category_06_kids-boys-8-16 label:hover {
+  background: darken(#555555, 7%);
+}
+
+/* ================================================================================================= */
+/* ==================== TODO:  FIFTH LEVEL NAVIGATION START  TODO:  ================================ */
+/* ================================================================================================= */
+
+/* ===============================================================================    FIXME:  NAME  */
+/* FIXME:                         1ST CATEGORY                              FIXME: */
+/*                 FIFTH LEVEL NAVIGATION (USE WHEN REQUIRED)                      */
+/* =============================================================================== */
+/* 
+    .sub-sub-sub-sub-group-list {
+      font-size: 0.9rem;
+      text-transform: uppercase;
+    }
+    
+    .sub-sub-sub-sub-group-list a,
+    .sub-sub-sub-sub-group-list label {
+      padding-left: 3.5rem;
+      line-height: 0.2rem;
+      background: var(--color-level-3-background);
+      color: var(--color-level-3-text);
+      box-shadow: inset 0 -1px lighten(#454545, 7%);
+    }
+    
+    .sub-sub-sub-sub-group-list a:focus {
+      background: darken(#454545, 7%);
+    }
+    
+    .sub-sub-sub-sub-group-list a:hover {
+      background: darken(#454545, 7%);
+    }
+    
+    .sub-sub-sub-sub-group-list label:focus {
+      background: darken(#454545, 7%);
+    }
+    
+    .sub-sub-sub-sub-group-list label:hover {
+      background: darken(#454545, 7%);
+    } */
+
+/* =============================================================================== */
+/* ========== END OF PRODUCT CATEGORY 09 - CLOTHING AND FOOTWEAR ================= */
+/* =============================================================================== */
+
+/* =============================================================================== */
+/* ==============TODO: START OF CHECKBOX SPECIAL FEATURES TODO: ================== */
+/* =============================================================================== */
+
+/* ================================================================================= */
+/*                      FIXME:  SHOPMAX PRODUCTS  FIXME:                             */
+/* ================================================================================= */
+
+.nav__list input[type="checkbox"]:checked + label + ul {
+  /* reset the height when checkbox is checked */
+  max-height: 1000px;
+}
+
+/** Rotating chevron icon */
+
+label > span {
+  float: right;
+  transition: transform 0.65s ease;
+}
+
+.nav__list input[type="checkbox"]:checked + label > span {
+  transform: rotate(90deg);
+}
+
+/* =============================================================================== */
+/* ==================== END OF CHECKBOX SPECIAL FEATURES ========================= */
+/* =============================================================================== */
+
+/* ===================================================================================================================== */
+/* TODO:  NAVIGATION PART 02 - SHOP SERVICES                                                                             */
+/* ===================================================================================================================== */
+
+/* ===================================================================================================================== */
+/* FIXME:  SPECIAL NOTES - SHOP SERVICES                                                                                 */
+/* ===================================================================================================================== */
+/* 01.            */
+/* 02.            */
+/* 03             */
+/* 04.            */
+/* 05.            */
+/* ===================================================================================================================== */
+
+.container_02 {
+  position: relative;
+  margin: 0rem 0rem 0rem 0rem;
+  padding: 0rem 0rem 0rem 0rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  border: 1px solid red;
+}
+
+/* .container_02 .logo {
+    width: 30%;
+    margin: auto;
+    display: block;
+    border: 1px solid purple;
+  } */
+
+/* ================================================================================= */
+/*               FIXME:  NAVIGATION - SHOPMAX SERVICES  FIXME:                       */
+/*                          STYLING TOP LEVEL ITEMS                                  */
+/* ================================================================================= */
+
+.nav_02 a,
+.nav_02 label {
+  display: block;
+  padding: 0.9rem 2rem 0.9rem 1.5rem;
+  /* padding: 0.85rem; */
+  color: var(--color-level-0-text);
+  background-color: var(--color-level-0-background);
+  box-shadow: inset 0 -1px lighten(var(--color-level-0-background), 3%);
+  transition: all 0.25s ease-in;
+}
+
+.nav_02 a:focus {
+  color: var(--color-text-focus-and-hover);
+  background: darken(#151515, 7%);
+}
+
+.nav_02 a:hover {
+  color: var(--color-text-focus-and-hover);
+  background: darken(#151515, 7%);
+}
+
+.nav_02 label:focus {
+  color: var(--color-text-focus-and-hover);
+  background: darken(#151515, 7%);
+}
+
+.nav_02 label:hover {
+  color: var(--color-text-focus-and-hover);
+  background: darken(#151515, 7%);
+}
+
+.nav_02 label {
+  cursor: pointer;
+}
+
+/* ================================================================================= */
+/*                        FIXME:  SHOPMAX SERVICES  FIXME:                           */
+/*                             FIRST LEVEL NAVIGATION                                */
+/* ================================================================================= */
+
+.topnav_shopmax_services {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+}
+
+.topnav_shopmax_services a,
+.topnav_shopmax_services label {
+  padding-left: 1.5rem;
+  /* This Sets the Line height for the Product Categories Below */
+  line-height: 1rem;
+  /* background: #252525; */
+  background: var(--color-level-1-background);
+  color: var(--color-level-1-text);
+  box-shadow: inset 0 -1px lighten(#252525, 7%);
+}
+
+.topnav_shopmax_services a:focus {
+  background: darken(#252525, 7%);
+}
+
+.topnav_shopmax_services a:hover {
+  background: darken(#252525, 7%);
+}
+
+.topnav_shopmax_services label:focus {
+  background: darken(#252525, 7%);
+}
+
+.topnav_shopmax_services label:hover {
+  background: darken(#252525, 7%);
+}
+
+/* ====================================================================================== */
+/* TODO:              SHOP SERVICES- LIST OF MAIN PRODUCT CATEGORIES                TODO: */
+/*                             SECOND LEVEL NAVIGATION                                    */
+/* ====================================================================================== */
+
+/* ====================================================================================== */
+/* ====================  CATEGORY: PROFESSIONAL SERVICESS =============================== */
+/* ====================================================================================== */
+
+.subnav_spn_professional-services {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+}
+
+.subnav_spn_professional-services a,
+.subnav_spn_professional-services label {
+  padding-left: 2rem;
+  line-height: 0.2rem;
+  background: var(--color-level-2-background);
+  color: var(--color-level-2-text);
+  box-shadow: inset 0 -1px lighten(#353535, 7%);
+}
+
+.subnav_spn_professional-services a:focus {
+  background: darken(#353535, 7%);
+}
+
+.subnav_spn_professional-services a:hover {
+  background: darken(#353535, 7%);
+}
+
+.subnav_spn_professional-services label:focus {
+  background: darken(#353535, 7%);
+}
+
+.subnav_spn_professional-services label:hover {
+  background: darken(#353535, 7%);
+}
+
+/* ====================================================================================== */
+/* ================  CATEGORY: MARKETPLACE - GENERAL SERVICES =========================== */
+/* ====================================================================================== */
+
+.subnav_marketplace_general-services {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+}
+
+.subnav_marketplace_general-services a,
+.subnav_marketplace_general-services label {
+  padding-left: 2rem;
+  line-height: 0.2rem;
+  background: var(--color-level-2-background);
+  color: var(--color-level-2-text);
+  box-shadow: inset 0 -1px lighten(#353535, 7%);
+}
+
+.subnav_marketplace_general-services a:focus {
+  background: darken(#353535, 7%);
+}
+
+.subnav_marketplace_general-services a:hover {
+  background: darken(#353535, 7%);
+}
+
+.subnav_marketplace_general-services label:focus {
+  background: darken(#353535, 7%);
+}
+
+.subnav_marketplace_general-services label:hover {
+  background: darken(#353535, 7%);
+}
+
+/* =============================================================================== */
+/* ==============TODO: START OF CHECKBOX SPECIAL FEATURES TODO: ================== */
+/* =============================================================================== */
+
+/* ================================================================================= */
+/*                      FIXME:  SHOPMAX SERVICES  FIXME:                             */
+/* ================================================================================= */
+
+.nav_02__list input[type="checkbox"]:checked + label + ul {
+  /* reset the height when checkbox is checked */
+  max-height: 1000px;
+}
+
+/** Rotating chevron icon */
+
+label > span {
+  float: right;
+  transition: transform 0.65s ease;
+}
+
+.nav_02__list input[type="checkbox"]:checked + label > span {
+  transform: rotate(90deg);
+}
+
+/* =============================================================================== */
+/* ==================== END OF CHECKBOX SPECIAL FEATURES ========================= */
+/* =============================================================================== */
+
+/* ===================================================================================================================== */
+/* TODO:  NAVIGATION PART 03 - SKYNAMO CRM                                                                               */
+/* ===================================================================================================================== */
+
+/* ===================================================================================================================== */
+/* FIXME:  SPECIAL NOTES - SKYNAMO CRM                                                                                   */
+/* ===================================================================================================================== */
+/* 01.            */
+/* 02.            */
+/* 03             */
+/* 04.            */
+/* 05.            */
+/* ===================================================================================================================== */
+
+.container_03 {
+  position: relative;
+  margin: 0rem 0rem 0rem 0rem;
+  padding: 0rem 0rem 0rem 0rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  border: 1px solid red;
+}
+
+/* .container_03 .logo {
+    width: 30%;
+    margin: auto;
+    display: block;
+    border: 1px solid purple;
+  } */
+
+/* ================================================================================= */
+/*                    FIXME:  NAVIGATION - SKYNAMO CRM  FIXME:                       */
+/*                            STYLING TOP LEVEL ITEMS                                */
+/* ================================================================================= */
+
+.nav_05 a,
+.nav_05 label {
+  display: block;
+  padding: 0.9rem 2rem 0.9rem 1.5rem;
+  /* padding: 0.85rem; */
+  color: var(--color-level-0-text);
+  background-color: var(--color-level-0-background);
+  box-shadow: inset 0 -1px lighten(var(--color-level-0-background), 3%);
+  transition: all 0.25s ease-in;
+}
+
+.nav_05 a:focus {
+  color: var(--color-text-focus-and-hover);
+  background: darken(#151515, 7%);
+}
+
+.nav_05 a:hover {
+  color: var(--color-text-focus-and-hover);
+  background: darken(#151515, 7%);
+}
+
+.nav_05 label:focus {
+  color: var(--color-text-focus-and-hover);
+  background: darken(#151515, 7%);
+}
+
+.nav_05 label:hover {
+  color: var(--color-text-focus-and-hover);
+  background: darken(#151515, 7%);
+}
+
+.nav_05 label {
+  cursor: pointer;
+}
+
+/* ================================================================================= */
+/*                           FIXME:  SKYNAMO CRM  FIXME:                             */
+/*                             FIRST LEVEL NAVIGATION                                */
+/* ================================================================================= */
+
+.topnav_shopmax_skynamo-crm {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+}
+
+.topnav_shopmax_skynamo-crm a,
+.topnav_shopmax_skynamo-crm label {
+  padding-left: 1.5rem;
+  /* This Sets the Line height for the Product Categories Below */
+  line-height: 1rem;
+  /* background: #252525; */
+  background: var(--color-level-1-background);
+  color: var(--color-level-1-text);
+  box-shadow: inset 0 -1px lighten(#252525, 7%);
+}
+
+.topnav_shopmax_skynamo-crm a:focus {
+  background: darken(#252525, 7%);
+}
+
+.topnav_shopmax_skynamo-crm a:hover {
+  background: darken(#252525, 7%);
+}
+
+.topnav_shopmax_skynamo-crm label:focus {
+  background: darken(#252525, 7%);
+}
+
+.topnav_shopmax_skynamo-crm label:hover {
+  background: darken(#252525, 7%);
+}
+
+/* =============================================================================== */
+/* ==============TODO: START OF CHECKBOX SPECIAL FEATURES TODO: ================== */
+/* =============================================================================== */
+
+/* ================================================================================= */
+/*                           FIXME:  SKYNAMO CRM  FIXME:                             */
+/* ================================================================================= */
+
+.nav_05__list input[type="checkbox"]:checked + label + ul {
+  /* reset the height when checkbox is checked */
+  max-height: 1000px;
+}
+
+/** Rotating chevron icon */
+
+label > span {
+  float: right;
+  transition: transform 0.65s ease;
+}
+
+.nav_05__list input[type="checkbox"]:checked + label > span {
+  transform: rotate(90deg);
+}
+
+/* =============================================================================== */
+/* ==================== END OF CHECKBOX SPECIAL FEATURES ========================= */
+/* =============================================================================== */
+
+/* ===================================================================================================================== */
+/* TODO:  NAVIGATION PART 04 - SELLING PLANS                                                                             */
+/* ===================================================================================================================== */
+
+/* ===================================================================================================================== */
+/* FIXME:  SPECIAL NOTES - SELLING PLANS                                                                                 */
+/* ===================================================================================================================== */
+/* 01.            */
+/* 02.            */
+/* 03             */
+/* 04.            */
+/* 05.            */
+/* ===================================================================================================================== */
+
+.container_04 {
+  position: relative;
+  margin: 0rem 0rem 0rem 0rem;
+  padding: 0rem 0rem 0rem 0rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  border: 1px solid red;
+}
+
+/* .container_04 .logo {
+    width: 30%;
+    margin: auto;
+    display: block;
+    border: 1px solid purple;
+  } */
+
+/* ================================================================================= */
+/*                  FIXME:  NAVIGATION - SELLING PLANS  FIXME:                       */
+/*                            STYLING TOP LEVEL ITEMS                                */
+/* ================================================================================= */
+
+.nav_03 a,
+.nav_03 label {
+  display: block;
+  padding: 0.9rem 2rem 0.9rem 1.5rem;
+  /* padding: 0.85rem; */
+  color: var(--color-level-0-text);
+  background-color: var(--color-level-0-background);
+  box-shadow: inset 0 -1px lighten(var(--color-level-0-background), 3%);
+  transition: all 0.25s ease-in;
+}
+
+.nav_03 a:focus {
+  color: var(--color-text-focus-and-hover);
+  background: darken(#151515, 7%);
+}
+
+.nav_03 a:hover {
+  color: var(--color-text-focus-and-hover);
+  background: darken(#151515, 7%);
+}
+
+.nav_03 label:focus {
+  color: var(--color-text-focus-and-hover);
+  background: darken(#151515, 7%);
+}
+
+.nav_03 label:hover {
+  color: var(--color-text-focus-and-hover);
+  background: darken(#151515, 7%);
+}
+
+.nav_03 label {
+  cursor: pointer;
+}
+
+/* ================================================================================= */
+/*                            FIXME:  SELLING PLANS FIXME:                           */
+/*                                FIRST LEVEL NAVIGATION                             */
+/* ================================================================================= */
+
+.topnav_shopmax_selling-plans {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+}
+
+.topnav_shopmax_selling-plans a,
+.topnav_shopmax_selling-plans label {
+  padding-left: 1.5rem;
+  /* This Sets the Line height for the Product Categories Below */
+  line-height: 1rem;
+  /* background: #252525; */
+  background: var(--color-level-1-background);
+  color: var(--color-level-1-text);
+  box-shadow: inset 0 -1px lighten(#252525, 7%);
+}
+
+.topnav_shopmax_selling-plans a:focus {
+  background: darken(#252525, 7%);
+}
+
+.topnav_shopmax_selling-plans a:hover {
+  background: darken(#252525, 7%);
+}
+
+.topnav_shopmax_selling-plans label:focus {
+  background: darken(#252525, 7%);
+}
+
+.topnav_shopmax_selling-plans label:hover {
+  background: darken(#252525, 7%);
+}
+
+/* =============================================================================== */
+/* ==============TODO: START OF CHECKBOX SPECIAL FEATURES TODO: ================== */
+/* =============================================================================== */
+
+/* ================================================================================= */
+/*                     FIXME:  SHOPMAX SELLING PLANS  FIXME:                         */
+/* ================================================================================= */
+
+.nav_03__list input[type="checkbox"]:checked + label + ul {
+  /* reset the height when checkbox is checked */
+  max-height: 1000px;
+}
+
+/** Rotating chevron icon */
+
+label > span {
+  float: right;
+  transition: transform 0.65s ease;
+}
+
+.nav_03__list input[type="checkbox"]:checked + label > span {
+  transform: rotate(90deg);
+}
+
+/* =============================================================================== */
+/* ==================== END OF CHECKBOX SPECIAL FEATURES ========================= */
+/* =============================================================================== */
+
+/* ===================================================================================================================== */
+/* TODO:  NAVIGATION PART 05 - CROWDFUNDING / INVESTING PLANS                                                            */
+/* ===================================================================================================================== */
+
+/* ===================================================================================================================== */
+/* FIXME:  SPECIAL NOTES - CROWDFUNDING / INVESTING PLANS                                                                */
+/* ===================================================================================================================== */
+/* 01.            */
+/* 02.            */
+/* 03             */
+/* 04.            */
+/* 05.            */
+/* ===================================================================================================================== */
+
+.container_05 {
+  position: relative;
+  margin: 0rem 0rem 0rem 0rem;
+  padding: 0rem 0rem 0rem 0rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  border: 1px solid red;
+}
+
+/* .container_05 .logo {
+    width: 30%;
+    margin: auto;
+    display: block;
+    border: 1px solid purple;
+  } */
+
+/* ================================================================================= */
+/*                  FIXME:  NAVIGATION - INVESTING PLANS  FIXME:                     */
+/*                            STYLING TOP LEVEL ITEMS                                */
+/* ================================================================================= */
+
+.nav_04 a,
+.nav_04 label {
+  display: block;
+  padding: 0.9rem 2rem 0.9rem 1.5rem;
+  /* padding: 0.85rem; */
+  color: var(--color-level-0-text);
+  background-color: var(--color-level-0-background);
+  box-shadow: inset 0 -1px lighten(var(--color-level-0-background), 3%);
+  transition: all 0.25s ease-in;
+}
+
+.nav_04 a:focus {
+  color: var(--color-text-focus-and-hover);
+  background: darken(#151515, 7%);
+}
+
+.nav_04 a:hover {
+  color: var(--color-text-focus-and-hover);
+  background: darken(#151515, 7%);
+}
+
+.nav_04 label:focus {
+  color: var(--color-text-focus-and-hover);
+  background: darken(#151515, 7%);
+}
+
+.nav_04 label:hover {
+  color: var(--color-text-focus-and-hover);
+  background: darken(#151515, 7%);
+}
+
+.nav_04 label {
+  cursor: pointer;
+}
+
+/* ================================================================================= */
+/*                         FIXME:  INVESTING PLANS  FIXME:                           */
+/*                             FIRST LEVEL NAVIGATION                                */
+/* ================================================================================= */
+
+.topnav_shopmax_investing-plans {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+}
+
+.topnav_shopmax_investing-plans a,
+.topnav_shopmax_investing-plans label {
+  padding-left: 1.5rem;
+  /* This Sets the Line height for the Product Categories Below */
+  line-height: 1rem;
+  /* background: #252525; */
+  background: var(--color-level-1-background);
+  color: var(--color-level-1-text);
+  box-shadow: inset 0 -1px lighten(#252525, 7%);
+}
+
+.topnav_shopmax_investing-plans a:focus {
+  background: darken(#252525, 7%);
+}
+
+.topnav_shopmax_investing-plans a:hover {
+  background: darken(#252525, 7%);
+}
+
+.topnav_shopmax_investing-plans label:focus {
+  background: darken(#252525, 7%);
+}
+
+.topnav_shopmax_investing-plans label:hover {
+  background: darken(#252525, 7%);
+}
+
+/* =============================================================================== */
+/* ==============TODO: START OF CHECKBOX SPECIAL FEATURES TODO: ================== */
+/* =============================================================================== */
+
+/* ================================================================================= */
+/*                         FIXME:  INVESTING PLANS  FIXME:                           */
+/* ================================================================================= */
+
+.nav_04__list input[type="checkbox"]:checked + label + ul {
+  /* reset the height when checkbox is checked */
+  max-height: 1000px;
+}
+
+/** Rotating chevron icon */
+
+label > span {
+  float: right;
+  transition: transform 0.65s ease;
+}
+
+.nav_04__list input[type="checkbox"]:checked + label > span {
+  transform: rotate(90deg);
+}
+
+/* =============================================================================== */
+/* ==================== END OF CHECKBOX SPECIAL FEATURES ========================= */
+/* =============================================================================== */
+
+/* ===================================================================================================================== */
+/* TODO:  NAVIGATION PART 06 - CLIENT ZONE (INCLUDING SELLER, INVESTORS & SHOPPER ZONES)                                 */
+/* ===================================================================================================================== */
+
+/* ===================================================================================================================== */
+/* FIXME:  SPECIAL NOTES - CLIENT ZONE (INCLUDING SELLER, INVESTORS & SHOPPER ZONES)                                     */
+/* ===================================================================================================================== */
+/* 01.            */
+/* 02.            */
+/* 03             */
+/* 04.            */
+/* 05.            */
+/* ===================================================================================================================== */
+
+.container_06 {
+  position: relative;
+  margin: 0rem 0rem 0rem 0rem;
+  padding: 0rem 0rem 0rem 0rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  border: 1px solid red;
+}
+
+/* .container_06 .logo {
+    width: 30%;
+    margin: auto;
+    display: block;
+    border: 1px solid purple;
+  } */
+
+.topnav_shopmax_client-zone {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+}
+
+.topnav_shopmax_client-zone a,
+.topnav_shopmax_client-zone label {
+  padding-left: 1.5rem;
+  /* This Sets the Line height for the Product Categories Below */
+  line-height: 1rem;
+  /* background: #252525; */
+  background: var(--color-level-1-background);
+  color: var(--color-level-1-text);
+  box-shadow: inset 0 -1px lighten(#252525, 7%);
+}
+
+.topnav_shopmax_client-zone a:focus {
+  background: darken(#252525, 7%);
+}
+
+.topnav_shopmax_client-zone a:hover {
+  background: darken(#252525, 7%);
+}
+
+.topnav_shopmax_client-zone label:focus {
+  background: darken(#252525, 7%);
+}
+
+.topnav_shopmax_client-zone label:hover {
+  background: darken(#252525, 7%);
+}
+
+/* ================================================================================= */
+/*                    FIXME:  NAVIGATION - SELLER ZONE  FIXME:                       */
+/*                            STYLING TOP LEVEL ITEMS                                */
+/* ================================================================================= */
+
+.nav_06 a,
+.nav_06 label {
+  display: block;
+  padding: 0.9rem 2rem 0.9rem 1.5rem;
+  /* padding: 0.85rem; */
+  color: var(--color-level-0-text);
+  background-color: var(--color-level-0-background);
+  box-shadow: inset 0 -1px lighten(var(--color-level-0-background), 3%);
+  transition: all 0.25s ease-in;
+}
+
+.nav_06 a:focus {
+  color: var(--color-text-focus-and-hover);
+  background: darken(#151515, 7%);
+}
+
+.nav_06 a:hover {
+  color: var(--color-text-focus-and-hover);
+  background: darken(#151515, 7%);
+}
+
+.nav_06 label:focus {
+  color: var(--color-text-focus-and-hover);
+  background: darken(#151515, 7%);
+}
+
+.nav_06 label:hover {
+  color: var(--color-text-focus-and-hover);
+  background: darken(#151515, 7%);
+}
+
+.nav_06 label {
+  cursor: pointer;
+}
+
+/* ================================================================================= */
+/*                           FIXME:  SELLER ZONE  FIXME:                             */
+/*                              FIRST LEVEL NAVIGATION                               */
+/* ================================================================================= */
+
+.topnav_shopmax_seller-zone {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+}
+
+.topnav_shopmax_seller-zone a,
+.topnav_shopmax_seller-zone label {
+  padding-left: 1.5rem;
+  /* This Sets the Line height for the Product Categories Below */
+  line-height: 1rem;
+  /* background: #252525; */
+  background: var(--color-level-1-background);
+  color: var(--color-level-1-text);
+  box-shadow: inset 0 -1px lighten(#252525, 7%);
+}
+
+.topnav_shopmax_seller-zone a:focus {
+  background: darken(#252525, 7%);
+}
+
+.topnav_shopmax_seller-zone a:hover {
+  background: darken(#252525, 7%);
+}
+
+.topnav_shopmax_seller-zone label:focus {
+  background: darken(#252525, 7%);
+}
+
+.topnav_shopmax_seller-zone label:hover {
+  background: darken(#252525, 7%);
+}
+
+.subnav_seller-zone {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+}
+
+.subnav_seller-zone a,
+.subnav_seller-zone label {
+  padding-left: 2rem;
+  line-height: 0.2rem;
+  background: var(--color-level-2-background);
+  color: var(--color-level-2-text);
+  box-shadow: inset 0 -1px lighten(#353535, 7%);
+}
+
+.subnav_seller-zone a:focus {
+  background: darken(#353535, 7%);
+}
+
+.subnav_seller-zone a:hover {
+  background: darken(#353535, 7%);
+}
+
+.subnav_seller-zone label:focus {
+  background: darken(#353535, 7%);
+}
+
+.subnav_seller-zone label:hover {
+  background: darken(#353535, 7%);
+}
+
+/* =============================================================================== */
+/* ==============TODO: START OF CHECKBOX SPECIAL FEATURES TODO: ================== */
+/* =============================================================================== */
+
+/* ================================================================================= */
+/*                           FIXME:  SELLER ZONE  FIXME:                             */
+/* ================================================================================= */
+
+.nav_06__list input[type="checkbox"]:checked + label + ul {
+  /* reset the height when checkbox is checked */
+  max-height: 1000px;
+}
+
+/** Rotating chevron icon */
+
+label > span {
+  float: right;
+  transition: transform 0.65s ease;
+}
+
+.nav_06__list input[type="checkbox"]:checked + label > span {
+  transform: rotate(90deg);
+}
+
+/* =============================================================================== */
+/* ==================== END OF CHECKBOX SPECIAL FEATURES ========================= */
+/* =============================================================================== */
+
+/* ================================================================================= */
+/*                  FIXME:  NAVIGATION - INVESTORS ZONE  FIXME:                      */
+/*                            STYLING TOP LEVEL ITEMS                                */
+/* ================================================================================= */
+
+.nav_07 a,
+.nav_07 label {
+  display: block;
+  padding: 0.9rem 2rem 0.9rem 1.5rem;
+  /* padding: 0.85rem; */
+  color: var(--color-level-0-text);
+  background-color: var(--color-level-0-background);
+  box-shadow: inset 0 -1px lighten(var(--color-level-0-background), 3%);
+  transition: all 0.25s ease-in;
+}
+
+.nav_07 a:focus {
+  color: var(--color-text-focus-and-hover);
+  background: darken(#151515, 7%);
+}
+
+.nav_07 a:hover {
+  color: var(--color-text-focus-and-hover);
+  background: darken(#151515, 7%);
+}
+
+.nav_07 label:focus {
+  color: var(--color-text-focus-and-hover);
+  background: darken(#151515, 7%);
+}
+
+.nav_07 label:hover {
+  color: var(--color-text-focus-and-hover);
+  background: darken(#151515, 7%);
+}
+
+.nav_07 label {
+  cursor: pointer;
+}
+
+/* ================================================================================= */
+/*                          FIXME:  INVESTORS ZONE  FIXME:                           */
+/*                              FIRST LEVEL NAVIGATION                               */
+/* ================================================================================= */
+
+.topnav_shopmax_investor-zone {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+}
+
+.topnav_shopmax_investor-zone a,
+.topnav_shopmax_investor-zone label {
+  padding-left: 1.5rem;
+  /* This Sets the Line height for the Product Categories Below */
+  line-height: 1rem;
+  /* background: #252525; */
+  background: var(--color-level-1-background);
+  color: var(--color-level-1-text);
+  box-shadow: inset 0 -1px lighten(#252525, 7%);
+}
+
+.topnav_shopmax_investor-zone a:focus {
+  background: darken(#252525, 7%);
+}
+
+.topnav_shopmax_investor-zone a:hover {
+  background: darken(#252525, 7%);
+}
+
+.topnav_shopmax_investor-zone label:focus {
+  background: darken(#252525, 7%);
+}
+
+.topnav_shopmax_investor-zone label:hover {
+  background: darken(#252525, 7%);
+}
+
+.subnav_investor-zone {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+}
+
+.subnav_investor-zone a,
+.subnav_investor-zone label {
+  padding-left: 2rem;
+  line-height: 0.2rem;
+  background: var(--color-level-2-background);
+  color: var(--color-level-2-text);
+  box-shadow: inset 0 -1px lighten(#353535, 7%);
+}
+
+.subnav_investor-zone a:focus {
+  background: darken(#353535, 7%);
+}
+
+.subnav_investor-zone a:hover {
+  background: darken(#353535, 7%);
+}
+
+.subnav_investor-zone label:focus {
+  background: darken(#353535, 7%);
+}
+
+.subnav_investor-zone label:hover {
+  background: darken(#353535, 7%);
+}
+
+/* =============================================================================== */
+/* ==============TODO: START OF CHECKBOX SPECIAL FEATURES TODO: ================== */
+/* =============================================================================== */
+
+/* ================================================================================= */
+/*                          FIXME:  INVESTORS ZONE  FIXME:                           */
+/* ================================================================================= */
+
+.nav_07__list input[type="checkbox"]:checked + label + ul {
+  /* reset the height when checkbox is checked */
+  max-height: 1000px;
+}
+
+/** Rotating chevron icon */
+
+label > span {
+  float: right;
+  transition: transform 0.65s ease;
+}
+
+.nav_07__list input[type="checkbox"]:checked + label > span {
+  transform: rotate(90deg);
+}
+
+/* =============================================================================== */
+/* ==================== END OF CHECKBOX SPECIAL FEATURES ========================= */
+/* =============================================================================== */
+
+/* ================================================================================= */
+/*                   FIXME:  NAVIGATION - SHOPPER ZONE  FIXME:                       */
+/*                            STYLING TOP LEVEL ITEMS                                */
+/* ================================================================================= */
+
+.nav_08 a,
+.nav_08 label {
+  display: block;
+  padding: 0.9rem 2rem 0.9rem 1.5rem;
+  /* padding: 0.85rem; */
+  color: var(--color-level-0-text);
+  background-color: var(--color-level-0-background);
+  box-shadow: inset 0 -1px lighten(var(--color-level-0-background), 3%);
+  transition: all 0.25s ease-in;
+}
+
+.nav_08 a:focus {
+  color: var(--color-text-focus-and-hover);
+  background: darken(#151515, 7%);
+}
+
+.nav_08 a:hover {
+  color: var(--color-text-focus-and-hover);
+  background: darken(#151515, 7%);
+}
+
+.nav_08 label:focus {
+  color: var(--color-text-focus-and-hover);
+  background: darken(#151515, 7%);
+}
+
+.nav_08 label:hover {
+  color: var(--color-text-focus-and-hover);
+  background: darken(#151515, 7%);
+}
+
+.nav_08 label {
+  cursor: pointer;
+}
+
+/* ================================================================================= */
+/*                           FIXME:  SHOPPER ZONE  FIXME:                            */
+/*                              FIRST LEVEL NAVIGATION                               */
+/* ================================================================================= */
+
+.topnav_shopmax_shopper-zone {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+}
+
+.topnav_shopmax_shopper-zone a,
+.topnav_shopmax_shopper-zone label {
+  padding-left: 1.5rem;
+  /* This Sets the Line height for the Product Categories Below */
+  line-height: 1rem;
+  /* background: #252525; */
+  background: var(--color-level-1-background);
+  color: var(--color-level-1-text);
+  box-shadow: inset 0 -1px lighten(#252525, 7%);
+}
+
+.topnav_shopmax_shopper-zone a:focus {
+  background: darken(#252525, 7%);
+}
+
+.topnav_shopmax_shopper-zone a:hover {
+  background: darken(#252525, 7%);
+}
+
+.topnav_shopmax_shopper-zone label:focus {
+  background: darken(#252525, 7%);
+}
+
+.topnav_shopmax_shopper-zone label:hover {
+  background: darken(#252525, 7%);
+}
+
+.subnav_shopper-zone {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+}
+
+.subnav_shopper-zone a,
+.subnav_shopper-zone label {
+  padding-left: 2rem;
+  line-height: 0.2rem;
+  background: var(--color-level-2-background);
+  color: var(--color-level-2-text);
+  box-shadow: inset 0 -1px lighten(#353535, 7%);
+}
+
+.subnav_shopper-zone a:focus {
+  background: darken(#353535, 7%);
+}
+
+.subnav_shopper-zone a:hover {
+  background: darken(#353535, 7%);
+}
+
+.subnav_shopper-zone label:focus {
+  background: darken(#353535, 7%);
+}
+
+.subnav_shopper-zone label:hover {
+  background: darken(#353535, 7%);
+}
+
+/* =============================================================================== */
+/* ==============TODO: START OF CHECKBOX SPECIAL FEATURES TODO: ================== */
+/* =============================================================================== */
+
+/* ================================================================================= */
+/*                           FIXME:  SHOPPER ZONE  FIXME:                            */
+/* ================================================================================= */
+
+.nav_08__list input[type="checkbox"]:checked + label + ul {
+  /* reset the height when checkbox is checked */
+  max-height: 1000px;
+}
+
+/** Rotating chevron icon */
+
+label > span {
+  float: right;
+  transition: transform 0.65s ease;
+}
+
+.nav_08__list input[type="checkbox"]:checked + label > span {
+  transform: rotate(90deg);
+}
+
+/* =============================================================================== */
+/* ==================== END OF CHECKBOX SPECIAL FEATURES ========================= */
+/* =============================================================================== */
+
+/* ===================================================================================================================== */
+/* TODO:  PART 8 - HIDING NESTED LISTS                                                                                   */
+/* ===================================================================================================================== */
+
+/* ===================================================================================================================== */
+/* FIXME:  SPECIAL NOTES - HIDING NESTED LISTS                                                                           */
+/* ===================================================================================================================== */
+/* 01.            */
+/* 02.            */
+/* 03             */
+/* 04.            */
+/* 05.            */
+/* ===================================================================================================================== */
+
+/* =============================================================================== */
+/* ====================== TODO:  HIDE NESTED LISTS  TODO: ======================== */
+/* =============================================================================== */
+
+.subnav_marketplace_general-services,
+.subnav_spn_professional-services,
+.topnav_marketplace_products,
+.subnav_00_marketplace_products,
+.shopmax-products,
+.topnav_shopmax_services,
+.topnav_shopmax_products,
+.topnav_shopmax_selling-plans,
+.topnav_shopmax_investing-plans,
+.topnav_shopmax_skynamo-crm,
+.topnav_shopmax_seller-zone,
+.topnav_shopmax_investor-zone,
+.topnav_shopmax_shopper-zone,
+.topnav_shopmax_client-zone,
+.subnav_shopper-zone,
+.subnav_seller-zone,
+.subnav_investor-zone,
+.subnav_01_mobile_products,
+.subnav_01_mobile_products_01_laptops,
+.subnav_01_mobile_products_02_phones,
+.subnav_01_mobile_products_03_tablets,
+.subnav_01_mobile_products_04_watches,
+.subnav_01_mobile_products_05_airtime,
+.subnav_01_mobile_products_06_accessories,
+.subnav_02_office_products,
+.subnav_02_office_products_01_desktop-pc,
+.subnav_02_office_products_02_pc-components,
+.subnav_02_office_products_03_pc-peripherals,
+.subnav_02_office_products_04_servers,
+.subnav_02_office_products_05_pos,
+.subnav_02_office_products_06_security-hardware,
+.subnav_02_office_products_07_printers,
+.subnav_02_office_products_08_projectors,
+.subnav_02_office_products_09_software,
+.subnav_02_office_products_10_stationery,
+.subnav_02_office_products_11_office-furniture,
+.subnav_03_essential_products,
+.subnav_03_essential_products_01_ppe,
+.subnav_03_essential_products_02_emergency-products,
+.subnav_03_essential_products_03_energy-products,
+.subnav_04_home-and-living_products,
+.subnav_04_home-and-living_products_01_bathroom,
+.subnav_04_home-and-living_products_02_bedrooms,
+.subnav_04_home-and-living_products_03_cookware,
+.subnav_04_home-and-living_products_04_diningroom,
+.subnav_04_home-and-living_products_05_kitchen,
+.subnav_04_home-and-living_products_06_laundry,
+.subnav_04_home-and-living_products_07_lounge,
+.subnav_04_home-and-living_products_08_patio-and-pools,
+.subnav_04_home-and-living_products_09_home-accessories,
+.subnav_04_home-and-living_products_10_television,
+.subnav_05_hobbies,
+.subnav_05_hobbies_01_books,
+.subnav_05_hobbies_02_cameras,
+.subnav_05_hobbies_03_gaming,
+.subnav_05_hobbies_04_radio-control,
+.subnav_05_hobbies_05_toys,
+.subnav_06_outdoors,
+.subnav_06_outdoors_01_camping,
+.subnav_06_outdoors_02_offroad-vehicles,
+.subnav_06_outdoors_03_outdoor-gear,
+.subnav_06_outdoors_04_shoot-and-hunt,
+.subnav_06_outdoors_05_water-sports,
+.subnav_07_sports,
+.subnav_07_sports_01_table-sports,
+.subnav_08_diy,
+.subnav_08_diy_01_gardening,
+.subnav_08_diy_02_building-materials,
+.subnav_08_diy_03_tools,
+.subnav_09_groceries,
+.subnav_09_groceries_01_fresh-produce,
+.subnav_09_groceries_02_bakery,
+.subnav_09_groceries_03_dairy-eggs,
+.subnav_09_groceries_04_deli,
+.subnav_09_groceries_05_meats-poultry-fish,
+.subnav_09_groceries_06_frozen-foods,
+.subnav_09_groceries_07_beverages,
+.subnav_09_groceries_08_tobacco,
+.subnav_09_groceries_09_beer-cider-seltzer,
+.subnav_09_groceries_10_wines,
+.subnav_09_groceries_11_spirits,
+.subnav_09_groceries_12_snacks,
+.subnav_09_groceries_13_food-cupboard,
+.subnav_09_groceries_14_baby-care,
+.subnav_09_groceries_15_pet-care,
+.subnav_09_groceries_16_braai,
+.subnav_10_clothing-and-footwear,
+.subnav_10_clothing_01_ladies-main,
+.subnav_10_clothing_01_product_category_01_ladies-shoes,
+.subnav_10_clothing_01_product_category_02_ladies-bottoms,
+.subnav_10_clothing_01_product_category_03_ladies-dresses,
+.subnav_10_clothing_01_product_category_04_ladies-tops,
+.subnav_10_clothing_01_product_category_05_ladies-jackets,
+.subnav_10_clothing_01_product_category_06_ladies-lingerie,
+.subnav_10_clothing_01_product_category_07_ladies-sports,
+.subnav_10_clothing_01_product_category_08_ladies-swimwear,
+.subnav_10_clothing_01_product_category_09_ladies-accessories,
+.subnav_10_clothing_01_product_category_10_ladies-beauty-products,
+.subnav_10_clothing_02_mens-main,
+.subnav_10_clothing_02_product_category_01_mens-shoes,
+.subnav_10_clothing_02_product_category_02_mens-bottoms,
+.subnav_10_clothing_02_product_category_03_mens-formal,
+.subnav_10_clothing_02_product_category_04_mens-tops,
+.subnav_10_clothing_02_product_category_05_mens-jackets,
+.subnav_10_clothing_02_product_category_06_mens-underwear,
+.subnav_10_clothing_02_product_category_07_mens-sports,
+.subnav_10_clothing_02_product_category_08_mens-swimwear,
+.subnav_10_clothing_02_product_category_09_mens-accessories,
+.subnav_10_clothing_02_product_category_10_mens-grooming-products,
+.subnav_10_clothing_03_kids-main,
+.subnav_10_clothing_03_product_category_01_kids-baby-girls-0-2,
+.subnav_10_clothing_03_product_category_02_kids-baby-boys-0-2,
+.subnav_10_clothing_03_product_category_03_kids-girls-2-8,
+.subnav_10_clothing_03_product_category_04_kids-boys-2-8,
+.subnav_10_clothing_03_product_category_05_kids-girls-8-16,
+.subnav_10_clothing_03_product_category_06_kids-boys-8-16,
+.sub-sub-sub-group-list,
+.sub-sub-sub-sub-group-list {
+  height: 100%;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease-in-out;
+}
+
+/* =============================================================================== */
+/* ========================= END OF HIDING NESTED LISTS ========================== */
+/* =============================================================================== */
+
+/* ===================================================================================================================== */
+/* TODO:  PART 9 - RESPONSIVE MOBILE VIEW (MEDIA QUERY)                                                                  */
+/* ===================================================================================================================== */
+
+/* ===================================================================================================================== */
+/* FIXME:  SPECIAL NOTES - RESPONSIVE MOBILE VIEW (MEDIA QUERY)                                                          */
+/* ===================================================================================================================== */
+/* 01.            */
+/* 02.            */
+/* 03             */
+/* 04.            */
+/* 05.            */
+/* ===================================================================================================================== */
+
+@media screen and (max-width: 768px) {
+  .container_all {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+/* ===================================================================================================================== */
+/*                                                                                            TODO:  STYLING ENDS  TODO: */
+/* ===================================================================================================================== */
