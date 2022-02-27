@@ -78,7 +78,7 @@
 
 html {
   font-size: 62.5%;
-  scroll-behavior: smooth;
+  /* scroll-behavior: smooth; */
 }
 
 body {
@@ -110,7 +110,73 @@ main {
 /* 05.            */
 /* ===================================================================================================================== */
 
-.container_all {
+/* .wrapper {
+  position: relative;
+  margin: 0rem 0rem 0rem 0rem;
+  padding: 0rem 0rem 0rem 0rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 100vw;
+  border: 5px solid rgba(0, 0, 0, 0.5);
+} */
+
+.container_01_all {
+  position: relative;
+  margin: 0rem 0rem 0rem 0rem;
+  padding: 0rem 0rem 0rem 0rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 100vw;
+  border: 5px solid rgba(0, 0, 0, 0.5);
+}
+
+.container_02_all {
+  position: relative;
+  margin: 0rem 0rem 0rem 0rem;
+  padding: 0rem 0rem 0rem 0rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 100vw;
+  border: 5px solid rgba(0, 0, 0, 0.5);
+}
+
+.container_03_all {
+  position: relative;
+  margin: 0rem 0rem 0rem 0rem;
+  padding: 0rem 0rem 0rem 0rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 100vw;
+  border: 5px solid rgba(0, 0, 0, 0.5);
+}
+
+.container_04_all {
+  position: relative;
+  margin: 0rem 0rem 0rem 0rem;
+  padding: 0rem 0rem 0rem 0rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 100vw;
+  border: 5px solid rgba(0, 0, 0, 0.5);
+}
+
+.container_05_all {
+  position: relative;
+  margin: 0rem 0rem 0rem 0rem;
+  padding: 0rem 0rem 0rem 0rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 100vw;
+  border: 5px solid rgba(0, 0, 0, 0.5);
+}
+
+.container_06_all {
   position: relative;
   margin: 0rem 0rem 0rem 0rem;
   padding: 0rem 0rem 0rem 0rem;
