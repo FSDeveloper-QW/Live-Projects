@@ -3,11 +3,11 @@
 /* ===================================================================================================================== */
 
 /* ===================================================================================================================== */
-/* FIXME:  SPECIAL NOTES                                                                                                 */
+/* FIXME:  SPECIAL NOTES                                                                                         */
 /* ===================================================================================================================== */
-/* 01.  USER-SELECT controls whether the user can select TEXT (none / auto / text / contain / all)                       */
-/* 02.  OVERFLOW sets behavior when an element's content is too big to fit in its block (in both directions)             */
-/*      Options Available: visible / hidden / clip / scroll / auto                                                       */
+/* 01.  USER-SELECT controls whether the user can select TEXT (none / auto / text / contain / all)            */
+/* 02.  OVERFLOW sets behavior when an element's content is too big to fit in its block (in both directions)          */
+/*      Options Available: visible / hidden / clip / scroll / auto          */
 /* 03             */
 /* 04.            */
 /* 05.            */
@@ -27,55 +27,41 @@ html {
 
 body {
   font-size: 1.6rem;
-  background: var(--color-page-background);
-  overflow: hidden;
-}
-
-:root {
-  /* COLOR SCHEME - PAGE BACKGROUND */
-  --color-page-background: #18191a;
-  /* COLOR SCHEME - TOP NAVIGATION */
-  --color-top-navigation-background: #242526;
-  --color-top-navigation-text: #b0b3b8;
-  /* COLOR SCHEME - DROP-DOWN MENU CONTAINER & TOOLTIP */
-  --color-tooltip-background: #242526;
-  --color-drop-down-container: #242526;
-  /* COLOR SCHEME - UNORDERED LIST, LIST ITEMS, ANCHORS (ALL LEVELS) */
-  --color-menu-items-all-levels: #b0b3b8;
-  --color-menu-items-all-levels-hover: #3a3b3c;
-  /* COLOR SCHEME - ICON CONTAINER */
-  --color-icon-container: #ffffff1a;
-  /* COLOR SCHEME - BACK-BUTTON ICON (ARROW) AND TEXT */
-  --color-back-button-arrow-and-text: #b0b3b8;
+  background: #18191a;
+  /* overflow: hidden; */
 }
 
 /* ===================================================================================================================== */
-/* TODO:  TOP NAVIGATION - TITLE, BUTTON & DROP-DOWN ICON                                                                */
+/* TODO:  PART 1 -                                                                                                       */
 /* ===================================================================================================================== */
 
-/* TOP NAVIGATION - POSITIONING */
+/* ===================================================================================================================== */
+/* FIXME:  SPECIAL NOTES (PART 1)                                                                                        */
+/* ===================================================================================================================== */
+/* 01.            */
+/* 02.            */
+/* 03             */
+/* 04.            */
+/* 05.            */
+/* ===================================================================================================================== */
 
 nav {
   position: absolute;
-  top: 30%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  top: 5%;
+  left: 5%;
+  transform: translate(-5%, -5%);
 }
-
-/* TOP NAVIGATION - TITLE & BUTTON (THE COMPLETE BOX IS THE BUTTON) */
 
 nav .drop-btn {
   width: 40rem;
-  background: var(--color-top-navigation-background);
-  color: var(--color-top-navigation-text);
+  background: #242526;
+  color: #b0b3b8;
   line-height: 5rem;
   padding: 0rem 2rem 0rem 2rem;
   border-radius: 0.5rem;
   font-size: 2rem;
   font-weight: 500;
 }
-
-/* TOP NAVIGATION - DROP-DOWN ICON */
 
 nav .drop-btn span {
   float: right;
@@ -84,38 +70,20 @@ nav .drop-btn span {
   cursor: pointer;
 }
 
-/* ===================================================================================================================== */
-/* TODO:  1ST LEVEL NAVIGATION - TOOLTIP & DROP-DOWN MENU (CONTAINER)                                                    */
-/* ===================================================================================================================== */
-
-/* 1ST LEVEL - TOOLTIP POSITIONING, SIZING & COLOR  */
-
 nav .tooltip {
   position: absolute;
   right: 2.2rem;
   bottom: -2.2rem;
   height: 1.5rem;
   width: 1.5rem;
-  background: var(--color-tooltip-background);
+  background: #242526;
   transform: rotate(45deg);
   display: none;
 }
 
-/* =============================================== */
-/* TODO:  TOOLTIP LINK TO JAVASCRIPT CODE          */
-/* =============================================== */
-
-/* TOOLTIP - DISPLAY ON OPENING OF CONTAINER */
-
 nav .tooltip.show {
   display: block;
 }
-
-/* ============================================== */
-
-/* 1ST LEVEL - CONTAINER (HOLDING ALL ELEMENTS */
-
-/* CONTAINER - POSITIONING AND SIZING */
 
 nav .wrapper {
   position: absolute;
@@ -125,30 +93,30 @@ nav .wrapper {
   /* width: 120rem; */
   width: 40rem;
   overflow: hidden;
-  background: var(--color-drop-down-container);
+  background: #242526;
   border-radius: 0.5rem;
   transition: all 0.3s ease;
   display: none;
 }
 
-/* ============================================= */
-/* TODO:  CONTAINER LINK TO JAVASCRIPT SCRIPT    */
-/* ============================================= */
-
-/* CONTAINER - OPEN, CLOSING, DISPLAY TYPE */
+/* ========================= */
+/* LINK TO JAVASCRIPT SCRIPT */
 
 nav .wrapper.show {
   display: block;
   display: flex;
 }
 
-/* ============================================= */
+/* ======================== */
 
-/* ===================================================================================================================== */
-/* TODO:  1ST LEVEL NAVIGATION - MENU-ITEMS (UNORDERED LISTS, LIST ITEMS, ANCHORS AND ICONS)                             */
-/* ===================================================================================================================== */
+nav .wrapper .marketplace-drop,
+nav .wrapper .mobile-drop {
+  display: none;
+}
 
-/* lEVEL 1 - UNORDERED LIST - REMOVE BULLETS, SET MAX-WIDTH OF LIST-ITEMS, SET PADDING AROUND LIST-ITEMS */
+nav .wrapper .mobile-drop .laptops-drop {
+  display: none;
+}
 
 nav .wrapper ul {
   list-style: none;
@@ -157,18 +125,14 @@ nav .wrapper ul {
   transition: all 0.3s ease;
 }
 
-/* LEVEL 1 - LIST ITEMS - SET MAX LINE-HEIGHT OF LIST -ITEMS */
-
 nav .wrapper ul li {
   line-height: 5.5rem;
 }
 
-/* LEVEL 1 - UNORDERED LIST, LIST ITEMS, ANCHORS (POSITIONING, SIZING, FONT-SIZING) */
-
 nav .wrapper ul li a {
   position: relative;
   text-decoration: none;
-  color: var(--color-menu-items-all-levels);
+  color: #b0b3b8;
   display: flex;
   font-size: 1.8rem;
   font-weight: 500;
@@ -177,19 +141,15 @@ nav .wrapper ul li a {
   border-radius: 0.8rem;
 }
 
-/* LEVEL 1 - UNORDERED LIST, LIST ITEMS, ANCHORS (ON HOVER COLOR) */
-
 nav .wrapper ul li:hover a {
-  background: var(--color-menu-items-all-levels-hover);
+  background: #3a3b3c;
 }
-
-/* LEVEL 1 - ICON CONTAINER - HEIGTH, WIDTH, MARGINS, BACKGROUND COLOR, ALIGNMENT OF ICONS WITHIN */
 
 .wrapper ul li a .icon {
   height: 4rem;
   width: 4rem;
   margin: 0rem 1.3rem 0rem 0rem;
-  background: var(--color-icon-container);
+  background: #ffffff1a;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -197,26 +157,20 @@ nav .wrapper ul li:hover a {
   border-radius: 50%;
 }
 
-/* LEVEL 1 - NAVIGATION ICONS (TO NEXT LEVEL) - ICON: FA-ANGLE-RIGHT */
-
 .wrapper ul li a i {
   position: absolute;
-  right: 1rem;
+  right: 1.3rem;
   font-size: 2.5rem;
   pointer-events: none;
 }
 
 /* FIRST LEVEL DROPDOWN-TO-RIGHT */
 
-/* ===================================================================================================================== */
-/* TODO:  2ND LEVEL NAVIGATION - THE BACK BUTTON (ARROW) TO THE FIRST LEVEL & BUTTON TEXT                                */
-/* ===================================================================================================================== */
-
 .wrapper ul .arrow {
   padding: 0rem 0rem 0rem 1rem;
   font-size: 2rem;
   font-weight: 500;
-  color: var(--color-back-button-arrow-and-text);
+  color: #b0b3b8;
   cursor: pointer;
 }
 
@@ -224,14 +178,87 @@ nav .wrapper ul li:hover a {
   margin: 0rem 1.5rem 0rem 0rem;
 }
 
+/* nav .wrapper .mobile-drop ul li:hover a {
+  background: #3a3b3c;
+} */
+
+/* .mobile-drop ul li a {
+  position: relative;
+  text-decoration: none;
+  color: #b0b3b8;
+  display: flex;
+  font-size: 1.8rem;
+  font-weight: 500;
+  padding: 0rem 0rem 0rem 0rem;
+  align-items: center;
+  border-radius: 0.8rem;
+} */
+
+.mobile-drop ul li a .icon {
+  height: 4rem;
+  width: 4rem;
+  margin: 0rem 1.3rem 0rem -1rem;
+  background: #ffffff1a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border-radius: 50%;
+}
+
+.mobile-drop ul li a i {
+  position: absolute;
+  right: 2.3rem;
+  font-size: 2.5rem;
+  pointer-events: none;
+}
+
+.laptops-drop ul li a .icon {
+  height: 4rem;
+  width: 4rem;
+  margin: 0rem 1.3rem 0rem -20rem;
+  background: #ffffff1a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border-radius: 50%;
+}
+
+.laptops-drop ul li a i {
+  position: absolute;
+  right: 2.3rem;
+  font-size: 2.5rem;
+  pointer-events: none;
+}
+
+/* FIRST LEVEL DROPDOWN-TO-RIGHT */
+
+/* .mobile-drop ul .arrow {
+  padding: 0rem 0rem 0rem 0rem;
+  font-size: 2rem;
+  font-weight: 500;
+  color: #b0b3b8;
+  cursor: pointer;
+}
+
+.mobile-drop ul .arrow span {
+  margin: 0rem 1.5rem 0rem 0rem;
+} */
+
 /* ===================================================================================================================== */
-/* TODO:  THE INCLUDED HIDDEN NESTED LISTS ON THE NAVIGATION (WHICH IS NOT VISIBLE WHEN NOT ACTIVE)                      */
+/* TODO:  PART 2 -                                                                                                       */
 /* ===================================================================================================================== */
 
-nav .wrapper .settings-drop,
-nav .wrapper .help-drop {
-  display: none;
-}
+/* ===================================================================================================================== */
+/* FIXME:  SPECIAL NOTES (PART 2)                                                                                        */
+/* ===================================================================================================================== */
+/* 01.            */
+/* 02.            */
+/* 03             */
+/* 04.            */
+/* 05.            */
+/* ===================================================================================================================== */
 
 /* ===================================================================================================================== */
 /* TODO:  PART 3 -                                                                                                       */
