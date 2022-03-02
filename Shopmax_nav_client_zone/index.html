@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+    <!-- TODO:   STANDARD META DATA - BASIC REQUIREMENT                                                         -->
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+    <!-- TODO:   STANDARD META DATA - MOBILE SPECIFIC                                                           -->
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+    <!-- FIXME:  PART 2 - SEARCH ENGINE OPTIMIZATION (SEO) : STANDARD HTML TOOLS - DESCRIPTION                  -->
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+
+    <meta
+      name="description"
+      content="ENTER A SHORT DESCRIPTION OF YOUR BUSINESS FOR GOOGLE SEARCH ENGINES TO INDEX"
+    />
+
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+    <!-- TODO:   PROVIDE A TITLE FOR YOUR PAGE - APPEARS IN BROWSER TAB                                         -->
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+
+    <title>SHOPMAX NAVIGATION - CLIENT ZONE</title>
+
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+    <!-- TODO:   LINK GOOGLE FONTS - TO USE CERTAIN FONTS ON YOUR PAGE - https://fonts.google.com/              -->
+    <!-- MY FONTS: ROBOTO, OPEN SANS, MONTSERRAT, POPPINS, RALEWAY, ALICE (ALL REGULAR)                         -->
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alice&family=Montserrat&family=Open+Sans&family=Poppins&family=Raleway&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+    <!-- TODO:   LINK FONT AWESOME ICONS TO YOUR PROJECT - SYNTAX TO USE IN CODE:                               -->
+    <!-- https://www.w3schools.com/icons/fontawesome_icons_intro.asp                                            -->
+    <!-- TO VIEW THE LIST OF FREE ICONS TO USE : https://fontawesome.com/search?m=free                          -->
+    <!-- TODO: COPY AND PASTE: TODO:  <i class="fa fa-iconname"></i>                                            -->
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+
+    <!-- <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    /> -->
+
+    <script
+      src="https://kit.fontawesome.com/6034cfbb24.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+    <!-- TODO:   CSS STYLE SHEET (INTERNAL) - LINK YOUR HTML DOCUMENT TO YOUR OWN CSS STYLE SHEET               -->
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+
+    <link rel="stylesheet" href="styles.css" />
+
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+    <!-- TODO:   CSS STYLE SHEET (EXTERNAL) - LINK TO NORMALISE.CSS STYLE SHEET (ONLY IF REQUIRED)              -->
+    <!-- ALWAYS DOWNLOAD THE LATEST FILE (BEFORE YOU START):  https://necolas.github.io/normalize.css/          -->
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+
+    <!-- <link rel="stylesheet" href="normalize.css" /> -->
+
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+    <!-- TODO:   LINK YOUR HTML DOCUMENT TO ANIMATE ON SCROLL (AOS) FOR ALL PAGE ANIMATIONS                     -->
+    <!-- JAVASCRIPT INCLUDED AT END OF HTML DOCUMENT / WEBSITE: https://michalsnik.github.io/aos/               -->
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  </head>
+  <!-- -------------------------------------------------------------------------------------------------------- -->
+  <!--                              ===== TODO: CODING START BELOW TODO: =====                                  -->
+  <!-- -------------------------------------------------------------------------------------------------------- -->
+  <body>
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+    <!-- TODO:   SHOPMAX NAVIGATION - CLIENT ZONE                                                               -->
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+
+    <nav>
+      <!-- ================================================================= -->
+      <!-- TODO:  TOP NAVIGATION - TITLE, BUTTON & DROP-DOWN ICON            -->
+      <!-- ================================================================= -->
+      <div class="drop-btn">
+        Client Zone <span class="fas fa-caret-down"></span>
+      </div>
+      <!-- ================================================================= -->
+      <!-- TODO:  1ST LEVEL - TOOLTIP & DROP-DOWN MENU (CONTAINER)           -->
+      <!-- ================================================================= -->
+      <div class="tooltip"></div>
+      <div class="wrapper">
+        <!-- ============================================================== -->
+        <!-- TODO:  1ST LEVEL - DROP-DOWN MENU WITH ITEMS                   -->
+        <!-- ============================================================== -->
+        <ul class="menu-bar">
+          <!-- FIRST LEVEL - ITEM 1 (NO LINK)  -->
+          <!-- <li>
+            <a href="#">
+              <div class="icon"><span class="fas fa-home"></span></div>
+              Home
+            </a>
+          </li> -->
+          <!-- FIRST LEVEL - ITEM 2 (WITH LINK TO LEVEL 2) -->
+          <li class="shopper-item">
+            <a href="#">
+              <div class="icon">
+                <span class="fa fa-shopping-cart"></span>
+              </div>
+              Shopper Zone<i class="fas fa-caret-right"></i>
+            </a>
+          </li>
+          <!-- FIRST LEVEL - ITEM 3 (WITH LINK TO LEVEL 2) -->
+          <li class="seller-item">
+            <a href="#">
+              <div class="icon">
+                <span class="fas fa-users"></span>
+              </div>
+              Seller Zone<i class="fas fa-caret-right"></i>
+            </a>
+          </li>
+          <!-- FIRST LEVEL - ITEM 4 (NO LINK)  -->
+          <li class="investor-item">
+            <a href="#">
+              <div class="icon">
+                <span class="fas fa-user-tie"></span>
+              </div>
+              Investor Zone<i class="fas fa-caret-right"></i>
+            </a>
+          </li>
+          <!-- <li>
+            <a href="#">
+              <div class="icon"><span class="fas fa-user"></span></div>
+              About us
+            </a>
+          </li> -->
+          <!-- FIRST LEVEL - ITEM 5 (NO LINK)  -->
+          <!-- <li>
+            <a href="#">
+              <div class="icon"><span class="fas fa-comment-alt"></span></div>
+              Feedback
+            </a>
+          </li> -->
+        </ul>
+
+        <!-- ============================================================== -->
+        <!--           FIXME:  END OF 1ST LEVEL ITEMS  FIXME:               -->
+        <!-- ============================================================== -->
+
+        <!-- ============================================================== -->
+        <!-- TODO:  2ND LEVEL - MENU (TO RIGHT) WITH ITEMS                  -->
+        <!-- ============================================================== -->
+
+        <!-- ============================================================== -->
+        <!-- FIXME:  SUB-MENU (TO RIGHT) - SHOPPER ZONE + LIST ITEMS        -->
+        <!-- ============================================================== -->
+
+        <ul class="shopper-drop">
+          <li class="arrow back-shopper-btn">
+            <span class="fas fa-arrow-circle-left"></span>Shopper Zone
+          </li>
+          <li>
+            <a href="#">
+              <div class="icon"><span class="fas fa-user-lock"></span></div>
+              Register or Login</a
+            >
+          </li>
+          <li>
+            <a href="#">
+              <div class="icon"><span class="fa fa-newspaper-o"></span></div>
+              Subscribe and save</a
+            >
+          </li>
+          <li>
+            <a href="#">
+              <div class="icon">
+                <span class="fas fa-receipt"></span>
+              </div>
+              Request a product quote</a
+            >
+          </li>
+          <li>
+            <a href="#">
+              <div class="icon"><span class="fas fa-receipt"></span></div>
+              Request a service quote
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <div class="icon"><span class="fas fa-gift"></span></div>
+              Purchase a gift voucher
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <div class="icon">
+                <span class="fa fa-calendar-check-o"></span>
+              </div>
+              Pre-orders for new products
+            </a>
+          </li>
+        </ul>
+
+        <!-- ============================================================== -->
+        <!-- FIXME:  SUB-MENU (TO RIGHT) - SELLER ZONE + LIST ITEMS         -->
+        <!-- ============================================================== -->
+
+        <ul class="seller-drop">
+          <li class="arrow back-seller-btn">
+            <span class="fas fa-arrow-circle-left"></span>Seller Zone
+          </li>
+          <li>
+            <a href="#">
+              <div class="icon">
+                <span class="fas fa-user-lock"></span>
+              </div>
+              Login
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <div class="icon"><span class="fas fa-table"></span></div>
+              Selling plans</a
+            >
+          </li>
+          <li>
+            <a href="#">
+              <div class="icon">
+                <span class="fas fa-search"></span>
+              </div>
+              Find a reseller (SAN)</a
+            >
+          </li>
+          <li>
+            <a href="#">
+              <div class="icon">
+                <span class="fas fa-search"></span>
+              </div>
+              Find a service provider (SPN)</a
+            >
+          </li>
+          <li>
+            <a href="#">
+              <div class="icon">
+                <span class="fas fa-ad"></span>
+              </div>
+              Ads - Marketplace products</a
+            >
+          </li>
+          <li>
+            <a href="#">
+              <div class="icon">
+                <span class="fas fa-ad"></span>
+              </div>
+              Ads - Marketplace services</a
+            >
+          </li>
+          <li>
+            <a href="#">
+              <div class="icon">
+                <span class="fas fa-ad"></span>
+              </div>
+              Ads - Professional services</a
+            >
+          </li>
+        </ul>
+
+        <!-- ============================================================== -->
+        <!-- FIXME:  SUB-MENU (TO RIGHT) - SELLER ZONE + LIST ITEMS         -->
+        <!-- ============================================================== -->
+
+        <ul class="investor-drop">
+          <li class="arrow back-investor-btn">
+            <span class="fas fa-arrow-circle-left"></span>Investors Zone
+          </li>
+          <li>
+            <a href="#">
+              <div class="icon">
+                <span class="fas fa-user-lock"></span>
+              </div>
+              Login
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <div class="icon"><span class="fas fa-table"></span></div>
+              Investing plans</a
+            >
+          </li>
+          <li>
+            <a href="#">
+              <div class="icon">
+                <span class="fas fa-list-alt"></span>
+              </div>
+              Investors list - Bronze</a
+            >
+          </li>
+          <li>
+            <a href="#">
+              <div class="icon">
+                <span class="fas fa-list-alt"></span>
+              </div>
+              Investors list - Silver</a
+            >
+          </li>
+          <li>
+            <a href="#">
+              <div class="icon">
+                <span class="fas fa-list-alt"></span>
+              </div>
+              Investors list - Gold</a
+            >
+          </li>
+          <li>
+            <a href="#">
+              <div class="icon">
+                <span class="fas fa-list-alt"></span>
+              </div>
+              Investors list - Platinum</a
+            >
+          </li>
+        </ul>
+
+        <!-- ============================================================== -->
+        <!--           FIXME:  END OF 2ND LEVEL ITEMS  FIXME:               -->
+        <!-- ============================================================== -->
+
+        <!-- ============================================================== -->
+        <!-- TODO:  3RD LEVEL - MENU (TO RIGHT) WITH ITEMS                  -->
+        <!-- ============================================================== -->
+
+        <!-- ============================================================== -->
+        <!--           FIXME:  END OF 3RD LEVEL ITEMS  FIXME:               -->
+        <!-- ============================================================== -->
+
+        <!-- ============================================================== -->
+        <!-- TODO:  4TH LEVEL - MENU (TO RIGHT) WITH ITEMS                  -->
+        <!-- ============================================================== -->
+
+        <!-- ============================================================== -->
+        <!--           FIXME:  END OF 4TH LEVEL ITEMS  FIXME:               -->
+        <!-- ============================================================== -->
+
+        <!-- ============================================================== -->
+        <!-- TODO:  5TH LEVEL - MENU (TO RIGHT) WITH ITEMS                  -->
+        <!-- ============================================================== -->
+
+        <!-- ============================================================== -->
+        <!--           FIXME:  END OF 5TH LEVEL ITEMS  FIXME:               -->
+        <!-- ============================================================== -->
+
+        <!-- =========  END OF NAVIGATION CONTAINER / WRAPPER  ============ -->
+      </div>
+    </nav>
+
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+    <!--                              ===== TODO: CODING END ABOVE TODO: =====                                  -->
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+    <!-- TODO:   JAVASCRIPT (OWN) - LINK ALL YOUR JAVASCRIPT FILES TO THE HTML DOCUMENT                         -->
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+
+    <script src="script.js" defer></script>
+
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+    <!-- FIXME:  ANIMATE ON SCROLL (AOS) SCRIPT - ANIMATIONS FOR WEBSITE - https://michalsnik.github.io/aos/    -->
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+    <!-- FIXME:  ADDITIONAL THIRD PARTY SCRIPTS                                                                 -->
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+  </body>
+  <!-- ------------------------------------------------------------------------------------------------------ -->
+  <!--                              ===== FIXME: MY COMMENTS FIXME: =====                                     -->
+  <!--  TEMPLATE TO USE FOR COMMENTING                                                                        -->
+  <!-- ------------------------------------------------------------------------------------------------------ -->
+</html>
