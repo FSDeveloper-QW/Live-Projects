@@ -1,5 +1,5 @@
 /* ===================================================================================================================== */
-/* TODO:  STYLING FOR SHOPMAX NAVIGATION - SHOP SERVICES                                                                 */
+/* TODO:  STYLING FOR SHOPMAX NAVIGATION - SELLING & INVESTING                                                           */
 /* ===================================================================================================================== */
 
 /* ===================================================================================================================== */
@@ -233,11 +233,12 @@ nav .wrapper ul li:hover a {
 nav .wrapper .shopper-drop,
 nav .wrapper .seller-drop,
 nav .wrapper .investor-drop,
-nav .wrapper .marketplaceproducts-drop,
 nav .wrapper .generalservices-drop,
 nav .wrapper .professionalservices-drop,
 nav .wrapper .skynamo-drop,
-nav .wrapper .whistleblowing-drop {
+nav .wrapper .whistleblowing-drop,
+nav .wrapper .sellingplans-drop,
+nav .wrapper .investingplans-drop {
   display: none;
 }
 

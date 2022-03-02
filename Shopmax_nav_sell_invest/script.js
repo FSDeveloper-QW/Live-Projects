@@ -20,59 +20,21 @@ const menu_bar = document.querySelector(".menu-bar");
 // =========================================================================================
 
 // ================================
-// ITEM 1 - MARKETPLACE PRODUCTS
+// ITEM 1 - SELLING PLANS
 // ================================
 
-const marketplaceproducts_drop = document.querySelector(
-  ".marketplaceproducts-drop"
-);
-const marketplaceproducts_item = document.querySelector(
-  ".marketplaceproducts-item"
-);
-const back_marketplaceproducts_btn = document.querySelector(
-  ".back-marketplaceproducts-btn"
-);
+const sellingplans_drop = document.querySelector(".sellingplans-drop");
+const sellingplans_item = document.querySelector(".sellingplans-item");
+const back_sellingplans_btn = document.querySelector(".back-sellingplans-btn");
 
 // ================================
-// ITEM 2 - GENERAL SERVICES
+// ITEM 2 - INVESTING PLANS
 // ================================
 
-const generalservices_drop = document.querySelector(".generalservices-drop");
-const generalservices_item = document.querySelector(".generalservices-item");
-const back_generalservices_btn = document.querySelector(
-  ".back-generalservices-btn"
-);
-
-// ================================
-// ITEM 3 - PROFESSIONAL SERVICES
-// ================================
-
-const professionalservices_drop = document.querySelector(
-  ".professionalservices-drop"
-);
-const professionalservices_item = document.querySelector(
-  ".professionalservices-item"
-);
-const back_professionalservices_btn = document.querySelector(
-  ".back-professionalservices-btn"
-);
-
-// ================================
-// ITEM 4 - SKYNAMO CRM
-// ================================
-
-const skynamo_drop = document.querySelector(".skynamo-drop");
-const skynamo_item = document.querySelector(".skynamo-item");
-const back_skynamo_btn = document.querySelector(".back-skynamo-btn");
-
-// ================================
-// ITEM 5 - A TO Z WHISTLEBLOWING
-// ================================
-
-const whistleblowing_drop = document.querySelector(".whistleblowing-drop");
-const whistleblowing_item = document.querySelector(".whistleblowing-item");
-const back_whistleblowing_btn = document.querySelector(
-  ".back-whistleblowing-btn"
+const investingplans_drop = document.querySelector(".investingplans-drop");
+const investingplans_item = document.querySelector(".investingplans-item");
+const back_investingplans_btn = document.querySelector(
+  ".back-investingplans-btn"
 );
 
 // =========================================================================================
@@ -109,83 +71,35 @@ drop_btn.onclick = () => {
 // ===================================================
 
 // ================================
-// ITEM 1 - MARKETPLACE PRODUCTS
+// ITEM 1 - SELLING PLANS
 // ================================
 
-marketplaceproducts_item.onclick = () => {
+sellingplans_item.onclick = () => {
   menu_bar.style.marginLeft = "-40rem";
   setTimeout(() => {
-    marketplaceproducts_drop.style.display = "block";
+    sellingplans_drop.style.display = "block";
   }, 100);
 };
 
-back_marketplaceproducts_btn.onclick = () => {
+back_sellingplans_btn.onclick = () => {
   menu_bar.style.marginLeft = "0rem";
-  marketplaceproducts_drop.style.display = "none";
+  sellingplans_drop.style.display = "none";
 };
 
 // ================================
-// ITEM 2 - GENERAL SERVICES
+// ITEM 2 - INVESTING PLANS
 // ================================
 
-generalservices_item.onclick = () => {
+investingplans_item.onclick = () => {
   menu_bar.style.marginLeft = "-40rem";
   setTimeout(() => {
-    generalservices_drop.style.display = "block";
+    investingplans_drop.style.display = "block";
   }, 100);
 };
 
-back_generalservices_btn.onclick = () => {
+back_investingplans_btn.onclick = () => {
   menu_bar.style.marginLeft = "0rem";
-  generalservices_drop.style.display = "none";
-};
-
-// ================================
-// ITEM 3 - PROFESSIONAL SERVICES
-// ================================
-
-professionalservices_item.onclick = () => {
-  menu_bar.style.marginLeft = "-40rem";
-  setTimeout(() => {
-    professionalservices_drop.style.display = "block";
-  }, 100);
-};
-
-back_professionalservices_btn.onclick = () => {
-  menu_bar.style.marginLeft = "0rem";
-  professionalservices_drop.style.display = "none";
-};
-
-// ================================
-// ITEM 4 - SKYNAMO CRM
-// ================================
-
-skynamo_item.onclick = () => {
-  menu_bar.style.marginLeft = "-40rem";
-  setTimeout(() => {
-    skynamo_drop.style.display = "block";
-  }, 100);
-};
-
-back_skynamo_btn.onclick = () => {
-  menu_bar.style.marginLeft = "0rem";
-  skynamo_drop.style.display = "none";
-};
-
-// ================================
-// ITEM 5 - A TO Z WHISTLEBLOWING
-// ================================
-
-whistleblowing_item.onclick = () => {
-  menu_bar.style.marginLeft = "-40rem";
-  setTimeout(() => {
-    whistleblowing_drop.style.display = "block";
-  }, 100);
-};
-
-back_whistleblowing_btn.onclick = () => {
-  menu_bar.style.marginLeft = "0rem";
-  whistleblowing_drop.style.display = "none";
+  investingplans_drop.style.display = "none";
 };
 
 // ===================================================
