@@ -49,21 +49,6 @@ const productstooltip = document.querySelector(".productstooltip");
 const productsmenu_wrapper = document.querySelector(".productswrapper");
 const productsmenu_bar = document.querySelector(".productsmenu-bar");
 
-// ==========================================================  TODO:  SHOP ESSENTIALS  TODO:
-
-const shopessentialproductsdrop_btn = document.querySelector(
-  ".shopessentialproductsdrop-btn"
-);
-const shopessentialproductstooltip = document.querySelector(
-  ".shopessentialproductstooltip"
-);
-const shopessentialproductsmenu_wrapper = document.querySelector(
-  ".shopessentialproductswrapper"
-);
-const shopessentialproductsmenu_bar = document.querySelector(
-  ".shopessentialproductsmenu-bar"
-);
-
 // ==============================================================  TODO:  CLIENT ZONE  TODO:
 
 const clientzonedrop_btn = document.querySelector(".clientzonedrop-btn");
@@ -211,49 +196,13 @@ const diyall_drop = document.querySelector(".diyall-drop");
 const diyall_item = document.querySelector(".diyall-item");
 const back_diyall_btn = document.querySelector(".back-diyall-btn");
 
-// ==========================================================  TODO:  SHOP ESSENTIALS  TODO:
-
 // =====================================
-// ITEM 1 - COVID-19, CLEANING AND PPE
+// ITEM 8 - ESSENTIAL PRODUCTS
 // =====================================
 
-const covid19_drop = document.querySelector(".covid19-drop");
-const covid19_item = document.querySelector(".covid19-item");
-const back_covid19_btn = document.querySelector(".back-covid19-btn");
-
-/// =====================================
-// ITEM 2 - EMERGENCY
-// ======================================
-
-const emergency_drop = document.querySelector(".emergency-drop");
-const emergency_item = document.querySelector(".emergency-item");
-const back_emergency_btn = document.querySelector(".back-emergency-btn");
-
-// =====================================
-// ITEM 3 - ENERGY
-// =====================================
-
-const energy_drop = document.querySelector(".energy-drop");
-const energy_item = document.querySelector(".energy-item");
-const back_energy_btn = document.querySelector(".back-energy-btn");
-
-// =====================================
-// ITEM 4 - FOOD, BEVERAGES & GROCERIES
-// =====================================
-
-const groceries_drop = document.querySelector(".groceries-drop");
-const groceries_item = document.querySelector(".groceries-item");
-const back_groceries_btn = document.querySelector(".back-groceries-btn");
-
-// =====================================
-// ITEM 5 - CLOTHING & FOOTWEAR
-// =====================================
-
-const clothingfootwear_drop = document.querySelector(".clothingfootwear-drop");
-const clothingfootwear_item = document.querySelector(".clothingfootwear-item");
-const back_clothingfootwear_btn = document.querySelector(
-  ".back-clothingfootwear-btn"
-);
+const essproducts_drop = document.querySelector(".essproducts-drop");
+const essproducts_item = document.querySelector(".essproducts-item");
+const back_essproducts_btn = document.querySelector(".back-essproducts-btn");
 
 // ==============================================================  TODO:  CLIENT ZONE  TODO:
 
@@ -683,167 +632,53 @@ const back_diytools_btn = document.querySelector(".back-diytools-btn");
 
 // =====================================   FIXME:  END OF DIY
 
-// ==========================================================  TODO:  SHOP ESSENTIALS  TODO:
+// ============================================================
+// MAIN - ESSENTIAL PRODUCTS
+// ============================================================
 
 // =====================================
-// MAIN: FOOD, BEVERAGES & GROCERIES
+// ITEM 1 - COVID-19, CLEANING AND PPE
 // =====================================
 
-// =====================================
-// ITEM 1 - FRESH PRODUCE
-// =====================================
+const covid19_drop = document.querySelector(".covid19-drop");
+const covid19_item = document.querySelector(".covid19-item");
+const back_covid19_btn = document.querySelector(".back-covid19-btn");
 
-const freshproduce_drop = document.querySelector(".freshproduce-drop");
-const freshproduce_item = document.querySelector(".freshproduce-item");
-const back_freshproduce_btn = document.querySelector(".back-freshproduce-btn");
+/// =====================================
+// ITEM 2 - EMERGENCY
+// ======================================
 
-// =====================================
-// ITEM 2 - BAKERY
-// =====================================
-
-const bakery_drop = document.querySelector(".bakery-drop");
-const bakery_item = document.querySelector(".bakery-item");
-const back_bakery_btn = document.querySelector(".back-bakery-btn");
+const emergency_drop = document.querySelector(".emergency-drop");
+const emergency_item = document.querySelector(".emergency-item");
+const back_emergency_btn = document.querySelector(".back-emergency-btn");
 
 // =====================================
-// ITEM 3 - DAIRY & EGGS
+// ITEM 3 - ENERGY
 // =====================================
 
-const dairyeggs_drop = document.querySelector(".dairyeggs-drop");
-const dairyeggs_item = document.querySelector(".dairyeggs-item");
-const back_dairyeggs_btn = document.querySelector(".back-dairyeggs-btn");
+const energy_drop = document.querySelector(".energy-drop");
+const energy_item = document.querySelector(".energy-item");
+const back_energy_btn = document.querySelector(".back-energy-btn");
 
 // =====================================
-// ITEM 4 - DELI & PARTY
+// ITEM 4 - FOOD, BEVERAGES & GROCERIES
 // =====================================
 
-const deliparty_drop = document.querySelector(".deliparty-drop");
-const deliparty_item = document.querySelector(".deliparty-item");
-const back_deliparty_btn = document.querySelector(".back-deliparty-btn");
+const groceries_drop = document.querySelector(".groceries-drop");
+const groceries_item = document.querySelector(".groceries-item");
+const back_groceries_btn = document.querySelector(".back-groceries-btn");
 
 // =====================================
-// ITEM 5 - MEATS, POULTRY & FISH
+// ITEM 5 - CLOTHING & FOOTWEAR
 // =====================================
 
-const meatspoultryfish_drop = document.querySelector(".meatspoultryfish-drop");
-const meatspoultryfish_item = document.querySelector(".meatspoultryfish-item");
-const back_meatspoultryfish_btn = document.querySelector(
-  ".back-meatspoultryfish-btn"
+const clothingfootwear_drop = document.querySelector(".clothingfootwear-drop");
+const clothingfootwear_item = document.querySelector(".clothingfootwear-item");
+const back_clothingfootwear_btn = document.querySelector(
+  ".back-clothingfootwear-btn"
 );
 
-// =====================================
-// ITEM 6 - FROZEN FOODS
-// =====================================
-
-const frozenfoods_drop = document.querySelector(".frozenfoods-drop");
-const frozenfoods_item = document.querySelector(".frozenfoods-item");
-const back_frozenfoods_btn = document.querySelector(".back-frozenfoods-btn");
-
-// =====================================
-// ITEM 7 - BEVERAGES
-// =====================================
-
-const beveragesall_drop = document.querySelector(".beveragesall-drop");
-const beveragesall_item = document.querySelector(".beveragesall-item");
-const back_beveragesall_btn = document.querySelector(".back-beveragesall-btn");
-
-// =====================================
-// ITEM 8 - TOBACCO
-// =====================================
-
-const tabacco_drop = document.querySelector(".tabacco-drop");
-const tabacco_item = document.querySelector(".tabacco-item");
-const back_tabacco_btn = document.querySelector(".back-tabacco-btn");
-
-// =====================================
-// ITEM 9 - BEERS, CIDER & SELTZER
-// =====================================
-
-const beercider_drop = document.querySelector(".beercider-drop");
-const beercider_item = document.querySelector(".beercider-item");
-const back_beercider_btn = document.querySelector(".back-beercider-btn");
-
-// =====================================
-// ITEM 10 - WINES
-// =====================================
-
-const winesall_drop = document.querySelector(".winesall-drop");
-const winesall_item = document.querySelector(".winesall-item");
-const back_winesall_btn = document.querySelector(".back-winesall-btn");
-
-// =====================================
-// ITEM 11 - SPIRITS
-// =====================================
-
-const spiritsall_drop = document.querySelector(".spiritsall-drop");
-const spiritsall_item = document.querySelector(".spiritsall-item");
-const back_spiritsall_btn = document.querySelector(".back-spiritsall-btn");
-
-// =====================================
-// ITEM 12 - SNACKS
-// =====================================
-
-const snacks_drop = document.querySelector(".snacks-drop");
-const snacks_item = document.querySelector(".snacks-item");
-const back_snacks_btn = document.querySelector(".back-snacks-btn");
-
-// =====================================
-// ITEM 13 - FOOD CUPBOARD
-// =====================================
-
-const foodcupboard_drop = document.querySelector(".foodcupboard-drop");
-const foodcupboard_item = document.querySelector(".foodcupboard-item");
-const back_foodcupboard_btn = document.querySelector(".back-foodcupboard-btn");
-
-// =====================================
-// ITEM 14 - BABY CARE
-// =====================================
-
-const babycare_drop = document.querySelector(".babycare-drop");
-const babycare_item = document.querySelector(".babycare-item");
-const back_babycare_btn = document.querySelector(".back-babycare-btn");
-
-// =====================================
-// ITEM 15 - PET CARE
-// =====================================
-
-const petcare_drop = document.querySelector(".petcare-drop");
-const petcare_item = document.querySelector(".petcare-item");
-const back_petcare_btn = document.querySelector(".back-petcare-btn");
-
-// =====================================
-// ITEM 16 - BRAAI & OUTDOORS
-// =====================================
-
-const braaioutdoors_drop = document.querySelector(".braaioutdoors-drop");
-const braaioutdoors_item = document.querySelector(".braaioutdoors-item");
-const back_braaioutdoors_btn = document.querySelector(
-  ".back-braaioutdoors-btn"
-);
-
-// ============================================
-// MAIN: CLOTHING & FOOTWEAR - FIXME:  LADIES
-// ============================================
-
-const ladiesgroup_drop = document.querySelector(".ladiesgroup-drop");
-const ladiesgroup_item = document.querySelector(".ladiesgroup-item");
-const back_ladiesgroup_btn = document.querySelector(".back-ladiesgroup-btn");
-
-// ============================================
-// MAIN: CLOTHING & FOOTWEAR - FIXME:  MENS
-// ============================================
-
-const mensgroup_drop = document.querySelector(".mensgroup-drop");
-const mensgroup_item = document.querySelector(".mensgroup-item");
-const back_mensgroup_btn = document.querySelector(".back-mensgroup-btn");
-
-// ============================================
-// MAIN: CLOTHING & FOOTWEAR - FIXME:  KIDS
-// ============================================
-
-const kidsgroup_drop = document.querySelector(".kidsgroup-drop");
-const kidsgroup_item = document.querySelector(".kidsgroup-item");
-const back_kidsgroup_btn = document.querySelector(".back-kidsgroup-btn");
+// =======================   FIXME:  END OF ESSENTIAL PRODUCTS
 
 // ==============================================================  TODO:  CLIENT ZONE  TODO:
 
@@ -857,7 +692,177 @@ const back_kidsgroup_btn = document.querySelector(".back-kidsgroup-btn");
 
 // ============================================================  TODO:  SHOP PRODUCTS  TODO:
 
-// ==========================================================  TODO:  SHOP ESSENTIALS  TODO:
+// =====================================
+// MAIN: FOOD, BEVERAGES & GROCERIES
+// =====================================
+
+// =====================================
+// SUB-ITEM 1 - FRESH PRODUCE
+// =====================================
+
+const freshproduce_drop = document.querySelector(".freshproduce-drop");
+const freshproduce_item = document.querySelector(".freshproduce-item");
+const back_freshproduce_btn = document.querySelector(".back-freshproduce-btn");
+
+// =====================================
+// SUB-ITEM 2 - BAKERY
+// =====================================
+
+const bakery_drop = document.querySelector(".bakery-drop");
+const bakery_item = document.querySelector(".bakery-item");
+const back_bakery_btn = document.querySelector(".back-bakery-btn");
+
+// =====================================
+// SUB-ITEM 3 - DAIRY & EGGS
+// =====================================
+
+const dairyeggs_drop = document.querySelector(".dairyeggs-drop");
+const dairyeggs_item = document.querySelector(".dairyeggs-item");
+const back_dairyeggs_btn = document.querySelector(".back-dairyeggs-btn");
+
+// =====================================
+// SUB-ITEM 4 - DELI & PARTY
+// =====================================
+
+const deliparty_drop = document.querySelector(".deliparty-drop");
+const deliparty_item = document.querySelector(".deliparty-item");
+const back_deliparty_btn = document.querySelector(".back-deliparty-btn");
+
+// =====================================
+// SUB-ITEM 5 - MEATS, POULTRY & FISH
+// =====================================
+
+const meatspoultryfish_drop = document.querySelector(".meatspoultryfish-drop");
+const meatspoultryfish_item = document.querySelector(".meatspoultryfish-item");
+const back_meatspoultryfish_btn = document.querySelector(
+  ".back-meatspoultryfish-btn"
+);
+
+// =====================================
+// SUB-ITEM 6 - FROZEN FOODS
+// =====================================
+
+const frozenfoods_drop = document.querySelector(".frozenfoods-drop");
+const frozenfoods_item = document.querySelector(".frozenfoods-item");
+const back_frozenfoods_btn = document.querySelector(".back-frozenfoods-btn");
+
+// =====================================
+// SUB-ITEM 7 - BEVERAGES
+// =====================================
+
+const beveragesall_drop = document.querySelector(".beveragesall-drop");
+const beveragesall_item = document.querySelector(".beveragesall-item");
+const back_beveragesall_btn = document.querySelector(".back-beveragesall-btn");
+
+// =====================================
+// SUB-ITEM 8 - TOBACCO
+// =====================================
+
+const tabacco_drop = document.querySelector(".tabacco-drop");
+const tabacco_item = document.querySelector(".tabacco-item");
+const back_tabacco_btn = document.querySelector(".back-tabacco-btn");
+
+// =====================================
+// SUB-ITEM 9 - BEERS, CIDER & SELTZER
+// =====================================
+
+const beercider_drop = document.querySelector(".beercider-drop");
+const beercider_item = document.querySelector(".beercider-item");
+const back_beercider_btn = document.querySelector(".back-beercider-btn");
+
+// =====================================
+// SUB-ITEM 10 - WINES
+// =====================================
+
+const winesall_drop = document.querySelector(".winesall-drop");
+const winesall_item = document.querySelector(".winesall-item");
+const back_winesall_btn = document.querySelector(".back-winesall-btn");
+
+// =====================================
+// SUB-ITEM 11 - SPIRITS
+// =====================================
+
+const spiritsall_drop = document.querySelector(".spiritsall-drop");
+const spiritsall_item = document.querySelector(".spiritsall-item");
+const back_spiritsall_btn = document.querySelector(".back-spiritsall-btn");
+
+// =====================================
+// SUB-ITEM 12 - SNACKS
+// =====================================
+
+const snacks_drop = document.querySelector(".snacks-drop");
+const snacks_item = document.querySelector(".snacks-item");
+const back_snacks_btn = document.querySelector(".back-snacks-btn");
+
+// =====================================
+// SUB-ITEM 13 - FOOD CUPBOARD
+// =====================================
+
+const foodcupboard_drop = document.querySelector(".foodcupboard-drop");
+const foodcupboard_item = document.querySelector(".foodcupboard-item");
+const back_foodcupboard_btn = document.querySelector(".back-foodcupboard-btn");
+
+// =====================================
+// SUB-ITEM 14 - BABY CARE
+// =====================================
+
+const babycare_drop = document.querySelector(".babycare-drop");
+const babycare_item = document.querySelector(".babycare-item");
+const back_babycare_btn = document.querySelector(".back-babycare-btn");
+
+// =====================================
+// SUB-ITEM 15 - PET CARE
+// =====================================
+
+const petcare_drop = document.querySelector(".petcare-drop");
+const petcare_item = document.querySelector(".petcare-item");
+const back_petcare_btn = document.querySelector(".back-petcare-btn");
+
+// =====================================
+// SUB-ITEM 16 - BRAAI & OUTDOORS
+// =====================================
+
+const braaioutdoors_drop = document.querySelector(".braaioutdoors-drop");
+const braaioutdoors_item = document.querySelector(".braaioutdoors-item");
+const back_braaioutdoors_btn = document.querySelector(
+  ".back-braaioutdoors-btn"
+);
+
+// ============================================
+// SUB-MAIN: CLOTHING & FOOTWEAR - FIXME:  LADIES
+// ============================================
+
+const ladiesgroup_drop = document.querySelector(".ladiesgroup-drop");
+const ladiesgroup_item = document.querySelector(".ladiesgroup-item");
+const back_ladiesgroup_btn = document.querySelector(".back-ladiesgroup-btn");
+
+// ============================================
+// SUB-MAIN: CLOTHING & FOOTWEAR - FIXME:  MENS
+// ============================================
+
+const mensgroup_drop = document.querySelector(".mensgroup-drop");
+const mensgroup_item = document.querySelector(".mensgroup-item");
+const back_mensgroup_btn = document.querySelector(".back-mensgroup-btn");
+
+// ============================================
+// SUB-MAIN: CLOTHING & FOOTWEAR - FIXME:  KIDS
+// ============================================
+
+const kidsgroup_drop = document.querySelector(".kidsgroup-drop");
+const kidsgroup_item = document.querySelector(".kidsgroup-item");
+const back_kidsgroup_btn = document.querySelector(".back-kidsgroup-btn");
+
+// ==============================================================  TODO:  CLIENT ZONE  TODO:
+
+// =========================================================================================
+// FIXME:  LEVEL 4 - CONSTANTS FOR THE 4TH LEVEL ITEMS (WITH DROPDOWNS TO 5TH LEVEL ITEMS)
+// =========================================================================================
+
+// ================================================  TODO:  SELLING & INVESTING PLANS  TODO:
+
+// ==============================================  TODO:  SHOP MARKETPLACE & SERVICES  TODO:
+
+// ============================================================  TODO:  SHOP PRODUCTS  TODO:
 
 // ============================================
 // SUB: CLOTHING & FOOTWEAR - FIXME:  LADIES
@@ -1114,20 +1119,6 @@ const back_boyseightsixteen_btn = document.querySelector(
 // ==============================================================  TODO:  CLIENT ZONE  TODO:
 
 // =========================================================================================
-// FIXME:  LEVEL 4 - CONSTANTS FOR THE 4TH LEVEL ITEMS (WITH DROPDOWNS TO 5TH LEVEL ITEMS)
-// =========================================================================================
-
-// ================================================  TODO:  SELLING & INVESTING PLANS  TODO:
-
-// ==============================================  TODO:  SHOP MARKETPLACE & SERVICES  TODO:
-
-// ============================================================  TODO:  SHOP PRODUCTS  TODO:
-
-// ==========================================================  TODO:  SHOP ESSENTIALS  TODO:
-
-// ==============================================================  TODO:  CLIENT ZONE  TODO:
-
-// =========================================================================================
 // FIXME:  LEVEL 5 - CONSTANTS FOR THE 5TH LEVEL ITEMS (NO FURTHER LEVELS)
 // =========================================================================================
 
@@ -1136,8 +1127,6 @@ const back_boyseightsixteen_btn = document.querySelector(
 // ==============================================  TODO:  SHOP MARKETPLACE & SERVICES  TODO:
 
 // ============================================================  TODO:  SHOP PRODUCTS  TODO:
-
-// ==========================================================  TODO:  SHOP ESSENTIALS  TODO:
 
 // ==============================================================  TODO:  CLIENT ZONE  TODO:
 
@@ -1174,13 +1163,6 @@ productsdrop_btn.onclick = () => {
   productstooltip.classList.toggle("show");
 };
 
-// ==========================================================  TODO:  SHOP ESSENTIALS  TODO:
-
-shopessentialproductsdrop_btn.onclick = () => {
-  shopessentialproductsmenu_wrapper.classList.toggle("show");
-  shopessentialproductstooltip.classList.toggle("show");
-};
-
 // ==============================================================  TODO:  CLIENT ZONE  TODO:
 
 clientzonedrop_btn.onclick = () => {
@@ -1199,7 +1181,7 @@ clientzonedrop_btn.onclick = () => {
 // ================================
 
 sellingplans_item.onclick = () => {
-  sellinvestplanmenu_bar.style.marginLeft = "-24rem";
+  sellinvestplanmenu_bar.style.marginLeft = "-20rem";
   setTimeout(() => {
     sellingplans_drop.style.display = "block";
   }, 100);
@@ -1215,7 +1197,7 @@ back_sellingplans_btn.onclick = () => {
 // ================================
 
 investingplans_item.onclick = () => {
-  sellinvestplanmenu_bar.style.marginLeft = "-24rem";
+  sellinvestplanmenu_bar.style.marginLeft = "-20rem";
   setTimeout(() => {
     investingplans_drop.style.display = "block";
   }, 100);
@@ -1233,7 +1215,7 @@ back_investingplans_btn.onclick = () => {
 // ================================
 
 marketplaceproducts_item.onclick = () => {
-  shopmarketplacemenu_bar.style.marginLeft = "-24rem";
+  shopmarketplacemenu_bar.style.marginLeft = "-20rem";
   setTimeout(() => {
     marketplaceproducts_drop.style.display = "block";
   }, 100);
@@ -1249,7 +1231,7 @@ back_marketplaceproducts_btn.onclick = () => {
 // ================================
 
 generalservices_item.onclick = () => {
-  shopmarketplacemenu_bar.style.marginLeft = "-24rem";
+  shopmarketplacemenu_bar.style.marginLeft = "-20rem";
   setTimeout(() => {
     generalservices_drop.style.display = "block";
   }, 100);
@@ -1265,7 +1247,7 @@ back_generalservices_btn.onclick = () => {
 // ================================
 
 professionalservices_item.onclick = () => {
-  shopmarketplacemenu_bar.style.marginLeft = "-24rem";
+  shopmarketplacemenu_bar.style.marginLeft = "-20rem";
   setTimeout(() => {
     professionalservices_drop.style.display = "block";
   }, 100);
@@ -1281,7 +1263,7 @@ back_professionalservices_btn.onclick = () => {
 // ================================
 
 skynamo_item.onclick = () => {
-  shopmarketplacemenu_bar.style.marginLeft = "-24rem";
+  shopmarketplacemenu_bar.style.marginLeft = "-20rem";
   setTimeout(() => {
     skynamo_drop.style.display = "block";
   }, 100);
@@ -1297,7 +1279,7 @@ back_skynamo_btn.onclick = () => {
 // ================================
 
 whistleblowing_item.onclick = () => {
-  shopmarketplacemenu_bar.style.marginLeft = "-24rem";
+  shopmarketplacemenu_bar.style.marginLeft = "-20rem";
   setTimeout(() => {
     whistleblowing_drop.style.display = "block";
   }, 100);
@@ -1315,7 +1297,7 @@ back_whistleblowing_btn.onclick = () => {
 // =====================================
 
 mobile_item.onclick = () => {
-  productsmenu_bar.style.marginLeft = "-24rem";
+  productsmenu_bar.style.marginLeft = "-20rem";
   setTimeout(() => {
     mobile_drop.style.display = "block";
   }, 100);
@@ -1331,7 +1313,7 @@ back_mobile_btn.onclick = () => {
 // =====================================
 
 office_item.onclick = () => {
-  productsmenu_bar.style.marginLeft = "-24rem";
+  productsmenu_bar.style.marginLeft = "-20rem";
   setTimeout(() => {
     office_drop.style.display = "block";
   }, 100);
@@ -1347,7 +1329,7 @@ back_office_btn.onclick = () => {
 // =====================================
 
 homeliving_item.onclick = () => {
-  productsmenu_bar.style.marginLeft = "-24rem";
+  productsmenu_bar.style.marginLeft = "-20rem";
   setTimeout(() => {
     homeliving_drop.style.display = "block";
   }, 100);
@@ -1363,7 +1345,7 @@ back_homeliving_btn.onclick = () => {
 // =====================================
 
 hobbies_item.onclick = () => {
-  productsmenu_bar.style.marginLeft = "-24rem";
+  productsmenu_bar.style.marginLeft = "-20rem";
   setTimeout(() => {
     hobbies_drop.style.display = "block";
   }, 100);
@@ -1379,7 +1361,7 @@ back_hobbies_btn.onclick = () => {
 // =====================================
 
 outdoors_item.onclick = () => {
-  productsmenu_bar.style.marginLeft = "-24rem";
+  productsmenu_bar.style.marginLeft = "-20rem";
   setTimeout(() => {
     outdoors_drop.style.display = "block";
   }, 100);
@@ -1395,7 +1377,7 @@ back_outdoors_btn.onclick = () => {
 // =====================================
 
 sports_item.onclick = () => {
-  productsmenu_bar.style.marginLeft = "-24rem";
+  productsmenu_bar.style.marginLeft = "-20rem";
   setTimeout(() => {
     sports_drop.style.display = "block";
   }, 100);
@@ -1411,7 +1393,7 @@ back_sports_btn.onclick = () => {
 // =====================================
 
 diyall_item.onclick = () => {
-  productsmenu_bar.style.marginLeft = "-24rem";
+  productsmenu_bar.style.marginLeft = "-20rem";
   setTimeout(() => {
     diyall_drop.style.display = "block";
   }, 100);
@@ -1422,86 +1404,20 @@ back_diyall_btn.onclick = () => {
   diyall_drop.style.display = "none";
 };
 
-// ==========================================================  TODO:  SHOP ESSENTIALS  TODO:
-
 // =====================================
-// ITEM 1 - COVID-19, CLEANING AND PPE
+// ITEM 8 - ESSENTIAL PRODUCTS
 // =====================================
 
-covid19_item.onclick = () => {
-  shopessentialproductsmenu_bar.style.marginLeft = "-24rem";
+essproducts_item.onclick = () => {
+  productsmenu_bar.style.marginLeft = "-20rem";
   setTimeout(() => {
-    covid19_drop.style.display = "block";
+    essproducts_drop.style.display = "block";
   }, 100);
 };
 
-back_covid19_btn.onclick = () => {
-  shopessentialproductsmenu_bar.style.marginLeft = "0rem";
-  covid19_drop.style.display = "none";
-};
-
-/// =====================================
-// ITEM 2 - EMERGENCY
-// ======================================
-
-emergency_item.onclick = () => {
-  shopessentialproductsmenu_bar.style.marginLeft = "-24rem";
-  setTimeout(() => {
-    emergency_drop.style.display = "block";
-  }, 100);
-};
-
-back_emergency_btn.onclick = () => {
-  shopessentialproductsmenu_bar.style.marginLeft = "0rem";
-  emergency_drop.style.display = "none";
-};
-
-// =====================================
-// ITEM 3 - ENERGY
-// =====================================
-
-energy_item.onclick = () => {
-  shopessentialproductsmenu_bar.style.marginLeft = "-24rem";
-  setTimeout(() => {
-    energy_drop.style.display = "block";
-  }, 100);
-};
-
-back_energy_btn.onclick = () => {
-  shopessentialproductsmenu_bar.style.marginLeft = "0rem";
-  energy_drop.style.display = "none";
-};
-
-// =====================================
-// ITEM 4 - FOOD, BEVERAGES & GROCERIES
-// =====================================
-
-groceries_item.onclick = () => {
-  shopessentialproductsmenu_bar.style.marginLeft = "-24rem";
-  setTimeout(() => {
-    groceries_drop.style.display = "block";
-  }, 100);
-};
-
-back_groceries_btn.onclick = () => {
-  shopessentialproductsmenu_bar.style.marginLeft = "0rem";
-  groceries_drop.style.display = "none";
-};
-
-// =====================================
-// ITEM 5 - CLOTHING & FOOTWEAR
-// =====================================
-
-clothingfootwear_item.onclick = () => {
-  shopessentialproductsmenu_bar.style.marginLeft = "-24rem";
-  setTimeout(() => {
-    clothingfootwear_drop.style.display = "block";
-  }, 100);
-};
-
-back_clothingfootwear_btn.onclick = () => {
-  shopessentialproductsmenu_bar.style.marginLeft = "0rem";
-  clothingfootwear_drop.style.display = "none";
+back_essproducts_btn.onclick = () => {
+  productsmenu_bar.style.marginLeft = "0rem";
+  essproducts_drop.style.display = "none";
 };
 
 // ==============================================================  TODO:  CLIENT ZONE  TODO:
@@ -1511,7 +1427,7 @@ back_clothingfootwear_btn.onclick = () => {
 // =========================
 
 shopper_item.onclick = () => {
-  clientzonemenu_bar.style.marginLeft = "-24rem";
+  clientzonemenu_bar.style.marginLeft = "-20rem";
   setTimeout(() => {
     shopper_drop.style.display = "block";
   }, 100);
@@ -1527,7 +1443,7 @@ back_shopper_btn.onclick = () => {
 // ========================
 
 seller_item.onclick = () => {
-  clientzonemenu_bar.style.marginLeft = "-24rem";
+  clientzonemenu_bar.style.marginLeft = "-20rem";
   setTimeout(() => {
     seller_drop.style.display = "block";
   }, 100);
@@ -1543,7 +1459,7 @@ back_seller_btn.onclick = () => {
 // ========================
 
 investor_item.onclick = () => {
-  clientzonemenu_bar.style.marginLeft = "-24rem";
+  clientzonemenu_bar.style.marginLeft = "-20rem";
   setTimeout(() => {
     investor_drop.style.display = "block";
   }, 100);
@@ -1573,14 +1489,14 @@ back_investor_btn.onclick = () => {
 // =====================================
 
 laptops_item.onclick = () => {
-  productsmenu_bar.style.marginLeft = "-48rem";
+  productsmenu_bar.style.marginLeft = "-40rem";
   setTimeout(() => {
     laptops_drop.style.display = "block";
   }, 100);
 };
 
 back_laptops_btn.onclick = () => {
-  productsmenu_bar.style.marginLeft = "-24rem";
+  productsmenu_bar.style.marginLeft = "-20rem";
   laptops_drop.style.display = "none";
 };
 
@@ -1589,14 +1505,14 @@ back_laptops_btn.onclick = () => {
 // =====================================
 
 phones_item.onclick = () => {
-  productsmenu_bar.style.marginLeft = "-48rem";
+  productsmenu_bar.style.marginLeft = "-40rem";
   setTimeout(() => {
     phones_drop.style.display = "block";
   }, 100);
 };
 
 back_phones_btn.onclick = () => {
-  productsmenu_bar.style.marginLeft = "-24rem";
+  productsmenu_bar.style.marginLeft = "-20rem";
   phones_drop.style.display = "none";
 };
 
@@ -1605,14 +1521,14 @@ back_phones_btn.onclick = () => {
 // =====================================
 
 tablets_item.onclick = () => {
-  productsmenu_bar.style.marginLeft = "-48rem";
+  productsmenu_bar.style.marginLeft = "-40rem";
   setTimeout(() => {
     tablets_drop.style.display = "block";
   }, 100);
 };
 
 back_tablets_btn.onclick = () => {
-  productsmenu_bar.style.marginLeft = "-24rem";
+  productsmenu_bar.style.marginLeft = "-20rem";
   tablets_drop.style.display = "none";
 };
 
@@ -1621,14 +1537,14 @@ back_tablets_btn.onclick = () => {
 // =====================================
 
 watches_item.onclick = () => {
-  productsmenu_bar.style.marginLeft = "-48rem";
+  productsmenu_bar.style.marginLeft = "-40rem";
   setTimeout(() => {
     watches_drop.style.display = "block";
   }, 100);
 };
 
 back_watches_btn.onclick = () => {
-  productsmenu_bar.style.marginLeft = "-24rem";
+  productsmenu_bar.style.marginLeft = "-20rem";
   watches_drop.style.display = "none";
 };
 
@@ -1637,14 +1553,14 @@ back_watches_btn.onclick = () => {
 // =====================================
 
 data_item.onclick = () => {
-  productsmenu_bar.style.marginLeft = "-48rem";
+  productsmenu_bar.style.marginLeft = "-40rem";
   setTimeout(() => {
     data_drop.style.display = "block";
   }, 100);
 };
 
 back_data_btn.onclick = () => {
-  productsmenu_bar.style.marginLeft = "-24rem";
+  productsmenu_bar.style.marginLeft = "-20rem";
   data_drop.style.display = "none";
 };
 
@@ -1653,14 +1569,14 @@ back_data_btn.onclick = () => {
 // =====================================
 
 mobileaccessories_item.onclick = () => {
-  productsmenu_bar.style.marginLeft = "-48rem";
+  productsmenu_bar.style.marginLeft = "-40rem";
   setTimeout(() => {
     mobileaccessories_drop.style.display = "block";
   }, 100);
 };
 
 back_mobileaccessories_btn.onclick = () => {
-  productsmenu_bar.style.marginLeft = "-24rem";
+  productsmenu_bar.style.marginLeft = "-20rem";
   mobileaccessories_drop.style.display = "none";
 };
 
@@ -1675,14 +1591,14 @@ back_mobileaccessories_btn.onclick = () => {
 // =====================================
 
 desktoppc_item.onclick = () => {
-  productsmenu_bar.style.marginLeft = "-48rem";
+  productsmenu_bar.style.marginLeft = "-40rem";
   setTimeout(() => {
     desktoppc_drop.style.display = "block";
   }, 100);
 };
 
 back_desktoppc_btn.onclick = () => {
-  productsmenu_bar.style.marginLeft = "-24rem";
+  productsmenu_bar.style.marginLeft = "-20rem";
   desktoppc_drop.style.display = "none";
 };
 
@@ -1691,14 +1607,14 @@ back_desktoppc_btn.onclick = () => {
 // =====================================
 
 pccomponents_item.onclick = () => {
-  productsmenu_bar.style.marginLeft = "-48rem";
+  productsmenu_bar.style.marginLeft = "-40rem";
   setTimeout(() => {
     pccomponents_drop.style.display = "block";
   }, 100);
 };
 
 back_pccomponents_btn.onclick = () => {
-  productsmenu_bar.style.marginLeft = "-24rem";
+  productsmenu_bar.style.marginLeft = "-20rem";
   pccomponents_drop.style.display = "none";
 };
 
@@ -1707,14 +1623,14 @@ back_pccomponents_btn.onclick = () => {
 // =====================================
 
 pcperipherals_item.onclick = () => {
-  productsmenu_bar.style.marginLeft = "-48rem";
+  productsmenu_bar.style.marginLeft = "-40rem";
   setTimeout(() => {
     pcperipherals_drop.style.display = "block";
   }, 100);
 };
 
 back_pcperipherals_btn.onclick = () => {
-  productsmenu_bar.style.marginLeft = "-24rem";
+  productsmenu_bar.style.marginLeft = "-20rem";
   pcperipherals_drop.style.display = "none";
 };
 
@@ -1723,14 +1639,14 @@ back_pcperipherals_btn.onclick = () => {
 // =====================================
 
 servers_item.onclick = () => {
-  productsmenu_bar.style.marginLeft = "-48rem";
+  productsmenu_bar.style.marginLeft = "-40rem";
   setTimeout(() => {
     servers_drop.style.display = "block";
   }, 100);
 };
 
 back_servers_btn.onclick = () => {
-  productsmenu_bar.style.marginLeft = "-24rem";
+  productsmenu_bar.style.marginLeft = "-20rem";
   servers_drop.style.display = "none";
 };
 
@@ -1739,14 +1655,14 @@ back_servers_btn.onclick = () => {
 // =====================================
 
 pointofsale_item.onclick = () => {
-  productsmenu_bar.style.marginLeft = "-48rem";
+  productsmenu_bar.style.marginLeft = "-40rem";
   setTimeout(() => {
     pointofsale_drop.style.display = "block";
   }, 100);
 };
 
 back_pointofsale_btn.onclick = () => {
-  productsmenu_bar.style.marginLeft = "-24rem";
+  productsmenu_bar.style.marginLeft = "-20rem";
   pointofsale_drop.style.display = "none";
 };
 
@@ -1755,14 +1671,14 @@ back_pointofsale_btn.onclick = () => {
 // =====================================
 
 securitysurveillance_item.onclick = () => {
-  productsmenu_bar.style.marginLeft = "-48rem";
+  productsmenu_bar.style.marginLeft = "-40rem";
   setTimeout(() => {
     securitysurveillance_drop.style.display = "block";
   }, 100);
 };
 
 back_securitysurveillance_btn.onclick = () => {
-  productsmenu_bar.style.marginLeft = "-24rem";
+  productsmenu_bar.style.marginLeft = "-20rem";
   securitysurveillance_drop.style.display = "none";
 };
 
@@ -1771,14 +1687,14 @@ back_securitysurveillance_btn.onclick = () => {
 // =====================================
 
 printers_item.onclick = () => {
-  productsmenu_bar.style.marginLeft = "-48rem";
+  productsmenu_bar.style.marginLeft = "-40rem";
   setTimeout(() => {
     printers_drop.style.display = "block";
   }, 100);
 };
 
 back_printers_btn.onclick = () => {
-  productsmenu_bar.style.marginLeft = "-24rem";
+  productsmenu_bar.style.marginLeft = "-20rem";
   printers_drop.style.display = "none";
 };
 
@@ -1787,14 +1703,14 @@ back_printers_btn.onclick = () => {
 // =====================================
 
 projectors_item.onclick = () => {
-  productsmenu_bar.style.marginLeft = "-48rem";
+  productsmenu_bar.style.marginLeft = "-40rem";
   setTimeout(() => {
     projectors_drop.style.display = "block";
   }, 100);
 };
 
 back_projectors_btn.onclick = () => {
-  productsmenu_bar.style.marginLeft = "-24rem";
+  productsmenu_bar.style.marginLeft = "-20rem";
   projectors_drop.style.display = "none";
 };
 
@@ -1803,14 +1719,14 @@ back_projectors_btn.onclick = () => {
 // =====================================
 
 software_item.onclick = () => {
-  productsmenu_bar.style.marginLeft = "-48rem";
+  productsmenu_bar.style.marginLeft = "-40rem";
   setTimeout(() => {
     software_drop.style.display = "block";
   }, 100);
 };
 
 back_software_btn.onclick = () => {
-  productsmenu_bar.style.marginLeft = "-24rem";
+  productsmenu_bar.style.marginLeft = "-20rem";
   software_drop.style.display = "none";
 };
 
@@ -1819,14 +1735,14 @@ back_software_btn.onclick = () => {
 // =====================================
 
 officestationery_item.onclick = () => {
-  productsmenu_bar.style.marginLeft = "-48rem";
+  productsmenu_bar.style.marginLeft = "-40rem";
   setTimeout(() => {
     officestationery_drop.style.display = "block";
   }, 100);
 };
 
 back_officestationery_btn.onclick = () => {
-  productsmenu_bar.style.marginLeft = "-24rem";
+  productsmenu_bar.style.marginLeft = "-20rem";
   officestationery_drop.style.display = "none";
 };
 
@@ -1835,14 +1751,14 @@ back_officestationery_btn.onclick = () => {
 // =====================================
 
 officefurniture_item.onclick = () => {
-  productsmenu_bar.style.marginLeft = "-48rem";
+  productsmenu_bar.style.marginLeft = "-40rem";
   setTimeout(() => {
     officefurniture_drop.style.display = "block";
   }, 100);
 };
 
 back_officefurniture_btn.onclick = () => {
-  productsmenu_bar.style.marginLeft = "-24rem";
+  productsmenu_bar.style.marginLeft = "-20rem";
   officefurniture_drop.style.display = "none";
 };
 
@@ -1857,14 +1773,14 @@ back_officefurniture_btn.onclick = () => {
 // =====================================
 
 bathrooms_item.onclick = () => {
-  productsmenu_bar.style.marginLeft = "-48rem";
+  productsmenu_bar.style.marginLeft = "-40rem";
   setTimeout(() => {
     bathrooms_drop.style.display = "block";
   }, 100);
 };
 
 back_bathrooms_btn.onclick = () => {
-  productsmenu_bar.style.marginLeft = "-24rem";
+  productsmenu_bar.style.marginLeft = "-20rem";
   bathrooms_drop.style.display = "none";
 };
 
@@ -1873,14 +1789,14 @@ back_bathrooms_btn.onclick = () => {
 // =====================================
 
 bedrooms_item.onclick = () => {
-  productsmenu_bar.style.marginLeft = "-48rem";
+  productsmenu_bar.style.marginLeft = "-40rem";
   setTimeout(() => {
     bedrooms_drop.style.display = "block";
   }, 100);
 };
 
 back_bedrooms_btn.onclick = () => {
-  productsmenu_bar.style.marginLeft = "-24rem";
+  productsmenu_bar.style.marginLeft = "-20rem";
   bedrooms_drop.style.display = "none";
 };
 
@@ -1889,14 +1805,14 @@ back_bedrooms_btn.onclick = () => {
 // =====================================
 
 cookware_item.onclick = () => {
-  productsmenu_bar.style.marginLeft = "-48rem";
+  productsmenu_bar.style.marginLeft = "-40rem";
   setTimeout(() => {
     cookware_drop.style.display = "block";
   }, 100);
 };
 
 back_cookware_btn.onclick = () => {
-  productsmenu_bar.style.marginLeft = "-24rem";
+  productsmenu_bar.style.marginLeft = "-20rem";
   cookware_drop.style.display = "none";
 };
 
@@ -1905,14 +1821,14 @@ back_cookware_btn.onclick = () => {
 // =====================================
 
 diningrooms_item.onclick = () => {
-  productsmenu_bar.style.marginLeft = "-48rem";
+  productsmenu_bar.style.marginLeft = "-40rem";
   setTimeout(() => {
     diningrooms_drop.style.display = "block";
   }, 100);
 };
 
 back_diningrooms_btn.onclick = () => {
-  productsmenu_bar.style.marginLeft = "-24rem";
+  productsmenu_bar.style.marginLeft = "-20rem";
   diningrooms_drop.style.display = "none";
 };
 
@@ -1921,14 +1837,14 @@ back_diningrooms_btn.onclick = () => {
 // =====================================
 
 kitchen_item.onclick = () => {
-  productsmenu_bar.style.marginLeft = "-48rem";
+  productsmenu_bar.style.marginLeft = "-40rem";
   setTimeout(() => {
     kitchen_drop.style.display = "block";
   }, 100);
 };
 
 back_kitchen_btn.onclick = () => {
-  productsmenu_bar.style.marginLeft = "-24rem";
+  productsmenu_bar.style.marginLeft = "-20rem";
   kitchen_drop.style.display = "none";
 };
 
@@ -1937,14 +1853,14 @@ back_kitchen_btn.onclick = () => {
 // =====================================
 
 laundry_item.onclick = () => {
-  productsmenu_bar.style.marginLeft = "-48rem";
+  productsmenu_bar.style.marginLeft = "-40rem";
   setTimeout(() => {
     laundry_drop.style.display = "block";
   }, 100);
 };
 
 back_laundry_btn.onclick = () => {
-  productsmenu_bar.style.marginLeft = "-24rem";
+  productsmenu_bar.style.marginLeft = "-20rem";
   laundry_drop.style.display = "none";
 };
 
@@ -1953,14 +1869,14 @@ back_laundry_btn.onclick = () => {
 // =====================================
 
 lounge_item.onclick = () => {
-  productsmenu_bar.style.marginLeft = "-48rem";
+  productsmenu_bar.style.marginLeft = "-40rem";
   setTimeout(() => {
     lounge_drop.style.display = "block";
   }, 100);
 };
 
 back_lounge_btn.onclick = () => {
-  productsmenu_bar.style.marginLeft = "-24rem";
+  productsmenu_bar.style.marginLeft = "-20rem";
   lounge_drop.style.display = "none";
 };
 
@@ -1969,14 +1885,14 @@ back_lounge_btn.onclick = () => {
 // =====================================
 
 patiopools_item.onclick = () => {
-  productsmenu_bar.style.marginLeft = "-48rem";
+  productsmenu_bar.style.marginLeft = "-40rem";
   setTimeout(() => {
     patiopools_drop.style.display = "block";
   }, 100);
 };
 
 back_patiopools_btn.onclick = () => {
-  productsmenu_bar.style.marginLeft = "-24rem";
+  productsmenu_bar.style.marginLeft = "-20rem";
   patiopools_drop.style.display = "none";
 };
 
@@ -1985,14 +1901,14 @@ back_patiopools_btn.onclick = () => {
 // =====================================
 
 homeaccessories_item.onclick = () => {
-  productsmenu_bar.style.marginLeft = "-48rem";
+  productsmenu_bar.style.marginLeft = "-40rem";
   setTimeout(() => {
     homeaccessories_drop.style.display = "block";
   }, 100);
 };
 
 back_homeaccessories_btn.onclick = () => {
-  productsmenu_bar.style.marginLeft = "-24rem";
+  productsmenu_bar.style.marginLeft = "-20rem";
   homeaccessories_drop.style.display = "none";
 };
 
@@ -2001,14 +1917,14 @@ back_homeaccessories_btn.onclick = () => {
 // =====================================
 
 television_item.onclick = () => {
-  productsmenu_bar.style.marginLeft = "-48rem";
+  productsmenu_bar.style.marginLeft = "-40rem";
   setTimeout(() => {
     television_drop.style.display = "block";
   }, 100);
 };
 
 back_television_btn.onclick = () => {
-  productsmenu_bar.style.marginLeft = "-24rem";
+  productsmenu_bar.style.marginLeft = "-20rem";
   television_drop.style.display = "none";
 };
 
@@ -2023,14 +1939,14 @@ back_television_btn.onclick = () => {
 // =====================================
 
 booksall_item.onclick = () => {
-  productsmenu_bar.style.marginLeft = "-48rem";
+  productsmenu_bar.style.marginLeft = "-40rem";
   setTimeout(() => {
     booksall_drop.style.display = "block";
   }, 100);
 };
 
 back_booksall_btn.onclick = () => {
-  productsmenu_bar.style.marginLeft = "-24rem";
+  productsmenu_bar.style.marginLeft = "-20rem";
   booksall_drop.style.display = "none";
 };
 
@@ -2039,14 +1955,14 @@ back_booksall_btn.onclick = () => {
 // =====================================
 
 camerasall_item.onclick = () => {
-  productsmenu_bar.style.marginLeft = "-48rem";
+  productsmenu_bar.style.marginLeft = "-40rem";
   setTimeout(() => {
     camerasall_drop.style.display = "block";
   }, 100);
 };
 
 back_camerasall_btn.onclick = () => {
-  productsmenu_bar.style.marginLeft = "-24rem";
+  productsmenu_bar.style.marginLeft = "-20rem";
   camerasall_drop.style.display = "none";
 };
 
@@ -2055,14 +1971,14 @@ back_camerasall_btn.onclick = () => {
 // =====================================
 
 gamingall_item.onclick = () => {
-  productsmenu_bar.style.marginLeft = "-48rem";
+  productsmenu_bar.style.marginLeft = "-40rem";
   setTimeout(() => {
     gamingall_drop.style.display = "block";
   }, 100);
 };
 
 back_gamingall_btn.onclick = () => {
-  productsmenu_bar.style.marginLeft = "-24rem";
+  productsmenu_bar.style.marginLeft = "-20rem";
   gamingall_drop.style.display = "none";
 };
 
@@ -2071,14 +1987,14 @@ back_gamingall_btn.onclick = () => {
 // =====================================
 
 radiocontrol_item.onclick = () => {
-  productsmenu_bar.style.marginLeft = "-48rem";
+  productsmenu_bar.style.marginLeft = "-40rem";
   setTimeout(() => {
     radiocontrol_drop.style.display = "block";
   }, 100);
 };
 
 back_radiocontrol_btn.onclick = () => {
-  productsmenu_bar.style.marginLeft = "-24rem";
+  productsmenu_bar.style.marginLeft = "-20rem";
   radiocontrol_drop.style.display = "none";
 };
 
@@ -2087,14 +2003,14 @@ back_radiocontrol_btn.onclick = () => {
 // =====================================
 
 toysall_item.onclick = () => {
-  productsmenu_bar.style.marginLeft = "-48rem";
+  productsmenu_bar.style.marginLeft = "-40rem";
   setTimeout(() => {
     toysall_drop.style.display = "block";
   }, 100);
 };
 
 back_toysall_btn.onclick = () => {
-  productsmenu_bar.style.marginLeft = "-24rem";
+  productsmenu_bar.style.marginLeft = "-20rem";
   toysall_drop.style.display = "none";
 };
 
@@ -2109,14 +2025,14 @@ back_toysall_btn.onclick = () => {
 // =====================================
 
 camping_item.onclick = () => {
-  productsmenu_bar.style.marginLeft = "-48rem";
+  productsmenu_bar.style.marginLeft = "-40rem";
   setTimeout(() => {
     camping_drop.style.display = "block";
   }, 100);
 };
 
 back_camping_btn.onclick = () => {
-  productsmenu_bar.style.marginLeft = "-24rem";
+  productsmenu_bar.style.marginLeft = "-20rem";
   camping_drop.style.display = "none";
 };
 
@@ -2125,14 +2041,14 @@ back_camping_btn.onclick = () => {
 // =====================================
 
 offroadvehicles_item.onclick = () => {
-  productsmenu_bar.style.marginLeft = "-48rem";
+  productsmenu_bar.style.marginLeft = "-40rem";
   setTimeout(() => {
     offroadvehicles_drop.style.display = "block";
   }, 100);
 };
 
 back_offroadvehicles_btn.onclick = () => {
-  productsmenu_bar.style.marginLeft = "-24rem";
+  productsmenu_bar.style.marginLeft = "-20rem";
   offroadvehicles_drop.style.display = "none";
 };
 
@@ -2141,14 +2057,14 @@ back_offroadvehicles_btn.onclick = () => {
 // =====================================
 
 outdoorgear_item.onclick = () => {
-  productsmenu_bar.style.marginLeft = "-48rem";
+  productsmenu_bar.style.marginLeft = "-40rem";
   setTimeout(() => {
     outdoorgear_drop.style.display = "block";
   }, 100);
 };
 
 back_outdoorgear_btn.onclick = () => {
-  productsmenu_bar.style.marginLeft = "-24rem";
+  productsmenu_bar.style.marginLeft = "-20rem";
   outdoorgear_drop.style.display = "none";
 };
 
@@ -2157,14 +2073,14 @@ back_outdoorgear_btn.onclick = () => {
 // =====================================
 
 shoothunt_item.onclick = () => {
-  productsmenu_bar.style.marginLeft = "-48rem";
+  productsmenu_bar.style.marginLeft = "-40rem";
   setTimeout(() => {
     shoothunt_drop.style.display = "block";
   }, 100);
 };
 
 back_shoothunt_btn.onclick = () => {
-  productsmenu_bar.style.marginLeft = "-24rem";
+  productsmenu_bar.style.marginLeft = "-20rem";
   shoothunt_drop.style.display = "none";
 };
 
@@ -2173,14 +2089,14 @@ back_shoothunt_btn.onclick = () => {
 // =====================================
 
 watersports_item.onclick = () => {
-  productsmenu_bar.style.marginLeft = "-48rem";
+  productsmenu_bar.style.marginLeft = "-40rem";
   setTimeout(() => {
     watersports_drop.style.display = "block";
   }, 100);
 };
 
 back_watersports_btn.onclick = () => {
-  productsmenu_bar.style.marginLeft = "-24rem";
+  productsmenu_bar.style.marginLeft = "-20rem";
   watersports_drop.style.display = "none";
 };
 
@@ -2195,14 +2111,14 @@ back_watersports_btn.onclick = () => {
 // =====================================
 
 tablesports_item.onclick = () => {
-  productsmenu_bar.style.marginLeft = "-48rem";
+  productsmenu_bar.style.marginLeft = "-40rem";
   setTimeout(() => {
     tablesports_drop.style.display = "block";
   }, 100);
 };
 
 back_tablesports_btn.onclick = () => {
-  productsmenu_bar.style.marginLeft = "-24rem";
+  productsmenu_bar.style.marginLeft = "-20rem";
   tablesports_drop.style.display = "none";
 };
 
@@ -2217,14 +2133,14 @@ back_tablesports_btn.onclick = () => {
 // =====================================
 
 diygardening_item.onclick = () => {
-  productsmenu_bar.style.marginLeft = "-48rem";
+  productsmenu_bar.style.marginLeft = "-40rem";
   setTimeout(() => {
     diygardening_drop.style.display = "block";
   }, 100);
 };
 
 back_diygardening_btn.onclick = () => {
-  productsmenu_bar.style.marginLeft = "-24rem";
+  productsmenu_bar.style.marginLeft = "-20rem";
   diygardening_drop.style.display = "none";
 };
 
@@ -2233,14 +2149,14 @@ back_diygardening_btn.onclick = () => {
 // =====================================
 
 diymaterials_item.onclick = () => {
-  productsmenu_bar.style.marginLeft = "-48rem";
+  productsmenu_bar.style.marginLeft = "-40rem";
   setTimeout(() => {
     diymaterials_drop.style.display = "block";
   }, 100);
 };
 
 back_diymaterials_btn.onclick = () => {
-  productsmenu_bar.style.marginLeft = "-24rem";
+  productsmenu_bar.style.marginLeft = "-20rem";
   diymaterials_drop.style.display = "none";
 };
 
@@ -2249,328 +2165,104 @@ back_diymaterials_btn.onclick = () => {
 // =====================================
 
 diytools_item.onclick = () => {
-  productsmenu_bar.style.marginLeft = "-48rem";
+  productsmenu_bar.style.marginLeft = "-40rem";
   setTimeout(() => {
     diytools_drop.style.display = "block";
   }, 100);
 };
 
 back_diytools_btn.onclick = () => {
-  productsmenu_bar.style.marginLeft = "-24rem";
+  productsmenu_bar.style.marginLeft = "-20rem";
   diytools_drop.style.display = "none";
 };
 
 // =====================================   FIXME:  END OF DIY
 
-// ==========================================================  TODO:  SHOP ESSENTIALS  TODO:
+// ============================================================
+// MAIN - ESSENTIAL PRODUCTS
+// ============================================================
 
 // =====================================
-// MAIN: FOOD, BEVERAGES & GROCERIES
+// ITEM 1 - COVID-19, CLEANING AND PPE
 // =====================================
 
-// =====================================
-// ITEM 1 - FRESH PRODUCE
-// =====================================
-
-freshproduce_item.onclick = () => {
-  shopessentialproductsmenu_bar.style.marginLeft = "-48rem";
+covid19_item.onclick = () => {
+  productsmenu_bar.style.marginLeft = "-40rem";
   setTimeout(() => {
-    freshproduce_drop.style.display = "block";
+    covid19_drop.style.display = "block";
   }, 100);
 };
 
-back_freshproduce_btn.onclick = () => {
-  shopessentialproductsmenu_bar.style.marginLeft = "-24rem";
-  freshproduce_drop.style.display = "none";
+back_covid19_btn.onclick = () => {
+  productsmenu_bar.style.marginLeft = "-20rem";
+  covid19_drop.style.display = "none";
 };
 
-// =====================================
-// ITEM 2 - BAKERY
-// =====================================
+/// =====================================
+// ITEM 2 - EMERGENCY
+// ======================================
 
-bakery_item.onclick = () => {
-  shopessentialproductsmenu_bar.style.marginLeft = "-48rem";
+emergency_item.onclick = () => {
+  productsmenu_bar.style.marginLeft = "-40rem";
   setTimeout(() => {
-    bakery_drop.style.display = "block";
+    emergency_drop.style.display = "block";
   }, 100);
 };
 
-back_bakery_btn.onclick = () => {
-  shopessentialproductsmenu_bar.style.marginLeft = "-24rem";
-  bakery_drop.style.display = "none";
+back_emergency_btn.onclick = () => {
+  productsmenu_bar.style.marginLeft = "-20rem";
+  emergency_drop.style.display = "none";
 };
 
 // =====================================
-// ITEM 3 - DAIRY & EGGS
+// ITEM 3 - ENERGY
 // =====================================
 
-dairyeggs_item.onclick = () => {
-  shopessentialproductsmenu_bar.style.marginLeft = "-48rem";
+energy_item.onclick = () => {
+  productsmenu_bar.style.marginLeft = "-40rem";
   setTimeout(() => {
-    dairyeggs_drop.style.display = "block";
+    energy_drop.style.display = "block";
   }, 100);
 };
 
-back_dairyeggs_btn.onclick = () => {
-  shopessentialproductsmenu_bar.style.marginLeft = "-24rem";
-  dairyeggs_drop.style.display = "none";
+back_energy_btn.onclick = () => {
+  productsmenu_bar.style.marginLeft = "-20rem";
+  energy_drop.style.display = "none";
 };
 
 // =====================================
-// ITEM 4 - DELI & PARTY
+// ITEM 4 - FOOD, BEVERAGES & GROCERIES
 // =====================================
 
-deliparty_item.onclick = () => {
-  shopessentialproductsmenu_bar.style.marginLeft = "-48rem";
+groceries_item.onclick = () => {
+  productsmenu_bar.style.marginLeft = "-40rem";
   setTimeout(() => {
-    deliparty_drop.style.display = "block";
+    groceries_drop.style.display = "block";
   }, 100);
 };
 
-back_deliparty_btn.onclick = () => {
-  shopessentialproductsmenu_bar.style.marginLeft = "-24rem";
-  deliparty_drop.style.display = "none";
+back_groceries_btn.onclick = () => {
+  productsmenu_bar.style.marginLeft = "-20rem";
+  groceries_drop.style.display = "none";
 };
 
 // =====================================
-// ITEM 5 - MEATS, POULTRY & FISH
+// ITEM 5 - CLOTHING & FOOTWEAR
 // =====================================
 
-meatspoultryfish_item.onclick = () => {
-  shopessentialproductsmenu_bar.style.marginLeft = "-48rem";
+clothingfootwear_item.onclick = () => {
+  productsmenu_bar.style.marginLeft = "-40rem";
   setTimeout(() => {
-    meatspoultryfish_drop.style.display = "block";
+    clothingfootwear_drop.style.display = "block";
   }, 100);
 };
 
-back_meatspoultryfish_btn.onclick = () => {
-  shopessentialproductsmenu_bar.style.marginLeft = "-24rem";
-  meatspoultryfish_drop.style.display = "none";
+back_clothingfootwear_btn.onclick = () => {
+  productsmenu_bar.style.marginLeft = "-20rem";
+  clothingfootwear_drop.style.display = "none";
 };
 
-// =====================================
-// ITEM 6 - FROZEN FOODS
-// =====================================
-
-frozenfoods_item.onclick = () => {
-  shopessentialproductsmenu_bar.style.marginLeft = "-48rem";
-  setTimeout(() => {
-    frozenfoods_drop.style.display = "block";
-  }, 100);
-};
-
-back_frozenfoods_btn.onclick = () => {
-  shopessentialproductsmenu_bar.style.marginLeft = "-24rem";
-  frozenfoods_drop.style.display = "none";
-};
-
-// =====================================
-// ITEM 7 - BEVERAGES
-// =====================================
-
-beveragesall_item.onclick = () => {
-  shopessentialproductsmenu_bar.style.marginLeft = "-48rem";
-  setTimeout(() => {
-    beveragesall_drop.style.display = "block";
-  }, 100);
-};
-
-back_beveragesall_btn.onclick = () => {
-  shopessentialproductsmenu_bar.style.marginLeft = "-24rem";
-  beveragesall_drop.style.display = "none";
-};
-
-// =====================================
-// ITEM 8 - TOBACCO
-// =====================================
-
-tabacco_item.onclick = () => {
-  shopessentialproductsmenu_bar.style.marginLeft = "-48rem";
-  setTimeout(() => {
-    tabacco_drop.style.display = "block";
-  }, 100);
-};
-
-back_tabacco_btn.onclick = () => {
-  shopessentialproductsmenu_bar.style.marginLeft = "-24rem";
-  tabacco_drop.style.display = "none";
-};
-
-// =====================================
-// ITEM 9 - BEERS, CIDER & SELTZER
-// =====================================
-
-beercider_item.onclick = () => {
-  shopessentialproductsmenu_bar.style.marginLeft = "-48rem";
-  setTimeout(() => {
-    beercider_drop.style.display = "block";
-  }, 100);
-};
-
-back_beercider_btn.onclick = () => {
-  shopessentialproductsmenu_bar.style.marginLeft = "-24rem";
-  beercider_drop.style.display = "none";
-};
-
-// =====================================
-// ITEM 10 - WINES
-// =====================================
-
-winesall_item.onclick = () => {
-  shopessentialproductsmenu_bar.style.marginLeft = "-48rem";
-  setTimeout(() => {
-    winesall_drop.style.display = "block";
-  }, 100);
-};
-
-back_winesall_btn.onclick = () => {
-  shopessentialproductsmenu_bar.style.marginLeft = "-24rem";
-  winesall_drop.style.display = "none";
-};
-
-// =====================================
-// ITEM 11 - SPIRITS
-// =====================================
-
-spiritsall_item.onclick = () => {
-  shopessentialproductsmenu_bar.style.marginLeft = "-48rem";
-  setTimeout(() => {
-    spiritsall_drop.style.display = "block";
-  }, 100);
-};
-
-back_spiritsall_btn.onclick = () => {
-  shopessentialproductsmenu_bar.style.marginLeft = "-24rem";
-  spiritsall_drop.style.display = "none";
-};
-
-// =====================================
-// ITEM 12 - SNACKS
-// =====================================
-
-snacks_item.onclick = () => {
-  shopessentialproductsmenu_bar.style.marginLeft = "-48rem";
-  setTimeout(() => {
-    snacks_drop.style.display = "block";
-  }, 100);
-};
-
-back_snacks_btn.onclick = () => {
-  shopessentialproductsmenu_bar.style.marginLeft = "-24rem";
-  snacks_drop.style.display = "none";
-};
-
-// =====================================
-// ITEM 13 - FOOD CUPBOARD
-// =====================================
-
-foodcupboard_item.onclick = () => {
-  shopessentialproductsmenu_bar.style.marginLeft = "-48rem";
-  setTimeout(() => {
-    foodcupboard_drop.style.display = "block";
-  }, 100);
-};
-
-back_foodcupboard_btn.onclick = () => {
-  shopessentialproductsmenu_bar.style.marginLeft = "-24rem";
-  foodcupboard_drop.style.display = "none";
-};
-
-// =====================================
-// ITEM 14 - BABY CARE
-// =====================================
-
-babycare_item.onclick = () => {
-  shopessentialproductsmenu_bar.style.marginLeft = "-48rem";
-  setTimeout(() => {
-    babycare_drop.style.display = "block";
-  }, 100);
-};
-
-back_babycare_btn.onclick = () => {
-  shopessentialproductsmenu_bar.style.marginLeft = "-24rem";
-  babycare_drop.style.display = "none";
-};
-
-// =====================================
-// ITEM 15 - PET CARE
-// =====================================
-
-petcare_item.onclick = () => {
-  shopessentialproductsmenu_bar.style.marginLeft = "-48rem";
-  setTimeout(() => {
-    petcare_drop.style.display = "block";
-  }, 100);
-};
-
-back_petcare_btn.onclick = () => {
-  shopessentialproductsmenu_bar.style.marginLeft = "-24rem";
-  petcare_drop.style.display = "none";
-};
-
-// =====================================
-// ITEM 16 - BRAAI & OUTDOORS
-// =====================================
-
-braaioutdoors_item.onclick = () => {
-  shopessentialproductsmenu_bar.style.marginLeft = "-48rem";
-  setTimeout(() => {
-    braaioutdoors_drop.style.display = "block";
-  }, 100);
-};
-
-back_braaioutdoors_btn.onclick = () => {
-  shopessentialproductsmenu_bar.style.marginLeft = "-24rem";
-  braaioutdoors_drop.style.display = "none";
-};
-
-// ============================================
-// MAIN: CLOTHING & FOOTWEAR - FIXME:  LADIES
-// ============================================
-
-ladiesgroup_item.onclick = () => {
-  shopessentialproductsmenu_bar.style.marginLeft = "-48rem";
-  setTimeout(() => {
-    ladiesgroup_drop.style.display = "block";
-  }, 100);
-};
-
-back_ladiesgroup_btn.onclick = () => {
-  shopessentialproductsmenu_bar.style.marginLeft = "-24rem";
-  ladiesgroup_drop.style.display = "none";
-};
-
-// ============================================
-// MAIN: CLOTHING & FOOTWEAR - FIXME:  MENS
-// ============================================
-
-mensgroup_item.onclick = () => {
-  shopessentialproductsmenu_bar.style.marginLeft = "-48rem";
-  setTimeout(() => {
-    mensgroup_drop.style.display = "block";
-  }, 100);
-};
-
-back_mensgroup_btn.onclick = () => {
-  shopessentialproductsmenu_bar.style.marginLeft = "-24rem";
-  mensgroup_drop.style.display = "none";
-};
-
-// ============================================
-// MAIN: CLOTHING & FOOTWEAR - FIXME:  KIDS
-// ============================================
-
-kidsgroup_item.onclick = () => {
-  shopessentialproductsmenu_bar.style.marginLeft = "-48rem";
-  setTimeout(() => {
-    kidsgroup_drop.style.display = "block";
-  }, 100);
-};
-
-back_kidsgroup_btn.onclick = () => {
-  shopessentialproductsmenu_bar.style.marginLeft = "-24rem";
-  kidsgroup_drop.style.display = "none";
-};
+// ======================   FIXME:  END OF ESSENTIAL PRODUCTS
 
 // ==============================================================  TODO:  CLIENT ZONE  TODO:
 
@@ -2584,434 +2276,312 @@ back_kidsgroup_btn.onclick = () => {
 
 // ============================================================  TODO:  SHOP PRODUCTS  TODO:
 
-// ==========================================================  TODO:  SHOP ESSENTIALS  TODO:
+// =====================================
+// MAIN: FOOD, BEVERAGES & GROCERIES
+// =====================================
 
-// ============================================
-// SUB: CLOTHING & FOOTWEAR - FIXME:  LADIES
-// ============================================
+// =====================================
+// ITEM 1 - FRESH PRODUCE
+// =====================================
 
-// ============================================
-// SUB-ITEM 1 - SHOES
-// ============================================
-
-ladiesshoes_item.onclick = () => {
-  shopessentialproductsmenu_bar.style.marginLeft = "-72rem";
+freshproduce_item.onclick = () => {
+  productsmenu_bar.style.marginLeft = "-60rem";
   setTimeout(() => {
-    ladiesshoes_drop.style.display = "block";
+    freshproduce_drop.style.display = "block";
   }, 100);
 };
 
-back_ladiesshoes_btn.onclick = () => {
-  shopessentialproductsmenu_bar.style.marginLeft = "-48rem";
-  ladiesshoes_drop.style.display = "none";
+back_freshproduce_btn.onclick = () => {
+  productsmenu_bar.style.marginLeft = "-40rem";
+  freshproduce_drop.style.display = "none";
 };
 
-// ============================================
-// SUB-ITEM 2 - BOTTOMS
-// ============================================
+// =====================================
+// ITEM 2 - BAKERY
+// =====================================
 
-ladiesbottoms_item.onclick = () => {
-  shopessentialproductsmenu_bar.style.marginLeft = "-72rem";
+bakery_item.onclick = () => {
+  productsmenu_bar.style.marginLeft = "-60rem";
   setTimeout(() => {
-    ladiesbottoms_drop.style.display = "block";
+    bakery_drop.style.display = "block";
   }, 100);
 };
 
-back_ladiesbottoms_btn.onclick = () => {
-  shopessentialproductsmenu_bar.style.marginLeft = "-48rem";
-  ladiesbottoms_drop.style.display = "none";
+back_bakery_btn.onclick = () => {
+  productsmenu_bar.style.marginLeft = "-40rem";
+  bakery_drop.style.display = "none";
 };
 
-// ============================================
-// SUB-ITEM 3 - DRESSES
-// ============================================
+// =====================================
+// ITEM 3 - DAIRY & EGGS
+// =====================================
 
-ladiesdresses_item.onclick = () => {
-  shopessentialproductsmenu_bar.style.marginLeft = "-72rem";
+dairyeggs_item.onclick = () => {
+  productsmenu_bar.style.marginLeft = "-60rem";
   setTimeout(() => {
-    ladiesdresses_drop.style.display = "block";
+    dairyeggs_drop.style.display = "block";
   }, 100);
 };
 
-back_ladiesdresses_btn.onclick = () => {
-  shopessentialproductsmenu_bar.style.marginLeft = "-48rem";
-  ladiesdresses_drop.style.display = "none";
+back_dairyeggs_btn.onclick = () => {
+  productsmenu_bar.style.marginLeft = "-40rem";
+  dairyeggs_drop.style.display = "none";
 };
 
-// ============================================
-// SUB-ITEM 4 - TOPS
-// ============================================
+// =====================================
+// ITEM 4 - DELI & PARTY
+// =====================================
 
-ladiestops_item.onclick = () => {
-  shopessentialproductsmenu_bar.style.marginLeft = "-72rem";
+deliparty_item.onclick = () => {
+  productsmenu_bar.style.marginLeft = "-60rem";
   setTimeout(() => {
-    ladiestops_drop.style.display = "block";
+    deliparty_drop.style.display = "block";
   }, 100);
 };
 
-back_ladiestops_btn.onclick = () => {
-  shopessentialproductsmenu_bar.style.marginLeft = "-48rem";
-  ladiestops_drop.style.display = "none";
+back_deliparty_btn.onclick = () => {
+  productsmenu_bar.style.marginLeft = "-40rem";
+  deliparty_drop.style.display = "none";
 };
 
-// ============================================
-// SUB-ITEM 5 - JACKETS & COATS
-// ============================================
+// =====================================
+// ITEM 5 - MEATS, POULTRY & FISH
+// =====================================
 
-ladiesjackets_item.onclick = () => {
-  shopessentialproductsmenu_bar.style.marginLeft = "-72rem";
+meatspoultryfish_item.onclick = () => {
+  productsmenu_bar.style.marginLeft = "-60rem";
   setTimeout(() => {
-    ladiesjackets_drop.style.display = "block";
+    meatspoultryfish_drop.style.display = "block";
   }, 100);
 };
 
-back_ladiesjackets_btn.onclick = () => {
-  shopessentialproductsmenu_bar.style.marginLeft = "-48rem";
-  ladiesjackets_drop.style.display = "none";
+back_meatspoultryfish_btn.onclick = () => {
+  productsmenu_bar.style.marginLeft = "-40rem";
+  meatspoultryfish_drop.style.display = "none";
 };
 
-// ============================================
-// SUB-ITEM 6 - LINGERIE & SLEEPWEAR
-// ============================================
+// =====================================
+// ITEM 6 - FROZEN FOODS
+// =====================================
 
-ladieslingerie_item.onclick = () => {
-  shopessentialproductsmenu_bar.style.marginLeft = "-72rem";
+frozenfoods_item.onclick = () => {
+  productsmenu_bar.style.marginLeft = "-60rem";
   setTimeout(() => {
-    ladieslingerie_drop.style.display = "block";
+    frozenfoods_drop.style.display = "block";
   }, 100);
 };
 
-back_ladieslingerie_btn.onclick = () => {
-  shopessentialproductsmenu_bar.style.marginLeft = "-48rem";
-  ladieslingerie_drop.style.display = "none";
+back_frozenfoods_btn.onclick = () => {
+  productsmenu_bar.style.marginLeft = "-40rem";
+  frozenfoods_drop.style.display = "none";
 };
 
-// ============================================
-// SUB-ITEM 7 - SPORTS
-// ============================================
+// =====================================
+// ITEM 7 - BEVERAGES
+// =====================================
 
-ladiessports_item.onclick = () => {
-  shopessentialproductsmenu_bar.style.marginLeft = "-72rem";
+beveragesall_item.onclick = () => {
+  productsmenu_bar.style.marginLeft = "-60rem";
   setTimeout(() => {
-    ladiessports_drop.style.display = "block";
+    beveragesall_drop.style.display = "block";
   }, 100);
 };
 
-back_ladiessports_btn.onclick = () => {
-  shopessentialproductsmenu_bar.style.marginLeft = "-48rem";
-  ladiessports_drop.style.display = "none";
+back_beveragesall_btn.onclick = () => {
+  productsmenu_bar.style.marginLeft = "-40rem";
+  beveragesall_drop.style.display = "none";
 };
 
-// ============================================
-// SUB-ITEM 8 - SWIMWEAR
-// ============================================
+// =====================================
+// ITEM 8 - TOBACCO
+// =====================================
 
-ladiesswimwear_item.onclick = () => {
-  shopessentialproductsmenu_bar.style.marginLeft = "-72rem";
+tabacco_item.onclick = () => {
+  productsmenu_bar.style.marginLeft = "-60rem";
   setTimeout(() => {
-    ladiesswimwear_drop.style.display = "block";
+    tabacco_drop.style.display = "block";
   }, 100);
 };
 
-back_ladiesswimwear_btn.onclick = () => {
-  shopessentialproductsmenu_bar.style.marginLeft = "-48rem";
-  ladiesswimwear_drop.style.display = "none";
+back_tabacco_btn.onclick = () => {
+  productsmenu_bar.style.marginLeft = "-40rem";
+  tabacco_drop.style.display = "none";
 };
 
-// ============================================
-// SUB-ITEM 9 - LADIES ACCESSORIES
-// ============================================
+// =====================================
+// ITEM 9 - BEERS, CIDER & SELTZER
+// =====================================
 
-ladiesaccessories_item.onclick = () => {
-  shopessentialproductsmenu_bar.style.marginLeft = "-72rem";
+beercider_item.onclick = () => {
+  productsmenu_bar.style.marginLeft = "-60rem";
   setTimeout(() => {
-    ladiesaccessories_drop.style.display = "block";
+    beercider_drop.style.display = "block";
   }, 100);
 };
 
-back_ladiesaccessories_btn.onclick = () => {
-  shopessentialproductsmenu_bar.style.marginLeft = "-48rem";
-  ladiesaccessories_drop.style.display = "none";
+back_beercider_btn.onclick = () => {
+  productsmenu_bar.style.marginLeft = "-40rem";
+  beercider_drop.style.display = "none";
 };
 
-// ============================================
-// SUB-ITEM 10 - BEAUTY PRODUCTS
-// ============================================
+// =====================================
+// ITEM 10 - WINES
+// =====================================
 
-ladiesbeauty_item.onclick = () => {
-  shopessentialproductsmenu_bar.style.marginLeft = "-72rem";
+winesall_item.onclick = () => {
+  productsmenu_bar.style.marginLeft = "-60rem";
   setTimeout(() => {
-    ladiesbeauty_drop.style.display = "block";
+    winesall_drop.style.display = "block";
   }, 100);
 };
 
-back_ladiesbeauty_btn.onclick = () => {
-  shopessentialproductsmenu_bar.style.marginLeft = "-48rem";
-  ladiesbeauty_drop.style.display = "none";
+back_winesall_btn.onclick = () => {
+  productsmenu_bar.style.marginLeft = "-40rem";
+  winesall_drop.style.display = "none";
 };
 
-// ============================================
-// SUB: CLOTHING & FOOTWEAR - FIXME:  MENS
-// ============================================
+// =====================================
+// ITEM 11 - SPIRITS
+// =====================================
 
-// ============================================
-// SUB-ITEM 1 - SHOES
-// ============================================
-
-mensshoes_item.onclick = () => {
-  shopessentialproductsmenu_bar.style.marginLeft = "-72rem";
+spiritsall_item.onclick = () => {
+  productsmenu_bar.style.marginLeft = "-60rem";
   setTimeout(() => {
-    mensshoes_drop.style.display = "block";
+    spiritsall_drop.style.display = "block";
   }, 100);
 };
 
-back_mensshoes_btn.onclick = () => {
-  shopessentialproductsmenu_bar.style.marginLeft = "-48rem";
-  mensshoes_drop.style.display = "none";
+back_spiritsall_btn.onclick = () => {
+  productsmenu_bar.style.marginLeft = "-40rem";
+  spiritsall_drop.style.display = "none";
 };
 
-// ============================================
-// SUB-ITEM 2 - BOTTOMS
-// ============================================
+// =====================================
+// ITEM 12 - SNACKS
+// =====================================
 
-mensbottoms_item.onclick = () => {
-  shopessentialproductsmenu_bar.style.marginLeft = "-72rem";
+snacks_item.onclick = () => {
+  productsmenu_bar.style.marginLeft = "-60rem";
   setTimeout(() => {
-    mensbottoms_drop.style.display = "block";
+    snacks_drop.style.display = "block";
   }, 100);
 };
 
-back_mensbottoms_btn.onclick = () => {
-  shopessentialproductsmenu_bar.style.marginLeft = "-48rem";
-  mensbottoms_drop.style.display = "none";
+back_snacks_btn.onclick = () => {
+  productsmenu_bar.style.marginLeft = "-40rem";
+  snacks_drop.style.display = "none";
 };
 
-// ============================================
-// SUB-ITEM 3 - FORMAL WEAR
-// ============================================
+// =====================================
+// ITEM 13 - FOOD CUPBOARD
+// =====================================
 
-mensformalwear_item.onclick = () => {
-  shopessentialproductsmenu_bar.style.marginLeft = "-72rem";
+foodcupboard_item.onclick = () => {
+  productsmenu_bar.style.marginLeft = "-60rem";
   setTimeout(() => {
-    mensformalwear_drop.style.display = "block";
+    foodcupboard_drop.style.display = "block";
   }, 100);
 };
 
-back_mensformalwear_btn.onclick = () => {
-  shopessentialproductsmenu_bar.style.marginLeft = "-48rem";
-  mensformalwear_drop.style.display = "none";
+back_foodcupboard_btn.onclick = () => {
+  productsmenu_bar.style.marginLeft = "-40rem";
+  foodcupboard_drop.style.display = "none";
 };
 
-// ============================================
-// SUB-ITEM 4 - TOPS
-// ============================================
+// =====================================
+// ITEM 14 - BABY CARE
+// =====================================
 
-menstops_item.onclick = () => {
-  shopessentialproductsmenu_bar.style.marginLeft = "-72rem";
+babycare_item.onclick = () => {
+  productsmenu_bar.style.marginLeft = "-60rem";
   setTimeout(() => {
-    menstops_drop.style.display = "block";
+    babycare_drop.style.display = "block";
   }, 100);
 };
 
-back_menstops_btn.onclick = () => {
-  shopessentialproductsmenu_bar.style.marginLeft = "-48rem";
-  menstops_drop.style.display = "none";
+back_babycare_btn.onclick = () => {
+  productsmenu_bar.style.marginLeft = "-40rem";
+  babycare_drop.style.display = "none";
 };
 
-// ============================================
-// SUB-ITEM 5 - JACKETS & COATS
-// ============================================
+// =====================================
+// ITEM 15 - PET CARE
+// =====================================
 
-mensjackets_item.onclick = () => {
-  shopessentialproductsmenu_bar.style.marginLeft = "-72rem";
+petcare_item.onclick = () => {
+  productsmenu_bar.style.marginLeft = "-60rem";
   setTimeout(() => {
-    mensjackets_drop.style.display = "block";
+    petcare_drop.style.display = "block";
   }, 100);
 };
 
-back_mensjackets_btn.onclick = () => {
-  shopessentialproductsmenu_bar.style.marginLeft = "-48rem";
-  mensjackets_drop.style.display = "none";
+back_petcare_btn.onclick = () => {
+  productsmenu_bar.style.marginLeft = "-40rem";
+  petcare_drop.style.display = "none";
 };
 
-// ============================================
-// SUB-ITEM 6 - UNDERWEAR & SLEEPWEAR
-// ============================================
+// =====================================
+// ITEM 16 - BRAAI & OUTDOORS
+// =====================================
 
-mensunderwear_item.onclick = () => {
-  shopessentialproductsmenu_bar.style.marginLeft = "-72rem";
+braaioutdoors_item.onclick = () => {
+  productsmenu_bar.style.marginLeft = "-60rem";
   setTimeout(() => {
-    mensunderwear_drop.style.display = "block";
+    braaioutdoors_drop.style.display = "block";
   }, 100);
 };
 
-back_mensunderwear_btn.onclick = () => {
-  shopessentialproductsmenu_bar.style.marginLeft = "-48rem";
-  mensunderwear_drop.style.display = "none";
+back_braaioutdoors_btn.onclick = () => {
+  productsmenu_bar.style.marginLeft = "-40rem";
+  braaioutdoors_drop.style.display = "none";
 };
 
 // ============================================
-// SUB-ITEM 7 - SPORTS
+// MAIN: CLOTHING & FOOTWEAR - FIXME:  LADIES
 // ============================================
 
-menssports_item.onclick = () => {
-  shopessentialproductsmenu_bar.style.marginLeft = "-72rem";
+ladiesgroup_item.onclick = () => {
+  productsmenu_bar.style.marginLeft = "-60rem";
   setTimeout(() => {
-    menssports_drop.style.display = "block";
+    ladiesgroup_drop.style.display = "block";
   }, 100);
 };
 
-back_menssports_btn.onclick = () => {
-  shopessentialproductsmenu_bar.style.marginLeft = "-48rem";
-  menssports_drop.style.display = "none";
+back_ladiesgroup_btn.onclick = () => {
+  productsmenu_bar.style.marginLeft = "-40rem";
+  ladiesgroup_drop.style.display = "none";
 };
 
 // ============================================
-// SUB-ITEM 8 - SWIMWEAR
+// MAIN: CLOTHING & FOOTWEAR - FIXME:  MENS
 // ============================================
 
-mensswimwear_item.onclick = () => {
-  shopessentialproductsmenu_bar.style.marginLeft = "-72rem";
+mensgroup_item.onclick = () => {
+  productsmenu_bar.style.marginLeft = "-60rem";
   setTimeout(() => {
-    mensswimwear_drop.style.display = "block";
+    mensgroup_drop.style.display = "block";
   }, 100);
 };
 
-back_mensswimwear_btn.onclick = () => {
-  shopessentialproductsmenu_bar.style.marginLeft = "-48rem";
-  mensswimwear_drop.style.display = "none";
+back_mensgroup_btn.onclick = () => {
+  productsmenu_bar.style.marginLeft = "-40rem";
+  mensgroup_drop.style.display = "none";
 };
 
 // ============================================
-// SUB-ITEM 9 - MENS ACCESSORIES
+// MAIN: CLOTHING & FOOTWEAR - FIXME:  KIDS
 // ============================================
 
-mensaccessories_item.onclick = () => {
-  shopessentialproductsmenu_bar.style.marginLeft = "-72rem";
+kidsgroup_item.onclick = () => {
+  productsmenu_bar.style.marginLeft = "-60rem";
   setTimeout(() => {
-    mensaccessories_drop.style.display = "block";
+    kidsgroup_drop.style.display = "block";
   }, 100);
 };
 
-back_mensaccessories_btn.onclick = () => {
-  shopessentialproductsmenu_bar.style.marginLeft = "-48rem";
-  mensaccessories_drop.style.display = "none";
-};
-
-// ============================================
-// SUB-ITEM 10 - MENS GROOMING PRODUCTS
-// ============================================
-
-mensgrooming_item.onclick = () => {
-  shopessentialproductsmenu_bar.style.marginLeft = "-72rem";
-  setTimeout(() => {
-    mensgrooming_drop.style.display = "block";
-  }, 100);
-};
-
-back_mensgrooming_btn.onclick = () => {
-  shopessentialproductsmenu_bar.style.marginLeft = "-48rem";
-  mensgrooming_drop.style.display = "none";
-};
-
-// ============================================
-// SUB: CLOTHING & FOOTWEAR - FIXME:  KIDS
-// ============================================
-
-// ============================================
-// SUB-ITEM 1 - BABY GIRLS (0-2 YEARS)
-// ============================================
-
-babygirls_item.onclick = () => {
-  shopessentialproductsmenu_bar.style.marginLeft = "-72rem";
-  setTimeout(() => {
-    babygirls_drop.style.display = "block";
-  }, 100);
-};
-
-back_babygirls_btn.onclick = () => {
-  shopessentialproductsmenu_bar.style.marginLeft = "-48rem";
-  babygirls_drop.style.display = "none";
-};
-
-// ============================================
-// SUB-ITEM 2 - BABY BOYS (0-2 YEARS)
-// ============================================
-
-babyboys_item.onclick = () => {
-  shopessentialproductsmenu_bar.style.marginLeft = "-72rem";
-  setTimeout(() => {
-    babyboys_drop.style.display = "block";
-  }, 100);
-};
-
-back_babyboys_btn.onclick = () => {
-  shopessentialproductsmenu_bar.style.marginLeft = "-48rem";
-  babyboys_drop.style.display = "none";
-};
-
-// ============================================
-// SUB-ITEM 3 - GIRLS (2-8 YEARS)
-// ============================================
-
-girlstwoeight_item.onclick = () => {
-  shopessentialproductsmenu_bar.style.marginLeft = "-72rem";
-  setTimeout(() => {
-    girlstwoeight_drop.style.display = "block";
-  }, 100);
-};
-
-back_girlstwoeight_btn.onclick = () => {
-  shopessentialproductsmenu_bar.style.marginLeft = "-48rem";
-  girlstwoeight_drop.style.display = "none";
-};
-
-// ============================================
-// SUB-ITEM 4 - BOYS (2-8 YEARS)
-// ============================================
-
-boystwoeight_item.onclick = () => {
-  shopessentialproductsmenu_bar.style.marginLeft = "-72rem";
-  setTimeout(() => {
-    boystwoeight_drop.style.display = "block";
-  }, 100);
-};
-
-back_boystwoeight_btn.onclick = () => {
-  shopessentialproductsmenu_bar.style.marginLeft = "-48rem";
-  boystwoeight_drop.style.display = "none";
-};
-
-// ============================================
-// SUB-ITEM 5 - GIRLS (8 - 16 YEARS)
-// ============================================
-
-girlseightsixteen_item.onclick = () => {
-  shopessentialproductsmenu_bar.style.marginLeft = "-72rem";
-  setTimeout(() => {
-    girlseightsixteen_drop.style.display = "block";
-  }, 100);
-};
-
-back_girlseightsixteen_btn.onclick = () => {
-  shopessentialproductsmenu_bar.style.marginLeft = "-48rem";
-  girlseightsixteen_drop.style.display = "none";
-};
-
-// ============================================
-// SUB-ITEM 6 - BOYS (8 - 16 YEARS)
-// ============================================
-
-boyseightsixteen_item.onclick = () => {
-  shopessentialproductsmenu_bar.style.marginLeft = "-72rem";
-  setTimeout(() => {
-    boyseightsixteen_drop.style.display = "block";
-  }, 100);
-};
-
-back_boyseightsixteen_btn.onclick = () => {
-  shopessentialproductsmenu_bar.style.marginLeft = "-48rem";
-  boyseightsixteen_drop.style.display = "none";
+back_kidsgroup_btn.onclick = () => {
+  productsmenu_bar.style.marginLeft = "-40rem";
+  kidsgroup_drop.style.display = "none";
 };
 
 // ==============================================================  TODO:  CLIENT ZONE  TODO:
@@ -3026,7 +2596,433 @@ back_boyseightsixteen_btn.onclick = () => {
 
 // ============================================================  TODO:  SHOP PRODUCTS  TODO:
 
-// ==========================================================  TODO:  SHOP ESSENTIALS  TODO:
+// ============================================
+// SUB: CLOTHING & FOOTWEAR - FIXME:  LADIES
+// ============================================
+
+// ============================================
+// SUB-ITEM 1 - SHOES
+// ============================================
+
+ladiesshoes_item.onclick = () => {
+  productsmenu_bar.style.marginLeft = "-80rem";
+  setTimeout(() => {
+    ladiesshoes_drop.style.display = "block";
+  }, 100);
+};
+
+back_ladiesshoes_btn.onclick = () => {
+  productsmenu_bar.style.marginLeft = "-60rem";
+  ladiesshoes_drop.style.display = "none";
+};
+
+// ============================================
+// SUB-ITEM 2 - BOTTOMS
+// ============================================
+
+ladiesbottoms_item.onclick = () => {
+  productsmenu_bar.style.marginLeft = "-80rem";
+  setTimeout(() => {
+    ladiesbottoms_drop.style.display = "block";
+  }, 100);
+};
+
+back_ladiesbottoms_btn.onclick = () => {
+  productsmenu_bar.style.marginLeft = "-60rem";
+  ladiesbottoms_drop.style.display = "none";
+};
+
+// ============================================
+// SUB-ITEM 3 - DRESSES
+// ============================================
+
+ladiesdresses_item.onclick = () => {
+  productsmenu_bar.style.marginLeft = "-80rem";
+  setTimeout(() => {
+    ladiesdresses_drop.style.display = "block";
+  }, 100);
+};
+
+back_ladiesdresses_btn.onclick = () => {
+  productsmenu_bar.style.marginLeft = "-60rem";
+  ladiesdresses_drop.style.display = "none";
+};
+
+// ============================================
+// SUB-ITEM 4 - TOPS
+// ============================================
+
+ladiestops_item.onclick = () => {
+  productsmenu_bar.style.marginLeft = "-80rem";
+  setTimeout(() => {
+    ladiestops_drop.style.display = "block";
+  }, 100);
+};
+
+back_ladiestops_btn.onclick = () => {
+  productsmenu_bar.style.marginLeft = "-60rem";
+  ladiestops_drop.style.display = "none";
+};
+
+// ============================================
+// SUB-ITEM 5 - JACKETS & COATS
+// ============================================
+
+ladiesjackets_item.onclick = () => {
+  productsmenu_bar.style.marginLeft = "-80rem";
+  setTimeout(() => {
+    ladiesjackets_drop.style.display = "block";
+  }, 100);
+};
+
+back_ladiesjackets_btn.onclick = () => {
+  productsmenu_bar.style.marginLeft = "-60rem";
+  ladiesjackets_drop.style.display = "none";
+};
+
+// ============================================
+// SUB-ITEM 6 - LINGERIE & SLEEPWEAR
+// ============================================
+
+ladieslingerie_item.onclick = () => {
+  productsmenu_bar.style.marginLeft = "-80rem";
+  setTimeout(() => {
+    ladieslingerie_drop.style.display = "block";
+  }, 100);
+};
+
+back_ladieslingerie_btn.onclick = () => {
+  productsmenu_bar.style.marginLeft = "-60rem";
+  ladieslingerie_drop.style.display = "none";
+};
+
+// ============================================
+// SUB-ITEM 7 - SPORTS
+// ============================================
+
+ladiessports_item.onclick = () => {
+  productsmenu_bar.style.marginLeft = "-80rem";
+  setTimeout(() => {
+    ladiessports_drop.style.display = "block";
+  }, 100);
+};
+
+back_ladiessports_btn.onclick = () => {
+  productsmenu_bar.style.marginLeft = "-60rem";
+  ladiessports_drop.style.display = "none";
+};
+
+// ============================================
+// SUB-ITEM 8 - SWIMWEAR
+// ============================================
+
+ladiesswimwear_item.onclick = () => {
+  productsmenu_bar.style.marginLeft = "-80rem";
+  setTimeout(() => {
+    ladiesswimwear_drop.style.display = "block";
+  }, 100);
+};
+
+back_ladiesswimwear_btn.onclick = () => {
+  productsmenu_bar.style.marginLeft = "-60rem";
+  ladiesswimwear_drop.style.display = "none";
+};
+
+// ============================================
+// SUB-ITEM 9 - LADIES ACCESSORIES
+// ============================================
+
+ladiesaccessories_item.onclick = () => {
+  productsmenu_bar.style.marginLeft = "-80rem";
+  setTimeout(() => {
+    ladiesaccessories_drop.style.display = "block";
+  }, 100);
+};
+
+back_ladiesaccessories_btn.onclick = () => {
+  productsmenu_bar.style.marginLeft = "-60rem";
+  ladiesaccessories_drop.style.display = "none";
+};
+
+// ============================================
+// SUB-ITEM 10 - BEAUTY PRODUCTS
+// ============================================
+
+ladiesbeauty_item.onclick = () => {
+  productsmenu_bar.style.marginLeft = "-80rem";
+  setTimeout(() => {
+    ladiesbeauty_drop.style.display = "block";
+  }, 100);
+};
+
+back_ladiesbeauty_btn.onclick = () => {
+  productsmenu_bar.style.marginLeft = "-60rem";
+  ladiesbeauty_drop.style.display = "none";
+};
+
+// ============================================
+// SUB: CLOTHING & FOOTWEAR - FIXME:  MENS
+// ============================================
+
+// ============================================
+// SUB-ITEM 1 - SHOES
+// ============================================
+
+mensshoes_item.onclick = () => {
+  productsmenu_bar.style.marginLeft = "-80rem";
+  setTimeout(() => {
+    mensshoes_drop.style.display = "block";
+  }, 100);
+};
+
+back_mensshoes_btn.onclick = () => {
+  productsmenu_bar.style.marginLeft = "-60rem";
+  mensshoes_drop.style.display = "none";
+};
+
+// ============================================
+// SUB-ITEM 2 - BOTTOMS
+// ============================================
+
+mensbottoms_item.onclick = () => {
+  productsmenu_bar.style.marginLeft = "-80rem";
+  setTimeout(() => {
+    mensbottoms_drop.style.display = "block";
+  }, 100);
+};
+
+back_mensbottoms_btn.onclick = () => {
+  productsmenu_bar.style.marginLeft = "-60rem";
+  mensbottoms_drop.style.display = "none";
+};
+
+// ============================================
+// SUB-ITEM 3 - FORMAL WEAR
+// ============================================
+
+mensformalwear_item.onclick = () => {
+  productsmenu_bar.style.marginLeft = "-80rem";
+  setTimeout(() => {
+    mensformalwear_drop.style.display = "block";
+  }, 100);
+};
+
+back_mensformalwear_btn.onclick = () => {
+  productsmenu_bar.style.marginLeft = "-60rem";
+  mensformalwear_drop.style.display = "none";
+};
+
+// ============================================
+// SUB-ITEM 4 - TOPS
+// ============================================
+
+menstops_item.onclick = () => {
+  productsmenu_bar.style.marginLeft = "-80rem";
+  setTimeout(() => {
+    menstops_drop.style.display = "block";
+  }, 100);
+};
+
+back_menstops_btn.onclick = () => {
+  productsmenu_bar.style.marginLeft = "-60rem";
+  menstops_drop.style.display = "none";
+};
+
+// ============================================
+// SUB-ITEM 5 - JACKETS & COATS
+// ============================================
+
+mensjackets_item.onclick = () => {
+  productsmenu_bar.style.marginLeft = "-80rem";
+  setTimeout(() => {
+    mensjackets_drop.style.display = "block";
+  }, 100);
+};
+
+back_mensjackets_btn.onclick = () => {
+  productsmenu_bar.style.marginLeft = "-60rem";
+  mensjackets_drop.style.display = "none";
+};
+
+// ============================================
+// SUB-ITEM 6 - UNDERWEAR & SLEEPWEAR
+// ============================================
+
+mensunderwear_item.onclick = () => {
+  productsmenu_bar.style.marginLeft = "-80rem";
+  setTimeout(() => {
+    mensunderwear_drop.style.display = "block";
+  }, 100);
+};
+
+back_mensunderwear_btn.onclick = () => {
+  productsmenu_bar.style.marginLeft = "-60rem";
+  mensunderwear_drop.style.display = "none";
+};
+
+// ============================================
+// SUB-ITEM 7 - SPORTS
+// ============================================
+
+menssports_item.onclick = () => {
+  productsmenu_bar.style.marginLeft = "-80rem";
+  setTimeout(() => {
+    menssports_drop.style.display = "block";
+  }, 100);
+};
+
+back_menssports_btn.onclick = () => {
+  productsmenu_bar.style.marginLeft = "-60rem";
+  menssports_drop.style.display = "none";
+};
+
+// ============================================
+// SUB-ITEM 8 - SWIMWEAR
+// ============================================
+
+mensswimwear_item.onclick = () => {
+  productsmenu_bar.style.marginLeft = "-80rem";
+  setTimeout(() => {
+    mensswimwear_drop.style.display = "block";
+  }, 100);
+};
+
+back_mensswimwear_btn.onclick = () => {
+  productsmenu_bar.style.marginLeft = "-60rem";
+  mensswimwear_drop.style.display = "none";
+};
+
+// ============================================
+// SUB-ITEM 9 - MENS ACCESSORIES
+// ============================================
+
+mensaccessories_item.onclick = () => {
+  productsmenu_bar.style.marginLeft = "-80rem";
+  setTimeout(() => {
+    mensaccessories_drop.style.display = "block";
+  }, 100);
+};
+
+back_mensaccessories_btn.onclick = () => {
+  productsmenu_bar.style.marginLeft = "-60rem";
+  mensaccessories_drop.style.display = "none";
+};
+
+// ============================================
+// SUB-ITEM 10 - MENS GROOMING PRODUCTS
+// ============================================
+
+mensgrooming_item.onclick = () => {
+  productsmenu_bar.style.marginLeft = "-80rem";
+  setTimeout(() => {
+    mensgrooming_drop.style.display = "block";
+  }, 100);
+};
+
+back_mensgrooming_btn.onclick = () => {
+  productsmenu_bar.style.marginLeft = "-60rem";
+  mensgrooming_drop.style.display = "none";
+};
+
+// ============================================
+// SUB: CLOTHING & FOOTWEAR - FIXME:  KIDS
+// ============================================
+
+// ============================================
+// SUB-ITEM 1 - BABY GIRLS (0-2 YEARS)
+// ============================================
+
+babygirls_item.onclick = () => {
+  productsmenu_bar.style.marginLeft = "-80rem";
+  setTimeout(() => {
+    babygirls_drop.style.display = "block";
+  }, 100);
+};
+
+back_babygirls_btn.onclick = () => {
+  productsmenu_bar.style.marginLeft = "-60rem";
+  babygirls_drop.style.display = "none";
+};
+
+// ============================================
+// SUB-ITEM 2 - BABY BOYS (0-2 YEARS)
+// ============================================
+
+babyboys_item.onclick = () => {
+  productsmenu_bar.style.marginLeft = "-80rem";
+  setTimeout(() => {
+    babyboys_drop.style.display = "block";
+  }, 100);
+};
+
+back_babyboys_btn.onclick = () => {
+  productsmenu_bar.style.marginLeft = "-60rem";
+  babyboys_drop.style.display = "none";
+};
+
+// ============================================
+// SUB-ITEM 3 - GIRLS (2-8 YEARS)
+// ============================================
+
+girlstwoeight_item.onclick = () => {
+  productsmenu_bar.style.marginLeft = "-80rem";
+  setTimeout(() => {
+    girlstwoeight_drop.style.display = "block";
+  }, 100);
+};
+
+back_girlstwoeight_btn.onclick = () => {
+  productsmenu_bar.style.marginLeft = "-60rem";
+  girlstwoeight_drop.style.display = "none";
+};
+
+// ============================================
+// SUB-ITEM 4 - BOYS (2-8 YEARS)
+// ============================================
+
+boystwoeight_item.onclick = () => {
+  productsmenu_bar.style.marginLeft = "-80rem";
+  setTimeout(() => {
+    boystwoeight_drop.style.display = "block";
+  }, 100);
+};
+
+back_boystwoeight_btn.onclick = () => {
+  productsmenu_bar.style.marginLeft = "-60rem";
+  boystwoeight_drop.style.display = "none";
+};
+
+// ============================================
+// SUB-ITEM 5 - GIRLS (8 - 16 YEARS)
+// ============================================
+
+girlseightsixteen_item.onclick = () => {
+  productsmenu_bar.style.marginLeft = "-80rem";
+  setTimeout(() => {
+    girlseightsixteen_drop.style.display = "block";
+  }, 100);
+};
+
+back_girlseightsixteen_btn.onclick = () => {
+  productsmenu_bar.style.marginLeft = "-60rem";
+  girlseightsixteen_drop.style.display = "none";
+};
+
+// ============================================
+// SUB-ITEM 6 - BOYS (8 - 16 YEARS)
+// ============================================
+
+boyseightsixteen_item.onclick = () => {
+  productsmenu_bar.style.marginLeft = "-80rem";
+  setTimeout(() => {
+    boyseightsixteen_drop.style.display = "block";
+  }, 100);
+};
+
+back_boyseightsixteen_btn.onclick = () => {
+  productsmenu_bar.style.marginLeft = "-60rem";
+  boyseightsixteen_drop.style.display = "none";
+};
 
 // ==============================================================  TODO:  CLIENT ZONE  TODO:
 
@@ -3039,7 +3035,5 @@ back_boyseightsixteen_btn.onclick = () => {
 // ==============================================  TODO:  SHOP MARKETPLACE & SERVICES  TODO:
 
 // ============================================================  TODO:  SHOP PRODUCTS  TODO:
-
-// ==========================================================  TODO:  SHOP ESSENTIALS  TODO:
 
 // ==============================================================  TODO:  CLIENT ZONE  TODO:
