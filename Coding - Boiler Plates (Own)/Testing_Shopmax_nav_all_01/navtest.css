@@ -1,0 +1,1269 @@
+/* ===================================================================================================================== */
+/* TODO:  STYLING FOR SHOPMAX FULL NAVIGATION                                                                            */
+/* ===================================================================================================================== */
+
+/* ===================================================================================================================== */
+/* FIXME:  SPECIAL NOTES                                                                                                 */
+/* ===================================================================================================================== */
+/* 01.  USER-SELECT controls whether the user can select TEXT (none / auto / text / contain / all)                       */
+/* 02.  OVERFLOW sets behavior when an element's content is too big to fit in its block (in both directions)             */
+/*      Options Available: visible / hidden / clip / scroll / auto                                                       */
+/* 03             */
+/* 04.            */
+/* 05.            */
+/* ===================================================================================================================== */
+
+* {
+  margin: 0rem 0rem 0rem 0rem;
+  padding: 0rem 0rem 0rem 0rem;
+  box-sizing: border-box;
+  user-select: none;
+  font-family: "Poppins", sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  background: var(--color-page-background);
+  /* overflow: hidden; */
+}
+
+:root {
+  /* COLOR SCHEME - PAGE BACKGROUND */
+  /* --color-page-background: #18191a; */
+  --color-page-background: white;
+  /* COLOR SCHEME - TOP NAVIGATION */
+  --color-top-navigation-background: #242526;
+  --color-top-navigation-text: #b0b3b8;
+  /* COLOR SCHEME - DROP-DOWN MENU CONTAINER & TOOLTIP */
+  --color-tooltip-background: #242526;
+  --color-drop-down-container: #242526;
+  /* COLOR SCHEME - UNORDERED LIST, LIST ITEMS, ANCHORS (ALL LEVELS) */
+  --color-menu-items-all-levels: #b0b3b8;
+  --color-menu-items-all-levels-hover: #3a3b3c;
+  /* COLOR SCHEME - ICON CONTAINER */
+  --color-icon-container: #ffffff1a;
+  /* COLOR SCHEME - BACK-BUTTON ICON (ARROW) AND TEXT */
+  --color-back-button-arrow-and-text: #b0b3b8;
+}
+
+/* SIZING OF THE ITEMS */
+
+:root {
+  --topnavigation-button-width: 18rem;
+  --topnavigation-line-height: 2rem;
+  --topnavigation-font-size: 1rem;
+  --topnavigation-dropdown-icon-line-height: 2rem;
+  --topnavigation-dropdown-icon-font-size: 1.2rem;
+  --navigation-wrapper-width: 18rem;
+  --navigation-wrapper-ul-width: 18rem;
+  --navigation-wrapper-ul-li-line-height: 2.3rem;
+  --navigation-wrapper-ul-li-anchor-font-size: 0.9rem;
+  --icon-circle-height: 1.8rem;
+  --icon-circle-width: 1.8rem;
+  --icon-right-angle-font-size: 1.2rem;
+  --icon-back-button-font-size: 1rem;
+}
+
+.container {
+  display: flex;
+  margin: 0rem 1rem 0rem 1rem;
+  padding: 0rem 0rem 0rem 0rem;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 100vw;
+}
+
+/* ===================================================================================================================== */
+/* TODO:                     FIXME:   NAVIGATION (PART 1) - SELLING & INVESTING PLANS  FIXME:                      TODO: */
+/* ===================================================================================================================== */
+
+/* ===================================================================================================================== */
+/* TODO:  TOP NAVIGATION - TITLE, BUTTON & DROP-DOWN ICON                                                                */
+/* ===================================================================================================================== */
+
+/* TOP NAVIGATION - POSITIONING */
+
+nav .sellinginvestingplans {
+  position: absolute;
+  top: 1%;
+  left: 1%;
+  transform: translate(-1%, -1%);
+}
+
+/* TOP NAVIGATION - TITLE & BUTTON (THE COMPLETE BOX IS THE BUTTON) */
+
+nav .sellinvestplandrop-btn {
+  width: var(--topnavigation-button-width);
+  background: var(--color-top-navigation-background);
+  color: var(--color-top-navigation-text);
+  line-height: var(--topnavigation-line-height);
+  padding: 0rem 1rem 0rem 1rem;
+  border-radius: 0.5rem;
+  font-size: var(--topnavigation-font-size);
+  font-weight: 600;
+  /* NEW CODE ADDED */
+  /* text-transform: uppercase; */
+}
+
+/* TOP NAVIGATION - DROP-DOWN ICON */
+
+nav .sellinvestplandrop-btn span {
+  float: right;
+  line-height: var(--topnavigation-dropdown-icon-line-height);
+  font-size: var(--topnavigation-dropdown-icon-font-size);
+  cursor: pointer;
+}
+
+/* ===================================================================================================================== */
+/* TODO:  1ST LEVEL NAVIGATION - TOOLTIP & DROP-DOWN MENU (CONTAINER)                                                    */
+/* ===================================================================================================================== */
+
+/* 1ST LEVEL - TOOLTIP POSITIONING, SIZING & COLOR  */
+
+nav .sellinvestplantooltip {
+  position: absolute;
+  left: 17.15rem;
+  top: 2.2rem;
+  height: 1rem;
+  width: 1rem;
+  background: var(--color-tooltip-background);
+  transform: rotate(45deg);
+  display: none;
+}
+
+/* =============================================== */
+/* TODO:  TOOLTIP LINK TO JAVASCRIPT CODE          */
+/* =============================================== */
+
+/* TOOLTIP - DISPLAY ON OPENING OF CONTAINER */
+
+nav .sellinvestplantooltip.show {
+  display: block;
+}
+
+/* ============================================== */
+
+/* 1ST LEVEL - CONTAINER (HOLDING ALL ELEMENTS */
+
+/* CONTAINER - POSITIONING AND SIZING */
+
+nav .sellinvestplanwrapper {
+  position: absolute;
+  top: 2.5rem;
+  display: flex;
+  /* width: 40rem; */
+  /* width: 120rem; */
+  width: var(--navigation-wrapper-width);
+  overflow: hidden;
+  background: var(--color-drop-down-container);
+  border-radius: 0.5rem;
+  transition: all 0.3s ease;
+  display: none;
+}
+
+/* ============================================= */
+/* TODO:  CONTAINER LINK TO JAVASCRIPT SCRIPT    */
+/* ============================================= */
+
+/* CONTAINER - OPEN, CLOSING, DISPLAY TYPE */
+
+nav .sellinvestplanwrapper.show {
+  display: block;
+  display: flex;
+}
+
+/* ============================================= */
+
+/* ===================================================================================================================== */
+/* TODO:  1ST LEVEL NAVIGATION - MENU-ITEMS (UNORDERED LISTS, LIST ITEMS, ANCHORS AND ICONS)                             */
+/* ===================================================================================================================== */
+
+/* lEVEL 1 - UNORDERED LIST - REMOVE BULLETS, SET MAX-WIDTH OF LIST-ITEMS, SET PADDING AROUND LIST-ITEMS */
+
+nav .sellinvestplanwrapper ul {
+  list-style: none;
+  width: var(--navigation-wrapper-ul-width);
+  padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+  transition: all 0.3s ease;
+}
+
+/* LEVEL 1 - LIST ITEMS - SET MAX LINE-HEIGHT OF LIST -ITEMS */
+
+nav .sellinvestplanwrapper ul li {
+  line-height: var(--navigation-wrapper-ul-li-line-height);
+}
+
+/* LEVEL 1 - UNORDERED LIST, LIST ITEMS, ANCHORS (POSITIONING, SIZING, FONT-SIZING) */
+
+nav .sellinvestplanwrapper ul li a {
+  position: relative;
+  text-decoration: none;
+  color: var(--color-menu-items-all-levels);
+  display: flex;
+  font-size: var(--navigation-wrapper-ul-li-anchor-font-size);
+  font-weight: 500;
+  padding: 0rem 0rem 0rem 0.5rem;
+  align-items: center;
+  border-radius: 0.8rem;
+}
+
+/* LEVEL 1 - UNORDERED LIST, LIST ITEMS, ANCHORS (ON HOVER COLOR) */
+
+nav .sellinvestplanwrapper ul li:hover a {
+  background: var(--color-menu-items-all-levels-hover);
+}
+
+/* LEVEL 1 - ICON CONTAINER - HEIGTH, WIDTH, MARGINS, BACKGROUND COLOR, ALIGNMENT OF ICONS WITHIN */
+
+.sellinvestplanwrapper ul li a .icon {
+  height: var(--icon-circle-height);
+  width: var(--icon-circle-width);
+  margin: 0rem 0.5rem 0rem 0rem;
+  background: var(--color-icon-container);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border-radius: 50%;
+}
+
+/* LEVEL 1 - NAVIGATION ICONS (TO NEXT LEVEL) - ICON: FA-ANGLE-RIGHT */
+
+.sellinvestplanwrapper ul li a i {
+  position: absolute;
+  right: 0.7rem;
+  font-size: var(--icon-right-angle-font-size);
+  pointer-events: none;
+}
+
+/* FIRST LEVEL DROPDOWN-TO-RIGHT */
+
+/* ===================================================================================================================== */
+/* TODO:  2ND LEVEL NAVIGATION - THE BACK BUTTON (ARROW) TO THE FIRST LEVEL & BUTTON TEXT                                */
+/* ===================================================================================================================== */
+
+.sellinvestplanwrapper ul .arrow {
+  padding: 0rem 0rem 0rem 1rem;
+  font-size: var(--icon-back-button-font-size);
+  font-weight: 700;
+  color: var(--color-back-button-arrow-and-text);
+  cursor: pointer;
+}
+
+.sellinvestplanwrapper ul .arrow span {
+  margin: 0rem 0.8rem 0rem 0rem;
+}
+
+/* ===================================================================================================================== */
+/* TODO:  THE INCLUDED HIDDEN NESTED LISTS ON THE NAVIGATION (WHICH IS NOT VISIBLE WHEN NOT ACTIVE)                      */
+/* ===================================================================================================================== */
+
+nav .sellinvestplanwrapper .sellingplans-drop,
+nav .sellinvestplanwrapper .investingplans-drop {
+  display: none;
+}
+
+/* ===================================================================================================================== */
+/* TODO:                    FIXME:   NAVIGATION (PART 2) - SHOP MARKETPLACE & SERVICES  FIXME:                     TODO: */
+/* ===================================================================================================================== */
+
+/* ===================================================================================================================== */
+/* TODO:  TOP NAVIGATION - TITLE, BUTTON & DROP-DOWN ICON                                                                */
+/* ===================================================================================================================== */
+
+/* TOP NAVIGATION - POSITIONING */
+
+nav .marketplaceservices {
+  position: absolute;
+  top: 1%;
+  left: 1%;
+  transform: translate(-1%, -1%);
+}
+
+/* TOP NAVIGATION - TITLE & BUTTON (THE COMPLETE BOX IS THE BUTTON) */
+
+nav .shopmarketplacedrop-btn {
+  width: var(--topnavigation-button-width);
+  background: var(--color-top-navigation-background);
+  color: var(--color-top-navigation-text);
+  line-height: var(--topnavigation-line-height);
+  padding: 0rem 1rem 0rem 1rem;
+  border-radius: 0.5rem;
+  font-size: var(--topnavigation-font-size);
+  font-weight: 600;
+  /* NEW CODE ADDED */
+  /* text-transform: uppercase; */
+}
+
+/* TOP NAVIGATION - DROP-DOWN ICON */
+
+nav .shopmarketplacedrop-btn span {
+  float: right;
+  line-height: var(--topnavigation-dropdown-icon-line-height);
+  font-size: var(--topnavigation-dropdown-icon-font-size);
+  cursor: pointer;
+}
+
+/* ===================================================================================================================== */
+/* TODO:  1ST LEVEL NAVIGATION - TOOLTIP & DROP-DOWN MENU (CONTAINER)                                                    */
+/* ===================================================================================================================== */
+
+/* 1ST LEVEL - TOOLTIP POSITIONING, SIZING & COLOR  */
+
+nav .shopmarketplacetooltip {
+  position: absolute;
+  left: 44.1rem;
+  top: 2.2rem;
+  height: 1rem;
+  width: 1rem;
+  background: var(--color-tooltip-background);
+  transform: rotate(45deg);
+  display: none;
+}
+
+/* =============================================== */
+/* TODO:  TOOLTIP LINK TO JAVASCRIPT CODE          */
+/* =============================================== */
+
+/* TOOLTIP - DISPLAY ON OPENING OF CONTAINER */
+
+nav .shopmarketplacetooltip.show {
+  display: block;
+}
+
+/* ============================================== */
+
+/* 1ST LEVEL - CONTAINER (HOLDING ALL ELEMENTS */
+
+/* CONTAINER - POSITIONING AND SIZING */
+
+nav .shopmarketplacewrapper {
+  position: absolute;
+  top: 2.5rem;
+  display: flex;
+  /* width: 40rem; */
+  /* width: 120rem; */
+  width: var(--navigation-wrapper-width);
+  overflow: hidden;
+  background: var(--color-drop-down-container);
+  border-radius: 0.5rem;
+  transition: all 0.3s ease;
+  display: none;
+}
+
+/* ============================================= */
+/* TODO:  CONTAINER LINK TO JAVASCRIPT SCRIPT    */
+/* ============================================= */
+
+/* CONTAINER - OPEN, CLOSING, DISPLAY TYPE */
+
+nav .shopmarketplacewrapper.show {
+  display: block;
+  display: flex;
+}
+
+/* ============================================= */
+
+/* ===================================================================================================================== */
+/* TODO:  1ST LEVEL NAVIGATION - MENU-ITEMS (UNORDERED LISTS, LIST ITEMS, ANCHORS AND ICONS)                             */
+/* ===================================================================================================================== */
+
+/* lEVEL 1 - UNORDERED LIST - REMOVE BULLETS, SET MAX-WIDTH OF LIST-ITEMS, SET PADDING AROUND LIST-ITEMS */
+
+nav .shopmarketplacewrapper ul {
+  list-style: none;
+  width: var(--navigation-wrapper-ul-width);
+  padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+  transition: all 0.3s ease;
+}
+
+/* LEVEL 1 - LIST ITEMS - SET MAX LINE-HEIGHT OF LIST -ITEMS */
+
+nav .shopmarketplacewrapper ul li {
+  line-height: var(--navigation-wrapper-ul-li-line-height);
+}
+
+/* LEVEL 1 - UNORDERED LIST, LIST ITEMS, ANCHORS (POSITIONING, SIZING, FONT-SIZING) */
+
+nav .shopmarketplacewrapper ul li a {
+  position: relative;
+  text-decoration: none;
+  color: var(--color-menu-items-all-levels);
+  display: flex;
+  font-size: var(--navigation-wrapper-ul-li-anchor-font-size);
+  font-weight: 500;
+  padding: 0rem 0rem 0rem 0.5rem;
+  align-items: center;
+  border-radius: 0.8rem;
+}
+
+/* LEVEL 1 - UNORDERED LIST, LIST ITEMS, ANCHORS (ON HOVER COLOR) */
+
+nav .shopmarketplacewrapper ul li:hover a {
+  background: var(--color-menu-items-all-levels-hover);
+}
+
+/* LEVEL 1 - ICON CONTAINER - HEIGTH, WIDTH, MARGINS, BACKGROUND COLOR, ALIGNMENT OF ICONS WITHIN */
+
+.shopmarketplacewrapper ul li a .icon {
+  height: var(--icon-circle-height);
+  width: var(--icon-circle-width);
+  margin: 0rem 0.5rem 0rem 0rem;
+  background: var(--color-icon-container);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border-radius: 50%;
+}
+
+/* LEVEL 1 - NAVIGATION ICONS (TO NEXT LEVEL) - ICON: FA-ANGLE-RIGHT */
+
+.shopmarketplacewrapper ul li a i {
+  position: absolute;
+  right: 0.7rem;
+  font-size: var(--icon-right-angle-font-size);
+  pointer-events: none;
+}
+
+/* FIRST LEVEL DROPDOWN-TO-RIGHT */
+
+/* ===================================================================================================================== */
+/* TODO:  2ND LEVEL NAVIGATION - THE BACK BUTTON (ARROW) TO THE FIRST LEVEL & BUTTON TEXT                                */
+/* ===================================================================================================================== */
+
+.shopmarketplacewrapper ul .arrow {
+  padding: 0rem 0rem 0rem 1rem;
+  font-size: var(--icon-back-button-font-size);
+  font-weight: 700;
+  color: var(--color-back-button-arrow-and-text);
+  cursor: pointer;
+}
+
+.shopmarketplacewrapper ul .arrow span {
+  margin: 0rem 0.8rem 0rem 0rem;
+}
+
+/* ===================================================================================================================== */
+/* TODO:  THE INCLUDED HIDDEN NESTED LISTS ON THE NAVIGATION (WHICH IS NOT VISIBLE WHEN NOT ACTIVE)                      */
+/* ===================================================================================================================== */
+
+nav .shopmarketplacewrapper .marketplaceproducts-drop,
+nav .shopmarketplacewrapper .generalservices-drop,
+nav .shopmarketplacewrapper .professionalservices-drop,
+nav .shopmarketplacewrapper .skynamo-drop,
+nav .shopmarketplacewrapper .whistleblowing-drop {
+  display: none;
+}
+
+/* ===================================================================================================================== */
+/* TODO:                          FIXME:   NAVIGATION (PART 3) - SHOP PRODUCTS  FIXME:                             TODO: */
+/* ===================================================================================================================== */
+
+/* ===================================================================================================================== */
+/* TODO:  TOP NAVIGATION - TITLE, BUTTON & DROP-DOWN ICON                                                                */
+/* ===================================================================================================================== */
+
+/* TOP NAVIGATION - POSITIONING */
+
+nav .shopproductsall {
+  position: absolute;
+  top: 1%;
+  left: 1%;
+  transform: translate(-1%, -1%);
+}
+
+/* TOP NAVIGATION - TITLE & BUTTON (THE COMPLETE BOX IS THE BUTTON) */
+
+nav .productsdrop-btn {
+  width: var(--topnavigation-button-width);
+  background: var(--color-top-navigation-background);
+  color: var(--color-top-navigation-text);
+  line-height: var(--topnavigation-line-height);
+  padding: 0rem 1rem 0rem 1rem;
+  border-radius: 0.5rem;
+  font-size: var(--topnavigation-font-size);
+  font-weight: 600;
+  /* NEW CODE ADDED */
+  /* text-transform: uppercase; */
+}
+
+/* TOP NAVIGATION - DROP-DOWN ICON */
+
+nav .productsdrop-btn span {
+  float: right;
+  line-height: var(--topnavigation-dropdown-icon-line-height);
+  font-size: var(--topnavigation-dropdown-icon-font-size);
+  cursor: pointer;
+}
+
+/* ===================================================================================================================== */
+/* TODO:  1ST LEVEL NAVIGATION - TOOLTIP & DROP-DOWN MENU (CONTAINER)                                                    */
+/* ===================================================================================================================== */
+
+/* 1ST LEVEL - TOOLTIP POSITIONING, SIZING & COLOR  */
+
+nav .productstooltip {
+  position: absolute;
+  left: 71.15rem;
+  top: 2.2rem;
+  height: 1rem;
+  width: 1rem;
+  background: var(--color-tooltip-background);
+  transform: rotate(45deg);
+  display: none;
+}
+
+/* =============================================== */
+/* TODO:  TOOLTIP LINK TO JAVASCRIPT CODE          */
+/* =============================================== */
+
+/* TOOLTIP - DISPLAY ON OPENING OF CONTAINER */
+
+nav .productstooltip.show {
+  display: block;
+}
+
+/* ============================================== */
+
+/* 1ST LEVEL - CONTAINER (HOLDING ALL ELEMENTS */
+
+/* CONTAINER - POSITIONING AND SIZING */
+
+nav .productswrapper {
+  position: absolute;
+  top: 2.5rem;
+  display: flex;
+  /* width: 40rem; */
+  /* width: 120rem; */
+  width: var(--navigation-wrapper-width);
+  overflow: hidden;
+  background: var(--color-drop-down-container);
+  border-radius: 0.5rem;
+  transition: all 0.3s ease;
+  display: none;
+}
+
+/* ============================================= */
+/* TODO:  CONTAINER LINK TO JAVASCRIPT SCRIPT    */
+/* ============================================= */
+
+/* CONTAINER - OPEN, CLOSING, DISPLAY TYPE */
+
+nav .productswrapper.show {
+  display: block;
+  display: flex;
+}
+
+/* ============================================= */
+
+/* ===================================================================================================================== */
+/* TODO:  1ST LEVEL NAVIGATION - MENU-ITEMS (UNORDERED LISTS, LIST ITEMS, ANCHORS AND ICONS)                             */
+/* ===================================================================================================================== */
+
+/* lEVEL 1 - UNORDERED LIST - REMOVE BULLETS, SET MAX-WIDTH OF LIST-ITEMS, SET PADDING AROUND LIST-ITEMS */
+
+nav .productswrapper ul {
+  list-style: none;
+  width: var(--navigation-wrapper-ul-width);
+  padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+  transition: all 0.3s ease;
+}
+
+/* LEVEL 1 - LIST ITEMS - SET MAX LINE-HEIGHT OF LIST -ITEMS */
+
+nav .productswrapper ul li {
+  line-height: var(--navigation-wrapper-ul-li-line-height);
+}
+
+/* LEVEL 1 - UNORDERED LIST, LIST ITEMS, ANCHORS (POSITIONING, SIZING, FONT-SIZING) */
+
+nav .productswrapper ul li a {
+  position: relative;
+  text-decoration: none;
+  color: var(--color-menu-items-all-levels);
+  display: flex;
+  font-size: var(--navigation-wrapper-ul-li-anchor-font-size);
+  font-weight: 500;
+  padding: 0rem 0rem 0rem 0.5rem;
+  align-items: center;
+  border-radius: 0.8rem;
+}
+
+/* LEVEL 1 - UNORDERED LIST, LIST ITEMS, ANCHORS (ON HOVER COLOR) */
+
+nav .productswrapper ul li:hover a {
+  background: var(--color-menu-items-all-levels-hover);
+}
+
+/* LEVEL 1 - ICON CONTAINER - HEIGTH, WIDTH, MARGINS, BACKGROUND COLOR, ALIGNMENT OF ICONS WITHIN */
+
+.productswrapper ul li a .icon {
+  height: var(--icon-circle-height);
+  width: var(--icon-circle-width);
+  margin: 0rem 0.5rem 0rem 0rem;
+  background: var(--color-icon-container);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border-radius: 50%;
+}
+
+/* LEVEL 1 - NAVIGATION ICONS (TO NEXT LEVEL) - ICON: FA-ANGLE-RIGHT */
+
+.productswrapper ul li a i {
+  position: absolute;
+  right: 0.7rem;
+  font-size: var(--icon-right-angle-font-size);
+  pointer-events: none;
+}
+
+/* FIRST LEVEL DROPDOWN-TO-RIGHT */
+
+/* ===================================================================================================================== */
+/* TODO:  2ND LEVEL NAVIGATION - THE BACK BUTTON (ARROW) TO THE FIRST LEVEL & BUTTON TEXT                                */
+/* ===================================================================================================================== */
+
+.productswrapper ul .arrow {
+  padding: 0rem 0rem 0rem 1rem;
+  font-size: var(--icon-back-button-font-size);
+  font-weight: 700;
+  color: var(--color-back-button-arrow-and-text);
+  cursor: pointer;
+}
+
+.productswrapper ul .arrow span {
+  margin: 0rem 0.8rem 0rem 0rem;
+}
+
+/* ===================================================================================================================== */
+/* TODO:  THE INCLUDED HIDDEN NESTED LISTS ON THE NAVIGATION (WHICH IS NOT VISIBLE WHEN NOT ACTIVE)                      */
+/* ===================================================================================================================== */
+
+nav .productswrapper .mobile-drop,
+nav .productswrapper .laptops-drop,
+nav .productswrapper .phones-drop,
+nav .productswrapper .tablets-drop,
+nav .productswrapper .watches-drop,
+nav .productswrapper .data-drop,
+nav .productswrapper .mobileaccessories-drop,
+nav .productswrapper .office-drop,
+nav .productswrapper .desktoppc-drop,
+nav .productswrapper .pccomponents-drop,
+nav .productswrapper .pcperipherals-drop,
+nav .productswrapper .servers-drop,
+nav .productswrapper .pointofsale-drop,
+nav .productswrapper .securitysurveillance-drop,
+nav .productswrapper .printers-drop,
+nav .productswrapper .projectors-drop,
+nav .productswrapper .software-drop,
+nav .productswrapper .officestationery-drop,
+nav .productswrapper .officefurniture-drop,
+nav .productswrapper .homeliving-drop,
+nav .productswrapper .bathrooms-drop,
+nav .productswrapper .bedrooms-drop,
+nav .productswrapper .cookware-drop,
+nav .productswrapper .diningrooms-drop,
+nav .productswrapper .kitchen-drop,
+nav .productswrapper .laundry-drop,
+nav .productswrapper .lounge-drop,
+nav .productswrapper .patiopools-drop,
+nav .productswrapper .homeaccessories-drop,
+nav .productswrapper .television-drop,
+nav .productswrapper .hobbies-drop,
+nav .productswrapper .booksall-drop,
+nav .productswrapper .camerasall-drop,
+nav .productswrapper .gamingall-drop,
+nav .productswrapper .radiocontrol-drop,
+nav .productswrapper .toysall-drop,
+nav .productswrapper .outdoors-drop,
+nav .productswrapper .camping-drop,
+nav .productswrapper .offroadvehicles-drop,
+nav .productswrapper .outdoorgear-drop,
+nav .productswrapper .shoothunt-drop,
+nav .productswrapper .watersports-drop,
+nav .productswrapper .sports-drop,
+nav .productswrapper .tablesports-drop,
+nav .productswrapper .diyall-drop,
+nav .productswrapper .diygardening-drop,
+nav .productswrapper .diymaterials-drop,
+nav .productswrapper .diytools-drop {
+  display: none;
+}
+
+/* ===================================================================================================================== */
+/* TODO:                         FIXME:   NAVIGATION (PART 4) - SHOP ESSENTIALS  FIXME:                            TODO: */
+/* ===================================================================================================================== */
+
+/* ===================================================================================================================== */
+/* TODO:  TOP NAVIGATION - TITLE, BUTTON & DROP-DOWN ICON                                                                */
+/* ===================================================================================================================== */
+
+/* TOP NAVIGATION - POSITIONING */
+
+nav .shopessentialsgroup {
+  position: absolute;
+  top: 1%;
+  left: 1%;
+  transform: translate(-1%, -1%);
+}
+
+/* TOP NAVIGATION - TITLE & BUTTON (THE COMPLETE BOX IS THE BUTTON) */
+
+nav .shopessentialproductsdrop-btn {
+  width: var(--topnavigation-button-width);
+  background: var(--color-top-navigation-background);
+  color: var(--color-top-navigation-text);
+  line-height: var(--topnavigation-line-height);
+  padding: 0rem 1rem 0rem 1rem;
+  border-radius: 0.5rem;
+  font-size: var(--topnavigation-font-size);
+  font-weight: 600;
+  /* NEW CODE ADDED */
+  /* text-transform: uppercase; */
+}
+
+/* TOP NAVIGATION - DROP-DOWN ICON */
+
+nav .shopessentialproductsdrop-btn span {
+  float: right;
+  line-height: var(--topnavigation-dropdown-icon-line-height);
+  font-size: var(--topnavigation-dropdown-icon-font-size);
+  cursor: pointer;
+}
+
+/* ===================================================================================================================== */
+/* TODO:  1ST LEVEL NAVIGATION - TOOLTIP & DROP-DOWN MENU (CONTAINER)                                                    */
+/* ===================================================================================================================== */
+
+/* 1ST LEVEL - TOOLTIP POSITIONING, SIZING & COLOR  */
+
+nav .shopessentialproductstooltip {
+  position: absolute;
+  left: 98.15rem;
+  top: 2.2rem;
+  height: 1rem;
+  width: 1rem;
+  background: var(--color-tooltip-background);
+  transform: rotate(45deg);
+  display: none;
+}
+
+/* =============================================== */
+/* TODO:  TOOLTIP LINK TO JAVASCRIPT CODE          */
+/* =============================================== */
+
+/* TOOLTIP - DISPLAY ON OPENING OF CONTAINER */
+
+nav .shopessentialproductstooltip.show {
+  display: block;
+}
+
+/* ============================================== */
+
+/* 1ST LEVEL - CONTAINER (HOLDING ALL ELEMENTS */
+
+/* CONTAINER - POSITIONING AND SIZING */
+
+nav .shopessentialproductswrapper {
+  position: absolute;
+  top: 2.5rem;
+  display: flex;
+  /* width: 40rem; */
+  /* width: 120rem; */
+  width: var(--navigation-wrapper-width);
+  overflow: hidden;
+  background: var(--color-drop-down-container);
+  border-radius: 0.5rem;
+  transition: all 0.3s ease;
+  display: none;
+}
+
+/* ============================================= */
+/* TODO:  CONTAINER LINK TO JAVASCRIPT SCRIPT    */
+/* ============================================= */
+
+/* CONTAINER - OPEN, CLOSING, DISPLAY TYPE */
+
+nav .shopessentialproductswrapper.show {
+  display: block;
+  display: flex;
+}
+
+/* ============================================= */
+
+/* ===================================================================================================================== */
+/* TODO:  1ST LEVEL NAVIGATION - MENU-ITEMS (UNORDERED LISTS, LIST ITEMS, ANCHORS AND ICONS)                             */
+/* ===================================================================================================================== */
+
+/* lEVEL 1 - UNORDERED LIST - REMOVE BULLETS, SET MAX-WIDTH OF LIST-ITEMS, SET PADDING AROUND LIST-ITEMS */
+
+nav .shopessentialproductswrapper ul {
+  list-style: none;
+  width: var(--navigation-wrapper-ul-width);
+  padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+  transition: all 0.3s ease;
+}
+
+/* LEVEL 1 - LIST ITEMS - SET MAX LINE-HEIGHT OF LIST -ITEMS */
+
+nav .shopessentialproductswrapper ul li {
+  line-height: var(--navigation-wrapper-ul-li-line-height);
+}
+
+/* LEVEL 1 - UNORDERED LIST, LIST ITEMS, ANCHORS (POSITIONING, SIZING, FONT-SIZING) */
+
+nav .shopessentialproductswrapper ul li a {
+  position: relative;
+  text-decoration: none;
+  color: var(--color-menu-items-all-levels);
+  display: flex;
+  font-size: var(--navigation-wrapper-ul-li-anchor-font-size);
+  font-weight: 500;
+  padding: 0rem 0rem 0rem 0.5rem;
+  align-items: center;
+  border-radius: 0.8rem;
+}
+
+/* LEVEL 1 - UNORDERED LIST, LIST ITEMS, ANCHORS (ON HOVER COLOR) */
+
+nav .shopessentialproductswrapper ul li:hover a {
+  background: var(--color-menu-items-all-levels-hover);
+}
+
+/* LEVEL 1 - ICON CONTAINER - HEIGTH, WIDTH, MARGINS, BACKGROUND COLOR, ALIGNMENT OF ICONS WITHIN */
+
+.shopessentialproductswrapper ul li a .icon {
+  height: var(--icon-circle-height);
+  width: var(--icon-circle-width);
+  margin: 0rem 0.5rem 0rem 0rem;
+  background: var(--color-icon-container);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border-radius: 50%;
+}
+
+/* LEVEL 1 - NAVIGATION ICONS (TO NEXT LEVEL) - ICON: FA-ANGLE-RIGHT */
+
+.shopessentialproductswrapper ul li a i {
+  position: absolute;
+  right: 0.7rem;
+  font-size: var(--icon-right-angle-font-size);
+  pointer-events: none;
+}
+
+/* FIRST LEVEL DROPDOWN-TO-RIGHT */
+
+/* ===================================================================================================================== */
+/* TODO:  2ND LEVEL NAVIGATION - THE BACK BUTTON (ARROW) TO THE FIRST LEVEL & BUTTON TEXT                                */
+/* ===================================================================================================================== */
+
+.shopessentialproductswrapper ul .arrow {
+  padding: 0rem 0rem 0rem 1rem;
+  font-size: var(--icon-back-button-font-size);
+  font-weight: 700;
+  color: var(--color-back-button-arrow-and-text);
+  cursor: pointer;
+}
+
+.shopessentialproductswrapper ul .arrow span {
+  margin: 0rem 0.8rem 0rem 0rem;
+}
+
+/* ===================================================================================================================== */
+/* TODO:  THE INCLUDED HIDDEN NESTED LISTS ON THE NAVIGATION (WHICH IS NOT VISIBLE WHEN NOT ACTIVE)                      */
+/* ===================================================================================================================== */
+
+nav .shopessentialproductswrapper .covid19-drop,
+nav .shopessentialproductswrapper .emergency-drop,
+nav .shopessentialproductswrapper .energy-drop,
+nav .shopessentialproductswrapper .groceries-drop,
+nav .shopessentialproductswrapper .freshproduce-drop,
+nav .shopessentialproductswrapper .bakery-drop,
+nav .shopessentialproductswrapper .dairyeggs-drop,
+nav .shopessentialproductswrapper .deliparty-drop,
+nav .shopessentialproductswrapper .meatspoultryfish-drop,
+nav .shopessentialproductswrapper .frozenfoods-drop,
+nav .shopessentialproductswrapper .beveragesall-drop,
+nav .shopessentialproductswrapper .tabacco-drop,
+nav .shopessentialproductswrapper .beercider-drop,
+nav .shopessentialproductswrapper .winesall-drop,
+nav .shopessentialproductswrapper .spiritsall-drop,
+nav .shopessentialproductswrapper .snacks-drop,
+nav .shopessentialproductswrapper .foodcupboard-drop,
+nav .shopessentialproductswrapper .babycare-drop,
+nav .shopessentialproductswrapper .petcare-drop,
+nav .shopessentialproductswrapper .braaioutdoors-drop,
+nav .shopessentialproductswrapper .clothingfootwear-drop,
+nav .shopessentialproductswrapper .ladiesgroup-drop,
+nav .shopessentialproductswrapper .ladiesshoes-drop,
+nav .shopessentialproductswrapper .ladiesbottoms-drop,
+nav .shopessentialproductswrapper .ladiesdresses-drop,
+nav .shopessentialproductswrapper .ladiestops-drop,
+nav .shopessentialproductswrapper .ladiesjackets-drop,
+nav .shopessentialproductswrapper .ladieslingerie-drop,
+nav .shopessentialproductswrapper .ladiessports-drop,
+nav .shopessentialproductswrapper .ladiesswimwear-drop,
+nav .shopessentialproductswrapper .ladiesaccessories-drop,
+nav .shopessentialproductswrapper .ladiesbeauty-drop,
+nav .shopessentialproductswrapper .mensgroup-drop,
+nav .shopessentialproductswrapper .mensshoes-drop,
+nav .shopessentialproductswrapper .mensbottoms-drop,
+nav .shopessentialproductswrapper .mensformalwear-drop,
+nav .shopessentialproductswrapper .menstops-drop,
+nav .shopessentialproductswrapper .mensjackets-drop,
+nav .shopessentialproductswrapper .mensunderwear-drop,
+nav .shopessentialproductswrapper .menssports-drop,
+nav .shopessentialproductswrapper .mensswimwear-drop,
+nav .shopessentialproductswrapper .mensaccessories-drop,
+nav .shopessentialproductswrapper .mensgrooming-drop,
+nav .shopessentialproductswrapper .kidsgroup-drop,
+nav .shopessentialproductswrapper .babygirls-drop,
+nav .shopessentialproductswrapper .babyboys-drop,
+nav .shopessentialproductswrapper .girlstwoeight-drop,
+nav .shopessentialproductswrapper .boystwoeight-drop,
+nav .shopessentialproductswrapper .girlseightsixteen-drop,
+nav .shopessentialproductswrapper .boyseightsixteen-drop {
+  display: none;
+}
+
+/* ===================================================================================================================== */
+/* TODO:                           FIXME:   NAVIGATION (PART 5) - CLIENT ZONE  FIXME:                              TODO: */
+/* ===================================================================================================================== */
+
+/* ===================================================================================================================== */
+/* TODO:  TOP NAVIGATION - TITLE, BUTTON & DROP-DOWN ICON                                                                */
+/* ===================================================================================================================== */
+
+/* TOP NAVIGATION - POSITIONING */
+
+nav .clientzonegroup {
+  position: absolute;
+  top: 1%;
+  left: 1%;
+  transform: translate(-1%, -1%);
+}
+
+/* TOP NAVIGATION - TITLE & BUTTON (THE COMPLETE BOX IS THE BUTTON) */
+
+nav .clientzonedrop-btn {
+  width: var(--topnavigation-button-width);
+  background: var(--color-top-navigation-background);
+  color: var(--color-top-navigation-text);
+  line-height: var(--topnavigation-line-height);
+  padding: 0rem 1rem 0rem 1rem;
+  border-radius: 0.5rem;
+  font-size: var(--topnavigation-font-size);
+  font-weight: 600;
+  /* NEW CODE ADDED */
+  /* text-transform: uppercase; */
+}
+
+/* TOP NAVIGATION - DROP-DOWN ICON */
+
+nav .clientzonedrop-btn span {
+  float: right;
+  line-height: var(--topnavigation-dropdown-icon-line-height);
+  font-size: var(--topnavigation-dropdown-icon-font-size);
+  cursor: pointer;
+}
+
+/* ===================================================================================================================== */
+/* TODO:  1ST LEVEL NAVIGATION - TOOLTIP & DROP-DOWN MENU (CONTAINER)                                                    */
+/* ===================================================================================================================== */
+
+/* 1ST LEVEL - TOOLTIP POSITIONING, SIZING & COLOR  */
+
+nav .clientzonetooltip {
+  position: absolute;
+  left: 125.15rem;
+  top: 2.2rem;
+  height: 1rem;
+  width: 1rem;
+  background: var(--color-tooltip-background);
+  transform: rotate(45deg);
+  display: none;
+}
+
+/* =============================================== */
+/* TODO:  TOOLTIP LINK TO JAVASCRIPT CODE          */
+/* =============================================== */
+
+/* TOOLTIP - DISPLAY ON OPENING OF CONTAINER */
+
+nav .clientzonetooltip.show {
+  display: block;
+}
+
+/* ============================================== */
+
+/* 1ST LEVEL - CONTAINER (HOLDING ALL ELEMENTS */
+
+/* CONTAINER - POSITIONING AND SIZING */
+
+nav .clientzonewrapper {
+  position: absolute;
+  top: 2.5rem;
+  display: flex;
+  /* width: 40rem; */
+  /* width: 120rem; */
+  width: var(--navigation-wrapper-width);
+  overflow: hidden;
+  background: var(--color-drop-down-container);
+  border-radius: 0.5rem;
+  transition: all 0.3s ease;
+  display: none;
+}
+
+/* ============================================= */
+/* TODO:  CONTAINER LINK TO JAVASCRIPT SCRIPT    */
+/* ============================================= */
+
+/* CONTAINER - OPEN, CLOSING, DISPLAY TYPE */
+
+nav .clientzonewrapper.show {
+  display: block;
+  display: flex;
+}
+
+/* ============================================= */
+
+/* ===================================================================================================================== */
+/* TODO:  1ST LEVEL NAVIGATION - MENU-ITEMS (UNORDERED LISTS, LIST ITEMS, ANCHORS AND ICONS)                             */
+/* ===================================================================================================================== */
+
+/* lEVEL 1 - UNORDERED LIST - REMOVE BULLETS, SET MAX-WIDTH OF LIST-ITEMS, SET PADDING AROUND LIST-ITEMS */
+
+nav .clientzonewrapper ul {
+  list-style: none;
+  width: var(--navigation-wrapper-ul-width);
+  padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+  transition: all 0.3s ease;
+}
+
+/* LEVEL 1 - LIST ITEMS - SET MAX LINE-HEIGHT OF LIST -ITEMS */
+
+nav .clientzonewrapper ul li {
+  line-height: var(--navigation-wrapper-ul-li-line-height);
+}
+
+/* LEVEL 1 - UNORDERED LIST, LIST ITEMS, ANCHORS (POSITIONING, SIZING, FONT-SIZING) */
+
+nav .clientzonewrapper ul li a {
+  position: relative;
+  text-decoration: none;
+  color: var(--color-menu-items-all-levels);
+  display: flex;
+  font-size: var(--navigation-wrapper-ul-li-anchor-font-size);
+  font-weight: 500;
+  padding: 0rem 0rem 0rem 0.5rem;
+  align-items: center;
+  border-radius: 0.8rem;
+}
+
+/* LEVEL 1 - UNORDERED LIST, LIST ITEMS, ANCHORS (ON HOVER COLOR) */
+
+nav .clientzonewrapper ul li:hover a {
+  background: var(--color-menu-items-all-levels-hover);
+}
+
+/* LEVEL 1 - ICON CONTAINER - HEIGTH, WIDTH, MARGINS, BACKGROUND COLOR, ALIGNMENT OF ICONS WITHIN */
+
+.clientzonewrapper ul li a .icon {
+  height: var(--icon-circle-height);
+  width: var(--icon-circle-width);
+  margin: 0rem 0.5rem 0rem 0rem;
+  background: var(--color-icon-container);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border-radius: 50%;
+}
+
+/* LEVEL 1 - NAVIGATION ICONS (TO NEXT LEVEL) - ICON: FA-ANGLE-RIGHT */
+
+.clientzonewrapper ul li a i {
+  position: absolute;
+  right: 0.7rem;
+  font-size: var(--icon-right-angle-font-size);
+  pointer-events: none;
+}
+
+/* FIRST LEVEL DROPDOWN-TO-RIGHT */
+
+/* ===================================================================================================================== */
+/* TODO:  2ND LEVEL NAVIGATION - THE BACK BUTTON (ARROW) TO THE FIRST LEVEL & BUTTON TEXT                                */
+/* ===================================================================================================================== */
+
+.clientzonewrapper ul .arrow {
+  padding: 0rem 0rem 0rem 1rem;
+  font-size: var(--icon-back-button-font-size);
+  font-weight: 700;
+  color: var(--color-back-button-arrow-and-text);
+  cursor: pointer;
+}
+
+.clientzonewrapper ul .arrow span {
+  margin: 0rem 0.8rem 0rem 0rem;
+}
+
+/* ===================================================================================================================== */
+/* TODO:  THE INCLUDED HIDDEN NESTED LISTS ON THE NAVIGATION (WHICH IS NOT VISIBLE WHEN NOT ACTIVE)                      */
+/* ===================================================================================================================== */
+
+nav .clientzonewrapper .shopper-drop,
+nav .clientzonewrapper .seller-drop,
+nav .clientzonewrapper .investor-drop {
+  display: none;
+}
+
+/* ===================================================================================================================== */
+/* TODO:  MAKING NAVIGATION SYSTEM RESPONSIVE - MEDIA QUERIES                                                     TODO:  */
+/* ===================================================================================================================== */
+
+@media screen and (max-width: 768px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+  }
+}
+
+/* @media screen and (max-width: 775px) {
+        .container_all {
+          display: flex;
+          flex-direction: column;
+        }
+      }
+      
+      @media screen and (max-width: 1035px) {
+        .form_group {
+          width: 48rem;
+        }
+      
+        .dropdown {
+          width: 26.5rem;
+        }
+      }
+      
+      @media screen and (max-width: 1000px) {
+        .form_group {
+          width: 43rem;
+        }
+      
+        .dropdown {
+          width: 31rem;
+        }
+      }
+      
+      @media screen and (max-width: 950px) {
+        .form_group {
+          width: 38rem;
+        }
+      
+        .dropdown {
+          width: 36.5rem;
+        }
+      }
+      
+      @media screen and (max-width: 900px) {
+        .form_group {
+          width: 35rem;
+        }
+      
+        .dropdown {
+          width: 41rem;
+        }
+      }
+      
+      @media screen and (max-width: 860px) {
+        .form_group {
+          width: 32rem;
+        }
+      
+        .dropdown {
+          width: 47.5rem;
+        }
+      }
+      
+      @media screen and (max-width: 835px) {
+        .form_group {
+          width: 27rem;
+        }
+      
+        .dropdown {
+          width: 75rem;
+        }
+      }
+      
+      @media screen and (max-width: 775px) {
+        .form_group {
+          width: 31rem;
+        }
+      
+        .dropdown {
+          width: 47rem;
+        }
+      }
+      
+      @media screen and (max-width: 700px) {
+        .dropdown {
+          width: 42.5rem;
+        }
+      }
+      
+      @media screen and (max-width: 650px) {
+        .dropdown {
+          width: 39.5rem;
+        }
+      }
+      
+      @media screen and (max-width: 600px) {
+        .dropdown {
+          width: 36.5rem;
+        }
+      }
+      
+      @media screen and (max-width: 500px) {
+        .dropdown {
+          width: 31rem;
+        }
+      }
+      
+      @media screen and (max-width: 400px) {
+        .dropdown {
+          width: 26rem;
+        }
+      }
+      
+      @media screen and (max-width: 350px) {
+        .dropdown {
+          width: 23.5rem;
+        }
+      }
+      
+      @media screen and (max-width: 320px) {
+        .form_group {
+          width: 25rem;
+        }
+      
+        .dropdown {
+          width: 33rem;
+        }
+      
+        .social-media ul li {
+          margin: 0rem 0.35rem 0rem 0.35rem;
+        }
+      } */
+
+/* ===================================================================================================================== */
+/*                                                                                            TODO:  STYLING ENDS  TODO: */
+/* ===================================================================================================================== */
