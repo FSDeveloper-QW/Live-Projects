@@ -38,7 +38,7 @@ body {
 
 .container_image {
   position: relative;
-  margin: 0.5rem 0.5rem 0.2rem 0.5rem;
+  margin: 0.35rem 0.5rem 0.35rem 0.5rem;
   padding: 0rem 0rem 0rem 0rem;
   display: flex;
   justify-content: center;
@@ -79,7 +79,7 @@ body {
 /* MAIN CONTAINER - HOLDING ALL SEARCH COMPONENTS TOGETHER  */
 .container_search {
   position: relative;
-  margin: 0.2rem 0.5rem 0.2rem 0.5rem;
+  margin: 0.35rem 0.5rem 0.35rem 0.5rem;
   padding: 0rem 0rem 0rem 0rem;
   display: flex;
   justify-content: center;
@@ -114,7 +114,7 @@ body {
   padding: 0.3rem 0.8rem 0.3rem 0rem;
   border-radius: 2rem;
   box-shadow: 0 5px 4px rgba(0, 0, 0, 0.35);
-  /* border: 1px solid black; */
+  border: 1px solid #faf9f6;
 }
 
 .dropdown {
@@ -122,24 +122,24 @@ body {
   width: 20rem;
   padding: 0rem 0.5rem 0rem 0.5rem;
   color: #000000;
-  font-size: 1.2rem;
-  font-family: "open sans", sans-serif;
+  font-size: 1rem;
+  font-family: "poppins", sans-serif;
   border-right: 3px solid #dc143c;
   cursor: pointer;
 }
 
 .default_option {
   padding: 0.3rem 0.2rem 0.3rem 0.5rem;
-  text-transform: lowercase;
+  text-transform: none;
 }
 
 .dropdown_list ul {
-  margin: 1rem 0rem 0rem -0.4rem;
+  margin: 1rem 0rem 0rem -0.5rem;
   padding: 0.5rem 0.5rem 0.5rem 0.5rem;
   list-style: none;
   background-color: #faf9f6;
   color: black;
-  text-transform: lowercase;
+  text-transform: none;
   position: absolute;
   width: 15.25rem;
   border-radius: 1rem;
@@ -166,7 +166,7 @@ body {
 
 /* 1.  Set the PADDING of the List-Items */
 .dropdown_list ul li {
-  padding: 0.5rem 0.2rem 0.5rem 0.2rem;
+  padding: 0.3rem 0.2rem 0.3rem 0.2rem;
 }
 
 /* 2.  Set a MARGIN to the right of the LIST ICONS - WHEN APPLICABLE  */
@@ -180,8 +180,8 @@ body {
   border-style: solid;
   border-color: #1d1d1d transparent;
   position: absolute;
-  right: 2rem;
-  top: 50%;
+  right: 1rem;
+  top: 39%;
 }
 
 .dropdown_list ul li::before {
@@ -191,7 +191,7 @@ body {
   border-color: #fff transparent;
   position: absolute;
   bottom: 100%;
-  right: 2rem;
+  right: 1rem;
 }
 
 .dropdown_list ul li:hover {
@@ -218,8 +218,8 @@ body {
   width: 100%;
   height: 100%;
   border: 0;
-  font-size: 1.2rem;
-  font-family: "open sans", sans-serif;
+  font-size: 1rem;
+  font-family: "poppins", sans-serif;
   padding: 0rem 0.5rem 0rem 1rem;
   color: #000000;
 }
