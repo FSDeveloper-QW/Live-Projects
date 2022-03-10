@@ -1,0 +1,514 @@
+/* ===================================================================================================================== */
+/* TODO:  STYLING FOR 2ND COMPONENT :  SHOPMAX - LOGO, SEARCH BAR AND SOCIAL MEDIA LINKS                                 */
+/* ===================================================================================================================== */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-size: 1.6rem;
+}
+
+/* ===================================================================================================================== */
+/* TODO:  PART 1 - CONTAINER (ALL) - HOLDING ALL ELEMENTS TOGETHER (LOGO, SEARCH BAR and SOCIAL MEDIA LINKS)             */
+/* ===================================================================================================================== */
+
+.container_all {
+  position: relative;
+  margin: 0rem 0rem 0rem 0rem;
+  padding: 0rem 0rem 0rem 0rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 100vw;
+  /* border: 1px solid rgba(0, 0, 0, 0.5); */
+}
+
+/* ===================================================================================================================== */
+/* TODO:  PART 2 - CONTAINER (LOGO) - SHOPMAX LOGO                                                                       */
+/* ===================================================================================================================== */
+
+.container_image {
+  position: relative;
+  margin: 0.35rem 0.5rem 0.35rem 0.5rem;
+  padding: 0rem 0rem 0rem 0rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50vw;
+  /* border: 1px solid red; */
+}
+
+.container_image .logo {
+  display: block;
+  width: 14rem;
+  margin: auto;
+  /* max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto; */
+  /* border: 1px solid purple; */
+}
+
+/* ========================================================= */
+/* FIXME:  SHOPMAX LOGO SCALING (100%) = FACTOR 4.91         */
+/* ========================================================= */
+/* WIDTH = 50rem (500px) ==>  HEIGTH = 10.185rem (101.85px)  */
+/* WIDTH = 45rem (450px) ==>  HEIGTH =  9.167rem  (91.67px)  */
+/* WIDTH = 40rem (400px) ==>  HEIGTH =  8.148rem  (81.48px)  */
+/* WIDTH = 35rem (350px) ==>  HEIGTH =  7.130rem  (71.30px)  */
+/* WIDTH = 30rem (300px) ==>  HEIGTH =  6.111rem  (61.11px)  */
+/* WIDTH = 25rem (250px) ==>  HEIGTH =  5.093rem  (50.93px)  */
+/* WIDTH = 20rem (200px) ==>  HEIGTH =  4.074rem  (40.74px)  */
+/* WIDTH = 15rem (150px) ==>  HEIGTH =  3.056rem  (30.56px)  */
+/* WIDTH = 10rem (100px) ==>  HEIGTH =  2.037rem  (20.37px)  */
+/* ========================================================= */
+
+/* ===================================================================================================================== */
+/* TODO:  PART 3 - CONTAINER (SEARCH) - SEARCH BAR                                                                       */
+/* ===================================================================================================================== */
+
+/* MAIN CONTAINER - HOLDING ALL SEARCH COMPONENTS TOGETHER  */
+.container_search {
+  position: relative;
+  margin: 0.35rem 0.5rem 0.35rem 0.5rem;
+  padding: 0rem 0rem 0rem 0rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  z-index: 1;
+  /* border: 1px solid blue; */
+}
+
+/* SUB-CONTAINER - HOLDING ALL ELEMENTS TOGETHER */
+.container {
+  position: relative;
+  top: 0%;
+  left: 0%;
+  transform: translate(0%, 0%);
+  margin: 0rem 0rem 0rem 0rem;
+  padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+  /* max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto; */
+  /* justify-content: center;
+  align-items: center; */
+  /* border: 1px solid blue; */
+}
+
+.form_group {
+  background-color: #fff;
+  display: flex;
+  width: 68rem;
+  height: 3rem;
+  padding: 0.3rem 0.8rem 0.3rem 0rem;
+  border-radius: 2rem;
+  box-shadow: 0 5px 4px rgba(0, 0, 0, 0.35);
+  border: 1px solid #faf9f6;
+}
+
+.dropdown {
+  position: relative;
+  width: 20rem;
+  padding: 0rem 0.5rem 0rem 0.5rem;
+  color: #000000;
+  font-size: 1rem;
+  font-family: "poppins", sans-serif;
+  border-right: 3px solid #dc143c;
+  cursor: pointer;
+}
+
+.default_option {
+  padding: 0.3rem 0.2rem 0.3rem 0.5rem;
+  text-transform: none;
+}
+
+.dropdown_list ul {
+  margin: 1rem 0rem 0rem -0.5rem;
+  padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+  list-style: none;
+  background-color: #faf9f6;
+  color: black;
+  text-transform: none;
+  position: absolute;
+  width: 15.25rem;
+  border-radius: 1rem;
+  border: 1px solid #faf9f6;
+  display: none;
+  box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.35);
+}
+
+/* ==================================================================== */
+/* TODO:  STYLING REQUIRED FOR JAVASCRIPT SCRIPT USED (BELOW)           */
+/* ==================================================================== */
+
+/* GENERAL NOTE:  By using the JQUERY JavaSCript Library will ensure
+   1.  Dropdown List becomes active when clicked
+   2.  Selected Category will display as Default Option
+   3.  Dropdown will close when clicked anywhere else  */
+
+.dropdown_list ul.active {
+  display: block;
+}
+
+/* ==================================================================== */
+/* ==================================================================== */
+
+/* 1.  Set the PADDING of the List-Items */
+.dropdown_list ul li {
+  padding: 0.3rem 0.2rem 0.3rem 0.2rem;
+}
+
+/* 2.  Set a MARGIN to the right of the LIST ICONS - WHEN APPLICABLE  */
+.dropdown_list ul li i {
+  margin-right: 0.75rem;
+}
+
+.dropdown::before {
+  content: "";
+  border-width: 0.6rem 0.6rem 0rem 0.6rem;
+  border-style: solid;
+  border-color: #1d1d1d transparent;
+  position: absolute;
+  right: 1rem;
+  top: 39%;
+}
+
+.dropdown_list ul li::before {
+  content: "";
+  border-width: 0rem 0.8rem 0.8rem 0.8rem;
+  border-style: solid;
+  border-color: #fff transparent;
+  position: absolute;
+  bottom: 100%;
+  right: 1rem;
+}
+
+.dropdown_list ul li:hover {
+  background-color: #faf9f6;
+  color: #f44336;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.search {
+  width: 50vw;
+  height: 100%;
+}
+
+/* ================================================== */
+/*               NOTES INPUT FIELD (BELOW)            */
+/* 1.  Set the search INPUT FIELD's WIDTH and HEIGHT  */
+/* 2.  Remove the BORDER of the INPUT FIELD           */
+/* 3.  Set the inner PADDING of the INPUT FIELD       */
+/* 4.  Set the text COLOR of INPUT FIELD              */
+/* ================================================== */
+
+.search_input {
+  width: 100%;
+  height: 100%;
+  border: 0;
+  font-size: 1rem;
+  font-family: "poppins", sans-serif;
+  padding: 0rem 0.5rem 0rem 1rem;
+  color: #000000;
+}
+
+/* ================================================== */
+/*     NOTES SEARCH BUTTON (MAGNIFYING GLASS) BELOW)  */
+/* 1.  Set BACKGROUND-COLOR of SEARCH-SUBMIT Button   */
+/* 2.  Set BORDER, WIDTH and HEIGHT of the Button     */
+/* 3.  Set FONT-SIZE of the Font Awesome Search Icon  */
+/* 4.  Set COLOR of the Font Awesome Search Icon      */
+/* 5.  Set HOVER properties Of the Search Icon        */
+/* ================================================== */
+
+.search_submit {
+  background-color: #fff;
+  border: none;
+  width: 50px;
+  height: 100%;
+  cursor: pointer;
+}
+
+.search_submit .fa-search {
+  font-size: 1.8rem;
+  color: #dc143c;
+}
+
+.search_submit .fa-search:hover {
+  font-size: 2rem;
+  color: #000000;
+}
+
+input,
+button:focus {
+  outline: none;
+}
+
+/* ===================================================================================================================== */
+/* TODO:  PART 4 - CONTAINER (SOCIAL) - SOCIAL MEDIA LINKS                                                                                                      */
+/* ===================================================================================================================== */
+
+/* ==================================== */
+/* COLOURS USED FOR SOCIAL MEDIA LINKS  */
+/* ==================================== */
+
+:root {
+  --color-facebook1: #1877f2;
+  --color-facebook2: #3b5998;
+  --color-instagram: #c32aa3;
+  --color-twitter: #1da1f2;
+  --color-linkedin: #0a66c2;
+  --color-youtube: #ff0000;
+  --color-whatsapp: #25d366;
+  --color-wishlist: #555555;
+  --color-shopping: #555555;
+}
+
+/* MAIN CONTAINER - HOLDING ALL SOCIAL MEDIA COMPONENTS TOGETHER  */
+.container_social {
+  position: relative;
+  margin: 0.2rem 0.5rem 0.2rem 0.5rem;
+  padding: 0rem 0rem 0rem 0rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  z-index: 0;
+  /* border: 1px solid green; */
+}
+
+/* NOTE: Translate (width, height) */
+.social-media ul {
+  position: relative;
+  top: 0%;
+  left: 0%;
+  margin: 0rem 0rem 0rem 0rem;
+  padding: 0.5rem 0rem 0.3rem 0rem;
+  transform: translate(0%, 0%);
+  display: flex;
+}
+
+.social-media ul li {
+  list-style: none;
+  margin: 0rem 0.75rem 0rem 0.75rem;
+}
+
+.social-media ul li .fa {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 1.5rem;
+  line-height: 1.4rem;
+  transition: 0.6s;
+  color: #000000;
+}
+
+.social-media ul li .fa:hover {
+  color: #ffffff;
+}
+
+.social-media ul li a {
+  position: relative;
+  display: block;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  background-color: #ffffff;
+  text-align: center;
+  transition: 0.6s;
+  box-shadow: 0 5px 4px rgba(0, 0, 0, 0.35);
+  /* border: 1px solid black; */
+}
+
+/* NOTE: Translate (width, height) */
+.social-media ul li a:hover {
+  transform: translate(0, -0.4rem);
+}
+
+/* Implement on hover - FACEBOOK Color  */
+.social-media ul li:nth-child(1) a:hover {
+  background-color: var(--color-facebook2);
+}
+
+/* Implement on hover - INSTAGRAM  */
+.social-media ul li:nth-child(2) a:hover {
+  background-color: var(--color-instagram);
+}
+
+/* Implement on hover - TWITTER  */
+.social-media ul li:nth-child(3) a:hover {
+  background-color: var(--color-twitter);
+}
+
+/* Implement on hover - LINKEDIN  */
+.social-media ul li:nth-child(4) a:hover {
+  background-color: var(--color-linkedin);
+}
+
+/* Implement on hover - YOUTUBE  */
+.social-media ul li:nth-child(5) a:hover {
+  background-color: var(--color-youtube);
+}
+
+/* Implement on hover - WHATSAPP  */
+.social-media ul li:nth-child(6) a:hover {
+  background-color: var(--color-whatsapp);
+}
+
+/* Implement on hover - WISHLIST  */
+.social-media ul li:nth-child(7) a:hover {
+  background-color: var(--color-wishlist);
+}
+
+/* Implement on hover - SHOPPING CART  */
+.social-media ul li:nth-child(8) a:hover {
+  background-color: var(--color-shopping);
+}
+
+/* ===================================================================================================================== */
+/* TODO:  PART 5 - RESPONSIVE / MOBILE VIEW (ALL MEDIA QUERIES) - FOR 2ND COMPONENT                                      */
+/* ===================================================================================================================== */
+
+@media screen and (max-width: 775px) {
+  .container_all {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 1035px) {
+  .form_group {
+    width: 48rem;
+  }
+
+  .dropdown {
+    width: 26.5rem;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .form_group {
+    width: 43rem;
+  }
+
+  .dropdown {
+    width: 31rem;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .form_group {
+    width: 38rem;
+  }
+
+  .dropdown {
+    width: 36.5rem;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .form_group {
+    width: 35rem;
+  }
+
+  .dropdown {
+    width: 41rem;
+  }
+}
+
+@media screen and (max-width: 860px) {
+  .form_group {
+    width: 32rem;
+  }
+
+  .dropdown {
+    width: 47.5rem;
+  }
+}
+
+@media screen and (max-width: 835px) {
+  .form_group {
+    width: 27rem;
+  }
+
+  .dropdown {
+    width: 75rem;
+  }
+}
+
+@media screen and (max-width: 775px) {
+  .form_group {
+    width: 31rem;
+  }
+
+  .dropdown {
+    width: 47rem;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .dropdown {
+    width: 42.5rem;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .dropdown {
+    width: 39.5rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .dropdown {
+    width: 36.5rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .dropdown {
+    width: 31rem;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .dropdown {
+    width: 26rem;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .dropdown {
+    width: 23.5rem;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .form_group {
+    width: 25rem;
+  }
+
+  .dropdown {
+    width: 33rem;
+  }
+
+  .social-media ul li {
+    margin: 0rem 0.35rem 0rem 0.35rem;
+  }
+}
+
+/* ===================================================================================================================== */
+/*                                                                                            TODO:  STYLING ENDS  TODO: */
+/* ===================================================================================================================== */
