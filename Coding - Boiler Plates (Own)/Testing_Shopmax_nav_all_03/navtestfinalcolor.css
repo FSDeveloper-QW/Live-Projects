@@ -36,18 +36,29 @@ body {
   /* --color-page-background: #18191a; */
   --color-page-background: white;
   /* COLOR SCHEME - TOP NAVIGATION */
-  --color-top-navigation-background: #242526;
-  --color-top-navigation-text: #b0b3b8;
+  /* --color-top-navigation-background: #242526; */
+  --color-top-navigation-background: white;
+  /* --color-top-navigation-text: #b0b3b8; */
+  --color-top-navigation-text: black;
+  /* COLOR SCHEME - TOP NAVIGATION DROP-DOWN ICON */
+  --topnavigation-dropdown-icon-color: #dc143c;
   /* COLOR SCHEME - DROP-DOWN MENU CONTAINER & TOOLTIP */
-  --color-tooltip-background: #242526;
-  --color-drop-down-container: #242526;
+  /* --color-tooltip-background: #242526; */
+  --color-tooltip-background: white;
+  /* --color-drop-down-container: #242526; */
+  --color-drop-down-container: white;
   /* COLOR SCHEME - UNORDERED LIST, LIST ITEMS, ANCHORS (ALL LEVELS) */
-  --color-menu-items-all-levels: #b0b3b8;
-  --color-menu-items-all-levels-hover: #3a3b3c;
+  /* --color-menu-items-all-levels: #b0b3b8; */
+  --color-menu-items-all-levels: black;
+  /* --color-menu-items-all-levels-hover: #3a3b3c; */
+  --color-menu-items-all-levels-hover: lightgray;
   /* COLOR SCHEME - ICON CONTAINER */
-  --color-icon-container: #ffffff1a;
+  --color-icon-container: white;
+  /* COLOR SCHEME - RIGHT ARROW */
+  --color-icon-right-angle: #dc143c;
   /* COLOR SCHEME - BACK-BUTTON ICON (ARROW) AND TEXT */
-  --color-back-button-arrow-and-text: #b0b3b8;
+  --color-back-button-arrow-and-text: black;
+  --color-back-button-arrow-only: #dc143c;
 }
 
 /* SIZING OF THE ITEMS */
@@ -55,27 +66,27 @@ body {
 :root {
   --topnavigation-button-width: 18rem;
   --topnavigation-line-height: 2rem;
-  --topnavigation-font-size: 1rem;
+  --topnavigation-font-size: 1.2rem;
   --topnavigation-dropdown-icon-line-height: 2rem;
-  --topnavigation-dropdown-icon-font-size: 1.2rem;
+  --topnavigation-dropdown-icon-font-size: 2rem;
   --navigation-wrapper-width: 18rem;
   --navigation-wrapper-ul-width: 18rem;
   --navigation-wrapper-ul-li-line-height: 2.3rem;
   --navigation-wrapper-ul-li-anchor-font-size: 0.9rem;
   --icon-circle-height: 1.8rem;
   --icon-circle-width: 1.8rem;
-  --icon-right-angle-font-size: 1.2rem;
-  --icon-back-button-font-size: 1rem;
+  --icon-right-angle-font-size: 1.5rem;
+  --icon-back-button-font-size: 1.1rem;
 }
 
 .container {
   display: flex;
   margin: 0.5rem 1rem 0.5rem 1rem;
   padding: 0rem 0rem 0rem 0rem;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
   max-width: 100vw;
-  column-gap: 0.5rem;
+  /* column-gap: 7rem; */
 }
 
 /* ===================================================================================================================== */
@@ -106,8 +117,7 @@ nav .productsdrop-btn {
   border-radius: 0.5rem;
   font-size: var(--topnavigation-font-size);
   font-weight: 600;
-  /* NEW CODE ADDED */
-  /* text-transform: uppercase; */
+  z-index: 1;
 }
 
 /* TOP NAVIGATION - DROP-DOWN ICON */
@@ -117,6 +127,7 @@ nav .productsdrop-btn span {
   line-height: var(--topnavigation-dropdown-icon-line-height);
   font-size: var(--topnavigation-dropdown-icon-font-size);
   cursor: pointer;
+  color: var(--topnavigation-dropdown-icon-color);
 }
 
 /* ===================================================================================================================== */
@@ -156,14 +167,14 @@ nav .productswrapper {
   position: absolute;
   top: 3rem;
   display: flex;
-  /* width: 40rem; */
-  /* width: 120rem; */
   width: var(--navigation-wrapper-width);
   overflow: hidden;
   background: var(--color-drop-down-container);
   border-radius: 0.5rem;
   transition: all 0.3s ease;
   display: none;
+  box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.35);
+  z-index: 1;
 }
 
 /* ============================================= */
@@ -236,9 +247,10 @@ nav .productswrapper ul li:hover a {
 
 .productswrapper ul li a i {
   position: absolute;
-  right: 0.7rem;
+  right: 0.8rem;
   font-size: var(--icon-right-angle-font-size);
   pointer-events: none;
+  color: var(--color-icon-right-angle);
 }
 
 /* FIRST LEVEL DROPDOWN-TO-RIGHT */
@@ -257,6 +269,10 @@ nav .productswrapper ul li:hover a {
 
 .productswrapper ul .arrow span {
   margin: 0rem 0.8rem 0rem 0rem;
+}
+
+.productswrapper .arrow span {
+  color: var(--color-back-button-arrow-only);
 }
 
 /* ===================================================================================================================== */
@@ -365,197 +381,7 @@ nav .productswrapper .boyseightsixteen-drop {
 }
 
 /* ===================================================================================================================== */
-/* TODO:                     FIXME:   NAVIGATION (PART 2) - SELLING & INVESTING PLANS  FIXME:                      TODO: */
-/* ===================================================================================================================== */
-
-/* ===================================================================================================================== */
-/* TODO:  TOP NAVIGATION - TITLE, BUTTON & DROP-DOWN ICON                                                                */
-/* ===================================================================================================================== */
-
-/* TOP NAVIGATION - POSITIONING */
-
-nav .sellinginvestingplans {
-  position: absolute;
-  top: 1%;
-  left: 1%;
-  transform: translate(-1%, -1%);
-}
-
-/* TOP NAVIGATION - TITLE & BUTTON (THE COMPLETE BOX IS THE BUTTON) */
-
-nav .sellinvestplandrop-btn {
-  width: var(--topnavigation-button-width);
-  background: var(--color-top-navigation-background);
-  color: var(--color-top-navigation-text);
-  line-height: var(--topnavigation-line-height);
-  padding: 0rem 1rem 0rem 1rem;
-  border-radius: 0.5rem;
-  font-size: var(--topnavigation-font-size);
-  font-weight: 600;
-  /* NEW CODE ADDED */
-  /* text-transform: uppercase; */
-}
-
-/* TOP NAVIGATION - DROP-DOWN ICON */
-
-nav .sellinvestplandrop-btn span {
-  float: right;
-  line-height: var(--topnavigation-dropdown-icon-line-height);
-  font-size: var(--topnavigation-dropdown-icon-font-size);
-  cursor: pointer;
-}
-
-/* ===================================================================================================================== */
-/* TODO:  1ST LEVEL NAVIGATION - TOOLTIP & DROP-DOWN MENU (CONTAINER)                                                    */
-/* ===================================================================================================================== */
-
-/* 1ST LEVEL - TOOLTIP POSITIONING, SIZING & COLOR  */
-
-nav .sellinvestplantooltip {
-  position: absolute;
-  left: 17.15rem;
-  top: 2.2rem;
-  height: 1rem;
-  width: 1rem;
-  background: var(--color-tooltip-background);
-  transform: rotate(45deg);
-  display: none;
-}
-
-/* =============================================== */
-/* TODO:  TOOLTIP LINK TO JAVASCRIPT CODE          */
-/* =============================================== */
-
-/* TOOLTIP - DISPLAY ON OPENING OF CONTAINER */
-
-nav .sellinvestplantooltip.show {
-  display: block;
-}
-
-/* ============================================== */
-
-/* 1ST LEVEL - CONTAINER (HOLDING ALL ELEMENTS */
-
-/* CONTAINER - POSITIONING AND SIZING */
-
-nav .sellinvestplanwrapper {
-  position: absolute;
-  top: 3rem;
-  display: flex;
-  /* width: 40rem; */
-  /* width: 120rem; */
-  width: var(--navigation-wrapper-width);
-  overflow: hidden;
-  background: var(--color-drop-down-container);
-  border-radius: 0.5rem;
-  transition: all 0.3s ease;
-  display: none;
-}
-
-/* ============================================= */
-/* TODO:  CONTAINER LINK TO JAVASCRIPT SCRIPT    */
-/* ============================================= */
-
-/* CONTAINER - OPEN, CLOSING, DISPLAY TYPE */
-
-nav .sellinvestplanwrapper.show {
-  display: block;
-  display: flex;
-}
-
-/* ============================================= */
-
-/* ===================================================================================================================== */
-/* TODO:  1ST LEVEL NAVIGATION - MENU-ITEMS (UNORDERED LISTS, LIST ITEMS, ANCHORS AND ICONS)                             */
-/* ===================================================================================================================== */
-
-/* lEVEL 1 - UNORDERED LIST - REMOVE BULLETS, SET MAX-WIDTH OF LIST-ITEMS, SET PADDING AROUND LIST-ITEMS */
-
-nav .sellinvestplanwrapper ul {
-  list-style: none;
-  width: var(--navigation-wrapper-ul-width);
-  padding: 0.5rem 0.5rem 0.5rem 0.5rem;
-  transition: all 0.3s ease;
-}
-
-/* LEVEL 1 - LIST ITEMS - SET MAX LINE-HEIGHT OF LIST -ITEMS */
-
-nav .sellinvestplanwrapper ul li {
-  line-height: var(--navigation-wrapper-ul-li-line-height);
-}
-
-/* LEVEL 1 - UNORDERED LIST, LIST ITEMS, ANCHORS (POSITIONING, SIZING, FONT-SIZING) */
-
-nav .sellinvestplanwrapper ul li a {
-  position: relative;
-  text-decoration: none;
-  color: var(--color-menu-items-all-levels);
-  display: flex;
-  font-size: var(--navigation-wrapper-ul-li-anchor-font-size);
-  font-weight: 500;
-  padding: 0rem 0rem 0rem 0.5rem;
-  align-items: center;
-  border-radius: 0.8rem;
-}
-
-/* LEVEL 1 - UNORDERED LIST, LIST ITEMS, ANCHORS (ON HOVER COLOR) */
-
-nav .sellinvestplanwrapper ul li:hover a {
-  background: var(--color-menu-items-all-levels-hover);
-}
-
-/* LEVEL 1 - ICON CONTAINER - HEIGTH, WIDTH, MARGINS, BACKGROUND COLOR, ALIGNMENT OF ICONS WITHIN */
-
-.sellinvestplanwrapper ul li a .icon {
-  height: var(--icon-circle-height);
-  width: var(--icon-circle-width);
-  margin: 0rem 0.5rem 0rem 0rem;
-  background: var(--color-icon-container);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  border-radius: 50%;
-}
-
-/* LEVEL 1 - NAVIGATION ICONS (TO NEXT LEVEL) - ICON: FA-ANGLE-RIGHT */
-
-.sellinvestplanwrapper ul li a i {
-  position: absolute;
-  right: 0.7rem;
-  font-size: var(--icon-right-angle-font-size);
-  pointer-events: none;
-}
-
-/* FIRST LEVEL DROPDOWN-TO-RIGHT */
-
-/* ===================================================================================================================== */
-/* TODO:  2ND LEVEL NAVIGATION - THE BACK BUTTON (ARROW) TO THE FIRST LEVEL & BUTTON TEXT                                */
-/* ===================================================================================================================== */
-
-.sellinvestplanwrapper ul .arrow {
-  padding: 0rem 0rem 0rem 1rem;
-  font-size: var(--icon-back-button-font-size);
-  font-weight: 700;
-  color: var(--color-back-button-arrow-and-text);
-  cursor: pointer;
-}
-
-.sellinvestplanwrapper ul .arrow span {
-  margin: 0rem 0.8rem 0rem 0rem;
-}
-
-/* ===================================================================================================================== */
-/* TODO:  THE INCLUDED HIDDEN NESTED LISTS ON THE NAVIGATION (WHICH IS NOT VISIBLE WHEN NOT ACTIVE)                      */
-/* ===================================================================================================================== */
-
-nav .sellinvestplanwrapper .sellingplans-drop,
-nav .sellinvestplanwrapper .investingplans-drop {
-  display: none;
-}
-
-/* ===================================================================================================================== */
-/* TODO:                    FIXME:   NAVIGATION (PART 3) - SHOP MARKETPLACE & SERVICES  FIXME:                     TODO: */
+/* TODO:                    FIXME:   NAVIGATION (PART 2) - SHOP MARKETPLACE & SERVICES  FIXME:                     TODO: */
 /* ===================================================================================================================== */
 
 /* ===================================================================================================================== */
@@ -582,8 +408,7 @@ nav .shopmarketplacedrop-btn {
   border-radius: 0.5rem;
   font-size: var(--topnavigation-font-size);
   font-weight: 600;
-  /* NEW CODE ADDED */
-  /* text-transform: uppercase; */
+  z-index: 2;
 }
 
 /* TOP NAVIGATION - DROP-DOWN ICON */
@@ -593,6 +418,7 @@ nav .shopmarketplacedrop-btn span {
   line-height: var(--topnavigation-dropdown-icon-line-height);
   font-size: var(--topnavigation-dropdown-icon-font-size);
   cursor: pointer;
+  color: var(--topnavigation-dropdown-icon-color);
 }
 
 /* ===================================================================================================================== */
@@ -632,14 +458,14 @@ nav .shopmarketplacewrapper {
   position: absolute;
   top: 3rem;
   display: flex;
-  /* width: 40rem; */
-  /* width: 120rem; */
   width: var(--navigation-wrapper-width);
   overflow: hidden;
   background: var(--color-drop-down-container);
   border-radius: 0.5rem;
   transition: all 0.3s ease;
   display: none;
+  box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.35);
+  z-index: 2;
 }
 
 /* ============================================= */
@@ -712,9 +538,10 @@ nav .shopmarketplacewrapper ul li:hover a {
 
 .shopmarketplacewrapper ul li a i {
   position: absolute;
-  right: 0.7rem;
+  right: 0.8rem;
   font-size: var(--icon-right-angle-font-size);
   pointer-events: none;
+  color: var(--color-icon-right-angle);
 }
 
 /* FIRST LEVEL DROPDOWN-TO-RIGHT */
@@ -735,6 +562,10 @@ nav .shopmarketplacewrapper ul li:hover a {
   margin: 0rem 0.8rem 0rem 0rem;
 }
 
+.shopmarketplacewrapper .arrow span {
+  color: var(--color-back-button-arrow-only);
+}
+
 /* ===================================================================================================================== */
 /* TODO:  THE INCLUDED HIDDEN NESTED LISTS ON THE NAVIGATION (WHICH IS NOT VISIBLE WHEN NOT ACTIVE)                      */
 /* ===================================================================================================================== */
@@ -744,6 +575,201 @@ nav .shopmarketplacewrapper .generalservices-drop,
 nav .shopmarketplacewrapper .professionalservices-drop,
 nav .shopmarketplacewrapper .skynamo-drop,
 nav .shopmarketplacewrapper .whistleblowing-drop {
+  display: none;
+}
+
+/* ===================================================================================================================== */
+/* TODO:                     FIXME:   NAVIGATION (PART 3) - SELLING & INVESTING PLANS  FIXME:                      TODO: */
+/* ===================================================================================================================== */
+
+/* ===================================================================================================================== */
+/* TODO:  TOP NAVIGATION - TITLE, BUTTON & DROP-DOWN ICON                                                                */
+/* ===================================================================================================================== */
+
+/* TOP NAVIGATION - POSITIONING */
+
+nav .sellinginvestingplans {
+  position: absolute;
+  top: 1%;
+  left: 1%;
+  transform: translate(-1%, -1%);
+}
+
+/* TOP NAVIGATION - TITLE & BUTTON (THE COMPLETE BOX IS THE BUTTON) */
+
+nav .sellinvestplandrop-btn {
+  width: var(--topnavigation-button-width);
+  background: var(--color-top-navigation-background);
+  color: var(--color-top-navigation-text);
+  line-height: var(--topnavigation-line-height);
+  padding: 0rem 1rem 0rem 1rem;
+  border-radius: 0.5rem;
+  font-size: var(--topnavigation-font-size);
+  font-weight: 600;
+  z-index: 3;
+}
+
+/* TOP NAVIGATION - DROP-DOWN ICON */
+
+nav .sellinvestplandrop-btn span {
+  float: right;
+  line-height: var(--topnavigation-dropdown-icon-line-height);
+  font-size: var(--topnavigation-dropdown-icon-font-size);
+  cursor: pointer;
+  color: var(--topnavigation-dropdown-icon-color);
+}
+
+/* ===================================================================================================================== */
+/* TODO:  1ST LEVEL NAVIGATION - TOOLTIP & DROP-DOWN MENU (CONTAINER)                                                    */
+/* ===================================================================================================================== */
+
+/* 1ST LEVEL - TOOLTIP POSITIONING, SIZING & COLOR  */
+
+nav .sellinvestplantooltip {
+  position: absolute;
+  left: 17.15rem;
+  top: 2.2rem;
+  height: 1rem;
+  width: 1rem;
+  background: var(--color-tooltip-background);
+  transform: rotate(45deg);
+  display: none;
+}
+
+/* =============================================== */
+/* TODO:  TOOLTIP LINK TO JAVASCRIPT CODE          */
+/* =============================================== */
+
+/* TOOLTIP - DISPLAY ON OPENING OF CONTAINER */
+
+nav .sellinvestplantooltip.show {
+  display: block;
+}
+
+/* ============================================== */
+
+/* 1ST LEVEL - CONTAINER (HOLDING ALL ELEMENTS */
+
+/* CONTAINER - POSITIONING AND SIZING */
+
+nav .sellinvestplanwrapper {
+  position: absolute;
+  top: 3rem;
+  display: flex;
+  width: var(--navigation-wrapper-width);
+  overflow: hidden;
+  background: var(--color-drop-down-container);
+  border-radius: 0.5rem;
+  transition: all 0.3s ease;
+  display: none;
+  box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.35);
+  z-index: 3;
+}
+
+/* ============================================= */
+/* TODO:  CONTAINER LINK TO JAVASCRIPT SCRIPT    */
+/* ============================================= */
+
+/* CONTAINER - OPEN, CLOSING, DISPLAY TYPE */
+
+nav .sellinvestplanwrapper.show {
+  display: block;
+  display: flex;
+}
+
+/* ============================================= */
+
+/* ===================================================================================================================== */
+/* TODO:  1ST LEVEL NAVIGATION - MENU-ITEMS (UNORDERED LISTS, LIST ITEMS, ANCHORS AND ICONS)                             */
+/* ===================================================================================================================== */
+
+/* lEVEL 1 - UNORDERED LIST - REMOVE BULLETS, SET MAX-WIDTH OF LIST-ITEMS, SET PADDING AROUND LIST-ITEMS */
+
+nav .sellinvestplanwrapper ul {
+  list-style: none;
+  width: var(--navigation-wrapper-ul-width);
+  padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+  transition: all 0.3s ease;
+}
+
+/* LEVEL 1 - LIST ITEMS - SET MAX LINE-HEIGHT OF LIST -ITEMS */
+
+nav .sellinvestplanwrapper ul li {
+  line-height: var(--navigation-wrapper-ul-li-line-height);
+}
+
+/* LEVEL 1 - UNORDERED LIST, LIST ITEMS, ANCHORS (POSITIONING, SIZING, FONT-SIZING) */
+
+nav .sellinvestplanwrapper ul li a {
+  position: relative;
+  text-decoration: none;
+  color: var(--color-menu-items-all-levels);
+  display: flex;
+  font-size: var(--navigation-wrapper-ul-li-anchor-font-size);
+  font-weight: 500;
+  padding: 0rem 0rem 0rem 0.5rem;
+  align-items: center;
+  border-radius: 0.8rem;
+}
+
+/* LEVEL 1 - UNORDERED LIST, LIST ITEMS, ANCHORS (ON HOVER COLOR) */
+
+nav .sellinvestplanwrapper ul li:hover a {
+  background: var(--color-menu-items-all-levels-hover);
+}
+
+/* LEVEL 1 - ICON CONTAINER - HEIGTH, WIDTH, MARGINS, BACKGROUND COLOR, ALIGNMENT OF ICONS WITHIN */
+
+.sellinvestplanwrapper ul li a .icon {
+  height: var(--icon-circle-height);
+  width: var(--icon-circle-width);
+  margin: 0rem 0.5rem 0rem 0rem;
+  background: var(--color-icon-container);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border-radius: 50%;
+}
+
+/* LEVEL 1 - NAVIGATION ICONS (TO NEXT LEVEL) - ICON: FA-ANGLE-RIGHT */
+
+.sellinvestplanwrapper ul li a i {
+  position: absolute;
+  right: 0.8rem;
+  font-size: var(--icon-right-angle-font-size);
+  pointer-events: none;
+  color: var(--color-icon-right-angle);
+}
+
+/* FIRST LEVEL DROPDOWN-TO-RIGHT */
+
+/* ===================================================================================================================== */
+/* TODO:  2ND LEVEL NAVIGATION - THE BACK BUTTON (ARROW) TO THE FIRST LEVEL & BUTTON TEXT                                */
+/* ===================================================================================================================== */
+
+.sellinvestplanwrapper ul .arrow {
+  padding: 0rem 0rem 0rem 1rem;
+  font-size: var(--icon-back-button-font-size);
+  font-weight: 700;
+  color: var(--color-back-button-arrow-and-text);
+  cursor: pointer;
+}
+
+.sellinvestplanwrapper ul .arrow span {
+  margin: 0rem 0.8rem 0rem 0rem;
+}
+
+.sellinvestplanwrapper .arrow span {
+  color: var(--color-back-button-arrow-only);
+}
+
+/* ===================================================================================================================== */
+/* TODO:  THE INCLUDED HIDDEN NESTED LISTS ON THE NAVIGATION (WHICH IS NOT VISIBLE WHEN NOT ACTIVE)                      */
+/* ===================================================================================================================== */
+
+nav .sellinvestplanwrapper .sellingplans-drop,
+nav .sellinvestplanwrapper .investingplans-drop {
   display: none;
 }
 
@@ -775,8 +801,7 @@ nav .clientzonedrop-btn {
   border-radius: 0.5rem;
   font-size: var(--topnavigation-font-size);
   font-weight: 600;
-  /* NEW CODE ADDED */
-  /* text-transform: uppercase; */
+  z-index: 4;
 }
 
 /* TOP NAVIGATION - DROP-DOWN ICON */
@@ -786,6 +811,7 @@ nav .clientzonedrop-btn span {
   line-height: var(--topnavigation-dropdown-icon-line-height);
   font-size: var(--topnavigation-dropdown-icon-font-size);
   cursor: pointer;
+  color: var(--topnavigation-dropdown-icon-color);
 }
 
 /* ===================================================================================================================== */
@@ -825,14 +851,14 @@ nav .clientzonewrapper {
   position: absolute;
   top: 3rem;
   display: flex;
-  /* width: 40rem; */
-  /* width: 120rem; */
   width: var(--navigation-wrapper-width);
   overflow: hidden;
   background: var(--color-drop-down-container);
   border-radius: 0.5rem;
   transition: all 0.3s ease;
   display: none;
+  box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.35);
+  z-index: 4;
 }
 
 /* ============================================= */
@@ -905,9 +931,10 @@ nav .clientzonewrapper ul li:hover a {
 
 .clientzonewrapper ul li a i {
   position: absolute;
-  right: 0.7rem;
+  right: 0.8rem;
   font-size: var(--icon-right-angle-font-size);
   pointer-events: none;
+  color: var(--color-icon-right-angle);
 }
 
 /* FIRST LEVEL DROPDOWN-TO-RIGHT */
@@ -928,6 +955,10 @@ nav .clientzonewrapper ul li:hover a {
   margin: 0rem 0.8rem 0rem 0rem;
 }
 
+.clientzonewrapper .arrow span {
+  color: var(--color-back-button-arrow-only);
+}
+
 /* ===================================================================================================================== */
 /* TODO:  THE INCLUDED HIDDEN NESTED LISTS ON THE NAVIGATION (WHICH IS NOT VISIBLE WHEN NOT ACTIVE)                      */
 /* ===================================================================================================================== */
@@ -942,11 +973,27 @@ nav .clientzonewrapper .investor-drop {
 /* TODO:  MAKING NAVIGATION SYSTEM RESPONSIVE - MEDIA QUERIES                                                     TODO:  */
 /* ===================================================================================================================== */
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 750px) {
   .container {
     display: flex;
     flex-direction: column;
-    row-gap: 1rem;
+    row-gap: 1.5rem;
+  }
+  nav .productswrapper {
+    position: relative;
+    top: 0.5rem;
+  }
+  nav .shopmarketplacewrapper {
+    position: relative;
+    top: 0.5rem;
+  }
+  nav .sellinvestplanwrapper {
+    position: relative;
+    top: 0.5rem;
+  }
+  nav .clientzonewrapper {
+    position: relative;
+    top: 0.5rem;
   }
 }
 
