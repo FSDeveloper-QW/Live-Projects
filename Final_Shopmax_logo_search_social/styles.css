@@ -382,13 +382,6 @@ button:focus {
 /* TODO:  PART 5 - RESPONSIVE / MOBILE VIEW (ALL MEDIA QUERIES) - FOR 2ND COMPONENT                                      */
 /* ===================================================================================================================== */
 
-@media screen and (max-width: 775px) {
-  .container_all {
-    display: flex;
-    flex-direction: column;
-  }
-}
-
 @media screen and (max-width: 1035px) {
   .form_group {
     width: 48rem;
@@ -439,17 +432,12 @@ button:focus {
   }
 }
 
-@media screen and (max-width: 835px) {
-  .form_group {
-    width: 27rem;
+@media screen and (max-width: 830px) {
+  .container_all {
+    display: flex;
+    flex-direction: column;
   }
 
-  .dropdown {
-    width: 75rem;
-  }
-}
-
-@media screen and (max-width: 775px) {
   .form_group {
     width: 31rem;
   }
