@@ -64,15 +64,15 @@ body {
 /* SIZING OF THE ITEMS */
 
 :root {
-  --topnavigation-button-width: 18rem;
+  --topnavigation-button-width: 20rem;
   --topnavigation-line-height: 2rem;
   --topnavigation-font-size: 1.2rem;
   --topnavigation-dropdown-icon-line-height: 2rem;
   --topnavigation-dropdown-icon-font-size: 2rem;
-  --navigation-wrapper-width: 18rem;
-  --navigation-wrapper-ul-width: 18rem;
+  --navigation-wrapper-width: 20rem;
+  --navigation-wrapper-ul-width: 20rem;
   --navigation-wrapper-ul-li-line-height: 2.3rem;
-  --navigation-wrapper-ul-li-anchor-font-size: 0.9rem;
+  --navigation-wrapper-ul-li-anchor-font-size: 1rem;
   --icon-circle-height: 1.8rem;
   --icon-circle-width: 1.8rem;
   --icon-right-angle-font-size: 1.5rem;
@@ -973,7 +973,7 @@ nav .clientzonewrapper .investor-drop {
 /* TODO:  MAKING NAVIGATION SYSTEM RESPONSIVE - MEDIA QUERIES                                                     TODO:  */
 /* ===================================================================================================================== */
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 830px) {
   .container {
     display: flex;
     flex-direction: column;
