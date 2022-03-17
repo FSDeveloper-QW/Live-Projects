@@ -1,0 +1,167 @@
+/* ===================================================================================================================== */
+/* TODO:  STYLING FOR SHOPMAX NEWSLETTER SIGN-UP FORM                                                                    */
+/* ===================================================================================================================== */
+
+:root {
+  --color-button-background: #dc143c;
+  --color-button-text: white;
+  --color-seperation-line: #dc143c;
+  --color-input-field-text: black;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "poppins", sans-serif;
+  font-size: 1.6rem;
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+}
+
+/* ===================================================================================================================== */
+/* TODO:  PART 1 -  SIGN-UP FORM (MOBILE VERSION)                                                                        */
+/* ===================================================================================================================== */
+
+/* ===================================================================================================================== */
+/* FIXME:  SPECIAL NOTES (PART 1)                                                                                        */
+/* ===================================================================================================================== */
+/* 01.            */
+/* 02.            */
+/* 03             */
+/* 04.            */
+/* 05.            */
+/* ===================================================================================================================== */
+
+.subscription-header {
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.subscription-teaser {
+  margin: 2rem 2rem 2rem 2rem;
+  font-size: 1.3rem;
+  text-align: justify;
+  /* max-width: 30rem; */
+}
+
+.subscription-teaser strong {
+  text-decoration: none;
+  color: #dc143c;
+}
+
+.subscription-teaser a {
+  text-decoration: none;
+  color: #dc143c;
+  cursor: pointer;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.35);
+  border-radius: 2rem;
+  overflow: hidden;
+  width: 80%;
+  max-width: 30rem;
+}
+
+.form-item {
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  outline: none;
+}
+
+.form-input,
+.form-button {
+  font-family: inherit;
+  text-transform: uppercase;
+  font-weight: 800;
+  font-size: 1rem;
+  letter-spacing: 0.12rem;
+  border: 0;
+  cursor: pointer;
+}
+
+.form-input {
+  padding: 1rem 1.5rem 1rem 1.5rem;
+  color: var(--color-input-field-text);
+}
+
+.form-input::placeholder {
+  opacity: 0.35;
+}
+
+.form-input:focus::placeholder {
+  color: var(--color-button-background);
+  opacity: 0.85;
+}
+
+/* ADDING THE LINE BETWEEN THE FORM-ITEMS */
+
+.form-item:first-of-type {
+  position: relative;
+}
+
+.form-item:first-of-type::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  height: 0.05rem;
+  /* background: rgba(0, 0, 0, 0.1); */
+  background: var(--color-seperation-line);
+}
+
+.form-button {
+  background: var(--color-button-background);
+  color: var(--color-button-text);
+  padding: 1.25rem 2.25rem 1.25rem 2.25rem;
+}
+
+/* ===================================================================================================================== */
+/* TODO:  PART 2 - SIGN-UP FORM (LARGER SCREEN SIZES - DESKTOP / TABLET VERSION) => MEDIA QUERIES                        */
+/* ===================================================================================================================== */
+
+@media only screen and (min-width: 550px) {
+  .form {
+    flex-direction: row;
+    max-width: 55rem;
+    border: 6px solid white;
+    border-radius: 3rem;
+  }
+
+  .form-button {
+    margin-left: auto;
+    border-radius: 3rem;
+  }
+
+  .form-item {
+    justify-content: center;
+  }
+
+  .form-item:last-of-type {
+    flex-grow: 1;
+  }
+
+  .form-item:first-of-type::after {
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: initial;
+    width: 0.1rem;
+    height: initial;
+  }
+}
+
+/* ===================================================================================================================== */
+/*                                                                                            TODO:  STYLING ENDS  TODO: */
+/* ===================================================================================================================== */
