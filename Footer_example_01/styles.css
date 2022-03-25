@@ -10,18 +10,14 @@
   --color-page-background: #f7f7f7;
   --color-footer-background: white;
   --color-logo-name: black;
-  /* --color-footer-description-area-text: #828282; */
   --color-footer-description-area-text: black;
   --color-tagline: black;
   --color-footer-service-headers: #dc143c;
-  /* --color-footer-service-headers-list-itmes: #828282; */
   --color-footer-service-headers-list-itmes: black;
   --color-footer-service-headers-list-itmes-hover: #dc143c;
-  /* --color-horisontal-line: #828282; */
   --color-horisontal-line: #f0f0f0;
   --color-copyright: black;
   --color-policies: #dc143c;
-  /* --color-policies-hover: #828282; */
   --color-policies-hover: black;
   /* ==================================== */
   /* COLOURS USED FOR SOCIAL MEDIA LINKS  */
@@ -139,7 +135,7 @@ footer {
 .description__area p {
   color: var(--color-footer-description-area-text);
   font-weight: 400;
-  line-height: 2.3rem;
+  line-height: 1.8rem;
 }
 
 .tagline {
@@ -247,16 +243,6 @@ footer {
   background-color: var(--color-email);
 }
 
-/* -------------------------------------------- */
-/* SOCIAL MEDIA SECTION - MOBILE (MEDIA QUERY)  */
-/* -------------------------------------------- */
-
-@media screen and (max-width: 320px) {
-  .social-media ul li {
-    margin: 0rem 0.35rem 0rem 0.35rem;
-  }
-}
-
 /* ===================================================================================================================== */
 /* TODO:  PART 5 - GET TO KNOW US, SELLERS, INVESTORS & SHOPPERS                                                         */
 /* ===================================================================================================================== */
@@ -265,8 +251,12 @@ footer {
   display: flex;
 }
 
+.service__area ul li {
+  margin: 0rem 0rem -0.3rem 0rem;
+}
+
 .service__header {
-  margin: 0rem 0.5rem 0rem 4.25rem;
+  margin: 0rem 0.5rem 0rem 10rem;
 }
 
 li.service__name {
@@ -336,7 +326,7 @@ hr {
   width: 7rem;
   height: auto;
   vertical-align: middle;
-  margin: 0rem 0rem 0rem 1rem;
+  margin: 0rem 0rem 0rem 4rem;
 }
 
 /* APP STORE OPTIONS */
@@ -363,7 +353,7 @@ hr {
   width: 7.5rem;
   height: auto;
   vertical-align: middle;
-  margin: 0rem 0rem 0rem 1rem;
+  margin: 0rem 0rem 0rem 4rem;
 }
 
 /* -------------------------------------------- */
@@ -495,8 +485,90 @@ hr {
 }
 
 /* ===================================================================================================================== */
-/* TODO:  PART 6 - RESPONSIVE DESIGN (MEDIA QUERY)                                                                                                      */
+/* TODO:  PART 6 - RESPONSIVE DESIGN (MEDIA QUERIES)                                                                     */
 /* ===================================================================================================================== */
+
+/* --------------------------------------TODO: 1250px */
+
+@media screen and (max-width: 1250px) {
+  .service__header {
+    margin: 0rem 0.5rem 0rem 9rem;
+  }
+
+  .payment__options img {
+    margin: 0rem 0rem 0rem 3.5rem;
+  }
+
+  .appstore__options img {
+    margin: 0rem 0rem 0rem 3.5rem;
+  }
+}
+
+/* --------------------------------------TODO: 1200px */
+
+@media screen and (max-width: 1200px) {
+  .service__header {
+    margin: 0rem 0.5rem 0rem 8rem;
+  }
+
+  .payment__options img {
+    margin: 0rem 0rem 0rem 3rem;
+  }
+
+  .appstore__options img {
+    margin: 0rem 0rem 0rem 3rem;
+  }
+}
+
+/* --------------------------------------TODO: 1150px */
+
+@media screen and (max-width: 1150px) {
+  .service__header {
+    margin: 0rem 0.5rem 0rem 7rem;
+  }
+
+  .payment__options img {
+    margin: 0rem 0rem 0rem 2.5rem;
+  }
+
+  .appstore__options img {
+    margin: 0rem 0rem 0rem 2.5rem;
+  }
+}
+
+/* --------------------------------------TODO: 1125px */
+
+@media screen and (max-width: 1125px) {
+  .service__header {
+    margin: 0rem 0.5rem 0rem 6rem;
+  }
+
+  .payment__options img {
+    margin: 0rem 0rem 0rem 2rem;
+  }
+
+  .appstore__options img {
+    margin: 0rem 0rem 0rem 2rem;
+  }
+}
+
+/* --------------------------------------TODO: 1075px */
+
+@media screen and (max-width: 1075px) {
+  .service__header {
+    margin: 0rem 0.5rem 0rem 5rem;
+  }
+
+  .payment__options img {
+    margin: 0rem 0rem 0rem 1.5rem;
+  }
+
+  .appstore__options img {
+    margin: 0rem 0rem 0rem 1.5rem;
+  }
+}
+
+/* --------------------------------------TODO: 1030px */
 
 @media screen and (max-width: 1030px) {
   .service__header {
@@ -511,6 +583,7 @@ hr {
     margin: 0rem 0rem 0rem 1rem;
   }
 }
+/* --------------------------------------TODO: 1000px */
 
 @media screen and (max-width: 1000px) {
   .service__header {
@@ -526,6 +599,8 @@ hr {
   }
 }
 
+/* --------------------------------------TODO: 980px */
+
 @media screen and (max-width: 980px) {
   .service__header {
     margin: 0rem 0.5rem 0rem 3rem;
@@ -539,6 +614,8 @@ hr {
     margin: 0rem 0rem 0rem 0.5rem;
   }
 }
+
+/* --------------------------------------TODO: 950px */
 
 @media screen and (max-width: 950px) {
   .service__header {
@@ -556,6 +633,8 @@ hr {
   }
 }
 
+/* --------------------------------------TODO: 930px */
+
 @media screen and (max-width: 930px) {
   .service__header {
     margin: 0rem 0.5rem 0rem 2rem;
@@ -571,6 +650,8 @@ hr {
     margin: 0rem 0rem 0rem 0.5rem;
   }
 }
+
+/* --------------------------------------TODO: 910px */
 
 @media screen and (max-width: 910px) {
   .description__area {
@@ -595,6 +676,8 @@ hr {
     margin: 0rem 0rem 0rem 0.5rem;
   }
 }
+
+/* --------------------------------------TODO: 875px */
 
 @media screen and (max-width: 875px) {
   .description__area {
@@ -682,74 +765,9 @@ hr {
   .service__header {
     margin: 0rem 0.5rem 0rem 0.5rem;
   }
-
-  /* li.service__name {
-    font-size: 0.9rem;
-  }
-
-  .service__header li a {
-    font-size: 0.8rem;
-  }
-
-  .payment__options p {
-    font-size: 0.8rem;
-  }
-
-  .payment__options img {
-    width: 5.5rem;
-    margin: 0rem 0rem 0rem 0.25rem;
-  }
-
-  .appstore__options p {
-    font-size: 0.8rem;
-  }
-
-  .appstore__options img {
-    width: 6rem;
-    margin: 0rem 0rem 0rem 0.5rem;
-  }
-
-  .skynamo__partner p {
-    font-size: 0.8rem;
-  }
-
-  .skynamo__partner img {
-    width: 8rem;
-    height: auto;
-  }
-
-  .ue__partner p {
-    font-size: 0.8rem;
-  }
-
-  .ue__partner img {
-    width: 6.5rem;
-    height: auto;
-  }
-
-  .whistleblowing__partner p {
-    font-size: 0.8rem;
-  }
-
-  .whistleblowing__partner img {
-    width: 10rem;
-    height: auto;
-  }
-
-  .footer__bottom {
-    font-size: 0.9rem;
-  }
-
-  .copy__right span {
-    font-size: 0.9rem;
-    font-weight: 600;
-    letter-spacing: 0.05rem;
-  }
-
-  .footer__bottom__policies a {
-    font-size: 0.9rem;
-  } */
 }
+
+/* --------------------------------------TODO: 810px */
 
 @media screen and (max-width: 810px) {
   .description__area {
@@ -761,53 +779,25 @@ hr {
     margin: 0rem 0.1rem 0rem 0.1rem;
   }
 
-  /* li.service__name {
-    font-size: 0.9rem;
-  } */
-
-  /* .service__header li a {
-    font-size: 0.8rem;
-  } */
-
-  /* .payment__options p {
-    font-size: 0.8rem;
-  } */
-
   .payment__options img {
     width: 5rem;
     margin: 0rem 0rem 0rem 0.15rem;
   }
-
-  /* .appstore__options p {
-    font-size: 0.8rem;
-  } */
 
   .appstore__options img {
     width: 5.5rem;
     margin: 0rem 0rem 0rem 0.3rem;
   }
 
-  /* .skynamo__partner p {
-    font-size: 0.8rem;
-  } */
-
   .skynamo__partner img {
     width: 7rem;
     height: auto;
   }
 
-  /* .ue__partner p {
-    font-size: 0.8rem;
-  } */
-
   .ue__partner img {
     width: 5.5rem;
     height: auto;
   }
-
-  /* .whistleblowing__partner p {
-    font-size: 0.8rem;
-  } */
 
   .whistleblowing__partner img {
     width: 8rem;
@@ -829,6 +819,10 @@ hr {
   }
 }
 
+/* --------------------------------------TODO: 780px */
+
+/* FIXME: SERVICE_AREA SPLIT INTO 2 COLUMN / 2 ROWS  */
+
 @media screen and (max-width: 780px) {
   footer {
     position: relative;
@@ -839,10 +833,10 @@ hr {
     justify-content: center;
   }
 
-  .service__area {
+  /* .service__area {
     flex-wrap: wrap;
     justify-content: center;
-  }
+  } */
 
   .payments__app__store {
     display: flex;
@@ -913,19 +907,39 @@ hr {
 
   /* ------------------------------ */
 
-  .service__header {
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    margin: 1rem 1rem 1rem 1rem;
-  }
-
   li.service__name {
     font-size: 1.1rem;
   }
 
   .service__header li a {
     font-size: 1rem;
+  }
+
+  .service__area {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 2rem;
+    margin: 1rem 0rem 1rem 0rem;
+  }
+
+  .service__header {
+    margin: 0rem 1rem 0rem 1rem;
+  }
+
+  .about__us {
+    margin: 0rem 0rem 0rem 20%;
+  }
+
+  .sellers {
+    margin: 0rem 0rem 0rem 6%;
+  }
+
+  .investors {
+    margin: 0rem 0rem 0rem 20%;
+  }
+
+  .shoppers {
+    margin: 0rem 0rem 0rem 11.5%;
   }
 
   /* ------------------------------ */
@@ -994,75 +1008,311 @@ hr {
     font-size: 1.1rem;
     margin: 0.5rem 0.5rem 0.5rem 0.5rem;
   }
-
-  /* ------------------------------ */
 }
 
-@media screen and (max-width: 510px) {
-  .service__header {
-    margin-bottom: 0.8rem;
+/* --------------------------------------TODO: 630px */
+
+@media screen and (max-width: 630px) {
+  .about__us {
+    margin: 0rem 0rem 0rem 20%;
   }
 
-  .copy__right {
-    margin-bottom: 0.8rem;
+  .sellers {
+    margin: 0rem 0rem 0rem 6%;
+  }
+
+  .investors {
+    margin: 0rem 0rem 0rem 20%;
+  }
+
+  .shoppers {
+    margin: 0rem 0rem 0rem 11.5%;
   }
 }
 
-/* ===================================================================================================================== */
-/* TODO:  PART 7 -                                                                                                       */
-/* ===================================================================================================================== */
+/* --------------------------------------TODO: 600px */
 
-/* ===================================================================================================================== */
-/* FIXME:  SPECIAL NOTES (PART 7)                                                                                        */
-/* ===================================================================================================================== */
-/* 01.            */
-/* 02.            */
-/* 03             */
-/* 04.            */
-/* 05.            */
-/* ===================================================================================================================== */
+@media screen and (max-width: 600px) {
+  .about__us {
+    margin: 0rem 0rem 0rem 18%;
+  }
 
-/* ===================================================================================================================== */
-/* TODO:  PART 8 -                                                                                                       */
-/* ===================================================================================================================== */
+  .sellers {
+    margin: 0rem 0rem 0rem 6%;
+  }
 
-/* ===================================================================================================================== */
-/* FIXME:  SPECIAL NOTES (PART 8)                                                                                        */
-/* ===================================================================================================================== */
-/* 01.            */
-/* 02.            */
-/* 03             */
-/* 04.            */
-/* 05.            */
-/* ===================================================================================================================== */
+  .investors {
+    margin: 0rem 0rem 0rem 18%;
+  }
 
-/* ===================================================================================================================== */
-/* TODO:  PART 9 -                                                                                                       */
-/* ===================================================================================================================== */
+  .shoppers {
+    margin: 0rem 0rem 0rem 12%;
+  }
+}
 
-/* ===================================================================================================================== */
-/* FIXME:  SPECIAL NOTES (PART 9)                                                                                        */
-/* ===================================================================================================================== */
-/* 01.            */
-/* 02.            */
-/* 03             */
-/* 04.            */
-/* 05.            */
-/* ===================================================================================================================== */
+/* --------------------------------------TODO: 575px */
 
-/* ===================================================================================================================== */
-/* TODO:  PART 10 -                                                                                                      */
-/* ===================================================================================================================== */
+@media screen and (max-width: 575px) {
+  .about__us {
+    margin: 0rem 0rem 0rem 16%;
+  }
 
-/* ===================================================================================================================== */
-/* FIXME:  SPECIAL NOTES (PART 10)                                                                                       */
-/* ===================================================================================================================== */
-/* 01.            */
-/* 02.            */
-/* 03             */
-/* 04.            */
-/* 05.            */
-/* ===================================================================================================================== */
+  .sellers {
+    margin: 0rem 0rem 0rem 6%;
+  }
+
+  .investors {
+    margin: 0rem 0rem 0rem 16%;
+  }
+
+  .shoppers {
+    margin: 0rem 0rem 0rem 13.5%;
+  }
+}
+
+/* --------------------------------------TODO: 550px */
+
+@media screen and (max-width: 550px) {
+  .about__us {
+    margin: 0rem 0rem 0rem 14%;
+  }
+
+  .sellers {
+    margin: 0rem 0rem 0rem 6%;
+  }
+
+  .investors {
+    margin: 0rem 0rem 0rem 14%;
+  }
+
+  .shoppers {
+    margin: 0rem 0rem 0rem 13.5%;
+  }
+}
+
+/* --------------------------------------TODO: 530px */
+
+@media screen and (max-width: 530px) {
+  .about__us {
+    margin: 0rem 0rem 0rem 12%;
+  }
+
+  .sellers {
+    margin: 0rem 0rem 0rem 6%;
+  }
+
+  .investors {
+    margin: 0rem 0rem 0rem 12%;
+  }
+
+  .shoppers {
+    margin: 0rem 0rem 0rem 13.5%;
+  }
+}
+
+/* --------------------------------------TODO: 505px */
+
+@media screen and (max-width: 505px) {
+  .about__us {
+    margin: 0rem 0rem 0rem 10%;
+  }
+
+  .sellers {
+    margin: 0rem 0rem 0rem 6%;
+  }
+
+  .investors {
+    margin: 0rem 0rem 0rem 10%;
+  }
+
+  .shoppers {
+    margin: 0rem 0rem 0rem 13.5%;
+  }
+}
+
+/* --------------------------------------TODO: 475px */
+
+@media screen and (max-width: 475px) {
+  .about__us {
+    margin: 0rem 0rem 0rem 7%;
+  }
+
+  .sellers {
+    margin: 0rem 0rem 0rem 6%;
+  }
+
+  .investors {
+    margin: 0rem 0rem 0rem 7%;
+  }
+
+  .shoppers {
+    margin: 0rem 0rem 0rem 14%;
+  }
+}
+
+/* --------------------------------------TODO: 450px */
+
+@media screen and (max-width: 450px) {
+  .about__us {
+    margin: 0rem 0rem 0rem 5%;
+  }
+
+  .sellers {
+    margin: 0rem 0rem 0rem 6%;
+  }
+
+  .investors {
+    margin: 0rem 0rem 0rem 5%;
+  }
+
+  .shoppers {
+    margin: 0rem 0rem 0rem 14%;
+  }
+}
+
+/* --------------------------------------TODO: 425px */
+
+@media screen and (max-width: 425px) {
+  .description__area {
+    margin: 1.5rem 1rem 1.5rem 1rem;
+  }
+
+  .social-media ul li {
+    margin: 0rem 1rem 0rem 1rem;
+  }
+
+  .about__us {
+    margin: 0rem 0rem 0rem 1%;
+  }
+
+  .sellers {
+    margin: 0rem 0rem 0rem 6%;
+  }
+
+  .investors {
+    margin: 0rem 0rem 0rem 1%;
+  }
+
+  .shoppers {
+    margin: 0rem 0rem 0rem 15%;
+  }
+}
+
+/* --------------------------------------TODO: 415px */
+
+/* FIXME: SERVICE_AREA SPLIT INTO 1 COLUMN / 4 ROWS  */
+
+@media screen and (max-width: 415px) {
+  .description__area {
+    margin: 1.5rem 1rem 1.5rem 1rem;
+  }
+
+  .social-media ul li {
+    margin: 0rem 0.8rem 0rem 0.8rem;
+  }
+
+  .service__area {
+    margin: 0.5rem 0rem 0.5rem 0rem;
+  }
+
+  .service__area ul li {
+    margin: 0rem 0rem 1rem 0rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .about__us {
+    margin: 0rem 0rem 0rem 0rem;
+    width: 100vw;
+  }
+
+  .sellers {
+    margin: 0rem 0rem 0rem 0rem;
+    width: 100vw;
+  }
+
+  .shoppers {
+    margin: 0rem 0rem 0rem 0rem;
+    width: 100vw;
+  }
+
+  .investors {
+    margin: 0rem 0rem 0rem 0rem;
+    width: 100vw;
+  }
+}
+
+/* --------------------------------------TODO: 370px */
+
+@media screen and (max-width: 370px) {
+  .payment__options img {
+    display: flex;
+    flex-wrap: wrap;
+    width: 7rem;
+    margin: 0.5rem 0rem 0.5rem 0rem;
+  }
+
+  .appstore__options img {
+    display: flex;
+    flex-wrap: wrap;
+    width: 10rem;
+    margin: 0.5rem 0rem 0rem 0rem;
+  }
+}
+
+/* --------------------------------------TODO: 330px */
+
+@media screen and (max-width: 330px) {
+  .description__area {
+    margin: 1.5rem 0.75rem 1.5rem 0.75rem;
+  }
+
+  .social-media ul li {
+    margin: 0rem 0.4rem 0rem 0.4rem;
+  }
+
+  /* .about__us {
+    margin: 0rem 0rem 0rem 25%;
+  }
+
+  .sellers {
+    margin: 0rem 0rem 0rem 25%;
+  }
+
+  .shoppers {
+    margin: 0rem 0rem 0rem 25%;
+  }
+
+  .investors {
+    margin: 0rem 0rem 0rem 25%;
+  } */
+
+  .payment__options p {
+    font-size: 0.9rem;
+  }
+
+  .appstore__options p {
+    font-size: 0.9rem;
+  }
+
+  .skynamo__partner p {
+    font-size: 0.85rem;
+  }
+
+  .ue__partner p {
+    font-size: 0.9rem;
+  }
+
+  .whistleblowing__partner p {
+    font-size: 0.9rem;
+  }
+
+  .copy__right span {
+    font-size: 0.7rem;
+  }
+}
 
 /* ===================================================================================================================== */
 /*                                                                                            TODO:  STYLING ENDS  TODO: */
