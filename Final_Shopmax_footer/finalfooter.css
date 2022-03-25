@@ -1,0 +1,1319 @@
+/* ===================================================================================================================== */
+/* TODO:  STYLING FOR SHOPMAX FOOTER                                                                                     */
+/* ===================================================================================================================== */
+
+/* ------------------------------------- */
+/* DASHBOARD:  SETTING COMPONENT COLORS  */
+/* ------------------------------------- */
+
+:root {
+  --color-page-background: #f7f7f7;
+  --color-footer-background: white;
+  --color-logo-name: black;
+  --color-footer-description-area-text: black;
+  --color-tagline: black;
+  --color-footer-service-headers: #dc143c;
+  --color-footer-service-headers-list-itmes: black;
+  --color-footer-service-headers-list-itmes-hover: #dc143c;
+  --color-horisontal-line: #f0f0f0;
+  --color-copyright: black;
+  --color-policies: #dc143c;
+  --color-policies-hover: black;
+  /* ==================================== */
+  /* COLOURS USED FOR SOCIAL MEDIA LINKS  */
+  /* ==================================== */
+  --color-facebook1: #1877f2;
+  --color-facebook2: #3b5998;
+  --color-instagram: #c32aa3;
+  --color-twitter: #1da1f2;
+  --color-linkedin: #0a66c2;
+  --color-youtube: #ff0000;
+  --color-whatsapp: #25d366;
+  --color-email: #555555;
+}
+
+/* ------------------------------------- */
+
+* {
+  margin: 0rem 0rem 0rem 0rem;
+  padding: 0rem 0rem 0rem 0rem;
+  box-sizing: border-box;
+  font-family: "poppins", sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  background-color: var(--color-page-background);
+}
+
+/* ------------------------------------- */
+/* REMOVE BULLET POINTS FROM LIST ITEMS  */
+/* ------------------------------------- */
+
+li {
+  list-style: none;
+}
+
+/* ------------------------------------- */
+/* REMOVE "UNDERLINES" FROM ANCHORS      */
+/* ------------------------------------- */
+
+a {
+  text-decoration: none;
+}
+
+/* ------------------------------------- */
+/* SETTING FOOTER'S BASIC STYLES         */
+/* ------------------------------------- */
+
+main {
+  width: 100%;
+}
+
+footer {
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  background-color: var(--color-footer-background);
+  box-shadow: 0 16px 70px -8px rgba(0, 0, 0, 0.25);
+  border-radius: 20px 20px 0 0;
+  transition: background 0.3s linear;
+}
+
+/* ===================================================================================================================== */
+/* TODO:  PART 1 - FOOTER CONTAINER                                                                                      */
+/* ===================================================================================================================== */
+
+.container {
+  max-width: 124rem;
+  padding: 3rem 4rem 3rem 4rem;
+  margin: auto;
+}
+
+/* ===================================================================================================================== */
+/* TODO:  PART 2 - FOOTER CONTENT                                                                                        */
+/* ===================================================================================================================== */
+
+.content_footer {
+  display: flex;
+  /* justify-content: space-between;
+    align-items: center; */
+  margin: 0rem 0rem 2rem 0rem;
+}
+
+/* ===================================================================================================================== */
+/* TODO:  PART 3 - COMPANY LOGO & PROFILE                                                                                */
+/* ===================================================================================================================== */
+
+.profile {
+  margin: 0rem 1rem 0rem 0.5rem;
+}
+
+.profile .logo__area {
+  display: flex;
+  align-items: center;
+  margin: 0rem 0rem 1.5rem 0rem;
+}
+
+.profile img {
+  width: 20rem;
+  height: auto;
+}
+
+.description__area {
+  max-width: 30rem;
+  text-align: justify;
+  font-size: 1rem;
+  margin: 1.5rem 0rem 1.5rem 0.5rem;
+}
+
+.description__area p {
+  color: var(--color-footer-description-area-text);
+  font-weight: 400;
+  line-height: 1.8rem;
+}
+
+.tagline {
+  color: var(--color-tagline);
+}
+
+/* ===================================================================================================================== */
+/* TODO:  PART 4 - SOCIAL MEDIA ICONS                                                                                    */
+/* ===================================================================================================================== */
+
+/* MAIN CONTAINER - HOLDING ALL SOCIAL MEDIA COMPONENTS TOGETHER  */
+.container_social {
+  position: relative;
+  max-width: 30rem;
+  margin: 0.2rem 0.2rem 0.2rem 0.2rem;
+  padding: 0rem 0rem 0rem 0rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  z-index: 0;
+}
+
+/* NOTE: Translate (width, height) */
+.social-media ul {
+  position: relative;
+  top: 0%;
+  left: 0%;
+  margin: 0rem 0rem 0rem 0rem;
+  padding: 0.5rem 0rem 0.3rem 0rem;
+  transform: translate(0%, 0%);
+  display: flex;
+}
+
+.social-media ul li {
+  list-style: none;
+  margin: 0rem 1rem 0rem 1rem;
+}
+
+.social-media ul li .fa {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 1.5rem;
+  line-height: 1.4rem;
+  transition: 0.6s;
+  color: #000000;
+}
+
+.social-media ul li .fa:hover {
+  color: #ffffff;
+}
+
+.social-media ul li a {
+  position: relative;
+  display: block;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  background-color: #ffffff;
+  text-align: center;
+  transition: 0.6s;
+  box-shadow: 0 5px 4px rgba(0, 0, 0, 0.35);
+  /* border: 1px solid black; */
+}
+
+/* NOTE: Translate (width, height) */
+.social-media ul li a:hover {
+  transform: translate(0, -0.4rem);
+}
+
+/* Implement on hover - FACEBOOK Color  */
+.social-media ul li:nth-child(1) a:hover {
+  background-color: var(--color-facebook2);
+}
+
+/* Implement on hover - INSTAGRAM  */
+.social-media ul li:nth-child(2) a:hover {
+  background-color: var(--color-instagram);
+}
+
+/* Implement on hover - TWITTER  */
+.social-media ul li:nth-child(3) a:hover {
+  background-color: var(--color-twitter);
+}
+
+/* Implement on hover - LINKEDIN  */
+.social-media ul li:nth-child(4) a:hover {
+  background-color: var(--color-linkedin);
+}
+
+/* Implement on hover - YOUTUBE  */
+.social-media ul li:nth-child(5) a:hover {
+  background-color: var(--color-youtube);
+}
+
+/* Implement on hover - WHATSAPP  */
+.social-media ul li:nth-child(6) a:hover {
+  background-color: var(--color-whatsapp);
+}
+
+/* Implement on hover - EMAIL  */
+.social-media ul li:nth-child(7) a:hover {
+  background-color: var(--color-email);
+}
+
+/* ===================================================================================================================== */
+/* TODO:  PART 5 - GET TO KNOW US, SELLERS, INVESTORS & SHOPPERS                                                         */
+/* ===================================================================================================================== */
+
+.service__area {
+  display: flex;
+}
+
+.service__area ul li {
+  margin: 0rem 0rem -0.3rem 0rem;
+}
+
+.service__header {
+  margin: 0rem 0.5rem 0rem 10rem;
+}
+
+li.service__name {
+  color: var(--color-footer-service-headers);
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.service__header li {
+  margin: 0rem 0rem 0rem 0rem;
+}
+
+.service__header li a {
+  color: var(--color-footer-service-headers-list-itmes);
+  font-size: 0.9rem;
+  font-weight: 400;
+  line-height: 0.9rem;
+  padding: 0rem 0rem 0rem 0rem;
+}
+
+.service__header li a:hover {
+  color: var(--color-footer-service-headers-list-itmes-hover);
+  cursor: pointer;
+}
+
+hr {
+  height: 0.1rem;
+  border: none;
+  background-color: var(--color-horisontal-line);
+  margin: 1rem 0rem 1.5rem 0rem;
+}
+
+/* -------------------------------------------- */
+/* SECTION - PAYMENT PLATFORMS & APP STORE      */
+/* -------------------------------------------- */
+
+/* ALL ELEMENT IN CONTAINER */
+
+.payments__app__store {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* PAYMENT OPTIONS */
+
+.payment__options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0rem 0rem 0rem 0.8rem;
+}
+
+.payment__options p {
+  font-size: 0.9rem;
+  font-weight: 400;
+  letter-spacing: 0.05rem;
+  margin: 0rem 0.5rem 0rem 0rem;
+}
+
+.payment__options a {
+  text-decoration: none;
+}
+
+.payment__options img {
+  width: 7rem;
+  height: auto;
+  vertical-align: middle;
+  margin: 0rem 0rem 0rem 4rem;
+}
+
+/* APP STORE OPTIONS */
+
+.appstore__options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0rem 0.5rem 0rem 0rem;
+}
+
+.appstore__options p {
+  font-size: 0.9rem;
+  font-weight: 400;
+  letter-spacing: 0.05rem;
+  margin: 0rem 0.5rem 0rem 0rem;
+}
+
+.appstore__options a {
+  text-decoration: none;
+}
+
+.appstore__options img {
+  width: 7.5rem;
+  height: auto;
+  vertical-align: middle;
+  margin: 0rem 0rem 0rem 4rem;
+}
+
+/* -------------------------------------------- */
+/* SECTION - BUSINESS SUPPORT PARTNERS          */
+/* -------------------------------------------- */
+
+/* ALL BUSINESS PARTNERS (CONTAINER) */
+
+.business__partners {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* SKYNAMO */
+
+.skynamo__partner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0rem 0rem 0rem 0.8rem;
+}
+
+.skynamo__partner p {
+  font-size: 0.9rem;
+  font-weight: 400;
+  letter-spacing: 0.05rem;
+}
+
+.skynamo__partner a {
+  text-decoration: none;
+}
+
+.skynamo__partner img {
+  width: 9rem;
+  height: auto;
+  vertical-align: middle;
+  margin: 0rem 0rem 0rem 1rem;
+}
+
+/* UNASHAMEDLY ETHICAL */
+
+.ue__partner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0rem 0rem 0rem 0rem;
+}
+
+.ue__partner p {
+  font-size: 0.9rem;
+  font-weight: 400;
+  letter-spacing: 0.05rem;
+}
+
+.ue__partner a {
+  text-decoration: none;
+}
+
+.ue__partner img {
+  width: 7rem;
+  height: auto;
+  vertical-align: middle;
+  margin: 0rem 0rem 0rem 1rem;
+}
+
+/* A TO Z WHISTLEBLOWING SOLUTIONS */
+
+.whistleblowing__partner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0rem 0.8rem 0rem 0rem;
+}
+
+.whistleblowing__partner p {
+  font-size: 0.9rem;
+  font-weight: 400;
+  letter-spacing: 0.05rem;
+}
+
+.whistleblowing__partner a {
+  text-decoration: none;
+}
+
+.whistleblowing__partner img {
+  width: 11rem;
+  height: auto;
+  vertical-align: middle;
+  margin: 0rem 0rem 0rem 1rem;
+}
+
+/* -------------------------------------------- */
+/* SECTION - COPYRIGHT / PAIA / POPI / PRIVACY  */
+/* -------------------------------------------- */
+
+.footer__bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.copy__right {
+  margin: 0rem 0rem 0rem 0.5rem;
+  color: var(--color-copyright);
+  display: flex;
+  align-items: center;
+}
+
+.copy__right span {
+  margin: 0rem 0rem 0rem 0.8rem;
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 0.05rem;
+}
+
+.footer__bottom__policies a {
+  color: var(--color-policies);
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 0rem 0.5rem 0rem 2rem;
+}
+
+.footer__bottom__policies a:hover {
+  color: var(--color-policies-hover);
+}
+
+/* ===================================================================================================================== */
+/* TODO:  PART 6 - RESPONSIVE DESIGN (MEDIA QUERIES)                                                                     */
+/* ===================================================================================================================== */
+
+/* --------------------------------------TODO: 1250px */
+
+@media screen and (max-width: 1250px) {
+  .service__header {
+    margin: 0rem 0.5rem 0rem 9rem;
+  }
+
+  .payment__options img {
+    margin: 0rem 0rem 0rem 3.5rem;
+  }
+
+  .appstore__options img {
+    margin: 0rem 0rem 0rem 3.5rem;
+  }
+}
+
+/* --------------------------------------TODO: 1200px */
+
+@media screen and (max-width: 1200px) {
+  .service__header {
+    margin: 0rem 0.5rem 0rem 8rem;
+  }
+
+  .payment__options img {
+    margin: 0rem 0rem 0rem 3rem;
+  }
+
+  .appstore__options img {
+    margin: 0rem 0rem 0rem 3rem;
+  }
+}
+
+/* --------------------------------------TODO: 1150px */
+
+@media screen and (max-width: 1150px) {
+  .service__header {
+    margin: 0rem 0.5rem 0rem 7rem;
+  }
+
+  .payment__options img {
+    margin: 0rem 0rem 0rem 2.5rem;
+  }
+
+  .appstore__options img {
+    margin: 0rem 0rem 0rem 2.5rem;
+  }
+}
+
+/* --------------------------------------TODO: 1125px */
+
+@media screen and (max-width: 1125px) {
+  .service__header {
+    margin: 0rem 0.5rem 0rem 6rem;
+  }
+
+  .payment__options img {
+    margin: 0rem 0rem 0rem 2rem;
+  }
+
+  .appstore__options img {
+    margin: 0rem 0rem 0rem 2rem;
+  }
+}
+
+/* --------------------------------------TODO: 1075px */
+
+@media screen and (max-width: 1075px) {
+  .service__header {
+    margin: 0rem 0.5rem 0rem 5rem;
+  }
+
+  .payment__options img {
+    margin: 0rem 0rem 0rem 1.5rem;
+  }
+
+  .appstore__options img {
+    margin: 0rem 0rem 0rem 1.5rem;
+  }
+}
+
+/* --------------------------------------TODO: 1030px */
+
+@media screen and (max-width: 1030px) {
+  .service__header {
+    margin: 0rem 0.5rem 0rem 4.25rem;
+  }
+
+  .payment__options img {
+    margin: 0rem 0rem 0rem 1rem;
+  }
+
+  .appstore__options img {
+    margin: 0rem 0rem 0rem 1rem;
+  }
+}
+/* --------------------------------------TODO: 1000px */
+
+@media screen and (max-width: 1000px) {
+  .service__header {
+    margin: 0rem 0.5rem 0rem 3.75rem;
+  }
+
+  .payment__options img {
+    margin: 0rem 0rem 0rem 0.8rem;
+  }
+
+  .appstore__options img {
+    margin: 0rem 0rem 0rem 0.8rem;
+  }
+}
+
+/* --------------------------------------TODO: 980px */
+
+@media screen and (max-width: 980px) {
+  .service__header {
+    margin: 0rem 0.5rem 0rem 3rem;
+  }
+
+  .payment__options img {
+    margin: 0rem 0rem 0rem 0.5rem;
+  }
+
+  .appstore__options img {
+    margin: 0rem 0rem 0rem 0.5rem;
+  }
+}
+
+/* --------------------------------------TODO: 950px */
+
+@media screen and (max-width: 950px) {
+  .service__header {
+    margin: 0rem 0.5rem 0rem 2.5rem;
+  }
+
+  .payment__options img {
+    width: 6.5rem;
+    margin: 0rem 0rem 0rem 0.4rem;
+  }
+
+  .appstore__options img {
+    width: 6.5rem;
+    margin: 0rem 0rem 0rem 0.5rem;
+  }
+}
+
+/* --------------------------------------TODO: 930px */
+
+@media screen and (max-width: 930px) {
+  .service__header {
+    margin: 0rem 0.5rem 0rem 2rem;
+  }
+
+  .payment__options img {
+    width: 6rem;
+    margin: 0rem 0rem 0rem 0.3rem;
+  }
+
+  .appstore__options img {
+    width: 6.5rem;
+    margin: 0rem 0rem 0rem 0.5rem;
+  }
+}
+
+/* --------------------------------------TODO: 910px */
+
+@media screen and (max-width: 910px) {
+  .description__area {
+    font-size: 0.9rem;
+  }
+
+  .service__header {
+    margin: 0rem 0.5rem 0rem 2rem;
+  }
+
+  .service__header li a {
+    font-size: 0.8rem;
+  }
+
+  .payment__options img {
+    width: 5.5rem;
+    margin: 0rem 0rem 0rem 0.25rem;
+  }
+
+  .appstore__options img {
+    width: 6rem;
+    margin: 0rem 0rem 0rem 0.5rem;
+  }
+}
+
+/* --------------------------------------TODO: 875px */
+
+@media screen and (max-width: 875px) {
+  .description__area {
+    font-size: 0.9rem;
+  }
+
+  .service__header {
+    margin: 0rem 0.5rem 0rem 1.5rem;
+  }
+
+  li.service__name {
+    font-size: 0.9rem;
+  }
+
+  .service__header li a {
+    font-size: 0.8rem;
+  }
+
+  .payment__options p {
+    font-size: 0.8rem;
+  }
+
+  .payment__options img {
+    width: 5.5rem;
+    margin: 0rem 0rem 0rem 0.25rem;
+  }
+
+  .appstore__options p {
+    font-size: 0.8rem;
+  }
+
+  .appstore__options img {
+    width: 6rem;
+    margin: 0rem 0rem 0rem 0.5rem;
+  }
+
+  .skynamo__partner p {
+    font-size: 0.8rem;
+  }
+
+  .skynamo__partner img {
+    width: 8rem;
+    height: auto;
+  }
+
+  .ue__partner p {
+    font-size: 0.8rem;
+  }
+
+  .ue__partner img {
+    width: 6.5rem;
+    height: auto;
+  }
+
+  .whistleblowing__partner p {
+    font-size: 0.8rem;
+  }
+
+  .whistleblowing__partner img {
+    width: 10rem;
+    height: auto;
+  }
+
+  .footer__bottom {
+    font-size: 0.9rem;
+  }
+
+  .copy__right span {
+    font-size: 0.9rem;
+    font-weight: 600;
+    letter-spacing: 0.05rem;
+  }
+
+  .footer__bottom__policies a {
+    font-size: 0.9rem;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .description__area {
+    font-size: 0.9rem;
+    margin: 1.5rem 0.75rem 1.5rem 0.5rem;
+  }
+
+  .service__header {
+    margin: 0rem 0.5rem 0rem 0.5rem;
+  }
+}
+
+/* --------------------------------------TODO: 810px */
+
+@media screen and (max-width: 810px) {
+  .description__area {
+    font-size: 0.9rem;
+    margin: 1.5rem 0.75rem 1.5rem 0.5rem;
+  }
+
+  .service__header {
+    margin: 0rem 0.1rem 0rem 0.1rem;
+  }
+
+  .payment__options img {
+    width: 5rem;
+    margin: 0rem 0rem 0rem 0.15rem;
+  }
+
+  .appstore__options img {
+    width: 5.5rem;
+    margin: 0rem 0rem 0rem 0.3rem;
+  }
+
+  .skynamo__partner img {
+    width: 7rem;
+    height: auto;
+  }
+
+  .ue__partner img {
+    width: 5.5rem;
+    height: auto;
+  }
+
+  .whistleblowing__partner img {
+    width: 8rem;
+    height: auto;
+  }
+
+  .footer__bottom {
+    font-size: 0.9rem;
+  }
+
+  .copy__right span {
+    font-size: 0.9rem;
+    font-weight: 600;
+    letter-spacing: 0.05rem;
+  }
+
+  .footer__bottom__policies a {
+    font-size: 0.9rem;
+  }
+}
+
+/* --------------------------------------TODO: 780px */
+
+/* FIXME: SERVICE_AREA SPLIT INTO 2 COLUMN / 2 ROWS  */
+
+@media screen and (max-width: 780px) {
+  footer {
+    position: relative;
+  }
+
+  .content_footer {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  /* .service__area {
+      flex-wrap: wrap;
+      justify-content: center;
+    } */
+
+  .payments__app__store {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .payment__options {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 0rem 1rem 0rem;
+    row-gap: 1rem;
+  }
+
+  .appstore__options {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 0rem 1rem 0rem;
+    row-gap: 1rem;
+  }
+
+  .business__partners {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .skynamo__partner {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 0rem 1rem 0rem;
+    row-gap: 1rem;
+  }
+
+  .ue__partner {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 0rem 1rem 0rem;
+    row-gap: 1rem;
+  }
+
+  .whistleblowing__partner {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 0rem 1rem 0rem;
+    row-gap: 1rem;
+  }
+
+  .footer__bottom {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 0rem 1rem 0rem;
+    row-gap: 1rem;
+  }
+
+  /* ------------------------------ */
+
+  .profile .logo__area {
+    justify-content: center;
+  }
+
+  .description__area {
+    font-size: 1rem;
+    margin: 1rem 0.5rem 1rem 0.5rem;
+  }
+
+  .container_social {
+    margin-bottom: 2rem;
+  }
+
+  /* ------------------------------ */
+
+  li.service__name {
+    font-size: 1.1rem;
+  }
+
+  .service__header li a {
+    font-size: 1rem;
+  }
+
+  .service__area {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 2rem;
+    margin: 1rem 0rem 1rem 0rem;
+  }
+
+  .service__header {
+    margin: 0rem 1rem 0rem 1rem;
+  }
+
+  .about__us {
+    margin: 0rem 0rem 0rem 20%;
+  }
+
+  .sellers {
+    margin: 0rem 0rem 0rem 6%;
+  }
+
+  .investors {
+    margin: 0rem 0rem 0rem 20%;
+  }
+
+  .shoppers {
+    margin: 0rem 0rem 0rem 11.5%;
+  }
+
+  /* ------------------------------ */
+
+  .payment__options p {
+    font-size: 1rem;
+  }
+
+  .payment__options img {
+    width: 6rem;
+    margin: 0.5rem 0rem 0rem 0.5rem;
+  }
+
+  .appstore__options p {
+    font-size: 1rem;
+  }
+
+  .appstore__options img {
+    width: 8rem;
+    margin: 0.5rem 0rem 0rem 1rem;
+  }
+
+  /* ------------------------------ */
+
+  .skynamo__partner p {
+    font-size: 1rem;
+  }
+
+  .skynamo__partner img {
+    width: 10rem;
+    height: auto;
+    margin: 0.5rem 0rem 0.5rem 0rem;
+  }
+
+  .ue__partner p {
+    font-size: 1rem;
+  }
+
+  .ue__partner img {
+    width: 8rem;
+    height: auto;
+    margin: 0.5rem 0rem 0.5rem 0rem;
+  }
+
+  .whistleblowing__partner p {
+    font-size: 1rem;
+  }
+
+  .whistleblowing__partner img {
+    width: 12rem;
+    height: auto;
+    margin: 0.5rem 0rem 0.5rem 0rem;
+  }
+
+  /* ------------------------------ */
+
+  .footer__bottom {
+    font-size: 1rem;
+  }
+
+  .copy__right span {
+    font-size: 1rem;
+  }
+
+  .footer__bottom__policies a {
+    font-size: 1.1rem;
+    margin: 0.5rem 0.5rem 0.5rem 0.5rem;
+  }
+}
+
+/* --------------------------------------TODO: 630px */
+
+@media screen and (max-width: 630px) {
+  .about__us {
+    margin: 0rem 0rem 0rem 20%;
+  }
+
+  .sellers {
+    margin: 0rem 0rem 0rem 6%;
+  }
+
+  .investors {
+    margin: 0rem 0rem 0rem 20%;
+  }
+
+  .shoppers {
+    margin: 0rem 0rem 0rem 11.5%;
+  }
+}
+
+/* --------------------------------------TODO: 600px */
+
+@media screen and (max-width: 600px) {
+  .about__us {
+    margin: 0rem 0rem 0rem 18%;
+  }
+
+  .sellers {
+    margin: 0rem 0rem 0rem 6%;
+  }
+
+  .investors {
+    margin: 0rem 0rem 0rem 18%;
+  }
+
+  .shoppers {
+    margin: 0rem 0rem 0rem 12%;
+  }
+}
+
+/* --------------------------------------TODO: 575px */
+
+@media screen and (max-width: 575px) {
+  .about__us {
+    margin: 0rem 0rem 0rem 16%;
+  }
+
+  .sellers {
+    margin: 0rem 0rem 0rem 6%;
+  }
+
+  .investors {
+    margin: 0rem 0rem 0rem 16%;
+  }
+
+  .shoppers {
+    margin: 0rem 0rem 0rem 13.5%;
+  }
+}
+
+/* --------------------------------------TODO: 550px */
+
+@media screen and (max-width: 550px) {
+  .about__us {
+    margin: 0rem 0rem 0rem 14%;
+  }
+
+  .sellers {
+    margin: 0rem 0rem 0rem 6%;
+  }
+
+  .investors {
+    margin: 0rem 0rem 0rem 14%;
+  }
+
+  .shoppers {
+    margin: 0rem 0rem 0rem 13.5%;
+  }
+}
+
+/* --------------------------------------TODO: 530px */
+
+@media screen and (max-width: 530px) {
+  .about__us {
+    margin: 0rem 0rem 0rem 12%;
+  }
+
+  .sellers {
+    margin: 0rem 0rem 0rem 6%;
+  }
+
+  .investors {
+    margin: 0rem 0rem 0rem 12%;
+  }
+
+  .shoppers {
+    margin: 0rem 0rem 0rem 13.5%;
+  }
+}
+
+/* --------------------------------------TODO: 505px */
+
+@media screen and (max-width: 505px) {
+  .about__us {
+    margin: 0rem 0rem 0rem 10%;
+  }
+
+  .sellers {
+    margin: 0rem 0rem 0rem 6%;
+  }
+
+  .investors {
+    margin: 0rem 0rem 0rem 10%;
+  }
+
+  .shoppers {
+    margin: 0rem 0rem 0rem 13.5%;
+  }
+}
+
+/* --------------------------------------TODO: 475px */
+
+@media screen and (max-width: 475px) {
+  .about__us {
+    margin: 0rem 0rem 0rem 7%;
+  }
+
+  .sellers {
+    margin: 0rem 0rem 0rem 6%;
+  }
+
+  .investors {
+    margin: 0rem 0rem 0rem 7%;
+  }
+
+  .shoppers {
+    margin: 0rem 0rem 0rem 14%;
+  }
+}
+
+/* --------------------------------------TODO: 450px */
+
+@media screen and (max-width: 450px) {
+  .about__us {
+    margin: 0rem 0rem 0rem 5%;
+  }
+
+  .sellers {
+    margin: 0rem 0rem 0rem 6%;
+  }
+
+  .investors {
+    margin: 0rem 0rem 0rem 5%;
+  }
+
+  .shoppers {
+    margin: 0rem 0rem 0rem 14%;
+  }
+}
+
+/* --------------------------------------TODO: 425px */
+
+@media screen and (max-width: 425px) {
+  .description__area {
+    margin: 1.5rem 1rem 1.5rem 1rem;
+  }
+
+  .social-media ul li {
+    margin: 0rem 1rem 0rem 1rem;
+  }
+
+  .about__us {
+    margin: 0rem 0rem 0rem 1%;
+  }
+
+  .sellers {
+    margin: 0rem 0rem 0rem 6%;
+  }
+
+  .investors {
+    margin: 0rem 0rem 0rem 1%;
+  }
+
+  .shoppers {
+    margin: 0rem 0rem 0rem 15%;
+  }
+}
+
+/* --------------------------------------TODO: 415px */
+
+/* FIXME: SERVICE_AREA SPLIT INTO 1 COLUMN / 4 ROWS  */
+
+@media screen and (max-width: 415px) {
+  .description__area {
+    margin: 1.5rem 1rem 1.5rem 1rem;
+  }
+
+  .social-media ul li {
+    margin: 0rem 0.8rem 0rem 0.8rem;
+  }
+
+  .service__area {
+    margin: 0.5rem 0rem 0.5rem 0rem;
+  }
+
+  .service__area ul li {
+    margin: 0rem 0rem 1rem 0rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .about__us {
+    margin: 0rem 0rem 0rem 0rem;
+    width: 100vw;
+  }
+
+  .sellers {
+    margin: 0rem 0rem 0rem 0rem;
+    width: 100vw;
+  }
+
+  .shoppers {
+    margin: 0rem 0rem 0rem 0rem;
+    width: 100vw;
+  }
+
+  .investors {
+    margin: 0rem 0rem 0rem 0rem;
+    width: 100vw;
+  }
+}
+
+/* --------------------------------------TODO: 370px */
+
+@media screen and (max-width: 370px) {
+  .payment__options img {
+    display: flex;
+    flex-wrap: wrap;
+    width: 7rem;
+    margin: 0.5rem 0rem 0.5rem 0rem;
+  }
+
+  .appstore__options img {
+    display: flex;
+    flex-wrap: wrap;
+    width: 10rem;
+    margin: 0.5rem 0rem 0rem 0rem;
+  }
+}
+
+/* --------------------------------------TODO: 330px */
+
+@media screen and (max-width: 330px) {
+  .description__area {
+    margin: 1.5rem 0.75rem 1.5rem 0.75rem;
+  }
+
+  .social-media ul li {
+    margin: 0rem 0.4rem 0rem 0.4rem;
+  }
+
+  /* .about__us {
+      margin: 0rem 0rem 0rem 25%;
+    }
+  
+    .sellers {
+      margin: 0rem 0rem 0rem 25%;
+    }
+  
+    .shoppers {
+      margin: 0rem 0rem 0rem 25%;
+    }
+  
+    .investors {
+      margin: 0rem 0rem 0rem 25%;
+    } */
+
+  .payment__options p {
+    font-size: 0.9rem;
+  }
+
+  .appstore__options p {
+    font-size: 0.9rem;
+  }
+
+  .skynamo__partner p {
+    font-size: 0.85rem;
+  }
+
+  .ue__partner p {
+    font-size: 0.9rem;
+  }
+
+  .whistleblowing__partner p {
+    font-size: 0.9rem;
+  }
+
+  .copy__right span {
+    font-size: 0.7rem;
+  }
+}
+
+/* ===================================================================================================================== */
+/*                                                                                            TODO:  STYLING ENDS  TODO: */
+/* ===================================================================================================================== */
