@@ -278,7 +278,7 @@ a {
   opacity: 0;
   transition: all 0.5s;
   margin-top: 0.5rem;
-  line-height: 1.3;
+  line-height: 1;
 }
 
 .collapsible--expanded .collapsible__chevron {
@@ -309,13 +309,13 @@ a {
 }
 
 .navigation__list-item {
-  padding: 1.5rem 1.5rem;
+  padding: 1rem 1.5rem;
   border-bottom: 1px solid var(--color-nav__item-border);
 }
 
 .navigation__list-item > a {
   color: var(--color-nav__item);
-  font-size: 1.7rem;
+  font-size: 1.5rem;
   font-weight: 600;
   letter-spacing: 1.5px;
   transition: color 0.4s;
@@ -345,10 +345,11 @@ a {
 
   .navigation__list-item {
     border: 0;
+    margin: 0rem 0.5rem 0rem -1rem;
   }
 
   .navigation__list-item > a {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
   }
 }
 
@@ -6519,6 +6520,776 @@ a {
   margin-bottom: 0;
 }
 
+/* ____________________________________________________________________________________________ */
+/* FIXME: PRODUCT 34 - CARD & SPECIFICATIONS - WINTER - SWART KAPPIE (DAMES)                    */
+/* ____________________________________________________________________________________________ */
+
+.background__product-34 {
+  width: auto;
+  background: var(--color-clothing__product__01__heading);
+}
+
+.spacing__product-34 {
+  row-gap: 5rem;
+  column-gap: 2rem;
+  margin: 0 5rem;
+}
+
+.image__product-34 {
+  width: 100%;
+}
+
+.product-34__content {
+  text-align: center;
+  margin-top: -1rem;
+}
+
+.product-34__name {
+  font-size: 4rem;
+  font-weight: 700;
+  margin-top: 0;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.product-34__specifications {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 3px;
+  text-transform: lowercase;
+}
+
+.product-34__specifications-list {
+  list-style-type: none;
+  font-size: 1.5rem;
+  line-height: 1.5;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+.product-34__sizes {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 3px;
+  text-transform: lowercase;
+}
+
+.product-34__sizes-list {
+  text-align: center;
+  font-size: 1.5rem;
+  line-height: 1.5;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/* .product-34__colours {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 3px;
+  text-transform: lowercase;
+} */
+
+/* .product-34__colours-list {
+  text-align: centre;
+  font-size: 1.7rem;
+  line-height: 1.5;
+  margin-top: 0;
+  margin-bottom: 0;
+} */
+
+/* .product-34__category {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 3px;
+  text-transform: lowercase;
+} */
+
+/* .product-34__category-name {
+  text-align: centre;
+  font-size: 1.7rem;
+  line-height: 1.5;
+  margin-top: 0;
+  margin-bottom: 0;
+} */
+
+/* .product-34__product__number {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 3px;
+  text-transform: lowercase;
+} */
+
+/* .product-34__sku {
+  text-align: centre;
+  font-size: 1.7rem;
+  line-height: 1.5;
+  margin-top: 0;
+  margin-bottom: 0;
+} */
+
+/* .product-34__range {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 3px;
+  text-transform: lowercase;
+} */
+
+/* .product-34__range-name {
+  text-align: centre;
+  font-size: 1.7rem;
+  line-height: 1.5;
+  margin-top: 0;
+  margin-bottom: 0;
+} */
+
+/* .product-34__price-heading {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 3px;
+  text-transform: lowercase;
+} */
+
+.product-34__price {
+  text-align: center;
+  font-size: 5rem;
+  font-weight: 700;
+  line-height: 1.5;
+  margin-top: 1rem;
+  margin-bottom: 0;
+}
+
+/* ____________________________________________________________________________________________ */
+/* FIXME: PRODUCT 35 - CARD & SPECIFICATIONS - WINTER - WIT KAPPIE (DAMES)                      */
+/* ____________________________________________________________________________________________ */
+
+.background__product-35 {
+  width: auto;
+  background: var(--color-clothing__product__01__heading);
+}
+
+.spacing__product-35 {
+  row-gap: 5rem;
+  column-gap: 2rem;
+  margin: 0 5rem;
+}
+
+.image__product-35 {
+  width: 100%;
+}
+
+.product-35__content {
+  text-align: center;
+  margin-top: -1rem;
+}
+
+.product-35__name {
+  font-size: 4rem;
+  font-weight: 700;
+  margin-top: 0;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.product-35__specifications {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 3px;
+  text-transform: lowercase;
+}
+
+.product-35__specifications-list {
+  list-style-type: none;
+  font-size: 1.5rem;
+  line-height: 1.5;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+.product-35__sizes {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 3px;
+  text-transform: lowercase;
+}
+
+.product-35__sizes-list {
+  text-align: center;
+  font-size: 1.5rem;
+  line-height: 1.5;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/* .product-35__colours {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 3px;
+  text-transform: lowercase;
+} */
+
+/* .product-35__colours-list {
+  text-align: centre;
+  font-size: 1.7rem;
+  line-height: 1.5;
+  margin-top: 0;
+  margin-bottom: 0;
+} */
+
+/* .product-35__category {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 3px;
+  text-transform: lowercase;
+} */
+
+/* .product-35__category-name {
+  text-align: centre;
+  font-size: 1.7rem;
+  line-height: 1.5;
+  margin-top: 0;
+  margin-bottom: 0;
+} */
+
+/* .product-35__product__number {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 3px;
+  text-transform: lowercase;
+} */
+
+/* .product-35__sku {
+  text-align: centre;
+  font-size: 1.7rem;
+  line-height: 1.5;
+  margin-top: 0;
+  margin-bottom: 0;
+} */
+
+/* .product-35__range {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 3px;
+  text-transform: lowercase;
+} */
+
+/* .product-35__range-name {
+  text-align: centre;
+  font-size: 1.7rem;
+  line-height: 1.5;
+  margin-top: 0;
+  margin-bottom: 0;
+} */
+
+/* .product-35__price-heading {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 3px;
+  text-transform: lowercase;
+} */
+
+.product-35__price {
+  text-align: center;
+  font-size: 5rem;
+  font-weight: 700;
+  line-height: 1.5;
+  margin-top: 1rem;
+  margin-bottom: 0;
+}
+
+/* ____________________________________________________________________________________________ */
+/* FIXME: PRODUCT 36 - CARD & SPECIFICATIONS - WINTER - SWART KAPPIE (KINDERS)                  */
+/* ____________________________________________________________________________________________ */
+
+.background__product-36 {
+  width: auto;
+  background: var(--color-clothing__product__01__heading);
+}
+
+.spacing__product-36 {
+  row-gap: 5rem;
+  column-gap: 2rem;
+  margin: 0 5rem;
+}
+
+.image__product-36 {
+  width: 100%;
+}
+
+.product-36__content {
+  text-align: center;
+  margin-top: -1rem;
+}
+
+.product-36__name {
+  font-size: 4rem;
+  font-weight: 700;
+  margin-top: 0;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.product-36__specifications {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 3px;
+  text-transform: lowercase;
+}
+
+.product-36__specifications-list {
+  list-style-type: none;
+  font-size: 1.5rem;
+  line-height: 1.5;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+.product-36__sizes {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 3px;
+  text-transform: lowercase;
+}
+
+.product-36__sizes-list {
+  text-align: center;
+  font-size: 1.5rem;
+  line-height: 1.5;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/* .product-36__colours {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 3px;
+  text-transform: lowercase;
+} */
+
+/* .product-36__colours-list {
+  text-align: centre;
+  font-size: 1.7rem;
+  line-height: 1.5;
+  margin-top: 0;
+  margin-bottom: 0;
+} */
+
+/* .product-36__category {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 3px;
+  text-transform: lowercase;
+} */
+
+/* .product-36__category-name {
+  text-align: centre;
+  font-size: 1.7rem;
+  line-height: 1.5;
+  margin-top: 0;
+  margin-bottom: 0;
+} */
+
+/* .product-36__product__number {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 3px;
+  text-transform: lowercase;
+} */
+
+/* .product-36__sku {
+  text-align: centre;
+  font-size: 1.7rem;
+  line-height: 1.5;
+  margin-top: 0;
+  margin-bottom: 0;
+} */
+
+/* .product-36__range {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 3px;
+  text-transform: lowercase;
+} */
+
+/* .product-36__range-name {
+  text-align: centre;
+  font-size: 1.7rem;
+  line-height: 1.5;
+  margin-top: 0;
+  margin-bottom: 0;
+} */
+
+/* .product-36__price-heading {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 3px;
+  text-transform: lowercase;
+} */
+
+.product-36__price {
+  text-align: center;
+  font-size: 5rem;
+  font-weight: 700;
+  line-height: 1.5;
+  margin-top: 1rem;
+  margin-bottom: 0;
+}
+
+/* ____________________________________________________________________________________________ */
+/* FIXME: PRODUCT 37 - CARD & SPECIFICATIONS - WINTER - WIT KAPPIE (KINDERS)                    */
+/* ____________________________________________________________________________________________ */
+
+.background__product-37 {
+  width: auto;
+  background: var(--color-clothing__product__01__heading);
+}
+
+.spacing__product-37 {
+  row-gap: 5rem;
+  column-gap: 2rem;
+  margin: 0 5rem;
+}
+
+.image__product-37 {
+  width: 100%;
+}
+
+.product-37__content {
+  text-align: center;
+  margin-top: -1rem;
+}
+
+.product-37__name {
+  font-size: 4rem;
+  font-weight: 700;
+  margin-top: 0;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.product-37__specifications {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 3px;
+  text-transform: lowercase;
+}
+
+.product-37__specifications-list {
+  list-style-type: none;
+  font-size: 1.5rem;
+  line-height: 1.5;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+.product-37__sizes {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 3px;
+  text-transform: lowercase;
+}
+
+.product-37__sizes-list {
+  text-align: center;
+  font-size: 1.5rem;
+  line-height: 1.5;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/* .product-37__colours {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 3px;
+  text-transform: lowercase;
+} */
+
+/* .product-37__colours-list {
+  text-align: centre;
+  font-size: 1.7rem;
+  line-height: 1.5;
+  margin-top: 0;
+  margin-bottom: 0;
+} */
+
+/* .product-37__category {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 3px;
+  text-transform: lowercase;
+} */
+
+/* .product-37__category-name {
+  text-align: centre;
+  font-size: 1.7rem;
+  line-height: 1.5;
+  margin-top: 0;
+  margin-bottom: 0;
+} */
+
+/* .product-37__product__number {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 3px;
+  text-transform: lowercase;
+} */
+
+/* .product-37__sku {
+  text-align: centre;
+  font-size: 1.7rem;
+  line-height: 1.5;
+  margin-top: 0;
+  margin-bottom: 0;
+} */
+
+/* .product-37__range {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 3px;
+  text-transform: lowercase;
+} */
+
+/* .product-37__range-name {
+  text-align: centre;
+  font-size: 1.7rem;
+  line-height: 1.5;
+  margin-top: 0;
+  margin-bottom: 0;
+} */
+
+/* .product-37__price-heading {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 3px;
+  text-transform: lowercase;
+} */
+
+.product-37__price {
+  text-align: center;
+  font-size: 5rem;
+  font-weight: 700;
+  line-height: 1.5;
+  margin-top: 1rem;
+  margin-bottom: 0;
+}
+
+/* ____________________________________________________________________________________________ */
+/* FIXME: PRODUCT 38 - CARD & SPECIFICATIONS - WINTER - WARM TOP (DAMES)                        */
+/* ____________________________________________________________________________________________ */
+
+.background__product-38 {
+  width: auto;
+  background: var(--color-clothing__product__01__heading);
+}
+
+.spacing__product-38 {
+  row-gap: 5rem;
+  column-gap: 2rem;
+  margin: 0 5rem;
+}
+
+.image__product-38 {
+  width: 100%;
+}
+
+.product-38__content {
+  text-align: center;
+  margin-top: -1rem;
+}
+
+.product-38__name {
+  font-size: 4rem;
+  font-weight: 700;
+  margin-top: 0;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.product-38__specifications {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 3px;
+  text-transform: lowercase;
+}
+
+.product-38__specifications-list {
+  list-style-type: none;
+  font-size: 1.5rem;
+  line-height: 1.5;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+.product-38__sizes {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 3px;
+  text-transform: lowercase;
+}
+
+.product-38__sizes-list {
+  text-align: center;
+  font-size: 1.5rem;
+  line-height: 1.5;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/* .product-38__colours {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 3px;
+  text-transform: lowercase;
+} */
+
+/* .product-38__colours-list {
+  text-align: centre;
+  font-size: 1.7rem;
+  line-height: 1.5;
+  margin-top: 0;
+  margin-bottom: 0;
+} */
+
+/* .product-38__category {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 3px;
+  text-transform: lowercase;
+} */
+
+/* .product-38__category-name {
+  text-align: centre;
+  font-size: 1.7rem;
+  line-height: 1.5;
+  margin-top: 0;
+  margin-bottom: 0;
+} */
+
+/* .product-38__product__number {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 3px;
+  text-transform: lowercase;
+} */
+
+/* .product-38__sku {
+  text-align: centre;
+  font-size: 1.7rem;
+  line-height: 1.5;
+  margin-top: 0;
+  margin-bottom: 0;
+} */
+
+/* .product-38__range {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 3px;
+  text-transform: lowercase;
+} */
+
+/* .product-38__range-name {
+  text-align: centre;
+  font-size: 1.7rem;
+  line-height: 1.5;
+  margin-top: 0;
+  margin-bottom: 0;
+} */
+
+/* .product-38__price-heading {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 3px;
+  text-transform: lowercase;
+} */
+
+.product-38__price {
+  text-align: center;
+  font-size: 5rem;
+  font-weight: 700;
+  line-height: 1.5;
+  margin-top: 1rem;
+  margin-bottom: 0;
+}
+
 /* __________________________________________________________________________________________________________ */
 /* PRODUCT BLOCK COMPONENT - TODO: NAVIGATION (DOWNLOAD BROCHURE) - "lAAI BROSJURE AF                         */
 /* ALL PRODUCTS USE THE SAME NAVIGATION (DOWNLOAD BROCHURE) - LINK TO MOODBOARD BROCHURE & MANUAL ORDER FORM  */
@@ -6634,7 +7405,12 @@ a {
   .product-30__name,
   .product-31__name,
   .product-32__name,
-  .product-33__name {
+  .product-33__name,
+  .product-34__name,
+  .product-35__name,
+  .product-36__name,
+  .product-37__name,
+  .product-38__name {
     margin-top: 8rem;
   }
 
@@ -6670,7 +7446,12 @@ a {
   .product-30__specifications-list,
   .product-31__specifications-list,
   .product-32__specifications-list,
-  .product-33__specifications-list {
+  .product-33__specifications-list,
+  .product-34__specifications-list,
+  .product-35__specifications-list,
+  .product-36__specifications-list,
+  .product-37__specifications-list,
+  .product-38__specifications-list {
     font-size: 1.6rem;
   }
 
@@ -6706,7 +7487,12 @@ a {
   .product-30__sizes-list,
   .product-31__sizes-list,
   .product-32__sizes-list,
-  .product-33__sizes-list {
+  .product-33__sizes-list,
+  .product-34__sizes-list,
+  .product-35__sizes-list,
+  .product-36__sizes-list,
+  .product-37__sizes-list,
+  .product-38__sizes-list {
     font-size: 1.6rem;
   }
 
@@ -7942,28 +8728,28 @@ button {
   padding-top: 0;
   padding-left: 0;
   padding-bottom: 1.5rem;
-  border-bottom: 1px solid var(--color-footer__collapsible-border);
+  /* border-bottom: 1px solid var(--color-footer__collapsible-border); */
 }
 
 .footer__section__sport {
-  padding-top: 0;
+  padding-top: 3rem;
   padding-left: 0;
   padding-bottom: 1.5rem;
-  border-bottom: 1px solid var(--color-footer__collapsible-border);
+  /* border-bottom: 1px solid var(--color-footer__collapsible-border); */
 }
 
 .footer__section__hoedjies {
   padding-top: 3rem;
   padding-left: 0;
   padding-bottom: 1.5rem;
-  border-bottom: 1px solid var(--color-footer__collapsible-border);
+  /* border-bottom: 1px solid var(--color-footer__collapsible-border); */
 }
 
 .footer__section__wenners {
   padding-top: 5rem;
   padding-left: 0;
   padding-bottom: 1.5rem;
-  border-bottom: 1px solid var(--color-footer__collapsible-border);
+  /* border-bottom: 1px solid var(--color-footer__collapsible-border); */
 }
 
 .footer__section .list {
@@ -8060,7 +8846,11 @@ button {
   .footer .collapsible__content {
     opacity: 1;
     max-height: 100%;
-    font-size: 1.8rem;
+    font-size: 1.5rem;
+  }
+
+  .collapsible__content li {
+    margin: 0rem 0rem 0.5rem 0rem;
   }
 
   .footer__section__winter {
