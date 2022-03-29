@@ -71,7 +71,7 @@ function showslide() {
 // So in this situation the images will change every 3 seconds
 let interval = setInterval(() => {
   showslide();
-}, 5000);
+}, 10000);
 
 // on HOVER ("Mouseover") stop changing every time after 3 seconds
 slider.addEventListener("mouseover", () => {
@@ -82,5 +82,5 @@ slider.addEventListener("mouseover", () => {
 slider.addEventListener("mouseout", () => {
   interval = setInterval(() => {
     showslide();
-  }, 5000);
+  }, 10000);
 });

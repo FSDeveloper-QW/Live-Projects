@@ -1,5 +1,5 @@
 // ===================================================================================
-// TODO: JAVASCRIPT PROGRAM - TO GIVE FUNCTIONALITY TO A CAROUSEL BANNER
+// TODO: JAVASCRIPT SCRIPT - HERO / CAROUSEL ROTATING BANNER (FUNCTIONALITY)
 // ===================================================================================
 
 let slideIndex = 0;
@@ -39,7 +39,10 @@ function currentslide(index) {
     index = slide.length;
   }
 
-  // Defaultly active class is removed from all dots
+  // ===================================================================================
+  //  SET AS DEFAULT: THAT THE ACTIVE CLASS IS REMOVED FROM ALL DOTS
+  // ===================================================================================
+
   for (let i = 0; i < dots.length; i++) {
     const element = dots[i];
     element.classList.remove("dot-active");
@@ -60,7 +63,10 @@ function showslide() {
     slideIndex = slide.length;
   }
 
-  // Defaultly active class is removed from all dots
+  // ===================================================================================
+  //  SET AS DEFAULT: THAT THE ACTIVE CLASS IS REMOVED FROM ALL DOTS
+  // ===================================================================================
+
   for (let i = 0; i < dots.length; i++) {
     const element = dots[i];
     element.classList.remove("dot-active");
@@ -70,20 +76,32 @@ function showslide() {
   dots[slideIndex - 1].classList.add("dot-active");
 }
 
-// FIXME:  Set the TIME INTERVAL between each Slide: 1000ms = 1 Second
-// So in this situation the images will change every 3 seconds
+// ===================================================================================
+// FIXME:  SET THE "TIME INTERVAL" BETWEEN EACH SLIDES [ 1000ms = 1 Second ]
+// ===================================================================================
+
+// =================================================
+// SETTING THE TIME THAT SLIDES CHANGE TO 6 SECONDS
+// =================================================
+
 let interval = setInterval(() => {
   showslide();
-}, 5000);
+}, 6000);
 
-// on HOVER ("Mouseover") stop changing every time after 3 seconds
+// ===================================================================================
+// WHEN MOUSE HOVER ON SLIDE ("MOUSE-OVER") STOP CHANGING EVERY SLIDE AFTER 6 SECONDS
+// ===================================================================================
+
 slider.addEventListener("mouseover", () => {
   clearInterval(interval);
 });
 
-// When moving mouse away on ("Mouseout") then again start changing every image after 3 seconds
+// ===================================================================================
+// WHEN MOVING MOUSE AWAY FROM SLIDE ("MOUSE-OUT") START CHANGING SLIDES AGAIN AFTER 6 SECONDS
+// ===================================================================================
+
 slider.addEventListener("mouseout", () => {
   interval = setInterval(() => {
     showslide();
-  }, 5000);
+  }, 6000);
 });
