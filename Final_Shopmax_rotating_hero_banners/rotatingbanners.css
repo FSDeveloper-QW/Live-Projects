@@ -238,50 +238,6 @@ h6 {
   z-index: 1;
 }
 
-/* ------------------------------------------------------------------------------------- */
-/* WHERE TO FIND THE BACKGROUND IMAGES USED                                              */
-/* ------------------------------------------------------------------------------------- */
-
-/* .slide:nth-child(1) {
-  background-image: url(images/banner_main_01.webp);
-}
-
-.slide:nth-child(2) {
-  background-image: url(images/banner_main_02.webp);
-}
-
-.slide:nth-child(3) {
-  background-image: url(images/banner_main_03.webp);
-}
-
-.slide:nth-child(4) {
-  background-image: url(images/banner_main_04.webp);
-}
-
-.slide:nth-child(5) {
-  background-image: url(images/banner_main_05.webp);
-}
-
-.slide:nth-child(6) {
-  background-image: url(images/banner_main_06.webp);
-}
-
-.slide:nth-child(7) {
-  background-image: url(images/banner_main_07.webp);
-}
-
-.slide:nth-child(8) {
-  background-image: url(images/banner_main_08.webp);
-}
-
-.slide:nth-child(9) {
-  background-image: url(images/banner_main_09.webp);
-}
-
-.slide:nth-child(10) {
-  background-image: url(images/banner_main_10.webp);
-} */
-
 /* ===================================================================================================================== */
 /* TODO:  PART 4 - INDIVIDUAL SLIDE DATA CONTAINTER - HOLDING ALL IMAGES, TITLES, CONTENT AND BUTTONS                    */
 /* --------------------------------------------------------------------------------------------------------------------- */
@@ -473,7 +429,7 @@ h6 {
 
 @media screen and (min-width: 280px) {
   .slider {
-    min-height: 15.5vh;
+    min-height: 15.7vh;
   }
 
   .slide-data .slide__title p {
@@ -499,6 +455,12 @@ h6 {
     width: 0.6rem;
     height: 0.6rem;
     margin: 0rem 0.3rem 0rem 0.3rem;
+  }
+}
+
+@media screen and (min-width: 280px) and (min-height: 653px) {
+  .slider {
+    min-height: 14.75vh;
   }
 }
 
@@ -533,6 +495,30 @@ h6 {
   }
 }
 
+@media screen and (min-width: 360px) and (min-height: 740px) {
+  .slider {
+    min-height: 16.75vh;
+  }
+}
+
+@media screen and (min-width: 375px) and (min-height: 667px) {
+  .slider {
+    min-height: 19.3vh;
+  }
+}
+
+@media screen and (min-width: 390px) and (min-height: 844px) {
+  .slider {
+    min-height: 15.6vh;
+  }
+}
+
+@media screen and (min-width: 393px) and (min-height: 851px) {
+  .slider {
+    min-height: 16vh;
+  }
+}
+
 @media screen and (min-width: 400px) {
   .slider {
     min-height: 22.25vh;
@@ -564,6 +550,18 @@ h6 {
   }
 }
 
+@media screen and (min-width: 412px) and (min-height: 914px) {
+  .slider {
+    min-height: 15.4vh;
+  }
+}
+
+@media screen and (min-width: 414px) and (min-height: 896px) {
+  .slider {
+    min-height: 16vh;
+  }
+}
+
 @media screen and (min-width: 500px) {
   .slider {
     min-height: 27.75vh;
@@ -592,6 +590,12 @@ h6 {
     width: 0.75rem;
     height: 0.75rem;
     margin: 0rem 0.3rem 0rem 0.3rem;
+  }
+}
+
+@media screen and (min-width: 540px) and (min-height: 720px) {
+  .slider {
+    min-height: 25.75vh;
   }
 }
 
@@ -657,6 +661,12 @@ h6 {
   }
 }
 
+@media screen and (min-width: 768px) and (min-height: 1024px) {
+  .slider {
+    min-height: 25.75vh;
+  }
+}
+
 @media screen and (min-width: 800px) {
   .slider {
     min-height: 44vh;
@@ -685,6 +695,12 @@ h6 {
     width: 1.05rem;
     height: 1.05rem;
     margin: 0rem 0.3rem 0rem 0.3rem;
+  }
+}
+
+@media screen and (min-width: 820px) and (min-height: 1180px) {
+  .slider {
+    min-height: 23.75vh;
   }
 }
 
@@ -719,6 +735,12 @@ h6 {
   }
 }
 
+@media screen and (min-width: 912px) and (min-height: 1368px) {
+  .slider {
+    min-height: 22.75vh;
+  }
+}
+
 @media screen and (min-width: 1000px) {
   .slider {
     min-height: 55vh;
@@ -750,9 +772,15 @@ h6 {
   }
 }
 
+@media screen and (min-width: 1024px) and (min-height: 600) {
+  .slider {
+    min-height: 58.5vh;
+  }
+}
+
 @media screen and (min-width: 1029px) {
   .slider {
-    min-height: 57vh;
+    min-height: 57.25vh;
   }
 
   .slide-data .slide__title p {
@@ -870,6 +898,13 @@ h6 {
 @media screen and (min-width: 1280px) {
   .slider {
     min-height: 71vh;
+  }
+}
+
+/* NEST HUB MAX - 1280 x 800 */
+@media screen and (min-width: 1280px) and (min-height: 800px) {
+  .slider {
+    min-height: 54.75vh;
   }
 }
 
