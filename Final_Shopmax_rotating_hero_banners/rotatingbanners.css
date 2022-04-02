@@ -334,11 +334,18 @@ h6 {
   outline: none;
   border: 1px solid white;
   z-index: 2;
+  cursor: pointer;
 }
 
 .slide-data .slide__button button:hover {
   background-color: var(--color-button-background-hover);
   color: var(--color-button-text-hover);
+}
+
+.slide-data .slide__button button a {
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
 }
 
 /* ===================================================================================================================== */
@@ -360,6 +367,7 @@ h6 {
   color: var(--color-arrows-color);
   transition: 0.4s linear;
   z-index: 3;
+  cursor: pointer;
 }
 
 .slider .arrows:hover {
@@ -401,6 +409,7 @@ h6 {
   display: inline-block;
   transition: 0.4s linear;
   z-index: 3;
+  cursor: pointer;
 }
 
 .dots span:hover {
@@ -443,7 +452,7 @@ h6 {
   }
 
   .slide-data .slide__button button {
-    font-size: 0.8rem;
+    font-size: 0.65rem;
     line-height: 1;
   }
 
@@ -480,7 +489,7 @@ h6 {
   }
 
   .slide-data .slide__button button {
-    font-size: 0.85rem;
+    font-size: 0.75rem;
     line-height: 1;
   }
 
@@ -535,7 +544,7 @@ h6 {
   }
 
   .slide-data .slide__button button {
-    font-size: 0.9rem;
+    font-size: 0.85rem;
     line-height: 1.15;
   }
 
@@ -678,7 +687,7 @@ h6 {
   }
 
   .slide-data .slide__content p {
-    font-size: 1.35rem;
+    font-size: 1.3rem;
     line-height: 1.5;
   }
 
@@ -715,12 +724,12 @@ h6 {
   }
 
   .slide-data .slide__content p {
-    font-size: 1.45rem;
+    font-size: 1.35rem;
     line-height: 1.5;
   }
 
   .slide-data .slide__button button {
-    font-size: 1.45rem;
+    font-size: 1.35rem;
     line-height: 1.5;
   }
 
@@ -752,12 +761,12 @@ h6 {
   }
 
   .slide-data .slide__content p {
-    font-size: 1.475rem;
+    font-size: 1.4rem;
     line-height: 1.5;
   }
 
   .slide-data .slide__button button {
-    font-size: 1.475rem;
+    font-size: 1.4rem;
     line-height: 1.5;
   }
 
@@ -789,12 +798,12 @@ h6 {
   }
 
   .slide-data .slide__content p {
-    font-size: 1.55rem;
+    font-size: 1.45rem;
     line-height: 1.5;
   }
 
   .slide-data .slide__button button {
-    font-size: 1.55rem;
+    font-size: 1.45rem;
     line-height: 1.5;
   }
 
@@ -832,12 +841,12 @@ h6 {
   }
 
   .slide-data .slide__content p {
-    font-size: 1.6rem;
+    font-size: 1.5rem;
     line-height: 1.5;
   }
 
   .slide-data .slide__button button {
-    font-size: 1.6rem;
+    font-size: 1.5rem;
     line-height: 1.5;
   }
 
@@ -864,17 +873,17 @@ h6 {
   }
 
   .slide-data .slide__title p {
-    font-size: 1.9rem;
+    font-size: 1.8rem;
     line-height: 1.5;
   }
 
   .slide-data .slide__content p {
-    font-size: 1.9rem;
+    font-size: 1.6rem;
     line-height: 1.5;
   }
 
   .slide-data .slide__button button {
-    font-size: 1.9rem;
+    font-size: 1.6rem;
     line-height: 1.5;
   }
 
