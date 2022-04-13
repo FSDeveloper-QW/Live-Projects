@@ -1,27 +1,33 @@
 /* ===================================================================================================================== */
-/* TODO:  STYLING FOR [TITLE HERE]                                              */
+/* TODO:  STYLING FOR ACCORDIAN TRAINING                                                                                 */
 /* ===================================================================================================================== */
 
 :root {
   --color-page-background: white;
+  --color-accordian-item-background: white;
+  --color-accordian-item-text: black;
+  --color-accordian-item-header-active: #dc143c;
+  --color-accordian-item-plus-and-minus-sign: #dc143c;
+  --color-accordian-item-seperation-line: #edeade;
 }
 
-*,
-*::after,
-*::before {
+* {
   box-sizing: border-box;
-  font-family: "poppins", sans-serif;
   margin: 0rem 0rem 0rem 0rem;
   padding: 0rem 0rem 0rem 0rem;
 }
 
 html {
+  font-family: "poppins", sans-serif;
   font-size: 62.5%;
   scroll-behavior: smooth;
 }
 
 body {
   font-size: 1.6rem;
+  /* background-color: #34495e; */
+  background-color: var(--color-page-background);
+  /* color: white; */
 }
 
 /* ===================================================================================================================== */
@@ -119,7 +125,7 @@ h6 {
 }
 
 /* ===================================================================================================================== */
-/* TODO:  PART 1 -                                                                                                       */
+/* TODO:  PART 1 - ACCORDIAN "MAIN" CONTAINER (HOLDING ALL ELEMENTS)                                                                                    */
 /* ===================================================================================================================== */
 
 /* ===================================================================================================================== */
@@ -132,8 +138,15 @@ h6 {
 /* 05.            */
 /* ===================================================================================================================== */
 
+.accordian {
+  width: 90%;
+  max-width: 128rem;
+  margin: 2rem auto 2rem auto;
+  /* border: 1px solid white; */
+}
+
 /* ===================================================================================================================== */
-/* TODO:  PART 2 -                                                                                                       */
+/* TODO:  PART 2 - ACCORDIAN "ITEMS" CONTAINER (HOLDING ALL ITEMS)                                                                                                      */
 /* ===================================================================================================================== */
 
 /* ===================================================================================================================== */
@@ -146,8 +159,15 @@ h6 {
 /* 05.            */
 /* ===================================================================================================================== */
 
+.accordian_item {
+  background-color: var(--color-accordian-item-background);
+  color: var(--color-accordian-item-text);
+  margin: 1rem 0rem 1rem 0rem;
+  border-radius: 0.5rem;
+  box-shadow: 3px 5px 20px 0 rgba(0, 0, 0, 0.35);
+}
 /* ===================================================================================================================== */
-/* TODO:  PART 3 -                                                                                                       */
+/* TODO:  PART 3 - ACCORDIAN - ITEM (HEADER)                                                                                                      */
 /* ===================================================================================================================== */
 
 /* ===================================================================================================================== */
@@ -160,8 +180,47 @@ h6 {
 /* 05.            */
 /* ===================================================================================================================== */
 
+.accordian-item-header {
+  display: flex;
+  position: relative;
+  align-items: center;
+  min-height: 3.5rem;
+  line-height: 1.25rem;
+  font-size: 1.3rem;
+  font-weight: 600;
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
+  padding: 0.5rem 3rem 0.5rem 1rem;
+  cursor: pointer;
+}
+
+/* FIXME:  NOTE:  THE CSS ENTITY CODE FOR PLUS SIGN "+" = "\002B" */
+/* FIXME:  NOTE:  THE CSS ENTITY CODE FOR DOWN ARROW "v" = \25BE */
+
+.accordian-item-header::after {
+  /* content: "\25BE"; */
+  content: "\002B";
+  font-size: 2rem;
+  position: absolute;
+  right: 1rem;
+  color: var(--color-accordian-item-plus-and-minus-sign);
+  transition: transform 0.5s ease-in-out;
+}
+
+/* FIXME:  NOTE:  THE CSS ENTITY CODE FOR MINUS SIGN "-" = "\2212" */
+
+.accordian-item-header.active::after {
+  /* transform: rotate(-180deg); */
+  content: "\2212";
+  transform: none;
+}
+
+.accordian-item-header.active {
+  color: var(--color-accordian-item-header-active);
+}
+
 /* ===================================================================================================================== */
-/* TODO:  PART 4 -                                                                                                       */
+/* TODO:  PART 4 - ACCORDIAN-ITEM (BODY)                                                                                                       */
 /* ===================================================================================================================== */
 
 /* ===================================================================================================================== */
@@ -174,9 +233,166 @@ h6 {
 /* 05.            */
 /* ===================================================================================================================== */
 
+/* ITEM - MAIN CONTAINER */
+
+.accordian-item-body {
+  /* display: none; */
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  /* display: flex;
+  justify-content: space-between;
+  align-items: center; */
+  /* margin: 2rem 0rem 0rem 0rem; */
+  /* border: 5px soldi green; */
+}
+
+/* ITEM - ALL ELEMENTS CONTAINER */
+
+.accordian-item-body-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0rem 0rem 0rem 0rem;
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  border-bottom: 1px solid var(--color-accordian-item-seperation-line);
+  /* border: 1px solid red; */
+}
+
+.content-statement {
+  max-width: 900px;
+  font-size: 1.2rem;
+  font-weight: 500;
+  text-align: justify;
+  letter-spacing: 0.025rem;
+  line-height: 1.5;
+  padding: 0rem 1rem 0rem 1rem;
+  /* border: 1px solid green; */
+}
+
+.content-confirmation {
+  min-width: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  line-height: 0.5;
+  padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+  border-left: 1px solid var(--color-accordian-item-seperation-line);
+  /* border: 1px solid red; */
+}
+
+.confirmation-image img {
+  width: 3rem;
+  height: 3rem;
+}
+
+.confirmation-text {
+  font-size: 1.1rem;
+  line-height: 0.5;
+  padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+}
+
 /* ===================================================================================================================== */
-/* TODO:  PART 5 -                                                                                                       */
+/* TODO:  PART 5 - MEDIA QUERY (LARGER DEVICES)                                                                          */
 /* ===================================================================================================================== */
+
+@media screen and (max-width: 430px) {
+  .accordian-item-header {
+    font-size: 1.2rem;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .accordian-item-body-content {
+    flex-direction: column;
+    margin: 0rem 0rem 0rem 0rem;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+  }
+
+  .content-statement {
+    justify-content: center;
+    text-align: center;
+    max-width: 280px;
+    font-size: 1rem;
+    padding: 0rem 0.5rem 0rem 0.5rem;
+  }
+
+  .content-confirmation {
+    padding: 0.25rem 0.5rem 0.25rem 0.5rem;
+    border-left: none;
+  }
+
+  .confirmation-image img {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+
+  .confirmation-text {
+    font-size: 1rem;
+    padding: 0.5rem 0.5rem 0.25rem 0.5rem;
+  }
+}
+
+/* @media (max-width: 767px) {
+} */
+
+/* ----------------------------------------------------------------------------------------- */
+/* FIXME:  GOOGLE CHROME DEVICE - BREAKPOINTS                          TODO: VARIOUS DEVICES */
+/* ----------------------------------------------------------------------------------------- */
+
+/* TODO:  SAMSUNG GALAXY FOLD  TODO: */
+/* @media screen and (min-width: 280px) and (min-height: 653px) {
+} */
+
+/* TODO:  SAMSUNG GALAXY S8+  TODO: */
+/* @media screen and (min-width: 360px) and (min-height: 740px) {
+} */
+
+/* TODO:  APPLE IPHONE SE  TODO: */
+/* @media screen and (min-width: 375px) and (min-height: 667px) {
+} */
+
+/* TODO:  APPLE IPHONE 12 PRO  TODO: */
+/* @media screen and (min-width: 390px) and (min-height: 844px) {
+} */
+
+/* TODO:  PIXEL 5  TODO: */
+/* @media screen and (min-width: 393px) and (min-height: 851px) {
+} */
+
+/* TODO:  SAMSUNG GALAXY A51/A71  TODO: */
+/* TODO:  SAMSUNG GALAXY S20 ULTRA  TODO: */
+/* @media screen and (min-width: 412px) and (min-height: 914px) {
+} */
+
+/* TODO:  APPLE IPHONE XR  TODO: */
+/* @media screen and (min-width: 414px) and (min-height: 896px) {
+} */
+
+/* TODO:  SURFACE DUO  TODO: */
+/* @media screen and (min-width: 540px) and (min-height: 720px) {
+} */
+
+/* TODO:  APPLE IPAD MINI  TODO: */
+/* @media screen and (min-width: 768px) and (min-height: 1024px) {
+} */
+
+/* TODO:  APPLE IPAD AIR  TODO: */
+/* @media screen and (min-width: 820px) and (min-height: 1180px) {
+} */
+
+/* TODO:  SURFACE PRO 7  TODO: */
+/* @media screen and (min-width: 912px) and (min-height: 1368px) {
+} */
+
+/* TODO:  NEST HUB  TODO: */
+/* @media screen and (min-width: 1024px) and (min-height: 600) {
+} */
+
+/* TODO:  NEST HUB MAX  TODO: */
+/* @media screen and (min-width: 1280px) and (min-height: 800px) {
+} */
 
 /* ===================================================================================================================== */
 /* FIXME:  SPECIAL NOTES (PART 5)                                                                                        */
@@ -257,63 +473,6 @@ h6 {
 /* 04.            */
 /* 05.            */
 /* ===================================================================================================================== */
-
-/* ----------------------------------------------------------------------------------------- */
-/* FIXME:  GOOGLE CHROME DEVICE - BREAKPOINTS                          TODO: VARIOUS DEVICES */
-/* ----------------------------------------------------------------------------------------- */
-
-/* TODO:  SAMSUNG GALAXY FOLD  TODO: */
-@media screen and (min-width: 280px) and (min-height: 653px) {
-}
-
-/* TODO:  SAMSUNG GALAXY S8+  TODO: */
-@media screen and (min-width: 360px) and (min-height: 740px) {
-}
-
-/* TODO:  APPLE IPHONE SE  TODO: */
-@media screen and (min-width: 375px) and (min-height: 667px) {
-}
-
-/* TODO:  APPLE IPHONE 12 PRO  TODO: */
-@media screen and (min-width: 390px) and (min-height: 844px) {
-}
-
-/* TODO:  PIXEL 5  TODO: */
-@media screen and (min-width: 393px) and (min-height: 851px) {
-}
-
-/* TODO:  SAMSUNG GALAXY A51/A71  TODO: */
-/* TODO:  SAMSUNG GALAXY S20 ULTRA  TODO: */
-@media screen and (min-width: 412px) and (min-height: 914px) {
-}
-
-/* TODO:  APPLE IPHONE XR  TODO: */
-@media screen and (min-width: 414px) and (min-height: 896px) {
-}
-
-/* TODO:  SURFACE DUO  TODO: */
-@media screen and (min-width: 540px) and (min-height: 720px) {
-}
-
-/* TODO:  APPLE IPAD MINI  TODO: */
-@media screen and (min-width: 768px) and (min-height: 1024px) {
-}
-
-/* TODO:  APPLE IPAD AIR  TODO: */
-@media screen and (min-width: 820px) and (min-height: 1180px) {
-}
-
-/* TODO:  SURFACE PRO 7  TODO: */
-@media screen and (min-width: 912px) and (min-height: 1368px) {
-}
-
-/* TODO:  NEST HUB  TODO: */
-@media screen and (min-width: 1024px) and (min-height: 600) {
-}
-
-/* TODO:  NEST HUB MAX  TODO: */
-@media screen and (min-width: 1280px) and (min-height: 800px) {
-}
 
 /* ===================================================================================================================== */
 /*                                                                                            TODO:  STYLING ENDS  TODO: */

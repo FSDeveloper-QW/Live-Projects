@@ -543,6 +543,63 @@ form {
 /* ----------------------------------------------------------------------------------------- */
 
 /* ----------------------------------------------------------------------------------------- */
+/* FIXME:  GOOGLE CHROME DEVICE - BREAKPOINTS                          TODO: VARIOUS DEVICES */
+/* ----------------------------------------------------------------------------------------- */
+
+/* TODO:  SAMSUNG GALAXY FOLD  TODO: */
+@media screen and (min-width: 280px) and (min-height: 653px) {
+}
+
+/* TODO:  SAMSUNG GALAXY S8+  TODO: */
+@media screen and (min-width: 360px) and (min-height: 740px) {
+}
+
+/* TODO:  APPLE IPHONE SE  TODO: */
+@media screen and (min-width: 375px) and (min-height: 667px) {
+}
+
+/* TODO:  APPLE IPHONE 12 PRO  TODO: */
+@media screen and (min-width: 390px) and (min-height: 844px) {
+}
+
+/* TODO:  PIXEL 5  TODO: */
+@media screen and (min-width: 393px) and (min-height: 851px) {
+}
+
+/* TODO:  SAMSUNG GALAXY A51/A71  TODO: */
+/* TODO:  SAMSUNG GALAXY S20 ULTRA  TODO: */
+@media screen and (min-width: 412px) and (min-height: 914px) {
+}
+
+/* TODO:  APPLE IPHONE XR  TODO: */
+@media screen and (min-width: 414px) and (min-height: 896px) {
+}
+
+/* TODO:  SURFACE DUO  TODO: */
+@media screen and (min-width: 540px) and (min-height: 720px) {
+}
+
+/* TODO:  APPLE IPAD MINI  TODO: */
+@media screen and (min-width: 768px) and (min-height: 1024px) {
+}
+
+/* TODO:  APPLE IPAD AIR  TODO: */
+@media screen and (min-width: 820px) and (min-height: 1180px) {
+}
+
+/* TODO:  SURFACE PRO 7  TODO: */
+@media screen and (min-width: 912px) and (min-height: 1368px) {
+}
+
+/* TODO:  NEST HUB  TODO: */
+@media screen and (min-width: 1024px) and (min-height: 600) {
+}
+
+/* TODO:  NEST HUB MAX  TODO: */
+@media screen and (min-width: 1280px) and (min-height: 800px) {
+}
+
+/* ----------------------------------------------------------------------------------------- */
 /* ANTICIPATED BREAK POINT 1 : FIXME:  Larger than MOBILE screens - 400px / 40rem            */
 /* ----------------------------------------------------------------------------------------- */
 
