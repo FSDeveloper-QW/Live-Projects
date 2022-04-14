@@ -257,6 +257,10 @@ h6 {
   padding: 0.2rem 0.2rem 0.2rem 0.2rem;
 }
 
+/* ----------------------------- */
+/* TODO:  DOWNLOAD PDF BROCHURE  */
+/* ----------------------------- */
+
 .download__pdf {
   display: flex;
   flex-direction: column;
@@ -272,6 +276,7 @@ h6 {
 
 /* ------------------------------- */
 /* FIXME:  VIEW - LARGER SCREENS   */
+/* ------------------------------- */
 
 /* ===================================================================================================================== */
 /* TODO:  PART 4 - ACCORDIAN "MAIN" CONTAINER (HOLDING ALL ELEMENTS)                                                     */
