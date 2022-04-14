@@ -1,0 +1,1184 @@
+/* ===================================================================================================================== */
+/* TODO:  STYLING FOR FORM                                                                                               */
+/* ===================================================================================================================== */
+
+:root {
+  --color-page-background: white;
+  /* FORM TEXT INPUTS */
+  --color-input-border: #ccc;
+  --color-input-border-focus: #dc143c;
+  /* FORM BUTTONS */
+  --color-button-background: #dc143c;
+  --color-button-text: white;
+  /* CUSTOM CHECKBOX */
+  --color-custom-checkbox-border: #ccc;
+  --color-custom-checkbox-background: white;
+  --color-custom-checkbox-checkmark: #dc143c;
+  --color-custom-checkbox-focus: #dc143c;
+  --color-custom-checkbox-disabled: #959495;
+  /* CUSTOM RADIO BUTTON */
+  --color-custom-radiobutton-border: #ccc;
+  --color-custom-radiobutton-background: white;
+  --color-custom-radiobutton-circle: #dc143c;
+  --color-custom-radiobutton-focus: #dc143c;
+  --color-custom-radiobutton-disabled: #959495;
+  /* CUSTOM RANGE SLIDER (PART 1) - THUMB */
+  --color-custom-rangeslider-thumb-background: #dc143c;
+  --color-custom-rangeslider-thumb-border: #dc143c;
+  --color-custom-rangeslider-thumb-shadow-01: rgba(0, 0, 0, 0.35);
+  --color-custom-rangeslider-thumb-shadow-02: rgba(0, 0, 0, 0.35);
+  /* CUSTOM RANGE SLIDER (PART 2) - TRACK */
+  --color-custom-rangeslider-track-background: white;
+  --color-custom-rangeslider-track-background-focus: #faf9f6;
+  --color-custom-rangeslider-track-border: white;
+  --color-custom-rangeslider-track-shadow-01: rgba(0, 0, 0, 0.35);
+  --color-custom-rangeslider-track-shadow-02: rgba(0, 0, 0, 0.35);
+  /* FILE INPUT / UPLOAD */
+  --color-custom-fileinput-background: white;
+  --color-custom-fileinput-background-hover: #dc143c;
+  --color-custom-fileinput-background-hover-text: white;
+  --color-custom-fileinput-label-text: black;
+  --color-custom-fileinput-shadow-01: rgba(0, 0, 0, 0.35);
+  --color-custom-fileinput-shadow-02: rgba(0, 0, 0, 0.35);
+}
+
+* {
+  box-sizing: border-box;
+  font-family: "poppins", sans-serif;
+  margin: 0rem 0rem 0rem 0rem;
+  padding: 0rem 0rem 0rem 0rem;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-size: 1.6rem;
+  line-height: 1.5;
+}
+
+/* ---------------------------------------------- */
+/* FIXME:  FORM CONTAINER  FIXME:                 */
+/* ---------------------------------------------- */
+
+/* form {
+  width: 100vw;
+} */
+
+/* ---------------------------------------------- */
+/* FIXME:  FORM LABEL  FIXME:                     */
+/* ---------------------------------------------- */
+
+label {
+  display: block;
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin: 0.5rem 0.5rem 0.5rem 0.5rem;
+}
+
+/* ---------------------------------------------- */
+/* FIXME:  INPUT FIELD TYPE =  TEXT  FIXME:       */
+/* e.g. "NAME" or "LAST NAME" etc.                */
+/* ---------------------------------------------- */
+
+input[type="text"] {
+  /* width: 25rem; */
+  width: 50%;
+  border-radius: 0.5rem;
+  border: 1px solid var(--color-input-border);
+  /* box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.35); */
+  /* box-shadow: 0 5px 4px rgba(0, 0, 0, 0.35); */
+  margin: 0.5rem 0.5rem 0.5rem 0.35rem;
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: border-color 0.15s, box-shadow 0.15s;
+}
+
+input[type="text"]:focus {
+  border-color: var(--color-input-border-focus);
+  box-shadow: 0 0 0 2px rgba(220, 20, 60, 0.95);
+  outline: 0;
+}
+
+/* ---------------------------------------------- */
+/* FIXME:  INPUT FIELD TYPE =  TEL  FIXME:        */
+/* e.g. "TELEPHONE" or "MOBILE" Number etc.       */
+/* ---------------------------------------------- */
+
+input[type="tel"] {
+  /* width: 25rem; */
+  width: 50%;
+  border-radius: 0.5rem;
+  border: 1px solid var(--color-input-border);
+  /* box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.35); */
+  /* box-shadow: 0 5px 4px rgba(0, 0, 0, 0.35); */
+  margin: 0.5rem 0.5rem 0.5rem 0.35rem;
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: border-color 0.15s, box-shadow 0.15s;
+}
+
+input[type="tel"]:focus {
+  border-color: var(--color-input-border-focus);
+  box-shadow: 0 0 0 2px rgba(220, 20, 60, 0.95);
+  outline: 0;
+}
+
+/* ---------------------------------------------- */
+/* FIXME:  INPUT FIELD TYPE =  TEXTAREA  FIXME:   */
+/* Runs over multiple lines (rows) e.g. "Address" */
+/* ---------------------------------------------- */
+
+textarea {
+  resize: none;
+  /* width: 25rem; */
+  width: 50%;
+  border-radius: 0.5rem;
+  border: 1px solid var(--color-input-border);
+  /* box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.35); */
+  /* box-shadow: 0 5px 4px rgba(0, 0, 0, 0.35); */
+  margin: 0.5rem 0.5rem 0.5rem 0.35rem;
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: border-color 0.15s, box-shadow 0.15s;
+}
+
+textarea:focus {
+  border-color: var(--color-input-border-focus);
+  box-shadow: 0 0 0 2px rgba(220, 20, 60, 0.95);
+  outline: 0;
+}
+
+/* ---------------------------------------------- */
+/* FIXME:  INPUT FIELD = DATALIST          FIXME: */
+/* e.g. Countries, Provinces, Titles etc.         */
+/* ---------------------------------------------- */
+
+datalist {
+  /* width: 25rem; */
+  width: 50%;
+  border-radius: 0.5rem;
+  border: 1px solid var(--color-input-border);
+  /* box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.35); */
+  /* box-shadow: 0 5px 4px rgba(0, 0, 0, 0.35); */
+  margin: 0.5rem 0.5rem 0.5rem 0.35rem;
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: border-color 0.15s, box-shadow 0.15s;
+}
+
+datalist:focus {
+  border-color: var(--color-input-border-focus);
+  box-shadow: 0 0 0 2px rgba(220, 20, 60, 0.95);
+  outline: 0;
+}
+
+/* ---------------------------------------------- */
+/* FIXME:  INPUT FIELD = DROPDOWN LIST     FIXME: */
+/* e.g. Countries, Provinces, Titles etc.         */
+/* ---------------------------------------------- */
+
+select {
+  /* width: 25rem; */
+  width: 50%;
+  border-radius: 0.5rem;
+  border: 1px solid var(--color-input-border);
+  /* box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.35); */
+  /* box-shadow: 0 5px 4px rgba(0, 0, 0, 0.35); */
+  margin: 0.5rem 0.5rem 0.5rem 0.35rem;
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: border-color 0.15s, box-shadow 0.15s;
+}
+
+select:focus {
+  border-color: var(--color-input-border-focus);
+  box-shadow: 0 0 0 2px rgba(220, 20, 60, 0.95);
+  outline: 0;
+}
+
+/* ------------------------------------------------------------------------- */
+/* TODO:  START STYLING OF CUSTOM CHECKBOX                                   */
+/* ------------------------------------------------------------------------- */
+
+/* ---------------------------------------------- */
+/* FIXME:  INPUT FIELD = CHECKBOX          FIXME: */
+/* ---------------------------------------------- */
+
+.checkbox__option {
+  font-size: 1.2rem;
+  font-weight: 600;
+  line-height: 1.1;
+  text-transform: none;
+  display: grid;
+  grid-template-columns: 1rem auto;
+  gap: 2rem;
+  margin: 2rem 1rem 2rem 0.4rem;
+  cursor: pointer;
+}
+
+/* ------------------------------------ */
+/* THIS IS TO HIDE THE NATIVE CHECKBOX  */
+/* ------------------------------------ */
+
+input[type="checkbox"] {
+  /* Add if not using autoprefixer */
+  -webkit-appearance: none;
+  appearance: none;
+  /* For iOS < 15 to remove gradient background */
+  background-color: var(--color-custom-checkbox-background);
+  /* Not removed via appearance */
+  margin: 0;
+}
+
+/* --------------------------------------- */
+/* THIS IS TO DISPLAY THE CUSTOM CHECKBOX  */
+/* --------------------------------------- */
+
+input[type="checkbox"] {
+  appearance: none;
+  background-color: var(--color-custom-checkbox-background);
+  margin: 0;
+  font: inherit;
+  color: var(--color-custom-checkbox-border);
+  width: 1.5rem;
+  height: 1.5rem;
+  border: 0.15em solid var(--color-custom-checkbox-border);
+  border-radius: 0.15em;
+  transform: translateY(-0.075em);
+  display: grid;
+  place-content: center;
+  cursor: pointer;
+}
+
+.checkbox__option + .checkbox__option {
+  margin-top: 1rem;
+}
+
+/* --------------------------------------- */
+/* CUSTOM CHECKBOX - CHECKED STATE         */
+/* --------------------------------------- */
+
+input[type="checkbox"]::before {
+  content: "";
+  width: 0.7rem;
+  height: 0.7rem;
+  transform: scale(0);
+  transition: 120ms transform ease-in-out;
+  box-shadow: inset 1em 1em var(--color-custom-checkbox-checkmark);
+  /* Windows High Contrast Mode */
+  background-color: CanvasText;
+  /* Creating a checkmark with CLIP-PATH */
+  transform-origin: bottom left;
+  clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
+}
+
+input[type="checkbox"]:checked::before {
+  transform: scale(1);
+}
+
+/* --------------------------------------- */
+/* CUSTOM CHECKBOX - FOCUSSED STATE        */
+/* --------------------------------------- */
+
+input[type="checkbox"]:focus {
+  outline: max(2px, 0.15em) solid var(--color-custom-checkbox-focus);
+  outline-offset: max(1px, 0.15em);
+}
+
+/* --------------------------------------- */
+/* CUSTOM CHECKBOX - DISABLED STATE        */
+/* --------------------------------------- */
+
+.checkbox__option--disabled {
+  color: var(--color-custom-checkbox-disabled);
+  cursor: not-allowed;
+}
+
+input[type="checkbox"]:disabled {
+  color: var(--color-custom-checkbox-disabled);
+  cursor: not-allowed;
+}
+
+/* ------------------------------------------------------------------------- */
+/* TODO:  END OF STYLING OF CUSTOM CHECKBOX                                  */
+/* ------------------------------------------------------------------------- */
+
+/* ------------------------------------------------------------------------- */
+/* TODO: START STYLING OF CUSTOM RADIO BUTTON                                */
+/* ------------------------------------------------------------------------- */
+
+/* ---------------------------------------------- */
+/* FIXME:  INPUT FIELD = RADIO BUTTON      FIXME: */
+/* ---------------------------------------------- */
+
+.radio__option {
+  font-size: 1.2rem;
+  font-weight: 600;
+  line-height: 1.1;
+  text-transform: capitalize;
+  display: grid;
+  grid-template-columns: 1rem auto;
+  gap: 2rem;
+  margin: 2rem 1rem 2rem 0.4rem;
+  cursor: pointer;
+}
+
+/* --------------------------------------------- */
+/* THIS IS TO HIDE THE NATIVE RADIO BUTTON       */
+/* --------------------------------------------- */
+
+input[type="radio"] {
+  /* Add if not using autoprefixer */
+  -webkit-appearance: none;
+  appearance: none;
+  /* For iOS < 15 to remove gradient background */
+  background-color: var(--color-custom-radiobutton-background);
+  /* Not removed via appearance */
+  margin: 0;
+}
+
+/* -------------------------------------------- */
+/* THIS IS TO DISPLAY THE CUSTOM RADIO BUTTON   */
+/* -------------------------------------------- */
+
+input[type="radio"] {
+  appearance: none;
+  background-color: var(--color-custom-radiobutton-background);
+  margin: 0;
+  font: inherit;
+  color: var(--color-custom-radiobutton-border);
+  width: 1.5rem;
+  height: 1.5rem;
+  border: 0.15em solid var(--color-custom-radiobutton-border);
+  border-radius: 50%;
+  transform: translateY(-0.075em);
+  display: grid;
+  place-content: center;
+  cursor: pointer;
+}
+
+.radio__option + .radio__option {
+  margin-top: 1rem;
+}
+
+/* -------------------------------------------- */
+/* CUSTOM RADIO BUTTON - CHECKED STATE          */
+/* -------------------------------------------- */
+
+input[type="radio"]::before {
+  content: "";
+  width: 0.7rem;
+  height: 0.7rem;
+  border-radius: 50%;
+  transform: scale(0);
+  transition: 120ms transform ease-in-out;
+  box-shadow: inset 1em 1em var(--color-custom-radiobutton-circle);
+  /* Windows High Contrast Mode */
+  background-color: CanvasText;
+}
+
+input[type="radio"]:checked::before {
+  transform: scale(1);
+}
+
+/* -------------------------------------------- */
+/* CUSTOM RADIO BUTTON - FOCUSSED STATE         */
+/* -------------------------------------------- */
+
+input[type="radio"]:focus {
+  outline: max(2px, 0.15em) solid var(--color-custom-radiobutton-focus);
+  outline-offset: max(1px, 0.15em);
+}
+
+/* -------------------------------------------- */
+/* CUSTOM RADIO BUTTON - DISABLED STATE         */
+/* -------------------------------------------- */
+
+.radio__option--disabled {
+  color: var(--color-custom-radiobutton-disabled);
+  cursor: not-allowed;
+}
+
+input[type="radio"]:disabled {
+  color: var(--color-custom-radiobutton-disabled);
+  cursor: not-allowed;
+}
+
+/* ------------------------------------------------------------------------- */
+/* TODO:  END OF STYLING OF CUSTOM RADIO BUTTON                              */
+/* ------------------------------------------------------------------------- */
+
+/* ------------------------------------------------------------------------- */
+/* TODO: START STYLING OF CUSTOM RANGE SLIDER                                */
+/* ------------------------------------------------------------------------- */
+
+/* ---------------------------------------------- */
+/* FIXME: INPUT FIELD TYPE = RANGE SLIDER  FIXME: */
+/* ---------------------------------------------- */
+
+/* ---------------------------------------------- */
+/* APPLYING BASE STYLES & HIDING NATIVE SLIDER    */
+/* ---------------------------------------------- */
+
+input[type="range"] {
+  /* This hide the native slider */
+  -webkit-appearance: none;
+  /* FIREFOX: Required a specific width */
+  width: 50%;
+  /* CHROME: Apprears white */
+  background: transparent;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+}
+
+input[type="range"]:focus {
+  /* Removes the blue border */
+  outline: none;
+}
+
+input[type="range"]::-ms-track {
+  width: 50%;
+  cursor: pointer;
+  /* This hide the native slider */
+  background: transparent;
+  border-color: transparent;
+  color: transparent;
+}
+
+/* -------------------------------------------- */
+/* THIS IS TO DISPLAY THE CUSTOM RANGE SLIDER   */
+/* -------------------------------------------- */
+
+/* -------------------------------------------- */
+/* STYLING THE FIXME: RANGE THUMB (BUTTON)      */
+/* -------------------------------------------- */
+
+/* Special styling for WebKit/Blink */
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  border: 1px solid var(--color-custom-rangeslider-thumb-border);
+  height: 3rem;
+  width: 1.4rem;
+  border-radius: 0.5rem;
+  background: var(--color-custom-rangeslider-thumb-background);
+  cursor: pointer;
+  /* FOR CHROME: You need to specify a margin */
+  margin-top: -1.15rem;
+  /* FOR APPEARANCE IMPROVEMENT */
+  box-shadow: 0px 5px 4px var(--color-custom-rangeslider-thumb-shadow-01),
+    3px 5px 20px var(--color-custom-rangeslider-thumb-shadow-02);
+}
+
+/* FIREFOX: Same Styles */
+input[type="range"]::-moz-range-thumb {
+  box-shadow: 0px 5px 4px var(--color-custom-rangeslider-thumb-shadow-01),
+    3px 5px 20px var(--color-custom-rangeslider-thumb-shadow-02);
+  border: 1px solid var(--color-custom-rangeslider-thumb-border);
+  height: 3rem;
+  width: 1.4rem;
+  border-radius: 0.5rem;
+  background: var(--color-custom-rangeslider-thumb-background);
+  cursor: pointer;
+}
+
+/* INTERNET EXPLORER: Same Styles */
+input[type="range"]::-ms-thumb {
+  box-shadow: 0px 5px 4px var(--color-custom-rangeslider-thumb-shadow-01),
+    3px 5px 20px var(--color-custom-rangeslider-thumb-shadow-02);
+  border: 1px solid var(--color-custom-rangeslider-thumb-border);
+  height: 3rem;
+  width: 1.4rem;
+  border-radius: 0.5rem;
+  background: var(--color-custom-rangeslider-thumb-background);
+  cursor: pointer;
+}
+
+/* -------------------------------------------- */
+/* STYLING THE FIXME: RANGE TRACK (SLIDE LINE)  */
+/* -------------------------------------------- */
+
+input[type="range"]::-webkit-slider-runnable-track {
+  width: 50%;
+  height: 0.84rem;
+  cursor: pointer;
+  box-shadow: 0px 5px 4px var(--color-custom-rangeslider-track-shadow-01),
+    3px 5px 20px var(--color-custom-rangeslider-track-shadow-02);
+  background: var(--color-custom-rangeslider-track-background);
+  border-radius: 1.3px;
+  border: 0.2px solid var(--color-custom-rangeslider-track-border);
+  margin: 1.5rem 0.5rem 1.5rem 0.5rem;
+}
+
+input[type="range"]:focus::-webkit-slider-runnable-track {
+  background: var(--color-custom-rangeslider-track-background-focus);
+}
+
+input[type="range"]::-moz-range-track {
+  width: 50%;
+  height: 0.84rem;
+  cursor: pointer;
+  box-shadow: 0px 5px 4px var(--color-custom-rangeslider-track-shadow-01),
+    3px 5px 20px var(--color-custom-rangeslider-track-shadow-02);
+  background: var(--color-custom-rangeslider-track-background);
+  border-radius: 1.3px;
+  border: 0.2px solid var(--color-custom-rangeslider-track-border);
+  margin: 1.5rem 0.5rem 1.5rem 0.5rem;
+}
+
+input[type="range"]::-ms-track {
+  width: 50%;
+  height: 0.84rem;
+  cursor: pointer;
+  background: transparent;
+  border-color: transparent;
+  border-width: 16px 0;
+  color: transparent;
+  margin: 1.5rem 0.5rem 1.5rem 0.5rem;
+}
+input[type="range"]::-ms-fill-lower {
+  background: var(--color-custom-rangeslider-track-background);
+  border: 0.2px solid var(--color-custom-rangeslider-track-border);
+  border-radius: 2.6px;
+  box-shadow: 0px 5px 4px var(--color-custom-rangeslider-track-shadow-01),
+    3px 5px 20px var(--color-custom-rangeslider-track-shadow-02);
+}
+input[type="range"]:focus::-ms-fill-lower {
+  background: var(--color-custom-rangeslider-track-background);
+}
+input[type="range"]::-ms-fill-upper {
+  background: var(--color-custom-rangeslider-track-background);
+  border: 0.2px solid var(--color-custom-rangeslider-track-border);
+  border-radius: 2.6px;
+  box-shadow: 0px 5px 4px var(--color-custom-rangeslider-track-shadow-01),
+    3px 5px 20px var(--color-custom-rangeslider-track-shadow-02);
+}
+input[type="range"]:focus::-ms-fill-upper {
+  background: var(--color-custom-rangeslider-track-background);
+}
+
+/* ------------------------------------------------------------------------- */
+/* TODO:  END OF STYLING OF CUSTOM RANGE SLIDER                              */
+/* ------------------------------------------------------------------------- */
+
+/* ------------------------------------------------------------------------- */
+/* TODO: START STYLING OF CUSTOM FILE-UPLOAD                                 */
+/* ------------------------------------------------------------------------- */
+
+/* ---------------------------------------------- */
+/* FIXME: INPUT FIELD TYPE = FILE          FIXME: */
+/* ---------------------------------------------- */
+
+.file-input {
+  display: inline-block;
+  margin: 1rem 0rem 1rem 0.3rem;
+  padding: 1rem 1rem 1rem 1rem;
+  text-align: left;
+  background: var(--color-custom-fileinput-background);
+  /* width: 450px; */
+  width: 50%;
+  position: relative;
+  border-radius: 0.5rem;
+  box-shadow: 0px 5px 4px var(--color-custom-fileinput-shadow-01),
+    3px 5px 20px var(--color-custom-fileinput-shadow-02);
+}
+
+/* ---------------------------------------------- */
+/* HIDING THE NATIVE FILE UPLOADER                */
+/* ---------------------------------------------- */
+
+.file-input > [type="file"] {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  z-index: 10;
+  cursor: pointer;
+}
+
+/* -------------------------------------------- */
+/* STYLE AND DISPLAY THE CUSTOM FILE UPLOADER   */
+/* -------------------------------------------- */
+
+.file-input > .button {
+  /* display: inline-block; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0rem 0.5rem 0.75rem 0.5rem;
+  padding: 0.8rem 1rem 0.8rem 1rem;
+  font-size: 1.3rem;
+  font-weight: 500;
+  background: var(--color-custom-fileinput-background);
+  border-radius: 0.5rem;
+  box-shadow: 0px 5px 4px var(--color-custom-fileinput-shadow-01),
+    3px 5px 20px var(--color-custom-fileinput-shadow-02);
+  cursor: pointer;
+}
+
+.file-input:hover > .button {
+  background: var(--color-custom-fileinput-background-hover);
+  color: var(--color-custom-fileinput-background-hover-text);
+}
+
+.file-input > .label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1.5rem 0.5rem 0rem 0.5rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--color-custom-fileinput-label-text);
+  white-space: nowrap;
+  opacity: 0.5;
+}
+
+.file-input.-chosen > .label {
+  opacity: 1;
+}
+
+.fa {
+  font-size: 1.8rem;
+  margin: 0rem 1rem 0rem 0rem;
+}
+
+label .label__strong {
+  color: #dc143c;
+}
+
+/* .wrapper body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #6990f2;
+}
+
+.wrapper {
+  width: 430px;
+  padding: 30px;
+  background: white;
+  border-radius: 5px;
+  border: 1px solid green;
+}
+
+.wrapper header {
+  color: #6990f2;
+  font-size: 27px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.wrapper form {
+  display: flex;
+  flex-direction: column;
+  margin: 30px 0;
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
+  height: 167px;
+  border-radius: 5px;
+  border: 2px dashed #6990f2;
+}
+
+form :where(i, p) {
+  color: #6990f2;
+}
+
+form i {
+  font-size: 50px;
+}
+
+form p {
+  font-size: 16px;
+  margin-top: 15px;
+}
+
+section .row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  background: #e9f0ff;
+  margin-bottom: 10px;
+  padding: 15px 20px;
+  border-radius: 5px;
+}
+
+section .row i {
+  font-size: 30px;
+  color: #6990f2;
+}
+
+section .details span {
+  font-size: 14px;
+}
+
+.progress-area .row .content {
+  width: 100%;
+  margin-left: 15px;
+}
+
+.progress-area .details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 7px;
+}
+
+.progress-area .progress-bar {
+  width: 100%;
+  height: 6px;
+  background: white;
+  margin-bottom: 4px;
+  border-radius: 30px;
+}
+
+.progress-bar .progress {
+  width: 0%;
+  height: 100%;
+  background: #6990f2;
+  border-radius: inherit;
+}
+
+.uploaded-area {
+  max-height: 150px;
+  overflow-y: scroll;
+}
+
+.uploaded-area::-webkit-scrollbar {
+  width: 0px;
+}
+
+.uploaded-area .row .content {
+  display: flex;
+  align-items: center;
+}
+
+.uploaded-area .row .details {
+  display: flex;
+  flex-direction: column;
+  margin-left: 15px;
+}
+
+.uploaded-area .details .size {
+  font-size: 11px;
+  color: #404040;
+}
+
+.uploaded-area .fa-check {
+  color: #6990f2;
+  font-size: 16px;
+} */
+
+/* -------------------------------------------- */
+/* STYLE AND DISPLAY THE CUSTOM FILE UPLOADER   */
+/* -------------------------------------------- */
+
+/* ------------------------------------------------------------------------- */
+/* TODO:  END OF STYLING OF CUSTOM FILE-UPLOAD                               */
+/* ------------------------------------------------------------------------- */
+
+/* ---------------------------------------------- */
+/* FIXME:  INPUT FIELD TYPE =  DATE  FIXME:       */
+/* ---------------------------------------------- */
+
+input[type="date"] {
+  /* width: 25rem; */
+  width: 50%;
+  border-radius: 0.5rem;
+  border: 1px solid var(--color-input-border);
+  /* box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.35); */
+  /* box-shadow: 0 5px 4px rgba(0, 0, 0, 0.35); */
+  margin: 0.5rem 0.5rem 0.5rem 0.35rem;
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: border-color 0.15s, box-shadow 0.15s;
+}
+
+input[type="date"]:focus {
+  border-color: var(--color-input-border-focus);
+  box-shadow: 0 0 0 2px rgba(220, 20, 60, 0.95);
+  outline: 0;
+}
+
+/* ---------------------------------------------- */
+/* FIXME:  INPUT FIELD TYPE =  EMAIL  FIXME:      */
+/* ---------------------------------------------- */
+
+input[type="email"] {
+  /* width: 25rem; */
+  width: 50%;
+  border-radius: 0.5rem;
+  border: 1px solid var(--color-input-border);
+  /* box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.35); */
+  /* box-shadow: 0 5px 4px rgba(0, 0, 0, 0.35); */
+  margin: 0.5rem 0.5rem 0.5rem 0.35rem;
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: border-color 0.15s, box-shadow 0.15s;
+}
+
+input[type="email"]:focus {
+  border-color: var(--color-input-border-focus);
+  box-shadow: 0 0 0 2px rgba(220, 20, 60, 0.95);
+  outline: 0;
+}
+
+/* ---------------------------------------------- */
+/* FIXME:  INPUT FIELD TYPE =  URL  FIXME:      */
+/* ---------------------------------------------- */
+
+input[type="url"] {
+  /* width: 25rem; */
+  width: 50%;
+  border-radius: 0.5rem;
+  border: 1px solid var(--color-input-border);
+  /* box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.35); */
+  /* box-shadow: 0 5px 4px rgba(0, 0, 0, 0.35); */
+  margin: 0.5rem 0.5rem 0.5rem 0.35rem;
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: border-color 0.15s, box-shadow 0.15s;
+}
+
+input[type="url"]:focus {
+  border-color: var(--color-input-border-focus);
+  box-shadow: 0 0 0 2px rgba(220, 20, 60, 0.95);
+  outline: 0;
+}
+
+/* ---------------------------------------------- */
+/* FIXME:  INPUT FIELD TYPE =  NUMBER  FIXME:     */
+/* ---------------------------------------------- */
+
+input[type="number"] {
+  /* width: 25rem; */
+  width: 50%;
+  border-radius: 0.5rem;
+  border: 1px solid var(--color-input-border);
+  /* box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.35); */
+  /* box-shadow: 0 5px 4px rgba(0, 0, 0, 0.35); */
+  margin: 0.5rem 0.5rem 0.5rem 0.35rem;
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: border-color 0.15s, box-shadow 0.15s;
+}
+
+input[type="number"]:focus {
+  border-color: var(--color-input-border-focus);
+  box-shadow: 0 0 0 2px rgba(220, 20, 60, 0.95);
+  outline: 0;
+}
+
+/* ---------------------------------------------- */
+/* FIXME:  INPUT FIELD TYPE =  PASSWORD  FIXME:   */
+/* ---------------------------------------------- */
+
+input[type="password"] {
+  /* width: 25rem; */
+  width: 50%;
+  border-radius: 0.5rem;
+  border: 1px solid var(--color-input-border);
+  /* box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.35); */
+  /* box-shadow: 0 5px 4px rgba(0, 0, 0, 0.35); */
+  margin: 0.5rem 0.5rem 0.5rem 0.35rem;
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: border-color 0.15s, box-shadow 0.15s;
+}
+
+input[type="password"]:focus {
+  border-color: var(--color-input-border-focus);
+  box-shadow: 0 0 0 2px rgba(220, 20, 60, 0.95);
+  outline: 0;
+}
+
+/* ---------------------------------------------- */
+/* FIXME:  FORM BUTTONS  FIXME:                   */
+/* ---------------------------------------------- */
+
+button {
+  background: var(--color-button-background);
+  color: var(--color-button-text);
+  border: 0;
+  outline: 0;
+  border-radius: 0.5rem;
+  width: 10rem;
+  font-size: 1.3rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin: 0.5rem 1.35rem 0.5rem 1.35rem;
+  padding: 0.5rem 1rem 0.5rem 1rem;
+}
+
+.form__group {
+  margin: 0rem 0rem 1rem 1rem;
+}
+
+/* ---------------------------------------------- */
+/* FIXME:  STYLING - GOOGLE RECAPTCHA  FIXME:     */
+/* ---------------------------------------------- */
+
+.g-recaptcha {
+  margin: 2rem 0rem 2rem 0.3rem;
+  transform: scale(0.89);
+  -webkit-transform: scale(0.89);
+  transform-origin: 0 0;
+  -webkit-transform-origin: 0 0;
+}
+
+/* ===================================================================================================================== */
+/* TODO:  SET THE RESPONSIVE DEFAULT SIZES FOR ALL HEADING ELEMENTS (H1 - H6)                                      TODO: */
+/* ===================================================================================================================== */
+
+/* ===================================================================================================================== */
+/* TODO:  HEADING ELEMENTS : MOBILE / SMALLER SCREENS STYLING                                        FIXME: MOBILE FIRST */
+/* ===================================================================================================================== */
+
+/* ===================================================================================================================== */
+/* GENERAL NOTES (ALL HEADER ELEMENTS):                                                                                  */
+/* 1.  Set the FONT-FAMILY to be used for the page (i.e. Google Fonts)                                                   */
+/* 2.  Set all MARGINS - Top-Rigth-Bottom-Left                                                                           */
+/* 3.  Set the FONT-WEIGHT : normal, bold, 100, 300, 500, 700 etc.                                                       */
+/* ===================================================================================================================== */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "poppins";
+  margin: 0rem 0rem 2rem 0rem;
+  font-weight: 300;
+}
+
+/* ===================================================================================================================== */
+/* GENERAL NOTES (INDIVIDUAL HEADER ELEMENTS):                                                                           */
+/* 1.  Set the FONT-SIZE to be used as the standard for the page [1.6rem = 16px]                                         */
+/* 2.  Set LINE-HEIGHT (spacing) : 1rem, 1.25rem, 1.4rem, 1.5rem etc                                                     */
+/* 3.  Set LETTER-SPACING : normal, 0.1rem, 0.2rem, 0.3rem etc                                                           */
+/* ===================================================================================================================== */
+
+h1 {
+  font-size: 4rem;
+  line-height: 1.2;
+  letter-spacing: 0.1rem;
+}
+
+h2 {
+  font-size: 3.6rem;
+  line-height: 1.25;
+  letter-spacing: 0.1rem;
+}
+
+h3 {
+  font-size: 3rem;
+  line-height: 1.3;
+  letter-spacing: 0.1rem;
+}
+
+h4 {
+  font-size: 2.4rem;
+  line-height: 1.35;
+  letter-spacing: 0.08rem;
+}
+
+h5 {
+  font-size: 1.8rem;
+  line-height: 1.5;
+  letter-spacing: 0.05rem;
+}
+
+h6 {
+  font-size: 1.5rem;
+  line-height: 1.6;
+  letter-spacing: 0;
+}
+
+/* ===================================================================================================================== */
+/* TODO:  HEADING ELEMENTS : WEBSITE / LARGER SCREENS STYLING                                      FIXME: LARGER SCREENS */
+/* ===================================================================================================================== */
+
+@media (min-width: 600px) {
+  h1 {
+    font-size: 5rem;
+  }
+  h2 {
+    font-size: 4.2rem;
+  }
+  h3 {
+    font-size: 3.6rem;
+  }
+  h4 {
+    font-size: 3rem;
+  }
+  h5 {
+    font-size: 2.4rem;
+  }
+  h6 {
+    font-size: 1.5rem;
+  }
+}
+
+/* ===================================================================================================================== */
+/* TODO:  PART 1 -                                                                                                       */
+/* ===================================================================================================================== */
+
+/* ===================================================================================================================== */
+/* FIXME:  SPECIAL NOTES (PART 1)                                                                                        */
+/* ===================================================================================================================== */
+/* 01.            */
+/* 02.            */
+/* 03             */
+/* 04.            */
+/* 05.            */
+/* ===================================================================================================================== */
+
+/* ===================================================================================================================== */
+/* TODO:  PART 2 -                                                                                                       */
+/* ===================================================================================================================== */
+
+/* ===================================================================================================================== */
+/* FIXME:  SPECIAL NOTES (PART 2)                                                                                        */
+/* ===================================================================================================================== */
+/* 01.            */
+/* 02.            */
+/* 03             */
+/* 04.            */
+/* 05.            */
+/* ===================================================================================================================== */
+
+/* ===================================================================================================================== */
+/* TODO:  PART 3 -                                                                                                       */
+/* ===================================================================================================================== */
+
+/* ===================================================================================================================== */
+/* FIXME:  SPECIAL NOTES (PART 3)                                                                                        */
+/* ===================================================================================================================== */
+/* 01.            */
+/* 02.            */
+/* 03             */
+/* 04.            */
+/* 05.            */
+/* ===================================================================================================================== */
+
+/* ===================================================================================================================== */
+/* TODO:  PART 4 -                                                                                                       */
+/* ===================================================================================================================== */
+
+/* ===================================================================================================================== */
+/* FIXME:  SPECIAL NOTES (PART 4)                                                                                        */
+/* ===================================================================================================================== */
+/* 01.            */
+/* 02.            */
+/* 03             */
+/* 04.            */
+/* 05.            */
+/* ===================================================================================================================== */
+
+/* ===================================================================================================================== */
+/* TODO:  PART 5 -                                                                                                       */
+/* ===================================================================================================================== */
+
+/* ===================================================================================================================== */
+/* FIXME:  SPECIAL NOTES (PART 5)                                                                                        */
+/* ===================================================================================================================== */
+/* 01.            */
+/* 02.            */
+/* 03             */
+/* 04.            */
+/* 05.            */
+/* ===================================================================================================================== */
+
+/* ===================================================================================================================== */
+/* TODO:  PART 6 -                                                                                                       */
+/* ===================================================================================================================== */
+
+/* ===================================================================================================================== */
+/* FIXME:  SPECIAL NOTES (PART 6)                                                                                        */
+/* ===================================================================================================================== */
+/* 01.            */
+/* 02.            */
+/* 03             */
+/* 04.            */
+/* 05.            */
+/* ===================================================================================================================== */
+
+/* ===================================================================================================================== */
+/* TODO:  PART 7 -                                                                                                       */
+/* ===================================================================================================================== */
+
+/* ===================================================================================================================== */
+/* FIXME:  SPECIAL NOTES (PART 7)                                                                                        */
+/* ===================================================================================================================== */
+/* 01.            */
+/* 02.            */
+/* 03             */
+/* 04.            */
+/* 05.            */
+/* ===================================================================================================================== */
+
+/* ===================================================================================================================== */
+/* TODO:  PART 8 -                                                                                                       */
+/* ===================================================================================================================== */
+
+/* ===================================================================================================================== */
+/* FIXME:  SPECIAL NOTES (PART 8)                                                                                        */
+/* ===================================================================================================================== */
+/* 01.            */
+/* 02.            */
+/* 03             */
+/* 04.            */
+/* 05.            */
+/* ===================================================================================================================== */
+
+/* ===================================================================================================================== */
+/* TODO:  PART 9 -                                                                                                       */
+/* ===================================================================================================================== */
+
+/* ===================================================================================================================== */
+/* FIXME:  SPECIAL NOTES (PART 9)                                                                                        */
+/* ===================================================================================================================== */
+/* 01.            */
+/* 02.            */
+/* 03             */
+/* 04.            */
+/* 05.            */
+/* ===================================================================================================================== */
+
+/* ===================================================================================================================== */
+/* TODO:  PART 10 -                                                                                                      */
+/* ===================================================================================================================== */
+
+/* ===================================================================================================================== */
+/* FIXME:  SPECIAL NOTES (PART 10)                                                                                       */
+/* ===================================================================================================================== */
+/* 01.            */
+/* 02.            */
+/* 03             */
+/* 04.            */
+/* 05.            */
+/* ===================================================================================================================== */
+
+/* ===================================================================================================================== */
+/*                                                                                            TODO:  STYLING ENDS  TODO: */
+/* ===================================================================================================================== */

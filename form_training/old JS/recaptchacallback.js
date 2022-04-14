@@ -1,3 +1,0 @@
-function successCallback(token) {
-  debugger;
-}
