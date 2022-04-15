@@ -524,6 +524,30 @@ h6 {
   box-shadow: 3px 5px 20px 0 rgba(0, 0, 0, 0.35);
 }
 
+/* ------------------------- */
+/* FIXME:  PRIVACY STATEMENT */
+/* ------------------------- */
+
+.privacy__statement {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem 0.4rem 2rem 0.4rem;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+}
+
+.privacy__statement strong {
+  text-decoration: none;
+  color: var(--color-resellers);
+}
+
+.privacy__statement a {
+  text-decoration: none;
+  color: var(--color-resellers);
+  cursor: pointer;
+}
+
 /* ------------------------------- */
 /* FIXME:  VIEW - LARGER SCREENS   */
 /* ------------------------------- */
