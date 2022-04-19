@@ -1,0 +1,185 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:400,700,900);
+
+/* $border-radius-size: 14px;
+$barbarian: #ec9b3b;
+$archer: #ee5487;
+$giant: #f6901a;
+$goblin: #82bb30;
+$wizard: #4facff; */
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+/* body {
+  background: linear-gradient(
+      to bottom,
+      rgba(140, 122, 122, 1) 0%,
+      rgba(175, 135, 124, 1) 65%,
+      rgba(175, 135, 124, 1) 100%
+    )
+    fixed;
+  background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/coc-background.jpg")
+    no-repeat center center fixed;
+  background-size: cover;
+  font: 14px/20px "Lato", Arial, sans-serif;
+  color: #9e9e9e;
+  margin-top: 30px;
+} */
+
+/* TODO:  THE CONTAINER HOLDING ALL PRODUCT CARD ELEMENTS  TODO: */
+
+.container__all__product__card__elements {
+  margin: auto;
+  width: 600px;
+  text-align: center;
+  border: 1px solid red;
+}
+
+/* TODO:  THE CONTAINER HOLDING ALL PRODUCT CARDS  TODO: */
+
+.container__all__product__cards {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  border: 1px solid green;
+}
+
+.container__all__product__cards:focus {
+  outline: 0;
+}
+
+/* TODO:  THE CONTAINER HOLDING A SINGLE PRODUCT CARD  TODO: */
+
+.container__product__card {
+  background: white;
+  width: 300px;
+  display: inline-block;
+  margin: auto;
+  border-radius: 14px;
+  position: relative;
+  text-align: center;
+  box-shadow: -1px 15px 30px -12px black;
+  z-index: 9999;
+  border: 2px solid purple;
+}
+
+/* TODO:  CONTAINER HOLDING PRODUCT CARD IMAGE & IMAGE BACKGROUND  TODO: */
+
+.container__product__card__image {
+  position: relative;
+  height: 230px;
+  margin-bottom: 35px;
+  border-top-left-radius: 14px;
+  border-top-right-radius: 14px;
+}
+
+.container__product__card__image__background {
+  background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/barbarian-bg.jpg");
+}
+
+.container__product__card__image__background img {
+  width: 400px;
+  position: absolute;
+  top: -65px;
+  left: -70px;
+}
+
+/* TODO:  CONTAINER HOLDING PRODUCT CARD - MAIN TITLE  TODO: */
+
+.container__product__card__main__title {
+  font-size: 26px;
+  color: black;
+  font-weight: 900;
+  margin-bottom: 5px;
+}
+
+/* TODO:  CONTAINER HOLDING PRODUCT CARD - SUB-TITLE  TODO: */
+
+.container__product__card__sub__title {
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 700;
+  margin-bottom: 3px;
+  color: #ec9b3b;
+}
+
+/* TODO:  CONTAINER HOLDING PRODUCT CARD - DESCRIPTION  TODO: */
+
+.container__product__card__description {
+  padding: 20px;
+  margin-bottom: 10px;
+}
+
+/* TODO:  CONTAINER HOLDING PRODUCT CARD - SPECIFICATIONS & STATS  TODO: */
+
+.container__product__card__all__specifications {
+  color: white;
+  font-weight: 700;
+  border-bottom-left-radius: 14px;
+  border-bottom-right-radius: 14px;
+}
+
+.container__product__card__all__specifications .statistics {
+  width: 33%;
+  float: left;
+  padding: 20px 15px;
+}
+
+.container__product__card__all__specifications sup {
+  position: absolute;
+  bottom: 4px;
+  font-size: 45%;
+  margin-left: 2px;
+}
+
+.container__product__card__all__specifications .statistic__value {
+  position: relative;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.container__product__card__all__specifications .statistic__name {
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 12px;
+}
+.container__product__card__all__specifications .no-border {
+  border-right: none;
+}
+
+.container__product__card__all__specifications__background {
+  background: #ec9b3b;
+}
+
+.container__product__card__all__specifications__background .statistics {
+  border-right: 1px solid #bd7c2f;
+}
+
+/* .clash-card__unit-stats {
+  color: white;
+  font-weight: 700;
+  border-bottom-left-radius: 14px;
+  border-bottom-right-radius: 14px;
+} */
+
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+
+/* 
+.slick-prev {
+  left: 100px;
+  z-index: 999;
+}
+
+.slick-next {
+  right: 100px;
+  z-index: 999;
+} */

@@ -251,11 +251,11 @@ h6 {
 }
 
 /* .clash-card__unit-stats {
-  color: white;
-  font-weight: 700;
-  border-bottom-left-radius: 14px;
-  border-bottom-right-radius: 14px;
-} */
+    color: white;
+    font-weight: 700;
+    border-bottom-left-radius: 14px;
+    border-bottom-right-radius: 14px;
+  } */
 
 .clearfix:after {
   visibility: hidden;
@@ -267,15 +267,15 @@ h6 {
 }
 
 /* 
-.slick-prev {
-  left: 100px;
-  z-index: 999;
-}
-
-.slick-next {
-  right: 100px;
-  z-index: 999;
-} */
+  .slick-prev {
+    left: 100px;
+    z-index: 999;
+  }
+  
+  .slick-next {
+    right: 100px;
+    z-index: 999;
+  } */
 
 /* ===================================================================================================================== */
 /* FIXME:  SPECIAL NOTES (PART 1)                                                                                        */
