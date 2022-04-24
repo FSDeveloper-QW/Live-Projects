@@ -1,0 +1,774 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+    <!-- TODO:   STANDARD META DATA - BASIC REQUIREMENT                                                         -->
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+    <!-- TODO:   STANDARD META DATA - MOBILE SPECIFIC                                                           -->
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+    <!-- FIXME:  PART 2 - SEARCH ENGINE OPTIMIZATION (SEO) : STANDARD HTML TOOLS - DESCRIPTION                  -->
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+
+    <meta
+      name="description"
+      content="ENTER A SHORT DESCRIPTION OF YOUR BUSINESS FOR GOOGLE SEARCH ENGINES TO INDEX"
+    />
+
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+    <!-- TODO:   PROVIDE A TITLE FOR YOUR PAGE - APPEARS IN BROWSER TAB                                         -->
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+
+    <title>E-COMMERCE STORE</title>
+
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+    <!-- TODO:   LINK GOOGLE FONTS - TO USE CERTAIN FONTS ON YOUR PAGE - https://fonts.google.com/              -->
+    <!-- MY FONTS: ROBOTO, OPEN SANS, MONTSERRAT, POPPINS, RALEWAY, ALICE (ALL REGULAR)                         -->
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alice&family=Montserrat&family=Open+Sans&family=Poppins&family=Raleway&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+    <!-- TODO:   LINK FONT AWESOME ICONS TO YOUR PROJECT - SYNTAX TO USE IN CODE:                               -->
+    <!-- https://www.w3schools.com/icons/fontawesome_icons_intro.asp                                            -->
+    <!-- TO VIEW THE LIST OF FREE ICONS TO USE : https://fontawesome.com/search?m=free                          -->
+    <!-- TODO: COPY AND PASTE: TODO:  <i class="fa fa-iconname"></i>                                            -->
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+    <!-- FIXME:  NEW ADDITION - BOXICONS  FIXME:                                                                -->
+    <!-- TODO:  COPY AND PASTE LINK FROM:  TODO:  https://boxicons.com/usage#import-css                         -->
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+
+    <link
+      href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+    <!-- FIXME:  NEW ADDITION - GLIDE JS (FOR SLIDER)  FIXME:                                                   -->
+    <!-- GET "Glide.js" COMPONENT FROM CDNJS CONTENT SERVER: https://cdnjs.com/                                 -->
+    <!-- TODO:  COPY AND PASTE LINKS FROM  TODO:  https://cdnjs.com/libraries/Glide.js                          -->
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+
+    <!-- PASTE URL (CORE) -->
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.5.0/css/glide.core.css"
+    />
+
+    <!-- PASTE URL (THEME) -->
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.5.0/css/glide.theme.css"
+    />
+
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+    <!-- FIXME:  NEW ADDITION - STYLE SHEETS  FIXME:                                                            -->
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+    <!-- TODO:   CSS STYLE SHEET (INTERNAL) - LINK YOUR HTML DOCUMENT TO YOUR OWN CSS STYLE SHEET               -->
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+
+    <link rel="stylesheet" href="css/styles.css" />
+
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+    <!-- TODO:   CSS STYLE SHEET (EXTERNAL) - LINK TO NORMALISE.CSS STYLE SHEET (ONLY IF REQUIRED)              -->
+    <!-- ALWAYS DOWNLOAD THE LATEST FILE (BEFORE YOU START):  https://necolas.github.io/normalize.css/          -->
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+
+    <!-- <link rel="stylesheet" href="normalize.css" /> -->
+
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+    <!-- TODO:   LINK YOUR HTML DOCUMENT TO ANIMATE ON SCROLL (AOS) FOR ALL PAGE ANIMATIONS                     -->
+    <!-- JAVASCRIPT INCLUDED AT END OF HTML DOCUMENT / WEBSITE: https://michalsnik.github.io/aos/               -->
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  </head>
+  <!-- -------------------------------------------------------------------------------------------------------- -->
+  <!--                              ===== TODO: CODING START BELOW TODO: =====                                  -->
+  <!-- -------------------------------------------------------------------------------------------------------- -->
+  <body>
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+    <!--                       ===== TODO:   E-COMMERCE STORE PROJECT   TODO: =====                             -->
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+    <!-- TODO:   PART 1 - HEADER (INCLUDE BOTH TOP + MAIN NAVIGATION + HERO SLIDER)                             -->
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+
+    <header class="header" id="header">
+      <!-- ------------------------------ -->
+      <!-- TODO:  TOP NAVIGATION  TODO: -->
+      <!-- ------------------------------ -->
+
+      <div class="top-nav">
+        <div class="container d-flex">
+          <p>Order online or call us: (021) 988 6862</p>
+          <ul class="d-flex">
+            <li><a href="">About us</a></li>
+            <li><a href="">FAQ</a></li>
+            <li><a href="">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- ------------------------------ -->
+      <!-- FIXME:  END OF TOP NAVIGATION  -->
+      <!-- ------------------------------ -->
+
+      <!-- ------------------------------- -->
+      <!-- TODO:  MAIN NAVIGATION  TODO:   -->
+      <!-- ------------------------------- -->
+
+      <div class="navigation">
+        <div class="nav-center container d-flex">
+          <!-- --------------------------------- -->
+          <!-- TODO:  NAVIGATION - LOGO  TODO:   -->
+          <!-- --------------------------------- -->
+
+          <a href="" class="logo"><h1>Dans</h1></a>
+
+          <!-- --------------------------------------- -->
+          <!-- TODO:  NAVIGATION - LIST ITEMS  TODO:   -->
+          <!-- --------------------------------------- -->
+
+          <ul class="nav-list d-flex">
+            <li class="nav-item"><a href="/" class="nav-link">Home</a></li>
+            <li class="nav-item">
+              <a href="products.html" class="nav-link">Shop</a>
+            </li>
+            <li class="nav-item">
+              <a href="#terms" class="nav-link">Terms</a>
+            </li>
+            <li class="nav-item">
+              <a href="#about" class="nav-link">About</a>
+            </li>
+            <li class="nav-item">
+              <a href="#contact" class="nav-link">Contact</a>
+            </li>
+            <!-- ----------------------------------------- -->
+            <!-- TODO:  LIST-ITEMS FOR MOBILE VIEW  TODO:  -->
+            <!--    APPEAR WHEN HAMBURGER MENU IS OPEN     -->
+            <!--         HIDDEN IN STANDARD VIEW           -->
+            <!-- ----------------------------------------- -->
+            <li class="icons d-flex">
+              <a href="login.html" class="icon"><i class="bx bx-user"></i></a>
+              <div class="icon"><i class="bx bx-search"></i></div>
+              <div class="icon">
+                <i class="bx bx-heart"></i> <span class="d-flex">0</span>
+              </div>
+              <a href="cart.html" class="icon"
+                ><i class="bx bx-cart"></i><span class="d-flex">0</span></a
+              >
+            </li>
+          </ul>
+
+          <!-- -------------------------------------- -->
+          <!-- TODO:  NAVIGATION - BOX-ICONS  TODO:   -->
+          <!-- -------------------------------------- -->
+
+          <div class="icons d-flex">
+            <a href="login.html" class="icon"><i class="bx bx-user"></i></a>
+            <div class="icon"><i class="bx bx-search"></i></div>
+            <div class="icon">
+              <i class="bx bx-heart"></i> <span class="d-flex">0</span>
+            </div>
+            <a href="cart.html" class="icon"
+              ><i class="bx bx-cart"></i><span class="d-flex">0</span></a
+            >
+          </div>
+
+          <!-- ------------------------------------------- -->
+          <!-- TODO:  NAVIGATION - HAMBURGER MENU  TODO:   -->
+          <!-- ------------------------------------------- -->
+
+          <div class="hamburger">
+            <i class="bx bx-menu-alt-left"></i>
+          </div>
+        </div>
+      </div>
+
+      <!-- ------------------------------- -->
+      <!-- FIXME:  END OF MAIN NAVIGATION  -->
+      <!-- ------------------------------- -->
+
+      <!-- -------------------------------------------------------- -->
+      <!-- TODO:  HERO IMAGE SLIDER  TODO:                          -->
+      <!-- -------------------------------------------------------- -->
+      <!-- VISIT GLIDE.JS WEBSITE:  https://glidejs.com/docs/setup/ -->
+      <!-- GOTO STRUCTURE AND COPY AND PASTE IT BELOW               -->
+      <!-- ADD/REMOVE SLIDES AS NEEDED                              -->
+      <!-- ADD "id="glide.."                                        -->
+      <!-- -------------------------------------------------------- -->
+
+      <div class="hero">
+        <div class="glide" id="glide1">
+          <div class="glide__track" data-glide-el="track">
+            <ul class="glide__slides">
+              <!-- ----------------------- -->
+              <!-- FIXME:  SLIDE 1  FIXME: -->
+              <!-- ----------------------- -->
+              <li class="glide__slide">
+                <div class="center">
+                  <div class="left">
+                    <span>New Inspiration 2022</span>
+                    <h1>NEW COLLECTION</h1>
+                    <p>Trending from men's and women's style collection</p>
+                    <a href="" class="hero-btn">SHOW NOW</a>
+                  </div>
+                  <div class="right">
+                    <img src="images/hero-1.png" class="img1" alt="" />
+                  </div>
+                </div>
+              </li>
+              <!-- ----------------------- -->
+              <!-- FIXME:  SLIDE 2  FIXME: -->
+              <!-- ----------------------- -->
+              <li class="glide__slide">
+                <div class="center">
+                  <div class="left">
+                    <span>New Inspiration 2022</span>
+                    <h1>NEW COLLECTION</h1>
+                    <p>Trending from men's and women's style collection</p>
+                    <a href="" class="hero-btn">SHOW NOW</a>
+                  </div>
+                  <div class="right">
+                    <img src="images/hero-2.png" class="img2" alt="" />
+                  </div>
+                </div>
+              </li>
+              <!-- ----------------------- -->
+              <!-- FIXME:  SLIDE 3  FIXME: -->
+              <!-- ----------------------- -->
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- -------------------------- -->
+      <!-- FIXME:  END OF HERO BANNER -->
+      <!-- -------------------------- -->
+    </header>
+
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+    <!-- TODO:   PART 2 - CATEGORY SECTION                                                                      -->
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+
+    <section class="section category">
+      <div class="cat-center">
+        <!-- -------------------------- -->
+        <!-- FIXME:  CATEGORY 1  FIXME: -->
+        <!-- -------------------------- -->
+        <div class="cat">
+          <img src="images/cat3.jpg" alt="" />
+          <div>
+            <p>WOMEN'S WEAR</p>
+          </div>
+        </div>
+        <!-- -------------------------- -->
+        <!-- FIXME:  CATEGORY 2  FIXME: -->
+        <!-- -------------------------- -->
+        <div class="cat">
+          <img src="images/cat2.jpg" alt="" />
+          <div>
+            <p>ACCESSORIES</p>
+          </div>
+        </div>
+        <!-- -------------------------- -->
+        <!-- FIXME:  CATEGORY 3  FIXME: -->
+        <!-- -------------------------- -->
+        <div class="cat">
+          <img src="images/cat1.jpg" alt="" />
+          <div>
+            <p>MEN'S WEAR</p>
+          </div>
+        </div>
+        <!-- -------------------------- -->
+        <!-- FIXME:  CATEGORY 4  FIXME: -->
+        <!-- -------------------------- -->
+      </div>
+    </section>
+
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+    <!-- TODO:   PART 3 - NEW ARRIVALS SECTION                                                                  -->
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+
+    <section class="section new-arrival">
+      <div class="title">
+        <h1>NEW ARRIVALS</h1>
+        <p>All our latest fashion products</p>
+      </div>
+
+      <div class="product-center">
+        <!-- ------------------------------- -->
+        <!-- FIXME:  PRODUCT ITEM 01  FIXME: -->
+        <!-- ------------------------------- -->
+        <div class="product-item">
+          <div class="overlay">
+            <a href="productDetails.html" class="product-thumb">
+              <img src="images/product-1.jpg" alt="" />
+            </a>
+          </div>
+          <div class="product-info">
+            <span>MEN'S CLOTHES</span>
+            <a href="productDetails.html"> Best e-commerce top wear </a>
+            <h4>1700</h4>
+          </div>
+          <ul class="icons">
+            <li><i class="bx bx-heart"></i></li>
+            <li><i class="bx bx-search"></i></li>
+            <li><i class="bx bx-cart"></i></li>
+          </ul>
+        </div>
+        <!-- ------------------------------- -->
+        <!-- FIXME:  PRODUCT ITEM 02  FIXME: -->
+        <!-- ------------------------------- -->
+        <div class="product-item">
+          <div class="overlay">
+            <a href="productDetails.html" class="product-thumb">
+              <img src="images/product-2.jpg" alt="" />
+            </a>
+            <span class="discount">50%</span>
+          </div>
+          <div class="product-info">
+            <span>MEN'S CLOTHES</span>
+            <a href="productDetails.html"> Best e-commerce top wear </a>
+            <h4>1700</h4>
+          </div>
+          <ul class="icons">
+            <li><i class="bx bx-heart"></i></li>
+            <li><i class="bx bx-search"></i></li>
+            <li><i class="bx bx-cart"></i></li>
+          </ul>
+        </div>
+        <!-- ------------------------------- -->
+        <!-- FIXME:  PRODUCT ITEM 03  FIXME: -->
+        <!-- ------------------------------- -->
+
+        <div class="product-item">
+          <div class="overlay">
+            <a href="productDetails.html" class="product-thumb">
+              <img src="images/product-3.jpg" alt="" />
+            </a>
+          </div>
+          <div class="product-info">
+            <span>MEN'S CLOTHES</span>
+            <a href="productDetails.html"> Best e-commerce top wear </a>
+            <h4>1700</h4>
+          </div>
+          <ul class="icons">
+            <li><i class="bx bx-heart"></i></li>
+            <li><i class="bx bx-search"></i></li>
+            <li><i class="bx bx-cart"></i></li>
+          </ul>
+        </div>
+
+        <!-- ------------------------------- -->
+        <!-- FIXME:  PRODUCT ITEM 04  FIXME: -->
+        <!-- ------------------------------- -->
+
+        <div class="product-item">
+          <div class="overlay">
+            <a href="productDetails.html" class="product-thumb">
+              <img src="images/product-4.jpg" alt="" />
+            </a>
+            <span class="discount">50%</span>
+          </div>
+          <div class="product-info">
+            <span>MEN'S CLOTHES</span>
+            <a href="productDetails.html"> Best e-commerce top wear </a>
+            <h4>1700</h4>
+          </div>
+          <ul class="icons">
+            <li><i class="bx bx-heart"></i></li>
+            <li><i class="bx bx-search"></i></li>
+            <li><i class="bx bx-cart"></i></li>
+          </ul>
+        </div>
+
+        <!-- ------------------------------- -->
+        <!-- FIXME:  PRODUCT ITEM 05  FIXME: -->
+        <!-- ------------------------------- -->
+
+        <div class="product-item">
+          <div class="overlay">
+            <a href="productDetails.html" class="product-thumb">
+              <img src="images/product-5.jpg" alt="" />
+            </a>
+            <span class="discount">50%</span>
+          </div>
+          <div class="product-info">
+            <span>MEN'S CLOTHES</span>
+            <a href="productDetails.html"> Best e-commerce top wear </a>
+            <h4>1700</h4>
+          </div>
+          <ul class="icons">
+            <li><i class="bx bx-heart"></i></li>
+            <li><i class="bx bx-search"></i></li>
+            <li><i class="bx bx-cart"></i></li>
+          </ul>
+        </div>
+
+        <!-- ------------------------------- -->
+        <!-- FIXME:  PRODUCT ITEM 06  FIXME: -->
+        <!-- ------------------------------- -->
+
+        <div class="product-item">
+          <div class="overlay">
+            <a href="productDetails.html" class="product-thumb">
+              <img src="images/product-6.jpg" alt="" />
+            </a>
+          </div>
+          <div class="product-info">
+            <span>MEN'S CLOTHES</span>
+            <a href="productDetails.html"> Best e-commerce top wear </a>
+            <h4>1700</h4>
+          </div>
+          <ul class="icons">
+            <li><i class="bx bx-heart"></i></li>
+            <li><i class="bx bx-search"></i></li>
+            <li><i class="bx bx-cart"></i></li>
+          </ul>
+        </div>
+
+        <!-- ------------------------------- -->
+        <!-- FIXME:  PRODUCT ITEM 07  FIXME: -->
+        <!-- ------------------------------- -->
+
+        <div class="product-item">
+          <div class="overlay">
+            <a href="productDetails.html" class="product-thumb">
+              <img src="images/product-7.jpg" alt="" />
+            </a>
+          </div>
+          <div class="product-info">
+            <span>MEN'S CLOTHES</span>
+            <a href="productDetails.html"> Best e-commerce top wear </a>
+            <h4>1700</h4>
+          </div>
+          <ul class="icons">
+            <li><i class="bx bx-heart"></i></li>
+            <li><i class="bx bx-search"></i></li>
+            <li><i class="bx bx-cart"></i></li>
+          </ul>
+        </div>
+
+        <!-- ------------------------------- -->
+        <!-- FIXME:  PRODUCT ITEM 08  FIXME: -->
+        <!-- ------------------------------- -->
+      </div>
+    </section>
+
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+    <!-- TODO:   PART 4 - PROMOTIONS BANNER                                                                     -->
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+
+    <section class="section banner">
+      <div class="left">
+        <span class="trend">Trending designs</span>
+        <h1>New Collection 2022</h1>
+        <p>
+          New Arrival <span class="color">Sale 50% Off</span> Limited Time Offer
+        </p>
+        <a href="" class="btn btn1">Discover Now</a>
+      </div>
+      <div class="right">
+        <img src="images/banner.png" alt="" />
+      </div>
+    </section>
+
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+    <!-- TODO:   PART 5 - FEATURED SECTION (REFER TO PART 3)                                                    -->
+    <!-- TODO:   IS THE SAMES AS THE NEW ARRIVAL SECTION / SO JUST COPY AND PASTE THE CODE (MAKE CHANGES)       -->
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+
+    <section class="section new-arrival">
+      <div class="title">
+        <h1>FEATURED PRODUCTS</h1>
+        <p>Check out our bestsellers</p>
+      </div>
+
+      <div class="product-center">
+        <!-- ------------------------------- -->
+        <!-- FIXME:  PRODUCT ITEM 01  FIXME: -->
+        <!-- ------------------------------- -->
+        <div class="product-item">
+          <div class="overlay">
+            <a href="productDetails.html" class="product-thumb">
+              <img src="images/product-4.jpg" alt="" />
+            </a>
+          </div>
+          <div class="product-info">
+            <span>MEN'S CLOTHES</span>
+            <a href="productDetails.html"> Best e-commerce top wear </a>
+            <h4>1700</h4>
+          </div>
+          <ul class="icons">
+            <li><i class="bx bx-heart"></i></li>
+            <li><i class="bx bx-search"></i></li>
+            <li><i class="bx bx-cart"></i></li>
+          </ul>
+        </div>
+        <!-- ------------------------------- -->
+        <!-- FIXME:  PRODUCT ITEM 02  FIXME: -->
+        <!-- ------------------------------- -->
+        <div class="product-item">
+          <div class="overlay">
+            <a href="productDetails.html" class="product-thumb">
+              <img src="images/product-7.jpg" alt="" />
+            </a>
+            <span class="discount">50%</span>
+          </div>
+          <div class="product-info">
+            <span>MEN'S CLOTHES</span>
+            <a href="productDetails.html"> Best e-commerce top wear </a>
+            <h4>1700</h4>
+          </div>
+          <ul class="icons">
+            <li><i class="bx bx-heart"></i></li>
+            <li><i class="bx bx-search"></i></li>
+            <li><i class="bx bx-cart"></i></li>
+          </ul>
+        </div>
+        <!-- ------------------------------- -->
+        <!-- FIXME:  PRODUCT ITEM 03  FIXME: -->
+        <!-- ------------------------------- -->
+
+        <div class="product-item">
+          <div class="overlay">
+            <a href="productDetails.html" class="product-thumb">
+              <img src="images/product-1.jpg" alt="" />
+            </a>
+          </div>
+          <div class="product-info">
+            <span>MEN'S CLOTHES</span>
+            <a href="productDetails.html"> Best e-commerce top wear </a>
+            <h4>1700</h4>
+          </div>
+          <ul class="icons">
+            <li><i class="bx bx-heart"></i></li>
+            <li><i class="bx bx-search"></i></li>
+            <li><i class="bx bx-cart"></i></li>
+          </ul>
+        </div>
+
+        <!-- ------------------------------- -->
+        <!-- FIXME:  PRODUCT ITEM 04  FIXME: -->
+        <!-- ------------------------------- -->
+
+        <div class="product-item">
+          <div class="overlay">
+            <a href="productDetails.html" class="product-thumb">
+              <img src="images/product-5.jpg" alt="" />
+            </a>
+            <span class="discount">50%</span>
+          </div>
+          <div class="product-info">
+            <span>MEN'S CLOTHES</span>
+            <a href="productDetails.html"> Best e-commerce top wear </a>
+            <h4>1700</h4>
+          </div>
+          <ul class="icons">
+            <li><i class="bx bx-heart"></i></li>
+            <li><i class="bx bx-search"></i></li>
+            <li><i class="bx bx-cart"></i></li>
+          </ul>
+        </div>
+
+        <!-- ------------------------------- -->
+        <!-- FIXME:  PRODUCT ITEM 05  FIXME: -->
+        <!-- ------------------------------- -->
+
+        <!-- ------------------------------- -->
+        <!-- FIXME:  PRODUCT ITEM 06  FIXME: -->
+        <!-- ------------------------------- -->
+
+        <!-- ------------------------------- -->
+        <!-- FIXME:  PRODUCT ITEM 07  FIXME: -->
+        <!-- ------------------------------- -->
+
+        <!-- ------------------------------- -->
+        <!-- FIXME:  PRODUCT ITEM 08  FIXME: -->
+        <!-- ------------------------------- -->
+      </div>
+    </section>
+
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+    <!-- TODO:   PART 6 - CONTACT SECTION                                                                       -->
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+
+    <section class="section contact">
+      <div class="row">
+        <div class="col">
+          <h2>EXCELLENT SUPPORT</h2>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint, hic!
+          </p>
+          <a href="" class="btn btn-1">Contact</a>
+        </div>
+        <div class="col">
+          <form action="">
+            <input type="email" name="" id="" placeholder="email" />
+            <a href="">Send</a>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+    <!-- TODO:   PART 7 - FOOTER SECTION                                                                        -->
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+
+    <footer class="footer">
+      <div class="row">
+        <!-- --------------------------------- -->
+        <!-- FIXME:  FOOTER - COLUMN 1  FIXME: -->
+        <!-- --------------------------------- -->
+
+        <div class="col d-flex">
+          <h4>INFORMATION</h4>
+          <a href="">About us</a>
+          <a href="">Contact us</a>
+          <a href="">Terms</a>
+          <a href="">Shipping Guide</a>
+        </div>
+
+        <!-- --------------------------------- -->
+        <!-- FIXME:  FOOTER - COLUMN 2  FIXME: -->
+        <!-- --------------------------------- -->
+
+        <div class="col d-flex">
+          <h4>USEFUL LINK</h4>
+          <a href="">Online Store</a>
+          <a href="">Customer Service</a>
+          <a href="">Promotions</a>
+          <a href="">Top Brands</a>
+        </div>
+
+        <!-- --------------------------------- -->
+        <!-- FIXME:  FOOTER - COLUMN 3  FIXME: -->
+        <!-- --------------------------------- -->
+
+        <div class="col d-flex">
+          <span><i class="bx bxl-facebook-square"></i></span>
+          <span><i class="bx bxl-instagram-alt"></i></span>
+          <span><i class="bx bxl-github"></i></span>
+          <span><i class="bx bxl-twitter"></i></span>
+          <span><i class="bx bxl-pinterest"></i></span>
+        </div>
+
+        <!-- --------------------------------- -->
+        <!-- FIXME:  FOOTER - COLUMN 4  FIXME: -->
+        <!-- --------------------------------- -->
+      </div>
+    </footer>
+
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+    <!-- TODO:   PART 8 - POPUP MODAL                                                                           -->
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+
+    <div class="popup hide-popup">
+      <div class="popup-content">
+        <div class="popup-close">
+          <i class="bx bx-x"></i>
+        </div>
+        <div class="popup-left">
+          <div class="popup-img-container">
+            <img class="popup-img" src="images/popup.jpg" alt="" />
+          </div>
+        </div>
+        <div class="popup-right">
+          <div class="right-content">
+            <h1>Get Discount <span>50%</span> Off</h1>
+            <p>
+              Sign up to our newsletter and save 30% on your next purchase. No
+              spam, we promise
+            </p>
+            <form action="">
+              <input
+                class="popup-form"
+                type="email"
+                placeholder="Your email address ..."
+              />
+              <a href="">Subscribe</a>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+    <!-- TODO:   PART 9 -                                                                                       -->
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+    <!--                              ===== TODO: CODING END ABOVE TODO: =====                                  -->
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+    <!-- TODO:   JAVASCRIPT (OWN) - LINK ALL YOUR JAVASCRIPT FILES TO THE HTML DOCUMENT                         -->
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+
+    <!-- <script src="script.js" defer></script> -->
+
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+    <!-- FIXME:  NEW ADDITION - SLIDER SCRIPT (GLIDE JS)  FIXME:                                                -->
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+
+    <!-- PASTE URL (Glide.js) from CDNJS.com Network -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.5.0/glide.js"></script>
+
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+    <!-- FIXME:  NEW ADDITION - SCRIPT (SLIDER)  FIXME:                                                         -->
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+
+    <script src="js/slider.js"></script>
+
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+    <!-- FIXME:  NEW ADDITION - SCRIPT (INDEX)  FIXME:                                                          -->
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+
+    <script src="js/index.js"></script>
+
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+    <!-- FIXME:  ANIMATE ON SCROLL (AOS) SCRIPT - ANIMATIONS FOR WEBSITE - https://michalsnik.github.io/aos/    -->
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+    <!-- FIXME:  ADDITIONAL THIRD PARTY SCRIPTS                                                                 -->
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+  </body>
+  <!-- ------------------------------------------------------------------------------------------------------ -->
+  <!--                              ===== FIXME: MY COMMENTS FIXME: =====                                     -->
+  <!--  TEMPLATE TO USE FOR COMMENTING                                                                        -->
+  <!-- ------------------------------------------------------------------------------------------------------ -->
+</html>

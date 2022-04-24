@@ -1,0 +1,1371 @@
+/* ===================================================================================================================== */
+/* TODO:  STYLING FOR E-COMMERCE STORE PROJECT                                                                           */
+/* ===================================================================================================================== */
+
+/* ----------------------------------------- */
+/* FIXME:  BASE STYLE SETS FOR PROJECT       */
+/* ----------------------------------------- */
+
+:root {
+  --white: #fff;
+  --black: #222;
+  --green: #6cbe02;
+  --grey1: #f0f0f0;
+  --grey2: #e9d7d3;
+  --box-icons: #555;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0rem 0rem 0rem 0rem;
+  padding: 0rem 0rem 0rem 0rem;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "poppins", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 400;
+  font-style: normal;
+  background-color: var(--white);
+  color: var(black);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+li {
+  list-style-type: none;
+}
+
+/* ----------------------------------------- */
+/* FIXME:  ALL CONTAINERS - DEFAULT STYLING  */
+/* ----------------------------------------- */
+
+.container {
+  max-width: 114rem;
+  margin: 0rem auto 0rem auto;
+  padding: 0rem 3rem 0rem 3rem;
+}
+
+/* ---------------------------------------------------- */
+/* FIXME:  ALL CONTAINERS - WITH "DISPLAY: FLEX" CLASS  */
+/* ---------------------------------------------------- */
+
+.d-flex {
+  display: flex;
+  align-items: center;
+}
+
+/* ===================================================================================================================== */
+/* TODO:  SET THE RESPONSIVE DEFAULT SIZES FOR ALL HEADING ELEMENTS (H1 - H6)                                      TODO: */
+/* ===================================================================================================================== */
+
+/* ===================================================================================================================== */
+/* TODO:  HEADING ELEMENTS : MOBILE / SMALLER SCREENS STYLING                                        FIXME: MOBILE FIRST */
+/* ===================================================================================================================== */
+
+/* ===================================================================================================================== */
+/* GENERAL NOTES (ALL HEADER ELEMENTS):                                                                                  */
+/* 1.  Set the FONT-FAMILY to be used for the page (i.e. Google Fonts)                                                   */
+/* 2.  Set all MARGINS - Top-Rigth-Bottom-Left                                                                           */
+/* 3.  Set the FONT-WEIGHT : normal, bold, 100, 300, 500, 700 etc.                                                       */
+/* ===================================================================================================================== */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "poppins";
+  margin: 0rem 0rem 2rem 0rem;
+  font-weight: 300;
+}
+
+/* ===================================================================================================================== */
+/* GENERAL NOTES (INDIVIDUAL HEADER ELEMENTS):                                                                           */
+/* 1.  Set the FONT-SIZE to be used as the standard for the page [1.6rem = 16px]                                         */
+/* 2.  Set LINE-HEIGHT (spacing) : 1rem, 1.25rem, 1.4rem, 1.5rem etc                                                     */
+/* 3.  Set LETTER-SPACING : normal, 0.1rem, 0.2rem, 0.3rem etc                                                           */
+/* ===================================================================================================================== */
+
+h1 {
+  font-size: 4rem;
+  line-height: 1.2;
+  letter-spacing: 0.1rem;
+}
+
+h2 {
+  font-size: 3.6rem;
+  line-height: 1.25;
+  letter-spacing: 0.1rem;
+}
+
+h3 {
+  font-size: 3rem;
+  line-height: 1.3;
+  letter-spacing: 0.1rem;
+}
+
+h4 {
+  font-size: 2.4rem;
+  line-height: 1.35;
+  letter-spacing: 0.08rem;
+}
+
+h5 {
+  font-size: 1.8rem;
+  line-height: 1.5;
+  letter-spacing: 0.05rem;
+}
+
+h6 {
+  font-size: 1.5rem;
+  line-height: 1.6;
+  letter-spacing: 0;
+}
+
+/* ===================================================================================================================== */
+/* TODO:  HEADING ELEMENTS : WEBSITE / LARGER SCREENS STYLING                                      FIXME: LARGER SCREENS */
+/* ===================================================================================================================== */
+
+@media (min-width: 600px) {
+  h1 {
+    font-size: 5rem;
+  }
+  h2 {
+    font-size: 4.2rem;
+  }
+  h3 {
+    font-size: 3.6rem;
+  }
+  h4 {
+    font-size: 3rem;
+  }
+  h5 {
+    font-size: 2.4rem;
+  }
+  h6 {
+    font-size: 1.5rem;
+  }
+}
+
+/* ===================================================================================================================== */
+/* TODO:  PART 1 - HEADER (INCLUDE BOTH TOP + MAIN NAVIGATION + HERO SLIDER)                                             */
+/* ===================================================================================================================== */
+
+/* ---------------------------------------------------- */
+/* FIXME:  TOP HEADER                                   */
+/* ---------------------------------------------------- */
+
+.header {
+  position: relative;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+/* ---------------------------------------------------- */
+/* FIXME:  TOP NAVIGATION                               */
+/* ---------------------------------------------------- */
+
+.top-nav {
+  background-color: var(--green);
+  color: var(--white);
+  font-size: 1.3rem;
+}
+
+.top-nav div {
+  justify-content: space-between;
+  height: 4.5rem;
+}
+
+.top-nav a {
+  padding: 0rem 0.5rem 0rem 0.5rem;
+  color: var(--white);
+}
+
+/* ---------------------------------------------------- */
+/* FIXME:  MAIN NAVIGATION                              */
+/* ---------------------------------------------------- */
+
+.navigation {
+  height: 6rem;
+  line-height: 6rem;
+}
+
+.nav-center {
+  justify-content: space-between;
+}
+
+/* .nav-list .icons {
+} */
+
+.nav-center .nav-item:not(:last-child) {
+  margin: 0rem 0.5rem 0rem 0rem;
+}
+
+.nav-center .nav-link {
+  font-size: 1.8rem;
+  padding: 1rem 1rem 1rem 1rem;
+}
+
+.nav-center .nav-link:hover {
+  color: var(--green);
+  cursor: pointer;
+}
+
+/* ---------------------------------------------------- */
+/* FIXME:  ICONS                                        */
+/* ---------------------------------------------------- */
+
+.icon {
+  position: relative;
+  font-size: 2.5rem;
+  padding: 0rem 1rem 0rem 1rem;
+  cursor: pointer;
+  color: var(--box-icons);
+}
+
+.icon:not(:last-child) {
+  margin: 0rem 0.5rem 0rem 0rem;
+}
+
+/* ------------------------------------------------------- */
+/* TODO:  WISH LIST (HEART) & CART COUNTERS (SPAN ELEMENT) */
+/* ------------------------------------------------------- */
+
+.icon span {
+  position: absolute;
+  top: 0.3rem;
+  right: -0.3rem;
+  border-radius: 50%;
+  font-size: 1.3rem;
+  height: 2rem;
+  width: 2rem;
+  justify-content: center;
+  background-color: var(--green);
+  color: var(--white);
+}
+
+/* ------------------------------------------------------ */
+/* FIXME:  HIDE BOX-ICONS IN LAPTOP VIEW / LARGER SCREENS */
+/* ------------------------------------------------------ */
+
+.nav-list .icons {
+  display: none;
+}
+
+.nav-center .hamburger {
+  display: none;
+  font-size: 2.3rem;
+  color: var(--black);
+  cursor: pointer;
+}
+
+/* ------------------------------------------------------ */
+/* FIXME:  MEDIA QUERY - HEADER (TOP + MAIN NAVIGATION)   */
+/* FIXME:  (FOR SMALLER DEVICES - PHONES)                 */
+/* ------------------------------------------------------ */
+
+@media (max-width: 768px) {
+  .nav-list {
+    position: fixed;
+    top: 12%;
+    left: -100%;
+    flex-direction: column;
+    align-items: flex-start;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+    background-color: var(--white);
+    height: 100%;
+    max-width: 35rem;
+    width: 0;
+    z-index: 100;
+    transition: all 300ms ease-in-out;
+  }
+
+  .nav-list.open {
+    left: 0;
+    width: 100%;
+  }
+
+  .nav-list .nav-item {
+    margin: 0rem 0rem 1rem 0rem;
+    width: 100%;
+  }
+
+  .nav-list .nav-link {
+    font-size: 2rem;
+    color: var(--black);
+  }
+
+  .nav-center .hamburger {
+    display: block;
+    font-size: 3rem;
+  }
+
+  .icons {
+    display: none;
+  }
+
+  .nav-list .icons {
+    display: flex;
+  }
+
+  .top-nav ul {
+    display: none;
+  }
+
+  .top-nav div {
+    justify-content: center;
+    height: 3rem;
+  }
+}
+
+/* ------------------------------------------------------ */
+/* FIXME:  HERO SLIDER (GLIDE.JS)                         */
+/* ------------------------------------------------------ */
+
+.hero,
+.hero .glide__slides {
+  position: relative;
+  height: calc(100vh - 6rem);
+  margin: 0rem 4rem 0rem 4rem;
+  background-color: var(--grey2);
+  overflow: hidden;
+}
+
+.hero .center {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding: 3rem 0rem 0rem 0rem;
+}
+
+.hero .left {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: all 1000ms ease-in-out;
+}
+
+.hero .left h1 {
+  font-size: 5rem;
+  margin: 1rem 0rem 1rem 0rem;
+}
+
+.hero .left p {
+  font-size: 1.6rem;
+  margin: 0rem 0rem 1rem 0rem;
+}
+
+.hero .left .hero-btn {
+  display: inline-block;
+  margin: 1rem 0rem 0rem 0rem;
+  padding: 1rem 3rem 1rem 3rem;
+  font-size: 1.6rem;
+  font-weight: 600;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+  border-radius: 0.5rem;
+  background-color: var(--green);
+  color: var(--white);
+}
+
+.hero .right {
+  position: relative;
+  flex: 0 0 50%;
+  height: 100%;
+  text-align: center;
+}
+
+.hero .right img {
+  position: absolute;
+  width: 55rem;
+  opacity: 0;
+  transition: all 1000ms ease-in-out;
+}
+
+.hero .right img.img1 {
+  width: 85%;
+  right: -25%;
+  bottom: -50%;
+}
+
+.hero .right img.img2 {
+  width: 90%;
+  right: -40%;
+  bottom: -40%;
+}
+
+.glide__slide--active .center .right img {
+  bottom: -3%;
+  opacity: 1;
+}
+
+.glide__slide--active .left {
+  top: 35%;
+  opacity: 1;
+}
+
+/* ------------------------------------------------------ */
+/* FIXME:  MEDIA QUERY - HEADER (HERO SLIDER / GLIDE.JS)  */
+/* FIXME:  (FOR SMALLER DEVICES - PHONES)                 */
+/* ------------------------------------------------------ */
+
+@media (max-width: 999px) {
+  .glide__slide--active .left {
+    top: 15%;
+  }
+
+  .hero .right img.img1 {
+    width: 90%;
+  }
+
+  .hero .right img.img2 {
+    width: 100%;
+  }
+}
+
+@media (max-width: 567px) {
+  .center .right img.img1 {
+    width: 30rem;
+  }
+
+  .center .right img.img2 {
+    width: 33rem;
+  }
+
+  .hero,
+  .hero .glide__slides {
+    margin: 0rem 0rem 0rem 0rem;
+    padding: 0rem 3rem 0rem 3rem;
+  }
+
+  .hero .left h1 {
+    font-size: 3rem;
+  }
+
+  .hero .left span {
+    font-size: 1.4rem;
+  }
+
+  .hero .left p {
+    font-size: 1.5rem;
+    width: 80%;
+  }
+}
+
+/* ===================================================================================================================== */
+/* TODO:  PART 2 - CATEGORY SECTION                                                                                      */
+/* ===================================================================================================================== */
+
+.section {
+  padding: 10rem 0rem 5rem 0rem;
+  overflow: hidden;
+}
+
+.cat-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 114rem;
+  margin: auto;
+  padding: 0rem 3rem 0rem 3rem;
+}
+
+.cat-center .cat {
+  position: relative;
+  max-width: 35rem;
+  height: 25rem;
+  text-align: center;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.cat-center .cat:not(:last-child) {
+  margin: 0rem 3rem 0rem 0rem;
+}
+
+.cat-center .cat img {
+  width: 36.5rem;
+  height: 100%;
+  margin: auto;
+  object-fit: cover;
+  transition: all 2s ease;
+}
+
+.cat-center .cat:hover img {
+  transform: scale(1.1);
+}
+
+.cat-center .cat div {
+  position: absolute;
+  bottom: 15%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 18rem;
+  height: 5rem;
+  line-height: 5rem;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 500;
+  background-color: var(--white);
+}
+
+/* ------------------------------------------------------ */
+/* FIXME:  MEDIA QUERY - CATEGORY SECTION                 */
+/* FIXME:  (FOR SMALLER DEVICES - PHONES)                 */
+/* ------------------------------------------------------ */
+
+@media (max-width: 1200px) {
+  .cat-center .cat img {
+    width: 30rem;
+  }
+}
+
+@media (max-width: 967px) {
+  .cat-center .cat {
+    max-width: 25rem;
+    height: 20rem;
+  }
+
+  .cat-center .cat img {
+    width: 25rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .section {
+    padding: 5rem 0rem 5rem 0rem;
+  }
+
+  .cat-center {
+    flex-direction: column;
+    padding: 3rem 3rem 3rem 3rem;
+  }
+
+  .cat-center .cat {
+    max-width: 100%;
+    height: 30rem;
+  }
+
+  .cat-center .cat:not(:last-child) {
+    margin: 0rem 0rem 5rem 0rem;
+  }
+
+  .cat-center .cat img {
+    width: 100%;
+  }
+}
+
+/* ===================================================================================================================== */
+/* TODO:  PART 3 - NEW ARRIVAL SECTION                                                                                   */
+/* ===================================================================================================================== */
+
+.title {
+  text-align: center;
+  margin: 0rem 0rem 5rem 0rem;
+}
+
+.title h1 {
+  font-size: 3rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin: 0rem 0rem 1rem 0rem;
+}
+
+.product-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 0rem 2rem 0rem 2rem;
+}
+
+.product-item {
+  position: relative;
+  width: 27rem;
+  margin: 0 auto;
+  margin-bottom: 3rem;
+}
+
+.product-thumb img {
+  width: 100%;
+  height: 31rem;
+  object-fit: cover;
+  transition: all 500ms linear;
+}
+
+.product-info {
+  padding: 1rem 1rem 1rem 1rem;
+  text-align: center;
+}
+
+.product-info span {
+  display: inline-block;
+  font-size: 1.2rem;
+  color: #555;
+  margin: 0rem 0rem 1rem 0rem;
+}
+
+.product-info a {
+  display: block;
+  font-size: 1.5rem;
+  margin: 0rem 0rem 1rem 0rem;
+  transition: all 300ms linear;
+}
+
+.product-info a:hover {
+  color: var(--green);
+}
+
+.product-item .icons {
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+}
+
+.product-item .icons li {
+  background: var(--white);
+  text-align: center;
+  padding: 1rem 1.5rem 1rem 1.5rem;
+  font-size: 2.3rem;
+  line-height: 2.3rem;
+  cursor: pointer;
+  transition: 300ms ease-in-out;
+  transform: translateY(20px);
+  visibility: hidden;
+  opacity: 0;
+}
+
+.product-item .icons li:first-child {
+  transition-delay: 0.1s;
+}
+
+.product-item .icons li:nth-child(2) {
+  transition-delay: 0.2s;
+}
+
+.product-item .icons li:nth-child(3) {
+  transition-delay: 0.3s;
+}
+
+.product-item:hover .icons li {
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(0px);
+}
+
+.product-item .icons li:not(:last-child) {
+  margin: 0rem 0.5rem 0rem 0rem;
+}
+
+.product-item .icons li:hover {
+  background-color: var(--green);
+  color: var(--white);
+}
+
+.product-item .overlay {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  z-index: -1;
+  width: 100%;
+}
+
+.product-item .overlay::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  visibility: hidden;
+  opacity: 0;
+  transition: 300ms ease;
+}
+
+.product-item:hover .overlay::after {
+  visibility: visible;
+  opacity: 1;
+}
+
+.product-item:hover .product-thumb img {
+  transform: scale(1.1);
+}
+
+.product-item .discount {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  background-color: var(--green);
+  color: var(--white);
+  border-radius: 2rem;
+  font-size: 1.5rem;
+  letter-spacing: 0.05rem;
+  font-weight: 600;
+  z-index: 2;
+}
+
+/* ------------------------------------------------------ */
+/* FIXME:  MEDIA QUERY - NEW ARRIVAL SECTION              */
+/* FIXME:  (FOR SMALLER DEVICES - PHONES)                 */
+/* ------------------------------------------------------ */
+
+@media (max-width: 567px) {
+  .product-center {
+    max-width: 100%;
+    padding: 0rem 1rem 0rem 1rem;
+  }
+
+  .product-item {
+    width: 40%;
+    margin: 0rem 2rem 3rem 0rem;
+  }
+
+  .product-item img {
+    height: 20rem;
+  }
+
+  .product-item .icons li {
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    font-size: 1.8rem;
+  }
+}
+
+/* ===================================================================================================================== */
+/* TODO:  PART 4 - PROMOTIONS BANNER SECTION                                                                             */
+/* ===================================================================================================================== */
+
+.banner {
+  position: relative;
+  background-color: var(--grey2);
+  padding: 14rem 14rem 14rem 14rem;
+}
+
+.banner .right img {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 75rem;
+}
+
+.banner .trend,
+.banner p {
+  display: block;
+  font-size: 2rem;
+  margin: 0rem 0rem 1.5rem 0rem;
+}
+
+.banner h1 {
+  font-size: 4.4rem;
+  color: var(--black);
+  margin: 0rem 0rem 1.5rem 0rem;
+}
+
+.banner .btn {
+  display: inline-block;
+  margin: 2rem 0rem 0rem 0rem;
+  padding: 1rem 3rem 1rem 3rem;
+  font-size: 1.6rem;
+  font-weight: 600;
+  letter-spacing: 0.1rem;
+  border-radius: 0.5rem;
+  text-transform: uppercase;
+  background: var(--green);
+  color: var(--white);
+}
+
+/* ------------------------------------------------------ */
+/* FIXME:  MEDIA QUERY - PROMOTIONS BANNER SECTION        */
+/* FIXME:  (FOR SMALLER DEVICES - PHONES)                 */
+/* ------------------------------------------------------ */
+
+@media (max-width: 1200px) {
+  .banner {
+    padding: 14rem 2rem 14rem 2rem;
+  }
+
+  .banner .right img {
+    right: -6%;
+    width: 70rem;
+  }
+}
+
+@media (max-width: 996px) {
+  .banner {
+    padding: 8rem 2rem 8rem 2rem;
+  }
+
+  .banner .right img {
+    right: -6%;
+    width: 50rem;
+  }
+
+  .banner .trend,
+  .banner p {
+    font-size: 1.5rem;
+  }
+
+  .banner h1 {
+    font-size: 4rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .banner {
+    display: grid;
+    grid-template-columns: 1fr;
+    height: 80vh;
+  }
+
+  .banner .left {
+    width: 100%;
+    margin: 0rem 0rem 3rem 0rem;
+  }
+
+  .banner .right {
+    flex: 0 0 50%;
+  }
+
+  .banner .right img {
+    right: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50rem;
+  }
+}
+
+@media (max-width: 567px) {
+  .banner {
+    padding: 8rem 5rem 8rem 5rem;
+  }
+
+  .banner .trend,
+  .banner p {
+    font-size: 1.3rem;
+    margin: 0rem 0rem 1rem 0rem;
+  }
+
+  .banner h1 {
+    font-size: 2rem;
+    margin: 0rem 0rem 1rem 0rem;
+  }
+
+  .banner .btn {
+    /* padding: 0.8rem 1.7rem 0.8rem 1.7rem; */
+    font-size: 1.4rem;
+    margin: 0;
+  }
+
+  .banner .right img {
+    width: 45rem;
+  }
+}
+
+/* ===================================================================================================================== */
+/* TODO:  PART 5 - FEATURED SECTION (REFER TO PART 3)                                                                    */
+/* TODO:  IS THE SAMES AS THE NEW ARRIVAL SECTION / SO SAME CODE AND STYLES APPLY (WITH TEXT & IMAGES CHANGES)           */
+/* ===================================================================================================================== */
+
+/* ===================================================================================================================== */
+/* TODO:  PART 6 - CONTACT SECTION                                                                                       */
+/* ===================================================================================================================== */
+
+.contact {
+  background-color: var(--black);
+  color: var(--white);
+  padding: 10rem 20rem 10rem 20rem;
+}
+
+.contact .row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+
+.contact .row .col h2 {
+  margin: 0rem 0rem 1.5rem 0rem;
+  font-size: 3rem;
+}
+
+.contact .row .col p {
+  width: 70%;
+  font-size: 1.3rem;
+  margin: 0rem 0rem 2rem 0rem;
+}
+
+.btn-1 {
+  display: inline-block;
+  padding: 1rem 2rem 1rem 2rem;
+  font-size: 1.6rem;
+  font-weight: 600;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+  border-radius: 0.5rem;
+  background-color: var(--green);
+  color: var(--white);
+}
+
+.contact form {
+  position: relative;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.contact form input {
+  font-family: "poppins", sans-serif;
+  text-indent: 2rem;
+  width: 100%;
+  border-radius: 0.5rem;
+  padding: 1rem 0rem 1rem 0rem;
+  outline: none;
+  border: none;
+}
+
+.contact form a {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 3rem;
+  line-height: 1rem;
+  text-align: center;
+  background-color: var(--green);
+  color: var(--white);
+  margin: 0.5rem 0.5rem 0.5rem 0.5rem;
+  padding: 1rem 3rem 1rem 3rem;
+  border-radius: 0.5rem;
+}
+
+/* ------------------------------------------------------ */
+/* FIXME:  MEDIA QUERY - CONTACT SECTION                  */
+/* FIXME:  (FOR SMALLER DEVICES - PHONES)                 */
+/* ------------------------------------------------------ */
+
+@media (max-width: 996px) {
+  .contact {
+    padding: 8rem 8rem 8rem 8rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .contact .row {
+    grid-template-columns: 1fr;
+    gap: 5rem 0;
+    text-align: center;
+  }
+
+  .contact form {
+    width: 100%;
+  }
+}
+
+@media (max-width: 567px) {
+  .contact {
+    padding: 8rem 1rem 8rem 1rem;
+  }
+}
+
+/* ===================================================================================================================== */
+/* TODO:  PART 7 - FOOTER SECTION                                                                                        */
+/* ===================================================================================================================== */
+
+.footer {
+  padding: 7rem 1rem 7rem 1rem;
+  background-color: var(--green);
+}
+
+footer .row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  max-width: 99.6rem;
+  margin: 0 auto;
+}
+
+.footer .col {
+  flex-direction: column;
+  align-items: flex-start;
+  color: var(--white);
+}
+
+.footer .col:last-child {
+  flex-direction: row;
+  justify-content: center;
+}
+
+.footer .col:last-child span {
+  font-size: 2.5rem;
+  margin: 0rem 1rem 0rem 0rem;
+  color: var(--white);
+}
+
+.footer .col a {
+  color: var(--white);
+  font-size: 1.5rem;
+  padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+}
+
+.footer .col h4 {
+  font-size: 2rem;
+  margin: 0rem 0rem 1rem 0rem;
+}
+
+/* ------------------------------------------------------ */
+/* FIXME:  MEDIA QUERY - FOOTER SECTION                   */
+/* FIXME:  (FOR SMALLER DEVICES - PHONES)                 */
+/* ------------------------------------------------------ */
+
+@media (max-width: 567px) {
+  footer .row {
+    grid-template-columns: 1fr;
+    row-gap: 3rem;
+  }
+}
+
+/* ===================================================================================================================== */
+/* TODO:  PART 8 - POPUP MODAL                                                                                           */
+/* ===================================================================================================================== */
+
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 9999;
+  transition: 0.3s;
+  transform: scale(1);
+}
+
+.popup-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+  height: 55rem;
+  margin: 0 auto;
+  padding: 1.6rem 1.6rem 1.6rem 1.6rem;
+  display: table;
+  overflow: hidden;
+  background-color: var(--white);
+}
+
+.popup-close {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+  background-color: var(--green);
+  color: var(--white);
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 3rem;
+}
+
+.popup-left {
+  display: table-cell;
+  width: 50%;
+  height: 100%;
+  vertical-align: middle;
+}
+
+.popup-right {
+  display: table-cell;
+  width: 50%;
+  vertical-align: middle;
+  padding: 3rem 5rem 3rem 5rem;
+}
+
+.popup-img-container {
+  width: 100%;
+  overflow: hidden;
+}
+
+.popup-img-container img.popup-img {
+  display: block;
+  width: 60rem;
+  height: 45rem;
+  max-width: 100%;
+  border-radius: 1rem;
+  object-fit: cover;
+  margin: 0rem 0rem 0rem 0rem;
+}
+
+.right-content {
+  text-align: center;
+  width: 85%;
+  margin: 0 auto;
+}
+
+.right-content h1 {
+  font-size: 3.5rem;
+  color: var(--black);
+  margin: 0rem 0rem 1.6rem 0rem;
+}
+
+.right-content h1 span {
+  color: var(--green);
+}
+
+.right-content p {
+  font-size: 1.6rem;
+  color: #555;
+  margin: 0rem 0rem 1.6rem 0rem;
+}
+
+.popup-form {
+  width: 100%;
+  padding: 1rem 0rem 1rem 0rem;
+  text-indent: 1rem;
+  margin: 0rem 0rem 1.6rem 0rem;
+  border-radius: 1rem;
+  background-color: var(--green);
+  color: var(--white);
+  font-size: 1.8rem;
+  border: none;
+  cursor: pointer;
+}
+
+.popup-form::placeholder {
+  color: var(--white);
+}
+
+.popup-form:focus {
+  outline: none;
+}
+
+.right-content a:link,
+.right-content a:visited {
+  display: inline-block;
+  padding: 1rem 3.5rem 1rem 3.5rem;
+  border-radius: 1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  color: var(--white);
+  background-color: var(--black);
+  border: 1px solid var(--grey2);
+  transition: 0.3s;
+}
+
+.right-content a:hover {
+  background-color: var(--green);
+  color: var(--black);
+}
+
+.hide-popup {
+  transform: scale(0.2);
+  opacity: 0;
+  visibility: hidden;
+}
+
+/* ------------------------------------------------------ */
+/* FIXME:  MEDIA QUERY - POPUP MODAL                      */
+/* FIXME:  (FOR SMALLER DEVICES - PHONES)                 */
+/* ------------------------------------------------------ */
+
+@media (max-width: 1200px) {
+  .right-content {
+    width: 100%;
+  }
+
+  .right-content h1 {
+    font-size: 3.5rem;
+    margin: 0rem 0rem 1.3rem 0rem;
+  }
+}
+
+@media (max-width: 998px) {
+  .popup-right {
+    width: 100%;
+  }
+
+  .popup-left {
+    display: none;
+  }
+
+  .right-content h1 {
+    font-size: 5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .right-content h1 {
+    font-size: 4rem;
+  }
+
+  .right-content p {
+    font-size: 1.6rem;
+  }
+
+  .popup-form {
+    width: 90%;
+    margin: 0 auto;
+    padding: 1.8rem 0rem 1.8rem 0rem;
+    margin-bottom: 1.5rem;
+  }
+}
+
+@media (max-width: 567px) {
+  .popup-right {
+    padding: 0rem 1.6rem 0rem 1.6rem;
+  }
+
+  .popup-content {
+    height: 35rem;
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .right-content {
+    width: 100%;
+  }
+
+  .right-content h1 {
+    font-size: 3rem;
+  }
+
+  .right-content p {
+    font-size: 1.4rem;
+  }
+
+  .popup-form {
+    width: 100%;
+    padding: 1.5rem 0rem 1.5rem 0rem;
+    margin-bottom: 1.3rem;
+  }
+
+  .right-content a:link,
+  .right-content a:visited {
+    padding: 1.5rem 3rem 1.5rem 3rem;
+  }
+
+  .popup-close {
+    top: 1rem;
+    right: 1rem;
+    padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+  }
+}
+
+/* ===================================================================================================================== */
+/* FIXME:  SPECIAL NOTES (PART 8)                                                                                        */
+/* ===================================================================================================================== */
+/* 01.            */
+/* 02.            */
+/* 03             */
+/* 04.            */
+/* 05.            */
+/* ===================================================================================================================== */
+
+/* ===================================================================================================================== */
+/* TODO:  PART 9 -                                                                                                       */
+/* ===================================================================================================================== */
+
+/* ===================================================================================================================== */
+/* FIXME:  SPECIAL NOTES (PART 9)                                                                                        */
+/* ===================================================================================================================== */
+/* 01.            */
+/* 02.            */
+/* 03             */
+/* 04.            */
+/* 05.            */
+/* ===================================================================================================================== */
+
+/* ===================================================================================================================== */
+/* TODO:  PART 10 -                                                                                                      */
+/* ===================================================================================================================== */
+
+/* ===================================================================================================================== */
+/* FIXME:  SPECIAL NOTES (PART 10)                                                                                       */
+/* ===================================================================================================================== */
+/* 01.            */
+/* 02.            */
+/* 03             */
+/* 04.            */
+/* 05.            */
+/* ===================================================================================================================== */
+
+/* ----------------------------------------------------------------------------------------- */
+/* FIXME:  GOOGLE CHROME DEVICE - BREAKPOINTS                          TODO: VARIOUS DEVICES */
+/* ----------------------------------------------------------------------------------------- */
+
+/* TODO:  SAMSUNG GALAXY FOLD  TODO: */
+@media screen and (min-width: 280px) and (min-height: 653px) {
+}
+
+/* TODO:  SAMSUNG GALAXY S8+  TODO: */
+@media screen and (min-width: 360px) and (min-height: 740px) {
+}
+
+/* TODO:  APPLE IPHONE SE  TODO: */
+@media screen and (min-width: 375px) and (min-height: 667px) {
+}
+
+/* TODO:  APPLE IPHONE 12 PRO  TODO: */
+@media screen and (min-width: 390px) and (min-height: 844px) {
+}
+
+/* TODO:  PIXEL 5  TODO: */
+@media screen and (min-width: 393px) and (min-height: 851px) {
+}
+
+/* TODO:  SAMSUNG GALAXY A51/A71  TODO: */
+/* TODO:  SAMSUNG GALAXY S20 ULTRA  TODO: */
+@media screen and (min-width: 412px) and (min-height: 914px) {
+}
+
+/* TODO:  APPLE IPHONE XR  TODO: */
+@media screen and (min-width: 414px) and (min-height: 896px) {
+}
+
+/* TODO:  SURFACE DUO  TODO: */
+@media screen and (min-width: 540px) and (min-height: 720px) {
+}
+
+/* TODO:  APPLE IPAD MINI  TODO: */
+@media screen and (min-width: 768px) and (min-height: 1024px) {
+}
+
+/* TODO:  APPLE IPAD AIR  TODO: */
+@media screen and (min-width: 820px) and (min-height: 1180px) {
+}
+
+/* TODO:  SURFACE PRO 7  TODO: */
+@media screen and (min-width: 912px) and (min-height: 1368px) {
+}
+
+/* TODO:  NEST HUB  TODO: */
+@media screen and (min-width: 1024px) and (min-height: 600) {
+}
+
+/* TODO:  NEST HUB MAX  TODO: */
+@media screen and (min-width: 1280px) and (min-height: 800px) {
+}
+
+/* ===================================================================================================================== */
+/*                                                                                            TODO:  STYLING ENDS  TODO: */
+/* ===================================================================================================================== */
