@@ -1544,6 +1544,14 @@ button {
   input[type="text"] {
     margin: 0.5rem 0.1rem 0.5rem 0.1rem;
   }
+
+  input[type="date"] {
+    margin: 0.5rem 0.1rem 0.5rem 0.1rem;
+  }
+
+  input[type="number"] {
+    margin: 0.5rem 0.1rem 0.5rem 0.1rem;
+  }
 }
 
 @media screen and (max-width: 350px) {

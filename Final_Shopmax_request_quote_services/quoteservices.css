@@ -1,5 +1,5 @@
 /* ===================================================================================================================== */
-/* TODO:  STYLING FOR REQUEST PRODUCT QUOTE                                                                              */
+/* TODO:  STYLING FOR REQUEST SERVICE QUOTE                                                                              */
 /* ===================================================================================================================== */
 
 :root {
@@ -163,14 +163,14 @@ h6 {
 }
 
 /* ===================================================================================================================== */
-/* TODO:  PART 1 - REQUEST PRODUCT QUOTE - PAGE TITLE                                                                    */
+/* TODO:  PART 1 - REQUEST SERVICE QUOTE - PAGE TITLE                                                                    */
 /* ===================================================================================================================== */
 
 /* ------------------------------- */
 /* FIXME:  VIEW - MOBILE FIRST     */
 /* ------------------------------- */
 
-.products__quote__page__title h5 {
+.service__quote__page__title h5 {
   display: flex;
   justify-content: center;
   justify-items: center;
@@ -184,14 +184,14 @@ h6 {
 /* ------------------------------- */
 
 /* ===================================================================================================================== */
-/* TODO:  PART 2A - REQUEST PRODUCT QUOTE                                                                                */
+/* TODO:  PART 2A - REQUEST SERVICE QUOTE                                                                                */
 /* ===================================================================================================================== */
 
 /* ------------------------------- */
 /* FIXME:  VIEW - MOBILE FIRST     */
 /* ------------------------------- */
 
-.product__quote__form__header {
+.service__quote__form__header {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -211,7 +211,7 @@ h6 {
 /* FIXME:  PRIVACY STATEMENT */
 /* ------------------------- */
 
-.product__quote__privacy__statement {
+.service__quote__privacy__statement {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -221,22 +221,22 @@ h6 {
   text-transform: uppercase;
 }
 
-.product__quote__privacy__statement strong {
+.service__quote__privacy__statement strong {
   text-decoration: none;
   color: var(--color-privacy-text);
 }
 
-.product__quote__privacy__statement a {
+.service__quote__privacy__statement a {
   text-decoration: none;
   color: var(--color-privacy-text);
   cursor: pointer;
 }
 
 /* --------------------------- */
-/* FIXME:  SHIPPING STATEMENT  */
+/* FIXME:  DELIVERY LOCATION  */
 /* --------------------------- */
 
-.product__quote__delivery__cost {
+.service__quote__delivery__location {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -246,12 +246,12 @@ h6 {
   text-transform: uppercase;
 }
 
-.product__quote__delivery__cost strong {
+.service__quote__delivery__location strong {
   text-decoration: none;
   color: var(--color-delivery-cost-text);
 }
 
-.product__quote__delivery__cost a {
+.service__quote__delivery__location a {
   text-decoration: none;
   color: var(--color-delivery-cost-text);
   cursor: pointer;
@@ -262,14 +262,14 @@ h6 {
 /* ------------------------------- */
 
 @media screen and (max-width: 430px) {
-  .product__quote__form__header {
+  .service__quote__form__header {
     font-size: 1rem;
     text-align: center;
   }
 }
 
 /* ===================================================================================================================== */
-/* TODO:  PART 2B - REQUEST PRODUCT QUOTE                                                                                */
+/* TODO:  PART 2B - REQUEST SERVICE QUOTE                                                                                */
 /* ===================================================================================================================== */
 
 /* ---------------------------------------------- */
@@ -770,6 +770,14 @@ button {
   }
 
   input[type="text"] {
+    margin: 0.5rem 0.1rem 0.5rem 0.1rem;
+  }
+
+  input[type="date"] {
+    margin: 0.5rem 0.1rem 0.5rem 0.1rem;
+  }
+
+  input[type="number"] {
     margin: 0.5rem 0.1rem 0.5rem 0.1rem;
   }
 }

@@ -100,7 +100,7 @@
     <!-- TODO:   CSS STYLE SHEET (INTERNAL) - LINK YOUR HTML DOCUMENT TO YOUR OWN CSS STYLE SHEET               -->
     <!-- ------------------------------------------------------------------------------------------------------ -->
 
-    <link rel="stylesheet" href="quoteproducts.css" />
+    <link rel="stylesheet" href="quoteservices.css" />
 
     <!-- ------------------------------------------------------------------------------------------------------ -->
     <!-- TODO:   CSS STYLE SHEET (EXTERNAL) - LINK TO NORMALISE.CSS STYLE SHEET (ONLY IF REQUIRED)              -->
@@ -121,19 +121,19 @@
   <!-- -------------------------------------------------------------------------------------------------------- -->
   <body>
     <!-- ------------------------------------------------------------------------------------------------------ -->
-    <!--                               TODO:  REQUEST PRODUCT QUOTE  TODO:                                      -->
+    <!--                               TODO:  REQUEST SERVICE QUOTE  TODO:                                      -->
     <!-- ------------------------------------------------------------------------------------------------------ -->
 
     <!-- ------------------------------------------------------------------------------------------------------ -->
     <!--                                TODO:  PART 1 - PAGE TITLE  TODO:                                       -->
     <!-- ------------------------------------------------------------------------------------------------------ -->
 
-    <div class="products__quote__page__title">
-      <h5><strong>request product quote</strong></h5>
+    <div class="service__quote__page__title">
+      <h5><strong>request service quote</strong></h5>
     </div>
 
     <!-- ------------------------------------------------------------------------------------------------------ -->
-    <!--                 TODO:  PART 2 - FORM COMPONENT - REQUEST PRODUCT QUOTE  TODO:                          -->
+    <!--                 TODO:  PART 2 - FORM COMPONENT - REQUEST SERVICE QUOTE  TODO:                          -->
     <!-- ------------------------------------------------------------------------------------------------------ -->
 
     <form action="" method="post">
@@ -141,19 +141,19 @@
       <!--                                  TODO:  SECTION 01  TODO:                                            -->
       <!-- ---------------------------------------------------------------------------------------------------- -->
 
-      <!-- -------------------------------------------------- -->
-      <!-- FIXME:  HEADER - DETAILS OF THE PRODUCT/S  FIXME:  -->
-      <!-- -------------------------------------------------- -->
+      <!-- ------------------------------------------------ -->
+      <!-- FIXME:  HEADER - DETAILS OF THE SERVICE  FIXME:  -->
+      <!-- ------------------------------------------------ -->
 
-      <div class="product__quote__form__header">
-        section 1 : Details of the product
+      <div class="service__quote__form__header">
+        section 1 : Details of the service
       </div>
 
       <!-- --------------------------------------------------- -->
       <!-- FIXME:  SUB-HEADER - POPI & PRIVACY POLICY  FIXME:  -->
       <!-- --------------------------------------------------- -->
 
-      <div class="product__quote__privacy__statement">
+      <div class="service__quote__privacy__statement">
         <p>
           view our<a href="pdf/shopmax_popi_policy.pdf" target="_blank"
             ><strong>&nbsp;&nbsp;POPI&nbsp;&nbsp;</strong></a
@@ -163,20 +163,21 @@
         </p>
       </div>
 
-      <!-- -------------------------------- -->
-      <!-- FIXME:  PRODUCT DETAILS  FIXME:  -->
-      <!-- -------------------------------- -->
+      <!-- ------------------------------- -->
+      <!-- FIXME:  SERVICE DETAILS  FIXME: -->
+      <!-- ------------------------------- -->
 
       <div class="form__group">
         <label for="product_details"
-          >Please provide all the details of the product</label
+          >Please provide brief details of the general or business service you
+          require a quote on</label
         >
         <textarea
           name="product_details"
           id="product_details"
           cols="30"
           rows="7"
-          placeholder="Details could include: Full name of product, brand, model number, detailed specifications, colour etc. (please provide as much details as possible or copy and paste your details here) ... *"
+          placeholder="Please provide as much details about the specific general or business services you require, in order for us to quote swiftly and accurately on the required service ... *"
           minlength="10"
           maxlength="1000"
           autocomplete="off"
@@ -184,20 +185,42 @@
         ></textarea>
       </div>
 
-      <!-- ------------------------------------------- -->
-      <!-- FIXME:  HOW MANY UNITS DO YOU NEED  FIXME:  -->
-      <!-- ------------------------------------------- -->
+      <!-- ------------------------------------- -->
+      <!-- FIXME:  START DATE OF SERVICE  FIXME: -->
+      <!-- ------------------------------------- -->
 
       <div class="form__group">
-        <label for="number_of_units">how many units do you need?</label>
+        <label for="start-date"
+          >By which date do you need the service to start?</label
+        >
         <input
-          id="number_of_units"
-          type="number"
+          id="start-date"
+          type="date"
           value=""
-          name="number_of_units"
-          placeholder="enter or the number of units you require ... *"
-          min="0"
-          autocomplete="off"
+          name="start-date"
+          placeholder="enter the required start date of the service ... *"
+          min="2022-04-01"
+          max="2099-12-31"
+          required
+        />
+      </div>
+
+      <!-- ----------------------------------- -->
+      <!-- FIXME:  END DATE OF SERVICE  FIXME: -->
+      <!-- ----------------------------------- -->
+
+      <div class="form__group">
+        <label for="completion-date"
+          >By which date do you need the service to be completed?</label
+        >
+        <input
+          id="completion-date"
+          type="date"
+          value=""
+          name="completion-date"
+          placeholder="enter the required completion date of the service... *"
+          min="2022-04-01"
+          max="2099-12-31"
           required
         />
       </div>
@@ -206,25 +229,58 @@
       <!--                                  TODO:  SECTION 02  TODO:                                            -->
       <!-- ---------------------------------------------------------------------------------------------------- -->
 
-      <!-- ------------------------------------------ -->
-      <!-- FIXME:  HEADER - DELIVERY ADDRESS  FIXME:  -->
-      <!-- ------------------------------------------ -->
+      <!-- ---------------------------------------- -->
+      <!-- FIXME:  HEADER - SERVICE ADDRESS  FIXME: -->
+      <!-- ---------------------------------------- -->
 
-      <div class="product__quote__form__header">
-        section 2 : your delivery address
+      <div class="service__quote__form__header">
+        section 2 : where must the service be carried out
       </div>
 
-      <!-- ------------------------------------------- -->
-      <!-- FIXME:  SUB-HEADER - DELIVERY COSTS  FIXME: -->
-      <!-- ------------------------------------------- -->
+      <!-- ----------------------------------------------- -->
+      <!-- FIXME:  SUB-HEADER - DELIVERY LOCATIONS  FIXME: -->
+      <!-- ----------------------------------------------- -->
 
-      <div class="product__quote__delivery__cost">
+      <div class="service__quote__delivery__location">
         <p>
-          We deliver to your door anywhere in South Africa - view our
-          <a href="pdf/shopmax_delivery_costs.pdf" target="_blank"
-            ><strong>&nbsp;DELIVERY COSTS&nbsp;</strong></a
-          >
+          We can deliver the service at any
+          <strong>South African</strong> or
+          <strong>International</strong> destination
         </p>
+      </div>
+
+      <!-- ----------------------------------------- -->
+      <!-- FIXME:  SELECT DELIVERY LOCATIONS  FIXME:  -->
+      <!-- ----------------------------------------- -->
+
+      <div class="form__group">
+        <label for="service-locations"
+          >Choose the location where the service must be carried out</label
+        >
+        <select id="service-locations" name="" required>
+          <option value="" selected>Select your service location *</option>
+          <option name="MYHOME" value="At my residential address">
+            At my South African residential address (on-site)
+          </option>
+          <option name="MYBUSINESS" value="At my business address">
+            At my South African business address (on-site)
+          </option>
+          <option
+            name="SPBUSINESS"
+            value="At Service Provider Business Address"
+          >
+            At the service provider's South African business address
+          </option>
+          <option
+            name="REMOTE"
+            value="It can be carried out REMOTELY by the Service Provider"
+          >
+            At an international destination
+          </option>
+          <option name="INTERNATIONAL" value="At an International Destination">
+            REMOTELY from any location
+          </option>
+        </select>
       </div>
 
       <!-- ----------------------------------- -->
@@ -233,37 +289,19 @@
 
       <div class="form__group">
         <label for="delivery-address"
-          >Provide your exact delivery address</label
+          >Please provide the exact service address (If required on-site at your
+          own residential or business address)</label
         >
         <textarea
           name="delivery-address"
           id="delivery-address"
           cols="30"
           rows="5"
-          placeholder="please provide the contact person, contact number and exact delivery address (with postal code) ... *"
+          placeholder="please provide the contact person, contact number and exact address (with postal code) where the service must be carried out ... "
           minlength="3"
           maxlength="250"
           autocomplete="off"
-          required
         ></textarea>
-      </div>
-
-      <!-- --------------------------------------------- -->
-      <!-- FIXME:  YOUR REQUIRED DELIVERY DATE?  FIXME:  -->
-      <!-- --------------------------------------------- -->
-
-      <div class="form__group">
-        <label for="delivery-date">What is your required delivery date?</label>
-        <input
-          id="delivery-date"
-          type="date"
-          value=""
-          name="delivery-date"
-          placeholder="enter the required delivery date ... *"
-          min="2022-04-01"
-          max="2099-12-31"
-          required
-        />
       </div>
 
       <!-- ---------------------------------------------------------------------------------------------------- -->
@@ -274,7 +312,7 @@
       <!-- FIXME:  HEADER - BILLING DETAILS  FIXME: -->
       <!-- ---------------------------------------- -->
 
-      <div class="product__quote__form__header">
+      <div class="service__quote__form__header">
         section 3 : Your billing details
       </div>
 
@@ -489,7 +527,7 @@
       <!-- FIXME:  HEADER - WHERE YOU ASSISTED BY ANY RESELLERS  FIXME: -->
       <!-- ------------------------------------------------------------ -->
 
-      <div class="product__quote__form__header">
+      <div class="service__quote__form__header">
         section 4 : Did one of our resellers assist you?
       </div>
 
@@ -559,7 +597,7 @@
       <!-- FIXME:  HEADER - ACCEPT THE TERMS AND CONDITIONS  FIXME:  -->
       <!-- --------------------------------------------------------- -->
 
-      <div class="product__quote__form__header">confirmation of details</div>
+      <div class="service__quote__form__header">confirmation of details</div>
 
       <!-- --------------------------------------------------------- -->
       <!-- FIXME:  HEADER - ACCEPT THE TERMS AND CONDITIONS  FIXME:  -->
@@ -612,7 +650,7 @@
     <!-- TODO:   JAVASCRIPT (OWN) - LINK ALL YOUR JAVASCRIPT FILES TO THE HTML DOCUMENT                         -->
     <!-- ------------------------------------------------------------------------------------------------------ -->
 
-    <!-- <script src="quoteproducts.js" defer></script> -->
+    <!-- <script src="script.js" defer></script> -->
 
     <!-- ------------------------------------------------------------------------------------------------------ -->
     <!-- TODO:  GOOGLE RECAPTCHA (VERSION 2) SCRIPT  - FOR ALL FORMS WITH FILE INPUT/UPLOAD ELEMENTS            -->
