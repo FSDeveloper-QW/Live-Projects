@@ -1,5 +1,5 @@
 // -----------------------------------------------------------------------------
-// TODO:  SCRIPT TO ADD COUNTER TO SHOPPING CART WHEN "ADD TO CART" IS CLICKED
+// TODO:  SCRIPT TO ADD COUNTER TO WISH LIST WHEN "ADD TO WISH LIST" IS CLICKED
 // -----------------------------------------------------------------------------
 
 let count = 0;

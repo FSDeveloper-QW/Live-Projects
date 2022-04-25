@@ -1,55 +1,39 @@
 /* ===================================================================================================================== */
-/* TODO:  STYLING FOR INVESTING PLAN (BRONZE)                                                                            */
+/* TODO:  STYLING FOR REQUEST PRODUCT QUOTE                                                                              */
 /* ===================================================================================================================== */
 
 :root {
   --color-page-background: white;
   --color-page-header-text: white;
-  /* Setting Accordian Colours */
-  --color-accordian-item-background: white;
-  --color-accordian-item-text: black;
-  --color-accordian-item-header-active: #986c43;
-  --color-accordian-item-plus-and-minus-sign: #986c43;
-  --color-accordian-item-seperation-line: #edeade;
-  /* Setting selling plans colour palettes */
-  --color-resellers: #f88e20;
-  --color-resellers-rgb: rgb(248, 142, 32);
-  --color-sellproduct: #8b3365;
-  --color-sellproduct-rgb: rgb(139, 51, 101);
-  --color-generalservices: #544179;
-  --color-generalservices-rgb: rgb(84, 65, 121);
-  --color-professionalservices: #01a7cf;
-  --color-professionalservices-rgb: rgb(1, 167, 207);
-  /* Setting investing plans colour palettes */
-  --color-bronze: #986c43;
-  --color-bronze-rgb: rgb(152, 108, 67);
-  --color-silver: #7d7d7d;
-  --color-silver-rga: rgb(125, 125, 125);
-  --color-gold: #dc9d04;
-  --color-gold-rgb: rgb(220, 157, 4);
-  --color-platinum: #434343;
-  --color-platinum-rgb: rgb(67, 67, 67);
+  /* FORM HEADERS */
+  --color-form-header-background: #dc143c;
+  --color-form-header-background-rgb: rgb(220, 20, 60);
+  --color-form-header-text: white;
+  /* PRIVACY STATEMENT */
+  --color-privacy-text: #dc143c;
+  /* DELIVERY COST STATEMENT */
+  --color-delivery-cost-text: #dc143c;
   /* FORM TEXT INPUTS */
   --color-input-border: #ccc;
-  --color-input-border-focus: #986c43;
+  --color-input-border-focus: #dc143c;
   /* FORM BUTTONS */
-  --color-button-background: #986c43;
+  --color-button-background: #dc143c;
   --color-button-text: white;
   /* CUSTOM CHECKBOX */
   --color-custom-checkbox-border: #ccc;
   --color-custom-checkbox-background: white;
-  --color-custom-checkbox-checkmark: #986c43;
-  --color-custom-checkbox-focus: #986c43;
+  --color-custom-checkbox-checkmark: #dc143c;
+  --color-custom-checkbox-focus: #dc143c;
   --color-custom-checkbox-disabled: #959495;
   /* CUSTOM RADIO BUTTON */
   --color-custom-radiobutton-border: #ccc;
   --color-custom-radiobutton-background: white;
-  --color-custom-radiobutton-circle: #986c43;
-  --color-custom-radiobutton-focus: #986c43;
+  --color-custom-radiobutton-circle: #dc143c;
+  --color-custom-radiobutton-focus: #dc143c;
   --color-custom-radiobutton-disabled: #959495;
   /* CUSTOM RANGE SLIDER (PART 1) - THUMB */
-  --color-custom-rangeslider-thumb-background: #986c43;
-  --color-custom-rangeslider-thumb-border: #986c43;
+  --color-custom-rangeslider-thumb-background: #dc143c;
+  --color-custom-rangeslider-thumb-border: #dc143c;
   --color-custom-rangeslider-thumb-shadow-01: rgba(0, 0, 0, 0.35);
   --color-custom-rangeslider-thumb-shadow-02: rgba(0, 0, 0, 0.35);
   /* CUSTOM RANGE SLIDER (PART 2) - TRACK */
@@ -60,7 +44,7 @@
   --color-custom-rangeslider-track-shadow-02: rgba(0, 0, 0, 0.35);
   /* FILE INPUT / UPLOAD */
   --color-custom-fileinput-background: white;
-  --color-custom-fileinput-background-hover: #986c43;
+  --color-custom-fileinput-background-hover: #dc143c;
   --color-custom-fileinput-background-hover-text: white;
   --color-custom-fileinput-label-text: black;
   --color-custom-fileinput-shadow-01: rgba(0, 0, 0, 0.35);
@@ -179,14 +163,14 @@ h6 {
 }
 
 /* ===================================================================================================================== */
-/* TODO:  PART 1 - INVESTING PLAN (BRONZE) - PAGE TITLE                                                                  */
+/* TODO:  PART 1 - REQUEST PRODUCT QUOTE - PAGE TITLE                                                                    */
 /* ===================================================================================================================== */
 
 /* ------------------------------- */
 /* FIXME:  VIEW - MOBILE FIRST     */
 /* ------------------------------- */
 
-.page__title h5 {
+.products__quote__page__title h5 {
   display: flex;
   justify-content: center;
   justify-items: center;
@@ -200,316 +184,14 @@ h6 {
 /* ------------------------------- */
 
 /* ===================================================================================================================== */
-/* TODO:  PART 2 - INVESTING PLAN (BRONZE) - EMBEDDED YOUTUBE VIDEO                                                      */
+/* TODO:  PART 2A - REQUEST PRODUCT QUOTE                                                                                */
 /* ===================================================================================================================== */
 
 /* ------------------------------- */
 /* FIXME:  VIEW - MOBILE FIRST     */
 /* ------------------------------- */
 
-.video__container {
-  position: relative;
-  height: 0;
-  width: 100%;
-  margin: 0rem 0rem 1.5rem 0rem;
-  padding: 0rem 0rem 56.25% 0rem;
-}
-
-.video__container iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  padding: 0.45rem 0.75rem 0.45rem 0.75rem;
-  /* border-radius: 1.5rem; */
-}
-
-/* ------------------------------- */
-/* FIXME:  VIEW - LARGER SCREENS   */
-/* ------------------------------- */
-
-@media screen and (min-width: 768px) {
-  .video__container iframe {
-    padding: 0.2rem 0.75rem 0.2rem 0.75rem;
-    /* border-radius: 2rem; */
-  }
-}
-
-/* ===================================================================================================================== */
-/* TODO:  PART 3 - INVESTING PLAN (BRONZE) - BANNER & DOWNLOAD PDF BROCHURE                                              */
-/* ===================================================================================================================== */
-
-/* ------------------------------- */
-/* FIXME:  VIEW - MOBILE FIRST     */
-/* ------------------------------- */
-
-.investmentplan__banner {
-  position: relative;
-  margin: 2rem 0.4rem 2rem 0.4rem;
-}
-
-.investmentplan__banner img {
-  width: 100%;
-  height: auto;
-  /* border: 1px solid lightgray; */
-  border-radius: 0.5rem;
-  /* box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.35); */
-  padding: 0.2rem 0.2rem 0.2rem 0.2rem;
-}
-
-/* ----------------------------- */
-/* TODO:  DOWNLOAD PDF BROCHURE  */
-/* ----------------------------- */
-
-.download__pdf {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin: -0.5rem 0rem -2rem 0rem;
-}
-
-.download__pdf a {
-  color: white;
-  text-decoration: none;
-}
-
-/* ------------------------------- */
-/* FIXME:  VIEW - LARGER SCREENS   */
-/* ------------------------------- */
-
-/* ===================================================================================================================== */
-/* TODO:  PART 4A - INVESTING PLAN (BRONZE) - ACCORDIAN "MAIN" CONTAINER (HOLDING ALL ELEMENTS)                          */
-/* ===================================================================================================================== */
-
-.accordian {
-  width: 95%;
-  max-width: 128rem;
-  margin: 2rem auto 2rem auto;
-  /* border: 1px solid white; */
-}
-
-/* ===================================================================================================================== */
-/* TODO:  PART 4B - INVESTING PLAN (BRONZE) - ACCORDIAN "ITEMS" CONTAINER (HOLDING ALL ITEMS)                            */
-/* ===================================================================================================================== */
-
-.accordian_item {
-  background-color: var(--color-accordian-item-background);
-  color: var(--color-accordian-item-text);
-  margin: 1rem 0rem 1rem 0rem;
-  border-radius: 0.5rem;
-  box-shadow: 3px 5px 20px 0 rgba(0, 0, 0, 0.35);
-}
-/* ===================================================================================================================== */
-/* TODO:  PART 4C - INVESTING PLAN (BRONZE) - ACCORDIAN - ITEM (HEADER)                                                  */
-/* ===================================================================================================================== */
-
-.accordian-item-header {
-  display: flex;
-  position: relative;
-  align-items: center;
-  min-height: 3.5rem;
-  line-height: 1.25rem;
-  font-size: 1.3rem;
-  font-weight: 600;
-  letter-spacing: 0.2rem;
-  text-transform: uppercase;
-  padding: 0.5rem 3rem 0.5rem 1rem;
-  cursor: pointer;
-}
-
-/* FIXME:  NOTE:  THE CSS ENTITY CODE FOR PLUS SIGN "+" = "\002B" */
-/* FIXME:  NOTE:  THE CSS ENTITY CODE FOR DOWN ARROW "v" = \25BE */
-
-.accordian-item-header::after {
-  /* content: "\25BE"; */
-  content: "\002B";
-  font-size: 2rem;
-  position: absolute;
-  right: 1rem;
-  color: var(--color-accordian-item-plus-and-minus-sign);
-  transition: transform 0.5s ease-in-out;
-}
-
-/* FIXME:  NOTE:  THE CSS ENTITY CODE FOR MINUS SIGN "-" = "\2212" */
-
-.accordian-item-header.active::after {
-  /* transform: rotate(-180deg); */
-  content: "\2212";
-  transform: none;
-}
-
-.accordian-item-header.active {
-  color: var(--color-accordian-item-header-active);
-}
-
-/* ===================================================================================================================== */
-/* TODO:  PART 4D - INVESTING PLAN (BRONZE) - ACCORDIAN-ITEM (BODY)                                                      */
-/* ===================================================================================================================== */
-
-/* ITEM - MAIN CONTAINER */
-
-.accordian-item-body {
-  /* display: none; */
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.2s ease-out;
-}
-
-/* ITEM - ALL ELEMENTS CONTAINER */
-
-.accordian-item-body-content {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin: 0rem 0rem 0rem 0rem;
-  padding: 0.5rem 1rem 0.5rem 1rem;
-  border-bottom: 1px solid var(--color-accordian-item-seperation-line);
-  /* border: 1px solid red; */
-}
-
-.content-statement {
-  max-width: 900px;
-  font-size: 1.2rem;
-  font-weight: 500;
-  text-align: justify;
-  letter-spacing: 0.025rem;
-  line-height: 1.5;
-  padding: 0rem 1rem 0rem 1rem;
-  /* border: 1px solid green; */
-}
-
-.content-confirmation {
-  min-width: 200px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  line-height: 0.5;
-  padding: 0.5rem 0.5rem 0.5rem 0.5rem;
-  border-left: 1px solid var(--color-accordian-item-seperation-line);
-  /* border: 1px solid red; */
-}
-
-.confirmation-image img {
-  width: 3rem;
-  height: 3rem;
-}
-
-.confirmation-text {
-  font-size: 1.1rem;
-  line-height: 0.5;
-  padding: 0.5rem 0.5rem 0.5rem 0.5rem;
-}
-
-/* ===================================================================================================================== */
-/* TODO:  PART 4E - INVESTING PLAN (BRONZE) - MEDIA QUERY (LARGER DEVICES)                                               */
-/* ===================================================================================================================== */
-
-@media screen and (max-width: 430px) {
-  .accordian-item-header {
-    font-size: 1rem;
-    justify-content: center;
-    text-align: center;
-  }
-
-  .accordian-item-body-content {
-    flex-direction: column;
-    margin: 0rem 0rem 0rem 0rem;
-    padding: 0.5rem 1rem 0.5rem 1rem;
-  }
-
-  .content-statement {
-    justify-content: center;
-    text-align: center;
-    max-width: 280px;
-    font-size: 1rem;
-    padding: 0rem 0.5rem 0rem 0.5rem;
-  }
-
-  .content-confirmation {
-    padding: 0.25rem 0.5rem 0.25rem 0.5rem;
-    border-left: none;
-  }
-
-  .confirmation-image img {
-    width: 2.5rem;
-    height: 2.5rem;
-  }
-
-  .confirmation-text {
-    font-size: 1rem;
-    padding: 0.5rem 0.5rem 0.25rem 0.5rem;
-  }
-}
-
-/* ----------------------------------------------------------------------------------------- */
-/* FIXME:  GOOGLE CHROME DEVICE - BREAKPOINTS                          TODO: VARIOUS DEVICES */
-/* ----------------------------------------------------------------------------------------- */
-
-/* TODO:  SAMSUNG GALAXY FOLD  TODO: */
-/* @media screen and (min-width: 280px) and (min-height: 653px) {
-  } */
-
-/* TODO:  SAMSUNG GALAXY S8+  TODO: */
-/* @media screen and (min-width: 360px) and (min-height: 740px) {
-  } */
-
-/* TODO:  APPLE IPHONE SE  TODO: */
-/* @media screen and (min-width: 375px) and (min-height: 667px) {
-  } */
-
-/* TODO:  APPLE IPHONE 12 PRO  TODO: */
-/* @media screen and (min-width: 390px) and (min-height: 844px) {
-  } */
-
-/* TODO:  PIXEL 5  TODO: */
-/* @media screen and (min-width: 393px) and (min-height: 851px) {
-  } */
-
-/* TODO:  SAMSUNG GALAXY A51/A71  TODO: */
-/* TODO:  SAMSUNG GALAXY S20 ULTRA  TODO: */
-/* @media screen and (min-width: 412px) and (min-height: 914px) {
-  } */
-
-/* TODO:  APPLE IPHONE XR  TODO: */
-/* @media screen and (min-width: 414px) and (min-height: 896px) {
-  } */
-
-/* TODO:  SURFACE DUO  TODO: */
-/* @media screen and (min-width: 540px) and (min-height: 720px) {
-  } */
-
-/* TODO:  APPLE IPAD MINI  TODO: */
-/* @media screen and (min-width: 768px) and (min-height: 1024px) {
-  } */
-
-/* TODO:  APPLE IPAD AIR  TODO: */
-/* @media screen and (min-width: 820px) and (min-height: 1180px) {
-  } */
-
-/* TODO:  SURFACE PRO 7  TODO: */
-/* @media screen and (min-width: 912px) and (min-height: 1368px) {
-  } */
-
-/* TODO:  NEST HUB  TODO: */
-/* @media screen and (min-width: 1024px) and (min-height: 600) {
-  } */
-
-/* TODO:  NEST HUB MAX  TODO: */
-/* @media screen and (min-width: 1280px) and (min-height: 800px) {
-  } */
-
-/* ===================================================================================================================== */
-/* TODO:  PART 5 - INVESTING PLAN (BRONZE) - FORM HEADERS (ON REGISTRATION FORM)                                         */
-/* ===================================================================================================================== */
-
-/* ------------------------------- */
-/* FIXME:  VIEW - MOBILE FIRST     */
-/* ------------------------------- */
-
-.registration_form__header {
+.product__quote__form__header {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -517,8 +199,8 @@ h6 {
   font-size: 1.5rem;
   font-weight: 500;
   letter-spacing: 0.2rem;
-  background-color: var(--color-bronze);
-  color: var(--color-page-header-text);
+  background-color: var(--color-form-header-background);
+  color: var(--color-form-header-text);
   margin: 2.5rem 0.4rem 2rem 0.4rem;
   padding: 0.5rem 1rem 0.5rem 1rem;
   border-radius: 0.5rem;
@@ -529,23 +211,49 @@ h6 {
 /* FIXME:  PRIVACY STATEMENT */
 /* ------------------------- */
 
-.privacy__statement {
+.product__quote__privacy__statement {
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
   margin: 1rem 0.4rem 2rem 0.4rem;
   font-size: 1.2rem;
   text-transform: uppercase;
 }
 
-.privacy__statement strong {
+.product__quote__privacy__statement strong {
   text-decoration: none;
-  color: var(--color-bronze);
+  color: var(--color-privacy-text);
 }
 
-.privacy__statement a {
+.product__quote__privacy__statement a {
   text-decoration: none;
-  color: var(--color-bronze);
+  color: var(--color-privacy-text);
+  cursor: pointer;
+}
+
+/* --------------------------- */
+/* FIXME:  SHIPPING STATEMENT  */
+/* --------------------------- */
+
+.product__quote__delivery__cost {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 1rem 0.4rem 2rem 0.4rem;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+}
+
+.product__quote__delivery__cost strong {
+  text-decoration: none;
+  color: var(--color-delivery-cost-text);
+}
+
+.product__quote__delivery__cost a {
+  text-decoration: none;
+  color: var(--color-delivery-cost-text);
   cursor: pointer;
 }
 
@@ -554,23 +262,19 @@ h6 {
 /* ------------------------------- */
 
 @media screen and (max-width: 430px) {
-  .registration_form__header {
+  .product__quote__form__header {
     font-size: 1rem;
     text-align: center;
   }
 }
 
 /* ===================================================================================================================== */
-/* TODO:  PART 6 - INVESTING PLAN (BRONZE) - REGISTRATION FORM                                                           */
+/* TODO:  PART 2B - REQUEST PRODUCT QUOTE                                                                                */
 /* ===================================================================================================================== */
 
 /* ---------------------------------------------- */
 /* FIXME:  FORM CONTAINER  FIXME:                 */
 /* ---------------------------------------------- */
-
-/* form {
-  width: 100vw;
-} */
 
 /* ---------------------------------------------- */
 /* FIXME:  FORM LABEL  FIXME:                     */
@@ -609,7 +313,7 @@ input[type="text"] {
 
 input[type="text"]:focus {
   border-color: var(--color-input-border-focus);
-  box-shadow: 0 0 0 2px rgba(152, 108, 67, 0.95);
+  box-shadow: 0 0 0 2px rgba(220, 20, 60, 0.95);
   outline: 0;
 }
 
@@ -634,7 +338,7 @@ input[type="tel"] {
 
 input[type="tel"]:focus {
   border-color: var(--color-input-border-focus);
-  box-shadow: 0 0 0 2px rgba(152, 108, 67, 0.95);
+  box-shadow: 0 0 0 2px rgba(220, 20, 60, 0.95);
   outline: 0;
 }
 
@@ -661,7 +365,56 @@ textarea {
 
 textarea:focus {
   border-color: var(--color-input-border-focus);
-  box-shadow: 0 0 0 2px rgba(152, 108, 67, 0.95);
+  box-shadow: 0 0 0 2px rgba(220, 20, 60, 0.95);
+  outline: 0;
+}
+
+/* ---------------------------------------------- */
+/* FIXME:  INPUT FIELD TYPE =  NUMBER  FIXME:     */
+/* ---------------------------------------------- */
+
+input[type="number"] {
+  /* width: 25rem; */
+  width: 96%;
+  border-radius: 0.5rem;
+  border: 1px solid var(--color-input-border);
+  /* box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.35); */
+  /* box-shadow: 0 5px 4px rgba(0, 0, 0, 0.35); */
+  margin: 0.5rem 1.4rem 0.5rem 1.4rem;
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  font-size: 1.2rem;
+  font-family: "poppins", sans-serif;
+  cursor: pointer;
+  transition: border-color 0.15s, box-shadow 0.15s;
+}
+
+input[type="number"]:focus {
+  border-color: var(--color-input-border-focus);
+  box-shadow: 0 0 0 2px rgba(220, 20, 60, 0.95);
+  outline: 0;
+}
+
+/* ---------------------------------------------- */
+/* FIXME:  INPUT FIELD TYPE =  DATE  FIXME:       */
+/* ---------------------------------------------- */
+
+input[type="date"] {
+  /* width: 25rem; */
+  width: 96%;
+  border-radius: 0.5rem;
+  border: 1px solid var(--color-input-border);
+  /* box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.35); */
+  /* box-shadow: 0 5px 4px rgba(0, 0, 0, 0.35); */
+  margin: 0.5rem 1.4rem 0.5rem 1.4rem;
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: border-color 0.15s, box-shadow 0.15s;
+}
+
+input[type="date"]:focus {
+  border-color: var(--color-input-border-focus);
+  box-shadow: 0 0 0 2px rgba(220, 20, 60, 0.95);
   outline: 0;
 }
 
@@ -686,7 +439,7 @@ select {
 
 select:focus {
   border-color: var(--color-input-border-focus);
-  box-shadow: 0 0 0 2px rgba(152, 108, 67, 0.95);
+  box-shadow: 0 0 0 2px rgba(220, 20, 60, 0.95);
   outline: 0;
 }
 
@@ -882,7 +635,7 @@ input[type="checkbox"]:disabled {
 }
 
 label .label__strong {
-  color: var(--color-bronze);
+  color: var(--color-privacy-text);
 }
 
 /* ------------------------------------------------------------------------- */
@@ -909,7 +662,7 @@ input[type="email"] {
 
 input[type="email"]:focus {
   border-color: var(--color-input-border-focus);
-  box-shadow: 0 0 0 2px rgba(152, 108, 67, 0.95);
+  box-shadow: 0 0 0 2px rgba(220, 20, 60, 0.95);
   outline: 0;
 }
 

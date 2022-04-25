@@ -1060,6 +1060,10 @@ label {
   margin: 0.5rem 1.75rem 0.5rem 1.75rem;
 }
 
+input::placeholder {
+  font-family: "Poppins", sans-serif;
+}
+
 /* ---------------------------------------------- */
 /* FIXME:  INPUT FIELD TYPE =  TEXT  FIXME:       */
 /* e.g. "NAME" or "LAST NAME" etc.                */
