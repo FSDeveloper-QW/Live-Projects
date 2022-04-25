@@ -1,14 +1,14 @@
 /* ===================================================================================================================== */
-/* TODO:  STYLING FOR ANIMATED ADD TO CART BUTTONS                                                                       */
+/* TODO:  STYLING FOR ANIMATED ADD TO WISH LIST BUTTONS                                                                  */
 /* ===================================================================================================================== */
 
 :root {
-  /* COLOR SCHEME FOR ADD TO CART BUTTONS, CARTS AND COUNTERS */
-  --color-add-to-cart-button-background: #dc143c;
-  --color-add-to-cart-button-text: white;
-  --color-shopping-cart-icon: black;
-  --color-shopping-cart-counter-background: #dc143c;
-  --color-shopping-cart-counter-text: white;
+  /* COLOR SCHEME FOR ADD TO WISH LIST BUTTONS, CARTS AND COUNTERS */
+  --color-add-to-wish-list-button-background: #dc143c;
+  --color-add-to-wish-list-button-text: white;
+  --color-wish-list-icon: black;
+  --color-wish-list-counter-background: #dc143c;
+  --color-wish-list-counter-text: white;
 }
 
 * {
@@ -31,18 +31,18 @@ body {
 /* FIXME:  CONTAINER - MAIN (HOLDING ALL ELEMENTS)  FIXME: */
 /* ------------------------------------------------------- */
 
-.shopping-container {
+.wishlist-container {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
 }
 
-/* ------------------------------------ */
-/* FIXME:  BUTTON - ADD TO CART  FIXME: */
-/* ------------------------------------ */
+/* ----------------------------------------- */
+/* FIXME:  BUTTON - ADD TO WISH LIST  FIXME: */
+/* ----------------------------------------- */
 
-.shopping-container button {
+.wishlist-container button {
   font-size: 1.5rem;
   font-weight: 600;
   letter-spacing: 0.1rem;
@@ -50,25 +50,25 @@ body {
   margin: 1rem 1rem 1rem 1rem;
   padding: 0.5rem 1.5rem 0.5rem 1.5rem;
   border-radius: 0.5rem;
-  background-color: var(--color-add-to-cart-button-background);
-  color: var(--color-add-to-cart-button-text);
+  background-color: var(--color-add-to-wish-list-button-background);
+  color: var(--color-add-to-wish-list-button-text);
   outline: none;
   border: none;
   transition: transform 0.3s ease-in-out;
   box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.35);
 }
 
-.shopping-container button:hover {
+.wishlist-container button:hover {
   opacity: 0.9;
   transform: scale(1.02);
   cursor: pointer;
 }
 
-/* ---------------------------------------- */
-/* FIXME:  CONTAINER - CART COUNTER  FIXME: */
-/* ---------------------------------------- */
+/* --------------------------------------------- */
+/* FIXME:  CONTAINER - WISH LIST COUNTER  FIXME: */
+/* --------------------------------------------- */
 
-.counter-container {
+.wishlist-counter-container {
   position: relative;
   display: flex;
   justify-content: center;
@@ -78,21 +78,21 @@ body {
   margin: 1rem 1rem 1rem 1rem;
 }
 
-/* ---------------------------------- */
-/* FIXME:  SHOPPING CART ICON  FIXME: */
-/* ---------------------------------- */
+/* ------------------------------ */
+/* FIXME:  WISH LIST ICON  FIXME: */
+/* ------------------------------ */
 
-.counter-container i {
+.wishlist-counter-container i {
   font-size: 4rem;
   width: 4.5rem;
-  color: var(--color-shopping-cart-icon);
+  color: var(--color-wish-list-icon);
 }
 
 /* -------------------------------- */
 /* FIXME:  COUNTER - NUMBER  FIXME: */
 /* -------------------------------- */
 
-.counter-container span {
+.wishlist-counter-container span {
   position: absolute;
   user-select: none;
   display: flex;
@@ -107,19 +107,19 @@ body {
   border-radius: 50%;
   font-size: 1.05rem;
   font-weight: bold;
-  background-color: var(--color-shopping-cart-counter-background);
-  color: var(--color-shopping-cart-counter-text);
+  background-color: var(--color-wish-list-counter-background);
+  color: var(--color-wish-list-counter-text);
 }
 
 /* ----------------------------------- */
 /* FIXME:  COUNTER - ANIMATION  FIXME: */
 /* ----------------------------------- */
 
-.counter-container span:not(.animated-counter) {
+.wishlist-counter-container span:not(.wishlist-animated-counter) {
   display: none;
 }
 
-.counter-container span .animated-counter {
+.wishlist-counter-container span .wishlist-animated-counter {
   animation: count 0.4s ease-in-out;
 }
 
