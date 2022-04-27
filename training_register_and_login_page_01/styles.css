@@ -28,6 +28,14 @@
   /* --color-background-linear-gradient-2: #fde8ec; */
   --color-panel-text: white;
   --color-panel-button-border: white;
+  /* PRIVACY STATEMENT */
+  --color-privacy-text: #dc143c;
+  /* CUSTOM CHECKBOX */
+  --color-custom-checkbox-border: #ccc;
+  --color-custom-checkbox-background: white;
+  --color-custom-checkbox-checkmark: #dc143c;
+  --color-custom-checkbox-focus: #dc143c;
+  --color-custom-checkbox-disabled: #959495;
 }
 
 * {
@@ -248,6 +256,35 @@ form.sign-in-form {
   letter-spacing: 0.1rem;
   text-transform: uppercase;
   color: var(--color-shopper-login-page-title);
+}
+
+/* ------------------------- */
+/* FIXME:  PRIVACY STATEMENT */
+/* ------------------------- */
+
+.product__quote__privacy__statement {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 0rem 0.4rem 1.5rem 0.4rem;
+  font-size: 1.2rem;
+  font-weight: 500;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+}
+
+.product__quote__privacy__statement strong {
+  text-decoration: none;
+  font-weight: 900;
+  color: var(--color-privacy-text);
+}
+
+.product__quote__privacy__statement a {
+  text-decoration: none;
+  font-weight: 900;
+  color: var(--color-privacy-text);
+  cursor: pointer;
 }
 
 /* --------------------------------------- */
@@ -563,31 +600,10 @@ form.sign-in-form {
     grid-row: 1 / 2;
   }
 
-  .image {
-    width: 200px;
-    transition: transform 0.9s ease-in-out;
-    transition-delay: 0.6s;
-  }
-
   .panel .content {
     padding-right: 15%;
     transition: transform 0.9s ease-in-out;
     transition-delay: 0.8s;
-  }
-
-  .panel h3 {
-    font-size: 1.2rem;
-  }
-
-  .panel p {
-    font-size: 0.7rem;
-    padding: 0.5rem 0;
-  }
-
-  .btn.transparent {
-    width: 110px;
-    height: 35px;
-    font-size: 0.7rem;
   }
 
   .container:before {
@@ -633,12 +649,10 @@ form.sign-in-form {
     padding: 0 1.5rem;
   }
 
-  .image {
-    display: none;
-  }
   .panel .content {
     padding: 0.5rem 1rem;
   }
+
   .container {
     padding: 1.5rem;
   }
@@ -655,35 +669,359 @@ form.sign-in-form {
 }
 
 /* ===================================================================================================================== */
-/* TODO:  PART 6 - FORM - GOOGLE RECAPTCHA (VERSION 2 - I AM NOT A ROBOT)                                                */
+/* TODO:  PART 6 - FORM - CHECKBOX OPTIONS                                                                               */
+/* ===================================================================================================================== */
+
+.form__group {
+  margin: 0rem 0rem 0rem 0rem;
+  display: flex;
+  justify-content: center;
+  max-width: 30rem;
+  width: 100%;
+  border-radius: 1rem;
+}
+
+.form__group__double {
+  margin: 0rem 0rem 0rem 0rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 30rem;
+  width: 100%;
+  border-radius: 1rem;
+}
+
+label .label__strong {
+  color: var(--color-privacy-text);
+}
+
+/* --------------------------------------- */
+/* FIXME:  INPUT FIELD = CHECKBOX  FIXME:  */
+/* --------------------------------------- */
+
+.checkbox__option {
+  width: 100%;
+  font-size: 0.95rem;
+  font-weight: 500;
+  line-height: 1.5;
+  text-transform: none;
+  text-align: justify;
+  display: grid;
+  grid-template-columns: 1rem auto;
+  gap: 1.5rem;
+  margin: 0rem 0rem 0rem 0rem;
+  cursor: pointer;
+  padding: 1rem 1rem 1rem 1rem;
+}
+
+/* ------------------------------------ */
+/* THIS IS TO HIDE THE NATIVE CHECKBOX  */
+/* ------------------------------------ */
+
+input[type="checkbox"] {
+  /* Add if not using autoprefixer */
+  -webkit-appearance: none;
+  appearance: none;
+  /* For iOS < 15 to remove gradient background */
+  background-color: var(--color-custom-checkbox-background);
+  /* Not removed via appearance */
+  margin: 0;
+}
+
+/* --------------------------------------- */
+/* THIS IS TO DISPLAY THE CUSTOM CHECKBOX  */
+/* --------------------------------------- */
+
+input[type="checkbox"] {
+  appearance: none;
+  background-color: var(--color-custom-checkbox-background);
+  margin: 0;
+  font: inherit;
+  color: var(--color-custom-checkbox-border);
+  width: 1.5rem;
+  height: 1.5rem;
+  border: 0.15em solid var(--color-custom-checkbox-border);
+  border-radius: 0.15em;
+  transform: translateY(-0.075em);
+  display: grid;
+  place-content: center;
+  cursor: pointer;
+}
+
+.checkbox__option + .checkbox__option {
+  margin-top: 1rem;
+}
+
+/* --------------------------------------- */
+/* CUSTOM CHECKBOX - CHECKED STATE         */
+/* --------------------------------------- */
+
+input[type="checkbox"]::before {
+  content: "";
+  width: 0.7rem;
+  height: 0.7rem;
+  transform: scale(0);
+  transition: 120ms transform ease-in-out;
+  box-shadow: inset 1em 1em var(--color-custom-checkbox-checkmark);
+  /* Windows High Contrast Mode */
+  background-color: CanvasText;
+  /* Creating a checkmark with CLIP-PATH */
+  transform-origin: bottom left;
+  clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
+}
+
+input[type="checkbox"]:checked::before {
+  transform: scale(1);
+}
+
+/* --------------------------------------- */
+/* CUSTOM CHECKBOX - FOCUSSED STATE        */
+/* --------------------------------------- */
+
+input[type="checkbox"]:focus {
+  outline: max(2px, 0.15em) solid var(--color-custom-checkbox-focus);
+  outline-offset: max(1px, 0.15em);
+}
+
+/* --------------------------------------- */
+/* CUSTOM CHECKBOX - DISABLED STATE        */
+/* --------------------------------------- */
+
+.checkbox__option--disabled {
+  color: var(--color-custom-checkbox-disabled);
+  cursor: not-allowed;
+}
+
+input[type="checkbox"]:disabled {
+  color: var(--color-custom-checkbox-disabled);
+  cursor: not-allowed;
+}
+
+/* ------------------------------------ */
+/* FIXME:  FINAL MEDIA QUERY - CHECKBOX */
+/* ------------------------------------ */
+
+@media screen and (max-width: 870px) {
+  .image {
+    width: 220px;
+    transition: transform 0.9s ease-in-out;
+    transition-delay: 0.6s;
+  }
+
+  .panel h3 {
+    margin: -1rem 0rem 1rem 0rem;
+    font-size: 2.2rem;
+    text-align: center;
+  }
+
+  .panel p {
+    margin: 0rem 0rem 1rem 0rem;
+    font-size: 1.1rem;
+    padding: 0.5rem 1rem 1rem 0.5rem;
+  }
+
+  .btn.transparent {
+    margin: 0rem 0rem 0rem 0rem;
+    padding: 0.25rem 0.5rem 0.25rem 0.5rem;
+    width: 10rem;
+    height: 3rem;
+    font-size: 1.3rem;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  .image {
+    width: 200px;
+  }
+
+  .panel h3 {
+    margin: -1rem 0rem 0.75rem 0rem;
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .panel p {
+    margin: 0rem 0rem 0.5rem 0rem;
+    font-size: 1.05rem;
+    padding: 0.5rem 1rem 1rem 0.5rem;
+  }
+
+  .btn.transparent {
+    margin: 0rem 0rem 0rem 0rem;
+    padding: 0.25rem 0.5rem 0.25rem 0.5rem;
+    width: 10rem;
+    height: 3rem;
+    font-size: 1.3rem;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 665px) {
+  .image {
+    width: 200px;
+  }
+
+  .panel h3 {
+    margin: -0.5rem 0rem 0.75rem 0rem;
+    font-size: 1.8rem;
+    text-align: center;
+  }
+
+  .panel p {
+    margin: 0rem 0rem 0.5rem 0rem;
+    font-size: 0.95rem;
+    padding: 0.5rem 1rem 1rem 0.5rem;
+  }
+}
+
+@media screen and (max-width: 610px) {
+  .image {
+    width: 180px;
+  }
+
+  .panel h3 {
+    margin: -0.5rem 0rem 0.5rem 0rem;
+    font-size: 1.65rem;
+    text-align: center;
+  }
+
+  .panel p {
+    margin: 0rem 0rem 0.25rem 0rem;
+    font-size: 0.9rem;
+    padding: 0.5rem 1rem 1rem 0.5rem;
+  }
+}
+
+@media screen and (max-width: 570px) {
+  .image {
+    width: 140px;
+  }
+}
+
+@media screen and (max-width: 506px) {
+  .image {
+    width: 120px;
+  }
+
+  .input-field {
+    margin: 0.5rem 0rem 0.5rem -2.75rem;
+    max-width: 21rem;
+  }
+
+  .btn {
+    margin: 0rem 0rem 1.5rem -2.75rem;
+    max-width: 21rem;
+    font-size: 1.3rem;
+  }
+
+  .product__quote__privacy__statement {
+    margin: 0rem 0rem 1.5rem -2.75rem;
+    max-width: 21rem;
+    font-size: 0.85rem;
+  }
+
+  .title {
+    margin: 0rem 0rem 1rem -2.75rem;
+    font-size: 2rem;
+    max-width: 21rem;
+    text-align: center;
+  }
+
+  .social-text {
+    font-size: 1.1rem;
+    margin: -1.25rem 0rem 0rem -2.75rem;
+  }
+
+  .social-icon {
+    margin: -0.25rem 2.25rem 0.5rem -0.75rem;
+    width: 2.5rem;
+    height: 2.5rem;
+    font-size: 1rem;
+    border-radius: 50%;
+    border: 1px solid var(--color-shopper-login-page-social-media-icons-border);
+    color: var(--color-shopper-login-page-social-media-icons);
+    transition: 0.3s;
+  }
+
+  .panel h3 {
+    margin: -1rem 0rem 1rem -2.75rem;
+    font-size: 1.6rem;
+    text-align: center;
+  }
+
+  .panel p {
+    margin: 0rem 0rem 1rem -2.75rem;
+    font-size: 0.85rem;
+    padding: 0.5rem 1rem 1rem 0.5rem;
+  }
+
+  .btn.transparent {
+    margin: 0rem 0rem 0rem -2.75rem;
+    padding: 0.25rem 0.5rem 0.25rem 0.5rem;
+    width: 10rem;
+    height: 3rem;
+    font-size: 1.3rem;
+  }
+
+  .form__group {
+    margin: 0.5rem 0rem 1rem -2.75rem;
+    padding: 0rem 0rem 0rem 0rem;
+    max-width: 21rem;
+  }
+
+  .form__group__double {
+    margin: 0.5rem 0rem 1rem -2.75rem;
+    padding: 0rem 0rem 0rem 0rem;
+    max-width: 21rem;
+  }
+
+  .checkbox__option {
+    margin: 0rem 0rem 0rem 0rem;
+    padding: 0.75rem 0.75rem 0.75rem 0.75rem;
+  }
+}
+
+@media screen and (max-width: 440px) {
+  .image {
+    width: 100px;
+  }
+}
+
+@media screen and (max-width: 408px) {
+  .image {
+    /* width: 75px; */
+    display: none;
+  }
+}
+
+/* ===================================================================================================================== */
+/* TODO:  PART 7 - FORM - GOOGLE RECAPTCHA (VERSION 2 - I AM NOT A ROBOT)                                                */
 /* ===================================================================================================================== */
 
 /* ---------------------------------------------- */
 /* FIXME:  STYLING - GOOGLE RECAPTCHA  FIXME:     */
 /* ---------------------------------------------- */
 
-.form__group {
-  margin: 0rem 0rem 1rem 1rem;
-}
-
 .g-recaptcha {
-  margin: 1.5rem 1rem 1rem 1rem;
+  width: 100%;
+  margin: 0.5rem 0.5rem 0rem 2rem;
   display: flex;
   justify-content: center;
   align-items: center;
   /* transform: scale(0.89); */
-  transform: scale(0.97);
+  transform: scale(0.95);
   /* -webkit-transform: scale(0.89); */
-  -webkit-transform: scale(0.97);
+  -webkit-transform: scale(0.95);
   transform-origin: 0 0;
   -webkit-transform-origin: 0 0;
 }
 
-@media screen and (max-width: 350px) {
+@media screen and (max-width: 506px) {
   .g-recaptcha {
-    margin: 1rem 0.5rem -1rem 4rem;
-    transform: scale(0.75);
-    -webkit-transform: scale(0.75);
+    margin: 0.5rem 0.5rem -1.8rem 7.5rem;
+    transform: scale(0.67);
+    -webkit-transform: scale(0.67);
   }
 }
 
