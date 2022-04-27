@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+    <!-- TODO:   STANDARD META DATA - BASIC REQUIREMENT                                                         -->
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+    <!-- TODO:   STANDARD META DATA - MOBILE SPECIFIC                                                           -->
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+    <!-- FIXME:  PART 2 - SEARCH ENGINE OPTIMIZATION (SEO) : STANDARD HTML TOOLS - DESCRIPTION                  -->
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+
+    <meta
+      name="description"
+      content="ENTER A SHORT DESCRIPTION OF YOUR BUSINESS FOR GOOGLE SEARCH ENGINES TO INDEX"
+    />
+
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+    <!-- TODO:   PROVIDE A TITLE FOR YOUR PAGE - APPEARS IN BROWSER TAB                                         -->
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+
+    <title>REGISTER & LOGIN PAGE</title>
+
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+    <!-- TODO:   LINK GOOGLE FONTS - TO USE CERTAIN FONTS ON YOUR PAGE - https://fonts.google.com/              -->
+    <!-- MY FONTS: ROBOTO, OPEN SANS, MONTSERRAT, POPPINS, RALEWAY, ALICE (ALL REGULAR)                         -->
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alice&family=Montserrat&family=Open+Sans&family=Poppins&family=Raleway&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+    <!-- TODO:  FONT AWESOME ICONS  TODO: TO LINK YOUR PROJECT                                                  -->
+    <!-- https://www.w3schools.com/icons/fontawesome_icons_intro.asp                                            -->
+    <!-- TO VIEW THE LIST OF FREE ICONS TO USE : https://fontawesome.com/search?m=free                          -->
+    <!-- FIXME:  COPY AND PASTE: FIXME:  SYNTAX TO USE IN CODE:   <i class="fa fa-iconname"></i>                -->
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+
+    <!-- PREVIOUS -->
+
+    <!-- <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    /> -->
+
+    <!-- LATEST (APRIL 2022) -->
+
+    <!-- <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/fontawesome.min.css"
+    /> -->
+
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+    <!-- TODO:  BOXICONS  TODO: (FOR USE IN ANY PROJECT                                                         -->
+    <!-- https://boxicons.com/usage#import-css                                                                  -->
+    <!-- FIXME:  COPY AND PASTE: FIXME:  SYNTAX TO USE IN CODE:   <i class="bx bx-user"></i>                    -->
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+
+    <link
+      href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+    <!-- TODO:   CSS STYLE SHEET (INTERNAL) - LINK YOUR HTML DOCUMENT TO YOUR OWN CSS STYLE SHEET               -->
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+
+    <link rel="stylesheet" href="styles.css" />
+
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+    <!-- TODO:   CSS STYLE SHEET (EXTERNAL) - LINK TO NORMALISE.CSS STYLE SHEET (ONLY IF REQUIRED)              -->
+    <!-- ALWAYS DOWNLOAD THE LATEST FILE (BEFORE YOU START):  https://necolas.github.io/normalize.css/          -->
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+
+    <!-- <link rel="stylesheet" href="normalize.css" /> -->
+
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+    <!-- TODO:   LINK YOUR HTML DOCUMENT TO ANIMATE ON SCROLL (AOS) FOR ALL PAGE ANIMATIONS                     -->
+    <!-- JAVASCRIPT INCLUDED AT END OF HTML DOCUMENT / WEBSITE: https://michalsnik.github.io/aos/               -->
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  </head>
+  <!-- -------------------------------------------------------------------------------------------------------- -->
+  <!--                              ===== TODO: CODING START BELOW TODO: =====                                  -->
+  <!-- -------------------------------------------------------------------------------------------------------- -->
+  <body>
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+    <!-- TODO:   REGISTER AND LOGIN PAGE                                                                        -->
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+
+    <div class="container">
+      <!-- ------------------------------------------------ -->
+      <!-- TODO:  FORM SECTION - SIGN-IN AND SIGN-UP  TODO: -->
+      <!-- ------------------------------------------------ -->
+      <div class="forms-container">
+        <div class="signin-signup">
+          <!-- ----------------------------------------------------------------------------------------------- -->
+
+          <!-- ------------------------------------- -->
+          <!-- FIXME:  FORM 1 - MAIN SIGN-IN  FIXME: -->
+          <!-- ------------------------------------- -->
+
+          <form action="" class="sign-in-form">
+            <h2 class="title">shopper account login</h2>
+            <div class="input-field">
+              <i class="fas fa-user"></i>
+              <input
+                type="text"
+                placeholder="Username"
+                id="Username"
+                value=""
+                name="Username"
+                minlength="3"
+                maxlength="75"
+                autocomplete="off"
+                required
+              />
+            </div>
+            <div class="input-field">
+              <i class="fas fa-lock"></i>
+              <input
+                type="password"
+                placeholder="Password"
+                id="password"
+                value=""
+                name="password"
+                minlength="3"
+                maxlength="50"
+                autocomplete="off"
+                required
+              />
+            </div>
+
+            <!-- ------------------------------------------------ -->
+            <!-- FIXME:  GOOGLE RECAPTCHA IMPLEMENTATION  FIXME:  -->
+            <!-- Google Recaptcha (Version 2)                     -->
+            <!-- "I am not a Robot"                               -->
+            <!-- Current Site Key - SHOPMAX Website               -->
+            <!-- ------------------------------------------------ -->
+
+            <div class="form__group">
+              <div
+                class="g-recaptcha"
+                data-sitekey="6Ldzh1AfAAAAACWDbEHGqvipSqHbEBYwZahZHWcO"
+                data-theme="light"
+              ></div>
+            </div>
+
+            <!-- ------------------------------ -->
+            <!-- FIXME:  SIGN IN BUTTON  FIXME: -->
+            <!-- ------------------------------ -->
+
+            <input type="submit" value="login" class="btn solid" />
+
+            <!-- --------------------------------------------- -->
+            <!-- FIXME:  FORM 1 - SOCIAL MEDIA SIGN-IN  FIXME: -->
+            <!-- --------------------------------------------- -->
+
+            <p class="social-text">or via social media</p>
+            <div class="social-media">
+              <a
+                href="https://www.facebook.com"
+                class="social-icon"
+                target="_blank"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a href="https://twitter.com" class="social-icon" target="_blank"
+                ><i class="fab fa-twitter"></i
+              ></a>
+              <a
+                href="https://accounts.google.com/"
+                class="social-icon"
+                target="_blank"
+                ><i class="fab fa-google"></i
+              ></a>
+              <a
+                href="https://www.linkedin.com"
+                class="social-icon"
+                target="_blank"
+                ><i class="fab fa-linkedin-in"></i
+              ></a>
+            </div>
+          </form>
+
+          <!-- ----------------------------------------------------------------------------------------------- -->
+
+          <!-- ------------------------------------------------ -->
+          <!-- FIXME:  FORM 2 - MAIN SIGN-UP / REGISTER  FIXME: -->
+          <!-- ------------------------------------------------ -->
+
+          <form action="" class="sign-up-form">
+            <h2 class="title">new shopper registration</h2>
+            <div class="input-field">
+              <i class="fas fa-user"></i>
+              <input
+                type="text"
+                placeholder="Username"
+                id="Username"
+                value=""
+                name="Username"
+                minlength="3"
+                maxlength="75"
+                autocomplete="off"
+                required
+              />
+            </div>
+            <div class="input-field">
+              <i class="fas fa-envelope"></i>
+              <input
+                type="email"
+                placeholder="Email"
+                id="email"
+                value=""
+                name="email"
+                minlength="3"
+                maxlength="65"
+                autocomplete="off"
+                required
+              />
+            </div>
+            <div class="input-field">
+              <i class="fas fa-lock"></i>
+              <input
+                type="password"
+                placeholder="Password"
+                id="password"
+                value=""
+                name="password"
+                minlength="3"
+                maxlength="50"
+                autocomplete="off"
+                required
+              />
+            </div>
+
+            <!-- ------------------------------------------------ -->
+            <!-- FIXME:  GOOGLE RECAPTCHA IMPLEMENTATION  FIXME:  -->
+            <!-- Google Recaptcha (Version 2)                     -->
+            <!-- "I am not a Robot"                               -->
+            <!-- Current Site Key - SHOPMAX Website               -->
+            <!-- ------------------------------------------------ -->
+
+            <div class="form__group">
+              <div
+                class="g-recaptcha"
+                data-sitekey="6Ldzh1AfAAAAACWDbEHGqvipSqHbEBYwZahZHWcO"
+                data-theme="light"
+              ></div>
+            </div>
+
+            <!-- ------------------------------ -->
+            <!-- FIXME:  SIGN UP BUTTON  FIXME: -->
+            <!-- ------------------------------ -->
+
+            <input type="submit" value="sign up" class="btn solid" />
+
+            <!-- --------------------------------------------- -->
+            <!-- FIXME:  FORM 2 - SOCIAL MEDIA SIGN-UP  FIXME: -->
+            <!-- --------------------------------------------- -->
+
+            <p class="social-text">or via social media</p>
+            <div class="social-media">
+              <a
+                href="https://www.facebook.com"
+                class="social-icon"
+                target="_blank"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a href="https://twitter.com" class="social-icon" target="_blank"
+                ><i class="fab fa-twitter"></i
+              ></a>
+              <a
+                href="https://accounts.google.com/"
+                class="social-icon"
+                target="_blank"
+                ><i class="fab fa-google"></i
+              ></a>
+              <a
+                href="https://www.linkedin.com"
+                class="social-icon"
+                target="_blank"
+                ><i class="fab fa-linkedin-in"></i
+              ></a>
+            </div>
+          </form>
+
+          <!-- ----------------------------------------------------------------------------------------------- -->
+          <!--                          FIXME:  END OF FORM SECTION  FIXME:                                    -->
+          <!-- ----------------------------------------------------------------------------------------------- -->
+        </div>
+      </div>
+
+      <!-- ------------------------------------ -->
+      <!-- TODO:  IMAGES / THEME SECTION  TODO: -->
+      <!-- ------------------------------------ -->
+
+      <div class="panels-container">
+        <!-- -------------------------- -->
+        <!-- FIXME:  LEFT PANEL  FIXME: -->
+        <!-- -------------------------- -->
+
+        <div class="panel left-panel">
+          <div class="content">
+            <h3>Not yet registered ?</h3>
+            <p>
+              For an alternative <strong>SOUTH AFRICAN</strong> shopping
+              experience, sign up today for a <strong>FREE</strong> account and
+              save on all your shopping needs. <br /><br />Also subscribe to our
+              <strong>WEEKLY NEWSLETTER</strong> and be the first to hear about
+              product promotions, discounts on services, new product launches,
+              pre-order notifications, special events and many more.
+            </p>
+            <button class="btn transparent" id="sign-up-btn">Sign up</button>
+          </div>
+          <img src="images/gaming_final.svg" alt="" class="image" />
+        </div>
+
+        <!-- --------------------------- -->
+        <!-- FIXME:  RIGHT PANEL  FIXME: -->
+        <!-- --------------------------- -->
+
+        <div class="panel right-panel">
+          <div class="content">
+            <h3>Already registered ?</h3>
+            <p>
+              Login for a <strong>convenient</strong> and
+              <strong>simplified</strong> shopping experience
+            </p>
+            <button class="btn transparent" id="sign-in-btn">login</button>
+          </div>
+          <img src="images/empty_cart_final.svg" alt="" class="image" />
+        </div>
+
+        <!-- ----------------------------------------------------------------------------------------------- -->
+        <!--                          FIXME:  END OF PANEL SECTION  FIXME:                                   -->
+        <!-- ----------------------------------------------------------------------------------------------- -->
+      </div>
+    </div>
+
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+    <!--                              ===== TODO: CODING END ABOVE TODO: =====                                  -->
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+    <!-- TODO:   JAVASCRIPT (OWN) - LINK ALL YOUR JAVASCRIPT FILES TO THE HTML DOCUMENT                         -->
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+
+    <script src="script.js" defer></script>
+
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+    <!-- TODO:  GOOGLE RECAPTCHA (VERSION 2) SCRIPT  - FOR ALL FORMS WITH FILE INPUT/UPLOAD ELEMENTS            -->
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+    <!-- TODO:   JAVASCRIPT (FONT AWESOME KIT)                                                                  -->
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+
+    <script
+      src="https://kit.fontawesome.com/6034cfbb24.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+    <!-- FIXME:  ANIMATE ON SCROLL (AOS) SCRIPT - ANIMATIONS FOR WEBSITE - https://michalsnik.github.io/aos/    -->
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+    <!-- FIXME:  ADDITIONAL THIRD PARTY SCRIPTS                                                                 -->
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+  </body>
+  <!-- ------------------------------------------------------------------------------------------------------ -->
+  <!--                              ===== FIXME: MY COMMENTS FIXME: =====                                     -->
+  <!--  TEMPLATE TO USE FOR COMMENTING                                                                        -->
+  <!-- ------------------------------------------------------------------------------------------------------ -->
+</html>
