@@ -81,7 +81,7 @@ footer {
   left: 0;
   background-color: var(--color-footer-background);
   box-shadow: 0 16px 70px -8px rgba(0, 0, 0, 0.25);
-  border-radius: 20px 20px 0 0;
+  /* border-radius: 20px 20px 0 0; */
   transition: background 0.3s linear;
 }
 
@@ -101,8 +101,6 @@ footer {
 
 .content_footer {
   display: flex;
-  /* justify-content: space-between;
-    align-items: center; */
   margin: 0rem 0rem 2rem 0rem;
 }
 
@@ -249,6 +247,7 @@ footer {
 
 .service__area {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .service__area ul li {
@@ -365,22 +364,26 @@ hr {
 .business__partners {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  /* align-items: center; */
 }
 
 /* SKYNAMO */
 
 .skynamo__partner {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   align-items: center;
   margin: 0rem 0rem 0rem 0.8rem;
 }
 
 .skynamo__partner p {
-  font-size: 0.9rem;
+  font-size: 0.95rem;
   font-weight: 400;
   letter-spacing: 0.05rem;
+  margin: 0rem 0rem 0.5rem 0rem;
+  color: #dc143c;
+  text-transform: uppercase;
 }
 
 .skynamo__partner a {
@@ -388,7 +391,7 @@ hr {
 }
 
 .skynamo__partner img {
-  width: 9rem;
+  width: 12rem;
   height: auto;
   vertical-align: middle;
   margin: 0rem 0rem 0rem 1rem;
@@ -398,15 +401,19 @@ hr {
 
 .ue__partner {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   align-items: center;
   margin: 0rem 0rem 0rem 0rem;
 }
 
 .ue__partner p {
-  font-size: 0.9rem;
+  font-size: 0.95rem;
   font-weight: 400;
   letter-spacing: 0.05rem;
+  margin: 0rem 0rem 0.5rem 0rem;
+  color: #dc143c;
+  text-transform: uppercase;
 }
 
 .ue__partner a {
@@ -424,15 +431,19 @@ hr {
 
 .whistleblowing__partner {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   align-items: center;
   margin: 0rem 0.8rem 0rem 0rem;
 }
 
 .whistleblowing__partner p {
-  font-size: 0.9rem;
+  font-size: 0.95rem;
   font-weight: 400;
   letter-spacing: 0.05rem;
+  margin: 0rem 0rem 0.5rem 0rem;
+  color: #dc143c;
+  text-transform: uppercase;
 }
 
 .whistleblowing__partner a {
@@ -440,10 +451,47 @@ hr {
 }
 
 .whistleblowing__partner img {
-  width: 11rem;
+  width: 14rem;
   height: auto;
   vertical-align: middle;
   margin: 0rem 0rem 0rem 1rem;
+}
+
+/* KETTIE MEISIE CLOTHING RANGE */
+
+.kettie__meisie__partner {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0rem 0.8rem 0rem 0rem;
+}
+
+.kettie__meisie__partner p {
+  font-size: 0.95rem;
+  font-weight: 400;
+  letter-spacing: 0.05rem;
+  margin: 0rem 0rem 0.5rem 0rem;
+  color: #dc143c;
+  text-transform: uppercase;
+}
+
+.kettie__meisie__partner a {
+  text-decoration: none;
+}
+
+.kettie__meisie__partner img {
+  width: 12rem;
+  height: auto;
+  vertical-align: middle;
+  margin: 0rem 0rem 0rem 1rem;
+}
+
+.footer__column__content {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  margin: 0rem 0rem 0rem 0rem;
 }
 
 /* -------------------------------------------- */
@@ -715,29 +763,38 @@ hr {
   }
 
   .skynamo__partner p {
-    font-size: 0.8rem;
+    font-size: 0.9rem;
   }
 
   .skynamo__partner img {
-    width: 8rem;
+    width: 11rem;
     height: auto;
   }
 
   .ue__partner p {
-    font-size: 0.8rem;
+    font-size: 0.9rem;
   }
 
   .ue__partner img {
-    width: 6.5rem;
+    width: 6.9rem;
     height: auto;
   }
 
   .whistleblowing__partner p {
-    font-size: 0.8rem;
+    font-size: 0.9rem;
   }
 
   .whistleblowing__partner img {
-    width: 10rem;
+    width: 13rem;
+    height: auto;
+  }
+
+  .kettie__meisie__partner p {
+    font-size: 0.9rem;
+  }
+
+  .kettie__meisie__partner img {
+    width: 11rem;
     height: auto;
   }
 
@@ -790,17 +847,22 @@ hr {
   }
 
   .skynamo__partner img {
-    width: 7rem;
+    width: 10rem;
     height: auto;
   }
 
   .ue__partner img {
-    width: 5.5rem;
+    width: 6.9rem;
     height: auto;
   }
 
   .whistleblowing__partner img {
-    width: 8rem;
+    width: 12rem;
+    height: auto;
+  }
+
+  .kettie__meisie__partner img {
+    width: 10rem;
     height: auto;
   }
 
@@ -833,10 +895,58 @@ hr {
     justify-content: center;
   }
 
-  /* .service__area {
-      flex-wrap: wrap;
-      justify-content: center;
-    } */
+  .service__area {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 37rem;
+    margin: 0rem 0rem 0rem 0rem;
+    padding: 1rem 0rem 1rem 0rem;
+    /* border: 1px solid green; */
+  }
+
+  .service__area .about__us {
+    width: 15rem;
+    margin: 0rem 0rem 0rem 0rem;
+    padding: 0rem 0rem 0rem 0rem;
+    /* border: 1px solid red; */
+  }
+
+  .service__area .sellers {
+    width: 15rem;
+    margin: 0rem 0rem 0rem 0rem;
+    padding: 0rem 0rem 0rem 0rem;
+    /* border: 1px solid red; */
+  }
+
+  .service__area .footer__column__content {
+    width: 15rem;
+    margin: 0rem 0rem 0rem 0rem;
+    padding: 0rem 0rem 0rem 0rem;
+    /* border: 1px solid red; */
+    gap: 2rem;
+  }
+
+  .footer__column__content .investors {
+    width: 15rem;
+    margin: 0rem 0rem 0rem 0rem;
+    padding: 0rem 0rem 0rem 0rem;
+    /* border: 1px solid red; */
+  }
+
+  .footer__column__content .advertising {
+    width: 15rem;
+    margin: 0rem 0rem 0rem 0rem;
+    padding: 0rem 0rem 0rem 0rem;
+    /* border: 1px solid red; */
+  }
+
+  .service__area .shoppers {
+    width: 15rem;
+    margin: 0rem 0rem 0rem 0rem;
+    padding: 0rem 0rem 0rem 0rem;
+    /* border: 1px solid red; */
+  }
 
   .payments__app__store {
     display: flex;
@@ -877,6 +987,13 @@ hr {
   }
 
   .whistleblowing__partner {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 0rem 1rem 0rem;
+    row-gap: 1rem;
+  }
+
+  .kettie__meisie__partner {
     display: flex;
     flex-direction: column;
     margin: 1rem 0rem 1rem 0rem;
@@ -965,30 +1082,40 @@ hr {
   /* ------------------------------ */
 
   .skynamo__partner p {
-    font-size: 1rem;
+    font-size: 0.95rem;
   }
 
   .skynamo__partner img {
-    width: 10rem;
+    width: 12rem;
     height: auto;
     margin: 0.5rem 0rem 0.5rem 0rem;
   }
 
   .ue__partner p {
-    font-size: 1rem;
+    font-size: 0.95rem;
   }
 
   .ue__partner img {
-    width: 8rem;
+    width: 7rem;
     height: auto;
     margin: 0.5rem 0rem 0.5rem 0rem;
   }
 
   .whistleblowing__partner p {
-    font-size: 1rem;
+    font-size: 0.95rem;
   }
 
   .whistleblowing__partner img {
+    width: 14rem;
+    height: auto;
+    margin: 0.5rem 0rem 0.5rem 0rem;
+  }
+
+  .kettie__meisie__partner p {
+    font-size: 0.95rem;
+  }
+
+  .kettie__meisie__partner img {
     width: 12rem;
     height: auto;
     margin: 0.5rem 0rem 0.5rem 0rem;
@@ -1010,166 +1137,6 @@ hr {
   }
 }
 
-/* --------------------------------------TODO: 630px */
-
-@media screen and (max-width: 630px) {
-  .about__us {
-    margin: 0rem 0rem 0rem 20%;
-  }
-
-  .sellers {
-    margin: 0rem 0rem 0rem 6%;
-  }
-
-  .investors {
-    margin: 0rem 0rem 0rem 20%;
-  }
-
-  .shoppers {
-    margin: 0rem 0rem 0rem 11.5%;
-  }
-}
-
-/* --------------------------------------TODO: 600px */
-
-@media screen and (max-width: 600px) {
-  .about__us {
-    margin: 0rem 0rem 0rem 18%;
-  }
-
-  .sellers {
-    margin: 0rem 0rem 0rem 6%;
-  }
-
-  .investors {
-    margin: 0rem 0rem 0rem 18%;
-  }
-
-  .shoppers {
-    margin: 0rem 0rem 0rem 12%;
-  }
-}
-
-/* --------------------------------------TODO: 575px */
-
-@media screen and (max-width: 575px) {
-  .about__us {
-    margin: 0rem 0rem 0rem 16%;
-  }
-
-  .sellers {
-    margin: 0rem 0rem 0rem 6%;
-  }
-
-  .investors {
-    margin: 0rem 0rem 0rem 16%;
-  }
-
-  .shoppers {
-    margin: 0rem 0rem 0rem 13.5%;
-  }
-}
-
-/* --------------------------------------TODO: 550px */
-
-@media screen and (max-width: 550px) {
-  .about__us {
-    margin: 0rem 0rem 0rem 14%;
-  }
-
-  .sellers {
-    margin: 0rem 0rem 0rem 6%;
-  }
-
-  .investors {
-    margin: 0rem 0rem 0rem 14%;
-  }
-
-  .shoppers {
-    margin: 0rem 0rem 0rem 13.5%;
-  }
-}
-
-/* --------------------------------------TODO: 530px */
-
-@media screen and (max-width: 530px) {
-  .about__us {
-    margin: 0rem 0rem 0rem 12%;
-  }
-
-  .sellers {
-    margin: 0rem 0rem 0rem 6%;
-  }
-
-  .investors {
-    margin: 0rem 0rem 0rem 12%;
-  }
-
-  .shoppers {
-    margin: 0rem 0rem 0rem 13.5%;
-  }
-}
-
-/* --------------------------------------TODO: 505px */
-
-@media screen and (max-width: 505px) {
-  .about__us {
-    margin: 0rem 0rem 0rem 10%;
-  }
-
-  .sellers {
-    margin: 0rem 0rem 0rem 6%;
-  }
-
-  .investors {
-    margin: 0rem 0rem 0rem 10%;
-  }
-
-  .shoppers {
-    margin: 0rem 0rem 0rem 13.5%;
-  }
-}
-
-/* --------------------------------------TODO: 475px */
-
-@media screen and (max-width: 475px) {
-  .about__us {
-    margin: 0rem 0rem 0rem 7%;
-  }
-
-  .sellers {
-    margin: 0rem 0rem 0rem 6%;
-  }
-
-  .investors {
-    margin: 0rem 0rem 0rem 7%;
-  }
-
-  .shoppers {
-    margin: 0rem 0rem 0rem 14%;
-  }
-}
-
-/* --------------------------------------TODO: 450px */
-
-@media screen and (max-width: 450px) {
-  .about__us {
-    margin: 0rem 0rem 0rem 5%;
-  }
-
-  .sellers {
-    margin: 0rem 0rem 0rem 6%;
-  }
-
-  .investors {
-    margin: 0rem 0rem 0rem 5%;
-  }
-
-  .shoppers {
-    margin: 0rem 0rem 0rem 14%;
-  }
-}
-
 /* --------------------------------------TODO: 425px */
 
 @media screen and (max-width: 425px) {
@@ -1179,22 +1146,6 @@ hr {
 
   .social-media ul li {
     margin: 0rem 1rem 0rem 1rem;
-  }
-
-  .about__us {
-    margin: 0rem 0rem 0rem 1%;
-  }
-
-  .sellers {
-    margin: 0rem 0rem 0rem 6%;
-  }
-
-  .investors {
-    margin: 0rem 0rem 0rem 1%;
-  }
-
-  .shoppers {
-    margin: 0rem 0rem 0rem 15%;
   }
 }
 
@@ -1212,35 +1163,36 @@ hr {
   }
 
   .service__area {
-    margin: 0.5rem 0rem 0.5rem 0rem;
-  }
-
-  .service__area ul li {
-    margin: 0rem 0rem 1rem 0rem;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    flex-direction: column;
+    column-count: 1;
+    flex: wrap;
     align-items: center;
+    text-align: center;
   }
 
-  .about__us {
-    margin: 0rem 0rem 0rem 0rem;
-    width: 100vw;
+  .service__area .about__us {
+    margin: 0rem 0rem 0.5rem 0rem;
   }
 
-  .sellers {
-    margin: 0rem 0rem 0rem 0rem;
-    width: 100vw;
+  .service__area .sellers {
+    margin: 0rem 0rem 0.5rem 0rem;
   }
 
-  .shoppers {
+  .service__area .footer__column__content {
     margin: 0rem 0rem 0rem 0rem;
-    width: 100vw;
   }
 
-  .investors {
+  .footer__column__content .investors {
+    margin: 0rem 0rem 0.5rem 0rem;
+  }
+
+  .footer__column__content .advertising {
+    margin: 0rem 0rem 0.5rem 0rem;
+  }
+
+  .service__area .shoppers {
     margin: 0rem 0rem 0rem 0rem;
-    width: 100vw;
   }
 }
 
@@ -1272,22 +1224,6 @@ hr {
   .social-media ul li {
     margin: 0rem 0.4rem 0rem 0.4rem;
   }
-
-  /* .about__us {
-      margin: 0rem 0rem 0rem 25%;
-    }
-  
-    .sellers {
-      margin: 0rem 0rem 0rem 25%;
-    }
-  
-    .shoppers {
-      margin: 0rem 0rem 0rem 25%;
-    }
-  
-    .investors {
-      margin: 0rem 0rem 0rem 25%;
-    } */
 
   .payment__options p {
     font-size: 0.9rem;

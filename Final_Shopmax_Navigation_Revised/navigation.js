@@ -72,7 +72,15 @@ const back_investingplans_btn = document.querySelector(
 // ============================================================  TODO:  SHOP PRODUCTS  TODO:
 
 // ================================
-// ITEM 4 - SKYNAMO CRM
+// ITEM 1 - KETTIE MEISIE
+// ================================
+
+const kettie_drop = document.querySelector(".kettie-drop");
+const kettie_item = document.querySelector(".kettie-item");
+const back_kettie_btn = document.querySelector(".back-kettie-btn");
+
+// ================================
+// ITEM 2 - SKYNAMO CRM
 // ================================
 
 const skynamo_drop = document.querySelector(".skynamo-drop");
@@ -80,7 +88,7 @@ const skynamo_item = document.querySelector(".skynamo-item");
 const back_skynamo_btn = document.querySelector(".back-skynamo-btn");
 
 // ================================
-// ITEM 5 - A TO Z WHISTLEBLOWING
+// ITEM 3 - A TO Z WHISTLEBLOWING
 // ================================
 
 const whistleblowing_drop = document.querySelector(".whistleblowing-drop");
@@ -90,7 +98,7 @@ const back_whistleblowing_btn = document.querySelector(
 );
 
 // ================================
-// ITEM 1 - MARKETPLACE PRODUCTS
+// ITEM 4 - MARKETPLACE PRODUCTS
 // ================================
 
 const marketplaceproducts_drop = document.querySelector(
@@ -104,7 +112,7 @@ const back_marketplaceproducts_btn = document.querySelector(
 );
 
 // ================================
-// ITEM 2 - GENERAL SERVICES
+// ITEM 5 - GENERAL SERVICES
 // ================================
 
 const generalservices_drop = document.querySelector(".generalservices-drop");
@@ -114,7 +122,7 @@ const back_generalservices_btn = document.querySelector(
 );
 
 // ================================
-// ITEM 3 - PROFESSIONAL SERVICES
+// ITEM 6 - PROFESSIONAL SERVICES
 // ================================
 
 const professionalservices_drop = document.querySelector(
@@ -128,7 +136,7 @@ const back_professionalservices_btn = document.querySelector(
 );
 
 // =====================================
-// ITEM 1 - MOBILE
+// ITEM 7 - MOBILE
 // =====================================
 
 const mobile_drop = document.querySelector(".mobile-drop");
@@ -136,7 +144,7 @@ const mobile_item = document.querySelector(".mobile-item");
 const back_mobile_btn = document.querySelector(".back-mobile-btn");
 
 // =====================================
-// ITEM 2 - OFFICE
+// ITEM 8 - OFFICE
 // =====================================
 
 const office_drop = document.querySelector(".office-drop");
@@ -144,7 +152,7 @@ const office_item = document.querySelector(".office-item");
 const back_office_btn = document.querySelector(".back-office-btn");
 
 // =====================================
-// ITEM 3 - HOME & LIVING
+// ITEM 9 - HOME & LIVING
 // =====================================
 
 const homeliving_drop = document.querySelector(".homeliving-drop");
@@ -152,7 +160,7 @@ const homeliving_item = document.querySelector(".homeliving-item");
 const back_homeliving_btn = document.querySelector(".back-homeliving-btn");
 
 // =====================================
-// ITEM 4 - HOBBIES
+// ITEM 10 - HOBBIES
 // =====================================
 
 const hobbies_drop = document.querySelector(".hobbies-drop");
@@ -160,7 +168,7 @@ const hobbies_item = document.querySelector(".hobbies-item");
 const back_hobbies_btn = document.querySelector(".back-hobbies-btn");
 
 // =====================================
-// ITEM 5 - OUTDOORS
+// ITEM 11 - OUTDOORS
 // =====================================
 
 const outdoors_drop = document.querySelector(".outdoors-drop");
@@ -168,7 +176,7 @@ const outdoors_item = document.querySelector(".outdoors-item");
 const back_outdoors_btn = document.querySelector(".back-outdoors-btn");
 
 // =====================================
-// ITEM 6 - SPORTS
+// ITEM 12 - SPORTS
 // =====================================
 
 const sports_drop = document.querySelector(".sports-drop");
@@ -176,7 +184,7 @@ const sports_item = document.querySelector(".sports-item");
 const back_sports_btn = document.querySelector(".back-sports-btn");
 
 // =====================================
-// ITEM 7 - DIY, TOOLS & MATERIALS
+// ITEM 13 - DIY, TOOLS & MATERIALS
 // =====================================
 
 const diyall_drop = document.querySelector(".diyall-drop");
@@ -184,7 +192,7 @@ const diyall_item = document.querySelector(".diyall-item");
 const back_diyall_btn = document.querySelector(".back-diyall-btn");
 
 // =====================================
-// ITEM 8 - COVID-19, CLEANING AND PPE
+// ITEM 14 - COVID-19, CLEANING AND PPE
 // =====================================
 
 const covid19_drop = document.querySelector(".covid19-drop");
@@ -192,7 +200,7 @@ const covid19_item = document.querySelector(".covid19-item");
 const back_covid19_btn = document.querySelector(".back-covid19-btn");
 
 /// =====================================
-// ITEM 9 - EMERGENCY
+// ITEM 15 - EMERGENCY
 // ======================================
 
 const emergency_drop = document.querySelector(".emergency-drop");
@@ -200,7 +208,7 @@ const emergency_item = document.querySelector(".emergency-item");
 const back_emergency_btn = document.querySelector(".back-emergency-btn");
 
 // =====================================
-// ITEM 10 - ENERGY
+// ITEM 16 - ENERGY
 // =====================================
 
 const energy_drop = document.querySelector(".energy-drop");
@@ -208,7 +216,7 @@ const energy_item = document.querySelector(".energy-item");
 const back_energy_btn = document.querySelector(".back-energy-btn");
 
 // =====================================
-// ITEM 11 - FOOD, BEVERAGES & GROCERIES
+// ITEM 17 - FOOD, BEVERAGES & GROCERIES
 // =====================================
 
 const groceries_drop = document.querySelector(".groceries-drop");
@@ -216,7 +224,7 @@ const groceries_item = document.querySelector(".groceries-item");
 const back_groceries_btn = document.querySelector(".back-groceries-btn");
 
 // =====================================
-// ITEM 12 - CLOTHING & FOOTWEAR
+// ITEM 18 - CLOTHING & FOOTWEAR
 // =====================================
 
 const clothingfootwear_drop = document.querySelector(".clothingfootwear-drop");
@@ -250,6 +258,14 @@ const back_seller_btn = document.querySelector(".back-seller-btn");
 const investor_drop = document.querySelector(".investor-drop");
 const investor_item = document.querySelector(".investor-item");
 const back_investor_btn = document.querySelector(".back-investor-btn");
+
+// =========================
+// ITEM 4 - ADVERTISING ZONE
+// =========================
+
+const advertising_drop = document.querySelector(".advertising-drop");
+const advertising_item = document.querySelector(".advertising-item");
+const back_advertising_btn = document.querySelector(".back-advertising-btn");
 
 // =========================================================================================
 // FIXME:  LEVEL 2 - CONSTANTS FOR THE 2ND LEVEL ITEMS (WITH DROPDOWNS TO 3RD LEVEL ITEMS)
@@ -1185,7 +1201,23 @@ back_investingplans_btn.onclick = () => {
 // ============================================================  TODO:  SHOP PRODUCTS  TODO:
 
 // ================================
-// ITEM 4 - SKYNAMO CRM
+// ITEM 1 - KETTIE MEISIE
+// ================================
+
+kettie_item.onclick = () => {
+  productsmenu_bar.style.marginLeft = "-26rem";
+  setTimeout(() => {
+    kettie_drop.style.display = "block";
+  }, 100);
+};
+
+back_kettie_btn.onclick = () => {
+  productsmenu_bar.style.marginLeft = "0rem";
+  kettie_drop.style.display = "none";
+};
+
+// ================================
+// ITEM 2 - SKYNAMO CRM
 // ================================
 
 skynamo_item.onclick = () => {
@@ -1201,7 +1233,7 @@ back_skynamo_btn.onclick = () => {
 };
 
 // ================================
-// ITEM 5 - A TO Z WHISTLEBLOWING
+// ITEM 3 - A TO Z WHISTLEBLOWING
 // ================================
 
 whistleblowing_item.onclick = () => {
@@ -1217,7 +1249,7 @@ back_whistleblowing_btn.onclick = () => {
 };
 
 // ================================
-// ITEM 1 - MARKETPLACE PRODUCTS
+// ITEM 4 - MARKETPLACE PRODUCTS
 // ================================
 
 marketplaceproducts_item.onclick = () => {
@@ -1233,7 +1265,7 @@ back_marketplaceproducts_btn.onclick = () => {
 };
 
 // ================================
-// ITEM 2 - GENERAL SERVICES
+// ITEM 5 - GENERAL SERVICES
 // ================================
 
 generalservices_item.onclick = () => {
@@ -1249,7 +1281,7 @@ back_generalservices_btn.onclick = () => {
 };
 
 // ================================
-// ITEM 3 - PROFESSIONAL SERVICES
+// ITEM 6 - PROFESSIONAL SERVICES
 // ================================
 
 professionalservices_item.onclick = () => {
@@ -1265,7 +1297,7 @@ back_professionalservices_btn.onclick = () => {
 };
 
 // =====================================
-// ITEM 1 - MOBILE
+// ITEM 7 - MOBILE
 // =====================================
 
 mobile_item.onclick = () => {
@@ -1281,7 +1313,7 @@ back_mobile_btn.onclick = () => {
 };
 
 // =====================================
-// ITEM 2 - OFFICE
+// ITEM 8 - OFFICE
 // =====================================
 
 office_item.onclick = () => {
@@ -1297,7 +1329,7 @@ back_office_btn.onclick = () => {
 };
 
 // =====================================
-// ITEM 3 - HOME & LIVING
+// ITEM 9 - HOME & LIVING
 // =====================================
 
 homeliving_item.onclick = () => {
@@ -1313,7 +1345,7 @@ back_homeliving_btn.onclick = () => {
 };
 
 // =====================================
-// ITEM 4 - HOBBIES
+// ITEM 10 - HOBBIES
 // =====================================
 
 hobbies_item.onclick = () => {
@@ -1329,7 +1361,7 @@ back_hobbies_btn.onclick = () => {
 };
 
 // =====================================
-// ITEM 5 - OUTDOORS
+// ITEM 11 - OUTDOORS
 // =====================================
 
 outdoors_item.onclick = () => {
@@ -1345,7 +1377,7 @@ back_outdoors_btn.onclick = () => {
 };
 
 // =====================================
-// ITEM 6 - SPORTS
+// ITEM 12 - SPORTS
 // =====================================
 
 sports_item.onclick = () => {
@@ -1361,7 +1393,7 @@ back_sports_btn.onclick = () => {
 };
 
 // =====================================
-// ITEM 7 - DIY, TOOLS & MATERIALS
+// ITEM 13 - DIY, TOOLS & MATERIALS
 // =====================================
 
 diyall_item.onclick = () => {
@@ -1377,7 +1409,7 @@ back_diyall_btn.onclick = () => {
 };
 
 // =====================================
-// ITEM 8 - COVID-19, CLEANING AND PPE
+// ITEM 14 - COVID-19, CLEANING AND PPE
 // =====================================
 
 covid19_item.onclick = () => {
@@ -1393,7 +1425,7 @@ back_covid19_btn.onclick = () => {
 };
 
 /// =====================================
-// ITEM 9 - EMERGENCY
+// ITEM 15 - EMERGENCY
 // ======================================
 
 emergency_item.onclick = () => {
@@ -1409,7 +1441,7 @@ back_emergency_btn.onclick = () => {
 };
 
 // =====================================
-// ITEM 10 - ENERGY
+// ITEM 16 - ENERGY
 // =====================================
 
 energy_item.onclick = () => {
@@ -1425,7 +1457,7 @@ back_energy_btn.onclick = () => {
 };
 
 // =====================================
-// ITEM 11 - FOOD, BEVERAGES & GROCERIES
+// ITEM 17 - FOOD, BEVERAGES & GROCERIES
 // =====================================
 
 groceries_item.onclick = () => {
@@ -1441,7 +1473,7 @@ back_groceries_btn.onclick = () => {
 };
 
 // =====================================
-// ITEM 12 - CLOTHING & FOOTWEAR
+// ITEM 18 - CLOTHING & FOOTWEAR
 // =====================================
 
 clothingfootwear_item.onclick = () => {
@@ -1504,6 +1536,22 @@ investor_item.onclick = () => {
 back_investor_btn.onclick = () => {
   clientzonemenu_bar.style.marginLeft = "0rem";
   investor_drop.style.display = "none";
+};
+
+// ==========================
+// ITEM 4 - ADVERTISING ZONE
+// ==========================
+
+advertising_item.onclick = () => {
+  clientzonemenu_bar.style.marginLeft = "-26rem";
+  setTimeout(() => {
+    advertising_drop.style.display = "block";
+  }, 100);
+};
+
+back_advertising_btn.onclick = () => {
+  clientzonemenu_bar.style.marginLeft = "0rem";
+  advertising_drop.style.display = "none";
 };
 
 // =========================================================================================

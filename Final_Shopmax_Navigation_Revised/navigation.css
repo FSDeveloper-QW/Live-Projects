@@ -167,7 +167,7 @@ nav .productstooltip.show {
 
 nav .productswrapper {
   position: absolute;
-  top: 3rem;
+  top: 3.5rem;
   display: flex;
   width: var(--navigation-wrapper-width);
   overflow: hidden;
@@ -177,6 +177,7 @@ nav .productswrapper {
   display: none;
   box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.35);
   z-index: 1;
+  /* border: 1px solid green; */
 }
 
 /* ============================================= */
@@ -262,7 +263,7 @@ nav .productswrapper ul li:hover a {
 /* ===================================================================================================================== */
 
 .productswrapper ul .arrow {
-  padding: 0rem 0rem 0rem 1rem;
+  padding: 0rem 0rem 0rem 0.7rem;
   font-size: var(--icon-back-button-font-size);
   font-weight: 700;
   color: var(--color-back-button-arrow-and-text);
@@ -282,6 +283,7 @@ nav .productswrapper ul li:hover a {
 /* ===================================================================================================================== */
 
 nav .productswrapper .skynamo-drop,
+nav .productswrapper .kettie-drop,
 nav .productswrapper .whistleblowing-drop,
 nav .productswrapper .marketplaceproducts-drop,
 nav .productswrapper .generalservices-drop,
@@ -465,7 +467,7 @@ nav .sellinvestplantooltip.show {
 
 nav .sellinvestplanwrapper {
   position: absolute;
-  top: 3rem;
+  top: 3.5rem;
   display: flex;
   width: var(--navigation-wrapper-width);
   overflow: hidden;
@@ -560,7 +562,7 @@ nav .sellinvestplanwrapper ul li:hover a {
 /* ===================================================================================================================== */
 
 .sellinvestplanwrapper ul .arrow {
-  padding: 0rem 0rem 0rem 1rem;
+  padding: 0rem 0rem 0rem 0.7rem;
   font-size: var(--icon-back-button-font-size);
   font-weight: 700;
   color: var(--color-back-button-arrow-and-text);
@@ -662,7 +664,7 @@ nav .clientzonetooltip.show {
 
 nav .clientzonewrapper {
   position: absolute;
-  top: 3rem;
+  top: 3.5rem;
   display: flex;
   width: var(--navigation-wrapper-width);
   overflow: hidden;
@@ -757,7 +759,7 @@ nav .clientzonewrapper ul li:hover a {
 /* ===================================================================================================================== */
 
 .clientzonewrapper ul .arrow {
-  padding: 0rem 0rem 0rem 1rem;
+  padding: 0rem 0rem 0rem 0.7rem;
   font-size: var(--icon-back-button-font-size);
   font-weight: 700;
   color: var(--color-back-button-arrow-and-text);
@@ -778,7 +780,8 @@ nav .clientzonewrapper ul li:hover a {
 
 nav .clientzonewrapper .shopper-drop,
 nav .clientzonewrapper .seller-drop,
-nav .clientzonewrapper .investor-drop {
+nav .clientzonewrapper .investor-drop,
+nav .clientzonewrapper .advertising-drop {
   display: none;
 }
 
