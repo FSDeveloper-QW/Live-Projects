@@ -1,41 +1,64 @@
 /* ===================================================================================================================== */
-/* TODO:  STYLING FOR REGISTER AND LOGIN PAGE                                                                            */
+/* TODO:  STYLING FOR INVESTORS LOGIN                                                                                    */
 /* ===================================================================================================================== */
 
 :root {
   --color-page-background: white;
   /* SHOPPER - REGISTER & LOGIN PAGE */
   --color-shopper-login-page-background-1: white;
-  --color-shopper-login-page-background-2: #dc143c;
+  --color-shopper-login-page-background-2: #434343;
   --color-shopper-login-page-title: black;
   --color-shopper-login-page-input-field-background: #f0f0f0;
   --color-shopper-login-page-input-field-text: #333;
   --color-shopper-login-page-input-field-icons: #acacac;
   --color-shopper-login-page-input-field-placeholder: #aaa;
-  --color-shopper-login-page-button-background: #dc143c;
+  --color-shopper-login-page-button-background: #434343;
   --color-shopper-login-page-button-text: White;
   --color-shopper-login-page-social-media-text: black;
   --color-shopper-login-page-social-media-icons-border: black;
-  --color-shopper-login-page-social-media-icons-border-hover: #dc143c;
+  --color-shopper-login-page-social-media-icons-border-hover: #434343;
   --color-shopper-login-page-social-media-icons: black;
-  --color-shopper-login-page-social-media-icons-hover: #dc143c;
-  /* --color-background-linear-gradient-1: #dc143c; */
-  --color-background-linear-gradient-1: #eb2d53;
-  --color-background-linear-gradient-2: #e91640;
-  /* --color-background-linear-gradient-2: #eb2d53; */
-  /* --color-background-linear-gradient-2: #f05c79; */
-  /* --color-background-linear-gradient-2: #f6a2b3; */
-  /* --color-background-linear-gradient-2: #fde8ec; */
+  --color-shopper-login-page-social-media-icons-hover: #434343;
+  --color-background-linear-gradient-1: #434343;
+  --color-background-linear-gradient-2: #737373;
+  /* --color-background-linear-gradient-2: #f88e20; */
   --color-panel-text: white;
   --color-panel-button-border: white;
   /* PRIVACY STATEMENT */
-  --color-privacy-text: #dc143c;
+  --color-privacy-text: #434343;
   /* CUSTOM CHECKBOX */
   --color-custom-checkbox-border: #ccc;
   --color-custom-checkbox-background: white;
-  --color-custom-checkbox-checkmark: #dc143c;
-  --color-custom-checkbox-focus: #dc143c;
+  --color-custom-checkbox-checkmark: #434343;
+  --color-custom-checkbox-focus: ##434343;
   --color-custom-checkbox-disabled: #959495;
+  /* CUSTOM CHECKBOX */
+  --color-custom-checkbox-border: #ccc;
+  --color-custom-checkbox-background: white;
+  --color-custom-checkbox-checkmark: #434343;
+  --color-custom-checkbox-focus: #434343;
+  --color-custom-checkbox-disabled: #959495;
+  /* Setting selling plans colour palettes */
+  --color-resellers: #f88e20;
+  --color-resellers-rgb: rgb(248, 142, 32);
+  --color-sellproduct: #8b3365;
+  --color-sellproduct-rgb: rgb(139, 51, 101);
+  --color-generalservices: #544179;
+  --color-generalservices-rgb: rgb(84, 65, 121);
+  --color-professionalservices: #01a7cf;
+  --color-professionalservices-rgb: rgb(1, 167, 207);
+  /* Setting investing plans colour palettes */
+  --color-bronze: #986c43;
+  --color-bronze-rgb: rgb(152, 108, 67);
+  --color-silver: #7d7d7d;
+  --color-silver-rga: rgb(125, 125, 125);
+  --color-gold: #dc9d04;
+  --color-gold-rgb: rgb(220, 157, 4);
+  --color-platinum: #434343;
+  --color-platinum-rgb: rgb(67, 67, 67);
+  /* BUTTON - SELLING PLANS */
+  --color-selling-plan-buttons-background: #434343;
+  --color-selling-plan-buttons-text: white;
 }
 
 * {
@@ -250,12 +273,17 @@ form.sign-in-form {
 /* ---------------------------- */
 
 .title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
   margin: 1rem 0rem 1rem 0rem;
   font-size: 2rem;
   font-weight: 700;
   letter-spacing: 0.1rem;
   text-transform: uppercase;
   color: var(--color-shopper-login-page-title);
+  /* border: 1px solid green; */
 }
 
 /* ------------------------- */
@@ -304,6 +332,19 @@ form.sign-in-form {
   background-color: var(--color-shopper-login-page-input-field-background);
 }
 
+.input-field-identification {
+  position: relative;
+  display: grid;
+  grid-template-columns: 15% 85%;
+  border-radius: 1rem;
+  margin: 0.5rem 0rem 0.5rem 0rem;
+  padding: 0rem 1rem 0rem 0.5rem;
+  max-width: 30rem;
+  width: 100%;
+  height: 4.5rem;
+  background-color: var(--color-shopper-login-page-input-field-background);
+}
+
 /* ---------------------------------- */
 /* FIXME:  INPUT-FIELD (ICON)  FIXME: */
 /* ---------------------------------- */
@@ -312,6 +353,14 @@ form.sign-in-form {
   text-align: center;
   line-height: 4.5rem;
   font-size: 1.6rem;
+  transition: 0.5s;
+  color: var(--color-shopper-login-page-input-field-icons);
+}
+
+.input-field-identification i {
+  text-align: center;
+  line-height: 4.5rem;
+  font-size: 2rem;
   transition: 0.5s;
   color: var(--color-shopper-login-page-input-field-icons);
 }
@@ -334,6 +383,16 @@ form.sign-in-form {
   font-family: "Poppins", sans-serif;
   font-weight: 500;
   color: var(--color-shopper-login-page-input-field-placeholder);
+}
+
+.input-field-identification select {
+  background: none;
+  outline: none;
+  border: none;
+  line-height: 1;
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: var(--color-shopper-login-page-input-field-text);
 }
 
 /* ---------------------------------------- */
@@ -504,7 +563,7 @@ form.sign-in-form {
   margin: 0rem 0rem 0rem 0rem;
   background: none;
   border: 2px solid var(--color-panel-button-border);
-  width: 15rem;
+  width: 18rem;
   height: 4rem;
   font-size: 1.5rem;
   font-weight: 700;
@@ -515,6 +574,134 @@ form.sign-in-form {
 .right-panel .image,
 .right-panel .content {
   transform: translateX(800px);
+}
+
+/* ------------------------------- */
+/* FIXME:  SELLING BUTTONS  FIXME: */
+/* ------------------------------- */
+
+.all-plans-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+button {
+  margin: 0rem 0rem 0rem 0rem;
+}
+
+button.selling-plan-1-button {
+  background-color: var(--color-selling-plan-buttons-background);
+  margin: 1rem 0.5rem 2rem 0.5rem;
+  padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+  width: 20rem;
+  height: 3.5rem;
+  border: 0;
+  outline: 0;
+  font-size: 1.1rem;
+  font-weight: 600;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+  border-radius: 0.5rem;
+  box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.35);
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+button.selling-plan-1-button a {
+  text-decoration: none;
+  color: var(--color-selling-plan-buttons-text);
+}
+
+button.selling-plan-1-button:hover {
+  opacity: 0.95;
+  transform: scale(1.05);
+}
+
+button.selling-plan-2-button {
+  background-color: var(--color-selling-plan-buttons-background);
+  margin: 1rem 0.5rem 2rem 0.5rem;
+  padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+  width: 20rem;
+  height: 3.5rem;
+  border: 0;
+  outline: 0;
+  font-size: 1.1rem;
+  font-weight: 600;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+  border-radius: 0.5rem;
+  box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.35);
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+button.selling-plan-2-button a {
+  text-decoration: none;
+  color: var(--color-selling-plan-buttons-text);
+}
+
+button.selling-plan-2-button:hover {
+  opacity: 0.95;
+  transform: scale(1.05);
+}
+
+button.selling-plan-3-button {
+  background-color: var(--color-selling-plan-buttons-background);
+  margin: 1rem 0.5rem 2rem 0.5rem;
+  padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+  width: 20rem;
+  height: 3.5rem;
+  border: 0;
+  outline: 0;
+  font-size: 1.1rem;
+  font-weight: 600;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+  border-radius: 0.5rem;
+  box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.35);
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+button.selling-plan-3-button a {
+  text-decoration: none;
+  color: var(--color-selling-plan-buttons-text);
+}
+
+button.selling-plan-3-button:hover {
+  opacity: 0.95;
+  transform: scale(1.05);
+}
+
+button.selling-plan-4-button {
+  background-color: var(--color-selling-plan-buttons-background);
+  margin: 1rem 0.5rem 2rem 0.5rem;
+  padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+  width: 20rem;
+  height: 3.5rem;
+  border: 0;
+  outline: 0;
+  font-size: 1.1rem;
+  font-weight: 600;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+  border-radius: 0.5rem;
+  box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.35);
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+button.selling-plan-4-button a {
+  text-decoration: none;
+  color: var(--color-selling-plan-buttons-text);
+}
+
+button.selling-plan-4-button:hover {
+  opacity: 0.95;
+  transform: scale(1.05);
 }
 
 /* ===================================================================================================================== */
@@ -672,6 +859,27 @@ form.sign-in-form {
 /* TODO:  PART 6 - FORM - CHECKBOX OPTIONS                                                                               */
 /* ===================================================================================================================== */
 
+/* ---------------------------------------------- */
+/* FIXME:  INPUT FIELD = DROPDOWN LIST     FIXME: */
+/*              TYPE OF SELLER                    */
+/* ---------------------------------------------- */
+
+select {
+  /* width: 25rem; */
+  /* width: 24rem; */
+  border-radius: 0.5rem;
+  background: none;
+  outline: none;
+  border: none;
+  line-height: 1;
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: var(--color-shopper-login-page-input-field-text);
+  margin: 0rem 0rem 0rem 0rem;
+  padding: 0.5rem 0rem 0.5rem 0rem;
+  cursor: pointer;
+}
+
 .form__group {
   margin: 0rem 0rem 0rem 0rem;
   display: flex;
@@ -823,7 +1031,7 @@ input[type="checkbox"]:disabled {
   .btn.transparent {
     margin: 0rem 0rem 0rem 0rem;
     padding: 0.25rem 0.5rem 0.25rem 0.5rem;
-    width: 10rem;
+    width: 16rem;
     height: 3rem;
     font-size: 1.3rem;
     text-align: center;
@@ -850,7 +1058,7 @@ input[type="checkbox"]:disabled {
   .btn.transparent {
     margin: 0rem 0rem 0rem 0rem;
     padding: 0.25rem 0.5rem 0.25rem 0.5rem;
-    width: 10rem;
+    width: 14rem;
     height: 3rem;
     font-size: 1.3rem;
     text-align: center;
@@ -909,20 +1117,54 @@ input[type="checkbox"]:disabled {
     max-width: 21rem;
   }
 
+  .input-field-identification {
+    margin: 0.5rem 0rem 0.5rem -2.75rem;
+    max-width: 21rem;
+  }
+
+  .input-field-identification select {
+    font-size: 1rem;
+    font-weight: 600;
+  }
+
   .btn {
     margin: 0rem 0rem 1.5rem -2.75rem;
     max-width: 21rem;
     font-size: 1.3rem;
   }
 
-  .product__quote__privacy__statement {
+  .sign-in-form .product__quote__privacy__statement {
     margin: 0rem 0rem 1.5rem -2.75rem;
     max-width: 21rem;
     font-size: 0.85rem;
+    text-align: center;
+  }
+
+  .sign-in-form .title {
+    margin: 1rem 0rem 1rem -2.75rem;
+    font-size: 2rem;
+    max-width: 21rem;
+    text-align: center;
+  }
+
+  .product__quote__privacy__statement {
+    margin: 0rem 2.5rem 1.5rem 0rem;
+    max-width: 21rem;
+    font-size: 0.85rem;
+    text-align: center;
+  }
+
+  .all-plans-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0rem 2.5rem 0rem 0rem;
+    padding: 0rem 0rem 0rem 0rem;
   }
 
   .title {
-    margin: 0rem 0rem 1rem -2.75rem;
+    margin: 1rem 2.5rem 1rem 0rem;
     font-size: 2rem;
     max-width: 21rem;
     text-align: center;
@@ -959,7 +1201,7 @@ input[type="checkbox"]:disabled {
   .btn.transparent {
     margin: 0rem 0rem 0rem -2.75rem;
     padding: 0.25rem 0.5rem 0.25rem 0.5rem;
-    width: 10rem;
+    width: 12rem;
     height: 3rem;
     font-size: 1.3rem;
   }

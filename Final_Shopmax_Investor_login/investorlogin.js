@@ -1,9 +1,9 @@
-// ========================================================================================================
-// TODO:  SCRIPT DESCRIPTION: MAKING THE ANIMATION TO WORK BETWEEN THE SIGN-IN & SIGN-UP SECTIONS     TODO:
+// ============================================================================================================
+// TODO:  SCRIPT DESCRIPTION: MAKING THE ANIMATION TO WORK BETWEEN THE INVESTOR LOGIN / INVESTING PLANS   TODO:
 // 1.  ADD A CLASS TO THE CONTAINER ELEMENT
 // 2.  WHEN YOU CLICK ON THE "SIGN-UP" BUTTON IN THE ONE PANEL, AND REMOVE IT ...
 // 3.  WHEN YOU CLICK ON THE "SIGN-IN" BUTTON IN THE OTHER PANEL
-// ========================================================================================================
+// ============================================================================================================
 
 // --------------------------------------------------------------------------------------------------------
 // FIXME:  Set constants that link to the HTML Document with the "ID's" (#) & "CLASS" in the Markup  FIXME:
