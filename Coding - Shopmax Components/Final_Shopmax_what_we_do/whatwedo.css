@@ -3,7 +3,8 @@
 /* ===================================================================================================================== */
 
 :root {
-  --color-page-background: #f7f7f7;
+  /* --color-page-background: #f7f7f7; */
+  --color-page-background: #eee;
   --color-button-background: #dc143c;
   --color-button-text: white;
   --color-ultimate-package-text: #dc143c;
