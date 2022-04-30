@@ -27,7 +27,7 @@
     <!-- TODO:   PROVIDE A TITLE FOR YOUR PAGE - APPEARS IN BROWSER TAB                                         -->
     <!-- ------------------------------------------------------------------------------------------------------ -->
 
-    <title>ENTER NAME HERE</title>
+    <title>SEARCH BAR (WITH SUGGESTION LISTS)</title>
 
     <!-- ------------------------------------------------------------------------------------------------------ -->
     <!-- TODO:   LINK GOOGLE FONTS - TO USE CERTAIN FONTS ON YOUR PAGE - https://fonts.google.com/              -->
@@ -98,8 +98,45 @@
   <!-- -------------------------------------------------------------------------------------------------------- -->
   <body>
     <!-- ------------------------------------------------------------------------------------------------------ -->
-    <!-- TODO:   NAME HERE                                                                                      -->
+    <!-- TODO:   AUTOCOMPLETE SEARCH BAR (WITH SUGGESTION LISTS)                                                -->
     <!-- ------------------------------------------------------------------------------------------------------ -->
+
+    <div class="wrapper">
+      <div class="search-input">
+        <!-- ------------------------------------------------------------------ -->
+        <!-- ANCHOR ELEMENT FOR REDIRECTING USER TO SELECT ITEM FROM SEARCH BAR -->
+        <!-- ------------------------------------------------------------------ -->
+        <a href="" target="_blank" hidden></a>
+        <!-- ------------------ -->
+        <!-- SEARCH BAR - INPUT -->
+        <!-- ------------------ -->
+        <input type="text" placeholder="What are you searching for ..." />
+        <!-- -------------------- -->
+        <!-- LIST OF SEARCH ITEMS -->
+        <!-- -------------------- -->
+        <div class="autocom-box">
+          <!-- ----------------------------------------------------------------- -->
+
+          <!-- ----------------------------------------------------------------- -->
+          <!-- FIXME:  SUGGESTION LIST IS AUTOMATICALLY INSERTED FROM JAVASCRIPT -->
+          <!-- ----------------------------------------------------------------- -->
+
+          <!-- <li>item 01</li>
+          <li>item 02</li>
+          <li>item 03</li>
+          <li>item 04</li>
+          <li>item 05</li> -->
+
+          <!-- ----------------------------------------------------------------- -->
+        </div>
+        <!-- ------------------------- -->
+        <!-- SEARCH BAR - SEARCH ICON  -->
+        <!-- ------------------------- -->
+        <div class="icon">
+          <i class="fas fa-search"></i>
+        </div>
+      </div>
+    </div>
 
     <!-- ------------------------------------------------------------------------------------------------------ -->
     <!--                              ===== FIXME: MY COMMENTS FIXME: =====                                     -->
@@ -118,7 +155,8 @@
     <!-- TODO:   JAVASCRIPT (OWN) - LINK ALL YOUR JAVASCRIPT FILES TO THE HTML DOCUMENT                         -->
     <!-- ------------------------------------------------------------------------------------------------------ -->
 
-    <script src="script.js" defer></script>
+    <script src="js/suggestions.js"></script>
+    <script src="js/script.js" defer></script>
 
     <!-- ------------------------------------------------------------------------------------------------------ -->
     <!-- TODO:   JAVASCRIPT (FONT AWESOME KIT)                                                                  -->
