@@ -1,0 +1,154 @@
+* {
+  /* box-sizing: border-box; */
+  font-family: "poppins", sans-serif;
+  margin: 0rem 0rem 0rem 0rem;
+  padding: 0rem 0rem 0rem 0rem;
+}
+
+body {
+  background-color: #e4e8f0;
+  font-family: "Montserrat", sans-serif;
+}
+a {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.wrapper {
+  height: 500px;
+  margin: 8% auto 0;
+  width: 350px;
+  position: relative;
+  perspective: 800px;
+}
+.wrapper .box {
+  position: absolute;
+  transition: transform 0.5s;
+  transform-style: preserve-3d;
+  height: 100%;
+  width: 100%;
+}
+.wrapper .box .front,
+.wrapper .box .back {
+  display: block;
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  backface-visibility: hidden;
+}
+.wrapper .box .front {
+  background-color: #323650;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
+    rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+.front h2 {
+  font-size: 27px;
+  text-align: center;
+  margin-top: 10%;
+  color: #fff;
+  text-transform: uppercase;
+}
+.front h5 {
+  font-size: 15px;
+  text-align: center;
+  margin: 0 0 30px 0;
+  text-transform: uppercase;
+  color: #fff;
+}
+.wrapper .box .back {
+  background-color: #fff;
+  transform: rotateY(180deg);
+}
+.wrapper .btn {
+  margin-top: 25px;
+}
+.wrapper .box.animated {
+  transform: rotateY(-180deg);
+}
+.wrapper .close {
+  display: block;
+  font-size: 40px;
+  position: absolute;
+  top: 15px;
+  right: 3%;
+  text-decoration: none;
+  color: #fff;
+}
+.btn {
+  color: #fff;
+  display: block;
+  font-size: 15px;
+  margin: 0 auto;
+  max-width: 250px;
+  padding: 15px 0;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  background: linear-gradient(to right, #e53935, #e35d5b);
+  border-radius: 50px;
+}
+.container {
+  background-color: #323650;
+  padding: 60px;
+  height: 380px;
+  text-align: center;
+  color: #fff;
+}
+.img-area {
+  width: 120px;
+  height: 120px;
+  overflow: hidden;
+  margin: 8% auto 0;
+  border-radius: 50%;
+  border: 10px solid #fff;
+}
+.img-area img {
+  width: 100%;
+}
+.socials {
+  width: 85%;
+  text-align: center;
+  margin: auto;
+  line-height: 1.5;
+  font-size: 20px;
+}
+.socials span {
+  background: #fff;
+  width: 50px;
+  height: 50px;
+  display: inline-block;
+  border-radius: 50%;
+  line-height: 50px;
+}
+.text-area h2 {
+  margin: 0;
+  text-transform: uppercase;
+}
+.skill-area {
+  width: 100%;
+}
+.skill-area p {
+  font-weight: 700;
+  text-align: left;
+}
+.single-skill {
+  background: #262626;
+}
+.skills {
+  text-align: right;
+  color: white;
+  background: linear-gradient(to right, #e53935, #e35d5b);
+  font-weight: 700;
+}
+.one {
+  width: 90%;
+}
+.two {
+  width: 85%;
+}
+.three {
+  width: 75%;
+}
+.four {
+  width: 90%;
+}
