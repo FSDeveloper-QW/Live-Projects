@@ -137,6 +137,7 @@ body {
 a {
   text-decoration: uppercase;
   font-weight: bold;
+  /* color: black; */
 }
 
 /* ===================================================================================================================== */
@@ -364,7 +365,7 @@ h6 {
   display: grid;
   /* justify-content: space-between;
     align-items: center; */
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(2, 65% 35%);
   column-gap: 2rem;
   margin: 0rem 0.5rem 0rem 0.5rem;
   padding: 1rem 0.5rem 1rem 0.5rem;
@@ -418,6 +419,23 @@ h6 {
   padding: 0.5rem 0.5rem 0.5rem 0.5rem;
 }
 
+.confirmation-text a {
+  text-decoration: none;
+  color: black;
+}
+
+.confirmation-text a i {
+  text-decoration: none;
+  color: black;
+  font-size: 2.3rem;
+  transition: transform 0.5s ease-in-out;
+}
+
+.confirmation-text a i:hover {
+  transform: scale(1.1);
+  color: var(--color-card-front-socials-icon-hover);
+}
+
 /* ------------------------------- */
 /* FIXME:  VIEW - LARGER SCREENS   */
 /* ------------------------------- */
@@ -464,7 +482,7 @@ h6 {
 /* SKYNAMO BENEFIT - EMBEDDED VIDEO  */
 /* --------------------------------- */
 
-.offices__benefit__video {
+.offices__map {
   position: relative;
   height: 0;
   width: 100%;
@@ -474,7 +492,16 @@ h6 {
   padding: 0rem 0rem 56.25% 0rem;
 }
 
-.offices__benefit__video iframe {
+/* .offices__map iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 0rem 0rem 0rem 0rem;
+} */
+
+.offices__map img {
   position: absolute;
   top: 0;
   left: 0;
@@ -489,7 +516,7 @@ h6 {
 /* SKYNAMO BENEFIT - CONTENT (CONTAINER)  */
 /* -------------------------------------- */
 
-.offices__benefit__content {
+.offices__details__container {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -503,10 +530,10 @@ h6 {
 /* SKYNAMO BENEFIT - CONTENT (HEADER)     */
 /* -------------------------------------- */
 
-.offices__benefit__header {
+.offices__header p {
   margin: 1rem 0.25rem 1rem 0.25rem;
   padding: 0rem 0rem 0rem 0rem;
-  font-size: 1.1rem;
+  font-size: 1.7rem;
   font-weight: bolder;
   line-height: 1.5;
   letter-spacing: 0.1rem;
@@ -517,13 +544,43 @@ h6 {
 /* SKYNAMO BENEFIT - CONTENT (DESCRIPTION)  */
 /* ---------------------------------------- */
 
-.offices__benefit__description {
+.offices__description p {
   margin: 1rem 0.25rem 1rem 0.25rem;
   padding: 0rem 0rem 0rem 0rem;
-  font-size: 1rem;
+  font-size: 1.3rem;
   font-weight: 500;
   line-height: 1.5;
   text-align: justify;
+}
+
+/* EMAIL - PROVINCES */
+
+.offices__email__container p {
+  margin: 2rem 0.25rem 0rem 0.25rem;
+  padding: 0rem 0rem 0rem 0rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  line-height: 1.5;
+  text-align: justify;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+}
+
+.offices__email__container a {
+  text-decoration: none;
+  color: black;
+}
+
+.offices__email__container a i {
+  margin: 1rem 0rem 0rem 0rem;
+  font-size: 2.3rem;
+  cursor: pointer;
+  transition: transform 0.5s ease-in-out;
+}
+
+.offices__email__container a i:hover {
+  transform: scale(1.1);
+  color: var(--color-card-front-socials-icon-hover);
 }
 
 /* ===================================================================================================================== */
@@ -539,12 +596,16 @@ h6 {
 }
 
 @media screen and (min-width: 670px) {
-  .offices__benefit__header {
-    font-size: 1.35rem;
+  .offices__header {
+    font-size: 1.5rem;
   }
 
-  .offices__benefit__description {
-    font-size: 1.3rem;
+  .offices__description {
+    font-size: 1.4rem;
+  }
+
+  .offices__email__container a i {
+    font-size: 3rem;
   }
 }
 
@@ -575,7 +636,12 @@ h6 {
 /* FIXME:  SUB-CONTAINER - HOLDING BOTH FRONT AND BACK OF PROFILE  FIXME: */
 /* ---------------------------------------------------------------------- */
 
-.profile-card-container .box {
+.profile-card-container .box-01,
+.profile-card-container .box-02,
+.profile-card-container .box-03,
+.profile-card-container .box-04,
+.profile-card-container .box-05,
+.profile-card-container .box-06 {
   position: absolute;
   height: 100%;
   width: 100%;
@@ -589,7 +655,12 @@ h6 {
 /* JAVASCRIPT : FOR FLIP FUNCTIONALITY */
 /* ----------------------------------- */
 
-.profile-card-container .box.animated {
+.profile-card-container .box-01.animated,
+.profile-card-container .box-02.animated,
+.profile-card-container .box-03.animated,
+.profile-card-container .box-04.animated,
+.profile-card-container .box-05.animated,
+.profile-card-container .box-06.animated {
   transform: rotateY(-180deg);
 }
 
@@ -597,7 +668,12 @@ h6 {
 /* FIXME:  SUB-CONTAINER - HOLDING ALL ELEMENTS OF FRONT PROFILE  FIXME: */
 /* --------------------------------------------------------------------- */
 
-.profile-card-container .box .front {
+.profile-card-container .box-01 .front,
+.profile-card-container .box-02 .front,
+.profile-card-container .box-03 .front,
+.profile-card-container .box-04 .front,
+.profile-card-container .box-05 .front,
+.profile-card-container .box-06 .front {
   display: block;
   margin: 0;
   height: 100%;
@@ -614,7 +690,12 @@ h6 {
 /* FIXME:  SUB-CONTAINER - HOLDING ALL ELEMENTS OF BACK PROFILE  FIXME: */
 /* -------------------------------------------------------------------- */
 
-.profile-card-container .box .back {
+.profile-card-container .box-01 .back,
+.profile-card-container .box-02 .back,
+.profile-card-container .box-03 .back,
+.profile-card-container .box-04 .back,
+.profile-card-container .box-05 .back,
+.profile-card-container .box-06 .back {
   display: block;
   margin: 0;
   height: 100%;
@@ -653,6 +734,7 @@ h6 {
 /* ------------------------------- */
 
 .img-area {
+  position: relative;
   margin: 2rem auto 2rem auto;
   width: 15rem;
   height: 15rem;
@@ -663,7 +745,12 @@ h6 {
 }
 
 .img-area img {
-  width: 100%;
+  /* width: 100%; */
+  position: absolute;
+  width: 18rem;
+  height: 18rem;
+  top: -1.3rem;
+  left: -1.75rem;
 }
 
 /* ------------------------------ */
@@ -709,15 +796,23 @@ h6 {
   flex-wrap: wrap;
   width: 100%;
   margin: 2rem 0rem 0rem 0rem;
-  padding: 1rem 1rem 0rem 1rem;
+  padding: 1rem 0rem 0rem 0rem;
   font-size: 1.75rem;
   line-height: 1.5;
   text-align: center;
   /* border: 1px solid purple; */
 }
 
+.socials a {
+  color: black;
+}
+
+.socials a:hover {
+  color: var(--color-card-front-socials-icon-hover);
+}
+
 .socials span {
-  margin: 0rem 0.4rem 0rem 0.4rem;
+  margin: 0rem 0.4rem 0.5rem 0.4rem;
   padding: 0rem 0rem 0rem 0.5rem;
   display: inline-block;
   justify-content: center;
@@ -900,11 +995,15 @@ h6 {
   color: var(--color-card-back-skills-range-bar-progress-percentage);
 }
 
+/* ----------------------- */
+/* TODO:  PROFILE CARD 01  */
+/* ----------------------- */
+
 /* ------------------------------- */
 /* FIXME:  SKILL 1 - LEVEL  FIXME: */
 /* ------------------------------- */
 
-.one {
+.profile-card-01-skill-one {
   width: 95%;
 }
 
@@ -912,7 +1011,7 @@ h6 {
 /* FIXME:  SKILL 2 - LEVEL  FIXME: */
 /* ------------------------------- */
 
-.two {
+.profile-card-01-skill-two {
   width: 90%;
 }
 
@@ -920,7 +1019,7 @@ h6 {
 /* FIXME:  SKILL 3 - LEVEL  FIXME: */
 /* ------------------------------- */
 
-.three {
+.profile-card-01-skill-three {
   width: 80%;
 }
 
@@ -928,7 +1027,7 @@ h6 {
 /* FIXME:  SKILL 4 - LEVEL  FIXME: */
 /* ------------------------------- */
 
-.four {
+.profile-card-01-skill-four {
   width: 70%;
 }
 
@@ -936,8 +1035,228 @@ h6 {
 /* FIXME:  SKILL 5 - LEVEL  FIXME: */
 /* ------------------------------- */
 
-.five {
+.profile-card-01-skill-five {
   width: 50%;
+}
+
+/* ----------------------- */
+/* TODO:  PROFILE CARD 02  */
+/* ----------------------- */
+
+/* ------------------------------- */
+/* FIXME:  SKILL 1 - LEVEL  FIXME: */
+/* ------------------------------- */
+
+.profile-card-02-skill-one {
+  width: 50%;
+}
+
+/* ------------------------------- */
+/* FIXME:  SKILL 2 - LEVEL  FIXME: */
+/* ------------------------------- */
+
+.profile-card-02-skill-two {
+  width: 50%;
+}
+
+/* ------------------------------- */
+/* FIXME:  SKILL 3 - LEVEL  FIXME: */
+/* ------------------------------- */
+
+.profile-card-02-skill-three {
+  width: 50%;
+}
+
+/* ------------------------------- */
+/* FIXME:  SKILL 4 - LEVEL  FIXME: */
+/* ------------------------------- */
+
+.profile-card-02-skill-four {
+  width: 50%;
+}
+
+/* ------------------------------- */
+/* FIXME:  SKILL 5 - LEVEL  FIXME: */
+/* ------------------------------- */
+
+.profile-card-02-skill-five {
+  width: 50%;
+}
+
+/* ----------------------- */
+/* TODO:  PROFILE CARD 03  */
+/* ----------------------- */
+
+/* ------------------------------- */
+/* FIXME:  SKILL 1 - LEVEL  FIXME: */
+/* ------------------------------- */
+
+.profile-card-03-skill-one {
+  width: 50%;
+}
+
+/* ------------------------------- */
+/* FIXME:  SKILL 2 - LEVEL  FIXME: */
+/* ------------------------------- */
+
+.profile-card-03-skill-two {
+  width: 50%;
+}
+
+/* ------------------------------- */
+/* FIXME:  SKILL 3 - LEVEL  FIXME: */
+/* ------------------------------- */
+
+.profile-card-03-skill-three {
+  width: 50%;
+}
+
+/* ------------------------------- */
+/* FIXME:  SKILL 4 - LEVEL  FIXME: */
+/* ------------------------------- */
+
+.profile-card-03-skill-four {
+  width: 50%;
+}
+
+/* ------------------------------- */
+/* FIXME:  SKILL 5 - LEVEL  FIXME: */
+/* ------------------------------- */
+
+.profile-card-03-skill-five {
+  width: 50%;
+}
+
+/* ----------------------- */
+/* TODO:  PROFILE CARD 04  */
+/* ----------------------- */
+
+/* ------------------------------- */
+/* FIXME:  SKILL 1 - LEVEL  FIXME: */
+/* ------------------------------- */
+
+.profile-card-04-skill-one {
+  width: 50%;
+}
+
+/* ------------------------------- */
+/* FIXME:  SKILL 2 - LEVEL  FIXME: */
+/* ------------------------------- */
+
+.profile-card-04-skill-two {
+  width: 50%;
+}
+
+/* ------------------------------- */
+/* FIXME:  SKILL 3 - LEVEL  FIXME: */
+/* ------------------------------- */
+
+.profile-card-04-skill-three {
+  width: 50%;
+}
+
+/* ------------------------------- */
+/* FIXME:  SKILL 4 - LEVEL  FIXME: */
+/* ------------------------------- */
+
+.profile-card-04-skill-four {
+  width: 50%;
+}
+
+/* ------------------------------- */
+/* FIXME:  SKILL 5 - LEVEL  FIXME: */
+/* ------------------------------- */
+
+.profile-card-04-skill-five {
+  width: 50%;
+}
+
+/* ----------------------- */
+/* TODO:  PROFILE CARD 05  */
+/* ----------------------- */
+
+/* ------------------------------- */
+/* FIXME:  SKILL 1 - LEVEL  FIXME: */
+/* ------------------------------- */
+
+.profile-card-05-skill-one {
+  width: 95%;
+}
+
+/* ------------------------------- */
+/* FIXME:  SKILL 2 - LEVEL  FIXME: */
+/* ------------------------------- */
+
+.profile-card-05-skill-two {
+  width: 85%;
+}
+
+/* ------------------------------- */
+/* FIXME:  SKILL 3 - LEVEL  FIXME: */
+/* ------------------------------- */
+
+.profile-card-05-skill-three {
+  width: 95%;
+}
+
+/* ------------------------------- */
+/* FIXME:  SKILL 4 - LEVEL  FIXME: */
+/* ------------------------------- */
+
+.profile-card-05-skill-four {
+  width: 90%;
+}
+
+/* ------------------------------- */
+/* FIXME:  SKILL 5 - LEVEL  FIXME: */
+/* ------------------------------- */
+
+.profile-card-05-skill-five {
+  width: 90%;
+}
+
+/* ----------------------- */
+/* TODO:  PROFILE CARD 06  */
+/* ----------------------- */
+
+/* ------------------------------- */
+/* FIXME:  SKILL 1 - LEVEL  FIXME: */
+/* ------------------------------- */
+
+.profile-card-06-skill-one {
+  width: 70%;
+}
+
+/* ------------------------------- */
+/* FIXME:  SKILL 2 - LEVEL  FIXME: */
+/* ------------------------------- */
+
+.profile-card-06-skill-two {
+  width: 80%;
+}
+
+/* ------------------------------- */
+/* FIXME:  SKILL 3 - LEVEL  FIXME: */
+/* ------------------------------- */
+
+.profile-card-06-skill-three {
+  width: 70%;
+}
+
+/* ------------------------------- */
+/* FIXME:  SKILL 4 - LEVEL  FIXME: */
+/* ------------------------------- */
+
+.profile-card-06-skill-four {
+  width: 80%;
+}
+
+/* ------------------------------- */
+/* FIXME:  SKILL 5 - LEVEL  FIXME: */
+/* ------------------------------- */
+
+.profile-card-06-skill-five {
+  width: 80%;
 }
 
 /* ===================================================================================================================== */
