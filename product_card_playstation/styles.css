@@ -1,0 +1,663 @@
+/* ===================================================================================================================== */
+/* TODO:  STYLING FOR PRODUCT CARD (PLAYSTATION CONTROLLERS)                                                             */
+/* ===================================================================================================================== */
+
+:root {
+  --color-page-background: #ebf4f4;
+  /* BOX SHADOW */
+  --color-box-shadow-01: 3px 5px 20px rgba(0, 0, 0, 0.35);
+  --color-box-shadow-02: 0px 5px 4px rgba(0, 0, 0, 0.35);
+  /* CARD COLOR SCHEME */
+  --color-product-card-background: white;
+  --color-product-card-top-section-background: white;
+  --color-product-card-arrow-left: black;
+  --color-product-card-heart-right: #dc143c;
+  --color-product-card-extra-images-section-background: white;
+  --color-product-card-extra-image-background: white;
+  --color-product-card-extra-image-border: black;
+  --color-product-card-extra-image-border-hover: #dc143c;
+  --color-product-card-title: #dc143c;
+  --color-product-card-short-description: black;
+  --color-product-card-sizes-title: #dc143c;
+  --color-product-card-colors-title: #dc143c;
+  --color-product-card-price-currency: #dc143c;
+  --color-product-card-price-value: #dc143c;
+  --color-product-card-button-add-to-card-background: linear-gradient(
+    to right,
+    #0a52af,
+    rgba(18, 112, 234)
+  );
+  --color-product-card-button-add-to-card-text: white;
+  --color-product-card-sub-image-box-shadow-01: -10px -10px 10px rgba(230, 244, 244, 0.5);
+  --color-product-card-sub-image-box-shadow-02: 5px 5px 5px
+    rgba(70, 70, 70, 0.12);
+  /* PRODUCT 001 - COLOR OPTIONS */
+  --color-product-color-option-01: #ddd;
+  --color-product-color-option-02: black;
+  --color-product-color-option-03: gray;
+  --color-product-color-option-04: navy;
+  --color-product-color-option-05: red;
+  /* CUSTOM RADIO BUTTON */
+  --color-custom-radiobutton-border: #ccc;
+  --color-custom-radiobutton-background: white;
+  --color-custom-radiobutton-circle: #dc143c;
+  --color-custom-radiobutton-focus: #dc143c;
+  --color-custom-radiobutton-disabled: #959495;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: "poppins", sans-serif;
+  margin: 0rem 0rem 0rem 0rem;
+  padding: 0rem 0rem 0rem 0rem;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-size: 1.6rem;
+  background: var(--color-page-background);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ===================================================================================================================== */
+/* TODO:  MAIN PRODUCT CARD (CONTAINERS)                                                                                 */
+/* ===================================================================================================================== */
+
+/* ---------------------------------------------- */
+/* FIXME:  MAIN CONTAINER - HOLDING ALL ELEMENTS  */
+/* ---------------------------------------------- */
+
+.product-card-container-all {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* min-height: 100%; */
+  width: 26rem;
+  height: 55rem;
+  margin: 1rem 1rem 1rem 1rem;
+  padding: 0rem 0rem 0rem 0rem;
+  z-index: 100;
+  border-radius: 1.5rem;
+  /* box-shadow: var(--color-box-shadow-01); */
+  /* border: 1px solid red; */
+}
+
+/* ------------------------------- */
+/* FIXME:  PRODUCT CARD CONTAINER  */
+/* ------------------------------- */
+
+.product-card-container-all .product-card {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: var(--color-product-card-background);
+  border-radius: 1.5rem;
+  overflow: hidden;
+  margin: 0rem 0rem 0rem 0rem;
+  padding: 0.75rem 0.75rem 0.75rem 0.75rem;
+  box-shadow: var(--color-box-shadow-01);
+  /* border: 1px solid red; */
+}
+
+/* ===================================================================================================================== */
+/* TODO:  PRODUCT CARD SECTION 1 (TOP)                                                                                   */
+/* ===================================================================================================================== */
+
+/* -------------------------------- */
+/* FIXME:  CONTAINER - TOP SECTION  */
+/* -------------------------------- */
+
+.product-card-section-top {
+  position: relative;
+  width: 100%;
+  height: 35%;
+  border-radius: 1rem 1rem 0rem 0rem;
+  background-color: var(--color-product-card-top-section-background);
+  /* box-shadow: var(--color-box-shadow-01); */
+  /* border: 1px solid red; */
+}
+
+/* -------------------------------------------- */
+/* FIXME:  PRODUCT CARD (BACK) - BRAND LOGO     */
+/* -------------------------------------------- */
+
+.brand__logo {
+  position: absolute;
+  top: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.brand__logo img {
+  width: auto;
+  height: 3.5rem;
+  object-fit: contain;
+}
+
+/* ------------------------------------------------------------- */
+/* FIXME:  TOP SECTION - TOP RIGHT ("HEART" / ADD TO WISH LIST)  */
+/* ------------------------------------------------------------- */
+
+.wishlist {
+  position: absolute;
+  top: 1%;
+  right: 2%;
+  cursor: pointer;
+  transition: transform 0.5s ease-in-out;
+  /* border: 1px solid red; */
+}
+
+.wishlist i {
+  font-size: 1.5rem;
+  color: var(--color-product-card-heart-right);
+  cursor: pointer;
+}
+
+.wishlist i:hover {
+  color: var(--color-product-card-heart-right);
+  transform: scale(1.1);
+}
+
+/* ========================================================================================== */
+/* ========================================================================================== */
+
+/* ------------------------------------------------------------------------------------------ */
+/* FIXME:  JAVASCRIPT CODE SECTION - "HEART" CLASS NEEDED TO TOGGLE HEART COLOR WHEN CLICKED  */
+/* ------------------------------------------------------------------------------------------ */
+
+/* .heart i.fa-heart {
+  color: var(--color-product-card-heart-right);
+} */
+
+/* ========================================================================================== */
+/* ========================================================================================== */
+
+/* ----------------------------------------------------------------- */
+/* FIXME:  TOP SECTION - PRODUCT FEATURED IMAGE (CURRENTLY SHOWING)  */
+/* ----------------------------------------------------------------- */
+
+/* ---------------- */
+/* IMAGE CONTAINER  */
+/* ---------------- */
+
+.product-card-section-top .product-card-featured-image {
+  position: relative;
+  top: 0;
+  left: 0;
+  margin: 0rem 0rem 0rem 0rem;
+  padding: 0rem 0rem 0rem 0rem;
+  width: 100%;
+  height: 100%;
+  border-radius: 1rem;
+  z-index: 100;
+  /* border: 1px solid red; */
+}
+
+/* ------ */
+/* IMAGE  */
+/* ------ */
+
+.product-card-section-top .product-card-featured-image img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  padding: 1rem 1rem 1rem 1rem;
+}
+
+/* ===================================================================================================================== */
+/* TODO:  PRODUCT CARD SECTION 2 - EXTRA PRODUCT IMAGES                                                                  */
+/* ===================================================================================================================== */
+
+/* ----------------------------------- */
+/* FIXME:  SECTION 2 - MAIN CONTAINER  */
+/* ----------------------------------- */
+
+.product-card-section-extra-images {
+  position: relative;
+  height: 5rem;
+  background: var(--color-product-card-extra-images-section-background);
+  /* border: 1px solid red; */
+}
+
+/* ------------------------------------------- */
+/* FIXME:  SECTION 2 - EXTRA IMAGES CONTAINER  */
+/* ------------------------------------------- */
+
+.product-card-section-extra-images .extra-images {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--color-product-card-extra-images-section-background);
+  /* border: 1px solid red; */
+}
+
+.product-card-section-extra-images .extra-images img {
+  width: 4.5rem;
+  height: 4.5rem;
+  margin: 0.5rem 0.5rem 0rem 0.5rem;
+  padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+  background: var(--color-product-card-extra-image-background);
+  border-radius: 0.5rem;
+  /* box-shadow: var(--color-box-shadow-01); */
+  /* border: 1px solid var(--color-product-card-extra-image-border); */
+  cursor: pointer;
+}
+
+.product-card-section-extra-images .extra-images img:hover {
+  border: 3px solid var(--color-product-card-extra-image-border-hover);
+}
+
+/* ===================================================================================================================== */
+/* TODO:  PRODUCT CARD SECTION 3 - PRODUCT INFORMATION                                                                   */
+/* ===================================================================================================================== */
+
+/* ----------------------------------- */
+/* FIXME:  SECTION 3 - MAIN CONTAINER  */
+/* ----------------------------------- */
+
+.product-card-section-information {
+  position: relative;
+  width: 100%;
+  height: 11rem;
+  margin: 0rem 0rem 0rem 0rem;
+  padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+  /* border: 1px solid red; */
+}
+
+/* ----------------------------- */
+/* FIXME:  PRODUCT CARD - TITLE  */
+/* ----------------------------- */
+
+.product-card-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0.5rem 0rem 0.5rem 0rem;
+  width: 100%;
+  height: 3rem;
+  font-size: 1.4rem;
+  line-height: 1.3;
+  font-weight: bolder;
+  text-transform: capitalize;
+  letter-spacing: 0.01rem;
+  color: var(--color-product-card-title);
+  /* border: 1px solid red; */
+}
+
+/* ----------------------------------------- */
+/* FIXME:  PRODUCT CARD - BRIEF DESCRIPTION  */
+/* ----------------------------------------- */
+
+.product-card-short-description {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 6.5rem;
+  margin: 0rem 0rem 0rem 0rem;
+  padding: 0.5rem 0rem 0.5rem 0rem;
+  font-size: 1.2rem;
+  font-weight: 500;
+  text-transform: initial;
+  text-align: justify;
+  color: var(--color-product-card-short-description);
+  /* border: 1px solid red; */
+}
+
+/* ===================================================================================================================== */
+/* TODO:  CONTAINER - HOLDING BOTH PRODUCT SIZES AND PRODUCT COLORS                                                      */
+/* ===================================================================================================================== */
+
+.container__sizes__and__colors {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.radio__buttons__group {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0rem 0rem 1rem 0rem;
+}
+
+.radio__buttons__group__colors {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0rem 0rem 1rem 0rem;
+}
+
+/* ------------------------------------------------------------------------- */
+/* TODO: START STYLING OF CUSTOM RADIO BUTTON                                */
+/* ------------------------------------------------------------------------- */
+
+/* ---------------------------------------------- */
+/* FIXME:  INPUT FIELD = RADIO BUTTON      FIXME: */
+/* ---------------------------------------------- */
+
+/* GROUP 1 - SIZES */
+
+.radio__option {
+  font-size: 0.8rem;
+  font-weight: 600;
+  line-height: 1;
+  text-transform: uppercase;
+  display: grid;
+  grid-template-columns: 1rem auto;
+  gap: 1rem;
+  margin: 1rem 0.5rem 0rem 0.5rem;
+  cursor: pointer;
+}
+
+/* GROUP 2 - COLOURS */
+
+.radio__option__02 {
+  font-size: 0.8rem;
+  font-weight: 600;
+  line-height: 1;
+  text-transform: uppercase;
+  display: grid;
+  grid-template-columns: 1rem auto;
+  gap: 1rem;
+  margin: 1rem 0.5rem 0rem 0.5rem;
+  cursor: pointer;
+}
+
+/* --------------------------------------------- */
+/* THIS IS TO HIDE THE NATIVE RADIO BUTTON       */
+/* --------------------------------------------- */
+
+input[type="radio"] {
+  /* Add if not using autoprefixer */
+  -webkit-appearance: none;
+  appearance: none;
+  /* For iOS < 15 to remove gradient background */
+  background-color: var(--color-custom-radiobutton-background);
+  /* Not removed via appearance */
+  margin: 0;
+}
+
+/* -------------------------------------------- */
+/* THIS IS TO DISPLAY THE CUSTOM RADIO BUTTON   */
+/* -------------------------------------------- */
+
+input[type="radio"] {
+  appearance: none;
+  background-color: var(--color-custom-radiobutton-background);
+  margin: 0;
+  font: inherit;
+  color: var(--color-custom-radiobutton-border);
+  width: 1rem;
+  height: 1rem;
+  border: 0.15em solid var(--color-custom-radiobutton-border);
+  border-radius: 50%;
+  transform: translateY(-0.075em);
+  display: grid;
+  place-content: center;
+  cursor: pointer;
+}
+
+.radio__option + .radio__option {
+  margin-top: 0.2rem;
+}
+
+.radio__option__02 + .radio__option__02 {
+  margin-top: 0.2rem;
+}
+
+/* -------------------------------------------- */
+/* CUSTOM RADIO BUTTON - CHECKED STATE          */
+/* -------------------------------------------- */
+
+input[type="radio"]::before {
+  content: "";
+  width: 0.6rem;
+  height: 0.6rem;
+  border-radius: 50%;
+  transform: scale(0);
+  transition: 120ms transform ease-in-out;
+  box-shadow: inset 1em 1em var(--color-custom-radiobutton-circle);
+  /* Windows High Contrast Mode */
+  background-color: CanvasText;
+}
+
+input[type="radio"]:checked::before {
+  transform: scale(1);
+}
+
+/* -------------------------------------------- */
+/* CUSTOM RADIO BUTTON - FOCUSSED STATE         */
+/* -------------------------------------------- */
+
+input[type="radio"]:focus {
+  outline: max(0.5px, 0.15em) solid var(--color-custom-radiobutton-focus);
+  outline-offset: max(1px, 0.15em);
+}
+
+/* -------------------------------------------- */
+/* CUSTOM RADIO BUTTON - DISABLED STATE         */
+/* -------------------------------------------- */
+
+.radio__option--disabled {
+  color: var(--color-custom-radiobutton-disabled);
+  cursor: not-allowed;
+}
+
+input[type="radio"]:disabled {
+  color: var(--color-custom-radiobutton-disabled);
+  cursor: not-allowed;
+}
+
+/* ------------------------------------------------------------------------- */
+/* TODO:  END OF STYLING OF CUSTOM RADIO BUTTON                              */
+/* ------------------------------------------------------------------------- */
+
+/* ===================================================================================================================== */
+/* TODO:  PRODUCT CARD SECTION 4 - PRODUCT SIZES                                                                         */
+/* ===================================================================================================================== */
+
+/* ----------------------------------- */
+/* FIXME:  PRODUCT SIZES - CONTAINTER  */
+/* ----------------------------------- */
+
+.product-card-section-sizes {
+  position: relative;
+  width: 50%;
+  height: 10rem;
+  margin: 0rem 0rem 0rem 0rem;
+  padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+  border: 1px solid red;
+}
+
+/* ----------------------------- */
+/* FIXME:  PRODUCT SIZES - TITLE  */
+/* ----------------------------- */
+
+.product-card-sizes-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0.5rem 0rem 1rem 0rem;
+  width: 100%;
+  height: 2rem;
+  font-size: 1.2rem;
+  letter-spacing: 0.1rem;
+  line-height: 1.1;
+  font-weight: bolder;
+  text-transform: uppercase;
+  color: var(--color-product-card-sizes-title);
+  /* border: 1px solid red; */
+}
+
+/* -------------------------------- */
+/* FIXME:  PRODUCT SIZES - OPTIONS  */
+/* -------------------------------- */
+
+.product-card-sizes-options {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 6.5rem;
+  /* border: 1px solid red; */
+}
+
+/* ===================================================================================================================== */
+/* TODO:  PRODUCT CARD SECTION 5 - PRODUCT COLOURS                                                                       */
+/* ===================================================================================================================== */
+
+/* ------------------------------------ */
+/* FIXME:  PRODUCT COLORS - CONTAINTER  */
+/* ------------------------------------ */
+
+.product-card-section-colors {
+  position: relative;
+  width: 50%;
+  height: 10rem;
+  margin: 0rem 0rem 0rem 0rem;
+  padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+  border: 1px solid red;
+}
+
+/* ------------------------------- */
+/* FIXME:  PRODUCT COLORS - TITLE  */
+/* ------------------------------- */
+
+.product-card-colors-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0.5rem 0rem 1rem 0rem;
+  width: 100%;
+  height: 2rem;
+  font-size: 1.2rem;
+  letter-spacing: 0.1rem;
+  line-height: 1.1;
+  font-weight: bolder;
+  text-transform: uppercase;
+  color: var(--color-product-card-sizes-title);
+  /* border: 1px solid red; */
+}
+
+/* --------------------------------- */
+/* FIXME:  PRODUCT COLORS - OPTIONS  */
+/* --------------------------------- */
+
+.product-card-colors-options {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 6.5rem;
+}
+
+/* ------------------------------------- */
+/* FIXME:  PRODUCT 001 - COLOR OPTION 1  */
+/* ------------------------------------- */
+
+.color__01 i.fa-square {
+  font-size: 1rem;
+  padding-right: 1rem;
+  color: var(--color-product-color-option-01);
+  outline: none;
+  border: none;
+}
+
+/* ------------------------------------- */
+/* FIXME:  PRODUCT 001 - COLOR OPTION 2  */
+/* ------------------------------------- */
+
+.color__02 i.fa-square {
+  font-size: 1rem;
+  padding-right: 1rem;
+  color: var(--color-product-color-option-02);
+  outline: none;
+  border: none;
+}
+
+/* ------------------------------------- */
+/* FIXME:  PRODUCT 001 - COLOR OPTION 3  */
+/* ------------------------------------- */
+
+.color__03 i.fa-square {
+  font-size: 1rem;
+  padding-right: 1rem;
+  color: var(--color-product-color-option-03);
+  outline: none;
+  border: none;
+}
+
+/* ------------------------------------- */
+/* FIXME:  PRODUCT 001 - COLOR OPTION 4  */
+/* ------------------------------------- */
+
+.color__04 i.fa-square {
+  font-size: 1rem;
+  padding-right: 1rem;
+  color: var(--color-product-color-option-04);
+  outline: none;
+  border: none;
+}
+
+/* ------------------------------------- */
+/* FIXME:  PRODUCT 001 - COLOR OPTION 5  */
+/* ------------------------------------- */
+
+.color__05 i.fa-square {
+  font-size: 1rem;
+  padding-right: 1rem;
+  color: var(--color-product-color-option-05);
+  outline: none;
+  border: none;
+}
+
+/* ===================================================================================================================== */
+/* TODO:  PRODUCT CARD SECTION 6 - PRODUCT PRICING                                                                       */
+/* ===================================================================================================================== */
+
+.product-card-pricing {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.25rem 0.5rem 0.25rem 0.5rem;
+  border: 1px solid red;
+}
+
+.price__currency {
+  font-size: 1.8rem;
+  font-weight: 700;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+  margin: 0rem 0.5rem 0rem 0rem;
+  color: var(--color-product-card-price-currency);
+}
+
+.price__value {
+  font-size: 1.8rem;
+  font-weight: 700;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+  margin: 0rem 0rem 0rem 0rem;
+  color: var(--color-product-card-price-value);
+}
+
+/* ===================================================================================================================== */
+/* TODO:  PRODUCT CARD SECTION 7 - PRODUCT CARD BUTTONS                                                                  */
+/* ===================================================================================================================== */
+
+/* ===================================================================================================================== */
+/*                                                                                            TODO:  STYLING ENDS  TODO: */
+/* ===================================================================================================================== */
