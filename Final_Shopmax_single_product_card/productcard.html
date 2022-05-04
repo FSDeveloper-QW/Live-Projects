@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+    <!-- TODO:   STANDARD META DATA - BASIC REQUIREMENT                                                         -->
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+    <!-- TODO:   STANDARD META DATA - MOBILE SPECIFIC                                                           -->
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+    <!-- FIXME:  PART 2 - SEARCH ENGINE OPTIMIZATION (SEO) : STANDARD HTML TOOLS - DESCRIPTION                  -->
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+
+    <meta
+      name="description"
+      content="ENTER A SHORT DESCRIPTION OF YOUR BUSINESS FOR GOOGLE SEARCH ENGINES TO INDEX"
+    />
+
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+    <!-- TODO:   PROVIDE A TITLE FOR YOUR PAGE - APPEARS IN BROWSER TAB                                         -->
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+
+    <title>ENTER NAME HERE</title>
+
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+    <!-- TODO:   LINK GOOGLE FONTS - TO USE CERTAIN FONTS ON YOUR PAGE - https://fonts.google.com/              -->
+    <!-- MY FONTS: ROBOTO, OPEN SANS, MONTSERRAT, POPPINS, RALEWAY, ALICE (ALL REGULAR)                         -->
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alice&family=Montserrat&family=Open+Sans&family=Poppins&family=Raleway&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+    <!-- TODO:  FONT AWESOME ICONS  TODO: TO LINK YOUR PROJECT                                                  -->
+    <!-- https://www.w3schools.com/icons/fontawesome_icons_intro.asp                                            -->
+    <!-- TO VIEW THE LIST OF FREE ICONS TO USE : https://fontawesome.com/search?m=free                          -->
+    <!-- FIXME:  COPY AND PASTE: FIXME:  SYNTAX TO USE IN CODE:   <i class="fa fa-iconname"></i>                -->
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+
+    <!-- PREVIOUS -->
+
+    <!-- <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    /> -->
+
+    <!-- LATEST (APRIL 2022) -->
+
+    <!-- <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/fontawesome.min.css"
+    /> -->
+
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+    <!-- TODO:  BOXICONS  TODO: (FOR USE IN ANY PROJECT                                                         -->
+    <!-- https://boxicons.com/usage#import-css                                                                  -->
+    <!-- FIXME:  COPY AND PASTE: FIXME:  SYNTAX TO USE IN CODE:   <i class="bx bx-user"></i>                    -->
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+
+    <link
+      href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+    <!-- TODO:   CSS STYLE SHEET (INTERNAL) - LINK YOUR HTML DOCUMENT TO YOUR OWN CSS STYLE SHEET               -->
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+
+    <link rel="stylesheet" href="productcard.css" />
+
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+    <!-- TODO:   CSS STYLE SHEET (EXTERNAL) - LINK TO NORMALISE.CSS STYLE SHEET (ONLY IF REQUIRED)              -->
+    <!-- ALWAYS DOWNLOAD THE LATEST FILE (BEFORE YOU START):  https://necolas.github.io/normalize.css/          -->
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+
+    <!-- <link rel="stylesheet" href="normalize.css" /> -->
+
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+    <!-- TODO:   LINK YOUR HTML DOCUMENT TO ANIMATE ON SCROLL (AOS) FOR ALL PAGE ANIMATIONS                     -->
+    <!-- JAVASCRIPT INCLUDED AT END OF HTML DOCUMENT / WEBSITE: https://michalsnik.github.io/aos/               -->
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  </head>
+  <!-- -------------------------------------------------------------------------------------------------------- -->
+  <!--                              ===== TODO: CODING START BELOW TODO: =====                                  -->
+  <!-- -------------------------------------------------------------------------------------------------------- -->
+  <body>
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+    <!-- TODO:   PRODUCT CARD (PLAYSTATION CONTROLLERS)                                                         -->
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+
+    <div class="product-card-container-all">
+      <div class="product-card">
+        <!-- ================================================================================================== -->
+        <!--                         TODO:  START PRODUCT CARD (FRONT)  TODO:                                   -->
+        <!-- ================================================================================================== -->
+
+        <div class="product-card-front-side">
+          <!-- ---------------------------------- -->
+          <!-- TODO:  CARD SECTION 1 - TOP  TODO: -->
+          <!-- ---------------------------------- -->
+          <!-- ----------------------------------- -->
+          <!-- FIXME:  BRAND NAME - MIDDLE  FIXME: -->
+          <!-- ----------------------------------- -->
+
+          <!-- <div class="brand-title">apple</div> -->
+
+          <div class="product-card-section-top">
+            <!-- -------------------------------------------- -->
+            <!-- FIXME:  ADD TO WISH LIST - TOP RIGHT  FIXME: -->
+            <!-- -------------------------------------------- -->
+
+            <div class="wishlist-container">
+              <!-- <div class="wishlist-counter-container">
+                <span id="wishlist-counter">1</span>
+                <i class="bx bx-heart"></i>
+              </div> -->
+              <button id="wishlist-add-animation">
+                <i class="bx bx-heart"></i>
+              </button>
+            </div>
+
+            <!-- <div class="wishlist">
+              <i class="fa fa-heart-o"></i>
+            </div> -->
+
+            <!-- --------------------------------------- -->
+            <!-- FIXME:  BRAND LOGO - TOP CENTER  FIXME: -->
+            <!-- --------------------------------------- -->
+
+            <!-- <div class="brand__logo">
+              <img src="images/Lenovo Logo 1.jpg" alt="" />
+            </div> -->
+
+            <!-- ---------------------------------- -->
+            <!-- FIXME:  FEATURED PRODUCT IMAGE  FIXME: -->
+            <!-- ---------------------------------- -->
+
+            <div class="product-card-featured-image">
+              <img
+                src="images/ipad_pro_01.webp"
+                id="featured__product__image"
+                alt=""
+              />
+            </div>
+          </div>
+
+          <!-- -------------------------------------------- -->
+          <!-- TODO:  CARD SECTION 2 - EXTRA IMAGES  TODO:  -->
+          <!-- -------------------------------------------- -->
+
+          <div class="product-card-section-extra-images">
+            <div class="extra-images">
+              <a
+                ><img
+                  onclick="change(this)"
+                  src="images/ipad_pro_01.webp"
+                  alt=""
+              /></a>
+              <a
+                ><img
+                  onclick="change(this)"
+                  src="images/ipad_pro_02.webp"
+                  alt=""
+              /></a>
+              <a
+                ><img
+                  onclick="change(this)"
+                  src="images/ipad_pro_03.webp"
+                  alt=""
+              /></a>
+              <a
+                ><img
+                  onclick="change(this)"
+                  src="images/ipad_pro_04.webp"
+                  alt=""
+              /></a>
+            </div>
+          </div>
+
+          <!-- ------------------------------------------- ------- -->
+          <!-- TODO:  CARD SECTION 3 - PRODUCT INFORMATION  TODO:  -->
+          <!-- -------------------------------------------- ------ -->
+
+          <div class="product-card-section-information">
+            <div class="product-card-title">Apple iPad Pro 12.9”</div>
+            <div class="product-card-short-description">
+              Apple iPad Pro 12.9 (5th Generation / 2021), M1 Processor,
+              12.9”Liquid Retina Display, 16GB, 2TB, 5G, WiFi, Bluetooth
+            </div>
+          </div>
+
+          <div class="container__sizes__and__colors">
+            <!-- --------------------------------------------- -->
+            <!-- TODO:  CARD SECTION 4 - PRODUCT SIZES  TODO:  -->
+            <!-- --------------------------------------------- -->
+            <div class="product-card-section-sizes">
+              <div class="product-card-sizes-title">select size</div>
+              <div class="product-card-sizes-options">
+                <!-- ---------------------- -->
+                <!-- DROPDOWN LIST OPTIONS  -->
+                <!-- ---------------------- -->
+
+                <!-- ---------------------------------------------- -->
+                <!-- FIXME:  APPLE PRODUCTS - STORAGE SIZES  FIXME: -->
+                <!-- ---------------------------------------------- -->
+
+                <div class="form__group">
+                  <label for="apple-storage-sizes"></label>
+                  <select id="apple-storage-sizes" name="" required>
+                    <option value="" selected>-</option>
+                    <option name="XS" value="XS" disabled>128GB</option>
+                    <option name="S" value="S" disabled>256GB</option>
+                    <option name="M" value="M" disabled>512GB</option>
+                    <option name="L" value="L" disabled>1TB</option>
+                    <option name="XL" value="XL" selected>2TB</option>
+                  </select>
+                </div>
+
+                <!-- ------------------------------------- -->
+                <!-- FIXME:  ADULTS COLTHING SIZES  FIXME: -->
+                <!-- ------------------------------------- -->
+
+                <!-- <div class="form__group">
+                  <label for="adult-clothing-sizes"></label>
+                  <select id="adult-clothing-sizes" name="" required>
+                    <option value="" selected>-</option>
+                    <option name="XS" value="XS">XS</option>
+                    <option name="S" value="S">S</option>
+                    <option name="M" value="M">M</option>
+                    <option name="L" value="L">L</option>
+                    <option name="XL" value="XL">XL</option>
+                    <option name="2XL" value="2XL">2XL</option>
+                    <option name="3XL" value="3XL">3XL</option>
+                    <option name="4XL" value="4XL">4XL</option>
+                    <option name="5XL" value="5XL">5XL</option>
+                  </select>
+                </div> -->
+
+                <!-- ------------------------------------ -->
+                <!-- FIXME:  KIDS COLTHING SIZES  FIXME:  -->
+                <!-- ------------------------------------ -->
+
+                <!-- <div class="form__group">
+                  <label for="kids-clothing-sizes"></label>
+                  <select id="kids-clothing-sizes" name="" required>
+                    <option value="" selected>-</option>
+                    <option name="XS" value="XS">2-3</option>
+                    <option name="S" value="S">4-5</option>
+                    <option name="M" value="M">5-6</option>
+                    <option name="L" value="L">7-8</option>
+                    <option name="XL" value="XL">9-10</option>
+                    <option name="2XL" value="2XL">11-12</option>
+                    <option name="3XL" value="3XL">13-14</option>
+                  </select>
+                </div> -->
+
+                <!-- --------------------------------- -->
+                <!-- FIXME:  LADIES SHOE SIZES  FIXME: -->
+                <!-- --------------------------------- -->
+
+                <!-- ------------------------------- -->
+                <!-- FIXME:  MENS SHOE SIZES  FIXME: -->
+                <!-- ------------------------------- -->
+
+                <!-- -------------------------------- -->
+                <!-- FIXME:  GIRLS SHOE SIZES  FIXME: -->
+                <!-- -------------------------------- -->
+
+                <!-- ------------------------------ -->
+                <!-- FIXME:  BOYS SHOE SIZES FIXME: -->
+                <!-- ------------------------------ -->
+
+                <!-- ---------------------- -->
+                <!-- RADIO BUTTON OPTIONS   -->
+                <!-- ---------------------- -->
+
+                <!-- ------------------------------------- -->
+                <!-- FIXME:  ADULTS COLTHING SIZES  FIXME: -->
+                <!-- ------------------------------------- -->
+
+                <!-- RADIO BUTTONS OPTION -->
+
+                <!-- <div class="radio__buttons__group">
+                  <div class="radio__buttons__column__1">
+                    <label class="radio__option"
+                      ><input type="radio" name="radio-sizes" />XS</label
+                    >
+                    <label class="radio__option"
+                      ><input type="radio" name="radio-sizes" />S</label
+                    >
+                    <label class="radio__option"
+                      ><input type="radio" name="radio-sizes" />M</label
+                    >
+                    <label class="radio__option"
+                      ><input type="radio" name="radio-sizes" />L</label
+                    >
+                    <label class="radio__option"
+                      ><input type="radio" name="radio-sizes" />XL</label
+                    >
+                  </div>
+                  <div class="radio__buttons__column__2">
+                    <label class="radio__option"
+                      ><input type="radio" name="radio-sizes" />2XL</label
+                    >
+                    <label class="radio__option"
+                      ><input type="radio" name="radio-sizes" />3XL</label
+                    >
+                    <label class="radio__option"
+                      ><input type="radio" name="radio-sizes" />4XL</label
+                    >
+                    <label class="radio__option"
+                      ><input type="radio" name="radio-sizes" />5XL</label
+                    >
+                    <label class="radio__option"
+                      ><input type="radio" name="radio-sizes" disabled />-</label
+                    >
+                  </div>
+                </div> -->
+                <!-- ------------------------------------ -->
+                <!-- FIXME:  KIDS COLTHING SIZES  FIXME:  -->
+                <!-- ------------------------------------ -->
+                <!-- <div class="radio__buttons__group">
+                  <div class="radio__buttons__column__1">
+                    <label class="radio__option"
+                      ><input type="radio" name="radio-sizes" />2-3</label
+                    >
+                    <label class="radio__option"
+                      ><input type="radio" name="radio-sizes" />4-5</label
+                    >
+                    <label class="radio__option"
+                      ><input type="radio" name="radio-sizes" />5-6</label
+                    >
+                    <label class="radio__option"
+                      ><input type="radio" name="radio-sizes" />7-8</label
+                    >
+                    <label class="radio__option"
+                      ><input type="radio" name="radio-sizes" />9-10</label
+                    >
+                  </div>
+                  <div class="radio__buttons__column__2">
+                    <label class="radio__option"
+                      ><input type="radio" name="radio-sizes" />11-12</label
+                    >
+                    <label class="radio__option"
+                      ><input type="radio" name="radio-sizes" />13-14</label
+                    >
+                    <label class="radio__option"
+                      ><input type="radio" name="radio-sizes" disabled />-</label
+                    >
+                    <label class="radio__option"
+                      ><input type="radio" name="radio-sizes" disabled />-</label
+                    >
+                    <label class="radio__option"
+                      ><input type="radio" name="radio-sizes" disabled />-</label
+                    >
+                  </div>
+                </div> -->
+                <!-- --------------------------------- -->
+                <!-- FIXME:  LADIES SHOE SIZES  FIXME: -->
+                <!-- --------------------------------- -->
+
+                <!-- ------------------------------- -->
+                <!-- FIXME:  MENS SHOE SIZES  FIXME: -->
+                <!-- ------------------------------- -->
+
+                <!-- -------------------------------- -->
+                <!-- FIXME:  GIRLS SHOE SIZES  FIXME: -->
+                <!-- -------------------------------- -->
+
+                <!-- ------------------------------ -->
+                <!-- FIXME:  BOYS SHOE SIZES FIXME: -->
+                <!-- ------------------------------ -->
+              </div>
+            </div>
+            <!-- ---------------------------------------------- -->
+            <!-- TODO:  CARD SECTION 5 - PRODUCT COLORS  TODO:  -->
+            <!-- ---------------------------------------------- -->
+
+            <div class="product-card-section-colors">
+              <div class="product-card-colors-title">select color</div>
+              <div class="product-card-colors-options">
+                <!-- ----------------------------- -->
+                <!-- DROPDOWN LIST COLOR OPTIONS   -->
+                <!-- ----------------------------- -->
+
+                <!-- ---------------------------------------------- -->
+                <!-- FIXME:  APPLE PRODUCTS - COLOR OPTIONS  FIXME: -->
+                <!-- ---------------------------------------------- -->
+
+                <div class="form__group">
+                  <label for="apple-tablet-colors"></label>
+                  <select id="apple-tablet-colors" name="" required>
+                    <option value="" selected>-</option>
+                    <option name="Silver" value="Silver" disabled>
+                      Silver
+                    </option>
+                    <option name="Space Grey" value="Space Grey" selected>
+                      Space Grey
+                    </option>
+                  </select>
+                </div>
+
+                <!-- ------------------------- ----- -->
+                <!-- FIXME:  CLOTHING COLORS  FIXME: -->
+                <!-- ------------------------------- -->
+
+                <!-- <div class="form__group">
+                  <label for="adult-clothing-colors"></label>
+                  <select id="adult-clothing-colors" name="" required>
+                    <option value="" selected>-</option>
+                    <option name="White" value="White">White</option>
+                    <option name="Black" value="Black">Black</option>
+                    <option name="Grey" value="Grey">Grey</option>
+                    <option name="Navy" value="Navy">Navy</option>
+                    <option name="Red" value="Red">Red</option>
+                  </select>
+                </div> -->
+
+                <!-- ---------------------------- -->
+                <!-- RADIO BUTTON COLOR OPTIONS   -->
+                <!-- ---------------------------- -->
+
+                <!-- <div class="radio__buttons__group__colors">
+                  <div class="radio__buttons__column__1">
+                    <label class="radio__option__02"
+                      ><input type="radio" name="radio-color" />
+                      <div class="color__01">
+                        <i class="fa fa-square"></i>white
+                      </div></label
+                    >
+                    <label class="radio__option__02"
+                      ><input type="radio" name="radio-color" />
+                      <div class="color__02">
+                        <i class="fa fa-square"></i>black
+                      </div></label
+                    >
+                    <label class="radio__option__02"
+                      ><input type="radio" name="radio-color" />
+                      <div class="color__03">
+                        <i class="fa fa-square"></i>gray
+                      </div></label
+                    >
+                    <label class="radio__option__02"
+                      ><input type="radio" name="radio-color" />
+                      <div class="color__04">
+                        <i class="fa fa-square"></i>navy
+                      </div></label
+                    >
+                    <label class="radio__option__02"
+                      ><input type="radio" name="radio-color" />
+                      <div class="color__05">
+                        <i class="fa fa-square"></i>red
+                      </div></label
+                    >
+                  </div>
+                </div> -->
+              </div>
+            </div>
+          </div>
+
+          <!-- ----------------------------------------------- -->
+          <!-- TODO:  CARD SECTION 6 - PRODUCT PRICING  TODO:  -->
+          <!-- ----------------------------------------------- -->
+
+          <div class="product-card-pricing">
+            <div class="price__currency">R</div>
+            <div class="price__value">42500</div>
+          </div>
+
+          <!-- ---------------------------------------------------- -->
+          <!-- TODO:  CARD SECTION 7 - PRODUCT CARD BUTTONS  TODO:  -->
+          <!-- ---------------------------------------------------- -->
+
+          <div class="info-and-cart-container">
+            <!-- ---------------------------------------- -->
+            <!-- FIXME:  MORE PRODUCT INFORMATION  FIXME: -->
+            <!-- ---------------------------------------- -->
+
+            <div class="more-info-container">
+              <!-- <div class="counter-container">
+                <span id="counter">1</span>
+                <i class="bx bx-cart"></i>
+              </div> -->
+
+              <a href="#" class="btn animate-01"
+                >more details&nbsp;<i class="bx bx-list-check"></i
+              ></a>
+            </div>
+
+            <!-- --------------------------- -->
+            <!-- FIXME:  ADD TO CART  FIXME: -->
+            <!-- --------------------------- -->
+
+            <div class="shopping-container">
+              <!-- <div class="counter-container">
+                <span id="counter">1</span>
+                <i class="bx bx-cart"></i>
+              </div> -->
+              <button id="add-animation">
+                add to cart&nbsp;<i class="bx bx-cart"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- ================================================================================================== -->
+        <!--                             FIXME:  END PRODUCT CARD (FRONT)  FIXME:                               -->
+        <!-- ================================================================================================== -->
+
+        <!-- ================================================================================================== -->
+        <!--                              TODO:  START PRODUCT CARD (BACK)  TODO:                               -->
+        <!-- ================================================================================================== -->
+
+        <div class="product-card-back-side">
+          <!-- ---------------------------------------------- -->
+          <!-- CARD ANIMATED BUTTON - CLOSE (FLIP CARD BACK)  -->
+          <!-- HTML ENTITY:  &times;  =  X (CLOSE BUTTON)     -->
+          <!-- ---------------------------------------------- -->
+          <a href="#" class="animate-01 close">&times;</a>
+
+          <!-- -------------------------------- -->
+          <!-- CARD - DETAILED DESRIPTION AREA  -->
+          <!-- -------------------------------- -->
+
+          <div class="information-container-back">
+            <div class="text-area">
+              <!-- --------------- -->
+              <!-- QUALIFICATIONS  -->
+              <!-- --------------- -->
+
+              <div class="qualifications">
+                <h2>qualifications</h2>
+                <h5>B.Econ, Hons BB&A, MBA</h5>
+                <h5>HTML, CSS, Javascript, MySQL</h5>
+              </div>
+
+              <!-- ----------- -->
+              <!-- SKILLS AREA -->
+              <!-- ----------- -->
+
+              <div class="key-skills-title">
+                <h2>five key skills</h2>
+              </div>
+
+              <div class="skill-area">
+                <!-- FIXME:  SKILL 01  FIXME: -->
+
+                <p>General Management & Reporting</p>
+                <div class="single-skill">
+                  <div class="skills profile-card-01-skill-one">95%</div>
+                </div>
+
+                <!-- FIXME:  SKILL 02  FIXME: -->
+
+                <p>Operations (IT, Finance, HR, Legal)</p>
+                <div class="single-skill">
+                  <div class="skills profile-card-01-skill-two">90%</div>
+                </div>
+
+                <!-- FIXME:  SKILL 03  FIXME: -->
+
+                <p>Property & Facility Management</p>
+                <div class="single-skill">
+                  <div class="skills profile-card-01-skill-three">80%</div>
+                </div>
+
+                <!-- FIXME:  SKILL 04  FIXME: -->
+                <p>Business Development & Marketing</p>
+                <div class="single-skill">
+                  <div class="skills profile-card-01-skill-four">70%</div>
+                </div>
+
+                <!-- FIXME:  SKILL 05  FIXME: -->
+
+                <p>Full Stack Web Development</p>
+                <div class="single-skill">
+                  <div class="skills profile-card-01-skill-five">50%</div>
+                </div>
+
+                <!-- FIXME:  END OF SKILLS  FIXME: -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+    <!--                              ===== FIXME: MY COMMENTS FIXME: =====                                     -->
+    <!-- 01.           -->
+    <!-- 02.           -->
+    <!-- 03.           -->
+    <!-- 04.           -->
+    <!-- 05.           -->
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+    <!--                              ===== TODO: CODING END ABOVE TODO: =====                                  -->
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+    <!-- TODO:   JAVASCRIPT (OWN) - LINK ALL YOUR JAVASCRIPT FILES TO THE HTML DOCUMENT                         -->
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+
+    <script src="productcard.js" defer></script>
+
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+    <!-- TODO:   JAVASCRIPT (FONT AWESOME KIT)                                                                  -->
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+
+    <script
+      src="https://kit.fontawesome.com/6034cfbb24.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+    <!-- TODO:   JAVASCRIPT (JQUERY LIBRARY) - JQUERY.MIN.JS                                                    -->
+    <!-- TODO:   URL : https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js                        -->
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+    <!-- FIXME:  ANIMATE ON SCROLL (AOS) SCRIPT - ANIMATIONS FOR WEBSITE - https://michalsnik.github.io/aos/    -->
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+    <!-- FIXME:  ADDITIONAL THIRD PARTY SCRIPTS                                                                 -->
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+  </body>
+  <!-- ------------------------------------------------------------------------------------------------------ -->
+  <!--                              ===== FIXME: MY COMMENTS FIXME: =====                                     -->
+  <!--  TEMPLATE TO USE FOR COMMENTING                                                                        -->
+  <!-- ------------------------------------------------------------------------------------------------------ -->
+</html>
