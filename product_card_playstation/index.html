@@ -106,15 +106,30 @@
         <!-- ---------------------------------- -->
         <!-- TODO:  CARD SECTION 1 - TOP  TODO: -->
         <!-- ---------------------------------- -->
+        <!-- ----------------------------------- -->
+        <!-- FIXME:  BRAND NAME - MIDDLE  FIXME: -->
+        <!-- ----------------------------------- -->
+
+        <div class="brand-title">apple</div>
 
         <div class="product-card-section-top">
-          <!-- ------------------------- -->
-          <!-- FIXME:  TOP RIGHT  FIXME: -->
-          <!-- ------------------------- -->
+          <!-- -------------------------------------------- -->
+          <!-- FIXME:  ADD TO WISH LIST - TOP RIGHT  FIXME: -->
+          <!-- -------------------------------------------- -->
 
-          <div class="wishlist">
-            <i class="fa fa-heart-o"></i>
+          <div class="wishlist-container">
+            <!-- <div class="wishlist-counter-container">
+              <span id="wishlist-counter">1</span>
+              <i class="bx bx-heart"></i>
+            </div> -->
+            <button id="wishlist-add-animation">
+              <i class="bx bx-heart"></i>
+            </button>
           </div>
+
+          <!-- <div class="wishlist">
+            <i class="fa fa-heart-o"></i>
+          </div> -->
 
           <!-- --------------------------------------- -->
           <!-- FIXME:  BRAND LOGO - TOP CENTER  FIXME: -->
@@ -187,12 +202,77 @@
           <!-- TODO:  CARD SECTION 4 - PRODUCT SIZES  TODO:  -->
           <!-- --------------------------------------------- -->
           <div class="product-card-section-sizes">
-            <div class="product-card-sizes-title">sizes</div>
+            <div class="product-card-sizes-title">select size</div>
             <div class="product-card-sizes-options">
+              <!-- ---------------------- -->
+              <!-- DROPDOWN LIST OPTIONS   -->
+              <!-- ---------------------- -->
+
               <!-- ------------------------------------- -->
               <!-- FIXME:  ADULTS COLTHING SIZES  FIXME: -->
               <!-- ------------------------------------- -->
-              <div class="radio__buttons__group">
+
+              <div class="form__group">
+                <label for="adult-clothing-sizes"></label>
+                <select id="adult-clothing-sizes" name="" required>
+                  <option value="" selected>-</option>
+                  <option name="XS" value="XS">XS</option>
+                  <option name="S" value="S">S</option>
+                  <option name="M" value="M">M</option>
+                  <option name="L" value="L">L</option>
+                  <option name="XL" value="XL">XL</option>
+                  <option name="2XL" value="2XL">2XL</option>
+                  <option name="3XL" value="3XL">3XL</option>
+                  <option name="4XL" value="4XL">4XL</option>
+                  <option name="5XL" value="5XL">5XL</option>
+                </select>
+              </div>
+
+              <!-- ------------------------------------ -->
+              <!-- FIXME:  KIDS COLTHING SIZES  FIXME:  -->
+              <!-- ------------------------------------ -->
+
+              <!-- <div class="form__group">
+                <label for="kids-clothing-sizes"></label>
+                <select id="kids-clothing-sizes" name="" required>
+                  <option value="" selected>-</option>
+                  <option name="XS" value="XS">2-3</option>
+                  <option name="S" value="S">4-5</option>
+                  <option name="M" value="M">5-6</option>
+                  <option name="L" value="L">7-8</option>
+                  <option name="XL" value="XL">9-10</option>
+                  <option name="2XL" value="2XL">11-12</option>
+                  <option name="3XL" value="3XL">13-14</option>
+                </select>
+              </div> -->
+
+              <!-- --------------------------------- -->
+              <!-- FIXME:  LADIES SHOE SIZES  FIXME: -->
+              <!-- --------------------------------- -->
+
+              <!-- ------------------------------- -->
+              <!-- FIXME:  MENS SHOE SIZES  FIXME: -->
+              <!-- ------------------------------- -->
+
+              <!-- -------------------------------- -->
+              <!-- FIXME:  GIRLS SHOE SIZES  FIXME: -->
+              <!-- -------------------------------- -->
+
+              <!-- ------------------------------ -->
+              <!-- FIXME:  BOYS SHOE SIZES FIXME: -->
+              <!-- ------------------------------ -->
+
+              <!-- ---------------------- -->
+              <!-- RADIO BUTTON OPTIONS   -->
+              <!-- ---------------------- -->
+
+              <!-- ------------------------------------- -->
+              <!-- FIXME:  ADULTS COLTHING SIZES  FIXME: -->
+              <!-- ------------------------------------- -->
+
+              <!-- RADIO BUTTONS OPTION -->
+
+              <!-- <div class="radio__buttons__group">
                 <div class="radio__buttons__column__1">
                   <label class="radio__option"
                     ><input type="radio" name="radio-sizes" />XS</label
@@ -227,7 +307,7 @@
                     ><input type="radio" name="radio-sizes" disabled />-</label
                   >
                 </div>
-              </div>
+              </div> -->
               <!-- ------------------------------------ -->
               <!-- FIXME:  KIDS COLTHING SIZES  FIXME:  -->
               <!-- ------------------------------------ -->
@@ -287,11 +367,35 @@
           <!-- ---------------------------------------------- -->
           <!-- TODO:  CARD SECTION 5 - PRODUCT COLORS  TODO:  -->
           <!-- ---------------------------------------------- -->
+
           <div class="product-card-section-colors">
-            <div class="product-card-colors-title">colors</div>
+            <div class="product-card-colors-title">select color</div>
             <div class="product-card-colors-options">
-              <!-- COLOR OPTIONS -->
-              <div class="radio__buttons__group__colors">
+              <!-- ----------------------------- -->
+              <!-- DROPDOWN LIST COLOR OPTIONS   -->
+              <!-- ----------------------------- -->
+
+              <!-- ------------------------- ----- -->
+              <!-- FIXME:  CLOTHING COLORS  FIXME: -->
+              <!-- ------------------------------- -->
+
+              <div class="form__group">
+                <label for="adult-clothing-colors"></label>
+                <select id="adult-clothing-colors" name="" required>
+                  <option value="" selected>-</option>
+                  <option name="White" value="White">White</option>
+                  <option name="Black" value="Black">Black</option>
+                  <option name="Grey" value="Grey">Grey</option>
+                  <option name="Navy" value="Navy">Navy</option>
+                  <option name="Red" value="Red">Red</option>
+                </select>
+              </div>
+
+              <!-- ---------------------------- -->
+              <!-- RADIO BUTTON COLOR OPTIONS   -->
+              <!-- ---------------------------- -->
+
+              <!-- <div class="radio__buttons__group__colors">
                 <div class="radio__buttons__column__1">
                   <label class="radio__option__02"
                     ><input type="radio" name="radio-color" />
@@ -324,7 +428,7 @@
                     </div></label
                   >
                 </div>
-              </div>
+              </div> -->
             </div>
           </div>
         </div>
@@ -340,6 +444,38 @@
 
         <!-- ---------------------------------------------------- -->
         <!-- TODO:  CARD SECTION 7 - PRODUCT CARD BUTTONS  TODO:  -->
+        <!-- ---------------------------------------------------- -->
+
+        <div class="info-and-cart-container">
+          <!-- ---------------------------------------- -->
+          <!-- FIXME:  MORE PRODUCT INFORMATION  FIXME: -->
+          <!-- ---------------------------------------- -->
+
+          <div class="more-info-container">
+            <!-- <div class="counter-container">
+              <span id="counter">1</span>
+              <i class="bx bx-cart"></i>
+            </div> -->
+            <button>more details&nbsp;<i class="bx bx-list-check"></i></button>
+          </div>
+
+          <!-- --------------------------- -->
+          <!-- FIXME:  ADD TO CART  FIXME: -->
+          <!-- --------------------------- -->
+
+          <div class="shopping-container">
+            <!-- <div class="counter-container">
+              <span id="counter">1</span>
+              <i class="bx bx-cart"></i>
+            </div> -->
+            <button id="add-animation">
+              add to cart&nbsp;<i class="bx bx-cart"></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- ---------------------------------------------------- -->
+        <!-- TODO:  CARD SECTION 8 - BACK OF PRODUCT CARD  TODO:  -->
         <!-- ---------------------------------------------------- -->
       </div>
     </div>

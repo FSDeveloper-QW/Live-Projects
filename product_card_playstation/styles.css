@@ -8,6 +8,7 @@
   --color-box-shadow-01: 3px 5px 20px rgba(0, 0, 0, 0.35);
   --color-box-shadow-02: 0px 5px 4px rgba(0, 0, 0, 0.35);
   /* CARD COLOR SCHEME */
+  --color-product-card-brand-title: black;
   --color-product-card-background: white;
   --color-product-card-top-section-background: white;
   --color-product-card-arrow-left: black;
@@ -16,21 +17,12 @@
   --color-product-card-extra-image-background: white;
   --color-product-card-extra-image-border: black;
   --color-product-card-extra-image-border-hover: #dc143c;
-  --color-product-card-title: #dc143c;
+  --color-product-card-title: black;
   --color-product-card-short-description: black;
-  --color-product-card-sizes-title: #dc143c;
-  --color-product-card-colors-title: #dc143c;
-  --color-product-card-price-currency: #dc143c;
-  --color-product-card-price-value: #dc143c;
-  --color-product-card-button-add-to-card-background: linear-gradient(
-    to right,
-    #0a52af,
-    rgba(18, 112, 234)
-  );
-  --color-product-card-button-add-to-card-text: white;
-  --color-product-card-sub-image-box-shadow-01: -10px -10px 10px rgba(230, 244, 244, 0.5);
-  --color-product-card-sub-image-box-shadow-02: 5px 5px 5px
-    rgba(70, 70, 70, 0.12);
+  --color-product-card-sizes-title: black;
+  --color-product-card-colors-title: black;
+  --color-product-card-price-currency: black;
+  --color-product-card-price-value: black;
   /* PRODUCT 001 - COLOR OPTIONS */
   --color-product-color-option-01: #ddd;
   --color-product-color-option-02: black;
@@ -43,6 +35,22 @@
   --color-custom-radiobutton-circle: #dc143c;
   --color-custom-radiobutton-focus: #dc143c;
   --color-custom-radiobutton-disabled: #959495;
+  /* COLOR SCHEME FOR ADD TO CART BUTTONS, CARTS AND COUNTERS */
+  --color-add-to-cart-button-background: #dc143c;
+  --color-add-to-cart-button-text: white;
+  --color-shopping-cart-icon: black;
+  --color-shopping-cart-counter-background: #dc143c;
+  --color-shopping-cart-counter-text: white;
+  /* COLOR SCHEME FOR ADD TO WISH LIST BUTTONS, CARTS AND COUNTERS */
+  --color-add-to-wish-list-button-background: #dc143c;
+  --color-add-to-wish-list-button-text: white;
+  --color-wish-list-icon: black;
+  --color-wish-list-counter-background: #dc143c;
+  --color-wish-list-counter-text: white;
+  /* FORM TEXT INPUTS */
+  --color-input-border: #ccc;
+  --color-input-border-focus: #dc143c;
+  --color-input-border-focus-rgba: rgb(220, 20, 60);
 }
 
 * {
@@ -80,7 +88,7 @@ body {
   align-items: center;
   /* min-height: 100%; */
   width: 26rem;
-  height: 55rem;
+  height: 46rem;
   margin: 1rem 1rem 1rem 1rem;
   padding: 0rem 0rem 0rem 0rem;
   z-index: 100;
@@ -106,6 +114,25 @@ body {
   /* border: 1px solid red; */
 }
 
+/* --------------------------- */
+/* FIXME:  BRAND TITLE  FIXME: */
+/* --------------------------- */
+
+.brand-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.75rem;
+  font-weight: 600;
+  letter-spacing: 0.1rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  margin: 0rem 0rem 0rem 0rem;
+  border-radius: 1rem 1rem 0rem 0rem;
+  color: var(--color-product-card-brand-title);
+  /* border: 1px solid red; */
+}
+
 /* ===================================================================================================================== */
 /* TODO:  PRODUCT CARD SECTION 1 (TOP)                                                                                   */
 /* ===================================================================================================================== */
@@ -117,8 +144,8 @@ body {
 .product-card-section-top {
   position: relative;
   width: 100%;
-  height: 35%;
-  border-radius: 1rem 1rem 0rem 0rem;
+  height: 29%;
+  border-radius: 0rem 0rem 0rem 0rem;
   background-color: var(--color-product-card-top-section-background);
   /* box-shadow: var(--color-box-shadow-01); */
   /* border: 1px solid red; */
@@ -139,30 +166,6 @@ body {
   width: auto;
   height: 3.5rem;
   object-fit: contain;
-}
-
-/* ------------------------------------------------------------- */
-/* FIXME:  TOP SECTION - TOP RIGHT ("HEART" / ADD TO WISH LIST)  */
-/* ------------------------------------------------------------- */
-
-.wishlist {
-  position: absolute;
-  top: 1%;
-  right: 2%;
-  cursor: pointer;
-  transition: transform 0.5s ease-in-out;
-  /* border: 1px solid red; */
-}
-
-.wishlist i {
-  font-size: 1.5rem;
-  color: var(--color-product-card-heart-right);
-  cursor: pointer;
-}
-
-.wishlist i:hover {
-  color: var(--color-product-card-heart-right);
-  transform: scale(1.1);
 }
 
 /* ========================================================================================== */
@@ -195,7 +198,6 @@ body {
   padding: 0rem 0rem 0rem 0rem;
   width: 100%;
   height: 100%;
-  border-radius: 1rem;
   z-index: 100;
   /* border: 1px solid red; */
 }
@@ -211,7 +213,7 @@ body {
   width: 100%;
   height: 100%;
   object-fit: contain;
-  padding: 1rem 1rem 1rem 1rem;
+  padding: 0.25rem 1rem 0.25rem 1rem;
 }
 
 /* ===================================================================================================================== */
@@ -224,7 +226,7 @@ body {
 
 .product-card-section-extra-images {
   position: relative;
-  height: 5rem;
+  height: 4.8rem;
   background: var(--color-product-card-extra-images-section-background);
   /* border: 1px solid red; */
 }
@@ -269,9 +271,9 @@ body {
 .product-card-section-information {
   position: relative;
   width: 100%;
-  height: 11rem;
+  height: 10rem;
   margin: 0rem 0rem 0rem 0rem;
-  padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+  padding: 0rem 0.5rem 0rem 0.5rem;
   /* border: 1px solid red; */
 }
 
@@ -284,14 +286,14 @@ body {
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding: 0.5rem 0rem 0.5rem 0rem;
+  padding: 0.2rem 0rem 0.2rem 0rem;
   width: 100%;
   height: 3rem;
-  font-size: 1.4rem;
+  font-size: 1.5rem;
   line-height: 1.3;
   font-weight: bolder;
-  text-transform: capitalize;
-  letter-spacing: 0.01rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05rem;
   color: var(--color-product-card-title);
   /* border: 1px solid red; */
 }
@@ -307,8 +309,8 @@ body {
   width: 100%;
   height: 6.5rem;
   margin: 0rem 0rem 0rem 0rem;
-  padding: 0.5rem 0rem 0.5rem 0rem;
-  font-size: 1.2rem;
+  padding: 0.2rem 1rem 0.2rem 1rem;
+  font-size: 1.1rem;
   font-weight: 500;
   text-transform: initial;
   text-align: justify;
@@ -330,14 +332,51 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 0rem 0rem 1rem 0rem;
+  margin: 0rem 0rem 0rem 0rem;
 }
 
 .radio__buttons__group__colors {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 0rem 0rem 1rem 0rem;
+  margin: 0rem 0rem 0rem 0rem;
+}
+
+/* ---------------------------------------------- */
+/* FIXME:  INPUT FIELD = DROPDOWN LIST     FIXME: */
+/* e.g. Countries, Provinces, Titles etc.         */
+/* ---------------------------------------------- */
+
+label {
+  display: block;
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin: 0.25rem 0.5rem 0rem 0.5rem;
+}
+
+input::placeholder {
+  font-family: "Poppins", sans-serif;
+}
+
+select {
+  width: 9rem;
+  text-align: center;
+  border-radius: 0.5rem;
+  border: 1px solid var(--color-input-border);
+  /* box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.35); */
+  /* box-shadow: 0 5px 4px rgba(0, 0, 0, 0.35); */
+  margin: 0rem 0.5rem 0rem 0.5rem;
+  padding: 0.25rem 0rem 0.25rem 0rem;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: border-color 0.15s, box-shadow 0.15s;
+}
+
+select:focus {
+  border-color: var(--color-input-border-focus);
+  box-shadow: 0 0 0 2px rgba(220, 20, 60, 0.95);
+  outline: 0;
 }
 
 /* ------------------------------------------------------------------------- */
@@ -476,10 +515,10 @@ input[type="radio"]:disabled {
 .product-card-section-sizes {
   position: relative;
   width: 50%;
-  height: 10rem;
+  height: 6rem;
   margin: 0rem 0rem 0rem 0rem;
-  padding: 0.5rem 0.5rem 0.5rem 0.5rem;
-  border: 1px solid red;
+  padding: 0rem 0.5rem 0rem 0.5rem;
+  /* border: 1px solid red; */
 }
 
 /* ----------------------------- */
@@ -494,10 +533,10 @@ input[type="radio"]:disabled {
   padding: 0.5rem 0rem 1rem 0rem;
   width: 100%;
   height: 2rem;
-  font-size: 1.2rem;
+  font-size: 1rem;
   letter-spacing: 0.1rem;
   line-height: 1.1;
-  font-weight: bolder;
+  font-weight: 500;
   text-transform: uppercase;
   color: var(--color-product-card-sizes-title);
   /* border: 1px solid red; */
@@ -526,10 +565,10 @@ input[type="radio"]:disabled {
 .product-card-section-colors {
   position: relative;
   width: 50%;
-  height: 10rem;
+  height: 6rem;
   margin: 0rem 0rem 0rem 0rem;
-  padding: 0.5rem 0.5rem 0.5rem 0.5rem;
-  border: 1px solid red;
+  padding: 0rem 0.5rem 0rem 0.5rem;
+  /* border: 1px solid red; */
 }
 
 /* ------------------------------- */
@@ -544,10 +583,10 @@ input[type="radio"]:disabled {
   padding: 0.5rem 0rem 1rem 0rem;
   width: 100%;
   height: 2rem;
-  font-size: 1.2rem;
+  font-size: 1rem;
   letter-spacing: 0.1rem;
   line-height: 1.1;
-  font-weight: bolder;
+  font-weight: 500;
   text-transform: uppercase;
   color: var(--color-product-card-sizes-title);
   /* border: 1px solid red; */
@@ -632,12 +671,12 @@ input[type="radio"]:disabled {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0.25rem 0.5rem 0.25rem 0.5rem;
-  border: 1px solid red;
+  padding: 0rem 0.5rem 0.25rem 0.5rem;
+  /* border: 1px solid red; */
 }
 
 .price__currency {
-  font-size: 1.8rem;
+  font-size: 2rem;
   font-weight: 700;
   letter-spacing: 0.1rem;
   text-transform: uppercase;
@@ -646,7 +685,7 @@ input[type="radio"]:disabled {
 }
 
 .price__value {
-  font-size: 1.8rem;
+  font-size: 2rem;
   font-weight: 700;
   letter-spacing: 0.1rem;
   text-transform: uppercase;
@@ -654,9 +693,174 @@ input[type="radio"]:disabled {
   color: var(--color-product-card-price-value);
 }
 
+.info-and-cart-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 /* ===================================================================================================================== */
-/* TODO:  PRODUCT CARD SECTION 7 - PRODUCT CARD BUTTONS                                                                  */
+/* TODO:  PRODUCT CARD SECTION 7A - BUTTON (ADD TO SHOPPING CART)                                                        */
 /* ===================================================================================================================== */
+
+/* ------------------------------------------------------- */
+/* FIXME:  CONTAINER - MAIN (HOLDING ALL ELEMENTS)  FIXME: */
+/* ------------------------------------------------------- */
+
+.shopping-container {
+  width: 50%;
+  height: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0rem 0rem 1rem 0rem;
+  padding: 0.25rem 0.25rem 0.25rem 0.25rem;
+  /* border: 1px solid red; */
+}
+
+/* ------------------------------------ */
+/* FIXME:  BUTTON - ADD TO CART  FIXME: */
+/* ------------------------------------ */
+
+.shopping-container button {
+  display: flex;
+  align-items: center;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+  margin: 0rem 0rem 0rem 0rem;
+  padding: 0.75rem 1rem 0.75rem 1rem;
+  border-radius: 0.75rem;
+  background-color: var(--color-add-to-cart-button-background);
+  color: var(--color-add-to-cart-button-text);
+  outline: none;
+  border: none;
+  transition: transform 0.3s ease-in-out;
+  box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.35);
+  /* border: 1px solid green; */
+}
+
+.shopping-container i.bx-cart {
+  font-size: 2rem;
+}
+
+.shopping-container button:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+/* ===================================================================================================================== */
+/* TODO:  PRODUCT CARD SECTION 7B - BUTTON (MORE INFO)                                                                   */
+/* ===================================================================================================================== */
+
+/* ------------------------------------------------------- */
+/* FIXME:  CONTAINER - MAIN (HOLDING ALL ELEMENTS)  FIXME: */
+/* ------------------------------------------------------- */
+
+.more-info-container {
+  width: 50%;
+  height: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0rem 0rem 0rem 1rem;
+  padding: 0.25rem 0.25rem 0.25rem 0.25rem;
+  /* border: 1px solid red; */
+}
+
+/* ------------------------------------ */
+/* FIXME:  BUTTON - ADD TO CART  FIXME: */
+/* ------------------------------------ */
+
+.more-info-container button {
+  display: flex;
+  align-items: center;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+  margin: 0rem 0rem 0rem 0rem;
+  padding: 0.75rem 1rem 0.75rem 1rem;
+  border-radius: 0.75rem;
+  background-color: var(--color-add-to-cart-button-background);
+  color: var(--color-add-to-cart-button-text);
+  outline: none;
+  border: none;
+  transition: transform 0.3s ease-in-out;
+  box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.35);
+  /* border: 1px solid green; */
+}
+
+.more-info-container i.bx-list-check {
+  font-size: 2rem;
+}
+
+.more-info-container button:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+/* ===================================================================================================================== */
+/* TODO:  PRODUCT CARD SECTION 7C - BUTTON (ADD TO WISH LIST                                                             */
+/* ===================================================================================================================== */
+
+/* ------------------------------------------------------- */
+/* FIXME:  CONTAINER - MAIN (HOLDING ALL ELEMENTS)  FIXME: */
+/* ------------------------------------------------------- */
+
+.wishlist-container {
+  position: absolute;
+  top: -3rem;
+  right: -0.25rem;
+  width: 2rem;
+  height: 2rem;
+  z-index: 200;
+  outline: none;
+  border: none;
+  background: white;
+  /* border: 1px solid red; */
+}
+
+/* ----------------------------------------- */
+/* FIXME:  BUTTON - ADD TO WISH LIST  FIXME: */
+/* ----------------------------------------- */
+
+.wishlist-container button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  outline: none;
+  border: none;
+  background: white;
+  padding: 0rem 0rem 0rem 0rem;
+  cursor: pointer;
+  /* border: 1px solid green; */
+}
+
+i.bx-heart {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  font-size: 1.5rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  background-color: var(--color-add-to-wish-list-button-background);
+  color: var(--color-add-to-wish-list-button-text);
+  margin: 0rem 0rem 0rem 0rem;
+  padding: 0.25rem 0.25rem 0.25rem 0.25rem;
+  border-radius: 2rem;
+  transition: transform 0.3s ease-in-out;
+}
+
+.wishlist-container button i:hover {
+  transform: scale(1.11);
+  cursor: pointer;
+}
 
 /* ===================================================================================================================== */
 /*                                                                                            TODO:  STYLING ENDS  TODO: */
