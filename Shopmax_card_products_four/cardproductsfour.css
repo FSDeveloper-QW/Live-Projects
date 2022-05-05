@@ -1,0 +1,1456 @@
+/* ===================================================================================================================== */
+/* TODO:  STYLING FOR PRODUCT CARD (PLAYSTATION CONTROLLERS)                                                             */
+/* ===================================================================================================================== */
+
+:root {
+  --color-page-background: #ebf4f4;
+  /* BOX SHADOW */
+  --color-box-shadow-01: 3px 5px 20px rgba(0, 0, 0, 0.35);
+  --color-box-shadow-02: 0px 5px 4px rgba(0, 0, 0, 0.35);
+  /* CARD COLOR SCHEME */
+  --color-product-card-brand-title: black;
+  --color-product-card-background: white;
+  --color-product-card-top-section-background: white;
+  --color-product-card-arrow-left: black;
+  --color-product-card-heart-right: #dc143c;
+  --color-product-card-extra-images-section-background: white;
+  --color-product-card-extra-image-background: white;
+  --color-product-card-extra-image-border: black;
+  --color-product-card-extra-image-border-hover: #dc143c;
+  --color-product-card-title: black;
+  --color-product-card-short-description: black;
+  --color-product-card-sizes-title: black;
+  --color-product-card-colors-title: black;
+  --color-product-card-price-currency: black;
+  --color-product-card-price-value: black;
+  /* PRODUCT 001 - COLOR OPTIONS */
+  --color-product-color-option-01: #ddd;
+  --color-product-color-option-02: black;
+  --color-product-color-option-03: gray;
+  --color-product-color-option-04: navy;
+  --color-product-color-option-05: red;
+  /* CUSTOM RADIO BUTTON */
+  --color-custom-radiobutton-border: #ccc;
+  --color-custom-radiobutton-background: white;
+  --color-custom-radiobutton-circle: #dc143c;
+  --color-custom-radiobutton-focus: #dc143c;
+  --color-custom-radiobutton-disabled: #959495;
+  /* COLOR SCHEME FOR ADD TO CART BUTTONS, CARTS AND COUNTERS */
+  --color-add-to-cart-button-background: #dc143c;
+  --color-add-to-cart-button-text: white;
+  --color-shopping-cart-icon: black;
+  --color-shopping-cart-counter-background: #dc143c;
+  --color-shopping-cart-counter-text: white;
+  /* COLOR SCHEME FOR ADD TO WISH LIST BUTTONS, CARTS AND COUNTERS */
+  --color-add-to-wish-list-button-background: #dc143c;
+  --color-add-to-wish-list-button-text: white;
+  --color-wish-list-icon: black;
+  --color-wish-list-counter-background: #dc143c;
+  --color-wish-list-counter-text: white;
+  /* FORM TEXT INPUTS */
+  --color-input-border: #ccc;
+  --color-input-border-focus: #dc143c;
+  --color-input-border-focus-rgba: rgb(220, 20, 60);
+  /* CLOSE BUTTON - BACK CARD */
+  --color-card-back-button-close: #dc143c;
+  --color-card-back-background: white;
+  --color-card-back-text: black;
+  /* BACK OF CARD */
+  --color-heading-titles: #dc143c;
+  --color-heading-values: black;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: "poppins", sans-serif;
+  margin: 0rem 0rem 0rem 0rem;
+  padding: 0rem 0rem 0rem 0rem;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-size: 1.6rem;
+  background: var(--color-page-background);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ===================================================================================================================== */
+/* TODO:  MAIN PRODUCT CARD (CONTAINERS)                                                                                 */
+/* ===================================================================================================================== */
+
+/* ---------------------------------------------- */
+/* FIXME:  MAIN CONTAINER - HOLDING ALL ELEMENTS  */
+/* ---------------------------------------------- */
+
+.product-card-container-all {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 26rem;
+  height: 46rem;
+  margin: 1rem 1rem 1rem 1rem;
+  padding: 0rem 0rem 0rem 0rem;
+  border-radius: 1.5rem;
+  perspective: 200rem;
+  z-index: 100;
+  /* margin: 1rem auto 1rem auto; */
+  /* box-shadow: var(--color-box-shadow-01); */
+  /* border: 1px solid red; */
+}
+
+/* ------------------------------- */
+/* FIXME:  PRODUCT CARD CONTAINER  */
+/* ------------------------------- */
+
+.product-card-container-all .product-card {
+  position: absolute;
+  transition: transform 1s;
+  transform-style: preserve-3d;
+  width: 100%;
+  height: 100%;
+  background: var(--color-product-card-background);
+  border-radius: 1.5rem;
+  margin: 0rem 0rem 0rem 0rem;
+  padding: 0.75rem 0.75rem 0.75rem 0.75rem;
+  box-shadow: var(--color-box-shadow-01);
+  /* position: relative; */
+  /* overflow: hidden; */
+  /* border: 1px solid red; */
+}
+
+/* ----------------------------------- */
+/* JAVASCRIPT : FOR FLIP FUNCTIONALITY */
+/* ----------------------------------- */
+
+.product-card-container-all .product-card.animated {
+  transform: rotateY(-180deg);
+}
+
+/* -------------------------------------------------------------------- */
+/* FIXME:  SUB-CONTAINER - HOLDING ALL ELEMENTS OF CARD (FRONT)  FIXME: */
+/* -------------------------------------------------------------------- */
+
+.product-card-container-all .product-card .product-card-front-side {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  backface-visibility: hidden;
+  width: 100%;
+  height: 100%;
+  background: var(--color-product-card-background);
+  border-radius: 1.5rem;
+  overflow: hidden;
+  margin: 0rem 0rem 0rem 0rem;
+  padding: 0.75rem 0.75rem 0.75rem 0.75rem;
+  box-shadow: var(--color-box-shadow-01);
+  /* border: 1px solid red; */
+}
+
+/* ------------------------------------------------------------------- */
+/* FIXME:  SUB-CONTAINER - HOLDING ALL ELEMENTS OF CARD (BACK)  FIXME: */
+/* -------------------------------------------------------------------- */
+
+.product-card-container-all .product-card .product-card-back-side {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  backface-visibility: hidden;
+  transform: rotateY(180deg);
+  width: 100%;
+  height: 100%;
+  background: var(--color-product-card-background);
+  border-radius: 1.5rem;
+  overflow: hidden;
+  margin: 0rem 0rem 0rem 0rem;
+  padding: 0.75rem 0.75rem 0.75rem 0.75rem;
+  box-shadow: var(--color-box-shadow-01);
+  /* border: 1px solid red; */
+}
+
+/* ===================================================================================================================== */
+/* ===================================================================================================================== */
+/*                                           TODO:  PRODUCT CARD (FRONT)  TODO:                                           */
+/* ===================================================================================================================== */
+/* ===================================================================================================================== */
+
+/* -------------------------------------- */
+/* FIXME:  BRAND TITLE - NOT USED  FIXME: */
+/* -------------------------------------- */
+
+/* .brand-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.75rem;
+    font-weight: 600;
+    letter-spacing: 0.1rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin: 0rem 0rem 0rem 0rem;
+    border-radius: 1rem 1rem 0rem 0rem;
+    color: var(--color-product-card-brand-title);
+  } */
+
+/* ===================================================================================================================== */
+/* TODO:  PRODUCT CARD SECTION 1 (TOP)                                                                                   */
+/* ===================================================================================================================== */
+
+/* -------------------------------- */
+/* FIXME:  CONTAINER - TOP SECTION  */
+/* -------------------------------- */
+
+.product-card-section-top {
+  position: relative;
+  width: 100%;
+  height: 35%;
+  border-radius: 0rem 0rem 0rem 0rem;
+  background-color: var(--color-product-card-top-section-background);
+  /* box-shadow: var(--color-box-shadow-01); */
+  /* border: 1px solid red; */
+}
+
+/* ----------------------------------------------------------------- */
+/* FIXME:  TOP SECTION - PRODUCT FEATURED IMAGE (CURRENTLY SHOWING)  */
+/* ----------------------------------------------------------------- */
+
+/* ---------------- */
+/* IMAGE CONTAINER  */
+/* ---------------- */
+
+.product-card-section-top .product-card-featured-image {
+  position: relative;
+  top: 0;
+  left: 0;
+  margin: 0rem 0rem 0rem 0rem;
+  padding: 0rem 0rem 0rem 0rem;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  /* border: 1px solid red; */
+}
+
+/* ------ */
+/* IMAGE  */
+/* ------ */
+
+.product-card-section-top .product-card-featured-image img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  padding: 0.25rem 1rem 0.25rem 1rem;
+}
+
+/* ===================================================================================================================== */
+/* TODO:  PRODUCT CARD SECTION 2 - EXTRA PRODUCT IMAGES                                                                  */
+/* ===================================================================================================================== */
+
+/* ----------------------------------- */
+/* FIXME:  SECTION 2 - MAIN CONTAINER  */
+/* ----------------------------------- */
+
+.product-card-section-extra-images {
+  position: relative;
+  height: 4.8rem;
+  background: var(--color-product-card-extra-images-section-background);
+  /* border: 1px solid red; */
+}
+
+/* ------------------------------------------- */
+/* FIXME:  SECTION 2 - EXTRA IMAGES CONTAINER  */
+/* ------------------------------------------- */
+
+.product-card-section-extra-images .extra-images {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--color-product-card-extra-images-section-background);
+  /* border: 1px solid red; */
+}
+
+.product-card-section-extra-images .extra-images img {
+  width: 4.5rem;
+  height: 4.5rem;
+  margin: 0.5rem 0.5rem 0rem 0.5rem;
+  padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+  background: var(--color-product-card-extra-image-background);
+  border-radius: 0.5rem;
+  /* box-shadow: var(--color-box-shadow-01); */
+  /* border: 1px solid var(--color-product-card-extra-image-border); */
+  cursor: pointer;
+}
+
+.product-card-section-extra-images .extra-images img:hover {
+  border: 3px solid var(--color-product-card-extra-image-border-hover);
+}
+
+/* ===================================================================================================================== */
+/* TODO:  PRODUCT CARD SECTION 3 - PRODUCT INFORMATION                                                                   */
+/* ===================================================================================================================== */
+
+/* ----------------------------------- */
+/* FIXME:  SECTION 3 - MAIN CONTAINER  */
+/* ----------------------------------- */
+
+.product-card-section-information {
+  position: relative;
+  width: 100%;
+  height: 10rem;
+  margin: 0rem 0rem 0rem 0rem;
+  padding: 0rem 0.5rem 0rem 0.5rem;
+  /* border: 1px solid red; */
+}
+
+/* ----------------------------- */
+/* FIXME:  PRODUCT CARD - TITLE  */
+/* ----------------------------- */
+
+.product-card-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0.2rem 0rem 0.2rem 0rem;
+  width: 100%;
+  height: 3rem;
+  font-size: 1.5rem;
+  line-height: 1.3;
+  font-weight: bolder;
+  text-transform: uppercase;
+  letter-spacing: 0.05rem;
+  color: var(--color-product-card-title);
+  /* border: 1px solid red; */
+}
+
+/* ----------------------------------------- */
+/* FIXME:  PRODUCT CARD - BRIEF DESCRIPTION  */
+/* ----------------------------------------- */
+
+.product-card-short-description {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 6.5rem;
+  margin: 0rem 0rem 0rem 0rem;
+  padding: 0.2rem 1rem 0.2rem 1rem;
+  font-size: 1.1rem;
+  font-weight: 500;
+  text-transform: initial;
+  text-align: justify;
+  color: var(--color-product-card-short-description);
+  /* border: 1px solid red; */
+}
+
+/* ===================================================================================================================== */
+/* TODO:  CONTAINER - HOLDING BOTH PRODUCT SIZES AND PRODUCT COLORS                                                      */
+/* ===================================================================================================================== */
+
+.container__sizes__and__colors {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.radio__buttons__group {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0rem 0rem 0rem 0rem;
+}
+
+.radio__buttons__group__colors {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0rem 0rem 0rem 0rem;
+}
+
+/* ---------------------------------------------- */
+/* FIXME:  INPUT FIELD = DROPDOWN LIST     FIXME: */
+/* FIXME:     FOR SIZED AND COLORS         FIXME: */
+/* ---------------------------------------------- */
+
+label {
+  display: block;
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin: 0.25rem 0.5rem 0rem 0.5rem;
+}
+
+input::placeholder {
+  font-family: "Poppins", sans-serif;
+}
+
+select {
+  width: 9rem;
+  text-align: center;
+  border-radius: 0.5rem;
+  border: 1px solid var(--color-input-border);
+  margin: 0rem 0.5rem 0rem 0.5rem;
+  padding: 0.25rem 0rem 0.25rem 0rem;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: border-color 0.15s, box-shadow 0.15s;
+  /* box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.35); */
+  /* box-shadow: 0 5px 4px rgba(0, 0, 0, 0.35); */
+}
+
+select:focus {
+  border-color: var(--color-input-border-focus);
+  box-shadow: 0 0 0 2px rgba(220, 20, 60, 0.95);
+  outline: 0;
+}
+
+/* -------------------------------------------------------------------------------------------------------------------- */
+/* RADIO BUTTONS (NOT USED)                                                                                             */
+/* ==================================================================================================================== */
+
+/* ------------------------------------------------------------------------- */
+/* TODO: START STYLING OF CUSTOM RADIO BUTTON                                */
+/* ------------------------------------------------------------------------- */
+
+/* ---------------------------------------------- */
+/* FIXME:  INPUT FIELD = RADIO BUTTON      FIXME: */
+/* ---------------------------------------------- */
+
+/* GROUP 1 - SIZES */
+
+.radio__option {
+  font-size: 0.8rem;
+  font-weight: 600;
+  line-height: 1;
+  text-transform: uppercase;
+  display: grid;
+  grid-template-columns: 1rem auto;
+  gap: 1rem;
+  margin: 1rem 0.5rem 0rem 0.5rem;
+  cursor: pointer;
+}
+
+/* GROUP 2 - COLOURS */
+
+.radio__option__02 {
+  font-size: 0.8rem;
+  font-weight: 600;
+  line-height: 1;
+  text-transform: uppercase;
+  display: grid;
+  grid-template-columns: 1rem auto;
+  gap: 1rem;
+  margin: 1rem 0.5rem 0rem 0.5rem;
+  cursor: pointer;
+}
+
+/* --------------------------------------------- */
+/* THIS IS TO HIDE THE NATIVE RADIO BUTTON       */
+/* --------------------------------------------- */
+
+input[type="radio"] {
+  /* Add if not using autoprefixer */
+  -webkit-appearance: none;
+  appearance: none;
+  /* For iOS < 15 to remove gradient background */
+  background-color: var(--color-custom-radiobutton-background);
+  /* Not removed via appearance */
+  margin: 0;
+}
+
+/* -------------------------------------------- */
+/* THIS IS TO DISPLAY THE CUSTOM RADIO BUTTON   */
+/* -------------------------------------------- */
+
+input[type="radio"] {
+  appearance: none;
+  background-color: var(--color-custom-radiobutton-background);
+  margin: 0;
+  font: inherit;
+  color: var(--color-custom-radiobutton-border);
+  width: 1rem;
+  height: 1rem;
+  border: 0.15em solid var(--color-custom-radiobutton-border);
+  border-radius: 50%;
+  transform: translateY(-0.075em);
+  display: grid;
+  place-content: center;
+  cursor: pointer;
+}
+
+.radio__option + .radio__option {
+  margin-top: 0.2rem;
+}
+
+.radio__option__02 + .radio__option__02 {
+  margin-top: 0.2rem;
+}
+
+/* -------------------------------------------- */
+/* CUSTOM RADIO BUTTON - CHECKED STATE          */
+/* -------------------------------------------- */
+
+input[type="radio"]::before {
+  content: "";
+  width: 0.6rem;
+  height: 0.6rem;
+  border-radius: 50%;
+  transform: scale(0);
+  transition: 120ms transform ease-in-out;
+  box-shadow: inset 1em 1em var(--color-custom-radiobutton-circle);
+  /* Windows High Contrast Mode */
+  background-color: CanvasText;
+}
+
+input[type="radio"]:checked::before {
+  transform: scale(1);
+}
+
+/* -------------------------------------------- */
+/* CUSTOM RADIO BUTTON - FOCUSSED STATE         */
+/* -------------------------------------------- */
+
+input[type="radio"]:focus {
+  outline: max(0.5px, 0.15em) solid var(--color-custom-radiobutton-focus);
+  outline-offset: max(1px, 0.15em);
+}
+
+/* -------------------------------------------- */
+/* CUSTOM RADIO BUTTON - DISABLED STATE         */
+/* -------------------------------------------- */
+
+.radio__option--disabled {
+  color: var(--color-custom-radiobutton-disabled);
+  cursor: not-allowed;
+}
+
+input[type="radio"]:disabled {
+  color: var(--color-custom-radiobutton-disabled);
+  cursor: not-allowed;
+}
+
+/* -------------------------------------------------------------------------------------------------------------------- */
+/* TODO:  END OF STYLING OF CUSTOM RADIO BUTTON (NOT USED)                                                              */
+/* -------------------------------------------------------------------------------------------------------------------- */
+
+/* ===================================================================================================================== */
+/* TODO:  PRODUCT CARD SECTION 4 - PRODUCT SIZES                                                                         */
+/* ===================================================================================================================== */
+
+/* ----------------------------------- */
+/* FIXME:  PRODUCT SIZES - CONTAINTER  */
+/* ----------------------------------- */
+
+.product-card-section-sizes {
+  position: relative;
+  width: 50%;
+  height: 6rem;
+  margin: 0rem 0rem 0rem 0rem;
+  padding: 0rem 0.5rem 0rem 0.5rem;
+  /* z-index: 100; */
+  /* border: 1px solid red; */
+}
+
+/* ----------------------------- */
+/* FIXME:  PRODUCT SIZES - TITLE */
+/* ----------------------------- */
+
+.product-card-sizes-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0.5rem 0rem 0.25rem 0rem;
+  width: 100%;
+  height: 2rem;
+  font-size: 1rem;
+  letter-spacing: 0.1rem;
+  line-height: 1.1;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: var(--color-product-card-sizes-title);
+  /* border: 1px solid red; */
+}
+
+/* -------------------------------- */
+/* FIXME:  PRODUCT SIZES - OPTIONS  */
+/* -------------------------------- */
+
+.product-card-sizes-options {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 6.5rem;
+  /* border: 1px solid red; */
+}
+
+/* ===================================================================================================================== */
+/* TODO:  PRODUCT CARD SECTION 5 - PRODUCT COLOURS                                                                       */
+/* ===================================================================================================================== */
+
+/* ------------------------------------ */
+/* FIXME:  PRODUCT COLORS - CONTAINTER  */
+/* ------------------------------------ */
+
+.product-card-section-colors {
+  position: relative;
+  width: 50%;
+  height: 6rem;
+  margin: 0rem 0rem 0rem 0rem;
+  padding: 0rem 0.5rem 0rem 0.5rem;
+  /* border: 1px solid red; */
+}
+
+/* ------------------------------- */
+/* FIXME:  PRODUCT COLORS - TITLE  */
+/* ------------------------------- */
+
+.product-card-colors-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0.5rem 0rem 0.25rem 0rem;
+  width: 100%;
+  height: 2rem;
+  font-size: 1rem;
+  letter-spacing: 0.1rem;
+  line-height: 1.1;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: var(--color-product-card-sizes-title);
+  /* border: 1px solid red; */
+}
+
+/* --------------------------------- */
+/* FIXME:  PRODUCT COLORS - OPTIONS  */
+/* --------------------------------- */
+
+.product-card-colors-options {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 6.5rem;
+}
+
+/* ------------------------------------- */
+/* FIXME:  PRODUCT 001 - COLOR OPTION 1  */
+/* ------------------------------------- */
+
+.color__01 i.fa-square {
+  font-size: 1rem;
+  padding-right: 1rem;
+  color: var(--color-product-color-option-01);
+  outline: none;
+  border: none;
+}
+
+/* ------------------------------------- */
+/* FIXME:  PRODUCT 001 - COLOR OPTION 2  */
+/* ------------------------------------- */
+
+.color__02 i.fa-square {
+  font-size: 1rem;
+  padding-right: 1rem;
+  color: var(--color-product-color-option-02);
+  outline: none;
+  border: none;
+}
+
+/* ------------------------------------- */
+/* FIXME:  PRODUCT 001 - COLOR OPTION 3  */
+/* ------------------------------------- */
+
+.color__03 i.fa-square {
+  font-size: 1rem;
+  padding-right: 1rem;
+  color: var(--color-product-color-option-03);
+  outline: none;
+  border: none;
+}
+
+/* ------------------------------------- */
+/* FIXME:  PRODUCT 001 - COLOR OPTION 4  */
+/* ------------------------------------- */
+
+.color__04 i.fa-square {
+  font-size: 1rem;
+  padding-right: 1rem;
+  color: var(--color-product-color-option-04);
+  outline: none;
+  border: none;
+}
+
+/* ------------------------------------- */
+/* FIXME:  PRODUCT 001 - COLOR OPTION 5  */
+/* ------------------------------------- */
+
+.color__05 i.fa-square {
+  font-size: 1rem;
+  padding-right: 1rem;
+  color: var(--color-product-color-option-05);
+  outline: none;
+  border: none;
+}
+
+/* ===================================================================================================================== */
+/* TODO:  PRODUCT CARD SECTION 6 - PRODUCT PRICING                                                                       */
+/* ===================================================================================================================== */
+
+.product-card-pricing {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0rem 0.5rem 0.25rem 0.5rem;
+  /* border: 1px solid red; */
+}
+
+.price__currency {
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+  margin: 0rem 0.5rem 0rem 0rem;
+  color: var(--color-product-card-price-currency);
+}
+
+.price__value {
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+  margin: 0rem 0rem 0rem 0rem;
+  color: var(--color-product-card-price-value);
+}
+
+.info-and-cart-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ===================================================================================================================== */
+/* TODO:  PRODUCT CARD SECTION 7A - BUTTON (ADD TO SHOPPING CART)                                                        */
+/* ===================================================================================================================== */
+
+/* ------------------------------------------------------- */
+/* FIXME:  CONTAINER - MAIN (HOLDING ALL ELEMENTS)  FIXME: */
+/* ------------------------------------------------------- */
+
+.shopping-container {
+  width: 50%;
+  height: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0rem 0rem 1rem 0rem;
+  padding: 0.25rem 0.25rem 0.25rem 0.25rem;
+  /* border: 1px solid red; */
+}
+
+/* ------------------------------------ */
+/* FIXME:  BUTTON - ADD TO CART  FIXME: */
+/* ------------------------------------ */
+
+.shopping-container button {
+  display: flex;
+  align-items: center;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+  margin: 0rem 0rem 0rem 0rem;
+  padding: 0.75rem 1rem 0.75rem 1rem;
+  border-radius: 0.75rem;
+  background-color: var(--color-add-to-cart-button-background);
+  color: var(--color-add-to-cart-button-text);
+  outline: none;
+  border: none;
+  transition: transform 0.3s ease-in-out;
+  box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.35);
+  /* border: 1px solid green; */
+}
+
+.shopping-container i.bx-cart {
+  font-size: 2rem;
+}
+
+.shopping-container button:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+/* ===================================================================================================================== */
+/* TODO:  PRODUCT CARD SECTION 7B - BUTTON (MORE INFO)                                                                   */
+/* ===================================================================================================================== */
+
+/* ------------------------------------------------------- */
+/* FIXME:  CONTAINER - MAIN (HOLDING ALL ELEMENTS)  FIXME: */
+/* ------------------------------------------------------- */
+
+.more-info-container {
+  width: 50%;
+  height: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0rem 0rem 0rem 1rem;
+  padding: 0.25rem 0.25rem 0.25rem 0.25rem;
+  /* border: 1px solid red; */
+}
+
+/* ------------------------------------ */
+/* FIXME:  BUTTON - ADD TO CART  FIXME: */
+/* ------------------------------------ */
+
+.more-info-container .btn {
+  display: flex;
+  align-items: center;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  margin: 0rem 0rem 0rem 0rem;
+  padding: 0.75rem 1rem 0.75rem 1rem;
+  border-radius: 0.75rem;
+  background-color: var(--color-add-to-cart-button-background);
+  color: var(--color-add-to-cart-button-text);
+  outline: none;
+  border: none;
+  transition: transform 0.3s ease-in-out;
+  box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.35);
+  /* border: 1px solid green; */
+}
+
+.more-info-container i.bx-list-check {
+  font-size: 2rem;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+}
+
+/* ===================================================================================================================== */
+/* TODO:  PRODUCT CARD SECTION 7C - BUTTON (ADD TO WISH LIST                                                             */
+/* ===================================================================================================================== */
+
+/* ------------------------------------------------------- */
+/* FIXME:  CONTAINER - MAIN (HOLDING ALL ELEMENTS)  FIXME: */
+/* ------------------------------------------------------- */
+
+.wishlist-container {
+  position: absolute;
+  top: -0.3rem;
+  right: -0.25rem;
+  width: 2rem;
+  height: 2rem;
+  z-index: 200;
+  outline: none;
+  border: none;
+  background: white;
+  /* border: 1px solid red; */
+}
+
+/* ----------------------------------------- */
+/* FIXME:  BUTTON - ADD TO WISH LIST  FIXME: */
+/* ----------------------------------------- */
+
+.wishlist-container button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  outline: none;
+  border: none;
+  background: white;
+  padding: 0rem 0rem 0rem 0rem;
+  cursor: pointer;
+  /* border: 1px solid green; */
+}
+
+i.bx-heart {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  font-size: 1.5rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  background-color: var(--color-add-to-wish-list-button-background);
+  color: var(--color-add-to-wish-list-button-text);
+  margin: 0rem 0rem 0rem 0rem;
+  padding: 0.25rem 0.25rem 0.25rem 0.25rem;
+  border-radius: 2rem;
+  transition: transform 0.3s ease-in-out;
+}
+
+.wishlist-container button i:hover {
+  transform: scale(1.11);
+  cursor: pointer;
+}
+
+/* ===================================================================================================================== */
+/* ===================================================================================================================== */
+/*                                           TODO:  PRODUCT CARD (BACK)  TODO:                                           */
+/* ===================================================================================================================== */
+/* ===================================================================================================================== */
+
+/* ---------------------------------------- */
+/* FIXME:  BUTTON "X" TO CLOSE BACK  FIXME: */
+/* ---------------------------------------- */
+
+.product-card-container-all .close {
+  width: 2.5rem;
+  height: 2.5rem;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0.74rem;
+  right: 0.75rem;
+  font-size: 2.5rem;
+  border-radius: 2rem;
+  text-decoration: none;
+  text-align: center;
+  color: var(--color-card-back-button-close);
+  transition: transform 0.3s ease-in-out;
+  /* border: 1px solid purple; */
+}
+
+.product-card-container-all .close:hover {
+  transform: scale(1.1);
+}
+
+/* ------------------------------------------------------------------------ */
+/* FIXME:  SUB-CONTAINER - HOLDING ALL CONTENT/TEXT ON BACK PROFILE  FIXME: */
+/* ------------------------------------------------------------------------ */
+
+.information-container-back {
+  padding: 2rem 2rem 2rem 2rem;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  border-radius: 0.5rem;
+  background-color: var(--color-card-back-background);
+  color: var(--color-card-back-text);
+  box-shadow: var(--color-all-elements-box-shadow);
+  /* border: 5px solid plum; */
+}
+
+/* -------------------------------------------- */
+/* FIXME:  PRODUCT CARD (BACK) - BRAND LOGO     */
+/* -------------------------------------------- */
+
+.brand__logo {
+  position: absolute;
+  top: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.brand__logo img {
+  width: auto;
+  height: 3.5rem;
+  object-fit: contain;
+  padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+}
+
+/* ------------------------------------------------------ */
+/* TODO:     PRODUCT IDENTIFICATION SECTION         TODO: */
+/* (incl. brand name, product code, model number & stock) */
+/* ------------------------------------------------------ */
+
+/* MAIN CONTAINER */
+
+.product-identification {
+  position: absolute;
+  top: 4.5rem;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 26rem;
+  height: 4rem;
+  margin: 0rem 0rem 0.5rem 0rem;
+  padding: 0rem 0rem 0rem 0rem;
+  /* border: 1px solid red; */
+}
+
+/* ---------------------------------------------- */
+/* FIXME:  PRODUCT CARD (BACK) - BRAND NAME       */
+/* ---------------------------------------------- */
+
+.brand-name {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 6.5rem;
+  height: 3rem;
+  /* border: 1px solid blue; */
+}
+
+.brand-name .brand-name-title {
+  font-size: 0.9rem;
+  font-weight: 700;
+  text-decoration: none;
+  text-transform: uppercase;
+  width: 100%;
+  height: 1.5rem;
+  color: var(--color-heading-titles);
+  /* border: 1px solid yellow; */
+}
+
+.brand-name .brand-name-info {
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-decoration: none;
+  text-transform: uppercase;
+  width: 100%;
+  height: 1.5rem;
+  color: var(--color-heading-values);
+  /* border: 1px solid green; */
+}
+
+/* ---------------------------------------------- */
+/* FIXME:  PRODUCT CARD (BACK) - PRODUCT CODE     */
+/* ---------------------------------------------- */
+
+.product-code {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 6.5rem;
+  height: 3rem;
+  /* border: 1px solid blue; */
+}
+
+.product-code .product-code-title {
+  font-size: 0.9rem;
+  font-weight: 700;
+  text-decoration: none;
+  text-transform: uppercase;
+  width: 100%;
+  height: 1.5rem;
+  color: var(--color-heading-titles);
+  /* border: 1px solid yellow; */
+}
+
+.product-code .product-code-info {
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-decoration: none;
+  text-transform: uppercase;
+  width: 100%;
+  height: 1.5rem;
+  color: var(--color-heading-values);
+  /* border: 1px solid green; */
+}
+
+/* ---------------------------------------------- */
+/* FIXME:  PRODUCT CARD (BACK) - MODEL NUMBER     */
+/* ---------------------------------------------- */
+
+.model-number {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 6.5rem;
+  height: 3rem;
+  /* border: 1px solid blue; */
+}
+
+.model-number .model-number-title {
+  font-size: 0.9rem;
+  font-weight: 700;
+  text-decoration: none;
+  text-transform: uppercase;
+  width: 100%;
+  height: 1.5rem;
+  color: var(--color-heading-titles);
+  /* border: 1px solid yellow; */
+}
+
+.model-number .model-number-info {
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-decoration: none;
+  text-transform: uppercase;
+  width: 100%;
+  height: 1.5rem;
+  color: var(--color-heading-values);
+  /* border: 1px solid green; */
+}
+
+/* ---------------------------------------------- */
+/* FIXME:  PRODUCT CARD (BACK) - AVAILABLE STOCK  */
+/* ---------------------------------------------- */
+
+.stock {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 6.5rem;
+  height: 3rem;
+  /* border: 1px solid blue; */
+}
+
+.stock .stock-title {
+  font-size: 0.9rem;
+  font-weight: 700;
+  text-decoration: none;
+  text-transform: uppercase;
+  width: 100%;
+  height: 1.5rem;
+  color: var(--color-heading-titles);
+  /* border: 1px solid yellow; */
+}
+
+.stock .stock-info {
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-decoration: none;
+  text-transform: uppercase;
+  width: 100%;
+  height: 1.5rem;
+  color: var(--color-heading-values);
+  /* border: 1px solid green; */
+}
+
+/* ------------------------------------------------------ */
+/* TODO:        PRODUCT MEASUREMENT SECTION         TODO: */
+/*  (incl. Length(CM), Width(CM), Height(CM), Weigth(KG)  */
+/* ------------------------------------------------------ */
+
+/* MAIN CONTAINER */
+
+.product-measurements {
+  position: absolute;
+  top: 8.5rem;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 26rem;
+  height: 4.5rem;
+  margin: 0rem 0rem 0rem 0rem;
+  padding: 0rem 0rem 0rem 0rem;
+  /* border: 1px solid red; */
+}
+
+/* ---------------------------------------------- */
+/* FIXME:  PRODUCT CARD (BACK) - LENGHT (CM)      */
+/* ---------------------------------------------- */
+
+.length {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 6.5rem;
+  height: 4.5rem;
+  /* border: 1px solid blue; */
+}
+
+.length .length-title {
+  font-size: 0.9rem;
+  font-weight: 700;
+  text-decoration: none;
+  text-transform: uppercase;
+  width: 100%;
+  height: 2.5rem;
+  color: var(--color-heading-titles);
+  /* border: 1px solid yellow; */
+}
+
+.length .length-title span {
+  font-size: 0.6rem;
+  font-weight: 700;
+  text-decoration: none;
+  text-transform: uppercase;
+  align-items: center;
+  color: var(--color-heading-values);
+}
+
+.length .length-info {
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-decoration: none;
+  text-transform: uppercase;
+  width: 100%;
+  height: 2rem;
+  color: var(--color-heading-values);
+  /* border: 1px solid green; */
+}
+
+/* ---------------------------------------------- */
+/* FIXME:  PRODUCT CARD (BACK) - WIDTH (CM)      */
+/* ---------------------------------------------- */
+
+.width {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 6.5rem;
+  height: 4.5rem;
+  /* border: 1px solid blue; */
+}
+
+.width .width-title {
+  font-size: 0.9rem;
+  font-weight: 700;
+  text-decoration: none;
+  text-transform: uppercase;
+  width: 100%;
+  height: 2.5rem;
+  color: var(--color-heading-titles);
+  /* border: 1px solid yellow; */
+}
+
+.width .width-title span {
+  font-size: 0.6rem;
+  font-weight: 700;
+  text-decoration: none;
+  text-transform: uppercase;
+  align-items: center;
+  color: var(--color-heading-values);
+}
+
+.width .width-info {
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-decoration: none;
+  text-transform: uppercase;
+  width: 100%;
+  height: 2rem;
+  color: var(--color-heading-values);
+  /* border: 1px solid green; */
+}
+
+/* ---------------------------------------------- */
+/* FIXME:  PRODUCT CARD (BACK) - HEIGTH (CM)      */
+/* ---------------------------------------------- */
+
+.height {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 6.5rem;
+  height: 4.5rem;
+  /* border: 1px solid blue; */
+}
+
+.height .height-title {
+  font-size: 0.9rem;
+  font-weight: 700;
+  text-decoration: none;
+  text-transform: uppercase;
+  width: 100%;
+  height: 2.5rem;
+  color: var(--color-heading-titles);
+  /* border: 1px solid yellow; */
+}
+
+.height .height-title span {
+  font-size: 0.6rem;
+  font-weight: 700;
+  text-decoration: none;
+  text-transform: uppercase;
+  align-items: center;
+  color: var(--color-heading-values);
+}
+
+.height .height-info {
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-decoration: none;
+  text-transform: uppercase;
+  width: 100%;
+  height: 2rem;
+  color: var(--color-heading-values);
+  /* border: 1px solid green; */
+}
+
+/* ---------------------------------------------- */
+/* FIXME:  PRODUCT CARD (BACK) - WEIGHT (KG)      */
+/* ---------------------------------------------- */
+
+.weight {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 6.5rem;
+  height: 4.5rem;
+  /* border: 1px solid blue; */
+}
+
+.weight .weight-title {
+  font-size: 0.9rem;
+  font-weight: 700;
+  text-decoration: none;
+  text-transform: uppercase;
+  width: 100%;
+  height: 2.5rem;
+  color: var(--color-heading-titles);
+  /* border: 1px solid yellow; */
+}
+
+.weight .weight-title span {
+  font-size: 0.6rem;
+  font-weight: 700;
+  text-decoration: none;
+  text-transform: uppercase;
+  align-items: center;
+  color: var(--color-heading-values);
+}
+
+.weight .weight-info {
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-decoration: none;
+  text-transform: uppercase;
+  width: 100%;
+  height: 2rem;
+  color: var(--color-heading-values);
+  /* border: 1px solid green; */
+}
+
+/* ------------------------------------------------------ */
+/* TODO:     PRODUCT FULL DESCRIPTION SECTION       TODO: */
+/*             (incl. title & description)                */
+/* ------------------------------------------------------ */
+
+/* MAIN CONTAINER */
+
+.product-full-description {
+  position: absolute;
+  top: 13rem;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 26rem;
+  height: 27rem;
+  /* border: 1px solid blue; */
+}
+
+.product-full-description .product-specifications-title {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.9rem;
+  font-weight: 700;
+  text-decoration: none;
+  text-transform: uppercase;
+  width: 100%;
+  height: 2rem;
+  color: var(--color-heading-titles);
+  /* border: 1px solid yellow; */
+}
+
+.product-full-description .product-specifications-details {
+  position: absolute;
+  top: 1.5rem;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: justify;
+  font-size: 0.8rem;
+  font-weight: 500;
+  text-decoration: none;
+  text-transform: capitalize;
+  padding: 0.25rem 1.3rem 0.25rem 1.3rem;
+  width: 100%;
+  height: 25rem;
+  /* border: 1px solid green; */
+}
+
+/* ------------------------------------------------------ */
+/* TODO:     IMPORTANT NOTIFICATIONS SECTION        TODO: */
+/*             (incl. title & description)                */
+/* ------------------------------------------------------ */
+
+/* MAIN CONTAINER */
+
+.important-notification {
+  position: absolute;
+  top: 40rem;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 26rem;
+  height: 6rem;
+  border-radius: 0rem 0rem 1.5rem 1.5rem;
+  /* border: 1px solid blue; */
+}
+
+.important-notification .notification-title {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.9rem;
+  font-weight: 700;
+  text-decoration: none;
+  text-transform: uppercase;
+  width: 100%;
+  height: 2rem;
+  color: var(--color-heading-titles);
+  /* border: 1px solid yellow; */
+}
+
+.important-notification .notification-info {
+  position: absolute;
+  top: 2rem;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-decoration: none;
+  padding: 0rem 1.3rem 0rem 1.3rem;
+  width: 100%;
+  height: 3.7rem;
+  border-radius: 0rem 0rem 1.5rem 1.5rem;
+  /* border: 1px solid green; */
+}
+
+.important-notification .notification-info a {
+  display: inline-block;
+  text-decoration: none;
+}
+
+/* ===================================================================================================================== */
+/*                                                                                            TODO:  STYLING ENDS  TODO: */
+/* ===================================================================================================================== */
