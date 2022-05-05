@@ -55,11 +55,9 @@
   --color-card-back-button-close: #dc143c;
   --color-card-back-background: white;
   --color-card-back-text: black;
-  --color-card-back-person-qualifications: black;
-  --color-card-back-person-qualifications-list: black;
-  --color-card-back-skills-range-bar-background: #e4e8f0;
-  --color-card-back-skills-range-bar-progress: #dc143c;
-  --color-card-back-skills-range-bar-progress-percentage: white;
+  /* BACK OF CARD */
+  --color-heading-titles: #dc143c;
+  --color-heading-values: black;
 }
 
 * {
@@ -100,7 +98,7 @@ body {
   margin: 1rem 1rem 1rem 1rem;
   padding: 0rem 0rem 0rem 0rem;
   border-radius: 1.5rem;
-  perspective: 90rem;
+  perspective: 200rem;
   z-index: 100;
   /* margin: 1rem auto 1rem auto; */
   /* box-shadow: var(--color-box-shadow-01); */
@@ -937,23 +935,6 @@ i.bx-heart {
   transform: scale(1.1);
 }
 
-/* -------------------------------------------- */
-/* FIXME:  PRODUCT CARD (BACK) - BRAND LOGO     */
-/* -------------------------------------------- */
-
-.brand__logo {
-  position: absolute;
-  top: 1rem;
-  left: 50%;
-  transform: translateX(-50%);
-}
-
-.brand__logo img {
-  width: auto;
-  height: 3.5rem;
-  object-fit: contain;
-}
-
 /* ------------------------------------------------------------------------ */
 /* FIXME:  SUB-CONTAINER - HOLDING ALL CONTENT/TEXT ON BACK PROFILE  FIXME: */
 /* ------------------------------------------------------------------------ */
@@ -970,58 +951,505 @@ i.bx-heart {
   /* border: 5px solid plum; */
 }
 
-/* ------------------------------ */
-/* FIXME:  QUALIFICATIONS  FIXME: */
-/* ------------------------------ */
+/* -------------------------------------------- */
+/* FIXME:  PRODUCT CARD (BACK) - BRAND LOGO     */
+/* -------------------------------------------- */
 
-/* --------------------------------------- */
-/* FIXME:  QUALIFICATION CONTAINER  FIXME: */
-/* --------------------------------------- */
-
-.qualifications {
-  margin: 5rem 0rem 1rem 0rem;
+.brand__logo {
+  position: absolute;
+  top: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
-/* ------------------------------------- */
-/* FIXME:  TITLE: QUALIFICATIONS  FIXME: */
-/* ------------------------------------- */
+.brand__logo img {
+  width: auto;
+  height: 3.5rem;
+  object-fit: contain;
+  padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+}
 
-.back h2 {
-  margin: 0rem 0rem 0rem 0rem;
-  padding: 0.5rem 0rem 0.5rem 0rem;
-  font-size: 1.4rem;
-  font-weight: 600;
-  letter-spacing: 0.1rem;
+/* ------------------------------------------------------ */
+/* TODO:     PRODUCT IDENTIFICATION SECTION         TODO: */
+/* (incl. brand name, product code, model number & stock) */
+/* ------------------------------------------------------ */
+
+/* MAIN CONTAINER */
+
+.product-identification {
+  position: absolute;
+  top: 4.5rem;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 26rem;
+  height: 4rem;
+  margin: 0rem 0rem 0.5rem 0rem;
+  padding: 0rem 0rem 0rem 0rem;
+  /* border: 1px solid red; */
+}
+
+/* ---------------------------------------------- */
+/* FIXME:  PRODUCT CARD (BACK) - BRAND NAME       */
+/* ---------------------------------------------- */
+
+.brand-name {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 6.5rem;
+  height: 3rem;
+  /* border: 1px solid blue; */
+}
+
+.brand-name .brand-name-title {
+  font-size: 0.9rem;
+  font-weight: 700;
+  text-decoration: none;
   text-transform: uppercase;
-  text-align: center;
-  color: var(--color-card-back-person-qualifications);
-  /* border: 1px solid black; */
+  width: 100%;
+  height: 1.5rem;
+  color: var(--color-heading-titles);
+  /* border: 1px solid yellow; */
 }
 
-/* -------------------------------------- */
-/* FIXME:  LIST OF QUALIFICATIONS  FIXME: */
-/* -------------------------------------- */
+.brand-name .brand-name-info {
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-decoration: none;
+  text-transform: uppercase;
+  width: 100%;
+  height: 1.5rem;
+  color: var(--color-heading-values);
+  /* border: 1px solid green; */
+}
 
-.back h5 {
+/* ---------------------------------------------- */
+/* FIXME:  PRODUCT CARD (BACK) - PRODUCT CODE     */
+/* ---------------------------------------------- */
+
+.product-code {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 6.5rem;
+  height: 3rem;
+  /* border: 1px solid blue; */
+}
+
+.product-code .product-code-title {
+  font-size: 0.9rem;
+  font-weight: 700;
+  text-decoration: none;
+  text-transform: uppercase;
+  width: 100%;
+  height: 1.5rem;
+  color: var(--color-heading-titles);
+  /* border: 1px solid yellow; */
+}
+
+.product-code .product-code-info {
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-decoration: none;
+  text-transform: uppercase;
+  width: 100%;
+  height: 1.5rem;
+  color: var(--color-heading-values);
+  /* border: 1px solid green; */
+}
+
+/* ---------------------------------------------- */
+/* FIXME:  PRODUCT CARD (BACK) - MODEL NUMBER     */
+/* ---------------------------------------------- */
+
+.model-number {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 6.5rem;
+  height: 3rem;
+  /* border: 1px solid blue; */
+}
+
+.model-number .model-number-title {
+  font-size: 0.9rem;
+  font-weight: 700;
+  text-decoration: none;
+  text-transform: uppercase;
+  width: 100%;
+  height: 1.5rem;
+  color: var(--color-heading-titles);
+  /* border: 1px solid yellow; */
+}
+
+.model-number .model-number-info {
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-decoration: none;
+  text-transform: uppercase;
+  width: 100%;
+  height: 1.5rem;
+  color: var(--color-heading-values);
+  /* border: 1px solid green; */
+}
+
+/* ---------------------------------------------- */
+/* FIXME:  PRODUCT CARD (BACK) - AVAILABLE STOCK  */
+/* ---------------------------------------------- */
+
+.stock {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 6.5rem;
+  height: 3rem;
+  /* border: 1px solid blue; */
+}
+
+.stock .stock-title {
+  font-size: 0.9rem;
+  font-weight: 700;
+  text-decoration: none;
+  text-transform: uppercase;
+  width: 100%;
+  height: 1.5rem;
+  color: var(--color-heading-titles);
+  /* border: 1px solid yellow; */
+}
+
+.stock .stock-info {
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-decoration: none;
+  text-transform: uppercase;
+  width: 100%;
+  height: 1.5rem;
+  color: var(--color-heading-values);
+  /* border: 1px solid green; */
+}
+
+/* ------------------------------------------------------ */
+/* TODO:        PRODUCT MEASUREMENT SECTION         TODO: */
+/*  (incl. Length(CM), Width(CM), Height(CM), Weigth(KG)  */
+/* ------------------------------------------------------ */
+
+/* MAIN CONTAINER */
+
+.product-measurements {
+  position: absolute;
+  top: 8.5rem;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 26rem;
+  height: 4.5rem;
   margin: 0rem 0rem 0rem 0rem;
   padding: 0rem 0rem 0rem 0rem;
-  font-size: 1.1rem;
-  font-weight: 500;
-  letter-spacing: 0.1rem;
-  text-transform: capitalize;
-  text-align: center;
-  color: var(--color-card-back-person-qualifications-list);
-  /* border: 1px solid black; */
+  /* border: 1px solid red; */
 }
 
-/* .clearfix:after {
-  visibility: hidden;
-  display: block;
-  font-size: 0;
-  content: " ";
-  clear: both;
-  height: 0;
-} */
+/* ---------------------------------------------- */
+/* FIXME:  PRODUCT CARD (BACK) - LENGHT (CM)      */
+/* ---------------------------------------------- */
+
+.length {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 6.5rem;
+  height: 4.5rem;
+  /* border: 1px solid blue; */
+}
+
+.length .length-title {
+  font-size: 0.9rem;
+  font-weight: 700;
+  text-decoration: none;
+  text-transform: uppercase;
+  width: 100%;
+  height: 2.5rem;
+  color: var(--color-heading-titles);
+  /* border: 1px solid yellow; */
+}
+
+.length .length-title span {
+  font-size: 0.6rem;
+  font-weight: 700;
+  text-decoration: none;
+  text-transform: uppercase;
+  align-items: center;
+  color: var(--color-heading-values);
+}
+
+.length .length-info {
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-decoration: none;
+  text-transform: uppercase;
+  width: 100%;
+  height: 2rem;
+  color: var(--color-heading-values);
+  /* border: 1px solid green; */
+}
+
+/* ---------------------------------------------- */
+/* FIXME:  PRODUCT CARD (BACK) - WIDTH (CM)      */
+/* ---------------------------------------------- */
+
+.width {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 6.5rem;
+  height: 4.5rem;
+  /* border: 1px solid blue; */
+}
+
+.width .width-title {
+  font-size: 0.9rem;
+  font-weight: 700;
+  text-decoration: none;
+  text-transform: uppercase;
+  width: 100%;
+  height: 2.5rem;
+  color: var(--color-heading-titles);
+  /* border: 1px solid yellow; */
+}
+
+.width .width-title span {
+  font-size: 0.6rem;
+  font-weight: 700;
+  text-decoration: none;
+  text-transform: uppercase;
+  align-items: center;
+  color: var(--color-heading-values);
+}
+
+.width .width-info {
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-decoration: none;
+  text-transform: uppercase;
+  width: 100%;
+  height: 2rem;
+  color: var(--color-heading-values);
+  /* border: 1px solid green; */
+}
+
+/* ---------------------------------------------- */
+/* FIXME:  PRODUCT CARD (BACK) - HEIGTH (CM)      */
+/* ---------------------------------------------- */
+
+.height {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 6.5rem;
+  height: 4.5rem;
+  /* border: 1px solid blue; */
+}
+
+.height .height-title {
+  font-size: 0.9rem;
+  font-weight: 700;
+  text-decoration: none;
+  text-transform: uppercase;
+  width: 100%;
+  height: 2.5rem;
+  color: var(--color-heading-titles);
+  /* border: 1px solid yellow; */
+}
+
+.height .height-title span {
+  font-size: 0.6rem;
+  font-weight: 700;
+  text-decoration: none;
+  text-transform: uppercase;
+  align-items: center;
+  color: var(--color-heading-values);
+}
+
+.height .height-info {
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-decoration: none;
+  text-transform: uppercase;
+  width: 100%;
+  height: 2rem;
+  color: var(--color-heading-values);
+  /* border: 1px solid green; */
+}
+
+/* ---------------------------------------------- */
+/* FIXME:  PRODUCT CARD (BACK) - WEIGHT (KG)      */
+/* ---------------------------------------------- */
+
+.weight {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 6.5rem;
+  height: 4.5rem;
+  /* border: 1px solid blue; */
+}
+
+.weight .weight-title {
+  font-size: 0.9rem;
+  font-weight: 700;
+  text-decoration: none;
+  text-transform: uppercase;
+  width: 100%;
+  height: 2.5rem;
+  color: var(--color-heading-titles);
+  /* border: 1px solid yellow; */
+}
+
+.weight .weight-title span {
+  font-size: 0.6rem;
+  font-weight: 700;
+  text-decoration: none;
+  text-transform: uppercase;
+  align-items: center;
+  color: var(--color-heading-values);
+}
+
+.weight .weight-info {
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-decoration: none;
+  text-transform: uppercase;
+  width: 100%;
+  height: 2rem;
+  color: var(--color-heading-values);
+  /* border: 1px solid green; */
+}
+
+/* ------------------------------------------------------ */
+/* TODO:     PRODUCT FULL DESCRIPTION SECTION       TODO: */
+/*             (incl. title & description)                */
+/* ------------------------------------------------------ */
+
+/* MAIN CONTAINER */
+
+.product-full-description {
+  position: absolute;
+  top: 13rem;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 26rem;
+  height: 27rem;
+  /* border: 1px solid blue; */
+}
+
+.product-full-description .product-specifications-title {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.9rem;
+  font-weight: 700;
+  text-decoration: none;
+  text-transform: uppercase;
+  width: 100%;
+  height: 2rem;
+  color: var(--color-heading-titles);
+  /* border: 1px solid yellow; */
+}
+
+.product-full-description .product-specifications-details {
+  position: absolute;
+  top: 1.5rem;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: justify;
+  font-size: 0.8rem;
+  font-weight: 500;
+  text-decoration: none;
+  text-transform: capitalize;
+  padding: 0.25rem 1.3rem 0.25rem 1.3rem;
+  width: 100%;
+  height: 25rem;
+  /* border: 1px solid green; */
+}
+
+/* ------------------------------------------------------ */
+/* TODO:     IMPORTANT NOTIFICATIONS SECTION        TODO: */
+/*             (incl. title & description)                */
+/* ------------------------------------------------------ */
+
+/* MAIN CONTAINER */
+
+.important-notification {
+  position: absolute;
+  top: 40rem;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 26rem;
+  height: 6rem;
+  border-radius: 0rem 0rem 1.5rem 1.5rem;
+  /* border: 1px solid blue; */
+}
+
+.important-notification .notification-title {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.9rem;
+  font-weight: 700;
+  text-decoration: none;
+  text-transform: uppercase;
+  width: 100%;
+  height: 2rem;
+  color: var(--color-heading-titles);
+  /* border: 1px solid yellow; */
+}
+
+.important-notification .notification-info {
+  position: absolute;
+  top: 2rem;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-decoration: none;
+  padding: 0rem 1.3rem 0rem 1.3rem;
+  width: 100%;
+  height: 3.7rem;
+  border-radius: 0rem 0rem 1.5rem 1.5rem;
+  /* border: 1px solid green; */
+}
+
+.important-notification .notification-info a {
+  display: inline-block;
+  text-decoration: none;
+}
 
 /* ===================================================================================================================== */
 /*                                                                                            TODO:  STYLING ENDS  TODO: */
