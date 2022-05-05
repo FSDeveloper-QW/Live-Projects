@@ -211,7 +211,7 @@ body {
 .product-card-section-top {
   position: relative;
   width: 100%;
-  height: 35%;
+  height: 39.5%;
   border-radius: 0rem 0rem 0rem 0rem;
   background-color: var(--color-product-card-top-section-background);
   /* box-shadow: var(--color-box-shadow-01); */
@@ -955,7 +955,7 @@ i.bx-heart {
 /* FIXME:  PRODUCT CARD (BACK) - BRAND LOGO     */
 /* -------------------------------------------- */
 
-.brand__logo {
+/* .brand__logo {
   position: absolute;
   top: 1rem;
   left: 50%;
@@ -967,7 +967,7 @@ i.bx-heart {
   height: 3.5rem;
   object-fit: contain;
   padding: 0.5rem 0.5rem 0.5rem 0.5rem;
-}
+} */
 
 /* ------------------------------------------------------ */
 /* TODO:     PRODUCT IDENTIFICATION SECTION         TODO: */
@@ -978,33 +978,33 @@ i.bx-heart {
 
 .product-identification {
   position: absolute;
-  top: 4.5rem;
+  top: 3rem;
   left: 0;
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
   width: 26rem;
-  height: 4rem;
+  height: 3rem;
   margin: 0rem 0rem 0.5rem 0rem;
   padding: 0rem 0rem 0rem 0rem;
   /* border: 1px solid red; */
 }
 
 /* ---------------------------------------------- */
-/* FIXME:  PRODUCT CARD (BACK) - BRAND NAME       */
+/* FIXME:  PRODUCT CARD (BACK) - SERVICE CODE     */
 /* ---------------------------------------------- */
 
-.brand-name {
+.service-code {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 6.5rem;
+  width: 11rem;
   height: 3rem;
   /* border: 1px solid blue; */
 }
 
-.brand-name .brand-name-title {
+.service-code .service-code-title {
   font-size: 0.9rem;
   font-weight: 700;
   text-decoration: none;
@@ -1015,7 +1015,7 @@ i.bx-heart {
   /* border: 1px solid yellow; */
 }
 
-.brand-name .brand-name-info {
+.service-code .service-code-info {
   font-size: 0.8rem;
   font-weight: 600;
   text-decoration: none;
@@ -1026,21 +1026,21 @@ i.bx-heart {
   /* border: 1px solid green; */
 }
 
-/* ---------------------------------------------- */
-/* FIXME:  PRODUCT CARD (BACK) - PRODUCT CODE     */
-/* ---------------------------------------------- */
+/* ----------------------------------------------- */
+/* FIXME:  PRODUCT CARD (BACK) - SERVICE CATEGORY  */
+/* ----------------------------------------------- */
 
-.product-code {
+.service-category {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 6.5rem;
+  width: 15rem;
   height: 3rem;
   /* border: 1px solid blue; */
 }
 
-.product-code .product-code-title {
+.service-category .service-category-title {
   font-size: 0.9rem;
   font-weight: 700;
   text-decoration: none;
@@ -1051,7 +1051,7 @@ i.bx-heart {
   /* border: 1px solid yellow; */
 }
 
-.product-code .product-code-info {
+.service-category .service-category-info {
   font-size: 0.8rem;
   font-weight: 600;
   text-decoration: none;
@@ -1066,17 +1066,17 @@ i.bx-heart {
 /* FIXME:  PRODUCT CARD (BACK) - MODEL NUMBER     */
 /* ---------------------------------------------- */
 
-.model-number {
+/* .model-number {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 6.5rem;
   height: 3rem;
-  /* border: 1px solid blue; */
-}
+  border: 1px solid blue;
+} */
 
-.model-number .model-number-title {
+/* .model-number .model-number-title {
   font-size: 0.9rem;
   font-weight: 700;
   text-decoration: none;
@@ -1084,10 +1084,10 @@ i.bx-heart {
   width: 100%;
   height: 1.5rem;
   color: var(--color-heading-titles);
-  /* border: 1px solid yellow; */
-}
+  border: 1px solid yellow;
+} */
 
-.model-number .model-number-info {
+/* .model-number .model-number-info {
   font-size: 0.8rem;
   font-weight: 600;
   text-decoration: none;
@@ -1095,21 +1095,21 @@ i.bx-heart {
   width: 100%;
   height: 1.5rem;
   color: var(--color-heading-values);
-  /* border: 1px solid green; */
-}
+  border: 1px solid green;
+} */
 
 /* ---------------------------------------------- */
 /* FIXME:  PRODUCT CARD (BACK) - AVAILABLE STOCK  */
 /* ---------------------------------------------- */
 
-.stock {
+/* .stock {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 6.5rem;
   height: 3rem;
-  /* border: 1px solid blue; */
+  border: 1px solid blue;
 }
 
 .stock .stock-title {
@@ -1120,7 +1120,7 @@ i.bx-heart {
   width: 100%;
   height: 1.5rem;
   color: var(--color-heading-titles);
-  /* border: 1px solid yellow; */
+  border: 1px solid yellow;
 }
 
 .stock .stock-info {
@@ -1131,8 +1131,8 @@ i.bx-heart {
   width: 100%;
   height: 1.5rem;
   color: var(--color-heading-values);
-  /* border: 1px solid green; */
-}
+  border: 1px solid green;
+} */
 
 /* ------------------------------------------------------ */
 /* TODO:        PRODUCT MEASUREMENT SECTION         TODO: */
@@ -1141,7 +1141,7 @@ i.bx-heart {
 
 /* MAIN CONTAINER */
 
-.product-measurements {
+/* .product-measurements {
   position: absolute;
   top: 8.5rem;
   left: 0;
@@ -1152,21 +1152,21 @@ i.bx-heart {
   height: 4.5rem;
   margin: 0rem 0rem 0rem 0rem;
   padding: 0rem 0rem 0rem 0rem;
-  /* border: 1px solid red; */
-}
+  border: 1px solid red;
+} */
 
 /* ---------------------------------------------- */
 /* FIXME:  PRODUCT CARD (BACK) - LENGHT (CM)      */
 /* ---------------------------------------------- */
 
-.length {
+/* .length {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 6.5rem;
   height: 4.5rem;
-  /* border: 1px solid blue; */
+  border: 1px solid blue;
 }
 
 .length .length-title {
@@ -1177,7 +1177,7 @@ i.bx-heart {
   width: 100%;
   height: 2.5rem;
   color: var(--color-heading-titles);
-  /* border: 1px solid yellow; */
+  border: 1px solid yellow;
 }
 
 .length .length-title span {
@@ -1197,21 +1197,21 @@ i.bx-heart {
   width: 100%;
   height: 2rem;
   color: var(--color-heading-values);
-  /* border: 1px solid green; */
-}
+  border: 1px solid green;
+} */
 
 /* ---------------------------------------------- */
 /* FIXME:  PRODUCT CARD (BACK) - WIDTH (CM)      */
 /* ---------------------------------------------- */
 
-.width {
+/* .width {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 6.5rem;
   height: 4.5rem;
-  /* border: 1px solid blue; */
+  border: 1px solid blue;
 }
 
 .width .width-title {
@@ -1222,7 +1222,7 @@ i.bx-heart {
   width: 100%;
   height: 2.5rem;
   color: var(--color-heading-titles);
-  /* border: 1px solid yellow; */
+  border: 1px solid yellow;
 }
 
 .width .width-title span {
@@ -1242,21 +1242,21 @@ i.bx-heart {
   width: 100%;
   height: 2rem;
   color: var(--color-heading-values);
-  /* border: 1px solid green; */
-}
+  border: 1px solid green;
+} */
 
 /* ---------------------------------------------- */
 /* FIXME:  PRODUCT CARD (BACK) - HEIGTH (CM)      */
 /* ---------------------------------------------- */
 
-.height {
+/* .height {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 6.5rem;
   height: 4.5rem;
-  /* border: 1px solid blue; */
+  border: 1px solid blue;
 }
 
 .height .height-title {
@@ -1267,7 +1267,7 @@ i.bx-heart {
   width: 100%;
   height: 2.5rem;
   color: var(--color-heading-titles);
-  /* border: 1px solid yellow; */
+  border: 1px solid yellow;
 }
 
 .height .height-title span {
@@ -1287,21 +1287,21 @@ i.bx-heart {
   width: 100%;
   height: 2rem;
   color: var(--color-heading-values);
-  /* border: 1px solid green; */
-}
+  border: 1px solid green;
+} */
 
 /* ---------------------------------------------- */
 /* FIXME:  PRODUCT CARD (BACK) - WEIGHT (KG)      */
 /* ---------------------------------------------- */
 
-.weight {
+/* .weight {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 6.5rem;
   height: 4.5rem;
-  /* border: 1px solid blue; */
+  border: 1px solid blue;
 }
 
 .weight .weight-title {
@@ -1312,7 +1312,7 @@ i.bx-heart {
   width: 100%;
   height: 2.5rem;
   color: var(--color-heading-titles);
-  /* border: 1px solid yellow; */
+  border: 1px solid yellow;
 }
 
 .weight .weight-title span {
@@ -1332,8 +1332,8 @@ i.bx-heart {
   width: 100%;
   height: 2rem;
   color: var(--color-heading-values);
-  /* border: 1px solid green; */
-}
+  border: 1px solid green;
+} */
 
 /* ------------------------------------------------------ */
 /* TODO:     PRODUCT FULL DESCRIPTION SECTION       TODO: */
@@ -1344,7 +1344,7 @@ i.bx-heart {
 
 .product-full-description {
   position: absolute;
-  top: 13rem;
+  top: 8rem;
   left: 0;
   display: flex;
   flex-direction: column;
@@ -1399,14 +1399,14 @@ i.bx-heart {
 
 .important-notification {
   position: absolute;
-  top: 40rem;
+  top: 35rem;
   left: 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 26rem;
-  height: 6rem;
+  height: 10rem;
   border-radius: 0rem 0rem 1.5rem 1.5rem;
   /* border: 1px solid blue; */
 }
@@ -1435,13 +1435,13 @@ i.bx-heart {
   display: flex;
   justify-content: center;
   align-items: center;
-  text-align: center;
+  text-align: justify;
   font-size: 0.8rem;
   font-weight: 700;
   text-decoration: none;
   padding: 0rem 1.3rem 0rem 1.3rem;
   width: 100%;
-  height: 3.7rem;
+  height: 8rem;
   border-radius: 0rem 0rem 1.5rem 1.5rem;
   /* border: 1px solid green; */
 }
