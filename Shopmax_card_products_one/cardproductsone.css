@@ -23,12 +23,6 @@
   --color-product-card-colors-title: black;
   --color-product-card-price-currency: black;
   --color-product-card-price-value: black;
-  /* PRODUCT 001 - COLOR OPTIONS */
-  --color-product-color-option-01: #ddd;
-  --color-product-color-option-02: black;
-  --color-product-color-option-03: gray;
-  --color-product-color-option-04: navy;
-  --color-product-color-option-05: red;
   /* CUSTOM RADIO BUTTON */
   --color-custom-radiobutton-border: #ccc;
   --color-custom-radiobutton-background: white;
@@ -125,9 +119,9 @@ body {
   /* border: 1px solid red; */
 }
 
-/* ----------------------------------- */
-/* JAVASCRIPT : FOR FLIP FUNCTIONALITY */
-/* ----------------------------------- */
+/* ------------------------------------------------------------------- */
+/* TODO:FIXME:     JAVASCRIPT : FOR FLIP FUNCTIONALITY     TODO:FIXME: */
+/* ------------------------------------------------------------------- */
 
 .product-card-container-all .product-card.animated {
   transform: rotateY(-180deg);
@@ -181,24 +175,6 @@ body {
 /*                                           TODO:  PRODUCT CARD (FRONT)  TODO:                                           */
 /* ===================================================================================================================== */
 /* ===================================================================================================================== */
-
-/* -------------------------------------- */
-/* FIXME:  BRAND TITLE - NOT USED  FIXME: */
-/* -------------------------------------- */
-
-/* .brand-title {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 1.75rem;
-    font-weight: 600;
-    letter-spacing: 0.1rem;
-    text-decoration: none;
-    text-transform: uppercase;
-    margin: 0rem 0rem 0rem 0rem;
-    border-radius: 1rem 1rem 0rem 0rem;
-    color: var(--color-product-card-brand-title);
-  } */
 
 /* ===================================================================================================================== */
 /* TODO:  PRODUCT CARD SECTION 1 (TOP)                                                                                   */
@@ -355,6 +331,10 @@ body {
 }
 
 /* ===================================================================================================================== */
+/* TODO:  PRODUCT CARD SECTION 4 - SELECTING SIZES & COLORS                                                              */
+/* ===================================================================================================================== */
+
+/* ===================================================================================================================== */
 /* TODO:  CONTAINER - HOLDING BOTH PRODUCT SIZES AND PRODUCT COLORS                                                      */
 /* ===================================================================================================================== */
 
@@ -362,20 +342,6 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.radio__buttons__group {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0rem 0rem 0rem 0rem;
-}
-
-.radio__buttons__group__colors {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0rem 0rem 0rem 0rem;
 }
 
 /* ---------------------------------------------- */
@@ -415,137 +381,8 @@ select:focus {
   outline: 0;
 }
 
-/* -------------------------------------------------------------------------------------------------------------------- */
-/* RADIO BUTTONS (NOT USED)                                                                                             */
-/* ==================================================================================================================== */
-
-/* ------------------------------------------------------------------------- */
-/* TODO: START STYLING OF CUSTOM RADIO BUTTON                                */
-/* ------------------------------------------------------------------------- */
-
-/* ---------------------------------------------- */
-/* FIXME:  INPUT FIELD = RADIO BUTTON      FIXME: */
-/* ---------------------------------------------- */
-
-/* GROUP 1 - SIZES */
-
-.radio__option {
-  font-size: 0.8rem;
-  font-weight: 600;
-  line-height: 1;
-  text-transform: uppercase;
-  display: grid;
-  grid-template-columns: 1rem auto;
-  gap: 1rem;
-  margin: 1rem 0.5rem 0rem 0.5rem;
-  cursor: pointer;
-}
-
-/* GROUP 2 - COLOURS */
-
-.radio__option__02 {
-  font-size: 0.8rem;
-  font-weight: 600;
-  line-height: 1;
-  text-transform: uppercase;
-  display: grid;
-  grid-template-columns: 1rem auto;
-  gap: 1rem;
-  margin: 1rem 0.5rem 0rem 0.5rem;
-  cursor: pointer;
-}
-
-/* --------------------------------------------- */
-/* THIS IS TO HIDE THE NATIVE RADIO BUTTON       */
-/* --------------------------------------------- */
-
-input[type="radio"] {
-  /* Add if not using autoprefixer */
-  -webkit-appearance: none;
-  appearance: none;
-  /* For iOS < 15 to remove gradient background */
-  background-color: var(--color-custom-radiobutton-background);
-  /* Not removed via appearance */
-  margin: 0;
-}
-
-/* -------------------------------------------- */
-/* THIS IS TO DISPLAY THE CUSTOM RADIO BUTTON   */
-/* -------------------------------------------- */
-
-input[type="radio"] {
-  appearance: none;
-  background-color: var(--color-custom-radiobutton-background);
-  margin: 0;
-  font: inherit;
-  color: var(--color-custom-radiobutton-border);
-  width: 1rem;
-  height: 1rem;
-  border: 0.15em solid var(--color-custom-radiobutton-border);
-  border-radius: 50%;
-  transform: translateY(-0.075em);
-  display: grid;
-  place-content: center;
-  cursor: pointer;
-}
-
-.radio__option + .radio__option {
-  margin-top: 0.2rem;
-}
-
-.radio__option__02 + .radio__option__02 {
-  margin-top: 0.2rem;
-}
-
-/* -------------------------------------------- */
-/* CUSTOM RADIO BUTTON - CHECKED STATE          */
-/* -------------------------------------------- */
-
-input[type="radio"]::before {
-  content: "";
-  width: 0.6rem;
-  height: 0.6rem;
-  border-radius: 50%;
-  transform: scale(0);
-  transition: 120ms transform ease-in-out;
-  box-shadow: inset 1em 1em var(--color-custom-radiobutton-circle);
-  /* Windows High Contrast Mode */
-  background-color: CanvasText;
-}
-
-input[type="radio"]:checked::before {
-  transform: scale(1);
-}
-
-/* -------------------------------------------- */
-/* CUSTOM RADIO BUTTON - FOCUSSED STATE         */
-/* -------------------------------------------- */
-
-input[type="radio"]:focus {
-  outline: max(0.5px, 0.15em) solid var(--color-custom-radiobutton-focus);
-  outline-offset: max(1px, 0.15em);
-}
-
-/* -------------------------------------------- */
-/* CUSTOM RADIO BUTTON - DISABLED STATE         */
-/* -------------------------------------------- */
-
-.radio__option--disabled {
-  color: var(--color-custom-radiobutton-disabled);
-  cursor: not-allowed;
-}
-
-input[type="radio"]:disabled {
-  color: var(--color-custom-radiobutton-disabled);
-  cursor: not-allowed;
-}
-
-/* -------------------------------------------------------------------------------------------------------------------- */
-/* TODO:  END OF STYLING OF CUSTOM RADIO BUTTON (NOT USED)                                                              */
-/* -------------------------------------------------------------------------------------------------------------------- */
-
 /* ===================================================================================================================== */
-/* TODO:  PRODUCT CARD SECTION 4 - PRODUCT SIZES                                                                         */
+/* TODO:  PRODUCT SIZES                                                                                                  */
 /* ===================================================================================================================== */
 
 /* ----------------------------------- */
@@ -596,7 +433,7 @@ input[type="radio"]:disabled {
 }
 
 /* ===================================================================================================================== */
-/* TODO:  PRODUCT CARD SECTION 5 - PRODUCT COLOURS                                                                       */
+/* TODO:  PRODUCT COLOURS                                                                                                */
 /* ===================================================================================================================== */
 
 /* ------------------------------------ */
@@ -644,68 +481,8 @@ input[type="radio"]:disabled {
   height: 6.5rem;
 }
 
-/* ------------------------------------- */
-/* FIXME:  PRODUCT 001 - COLOR OPTION 1  */
-/* ------------------------------------- */
-
-.color__01 i.fa-square {
-  font-size: 1rem;
-  padding-right: 1rem;
-  color: var(--color-product-color-option-01);
-  outline: none;
-  border: none;
-}
-
-/* ------------------------------------- */
-/* FIXME:  PRODUCT 001 - COLOR OPTION 2  */
-/* ------------------------------------- */
-
-.color__02 i.fa-square {
-  font-size: 1rem;
-  padding-right: 1rem;
-  color: var(--color-product-color-option-02);
-  outline: none;
-  border: none;
-}
-
-/* ------------------------------------- */
-/* FIXME:  PRODUCT 001 - COLOR OPTION 3  */
-/* ------------------------------------- */
-
-.color__03 i.fa-square {
-  font-size: 1rem;
-  padding-right: 1rem;
-  color: var(--color-product-color-option-03);
-  outline: none;
-  border: none;
-}
-
-/* ------------------------------------- */
-/* FIXME:  PRODUCT 001 - COLOR OPTION 4  */
-/* ------------------------------------- */
-
-.color__04 i.fa-square {
-  font-size: 1rem;
-  padding-right: 1rem;
-  color: var(--color-product-color-option-04);
-  outline: none;
-  border: none;
-}
-
-/* ------------------------------------- */
-/* FIXME:  PRODUCT 001 - COLOR OPTION 5  */
-/* ------------------------------------- */
-
-.color__05 i.fa-square {
-  font-size: 1rem;
-  padding-right: 1rem;
-  color: var(--color-product-color-option-05);
-  outline: none;
-  border: none;
-}
-
 /* ===================================================================================================================== */
-/* TODO:  PRODUCT CARD SECTION 6 - PRODUCT PRICING                                                                       */
+/* TODO:  PRODUCT CARD SECTION 5 - PRODUCT PRICING                                                                       */
 /* ===================================================================================================================== */
 
 .product-card-pricing {
@@ -741,7 +518,7 @@ input[type="radio"]:disabled {
 }
 
 /* ===================================================================================================================== */
-/* TODO:  PRODUCT CARD SECTION 7A - BUTTON (ADD TO SHOPPING CART)                                                        */
+/* TODO:  PRODUCT CARD SECTION 6A - BUTTON (ADD TO SHOPPING CART)                                                        */
 /* ===================================================================================================================== */
 
 /* ------------------------------------------------------- */
@@ -792,7 +569,7 @@ input[type="radio"]:disabled {
 }
 
 /* ===================================================================================================================== */
-/* TODO:  PRODUCT CARD SECTION 7B - BUTTON (MORE INFO)                                                                   */
+/* TODO:  PRODUCT CARD SECTION 6B - BUTTON (MORE INFO)                                                                   */
 /* ===================================================================================================================== */
 
 /* ------------------------------------------------------- */
@@ -843,7 +620,7 @@ input[type="radio"]:disabled {
 }
 
 /* ===================================================================================================================== */
-/* TODO:  PRODUCT CARD SECTION 7C - BUTTON (ADD TO WISH LIST                                                             */
+/* TODO:  PRODUCT CARD SECTION 6C - BUTTON (ADD TO WISH LIST                                                             */
 /* ===================================================================================================================== */
 
 /* ------------------------------------------------------- */
