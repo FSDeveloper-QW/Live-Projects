@@ -98,7 +98,7 @@
   <!-- -------------------------------------------------------------------------------------------------------- -->
   <body>
     <!-- ------------------------------------------------------------------------------------------------------ -->
-    <!-- TODO:   PRODUCT CARD (PLAYSTATION CONTROLLERS)                                                         -->
+    <!-- TODO:   PRODUCT CARD (BUSINESS SERVICES)                                                               -->
     <!-- ------------------------------------------------------------------------------------------------------ -->
 
     <div class="product-card-container-all">
@@ -196,9 +196,9 @@
             </div>
           </div> -->
 
-          <!-- ------------------------------------------- ------- -->
-          <!-- TODO:  CARD SECTION 3 - PRODUCT INFORMATION  TODO:  -->
-          <!-- -------------------------------------------- ------ -->
+          <!-- -------------------------------------------------- -->
+          <!-- TODO:  CARD SECTION 3 - SERVICE INFORMATION  TODO: -->
+          <!-- -------------------------------------------------- -->
 
           <div class="product-card-section-information">
             <div class="product-card-title">Accounting Services</div>
@@ -208,120 +208,208 @@
             </div>
           </div>
 
-          <div class="container__sizes__and__colors">
-            <!-- --------------------------------------------- -->
-            <!-- TODO:  CARD SECTION 4 - PRODUCT SIZES  TODO:  -->
-            <!-- --------------------------------------------- -->
-            <div class="product-card-section-sizes">
-              <div class="product-card-sizes-title">start date</div>
-              <div class="product-card-sizes-options">
-                <!-- ---------------------- -->
-                <!-- DROPDOWN LIST OPTIONS  -->
-                <!-- ---------------------- -->
+          <!-- -------------------------------------------------- -->
+          <!-- TODO:     CARD SECTION 4 - SERVICE DATES     TODO: -->
+          <!-- -------------------------------------------------- -->
 
+          <div class="container__dates">
+            <!-- ---------------------------------------------- -->
+            <!-- FIXME:       START DATE OF SERVICE      FIXME: -->
+            <!-- ---------------------------------------------- -->
+
+            <div class="container-start-date">
+              <div class="container-start-date-title">start date</div>
+              <div class="container-start-date-options">
                 <!-- ---------------------------------------------- -->
-                <!-- FIXME:  APPLE PRODUCTS - STORAGE SIZES  FIXME: -->
+                <!--            INPUT FIELD - DATES                 -->
                 <!-- ---------------------------------------------- -->
 
                 <div class="form__group">
-                  <label for="apple-storage-sizes"></label>
-                  <select id="apple-storage-sizes" name="" required>
-                    <option value="" selected>-</option>
-                    <option name="XS" value="XS" disabled>128GB</option>
-                    <option name="S" value="S" disabled>256GB</option>
-                    <option name="M" value="M" disabled>512GB</option>
-                    <option name="L" value="L" disabled>1TB</option>
-                    <option name="XL" value="XL" selected>2TB</option>
-                  </select>
+                  <label for="start-date"></label>
+                  <input
+                    id="start-date"
+                    type="date"
+                    value=""
+                    name="start-date"
+                    placeholder="start date"
+                    min="2022-05-01"
+                    max="2099-12-31"
+                    required
+                  />
                 </div>
               </div>
             </div>
 
             <!-- ---------------------------------------------- -->
-            <!-- TODO:  CARD SECTION 5 - PRODUCT COLORS  TODO:  -->
+            <!-- FIXME:        END DATE OF SERVICE       FIXME: -->
             <!-- ---------------------------------------------- -->
 
-            <div class="product-card-section-colors">
-              <div class="product-card-colors-title">end date</div>
-              <div class="product-card-colors-options">
-                <!-- ----------------------------- -->
-                <!-- DROPDOWN LIST COLOR OPTIONS   -->
-                <!-- ----------------------------- -->
-
+            <div class="container-end-date">
+              <div class="container-end-date-title">end date</div>
+              <div class="container-end-date-options">
                 <!-- ---------------------------------------------- -->
-                <!-- FIXME:  APPLE PRODUCTS - COLOR OPTIONS  FIXME: -->
+                <!--            INPUT FIELD - DATES                 -->
                 <!-- ---------------------------------------------- -->
 
                 <div class="form__group">
-                  <label for="apple-tablet-colors"></label>
-                  <select id="apple-tablet-colors" name="" required>
-                    <option value="" selected>-</option>
-                    <option name="Silver" value="Silver" disabled>
-                      Silver
-                    </option>
-                    <option name="Space Grey" value="Space Grey" selected>
-                      Space Grey
-                    </option>
-                  </select>
+                  <label for="end-date"></label>
+                  <input
+                    id="end-date"
+                    type="date"
+                    value=""
+                    name="end-date"
+                    placeholder="end date"
+                    min="2022-05-01"
+                    max="2099-12-31"
+                    required
+                  />
                 </div>
               </div>
             </div>
           </div>
 
-          <div class="container__sizes__and__colors">
-            <!-- --------------------------------------------- -->
-            <!-- TODO:  CARD SECTION 4 - PRODUCT SIZES  TODO:  -->
-            <!-- --------------------------------------------- -->
-            <div class="product-card-section-sizes">
-              <div class="product-card-sizes-title">province</div>
-              <div class="product-card-sizes-options">
-                <!-- ---------------------- -->
-                <!-- DROPDOWN LIST OPTIONS  -->
-                <!-- ---------------------- -->
+          <!-- -------------------------------------------------- -->
+          <!-- TODO:     CARD SECTION 5 - REGIONAL AREAS    TODO: -->
+          <!-- -------------------------------------------------- -->
 
-                <!-- ---------------------------------------------- -->
-                <!-- FIXME:  APPLE PRODUCTS - STORAGE SIZES  FIXME: -->
-                <!-- ---------------------------------------------- -->
+          <div class="container__regions">
+            <!-- ---------------------------------------------- -->
+            <!-- FIXME:          REGIONAL AREAS          FIXME: -->
+            <!-- ---------------------------------------------- -->
 
-                <div class="form__group">
-                  <label for="apple-storage-sizes"></label>
-                  <select id="apple-storage-sizes" name="" required>
-                    <option value="" selected>-</option>
-                    <option name="XS" value="XS" disabled>128GB</option>
-                    <option name="S" value="S" disabled>256GB</option>
-                    <option name="M" value="M" disabled>512GB</option>
-                    <option name="L" value="L" disabled>1TB</option>
-                    <option name="XL" value="XL" selected>2TB</option>
-                  </select>
-                </div>
+            <div class="container-regional-areas">
+              <div class="container-regional-areas-title">
+                select your regional area
               </div>
-            </div>
-
-            <!-- ---------------------------------------------- -->
-            <!-- TODO:  CARD SECTION 5 - PRODUCT COLORS  TODO:  -->
-            <!-- ---------------------------------------------- -->
-
-            <div class="product-card-section-colors">
-              <div class="product-card-colors-title">regional area</div>
-              <div class="product-card-colors-options">
-                <!-- ----------------------------- -->
-                <!-- DROPDOWN LIST COLOR OPTIONS   -->
-                <!-- ----------------------------- -->
-
-                <!-- ---------------------------------------------- -->
-                <!-- FIXME:  APPLE PRODUCTS - COLOR OPTIONS  FIXME: -->
-                <!-- ---------------------------------------------- -->
+              <div class="container-regional-areas-options">
+                <!-- ------------------------------------------ -->
+                <!--          DROPDOWN LIST OPTIONS             -->
+                <!-- ------------------------------------------ -->
 
                 <div class="form__group">
-                  <label for="apple-tablet-colors"></label>
-                  <select id="apple-tablet-colors" name="" required>
+                  <label for="region"></label>
+                  <select id="region" name="" required>
                     <option value="" selected>-</option>
-                    <option name="Silver" value="Silver" disabled>
-                      Silver
-                    </option>
-                    <option name="Space Grey" value="Space Grey" selected>
-                      Space Grey
-                    </option>
+                    <optgroup label="Western Cape">
+                      <option name="R01" value="Cape Peninsula">
+                        Cape Peninsula
+                      </option>
+                      <option name="R02" value="Central Karoo">
+                        Central Karoo
+                      </option>
+                      <option name="R03" value="Southern Cape">
+                        Southern Cape
+                      </option>
+                      <option name="R04" value="Overberg">Overberg</option>
+                      <option name="R05" value="West Coast">West Coast</option>
+                      <option name="R06" value="Winelands">Winelands</option>
+                    </optgroup>
+
+                    <optgroup label="Eastern Cape">
+                      <option name="R07" value="Amatola Region">
+                        Amatola Region
+                      </option>
+                      <option name="R08" value="Western Region">
+                        Western Region
+                      </option>
+                      <option name="R09" value="Wild Coast">Wild Coast</option>
+                    </optgroup>
+
+                    <optgroup label="Northern Cape">
+                      <option name="R10" value="Diamond Fields">
+                        Diamond Fields
+                      </option>
+                      <option name="R11" value="Kalahari">Kalahari</option>
+                      <option name="R12" value="Namaqualand">
+                        Namaqualand
+                      </option>
+                      <option name="R13" value="Upper Karoo">
+                        Upper Karoo
+                      </option>
+                    </optgroup>
+
+                    <optgroup label="North West">
+                      <option name="R14" value="Mompati District">
+                        Mompati District
+                      </option>
+                      <option name="R15" value="Platinum District">
+                        Platinum District
+                      </option>
+                      <option name="R16" value="Molema District">
+                        Molema District
+                      </option>
+                      <option name="R17" value="Kuanda District">
+                        Kuanda District
+                      </option>
+                    </optgroup>
+
+                    <optgroup label="Gauteng">
+                      <option name="R18" value="Johannesburg">
+                        Johannesburg
+                      </option>
+                      <option name="R19" value="Ekurhuleni">Ekurhuleni</option>
+                      <option name="R20" value="Tshwane">Tshwane</option>
+                      <option name="R21" value="Sedibeng District">
+                        Sedibeng District
+                      </option>
+                      <option name="R22" value="West Rand">West Rand</option>
+                    </optgroup>
+
+                    <optgroup label="Kwazulu-Natal">
+                      <option name="R23" value="Amajuba">Amajuba</option>
+                      <option name="R24" value="eThekwini">eThekwini</option>
+                      <option name="R25" value="iLembe">iLembe</option>
+                      <option name="R26" value="Sisonke">Sisonke</option>
+                      <option name="R27" value="Ugu">Ugu</option>
+                      <option name="R28" value="Umgungundlovu">
+                        Umgungundlovu
+                      </option>
+                      <option name="R29" value="Umkhanyakude">
+                        Umkhanyakude
+                      </option>
+                      <option name="R30" value="Umzinyathi">Umzinyathi</option>
+                      <option name="R31" value="uThukela">uThukela</option>
+                      <option name="R32" value="uThungulu">uThungulu</option>
+                      <option name="R33" value="Zululand">Zululand</option>
+                    </optgroup>
+
+                    <optgroup label="Free State">
+                      <option name="R34" value="Eastern Free State">
+                        Eastern Free State
+                      </option>
+                      <option name="R35" value="Goldfields">Goldfields</option>
+                      <option name="R36" value="Northern Free State">
+                        Northern Free State
+                      </option>
+                      <option name="R37" value="Transgariep">
+                        Transgariep
+                      </option>
+                    </optgroup>
+
+                    <optgroup label="Limpopo">
+                      <option name="R38" value="Bushveld">Bushveld</option>
+                      <option name="R39" value="Capricorn">Capricorn</option>
+                      <option name="R40" value="Olifants Region">
+                        Olifants Region
+                      </option>
+                      <option name="R41" value="Soutpansberg">
+                        Soutpansberg
+                      </option>
+                      <option name="R42" value="Waterberg">Waterberg</option>
+                    </optgroup>
+
+                    <optgroup label="Mpumalanga">
+                      <option name="R43" value="Ehlanzeni Lowveld">
+                        Ehlanzeni Lowveld
+                      </option>
+                      <option name="R44" value="Grass and Wetlands">
+                        Grass and Wetlands
+                      </option>
+                      <option name="R45" value="Highveld and Cosmos">
+                        Highveld and Cosmos
+                      </option>
+                      <option name="R46" value="Nkangala">Nkangala</option>
+                    </optgroup>
                   </select>
                 </div>
               </div>
@@ -412,16 +500,16 @@
 
           <a href="#" class="animate-01 close">&times;</a>
 
-          <!-- -------------------------------- -->
-          <!-- CARD - DETAILED DESRIPTION AREA  -->
-          <!-- -------------------------------- -->
+          <!-- --------------------------------- -->
+          <!-- CARD - DETAILED DESCRIPTION AREA  -->
+          <!-- --------------------------------- -->
 
           <div class="information-container-back">
-            <!-- ------------------------------------ -->
-            <!-- TODO:  PRODUCT IDENTICIATION SECTION -->
-            <!-- ------------------------------------ -->
+            <!-- ------------------------------------- -->
+            <!-- TODO:  SERVICE IDENTICIATION SECTION -->
+            <!-- ------------------------------------- -->
 
-            <div class="product-identification">
+            <div class="service-identification">
               <!-- ---------------------------- -->
               <!-- FIXME:  SERVICE CODE  FIXME: -->
               <!-- ---------------------------- -->
@@ -439,76 +527,17 @@
                 <p class="service-category-title">service category</p>
                 <p class="service-category-info">Business support Services</p>
               </div>
-
-              <!-- ---------------------------- -->
-              <!-- FIXME:  MODEL NUMBER  FIXME: -->
-              <!-- ---------------------------- -->
-
-              <!-- <div class="model-number">
-                <p class="model-number-title">model</p>
-                <p class="model-number-info">MHRD3</p>
-              </div> -->
-
-              <!-- ------------------------------- -->
-              <!-- FIXME:  STOCK AVAILABLE  FIXME: -->
-              <!-- ------------------------------- -->
-
-              <!-- <div class="stock">
-                <p class="stock-title">stock</p>
-                <p class="stock-info">TBA</p>
-              </div> -->
-            </div>
-            <!-- ------------------------------------ -->
-            <!-- TODO:  PRODUCT MEASUREMENTS SECTION  -->
-            <!-- ------------------------------------ -->
-
-            <div class="product-measurements">
-              <!-- ---------------------------- -->
-              <!-- FIXME:   LENGTH (CM)  FIXME: -->
-              <!-- ---------------------------- -->
-
-              <!-- <div class="length">
-                <p class="length-title">length<br /><span>(cm)</span></p>
-                <p class="length-info">28.06</p>
-              </div> -->
-
-              <!-- ---------------------------- -->
-              <!-- FIXME:   WIDTH (CM)   FIXME: -->
-              <!-- ---------------------------- -->
-
-              <!-- <div class="width">
-                <p class="width-title">width<br /><span>(cm)</span></p>
-                <p class="width-info">21.49</p>
-              </div> -->
-
-              <!-- ---------------------------- -->
-              <!-- FIXME:   HEIGTH (CM)  FIXME: -->
-              <!-- ---------------------------- -->
-
-              <!-- <div class="height">
-                <p class="height-title">height<br /><span>(cm)</span></p>
-                <p class="height-info">0.64"</p>
-              </div> -->
-
-              <!-- --------------------------- -->
-              <!-- FIXME:  WEIGHT (KG)  FIXME: -->
-              <!-- --------------------------- -->
-
-              <!-- <div class="weight">
-                <p class="weight-title">weight<br /><span>(kg)</span></p>
-                <p class="weight-info">0.685</p>
-              </div> -->
             </div>
 
             <!-- ------------------------------------ -->
             <!-- TODO:  DETAILED PRODUCT DESCRIPTION  -->
             <!-- ------------------------------------ -->
 
-            <div class="product-full-description">
-              <p class="product-specifications-title">
+            <div class="service-full-description">
+              <p class="service-specifications-title">
                 detailed service description
               </p>
-              <p class="product-specifications-details">
+              <p class="service-specifications-details">
                 This outsourced service entails the day-to-day capturing of all
                 financial transactions of your business by a professional
                 accountant, inclusive of invoices, payments and receipts, while
@@ -535,27 +564,17 @@
             <div class="important-notification">
               <p class="notification-title">how does it work ?</p>
               <p class="notification-info">
-                E&OE / Once you have chosen your required timeframes, province,
-                regional area and submit your request, SHOPMAX will source 3
-                quotes from relevant service providers in your regional area,
-                who are registered on our service provider network (SPN), in
-                order to allow you to select the best quote for your specific
-                needs.
+                E&OE / Once you have chosen your required timeframes, regional
+                area and submit your request, SHOPMAX will source 3 QUOTES from
+                relevant service providers in your regional area, who are
+                registered on our service provider network (SPN), in order to
+                allow you to select the best quote for your specific needs.
               </p>
             </div>
           </div>
         </div>
       </div>
     </div>
-
-    <!-- ------------------------------------------------------------------------------------------------------ -->
-    <!--                              ===== FIXME: MY COMMENTS FIXME: =====                                     -->
-    <!-- 01.           -->
-    <!-- 02.           -->
-    <!-- 03.           -->
-    <!-- 04.           -->
-    <!-- 05.           -->
-    <!-- ------------------------------------------------------------------------------------------------------ -->
 
     <!-- ------------------------------------------------------------------------------------------------------ -->
     <!--                              ===== TODO: CODING END ABOVE TODO: =====                                  -->
