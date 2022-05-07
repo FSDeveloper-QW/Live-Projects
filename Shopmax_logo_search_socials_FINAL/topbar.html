@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+    <!-- TODO:   STANDARD META DATA - BASIC REQUIREMENT                                                         -->
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+    <!-- TODO:   STANDARD META DATA - MOBILE SPECIFIC                                                           -->
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+    <!-- FIXME:  PART 2 - SEARCH ENGINE OPTIMIZATION (SEO) : STANDARD HTML TOOLS - DESCRIPTION                  -->
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+
+    <meta
+      name="description"
+      content="ENTER A SHORT DESCRIPTION OF YOUR BUSINESS FOR GOOGLE SEARCH ENGINES TO INDEX"
+    />
+
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+    <!-- TODO:   PROVIDE A TITLE FOR YOUR PAGE - APPEARS IN BROWSER TAB                                         -->
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+
+    <title>SHOPMAX - LOGO - SEARCH BAR - SOCIAL MEDIA</title>
+
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+    <!-- TODO:   LINK GOOGLE FONTS - TO USE CERTAIN FONTS ON YOUR PAGE - https://fonts.google.com/              -->
+    <!-- MY FONTS: ROBOTO, OPEN SANS, MONTSERRAT, POPPINS, RALEWAY, ALICE (ALL REGULAR)                         -->
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alice&family=Montserrat&family=Open+Sans&family=Poppins&family=Raleway&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+    <!-- TODO:  FONT AWESOME ICONS  TODO: TO LINK YOUR PROJECT                                                  -->
+    <!-- https://www.w3schools.com/icons/fontawesome_icons_intro.asp                                            -->
+    <!-- TO VIEW THE LIST OF FREE ICONS TO USE : https://fontawesome.com/search?m=free                          -->
+    <!-- FIXME:  COPY AND PASTE: FIXME:  SYNTAX TO USE IN CODE:   <i class="fa fa-iconname"></i>                -->
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+
+    <!-- PREVIOUS -->
+
+    <!-- <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    /> -->
+
+    <!-- LATEST (APRIL 2022) -->
+
+    <!-- <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/fontawesome.min.css"
+    /> -->
+
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+    <!-- TODO:  BOXICONS  TODO: (FOR USE IN ANY PROJECT                                                         -->
+    <!-- https://boxicons.com/usage#import-css                                                                  -->
+    <!-- FIXME:  COPY AND PASTE: FIXME:  SYNTAX TO USE IN CODE:   <i class="bx bx-user"></i>                    -->
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+
+    <link
+      href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+    <!-- TODO:   CSS STYLE SHEET (INTERNAL) - LINK YOUR HTML DOCUMENT TO YOUR OWN CSS STYLE SHEET               -->
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+
+    <link rel="stylesheet" href="topbar.css" />
+
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+    <!-- TODO:   CSS STYLE SHEET (EXTERNAL) - LINK TO NORMALISE.CSS STYLE SHEET (ONLY IF REQUIRED)              -->
+    <!-- ALWAYS DOWNLOAD THE LATEST FILE (BEFORE YOU START):  https://necolas.github.io/normalize.css/          -->
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+
+    <!-- <link rel="stylesheet" href="normalize.css" /> -->
+
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+    <!-- TODO:   LINK YOUR HTML DOCUMENT TO ANIMATE ON SCROLL (AOS) FOR ALL PAGE ANIMATIONS                     -->
+    <!-- JAVASCRIPT INCLUDED AT END OF HTML DOCUMENT / WEBSITE: https://michalsnik.github.io/aos/               -->
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+    <!-- TODO:   FIXME: PROJECT LINK FIXME: LINK TO JQUERY FILE THAT WILL BE USED IN PROJECT                    -->
+    <!-- LINK TO WEBSITE: https://code.jquery.com/jquery-3.5.1.min.js                                           -->
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+
+    <!-- <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script> -->
+  </head>
+  <!-- -------------------------------------------------------------------------------------------------------- -->
+  <!--                              ===== TODO: CODING START BELOW TODO: =====                                  -->
+  <!-- -------------------------------------------------------------------------------------------------------- -->
+  <body>
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+    <!-- TODO:   2ND COMPONENT :  SHOPMAX - LOGO, SEARCH BAR AND SOCIAL MEDIA LINKS                             -->
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+    <!--                      =====  FIXME:  MY COMMENTS ON COMPONENT  FIXME:  =====                            -->
+    <!--  JQUERY SCRIPT USED FOR THIS COMPONENT (SEE BELOW)                                                    -->
+    <!--  JAVASCRIPT COMPONENT USED FOF THIS COMPONENT (LINK BELOW)                                             -->
+    <!--  NUMEROUS MEDIA QUERIES USED IN CSS FOR MOBILE RESPONSIVENESS AT VARIOUS BREAK POINTS                  -->
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+
+    <!-- ====================================================================================================== -->
+    <!-- ====================================================================================================== -->
+    <!-- TODO:TODO:TODO:       SECTION - TOP BAR :  SHOPMAX LOGO, SEARCH BAR, SOCIAL MEDIA      TODO:TODO:TODO: -->
+    <!-- TODO:TODO:TODO:         ICONS, WHATSAPP,USER ACCOUNT, WISH LIST, SHOPPING CART         TODO:TODO:TODO: -->
+    <!-- ====================================================================================================== -->
+    <!-- ====================================================================================================== -->
+
+    <div class="top_bar_container_all">
+      <!-- ==================================================================================================== -->
+      <!-- FIXME:  PART 1 : CONTAINER - HOLDING ALL ELEMENTS (container_all)                                    -->
+      <!-- ===================================================================================================  -->
+      <!-- ==================================================================================================== -->
+      <!-- FIXME:  PART 2 : SHOPMAX LOGO (LEFT)                                                                 -->
+      <!-- ===================================================================================================  -->
+
+      <div class="top_bar_container_image">
+        <a href="#"
+          ><img
+            class="top_bar_shopmax_logo"
+            src="images/logo_shopmax_black.webp"
+            alt="shopmax logo"
+        /></a>
+      </div>
+
+      <!-- ==================================================================================================== -->
+      <!-- FIXME:  PART 3 : NEW SEARCH BAR                                                                      -->
+      <!-- TODO:   DEVELOPER NOTE: SEARCH BAR TO BE LINKED TO JS SUGGESTIONS LIST / MYSQL DATABASE        TODO: -->
+      <!-- ==================================================================================================== -->
+
+      <!-- -------------- -->
+      <!-- NEW SEARCH BAR -->
+      <!-- -------------- -->
+
+      <!-- ------------------------------------------------------------------------------------------------------ -->
+      <!-- TODO:   AUTOCOMPLETE SEARCH BAR (WITH SUGGESTION LISTS)                                                -->
+      <!-- ------------------------------------------------------------------------------------------------------ -->
+
+      <div class="top_bar_search-bar-container">
+        <div class="top_bar_search-input">
+          <!-- ------------------------------------------------------------------ -->
+          <!-- ANCHOR ELEMENT FOR REDIRECTING USER TO SELECT ITEM FROM SEARCH BAR -->
+          <!-- ------------------------------------------------------------------ -->
+          <a href="" target="_blank" hidden></a>
+          <!-- ------------------ -->
+          <!-- SEARCH BAR - INPUT -->
+          <!-- ------------------ -->
+          <input
+            type="text"
+            placeholder="enter your search"
+            minlength="1"
+            maxlength="35"
+          />
+          <!-- -------------------- -->
+          <!-- LIST OF SEARCH ITEMS -->
+          <!-- -------------------- -->
+          <div class="top_bar_search-autocomplete-box">
+            <!-- ----------------------------------------------------------------- -->
+
+            <!-- ----------------------------------------------------------------- -->
+            <!-- FIXME:  SUGGESTION LIST IS AUTOMATICALLY INSERTED FROM JAVASCRIPT -->
+            <!-- ----------------------------------------------------------------- -->
+
+            <!-- <li>item 01</li>
+            <li>item 02</li>
+            <li>item 03</li>
+            <li>item 04</li>
+            <li>item 05</li> -->
+
+            <!-- ----------------------------------------------------------------- -->
+          </div>
+          <!-- ------------------------- -->
+          <!-- SEARCH BAR - SEARCH ICON  -->
+          <!-- ------------------------- -->
+          <div class="top_bar_searchbar-icon">
+            <i class="fas fa-search"></i>
+          </div>
+        </div>
+        <!-- ==================================================================================================== -->
+        <!-- FIXME:  PART 5 : USER ACCOUNG, WISH LIST AND SHOPPING CART ICONS LINKS & FUNCTIONALITIES TO ADD      -->
+        <!-- TODO:  DEVELOPER NOTE : WISH LIST + SHOP CART ICONS STILL NEED TO LINK TO SHOPPING CART MODULE       -->
+        <!-- ==================================================================================================== -->
+
+        <div class="top_bar_shopping_icons">
+          <!-- ---------------------------- -->
+          <!-- FIXME:  USER ACCOUNT  FIXME: -->
+          <!-- ---------------------------- -->
+
+          <div class="top_bar_user_account">
+            <a href="#" target="_blank"><i class="bx bx-user"></i></a>
+          </div>
+
+          <!-- ------------------------- -->
+          <!-- FIXME:  WISH LIST  FIXME: -->
+          <!-- ------------------------- -->
+
+          <div class="wishlist-counter-container">
+            <span id="wishlist-counter">0</span>
+            <a href="#" target="_blank"><i class="bx bx-heart"></i></a>
+          </div>
+
+          <!-- ----------------------------- -->
+          <!-- FIXME:  SHOPPING CART  FIXME: -->
+          <!-- ----------------------------- -->
+
+          <div class="cart_counter-container">
+            <span id="counter">0</span>
+            <a href="#" target="_blank"><i class="bx bx-cart"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- ==================================================================================================== -->
+      <!-- FIXME:  PART 4 : SOCIAL MEDIA & CONTACT (WHATSAPP)                                                   -->
+      <!-- TODO:  DEVELOPER NOTE : WISH LIST + SHOP CART ICONS STILL NEED TO LINK TO SHOPPING CART MODULE       -->
+      <!-- ==================================================================================================== -->
+
+      <div class="top_bar_container_social">
+        <div class="top_bar_social-media">
+          <ul>
+            <!-- ======================== -->
+            <!-- FIXME:  FACEBOOK  FIXME: -->
+            <!-- ======================== -->
+            <li>
+              <a href="https://www.facebook.com/SHOPMAXGROUP/" target="_blank"
+                ><i class="bx bxl-facebook"></i
+              ></a>
+            </li>
+            <!-- ========================= -->
+            <!-- FIXME:  INSTAGRAM  FIXME: -->
+            <!-- ========================= -->
+            <li>
+              <a
+                href="https://www.instagram.com/shopmaxonlinestore/"
+                target="_blank"
+                ><i class="bx bxl-instagram"></i
+              ></a>
+            </li>
+            <!-- ======================= -->
+            <!-- FIXME:  TWITTER  FIXME: -->
+            <!-- ======================= -->
+            <li>
+              <a href="https://twitter.com/SHOPMAX6" target="_blank"
+                ><i class="bx bxl-twitter"></i
+              ></a>
+            </li>
+            <!-- ======================== -->
+            <!-- FIXME:  LINKEDIN  FIXME: -->
+            <!-- ======================== -->
+            <li>
+              <a
+                href="https://www.linkedin.com/company/shopmax/"
+                target="_blank"
+                ><i class="bx bxl-linkedin"></i
+              ></a>
+            </li>
+            <!-- ======================= -->
+            <!-- FIXME:  YOUTUBE  FIXME: -->
+            <!-- ======================= -->
+            <li>
+              <a
+                href="https://www.youtube.com/channel/UCaSWUuXE_Fq2MfEhpwHghcQ?view_as=subscriber"
+                target="_blank"
+                ><i class="bx bxl-youtube"></i
+              ></a>
+            </li>
+            <!-- ======================== -->
+            <!-- FIXME:  WHATSAPP  FIXME: -->
+            <!-- ======================== -->
+            <li>
+              <a href="https://wa.me/27665084401" target="_blank"
+                ><i class="bx bxl-whatsapp"></i
+              ></a>
+            </li>
+            <!-- ========================= -->
+            <!-- FIXME:  WISH LIST  FIXME: -->
+            <!-- ========================= -->
+            <!-- <li>
+              <a href="#" target="_blank"><i class="bx bx-heart"></i></a>
+            </li> -->
+            <!-- ============================= -->
+            <!-- FIXME:  SHOPPING CART  FIXME: -->
+            <!-- ============================= -->
+            <!-- <li class="counter-container">
+              <span id="counter">1</span>
+              <a href="#" target="_blank"><i class="bx bx-cart"></i></a>
+            </li> -->
+            <!-- ============================ -->
+            <!-- FIXME:  USER ACCOUNT  FIXME: -->
+            <!-- ============================ -->
+            <!-- <li>
+              <a href="#" target="_blank"><i class="bx bx-user"></i></a>
+            </li> -->
+          </ul>
+        </div>
+      </div>
+
+      <!-- ---------------------------------------------- -->
+      <!-- END OF ITEMS IN TOP NAVIGATION AND SEARCH BARD -->
+      <!-- ---------------------------------------------- -->
+    </div>
+
+    <!-- -------------------------------------- -->
+    <!-- FIXME:  ADD TO WISH LIST BUTTON FIXME: -->
+    <!-- -------------------------------------- -->
+
+    <div class="wishlist-container">
+      <button id="wishlist-add-animation">add to wishlist</button>
+    </div>
+
+    <!-- --------------------------------- -->
+    <!-- FIXME:  ADD TO CART BUTTON FIXME: -->
+    <!-- --------------------------------- -->
+
+    <div class="shopping-container">
+      <button id="add-animation">add to cart</button>
+    </div>
+
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+    <!--                              ===== TODO: CODING END ABOVE TODO: =====                                  -->
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+    <!-- TODO:   JAVASCRIPT (OWN) - LINK ALL YOUR JAVASCRIPT FILES TO THE HTML DOCUMENT                         -->
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+
+    <!-- <script src="topbar.js" defer></script> -->
+    <script src="js/searchbar_suggestions.js"></script>
+    <script src="js/searchbar.js" defer></script>
+    <script src="js/animation_addtocart.js" defer></script>
+    <script src="js/animation_addtowishlist.js" defer></script>
+
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+    <!-- TODO:   JAVASCRIPT (FONT AWESOME KIT)                                                                  -->
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+
+    <script
+      src="https://kit.fontawesome.com/6034cfbb24.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+    <!-- TODO:   JAVASCRIPT (JQUERY LIBRARY) - JQUERY.MIN.JS                                                    -->
+    <!-- TODO:   URL : https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js                        -->
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+    <!-- FIXME:  ANIMATE ON SCROLL (AOS) SCRIPT - ANIMATIONS FOR WEBSITE - https://michalsnik.github.io/aos/    -->
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+    <!-- FIXME:  ADDITIONAL THIRD PARTY SCRIPTS                                                                 -->
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+  </body>
+  <!-- ------------------------------------------------------------------------------------------------------ -->
+  <!--                              ===== FIXME: MY COMMENTS FIXME: =====                                     -->
+  <!--  TEMPLATE TO USE FOR COMMENTING                                                                        -->
+  <!-- ------------------------------------------------------------------------------------------------------ -->
+</html>
