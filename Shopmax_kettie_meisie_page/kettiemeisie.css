@@ -43,11 +43,11 @@
   --color-product-card-background: white;
   --color-product-card-top-section-background: white;
   --color-product-card-arrow-left: black;
-  --color-product-card-heart-right: #dc143c;
+  --color-product-card-heart-right: #1a354a;
   --color-product-card-extra-images-section-background: white;
   --color-product-card-extra-image-background: white;
   --color-product-card-extra-image-border: black;
-  --color-product-card-extra-image-border-hover: #dc143c;
+  --color-product-card-extra-image-border-hover: #1a354a;
   --color-product-card-title: black;
   --color-product-card-short-description: black;
   --color-product-card-sizes-title: black;
@@ -57,80 +57,35 @@
   /* CUSTOM RADIO BUTTON */
   --color-custom-radiobutton-border: #ccc;
   --color-custom-radiobutton-background: white;
-  --color-custom-radiobutton-circle: #dc143c;
-  --color-custom-radiobutton-focus: #dc143c;
+  --color-custom-radiobutton-circle: #1a354a;
+  --color-custom-radiobutton-focus: #1a354a;
   --color-custom-radiobutton-disabled: #959495;
   /* COLOR SCHEME FOR ADD TO CART BUTTONS, CARTS AND COUNTERS */
-  --color-add-to-cart-button-background: #dc143c;
+  --color-add-to-cart-button-background: #1a354a;
   --color-add-to-cart-button-text: white;
   --color-shopping-cart-icon: black;
-  --color-shopping-cart-counter-background: #dc143c;
+  --color-shopping-cart-counter-background: #1a354a;
   --color-shopping-cart-counter-text: white;
   /* COLOR SCHEME FOR ADD TO WISH LIST BUTTONS, CARTS AND COUNTERS */
-  --color-add-to-wish-list-button-background: #dc143c;
+  --color-add-to-wish-list-button-background: #1a354a;
   --color-add-to-wish-list-button-text: white;
   --color-wish-list-icon: black;
-  --color-wish-list-counter-background: #dc143c;
+  --color-wish-list-counter-background: #1a354a;
   --color-wish-list-counter-text: white;
   /* FORM TEXT INPUTS */
   --color-input-border: #ccc;
-  --color-input-border-focus: #dc143c;
-  --color-input-border-focus-rgba: rgb(220, 20, 60);
+  --color-input-border-focus: #1a354a;
+  --color-input-border-focus-rgba: rgb(26, 53, 74);
   /* CLOSE BUTTON - BACK CARD */
-  --color-card-back-button-close: #dc143c;
+  --color-card-back-button-close: #1a354a;
   --color-card-back-background: white;
   --color-card-back-text: black;
   /* BACK OF CARD */
-  --color-heading-titles: #dc143c;
+  --color-heading-titles: #1a354a;
   --color-heading-values: black;
   /* BUTTON - SIZING GUIDE DOWNLOAD */
-  --color-button-sizing-guide-background: #dc143c;
+  --color-button-sizing-guide-background: #1a354a;
   --color-button-sizing-guide-text: white;
-  /* ================================================================= */
-
-  /* PRODUCT CARDS */
-  --color-product-card-background: white;
-  --color-product-card-image-background: white;
-  --color-product-card-main-title: #dc143c;
-  --color-product-card-sub-title: black;
-  --color-product-card-description: black;
-  --color-product-card-specifications-background: #dc143c;
-  --color-product-card-specifications-statistics: white;
-  --color-product-card-specifications-statistics-seperation-line: white;
-  /* SKYNAMO */
-  /* --color-Skynamo-button-background: #e2218e;
-      --color-Skynamo-button-background-rgb: rgb(226, 33, 142); */
-  /* ------------------------------------ */
-  /* FIXME:  ELEMENT BOX SHADOWS  FIXME:  */
-  /* ------------------------------------ */
-  --color-all-elements-box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.35);
-  --color-all-elements-box-shadow-2: 0px 5px 4px rgba(0, 0, 0, 0.35);
-  /* -------------------------------------- */
-  /* FIXME:  FRONT OF PROFILE CARD  FIXME:  */
-  /* -------------------------------------- */
-  --color-card-front-background: white;
-  --color-card-front-person-photo-border: #dc143c;
-  --color-card-front-person-name: black;
-  --color-card-front-person-title: black;
-  --color-card-front-socials-background: white;
-  --color-card-front-socials-background-hover: white;
-  --color-card-front-socials-icon-hover: #dc143c;
-  --color-card-front-socials-border: black;
-  --color-card-front-socials-border-hover: #dc143c;
-  --color-card-front-button-background: #dc143c;
-  --color-card-front-button-text: #fff;
-  /* ------------------------------------- */
-  /* FIXME:  BACK OF PROFILE CARD  FIXME:  */
-  /* ------------------------------------- */
-  /* --color-card-back-background: #323650; */
-  --color-card-back-button-close: #dc143c;
-  --color-card-back-background: white;
-  --color-card-back-text: black;
-  --color-card-back-person-qualifications: black;
-  --color-card-back-person-qualifications-list: black;
-  --color-card-back-skills-range-bar-background: #e4e8f0;
-  --color-card-back-skills-range-bar-progress: #dc143c;
-  --color-card-back-skills-range-bar-progress-percentage: white;
 }
 
 * {
@@ -897,12 +852,43 @@ section {
 /* FIXME:  PRODUCT CARD CONTAINER  */
 /* ------------------------------- */
 
-.product-card-container-all .product-card-01,
-.product-card-container-all .product-card-02,
-.product-card-container-all .product-card-03,
-.product-card-container-all .product-card-04,
-.product-card-container-all .product-card-05,
-.product-card-container-all .product-card-06 {
+.product-card-container-all .product-card-001,
+.product-card-container-all .product-card-002,
+.product-card-container-all .product-card-003,
+.product-card-container-all .product-card-004,
+.product-card-container-all .product-card-005,
+.product-card-container-all .product-card-006,
+.product-card-container-all .product-card-101,
+.product-card-container-all .product-card-102,
+.product-card-container-all .product-card-103,
+.product-card-container-all .product-card-104,
+.product-card-container-all .product-card-105,
+.product-card-container-all .product-card-106,
+.product-card-container-all .product-card-107,
+.product-card-container-all .product-card-108,
+.product-card-container-all .product-card-109,
+.product-card-container-all .product-card-201,
+.product-card-container-all .product-card-202,
+.product-card-container-all .product-card-203,
+.product-card-container-all .product-card-301,
+.product-card-container-all .product-card-401,
+.product-card-container-all .product-card-402,
+.product-card-container-all .product-card-403,
+.product-card-container-all .product-card-404,
+.product-card-container-all .product-card-405,
+.product-card-container-all .product-card-406,
+.product-card-container-all .product-card-407,
+.product-card-container-all .product-card-408,
+.product-card-container-all .product-card-501,
+.product-card-container-all .product-card-502,
+.product-card-container-all .product-card-503,
+.product-card-container-all .product-card-504,
+.product-card-container-all .product-card-505,
+.product-card-container-all .product-card-506,
+.product-card-container-all .product-card-601,
+.product-card-container-all .product-card-602,
+.product-card-container-all .product-card-603,
+.product-card-container-all .product-card-604 {
   position: absolute;
   transition: transform 1s;
   transform-style: preserve-3d;
@@ -923,12 +909,43 @@ section {
 /* TODO:FIXME:     JAVASCRIPT : FOR FLIP FUNCTIONALITY     TODO:FIXME: */
 /* ------------------------------------------------------------------- */
 
-.product-card-container-all .product-card-01.animated,
-.product-card-container-all .product-card-02.animated,
-.product-card-container-all .product-card-03.animated,
-.product-card-container-all .product-card-04.animated,
-.product-card-container-all .product-card-05.animated,
-.product-card-container-all .product-card-06.animated {
+.product-card-container-all .product-card-001.animated,
+.product-card-container-all .product-card-002.animated,
+.product-card-container-all .product-card-003.animated,
+.product-card-container-all .product-card-004.animated,
+.product-card-container-all .product-card-005.animated,
+.product-card-container-all .product-card-006.animated,
+.product-card-container-all .product-card-101.animated,
+.product-card-container-all .product-card-102.animated,
+.product-card-container-all .product-card-103.animated,
+.product-card-container-all .product-card-104.animated,
+.product-card-container-all .product-card-105.animated,
+.product-card-container-all .product-card-106.animated,
+.product-card-container-all .product-card-107.animated,
+.product-card-container-all .product-card-108.animated,
+.product-card-container-all .product-card-109.animated,
+.product-card-container-all .product-card-201.animated,
+.product-card-container-all .product-card-202.animated,
+.product-card-container-all .product-card-203.animated,
+.product-card-container-all .product-card-301.animated,
+.product-card-container-all .product-card-401.animated,
+.product-card-container-all .product-card-402.animated,
+.product-card-container-all .product-card-403.animated,
+.product-card-container-all .product-card-404.animated,
+.product-card-container-all .product-card-405.animated,
+.product-card-container-all .product-card-406.animated,
+.product-card-container-all .product-card-407.animated,
+.product-card-container-all .product-card-408.animated,
+.product-card-container-all .product-card-501.animated,
+.product-card-container-all .product-card-502.animated,
+.product-card-container-all .product-card-503.animated,
+.product-card-container-all .product-card-504.animated,
+.product-card-container-all .product-card-505.animated,
+.product-card-container-all .product-card-506.animated,
+.product-card-container-all .product-card-601.animated,
+.product-card-container-all .product-card-602.animated,
+.product-card-container-all .product-card-603.animated,
+.product-card-container-all .product-card-604.animated {
   transform: rotateY(-180deg);
 }
 
@@ -936,12 +953,43 @@ section {
 /* FIXME:  SUB-CONTAINER - HOLDING ALL ELEMENTS OF CARD (FRONT)  FIXME: */
 /* -------------------------------------------------------------------- */
 
-.product-card-container-all .product-card-01 .product-card-front-side,
-.product-card-container-all .product-card-02 .product-card-front-side,
-.product-card-container-all .product-card-03 .product-card-front-side,
-.product-card-container-all .product-card-04 .product-card-front-side,
-.product-card-container-all .product-card-05 .product-card-front-side,
-.product-card-container-all .product-card-06 .product-card-front-side {
+.product-card-container-all .product-card-001 .product-card-front-side,
+.product-card-container-all .product-card-002 .product-card-front-side,
+.product-card-container-all .product-card-003 .product-card-front-side,
+.product-card-container-all .product-card-004 .product-card-front-side,
+.product-card-container-all .product-card-005 .product-card-front-side,
+.product-card-container-all .product-card-006 .product-card-front-side,
+.product-card-container-all .product-card-101 .product-card-front-side,
+.product-card-container-all .product-card-102 .product-card-front-side,
+.product-card-container-all .product-card-103 .product-card-front-side,
+.product-card-container-all .product-card-104 .product-card-front-side,
+.product-card-container-all .product-card-105 .product-card-front-side,
+.product-card-container-all .product-card-106 .product-card-front-side,
+.product-card-container-all .product-card-107 .product-card-front-side,
+.product-card-container-all .product-card-108 .product-card-front-side,
+.product-card-container-all .product-card-109 .product-card-front-side,
+.product-card-container-all .product-card-201 .product-card-front-side,
+.product-card-container-all .product-card-202 .product-card-front-side,
+.product-card-container-all .product-card-203 .product-card-front-side,
+.product-card-container-all .product-card-301 .product-card-front-side,
+.product-card-container-all .product-card-401 .product-card-front-side,
+.product-card-container-all .product-card-402 .product-card-front-side,
+.product-card-container-all .product-card-403 .product-card-front-side,
+.product-card-container-all .product-card-404 .product-card-front-side,
+.product-card-container-all .product-card-405 .product-card-front-side,
+.product-card-container-all .product-card-406 .product-card-front-side,
+.product-card-container-all .product-card-407 .product-card-front-side,
+.product-card-container-all .product-card-408 .product-card-front-side,
+.product-card-container-all .product-card-501 .product-card-front-side,
+.product-card-container-all .product-card-502 .product-card-front-side,
+.product-card-container-all .product-card-503 .product-card-front-side,
+.product-card-container-all .product-card-504 .product-card-front-side,
+.product-card-container-all .product-card-505 .product-card-front-side,
+.product-card-container-all .product-card-506 .product-card-front-side,
+.product-card-container-all .product-card-601 .product-card-front-side,
+.product-card-container-all .product-card-602 .product-card-front-side,
+.product-card-container-all .product-card-603 .product-card-front-side,
+.product-card-container-all .product-card-604 .product-card-front-side {
   position: absolute;
   top: 0;
   left: 0;
@@ -962,12 +1010,43 @@ section {
 /* FIXME:  SUB-CONTAINER - HOLDING ALL ELEMENTS OF CARD (BACK)  FIXME: */
 /* -------------------------------------------------------------------- */
 
-.product-card-container-all .product-card-01 .product-card-back-side,
-.product-card-container-all .product-card-02 .product-card-back-side,
-.product-card-container-all .product-card-03 .product-card-back-side,
-.product-card-container-all .product-card-04 .product-card-back-side,
-.product-card-container-all .product-card-05 .product-card-back-side,
-.product-card-container-all .product-card-06 .product-card-back-side {
+.product-card-container-all .product-card-001 .product-card-back-side,
+.product-card-container-all .product-card-002 .product-card-back-side,
+.product-card-container-all .product-card-003 .product-card-back-side,
+.product-card-container-all .product-card-004 .product-card-back-side,
+.product-card-container-all .product-card-005 .product-card-back-side,
+.product-card-container-all .product-card-006 .product-card-back-side,
+.product-card-container-all .product-card-101 .product-card-back-side,
+.product-card-container-all .product-card-102 .product-card-back-side,
+.product-card-container-all .product-card-103 .product-card-back-side,
+.product-card-container-all .product-card-104 .product-card-back-side,
+.product-card-container-all .product-card-105 .product-card-back-side,
+.product-card-container-all .product-card-106 .product-card-back-side,
+.product-card-container-all .product-card-107 .product-card-back-side,
+.product-card-container-all .product-card-108 .product-card-back-side,
+.product-card-container-all .product-card-109 .product-card-back-side,
+.product-card-container-all .product-card-201 .product-card-back-side,
+.product-card-container-all .product-card-202 .product-card-back-side,
+.product-card-container-all .product-card-203 .product-card-back-side,
+.product-card-container-all .product-card-301 .product-card-back-side,
+.product-card-container-all .product-card-401 .product-card-back-side,
+.product-card-container-all .product-card-402 .product-card-back-side,
+.product-card-container-all .product-card-403 .product-card-back-side,
+.product-card-container-all .product-card-404 .product-card-back-side,
+.product-card-container-all .product-card-405 .product-card-back-side,
+.product-card-container-all .product-card-406 .product-card-back-side,
+.product-card-container-all .product-card-407 .product-card-back-side,
+.product-card-container-all .product-card-408 .product-card-back-side,
+.product-card-container-all .product-card-501 .product-card-back-side,
+.product-card-container-all .product-card-502 .product-card-back-side,
+.product-card-container-all .product-card-503 .product-card-back-side,
+.product-card-container-all .product-card-504 .product-card-back-side,
+.product-card-container-all .product-card-505 .product-card-back-side,
+.product-card-container-all .product-card-506 .product-card-back-side,
+.product-card-container-all .product-card-601 .product-card-back-side,
+.product-card-container-all .product-card-602 .product-card-back-side,
+.product-card-container-all .product-card-603 .product-card-back-side,
+.product-card-container-all .product-card-604 .product-card-back-side {
   position: absolute;
   top: 0;
   left: 0;
@@ -1141,7 +1220,7 @@ section {
   font-size: 1.1rem;
   font-weight: 500;
   text-transform: initial;
-  text-align: justify;
+  text-align: center;
   color: var(--color-product-card-short-description);
   /* border: 1px solid red; */
 }
@@ -1193,7 +1272,7 @@ select {
 
 select:focus {
   border-color: var(--color-input-border-focus);
-  box-shadow: 0 0 0 2px rgba(220, 20, 60, 0.95);
+  box-shadow: 0 0 0 2px var(--color-kettie-meisie-rgb);
   outline: 0;
 }
 
@@ -1371,7 +1450,7 @@ select:focus {
   outline: none;
   border: none;
   transition: transform 0.3s ease-in-out;
-  box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.35);
+  box-shadow: var(--color-box-shadow-01);
   /* border: 1px solid green; */
 }
 
@@ -1432,7 +1511,7 @@ select:focus {
   outline: none;
   border: none;
   transition: transform 0.3s ease-in-out;
-  box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.35);
+  box-shadow: var(--color-box-shadow-01);
   /* border: 1px solid green; */
 }
 
@@ -1853,7 +1932,7 @@ i.bx-heart {
   /* border: 1px solid blue; */
 }
 
-a.sizing-guide-download {
+a.product-brochure-download {
   text-decoration: none;
   color: var(--color-button-sizing-guide-text);
 }
