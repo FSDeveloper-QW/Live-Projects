@@ -205,7 +205,827 @@ h6 {
 }
 
 /* ===================================================================================================================== */
-/* TODO:  PART 1A - KETTIE MEISIE PROMOTIONAL PAGE - LOGO                                                                */
+/* TODO:  PART 1 - KETTIE MEISIE PROMOTIONAL PAGE - HERO ROTATING BANNER                                                 */
+/* ===================================================================================================================== */
+
+.kettie__meisie__hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  margin: 0rem 0rem 0rem 0rem;
+  /* border: 2px solid red; */
+}
+
+/* .kettie__meisie__hero img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+} */
+
+/* ===================================================================================================================== */
+/*                           FIXME:TODO:FIXME:  HERO BANNER STYLING START  FIXME:TODO:FIXME:                             */
+/* ===================================================================================================================== */
+
+/* ===================================================================================================================== */
+/* TODO:  PART 1 - CONTAINER HOLDING ALL ELEMENTS OF THE SLIDER (SLIDE CONTAINER, NAVIGATION ARROWS & DOTS)              */
+/* ===================================================================================================================== */
+
+/* ------------------------------- */
+/* FIXME:  VIEW - MOBILE FIRST     */
+/* ------------------------------- */
+
+.slider {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 15.6vh;
+  overflow: hidden;
+  margin: 0rem 0rem 0rem 0rem;
+  padding: 0rem 0rem 0rem 0rem;
+  /* box-shadow: 0px 5px 4px rgba(0, 0, 0, 0.35); */
+  /* border: 2px solid red; */
+}
+
+/* ===================================================================================================================== */
+/* TODO:  PART 2 - CONTAINER HOLDING ALL SLIDES (SLIDE 1 - X)                                                            */
+/* --------------------------------------------------------------------------------------------------------------------- */
+/* FIXME: IMPORTANT NOTE FIXME:  EACH SLIDE TAKES UP 100% OF THE VIEW WIDTH / 10 SLIDES TAKE 100% * 10 = 1000% OF WIDTH  */
+/* FIXME: IMPORTANT NOTE FIXME:  THIS SETS THE TOTAL WIDTH OF ALL SLIDES PLACE NEXT TO EACH OTHER                        */
+/* width: 100%; - For 01 Slide                                                                                           */
+/* width: 200%; - For 02 Slides                                                                                          */
+/* width: 300%; - For 03 Slides                                                                                          */
+/* width: 400%; - For 04 Slides                                                                                          */
+/* width: 500%; - For 05 Slides                                                                                          */
+/* width: 600%; - For 06 Slides                                                                                          */
+/* width: 700%; - For 07 Slides                                                                                          */
+/* width: 800%; - For 08 Slides                                                                                          */
+/* width: 900%; - For 09 Slides                                                                                          */
+/* width: 1000%; - For 10 Slides                                                                                         */
+/* ETC.                                                                                                                  */
+/* ===================================================================================================================== */
+
+/* ------------------------------- */
+/* FIXME:  VIEW - MOBILE FIRST     */
+/* ------------------------------- */
+
+.slides {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1000%;
+  height: 100%;
+  transition: 2s ease;
+  margin: 0rem 0rem 0rem 0rem;
+  padding: 0rem 0rem 0rem 0rem;
+  /* border: 3px solid greenyellow; */
+}
+
+/* ===================================================================================================================== */
+/* TODO:  PART 3 - CONTAINER HOLDING INDIVIDUAL SLIDE ELEMENTS (IMAGES / TITLE / CONTENT / BUTTON)                       */
+/* --------------------------------------------------------------------------------------------------------------------- */
+/* FIXME: IMPORTANT NOTE FIXME:  THIS DEFINES THE SPACE TAKEN UP BY EACH SLIDE AS A % OF THE TOTAL WIDTH OF ALL          */
+/* FIXME: IMPORTANT NOTE FIXME:  CONSTANTS SET: 1 SLIDE = 100% WIDTH / 2 SLIDES = 50% width EACH ETC.                    */
+/* For 01 Slide   :  100% / 1   =  WIDTH = 100%                                                                          */
+/* For 02 Slides  :  100% / 2   =  WIDTH = 50%                                                                           */
+/* For 03 Slides  :  100% / 3   =  WIDTH = 33.33%                                                                        */
+/* For 04 Slides  :  100% / 4   =  WIDTH = 25%                                                                           */
+/* For 05 Slides  :  100% / 5   =  WIDTH = 20%                                                                           */
+/* For 06 Slides  :  100% / 6   =  WIDTH = 16.66%                                                                        */
+/* For 07 Slides  :  100% / 7   =  WIDTH = 14.2857%                                                                      */
+/* For 08 Slides  :  100% / 8   =  WIDTH = 12.5%                                                                         */
+/* For 09 Slides  :  100% / 9   =  WIDTH = 11.11%                                                                        */
+/* For 10 Slides  :  100% / 10  =  WIDTH = 10%                                                                           */
+/* ETC.                                                                                                                  */
+/* ===================================================================================================================== */
+
+/* ------------------------------- */
+/* FIXME:  VIEW - MOBILE FIRST     */
+/* ------------------------------- */
+
+.slide {
+  position: relative;
+  top: 0;
+  left: 0;
+  float: left;
+  width: 10%;
+  height: 100%;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  margin: 0rem 0rem 0rem 0rem;
+  padding: 0rem 0rem 0rem 0rem;
+  /* border: 5px solid salmon; */
+}
+
+/* ------------------------------------------------------------------------------------- */
+/* CONTROLLING THE OPACITY OF THE LAYER OVER THE IMAGE FOR TEXT TO APPEAR MORE READIBLE  */
+/* ------------------------------------------------------------------------------------- */
+
+/* ------------------------------- */
+/* FIXME:  VIEW - MOBILE FIRST     */
+/* ------------------------------- */
+
+.slide::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 1;
+}
+
+/* ===================================================================================================================== */
+/* TODO:  PART 4 - INDIVIDUAL SLIDE DATA CONTAINTER - HOLDING ALL IMAGES, TITLES, CONTENT AND BUTTONS                    */
+/* --------------------------------------------------------------------------------------------------------------------- */
+
+/* ------------------------------- */
+/* FIXME:  VIEW - MOBILE FIRST     */
+/* ------------------------------- */
+
+/* ------------------------------- */
+/* INDIVIDUAL SLIDE CONTAINER      */
+/* ------------------------------- */
+
+.slide-data {
+  position: relative;
+  top: 0;
+  left: 0;
+  transform: translateY(0%, 0%);
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  text-align: center;
+  /* border: 2px solid purple; */
+}
+
+/* ------------------------------- */
+/* SLIDE - IMAGE                   */
+/* ------------------------------- */
+
+.slide-data .slide__image img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+
+/* ------------------------------- */
+/* SLIDE - TITLE                   */
+/* ------------------------------- */
+
+.slide-data .slide__title p {
+  position: absolute;
+  top: 7.5%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-transform: uppercase;
+  justify-content: center;
+  text-align: center;
+  font-size: 0.8rem;
+  line-height: 1;
+  font-weight: bolder;
+  color: var(--color-slide-text);
+  z-index: 2;
+}
+
+/* ------------------------------- */
+/* SLIDE - CONTENT                 */
+/* ------------------------------- */
+
+.slide-data .slide__content p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  justify-content: center;
+  text-align: center;
+  font-size: 0.65rem;
+  line-height: 1.2;
+  /* font-weight: bolder; */
+  color: var(--color-slide-text);
+  z-index: 2;
+}
+
+/* ------------------------------- */
+/* SLIDE - BUTTON (WITH ANCHOR)    */
+/* ------------------------------- */
+
+.slide-data .slide__button button {
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%, 15%);
+  justify-content: center;
+  text-align: center;
+  font-size: 0.8rem;
+  line-height: 1;
+  text-transform: uppercase;
+  /* font-weight: bolder; */
+  color: var(--color-button-text);
+  padding: 0.2rem 0.5rem 0.2rem 0.5rem;
+  transition: 0.4s linear;
+  background-color: var(--color-button-background);
+  outline: none;
+  border: 1px solid white;
+  z-index: 2;
+  cursor: pointer;
+}
+
+.slide-data .slide__button button:hover {
+  background-color: var(--color-button-background-hover);
+  color: var(--color-button-text-hover);
+}
+
+.slide-data .slide__button button a {
+  text-decoration: none;
+  color: var(--color-button-text);
+  cursor: pointer;
+}
+
+/* ===================================================================================================================== */
+/* TODO:  PART 5 - LEFT AND RIGHT NAVIGATION ARROWS                                                                      */
+/* --------------------------------------------------------------------------------------------------------------------- */
+
+/* ------------------------------- */
+/* FIXME:  VIEW - MOBILE FIRST     */
+/* ------------------------------- */
+
+.slider .arrows {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: var(--color-arrows-background);
+  outline: none;
+  border: none;
+  font-size: 2rem;
+  color: var(--color-arrows-color);
+  transition: 0.4s linear;
+  z-index: 3;
+  cursor: pointer;
+}
+
+.slider .arrows:hover {
+  text-shadow: 0px 0px 10px black, 0px 0px 10px black;
+}
+
+.slider .prev {
+  left: 2.5%;
+  z-index: 3;
+}
+
+.slider .next {
+  right: 2.5%;
+  z-index: 3;
+}
+
+/* ===================================================================================================================== */
+/* TODO:  PART 6 - NAVIGATION DOTS (BOTTOM)                                                                              */
+/* --------------------------------------------------------------------------------------------------------------------- */
+
+/* ------------------------------- */
+/* FIXME:  VIEW - MOBILE FIRST     */
+/* ------------------------------- */
+
+.dots {
+  position: absolute;
+  bottom: 0.75%;
+  width: 100%;
+  text-align: center;
+  z-index: 3;
+}
+
+.dots span {
+  width: 0.6rem;
+  height: 0.6rem;
+  border-radius: 100px;
+  margin: 0rem 0.3rem 0rem 0.3rem;
+  background-color: var(--color-dots-background-not-active);
+  display: inline-block;
+  transition: 0.4s linear;
+  z-index: 3;
+  cursor: pointer;
+}
+
+.dots span:hover {
+  background-color: var(--color-dots-background-hover) !important;
+  border: 1px solid #fff;
+}
+
+.dot-active {
+  background-color: var(--color-dots-background-active) !important;
+  border: 1px solid #fff;
+}
+
+/* ===================================================================================================================== */
+/* TODO:  PART 7 - RESPONSIVE DESIGN - MEDIA QUERIES - FOR LARGER SCREENS (LAPTOPS / PC's / TV's etc.)                   */
+/* --------------------------------------------------------------------------------------------------------------------- */
+
+/* ---------------------------------- */
+/* FIXME:  VIEW - ON LARGER SCREENS   */
+/* ---------------------------------- */
+
+@media screen and (min-width: 250px) {
+  .slider {
+    min-height: 14vh;
+  }
+}
+
+@media screen and (min-width: 280px) {
+  .slider {
+    min-height: 15.7vh;
+  }
+
+  .slide-data .slide__title p {
+    font-size: 0.8rem;
+    line-height: 1;
+  }
+
+  .slide-data .slide__content p {
+    font-size: 0.65rem;
+    line-height: 1.2;
+  }
+
+  .slide-data .slide__button button {
+    font-size: 0.65rem;
+    line-height: 1;
+  }
+
+  .slider .arrows {
+    font-size: 2rem;
+  }
+
+  .dots span {
+    width: 0.6rem;
+    height: 0.6rem;
+    margin: 0rem 0.3rem 0rem 0.3rem;
+  }
+}
+
+@media screen and (min-width: 280px) and (min-height: 653px) {
+  .slider {
+    min-height: 14.75vh;
+  }
+}
+
+@media screen and (min-width: 350px) {
+  .slider {
+    min-height: 19.5vh;
+  }
+
+  .slide-data .slide__title p {
+    font-size: 0.85rem;
+    line-height: 1;
+  }
+
+  .slide-data .slide__content p {
+    font-size: 0.75rem;
+    line-height: 1.2;
+  }
+
+  .slide-data .slide__button button {
+    font-size: 0.75rem;
+    line-height: 1;
+  }
+
+  .slider .arrows {
+    font-size: 2.25rem;
+  }
+
+  .dots span {
+    width: 0.65rem;
+    height: 0.65rem;
+    margin: 0rem 0.3rem 0rem 0.3rem;
+  }
+}
+
+@media screen and (min-width: 360px) and (min-height: 740px) {
+  .slider {
+    min-height: 16.75vh;
+  }
+}
+
+@media screen and (min-width: 375px) and (min-height: 667px) {
+  .slider {
+    min-height: 19.3vh;
+  }
+}
+
+@media screen and (min-width: 390px) and (min-height: 844px) {
+  .slider {
+    min-height: 15.6vh;
+  }
+}
+
+@media screen and (min-width: 393px) and (min-height: 851px) {
+  .slider {
+    min-height: 16vh;
+  }
+}
+
+@media screen and (min-width: 400px) {
+  .slider {
+    min-height: 22.25vh;
+  }
+
+  .slide-data .slide__title p {
+    font-size: 0.9rem;
+    line-height: 1.15;
+  }
+
+  .slide-data .slide__content p {
+    font-size: 0.85rem;
+    line-height: 1.2;
+  }
+
+  .slide-data .slide__button button {
+    font-size: 0.85rem;
+    line-height: 1.15;
+  }
+
+  .slider .arrows {
+    font-size: 2.5rem;
+  }
+
+  .dots span {
+    width: 0.7rem;
+    height: 0.7rem;
+    margin: 0rem 0.3rem 0rem 0.3rem;
+  }
+}
+
+@media screen and (min-width: 412px) and (min-height: 914px) {
+  .slider {
+    min-height: 15.4vh;
+  }
+}
+
+@media screen and (min-width: 414px) and (min-height: 896px) {
+  .slider {
+    min-height: 16vh;
+  }
+}
+
+@media screen and (min-width: 500px) {
+  .slider {
+    min-height: 27.75vh;
+  }
+
+  .slide-data .slide__title p {
+    font-size: 1rem;
+    line-height: 1.2;
+  }
+
+  .slide-data .slide__content p {
+    font-size: 0.95rem;
+    line-height: 1.2;
+  }
+
+  .slide-data .slide__button button {
+    font-size: 0.95rem;
+    line-height: 1.2;
+  }
+
+  .slider .arrows {
+    font-size: 2.75rem;
+  }
+
+  .dots span {
+    width: 0.75rem;
+    height: 0.75rem;
+    margin: 0rem 0.3rem 0rem 0.3rem;
+  }
+}
+
+@media screen and (min-width: 540px) and (min-height: 720px) {
+  .slider {
+    min-height: 25.75vh;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .slider {
+    min-height: 33.5vh;
+  }
+
+  .slide-data .slide__title p {
+    font-size: 1.1rem;
+    line-height: 1.3;
+  }
+
+  .slide-data .slide__content p {
+    font-size: 1.05rem;
+    line-height: 1.2;
+  }
+
+  .slide-data .slide__button button {
+    font-size: 1.05rem;
+    line-height: 1.2;
+  }
+
+  .slider .arrows {
+    font-size: 3rem;
+  }
+
+  .dots span {
+    width: 0.9rem;
+    height: 0.9rem;
+    margin: 0rem 0.3rem 0rem 0.3rem;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .slider {
+    min-height: 39vh;
+  }
+
+  .slide-data .slide__title p {
+    font-size: 1.2rem;
+    line-height: 1.4;
+  }
+
+  .slide-data .slide__content p {
+    font-size: 1.2rem;
+    line-height: 1.4;
+  }
+
+  .slide-data .slide__button button {
+    font-size: 1.2rem;
+    line-height: 1.4;
+  }
+
+  .slider .arrows {
+    font-size: 3.25rem;
+  }
+
+  .dots span {
+    width: 1rem;
+    height: 1rem;
+    margin: 0rem 0.3rem 0rem 0.3rem;
+  }
+}
+
+@media screen and (min-width: 768px) and (min-height: 1024px) {
+  .slider {
+    min-height: 25.75vh;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .slider {
+    min-height: 44vh;
+  }
+
+  .slide-data .slide__title p {
+    font-size: 1.35rem;
+    line-height: 1.5;
+  }
+
+  .slide-data .slide__content p {
+    font-size: 1.3rem;
+    line-height: 1.5;
+  }
+
+  .slide-data .slide__button button {
+    font-size: 1.3rem;
+    line-height: 1.5;
+  }
+
+  .slider .arrows {
+    font-size: 3.5rem;
+  }
+
+  .dots span {
+    width: 1.05rem;
+    height: 1.05rem;
+    margin: 0rem 0.3rem 0rem 0.3rem;
+  }
+}
+
+@media screen and (min-width: 820px) and (min-height: 1180px) {
+  .slider {
+    min-height: 23.75vh;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .slider {
+    min-height: 50vh;
+  }
+
+  .slide-data .slide__title p {
+    font-size: 1.45rem;
+    line-height: 1.5;
+  }
+
+  .slide-data .slide__content p {
+    font-size: 1.35rem;
+    line-height: 1.5;
+  }
+
+  .slide-data .slide__button button {
+    font-size: 1.35rem;
+    line-height: 1.5;
+  }
+
+  .slider .arrows {
+    font-size: 3.75rem;
+  }
+
+  .dots span {
+    width: 1.15rem;
+    height: 1.15rem;
+    margin: 0rem 0.3rem 0rem 0.3rem;
+  }
+}
+
+@media screen and (min-width: 912px) and (min-height: 1368px) {
+  .slider {
+    min-height: 22.75vh;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .slider {
+    min-height: 55vh;
+  }
+
+  .slide-data .slide__title p {
+    font-size: 1.475rem;
+    line-height: 1.5;
+  }
+
+  .slide-data .slide__content p {
+    font-size: 1.4rem;
+    line-height: 1.5;
+  }
+
+  .slide-data .slide__button button {
+    font-size: 1.4rem;
+    line-height: 1.5;
+  }
+
+  .slider .arrows {
+    font-size: 4rem;
+  }
+
+  .dots span {
+    width: 1.2rem;
+    height: 1.2rem;
+    margin: 0rem 0.5rem 0rem 0.5rem;
+  }
+}
+
+@media screen and (min-width: 1024px) and (min-height: 600) {
+  .slider {
+    min-height: 58.5vh;
+  }
+}
+
+@media screen and (min-width: 1029px) {
+  .slider {
+    min-height: 57.25vh;
+  }
+
+  .slide-data .slide__title p {
+    font-size: 1.55rem;
+    line-height: 1.5;
+  }
+
+  .slide-data .slide__content p {
+    font-size: 1.45rem;
+    line-height: 1.5;
+  }
+
+  .slide-data .slide__button button {
+    font-size: 1.45rem;
+    line-height: 1.5;
+  }
+
+  .slider .arrows {
+    font-size: 4.25rem;
+  }
+
+  .dots span {
+    width: 1.3rem;
+    height: 1.3rem;
+    margin: 0rem 0.5rem 0rem 0.5rem;
+  }
+}
+
+@media screen and (min-width: 1040px) {
+  .slider {
+    min-height: 58.5vh;
+  }
+}
+
+@media screen and (min-width: 1050px) {
+  .slider {
+    min-height: 60vh;
+  }
+}
+
+@media screen and (min-width: 1100px) {
+  .slider {
+    min-height: 63vh;
+  }
+
+  .slide-data .slide__title p {
+    font-size: 1.6rem;
+    line-height: 1.5;
+  }
+
+  .slide-data .slide__content p {
+    font-size: 1.5rem;
+    line-height: 1.5;
+  }
+
+  .slide-data .slide__button button {
+    font-size: 1.5rem;
+    line-height: 1.5;
+  }
+
+  .slider .arrows {
+    font-size: 4.5rem;
+  }
+
+  .dots span {
+    width: 1.35rem;
+    height: 1.35rem;
+    margin: 0rem 0.5rem 0rem 0.5rem;
+  }
+}
+
+@media screen and (min-width: 1150px) {
+  .slider {
+    min-height: 65vh;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .slider {
+    min-height: 67vh;
+  }
+
+  .slide-data .slide__title p {
+    font-size: 1.8rem;
+    line-height: 1.5;
+  }
+
+  .slide-data .slide__content p {
+    font-size: 1.6rem;
+    line-height: 1.5;
+  }
+
+  .slide-data .slide__button button {
+    font-size: 1.6rem;
+    line-height: 1.5;
+  }
+
+  .slider .arrows {
+    font-size: 4.5rem;
+  }
+
+  .dots span {
+    width: 1.4rem;
+    height: 1.4rem;
+    margin: 0rem 0.5rem 0rem 0.5rem;
+  }
+}
+
+@media screen and (min-width: 1250px) {
+  .slider {
+    min-height: 69vh;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .slider {
+    min-height: 71vh;
+  }
+}
+
+/* NEST HUB MAX - 1280 x 800 */
+@media screen and (min-width: 1280px) and (min-height: 800px) {
+  .slider {
+    min-height: 54.75vh;
+  }
+}
+
+/* ===================================================================================================================== */
+/*                           FIXME:TODO:FIXME:  HERO BANNER STYLING END  FIXME:TODO:FIXME:                             */
+/* ===================================================================================================================== */
+
+/* ===================================================================================================================== */
+/* TODO:  PART 2A - KETTIE MEISIE PROMOTIONAL PAGE - LOGO                                                                */
 /* ===================================================================================================================== */
 
 /* ------------------------------- */
@@ -217,7 +1037,7 @@ h6 {
   position: relative;
   justify-content: center;
   align-items: center;
-  margin: 1rem 1rem 1rem 1rem;
+  margin: 2rem 1rem 1rem 1rem;
   /* border: 1px solid red; */
 }
 
@@ -229,7 +1049,7 @@ h6 {
 }
 
 /* ===================================================================================================================== */
-/* TODO:  PART 1B - KETTIE MEISIE PROMOTIONAL PAGE - PAGE TITLE (ONLY USE IF APPLICABLE)                                 */
+/* TODO:  PART 2B - KETTIE MEISIE PROMOTIONAL PAGE - PAGE TITLE (ONLY USE IF APPLICABLE)                                 */
 /* ===================================================================================================================== */
 
 /* ------------------------------- */
@@ -244,10 +1064,6 @@ h6 {
   margin: 1.5rem 0rem 1.5rem 0rem;
   text-align: center;
 }
-
-/* ===================================================================================================================== */
-/* TODO:  PART 2 - KETTIE MEISIE PROMOTIONAL PAGE - HERO ROTATING BANNER                                                 */
-/* ===================================================================================================================== */
 
 /* ===================================================================================================================== */
 /* TODO:  PART 3 - KETTIE MEISIE PROMOTIONAL PAGE - BUTTONS / LINKS TO KETTIE MEISIE WEBSITE                             */
@@ -383,7 +1199,7 @@ section {
   font-weight: 600;
   letter-spacing: 0.2rem;
   text-transform: uppercase;
-  padding: 0.5rem 3rem 0.5rem 1rem;
+  padding: 0.5rem 1rem 0.5rem 1rem;
   cursor: pointer;
 }
 
@@ -410,6 +1226,7 @@ section {
 
 .kettie__meisie-accordian-item-header.active {
   color: var(--color-accordian-item-header-active);
+  justify-content: center;
 }
 
 /* ===================================================================================================================== */
@@ -1220,7 +2037,7 @@ section {
   font-size: 1.1rem;
   font-weight: 500;
   text-transform: initial;
-  text-align: center;
+  text-align: justify;
   color: var(--color-product-card-short-description);
   /* border: 1px solid red; */
 }
