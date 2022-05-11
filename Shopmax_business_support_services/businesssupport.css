@@ -189,7 +189,7 @@ h6 {
   justify-content: center;
   justify-items: center;
   text-transform: uppercase;
-  margin: 1.5rem 0rem 1.5rem 0rem;
+  margin: 1.5rem 0.5rem 1.5rem 0.5rem;
   text-align: center;
 }
 
@@ -206,7 +206,7 @@ h6 {
   height: auto;
   object-fit: cover;
   margin: 0rem 0rem 0rem 0rem;
-  border: 2px solid red;
+  /* border: 2px solid red; */
 }
 
 /* .bss__all__service__cards__container img {
@@ -248,7 +248,81 @@ h6 {
 /* FIXME:  PRODUCT CARD CONTAINER  */
 /* ------------------------------- */
 
-.product-card-container-all .product-card {
+.product-card-container-all .product-card-701_01_01,
+.product-card-container-all .product-card-701_01_02,
+.product-card-container-all .product-card-701_01_03,
+.product-card-container-all .product-card-701_01_04,
+.product-card-container-all .product-card-701_01_05,
+.product-card-container-all .product-card-701_01_06,
+.product-card-container-all .product-card-701_01_07,
+.product-card-container-all .product-card-701_01_08,
+.product-card-container-all .product-card-701_01_09,
+.product-card-container-all .product-card-701_01_10,
+.product-card-container-all .product-card-701_01_11,
+.product-card-container-all .product-card-701_01_12,
+.product-card-container-all .product-card-701_01_13,
+.product-card-container-all .product-card-701_01_14,
+.product-card-container-all .product-card-701_01_15,
+.product-card-container-all .product-card-701_01_16,
+.product-card-container-all .product-card-701_01_17,
+.product-card-container-all .product-card-701_01_18,
+.product-card-container-all .product-card-701_01_19,
+.product-card-container-all .product-card-701_01_20,
+.product-card-container-all .product-card-701_01_21,
+.product-card-container-all .product-card-701_01_22,
+.product-card-container-all .product-card-701_01_23,
+.product-card-container-all .product-card-701_01_24,
+.product-card-container-all .product-card-701_01_25,
+.product-card-container-all .product-card-701_01_26,
+.product-card-container-all .product-card-701_01_27,
+.product-card-container-all .product-card-701_01_28,
+.product-card-container-all .product-card-701_01_29,
+.product-card-container-all .product-card-701_01_30,
+.product-card-container-all .product-card-701_01_31,
+.product-card-container-all .product-card-701_01_32,
+.product-card-container-all .product-card-701_01_33,
+.product-card-container-all .product-card-701_01_34,
+.product-card-container-all .product-card-701_01_35,
+.product-card-container-all .product-card-701_01_36,
+.product-card-container-all .product-card-701_01_37,
+.product-card-container-all .product-card-701_01_38,
+.product-card-container-all .product-card-701_01_39,
+.product-card-container-all .product-card-701_01_40,
+.product-card-container-all .product-card-701_01_41,
+.product-card-container-all .product-card-701_01_42,
+.product-card-container-all .product-card-701_01_43,
+.product-card-container-all .product-card-701_01_44,
+.product-card-container-all .product-card-701_01_45,
+.product-card-container-all .product-card-701_01_46,
+.product-card-container-all .product-card-701_01_47,
+.product-card-container-all .product-card-701_01_48,
+.product-card-container-all .product-card-701_01_49,
+.product-card-container-all .product-card-701_01_50,
+.product-card-container-all .product-card-701_01_51,
+.product-card-container-all .product-card-701_01_52,
+.product-card-container-all .product-card-701_01_53,
+.product-card-container-all .product-card-701_01_54,
+.product-card-container-all .product-card-701_01_55,
+.product-card-container-all .product-card-701_01_56,
+.product-card-container-all .product-card-701_01_57,
+.product-card-container-all .product-card-701_01_58,
+.product-card-container-all .product-card-701_01_59,
+.product-card-container-all .product-card-701_01_60,
+.product-card-container-all .product-card-701_01_61,
+.product-card-container-all .product-card-701_01_62,
+.product-card-container-all .product-card-701_01_63,
+.product-card-container-all .product-card-701_01_64,
+.product-card-container-all .product-card-701_01_65,
+.product-card-container-all .product-card-701_01_66,
+.product-card-container-all .product-card-701_01_67,
+.product-card-container-all .product-card-701_01_68,
+.product-card-container-all .product-card-701_01_69,
+.product-card-container-all .product-card-701_01_70,
+.product-card-container-all .product-card-701_01_71,
+.product-card-container-all .product-card-701_01_72,
+.product-card-container-all .product-card-701_01_73,
+.product-card-container-all .product-card-701_01_74,
+.product-card-container-all .product-card-701_01_75 {
   position: absolute;
   transition: transform 1s;
   transform-style: preserve-3d;
@@ -268,7 +342,81 @@ h6 {
 /* TODO:FIXME:     JAVASCRIPT : FOR FLIP FUNCTIONALITY     TODO:FIXME: */
 /* ------------------------------------------------------------------- */
 
-.product-card-container-all .product-card.animated {
+.product-card-container-all .product-card-701_01_01.animated,
+.product-card-container-all .product-card-701_01_02.animated,
+.product-card-container-all .product-card-701_01_03.animated,
+.product-card-container-all .product-card-701_01_04.animated,
+.product-card-container-all .product-card-701_01_05.animated,
+.product-card-container-all .product-card-701_01_06.animated,
+.product-card-container-all .product-card-701_01_07.animated,
+.product-card-container-all .product-card-701_01_08.animated,
+.product-card-container-all .product-card-701_01_09.animated,
+.product-card-container-all .product-card-701_01_10.animated,
+.product-card-container-all .product-card-701_01_11.animated,
+.product-card-container-all .product-card-701_01_12.animated,
+.product-card-container-all .product-card-701_01_13.animated,
+.product-card-container-all .product-card-701_01_14.animated,
+.product-card-container-all .product-card-701_01_15.animated,
+.product-card-container-all .product-card-701_01_16.animated,
+.product-card-container-all .product-card-701_01_17.animated,
+.product-card-container-all .product-card-701_01_18.animated,
+.product-card-container-all .product-card-701_01_19.animated,
+.product-card-container-all .product-card-701_01_20.animated,
+.product-card-container-all .product-card-701_01_21.animated,
+.product-card-container-all .product-card-701_01_22.animated,
+.product-card-container-all .product-card-701_01_23.animated,
+.product-card-container-all .product-card-701_01_24.animated,
+.product-card-container-all .product-card-701_01_25.animated,
+.product-card-container-all .product-card-701_01_26.animated,
+.product-card-container-all .product-card-701_01_27.animated,
+.product-card-container-all .product-card-701_01_28.animated,
+.product-card-container-all .product-card-701_01_29.animated,
+.product-card-container-all .product-card-701_01_30.animated,
+.product-card-container-all .product-card-701_01_31.animated,
+.product-card-container-all .product-card-701_01_32.animated,
+.product-card-container-all .product-card-701_01_33.animated,
+.product-card-container-all .product-card-701_01_34.animated,
+.product-card-container-all .product-card-701_01_35.animated,
+.product-card-container-all .product-card-701_01_36.animated,
+.product-card-container-all .product-card-701_01_37.animated,
+.product-card-container-all .product-card-701_01_38.animated,
+.product-card-container-all .product-card-701_01_39.animated,
+.product-card-container-all .product-card-701_01_40.animated,
+.product-card-container-all .product-card-701_01_41.animated,
+.product-card-container-all .product-card-701_01_42.animated,
+.product-card-container-all .product-card-701_01_43.animated,
+.product-card-container-all .product-card-701_01_44.animated,
+.product-card-container-all .product-card-701_01_45.animated,
+.product-card-container-all .product-card-701_01_46.animated,
+.product-card-container-all .product-card-701_01_47.animated,
+.product-card-container-all .product-card-701_01_48.animated,
+.product-card-container-all .product-card-701_01_49.animated,
+.product-card-container-all .product-card-701_01_50.animated,
+.product-card-container-all .product-card-701_01_51.animated,
+.product-card-container-all .product-card-701_01_52.animated,
+.product-card-container-all .product-card-701_01_53.animated,
+.product-card-container-all .product-card-701_01_54.animated,
+.product-card-container-all .product-card-701_01_55.animated,
+.product-card-container-all .product-card-701_01_56.animated,
+.product-card-container-all .product-card-701_01_57.animated,
+.product-card-container-all .product-card-701_01_58.animated,
+.product-card-container-all .product-card-701_01_59.animated,
+.product-card-container-all .product-card-701_01_60.animated,
+.product-card-container-all .product-card-701_01_61.animated,
+.product-card-container-all .product-card-701_01_62.animated,
+.product-card-container-all .product-card-701_01_63.animated,
+.product-card-container-all .product-card-701_01_64.animated,
+.product-card-container-all .product-card-701_01_65.animated,
+.product-card-container-all .product-card-701_01_66.animated,
+.product-card-container-all .product-card-701_01_67.animated,
+.product-card-container-all .product-card-701_01_68.animated,
+.product-card-container-all .product-card-701_01_69.animated,
+.product-card-container-all .product-card-701_01_70.animated,
+.product-card-container-all .product-card-701_01_71.animated,
+.product-card-container-all .product-card-701_01_72.animated,
+.product-card-container-all .product-card-701_01_73.animated,
+.product-card-container-all .product-card-701_01_74.animated,
+.product-card-container-all .product-card-701_01_75.animated {
   transform: rotateY(-180deg);
 }
 
@@ -276,7 +424,81 @@ h6 {
 /* FIXME:  SUB-CONTAINER - HOLDING ALL ELEMENTS OF CARD (FRONT)  FIXME: */
 /* -------------------------------------------------------------------- */
 
-.product-card-container-all .product-card .product-card-front-side {
+.product-card-container-all .product-card-701_01_01 .product-card-front-side,
+.product-card-container-all .product-card-701_01_02 .product-card-front-side,
+.product-card-container-all .product-card-701_01_03 .product-card-front-side,
+.product-card-container-all .product-card-701_01_04 .product-card-front-side,
+.product-card-container-all .product-card-701_01_05 .product-card-front-side,
+.product-card-container-all .product-card-701_01_06 .product-card-front-side,
+.product-card-container-all .product-card-701_01_07 .product-card-front-side,
+.product-card-container-all .product-card-701_01_08 .product-card-front-side,
+.product-card-container-all .product-card-701_01_09 .product-card-front-side,
+.product-card-container-all .product-card-701_01_10 .product-card-front-side,
+.product-card-container-all .product-card-701_01_11 .product-card-front-side,
+.product-card-container-all .product-card-701_01_12 .product-card-front-side,
+.product-card-container-all .product-card-701_01_13 .product-card-front-side,
+.product-card-container-all .product-card-701_01_14 .product-card-front-side,
+.product-card-container-all .product-card-701_01_15 .product-card-front-side,
+.product-card-container-all .product-card-701_01_16 .product-card-front-side,
+.product-card-container-all .product-card-701_01_17 .product-card-front-side,
+.product-card-container-all .product-card-701_01_18 .product-card-front-side,
+.product-card-container-all .product-card-701_01_19 .product-card-front-side,
+.product-card-container-all .product-card-701_01_20 .product-card-front-side,
+.product-card-container-all .product-card-701_01_21 .product-card-front-side,
+.product-card-container-all .product-card-701_01_22 .product-card-front-side,
+.product-card-container-all .product-card-701_01_23 .product-card-front-side,
+.product-card-container-all .product-card-701_01_24 .product-card-front-side,
+.product-card-container-all .product-card-701_01_25 .product-card-front-side,
+.product-card-container-all .product-card-701_01_26 .product-card-front-side,
+.product-card-container-all .product-card-701_01_27 .product-card-front-side,
+.product-card-container-all .product-card-701_01_28 .product-card-front-side,
+.product-card-container-all .product-card-701_01_29 .product-card-front-side,
+.product-card-container-all .product-card-701_01_30 .product-card-front-side,
+.product-card-container-all .product-card-701_01_31 .product-card-front-side,
+.product-card-container-all .product-card-701_01_32 .product-card-front-side,
+.product-card-container-all .product-card-701_01_33 .product-card-front-side,
+.product-card-container-all .product-card-701_01_34 .product-card-front-side,
+.product-card-container-all .product-card-701_01_35 .product-card-front-side,
+.product-card-container-all .product-card-701_01_36 .product-card-front-side,
+.product-card-container-all .product-card-701_01_37 .product-card-front-side,
+.product-card-container-all .product-card-701_01_38 .product-card-front-side,
+.product-card-container-all .product-card-701_01_39 .product-card-front-side,
+.product-card-container-all .product-card-701_01_40 .product-card-front-side,
+.product-card-container-all .product-card-701_01_41 .product-card-front-side,
+.product-card-container-all .product-card-701_01_42 .product-card-front-side,
+.product-card-container-all .product-card-701_01_43 .product-card-front-side,
+.product-card-container-all .product-card-701_01_44 .product-card-front-side,
+.product-card-container-all .product-card-701_01_45 .product-card-front-side,
+.product-card-container-all .product-card-701_01_46 .product-card-front-side,
+.product-card-container-all .product-card-701_01_47 .product-card-front-side,
+.product-card-container-all .product-card-701_01_48 .product-card-front-side,
+.product-card-container-all .product-card-701_01_49 .product-card-front-side,
+.product-card-container-all .product-card-701_01_50 .product-card-front-side,
+.product-card-container-all .product-card-701_01_51 .product-card-front-side,
+.product-card-container-all .product-card-701_01_52 .product-card-front-side,
+.product-card-container-all .product-card-701_01_53 .product-card-front-side,
+.product-card-container-all .product-card-701_01_54 .product-card-front-side,
+.product-card-container-all .product-card-701_01_55 .product-card-front-side,
+.product-card-container-all .product-card-701_01_56 .product-card-front-side,
+.product-card-container-all .product-card-701_01_57 .product-card-front-side,
+.product-card-container-all .product-card-701_01_58 .product-card-front-side,
+.product-card-container-all .product-card-701_01_59 .product-card-front-side,
+.product-card-container-all .product-card-701_01_60 .product-card-front-side,
+.product-card-container-all .product-card-701_01_61 .product-card-front-side,
+.product-card-container-all .product-card-701_01_62 .product-card-front-side,
+.product-card-container-all .product-card-701_01_63 .product-card-front-side,
+.product-card-container-all .product-card-701_01_64 .product-card-front-side,
+.product-card-container-all .product-card-701_01_65 .product-card-front-side,
+.product-card-container-all .product-card-701_01_66 .product-card-front-side,
+.product-card-container-all .product-card-701_01_67 .product-card-front-side,
+.product-card-container-all .product-card-701_01_68 .product-card-front-side,
+.product-card-container-all .product-card-701_01_69 .product-card-front-side,
+.product-card-container-all .product-card-701_01_70 .product-card-front-side,
+.product-card-container-all .product-card-701_01_71 .product-card-front-side,
+.product-card-container-all .product-card-701_01_72 .product-card-front-side,
+.product-card-container-all .product-card-701_01_73 .product-card-front-side,
+.product-card-container-all .product-card-701_01_74 .product-card-front-side,
+.product-card-container-all .product-card-701_01_75 .product-card-front-side {
   position: absolute;
   top: 0;
   left: 0;
@@ -288,7 +510,7 @@ h6 {
   border-radius: 1.5rem;
   overflow: hidden;
   margin: 0rem 0rem 0rem 0rem;
-  padding: 0.75rem 0.75rem 0.75rem 0.75rem;
+  padding: 0.75rem 0.5rem 0.75rem 0.5rem;
   box-shadow: var(--color-box-shadow-01);
   /* border: 1px solid red; */
 }
@@ -297,7 +519,81 @@ h6 {
 /* FIXME:  SUB-CONTAINER - HOLDING ALL ELEMENTS OF CARD (BACK)  FIXME: */
 /* -------------------------------------------------------------------- */
 
-.product-card-container-all .product-card .product-card-back-side {
+.product-card-container-all .product-card-701_01_01 .product-card-back-side,
+.product-card-container-all .product-card-701_01_02 .product-card-back-side,
+.product-card-container-all .product-card-701_01_03 .product-card-back-side,
+.product-card-container-all .product-card-701_01_04 .product-card-back-side,
+.product-card-container-all .product-card-701_01_05 .product-card-back-side,
+.product-card-container-all .product-card-701_01_06 .product-card-back-side,
+.product-card-container-all .product-card-701_01_07 .product-card-back-side,
+.product-card-container-all .product-card-701_01_08 .product-card-back-side,
+.product-card-container-all .product-card-701_01_09 .product-card-back-side,
+.product-card-container-all .product-card-701_01_10 .product-card-back-side,
+.product-card-container-all .product-card-701_01_11 .product-card-back-side,
+.product-card-container-all .product-card-701_01_12 .product-card-back-side,
+.product-card-container-all .product-card-701_01_13 .product-card-back-side,
+.product-card-container-all .product-card-701_01_14 .product-card-back-side,
+.product-card-container-all .product-card-701_01_15 .product-card-back-side,
+.product-card-container-all .product-card-701_01_16 .product-card-back-side,
+.product-card-container-all .product-card-701_01_17 .product-card-back-side,
+.product-card-container-all .product-card-701_01_18 .product-card-back-side,
+.product-card-container-all .product-card-701_01_19 .product-card-back-side,
+.product-card-container-all .product-card-701_01_20 .product-card-back-side,
+.product-card-container-all .product-card-701_01_21 .product-card-back-side,
+.product-card-container-all .product-card-701_01_22 .product-card-back-side,
+.product-card-container-all .product-card-701_01_23 .product-card-back-side,
+.product-card-container-all .product-card-701_01_24 .product-card-back-side,
+.product-card-container-all .product-card-701_01_25 .product-card-back-side,
+.product-card-container-all .product-card-701_01_26 .product-card-back-side,
+.product-card-container-all .product-card-701_01_27 .product-card-back-side,
+.product-card-container-all .product-card-701_01_28 .product-card-back-side,
+.product-card-container-all .product-card-701_01_29 .product-card-back-side,
+.product-card-container-all .product-card-701_01_30 .product-card-back-side,
+.product-card-container-all .product-card-701_01_31 .product-card-back-side,
+.product-card-container-all .product-card-701_01_32 .product-card-back-side,
+.product-card-container-all .product-card-701_01_33 .product-card-back-side,
+.product-card-container-all .product-card-701_01_34 .product-card-back-side,
+.product-card-container-all .product-card-701_01_35 .product-card-back-side,
+.product-card-container-all .product-card-701_01_36 .product-card-back-side,
+.product-card-container-all .product-card-701_01_37 .product-card-back-side,
+.product-card-container-all .product-card-701_01_38 .product-card-back-side,
+.product-card-container-all .product-card-701_01_39 .product-card-back-side,
+.product-card-container-all .product-card-701_01_40 .product-card-back-side,
+.product-card-container-all .product-card-701_01_41 .product-card-back-side,
+.product-card-container-all .product-card-701_01_42 .product-card-back-side,
+.product-card-container-all .product-card-701_01_43 .product-card-back-side,
+.product-card-container-all .product-card-701_01_44 .product-card-back-side,
+.product-card-container-all .product-card-701_01_45 .product-card-back-side,
+.product-card-container-all .product-card-701_01_46 .product-card-back-side,
+.product-card-container-all .product-card-701_01_47 .product-card-back-side,
+.product-card-container-all .product-card-701_01_48 .product-card-back-side,
+.product-card-container-all .product-card-701_01_49 .product-card-back-side,
+.product-card-container-all .product-card-701_01_50 .product-card-back-side,
+.product-card-container-all .product-card-701_01_51 .product-card-back-side,
+.product-card-container-all .product-card-701_01_52 .product-card-back-side,
+.product-card-container-all .product-card-701_01_53 .product-card-back-side,
+.product-card-container-all .product-card-701_01_54 .product-card-back-side,
+.product-card-container-all .product-card-701_01_55 .product-card-back-side,
+.product-card-container-all .product-card-701_01_56 .product-card-back-side,
+.product-card-container-all .product-card-701_01_57 .product-card-back-side,
+.product-card-container-all .product-card-701_01_58 .product-card-back-side,
+.product-card-container-all .product-card-701_01_59 .product-card-back-side,
+.product-card-container-all .product-card-701_01_60 .product-card-back-side,
+.product-card-container-all .product-card-701_01_61 .product-card-back-side,
+.product-card-container-all .product-card-701_01_62 .product-card-back-side,
+.product-card-container-all .product-card-701_01_63 .product-card-back-side,
+.product-card-container-all .product-card-701_01_64 .product-card-back-side,
+.product-card-container-all .product-card-701_01_65 .product-card-back-side,
+.product-card-container-all .product-card-701_01_66 .product-card-back-side,
+.product-card-container-all .product-card-701_01_67 .product-card-back-side,
+.product-card-container-all .product-card-701_01_68 .product-card-back-side,
+.product-card-container-all .product-card-701_01_69 .product-card-back-side,
+.product-card-container-all .product-card-701_01_70 .product-card-back-side,
+.product-card-container-all .product-card-701_01_71 .product-card-back-side,
+.product-card-container-all .product-card-701_01_72 .product-card-back-side,
+.product-card-container-all .product-card-701_01_73 .product-card-back-side,
+.product-card-container-all .product-card-701_01_74 .product-card-back-side,
+.product-card-container-all .product-card-701_01_75 .product-card-back-side {
   position: absolute;
   top: 0;
   left: 0;
@@ -313,6 +609,14 @@ h6 {
   padding: 0.75rem 0.75rem 0.75rem 0.75rem;
   box-shadow: var(--color-box-shadow-01);
   /* border: 1px solid red; */
+}
+
+/* MEDIA QUERY - PRODUCT CARD CONTAINERS */
+
+@media screen and (max-width: 350px) {
+  .product-card-container-all {
+    margin: 2rem 0.75rem 2rem 0.75rem;
+  }
 }
 
 /* ===================================================================================================================== */
@@ -466,7 +770,7 @@ h6 {
   width: 100%;
   height: 6.5rem;
   margin: 0rem 0rem 0rem 0rem;
-  padding: 0.2rem 1rem 0.2rem 1rem;
+  padding: 0.2rem 0.5rem 0.2rem 0.5rem;
   font-size: 1.1rem;
   font-weight: 500;
   text-transform: initial;
@@ -487,6 +791,7 @@ h6 {
   display: flex;
   justify-content: center;
   align-items: center;
+  /* border: 1px solid green; */
 }
 
 /* ---------------------------------------------- */
@@ -496,11 +801,13 @@ h6 {
 
 input[type="date"] {
   /* width: 25rem; */
-  width: 100%;
+  /* width: 100%; */
+  font-family: "Poppins", sans-serif;
+  width: 10rem;
   border-radius: 0.5rem;
   border: 1px solid var(--color-input-border);
   margin: 0rem 0rem 0rem 0rem;
-  padding: 0.5rem 1.25rem 0.5rem 1.25rem;
+  padding: 0.5rem 0.25rem 0.5rem 0.25rem;
   font-size: 0.9rem;
   cursor: pointer;
   transition: border-color 0.15s, box-shadow 0.15s;
@@ -560,7 +867,7 @@ input[type="date"]:focus {
   justify-content: center;
   width: 100%;
   height: 4rem;
-  /* border: 1px solid red; */
+  /* border: 1px solid purple; */
 }
 
 /* ===================================================================================================================== */
@@ -626,6 +933,7 @@ input[type="date"]:focus {
   display: flex;
   justify-content: center;
   align-items: center;
+  /* border: 1px solid orangered; */
 }
 
 /* ---------------------------------------------- */
@@ -638,7 +946,7 @@ label {
   font-size: 1.1rem;
   font-weight: 600;
   text-transform: uppercase;
-  margin: 0.25rem 0.5rem 0.25rem 0.5rem;
+  margin: 0.25rem 0rem 0.25rem 0rem;
 }
 
 input::placeholder {
@@ -646,11 +954,12 @@ input::placeholder {
 }
 
 select {
-  width: 23rem;
+  font-family: "Poppins", sans-serif;
+  width: 21.75rem;
   text-align: left;
   border-radius: 0.5rem;
   border: 1px solid var(--color-input-border);
-  margin: 0rem 0.5rem 0rem 0.5rem;
+  margin: 0rem 0rem 0rem 0rem;
   padding: 0.5rem 0.5rem 0.5rem 0.5rem;
   font-size: 0.9rem;
   cursor: pointer;
@@ -661,6 +970,12 @@ select:focus {
   border-color: var(--color-input-border-focus);
   box-shadow: 0 0 0 2px rgba(220, 20, 60, 0.95);
   outline: 0;
+}
+
+@media screen and (min-width: 350px) {
+  select {
+    width: 22.5rem;
+  }
 }
 
 /* ===================================================================================================================== */
@@ -690,7 +1005,7 @@ select:focus {
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding: 0.5rem 0rem 0.25rem 0rem;
+  padding: 0.25rem 0rem 0.25rem 0rem;
   width: 100%;
   height: 2rem;
   font-size: 1rem;
@@ -1038,7 +1353,7 @@ i.bx-heart {
 /* ------------------------------------------------------------------------ */
 
 .information-container-back {
-  padding: 2rem 2rem 2rem 2rem;
+  padding: 2rem 1rem 2rem 1rem;
   width: 100%;
   height: 100%;
   text-align: center;
@@ -1079,13 +1394,13 @@ i.bx-heart {
   top: 3rem;
   left: 0;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
-  width: 26rem;
+  width: 100%;
   height: 3rem;
-  margin: 0rem 0rem 0.5rem 0rem;
+  margin: 0rem 0rem 0rem 0rem;
   padding: 0rem 0rem 0rem 0rem;
-  /* border: 1px solid red; */
+  /* border: 2px solid orange; */
 }
 
 /* ---------------------------------------------- */
@@ -1097,7 +1412,8 @@ i.bx-heart {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 11rem;
+  text-align: center;
+  width: 100%;
   height: 3rem;
   /* border: 1px solid blue; */
 }
@@ -1133,7 +1449,8 @@ i.bx-heart {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 15rem;
+  text-align: center;
+  width: 100%;
   height: 3rem;
   /* border: 1px solid blue; */
 }
@@ -1175,7 +1492,9 @@ i.bx-heart {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 26rem;
+  text-align: center;
+  margin: 0rem 0rem 0rem 0rem;
+  width: 100%;
   height: 27rem;
   /* border: 1px solid blue; */
 }
@@ -1199,17 +1518,18 @@ i.bx-heart {
 
 .service-full-description .service-specifications-details {
   position: absolute;
-  top: 1.5rem;
+  top: 2rem;
   left: 0;
   display: flex;
   justify-content: center;
-  align-items: center;
+  /* align-items: center; */
   text-align: justify;
   font-size: 0.8rem;
   font-weight: 500;
   text-decoration: none;
   text-transform: capitalize;
-  padding: 0.25rem 1.3rem 0.25rem 1.3rem;
+  margin: 0rem 0rem 0rem 0rem;
+  padding: 0.25rem 1rem 0.25rem 1rem;
   width: 100%;
   height: 25rem;
   /* border: 1px solid green; */
@@ -1230,8 +1550,9 @@ i.bx-heart {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 26rem;
-  height: 10rem;
+  width: 100%;
+  height: 11.5rem;
+  margin: 0rem 0rem 0rem 0rem;
   border-radius: 0rem 0rem 1.5rem 1.5rem;
   /* border: 1px solid blue; */
 }
@@ -1264,7 +1585,7 @@ i.bx-heart {
   font-size: 0.8rem;
   font-weight: 700;
   text-decoration: none;
-  padding: 0rem 1.3rem 0rem 1.3rem;
+  padding: 0rem 1rem 0rem 1rem;
   width: 100%;
   height: 8rem;
   border-radius: 0rem 0rem 1.5rem 1.5rem;
