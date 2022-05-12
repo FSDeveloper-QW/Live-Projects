@@ -184,7 +184,7 @@ h6 {
 /* FIXME:  VIEW - MOBILE FIRST     */
 /* ------------------------------- */
 
-.bss__page__title h5 {
+.legalservices__page__title h5 {
   display: flex;
   justify-content: center;
   justify-items: center;
@@ -197,7 +197,7 @@ h6 {
 /* TODO:  PART 2 - LEGAL SERVICES - CONTAINER HOLDING ALL SERVICE PRODUCT CARDS                                          */
 /* ===================================================================================================================== */
 
-.bss__all__service__cards__container {
+.legalservices__all__service__cards__container {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1307,7 +1307,7 @@ i.bx-heart {
   font-size: 0.8rem;
   font-weight: 500;
   text-decoration: none;
-  text-transform: capitalize;
+  text-transform: initial;
   margin: 0rem 0rem 0rem 0rem;
   padding: 0.25rem 1rem 0.25rem 1rem;
   width: 100%;
