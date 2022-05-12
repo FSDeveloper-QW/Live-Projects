@@ -60,225 +60,214 @@ document
 // =======================================================================================
 
 // ---------------------------------------------------------------------------------------
-// TODO: PRODUCT CARDS (BUSINESS SUPPORT SERVICES)
+// TODO: PRODUCT CARDS (IT, CLOUD & WEB SERVICES)
 // ---------------------------------------------------------------------------------------
 
 // ---------------------------------------------------------------------------------------
-// FIXME:  CARD 001 - 701_07_01 - ACCOUNTING SERVICES
+// FIXME:  CARD 001 - 701_02_01 - IT SUPPORT (REMOTE)
 // ---------------------------------------------------------------------------------------
 
 $(document).ready(function () {
-  $(".animate-701_07_01").click(function () {
-    $(".product-card-701_07_01").toggleClass("animated");
+  $(".animate-701_02_01").click(function () {
+    $(".product-card-701_02_01").toggleClass("animated");
     return false;
   });
 });
 
 // ---------------------------------------------------------------------------------------
-// FIXME:  CARD 002 - 701_07_02 - AUDITING SERVICES
+// FIXME:  CARD 002 - 701_02_02 - IT SUPPORT (ON-SITE)
 // ---------------------------------------------------------------------------------------
 
 $(document).ready(function () {
-  $(".animate-701_07_02").click(function () {
-    $(".product-card-701_07_02").toggleClass("animated");
+  $(".animate-701_02_02").click(function () {
+    $(".product-card-701_02_02").toggleClass("animated");
     return false;
   });
 });
 
 // ---------------------------------------------------------------------------------------
-// FIXME:  CARD 003 - 701_07_03 - TAX ADVISORY SERVICES
+// FIXME:  CARD 003 - 701_02_03 - OFFICE AUTOMATION
 // ---------------------------------------------------------------------------------------
 
 $(document).ready(function () {
-  $(".animate-701_07_03").click(function () {
-    $(".product-card-701_07_03").toggleClass("animated");
+  $(".animate-701_02_03").click(function () {
+    $(".product-card-701_02_03").toggleClass("animated");
     return false;
   });
 });
 
 // ---------------------------------------------------------------------------------------
-// FIXME:  CARD 004 - 701_07_04 - COMPANY SECRETARIAL SERVICES
+// FIXME:  CARD 004 - 701_02_04 - SECURITY & SURVEILLANCE
 // ---------------------------------------------------------------------------------------
 
 $(document).ready(function () {
-  $(".animate-701_07_04").click(function () {
-    $(".product-card-701_07_04").toggleClass("animated");
+  $(".animate-701_02_04").click(function () {
+    $(".product-card-701_02_04").toggleClass("animated");
     return false;
   });
 });
 
 // ---------------------------------------------------------------------------------------
-// FIXME:  CARD 005 - 701_07_05 - HR & PAYROLL SERVICES
+// FIXME:  CARD 005 - 701_02_05 - CABLING & NETWORKING
 // ---------------------------------------------------------------------------------------
 
 $(document).ready(function () {
-  $(".animate-701_07_05").click(function () {
-    $(".product-card-701_07_05").toggleClass("animated");
+  $(".animate-701_02_05").click(function () {
+    $(".product-card-701_02_05").toggleClass("animated");
     return false;
   });
 });
 
 // ---------------------------------------------------------------------------------------
-// FIXME:  CARD 006 - 701_07_06 - RECRUITMENT SERVICES
+// FIXME:  CARD 006 - 701_02_06 - POINT-OF-SALE (POS)
 // ---------------------------------------------------------------------------------------
 
 $(document).ready(function () {
-  $(".animate-701_07_06").click(function () {
-    $(".product-card-701_07_06").toggleClass("animated");
+  $(".animate-701_02_06").click(function () {
+    $(".product-card-701_02_06").toggleClass("animated");
     return false;
   });
 });
 
 // ---------------------------------------------------------------------------------------
-// FIXME:  CARD 007 - 701_07_07 - EMPLOYEE BENEFIT ADMINISTRATION
+// FIXME:  CARD 007 - 701_02_07 - VOIP / CLOUD TELEPHONY
 // ---------------------------------------------------------------------------------------
 
 $(document).ready(function () {
-  $(".animate-701_07_07").click(function () {
-    $(".product-card-701_07_07").toggleClass("animated");
+  $(".animate-701_02_07").click(function () {
+    $(".product-card-701_02_07").toggleClass("animated");
     return false;
   });
 });
 
 // ---------------------------------------------------------------------------------------
-// FIXME:  CARD 008 - 701_07_08 - COMPANY REGISTRATION (PTY)
+// FIXME:  CARD 008 - 701_02_08 - DISASTER RECOVERY & BACKUPS
 // ---------------------------------------------------------------------------------------
 
 $(document).ready(function () {
-  $(".animate-701_07_08").click(function () {
-    $(".product-card-701_07_08").toggleClass("animated");
+  $(".animate-701_02_08").click(function () {
+    $(".product-card-701_02_08").toggleClass("animated");
     return false;
   });
 });
 
 // ---------------------------------------------------------------------------------------
-// FIXME:  CARD 009 - 701_07_09 - COMPANY REGISTRATION (SHELF PTY)
+// FIXME:  CARD 009 - 701_02_09 - CLOUD SERVICES
 // ---------------------------------------------------------------------------------------
 
 $(document).ready(function () {
-  $(".animate-701_07_09").click(function () {
-    $(".product-card-701_07_09").toggleClass("animated");
+  $(".animate-701_02_09").click(function () {
+    $(".product-card-701_02_09").toggleClass("animated");
     return false;
   });
 });
 
 // ---------------------------------------------------------------------------------------
-// FIXME:  CARD 010 - 701_07_10 - COMPANY REGISTRATION (INC)
+// FIXME:  CARD 010 - 701_02_10 - DSTV / AV INSTALLATIONS
 // ---------------------------------------------------------------------------------------
 
 $(document).ready(function () {
-  $(".animate-701_07_10").click(function () {
-    $(".product-card-701_07_10").toggleClass("animated");
+  $(".animate-701_02_10").click(function () {
+    $(".product-card-701_02_10").toggleClass("animated");
     return false;
   });
 });
 
 // ---------------------------------------------------------------------------------------
-// FIXME:  CARD 011 - 701_07_11 - COMPANY REGISTRATION (NPC)
+// FIXME:  CARD 011 - 701_02_11 - BLOCKCHAIN / CRYPTO CURRENCIES
 // ---------------------------------------------------------------------------------------
 
 $(document).ready(function () {
-  $(".animate-701_07_11").click(function () {
-    $(".product-card-701_07_11").toggleClass("animated");
+  $(".animate-701_02_11").click(function () {
+    $(".product-card-701_02_11").toggleClass("animated");
     return false;
   });
 });
 
 // ---------------------------------------------------------------------------------------
-// FIXME:  CARD 012 - 701_07_12 - COMPANY REGISTRATION (TRUST)
+// FIXME:  CARD 012 - 701_02_12 - WEB DEVELOPMENT (BASIC)
 // ---------------------------------------------------------------------------------------
 
 $(document).ready(function () {
-  $(".animate-701_07_12").click(function () {
-    $(".product-card-701_07_12").toggleClass("animated");
+  $(".animate-701_02_12").click(function () {
+    $(".product-card-701_02_12").toggleClass("animated");
     return false;
   });
 });
 
 // ---------------------------------------------------------------------------------------
-// FIXME:  CARD 013 - 701_07_13 - STATUTORY REGISTRATION (INCOME TAX)
+// FIXME:  CARD 013 - 701_02_13 - WEB DEVELOPMENT (ADVANCE)
 // ---------------------------------------------------------------------------------------
 
 $(document).ready(function () {
-  $(".animate-701_07_13").click(function () {
-    $(".product-card-701_07_13").toggleClass("animated");
+  $(".animate-701_02_13").click(function () {
+    $(".product-card-701_02_13").toggleClass("animated");
     return false;
   });
 });
 
 // ---------------------------------------------------------------------------------------
-// FIXME:  CARD 014 - 701_07_14 - STATUTORY REGISTRATION (PAYE / UIF / SDL)
+// FIXME:  CARD 014 - 701_02_14 - WEB DEVELOPMENT (INTRANETS)
 // ---------------------------------------------------------------------------------------
 
 $(document).ready(function () {
-  $(".animate-701_07_14").click(function () {
-    $(".product-card-701_07_14").toggleClass("animated");
+  $(".animate-701_02_14").click(function () {
+    $(".product-card-701_02_14").toggleClass("animated");
     return false;
   });
 });
 
 // ---------------------------------------------------------------------------------------
-// FIXME:  CARD 015 - 701_07_15 - STATUTORY REGISTRATION (VAT)
+// FIXME:  CARD 015 - 701_02_15 - WEB DEVELOPMENT (E-COMMERCE)
 // ---------------------------------------------------------------------------------------
 
 $(document).ready(function () {
-  $(".animate-701_07_15").click(function () {
-    $(".product-card-701_07_15").toggleClass("animated");
+  $(".animate-701_02_15").click(function () {
+    $(".product-card-701_02_15").toggleClass("animated");
     return false;
   });
 });
 
 // ---------------------------------------------------------------------------------------
-// FIXME:  CARD 016 - 701_07_16 - STATUTORY REGISTRATION (IMPORT/EXPORT)
+// FIXME:  CARD 016 - 701_02_16 - MOBILE APP DEVELOPMENT
 // ---------------------------------------------------------------------------------------
 
 $(document).ready(function () {
-  $(".animate-701_07_16").click(function () {
-    $(".product-card-701_07_16").toggleClass("animated");
+  $(".animate-701_02_16").click(function () {
+    $(".product-card-701_02_16").toggleClass("animated");
     return false;
   });
 });
 
 // ---------------------------------------------------------------------------------------
-// FIXME:  CARD 017 - 701_07_17 - STATUTORY REGISTRATION (TAX CLEARANCE)
+// FIXME:  CARD 017 - 701_02_17 - SOFTWARE DEVELOPMENT
 // ---------------------------------------------------------------------------------------
 
 $(document).ready(function () {
-  $(".animate-701_07_17").click(function () {
-    $(".product-card-701_07_17").toggleClass("animated");
+  $(".animate-701_02_17").click(function () {
+    $(".product-card-701_02_17").toggleClass("animated");
     return false;
   });
 });
 
 // ---------------------------------------------------------------------------------------
-// FIXME:  CARD 018 - 701_07_18 - STATUTORY REGISTRATION (UIF)
+// FIXME:  CARD 018 - 701_02_18 - GRAPHICS DESIGN
 // ---------------------------------------------------------------------------------------
 
 $(document).ready(function () {
-  $(".animate-701_07_18").click(function () {
-    $(".product-card-701_07_18").toggleClass("animated");
+  $(".animate-701_02_18").click(function () {
+    $(".product-card-701_02_18").toggleClass("animated");
     return false;
   });
 });
 
 // ---------------------------------------------------------------------------------------
-// FIXME:  CARD 019 - 701_07_19 - STATUTORY REGISTRATION (COID - WORKMENS COMPENSATION)
+// FIXME:  CARD 019 - 701_02_19 - DOMAIN REGISTRATIONS & HOSTING
 // ---------------------------------------------------------------------------------------
 
 $(document).ready(function () {
-  $(".animate-701_07_19").click(function () {
-    $(".product-card-701_07_19").toggleClass("animated");
-    return false;
-  });
-});
-
-// ---------------------------------------------------------------------------------------
-// FIXME:  CARD 020 - 701_07_20 - STATUTORY REGISTRATION (BBBEE CERTIFICATE)
-// ---------------------------------------------------------------------------------------
-
-$(document).ready(function () {
-  $(".animate-701_07_20").click(function () {
-    $(".product-card-701_07_20").toggleClass("animated");
+  $(".animate-701_02_19").click(function () {
+    $(".product-card-701_02_19").toggleClass("animated");
     return false;
   });
 });

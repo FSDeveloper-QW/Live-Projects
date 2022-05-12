@@ -1,5 +1,5 @@
 /* ===================================================================================================================== */
-/* TODO:  STYLING FOR LEGAL SERVICES                                                                                     */
+/* TODO:  STYLING FOR IT, CLOUD & WEB SERVICES                                                                           */
 /* ===================================================================================================================== */
 
 :root {
@@ -177,14 +177,14 @@ h6 {
 }
 
 /* ===================================================================================================================== */
-/* TODO:  PART 1 - LEGAL SERVICES - PAGE TITLE                                                                           */
+/* TODO:  PART 1 - IT, CLOUD & WEB SERVICES - PAGE TITLE                                                                 */
 /* ===================================================================================================================== */
 
 /* ------------------------------- */
 /* FIXME:  VIEW - MOBILE FIRST     */
 /* ------------------------------- */
 
-.bss__page__title h5 {
+.itsupport__page__title h5 {
   display: flex;
   justify-content: center;
   justify-items: center;
@@ -194,10 +194,10 @@ h6 {
 }
 
 /* ===================================================================================================================== */
-/* TODO:  PART 2 - LEGAL SERVICES - CONTAINER HOLDING ALL SERVICE PRODUCT CARDS                                          */
+/* TODO:  PART 2 - IT, CLOUD & WEB SERVICES - CONTAINER HOLDING ALL SERVICE PRODUCT CARDS                                */
 /* ===================================================================================================================== */
 
-.bss__all__service__cards__container {
+.itsupport__all__service__cards__container {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -248,26 +248,25 @@ h6 {
 /* FIXME:  PRODUCT CARD CONTAINER  */
 /* ------------------------------- */
 
-.product-card-container-all .product-card-701_07_01,
-.product-card-container-all .product-card-701_07_02,
-.product-card-container-all .product-card-701_07_03,
-.product-card-container-all .product-card-701_07_04,
-.product-card-container-all .product-card-701_07_05,
-.product-card-container-all .product-card-701_07_06,
-.product-card-container-all .product-card-701_07_07,
-.product-card-container-all .product-card-701_07_08,
-.product-card-container-all .product-card-701_07_09,
-.product-card-container-all .product-card-701_07_10,
-.product-card-container-all .product-card-701_07_11,
-.product-card-container-all .product-card-701_07_12,
-.product-card-container-all .product-card-701_07_13,
-.product-card-container-all .product-card-701_07_14,
-.product-card-container-all .product-card-701_07_15,
-.product-card-container-all .product-card-701_07_16,
-.product-card-container-all .product-card-701_07_17,
-.product-card-container-all .product-card-701_07_18,
-.product-card-container-all .product-card-701_07_19,
-.product-card-container-all .product-card-701_07_20 {
+.product-card-container-all .product-card-701_02_01,
+.product-card-container-all .product-card-701_02_02,
+.product-card-container-all .product-card-701_02_03,
+.product-card-container-all .product-card-701_02_04,
+.product-card-container-all .product-card-701_02_05,
+.product-card-container-all .product-card-701_02_06,
+.product-card-container-all .product-card-701_02_07,
+.product-card-container-all .product-card-701_02_08,
+.product-card-container-all .product-card-701_02_09,
+.product-card-container-all .product-card-701_02_10,
+.product-card-container-all .product-card-701_02_11,
+.product-card-container-all .product-card-701_02_12,
+.product-card-container-all .product-card-701_02_13,
+.product-card-container-all .product-card-701_02_14,
+.product-card-container-all .product-card-701_02_15,
+.product-card-container-all .product-card-701_02_16,
+.product-card-container-all .product-card-701_02_17,
+.product-card-container-all .product-card-701_02_18,
+.product-card-container-all .product-card-701_02_19 {
   position: absolute;
   transition: transform 1s;
   transform-style: preserve-3d;
@@ -287,26 +286,25 @@ h6 {
 /* TODO:FIXME:     JAVASCRIPT : FOR FLIP FUNCTIONALITY     TODO:FIXME: */
 /* ------------------------------------------------------------------- */
 
-.product-card-container-all .product-card-701_07_01.animated,
-.product-card-container-all .product-card-701_07_02.animated,
-.product-card-container-all .product-card-701_07_03.animated,
-.product-card-container-all .product-card-701_07_04.animated,
-.product-card-container-all .product-card-701_07_05.animated,
-.product-card-container-all .product-card-701_07_06.animated,
-.product-card-container-all .product-card-701_07_07.animated,
-.product-card-container-all .product-card-701_07_08.animated,
-.product-card-container-all .product-card-701_07_09.animated,
-.product-card-container-all .product-card-701_07_10.animated,
-.product-card-container-all .product-card-701_07_11.animated,
-.product-card-container-all .product-card-701_07_12.animated,
-.product-card-container-all .product-card-701_07_13.animated,
-.product-card-container-all .product-card-701_07_14.animated,
-.product-card-container-all .product-card-701_07_15.animated,
-.product-card-container-all .product-card-701_07_16.animated,
-.product-card-container-all .product-card-701_07_17.animated,
-.product-card-container-all .product-card-701_07_18.animated,
-.product-card-container-all .product-card-701_07_19.animated,
-.product-card-container-all .product-card-701_07_20.animated {
+.product-card-container-all .product-card-701_02_01.animated,
+.product-card-container-all .product-card-701_02_02.animated,
+.product-card-container-all .product-card-701_02_03.animated,
+.product-card-container-all .product-card-701_02_04.animated,
+.product-card-container-all .product-card-701_02_05.animated,
+.product-card-container-all .product-card-701_02_06.animated,
+.product-card-container-all .product-card-701_02_07.animated,
+.product-card-container-all .product-card-701_02_08.animated,
+.product-card-container-all .product-card-701_02_09.animated,
+.product-card-container-all .product-card-701_02_10.animated,
+.product-card-container-all .product-card-701_02_11.animated,
+.product-card-container-all .product-card-701_02_12.animated,
+.product-card-container-all .product-card-701_02_13.animated,
+.product-card-container-all .product-card-701_02_14.animated,
+.product-card-container-all .product-card-701_02_15.animated,
+.product-card-container-all .product-card-701_02_16.animated,
+.product-card-container-all .product-card-701_02_17.animated,
+.product-card-container-all .product-card-701_02_18.animated,
+.product-card-container-all .product-card-701_02_19.animated {
   transform: rotateY(-180deg);
 }
 
@@ -314,26 +312,25 @@ h6 {
 /* FIXME:  SUB-CONTAINER - HOLDING ALL ELEMENTS OF CARD (FRONT)  FIXME: */
 /* -------------------------------------------------------------------- */
 
-.product-card-container-all .product-card-701_07_01 .product-card-front-side,
-.product-card-container-all .product-card-701_07_02 .product-card-front-side,
-.product-card-container-all .product-card-701_07_03 .product-card-front-side,
-.product-card-container-all .product-card-701_07_04 .product-card-front-side,
-.product-card-container-all .product-card-701_07_05 .product-card-front-side,
-.product-card-container-all .product-card-701_07_06 .product-card-front-side,
-.product-card-container-all .product-card-701_07_07 .product-card-front-side,
-.product-card-container-all .product-card-701_07_08 .product-card-front-side,
-.product-card-container-all .product-card-701_07_09 .product-card-front-side,
-.product-card-container-all .product-card-701_07_10 .product-card-front-side,
-.product-card-container-all .product-card-701_07_11 .product-card-front-side,
-.product-card-container-all .product-card-701_07_12 .product-card-front-side,
-.product-card-container-all .product-card-701_07_13 .product-card-front-side,
-.product-card-container-all .product-card-701_07_14 .product-card-front-side,
-.product-card-container-all .product-card-701_07_15 .product-card-front-side,
-.product-card-container-all .product-card-701_07_16 .product-card-front-side,
-.product-card-container-all .product-card-701_07_17 .product-card-front-side,
-.product-card-container-all .product-card-701_07_18 .product-card-front-side,
-.product-card-container-all .product-card-701_07_19 .product-card-front-side,
-.product-card-container-all .product-card-701_07_20 .product-card-front-side {
+.product-card-container-all .product-card-701_02_01 .product-card-front-side,
+.product-card-container-all .product-card-701_02_02 .product-card-front-side,
+.product-card-container-all .product-card-701_02_03 .product-card-front-side,
+.product-card-container-all .product-card-701_02_04 .product-card-front-side,
+.product-card-container-all .product-card-701_02_05 .product-card-front-side,
+.product-card-container-all .product-card-701_02_06 .product-card-front-side,
+.product-card-container-all .product-card-701_02_07 .product-card-front-side,
+.product-card-container-all .product-card-701_02_08 .product-card-front-side,
+.product-card-container-all .product-card-701_02_09 .product-card-front-side,
+.product-card-container-all .product-card-701_02_10 .product-card-front-side,
+.product-card-container-all .product-card-701_02_11 .product-card-front-side,
+.product-card-container-all .product-card-701_02_12 .product-card-front-side,
+.product-card-container-all .product-card-701_02_13 .product-card-front-side,
+.product-card-container-all .product-card-701_02_14 .product-card-front-side,
+.product-card-container-all .product-card-701_02_15 .product-card-front-side,
+.product-card-container-all .product-card-701_02_16 .product-card-front-side,
+.product-card-container-all .product-card-701_02_17 .product-card-front-side,
+.product-card-container-all .product-card-701_02_18 .product-card-front-side,
+.product-card-container-all .product-card-701_02_19 .product-card-front-side {
   position: absolute;
   top: 0;
   left: 0;
@@ -354,26 +351,25 @@ h6 {
 /* FIXME:  SUB-CONTAINER - HOLDING ALL ELEMENTS OF CARD (BACK)  FIXME: */
 /* -------------------------------------------------------------------- */
 
-.product-card-container-all .product-card-701_07_01 .product-card-back-side,
-.product-card-container-all .product-card-701_07_02 .product-card-back-side,
-.product-card-container-all .product-card-701_07_03 .product-card-back-side,
-.product-card-container-all .product-card-701_07_04 .product-card-back-side,
-.product-card-container-all .product-card-701_07_05 .product-card-back-side,
-.product-card-container-all .product-card-701_07_06 .product-card-back-side,
-.product-card-container-all .product-card-701_07_07 .product-card-back-side,
-.product-card-container-all .product-card-701_07_08 .product-card-back-side,
-.product-card-container-all .product-card-701_07_09 .product-card-back-side,
-.product-card-container-all .product-card-701_07_10 .product-card-back-side,
-.product-card-container-all .product-card-701_07_11 .product-card-back-side,
-.product-card-container-all .product-card-701_07_12 .product-card-back-side,
-.product-card-container-all .product-card-701_07_13 .product-card-back-side,
-.product-card-container-all .product-card-701_07_14 .product-card-back-side,
-.product-card-container-all .product-card-701_07_15 .product-card-back-side,
-.product-card-container-all .product-card-701_07_16 .product-card-back-side,
-.product-card-container-all .product-card-701_07_17 .product-card-back-side,
-.product-card-container-all .product-card-701_07_18 .product-card-back-side,
-.product-card-container-all .product-card-701_07_19 .product-card-back-side,
-.product-card-container-all .product-card-701_07_20 .product-card-back-side {
+.product-card-container-all .product-card-701_02_01 .product-card-back-side,
+.product-card-container-all .product-card-701_02_02 .product-card-back-side,
+.product-card-container-all .product-card-701_02_03 .product-card-back-side,
+.product-card-container-all .product-card-701_02_04 .product-card-back-side,
+.product-card-container-all .product-card-701_02_05 .product-card-back-side,
+.product-card-container-all .product-card-701_02_06 .product-card-back-side,
+.product-card-container-all .product-card-701_02_07 .product-card-back-side,
+.product-card-container-all .product-card-701_02_08 .product-card-back-side,
+.product-card-container-all .product-card-701_02_09 .product-card-back-side,
+.product-card-container-all .product-card-701_02_10 .product-card-back-side,
+.product-card-container-all .product-card-701_02_11 .product-card-back-side,
+.product-card-container-all .product-card-701_02_12 .product-card-back-side,
+.product-card-container-all .product-card-701_02_13 .product-card-back-side,
+.product-card-container-all .product-card-701_02_14 .product-card-back-side,
+.product-card-container-all .product-card-701_02_15 .product-card-back-side,
+.product-card-container-all .product-card-701_02_16 .product-card-back-side,
+.product-card-container-all .product-card-701_02_17 .product-card-back-side,
+.product-card-container-all .product-card-701_02_18 .product-card-back-side,
+.product-card-container-all .product-card-701_02_19 .product-card-back-side {
   position: absolute;
   top: 0;
   left: 0;
@@ -1307,7 +1303,7 @@ i.bx-heart {
   font-size: 0.8rem;
   font-weight: 500;
   text-decoration: none;
-  text-transform: capitalize;
+  text-transform: initial;
   margin: 0rem 0rem 0rem 0rem;
   padding: 0.25rem 1rem 0.25rem 1rem;
   width: 100%;
