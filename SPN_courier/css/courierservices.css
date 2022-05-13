@@ -184,7 +184,7 @@ h6 {
 /* FIXME:  VIEW - MOBILE FIRST     */
 /* ------------------------------- */
 
-.bss__page__title h5 {
+.courierservices__page__title h5 {
   display: flex;
   justify-content: center;
   justify-items: center;
@@ -197,7 +197,7 @@ h6 {
 /* TODO:  PART 2 - COURIER SERVICES - CONTAINER HOLDING ALL SERVICE PRODUCT CARDS                                          */
 /* ===================================================================================================================== */
 
-.bss__all__service__cards__container {
+.courierservices__all__service__cards__container {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -400,10 +400,27 @@ h6 {
 .product-card-section-top {
   position: relative;
   width: 100%;
-  height: 39.5%;
+  height: 32%;
   border-radius: 0rem 0rem 0rem 0rem;
   background-color: var(--color-product-card-top-section-background);
   /* box-shadow: var(--color-box-shadow-01); */
+  /* border: 1px solid red; */
+}
+
+/* FIXME:  TOP TITLE */
+
+.courierservices__card__top__title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.1rem;
+  font-weight: 700;
+  letter-spacing: 0.1rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  margin: 0rem 0rem 0rem 0rem;
+  border-radius: 1rem 1rem 0rem 0rem;
+  color: var(--color-product-card-brand-title);
   /* border: 1px solid red; */
 }
 
@@ -493,20 +510,20 @@ h6 {
 /* FIXME:  SECTION 3 - MAIN CONTAINER  */
 /* ----------------------------------- */
 
-.product-card-section-information {
+/* .product-card-section-information {
   position: relative;
   width: 100%;
   height: 10rem;
   margin: 0rem 0rem 0rem 0rem;
   padding: 0rem 0.5rem 0rem 0.5rem;
-  /* border: 1px solid red; */
-}
+  border: 1px solid red;
+} */
 
 /* ----------------------------- */
 /* FIXME:  PRODUCT CARD - TITLE  */
 /* ----------------------------- */
 
-.product-card-title {
+/* .product-card-title {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -520,14 +537,14 @@ h6 {
   text-transform: uppercase;
   letter-spacing: 0.05rem;
   color: var(--color-product-card-title);
-  /* border: 1px solid red; */
-}
+  border: 1px solid red;
+} */
 
 /* ----------------------------------------- */
 /* FIXME:  PRODUCT CARD - BRIEF DESCRIPTION  */
 /* ----------------------------------------- */
 
-.product-card-short-description {
+/* .product-card-short-description {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -540,15 +557,237 @@ h6 {
   text-transform: initial;
   text-align: justify;
   color: var(--color-product-card-short-description);
+  border: 1px solid red;
+} */
+
+/* --------------------------------------------------------------------------------------------------------------------- */
+/* FIXME:  COLLECTION CENTRE                                                                                             */
+/* --------------------------------------------------------------------------------------------------------------------- */
+
+/* ===================================================================================================================== */
+/* TODO:  CONTAINER - HOLDING COLLECTION CENTRE SECTION                                                                  */
+/* ===================================================================================================================== */
+
+.container__collection__centre {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* border: 1px solid orangered; */
+}
+
+/* ---------------------------------------------- */
+/* FIXME:  INPUT FIELD = DROPDOWN LIST     FIXME: */
+/* FIXME:      FOR COLLECTION AREA         FIXME: */
+/* ---------------------------------------------- */
+
+.container-collection-areas-options label {
+  display: block;
+  font-size: 1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin: 0.25rem 0rem 0.25rem 0rem;
+}
+
+.container-collection-areas-options input::placeholder {
+  font-family: "Poppins", sans-serif;
+}
+
+.container-collection-areas-options select {
+  font-family: "Poppins", sans-serif;
+  width: 21.75rem;
+  text-align: center;
+  border-radius: 0.5rem;
+  border: 1px solid var(--color-input-border);
+  margin: 0rem 0rem 0rem 0rem;
+  padding: 0.5rem 0.5rem 0.5rem 1.25rem;
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 0.1rem;
+  cursor: pointer;
+  transition: border-color 0.15s, box-shadow 0.15s;
+}
+
+.container-collection-areas-options select:focus {
+  border-color: var(--color-input-border-focus);
+  box-shadow: 0 0 0 2px rgba(220, 20, 60, 0.95);
+  outline: 0;
+}
+
+@media screen and (min-width: 350px) {
+  .container-collection-areas-options select {
+    width: 22.5rem;
+  }
+}
+
+/* ====================================== */
+/* TODO:  COLLECTION AREAS                */
+/* ====================================== */
+
+/* -------------------------------------- */
+/* FIXME:  COLLECTION AREAS - CONTAINTER  */
+/* -------------------------------------- */
+
+.container-collection-areas {
+  position: relative;
+  width: 100%;
+  height: 6rem;
+  margin: 0rem 0rem 0rem 0rem;
+  padding: 0rem 0rem 0rem 0rem;
+  /* z-index: 100; */
+  /* border: 1px solid red; */
+}
+
+/* --------------------------------- */
+/* FIXME:  COLLECTION AREAS - TITLE  */
+/* --------------------------------- */
+
+.container-collection-areas-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0.25rem 0rem 0.25rem 0rem;
+  width: 100%;
+  height: 2rem;
+  font-size: 1rem;
+  letter-spacing: 0.1rem;
+  line-height: 1.1;
+  font-weight: 600;
+  text-transform: uppercase;
+  /* color: var(--color-product-card-sizes-title); */
+  color: #dc143c;
+  /* border: 1px solid red; */
+}
+
+/* ----------------------------------- */
+/* FIXME:  COLLECTION AREAS - OPTIONS  */
+/* ----------------------------------- */
+
+.container-collection-areas-options {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 4rem;
+  /* border: 1px solid red; */
+}
+
+/* --------------------------------------------------------------------------------------------------------------------- */
+/* FIXME:  DELIVERY CENTRE                                                                                               */
+/* --------------------------------------------------------------------------------------------------------------------- */
+
+/* ===================================================================================================================== */
+/* TODO:  CONTAINER - HOLDING DELIVERY CENTRE SECTION                                                                  */
+/* ===================================================================================================================== */
+
+.container__delivery__centre {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* border: 1px solid orangered; */
+}
+
+/* ---------------------------------------------- */
+/* FIXME:  INPUT FIELD = DROPDOWN LIST     FIXME: */
+/* FIXME:       FOR DELIVERY AREA          FIXME: */
+/* ---------------------------------------------- */
+
+.container-delivery-areas-options label {
+  display: block;
+  font-size: 1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin: 0.25rem 0rem 0.25rem 0rem;
+}
+
+.container-delivery-areas-options input::placeholder {
+  font-family: "Poppins", sans-serif;
+}
+
+.container-delivery-areas-options select {
+  font-family: "Poppins", sans-serif;
+  width: 21.75rem;
+  text-align: center;
+  border-radius: 0.5rem;
+  border: 1px solid var(--color-input-border);
+  margin: 0rem 0rem 0rem 0rem;
+  padding: 0.5rem 0rem 0.5rem 1.25rem;
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 0.1rem;
+  cursor: pointer;
+  transition: border-color 0.15s, box-shadow 0.15s;
+}
+
+.container-delivery-areas-options select:focus {
+  border-color: var(--color-input-border-focus);
+  box-shadow: 0 0 0 2px rgba(220, 20, 60, 0.95);
+  outline: 0;
+}
+
+@media screen and (min-width: 350px) {
+  .container-delivery-areas-options select {
+    width: 22.5rem;
+  }
+}
+
+/* ====================================== */
+/* TODO:  DELIVERY AREAS                  */
+/* ====================================== */
+
+/* -------------------------------------- */
+/* FIXME:  DELIVERY AREAS - CONTAINTER    */
+/* -------------------------------------- */
+
+.container-delivery-areas {
+  position: relative;
+  width: 100%;
+  height: 6rem;
+  margin: 0rem 0rem 0rem 0rem;
+  padding: 0rem 0rem 0rem 0rem;
+  /* z-index: 100; */
+  /* border: 1px solid red; */
+}
+
+/* --------------------------------- */
+/* FIXME:  DELIVERY AREAS - TITLE    */
+/* --------------------------------- */
+
+.container-delivery-areas-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0.25rem 0rem 0.25rem 0rem;
+  width: 100%;
+  height: 2rem;
+  font-size: 1rem;
+  letter-spacing: 0.1rem;
+  line-height: 1.1;
+  font-weight: 600;
+  text-transform: uppercase;
+  /* color: var(--color-product-card-sizes-title); */
+  color: #dc143c;
+  /* border: 1px solid red; */
+}
+
+/* ----------------------------------- */
+/* FIXME:  DELIVERY AREAS - OPTIONS  */
+/* ----------------------------------- */
+
+.container-delivery-areas-options {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 4rem;
   /* border: 1px solid red; */
 }
 
 /* ===================================================================================================================== */
-/* TODO:  PRODUCT CARD SECTION 4 - REQUIRED START AND END DATES                                                          */
+/* TODO:  PRODUCT CARD SECTION 4 - REQUIRED COLLECTION AND DELIVERY DATES                                                */
 /* ===================================================================================================================== */
 
 /* ===================================================================================================================== */
-/* TODO:  CONTAINER - HOLDING BOTH START AND END DATES                                                                   */
+/* TODO:  CONTAINER - HOLDING BOTH COLLECTION AND DELIVERY DATES                                                         */
 /* ===================================================================================================================== */
 
 .container__dates {
@@ -560,7 +799,7 @@ h6 {
 
 /* ---------------------------------------------- */
 /* FIXME:        INPUT FIELD = DATES       FIXME: */
-/* FIXME:      FOR START AND END DATES     FIXME: */
+/* FIXME: FOR COLLECTION & DELIVERY DATES  FIXME: */
 /* ---------------------------------------------- */
 
 input[type="date"] {
@@ -584,14 +823,14 @@ input[type="date"]:focus {
 }
 
 /* ===================================================================================================================== */
-/* TODO:  START DATE                                                                                                     */
+/* TODO:  COLLECTION DATE                                                                                                */
 /* ===================================================================================================================== */
 
-/* ----------------------------------- */
-/* FIXME:  START DATE - CONTAINTER     */
-/* ----------------------------------- */
+/* ---------------------------------------- */
+/* FIXME:  COLLECTION DATE - CONTAINTER     */
+/* ---------------------------------------- */
 
-.container-start-date {
+.container-collection-date {
   position: relative;
   width: 50%;
   height: 6rem;
@@ -601,11 +840,11 @@ input[type="date"]:focus {
   /* border: 1px solid red; */
 }
 
-/* ----------------------------- */
-/* FIXME:  START DATE - TITLE    */
-/* ----------------------------- */
+/* ---------------------------------- */
+/* FIXME:  COLLECTION DATE - TITLE    */
+/* ---------------------------------- */
 
-.container-start-date-title {
+.container-collection-date-title {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -616,17 +855,18 @@ input[type="date"]:focus {
   font-size: 1rem;
   letter-spacing: 0.1rem;
   line-height: 1.1;
-  font-weight: 500;
+  font-weight: 600;
   text-transform: uppercase;
-  color: var(--color-product-card-sizes-title);
+  /* color: var(--color-product-card-sizes-title); */
+  color: #dc143c;
   /* border: 1px solid red; */
 }
 
-/* -------------------------------- */
-/* FIXME:  START DATE - OPTIONS     */
-/* -------------------------------- */
+/* ------------------------------------- */
+/* FIXME:  COLLECTION DATE - OPTIONS     */
+/* ------------------------------------- */
 
-.container-start-date-options {
+.container-collection-date-options {
   display: flex;
   justify-content: center;
   width: 100%;
@@ -635,14 +875,14 @@ input[type="date"]:focus {
 }
 
 /* ===================================================================================================================== */
-/* TODO:  END DATE                                                                                                       */
+/* TODO:  DELIVERY DATE                                                                                                  */
 /* ===================================================================================================================== */
 
-/* ----------------------------------- */
-/* FIXME:  END DATE - CONTAINTER       */
-/* ----------------------------------- */
+/* ---------------------------------------- */
+/* FIXME:  DELIVERY DATE - CONTAINTER       */
+/* ---------------------------------------- */
 
-.container-end-date {
+.container-delivery-date {
   position: relative;
   width: 50%;
   height: 6rem;
@@ -652,11 +892,11 @@ input[type="date"]:focus {
   /* border: 1px solid red; */
 }
 
-/* ----------------------------- */
-/* FIXME:  END DATE - TITLE      */
-/* ----------------------------- */
+/* ---------------------------------- */
+/* FIXME:  DELIVERY DATE - TITLE      */
+/* ---------------------------------- */
 
-.container-end-date-title {
+.container-delivery-date-title {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -667,17 +907,18 @@ input[type="date"]:focus {
   font-size: 1rem;
   letter-spacing: 0.1rem;
   line-height: 1.1;
-  font-weight: 500;
+  font-weight: 600;
   text-transform: uppercase;
-  color: var(--color-product-card-sizes-title);
+  /* color: var(--color-product-card-sizes-title); */
+  color: #dc143c;
   /* border: 1px solid red; */
 }
 
-/* -------------------------------- */
-/* FIXME:  END DATE - OPTIONS       */
-/* -------------------------------- */
+/* ------------------------------------- */
+/* FIXME:  DELIVERY DATE - OPTIONS       */
+/* ------------------------------------- */
 
-.container-end-date-options {
+.container-delivery-date-options {
   display: flex;
   justify-content: center;
   width: 100%;
@@ -686,14 +927,14 @@ input[type="date"]:focus {
 }
 
 /* ===================================================================================================================== */
-/* TODO:  PRODUCT CARD SECTION 5 - SELECTION OF REGIONAL AREAS                                                           */
+/* TODO:  PRODUCT CARD SECTION 5 - SELECTION OF DELIVERY TYPES                                                           */
 /* ===================================================================================================================== */
 
 /* ===================================================================================================================== */
-/* TODO:  CONTAINER - HOLDING REGIONAL AREAS SECTION                                                                     */
+/* TODO:  CONTAINER - HOLDING DELIVERY CENTRE SECTION                                                                  */
 /* ===================================================================================================================== */
 
-.container__regions {
+.container__delivery__type {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -702,55 +943,57 @@ input[type="date"]:focus {
 
 /* ---------------------------------------------- */
 /* FIXME:  INPUT FIELD = DROPDOWN LIST     FIXME: */
-/* FIXME:     FOR SIZED AND COLORS         FIXME: */
+/* FIXME:       FOR DELIVERY AREA          FIXME: */
 /* ---------------------------------------------- */
 
-label {
+.container-delivery-types-options label {
   display: block;
-  font-size: 1.1rem;
+  font-size: 1rem;
   font-weight: 600;
   text-transform: uppercase;
   margin: 0.25rem 0rem 0.25rem 0rem;
 }
 
-input::placeholder {
+.container-delivery-types-options input::placeholder {
   font-family: "Poppins", sans-serif;
 }
 
-select {
+.container-delivery-types-options select {
   font-family: "Poppins", sans-serif;
   width: 21.75rem;
-  text-align: left;
+  text-align: center;
   border-radius: 0.5rem;
   border: 1px solid var(--color-input-border);
   margin: 0rem 0rem 0rem 0rem;
-  padding: 0.5rem 0.5rem 0.5rem 0.5rem;
-  font-size: 0.9rem;
+  padding: 0.5rem 0rem 0.5rem 1.25rem;
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 0.1rem;
   cursor: pointer;
   transition: border-color 0.15s, box-shadow 0.15s;
 }
 
-select:focus {
+.container-delivery-types-options select:focus {
   border-color: var(--color-input-border-focus);
   box-shadow: 0 0 0 2px rgba(220, 20, 60, 0.95);
   outline: 0;
 }
 
 @media screen and (min-width: 350px) {
-  select {
+  .container-delivery-types-options select {
     width: 22.5rem;
   }
 }
 
-/* ===================================================================================================================== */
-/* TODO:  REGIONAL AREAS                                                                                                 */
-/* ===================================================================================================================== */
+/* ====================================== */
+/* TODO:  DELIVERY TYPES                  */
+/* ====================================== */
 
-/* ------------------------------------ */
-/* FIXME:  REGIONAL AREAS - CONTAINTER  */
-/* ------------------------------------ */
+/* -------------------------------------- */
+/* FIXME:  DELIVERY TYPES - CONTAINTER    */
+/* -------------------------------------- */
 
-.container-regional-areas {
+.container-delivery-types {
   position: relative;
   width: 100%;
   height: 6rem;
@@ -760,11 +1003,11 @@ select:focus {
   /* border: 1px solid red; */
 }
 
-/* ------------------------------- */
-/* FIXME:  REGIONAL AREAS - TITLE  */
-/* ------------------------------- */
+/* --------------------------------- */
+/* FIXME:  DELIVERY TYPES - TITLE    */
+/* --------------------------------- */
 
-.container-regional-areas-title {
+.container-delivery-types-title {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -775,17 +1018,18 @@ select:focus {
   font-size: 1rem;
   letter-spacing: 0.1rem;
   line-height: 1.1;
-  font-weight: 500;
+  font-weight: 600;
   text-transform: uppercase;
-  color: var(--color-product-card-sizes-title);
+  /* color: var(--color-product-card-sizes-title); */
+  color: #dc143c;
   /* border: 1px solid red; */
 }
 
-/* --------------------------------- */
-/* FIXME:  REGIONAL AREAS - OPTIONS  */
-/* --------------------------------- */
+/* ----------------------------------- */
+/* FIXME:  DELIVERY TYPES - OPTIONS  */
+/* ----------------------------------- */
 
-.container-regional-areas-options {
+.container-delivery-types-options {
   display: flex;
   justify-content: center;
   width: 100%;
@@ -831,6 +1075,8 @@ select:focus {
   display: flex;
   justify-content: center;
   align-items: center;
+  /* border: 1px solid green; */
+  border-radius: 0rem 0rem 1rem 1rem;
 }
 
 /* ------------------------------------------------------- */
@@ -838,12 +1084,15 @@ select:focus {
 /* ------------------------------------------------------- */
 
 .shopping-container {
-  width: 50%;
+  position: absolute;
+  top: 41rem;
+  left: 0;
+  width: 100%;
   height: 5rem;
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 0rem 0rem 1rem 0rem;
+  border-radius: 0rem 0rem 1.5rem 1.5rem;
   padding: 0.25rem 0.25rem 0.25rem 0.25rem;
   /* border: 1px solid red; */
 }
@@ -853,7 +1102,9 @@ select:focus {
 /* ------------------------------------ */
 
 .shopping-container button {
+  width: 95%;
   display: flex;
+  justify-content: center;
   align-items: center;
   font-size: 0.8rem;
   font-weight: 600;
@@ -933,12 +1184,12 @@ select:focus {
 /* ------------------------------------------------------- */
 
 .more-info-container {
-  width: 50%;
+  width: 100%;
   height: 5rem;
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 0rem 0rem 0rem 1rem;
+  border-radius: 0rem 0rem 1rem 1rem;
   padding: 0.25rem 0.25rem 0.25rem 0.25rem;
   /* border: 1px solid red; */
 }
@@ -948,7 +1199,9 @@ select:focus {
 /* ------------------------------------ */
 
 .more-info-container .btn {
+  width: 95%;
   display: flex;
+  justify-content: center;
   align-items: center;
   font-size: 0.8rem;
   font-weight: 600;
@@ -1106,6 +1359,7 @@ i.bx-heart {
   color: var(--color-card-back-button-close);
   transition: transform 0.3s ease-in-out;
   /* border: 1px solid purple; */
+  /* z-index: 10; */
 }
 
 .product-card-container-all .close:hover {
@@ -1121,7 +1375,7 @@ i.bx-heart {
   width: 100%;
   height: 100%;
   text-align: center;
-  border-radius: 0.5rem;
+  border-radius: 1rem;
   background-color: var(--color-card-back-background);
   color: var(--color-card-back-text);
   box-shadow: var(--color-all-elements-box-shadow);
@@ -1147,6 +1401,371 @@ i.bx-heart {
 } */
 
 /* ------------------------------------------------------ */
+/* TODO:  COLLECTION & DELIVERY ADDRESS + CONTENTS  TODO: */
+/*      (incl. addresses + description of contents)       */
+/* ------------------------------------------------------ */
+
+.form__group {
+  margin: 0rem 0rem 1rem 0rem;
+}
+
+.addresses__and__parcel__contents {
+  position: absolute;
+  top: 0.9rem;
+  left: 0;
+  width: 100%;
+  height: 21rem;
+  border-radius: 1.5rem 1.5rem 0rem 0rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* border: 1px solid salmon; */
+}
+
+/* ---------------------------------------------- */
+/* FIXME:  INPUT FIELD TYPE =  TEXTAREA  FIXME:   */
+/*          COLLECTION ADDRESS DETAILS            */
+/* ---------------------------------------------- */
+
+.collection__address__details {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 6rem;
+  width: 100%;
+  margin: 0.5rem 0rem 0rem 0rem;
+}
+
+.collection__address__details label {
+  display: block;
+  height: 2rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #dc143c;
+  text-transform: uppercase;
+  margin: 1rem 0rem 0rem 0rem;
+}
+
+.collection__address__details input::placeholder {
+  font-family: "Poppins", sans-serif;
+}
+
+.collection__address__details textarea {
+  resize: none;
+  width: 22.5rem;
+  height: 4rem;
+  /* width: 96%; */
+  border-radius: 0.5rem;
+  border: 1px solid var(--color-input-border);
+  /* box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.35); */
+  /* box-shadow: 0 5px 4px rgba(0, 0, 0, 0.35); */
+  margin: 0rem 0.5rem 0rem 0.5rem;
+  padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  font-family: "poppins", sans-serif;
+  cursor: pointer;
+  transition: border-color 0.15s, box-shadow 0.15s;
+}
+
+.collection__address__details textarea:focus {
+  border-color: var(--color-input-border-focus);
+  box-shadow: 0 0 0 2px rgba(220, 20, 60, 0.95);
+  outline: 0;
+}
+
+/* ---------------------------------------------- */
+/* FIXME:  INPUT FIELD TYPE =  TEXTAREA  FIXME:   */
+/*          DELIVERY ADDRESS DETAILS              */
+/* ---------------------------------------------- */
+
+.delivery__address__details {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 6rem;
+  width: 100%;
+  margin: 0.5rem 0rem 0rem 0rem;
+}
+
+.delivery__address__details label {
+  display: block;
+  height: 2rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #dc143c;
+  text-transform: uppercase;
+  margin: 1rem 0rem 0rem 0rem;
+}
+
+.delivery__address__details input::placeholder {
+  font-family: "Poppins", sans-serif;
+}
+
+.delivery__address__details textarea {
+  resize: none;
+  width: 22.5rem;
+  height: 4rem;
+  /* width: 96%; */
+  border-radius: 0.5rem;
+  border: 1px solid var(--color-input-border);
+  /* box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.35); */
+  /* box-shadow: 0 5px 4px rgba(0, 0, 0, 0.35); */
+  margin: 0rem 0.5rem 0rem 0.5rem;
+  padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  font-family: "poppins", sans-serif;
+  cursor: pointer;
+  transition: border-color 0.15s, box-shadow 0.15s;
+}
+
+.delivery__address__details textarea:focus {
+  border-color: var(--color-input-border-focus);
+  box-shadow: 0 0 0 2px rgba(220, 20, 60, 0.95);
+  outline: 0;
+}
+
+/* ---------------------------------------------- */
+/* FIXME:  INPUT FIELD TYPE =  TEXTAREA  FIXME:   */
+/*           PARCEL CONTENTS DETAILS              */
+/* ---------------------------------------------- */
+
+.parcel__contents__discription {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 6rem;
+  /* border: 1px solid green; */
+  margin: 0.5rem 0rem 0rem 0rem;
+}
+
+.parcel__contents__discription label {
+  display: block;
+  height: 2rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #dc143c;
+  text-transform: uppercase;
+  margin: 1rem 0rem 0rem 0rem;
+}
+
+.parcel__contents__discription input::placeholder {
+  font-family: "Poppins", sans-serif;
+}
+
+.parcel__contents__discription textarea {
+  resize: none;
+  width: 22.5rem;
+  height: 4rem;
+  /* width: 96%; */
+  border-radius: 0.5rem;
+  border: 1px solid var(--color-input-border);
+  /* box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.35); */
+  /* box-shadow: 0 5px 4px rgba(0, 0, 0, 0.35); */
+  margin: 0rem 0.5rem 0rem 0.5rem;
+  padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  font-family: "poppins", sans-serif;
+  cursor: pointer;
+  transition: border-color 0.15s, box-shadow 0.15s;
+}
+
+.parcel__contents__discription textarea:focus {
+  border-color: var(--color-input-border-focus);
+  box-shadow: 0 0 0 2px rgba(220, 20, 60, 0.95);
+  outline: 0;
+}
+
+/* ------------------------------------------------------ */
+/* TODO:           PARCEL MEASUREMENTS              TODO: */
+/*         (incl. Length, width, height & weight)         */
+/* ------------------------------------------------------ */
+
+.parcel__measurements {
+  position: absolute;
+  top: 22rem;
+  left: 0;
+  width: 100%;
+  height: 5.5rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  /* border: 1px solid green; */
+}
+
+/* ---------------------------------------------- */
+/* FIXME:    INPUT FIELD TYPE =  NUMBER    FIXME: */
+/*                  LENGTH (MM)                   */
+/* ---------------------------------------------- */
+
+.parcel__length label {
+  display: block;
+  height: 2rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #dc143c;
+  text-transform: uppercase;
+  margin: 0rem 0rem 0rem 0rem;
+}
+
+.parcel__length input::placeholder {
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+}
+
+.parcel__length input[type="number"] {
+  resize: none;
+  width: 5rem;
+  height: 3rem;
+  border-radius: 0.5rem;
+  border: 1px solid var(--color-input-border);
+  margin: 0rem 0rem 0rem 0rem;
+  padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  text-align: center;
+  font-family: "poppins", sans-serif;
+  cursor: pointer;
+  transition: border-color 0.15s, box-shadow 0.15s;
+}
+
+.parcel__length input[type="number"]:focus {
+  border-color: var(--color-input-border-focus);
+  box-shadow: 0 0 0 2px rgba(220, 20, 60, 0.95);
+  outline: 0;
+}
+
+/* ---------------------------------------------- */
+/* FIXME:    INPUT FIELD TYPE =  NUMBER    FIXME: */
+/*                  WIDTH (MM)                    */
+/* ---------------------------------------------- */
+
+.parcel__width label {
+  display: block;
+  height: 2rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #dc143c;
+  text-transform: uppercase;
+  margin: 0rem 0rem 0rem 0rem;
+}
+
+.parcel__width input::placeholder {
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+}
+
+.parcel__width input[type="number"] {
+  resize: none;
+  width: 5rem;
+  height: 3rem;
+  border-radius: 0.5rem;
+  border: 1px solid var(--color-input-border);
+  margin: 0rem 0rem 0rem 0rem;
+  padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  text-align: center;
+  font-family: "poppins", sans-serif;
+  cursor: pointer;
+  transition: border-color 0.15s, box-shadow 0.15s;
+}
+
+.parcel__width input[type="number"]:focus {
+  border-color: var(--color-input-border-focus);
+  box-shadow: 0 0 0 2px rgba(220, 20, 60, 0.95);
+  outline: 0;
+}
+
+/* ---------------------------------------------- */
+/* FIXME:    INPUT FIELD TYPE =  NUMBER    FIXME: */
+/*                  HEIGHT (MM)                   */
+/* ---------------------------------------------- */
+
+.parcel__height label {
+  display: block;
+  height: 2rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #dc143c;
+  text-transform: uppercase;
+  margin: 0rem 0rem 0rem 0rem;
+}
+
+.parcel__height input::placeholder {
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+}
+
+.parcel__height input[type="number"] {
+  resize: none;
+  width: 5rem;
+  height: 3rem;
+  border-radius: 0.5rem;
+  border: 1px solid var(--color-input-border);
+  margin: 0rem 0rem 0rem 0rem;
+  padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  text-align: center;
+  font-family: "poppins", sans-serif;
+  cursor: pointer;
+  transition: border-color 0.15s, box-shadow 0.15s;
+}
+
+.parcel__height input[type="number"]:focus {
+  border-color: var(--color-input-border-focus);
+  box-shadow: 0 0 0 2px rgba(220, 20, 60, 0.95);
+  outline: 0;
+}
+
+/* ---------------------------------------------- */
+/* FIXME:    INPUT FIELD TYPE =  NUMBER    FIXME: */
+/*                  WEIGHT (KG)                   */
+/* ---------------------------------------------- */
+
+.parcel__weight label {
+  display: block;
+  height: 2rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #dc143c;
+  text-transform: uppercase;
+  margin: 0rem 0rem 0rem 0rem;
+}
+
+.parcel__weight input::placeholder {
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+}
+
+.parcel__weight input[type="number"] {
+  resize: none;
+  width: 5rem;
+  height: 3rem;
+  border-radius: 0.5rem;
+  border: 1px solid var(--color-input-border);
+  margin: 0rem 0rem 0rem 0rem;
+  padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  text-align: center;
+  font-family: "poppins", sans-serif;
+  cursor: pointer;
+  transition: border-color 0.15s, box-shadow 0.15s;
+}
+
+.parcel__weight input[type="number"]:focus {
+  border-color: var(--color-input-border-focus);
+  box-shadow: 0 0 0 2px rgba(220, 20, 60, 0.95);
+  outline: 0;
+}
+
+/* ------------------------------------------------------ */
 /* TODO:     SERVICE IDENTIFICATION SECTION         TODO: */
 /*      (incl. service code, service category etc.)       */
 /* ------------------------------------------------------ */
@@ -1155,13 +1774,13 @@ i.bx-heart {
 
 .service-identification {
   position: absolute;
-  top: 3rem;
+  top: 28rem;
   left: 0;
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 3rem;
+  height: 4rem;
   margin: 0rem 0rem 0rem 0rem;
   padding: 0rem 0rem 0rem 0rem;
   /* border: 2px solid orange; */
@@ -1250,7 +1869,7 @@ i.bx-heart {
 
 .service-full-description {
   position: absolute;
-  top: 8rem;
+  top: 32rem;
   left: 0;
   display: flex;
   flex-direction: column;
@@ -1259,7 +1878,7 @@ i.bx-heart {
   text-align: center;
   margin: 0rem 0rem 0rem 0rem;
   width: 100%;
-  height: 27rem;
+  height: 9rem;
   /* border: 1px solid blue; */
 }
 
@@ -1291,11 +1910,11 @@ i.bx-heart {
   font-size: 0.8rem;
   font-weight: 500;
   text-decoration: none;
-  text-transform: capitalize;
+  text-transform: initial;
   margin: 0rem 0rem 0rem 0rem;
   padding: 0.25rem 1rem 0.25rem 1rem;
   width: 100%;
-  height: 25rem;
+  height: 7rem;
   /* border: 1px solid green; */
 }
 
@@ -1306,19 +1925,19 @@ i.bx-heart {
 
 /* MAIN CONTAINER */
 
-.important-notification {
+/* .important-notification {
   position: absolute;
-  top: 35rem;
+  top: 33rem;
   left: 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 11.5rem;
+  height: 8rem;
   margin: 0rem 0rem 0rem 0rem;
-  border-radius: 0rem 0rem 1.5rem 1.5rem;
-  /* border: 1px solid blue; */
+  border-radius: 0rem 0rem 0rem 0rem;
+  border: 1px solid blue;
 }
 
 .important-notification .notification-title {
@@ -1335,7 +1954,7 @@ i.bx-heart {
   width: 100%;
   height: 2rem;
   color: var(--color-heading-titles);
-  /* border: 1px solid yellow; */
+  border: 1px solid yellow;
 }
 
 .important-notification .notification-info {
@@ -1351,15 +1970,15 @@ i.bx-heart {
   text-decoration: none;
   padding: 0rem 1rem 0rem 1rem;
   width: 100%;
-  height: 8rem;
+  height: 6rem;
   border-radius: 0rem 0rem 1.5rem 1.5rem;
-  /* border: 1px solid green; */
+  border: 1px solid green;
 }
 
 .important-notification .notification-info a {
   display: inline-block;
   text-decoration: none;
-}
+} */
 
 /* ===================================================================================================================== */
 /*                                                                                            TODO:  STYLING ENDS  TODO: */
