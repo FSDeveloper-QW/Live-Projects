@@ -37,23 +37,23 @@ document.getElementById("add-animation").addEventListener("click", (event) => {
 // TODO:  PART 3 -  SCRIPT TO ADD COUNTER TO WISH LIST WHEN "ADD TO WISH LIST" IS CLICKED
 // =======================================================================================
 
-let countWish = 0;
+// let countWish = 0;
 
-const wishListCounter = document.getElementById("wishlist-counter");
-document
-  .getElementById("wishlist-add-animation")
-  .addEventListener("click", (event) => {
-    const cl = wishListCounter.classList;
-    const c = "wishlist-animated-counter";
-    count++;
+// const wishListCounter = document.getElementById("wishlist-counter");
+// document
+//   .getElementById("wishlist-add-animation")
+//   .addEventListener("click", (event) => {
+//     const cl = wishListCounter.classList;
+//     const c = "wishlist-animated-counter";
+//     count++;
 
-    wishListCounter.innerText = countWish;
-    cl.remove(c, cl.contains(c));
-    setTimeout(
-      () => wishListCounter.classList.add("wishlist-animated-counter"),
-      1
-    );
-  });
+//     wishListCounter.innerText = countWish;
+//     cl.remove(c, cl.contains(c));
+//     setTimeout(
+//       () => wishListCounter.classList.add("wishlist-animated-counter"),
+//       1
+//     );
+//   });
 
 // =======================================================================================
 // TODO:  PART 4 -  SCRIPT TO FLIP A PROFILE OR PRODUCT CARD (AND BACK)

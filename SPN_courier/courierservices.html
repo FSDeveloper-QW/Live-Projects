@@ -109,6 +109,28 @@
       <h5><strong>courier services</strong></h5>
     </div>
 
+    <div class="notes__delivery__centres">
+      <p class="sa__main__centres">
+        <strong>SOUTH AFRICAN (MAIN CENTRES)</strong><br />Bloemfontein, Cape
+        Town, Durban, East London, George, Johannesburg, Kimberley, Nelspruit
+        (Mbombela), Pietermaritzburg, Pietersburg (Polokwane), Port Elizabeth
+        (Gqeberha), Pretoria
+      </p>
+      <p class="sa__regional__centres">
+        <strong>SOUTH AFRICAN (REGIONAL CENTRES)</strong><br />All other areas
+        outside a 50 km radius from any Main Centre (excluding Remote Centres)
+      </p>
+      <p class="sa__remote__centres">
+        <strong>SOUTH AFRICAN (REMOTE CENTRES)</strong><br />All High Risk
+        Areas, Townships, Plots and Farms, Game Reserves, National Parks,
+        Hospitals, Power Stations, Mines, Chain Stores, Embassies and Consulates
+      </p>
+      <p class="international__centres">
+        <strong>INTERNATIONAL</strong><br />Any destination outside the borders
+        of South Africa and located anywhere in the world
+      </p>
+    </div>
+
     <!-- ------------------------------------------------------------------------------------------------------ -->
     <!--                          FIXME:  PART 2 - SERVICES PRODUCT CARDS  FIXME:                               -->
     <!-- ------------------------------------------------------------------------------------------------------ -->
@@ -183,7 +205,7 @@
               <div class="product-card-featured-image">
                 <img
                   src="images/701_04_01.webp"
-                  id="featured__product__image_01"
+                  id="featured__product__image"
                   alt=""
                 />
               </div>
@@ -257,9 +279,9 @@
                   <!--          DROPDOWN LIST OPTIONS             -->
                   <!-- ------------------------------------------ -->
 
-                  <div class="form__group_01">
-                    <label for="collection-centre_01"></label>
-                    <select id="collection-centre_01" name="" required>
+                  <div class="form__group">
+                    <label for="collection-centre"></label>
+                    <select id="collection-centre" name="" required>
                       <!-- <option value="" selected>-</option> -->
                       <option name="Main Centre" value="Main Centre" selected>
                         Main Centre
@@ -309,9 +331,9 @@
                   <!--          DROPDOWN LIST OPTIONS             -->
                   <!-- ------------------------------------------ -->
 
-                  <div class="form__group_01">
-                    <label for="delivery-centre_01"></label>
-                    <select id="delivery-centre_01" name="" required>
+                  <div class="form__group">
+                    <label for="delivery-centre"></label>
+                    <select id="delivery-centre" name="" required>
                       <option name="Main Centre" value="Main Centre" selected>
                         Main Centre
                       </option>
@@ -358,13 +380,13 @@
                   <!--            INPUT FIELD - DATES                 -->
                   <!-- ---------------------------------------------- -->
 
-                  <div class="form__group_01">
-                    <label for="collection-date_01"></label>
+                  <div class="form__group">
+                    <label for="collection-date"></label>
                     <input
-                      id="collection-date_01"
+                      id="collection-date"
                       type="date"
                       value=""
-                      name="collection-date_01"
+                      name="collection-date"
                       placeholder="collection date"
                       min="2022-05-01"
                       max="2099-12-31"
@@ -385,13 +407,13 @@
                   <!--            INPUT FIELD - DATES                 -->
                   <!-- ---------------------------------------------- -->
 
-                  <div class="form__group_01">
-                    <label for="delivery-date_01"></label>
+                  <div class="form__group">
+                    <label for="delivery-date"></label>
                     <input
-                      id="delivery-date_01"
+                      id="delivery-date"
                       type="date"
                       value=""
-                      name="delivery-date_01"
+                      name="delivery-date"
                       placeholder="delivery date"
                       min="2022-05-01"
                       max="2099-12-31"
@@ -420,9 +442,9 @@
                   <!--          DROPDOWN LIST OPTIONS             -->
                   <!-- ------------------------------------------ -->
 
-                  <div class="form__group_01">
-                    <label for="delivery-type_01"></label>
-                    <select id="delivery-type_01" name="" required>
+                  <div class="form__group">
+                    <label for="delivery-type"></label>
+                    <select id="delivery-type" name="" required>
                       <option name="" value="" selected>-</option>
                       <option name="Economy" value="Economy">
                         Economy (3-5 Days)
@@ -510,13 +532,13 @@
                 <!-- ----------------------------------------------------------------- -->
 
                 <div class="collection__address__details">
-                  <div class="form__group_01">
-                    <label for="collection-address_01"
+                  <div class="form__group">
+                    <label for="collection-address"
                       >Collection address details</label
                     >
                     <textarea
-                      name="collection-address_01"
-                      id="collection-address_01"
+                      name="collection-address"
+                      id="collection-address"
                       cols="25"
                       rows="2"
                       placeholder="contact person, contact nr, collection address, postal code ... *"
@@ -533,13 +555,13 @@
                 <!-- ----------------------------------------------------------------- -->
 
                 <div class="delivery__address__details">
-                  <div class="form__group_01">
-                    <label for="delivery-address_01"
+                  <div class="form__group">
+                    <label for="delivery-address"
                       >Delivery address details</label
                     >
                     <textarea
-                      name="delivery-address_01"
-                      id="delivery-address_01"
+                      name="delivery-address"
+                      id="delivery-address"
                       cols="25"
                       rows="2"
                       placeholder="contact person, contact nr, delivery address, postal code ... *"
@@ -556,13 +578,13 @@
                 <!-- ----------------------------------------------------------------- -->
 
                 <div class="parcel__contents__discription">
-                  <div class="form__group_01">
-                    <label for="parcel__contents_01"
+                  <div class="form__group">
+                    <label for="parcel__contents"
                       >What are the contents of the parcel ?</label
                     >
                     <textarea
-                      name="parcel__contents_01"
-                      id="parcel__contents_01"
+                      name="parcel__contents"
+                      id="parcel__contents"
                       cols="25"
                       rows="2"
                       placeholder="what's inside the parcel ? *"
@@ -582,13 +604,13 @@
               <div class="parcel__measurements">
                 <!-- LENGTH -->
                 <div class="parcel__length">
-                  <div class="form__group_01">
-                    <label for="parcel-length_01">length</label>
+                  <div class="form__group">
+                    <label for="parcel-length">length</label>
                     <input
-                      id="parcel-length_01"
+                      id="parcel-length"
                       type="number"
                       value=""
-                      name="parcel-length_01"
+                      name="parcel-length"
                       placeholder="mm"
                       min="0"
                       autocomplete="off"
@@ -598,13 +620,13 @@
                 </div>
                 <!-- WIDTH -->
                 <div class="parcel__width">
-                  <div class="form__group_01">
-                    <label for="parcel-width_01">width</label>
+                  <div class="form__group">
+                    <label for="parcel-width">width</label>
                     <input
-                      id="parcel-width_01"
+                      id="parcel-width"
                       type="number"
                       value=""
-                      name="parcel-width_01"
+                      name="parcel-width"
                       placeholder="mm"
                       min="0"
                       autocomplete="off"
@@ -614,13 +636,13 @@
                 </div>
                 <!-- HEIGHT -->
                 <div class="parcel__height">
-                  <div class="form__group_01">
-                    <label for="parcel-height_01">height</label>
+                  <div class="form__group">
+                    <label for="parcel-height">height</label>
                     <input
-                      id="parcel-height_01"
+                      id="parcel-height"
                       type="number"
                       value=""
-                      name="parcel-height_01"
+                      name="parcel-height"
                       placeholder="mm"
                       min="0"
                       autocomplete="off"
@@ -630,13 +652,13 @@
                 </div>
                 <!-- WEIGHT -->
                 <div class="parcel__weight">
-                  <div class="form__group_01">
-                    <label for="parcel-weight_01">weight</label>
+                  <div class="form__group">
+                    <label for="parcel-weight">weight</label>
                     <input
-                      id="parcel-weight_01"
+                      id="parcel-weight"
                       type="number"
                       value=""
-                      name="parcel-weight_01"
+                      name="parcel-weight"
                       placeholder="kg"
                       min="0"
                       autocomplete="off"

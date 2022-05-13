@@ -193,6 +193,24 @@ h6 {
   text-align: center;
 }
 
+.notes__delivery__centres {
+  display: flex;
+  flex-direction: column;
+  row-gap: 2rem;
+  margin: 1rem 1.5rem 1rem 1.5rem;
+  /* border: 1px solid red; */
+}
+
+.notes__delivery__centres p {
+  font-size: 1rem;
+  font-weight: 500;
+  text-align: center;
+}
+
+.notes__delivery__centres p strong {
+  color: #dc143c;
+}
+
 /* ===================================================================================================================== */
 /* TODO:  PART 2 - COURIER SERVICES - CONTAINER HOLDING ALL SERVICE PRODUCT CARDS                                          */
 /* ===================================================================================================================== */
@@ -1127,7 +1145,7 @@ input[type="date"]:focus {
 }
 
 .shopping-container button:hover {
-  transform: scale(1.05);
+  transform: scale(1.025);
   cursor: pointer;
 }
 
@@ -1359,7 +1377,7 @@ i.bx-heart {
   color: var(--color-card-back-button-close);
   transition: transform 0.3s ease-in-out;
   /* border: 1px solid purple; */
-  /* z-index: 10; */
+  z-index: 10;
 }
 
 .product-card-container-all .close:hover {
