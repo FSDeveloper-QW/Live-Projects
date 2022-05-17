@@ -1,0 +1,415 @@
+/* ===================================================================================================================== */
+/* TODO:  STYLING FOR WEBSITE UNDER CONSTRUCTION PAGE (WUC)                                                              */
+/* ===================================================================================================================== */
+
+/* =========================================================== */
+/* FIXME:  BOX SHADOW - OPTIONS (CUT AND PASTE)                */
+/* OPTION 1:  box-shadow: 0 5px 4px rgba(0, 0, 0, 0.35)        */
+/* OPTION 2:  box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.35)     */
+/* =========================================================== */
+
+/* =========================================================== */
+/* FIXME:  COLOR SCHEMES                                       */
+/* =========================================================== */
+
+:root {
+  /* --------------------------------------------- */
+  /* COLOR SCHEME - WEBSITE UNDER CONSTRUCTION     */
+  /* --------------------------------------------- */
+  --color-page-header: #000000;
+  --color-container-background: #eee;
+  --color-container-title: #dc143c;
+  --color-container-paragraph: #000000;
+  --color-time-container-background: #ffffff;
+  --color-time-container-time-number: #000000;
+  --color-time-container-time-text: #dc143c;
+  --color-notify-button-background: #dc143c;
+  --color-notify-button-text: #ffffff;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: "poppins", sans-serif;
+  margin: 0rem 0rem 0rem 0rem;
+  padding: 0rem 0rem 0rem 0rem;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-size: 1.6rem;
+}
+
+/* ===================================================================================================================== */
+/* TODO:  SET THE RESPONSIVE DEFAULT SIZES FOR ALL HEADING ELEMENTS (H1 - H6)                                      TODO: */
+/* ===================================================================================================================== */
+
+/* ===================================================================================================================== */
+/* TODO:  HEADING ELEMENTS : MOBILE / SMALLER SCREENS STYLING                                        FIXME: MOBILE FIRST */
+/* ===================================================================================================================== */
+
+/* ===================================================================================================================== */
+/* GENERAL NOTES (ALL HEADER ELEMENTS):                                                                                  */
+/* 1.  Set the FONT-FAMILY to be used for the page (i.e. Google Fonts)                                                   */
+/* 2.  Set all MARGINS - Top-Rigth-Bottom-Left                                                                           */
+/* 3.  Set the FONT-WEIGHT : normal, bold, 100, 300, 500, 700 etc.                                                       */
+/* ===================================================================================================================== */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "poppins";
+  margin: 0rem 0rem 2rem 0rem;
+  font-weight: 300;
+}
+
+/* ===================================================================================================================== */
+/* GENERAL NOTES (INDIVIDUAL HEADER ELEMENTS):                                                                           */
+/* 1.  Set the FONT-SIZE to be used as the standard for the page [1.6rem = 16px]                                         */
+/* 2.  Set LINE-HEIGHT (spacing) : 1rem, 1.25rem, 1.4rem, 1.5rem etc                                                     */
+/* 3.  Set LETTER-SPACING : normal, 0.1rem, 0.2rem, 0.3rem etc                                                           */
+/* ===================================================================================================================== */
+
+h1 {
+  font-size: 4rem;
+  line-height: 1.2;
+  letter-spacing: 0.1rem;
+}
+
+h2 {
+  font-size: 3.6rem;
+  line-height: 1.25;
+  letter-spacing: 0.1rem;
+}
+
+h3 {
+  font-size: 3rem;
+  line-height: 1.3;
+  letter-spacing: 0.1rem;
+}
+
+h4 {
+  font-size: 2.4rem;
+  line-height: 1.35;
+  letter-spacing: 0.08rem;
+}
+
+h5 {
+  font-size: 1.8rem;
+  line-height: 1.5;
+  letter-spacing: 0.05rem;
+}
+
+h6 {
+  font-size: 1.5rem;
+  line-height: 1.6;
+  letter-spacing: 0;
+}
+
+/* ===================================================================================================================== */
+/* TODO:  HEADING ELEMENTS : WEBSITE / LARGER SCREENS STYLING                                      FIXME: LARGER SCREENS */
+/* ===================================================================================================================== */
+
+@media (min-width: 600px) {
+  h1 {
+    font-size: 5rem;
+  }
+  h2 {
+    font-size: 4.2rem;
+  }
+  h3 {
+    font-size: 3.6rem;
+  }
+  h4 {
+    font-size: 3rem;
+  }
+  h5 {
+    font-size: 2.4rem;
+  }
+  h6 {
+    font-size: 1.5rem;
+  }
+}
+
+/* ===================================================================================================================== */
+/* TODO:  PART 1 - PAGE CONTAINER (HOLDING ALL ELEMENTS) - WEBSITE UNDER CONSTRUCTION ("WUC"                             */
+/* ===================================================================================================================== */
+
+/* ------------------------------------------ */
+/* FIXME:  MAIN CONTAINER - FOR ALL ELEMENTS  */
+/* ------------------------------------------ */
+
+.wuc-container {
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 2rem 7% 2rem 7%;
+  background: var(--color-container-background);
+  min-height: 100vh;
+  gap: 2.5rem;
+  padding-bottom: 8rem;
+}
+
+/* ---------------------------------------------------------- */
+/* FIXME:  CONTENT CONTAINER - FOR ALL CONTENT (EXCL. IMAGE)  */
+/* ---------------------------------------------------------- */
+
+/* --------------------------- */
+/* TODO:  CONTENT - CONTAINER  */
+/* --------------------------- */
+
+.wuc-container .wuc-content {
+  flex: 1 1 40rem;
+  text-align: center;
+}
+
+/* -------------------------- */
+/* TODO:  CONTENT 1 - TITLE   */
+/* -------------------------- */
+
+.wuc-container .wuc-content .wuc-title {
+  font-size: 2.5rem;
+  font-weight: 600;
+  letter-spacing: 0.3rem;
+  text-transform: uppercase;
+  color: var(--color-container-title);
+  margin: 0rem 0rem 1.5rem 0rem;
+  /* text-align: center; */
+}
+
+/* ----------------------------- */
+/* TODO:  CONTENT 2 - PARAGRAPH  */
+/* ----------------------------- */
+
+.wuc-container .wuc-content p {
+  font-size: 1.1rem;
+  font-weight: 500;
+  letter-spacing: 0.1rem;
+  text-transform: initial;
+  text-align: justify;
+  color: var(--color-container-paragraph);
+  padding: 1rem 0rem 1rem 0rem;
+}
+
+/* ------------------------------- */
+/* TODO:  CONTENT 3 - COUNT-DOWN   */
+/* ------------------------------- */
+
+/* ----------------------- */
+/* COUNT-DOWN - CONTAINER  */
+/* ----------------------- */
+
+.wuc-container .wuc-content .wuc-count-down {
+  display: flex;
+  gap: 1.5rem;
+  margin: 1rem 0rem 1rem 0rem;
+  padding: 0.5rem 0rem 0.5rem 0rem;
+  /* border: 1px solid green; */
+}
+
+/* ---------------------- */
+/* TIME BOX - CONTAINER   */
+/* ----------------------- */
+
+.wuc-container .wuc-content .wuc-count-down .wuc-box {
+  padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+  flex: 1 1 2rem;
+  text-align: center;
+  background: var(--color-time-container-background);
+  border: 1px solid lightgray;
+  border-radius: 1rem;
+  box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.35);
+  /* border: 1px solid blue; */
+  height: 6.75rem;
+}
+
+/* -------------------- */
+/* TIMEBOX - CONTENTS   */
+/* -------------------- */
+
+/* TIME - NUMBERS */
+
+.wuc-container .wuc-content .wuc-count-down .wuc-box h3 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  letter-spacing: 0.2rem;
+  padding: 0rem 0.5rem 0rem 0.5rem;
+  color: var(--color-time-container-time-number);
+  /* border: 1px solid purple; */
+}
+
+.wuc-box-number {
+  margin-bottom: -2rem;
+}
+
+/* TIME - TEXT */
+
+.wuc-container .wuc-content .wuc-count-down .wuc-box span {
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
+  padding: 0rem 0.5rem 0rem 0.5rem;
+  color: var(--color-time-container-time-text);
+  /* border: 1px solid purple; */
+}
+
+/* ---------------------------------------- */
+/* FIXME:  BUTTON - NOTIFY ME               */
+/* ---------------------------------------- */
+
+.wuc-container .wuc-content .wuc-btn {
+  display: inline-block;
+  width: 20rem;
+  margin: 2rem 0rem 0rem 0rem;
+  padding: 0.8rem 3rem 0.8rem 3rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+  letter-spacing: 0.3rem;
+  text-transform: uppercase;
+  border-radius: 1rem;
+  box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.35);
+  background: var(--color-notify-button-background);
+  color: var(--color-notify-button-text);
+  transition: 02s ease-out;
+  text-align: center;
+}
+
+.wuc-container .wuc-content .wuc-btn:hover {
+  opacity: 0.95;
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+/* ---------------------------------------- */
+/* FIXME:  IMAGE CONTAINER - FOR THE IMAGE  */
+/* ---------------------------------------- */
+
+.wuc-container .wuc-image {
+  flex: 1 1 40rem;
+  padding: 1rem 1rem 1rem 1rem;
+}
+
+.wuc-container .wuc-image img {
+  width: 100%;
+}
+
+/* ===================================================================================================================== */
+/* TODO:  PART 2 - MEDIA QUERIES FOR SMALLER SCREEN / PHONES                                                             */
+/* ===================================================================================================================== */
+
+@media (max-width: 510px) {
+  .wuc-container {
+    padding: 2rem 2rem 2rem 2rem;
+  }
+
+  .wuc-container .wuc-content {
+    text-align: center;
+  }
+
+  .wuc-container .wuc-content .wuc-title {
+    font-size: 2.3rem;
+    letter-spacing: 0.1rem;
+    margin: 1rem 0rem 1rem 0rem;
+  }
+
+  .wuc-container .wuc-content p {
+    font-size: 1.2rem;
+  }
+
+  .wuc-container .wuc-content .wuc-count-down {
+    gap: 0.5rem;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .wuc-container .wuc-content .wuc-count-down .wuc-box {
+    margin: 1rem 0.5rem 1rem 0.5rem;
+    width: 20rem;
+  }
+
+  .wuc-container .wuc-content .wuc-count-down .wuc-box h3 {
+    font-size: 2.5rem;
+    letter-spacing: 0.1rem;
+  }
+
+  .wuc-container .wuc-content .wuc-count-down .wuc-box span {
+    font-size: 1.1rem;
+    letter-spacing: 0.1rem;
+  }
+}
+/* ===================================================================================================================== */
+
+/* ----------------------------------------------------------------------------------------- */
+/* FIXME:  GOOGLE CHROME DEVICE - BREAKPOINTS                          TODO: VARIOUS DEVICES */
+/* ----------------------------------------------------------------------------------------- */
+
+/* TODO:  SAMSUNG GALAXY FOLD  TODO: */
+@media screen and (min-width: 280px) and (min-height: 653px) {
+}
+
+/* TODO:  SAMSUNG GALAXY S8+  TODO: */
+@media screen and (min-width: 360px) and (min-height: 740px) {
+}
+
+/* TODO:  APPLE IPHONE SE  TODO: */
+@media screen and (min-width: 375px) and (min-height: 667px) {
+}
+
+/* TODO:  APPLE IPHONE 12 PRO  TODO: */
+@media screen and (min-width: 390px) and (min-height: 844px) {
+}
+
+/* TODO:  PIXEL 5  TODO: */
+@media screen and (min-width: 393px) and (min-height: 851px) {
+}
+
+/* TODO:  SAMSUNG GALAXY A51/A71  TODO: */
+/* TODO:  SAMSUNG GALAXY S20 ULTRA  TODO: */
+@media screen and (min-width: 412px) and (min-height: 914px) {
+}
+
+/* TODO:  APPLE IPHONE XR  TODO: */
+@media screen and (min-width: 414px) and (min-height: 896px) {
+}
+
+/* TODO:  SURFACE DUO  TODO: */
+@media screen and (min-width: 540px) and (min-height: 720px) {
+}
+
+/* TODO:  APPLE IPAD MINI  TODO: */
+@media screen and (min-width: 768px) and (min-height: 1024px) {
+}
+
+/* TODO:  APPLE IPAD AIR  TODO: */
+@media screen and (min-width: 820px) and (min-height: 1180px) {
+}
+
+/* TODO:  SURFACE PRO 7  TODO: */
+@media screen and (min-width: 912px) and (min-height: 1368px) {
+}
+
+/* TODO:  NEST HUB  TODO: */
+@media screen and (min-width: 1024px) and (min-height: 600) {
+}
+
+/* TODO:  NEST HUB MAX  TODO: */
+@media screen and (min-width: 1280px) and (min-height: 800px) {
+}
+
+/* ===================================================================================================================== */
+/*                                                                                            TODO:  STYLING ENDS  TODO: */
+/* ===================================================================================================================== */
