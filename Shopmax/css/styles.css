@@ -2,15 +2,148 @@
 /* TODO:  STYLING FOR SHOPMAX ONLINE STORE (PTY) LTD                                                                     */
 /* ===================================================================================================================== */
 
+/* ----------------------------------------------------- */
+/* FIXME:  COLOR SCHEMES USED ON SHOPMAX WEBSITE  FIXME: */
+/* ----------------------------------------------------- */
+
 :root {
+  /* ------------------------------------------------ */
+  /* FIXME:  GENERAL COLORS - BOX SHADOWS             */
+  /* ------------------------------------------------ */
+  --color-box-shadow-01: 3px 5px 20px rgba(0, 0, 0, 0.35);
+  --color-box-shadow-02: 0px 5px 4px rgba(0, 0, 0, 0.35);
+  --color-box-shadow-03: 0px 1px 5px 3px rgba(0, 0, 0, 0.15);
+  --color-box-shadow-04: 0px 5px 20px rgba(0, 0, 0, 0.35);
+  /* ------------------------------------------------ */
+  /* FIXME:  SECTION: LOGO, SEARCH BAR & SOCIAL MEDIA */
+  /* ------------------------------------------------ */
+  /* SEARCH BAR COLOR SCHEME */
   --color-page-background: white;
+  --color-search-input-background: white;
+  --color-search-icon: #dc143c;
+  --color-list-items-background: #eee;
+  --color-list-items-background-hover: #dc143c;
+  --color-list-items-background-hover-text: white;
+  /* SOCIAL MEDIA COLOR SCHEME */
+  --color-facebook1: #1877f2;
+  --color-facebook2: #3b5998;
+  --color-instagram: #c32aa3;
+  --color-twitter: #1da1f2;
+  --color-linkedin: #0a66c2;
+  --color-youtube: #ff0000;
+  --color-whatsapp: #25d366;
+  --color-wishlist: #555555;
+  --color-shopping: #555555;
+  /* BOX-ICONS */
+  --color-box-icons-normal: black;
+  --color-box-icons-hover: white;
+  --color-box-icons-anchor: white;
+  /* USER ACCOUNT ICON */
+  --color-user-account: black;
+  --color-user-account-hover: #dc143c;
+  /* COLOR SCHEME FOR ADD TO CART BUTTONS, CARTS AND COUNTERS */
+  --color-add-to-cart-button-background: #dc143c;
+  --color-add-to-cart-button-text: white;
+  --color-shopping-cart-icon: black;
+  --color-shopping-cart-icon-hover: #dc143c;
+  --color-shopping-cart-counter-background: #dc143c;
+  --color-shopping-cart-counter-text: white;
+  /* COLOR SCHEME FOR ADD TO WISH LIST BUTTONS, CARTS AND COUNTERS */
+  --color-add-to-wish-list-button-background: #dc143c;
+  --color-add-to-wish-list-button-text: white;
+  --color-wish-list-icon: black;
+  --color-wish-list-icon-hover: #dc143c;
+  --color-wish-list-counter-background: #dc143c;
+  --color-wish-list-counter-text: white;
+  /* SHOPPING ICONS GROUP */
+  --color-shopping-group-icons-background-01: #efefef;
+  --color-shopping-group-icons-background-02: #ebf4f4;
+  /* ------------------------------------------------ */
+  /* FIXME:  SECTION: MAIN NAVIGATION                 */
+  /* ------------------------------------------------ */
+  /* COLOR SCHEME - PAGE BACKGROUND */
+  /* --color-page-background: #18191a; */
+  --color-page-background: white;
+  /* COLOR SCHEME - TOP NAVIGATION */
+  /* --color-top-navigation-background: #242526; */
+  --color-top-navigation-background: white;
+  /* --color-top-navigation-text: #b0b3b8; */
+  --color-top-navigation-text: black;
+  /* COLOR SCHEME - TOP NAVIGATION DROP-DOWN ICON */
+  --topnavigation-dropdown-icon-color: #dc143c;
+  /* COLOR SCHEME - DROP-DOWN MENU CONTAINER & TOOLTIP */
+  /* --color-tooltip-background: #242526; */
+  --color-tooltip-background: white;
+  /* --color-drop-down-container: #242526; */
+  --color-drop-down-container: white;
+  /* COLOR SCHEME - UNORDERED LIST, LIST ITEMS, ANCHORS (ALL LEVELS) */
+  /* --color-menu-items-all-levels: #b0b3b8; */
+  --color-menu-items-all-levels: black;
+  /* --color-menu-items-all-levels-hover: #3a3b3c; */
+  --color-menu-items-all-levels-hover: lightgray;
+  /* COLOR SCHEME - ICON CONTAINER */
+  --color-icon-container: white;
+  /* COLOR SCHEME - RIGHT ARROW */
+  --color-icon-right-angle: #dc143c;
+  /* COLOR SCHEME - BACK-BUTTON ICON (ARROW) AND TEXT */
+  --color-back-button-arrow-and-text: black;
+  --color-back-button-arrow-only: #dc143c;
+  /* ------------------------------------------------ */
+  /* FIXME:  SECTION: ROTATING HERO BANNERS           */
+  /* ------------------------------------------------ */
+  --color-slide-text: white;
+  --color-button-background: none;
+  --color-button-background-hover: #dc143c;
+  --color-button-text: white;
+  --color-button-text-hover: white;
+  --color-arrows-background: none;
+  --color-arrows-color: #dc143c;
+  --color-dots-background-not-active: white;
+  --color-dots-background-hover: #dc143c;
+  --color-dots-background-active: #dc143c;
+  /* ------------------------------------------------ */
+  /*                 END OF SECTION                   */
+  /* ------------------------------------------------ */
 }
+
+/* ----------------------------------------------------- */
+/* FIXME:   SIZING OF THE MAIN NAVIGATION ITEMS   FIXME: */
+/* ----------------------------------------------------- */
+
+:root {
+  --topnavigation-button-width: 26rem;
+  --topnavigation-line-height: 2rem;
+  --topnavigation-font-size: 1.4rem;
+  --topnavigation-dropdown-icon-line-height: 1.9rem;
+  --topnavigation-dropdown-icon-font-size: 2rem;
+  --navigation-wrapper-width: 26rem;
+  --navigation-wrapper-ul-width: 26rem;
+  --navigation-wrapper-ul-li-line-height: 2.3rem;
+  --navigation-wrapper-ul-li-anchor-font-size: 1.175rem;
+  --icon-circle-height: 1.8rem;
+  --icon-circle-width: 1.8rem;
+  --icon-right-angle-font-size: 1.8rem;
+  --icon-back-button-font-size: 1.35rem;
+}
+
+/* ===================================================================================================================== */
+/* FIXME:  SPECIAL NOTES (IN TERMS OF THE MAIN NAVIGATION                                                                  */
+/* ======================================================================================================================= */
+/* 01.  USER-SELECT controls whether the user can select TEXT (none / auto / text / contain / all)                         */
+/* 02.  OVERFLOW sets behavior when an element's content is too big to fit in its block (in both directions)               */
+/*      Options Available: visible / hidden / clip / scroll / auto                                                         */
+/* 03                                                                                                                      */
+/* 04.                                                                                                                     */
+/* 05.                                                                                                                     */
+/* ======================================================================================================================= */
 
 * {
   box-sizing: border-box;
   font-family: "poppins", sans-serif;
   margin: 0rem 0rem 0rem 0rem;
   padding: 0rem 0rem 0rem 0rem;
+  /* NAVIGATION ITEM BELOW */
+  user-select: none;
 }
 
 html {
@@ -20,6 +153,11 @@ html {
 
 body {
   font-size: 1.6rem;
+}
+
+::selection {
+  background: var(--color-page-background);
+  color: var(--color-search-input-background);
 }
 
 /* ===================================================================================================================== */
@@ -123,6 +261,898 @@ h6 {
 /* ===================================================================================================================== */
 
 /* ===================================================================================================================== */
+/* TODO:  PART 1 - CONTAINER (ALL) - HOLDING ALL ELEMENTS TOGETHER (LOGO, SEARCH BAR and SOCIAL MEDIA LINKS)             */
+/* ===================================================================================================================== */
+
+.top_bar_container_all {
+  position: relative;
+  display: grid;
+  grid-template-columns: 4fr 12fr 5fr;
+  max-width: 100%;
+  height: 4rem;
+  margin: 1rem 0rem 1rem 0rem;
+  padding: 0rem 0rem 0rem 0rem;
+  /* border: 1px solid orange; */
+}
+
+/* ===================================================================================================================== */
+/* TODO:  PART 2 - CONTAINER (LOGO) - SHOPMAX LOGO                                                                       */
+/* ===================================================================================================================== */
+
+/* ========================================================= */
+/* FIXME:  SHOPMAX LOGO SCALING (100%) = FACTOR 4.91         */
+/* ========================================================= */
+/* WIDTH = 50rem (500px) ==>  HEIGTH = 10.185rem (101.85px)  */
+/* WIDTH = 45rem (450px) ==>  HEIGTH =  9.167rem  (91.67px)  */
+/* WIDTH = 40rem (400px) ==>  HEIGTH =  8.148rem  (81.48px)  */
+/* WIDTH = 35rem (350px) ==>  HEIGTH =  7.130rem  (71.30px)  */
+/* WIDTH = 30rem (300px) ==>  HEIGTH =  6.111rem  (61.11px)  */
+/* WIDTH = 25rem (250px) ==>  HEIGTH =  5.093rem  (50.93px)  */
+/* WIDTH = 20rem (200px) ==>  HEIGTH =  4.074rem  (40.74px)  */
+/* WIDTH = 15rem (150px) ==>  HEIGTH =  3.056rem  (30.56px)  */
+/* WIDTH = 10rem (100px) ==>  HEIGTH =  2.037rem  (20.37px)  */
+/* ========================================================= */
+
+.top_bar_container_image {
+  position: relative;
+  margin: 0rem 0rem 0rem 0rem;
+  padding: 0rem 0rem 0rem 0rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 4rem;
+  /* border: 1px solid red; */
+}
+
+.top_bar_container_image .top_bar_shopmax_logo {
+  display: block;
+  /* width: 100%; */
+  /* margin: auto; */
+  width: 100%;
+  height: 4rem;
+  object-fit: contain;
+  padding: 0.2rem 0.2rem 0.2rem 0.2rem;
+  /* border: 1px solid purple; */
+}
+
+/* ===================================================================================================================== */
+/* TODO:  PART 3 - CONTAINER (SEARCH) - NEW SEARCH BAR                                                                   */
+/* ===================================================================================================================== */
+
+/* --------------------------------------------------- */
+/* FIXME:  MAIN CONTAINER - HOLDING EVERYTHING  FIXME: */
+/* --------------------------------------------------- */
+
+.top_bar_search-bar-container {
+  /* max-width: 45rem; */
+  /* display: flex;
+    justify-content: center;
+    align-items: center; */
+  display: grid;
+  grid-template-columns: 4fr 1fr;
+  width: 100%;
+  height: 4rem;
+  border-radius: 0;
+  margin: 0rem 0rem 0rem 0rem;
+  padding: 0rem 2rem 0rem 2rem;
+  /* border: 1px solid blue; */
+}
+
+/* ------------------------------------------------------------------------------------------ */
+/* FIXME:  SUB-CONTAINER - HOLDING ELEMENTS - SEARCH-INPUT, SEARCH-ITEMS, SEARCH-ICON  FIXME: */
+/* ------------------------------------------------------------------------------------------ */
+
+.top_bar_search-bar-container .top_bar_search-input {
+  position: relative;
+  background: var(--color-search-input-background);
+  width: 100%;
+  height: 4rem;
+  border-radius: 2.5rem 0rem 0rem 2.5rem;
+  box-shadow: var(--color-box-shadow-04);
+  padding: 0rem 0rem 0rem 0rem;
+  /* border: 1px solid green; */
+}
+
+/* ------------------------------------- */
+/* FIXME:  ELEMENT: SEARCH-INPUT  FIXME: */
+/* ------------------------------------- */
+
+.top_bar_search-input input {
+  /* text-align: center; */
+  border: none;
+  outline: none;
+  width: 100%;
+  height: 4rem;
+  border-radius: 2.5rem;
+  margin: 0rem 0rem 0rem 0rem;
+  padding: 0rem 5rem 0rem 2rem;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.3rem;
+  /* box-shadow: var(--color-box-shadow-03); */
+  /* border: 1px solid goldenrod; */
+}
+
+.top_bar_search-input input::placeholder {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 500;
+  letter-spacing: 0.05rem;
+}
+
+/* ------------------------------------ */
+/* FIXME:  ELEMENT: SEARCH-ICON  FIXME: */
+/* ------------------------------------ */
+
+.top_bar_search-input .top_bar_searchbar-icon {
+  position: absolute;
+  top: 0rem;
+  right: 0.5rem;
+  width: 4rem;
+  height: 4rem;
+  line-height: 4rem;
+  text-align: center;
+  font-size: 1.52rem;
+  color: var(--color-search-icon);
+  cursor: pointer;
+  transition: transform 0.5s ease-in-out;
+}
+
+.top_bar_search-input .top_bar_searchbar-icon:hover {
+  transform: scale(1.1);
+}
+
+/* -------------------------------------------------- */
+/* FIXME:  SUB-CONTAINER - AUTO-COMPLETED BOX  FIXME: */
+/* -------------------------------------------------- */
+
+.top_bar_search-input .top_bar_search-autocomplete-box {
+  max-height: 28rem;
+  padding: 0rem 0rem 0rem 0rem;
+  overflow-y: auto;
+  opacity: 0;
+  pointer-events: none;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.2rem;
+  border-radius: 0rem 0rem 1rem 1rem;
+  background: var(--color-list-items-background);
+  /* z-index: 1; */
+}
+
+/* =================================================== */
+/* TODO:FIXME:  JAVASCRIPT: ACTIVE CLASS  TODO:FIXME:  */
+/*       WHEN ACTIVE DISPLAY AUTO-COMPLETE BOX         */
+/* =================================================== */
+
+.top_bar_search-input.active .top_bar_search-autocomplete-box {
+  padding: 1rem 0.8rem 1rem 0.8rem;
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.top_bar_search-input.active .top_bar_search-autocomplete-box li {
+  display: block;
+}
+
+.top_bar_search-input.active input {
+  border-radius: 0.5rem 0.5rem 0 0;
+}
+
+/* ================================================== */
+
+/* ----------------------------------- */
+/* FIXME:  SEARCH - LIST-ITEMS  FIXME: */
+/* ----------------------------------- */
+
+.top_bar_search-autocomplete-box li {
+  width: 100%;
+  list-style: none;
+  border-radius: 0.3rem;
+  padding: 0.8rem 1.2rem 0.8rem 1.2rem;
+  cursor: default;
+  display: none;
+}
+
+.top_bar_search-autocomplete-box li:hover {
+  background: var(--color-list-items-background-hover);
+  color: var(--color-list-items-background-hover-text);
+}
+
+/* ===================================================================================================================== */
+/* TODO:  PART 4 - CONTAINER (SOCIAL) - SOCIAL MEDIA LINKS                                                               */
+/* ===================================================================================================================== */
+
+/* ==================================== */
+/* COLOURS USED FOR SOCIAL MEDIA LINKS  */
+/* ==================================== */
+
+/* MAIN CONTAINER - HOLDING ALL SOCIAL MEDIA COMPONENTS TOGETHER  */
+.top_bar_container_social {
+  position: relative;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0rem 0rem 0rem 0rem;
+  padding: 0rem 0rem 0.5rem 0rem;
+  width: 100%;
+  height: 4rem;
+  /* border: 1px solid green; */
+}
+
+/* NOTE: Translate (width, height) */
+.top_bar_social-media ul {
+  position: relative;
+  top: 0%;
+  left: 0%;
+  transform: translate(0%, 0%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0rem 0rem 0rem 0rem;
+  padding: 0rem 0rem 0rem 0rem;
+}
+
+.top_bar_social-media ul li {
+  list-style: none;
+  margin: 0rem 0.5rem 0rem 0.5rem;
+}
+
+.top_bar_social-media ul li .bx {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 1.65rem;
+  line-height: 1.4rem;
+  transition: 0.6s;
+  color: var(--color-box-icons-normal);
+}
+
+.top_bar_social-media ul li .bx:hover {
+  color: var(--color-box-icons-hover);
+}
+
+.top_bar_social-media ul li a {
+  position: relative;
+  display: block;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  background-color: var(--color-box-icons-anchor);
+  text-align: center;
+  transition: 0.6s;
+  box-shadow: var(--color-box-shadow-02);
+  /* border: 1px solid black; */
+}
+
+/* NOTE: Translate (width, height) */
+.top_bar_social-media ul li a:hover {
+  transform: translate(0, -0.4rem);
+}
+
+/* Implement on hover - FACEBOOK Color  */
+.top_bar_social-media ul li:nth-child(1) a:hover {
+  background-color: var(--color-facebook2);
+}
+
+/* Implement on hover - INSTAGRAM  */
+.top_bar_social-media ul li:nth-child(2) a:hover {
+  background-color: var(--color-instagram);
+}
+
+/* Implement on hover - TWITTER  */
+.top_bar_social-media ul li:nth-child(3) a:hover {
+  background-color: var(--color-twitter);
+}
+
+/* Implement on hover - LINKEDIN  */
+.top_bar_social-media ul li:nth-child(4) a:hover {
+  background-color: var(--color-linkedin);
+}
+
+/* Implement on hover - YOUTUBE  */
+.top_bar_social-media ul li:nth-child(5) a:hover {
+  background-color: var(--color-youtube);
+}
+
+/* Implement on hover - WHATSAPP  */
+.top_bar_social-media ul li:nth-child(6) a:hover {
+  background-color: var(--color-whatsapp);
+}
+
+/* Implement on hover - WISHLIST  */
+.top_bar_social-media ul li:nth-child(7) a:hover {
+  background-color: var(--color-wishlist);
+}
+
+/* Implement on hover - SHOPPING CART  */
+.top_bar_social-media ul li:nth-child(8) a:hover {
+  background-color: var(--color-shopping);
+}
+
+/* Implement on hover - USER ACCOUNT  */
+.top_bar_social-media ul li:nth-child(9) a:hover {
+  background-color: var(--color-shopping);
+}
+
+/* ===================================================================================================================== */
+/* TODO:  PART 5 - BUTTONS FOR USER ACCOUNT AND TO TEST "ADD TO WISH LIST" AND "ADD TO CART"                             */
+/* ===================================================================================================================== */
+
+/* ===================================================================================================================== */
+/*                                FIXME:  MAIN CONTAINER HOLDING USER, HEART & CART  FIXME:                              */
+/* ===================================================================================================================== */
+
+.top_bar_shopping_icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 4rem;
+  margin: 0rem 0rem 0rem 0rem;
+  padding: 0rem 0rem 0rem 0rem;
+  border-radius: 0rem 2.5rem 2.5rem 0rem;
+  box-shadow: var(--color-box-shadow-01);
+  background-color: var(--color-shopping-group-icons-background-02);
+  /* border: 1px solid #dc143c; */
+}
+
+/* ===================================================================================================================== */
+/*                                                TODO:  USER ACCOUNT  TODO:                                             */
+/* ===================================================================================================================== */
+
+/* ------------------------------------------ */
+/* FIXME:  MAIN CONTAINER - USER ICON  FIXME: */
+/* ------------------------------------------ */
+
+.top_bar_user_account {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 4rem;
+  height: 4rem;
+  margin: 0rem 0rem 0rem 0rem;
+  border-radius: 0rem 0rem 0rem 0rem;
+  /* border: 1px solid orange; */
+}
+
+/* ------------------------------ */
+/* FIXME:  ANCHOR ELEMENT  FIXME: */
+/* ------------------------------ */
+
+.top_bar_user_account a {
+  text-decoration: none;
+  cursor: pointer;
+  color: var(--color-user-account);
+}
+
+/* ------------------------- */
+/* FIXME:  USER ICON  FIXME: */
+/* ------------------------- */
+
+.top_bar_user_account i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.9rem;
+  font-weight: 600;
+  width: 4rem;
+  height: 4rem;
+  color: var(--color-user-account);
+  transition: transform 0.3s ease-in-out;
+  cursor: pointer;
+  /* border: 1px solid yellow; */
+}
+
+/* --------------------------------- */
+/* FIXME:  USER ICON - HOVER  FIXME: */
+/* --------------------------------- */
+
+.top_bar_user_account i:hover {
+  color: var(--color-user-account-hover);
+  transform: scale(1.1);
+}
+
+/* ===================================================================================================================== */
+/*                                                TODO:  WISH LIST  TODO:                                                */
+/* ===================================================================================================================== */
+
+/* --------------------------------------------------------------- */
+/* FIXME:  MAIN CONTAINER - HOLDING COUNTER AND HEART ICON  FIXME: */
+/* --------------------------------------------------------------- */
+
+/* ------------------------------------------------------------------------------------ */
+/* CONTAINER HOLD WISH LIST BUTTON with "wishlist-add-animation" ID for Javascript Code */
+/* ------------------------------------------------------------------------------------ */
+
+.wishlist-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* border: 1px solid red; */
+}
+
+/* ----------------------------------------------------------------------------------- */
+/* CONTAINER HOLD THE WISHLIST COUNTER with "wishlist-counter" ID for Javascript Code  */
+/* ----------------------------------------------------------------------------------- */
+
+.wishlist-counter-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 0rem 2.5rem 2.5rem 0rem;
+  margin: 0rem 0rem 0rem 0rem;
+  /* border: 1px solid orange; */
+}
+
+/* ------------------------------ */
+/* FIXME:  ANCHOR ELEMENT  FIXME: */
+/* ------------------------------ */
+
+.wishlist-counter-container a {
+  text-decoration: none;
+  cursor: pointer;
+  color: var(--color-wish-list-icon);
+}
+
+/* -------------------------- */
+/* FIXME:  HEART ICON  FIXME: */
+/* -------------------------- */
+
+.wishlist-counter-container i {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2.35rem;
+  font-weight: 500;
+  width: 4rem;
+  height: 4rem;
+  color: var(--color-wish-list-icon);
+  transition: transform 0.3s ease-in-out;
+  cursor: pointer;
+  /* border: 1px solid green; */
+}
+
+/* ---------------------------------- */
+/* FIXME:  HEART ICON - HOVER  FIXME: */
+/* ---------------------------------- */
+
+.wishlist-counter-container i:hover {
+  color: var(--color-wish-list-icon-hover);
+  transform: scale(1.1);
+}
+
+/* ---------------------------------------- */
+/* FIXME:  WISH LIST SPAN - COUNTER  FIXME: */
+/* ---------------------------------------- */
+
+.wishlist-counter-container span {
+  position: absolute;
+  user-select: none;
+  top: 0.3rem;
+  right: 0.2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+  font-family: "Poppins", sans-serif;
+  font-size: 0.8rem;
+  font-weight: bold;
+  background-color: var(--color-wish-list-counter-background);
+  color: var(--color-wish-list-counter-text);
+  z-index: 1;
+}
+
+/* ----------------------------------------- */
+/* FIXME:  BUTTON - ADD TO WISH LIST  FIXME: */
+/* ----------------------------------------- */
+
+.wishlist-container button {
+  font-size: 1.5rem;
+  font-weight: 600;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+  margin: 1rem 1rem 1rem 1rem;
+  padding: 0.5rem 1.5rem 0.5rem 1.5rem;
+  border-radius: 0.5rem;
+  background-color: var(--color-add-to-wish-list-button-background);
+  color: var(--color-add-to-wish-list-button-text);
+  outline: none;
+  border: none;
+  transition: transform 0.3s ease-in-out;
+  box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.35);
+  /* border: 1px solid red; */
+}
+
+.wishlist-container button:hover {
+  opacity: 0.9;
+  transform: scale(1.02);
+  cursor: pointer;
+}
+
+/* ----------------------------------- */
+/* FIXME:  COUNTER - ANIMATION  FIXME: */
+/* ----------------------------------- */
+
+/* ----------------------------------------------------------------------------------------------------- */
+/* TODO:FIXME:  JAVASCRIPT - WISH LIST COUNTER ANIMATION ON "ADD TO WISH LIST" BUTTON CLICK  TODO:FIXME: */
+/* ----------------------------------------------------------------------------------------------------- */
+
+.wishlist-counter-container span:not(.wishlist-animated-counter) {
+  display: flex;
+}
+
+.wishlist-counter-container span .wishlist-animated-counter {
+  animation: count 0.4s ease-in-out;
+}
+
+@keyframes count {
+  from {
+    top: 0.2rem;
+    right: -1.8rem;
+    transform: rotate(120deg);
+  }
+
+  25% {
+    top: -0.2rem;
+    right: -1.2rem;
+    transform: rotate(80deg);
+  }
+
+  50% {
+    top: -0.4rem;
+    right: -0.6rem;
+    transform: rotate(60deg);
+  }
+
+  75% {
+    top: -0.4rem;
+    right: 0rem;
+    transform: rotate(30deg);
+  }
+
+  to {
+    top: 0.2rem;
+    right: 0.3rem;
+    transform: rotate(0deg);
+  }
+}
+
+/* ===================================================================================================================== */
+/*                                              TODO:  SHOPPING CART  TODO:                                              */
+/* ===================================================================================================================== */
+
+/* ----------------------------------------------------------------------- */
+/* FIXME:  MAIN CONTAINER - HOLDING COUNTER AND SHOPPING CART ICON  FIXME: */
+/* ----------------------------------------------------------------------- */
+
+/* -------------------------------------------------------- */
+/* FIXME:  CONTAINERS - MAIN (HOLDING ALL ELEMENTS)  FIXME: */
+/* -------------------------------------------------------- */
+
+/* ---------------------------------------------------------------------- */
+/* CONTAINER HOLD CART BUTTON with "add-animation" ID for Javascript Code */
+/* ---------------------------------------------------------------------- */
+
+.shopping-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* border: 1px solid red; */
+}
+
+/* ---------------------------------------------------------------------- */
+/* CONTAINER HOLD THE CART COUNTER with "counter" ID for Javascript Code  */
+/* ---------------------------------------------------------------------- */
+
+.cart_counter-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 0rem 2.5rem 2.5rem 0rem;
+  margin: 0rem 0rem 0rem 0rem;
+  /* border: 1px solid orange; */
+}
+
+/* ------------------------------ */
+/* FIXME:  ANCHOR ELEMENT  FIXME: */
+/* ------------------------------ */
+
+.cart_counter-container a {
+  text-decoration: none;
+  cursor: pointer;
+  color: var(--color-shopping-cart-icon);
+}
+
+/* ---------------------------------- */
+/* FIXME:  SHOPPING CART ICON  FIXME: */
+/* ---------------------------------- */
+
+.cart_counter-container i {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2.35rem;
+  font-weight: 500;
+  width: 4rem;
+  height: 4rem;
+  color: var(--color-shopping-cart-icon);
+  transition: transform 0.3s ease-in-out;
+  cursor: pointer;
+  /* border: 1px solid red; */
+}
+
+/* ------------------------------------------ */
+/* FIXME:  SHOPPING CART ICON - HOVER  FIXME: */
+/* ------------------------------------------- */
+
+.cart_counter-container i:hover {
+  color: var(--color-shopping-cart-icon-hover);
+  transform: scale(1.1);
+}
+
+/* -------------------------------------------- */
+/* FIXME:  SHOPPING CART SPAN - COUNTER  FIXME: */
+/* -------------------------------------------- */
+
+.cart_counter-container span {
+  position: absolute;
+  user-select: none;
+  top: 0.4rem;
+  right: 0.3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+  font-family: "Poppins", sans-serif;
+  font-size: 0.8rem;
+  font-weight: bold;
+  background-color: var(--color-wish-list-counter-background);
+  color: var(--color-wish-list-counter-text);
+  z-index: 1;
+}
+
+/* ------------------------------------ */
+/* FIXME:  BUTTON - ADD TO CART  FIXME: */
+/* ------------------------------------ */
+
+.shopping-container button {
+  font-size: 1.5rem;
+  font-weight: 600;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+  margin: 1rem 1rem 1rem 1rem;
+  padding: 0.5rem 1.5rem 0.5rem 1.5rem;
+  border-radius: 0.5rem;
+  background-color: var(--color-add-to-cart-button-background);
+  color: var(--color-add-to-cart-button-text);
+  outline: none;
+  border: none;
+  transition: transform 0.3s ease-in-out;
+  box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.35);
+  /* border: 1px solid red; */
+}
+
+.shopping-container button:hover {
+  opacity: 0.9;
+  transform: scale(1.02);
+  cursor: pointer;
+}
+
+/* ---------------------------------------------------------------------------------------------------- */
+/* TODO:FIXME:  JAVASCRIPT - SHOPPING CART COUNTER ANIMATION ON "ADD TO CART" BUTTON CLICK  TODO:FIXME: */
+/* ---------------------------------------------------------------------------------------------------- */
+
+.cart_counter-container span:not(.animated-counter) {
+  display: flex;
+}
+
+.cart_counter-container span .animated-counter {
+  animation: count 0.4s ease-in-out;
+}
+
+@keyframes count {
+  from {
+    top: 0.2rem;
+    right: -1.8rem;
+    transform: rotate(120deg);
+  }
+
+  25% {
+    top: -0.2rem;
+    right: -1.2rem;
+    transform: rotate(80deg);
+  }
+
+  50% {
+    top: -0.4rem;
+    right: -0.6rem;
+    transform: rotate(60deg);
+  }
+
+  75% {
+    top: -0.4rem;
+    right: 0rem;
+    transform: rotate(30deg);
+  }
+
+  to {
+    top: 0.2rem;
+    right: 0.3rem;
+    transform: rotate(0deg);
+  }
+}
+
+/* ===================================================================================================================== */
+/* TODO:  PART 6 - RESPONSIVE / MOBILE VIEW (ALL MEDIA QUERIES) - FOR 2ND COMPONENT                                      */
+/* ===================================================================================================================== */
+
+/* --------------------------- */
+/* FIXME:  BREAKPOINT:  830 px */
+/* --------------------------- */
+
+@media screen and (max-width: 1280px) {
+  .top_bar_search-input .top_bar_search-autocomplete-box {
+    width: 100%;
+    position: absolute;
+    z-index: 10;
+  }
+}
+
+@media screen and (max-width: 830px) {
+  .top_bar_container_all {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .top_bar_search-bar-container {
+    max-width: 41rem;
+    margin: 1rem auto 1rem auto;
+  }
+
+  .top_bar_social-media ul li {
+    margin: 0.5rem 2rem 0rem 2rem;
+  }
+
+  /* .top_bar_search-input .top_bar_search-autocomplete-box {
+    width: 100%;
+    position: absolute;
+    z-index: 9999;
+  } */
+}
+
+/* --------------------------- */
+/* FIXME:  BREAKPOINT:  520 px */
+/* --------------------------- */
+
+@media screen and (max-width: 520px) {
+  .top_bar_search-bar-container {
+    max-width: 39rem;
+    margin: 1rem auto 1rem auto;
+  }
+
+  .top_bar_social-media ul li {
+    margin: 0rem 1.8rem 0rem 1.8rem;
+  }
+}
+
+/* --------------------------- */
+/* FIXME:  BREAKPOINT:  450 px */
+/* --------------------------- */
+
+@media screen and (max-width: 450px) {
+  .top_bar_search-bar-container {
+    display: flex;
+    flex-direction: column;
+    max-width: 33rem;
+    margin: 1rem auto 1rem auto;
+    padding: 0rem 0rem 0rem 0rem;
+  }
+
+  .top_bar_search-bar-container .top_bar_search-input {
+    border-radius: 1rem 1rem 0rem 0rem;
+  }
+
+  .top_bar_search-bar-container .top_bar_shopping_icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0rem 0rem 1rem 1rem;
+    border: none;
+  }
+
+  .top_bar_container_social {
+    top: 4rem;
+  }
+
+  .cart_counter-container {
+    border-radius: 0rem 0rem 0rem 0rem;
+  }
+
+  .top_bar_user_account {
+    border-radius: 0rem 0rem 0rem 0rem;
+  }
+
+  .top_bar_social-media ul li {
+    margin: 0rem 1.7rem 0rem 1.7rem;
+  }
+}
+
+/* --------------------------- */
+/* FIXME:  BREAKPOINT:  400 px */
+/* --------------------------- */
+
+@media screen and (max-width: 400px) {
+  .top_bar_search-bar-container {
+    max-width: 30rem;
+  }
+
+  .top_bar_social-media ul li {
+    margin: 0rem 1.4rem 0rem 1.4rem;
+  }
+}
+
+/* --------------------------- */
+/* FIXME:  BREAKPOINT:  350 px */
+/* --------------------------- */
+
+@media screen and (max-width: 350px) {
+  .top_bar_search-bar-container {
+    width: 26rem;
+  }
+
+  .top_bar_social-media ul li {
+    margin: 0rem 1rem 0rem 1rem;
+    /* transform: scale(0.75); */
+  }
+}
+
+/* --------------------------- */
+/* FIXME:  BREAKPOINT:  320 px */
+/* --------------------------- */
+
+@media screen and (max-width: 320px) {
+  .top_bar_search-bar-container {
+    width: 23.5rem;
+  }
+
+  .top_bar_social-media ul li {
+    margin: 0rem 0.75rem 0rem 0.75rem;
+    /* transform: scale(0.75); */
+  }
+}
+
+/* --------------------------- */
+/* FIXME:  BREAKPOINT:  300 px */
+/* --------------------------- */
+
+@media screen and (max-width: 300px) {
+  .top_bar_search-bar-container {
+    width: 22rem;
+  }
+
+  .top_bar_social-media ul li {
+    margin: 0rem 0.6rem 0rem 0.6rem;
+    /* transform: scale(0.75); */
+  }
+}
+
+/* ===================================================================================================================== */
 /* ===================================================================================================================== */
 /* FIXME:FIXME:                    SECTION - LOGO, SEARCH BAR, SOCIAL MEDIA ICONS (END)                     FIXME:FIXME: */
 /* ===================================================================================================================== */
@@ -133,6 +1163,772 @@ h6 {
 /* TODO:TODO:                               SECTION - MAIN NAVIGATION (START)                                 TODO:TODO: */
 /* ===================================================================================================================== */
 /* ===================================================================================================================== */
+
+/* .section__main__navigation {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60rem;
+  object-fit: cover;
+  margin: 5rem 0rem 0rem 0rem;
+  border: 2px solid red;
+} */
+
+.main__navigation__container {
+  /* position: relative;
+  top: 0;
+  left: 0; */
+  display: flex;
+  margin: 1.5rem 1rem 1.5rem 1rem;
+  padding: 0rem 0rem 0rem 0rem;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 100vw;
+  /* z-index: 0; */
+  column-gap: 1rem;
+  /* border: 2px solid red; */
+}
+
+/* ===================================================================================================================== */
+/* TODO:  TOP NAVIGATION - TITLE, BUTTON & DROP-DOWN ICON                                                                */
+/* ===================================================================================================================== */
+
+/* TOP NAVIGATION - POSITIONING */
+
+nav .shopproductsall {
+  position: absolute;
+  top: 1%;
+  left: 1%;
+  transform: translate(-1%, -1%);
+  /* border: 3px solid green; */
+}
+
+/* TOP NAVIGATION - TITLE & BUTTON (THE COMPLETE BOX IS THE BUTTON) */
+
+nav .productsdrop-btn {
+  width: var(--topnavigation-button-width);
+  background: var(--color-top-navigation-background);
+  color: var(--color-top-navigation-text);
+  line-height: var(--topnavigation-line-height);
+  padding: 0rem 1rem 0rem 1rem;
+  border-radius: 0.5rem;
+  font-size: var(--topnavigation-font-size);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  z-index: 1;
+}
+
+/* TOP NAVIGATION - DROP-DOWN ICON */
+
+nav .productsdrop-btn span {
+  float: right;
+  line-height: var(--topnavigation-dropdown-icon-line-height);
+  font-size: var(--topnavigation-dropdown-icon-font-size);
+  cursor: pointer;
+  color: var(--topnavigation-dropdown-icon-color);
+}
+
+/* ===================================================================================================================== */
+/* TODO:  1ST LEVEL NAVIGATION - TOOLTIP & DROP-DOWN MENU (CONTAINER)                                                    */
+/* ===================================================================================================================== */
+
+/* 1ST LEVEL - TOOLTIP POSITIONING, SIZING & COLOR  */
+
+nav .productstooltip {
+  position: absolute;
+  left: 71.15rem;
+  top: 2.2rem;
+  height: 1rem;
+  width: 1rem;
+  background: var(--color-tooltip-background);
+  transform: rotate(45deg);
+  display: none;
+}
+
+/* =============================================== */
+/* TODO:  TOOLTIP LINK TO JAVASCRIPT CODE          */
+/* =============================================== */
+
+/* TOOLTIP - DISPLAY ON OPENING OF CONTAINER */
+
+nav .productstooltip.show {
+  display: block;
+}
+
+/* ============================================== */
+
+/* 1ST LEVEL - CONTAINER (HOLDING ALL ELEMENTS */
+
+/* CONTAINER - POSITIONING AND SIZING */
+
+nav .productswrapper {
+  position: absolute;
+  /* top: 3.5rem; */
+  top: 8.5rem;
+  display: flex;
+  width: var(--navigation-wrapper-width);
+  overflow: hidden;
+  background: var(--color-drop-down-container);
+  border-radius: 0.5rem;
+  transition: all 0.3s ease;
+  display: none;
+  box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.35);
+  z-index: 4;
+  /* border: 1px solid green; */
+}
+
+/* ============================================= */
+/* TODO:  CONTAINER LINK TO JAVASCRIPT SCRIPT    */
+/* ============================================= */
+
+/* CONTAINER - OPEN, CLOSING, DISPLAY TYPE */
+
+nav .productswrapper.show {
+  display: block;
+  display: flex;
+}
+
+/* ============================================= */
+
+/* ===================================================================================================================== */
+/* TODO:  1ST LEVEL NAVIGATION - MENU-ITEMS (UNORDERED LISTS, LIST ITEMS, ANCHORS AND ICONS)                             */
+/* ===================================================================================================================== */
+
+/* lEVEL 1 - UNORDERED LIST - REMOVE BULLETS, SET MAX-WIDTH OF LIST-ITEMS, SET PADDING AROUND LIST-ITEMS */
+
+nav .productswrapper ul {
+  list-style: none;
+  width: var(--navigation-wrapper-ul-width);
+  padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+  transition: all 0.3s ease;
+}
+
+/* LEVEL 1 - LIST ITEMS - SET MAX LINE-HEIGHT OF LIST -ITEMS */
+
+nav .productswrapper ul li {
+  line-height: var(--navigation-wrapper-ul-li-line-height);
+}
+
+/* LEVEL 1 - UNORDERED LIST, LIST ITEMS, ANCHORS (POSITIONING, SIZING, FONT-SIZING) */
+
+nav .productswrapper ul li a {
+  position: relative;
+  text-decoration: none;
+  color: var(--color-menu-items-all-levels);
+  display: flex;
+  font-size: var(--navigation-wrapper-ul-li-anchor-font-size);
+  font-weight: 500;
+  padding: 0rem 0rem 0rem 0.5rem;
+  align-items: center;
+  border-radius: 0.8rem;
+}
+
+/* LEVEL 1 - UNORDERED LIST, LIST ITEMS, ANCHORS (ON HOVER COLOR) */
+
+nav .productswrapper ul li:hover a {
+  background: var(--color-menu-items-all-levels-hover);
+}
+
+/* LEVEL 1 - ICON CONTAINER - HEIGTH, WIDTH, MARGINS, BACKGROUND COLOR, ALIGNMENT OF ICONS WITHIN */
+
+.productswrapper ul li a .icon {
+  height: var(--icon-circle-height);
+  width: var(--icon-circle-width);
+  margin: 0rem 0.5rem 0rem 0rem;
+  background: var(--color-icon-container);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border-radius: 50%;
+}
+
+/* LEVEL 1 - NAVIGATION ICONS (TO NEXT LEVEL) - ICON: FA-ANGLE-RIGHT */
+
+.productswrapper ul li a i {
+  position: absolute;
+  right: 0.8rem;
+  font-size: var(--icon-right-angle-font-size);
+  pointer-events: none;
+  color: var(--color-icon-right-angle);
+}
+
+/* FIRST LEVEL DROPDOWN-TO-RIGHT */
+
+/* ===================================================================================================================== */
+/* TODO:  2ND LEVEL NAVIGATION - THE BACK BUTTON (ARROW) TO THE FIRST LEVEL & BUTTON TEXT                                */
+/* ===================================================================================================================== */
+
+.productswrapper ul .arrow {
+  padding: 0rem 0rem 0rem 0.7rem;
+  font-size: var(--icon-back-button-font-size);
+  font-weight: 700;
+  color: var(--color-back-button-arrow-and-text);
+  cursor: pointer;
+}
+
+.productswrapper ul .arrow span {
+  margin: 0rem 0.8rem 0rem 0rem;
+}
+
+.productswrapper .arrow span {
+  color: var(--color-back-button-arrow-only);
+}
+
+/* ===================================================================================================================== */
+/* TODO:  THE INCLUDED HIDDEN NESTED LISTS ON THE NAVIGATION (WHICH IS NOT VISIBLE WHEN NOT ACTIVE)                      */
+/* ===================================================================================================================== */
+
+nav .productswrapper .skynamo-drop,
+nav .productswrapper .kettie-drop,
+nav .productswrapper .whistleblowing-drop,
+nav .productswrapper .marketplaceproducts-drop,
+nav .productswrapper .generalservices-drop,
+nav .productswrapper .professionalservices-drop,
+nav .productswrapper .mobile-drop,
+nav .productswrapper .laptops-drop,
+nav .productswrapper .phones-drop,
+nav .productswrapper .tablets-drop,
+nav .productswrapper .watches-drop,
+nav .productswrapper .data-drop,
+nav .productswrapper .mobileaccessories-drop,
+nav .productswrapper .office-drop,
+nav .productswrapper .desktoppc-drop,
+nav .productswrapper .pccomponents-drop,
+nav .productswrapper .pcperipherals-drop,
+nav .productswrapper .servers-drop,
+nav .productswrapper .pointofsale-drop,
+nav .productswrapper .securitysurveillance-drop,
+nav .productswrapper .printers-drop,
+nav .productswrapper .projectors-drop,
+nav .productswrapper .software-drop,
+nav .productswrapper .officestationery-drop,
+nav .productswrapper .officefurniture-drop,
+nav .productswrapper .homeliving-drop,
+nav .productswrapper .bathrooms-drop,
+nav .productswrapper .bedrooms-drop,
+nav .productswrapper .cookware-drop,
+nav .productswrapper .diningrooms-drop,
+nav .productswrapper .kitchen-drop,
+nav .productswrapper .laundry-drop,
+nav .productswrapper .lounge-drop,
+nav .productswrapper .patiopools-drop,
+nav .productswrapper .homeaccessories-drop,
+nav .productswrapper .television-drop,
+nav .productswrapper .hobbies-drop,
+nav .productswrapper .booksall-drop,
+nav .productswrapper .camerasall-drop,
+nav .productswrapper .gamingall-drop,
+nav .productswrapper .radiocontrol-drop,
+nav .productswrapper .toysall-drop,
+nav .productswrapper .outdoors-drop,
+nav .productswrapper .camping-drop,
+nav .productswrapper .offroadvehicles-drop,
+nav .productswrapper .outdoorgear-drop,
+nav .productswrapper .shoothunt-drop,
+nav .productswrapper .watersports-drop,
+nav .productswrapper .sports-drop,
+nav .productswrapper .tablesports-drop,
+nav .productswrapper .diyall-drop,
+nav .productswrapper .diygardening-drop,
+nav .productswrapper .diymaterials-drop,
+nav .productswrapper .diytools-drop,
+nav .productswrapper .covid19-drop,
+nav .productswrapper .emergency-drop,
+nav .productswrapper .energy-drop,
+nav .productswrapper .groceries-drop,
+nav .productswrapper .freshproduce-drop,
+nav .productswrapper .bakery-drop,
+nav .productswrapper .dairyeggs-drop,
+nav .productswrapper .deliparty-drop,
+nav .productswrapper .meatspoultryfish-drop,
+nav .productswrapper .frozenfoods-drop,
+nav .productswrapper .beveragesall-drop,
+nav .productswrapper .tabacco-drop,
+nav .productswrapper .beercider-drop,
+nav .productswrapper .winesall-drop,
+nav .productswrapper .spiritsall-drop,
+nav .productswrapper .snacks-drop,
+nav .productswrapper .foodcupboard-drop,
+nav .productswrapper .babycare-drop,
+nav .productswrapper .petcare-drop,
+nav .productswrapper .braaioutdoors-drop,
+nav .productswrapper .clothingfootwear-drop,
+nav .productswrapper .ladiesgroup-drop,
+nav .productswrapper .ladiesshoes-drop,
+nav .productswrapper .ladiesbottoms-drop,
+nav .productswrapper .ladiesdresses-drop,
+nav .productswrapper .ladiestops-drop,
+nav .productswrapper .ladiesjackets-drop,
+nav .productswrapper .ladieslingerie-drop,
+nav .productswrapper .ladiessports-drop,
+nav .productswrapper .ladiesswimwear-drop,
+nav .productswrapper .ladiesaccessories-drop,
+nav .productswrapper .ladiesbeauty-drop,
+nav .productswrapper .mensgroup-drop,
+nav .productswrapper .mensshoes-drop,
+nav .productswrapper .mensbottoms-drop,
+nav .productswrapper .mensformalwear-drop,
+nav .productswrapper .menstops-drop,
+nav .productswrapper .mensjackets-drop,
+nav .productswrapper .mensunderwear-drop,
+nav .productswrapper .menssports-drop,
+nav .productswrapper .mensswimwear-drop,
+nav .productswrapper .mensaccessories-drop,
+nav .productswrapper .mensgrooming-drop,
+nav .productswrapper .kidsgroup-drop,
+nav .productswrapper .babygirls-drop,
+nav .productswrapper .babyboys-drop,
+nav .productswrapper .girlstwoeight-drop,
+nav .productswrapper .boystwoeight-drop,
+nav .productswrapper .girlseightsixteen-drop,
+nav .productswrapper .boyseightsixteen-drop {
+  display: none;
+}
+
+/* ===================================================================================================================== */
+/* TODO:                     FIXME:   NAVIGATION (PART 3) - SELLING & INVESTING PLANS  FIXME:                      TODO: */
+/* ===================================================================================================================== */
+
+/* ===================================================================================================================== */
+/* TODO:  TOP NAVIGATION - TITLE, BUTTON & DROP-DOWN ICON                                                                */
+/* ===================================================================================================================== */
+
+/* TOP NAVIGATION - POSITIONING */
+
+nav .sellinginvestingplans {
+  position: absolute;
+  top: 1%;
+  left: 1%;
+  transform: translate(-1%, -1%);
+}
+
+/* TOP NAVIGATION - TITLE & BUTTON (THE COMPLETE BOX IS THE BUTTON) */
+
+nav .sellinvestplandrop-btn {
+  width: var(--topnavigation-button-width);
+  background: var(--color-top-navigation-background);
+  color: var(--color-top-navigation-text);
+  line-height: var(--topnavigation-line-height);
+  padding: 0rem 1rem 0rem 1rem;
+  border-radius: 0.5rem;
+  font-size: var(--topnavigation-font-size);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  z-index: 3;
+}
+
+/* TOP NAVIGATION - DROP-DOWN ICON */
+
+nav .sellinvestplandrop-btn span {
+  float: right;
+  line-height: var(--topnavigation-dropdown-icon-line-height);
+  font-size: var(--topnavigation-dropdown-icon-font-size);
+  cursor: pointer;
+  color: var(--topnavigation-dropdown-icon-color);
+}
+
+/* ===================================================================================================================== */
+/* TODO:  1ST LEVEL NAVIGATION - TOOLTIP & DROP-DOWN MENU (CONTAINER)                                                    */
+/* ===================================================================================================================== */
+
+/* 1ST LEVEL - TOOLTIP POSITIONING, SIZING & COLOR  */
+
+nav .sellinvestplantooltip {
+  position: absolute;
+  left: 17.15rem;
+  top: 2.2rem;
+  height: 1rem;
+  width: 1rem;
+  background: var(--color-tooltip-background);
+  transform: rotate(45deg);
+  display: none;
+}
+
+/* =============================================== */
+/* TODO:  TOOLTIP LINK TO JAVASCRIPT CODE          */
+/* =============================================== */
+
+/* TOOLTIP - DISPLAY ON OPENING OF CONTAINER */
+
+nav .sellinvestplantooltip.show {
+  display: block;
+}
+
+/* ============================================== */
+
+/* 1ST LEVEL - CONTAINER (HOLDING ALL ELEMENTS */
+
+/* CONTAINER - POSITIONING AND SIZING */
+
+nav .sellinvestplanwrapper {
+  position: absolute;
+  /* top: 3.5rem; */
+  top: 8.5rem;
+  display: flex;
+  width: var(--navigation-wrapper-width);
+  overflow: hidden;
+  background: var(--color-drop-down-container);
+  border-radius: 0.5rem;
+  transition: all 0.3s ease;
+  display: none;
+  box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.35);
+  z-index: 2;
+}
+
+/* ============================================= */
+/* TODO:  CONTAINER LINK TO JAVASCRIPT SCRIPT    */
+/* ============================================= */
+
+/* CONTAINER - OPEN, CLOSING, DISPLAY TYPE */
+
+nav .sellinvestplanwrapper.show {
+  display: block;
+  display: flex;
+}
+
+/* ============================================= */
+
+/* ===================================================================================================================== */
+/* TODO:  1ST LEVEL NAVIGATION - MENU-ITEMS (UNORDERED LISTS, LIST ITEMS, ANCHORS AND ICONS)                             */
+/* ===================================================================================================================== */
+
+/* lEVEL 1 - UNORDERED LIST - REMOVE BULLETS, SET MAX-WIDTH OF LIST-ITEMS, SET PADDING AROUND LIST-ITEMS */
+
+nav .sellinvestplanwrapper ul {
+  list-style: none;
+  width: var(--navigation-wrapper-ul-width);
+  padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+  transition: all 0.3s ease;
+}
+
+/* LEVEL 1 - LIST ITEMS - SET MAX LINE-HEIGHT OF LIST -ITEMS */
+
+nav .sellinvestplanwrapper ul li {
+  line-height: var(--navigation-wrapper-ul-li-line-height);
+}
+
+/* LEVEL 1 - UNORDERED LIST, LIST ITEMS, ANCHORS (POSITIONING, SIZING, FONT-SIZING) */
+
+nav .sellinvestplanwrapper ul li a {
+  position: relative;
+  text-decoration: none;
+  color: var(--color-menu-items-all-levels);
+  display: flex;
+  font-size: var(--navigation-wrapper-ul-li-anchor-font-size);
+  font-weight: 500;
+  padding: 0rem 0rem 0rem 0.5rem;
+  align-items: center;
+  border-radius: 0.8rem;
+}
+
+/* LEVEL 1 - UNORDERED LIST, LIST ITEMS, ANCHORS (ON HOVER COLOR) */
+
+nav .sellinvestplanwrapper ul li:hover a {
+  background: var(--color-menu-items-all-levels-hover);
+}
+
+/* LEVEL 1 - ICON CONTAINER - HEIGTH, WIDTH, MARGINS, BACKGROUND COLOR, ALIGNMENT OF ICONS WITHIN */
+
+.sellinvestplanwrapper ul li a .icon {
+  height: var(--icon-circle-height);
+  width: var(--icon-circle-width);
+  margin: 0rem 0.5rem 0rem 0rem;
+  background: var(--color-icon-container);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border-radius: 50%;
+}
+
+/* LEVEL 1 - NAVIGATION ICONS (TO NEXT LEVEL) - ICON: FA-ANGLE-RIGHT */
+
+.sellinvestplanwrapper ul li a i {
+  position: absolute;
+  right: 0.8rem;
+  font-size: var(--icon-right-angle-font-size);
+  pointer-events: none;
+  color: var(--color-icon-right-angle);
+}
+
+/* FIRST LEVEL DROPDOWN-TO-RIGHT */
+
+/* ===================================================================================================================== */
+/* TODO:  2ND LEVEL NAVIGATION - THE BACK BUTTON (ARROW) TO THE FIRST LEVEL & BUTTON TEXT                                */
+/* ===================================================================================================================== */
+
+.sellinvestplanwrapper ul .arrow {
+  padding: 0rem 0rem 0rem 0.7rem;
+  font-size: var(--icon-back-button-font-size);
+  font-weight: 700;
+  color: var(--color-back-button-arrow-and-text);
+  cursor: pointer;
+}
+
+.sellinvestplanwrapper ul .arrow span {
+  margin: 0rem 0.8rem 0rem 0rem;
+}
+
+.sellinvestplanwrapper .arrow span {
+  color: var(--color-back-button-arrow-only);
+}
+
+/* ===================================================================================================================== */
+/* TODO:  THE INCLUDED HIDDEN NESTED LISTS ON THE NAVIGATION (WHICH IS NOT VISIBLE WHEN NOT ACTIVE)                      */
+/* ===================================================================================================================== */
+
+nav .sellinvestplanwrapper .sellingplans-drop,
+nav .sellinvestplanwrapper .investingplans-drop {
+  display: none;
+}
+
+/* ===================================================================================================================== */
+/* TODO:                           FIXME:   NAVIGATION (PART 4) - CLIENT ZONE  FIXME:                              TODO: */
+/* ===================================================================================================================== */
+
+/* ===================================================================================================================== */
+/* TODO:  TOP NAVIGATION - TITLE, BUTTON & DROP-DOWN ICON                                                                */
+/* ===================================================================================================================== */
+
+/* TOP NAVIGATION - POSITIONING */
+
+nav .clientzonegroup {
+  position: absolute;
+  top: 1%;
+  left: 1%;
+  transform: translate(-1%, -1%);
+}
+
+/* TOP NAVIGATION - TITLE & BUTTON (THE COMPLETE BOX IS THE BUTTON) */
+
+nav .clientzonedrop-btn {
+  width: var(--topnavigation-button-width);
+  background: var(--color-top-navigation-background);
+  color: var(--color-top-navigation-text);
+  line-height: var(--topnavigation-line-height);
+  padding: 0rem 1rem 0rem 1rem;
+  border-radius: 0.5rem;
+  font-size: var(--topnavigation-font-size);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  z-index: 3;
+}
+
+/* TOP NAVIGATION - DROP-DOWN ICON */
+
+nav .clientzonedrop-btn span {
+  float: right;
+  line-height: var(--topnavigation-dropdown-icon-line-height);
+  font-size: var(--topnavigation-dropdown-icon-font-size);
+  cursor: pointer;
+  color: var(--topnavigation-dropdown-icon-color);
+}
+
+/* ===================================================================================================================== */
+/* TODO:  1ST LEVEL NAVIGATION - TOOLTIP & DROP-DOWN MENU (CONTAINER)                                                    */
+/* ===================================================================================================================== */
+
+/* 1ST LEVEL - TOOLTIP POSITIONING, SIZING & COLOR  */
+
+nav .clientzonetooltip {
+  position: absolute;
+  left: 125.15rem;
+  top: 2.2rem;
+  height: 1rem;
+  width: 1rem;
+  background: var(--color-tooltip-background);
+  transform: rotate(45deg);
+  display: none;
+}
+
+/* =============================================== */
+/* TODO:  TOOLTIP LINK TO JAVASCRIPT CODE          */
+/* =============================================== */
+
+/* TOOLTIP - DISPLAY ON OPENING OF CONTAINER */
+
+nav .clientzonetooltip.show {
+  display: block;
+}
+
+/* ============================================== */
+
+/* 1ST LEVEL - CONTAINER (HOLDING ALL ELEMENTS */
+
+/* CONTAINER - POSITIONING AND SIZING */
+
+nav .clientzonewrapper {
+  position: absolute;
+  /* top: 3.5rem; */
+  top: 8.5rem;
+  display: flex;
+  width: var(--navigation-wrapper-width);
+  overflow: hidden;
+  background: var(--color-drop-down-container);
+  border-radius: 0.5rem;
+  transition: all 0.3s ease;
+  display: none;
+  box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.35);
+  z-index: 3;
+}
+
+/* ============================================= */
+/* TODO:  CONTAINER LINK TO JAVASCRIPT SCRIPT    */
+/* ============================================= */
+
+/* CONTAINER - OPEN, CLOSING, DISPLAY TYPE */
+
+nav .clientzonewrapper.show {
+  display: block;
+  display: flex;
+}
+
+/* ============================================= */
+
+/* ===================================================================================================================== */
+/* TODO:  1ST LEVEL NAVIGATION - MENU-ITEMS (UNORDERED LISTS, LIST ITEMS, ANCHORS AND ICONS)                             */
+/* ===================================================================================================================== */
+
+/* lEVEL 1 - UNORDERED LIST - REMOVE BULLETS, SET MAX-WIDTH OF LIST-ITEMS, SET PADDING AROUND LIST-ITEMS */
+
+nav .clientzonewrapper ul {
+  list-style: none;
+  width: var(--navigation-wrapper-ul-width);
+  padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+  transition: all 0.3s ease;
+}
+
+/* LEVEL 1 - LIST ITEMS - SET MAX LINE-HEIGHT OF LIST -ITEMS */
+
+nav .clientzonewrapper ul li {
+  line-height: var(--navigation-wrapper-ul-li-line-height);
+}
+
+/* LEVEL 1 - UNORDERED LIST, LIST ITEMS, ANCHORS (POSITIONING, SIZING, FONT-SIZING) */
+
+nav .clientzonewrapper ul li a {
+  position: relative;
+  text-decoration: none;
+  color: var(--color-menu-items-all-levels);
+  display: flex;
+  font-size: var(--navigation-wrapper-ul-li-anchor-font-size);
+  font-weight: 500;
+  padding: 0rem 0rem 0rem 0.5rem;
+  align-items: center;
+  border-radius: 0.8rem;
+}
+
+/* LEVEL 1 - UNORDERED LIST, LIST ITEMS, ANCHORS (ON HOVER COLOR) */
+
+nav .clientzonewrapper ul li:hover a {
+  background: var(--color-menu-items-all-levels-hover);
+}
+
+/* LEVEL 1 - ICON CONTAINER - HEIGTH, WIDTH, MARGINS, BACKGROUND COLOR, ALIGNMENT OF ICONS WITHIN */
+
+.clientzonewrapper ul li a .icon {
+  height: var(--icon-circle-height);
+  width: var(--icon-circle-width);
+  margin: 0rem 0.5rem 0rem 0rem;
+  background: var(--color-icon-container);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border-radius: 50%;
+}
+
+/* LEVEL 1 - NAVIGATION ICONS (TO NEXT LEVEL) - ICON: FA-ANGLE-RIGHT */
+
+.clientzonewrapper ul li a i {
+  position: absolute;
+  right: 0.8rem;
+  font-size: var(--icon-right-angle-font-size);
+  pointer-events: none;
+  color: var(--color-icon-right-angle);
+}
+
+/* FIRST LEVEL DROPDOWN-TO-RIGHT */
+
+/* ===================================================================================================================== */
+/* TODO:  2ND LEVEL NAVIGATION - THE BACK BUTTON (ARROW) TO THE FIRST LEVEL & BUTTON TEXT                                */
+/* ===================================================================================================================== */
+
+.clientzonewrapper ul .arrow {
+  padding: 0rem 0rem 0rem 0.7rem;
+  font-size: var(--icon-back-button-font-size);
+  font-weight: 700;
+  color: var(--color-back-button-arrow-and-text);
+  cursor: pointer;
+}
+
+.clientzonewrapper ul .arrow span {
+  margin: 0rem 0.8rem 0rem 0rem;
+}
+
+.clientzonewrapper .arrow span {
+  color: var(--color-back-button-arrow-only);
+}
+
+/* ===================================================================================================================== */
+/* TODO:  THE INCLUDED HIDDEN NESTED LISTS ON THE NAVIGATION (WHICH IS NOT VISIBLE WHEN NOT ACTIVE)                      */
+/* ===================================================================================================================== */
+
+nav .clientzonewrapper .shopper-drop,
+nav .clientzonewrapper .seller-drop,
+nav .clientzonewrapper .investor-drop,
+nav .clientzonewrapper .advertising-drop {
+  display: none;
+}
+
+/* ===================================================================================================================== */
+/* TODO:  MAKING NAVIGATION SYSTEM RESPONSIVE - MEDIA QUERIES                                                     TODO:  */
+/* ===================================================================================================================== */
+
+@media screen and (max-width: 840px) {
+  .main__navigation__container {
+    column-gap: 0.5rem;
+  }
+}
+
+@media screen and (max-width: 830px) {
+  .main__navigation__container {
+    position: relative;
+    top: 10rem;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.5rem;
+  }
+  nav .productswrapper {
+    position: relative;
+    top: 0.75rem;
+  }
+
+  nav .sellinvestplanwrapper {
+    position: relative;
+    top: 0.75rem;
+  }
+  nav .clientzonewrapper {
+    position: relative;
+    top: 0.75rem;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .main__navigation__container {
+    top: 14rem;
+    margin: 1rem 0.25rem 1rem 0.25rem;
+  }
+}
 
 /* ===================================================================================================================== */
 /* ===================================================================================================================== */
@@ -146,6 +1942,828 @@ h6 {
 /* ===================================================================================================================== */
 /* ===================================================================================================================== */
 
+.shopmax__main__hero__banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  margin: 0rem 0rem 0rem 0rem;
+  /* border: 2px solid red; */
+}
+
+/* .shopmax__main__hero__banner img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+} */
+
+@media screen and (max-width: 830px) {
+  .shopmax__main__hero__banner {
+    position: relative;
+    top: 11rem;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .shopmax__main__hero__banner {
+    position: relative;
+    top: 15rem;
+  }
+}
+
+/* ===================================================================================================================== */
+/* TODO:  PART 1 - CONTAINER HOLDING ALL ELEMENTS OF THE SLIDER (SLIDE CONTAINER, NAVIGATION ARROWS & DOTS)              */
+/* ===================================================================================================================== */
+
+/* ------------------------------- */
+/* FIXME:  VIEW - MOBILE FIRST     */
+/* ------------------------------- */
+
+.slider {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 15.6vh;
+  overflow: hidden;
+  margin: 0rem 0rem 0rem 0rem;
+  padding: 0rem 0rem 0rem 0rem;
+  /* box-shadow: 0px 5px 4px rgba(0, 0, 0, 0.35); */
+  /* border: 2px solid red; */
+}
+
+/* ===================================================================================================================== */
+/* TODO:  PART 2 - CONTAINER HOLDING ALL SLIDES (SLIDE 1 - X)                                                            */
+/* --------------------------------------------------------------------------------------------------------------------- */
+/* FIXME: IMPORTANT NOTE FIXME:  EACH SLIDE TAKES UP 100% OF THE VIEW WIDTH / 10 SLIDES TAKE 100% * 10 = 1000% OF WIDTH  */
+/* FIXME: IMPORTANT NOTE FIXME:  THIS SETS THE TOTAL WIDTH OF ALL SLIDES PLACE NEXT TO EACH OTHER                        */
+/* width: 100%; - For 01 Slide                                                                                           */
+/* width: 200%; - For 02 Slides                                                                                          */
+/* width: 300%; - For 03 Slides                                                                                          */
+/* width: 400%; - For 04 Slides                                                                                          */
+/* width: 500%; - For 05 Slides                                                                                          */
+/* width: 600%; - For 06 Slides                                                                                          */
+/* width: 700%; - For 07 Slides                                                                                          */
+/* width: 800%; - For 08 Slides                                                                                          */
+/* width: 900%; - For 09 Slides                                                                                          */
+/* width: 1000%; - For 10 Slides                                                                                         */
+/* ETC.                                                                                                                  */
+/* ===================================================================================================================== */
+
+/* ------------------------------- */
+/* FIXME:  VIEW - MOBILE FIRST     */
+/* ------------------------------- */
+
+.slides {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1000%;
+  height: 100%;
+  transition: 2s ease;
+  margin: 0rem 0rem 0rem 0rem;
+  padding: 0rem 0rem 0rem 0rem;
+  /* border: 3px solid greenyellow; */
+}
+
+/* ===================================================================================================================== */
+/* TODO:  PART 3 - CONTAINER HOLDING INDIVIDUAL SLIDE ELEMENTS (IMAGES / TITLE / CONTENT / BUTTON)                       */
+/* --------------------------------------------------------------------------------------------------------------------- */
+/* FIXME: IMPORTANT NOTE FIXME:  THIS DEFINES THE SPACE TAKEN UP BY EACH SLIDE AS A % OF THE TOTAL WIDTH OF ALL          */
+/* FIXME: IMPORTANT NOTE FIXME:  CONSTANTS SET: 1 SLIDE = 100% WIDTH / 2 SLIDES = 50% width EACH ETC.                    */
+/* For 01 Slide   :  100% / 1   =  WIDTH = 100%                                                                          */
+/* For 02 Slides  :  100% / 2   =  WIDTH = 50%                                                                           */
+/* For 03 Slides  :  100% / 3   =  WIDTH = 33.33%                                                                        */
+/* For 04 Slides  :  100% / 4   =  WIDTH = 25%                                                                           */
+/* For 05 Slides  :  100% / 5   =  WIDTH = 20%                                                                           */
+/* For 06 Slides  :  100% / 6   =  WIDTH = 16.66%                                                                        */
+/* For 07 Slides  :  100% / 7   =  WIDTH = 14.2857%                                                                      */
+/* For 08 Slides  :  100% / 8   =  WIDTH = 12.5%                                                                         */
+/* For 09 Slides  :  100% / 9   =  WIDTH = 11.11%                                                                        */
+/* For 10 Slides  :  100% / 10  =  WIDTH = 10%                                                                           */
+/* ETC.                                                                                                                  */
+/* ===================================================================================================================== */
+
+/* ------------------------------- */
+/* FIXME:  VIEW - MOBILE FIRST     */
+/* ------------------------------- */
+
+.slide {
+  position: relative;
+  top: 0;
+  left: 0;
+  float: left;
+  width: 10%;
+  height: 100%;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  margin: 0rem 0rem 0rem 0rem;
+  padding: 0rem 0rem 0rem 0rem;
+  /* border: 5px solid salmon; */
+}
+
+/* ------------------------------------------------------------------------------------- */
+/* CONTROLLING THE OPACITY OF THE LAYER OVER THE IMAGE FOR TEXT TO APPEAR MORE READIBLE  */
+/* ------------------------------------------------------------------------------------- */
+
+/* ------------------------------- */
+/* FIXME:  VIEW - MOBILE FIRST     */
+/* ------------------------------- */
+
+.slide::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 1;
+}
+
+/* ===================================================================================================================== */
+/* TODO:  PART 4 - INDIVIDUAL SLIDE DATA CONTAINTER - HOLDING ALL IMAGES, TITLES, CONTENT AND BUTTONS                    */
+/* --------------------------------------------------------------------------------------------------------------------- */
+
+/* ------------------------------- */
+/* FIXME:  VIEW - MOBILE FIRST     */
+/* ------------------------------- */
+
+/* ------------------------------- */
+/* INDIVIDUAL SLIDE CONTAINER      */
+/* ------------------------------- */
+
+.slide-data {
+  position: relative;
+  top: 0;
+  left: 0;
+  transform: translateY(0%, 0%);
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  text-align: center;
+  /* border: 2px solid purple; */
+}
+
+/* ------------------------------- */
+/* SLIDE - IMAGE                   */
+/* ------------------------------- */
+
+.slide-data .slide__image img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  z-index: 0;
+}
+
+/* ------------------------------- */
+/* SLIDE - TITLE                   */
+/* ------------------------------- */
+
+.slide-data .slide__title p {
+  position: absolute;
+  top: 7.5%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-transform: uppercase;
+  justify-content: center;
+  text-align: center;
+  font-size: 0.8rem;
+  line-height: 1;
+  font-weight: bolder;
+  color: var(--color-slide-text);
+  z-index: 2;
+}
+
+/* ------------------------------- */
+/* SLIDE - CONTENT                 */
+/* ------------------------------- */
+
+.slide-data .slide__content p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  justify-content: center;
+  text-align: center;
+  font-size: 0.65rem;
+  line-height: 1.2;
+  /* font-weight: bolder; */
+  color: var(--color-slide-text);
+  z-index: 2;
+}
+
+/* ------------------------------- */
+/* SLIDE - BUTTON (WITH ANCHOR)    */
+/* ------------------------------- */
+
+.slide-data .slide__button button {
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%, 15%);
+  justify-content: center;
+  text-align: center;
+  font-size: 0.8rem;
+  line-height: 1;
+  text-transform: uppercase;
+  /* font-weight: bolder; */
+  color: var(--color-button-text);
+  padding: 0.2rem 1rem 0.2rem 1rem;
+  transition: 0.4s linear;
+  border-radius: 0.5rem;
+  background-color: var(--color-button-background);
+  outline: none;
+  border: 1px solid white;
+  z-index: 2;
+  cursor: pointer;
+}
+
+.slide-data .slide__button button:hover {
+  background-color: var(--color-button-background-hover);
+  color: var(--color-button-text-hover);
+}
+
+.slide-data .slide__button button a {
+  text-decoration: none;
+  color: var(--color-button-text);
+  cursor: pointer;
+}
+
+/* ===================================================================================================================== */
+/* TODO:  PART 5 - LEFT AND RIGHT NAVIGATION ARROWS                                                                      */
+/* --------------------------------------------------------------------------------------------------------------------- */
+
+/* ------------------------------- */
+/* FIXME:  VIEW - MOBILE FIRST     */
+/* ------------------------------- */
+
+.slider .arrows {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: var(--color-arrows-background);
+  outline: none;
+  border: none;
+  font-size: 2rem;
+  color: var(--color-arrows-color);
+  transition: 0.4s linear;
+  z-index: 3;
+  cursor: pointer;
+}
+
+.slider .arrows:hover {
+  text-shadow: 0px 0px 10px black, 0px 0px 10px black;
+}
+
+.slider .prev {
+  left: 2.5%;
+  z-index: 3;
+}
+
+.slider .next {
+  right: 2.5%;
+  z-index: 3;
+}
+
+/* ===================================================================================================================== */
+/* TODO:  PART 6 - NAVIGATION DOTS (BOTTOM)                                                                              */
+/* --------------------------------------------------------------------------------------------------------------------- */
+
+/* ------------------------------- */
+/* FIXME:  VIEW - MOBILE FIRST     */
+/* ------------------------------- */
+
+.dots {
+  position: absolute;
+  bottom: 0.15%;
+  width: 100%;
+  text-align: center;
+  z-index: 3;
+}
+
+.dots span {
+  width: 0.6rem;
+  height: 0.6rem;
+  border-radius: 100px;
+  margin: 0rem 0.3rem 0rem 0.3rem;
+  background-color: var(--color-dots-background-not-active);
+  display: inline-block;
+  transition: 0.4s linear;
+  z-index: 3;
+  cursor: pointer;
+}
+
+.dots span:hover {
+  background-color: var(--color-dots-background-hover) !important;
+  border: 1px solid #fff;
+}
+
+.dot-active {
+  background-color: var(--color-dots-background-active) !important;
+  border: 1px solid #fff;
+}
+
+/* ===================================================================================================================== */
+/* TODO:  PART 7 - RESPONSIVE DESIGN - MEDIA QUERIES - FOR LARGER SCREENS (LAPTOPS / PC's / TV's etc.)                   */
+/* --------------------------------------------------------------------------------------------------------------------- */
+
+/* ---------------------------------- */
+/* FIXME:  VIEW - ON LARGER SCREENS   */
+/* ---------------------------------- */
+
+@media screen and (min-width: 250px) {
+  .slider {
+    min-height: 14vh;
+  }
+}
+
+@media screen and (min-width: 280px) {
+  .slider {
+    min-height: 15.7vh;
+  }
+
+  .slide-data .slide__title p {
+    font-size: 0.8rem;
+    line-height: 1;
+  }
+
+  .slide-data .slide__content p {
+    font-size: 0.65rem;
+    line-height: 1.2;
+  }
+
+  .slide-data .slide__button button {
+    font-size: 0.65rem;
+    line-height: 1;
+  }
+
+  .slider .arrows {
+    font-size: 2rem;
+  }
+
+  .dots span {
+    width: 0.6rem;
+    height: 0.6rem;
+    margin: 0rem 0.3rem 0rem 0.3rem;
+  }
+}
+
+@media screen and (min-width: 280px) and (min-height: 653px) {
+  .slider {
+    min-height: 14.75vh;
+  }
+}
+
+@media screen and (min-width: 350px) {
+  .slider {
+    min-height: 19.5vh;
+  }
+
+  .slide-data .slide__title p {
+    font-size: 0.85rem;
+    line-height: 1;
+  }
+
+  .slide-data .slide__content p {
+    font-size: 0.75rem;
+    line-height: 1.2;
+  }
+
+  .slide-data .slide__button button {
+    font-size: 0.75rem;
+    line-height: 1;
+  }
+
+  .slider .arrows {
+    font-size: 2.25rem;
+  }
+
+  .dots span {
+    width: 0.65rem;
+    height: 0.65rem;
+    margin: 0rem 0.3rem 0rem 0.3rem;
+  }
+}
+
+@media screen and (min-width: 360px) and (min-height: 740px) {
+  .slider {
+    min-height: 16.75vh;
+  }
+}
+
+@media screen and (min-width: 375px) and (min-height: 667px) {
+  .slider {
+    min-height: 19.3vh;
+  }
+}
+
+@media screen and (min-width: 390px) and (min-height: 844px) {
+  .slider {
+    min-height: 15.6vh;
+  }
+}
+
+@media screen and (min-width: 393px) and (min-height: 851px) {
+  .slider {
+    min-height: 16vh;
+  }
+}
+
+@media screen and (min-width: 400px) {
+  .slider {
+    min-height: 21.25vh;
+  }
+
+  .slide-data .slide__title p {
+    font-size: 0.9rem;
+    line-height: 1.15;
+  }
+
+  .slide-data .slide__content p {
+    font-size: 0.85rem;
+    line-height: 1.2;
+  }
+
+  .slide-data .slide__button button {
+    font-size: 0.85rem;
+    line-height: 1.15;
+  }
+
+  .slider .arrows {
+    font-size: 2.5rem;
+  }
+
+  .dots span {
+    width: 0.7rem;
+    height: 0.7rem;
+    margin: 0rem 0.3rem 0rem 0.3rem;
+  }
+}
+
+@media screen and (min-width: 412px) and (min-height: 914px) {
+  .slider {
+    min-height: 15.4vh;
+  }
+}
+
+@media screen and (min-width: 414px) and (min-height: 896px) {
+  .slider {
+    min-height: 15.75vh;
+  }
+}
+
+@media screen and (min-width: 500px) {
+  .slider {
+    min-height: 26.75vh;
+  }
+
+  .slide-data .slide__title p {
+    font-size: 1rem;
+    line-height: 1.2;
+  }
+
+  .slide-data .slide__content p {
+    font-size: 0.95rem;
+    line-height: 1.2;
+  }
+
+  .slide-data .slide__button button {
+    font-size: 0.95rem;
+    line-height: 1.2;
+  }
+
+  .slider .arrows {
+    font-size: 2.75rem;
+  }
+
+  .dots span {
+    width: 0.75rem;
+    height: 0.75rem;
+    margin: 0rem 0.3rem 0rem 0.3rem;
+  }
+}
+
+@media screen and (min-width: 540px) and (min-height: 720px) {
+  .slider {
+    min-height: 25.75vh;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .slider {
+    min-height: 32.5vh;
+  }
+
+  .slide-data .slide__title p {
+    font-size: 1.1rem;
+    line-height: 1.3;
+  }
+
+  .slide-data .slide__content p {
+    font-size: 1.05rem;
+    line-height: 1.2;
+  }
+
+  .slide-data .slide__button button {
+    font-size: 1.05rem;
+    line-height: 1.2;
+  }
+
+  .slider .arrows {
+    font-size: 3rem;
+  }
+
+  .dots span {
+    width: 0.9rem;
+    height: 0.9rem;
+    margin: 0rem 0.3rem 0rem 0.3rem;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .slider {
+    min-height: 38vh;
+  }
+
+  .slide-data .slide__title p {
+    font-size: 1.2rem;
+    line-height: 1.4;
+  }
+
+  .slide-data .slide__content p {
+    font-size: 1.2rem;
+    line-height: 1.4;
+  }
+
+  .slide-data .slide__button button {
+    font-size: 1.2rem;
+    line-height: 1.4;
+  }
+
+  .slider .arrows {
+    font-size: 3.25rem;
+  }
+
+  .dots span {
+    width: 1rem;
+    height: 1rem;
+    margin: 0rem 0.3rem 0rem 0.3rem;
+  }
+}
+
+@media screen and (min-width: 768px) and (min-height: 1024px) {
+  .slider {
+    min-height: 25.75vh;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .slider {
+    min-height: 43.5vh;
+  }
+
+  .slide-data .slide__title p {
+    font-size: 1.35rem;
+    line-height: 1.5;
+  }
+
+  .slide-data .slide__content p {
+    font-size: 1.3rem;
+    line-height: 1.5;
+  }
+
+  .slide-data .slide__button button {
+    font-size: 1.3rem;
+    line-height: 1.5;
+  }
+
+  .slider .arrows {
+    font-size: 3.5rem;
+  }
+
+  .dots span {
+    width: 1.05rem;
+    height: 1.05rem;
+    margin: 0rem 0.3rem 0rem 0.3rem;
+  }
+}
+
+@media screen and (min-width: 820px) and (min-height: 1180px) {
+  .slider {
+    min-height: 23.75vh;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .slider {
+    min-height: 49vh;
+  }
+
+  .slide-data .slide__title p {
+    font-size: 1.45rem;
+    line-height: 1.5;
+  }
+
+  .slide-data .slide__content p {
+    font-size: 1.35rem;
+    line-height: 1.5;
+  }
+
+  .slide-data .slide__button button {
+    font-size: 1.35rem;
+    line-height: 1.5;
+  }
+
+  .slider .arrows {
+    font-size: 3.75rem;
+  }
+
+  .dots span {
+    width: 1.15rem;
+    height: 1.15rem;
+    margin: 0rem 0.3rem 0rem 0.3rem;
+  }
+}
+
+@media screen and (min-width: 912px) and (min-height: 1368px) {
+  .slider {
+    min-height: 22.75vh;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .slider {
+    min-height: 55vh;
+  }
+
+  .slide-data .slide__title p {
+    font-size: 1.475rem;
+    line-height: 1.5;
+  }
+
+  .slide-data .slide__content p {
+    font-size: 1.4rem;
+    line-height: 1.5;
+  }
+
+  .slide-data .slide__button button {
+    font-size: 1.4rem;
+    line-height: 1.5;
+  }
+
+  .slider .arrows {
+    font-size: 4rem;
+  }
+
+  .dots span {
+    width: 1.2rem;
+    height: 1.2rem;
+    margin: 0rem 0.5rem 0rem 0.5rem;
+  }
+}
+
+@media screen and (min-width: 1024px) and (min-height: 600) {
+  .slider {
+    min-height: 58.5vh;
+  }
+}
+
+@media screen and (min-width: 1029px) {
+  .slider {
+    min-height: 56.25vh;
+  }
+
+  .slide-data .slide__title p {
+    font-size: 1.55rem;
+    line-height: 1.5;
+  }
+
+  .slide-data .slide__content p {
+    font-size: 1.45rem;
+    line-height: 1.5;
+  }
+
+  .slide-data .slide__button button {
+    font-size: 1.45rem;
+    line-height: 1.5;
+  }
+
+  .slider .arrows {
+    font-size: 4.25rem;
+  }
+
+  .dots span {
+    width: 1.3rem;
+    height: 1.3rem;
+    margin: 0rem 0.5rem 0rem 0.5rem;
+  }
+}
+
+@media screen and (min-width: 1040px) {
+  .slider {
+    min-height: 58vh;
+  }
+}
+
+@media screen and (min-width: 1050px) {
+  .slider {
+    min-height: 58.75vh;
+  }
+}
+
+@media screen and (min-width: 1100px) {
+  .slider {
+    min-height: 61.5vh;
+  }
+
+  .slide-data .slide__title p {
+    font-size: 1.6rem;
+    line-height: 1.5;
+  }
+
+  .slide-data .slide__content p {
+    font-size: 1.5rem;
+    line-height: 1.5;
+  }
+
+  .slide-data .slide__button button {
+    font-size: 1.5rem;
+    line-height: 1.5;
+  }
+
+  .slider .arrows {
+    font-size: 4.5rem;
+  }
+
+  .dots span {
+    width: 1.35rem;
+    height: 1.35rem;
+    margin: 0rem 0.5rem 0rem 0.5rem;
+  }
+}
+
+@media screen and (min-width: 1150px) {
+  .slider {
+    min-height: 64vh;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .slider {
+    min-height: 67vh;
+  }
+
+  .slide-data .slide__title p {
+    font-size: 1.8rem;
+    line-height: 1.5;
+  }
+
+  .slide-data .slide__content p {
+    font-size: 1.6rem;
+    line-height: 1.5;
+  }
+
+  .slide-data .slide__button button {
+    font-size: 1.6rem;
+    line-height: 1.5;
+  }
+
+  .slider .arrows {
+    font-size: 4.5rem;
+  }
+
+  .dots span {
+    width: 1.4rem;
+    height: 1.4rem;
+    margin: 0rem 0.5rem 0rem 0.5rem;
+  }
+}
+
+@media screen and (min-width: 1250px) {
+  .slider {
+    min-height: 69vh;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .slider {
+    min-height: 70.25vh;
+  }
+}
+
+/* NEST HUB MAX - 1280 x 800 */
+@media screen and (min-width: 1280px) and (min-height: 800px) {
+  .slider {
+    min-height: 54.75vh;
+  }
+}
+
 /* ===================================================================================================================== */
 /* ===================================================================================================================== */
 /* FIXME:FIXME:                                SECTION - HERO BANNER (END)                                  FIXME:FIXME: */
@@ -157,6 +2775,55 @@ h6 {
 /* TODO:TODO:                                 SECTION - PAGE CONTENT (START)                                  TODO:TODO: */
 /* ===================================================================================================================== */
 /* ===================================================================================================================== */
+
+.shopmax__main__content__page__title h5 {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  text-transform: uppercase;
+  margin: 1.5rem 0rem 1.5rem 0rem;
+  text-align: center;
+}
+
+.shopmax__main__content__section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  margin: 2rem 0rem 0rem 0rem;
+  /* border: 2px solid red; */
+}
+
+.shopmax__main__content__section img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+@media screen and (max-width: 830px) {
+  .shopmax__main__content__page__title h5 {
+    position: relative;
+    top: 11rem;
+  }
+  .shopmax__main__content__section {
+    position: relative;
+    top: 11rem;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .shopmax__main__content__page__title h5 {
+    position: relative;
+    top: 15rem;
+  }
+
+  .shopmax__main__content__section {
+    position: relative;
+    top: 15rem;
+  }
+}
 
 /* ===================================================================================================================== */
 /* ===================================================================================================================== */
