@@ -128,7 +128,7 @@ h6 {
 /* FIXME:  VIEW - MOBILE FIRST     */
 /* ------------------------------- */
 
-.page__title h5 {
+.a__to__z__whistleblowing__page__title h5 {
   display: flex;
   justify-content: center;
   justify-items: center;
@@ -148,7 +148,7 @@ h6 {
 /* FIXME:  VIEW - MOBILE FIRST     */
 /* ------------------------------- */
 
-.logo__container {
+.a__to__z__whistleblowing__logo__container {
   display: flex;
   position: relative;
   justify-content: center;
@@ -156,7 +156,7 @@ h6 {
   margin: 3rem 1rem 3rem 1rem;
 }
 
-.logo__container img {
+.a__to__z__whistleblowing__logo__container img {
   width: 80%;
   height: auto;
   padding: 0.2rem 0.2rem 0.2rem 0.2rem;
@@ -167,49 +167,49 @@ h6 {
 /* ------------------------------- */
 
 @media screen and (min-width: 400px) {
-  .logo__container img {
+  .a__to__z__whistleblowing__logo__container img {
     width: 75%;
   }
 }
 
 @media screen and (min-width: 450px) {
-  .logo__container img {
+  .a__to__z__whistleblowing__logo__container img {
     width: 70%;
   }
 }
 
 @media screen and (min-width: 500px) {
-  .logo__container img {
+  .a__to__z__whistleblowing__logo__container img {
     width: 65%;
   }
 }
 
 @media screen and (min-width: 550px) {
-  .logo__container img {
+  .a__to__z__whistleblowing__logo__container img {
     width: 60%;
   }
 }
 
 @media screen and (min-width: 600px) {
-  .logo__container img {
+  .a__to__z__whistleblowing__logo__container img {
     width: 55%;
   }
 }
 
 @media screen and (min-width: 650px) {
-  .logo__container img {
+  .a__to__z__whistleblowing__logo__container img {
     width: 50%;
   }
 }
 
 @media screen and (min-width: 700px) {
-  .logo__container img {
+  .a__to__z__whistleblowing__logo__container img {
     width: 45%;
   }
 }
 
 @media screen and (min-width: 768px) {
-  .logo__container img {
+  .a__to__z__whistleblowing__logo__container img {
     width: 40%;
   }
 }
@@ -222,11 +222,11 @@ h6 {
 /* FIXME:  VIEW - MOBILE FIRST     */
 /* ------------------------------- */
 
-section {
+.a__to__z__whistleblowing__page__content section {
   margin: 1.5rem 0rem 1.5rem 0rem;
 }
 
-.qr__code {
+.a__to__z__whistleblowing__qr__code {
   display: flex;
   position: relative;
   justify-content: center;
@@ -234,36 +234,36 @@ section {
   margin: 2rem 1rem 2rem 1rem;
 }
 
-.qr__code img {
+.a__to__z__whistleblowing__qr__code img {
   width: 90%;
   height: auto;
   padding: 0.2rem 0.2rem 0.2rem 0.2rem;
 }
 
-.page__content {
+.a__to__z__whistleblowing__page__content {
   margin: 1rem 2rem 1rem 2rem;
   font-size: 1.2rem;
   line-height: 1.5;
   text-align: justify;
 }
 
-.paragraph__01,
-.paragraph__02,
-.paragraph__03,
-.paragraph__04,
-.paragraph__05,
-.paragraph__06,
-.paragraph__07 {
+.a__to__z__whistleblowing__paragraph__01,
+.a__to__z__whistleblowing__paragraph__02,
+.a__to__z__whistleblowing__paragraph__03,
+.a__to__z__whistleblowing__paragraph__04,
+.a__to__z__whistleblowing__paragraph__05,
+.a__to__z__whistleblowing__paragraph__06,
+.a__to__z__whistleblowing__paragraph__07 {
   margin: 2rem 0rem 1rem 0rem;
 }
 
-.centered__paragraph {
+.a__to__z__whistleblowing__centered__paragraph {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.buttons__container {
+.a__to__z__whistleblowing__buttons__container {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -271,7 +271,7 @@ section {
   margin: 2rem 0rem 0rem 0rem;
 }
 
-button {
+.a__to__z__whistleblowing__buttons__container button {
   text-decoration: none;
   text-transform: uppercase;
   width: 15rem;
@@ -279,19 +279,24 @@ button {
   font-weight: 600;
   letter-spacing: 0.2rem;
   margin: 0rem 0rem 1rem 0rem;
-  padding: 0.5rem 1rem 0.5rem 1rem;
+  padding: 1rem 1rem 1rem 1rem;
   border: none;
   outline: none;
   background: var(--color-button-background-atoz-whistleblowing);
   border-radius: 0.5rem;
   box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.35);
   cursor: pointer;
+  transition: transform 0.5s ease-in-out;
 }
 
-button a {
+.a__to__z__whistleblowing__buttons__container button a {
   text-decoration: none;
   color: var(--color-button-text-atoz-whistleblowing);
   cursor: pointer;
+}
+
+.a__to__z__whistleblowing__buttons__container button:hover {
+  transform: scale(1.05);
 }
 
 /* ------------------------------- */
@@ -299,92 +304,92 @@ button a {
 /* ------------------------------- */
 
 @media screen and (min-width: 720px) {
-  section h6 {
+  .a__to__z__whistleblowing__page__content section h6 {
     font-size: 1.6rem;
   }
 
-  .page__content {
+  .a__to__z__whistleblowing__page__content {
     font-size: 1.5rem;
   }
 }
 
 @media screen and (min-width: 350px) {
-  .qr__code img {
+  .a__to__z__whistleblowing__qr__code img {
     width: 85%;
   }
 }
 
 @media screen and (min-width: 400px) {
-  .qr__code img {
+  .a__to__z__whistleblowing__qr__code img {
     width: 75%;
   }
 }
 
 @media screen and (min-width: 450px) {
-  .qr__code img {
+  .a__to__z__whistleblowing__qr__code img {
     width: 65%;
   }
 
-  .qr__code {
+  .a__to__z__whistleblowing__qr__code {
     justify-content: center;
   }
 
-  .buttons__container {
+  .a__to__z__whistleblowing__buttons__container {
     display: flex;
     flex-direction: row;
     justify-content: center;
     margin: 3rem 0rem 3rem 0rem;
   }
 
-  button {
+  .a__to__z__whistleblowing__buttons__container button {
     margin: 0rem 2rem 0rem 2rem;
   }
 }
 
 @media screen and (min-width: 500px) {
-  .qr__code img {
+  .a__to__z__whistleblowing__qr__code img {
     width: 60%;
   }
 }
 
 @media screen and (min-width: 550px) {
-  .qr__code img {
+  .a__to__z__whistleblowing__qr__code img {
     width: 55%;
   }
 }
 
 @media screen and (min-width: 600px) {
-  .qr__code img {
+  .a__to__z__whistleblowing__qr__code img {
     width: 50%;
   }
 }
 
 @media screen and (min-width: 650px) {
-  .qr__code img {
+  .a__to__z__whistleblowing__qr__code img {
     width: 45%;
   }
 }
 
 @media screen and (min-width: 700px) {
-  .qr__code img {
+  .a__to__z__whistleblowing__qr__code img {
     width: 40%;
   }
 }
 
 @media screen and (min-width: 768px) {
-  .qr__code img {
+  .a__to__z__whistleblowing__qr__code img {
     width: 35%;
   }
 }
 
 @media screen and (min-width: 850px) {
-  .qr__code img {
+  .a__to__z__whistleblowing__qr__code img {
     width: 30%;
   }
 }
 
 @media screen and (min-width: 950px) {
-  .qr__code img {
+  .a__to__z__whistleblowing__qr__code img {
     width: 25%;
   }
 }
