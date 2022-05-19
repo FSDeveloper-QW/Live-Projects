@@ -4,10 +4,10 @@
 
 :root {
   /* --color-page-background: #f7f7f7; */
-  --color-page-background: #eee;
-  --color-button-background: #dc143c;
-  --color-button-text: white;
-  --color-ultimate-package-text: #dc143c;
+  --color-what-we-do-page-background: #eee;
+  --color-what-we-do-button-background: #dc143c;
+  --color-what-we-do-button-text: white;
+  --color-what-we-do-ultimate-package-text: #dc143c;
 }
 
 * {
@@ -24,7 +24,7 @@ html {
 
 body {
   font-size: 1.6rem;
-  background-color: var(--color-page-background);
+  background-color: var(--color-what-we-do-page-background);
 }
 
 /* ===================================================================================================================== */
@@ -271,7 +271,7 @@ h6 {
   letter-spacing: 0.05rem;
   border: none;
   outline: none;
-  background: var(--color-button-background);
+  background: var(--color-what-we-do-button-background);
   border-radius: 0.5rem;
   box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.35);
   transition: transform 0.5s ease-in-out;
@@ -280,7 +280,7 @@ h6 {
 
 .what__we__do__buttons__container button a {
   text-decoration: none;
-  color: var(--color-button-text);
+  color: var(--color-what-we-do-button-text);
   cursor: pointer;
 }
 
