@@ -128,7 +128,7 @@ h6 {
 /* FIXME:  VIEW - MOBILE FIRST     */
 /* ------------------------------- */
 
-.page__title h5 {
+.ue__page__title h5 {
   display: flex;
   justify-content: center;
   justify-items: center;
@@ -141,14 +141,14 @@ h6 {
 /* ------------------------------- */
 
 /* ===================================================================================================================== */
-/* TODO:  PART 2 - LOGO A TO Z WHISTLEBLOWING                                                                            */
+/* TODO:  PART 2 - LOGO UNASHAMEDLY ETHICAL                                                                              */
 /* ===================================================================================================================== */
 
 /* ------------------------------- */
 /* FIXME:  VIEW - MOBILE FIRST     */
 /* ------------------------------- */
 
-.logo__container {
+.ue__logo__container {
   display: flex;
   position: relative;
   justify-content: center;
@@ -156,7 +156,7 @@ h6 {
   margin: 3rem 1rem 3rem 1rem;
 }
 
-.logo__container img {
+.ue__logo__container img {
   width: 65%;
   height: auto;
   padding: 0.2rem 0.2rem 0.2rem 0.2rem;
@@ -167,49 +167,49 @@ h6 {
 /* ------------------------------- */
 
 @media screen and (min-width: 400px) {
-  .logo__container img {
+  .ue__logo__container img {
     width: 60%;
   }
 }
 
 @media screen and (min-width: 450px) {
-  .logo__container img {
+  .ue__logo__container img {
     width: 55%;
   }
 }
 
 @media screen and (min-width: 500px) {
-  .logo__container img {
+  .ue__logo__container img {
     width: 50%;
   }
 }
 
 @media screen and (min-width: 550px) {
-  .logo__container img {
+  .ue__logo__container img {
     width: 45%;
   }
 }
 
 @media screen and (min-width: 600px) {
-  .logo__container img {
+  .ue__logo__container img {
     width: 40%;
   }
 }
 
 @media screen and (min-width: 650px) {
-  .logo__container img {
+  .ue__logo__container img {
     width: 35%;
   }
 }
 
 @media screen and (min-width: 700px) {
-  .logo__container img {
+  .ue__logo__container img {
     width: 30%;
   }
 }
 
 @media screen and (min-width: 768px) {
-  .logo__container img {
+  .ue__logo__container img {
     width: 25%;
   }
 }
@@ -222,25 +222,25 @@ h6 {
 /* FIXME:  VIEW - MOBILE FIRST     */
 /* ------------------------------- */
 
-section {
+.ue__page__content section {
   margin: 1.5rem 0rem 1.5rem 0rem;
 }
 
-.page__content {
+.ue__page__content {
   margin: 1rem 2rem 1rem 2rem;
   font-size: 1.2rem;
   line-height: 1.5;
   text-align: justify;
 }
 
-.paragraph__01,
-.paragraph__02,
-.paragraph__03,
-.paragraph__04 {
+.ue__paragraph__01,
+.ue__paragraph__02,
+.ue__paragraph__03,
+.ue__paragraph__04 {
   margin: 2rem 0rem 1rem 0rem;
 }
 
-.buttons__container {
+.ue__buttons__container {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -248,7 +248,7 @@ section {
   margin: 2rem 0rem 0rem 0rem;
 }
 
-button {
+.ue__buttons__container button {
   text-decoration: none;
   text-transform: uppercase;
   width: 15rem;
@@ -256,19 +256,24 @@ button {
   font-weight: 600;
   letter-spacing: 0.2rem;
   margin: 0rem 0rem 1rem 0rem;
-  padding: 0.5rem 1rem 0.5rem 1rem;
+  padding: 1rem 1rem 1rem 1rem;
   border: none;
   outline: none;
   background: var(--color-button-background-ue);
   border-radius: 0.5rem;
   box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.35);
+  transition: transform 0.5s ease-in-out;
   cursor: pointer;
 }
 
-button a {
+.ue__buttons__container button a {
   text-decoration: none;
   color: var(--color-button-text-ue);
   cursor: pointer;
+}
+
+.ue__buttons__container button:hover {
+  transform: scale(1.05);
 }
 
 /* ------------------------------- */
@@ -276,13 +281,13 @@ button a {
 /* ------------------------------- */
 
 @media screen and (min-width: 670px) {
-  .page__content {
+  .ue__page__content {
     font-size: 1.5rem;
   }
 }
 
 @media screen and (min-width: 670px) {
-  .buttons__container {
+  .ue__buttons__container {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -290,7 +295,7 @@ button a {
     margin: 3rem 0rem 3rem 0rem;
   }
 
-  button {
+  .ue__buttons__container button {
     margin: 1rem 1rem 1rem 1rem;
   }
 }
