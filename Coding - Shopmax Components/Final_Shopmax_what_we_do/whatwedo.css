@@ -129,7 +129,7 @@ h6 {
 /* FIXME:  VIEW - MOBILE FIRST     */
 /* ------------------------------- */
 
-.page__title h5 {
+.what__we__do__page__title h5 {
   display: flex;
   justify-content: center;
   justify-items: center;
@@ -149,7 +149,7 @@ h6 {
 /* FIXME:  VIEW - MOBILE FIRST     */
 /* ------------------------------- */
 
-.video__container {
+.what__we__do__video__container {
   position: relative;
   height: 0;
   width: 100%;
@@ -157,7 +157,7 @@ h6 {
   padding: 0rem 0rem 56.25% 0rem;
 }
 
-.video__container iframe {
+.what__we__do__video__container iframe {
   position: absolute;
   top: 0;
   left: 0;
@@ -172,7 +172,7 @@ h6 {
 /* ------------------------------- */
 
 @media screen and (min-width: 768px) {
-  .video__container iframe {
+  .what__we__do__video__container iframe {
     padding: 0.2rem 0.75rem 0.2rem 0.75rem;
     /* border-radius: 2rem; */
   }
@@ -186,21 +186,21 @@ h6 {
 /* FIXME:  VIEW - MOBILE FIRST     */
 /* ------------------------------- */
 
-section {
+.what__we__do__page__content section {
   margin: 1.5rem 0rem 1.5rem 0rem;
 }
 
-section h6 {
+.what__we__do__page__content section h6 {
   text-transform: uppercase;
   font-size: 1.3rem;
 }
 
-.drop__shipping {
+.what__we__do__drop__shipping {
   position: relative;
   margin: 3rem 0rem 3rem 0rem;
 }
 
-.drop__shipping img {
+.what__we__do__drop__shipping img {
   width: 100%;
   height: auto;
   border: 1px solid lightgray;
@@ -209,12 +209,12 @@ section h6 {
   padding: 0.2rem 0.2rem 0.2rem 0.2rem;
 }
 
-.drop__servicing {
+.what__we__do__drop__servicing {
   position: relative;
   margin: 3rem 0rem 3rem 0rem;
 }
 
-.drop__servicing img {
+.what__we__do__drop__servicing img {
   width: 100%;
   height: auto;
   border: 1px solid lightgray;
@@ -223,28 +223,28 @@ section h6 {
   padding: 0.2rem 0.2rem 0.2rem 0.2rem;
 }
 
-.page__content {
+.what__we__do__page__content {
   margin: 1rem 2rem 1rem 2rem;
   font-size: 1.2rem;
   line-height: 1.5;
   text-align: justify;
 }
 
-.paragraph__01,
-.paragraph__02,
-.paragraph__03,
-.paragraph__04,
-.paragraph__05,
-.paragraph__06,
-.paragraph__07,
-.paragraph__08,
-.paragraph__09,
-.paragraph__10,
-.paragraph__11 {
+.what__we__do__paragraph__01,
+.what__we__do__paragraph__02,
+.what__we__do__paragraph__03,
+.what__we__do__paragraph__04,
+.what__we__do__paragraph__05,
+.what__we__do__paragraph__06,
+.what__we__do__paragraph__07,
+.what__we__do__paragraph__08,
+.what__we__do__paragraph__09,
+.what__we__do__paragraph__10,
+.what__we__do__paragraph__11 {
   margin: 2rem 0rem 1rem 0rem;
 }
 
-.buttons__container {
+.what__we__do__buttons__container {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -252,34 +252,40 @@ section h6 {
   margin: 2rem 0rem 0rem 0rem;
 }
 
-.spn__benefits {
+.what__we__do__spn__benefits {
   margin: 1rem 0.5rem 1rem 1.5rem;
 }
 
-.spn__benefits .benefit__item {
+.what__we__do__spn__benefits .benefit__item {
   padding: 0.5rem 0rem 0.5rem 0rem;
 }
 
-button {
+.what__we__do__buttons__container button {
   text-decoration: none;
   text-transform: uppercase;
   width: 15rem;
   font-size: 1rem;
   font-weight: 600;
   margin: 0rem 0rem 1rem 0rem;
-  padding: 0.5rem 1rem 0.5rem 1rem;
+  padding: 1rem 1rem 1rem 1rem;
+  letter-spacing: 0.05rem;
   border: none;
   outline: none;
   background: var(--color-button-background);
   border-radius: 0.5rem;
   box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.35);
+  transition: transform 0.5s ease-in-out;
   cursor: pointer;
 }
 
-button a {
+.what__we__do__buttons__container button a {
   text-decoration: none;
   color: var(--color-button-text);
   cursor: pointer;
+}
+
+.what__we__do__buttons__container button:hover {
+  transform: scale(1.04);
 }
 
 /* ------------------------------- */
@@ -287,15 +293,15 @@ button a {
 /* ------------------------------- */
 
 @media screen and (min-width: 720px) {
-  section h6 {
+  .what__we__do__page__content section h6 {
     font-size: 1.6rem;
   }
 
-  .page__content {
+  .what__we__do__page__content {
     font-size: 1.5rem;
   }
 
-  .buttons__container {
+  .what__we__do__buttons__container {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -303,7 +309,7 @@ button a {
     margin: 2rem 0rem 2rem 0rem;
   }
 
-  button {
+  .what__we__do__buttons__container button {
     margin: 0rem 1rem 0rem 0rem;
   }
 }

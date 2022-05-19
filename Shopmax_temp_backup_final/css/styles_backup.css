@@ -224,6 +224,11 @@
   --color-button-background-atoz-whistleblowing: #0f5ca0;
   --color-button-text-atoz-whistleblowing: white;
   /* ------------------------------------------------ */
+  /* FIXME:  SECTION: UNASHAMEDLY ETHICAL             */
+  /* ------------------------------------------------ */
+  --color-button-background-ue: #f57313;
+  --color-button-text-ue: white;
+  /* ------------------------------------------------ */
   /* FIXME:  SECTION: PAGE UNDER CONSTRUCTION         */
   /* ------------------------------------------------ */
   --color-page-header: #000000;
@@ -6784,6 +6789,259 @@ nav .clientzonewrapper .advertising-drop {
 
 /* ===================================================================================================================== */
 /* ===================================================================================================================== */
+/* TODO:TODO:                           SECTION - UNASHAMEDLY ETHICAL  (START)                                TODO:TODO: */
+/* ===================================================================================================================== */
+/* ===================================================================================================================== */
+
+/* .unashamedly__ethical__page__title h5 {
+  position: relative;
+  top: 9rem;
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  text-transform: uppercase;
+  margin: 2.5rem 0rem 2.5rem 0rem;
+  text-align: center;
+  background: #eee;
+  border: 2px solid red;
+} */
+
+.unashamedly__ethical__section {
+  position: relative;
+  /* top: 9rem; */
+  top: 10rem;
+  /* top: 9rem; */
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  margin: 0rem 0rem 0rem 0rem;
+  /* border: 2px solid red; */
+}
+
+/* .unashamedly__ethical__section img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+} */
+
+@media screen and (max-width: 830px) {
+  /* .unashamedly__ethical__page__title h5 {
+    position: relative;
+    top: 10rem;
+  } */
+  .unashamedly__ethical__section {
+    position: relative;
+    /* top: 9rem; */
+    /* top: 10rem; */
+    top: 11rem;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  /* .unashamedly__ethical__page__title h5 {
+    position: relative;
+    top: 13.5rem;
+  } */
+
+  .unashamedly__ethical__section {
+    position: relative;
+    /* top: 12.5rem; */
+    /* top: 13.5rem; */
+    top: 14.5rem;
+  }
+}
+
+/* ===================================================================================================================== */
+/* TODO:  PART 1 - PAGE TITLE                                                                                            */
+/* ===================================================================================================================== */
+
+/* ------------------------------- */
+/* FIXME:  VIEW - MOBILE FIRST     */
+/* ------------------------------- */
+
+.ue__page__title h5 {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  text-transform: uppercase;
+  margin: 1.5rem 0rem 1.5rem 0rem;
+}
+
+/* ------------------------------- */
+/* FIXME:  VIEW - LARGER SCREENS   */
+/* ------------------------------- */
+
+/* ===================================================================================================================== */
+/* TODO:  PART 2 - LOGO UNASHAMEDLY ETHICAL                                                                              */
+/* ===================================================================================================================== */
+
+/* ------------------------------- */
+/* FIXME:  VIEW - MOBILE FIRST     */
+/* ------------------------------- */
+
+.ue__logo__container {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  margin: 3rem 1rem 3rem 1rem;
+}
+
+.ue__logo__container img {
+  width: 65%;
+  height: auto;
+  padding: 0.2rem 0.2rem 0.2rem 0.2rem;
+}
+
+/* ------------------------------- */
+/* FIXME:  VIEW - LARGER SCREENS   */
+/* ------------------------------- */
+
+@media screen and (min-width: 400px) {
+  .ue__logo__container img {
+    width: 60%;
+  }
+}
+
+@media screen and (min-width: 450px) {
+  .ue__logo__container img {
+    width: 55%;
+  }
+}
+
+@media screen and (min-width: 500px) {
+  .ue__logo__container img {
+    width: 50%;
+  }
+}
+
+@media screen and (min-width: 550px) {
+  .ue__logo__container img {
+    width: 45%;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .ue__logo__container img {
+    width: 40%;
+  }
+}
+
+@media screen and (min-width: 650px) {
+  .ue__logo__container img {
+    width: 35%;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .ue__logo__container img {
+    width: 30%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .ue__logo__container img {
+    width: 25%;
+  }
+}
+
+/* ===================================================================================================================== */
+/* TODO:  PART 3 - PAGE CONTENT                                                                                          */
+/* ===================================================================================================================== */
+
+/* ------------------------------- */
+/* FIXME:  VIEW - MOBILE FIRST     */
+/* ------------------------------- */
+
+.ue__page__content section {
+  margin: 1.5rem 0rem 1.5rem 0rem;
+}
+
+.ue__page__content {
+  margin: 1rem 2rem 1rem 2rem;
+  font-size: 1.2rem;
+  line-height: 1.5;
+  text-align: justify;
+}
+
+.ue__paragraph__01,
+.ue__paragraph__02,
+.ue__paragraph__03,
+.ue__paragraph__04 {
+  margin: 2rem 0rem 1rem 0rem;
+}
+
+.ue__buttons__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem 0rem 0rem 0rem;
+}
+
+.ue__buttons__container button {
+  text-decoration: none;
+  text-transform: uppercase;
+  width: 15rem;
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 0.2rem;
+  margin: 0rem 0rem 1rem 0rem;
+  padding: 1rem 1rem 1rem 1rem;
+  border: none;
+  outline: none;
+  background: var(--color-button-background-ue);
+  border-radius: 0.5rem;
+  box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.35);
+  transition: transform 0.5s ease-in-out;
+  cursor: pointer;
+}
+
+.ue__buttons__container button a {
+  text-decoration: none;
+  color: var(--color-button-text-ue);
+  cursor: pointer;
+}
+
+.ue__buttons__container button:hover {
+  transform: scale(1.05);
+}
+
+/* ------------------------------- */
+/* FIXME:  VIEW - LARGER SCREENS   */
+/* ------------------------------- */
+
+@media screen and (min-width: 670px) {
+  .ue__page__content {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (min-width: 670px) {
+  .ue__buttons__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 3rem 0rem 3rem 0rem;
+  }
+
+  .ue__buttons__container button {
+    margin: 1rem 1rem 1rem 1rem;
+  }
+}
+
+/* ===================================================================================================================== */
+/* ===================================================================================================================== */
+/* FIXME:FIXME:                              SECTION - UNASHAMEDLY ETHICAL (END)                            FIXME:FIXME: */
+/* ===================================================================================================================== */
+/* ===================================================================================================================== */
+
+/* ===================================================================================================================== */
+/* ===================================================================================================================== */
 /* TODO:TODO:                                    SECTION - FOOTER (START)                                     TODO:TODO: */
 /* ===================================================================================================================== */
 /* ===================================================================================================================== */
@@ -6798,7 +7056,7 @@ nav .clientzonewrapper .advertising-drop {
   height: auto;
   object-fit: cover;
   margin: 0rem 0rem 0rem 0rem;
-  /* border: 1px solid red; */
+  /* border: 2px solid green; */
 }
 
 /* .shopmax__footer__section img {
