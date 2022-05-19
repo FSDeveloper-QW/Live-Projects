@@ -219,6 +219,23 @@
   --color-investor-selling-plan-buttons-background: #434343;
   --color-investor-selling-plan-buttons-text: white;
   /* ------------------------------------------------ */
+  /* FIXME:  SECTION: A TO Z WHISTLEBLOWING           */
+  /* ------------------------------------------------ */
+  --color-button-background-atoz-whistleblowing: #0f5ca0;
+  --color-button-text-atoz-whistleblowing: white;
+  /* ------------------------------------------------ */
+  /* FIXME:  SECTION: UNASHAMEDLY ETHICAL             */
+  /* ------------------------------------------------ */
+  --color-button-background-ue: #f57313;
+  --color-button-text-ue: white;
+  /* ------------------------------------------------ */
+  /* FIXME:  SECTION: WHAT WE DO                      */
+  /* ------------------------------------------------ */
+  --color-what-we-do-page-background: #eee;
+  --color-what-we-do-button-background: #dc143c;
+  --color-what-we-do-button-text: white;
+  --color-what-we-do-ultimate-package-text: #dc143c;
+  /* ------------------------------------------------ */
   /* FIXME:  SECTION: PAGE UNDER CONSTRUCTION         */
   /* ------------------------------------------------ */
   --color-page-header: #000000;
@@ -6432,13 +6449,884 @@ nav .clientzonewrapper .advertising-drop {
 
 /* ===================================================================================================================== */
 /* ===================================================================================================================== */
+/* TODO:TODO:                            SECTION - A TO Z WHISTLEBLOWING (START)                              TODO:TODO: */
+/* ===================================================================================================================== */
+/* ===================================================================================================================== */
+
+/* .a__to__z__whistleblowing__page__title h5 {
+  position: relative;
+  top: 9rem;
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  text-transform: uppercase;
+  margin: 2.5rem 0rem 2.5rem 0rem;
+  text-align: center;
+  background: #eee;
+  border: 2px solid red;
+} */
+
+.a__to__z__whistleblowing__section {
+  position: relative;
+  /* top: 9rem; */
+  top: 10rem;
+  /* top: 9rem; */
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  margin: 0rem 0rem 0rem 0rem;
+  /* border: 2px solid red; */
+}
+
+/* .a__to__z__whistleblowing__section img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+} */
+
+@media screen and (max-width: 830px) {
+  /* .a__to__z__whistleblowing__page__title h5 {
+    position: relative;
+    top: 10rem;
+  } */
+  .a__to__z__whistleblowing__section {
+    position: relative;
+    /* top: 9rem; */
+    /* top: 10rem; */
+    top: 11rem;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  /* .a__to__z__whistleblowing__page__title h5 {
+    position: relative;
+    top: 13.5rem;
+  } */
+
+  .a__to__z__whistleblowing__section {
+    position: relative;
+    /* top: 12.5rem; */
+    /* top: 13.5rem; */
+    top: 14.5rem;
+  }
+}
+
+/* ===================================================================================================================== */
+/* TODO:  PART 1 - PAGE TITLE                                                                                            */
+/* ===================================================================================================================== */
+
+/* ------------------------------- */
+/* FIXME:  VIEW - MOBILE FIRST     */
+/* ------------------------------- */
+
+.a__to__z__whistleblowing__page__title h5 {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  text-transform: uppercase;
+  margin: 2rem 0rem 1.5rem 0rem;
+}
+
+/* ------------------------------- */
+/* FIXME:  VIEW - LARGER SCREENS   */
+/* ------------------------------- */
+
+/* ===================================================================================================================== */
+/* TODO:  PART 2 - LOGO A TO Z WHISTLEBLOWING                                                                            */
+/* ===================================================================================================================== */
+
+/* ------------------------------- */
+/* FIXME:  VIEW - MOBILE FIRST     */
+/* ------------------------------- */
+
+.a__to__z__whistleblowing__logo__container {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  margin: 3rem 1rem 3rem 1rem;
+}
+
+.a__to__z__whistleblowing__logo__container img {
+  width: 80%;
+  height: auto;
+  padding: 0.2rem 0.2rem 0.2rem 0.2rem;
+}
+
+/* ------------------------------- */
+/* FIXME:  VIEW - LARGER SCREENS   */
+/* ------------------------------- */
+
+@media screen and (min-width: 400px) {
+  .a__to__z__whistleblowing__logo__container img {
+    width: 75%;
+  }
+}
+
+@media screen and (min-width: 450px) {
+  .a__to__z__whistleblowing__logo__container img {
+    width: 70%;
+  }
+}
+
+@media screen and (min-width: 500px) {
+  .a__to__z__whistleblowing__logo__container img {
+    width: 65%;
+  }
+}
+
+@media screen and (min-width: 550px) {
+  .a__to__z__whistleblowing__logo__container img {
+    width: 60%;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .a__to__z__whistleblowing__logo__container img {
+    width: 55%;
+  }
+}
+
+@media screen and (min-width: 650px) {
+  .a__to__z__whistleblowing__logo__container img {
+    width: 50%;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .a__to__z__whistleblowing__logo__container img {
+    width: 45%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .a__to__z__whistleblowing__logo__container img {
+    width: 40%;
+  }
+}
+
+/* ===================================================================================================================== */
+/* TODO:  PART 3 - PAGE CONTENT                                                                                          */
+/* ===================================================================================================================== */
+
+/* ------------------------------- */
+/* FIXME:  VIEW - MOBILE FIRST     */
+/* ------------------------------- */
+
+.a__to__z__whistleblowing__page__content section {
+  margin: 1.5rem 0rem 1.5rem 0rem;
+}
+
+.a__to__z__whistleblowing__qr__code {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem 1rem 2rem 1rem;
+}
+
+.a__to__z__whistleblowing__qr__code img {
+  width: 90%;
+  height: auto;
+  padding: 0.2rem 0.2rem 0.2rem 0.2rem;
+}
+
+.a__to__z__whistleblowing__page__content {
+  margin: 1rem 2rem 1rem 2rem;
+  font-size: 1.2rem;
+  line-height: 1.5;
+  text-align: justify;
+}
+
+.a__to__z__whistleblowing__paragraph__01,
+.a__to__z__whistleblowing__paragraph__02,
+.a__to__z__whistleblowing__paragraph__03,
+.a__to__z__whistleblowing__paragraph__04,
+.a__to__z__whistleblowing__paragraph__05,
+.a__to__z__whistleblowing__paragraph__06,
+.a__to__z__whistleblowing__paragraph__07 {
+  margin: 2rem 0rem 1rem 0rem;
+}
+
+.a__to__z__whistleblowing__centered__paragraph {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.a__to__z__whistleblowing__buttons__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem 0rem 0rem 0rem;
+}
+
+.a__to__z__whistleblowing__buttons__container button {
+  text-decoration: none;
+  text-transform: uppercase;
+  width: 15rem;
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 0.2rem;
+  margin: 1rem 0rem 1rem 0rem;
+  padding: 1rem 1rem 1rem 1rem;
+  border: none;
+  outline: none;
+  background: var(--color-button-background-atoz-whistleblowing);
+  border-radius: 0.5rem;
+  box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.35);
+  cursor: pointer;
+  transition: transform 0.5s ease-in-out;
+}
+
+.a__to__z__whistleblowing__buttons__container button a {
+  text-decoration: none;
+  color: var(--color-button-text-atoz-whistleblowing);
+  cursor: pointer;
+}
+
+.a__to__z__whistleblowing__buttons__container button:hover {
+  transform: scale(1.05);
+}
+
+/* ------------------------------- */
+/* FIXME:  VIEW - LARGER SCREENS   */
+/* ------------------------------- */
+
+@media screen and (min-width: 720px) {
+  .a__to__z__whistleblowing__page__content section h6 {
+    font-size: 1.6rem;
+  }
+
+  .a__to__z__whistleblowing__page__content {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (min-width: 350px) {
+  .a__to__z__whistleblowing__qr__code img {
+    width: 85%;
+  }
+}
+
+@media screen and (min-width: 400px) {
+  .a__to__z__whistleblowing__qr__code img {
+    width: 75%;
+  }
+}
+
+@media screen and (min-width: 450px) {
+  .a__to__z__whistleblowing__qr__code img {
+    width: 65%;
+  }
+
+  .a__to__z__whistleblowing__qr__code {
+    justify-content: center;
+  }
+
+  .a__to__z__whistleblowing__buttons__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 3rem 0rem 3rem 0rem;
+  }
+
+  .a__to__z__whistleblowing__buttons__container button {
+    margin: 0rem 2rem 0rem 2rem;
+  }
+}
+
+@media screen and (min-width: 500px) {
+  .a__to__z__whistleblowing__qr__code img {
+    width: 60%;
+  }
+}
+
+@media screen and (min-width: 550px) {
+  .a__to__z__whistleblowing__qr__code img {
+    width: 55%;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .a__to__z__whistleblowing__qr__code img {
+    width: 50%;
+  }
+}
+
+@media screen and (min-width: 650px) {
+  .a__to__z__whistleblowing__qr__code img {
+    width: 45%;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .a__to__z__whistleblowing__qr__code img {
+    width: 40%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .a__to__z__whistleblowing__qr__code img {
+    width: 35%;
+  }
+}
+
+@media screen and (min-width: 850px) {
+  .a__to__z__whistleblowing__qr__code img {
+    width: 30%;
+  }
+}
+
+@media screen and (min-width: 950px) {
+  .a__to__z__whistleblowing__qr__code img {
+    width: 25%;
+  }
+}
+
+/* ===================================================================================================================== */
+/* ===================================================================================================================== */
+/* FIXME:FIXME:                          SECTION - A TO Z WHISTLEBLOWING (END)                              FIXME:FIXME: */
+/* ===================================================================================================================== */
+/* ===================================================================================================================== */
+
+/* ===================================================================================================================== */
+/* ===================================================================================================================== */
+/* TODO:TODO:                           SECTION - UNASHAMEDLY ETHICAL  (START)                                TODO:TODO: */
+/* ===================================================================================================================== */
+/* ===================================================================================================================== */
+
+/* .unashamedly__ethical__page__title h5 {
+  position: relative;
+  top: 9rem;
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  text-transform: uppercase;
+  margin: 2.5rem 0rem 2.5rem 0rem;
+  text-align: center;
+  background: #eee;
+  border: 2px solid red;
+} */
+
+.unashamedly__ethical__section {
+  position: relative;
+  /* top: 9rem; */
+  top: 10rem;
+  /* top: 9rem; */
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  margin: 0rem 0rem 0rem 0rem;
+  /* border: 2px solid red; */
+}
+
+/* .unashamedly__ethical__section img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+} */
+
+@media screen and (max-width: 830px) {
+  /* .unashamedly__ethical__page__title h5 {
+    position: relative;
+    top: 10rem;
+  } */
+  .unashamedly__ethical__section {
+    position: relative;
+    /* top: 9rem; */
+    /* top: 10rem; */
+    top: 11rem;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  /* .unashamedly__ethical__page__title h5 {
+    position: relative;
+    top: 13.5rem;
+  } */
+
+  .unashamedly__ethical__section {
+    position: relative;
+    /* top: 12.5rem; */
+    /* top: 13.5rem; */
+    top: 14.5rem;
+  }
+}
+
+/* ===================================================================================================================== */
+/* TODO:  PART 1 - PAGE TITLE                                                                                            */
+/* ===================================================================================================================== */
+
+/* ------------------------------- */
+/* FIXME:  VIEW - MOBILE FIRST     */
+/* ------------------------------- */
+
+.ue__page__title h5 {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  text-transform: uppercase;
+  margin: 1.5rem 0rem 1.5rem 0rem;
+}
+
+/* ------------------------------- */
+/* FIXME:  VIEW - LARGER SCREENS   */
+/* ------------------------------- */
+
+/* ===================================================================================================================== */
+/* TODO:  PART 2 - LOGO UNASHAMEDLY ETHICAL                                                                              */
+/* ===================================================================================================================== */
+
+/* ------------------------------- */
+/* FIXME:  VIEW - MOBILE FIRST     */
+/* ------------------------------- */
+
+.ue__logo__container {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  margin: 3rem 1rem 3rem 1rem;
+}
+
+.ue__logo__container img {
+  width: 65%;
+  height: auto;
+  padding: 0.2rem 0.2rem 0.2rem 0.2rem;
+}
+
+/* ------------------------------- */
+/* FIXME:  VIEW - LARGER SCREENS   */
+/* ------------------------------- */
+
+@media screen and (min-width: 400px) {
+  .ue__logo__container img {
+    width: 60%;
+  }
+}
+
+@media screen and (min-width: 450px) {
+  .ue__logo__container img {
+    width: 55%;
+  }
+}
+
+@media screen and (min-width: 500px) {
+  .ue__logo__container img {
+    width: 50%;
+  }
+}
+
+@media screen and (min-width: 550px) {
+  .ue__logo__container img {
+    width: 45%;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .ue__logo__container img {
+    width: 40%;
+  }
+}
+
+@media screen and (min-width: 650px) {
+  .ue__logo__container img {
+    width: 35%;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .ue__logo__container img {
+    width: 30%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .ue__logo__container img {
+    width: 25%;
+  }
+}
+
+/* ===================================================================================================================== */
+/* TODO:  PART 3 - PAGE CONTENT                                                                                          */
+/* ===================================================================================================================== */
+
+/* ------------------------------- */
+/* FIXME:  VIEW - MOBILE FIRST     */
+/* ------------------------------- */
+
+.ue__page__content section {
+  margin: 1.5rem 0rem 1.5rem 0rem;
+}
+
+.ue__page__content {
+  margin: 1rem 2rem 1rem 2rem;
+  font-size: 1.2rem;
+  line-height: 1.5;
+  text-align: justify;
+}
+
+.ue__paragraph__01,
+.ue__paragraph__02,
+.ue__paragraph__03,
+.ue__paragraph__04 {
+  margin: 2rem 0rem 1rem 0rem;
+}
+
+.ue__buttons__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem 0rem 0rem 0rem;
+}
+
+.ue__buttons__container button {
+  text-decoration: none;
+  text-transform: uppercase;
+  width: 15rem;
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 0.2rem;
+  margin: 0rem 0rem 1rem 0rem;
+  padding: 1rem 1rem 1rem 1rem;
+  border: none;
+  outline: none;
+  background: var(--color-button-background-ue);
+  border-radius: 0.5rem;
+  box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.35);
+  transition: transform 0.5s ease-in-out;
+  cursor: pointer;
+}
+
+.ue__buttons__container button a {
+  text-decoration: none;
+  color: var(--color-button-text-ue);
+  cursor: pointer;
+}
+
+.ue__buttons__container button:hover {
+  transform: scale(1.05);
+}
+
+/* ------------------------------- */
+/* FIXME:  VIEW - LARGER SCREENS   */
+/* ------------------------------- */
+
+@media screen and (min-width: 670px) {
+  .ue__page__content {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (min-width: 670px) {
+  .ue__buttons__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 3rem 0rem 3rem 0rem;
+  }
+
+  .ue__buttons__container button {
+    margin: 1rem 1rem 1rem 1rem;
+  }
+}
+
+/* ===================================================================================================================== */
+/* ===================================================================================================================== */
+/* FIXME:FIXME:                              SECTION - UNASHAMEDLY ETHICAL (END)                            FIXME:FIXME: */
+/* ===================================================================================================================== */
+/* ===================================================================================================================== */
+
+/* ===================================================================================================================== */
+/* ===================================================================================================================== */
+/* TODO:TODO:                                  SECTION - WHAT WE DO (START)                                   TODO:TODO: */
+/* ===================================================================================================================== */
+/* ===================================================================================================================== */
+
+/* .what__we__do__page__title h5 {
+  position: relative;
+  top: 9rem;
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  text-transform: uppercase;
+  margin: 2.5rem 0rem 2.5rem 0rem;
+  text-align: center;
+  background: #eee;
+  border: 2px solid red;
+} */
+
+.what__we__do__section {
+  position: relative;
+  /* top: 9rem; */
+  top: 10rem;
+  /* top: 9rem; */
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  margin: 0rem 0rem 0rem 0rem;
+  padding: 0rem 0rem 2rem 0rem;
+  background-color: var(--color-what-we-do-page-background);
+  /* border: 2px solid red; */
+}
+
+/* .what__we__do__section img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+} */
+
+@media screen and (max-width: 830px) {
+  /* .what__we__do__page__title h5 {
+    position: relative;
+    top: 10rem;
+  } */
+  .what__we__do__section {
+    position: relative;
+    /* top: 9rem; */
+    /* top: 10rem; */
+    top: 11rem;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  /* .what__we__do__page__title h5 {
+    position: relative;
+    top: 13.5rem;
+  } */
+
+  .what__we__do__section {
+    position: relative;
+    /* top: 12.5rem; */
+    /* top: 13.5rem; */
+    top: 14.5rem;
+  }
+}
+
+/* ===================================================================================================================== */
+/* TODO:  PART 1 - PAGE TITLE                                                                                            */
+/* ===================================================================================================================== */
+
+/* ------------------------------- */
+/* FIXME:  VIEW - MOBILE FIRST     */
+/* ------------------------------- */
+
+.what__we__do__page__title h5 {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  text-transform: uppercase;
+  margin: 0rem 0rem 0rem 0rem;
+  padding: 1.5rem 0rem 1.5rem 0rem;
+  background-color: var(--color-what-we-do-page-background);
+}
+
+/* ------------------------------- */
+/* FIXME:  VIEW - LARGER SCREENS   */
+/* ------------------------------- */
+
+/* ===================================================================================================================== */
+/* TODO:  PART 2 - EMBEDDED YOUTUBE VIDEO                                                                                */
+/* ===================================================================================================================== */
+
+/* ------------------------------- */
+/* FIXME:  VIEW - MOBILE FIRST     */
+/* ------------------------------- */
+
+.what__we__do__video__container {
+  position: relative;
+  height: 0;
+  width: 100%;
+  margin: 0rem 0rem 1.5rem 0rem;
+  padding: 0rem 0rem 56.25% 0rem;
+}
+
+.what__we__do__video__container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 0.45rem 0.75rem 0.45rem 0.75rem;
+  /* border-radius: 1.5rem; */
+}
+
+/* ------------------------------- */
+/* FIXME:  VIEW - LARGER SCREENS   */
+/* ------------------------------- */
+
+@media screen and (min-width: 768px) {
+  .what__we__do__video__container iframe {
+    padding: 0.2rem 0.75rem 0.2rem 0.75rem;
+    /* border-radius: 2rem; */
+  }
+}
+
+/* ===================================================================================================================== */
+/* TODO:  PART 3 - PAGE CONTENT                                                                                          */
+/* ===================================================================================================================== */
+
+/* ------------------------------- */
+/* FIXME:  VIEW - MOBILE FIRST     */
+/* ------------------------------- */
+
+.what__we__do__page__content section {
+  margin: 1.5rem 0rem 0rem 0rem;
+  background-color: var(--color-what-we-do-page-background);
+}
+
+.what__we__do__page__content section h6 {
+  text-transform: uppercase;
+  font-size: 1.3rem;
+}
+
+.what__we__do__drop__shipping {
+  position: relative;
+  margin: 3rem 0rem 3rem 0rem;
+}
+
+.what__we__do__drop__shipping img {
+  width: 100%;
+  height: auto;
+  border: 1px solid lightgray;
+  border-radius: 0.5rem;
+  box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.35);
+  padding: 0.2rem 0.2rem 0.2rem 0.2rem;
+}
+
+.what__we__do__drop__servicing {
+  position: relative;
+  margin: 3rem 0rem 3rem 0rem;
+}
+
+.what__we__do__drop__servicing img {
+  width: 100%;
+  height: auto;
+  border: 1px solid lightgray;
+  border-radius: 0.5rem;
+  box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.35);
+  padding: 0.2rem 0.2rem 0.2rem 0.2rem;
+}
+
+.what__we__do__page__content {
+  margin: 1rem 2rem 0rem 2rem;
+  font-size: 1.2rem;
+  line-height: 1.5;
+  text-align: justify;
+}
+
+.what__we__do__paragraph__01,
+.what__we__do__paragraph__02,
+.what__we__do__paragraph__03,
+.what__we__do__paragraph__04,
+.what__we__do__paragraph__05,
+.what__we__do__paragraph__06,
+.what__we__do__paragraph__07,
+.what__we__do__paragraph__08,
+.what__we__do__paragraph__09,
+.what__we__do__paragraph__10,
+.what__we__do__paragraph__11 {
+  margin: 2rem 0rem 1rem 0rem;
+}
+
+.what__we__do__buttons__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem 0rem 0rem 0rem;
+}
+
+.what__we__do__spn__benefits {
+  margin: 1rem 0.5rem 1rem 1.5rem;
+}
+
+.what__we__do__spn__benefits .benefit__item {
+  padding: 0.5rem 0rem 0.5rem 0rem;
+}
+
+.what__we__do__buttons__container button {
+  text-decoration: none;
+  text-transform: uppercase;
+  width: 15rem;
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 0rem 0rem 1rem 0rem;
+  padding: 1rem 1rem 1rem 1rem;
+  letter-spacing: 0.05rem;
+  border: none;
+  outline: none;
+  background: var(--color-what-we-do-button-background);
+  border-radius: 0.5rem;
+  box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.35);
+  transition: transform 0.5s ease-in-out;
+  cursor: pointer;
+}
+
+.what__we__do__buttons__container button a {
+  text-decoration: none;
+  color: var(--color-what-we-do-button-text);
+  cursor: pointer;
+}
+
+.what__we__do__buttons__container button:hover {
+  transform: scale(1.04);
+}
+
+/* ------------------------------- */
+/* FIXME:  VIEW - LARGER SCREENS   */
+/* ------------------------------- */
+
+@media screen and (min-width: 720px) {
+  .what__we__do__page__content section h6 {
+    font-size: 1.6rem;
+  }
+
+  .what__we__do__page__content {
+    font-size: 1.5rem;
+  }
+
+  .what__we__do__buttons__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem 0rem 2rem 0rem;
+  }
+
+  .what__we__do__buttons__container button {
+    margin: 0rem 1rem 0rem 0rem;
+  }
+}
+
+/* ===================================================================================================================== */
+/* ===================================================================================================================== */
+/* FIXME:FIXME:                                SECTION - WHAT WE DO (END)                                   FIXME:FIXME: */
+/* ===================================================================================================================== */
+/* ===================================================================================================================== */
+
+/* ===================================================================================================================== */
+/* ===================================================================================================================== */
 /* TODO:TODO:                                    SECTION - FOOTER (START)                                     TODO:TODO: */
 /* ===================================================================================================================== */
 /* ===================================================================================================================== */
 
 .shopmax__footer__section {
   position: relative;
-  top: 7rem;
+  top: 10rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -6446,7 +7334,7 @@ nav .clientzonewrapper .advertising-drop {
   height: auto;
   object-fit: cover;
   margin: 0rem 0rem 0rem 0rem;
-  /* border: 2px solid red; */
+  /* border: 2px solid green; */
 }
 
 /* .shopmax__footer__section img {
@@ -6458,14 +7346,14 @@ nav .clientzonewrapper .advertising-drop {
 @media screen and (max-width: 830px) {
   .shopmax__footer__section {
     position: relative;
-    top: 8rem;
+    top: 11rem;
   }
 }
 
 @media screen and (max-width: 450px) {
   .shopmax__footer__section {
     position: relative;
-    top: 11.5rem;
+    top: 14.5rem;
   }
 }
 

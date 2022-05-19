@@ -229,6 +229,13 @@
   --color-button-background-ue: #f57313;
   --color-button-text-ue: white;
   /* ------------------------------------------------ */
+  /* FIXME:  SECTION: WHAT WE DO                      */
+  /* ------------------------------------------------ */
+  --color-what-we-do-page-background: #eee;
+  --color-what-we-do-button-background: #dc143c;
+  --color-what-we-do-button-text: white;
+  --color-what-we-do-ultimate-package-text: #dc143c;
+  /* ------------------------------------------------ */
   /* FIXME:  SECTION: PAGE UNDER CONSTRUCTION         */
   /* ------------------------------------------------ */
   --color-page-header: #000000;
@@ -7037,6 +7044,277 @@ nav .clientzonewrapper .advertising-drop {
 /* ===================================================================================================================== */
 /* ===================================================================================================================== */
 /* FIXME:FIXME:                              SECTION - UNASHAMEDLY ETHICAL (END)                            FIXME:FIXME: */
+/* ===================================================================================================================== */
+/* ===================================================================================================================== */
+
+/* ===================================================================================================================== */
+/* ===================================================================================================================== */
+/* TODO:TODO:                                  SECTION - WHAT WE DO (START)                                   TODO:TODO: */
+/* ===================================================================================================================== */
+/* ===================================================================================================================== */
+
+/* .what__we__do__page__title h5 {
+  position: relative;
+  top: 9rem;
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  text-transform: uppercase;
+  margin: 2.5rem 0rem 2.5rem 0rem;
+  text-align: center;
+  background: #eee;
+  border: 2px solid red;
+} */
+
+.what__we__do__section {
+  position: relative;
+  /* top: 9rem; */
+  top: 10rem;
+  /* top: 9rem; */
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  margin: 0rem 0rem 0rem 0rem;
+  padding: 0rem 0rem 2rem 0rem;
+  background-color: var(--color-what-we-do-page-background);
+  /* border: 2px solid red; */
+}
+
+/* .what__we__do__section img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+} */
+
+@media screen and (max-width: 830px) {
+  /* .what__we__do__page__title h5 {
+    position: relative;
+    top: 10rem;
+  } */
+  .what__we__do__section {
+    position: relative;
+    /* top: 9rem; */
+    /* top: 10rem; */
+    top: 11rem;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  /* .what__we__do__page__title h5 {
+    position: relative;
+    top: 13.5rem;
+  } */
+
+  .what__we__do__section {
+    position: relative;
+    /* top: 12.5rem; */
+    /* top: 13.5rem; */
+    top: 14.5rem;
+  }
+}
+
+/* ===================================================================================================================== */
+/* TODO:  PART 1 - PAGE TITLE                                                                                            */
+/* ===================================================================================================================== */
+
+/* ------------------------------- */
+/* FIXME:  VIEW - MOBILE FIRST     */
+/* ------------------------------- */
+
+.what__we__do__page__title h5 {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  text-transform: uppercase;
+  margin: 0rem 0rem 0rem 0rem;
+  padding: 1.5rem 0rem 1.5rem 0rem;
+  background-color: var(--color-what-we-do-page-background);
+}
+
+/* ------------------------------- */
+/* FIXME:  VIEW - LARGER SCREENS   */
+/* ------------------------------- */
+
+/* ===================================================================================================================== */
+/* TODO:  PART 2 - EMBEDDED YOUTUBE VIDEO                                                                                */
+/* ===================================================================================================================== */
+
+/* ------------------------------- */
+/* FIXME:  VIEW - MOBILE FIRST     */
+/* ------------------------------- */
+
+.what__we__do__video__container {
+  position: relative;
+  height: 0;
+  width: 100%;
+  margin: 0rem 0rem 1.5rem 0rem;
+  padding: 0rem 0rem 56.25% 0rem;
+}
+
+.what__we__do__video__container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 0.45rem 0.75rem 0.45rem 0.75rem;
+  /* border-radius: 1.5rem; */
+}
+
+/* ------------------------------- */
+/* FIXME:  VIEW - LARGER SCREENS   */
+/* ------------------------------- */
+
+@media screen and (min-width: 768px) {
+  .what__we__do__video__container iframe {
+    padding: 0.2rem 0.75rem 0.2rem 0.75rem;
+    /* border-radius: 2rem; */
+  }
+}
+
+/* ===================================================================================================================== */
+/* TODO:  PART 3 - PAGE CONTENT                                                                                          */
+/* ===================================================================================================================== */
+
+/* ------------------------------- */
+/* FIXME:  VIEW - MOBILE FIRST     */
+/* ------------------------------- */
+
+.what__we__do__page__content section {
+  margin: 1.5rem 0rem 0rem 0rem;
+  background-color: var(--color-what-we-do-page-background);
+}
+
+.what__we__do__page__content section h6 {
+  text-transform: uppercase;
+  font-size: 1.3rem;
+}
+
+.what__we__do__drop__shipping {
+  position: relative;
+  margin: 3rem 0rem 3rem 0rem;
+}
+
+.what__we__do__drop__shipping img {
+  width: 100%;
+  height: auto;
+  border: 1px solid lightgray;
+  border-radius: 0.5rem;
+  box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.35);
+  padding: 0.2rem 0.2rem 0.2rem 0.2rem;
+}
+
+.what__we__do__drop__servicing {
+  position: relative;
+  margin: 3rem 0rem 3rem 0rem;
+}
+
+.what__we__do__drop__servicing img {
+  width: 100%;
+  height: auto;
+  border: 1px solid lightgray;
+  border-radius: 0.5rem;
+  box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.35);
+  padding: 0.2rem 0.2rem 0.2rem 0.2rem;
+}
+
+.what__we__do__page__content {
+  margin: 1rem 2rem 0rem 2rem;
+  font-size: 1.2rem;
+  line-height: 1.5;
+  text-align: justify;
+}
+
+.what__we__do__paragraph__01,
+.what__we__do__paragraph__02,
+.what__we__do__paragraph__03,
+.what__we__do__paragraph__04,
+.what__we__do__paragraph__05,
+.what__we__do__paragraph__06,
+.what__we__do__paragraph__07,
+.what__we__do__paragraph__08,
+.what__we__do__paragraph__09,
+.what__we__do__paragraph__10,
+.what__we__do__paragraph__11 {
+  margin: 2rem 0rem 1rem 0rem;
+}
+
+.what__we__do__buttons__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem 0rem 0rem 0rem;
+}
+
+.what__we__do__spn__benefits {
+  margin: 1rem 0.5rem 1rem 1.5rem;
+}
+
+.what__we__do__spn__benefits .benefit__item {
+  padding: 0.5rem 0rem 0.5rem 0rem;
+}
+
+.what__we__do__buttons__container button {
+  text-decoration: none;
+  text-transform: uppercase;
+  width: 15rem;
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 0rem 0rem 1rem 0rem;
+  padding: 1rem 1rem 1rem 1rem;
+  letter-spacing: 0.05rem;
+  border: none;
+  outline: none;
+  background: var(--color-what-we-do-button-background);
+  border-radius: 0.5rem;
+  box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.35);
+  transition: transform 0.5s ease-in-out;
+  cursor: pointer;
+}
+
+.what__we__do__buttons__container button a {
+  text-decoration: none;
+  color: var(--color-what-we-do-button-text);
+  cursor: pointer;
+}
+
+.what__we__do__buttons__container button:hover {
+  transform: scale(1.04);
+}
+
+/* ------------------------------- */
+/* FIXME:  VIEW - LARGER SCREENS   */
+/* ------------------------------- */
+
+@media screen and (min-width: 720px) {
+  .what__we__do__page__content section h6 {
+    font-size: 1.6rem;
+  }
+
+  .what__we__do__page__content {
+    font-size: 1.5rem;
+  }
+
+  .what__we__do__buttons__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem 0rem 2rem 0rem;
+  }
+
+  .what__we__do__buttons__container button {
+    margin: 0rem 1rem 0rem 0rem;
+  }
+}
+
+/* ===================================================================================================================== */
+/* ===================================================================================================================== */
+/* FIXME:FIXME:                                SECTION - WHAT WE DO (END)                                   FIXME:FIXME: */
 /* ===================================================================================================================== */
 /* ===================================================================================================================== */
 
