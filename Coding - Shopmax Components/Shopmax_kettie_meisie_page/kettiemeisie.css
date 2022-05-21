@@ -3,89 +3,6 @@
 /* ===================================================================================================================== */
 
 :root {
-  /* BOX-SHADOW CONFIGURATIONS */
-  --color-box-shadow-01: 3px 5px 20px rgba(0, 0, 0, 0.35);
-  --color-box-shadow-02: 0px 5px 4px rgba(0, 0, 0, 0.35);
-  --color-box-shadow-03: 0px 1px 5px 3px rgba(0, 0, 0, 0.15);
-  --color-box-shadow-04: 0px 5px 20px rgba(0, 0, 0, 0.35);
-  /* KETTIE MEISIE - COLOR SCHEME */
-  --color-kettie-meisie: #1a354a;
-  --color-kettie-meisie-rgb: rgb(26, 53, 74);
-  /* KETTIE MEISIE - ROTATING HERO BANNER */
-  --color-slide-text: white;
-  --color-button-background: none;
-  --color-button-background-hover: #1a354a;
-  --color-button-text: white;
-  --color-button-text-hover: white;
-  --color-arrows-background: none;
-  --color-arrows-color: #1a354a;
-  --color-dots-background-not-active: white;
-  --color-dots-background-hover: #1a354a;
-  --color-dots-background-active: #1a354a;
-  /* KETTIE MEISIE - BUTTONS */
-  --color-kettie-meisie-button-background: #1a354a;
-  --color-kettie-meisie-button-text: white;
-  /* KETTIE MEISIE - ACCORDIANS */
-  --color-accordian-item-background: white;
-  --color-accordian-item-background-alternative: #e9f0f1;
-  --color-accordian-item-text: black;
-  --color-accordian-item-header-active: #1a354a;
-  --color-accordian-item-plus-and-minus-sign: #1a354a;
-  --color-accordian-item-seperation-line: #e5e4e2;
-  --color-accordian-item-seperation-line-alternative: #edeade;
-  /* KETTIE MEISIE - PRODUCT CARDS  */
-  --color-page-background: #ebf4f4;
-  /* BOX SHADOW */
-  --color-box-shadow-01: 3px 5px 20px rgba(0, 0, 0, 0.35);
-  --color-box-shadow-02: 0px 5px 4px rgba(0, 0, 0, 0.35);
-  /* CARD COLOR SCHEME */
-  --color-product-card-brand-title: black;
-  --color-product-card-background: white;
-  --color-product-card-top-section-background: white;
-  --color-product-card-arrow-left: black;
-  --color-product-card-heart-right: #1a354a;
-  --color-product-card-extra-images-section-background: white;
-  --color-product-card-extra-image-background: white;
-  --color-product-card-extra-image-border: black;
-  --color-product-card-extra-image-border-hover: #1a354a;
-  --color-product-card-title: black;
-  --color-product-card-short-description: black;
-  --color-product-card-sizes-title: black;
-  --color-product-card-colors-title: black;
-  --color-product-card-price-currency: black;
-  --color-product-card-price-value: black;
-  /* CUSTOM RADIO BUTTON */
-  --color-custom-radiobutton-border: #ccc;
-  --color-custom-radiobutton-background: white;
-  --color-custom-radiobutton-circle: #1a354a;
-  --color-custom-radiobutton-focus: #1a354a;
-  --color-custom-radiobutton-disabled: #959495;
-  /* COLOR SCHEME FOR ADD TO CART BUTTONS, CARTS AND COUNTERS */
-  --color-add-to-cart-button-background: #1a354a;
-  --color-add-to-cart-button-text: white;
-  --color-shopping-cart-icon: black;
-  --color-shopping-cart-counter-background: #1a354a;
-  --color-shopping-cart-counter-text: white;
-  /* COLOR SCHEME FOR ADD TO WISH LIST BUTTONS, CARTS AND COUNTERS */
-  --color-add-to-wish-list-button-background: #1a354a;
-  --color-add-to-wish-list-button-text: white;
-  --color-wish-list-icon: black;
-  --color-wish-list-counter-background: #1a354a;
-  --color-wish-list-counter-text: white;
-  /* FORM TEXT INPUTS */
-  --color-input-border: #ccc;
-  --color-input-border-focus: #1a354a;
-  --color-input-border-focus-rgba: rgb(26, 53, 74);
-  /* CLOSE BUTTON - BACK CARD */
-  --color-card-back-button-close: #1a354a;
-  --color-card-back-background: white;
-  --color-card-back-text: black;
-  /* BACK OF CARD */
-  --color-heading-titles: #1a354a;
-  --color-heading-values: black;
-  /* BUTTON - SIZING GUIDE DOWNLOAD */
-  --color-button-sizing-guide-background: #1a354a;
-  --color-button-sizing-guide-text: white;
   /* ------------------------------------------------ */
   /* FIXME:  GENERAL COLORS - BOX SHADOWS             */
   /* ------------------------------------------------ */
@@ -153,6 +70,9 @@
   --color-kettie-meisie-card-back-text: black;
   --color-kettie-meisie-heading-titles: #1a354a;
   --color-kettie-meisie-heading-values: black;
+  --color-kettie-meisie-button-sizing-guide-background: #1a354a;
+  --color-kettie-meisie-button-sizing-guide-text: white;
+  --color-kettie-meisie-page-background: #ebf4f4;
 }
 
 * {
@@ -169,7 +89,7 @@ html {
 
 body {
   font-size: 1.6rem;
-  background-color: var(--color-page-background);
+  background-color: var(--color-kettie-meisie-page-background);
 }
 
 a {
@@ -1316,7 +1236,7 @@ section {
   transition: max-height 0.2s ease-out;
 }
 
-.accordian-item-body {
+.kettie__meisie__accordian__item__body__01 {
   /* display: none; */
   max-height: 0;
   overflow: hidden;
@@ -2994,7 +2914,7 @@ i.bx-heart {
 
 /* MAIN CONTAINER */
 
-.product-full-description {
+.kettie__meisie__product-full-description {
   position: absolute;
   top: 24.5rem;
   left: 0;
@@ -3007,7 +2927,8 @@ i.bx-heart {
   /* border: 1px solid blue; */
 }
 
-.product-full-description .product-specifications-title {
+.kettie__meisie__product-full-description
+  .kettie__meisie__product-specifications-title {
   position: absolute;
   top: 0;
   left: 0;
@@ -3020,11 +2941,12 @@ i.bx-heart {
   text-transform: uppercase;
   width: 100%;
   height: 2rem;
-  color: var(--color-heading-titles);
+  color: var(--color-kettie-meisie-heading-titles);
   /* border: 1px solid yellow; */
 }
 
-.product-full-description .product-specifications-details {
+.kettie__meisie__product-full-description
+  .kettie__meisie__product-specifications-details {
   position: absolute;
   top: 2rem;
   left: 0;
@@ -3059,6 +2981,7 @@ i.bx-heart {
   border: none;
   outline: none;
   display: flex;
+  justify-content: center;
   align-items: center;
   font-size: 0.8rem;
   font-weight: 600;
@@ -3066,8 +2989,8 @@ i.bx-heart {
   text-transform: uppercase;
   text-decoration: none;
   text-align: center;
-  background: var(--color-button-sizing-guide-background);
-  color: var(--color-button-sizing-guide-text);
+  background: var(--color-kettie-meisie-button-sizing-guide-background);
+  color: var(--color-kettie-meisie-button-sizing-guide-text);
   border-radius: 0.75rem;
   padding: 0.75rem 1rem 0.75rem 1rem;
   transition: transform 0.5s ease-in-out;
@@ -3075,9 +2998,9 @@ i.bx-heart {
   /* border: 1px solid blue; */
 }
 
-a.product-brochure-download {
+a.kettie__meisie__product-brochure-download {
   text-decoration: none;
-  color: var(--color-button-sizing-guide-text);
+  color: var(--color-kettie-meisie-button-sizing-guide-text);
 }
 
 .kettie__meisie__information-container-back i.bx-download {
@@ -3091,7 +3014,7 @@ a.product-brochure-download {
 
 /* MAIN CONTAINER */
 
-.important-notification {
+.kettie__meisie__important-notification {
   position: absolute;
   top: 41.5rem;
   left: 0;
@@ -3105,7 +3028,7 @@ a.product-brochure-download {
   /* border: 1px solid blue; */
 }
 
-.important-notification .notification-title {
+.kettie__meisie__important-notification .kettie__meisie__notification-title {
   position: absolute;
   top: 0;
   left: 0;
@@ -3118,11 +3041,11 @@ a.product-brochure-download {
   text-transform: uppercase;
   width: 100%;
   height: 2rem;
-  color: var(--color-heading-titles);
+  color: var(--color-kettie-meisie-heading-titles);
   /* border: 1px solid yellow; */
 }
 
-.important-notification .notification-info {
+.kettie__meisie__important-notification .kettie__meisie__notification-info {
   position: absolute;
   top: 1.5rem;
   left: 0;
@@ -3140,7 +3063,7 @@ a.product-brochure-download {
   /* border: 1px solid green; */
 }
 
-.important-notification .notification-info a {
+.kettie__meisie__important-notification .kettie__meisie__notification-info a {
   display: inline-block;
   text-decoration: none;
 }
