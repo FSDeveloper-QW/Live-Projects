@@ -346,6 +346,51 @@
   --color-quote-services-button-background: #dc143c;
   --color-quote-services-button-text: white;
   /* ------------------------------------------------ */
+  /* FIXME:  PRE-ORDER NEW PRODUCTS                   */
+  /* ------------------------------------------------ */
+  --color-pre-orders-form-header-background: #dc143c;
+  --color-pre-orders-form-header-text: white;
+  --color-pre-orders-privacy-text: #dc143c;
+  --color-pre-orders-delivery-cost-text: #dc143c;
+  --color-pre-orders-input-border: #ccc;
+  --color-pre-orders-input-border-focus: #dc143c;
+  --color-pre-orders-custom-checkbox-border: #ccc;
+  --color-pre-orders-custom-checkbox-background: white;
+  --color-pre-orders-custom-checkbox-checkmark: #dc143c;
+  --color-pre-orders-custom-checkbox-focus: #dc143c;
+  --color-pre-orders-custom-checkbox-disabled: #959495;
+  --color-pre-orders-button-background: #dc143c;
+  --color-pre-orders-button-text: white;
+  /* ------------------------------------------------ */
+  /* FIXME:  SECTION: SKYNAMO                         */
+  /* ------------------------------------------------ */
+  --color-skynamo-button-background: #e2218e;
+  --color-skynamo-button-text: #fff;
+  --color-skynamo-accordian-item-background: white;
+  --color-skynamo-accordian-item-text: black;
+  --color-skynamo-accordian-item-header-active: #e2218e;
+  --color-skynamo-accordian-item-plus-and-minus-sign: #e2218e;
+  --color-skynamo-accordian-item-seperation-line: #edeade;
+  --color-skynamo-product-card-background: white;
+  --color-skynamo-product-card-image-background: white;
+  --color-skynamo-product-card-main-title: #e2218e;
+  --color-skynamo-product-card-sub-title: black;
+  --color-skynamo-product-card-description: black;
+  --color-skynamo-product-card-specifications-background: #e2218e;
+  --color-skynamo-product-card-specifications-statistics: white;
+  --color-skynamo-product-card-specifications-statistics-seperation-line: white;
+  --color-skynamo-page-header-text: white;
+  --color-skynamo-input-border: #ccc;
+  --color-skynamo-input-border-focus: #e2218e;
+  --color-skynamo-rgb: rgb(226, 33, 142);
+  --color-skynamo-custom-checkbox-border: #ccc;
+  --color-skynamo-custom-checkbox-background: white;
+  --color-skynamo-custom-checkbox-checkmark: #e2218e;
+  --color-skynamo-custom-checkbox-focus: #e2218e;
+  --color-skynamo-custom-checkbox-disabled: #959495;
+  --color-skynamo-button-background: #e2218e;
+  --color-skynamo-button-text: white;
+  /* ------------------------------------------------ */
   /* FIXME:  SECTION: COMPANY FOOTER                  */
   /* ------------------------------------------------ */
   --color-page-background: #f7f7f7;
@@ -8853,6 +8898,11 @@ nav .clientzonewrapper .advertising-drop {
   text-align: center;
   cursor: pointer;
   text-decoration: none;
+  transition: transform 0.5s ease-in-out;
+}
+
+.offices__button__container button:hover {
+  transform: scale(1.05);
 }
 
 .offices__button__container {
@@ -9448,6 +9498,11 @@ label.product__quote__checkbox__option {
   text-align: center;
   cursor: pointer;
   text-decoration: none;
+  transition: transform 0.5s ease-in-out;
+}
+
+.product__quote__button__container button:hover {
+  transform: scale(1.05);
 }
 
 .product__quote__button__container {
@@ -10059,6 +10114,11 @@ label.service__quote__checkbox__option {
   text-align: center;
   cursor: pointer;
   text-decoration: none;
+  transition: transform 0.5s ease-in-out;
+}
+
+.service__quote__button__container button:hover {
+  transform: scale(1.05);
 }
 
 .service__quote__button__container {
@@ -10154,6 +10214,1894 @@ label.service__quote__checkbox__option {
 /* ===================================================================================================================== */
 /* ===================================================================================================================== */
 /* FIXME:FIXME:                        SECTION - REQUEST SERVICE QUOTE (END)                                FIXME:FIXME: */
+/* ===================================================================================================================== */
+/* ===================================================================================================================== */
+
+/* ===================================================================================================================== */
+/* ===================================================================================================================== */
+/* TODO:TODO:                        SECTION - PRE-ORDER NEW PRODUCTS (START)                                 TODO:TODO: */
+/* ===================================================================================================================== */
+/* ===================================================================================================================== */
+
+/* .pre__orders__page__title h5 {
+  position: relative;
+  top: 9rem;
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  text-transform: uppercase;
+  margin: 2.5rem 0rem 2.5rem 0rem;
+  text-align: center;
+  background: #eee;
+  border: 2px solid red;
+} */
+
+.pre__orders__section {
+  position: relative;
+  /* top: 9rem; */
+  top: 10rem;
+  /* top: 9rem; */
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  margin: 0rem 0rem 0rem 0rem;
+  padding: 0rem 0rem 2rem 0rem;
+  background-color: var(--color-what-we-do-page-background);
+  /* border: 2px solid red; */
+}
+
+/* .pre__orders__section img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+} */
+
+@media screen and (max-width: 830px) {
+  /* .pre__orders__page__title h5 {
+    position: relative;
+    top: 10rem;
+  } */
+  .pre__orders__section {
+    position: relative;
+    /* top: 9rem; */
+    /* top: 10rem; */
+    top: 11rem;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  /* .pre__orders__page__title h5 {
+    position: relative;
+    top: 13.5rem;
+  } */
+
+  .pre__orders__section {
+    position: relative;
+    /* top: 12.5rem; */
+    /* top: 13.5rem; */
+    top: 14.5rem;
+  }
+}
+
+/* ===================================================================================================================== */
+/* TODO:  PART 1 - PRE-ORDER (NEW PRODUCTS) - PAGE TITLE                                                                 */
+/* ===================================================================================================================== */
+
+/* ------------------------------- */
+/* FIXME:  VIEW - MOBILE FIRST     */
+/* ------------------------------- */
+
+.preorder__page__title h5 {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  text-transform: uppercase;
+  margin: 0rem 0rem 0rem 0rem;
+  padding: 1.5rem 0rem 0rem 0rem;
+  text-align: center;
+}
+
+/* ------------------------------- */
+/* FIXME:  VIEW - LARGER SCREENS   */
+/* ------------------------------- */
+
+/* ===================================================================================================================== */
+/* TODO:  PART 2A - PRE-ORDER (NEW PRODUCTS)                                                                             */
+/* ===================================================================================================================== */
+
+/* ------------------------------- */
+/* FIXME:  VIEW - MOBILE FIRST     */
+/* ------------------------------- */
+
+.preorder__form__header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  font-weight: 500;
+  letter-spacing: 0.2rem;
+  background-color: var(--color-pre-orders-form-header-background);
+  color: var(--color-pre-orders-form-header-text);
+  margin: 2.5rem 0.4rem 2rem 0.4rem;
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  border-radius: 0.5rem;
+  box-shadow: var(--color-box-shadow-01);
+}
+
+/* ------------------------- */
+/* FIXME:  PRIVACY STATEMENT */
+/* ------------------------- */
+
+.preorder__privacy__statement {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 1rem 0.4rem 2rem 0.4rem;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+}
+
+.preorder__privacy__statement strong {
+  text-decoration: none;
+  color: var(--color-pre-orders-privacy-text);
+}
+
+.preorder__privacy__statement a {
+  text-decoration: none;
+  color: var(--color-pre-orders-privacy-text);
+  cursor: pointer;
+}
+
+/* --------------------------- */
+/* FIXME:  SHIPPING STATEMENT  */
+/* --------------------------- */
+
+.preorder__delivery__cost {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 1rem 0.4rem 2rem 0.4rem;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+}
+
+.preorder__delivery__cost strong {
+  text-decoration: none;
+  color: var(--color-pre-orders-delivery-cost-text);
+}
+
+.preorder__delivery__cost a {
+  text-decoration: none;
+  color: var(--color-pre-orders-delivery-cost-text);
+  cursor: pointer;
+}
+
+/* ------------------------------- */
+/* FIXME:  VIEW - LARGER SCREENS   */
+/* ------------------------------- */
+
+@media screen and (max-width: 430px) {
+  .preorder__form__header {
+    font-size: 1rem;
+    text-align: center;
+  }
+}
+
+/* ===================================================================================================================== */
+/* TODO:  PART 2B - PRE-ORDER (NEW PRODUCTS)                                                                             */
+/* ===================================================================================================================== */
+
+/* ---------------------------------------------- */
+/* FIXME:  FORM CONTAINER  FIXME:                 */
+/* ---------------------------------------------- */
+
+.pre__order__form__group {
+  margin: 0rem 0rem 1rem 1rem;
+}
+
+/* ---------------------------------------------- */
+/* FIXME:  FORM LABEL  FIXME:                     */
+/* ---------------------------------------------- */
+
+.pre__order__form__group label {
+  display: block;
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin: 0.5rem 1.75rem 0.5rem 1.75rem;
+}
+
+.pre__order__form__group input::placeholder {
+  font-family: "Poppins", sans-serif;
+}
+
+/* ---------------------------------------------- */
+/* FIXME:  INPUT FIELD TYPE =  TEXT  FIXME:       */
+/* e.g. "NAME" or "LAST NAME" etc.                */
+/* ---------------------------------------------- */
+
+.pre__order__form__group input[type="text"] {
+  /* width: 25rem; */
+  width: 96%;
+  border-radius: 0.5rem;
+  border: 1px solid var(--color-pre-orders-input-border);
+  margin: 0.5rem 1.4rem 0.5rem 1.4rem;
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: border-color 0.15s, box-shadow 0.15s;
+}
+
+.pre__order__form__group input[type="text"]:focus {
+  border-color: var(--color-pre-orders-input-border-focus);
+  box-shadow: 0 0 0 2px rgba(220, 20, 60, 0.95);
+  outline: 0;
+}
+
+/* ---------------------------------------------- */
+/* FIXME:  INPUT FIELD TYPE =  TEL  FIXME:        */
+/* e.g. "TELEPHONE" or "MOBILE" Number etc.       */
+/* ---------------------------------------------- */
+
+.pre__order__form__group input[type="tel"] {
+  /* width: 25rem; */
+  width: 96%;
+  border-radius: 0.5rem;
+  border: 1px solid var(--color-pre-orders-input-border);
+  margin: 0.5rem 1.4rem 0.5rem 1.4rem;
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: border-color 0.15s, box-shadow 0.15s;
+}
+
+.pre__order__form__group input[type="tel"]:focus {
+  border-color: var(--color-pre-orders-input-border-focus);
+  box-shadow: 0 0 0 2px rgba(220, 20, 60, 0.95);
+  outline: 0;
+}
+
+/* ---------------------------------------------- */
+/* FIXME:  INPUT FIELD TYPE =  TEXTAREA  FIXME:   */
+/* Runs over multiple lines (rows) e.g. "Address" */
+/* ---------------------------------------------- */
+
+.pre__order__form__group textarea {
+  resize: none;
+  /* width: 25rem; */
+  width: 96%;
+  border-radius: 0.5rem;
+  border: 1px solid var(--color-pre-orders-input-border);
+  margin: 0.5rem 1.4rem 0.5rem 1.4rem;
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  font-size: 1.2rem;
+  font-family: "poppins", sans-serif;
+  cursor: pointer;
+  transition: border-color 0.15s, box-shadow 0.15s;
+}
+
+.pre__order__form__group textarea:focus {
+  border-color: var(--color-pre-orders-input-border-focus);
+  box-shadow: 0 0 0 2px rgba(220, 20, 60, 0.95);
+  outline: 0;
+}
+
+/* ---------------------------------------------- */
+/* FIXME:  INPUT FIELD TYPE =  NUMBER  FIXME:     */
+/* ---------------------------------------------- */
+
+.pre__order__form__group input[type="number"] {
+  /* width: 25rem; */
+  width: 96%;
+  border-radius: 0.5rem;
+  border: 1px solid var(--color-pre-orders-input-border);
+  margin: 0.5rem 1.4rem 0.5rem 1.4rem;
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  font-size: 1.2rem;
+  font-family: "poppins", sans-serif;
+  cursor: pointer;
+  transition: border-color 0.15s, box-shadow 0.15s;
+}
+
+.pre__order__form__group input[type="number"]:focus {
+  border-color: var(--color-pre-orders-input-border-focus);
+  box-shadow: 0 0 0 2px rgba(220, 20, 60, 0.95);
+  outline: 0;
+}
+
+/* ---------------------------------------------- */
+/* FIXME:  INPUT FIELD TYPE =  DATE  FIXME:       */
+/* ---------------------------------------------- */
+
+.pre__order__form__group input[type="date"] {
+  /* width: 25rem; */
+  width: 96%;
+  border-radius: 0.5rem;
+  border: 1px solid var(--color-pre-orders-input-border);
+  margin: 0.5rem 1.4rem 0.5rem 1.4rem;
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: border-color 0.15s, box-shadow 0.15s;
+}
+
+.pre__order__form__group input[type="date"]:focus {
+  border-color: var(--color-pre-orders-input-border-focus);
+  box-shadow: 0 0 0 2px rgba(220, 20, 60, 0.95);
+  outline: 0;
+}
+
+/* ---------------------------------------------- */
+/* FIXME:  INPUT FIELD = DROPDOWN LIST     FIXME: */
+/* e.g. Countries, Provinces, Titles etc.         */
+/* ---------------------------------------------- */
+
+.pre__order__form__group select {
+  /* width: 25rem; */
+  width: 96%;
+  border-radius: 0.5rem;
+  border: 1px solid var(--color-pre-orders-input-border);
+  margin: 0.5rem 1.4rem 0.5rem 1.4rem;
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: border-color 0.15s, box-shadow 0.15s;
+}
+
+.pre__order__form__group select:focus {
+  border-color: var(--color-pre-orders-input-border-focus);
+  box-shadow: 0 0 0 2px rgba(220, 20, 60, 0.95);
+  outline: 0;
+}
+
+/* ------------------------------------------------------------------------- */
+/* TODO:  START STYLING OF CUSTOM CHECKBOX                                   */
+/* ------------------------------------------------------------------------- */
+
+/* --------------------------------------- */
+/* FIXME:  INPUT FIELD = CHECKBOX  FIXME:  */
+/* --------------------------------------- */
+
+.pre__order__checkbox__option {
+  font-size: 1.2rem;
+  font-weight: 600;
+  line-height: 1.5;
+  text-transform: none;
+  text-align: justify;
+  display: grid;
+  grid-template-columns: 1rem auto;
+  gap: 2rem;
+  margin: 2rem 0rem 2rem 0rem;
+  padding: 0rem 1.5rem 0rem 0rem;
+  cursor: pointer;
+}
+
+label.pre__order__checkbox__option {
+  display: grid;
+}
+
+/* ------------------------------------ */
+/* THIS IS TO HIDE THE NATIVE CHECKBOX  */
+/* ------------------------------------ */
+
+.pre__order__form__group input[type="checkbox"] {
+  /* Add if not using autoprefixer */
+  -webkit-appearance: none;
+  appearance: none;
+  /* For iOS < 15 to remove gradient background */
+  background-color: var(--color-pre-orders-custom-checkbox-background);
+  /* Not removed via appearance */
+  margin: 0;
+}
+
+/* --------------------------------------- */
+/* THIS IS TO DISPLAY THE CUSTOM CHECKBOX  */
+/* --------------------------------------- */
+
+.pre__order__form__group input[type="checkbox"] {
+  appearance: none;
+  background-color: var(--color-pre-orders-custom-checkbox-background);
+  margin: 0;
+  font: inherit;
+  color: var(--color-pre-orders-custom-checkbox-border);
+  width: 1.5rem;
+  height: 1.5rem;
+  border: 0.15em solid var(--color-pre-orders-custom-checkbox-border);
+  border-radius: 0.15em;
+  transform: translateY(-0.075em);
+  display: grid;
+  place-content: center;
+  cursor: pointer;
+}
+
+.pre__order__checkbox__option + .pre__order__checkbox__option {
+  margin-top: 1rem;
+}
+
+/* --------------------------------------- */
+/* CUSTOM CHECKBOX - CHECKED STATE         */
+/* --------------------------------------- */
+
+.pre__order__form__group input[type="checkbox"]::before {
+  content: "";
+  width: 0.7rem;
+  height: 0.7rem;
+  transform: scale(0);
+  transition: 120ms transform ease-in-out;
+  box-shadow: inset 1em 1em var(--color-pre-orders-custom-checkbox-checkmark);
+  /* Windows High Contrast Mode */
+  background-color: CanvasText;
+  /* Creating a checkmark with CLIP-PATH */
+  transform-origin: bottom left;
+  clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
+}
+
+.pre__order__form__group input[type="checkbox"]:checked::before {
+  transform: scale(1);
+}
+
+/* --------------------------------------- */
+/* CUSTOM CHECKBOX - FOCUSSED STATE        */
+/* --------------------------------------- */
+
+.pre__order__form__group input[type="checkbox"]:focus {
+  outline: max(2px, 0.15em) solid var(--color-pre-orders-custom-checkbox-focus);
+  outline-offset: max(1px, 0.15em);
+}
+
+/* --------------------------------------- */
+/* CUSTOM CHECKBOX - DISABLED STATE        */
+/* --------------------------------------- */
+
+.pre__order__checkbox__option--disabled {
+  color: var(--color-pre-orders-custom-checkbox-disabled);
+  cursor: not-allowed;
+}
+
+.pre__order__form__group input[type="checkbox"]:disabled {
+  color: var(--color-pre-orders-custom-checkbox-disabled);
+  cursor: not-allowed;
+}
+
+/* ------------------------------------------------------------------------- */
+/* TODO:  END OF STYLING OF CUSTOM CHECKBOX                                  */
+/* ------------------------------------------------------------------------- */
+
+/* ------------------------------------------ */
+/* FIXME:  INPUT FIELD TYPE =  EMAIL  FIXME:  */
+/* ------------------------------------------ */
+
+.pre__order__form__group input[type="email"] {
+  /* width: 25rem; */
+  width: 96%;
+  border-radius: 0.5rem;
+  border: 1px solid var(--color-pre-orders-input-border);
+  margin: 0.5rem 1.4rem 0.5rem 1.4rem;
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: border-color 0.15s, box-shadow 0.15s;
+}
+
+.pre__order__form__group input[type="email"]:focus {
+  border-color: var(--color-pre-orders-input-border-focus);
+  box-shadow: 0 0 0 2px rgba(220, 20, 60, 0.95);
+  outline: 0;
+}
+
+/* ----------------------------- */
+/* FIXME:  FORM BUTTONS  FIXME:  */
+/* ----------------------------- */
+
+.pre__order__button__container button {
+  background: var(--color-pre-orders-button-background);
+  color: var(--color-pre-orders-button-text);
+  border: 0;
+  outline: 0;
+  border-radius: 0.5rem;
+  width: 20rem;
+  height: 3rem;
+  font-size: 1.2rem;
+  font-weight: 500;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+  margin: 0.5rem 2rem 3rem 2rem;
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  cursor: pointer;
+  text-decoration: none;
+  transition: transform 0.5s ease-in-out;
+}
+
+.pre__order__button__container button:hover {
+  transform: scale(1.05);
+}
+
+.pre__order__button__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ---------------------------------------------- */
+/* FIXME:  STYLING - GOOGLE RECAPTCHA  FIXME:     */
+/* ---------------------------------------------- */
+
+.pre__order__form__group .g-recaptcha {
+  margin: 2rem 1rem 2rem 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* transform: scale(0.89); */
+  transform: scale(1);
+  /* -webkit-transform: scale(0.89); */
+  -webkit-transform: scale(1);
+  transform-origin: 0 0;
+  -webkit-transform-origin: 0 0;
+}
+
+/* --------------------------------------------------------------- */
+/* FIXME:  FINAL MEDIA QUERY - REGISTRATION FORM (SMALLER SCREENS) */
+/* --------------------------------------------------------------- */
+
+@media screen and (max-width: 600px) {
+  .pre__order__button__container button {
+    margin: 0rem 1rem 2rem 1rem;
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .pre__order__button__container {
+    flex-direction: column;
+  }
+
+  .pre__order__form__group label {
+    font-size: 1rem;
+    margin: 0rem 0.6rem 0rem 0.5rem;
+  }
+
+  .pre__order__form__group input[type="email"] {
+    margin: 0.5rem 0.2rem 0.5rem 0.2rem;
+  }
+
+  .pre__order__checkbox__option {
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin: 2rem 2rem 2rem 0.1rem;
+  }
+
+  .pre__order__form__group select {
+    margin: 0.5rem 0.1rem 0.5rem 0.1rem;
+  }
+
+  .pre__order__form__group textarea {
+    margin: 0.5rem 0.1rem 0.5rem 0.1rem;
+  }
+
+  .pre__order__form__group input[type="tel"] {
+    margin: 0.5rem 0.1rem 0.5rem 0.1rem;
+  }
+
+  .pre__order__form__group input[type="text"] {
+    margin: 0.5rem 0.1rem 0.5rem 0.1rem;
+  }
+
+  .pre__order__form__group input[type="date"] {
+    margin: 0.5rem 0.1rem 0.5rem 0.1rem;
+  }
+
+  .pre__order__form__group input[type="number"] {
+    margin: 0.5rem 0.1rem 0.5rem 0.1rem;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .pre__order__form__group .g-recaptcha {
+    margin: 2rem 1.5rem 2rem 2rem;
+    transform: scale(0.8);
+    -webkit-transform: scale(0.8);
+  }
+}
+
+/* ===================================================================================================================== */
+/* ===================================================================================================================== */
+/* FIXME:FIXME:                       SECTION - PRE-ORDER NEW PRODUCTS (END)                                FIXME:FIXME: */
+/* ===================================================================================================================== */
+/* ===================================================================================================================== */
+
+/* ===================================================================================================================== */
+/* ===================================================================================================================== */
+/* TODO:TODO:                                SECTION - SKYNAMO (START)                                        TODO:TODO: */
+/* ===================================================================================================================== */
+/* ===================================================================================================================== */
+
+/* .skynamo__page__title h5 {
+  position: relative;
+  top: 9rem;
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  text-transform: uppercase;
+  margin: 2.5rem 0rem 2.5rem 0rem;
+  text-align: center;
+  background: #eee;
+  border: 2px solid red;
+} */
+
+.skynamo__section {
+  position: relative;
+  /* top: 9rem; */
+  top: 10rem;
+  /* top: 9rem; */
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  margin: 0rem 0rem 0rem 0rem;
+  padding: 0rem 0rem 2rem 0rem;
+  background-color: var(--color-what-we-do-page-background);
+  /* border: 2px solid red; */
+}
+
+/* .skynamo__section img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+} */
+
+@media screen and (max-width: 830px) {
+  /* .skynamo__page__title h5 {
+    position: relative;
+    top: 10rem;
+  } */
+  .skynamo__section {
+    position: relative;
+    /* top: 9rem; */
+    /* top: 10rem; */
+    top: 11rem;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  /* .skynamo__page__title h5 {
+    position: relative;
+    top: 13.5rem;
+  } */
+
+  .skynamo__section {
+    position: relative;
+    /* top: 12.5rem; */
+    /* top: 13.5rem; */
+    top: 14.5rem;
+  }
+}
+
+/* ===================================================================================================================== */
+/* TODO:  PART 1 - SKYNAMO CRM SOLUTION - PAGE TITLE                                                                     */
+/* ===================================================================================================================== */
+
+/* ------------------------------- */
+/* FIXME:  VIEW - MOBILE FIRST     */
+/* ------------------------------- */
+
+.skynamo__page__title h5 {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  text-transform: uppercase;
+  margin: 0rem 0rem 1rem 0rem;
+  padding: 1.5rem 0rem 0rem 0rem;
+  text-align: center;
+}
+
+/* ------------------------------- */
+/* FIXME:  VIEW - LARGER SCREENS   */
+/* ------------------------------- */
+
+/* ===================================================================================================================== */
+/* TODO:  PART 2 - SKYNAMO CRM SOLUTION - EMBEDDED YOUTUBE VIDEO                                                         */
+/* ===================================================================================================================== */
+
+/* ------------------------------- */
+/* FIXME:  VIEW - MOBILE FIRST     */
+/* ------------------------------- */
+
+.skynamo__main__video__container {
+  position: relative;
+  height: 0;
+  width: 100%;
+  margin: 0rem 0rem 1.5rem 0rem;
+  padding: 0rem 0rem 56.25% 0rem;
+}
+
+.skynamo__main__video__container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 0.45rem 0.75rem 0.45rem 0.75rem;
+  /* border-radius: 1.5rem; */
+}
+
+/* ------------------------------- */
+/* FIXME:  VIEW - LARGER SCREENS   */
+/* ------------------------------- */
+
+@media screen and (min-width: 768px) {
+  .skynamo__main__video__container iframe {
+    padding: 0.2rem 0.75rem 0.2rem 0.75rem;
+    /* border-radius: 2rem; */
+  }
+}
+
+/* ===================================================================================================================== */
+/* TODO:  PART 3 - SKYNAMO CRM SOLUTION - LOGO                                                                           */
+/* ===================================================================================================================== */
+
+/* ------------------------------- */
+/* FIXME:  VIEW - MOBILE FIRST     */
+/* ------------------------------- */
+
+.skynamo__logo__container {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem 1rem 2rem 1rem;
+}
+
+.skynamo__logo__container img {
+  /* width: 17.5%;
+  height: auto; */
+  width: 18.8rem;
+  height: 6.2rem;
+  padding: 0.2rem 0.2rem 0.2rem 0.2rem;
+}
+
+/* ===================================================================================================================== */
+/* TODO:  PART 4 - SKYNAMO CRM SOLUTION - BUTTONS LINKING TO SKYNAMO WEBSITE                                             */
+/* ===================================================================================================================== */
+
+/* ------------------------------- */
+/* FIXME:  VIEW - MOBILE FIRST     */
+/* ------------------------------- */
+
+.skynamo__download__buttons__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem 0rem 0rem 0rem;
+}
+
+.skynamo__link {
+  text-decoration: none;
+  text-transform: uppercase;
+  width: 15rem;
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 0.2rem;
+  line-height: 1.5;
+  margin: 0rem 0rem 1rem 0rem;
+  padding: 0.75rem 1rem 0.75rem 1rem;
+  border: none;
+  outline: none;
+  background: var(--color-skynamo-button-background);
+  border-radius: 0.5rem;
+  box-shadow: var(--color-box-shadow-01);
+  transition: transform 0.5s ease-in-out;
+  cursor: pointer;
+}
+
+.skynamo__link a {
+  text-decoration: none;
+  color: var(--color-skynamo-button-text);
+  cursor: pointer;
+}
+
+.skynamo__link:hover {
+  transform: scale(1.05);
+}
+
+/* ------------------------------- */
+/* FIXME:  VIEW - LARGER SCREENS   */
+/* ------------------------------- */
+
+@media screen and (min-width: 670px) {
+  .skynamo__download__buttons__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 3rem 0rem 3rem 0rem;
+  }
+
+  .skynamo__link {
+    margin: 1rem 1rem 1rem 1rem;
+  }
+}
+
+/* ===================================================================================================================== */
+/* TODO:  PART 5 - SKYNAMO CRM SOLUTION - PAGE CONTENT                                                                   */
+/* ===================================================================================================================== */
+
+/* ------------------------------- */
+/* FIXME:  VIEW - MOBILE FIRST     */
+/* ------------------------------- */
+
+section {
+  margin: 1.5rem 0rem 1.5rem 0rem;
+}
+
+.skynamo__page__content {
+  margin: 1rem 1.3rem 1rem 1.3rem;
+  font-size: 1.1rem;
+  line-height: 1.5;
+  text-align: justify;
+}
+
+.skynamo__paragraph__01,
+.skynamo__paragraph__02 {
+  margin: 2rem 0rem 2rem 0rem;
+  line-height: 1.5;
+}
+
+/* ------------------------------- */
+/* FIXME:  VIEW - LARGER SCREENS   */
+/* ------------------------------- */
+
+@media screen and (min-width: 670px) {
+  .skynamo__page__content {
+    font-size: 1.3rem;
+    margin: 1rem 3.3rem 1rem 3.3rem;
+  }
+}
+
+/* ===================================================================================================================== */
+/* TODO:  PART 6A - SKYNAMO CRM SOLUTION - ACCORDIAN "MAIN" CONTAINER (HOLDING ALL ELEMENTS)                             */
+/* ===================================================================================================================== */
+
+.skynamo_accordian {
+  width: 95%;
+  max-width: 128rem;
+  margin: 2rem auto 2rem auto;
+  /* border: 1px solid white; */
+}
+
+/* ===================================================================================================================== */
+/* TODO:  PART 6B - SKYNAMO CRM SOLUTION - ACCORDIAN "ITEMS" CONTAINER (HOLDING ALL ITEMS)                               */
+/* ===================================================================================================================== */
+
+.skynamo_accordian_item {
+  background-color: var(--color-skynamo-accordian-item-background);
+  color: var(--color-skynamo-accordian-item-text);
+  margin: 1rem 0rem 1rem 0rem;
+  border-radius: 0.5rem;
+  box-shadow: var(--color-box-shadow-01);
+}
+/* ===================================================================================================================== */
+/* TODO:  PART 6C - SKYNAMO CRM SOLUTION - ACCORDIAN - ITEM (HEADER)                                                     */
+/* ===================================================================================================================== */
+
+.skynamo-accordian-item-header {
+  display: flex;
+  position: relative;
+  align-items: center;
+  min-height: 3.5rem;
+  line-height: 1.25rem;
+  font-size: 1.3rem;
+  font-weight: 600;
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
+  padding: 0.5rem 3rem 0.5rem 1rem;
+  cursor: pointer;
+}
+
+/* FIXME:  NOTE:  THE CSS ENTITY CODE FOR PLUS SIGN "+" = "\002B" */
+/* FIXME:  NOTE:  THE CSS ENTITY CODE FOR DOWN ARROW "v" = \25BE */
+
+.skynamo-accordian-item-header::after {
+  /* content: "\25BE"; */
+  content: "\002B";
+  font-size: 2rem;
+  position: absolute;
+  right: 1rem;
+  color: var(--color-skynamo-accordian-item-plus-and-minus-sign);
+  transition: transform 0.5s ease-in-out;
+}
+
+/* FIXME:  NOTE:  THE CSS ENTITY CODE FOR MINUS SIGN "-" = "\2212" */
+
+.skynamo-accordian-item-header.active::after {
+  /* transform: rotate(-180deg); */
+  content: "\2212";
+  transform: none;
+}
+
+.skynamo-accordian-item-header.active {
+  color: var(--color-skynamo-accordian-item-header-active);
+}
+
+/* ===================================================================================================================== */
+/* TODO:  PART 6D - SKYNAMO CRM SOLUTION                                                                                 */
+/* ===================================================================================================================== */
+
+/* ---------------------------------------- */
+/* SKYNAMO BENEFIT - ITEM (MAIN CONTAINER)  */
+/* ---------------------------------------- */
+
+.skynamo-accordian-item-body {
+  /* display: none; */
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+.skynamo__accordian-item-body__01 {
+  /* display: none; */
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+/* ----------------------------------------------- */
+/* SKYNAMO BENEFIT - ITEM (ALL ELEMENTS CONTAINER) */
+/* ----------------------------------------------- */
+
+/* ------------------------------- */
+/* FIXME:  VIEW - MOBILE FIRST     */
+/* ------------------------------- */
+
+.skynamo-accordian-item-body-content {
+  display: grid;
+  /* justify-content: space-between;
+  align-items: center; */
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 2rem;
+  margin: 0rem 0.5rem 0rem 0.5rem;
+  padding: 1rem 0.5rem 1rem 0.5rem;
+  border-bottom: 2px solid var(--color-skynamo-accordian-item-seperation-line);
+  /* border: 1px solid yellow; */
+}
+
+.skynamo__accordian-item-body-content__01 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0rem 0rem 0rem 0rem;
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  border-bottom: 2px solid var(--color-skynamo-accordian-item-seperation-line);
+  /* border: 1px solid red; */
+}
+
+.skynamo__content-statement {
+  max-width: 900px;
+  font-size: 1.2rem;
+  font-weight: 500;
+  text-align: justify;
+  letter-spacing: 0.025rem;
+  line-height: 1.5;
+  padding: 0rem 1rem 0rem 1rem;
+  /* border: 1px solid green; */
+}
+
+.skynamo__content-statement a {
+  text-decoration: none;
+  color: var(--color-skynamo-button-background);
+  cursor: pointer;
+}
+
+.skynamo__content-confirmation {
+  min-width: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  line-height: 0.5;
+  padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+  border-left: 2px solid var(--color-skynamo-accordian-item-seperation-line);
+  /* border: 1px solid red; */
+}
+
+.skynamo__confirmation-image img {
+  width: 3rem;
+  height: 3rem;
+}
+
+.skynamo__confirmation-text {
+  font-size: 1.1rem;
+  line-height: 0.5;
+  padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+}
+
+/* ------------------------------- */
+/* FIXME:  VIEW - LARGER SCREENS   */
+/* ------------------------------- */
+
+@media screen and (max-width: 670px) {
+  .skynamo-accordian-item-body-content {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .skynamo__accordian-item-body-content__01 {
+    flex-direction: column;
+    margin: 0rem 0rem 0rem 0rem;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+  }
+
+  .skynamo__content-statement {
+    justify-content: center;
+    text-align: center;
+    max-width: 280px;
+    font-size: 1rem;
+    padding: 0rem 0.5rem 0rem 0.5rem;
+  }
+
+  .skynamo__content-confirmation {
+    padding: 0.25rem 0.5rem 0.25rem 0.5rem;
+    border-left: none;
+  }
+
+  .skynamo__confirmation-image img {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+
+  .skynamo__confirmation-text {
+    font-size: 1rem;
+    padding: 0.5rem 0.5rem 0.25rem 0.5rem;
+  }
+}
+
+/* --------------------------------- */
+/* SKYNAMO BENEFIT - EMBEDDED VIDEO  */
+/* --------------------------------- */
+
+.skynamo__benefit__video {
+  position: relative;
+  height: 0;
+  width: 100%;
+  /* height: auto; */
+  margin: 1rem 0rem 1rem 0rem;
+  /* padding: 0rem 0rem 27% 0rem; */
+  padding: 0rem 0rem 56.25% 0rem;
+  /* border: 1px solid red; */
+}
+
+.skynamo__benefit__video iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  /* width: 56rem;
+  height: 31.5rem; */
+  width: 100%;
+  height: 100%;
+  padding: 0rem 0rem 0rem 0rem;
+  /* border: 1px solid green; */
+}
+
+/* -------------------------------------- */
+/* SKYNAMO BENEFIT - CONTENT (CONTAINER)  */
+/* -------------------------------------- */
+
+.skynamo__benefit__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 1rem 0rem 1rem 0rem;
+  padding: 0rem 0rem 0rem 0rem;
+  /* border: 1px solid green; */
+}
+
+/* -------------------------------------- */
+/* SKYNAMO BENEFIT - CONTENT (HEADER)     */
+/* -------------------------------------- */
+
+.skynamo__benefit__header {
+  margin: 1rem 0.25rem 1rem 0.25rem;
+  padding: 0rem 0rem 0rem 0rem;
+  font-size: 1.1rem;
+  font-weight: bolder;
+  line-height: 1.5;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+  /* border: 1px solid purple; */
+}
+
+/* ---------------------------------------- */
+/* SKYNAMO BENEFIT - CONTENT (DESCRIPTION)  */
+/* ---------------------------------------- */
+
+.skynamo__benefit__description {
+  margin: 1rem 0.25rem 1rem 0.25rem;
+  padding: 0rem 0rem 0rem 0rem;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.5;
+  text-align: justify;
+  /* border: 1px solid orange; */
+}
+
+/* ===================================================================================================================== */
+/* TODO:  PART 6E - SKYNAMO CRM SOLUTION - MEDIA QUERY (LARGER DEVICES)                                                  */
+/* ===================================================================================================================== */
+
+@media screen and (max-width: 430px) {
+  .skynamo-accordian-item-header {
+    font-size: 1rem;
+    justify-content: center;
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 670px) {
+  .skynamo__benefit__header {
+    font-size: 1.35rem;
+  }
+
+  .skynamo__benefit__description {
+    font-size: 1.3rem;
+  }
+}
+
+/* ===================================================================================================================== */
+/* TODO:  PART 1 - PRODUCT CARDS                                                                                         */
+/* ===================================================================================================================== */
+
+/* ------------------------------------------------------ */
+/* TODO:  LARGER SCREENS (LAPTOPS / PC's / TABLETS  TODO: */
+/* ------------------------------------------------------ */
+.skynamo__main__products__container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+/* --------------------------------------------------------------- */
+/* FIXME:  THE CONTAINER HOLDING ALL PRODUCT CARD ELEMENTS  FIXME: */
+/* --------------------------------------------------------------- */
+
+.skynamo__container__all__product__card__elements {
+  margin: auto;
+  width: 32.5rem;
+  text-align: center;
+  /* border: 1px solid red; */
+}
+
+/* ------------------------------------------------------- */
+/* FIXME:  THE CONTAINER HOLDING ALL PRODUCT CARDS  FIXME: */
+/* ------------------------------------------------------- */
+
+.skynamo__container__all__product__cards {
+  padding: 2rem 0rem 2rem 0rem;
+  /* border: 1px solid green; */
+}
+
+.skynamo__container__all__product__cards:focus {
+  outline: 0;
+}
+
+/* ----------------------------------------------------------- */
+/* FIXME:  THE CONTAINER HOLDING A SINGLE PRODUCT CARD  FIXME: */
+/* ----------------------------------------------------------- */
+
+.skynamo__container__product__card {
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  width: 30rem;
+  margin: auto;
+  background: var(--color-skynamo-product-card-background);
+  border-radius: 1.4rem;
+  box-shadow: var(--color-box-shadow-01);
+  z-index: 9999;
+}
+
+/* ----------------------------------------------------------------------- */
+/* FIXME:  CONTAINER HOLDING PRODUCT CARD IMAGE & IMAGE BACKGROUND  FIXME: */
+/* ----------------------------------------------------------------------- */
+
+.skynamo__container__product__card__image {
+  position: relative;
+  height: 25rem;
+  margin: 1.5rem 1.5rem 1.5rem 1.5rem;
+  border-top-left-radius: 1.4rem;
+  border-top-right-radius: 1.4rem;
+  border-bottom-left-radius: 1.4rem;
+  border-bottom-right-radius: 1.4rem;
+}
+
+.skynamo__container__product__card__image__background {
+  background: var(--color-skynamo-product-card-image-background);
+}
+
+.skynamo__container__product__card__image__background img {
+  position: absolute;
+  width: 22.5rem;
+  top: 12.5rem;
+  left: auto;
+  transform: translate(-50%, -50%);
+}
+
+/* ----------------------------------------------------------- */
+/* FIXME:  CONTAINER HOLDING PRODUCT CARD - MAIN TITLE  FIXME: */
+/* ----------------------------------------------------------- */
+
+.skynamo__container__product__card__main__title {
+  font-size: 1.6rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  margin: 0rem 1.5rem 0rem 1.5rem;
+  padding: 0.25rem 0.25rem 0.25rem 0.25rem;
+  color: var(--color-skynamo-product-card-main-title);
+  /* border: 1px solid blue; */
+}
+
+/* ---------------------------------------------------------- */
+/* FIXME:  CONTAINER HOLDING PRODUCT CARD - SUB-TITLE  FIXME: */
+/* ---------------------------------------------------------- */
+
+.skynamo__container__product__card__sub__title {
+  font-size: 1.3rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  margin: 0rem 1.5rem 1.5rem 1.5rem;
+  padding: 0.25rem 0.25rem 0.25rem 0.25rem;
+  color: var(--color-skynamo-product-card-sub-title);
+  /* border: 1px solid blue; */
+}
+
+/* ------------------------------------------------------------ */
+/* FIXME:  CONTAINER HOLDING PRODUCT CARD - DESCRIPTION  FIXME: */
+/* ------------------------------------------------------------ */
+
+.skynamo__container__product__card__description {
+  font-size: 1.1rem;
+  font-weight: 500;
+  text-transform: none;
+  text-align: justify;
+  height: 10rem;
+  margin: 0.5rem 1.5rem 1.5rem 1.5rem;
+  padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+  color: var(--color-skynamo-product-card-description);
+  /* border: 1px solid blue; */
+}
+
+/* ----------------------------------------------------------------------- */
+/* FIXME:  CONTAINER HOLDING PRODUCT CARD - SPECIFICATIONS & STATS  FIXME: */
+/* ----------------------------------------------------------------------- */
+
+.skynamo__container__product__card__all__specifications {
+  color: var(--color-skynamo-product-card-specifications-statistics);
+  font-weight: 700;
+  border-bottom-left-radius: 1.4rem;
+  border-bottom-right-radius: 1.4rem;
+  background: var(--color-skynamo-product-card-specifications-background);
+}
+
+.skynamo__container__product__card__all__specifications .statistics {
+  width: 33%;
+  float: left;
+  padding: 2rem 1.5rem 2rem 1.5rem;
+}
+
+.skynamo__container__product__card__all__specifications sup {
+  position: absolute;
+  bottom: 0.8rem;
+  font-size: 60%;
+  margin-left: 0.5rem;
+}
+
+.skynamo__container__product__card__all__specifications .statistic__value {
+  position: relative;
+  font-size: 2rem;
+  margin: 0rem 0rem 1rem 0rem;
+}
+
+.skynamo__container__product__card__all__specifications .statistic__name {
+  font-size: 1.2rem;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.skynamo__container__product__card__all__specifications .no-border {
+  border-left: 1px solid
+    var(--color-skynamo-product-card-specifications-statistics-seperation-line);
+  border-right: 1px solid
+    var(--color-skynamo-product-card-specifications-statistics-seperation-line);
+}
+
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+
+/* --------------------------------------------------------------- */
+/* TODO:  RESPONSIVE MEDIA QUERY - SMALLER SCREENS (PHONES)  TODO: */
+/* --------------------------------------------------------------- */
+
+@media screen and (max-width: 350px) {
+  .skynamo__container__all__product__card__elements {
+    width: 26rem;
+    /* border: 1px solid red; */
+  }
+
+  .skynamo__container__product__card {
+    width: 24rem;
+    /* border: 2px solid #e2218e; */
+  }
+
+  .skynamo__container__product__card__image {
+    height: 20rem;
+    /* border: 1px solid blue; */
+  }
+
+  .skynamo__container__product__card__image__background img {
+    width: 17.5rem;
+    /* top: -65px;
+    left: -70px; */
+    top: 10rem;
+    left: auto;
+    transform: translate(-50%, -50%);
+  }
+
+  .skynamo__container__product__card__main__title {
+    font-size: 1.4rem;
+  }
+
+  .skynamo__container__product__card__sub__title {
+    font-size: 1.15rem;
+  }
+
+  .skynamo__container__product__card__description {
+    font-size: 1rem;
+  }
+
+  .skynamo__container__product__card__all__specifications .statistic__value {
+    font-size: 1.75rem;
+  }
+
+  .skynamo__container__product__card__all__specifications .statistic__name {
+    font-size: 1.1rem;
+  }
+}
+
+/* ===================================================================================================================== */
+/* TODO:  PART 7A - SKYNAMO CRM SOLUTION - FORM HEADERS (ON REGISTRATION FORM)                                           */
+/* ===================================================================================================================== */
+
+/* ------------------------------- */
+/* FIXME:  VIEW - MOBILE FIRST     */
+/* ------------------------------- */
+
+.skynamo__registration_form__header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  font-weight: 500;
+  letter-spacing: 0.2rem;
+  background-color: var(--color-skynamo-button-background);
+  color: var(--color-skynamo-page-header-text);
+  margin: 2.5rem 0.4rem 2rem 0.4rem;
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  border-radius: 0.5rem;
+  box-shadow: var(--color-box-shadow-01);
+}
+
+/* ------------------------- */
+/* FIXME:  PRIVACY STATEMENT */
+/* ------------------------- */
+
+.skynamo__privacy__statement {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 1rem 0.4rem 2rem 0.4rem;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+}
+
+.skynamo__privacy__statement strong {
+  text-decoration: none;
+  color: var(--color-skynamo-button-background);
+}
+
+.skynamo__privacy__statement a {
+  text-decoration: none;
+  color: var(--color-skynamo-button-background);
+  cursor: pointer;
+}
+
+/* --------------------------- */
+/* FIXME:  SHIPPING STATEMENT  */
+/* --------------------------- */
+
+.skynamo__shipping__statement {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 1rem 0.4rem 2rem 0.4rem;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+}
+
+.skynamo__shipping__statement strong {
+  text-decoration: none;
+  color: var(--color-skynamo-button-background);
+}
+
+.skynamo__shipping__statement a {
+  text-decoration: none;
+  color: var(--color-skynamo-button-background);
+  cursor: pointer;
+}
+
+/* ------------------------------- */
+/* FIXME:  VIEW - LARGER SCREENS   */
+/* ------------------------------- */
+
+@media screen and (max-width: 430px) {
+  .skynamo__registration_form__header {
+    font-size: 1rem;
+    text-align: center;
+  }
+}
+
+/* ===================================================================================================================== */
+/* TODO:  PART 7B - SKYNAMO CRM SOLUTION - REGISTRATION FORM                                                             */
+/* ===================================================================================================================== */
+
+/* ---------------------------------------------- */
+/* FIXME:  FORM CONTAINER  FIXME:                 */
+/* ---------------------------------------------- */
+
+.skynamo__form__group {
+  margin: 0rem 0rem 1rem 1rem;
+}
+
+/* ---------------------------------------------- */
+/* FIXME:  FORM LABEL  FIXME:                     */
+/* ---------------------------------------------- */
+
+.skynamo__form__group label {
+  display: block;
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin: 0.5rem 1.75rem 0.5rem 1.75rem;
+}
+
+.skynamo__form__group input::placeholder {
+  font-family: "Poppins", sans-serif;
+}
+
+/* ---------------------------------------------- */
+/* FIXME:  INPUT FIELD TYPE =  TEXT  FIXME:       */
+/* e.g. "NAME" or "LAST NAME" etc.                */
+/* ---------------------------------------------- */
+
+.skynamo__form__group input[type="text"] {
+  /* width: 25rem; */
+  width: 96%;
+  border-radius: 0.5rem;
+  border: 1px solid var(--color-skynamo-input-border);
+  margin: 0.5rem 1.4rem 0.5rem 1.4rem;
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: border-color 0.15s, box-shadow 0.15s;
+}
+
+.skynamo__form__group input[type="text"]:focus {
+  border-color: var(--color-skynamo-input-border-focus);
+  box-shadow: 0 0 0 2px rgba(226, 33, 142, 0.95);
+  outline: 0;
+}
+
+/* ---------------------------------------------- */
+/* FIXME:  INPUT FIELD TYPE =  TEL  FIXME:        */
+/* e.g. "TELEPHONE" or "MOBILE" Number etc.       */
+/* ---------------------------------------------- */
+
+.skynamo__form__group input[type="tel"] {
+  /* width: 25rem; */
+  width: 96%;
+  border-radius: 0.5rem;
+  border: 1px solid var(--color-skynamo-input-border);
+  margin: 0.5rem 1.4rem 0.5rem 1.4rem;
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: border-color 0.15s, box-shadow 0.15s;
+}
+
+.skynamo__form__group input[type="tel"]:focus {
+  border-color: var(--color-skynamo-input-border-focus);
+  box-shadow: 0 0 0 2px rgba(226, 33, 142, 0.95);
+  outline: 0;
+}
+
+/* ---------------------------------------------- */
+/* FIXME:  INPUT FIELD TYPE =  TEXTAREA  FIXME:   */
+/* Runs over multiple lines (rows) e.g. "Address" */
+/* ---------------------------------------------- */
+
+.skynamo__form__group textarea {
+  resize: none;
+  /* width: 25rem; */
+  width: 96%;
+  border-radius: 0.5rem;
+  border: 1px solid var(--color-skynamo-input-border);
+  margin: 0.5rem 1.4rem 0.5rem 1.4rem;
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  font-size: 1.2rem;
+  font-family: "poppins", sans-serif;
+  cursor: pointer;
+  transition: border-color 0.15s, box-shadow 0.15s;
+}
+
+.skynamo__form__group textarea:focus {
+  border-color: var(--color-skynamo-input-border-focus);
+  box-shadow: 0 0 0 2px rgba(226, 33, 142, 0.95);
+  outline: 0;
+}
+
+/* ---------------------------------------------- */
+/* FIXME:  INPUT FIELD TYPE =  NUMBER  FIXME:     */
+/* ---------------------------------------------- */
+
+.skynamo__form__group input[type="number"] {
+  /* width: 25rem; */
+  width: 96%;
+  border-radius: 0.5rem;
+  border: 1px solid var(--color-skynamo-input-border);
+  margin: 0.5rem 1.4rem 0.5rem 1.4rem;
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  font-size: 1.2rem;
+  font-family: "poppins", sans-serif;
+  cursor: pointer;
+  transition: border-color 0.15s, box-shadow 0.15s;
+}
+
+.skynamo__form__group input[type="number"]:focus {
+  border-color: var(--color-skynamo-input-border-focus);
+  box-shadow: 0 0 0 2px rgba(226, 33, 142, 0.95);
+  outline: 0;
+}
+
+/* ---------------------------------------------- */
+/* FIXME:  INPUT FIELD TYPE =  DATE  FIXME:       */
+/* ---------------------------------------------- */
+
+.skynamo__form__group input[type="date"] {
+  /* width: 25rem; */
+  width: 96%;
+  border-radius: 0.5rem;
+  border: 1px solid var(--color-skynamo-input-border);
+  margin: 0.5rem 1.4rem 0.5rem 1.4rem;
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: border-color 0.15s, box-shadow 0.15s;
+}
+
+.skynamo__form__group input[type="date"]:focus {
+  border-color: var(--color-skynamo-input-border-focus);
+  box-shadow: 0 0 0 2px rgba(226, 33, 142, 0.95);
+  outline: 0;
+}
+
+/* ---------------------------------------------- */
+/* FIXME:  INPUT FIELD = DROPDOWN LIST     FIXME: */
+/* e.g. Countries, Provinces, Titles etc.         */
+/* ---------------------------------------------- */
+
+.skynamo__form__group select {
+  /* width: 25rem; */
+  width: 96%;
+  border-radius: 0.5rem;
+  border: 1px solid var(--color-skynamo-input-border);
+  margin: 0.5rem 1.4rem 0.5rem 1.4rem;
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: border-color 0.15s, box-shadow 0.15s;
+}
+
+.skynamo__form__group select:focus {
+  border-color: var(--color-skynamo-input-border-focus);
+  box-shadow: 0 0 0 2px rgba(226, 33, 142, 0.95);
+  outline: 0;
+}
+
+/* ------------------------------------------------------------------------- */
+/* TODO:  START STYLING OF CUSTOM CHECKBOX                                   */
+/* ------------------------------------------------------------------------- */
+
+/* --------------------------------------- */
+/* FIXME:  INPUT FIELD = CHECKBOX  FIXME:  */
+/* --------------------------------------- */
+
+.skynamo__checkbox__option {
+  font-size: 1.2rem;
+  font-weight: 600;
+  line-height: 1.5;
+  text-transform: none;
+  text-align: justify;
+  display: grid;
+  grid-template-columns: 1rem auto;
+  gap: 2rem;
+  margin: 2rem 0rem 2rem 0rem;
+  padding: 0rem 1.5rem 0rem 0rem;
+  cursor: pointer;
+}
+
+label.skynamo__checkbox__option {
+  display: grid;
+}
+
+/* ------------------------------------ */
+/* THIS IS TO HIDE THE NATIVE CHECKBOX  */
+/* ------------------------------------ */
+
+.skynamo__checkbox__option input[type="checkbox"] {
+  /* Add if not using autoprefixer */
+  -webkit-appearance: none;
+  appearance: none;
+  /* For iOS < 15 to remove gradient background */
+  background-color: var(--color-skynamo-custom-checkbox-background);
+  /* Not removed via appearance */
+  margin: 0;
+}
+
+/* --------------------------------------- */
+/* THIS IS TO DISPLAY THE CUSTOM CHECKBOX  */
+/* --------------------------------------- */
+
+.skynamo__checkbox__option input[type="checkbox"] {
+  appearance: none;
+  background-color: var(--color-skynamo-custom-checkbox-background);
+  margin: 0;
+  font: inherit;
+  color: var(--color-skynamo-custom-checkbox-border);
+  width: 1.5rem;
+  height: 1.5rem;
+  border: 0.15em solid var(--color-skynamo-custom-checkbox-border);
+  border-radius: 0.15em;
+  transform: translateY(-0.075em);
+  display: grid;
+  place-content: center;
+  cursor: pointer;
+}
+
+.skynamo__checkbox__option + .skynamo__checkbox__option {
+  margin-top: 1rem;
+}
+
+/* --------------------------------------- */
+/* CUSTOM CHECKBOX - CHECKED STATE         */
+/* --------------------------------------- */
+
+.skynamo__checkbox__option input[type="checkbox"]::before {
+  content: "";
+  width: 0.7rem;
+  height: 0.7rem;
+  transform: scale(0);
+  transition: 120ms transform ease-in-out;
+  box-shadow: inset 1em 1em var(--color-skynamo-custom-checkbox-checkmark);
+  /* Windows High Contrast Mode */
+  background-color: CanvasText;
+  /* Creating a checkmark with CLIP-PATH */
+  transform-origin: bottom left;
+  clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
+}
+
+.skynamo__checkbox__option input[type="checkbox"]:checked::before {
+  transform: scale(1);
+}
+
+/* --------------------------------------- */
+/* CUSTOM CHECKBOX - FOCUSSED STATE        */
+/* --------------------------------------- */
+
+.skynamo__checkbox__option input[type="checkbox"]:focus {
+  outline: max(2px, 0.15em) solid var(--color-skynamo-custom-checkbox-focus);
+  outline-offset: max(1px, 0.15em);
+}
+
+/* --------------------------------------- */
+/* CUSTOM CHECKBOX - DISABLED STATE        */
+/* --------------------------------------- */
+
+.skynamo__checkbox__option--disabled {
+  color: var(--color-skynamo-custom-checkbox-disabled);
+  cursor: not-allowed;
+}
+
+.skynamo__checkbox__option input[type="checkbox"]:disabled {
+  color: var(--color-skynamo-custom-checkbox-disabled);
+  cursor: not-allowed;
+}
+
+/* ------------------------------------------------------------------------- */
+/* TODO:  END OF STYLING OF CUSTOM CHECKBOX                                  */
+/* ------------------------------------------------------------------------- */
+
+/* ------------------------------------------ */
+/* FIXME:  INPUT FIELD TYPE =  EMAIL  FIXME:  */
+/* ------------------------------------------ */
+
+.skynamo__form__group input[type="email"] {
+  /* width: 25rem; */
+  width: 96%;
+  border-radius: 0.5rem;
+  border: 1px solid var(--color-skynamo-input-border);
+  margin: 0.5rem 1.4rem 0.5rem 1.4rem;
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: border-color 0.15s, box-shadow 0.15s;
+}
+
+.skynamo__form__group input[type="email"]:focus {
+  border-color: var(--color-skynamo-input-border-focus);
+  box-shadow: 0 0 0 2px rgba(226, 33, 142, 0.95);
+  outline: 0;
+}
+
+/* ----------------------------- */
+/* FIXME:  FORM BUTTONS  FIXME:  */
+/* ----------------------------- */
+
+.skynamo__button__container button {
+  background: var(--color-skynamo-button-background);
+  color: var(--color-skynamo-button-text);
+  border: 0;
+  outline: 0;
+  border-radius: 0.5rem;
+  width: 20rem;
+  height: 3rem;
+  font-size: 1.2rem;
+  font-weight: 500;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+  margin: 0.5rem 2rem 3rem 2rem;
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  cursor: pointer;
+  text-decoration: none;
+  transition: transform 0.5s ease-in-out;
+}
+
+.skynamo__button__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.skynamo__button__container button:hover {
+  transform: scale(1.05);
+}
+
+/* ---------------------------------------------- */
+/* FIXME:  STYLING - GOOGLE RECAPTCHA  FIXME:     */
+/* ---------------------------------------------- */
+
+.skynamo__form__group .g-recaptcha {
+  margin: 2rem 1rem 2rem 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* transform: scale(0.89); */
+  transform: scale(1);
+  /* -webkit-transform: scale(0.89); */
+  -webkit-transform: scale(1);
+  transform-origin: 0 0;
+  -webkit-transform-origin: 0 0;
+}
+
+/* --------------------------------------------------------------- */
+/* FIXME:  FINAL MEDIA QUERY - REGISTRATION FORM (SMALLER SCREENS) */
+/* --------------------------------------------------------------- */
+
+@media screen and (max-width: 600px) {
+  .skynamo__button__container button {
+    margin: 0rem 1rem 2rem 1rem;
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .skynamo__button__container {
+    flex-direction: column;
+  }
+
+  .skynamo__form__group label {
+    font-size: 1rem;
+    margin: 0rem 0.6rem 0rem 0.5rem;
+  }
+
+  .skynamo__form__group input[type="email"] {
+    margin: 0.5rem 0.2rem 0.5rem 0.2rem;
+  }
+
+  .skynamo__checkbox__option {
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin: 2rem 2rem 2rem 0.1rem;
+  }
+
+  .skynamo__form__group select {
+    margin: 0.5rem 0.1rem 0.5rem 0.1rem;
+  }
+
+  .skynamo__form__group textarea {
+    margin: 0.5rem 0.1rem 0.5rem 0.1rem;
+  }
+
+  .skynamo__form__group input[type="tel"] {
+    margin: 0.5rem 0.1rem 0.5rem 0.1rem;
+  }
+
+  .skynamo__form__group input[type="text"] {
+    margin: 0.5rem 0.1rem 0.5rem 0.1rem;
+  }
+
+  .skynamo__form__group input[type="date"] {
+    margin: 0.5rem 0.1rem 0.5rem 0.1rem;
+  }
+
+  .skynamo__form__group input[type="number"] {
+    margin: 0.5rem 0.1rem 0.5rem 0.1rem;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .skynamo__form__group .g-recaptcha {
+    margin: 2rem 1.5rem 2rem 2rem;
+    transform: scale(0.8);
+    -webkit-transform: scale(0.8);
+  }
+}
+
+/* ===================================================================================================================== */
+/* ===================================================================================================================== */
+/* FIXME:FIXME:                               SECTION - SKYNAMO (END)                                       FIXME:FIXME: */
 /* ===================================================================================================================== */
 /* ===================================================================================================================== */
 

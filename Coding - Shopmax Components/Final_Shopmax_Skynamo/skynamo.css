@@ -3,84 +3,42 @@
 /* ===================================================================================================================== */
 
 :root {
-  --color-page-background: white;
-  --color-page-header-text: white;
-  /* Setting Accordian Colours */
-  --color-accordian-item-background: white;
-  --color-accordian-item-text: black;
-  --color-accordian-item-header-active: #e2218e;
-  --color-accordian-item-plus-and-minus-sign: #e2218e;
-  --color-accordian-item-seperation-line: #edeade;
-  /* Setting selling plans colour palettes */
-  --color-resellers: #f88e20;
-  --color-resellers-rgb: rgb(248, 142, 32);
-  --color-sellproduct: #8b3365;
-  --color-sellproduct-rgb: rgb(139, 51, 101);
-  --color-generalservices: #544179;
-  --color-generalservices-rgb: rgb(84, 65, 121);
-  --color-professionalservices: #01a7cf;
-  --color-professionalservices-rgb: rgb(1, 167, 207);
-  /* Setting investing plans colour palettes */
-  --color-bronze: #986c43;
-  --color-bronze-rgb: rgb(152, 108, 67);
-  --color-silver: #7d7d7d;
-  --color-silver-rga: rgb(125, 125, 125);
-  --color-gold: #dc9d04;
-  --color-gold-rgb: rgb(220, 157, 4);
-  --color-platinum: #434343;
-  --color-platinum-rgb: rgb(67, 67, 67);
-  /* FORM TEXT INPUTS */
-  --color-input-border: #ccc;
-  --color-input-border-focus: #e2218e;
-  /* FORM BUTTONS */
-  --color-button-background: #e2218e;
-  --color-button-text: white;
-  /* CUSTOM CHECKBOX */
-  --color-custom-checkbox-border: #ccc;
-  --color-custom-checkbox-background: white;
-  --color-custom-checkbox-checkmark: #e2218e;
-  --color-custom-checkbox-focus: #e2218e;
-  --color-custom-checkbox-disabled: #959495;
-  /* CUSTOM RADIO BUTTON */
-  --color-custom-radiobutton-border: #ccc;
-  --color-custom-radiobutton-background: white;
-  --color-custom-radiobutton-circle: #e2218e;
-  --color-custom-radiobutton-focus: #e2218e;
-  --color-custom-radiobutton-disabled: #959495;
-  /* CUSTOM RANGE SLIDER (PART 1) - THUMB */
-  --color-custom-rangeslider-thumb-background: #e2218e;
-  --color-custom-rangeslider-thumb-border: #e2218e;
-  --color-custom-rangeslider-thumb-shadow-01: rgba(0, 0, 0, 0.35);
-  --color-custom-rangeslider-thumb-shadow-02: rgba(0, 0, 0, 0.35);
-  /* CUSTOM RANGE SLIDER (PART 2) - TRACK */
-  --color-custom-rangeslider-track-background: white;
-  --color-custom-rangeslider-track-background-focus: #faf9f6;
-  --color-custom-rangeslider-track-border: white;
-  --color-custom-rangeslider-track-shadow-01: rgba(0, 0, 0, 0.35);
-  --color-custom-rangeslider-track-shadow-02: rgba(0, 0, 0, 0.35);
-  /* FILE INPUT / UPLOAD */
-  --color-custom-fileinput-background: white;
-  --color-custom-fileinput-background-hover: #e2218e;
-  --color-custom-fileinput-background-hover-text: white;
-  --color-custom-fileinput-label-text: black;
-  --color-custom-fileinput-shadow-01: rgba(0, 0, 0, 0.35);
-  --color-custom-fileinput-shadow-02: rgba(0, 0, 0, 0.35);
-  /* SKYNAMO */
-  --color-Skynamo-button-background: #e2218e;
-  --color-Skynamo-button-background-rgb: rgb(226, 33, 142);
-  --color-Skynamo-button-text: #fff;
-  /* PRODUCT CARDS */
-  --color-product-card-background: white;
-  --color-product-card-image-background: white;
-  --color-product-card-main-title: #e2218e;
-  --color-product-card-sub-title: black;
-  --color-product-card-description: black;
-  --color-product-card-specifications-background: #e2218e;
-  --color-product-card-specifications-statistics: white;
-  --color-product-card-specifications-statistics-seperation-line: white;
-  /* SKYNAMO */
-  /* --color-Skynamo-button-background: #e2218e;
-  --color-Skynamo-button-background-rgb: rgb(226, 33, 142); */
+  /* ------------------------------------------------ */
+  /* FIXME:  GENERAL COLORS - BOX SHADOWS             */
+  /* ------------------------------------------------ */
+  --color-box-shadow-01: 3px 5px 20px rgba(0, 0, 0, 0.35);
+  --color-box-shadow-02: 0px 5px 4px rgba(0, 0, 0, 0.35);
+  --color-box-shadow-03: 0px 1px 5px 3px rgba(0, 0, 0, 0.15);
+  --color-box-shadow-04: 0px 5px 20px rgba(0, 0, 0, 0.35);
+  /* ------------------------------------------------ */
+  /* FIXME:  SECTION: SKYNAMO                         */
+  /* ------------------------------------------------ */
+  --color-skynamo-button-background: #e2218e;
+  --color-skynamo-button-text: #fff;
+  --color-skynamo-accordian-item-background: white;
+  --color-skynamo-accordian-item-text: black;
+  --color-skynamo-accordian-item-header-active: #e2218e;
+  --color-skynamo-accordian-item-plus-and-minus-sign: #e2218e;
+  --color-skynamo-accordian-item-seperation-line: #edeade;
+  --color-skynamo-product-card-background: white;
+  --color-skynamo-product-card-image-background: white;
+  --color-skynamo-product-card-main-title: #e2218e;
+  --color-skynamo-product-card-sub-title: black;
+  --color-skynamo-product-card-description: black;
+  --color-skynamo-product-card-specifications-background: #e2218e;
+  --color-skynamo-product-card-specifications-statistics: white;
+  --color-skynamo-product-card-specifications-statistics-seperation-line: white;
+  --color-skynamo-page-header-text: white;
+  --color-skynamo-input-border: #ccc;
+  --color-skynamo-input-border-focus: #e2218e;
+  --color-skynamo-rgb: rgb(226, 33, 142);
+  --color-skynamo-custom-checkbox-border: #ccc;
+  --color-skynamo-custom-checkbox-background: white;
+  --color-skynamo-custom-checkbox-checkmark: #e2218e;
+  --color-skynamo-custom-checkbox-focus: #e2218e;
+  --color-skynamo-custom-checkbox-disabled: #959495;
+  --color-skynamo-button-background: #e2218e;
+  --color-skynamo-button-text: white;
 }
 
 * {
@@ -207,7 +165,8 @@ h6 {
   justify-content: center;
   justify-items: center;
   text-transform: uppercase;
-  margin: 1.5rem 0rem 1.5rem 0rem;
+  margin: 0rem 0rem 1rem 0rem;
+  padding: 1.5rem 0rem 0rem 0rem;
   text-align: center;
 }
 
@@ -246,71 +205,14 @@ h6 {
 /* ------------------------------- */
 
 @media screen and (min-width: 768px) {
-  .video__container iframe {
+  .skynamo__main__video__container iframe {
     padding: 0.2rem 0.75rem 0.2rem 0.75rem;
     /* border-radius: 2rem; */
   }
 }
 
 /* ===================================================================================================================== */
-/* TODO:  PART 3 - SKYNAMO CRM SOLUTION - BUTTONS LINKING TO SKYNAMO WEBSITE                                             */
-/* ===================================================================================================================== */
-
-/* ------------------------------- */
-/* FIXME:  VIEW - MOBILE FIRST     */
-/* ------------------------------- */
-
-.skynamo__buttons__container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin: 2rem 0rem 0rem 0rem;
-}
-
-.skynamo__link {
-  text-decoration: none;
-  text-transform: uppercase;
-  width: 15rem;
-  font-size: 1rem;
-  font-weight: 600;
-  letter-spacing: 0.2rem;
-  margin: 0rem 0rem 1rem 0rem;
-  padding: 0.5rem 1rem 0.5rem 1rem;
-  border: none;
-  outline: none;
-  background: var(--color-Skynamo-button-background);
-  border-radius: 0.5rem;
-  box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.35);
-  cursor: pointer;
-}
-
-.skynamo__link a {
-  text-decoration: none;
-  color: var(--color-Skynamo-button-text);
-  cursor: pointer;
-}
-
-/* ------------------------------- */
-/* FIXME:  VIEW - LARGER SCREENS   */
-/* ------------------------------- */
-
-@media screen and (min-width: 670px) {
-  .skynamo__buttons__container {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    margin: 3rem 0rem 3rem 0rem;
-  }
-
-  .skynamo__link {
-    margin: 1rem 1rem 1rem 1rem;
-  }
-}
-
-/* ===================================================================================================================== */
-/* TODO:  PART 4 - SKYNAMO CRM SOLUTION - LOGO                                                                           */
+/* TODO:  PART 3 - SKYNAMO CRM SOLUTION - LOGO                                                                           */
 /* ===================================================================================================================== */
 
 /* ------------------------------- */
@@ -331,6 +233,69 @@ h6 {
   width: 18.8rem;
   height: 6.2rem;
   padding: 0.2rem 0.2rem 0.2rem 0.2rem;
+}
+
+/* ===================================================================================================================== */
+/* TODO:  PART 4 - SKYNAMO CRM SOLUTION - BUTTONS LINKING TO SKYNAMO WEBSITE                                             */
+/* ===================================================================================================================== */
+
+/* ------------------------------- */
+/* FIXME:  VIEW - MOBILE FIRST     */
+/* ------------------------------- */
+
+.skynamo__download__buttons__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem 0rem 0rem 0rem;
+}
+
+.skynamo__link {
+  text-decoration: none;
+  text-transform: uppercase;
+  width: 15rem;
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 0.2rem;
+  line-height: 1.5;
+  margin: 0rem 0rem 1rem 0rem;
+  padding: 0.75rem 1rem 0.75rem 1rem;
+  border: none;
+  outline: none;
+  background: var(--color-skynamo-button-background);
+  border-radius: 0.5rem;
+  box-shadow: var(--color-box-shadow-01);
+  transition: transform 0.5s ease-in-out;
+  cursor: pointer;
+}
+
+.skynamo__link a {
+  text-decoration: none;
+  color: var(--color-skynamo-button-text);
+  cursor: pointer;
+}
+
+.skynamo__link:hover {
+  transform: scale(1.05);
+}
+
+/* ------------------------------- */
+/* FIXME:  VIEW - LARGER SCREENS   */
+/* ------------------------------- */
+
+@media screen and (min-width: 670px) {
+  .skynamo__download__buttons__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 3rem 0rem 3rem 0rem;
+  }
+
+  .skynamo__link {
+    margin: 1rem 1rem 1rem 1rem;
+  }
 }
 
 /* ===================================================================================================================== */
@@ -385,11 +350,11 @@ section {
 /* ===================================================================================================================== */
 
 .skynamo_accordian_item {
-  background-color: var(--color-accordian-item-background);
-  color: var(--color-accordian-item-text);
+  background-color: var(--color-skynamo-accordian-item-background);
+  color: var(--color-skynamo-accordian-item-text);
   margin: 1rem 0rem 1rem 0rem;
   border-radius: 0.5rem;
-  box-shadow: 3px 5px 20px 0 rgba(0, 0, 0, 0.35);
+  box-shadow: var(--color-box-shadow-01);
 }
 /* ===================================================================================================================== */
 /* TODO:  PART 6C - SKYNAMO CRM SOLUTION - ACCORDIAN - ITEM (HEADER)                                                     */
@@ -418,7 +383,7 @@ section {
   font-size: 2rem;
   position: absolute;
   right: 1rem;
-  color: var(--color-accordian-item-plus-and-minus-sign);
+  color: var(--color-skynamo-accordian-item-plus-and-minus-sign);
   transition: transform 0.5s ease-in-out;
 }
 
@@ -431,7 +396,7 @@ section {
 }
 
 .skynamo-accordian-item-header.active {
-  color: var(--color-accordian-item-header-active);
+  color: var(--color-skynamo-accordian-item-header-active);
 }
 
 /* ===================================================================================================================== */
@@ -449,7 +414,7 @@ section {
   transition: max-height 0.2s ease-out;
 }
 
-.accordian-item-body {
+.skynamo__accordian-item-body__01 {
   /* display: none; */
   max-height: 0;
   overflow: hidden;
@@ -472,21 +437,21 @@ section {
   column-gap: 2rem;
   margin: 0rem 0.5rem 0rem 0.5rem;
   padding: 1rem 0.5rem 1rem 0.5rem;
-  border-bottom: 2px solid var(--color-accordian-item-seperation-line);
+  border-bottom: 2px solid var(--color-skynamo-accordian-item-seperation-line);
   /* border: 1px solid yellow; */
 }
 
-.accordian-item-body-content {
+.skynamo__accordian-item-body-content__01 {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin: 0rem 0rem 0rem 0rem;
   padding: 0.5rem 1rem 0.5rem 1rem;
-  border-bottom: 2px solid var(--color-accordian-item-seperation-line);
+  border-bottom: 2px solid var(--color-skynamo-accordian-item-seperation-line);
   /* border: 1px solid red; */
 }
 
-.content-statement {
+.skynamo__content-statement {
   max-width: 900px;
   font-size: 1.2rem;
   font-weight: 500;
@@ -497,13 +462,13 @@ section {
   /* border: 1px solid green; */
 }
 
-.content-statement a {
+.skynamo__content-statement a {
   text-decoration: none;
-  color: var(--color-Skynamo-button-background);
+  color: var(--color-skynamo-button-background);
   cursor: pointer;
 }
 
-.content-confirmation {
+.skynamo__content-confirmation {
   min-width: 200px;
   display: flex;
   flex-direction: column;
@@ -511,16 +476,16 @@ section {
   align-items: center;
   line-height: 0.5;
   padding: 0.5rem 0.5rem 0.5rem 0.5rem;
-  border-left: 2px solid var(--color-accordian-item-seperation-line);
+  border-left: 2px solid var(--color-skynamo-accordian-item-seperation-line);
   /* border: 1px solid red; */
 }
 
-.confirmation-image img {
+.skynamo__confirmation-image img {
   width: 3rem;
   height: 3rem;
 }
 
-.confirmation-text {
+.skynamo__confirmation-text {
   font-size: 1.1rem;
   line-height: 0.5;
   padding: 0.5rem 0.5rem 0.5rem 0.5rem;
@@ -538,13 +503,13 @@ section {
 }
 
 @media screen and (max-width: 430px) {
-  .accordian-item-body-content {
+  .skynamo__accordian-item-body-content__01 {
     flex-direction: column;
     margin: 0rem 0rem 0rem 0rem;
     padding: 0.5rem 1rem 0.5rem 1rem;
   }
 
-  .content-statement {
+  .skynamo__content-statement {
     justify-content: center;
     text-align: center;
     max-width: 280px;
@@ -552,17 +517,17 @@ section {
     padding: 0rem 0.5rem 0rem 0.5rem;
   }
 
-  .content-confirmation {
+  .skynamo__content-confirmation {
     padding: 0.25rem 0.5rem 0.25rem 0.5rem;
     border-left: none;
   }
 
-  .confirmation-image img {
+  .skynamo__confirmation-image img {
     width: 2.5rem;
     height: 2.5rem;
   }
 
-  .confirmation-text {
+  .skynamo__confirmation-text {
     font-size: 1rem;
     padding: 0.5rem 0.5rem 0.25rem 0.5rem;
   }
@@ -668,7 +633,7 @@ section {
 /* ------------------------------------------------------ */
 /* TODO:  LARGER SCREENS (LAPTOPS / PC's / TABLETS  TODO: */
 /* ------------------------------------------------------ */
-.wrapper {
+.skynamo__main__products__container {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -678,7 +643,7 @@ section {
 /* FIXME:  THE CONTAINER HOLDING ALL PRODUCT CARD ELEMENTS  FIXME: */
 /* --------------------------------------------------------------- */
 
-.container__all__product__card__elements {
+.skynamo__container__all__product__card__elements {
   margin: auto;
   width: 32.5rem;
   text-align: center;
@@ -689,12 +654,12 @@ section {
 /* FIXME:  THE CONTAINER HOLDING ALL PRODUCT CARDS  FIXME: */
 /* ------------------------------------------------------- */
 
-.container__all__product__cards {
+.skynamo__container__all__product__cards {
   padding: 2rem 0rem 2rem 0rem;
   /* border: 1px solid green; */
 }
 
-.container__all__product__cards:focus {
+.skynamo__container__all__product__cards:focus {
   outline: 0;
 }
 
@@ -702,26 +667,23 @@ section {
 /* FIXME:  THE CONTAINER HOLDING A SINGLE PRODUCT CARD  FIXME: */
 /* ----------------------------------------------------------- */
 
-.container__product__card {
+.skynamo__container__product__card {
   position: relative;
   display: inline-block;
   text-align: center;
   width: 30rem;
   margin: auto;
-  background: var(--color-product-card-background);
+  background: var(--color-skynamo-product-card-background);
   border-radius: 1.4rem;
-  /* box-shadow: -1px 15px 30px -12px black; */
-  box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.35);
+  box-shadow: var(--color-box-shadow-01);
   z-index: 9999;
-  /* border: 2px solid #e2218e; */
-  /* border: 0.1px solid #e2218e; */
 }
 
 /* ----------------------------------------------------------------------- */
 /* FIXME:  CONTAINER HOLDING PRODUCT CARD IMAGE & IMAGE BACKGROUND  FIXME: */
 /* ----------------------------------------------------------------------- */
 
-.container__product__card__image {
+.skynamo__container__product__card__image {
   position: relative;
   height: 25rem;
   margin: 1.5rem 1.5rem 1.5rem 1.5rem;
@@ -729,19 +691,15 @@ section {
   border-top-right-radius: 1.4rem;
   border-bottom-left-radius: 1.4rem;
   border-bottom-right-radius: 1.4rem;
-  /* box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.35); */
-  /* border: 1px solid blue; */
 }
 
-.container__product__card__image__background {
-  background: var(--color-product-card-image-background);
+.skynamo__container__product__card__image__background {
+  background: var(--color-skynamo-product-card-image-background);
 }
 
-.container__product__card__image__background img {
+.skynamo__container__product__card__image__background img {
   position: absolute;
   width: 22.5rem;
-  /* top: -65px;
-  left: -70px; */
   top: 12.5rem;
   left: auto;
   transform: translate(-50%, -50%);
@@ -751,13 +709,13 @@ section {
 /* FIXME:  CONTAINER HOLDING PRODUCT CARD - MAIN TITLE  FIXME: */
 /* ----------------------------------------------------------- */
 
-.container__product__card__main__title {
+.skynamo__container__product__card__main__title {
   font-size: 1.6rem;
   font-weight: 900;
   text-transform: uppercase;
   margin: 0rem 1.5rem 0rem 1.5rem;
   padding: 0.25rem 0.25rem 0.25rem 0.25rem;
-  color: var(--color-product-card-main-title);
+  color: var(--color-skynamo-product-card-main-title);
   /* border: 1px solid blue; */
 }
 
@@ -765,13 +723,13 @@ section {
 /* FIXME:  CONTAINER HOLDING PRODUCT CARD - SUB-TITLE  FIXME: */
 /* ---------------------------------------------------------- */
 
-.container__product__card__sub__title {
+.skynamo__container__product__card__sub__title {
   font-size: 1.3rem;
   font-weight: 900;
   text-transform: uppercase;
   margin: 0rem 1.5rem 1.5rem 1.5rem;
   padding: 0.25rem 0.25rem 0.25rem 0.25rem;
-  color: var(--color-product-card-sub-title);
+  color: var(--color-skynamo-product-card-sub-title);
   /* border: 1px solid blue; */
 }
 
@@ -779,7 +737,7 @@ section {
 /* FIXME:  CONTAINER HOLDING PRODUCT CARD - DESCRIPTION  FIXME: */
 /* ------------------------------------------------------------ */
 
-.container__product__card__description {
+.skynamo__container__product__card__description {
   font-size: 1.1rem;
   font-weight: 500;
   text-transform: none;
@@ -787,7 +745,7 @@ section {
   height: 10rem;
   margin: 0.5rem 1.5rem 1.5rem 1.5rem;
   padding: 0.5rem 0.5rem 0.5rem 0.5rem;
-  color: var(--color-product-card-description);
+  color: var(--color-skynamo-product-card-description);
   /* border: 1px solid blue; */
 }
 
@@ -795,44 +753,44 @@ section {
 /* FIXME:  CONTAINER HOLDING PRODUCT CARD - SPECIFICATIONS & STATS  FIXME: */
 /* ----------------------------------------------------------------------- */
 
-.container__product__card__all__specifications {
-  color: var(--color-product-card-specifications-statistics);
+.skynamo__container__product__card__all__specifications {
+  color: var(--color-skynamo-product-card-specifications-statistics);
   font-weight: 700;
   border-bottom-left-radius: 1.4rem;
   border-bottom-right-radius: 1.4rem;
-  background: var(--color-product-card-specifications-background);
+  background: var(--color-skynamo-product-card-specifications-background);
 }
 
-.container__product__card__all__specifications .statistics {
+.skynamo__container__product__card__all__specifications .statistics {
   width: 33%;
   float: left;
   padding: 2rem 1.5rem 2rem 1.5rem;
 }
 
-.container__product__card__all__specifications sup {
+.skynamo__container__product__card__all__specifications sup {
   position: absolute;
   bottom: 0.8rem;
   font-size: 60%;
   margin-left: 0.5rem;
 }
 
-.container__product__card__all__specifications .statistic__value {
+.skynamo__container__product__card__all__specifications .statistic__value {
   position: relative;
   font-size: 2rem;
   margin: 0rem 0rem 1rem 0rem;
 }
 
-.container__product__card__all__specifications .statistic__name {
+.skynamo__container__product__card__all__specifications .statistic__name {
   font-size: 1.2rem;
   font-weight: 400;
   text-transform: uppercase;
 }
 
-.container__product__card__all__specifications .no-border {
+.skynamo__container__product__card__all__specifications .no-border {
   border-left: 1px solid
-    var(--color-product-card-specifications-statistics-seperation-line);
+    var(--color-skynamo-product-card-specifications-statistics-seperation-line);
   border-right: 1px solid
-    var(--color-product-card-specifications-statistics-seperation-line);
+    var(--color-skynamo-product-card-specifications-statistics-seperation-line);
 }
 
 .clearfix:after {
@@ -849,22 +807,22 @@ section {
 /* --------------------------------------------------------------- */
 
 @media screen and (max-width: 350px) {
-  .container__all__product__card__elements {
+  .skynamo__container__all__product__card__elements {
     width: 26rem;
     /* border: 1px solid red; */
   }
 
-  .container__product__card {
+  .skynamo__container__product__card {
     width: 24rem;
     /* border: 2px solid #e2218e; */
   }
 
-  .container__product__card__image {
+  .skynamo__container__product__card__image {
     height: 20rem;
     /* border: 1px solid blue; */
   }
 
-  .container__product__card__image__background img {
+  .skynamo__container__product__card__image__background img {
     width: 17.5rem;
     /* top: -65px;
     left: -70px; */
@@ -873,83 +831,26 @@ section {
     transform: translate(-50%, -50%);
   }
 
-  .container__product__card__main__title {
+  .skynamo__container__product__card__main__title {
     font-size: 1.4rem;
   }
 
-  .container__product__card__sub__title {
+  .skynamo__container__product__card__sub__title {
     font-size: 1.15rem;
   }
 
-  .container__product__card__description {
+  .skynamo__container__product__card__description {
     font-size: 1rem;
   }
 
-  .container__product__card__all__specifications .statistic__value {
+  .skynamo__container__product__card__all__specifications .statistic__value {
     font-size: 1.75rem;
   }
 
-  .container__product__card__all__specifications .statistic__name {
+  .skynamo__container__product__card__all__specifications .statistic__name {
     font-size: 1.1rem;
   }
 }
-
-/* ----------------------------------------------------------------------------------------- */
-/* FIXME:  GOOGLE CHROME DEVICE - BREAKPOINTS                          TODO: VARIOUS DEVICES */
-/* ----------------------------------------------------------------------------------------- */
-
-/* TODO:  SAMSUNG GALAXY FOLD  TODO: */
-/* @media screen and (min-width: 280px) and (min-height: 653px) {
-                  } */
-
-/* TODO:  SAMSUNG GALAXY S8+  TODO: */
-/* @media screen and (min-width: 360px) and (min-height: 740px) {
-                  } */
-
-/* TODO:  APPLE IPHONE SE  TODO: */
-/* @media screen and (min-width: 375px) and (min-height: 667px) {
-                  } */
-
-/* TODO:  APPLE IPHONE 12 PRO  TODO: */
-/* @media screen and (min-width: 390px) and (min-height: 844px) {
-                  } */
-
-/* TODO:  PIXEL 5  TODO: */
-/* @media screen and (min-width: 393px) and (min-height: 851px) {
-                  } */
-
-/* TODO:  SAMSUNG GALAXY A51/A71  TODO: */
-/* TODO:  SAMSUNG GALAXY S20 ULTRA  TODO: */
-/* @media screen and (min-width: 412px) and (min-height: 914px) {
-                  } */
-
-/* TODO:  APPLE IPHONE XR  TODO: */
-/* @media screen and (min-width: 414px) and (min-height: 896px) {
-                  } */
-
-/* TODO:  SURFACE DUO  TODO: */
-/* @media screen and (min-width: 540px) and (min-height: 720px) {
-                  } */
-
-/* TODO:  APPLE IPAD MINI  TODO: */
-/* @media screen and (min-width: 768px) and (min-height: 1024px) {
-                  } */
-
-/* TODO:  APPLE IPAD AIR  TODO: */
-/* @media screen and (min-width: 820px) and (min-height: 1180px) {
-                  } */
-
-/* TODO:  SURFACE PRO 7  TODO: */
-/* @media screen and (min-width: 912px) and (min-height: 1368px) {
-                  } */
-
-/* TODO:  NEST HUB  TODO: */
-/* @media screen and (min-width: 1024px) and (min-height: 600) {
-                  } */
-
-/* TODO:  NEST HUB MAX  TODO: */
-/* @media screen and (min-width: 1280px) and (min-height: 800px) {
-                  } */
 
 /* ===================================================================================================================== */
 /* TODO:  PART 7A - SKYNAMO CRM SOLUTION - FORM HEADERS (ON REGISTRATION FORM)                                           */
@@ -959,7 +860,7 @@ section {
 /* FIXME:  VIEW - MOBILE FIRST     */
 /* ------------------------------- */
 
-.registration_form__header {
+.skynamo__registration_form__header {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -967,19 +868,19 @@ section {
   font-size: 1.5rem;
   font-weight: 500;
   letter-spacing: 0.2rem;
-  background-color: var(--color-Skynamo-button-background);
-  color: var(--color-page-header-text);
+  background-color: var(--color-skynamo-button-background);
+  color: var(--color-skynamo-page-header-text);
   margin: 2.5rem 0.4rem 2rem 0.4rem;
   padding: 0.5rem 1rem 0.5rem 1rem;
   border-radius: 0.5rem;
-  box-shadow: 3px 5px 20px 0 rgba(0, 0, 0, 0.35);
+  box-shadow: var(--color-box-shadow-01);
 }
 
 /* ------------------------- */
 /* FIXME:  PRIVACY STATEMENT */
 /* ------------------------- */
 
-.privacy__statement {
+.skynamo__privacy__statement {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -989,14 +890,14 @@ section {
   text-transform: uppercase;
 }
 
-.privacy__statement strong {
+.skynamo__privacy__statement strong {
   text-decoration: none;
-  color: var(--color-Skynamo-button-background);
+  color: var(--color-skynamo-button-background);
 }
 
-.privacy__statement a {
+.skynamo__privacy__statement a {
   text-decoration: none;
-  color: var(--color-Skynamo-button-background);
+  color: var(--color-skynamo-button-background);
   cursor: pointer;
 }
 
@@ -1004,7 +905,7 @@ section {
 /* FIXME:  SHIPPING STATEMENT  */
 /* --------------------------- */
 
-.shipping__statement {
+.skynamo__shipping__statement {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1014,14 +915,14 @@ section {
   text-transform: uppercase;
 }
 
-.shipping__statement strong {
+.skynamo__shipping__statement strong {
   text-decoration: none;
-  color: var(--color-Skynamo-button-background);
+  color: var(--color-skynamo-button-background);
 }
 
-.shipping__statement a {
+.skynamo__shipping__statement a {
   text-decoration: none;
-  color: var(--color-Skynamo-button-background);
+  color: var(--color-skynamo-button-background);
   cursor: pointer;
 }
 
@@ -1030,7 +931,7 @@ section {
 /* ------------------------------- */
 
 @media screen and (max-width: 430px) {
-  .registration_form__header {
+  .skynamo__registration_form__header {
     font-size: 1rem;
     text-align: center;
   }
@@ -1044,15 +945,15 @@ section {
 /* FIXME:  FORM CONTAINER  FIXME:                 */
 /* ---------------------------------------------- */
 
-/* form {
-                  width: 100vw;
-                } */
+.skynamo__form__group {
+  margin: 0rem 0rem 1rem 1rem;
+}
 
 /* ---------------------------------------------- */
 /* FIXME:  FORM LABEL  FIXME:                     */
 /* ---------------------------------------------- */
 
-label {
+.skynamo__form__group label {
   display: block;
   font-size: 1.2rem;
   font-weight: 600;
@@ -1060,7 +961,7 @@ label {
   margin: 0.5rem 1.75rem 0.5rem 1.75rem;
 }
 
-input::placeholder {
+.skynamo__form__group input::placeholder {
   font-family: "Poppins", sans-serif;
 }
 
@@ -1069,13 +970,11 @@ input::placeholder {
 /* e.g. "NAME" or "LAST NAME" etc.                */
 /* ---------------------------------------------- */
 
-input[type="text"] {
+.skynamo__form__group input[type="text"] {
   /* width: 25rem; */
   width: 96%;
   border-radius: 0.5rem;
-  border: 1px solid var(--color-input-border);
-  /* box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.35); */
-  /* box-shadow: 0 5px 4px rgba(0, 0, 0, 0.35); */
+  border: 1px solid var(--color-skynamo-input-border);
   margin: 0.5rem 1.4rem 0.5rem 1.4rem;
   padding: 0.5rem 1rem 0.5rem 1rem;
   font-size: 1.2rem;
@@ -1083,8 +982,8 @@ input[type="text"] {
   transition: border-color 0.15s, box-shadow 0.15s;
 }
 
-input[type="text"]:focus {
-  border-color: var(--color-input-border-focus);
+.skynamo__form__group input[type="text"]:focus {
+  border-color: var(--color-skynamo-input-border-focus);
   box-shadow: 0 0 0 2px rgba(226, 33, 142, 0.95);
   outline: 0;
 }
@@ -1094,13 +993,11 @@ input[type="text"]:focus {
 /* e.g. "TELEPHONE" or "MOBILE" Number etc.       */
 /* ---------------------------------------------- */
 
-input[type="tel"] {
+.skynamo__form__group input[type="tel"] {
   /* width: 25rem; */
   width: 96%;
   border-radius: 0.5rem;
-  border: 1px solid var(--color-input-border);
-  /* box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.35); */
-  /* box-shadow: 0 5px 4px rgba(0, 0, 0, 0.35); */
+  border: 1px solid var(--color-skynamo-input-border);
   margin: 0.5rem 1.4rem 0.5rem 1.4rem;
   padding: 0.5rem 1rem 0.5rem 1rem;
   font-size: 1.2rem;
@@ -1108,8 +1005,8 @@ input[type="tel"] {
   transition: border-color 0.15s, box-shadow 0.15s;
 }
 
-input[type="tel"]:focus {
-  border-color: var(--color-input-border-focus);
+.skynamo__form__group input[type="tel"]:focus {
+  border-color: var(--color-skynamo-input-border-focus);
   box-shadow: 0 0 0 2px rgba(226, 33, 142, 0.95);
   outline: 0;
 }
@@ -1119,14 +1016,12 @@ input[type="tel"]:focus {
 /* Runs over multiple lines (rows) e.g. "Address" */
 /* ---------------------------------------------- */
 
-textarea {
+.skynamo__form__group textarea {
   resize: none;
   /* width: 25rem; */
   width: 96%;
   border-radius: 0.5rem;
-  border: 1px solid var(--color-input-border);
-  /* box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.35); */
-  /* box-shadow: 0 5px 4px rgba(0, 0, 0, 0.35); */
+  border: 1px solid var(--color-skynamo-input-border);
   margin: 0.5rem 1.4rem 0.5rem 1.4rem;
   padding: 0.5rem 1rem 0.5rem 1rem;
   font-size: 1.2rem;
@@ -1135,8 +1030,8 @@ textarea {
   transition: border-color 0.15s, box-shadow 0.15s;
 }
 
-textarea:focus {
-  border-color: var(--color-input-border-focus);
+.skynamo__form__group textarea:focus {
+  border-color: var(--color-skynamo-input-border-focus);
   box-shadow: 0 0 0 2px rgba(226, 33, 142, 0.95);
   outline: 0;
 }
@@ -1145,13 +1040,11 @@ textarea:focus {
 /* FIXME:  INPUT FIELD TYPE =  NUMBER  FIXME:     */
 /* ---------------------------------------------- */
 
-input[type="number"] {
+.skynamo__form__group input[type="number"] {
   /* width: 25rem; */
   width: 96%;
   border-radius: 0.5rem;
-  border: 1px solid var(--color-input-border);
-  /* box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.35); */
-  /* box-shadow: 0 5px 4px rgba(0, 0, 0, 0.35); */
+  border: 1px solid var(--color-skynamo-input-border);
   margin: 0.5rem 1.4rem 0.5rem 1.4rem;
   padding: 0.5rem 1rem 0.5rem 1rem;
   font-size: 1.2rem;
@@ -1160,8 +1053,8 @@ input[type="number"] {
   transition: border-color 0.15s, box-shadow 0.15s;
 }
 
-input[type="number"]:focus {
-  border-color: var(--color-input-border-focus);
+.skynamo__form__group input[type="number"]:focus {
+  border-color: var(--color-skynamo-input-border-focus);
   box-shadow: 0 0 0 2px rgba(226, 33, 142, 0.95);
   outline: 0;
 }
@@ -1170,13 +1063,11 @@ input[type="number"]:focus {
 /* FIXME:  INPUT FIELD TYPE =  DATE  FIXME:       */
 /* ---------------------------------------------- */
 
-input[type="date"] {
+.skynamo__form__group input[type="date"] {
   /* width: 25rem; */
   width: 96%;
   border-radius: 0.5rem;
-  border: 1px solid var(--color-input-border);
-  /* box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.35); */
-  /* box-shadow: 0 5px 4px rgba(0, 0, 0, 0.35); */
+  border: 1px solid var(--color-skynamo-input-border);
   margin: 0.5rem 1.4rem 0.5rem 1.4rem;
   padding: 0.5rem 1rem 0.5rem 1rem;
   font-size: 1.2rem;
@@ -1184,8 +1075,8 @@ input[type="date"] {
   transition: border-color 0.15s, box-shadow 0.15s;
 }
 
-input[type="date"]:focus {
-  border-color: var(--color-input-border-focus);
+.skynamo__form__group input[type="date"]:focus {
+  border-color: var(--color-skynamo-input-border-focus);
   box-shadow: 0 0 0 2px rgba(226, 33, 142, 0.95);
   outline: 0;
 }
@@ -1195,13 +1086,11 @@ input[type="date"]:focus {
 /* e.g. Countries, Provinces, Titles etc.         */
 /* ---------------------------------------------- */
 
-select {
+.skynamo__form__group select {
   /* width: 25rem; */
   width: 96%;
   border-radius: 0.5rem;
-  border: 1px solid var(--color-input-border);
-  /* box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.35); */
-  /* box-shadow: 0 5px 4px rgba(0, 0, 0, 0.35); */
+  border: 1px solid var(--color-skynamo-input-border);
   margin: 0.5rem 1.4rem 0.5rem 1.4rem;
   padding: 0.5rem 1rem 0.5rem 1rem;
   font-size: 1.2rem;
@@ -1209,8 +1098,8 @@ select {
   transition: border-color 0.15s, box-shadow 0.15s;
 }
 
-select:focus {
-  border-color: var(--color-input-border-focus);
+.skynamo__form__group select:focus {
+  border-color: var(--color-skynamo-input-border-focus);
   box-shadow: 0 0 0 2px rgba(226, 33, 142, 0.95);
   outline: 0;
 }
@@ -1223,29 +1112,34 @@ select:focus {
 /* FIXME:  INPUT FIELD = CHECKBOX  FIXME:  */
 /* --------------------------------------- */
 
-.checkbox__option {
+.skynamo__checkbox__option {
   font-size: 1.2rem;
   font-weight: 600;
-  line-height: 1.1;
+  line-height: 1.5;
   text-transform: none;
   text-align: justify;
   display: grid;
   grid-template-columns: 1rem auto;
   gap: 2rem;
-  margin: 2rem 1.5rem 2rem 1.4rem;
+  margin: 2rem 0rem 2rem 0rem;
+  padding: 0rem 1.5rem 0rem 0rem;
   cursor: pointer;
+}
+
+label.skynamo__checkbox__option {
+  display: grid;
 }
 
 /* ------------------------------------ */
 /* THIS IS TO HIDE THE NATIVE CHECKBOX  */
 /* ------------------------------------ */
 
-input[type="checkbox"] {
+.skynamo__checkbox__option input[type="checkbox"] {
   /* Add if not using autoprefixer */
   -webkit-appearance: none;
   appearance: none;
   /* For iOS < 15 to remove gradient background */
-  background-color: var(--color-custom-checkbox-background);
+  background-color: var(--color-skynamo-custom-checkbox-background);
   /* Not removed via appearance */
   margin: 0;
 }
@@ -1254,15 +1148,15 @@ input[type="checkbox"] {
 /* THIS IS TO DISPLAY THE CUSTOM CHECKBOX  */
 /* --------------------------------------- */
 
-input[type="checkbox"] {
+.skynamo__checkbox__option input[type="checkbox"] {
   appearance: none;
-  background-color: var(--color-custom-checkbox-background);
+  background-color: var(--color-skynamo-custom-checkbox-background);
   margin: 0;
   font: inherit;
-  color: var(--color-custom-checkbox-border);
+  color: var(--color-skynamo-custom-checkbox-border);
   width: 1.5rem;
   height: 1.5rem;
-  border: 0.15em solid var(--color-custom-checkbox-border);
+  border: 0.15em solid var(--color-skynamo-custom-checkbox-border);
   border-radius: 0.15em;
   transform: translateY(-0.075em);
   display: grid;
@@ -1270,7 +1164,7 @@ input[type="checkbox"] {
   cursor: pointer;
 }
 
-.checkbox__option + .checkbox__option {
+.skynamo__checkbox__option + .skynamo__checkbox__option {
   margin-top: 1rem;
 }
 
@@ -1278,13 +1172,13 @@ input[type="checkbox"] {
 /* CUSTOM CHECKBOX - CHECKED STATE         */
 /* --------------------------------------- */
 
-input[type="checkbox"]::before {
+.skynamo__checkbox__option input[type="checkbox"]::before {
   content: "";
   width: 0.7rem;
   height: 0.7rem;
   transform: scale(0);
   transition: 120ms transform ease-in-out;
-  box-shadow: inset 1em 1em var(--color-custom-checkbox-checkmark);
+  box-shadow: inset 1em 1em var(--color-skynamo-custom-checkbox-checkmark);
   /* Windows High Contrast Mode */
   background-color: CanvasText;
   /* Creating a checkmark with CLIP-PATH */
@@ -1292,7 +1186,7 @@ input[type="checkbox"]::before {
   clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
 }
 
-input[type="checkbox"]:checked::before {
+.skynamo__checkbox__option input[type="checkbox"]:checked::before {
   transform: scale(1);
 }
 
@@ -1300,8 +1194,8 @@ input[type="checkbox"]:checked::before {
 /* CUSTOM CHECKBOX - FOCUSSED STATE        */
 /* --------------------------------------- */
 
-input[type="checkbox"]:focus {
-  outline: max(2px, 0.15em) solid var(--color-custom-checkbox-focus);
+.skynamo__checkbox__option input[type="checkbox"]:focus {
+  outline: max(2px, 0.15em) solid var(--color-skynamo-custom-checkbox-focus);
   outline-offset: max(1px, 0.15em);
 }
 
@@ -1309,13 +1203,13 @@ input[type="checkbox"]:focus {
 /* CUSTOM CHECKBOX - DISABLED STATE        */
 /* --------------------------------------- */
 
-.checkbox__option--disabled {
-  color: var(--color-custom-checkbox-disabled);
+.skynamo__checkbox__option--disabled {
+  color: var(--color-skynamo-custom-checkbox-disabled);
   cursor: not-allowed;
 }
 
-input[type="checkbox"]:disabled {
-  color: var(--color-custom-checkbox-disabled);
+.skynamo__checkbox__option input[type="checkbox"]:disabled {
+  color: var(--color-skynamo-custom-checkbox-disabled);
   cursor: not-allowed;
 }
 
@@ -1323,108 +1217,15 @@ input[type="checkbox"]:disabled {
 /* TODO:  END OF STYLING OF CUSTOM CHECKBOX                                  */
 /* ------------------------------------------------------------------------- */
 
-/* ------------------------------------------------------------------------- */
-/* TODO: START STYLING OF CUSTOM FILE-UPLOAD                                 */
-/* ------------------------------------------------------------------------- */
-
-/* ---------------------------------------------- */
-/* FIXME: INPUT FIELD TYPE = FILE          FIXME: */
-/* ---------------------------------------------- */
-
-.file-input {
-  display: inline-block;
-  margin: 1rem 1.4rem 1rem 1.4rem;
-  padding: 1rem 1rem 1rem 1rem;
-  text-align: left;
-  background: var(--color-custom-fileinput-background);
-  /* width: 450px; */
-  width: 96%;
-  position: relative;
-  border-radius: 0.5rem;
-  box-shadow: 0px 5px 4px var(--color-custom-fileinput-shadow-01),
-    3px 5px 20px var(--color-custom-fileinput-shadow-02);
-}
-
-/* ---------------------------------------------- */
-/* HIDING THE NATIVE FILE UPLOADER                */
-/* ---------------------------------------------- */
-
-.file-input > [type="file"] {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  opacity: 0;
-  z-index: 10;
-  cursor: pointer;
-}
-
-/* -------------------------------------------- */
-/* STYLE AND DISPLAY THE CUSTOM FILE UPLOADER   */
-/* -------------------------------------------- */
-
-.file-input > .button {
-  /* display: inline-block; */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0rem 0.5rem 0.75rem 0.5rem;
-  padding: 0.8rem 1rem 0.8rem 1rem;
-  font-size: 1.3rem;
-  font-weight: 500;
-  background: var(--color-custom-fileinput-background);
-  border-radius: 0.5rem;
-  box-shadow: 0px 5px 4px var(--color-custom-fileinput-shadow-01),
-    3px 5px 20px var(--color-custom-fileinput-shadow-02);
-  cursor: pointer;
-}
-
-.file-input:hover > .button {
-  background: var(--color-custom-fileinput-background-hover);
-  color: var(--color-custom-fileinput-background-hover-text);
-}
-
-.file-input > .label {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 1.5rem 0.5rem 0rem 0.5rem;
-  font-size: 0.9rem;
-  font-weight: 500;
-  color: var(--color-custom-fileinput-label-text);
-  white-space: nowrap;
-  opacity: 0.5;
-}
-
-.file-input.-chosen > .label {
-  opacity: 1;
-}
-
-.fa {
-  font-size: 1.8rem;
-  margin: 0rem 1rem 0rem 0rem;
-}
-
-label .label__strong {
-  color: var(--color-Skynamo-button-background);
-}
-
-/* ------------------------------------------------------------------------- */
-/* TODO:  END OF STYLING OF CUSTOM FILE-UPLOAD                               */
-/* ------------------------------------------------------------------------- */
-
 /* ------------------------------------------ */
 /* FIXME:  INPUT FIELD TYPE =  EMAIL  FIXME:  */
 /* ------------------------------------------ */
 
-input[type="email"] {
+.skynamo__form__group input[type="email"] {
   /* width: 25rem; */
   width: 96%;
   border-radius: 0.5rem;
-  border: 1px solid var(--color-input-border);
-  /* box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.35); */
-  /* box-shadow: 0 5px 4px rgba(0, 0, 0, 0.35); */
+  border: 1px solid var(--color-skynamo-input-border);
   margin: 0.5rem 1.4rem 0.5rem 1.4rem;
   padding: 0.5rem 1rem 0.5rem 1rem;
   font-size: 1.2rem;
@@ -1432,8 +1233,8 @@ input[type="email"] {
   transition: border-color 0.15s, box-shadow 0.15s;
 }
 
-input[type="email"]:focus {
-  border-color: var(--color-input-border-focus);
+.skynamo__form__group input[type="email"]:focus {
+  border-color: var(--color-skynamo-input-border-focus);
   box-shadow: 0 0 0 2px rgba(226, 33, 142, 0.95);
   outline: 0;
 }
@@ -1442,9 +1243,9 @@ input[type="email"]:focus {
 /* FIXME:  FORM BUTTONS  FIXME:  */
 /* ----------------------------- */
 
-button {
-  background: var(--color-button-background);
-  color: var(--color-button-text);
+.skynamo__button__container button {
+  background: var(--color-skynamo-button-background);
+  color: var(--color-skynamo-button-text);
   border: 0;
   outline: 0;
   border-radius: 0.5rem;
@@ -1462,24 +1263,25 @@ button {
   text-align: center;
   cursor: pointer;
   text-decoration: none;
+  transition: transform 0.5s ease-in-out;
 }
 
-.button__container {
+.skynamo__button__container {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
 }
 
-.form__group {
-  margin: 0rem 0rem 1rem 1rem;
+.skynamo__button__container button:hover {
+  transform: scale(1.05);
 }
 
 /* ---------------------------------------------- */
 /* FIXME:  STYLING - GOOGLE RECAPTCHA  FIXME:     */
 /* ---------------------------------------------- */
 
-.g-recaptcha {
+.skynamo__form__group .g-recaptcha {
   margin: 2rem 1rem 2rem 1rem;
   display: flex;
   justify-content: center;
@@ -1497,7 +1299,7 @@ button {
 /* --------------------------------------------------------------- */
 
 @media screen and (max-width: 600px) {
-  button {
+  .skynamo__button__container button {
     margin: 0rem 1rem 2rem 1rem;
     font-size: 1rem;
     display: flex;
@@ -1506,56 +1308,52 @@ button {
     text-align: center;
   }
 
-  .button__container {
+  .skynamo__button__container {
     flex-direction: column;
   }
 
-  .file-input {
-    margin: 1rem 0.2rem 1rem 0.2rem;
-  }
-
-  label {
+  .skynamo__form__group label {
     font-size: 1rem;
     margin: 0rem 0.6rem 0rem 0.5rem;
   }
 
-  input[type="email"] {
+  .skynamo__form__group input[type="email"] {
     margin: 0.5rem 0.2rem 0.5rem 0.2rem;
   }
 
-  .checkbox__option {
+  .skynamo__checkbox__option {
     font-size: 1.1rem;
     font-weight: 500;
     margin: 2rem 2rem 2rem 0.1rem;
   }
 
-  select {
+  .skynamo__form__group select {
     margin: 0.5rem 0.1rem 0.5rem 0.1rem;
   }
 
-  textarea {
+  .skynamo__form__group textarea {
     margin: 0.5rem 0.1rem 0.5rem 0.1rem;
   }
 
-  input[type="tel"] {
+  .skynamo__form__group input[type="tel"] {
     margin: 0.5rem 0.1rem 0.5rem 0.1rem;
   }
 
-  input[type="text"] {
+  .skynamo__form__group input[type="text"] {
     margin: 0.5rem 0.1rem 0.5rem 0.1rem;
   }
 
-  input[type="date"] {
+  .skynamo__form__group input[type="date"] {
     margin: 0.5rem 0.1rem 0.5rem 0.1rem;
   }
 
-  input[type="number"] {
+  .skynamo__form__group input[type="number"] {
     margin: 0.5rem 0.1rem 0.5rem 0.1rem;
   }
 }
 
 @media screen and (max-width: 350px) {
-  .g-recaptcha {
+  .skynamo__form__group .g-recaptcha {
     margin: 2rem 1.5rem 2rem 4.5rem;
     transform: scale(0.8);
     -webkit-transform: scale(0.8);

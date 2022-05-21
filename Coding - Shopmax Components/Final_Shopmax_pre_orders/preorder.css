@@ -3,52 +3,29 @@
 /* ===================================================================================================================== */
 
 :root {
-  --color-page-background: white;
-  --color-page-header-text: white;
-  /* FORM HEADERS */
-  --color-form-header-background: #dc143c;
-  --color-form-header-background-rgb: rgb(220, 20, 60);
-  --color-form-header-text: white;
-  /* PRIVACY STATEMENT */
-  --color-privacy-text: #dc143c;
-  /* DELIVERY COST STATEMENT */
-  --color-delivery-cost-text: #dc143c;
-  /* FORM TEXT INPUTS */
-  --color-input-border: #ccc;
-  --color-input-border-focus: #dc143c;
-  /* FORM BUTTONS */
-  --color-button-background: #dc143c;
-  --color-button-text: white;
-  /* CUSTOM CHECKBOX */
-  --color-custom-checkbox-border: #ccc;
-  --color-custom-checkbox-background: white;
-  --color-custom-checkbox-checkmark: #dc143c;
-  --color-custom-checkbox-focus: #dc143c;
-  --color-custom-checkbox-disabled: #959495;
-  /* CUSTOM RADIO BUTTON */
-  --color-custom-radiobutton-border: #ccc;
-  --color-custom-radiobutton-background: white;
-  --color-custom-radiobutton-circle: #dc143c;
-  --color-custom-radiobutton-focus: #dc143c;
-  --color-custom-radiobutton-disabled: #959495;
-  /* CUSTOM RANGE SLIDER (PART 1) - THUMB */
-  --color-custom-rangeslider-thumb-background: #dc143c;
-  --color-custom-rangeslider-thumb-border: #dc143c;
-  --color-custom-rangeslider-thumb-shadow-01: rgba(0, 0, 0, 0.35);
-  --color-custom-rangeslider-thumb-shadow-02: rgba(0, 0, 0, 0.35);
-  /* CUSTOM RANGE SLIDER (PART 2) - TRACK */
-  --color-custom-rangeslider-track-background: white;
-  --color-custom-rangeslider-track-background-focus: #faf9f6;
-  --color-custom-rangeslider-track-border: white;
-  --color-custom-rangeslider-track-shadow-01: rgba(0, 0, 0, 0.35);
-  --color-custom-rangeslider-track-shadow-02: rgba(0, 0, 0, 0.35);
-  /* FILE INPUT / UPLOAD */
-  --color-custom-fileinput-background: white;
-  --color-custom-fileinput-background-hover: #dc143c;
-  --color-custom-fileinput-background-hover-text: white;
-  --color-custom-fileinput-label-text: black;
-  --color-custom-fileinput-shadow-01: rgba(0, 0, 0, 0.35);
-  --color-custom-fileinput-shadow-02: rgba(0, 0, 0, 0.35);
+  /* ------------------------------------------------ */
+  /* FIXME:  GENERAL COLORS - BOX SHADOWS             */
+  /* ------------------------------------------------ */
+  --color-box-shadow-01: 3px 5px 20px rgba(0, 0, 0, 0.35);
+  --color-box-shadow-02: 0px 5px 4px rgba(0, 0, 0, 0.35);
+  --color-box-shadow-03: 0px 1px 5px 3px rgba(0, 0, 0, 0.15);
+  --color-box-shadow-04: 0px 5px 20px rgba(0, 0, 0, 0.35);
+  /* ------------------------------------------------ */
+  /* FIXME:  PRE-ORDER NEW PRODUCTS                   */
+  /* ------------------------------------------------ */
+  --color-pre-orders-form-header-background: #dc143c;
+  --color-pre-orders-form-header-text: white;
+  --color-pre-orders-privacy-text: #dc143c;
+  --color-pre-orders-delivery-cost-text: #dc143c;
+  --color-pre-orders-input-border: #ccc;
+  --color-pre-orders-input-border-focus: #dc143c;
+  --color-pre-orders-custom-checkbox-border: #ccc;
+  --color-pre-orders-custom-checkbox-background: white;
+  --color-pre-orders-custom-checkbox-checkmark: #dc143c;
+  --color-pre-orders-custom-checkbox-focus: #dc143c;
+  --color-pre-orders-custom-checkbox-disabled: #959495;
+  --color-pre-orders-button-background: #dc143c;
+  --color-pre-orders-button-text: white;
 }
 
 * {
@@ -175,7 +152,8 @@ h6 {
   justify-content: center;
   justify-items: center;
   text-transform: uppercase;
-  margin: 1.5rem 0rem 1.5rem 0rem;
+  margin: 0rem 0rem 0rem 0rem;
+  padding: 1.5rem 0rem 0rem 0rem;
   text-align: center;
 }
 
@@ -199,12 +177,12 @@ h6 {
   font-size: 1.5rem;
   font-weight: 500;
   letter-spacing: 0.2rem;
-  background-color: var(--color-form-header-background);
-  color: var(--color-form-header-text);
+  background-color: var(--color-pre-orders-form-header-background);
+  color: var(--color-pre-orders-form-header-text);
   margin: 2.5rem 0.4rem 2rem 0.4rem;
   padding: 0.5rem 1rem 0.5rem 1rem;
   border-radius: 0.5rem;
-  box-shadow: 3px 5px 20px 0 rgba(0, 0, 0, 0.35);
+  box-shadow: var(--color-box-shadow-01);
 }
 
 /* ------------------------- */
@@ -223,12 +201,12 @@ h6 {
 
 .preorder__privacy__statement strong {
   text-decoration: none;
-  color: var(--color-privacy-text);
+  color: var(--color-pre-orders-privacy-text);
 }
 
 .preorder__privacy__statement a {
   text-decoration: none;
-  color: var(--color-privacy-text);
+  color: var(--color-pre-orders-privacy-text);
   cursor: pointer;
 }
 
@@ -248,12 +226,12 @@ h6 {
 
 .preorder__delivery__cost strong {
   text-decoration: none;
-  color: var(--color-delivery-cost-text);
+  color: var(--color-pre-orders-delivery-cost-text);
 }
 
 .preorder__delivery__cost a {
   text-decoration: none;
-  color: var(--color-delivery-cost-text);
+  color: var(--color-pre-orders-delivery-cost-text);
   cursor: pointer;
 }
 
@@ -276,11 +254,15 @@ h6 {
 /* FIXME:  FORM CONTAINER  FIXME:                 */
 /* ---------------------------------------------- */
 
+.pre__order__form__group {
+  margin: 0rem 0rem 1rem 1rem;
+}
+
 /* ---------------------------------------------- */
 /* FIXME:  FORM LABEL  FIXME:                     */
 /* ---------------------------------------------- */
 
-label {
+.pre__order__form__group label {
   display: block;
   font-size: 1.2rem;
   font-weight: 600;
@@ -288,7 +270,7 @@ label {
   margin: 0.5rem 1.75rem 0.5rem 1.75rem;
 }
 
-input::placeholder {
+.pre__order__form__group input::placeholder {
   font-family: "Poppins", sans-serif;
 }
 
@@ -297,13 +279,11 @@ input::placeholder {
 /* e.g. "NAME" or "LAST NAME" etc.                */
 /* ---------------------------------------------- */
 
-input[type="text"] {
+.pre__order__form__group input[type="text"] {
   /* width: 25rem; */
   width: 96%;
   border-radius: 0.5rem;
-  border: 1px solid var(--color-input-border);
-  /* box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.35); */
-  /* box-shadow: 0 5px 4px rgba(0, 0, 0, 0.35); */
+  border: 1px solid var(--color-pre-orders-input-border);
   margin: 0.5rem 1.4rem 0.5rem 1.4rem;
   padding: 0.5rem 1rem 0.5rem 1rem;
   font-size: 1.2rem;
@@ -311,8 +291,8 @@ input[type="text"] {
   transition: border-color 0.15s, box-shadow 0.15s;
 }
 
-input[type="text"]:focus {
-  border-color: var(--color-input-border-focus);
+.pre__order__form__group input[type="text"]:focus {
+  border-color: var(--color-pre-orders-input-border-focus);
   box-shadow: 0 0 0 2px rgba(220, 20, 60, 0.95);
   outline: 0;
 }
@@ -322,13 +302,11 @@ input[type="text"]:focus {
 /* e.g. "TELEPHONE" or "MOBILE" Number etc.       */
 /* ---------------------------------------------- */
 
-input[type="tel"] {
+.pre__order__form__group input[type="tel"] {
   /* width: 25rem; */
   width: 96%;
   border-radius: 0.5rem;
-  border: 1px solid var(--color-input-border);
-  /* box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.35); */
-  /* box-shadow: 0 5px 4px rgba(0, 0, 0, 0.35); */
+  border: 1px solid var(--color-pre-orders-input-border);
   margin: 0.5rem 1.4rem 0.5rem 1.4rem;
   padding: 0.5rem 1rem 0.5rem 1rem;
   font-size: 1.2rem;
@@ -336,8 +314,8 @@ input[type="tel"] {
   transition: border-color 0.15s, box-shadow 0.15s;
 }
 
-input[type="tel"]:focus {
-  border-color: var(--color-input-border-focus);
+.pre__order__form__group input[type="tel"]:focus {
+  border-color: var(--color-pre-orders-input-border-focus);
   box-shadow: 0 0 0 2px rgba(220, 20, 60, 0.95);
   outline: 0;
 }
@@ -347,14 +325,12 @@ input[type="tel"]:focus {
 /* Runs over multiple lines (rows) e.g. "Address" */
 /* ---------------------------------------------- */
 
-textarea {
+.pre__order__form__group textarea {
   resize: none;
   /* width: 25rem; */
   width: 96%;
   border-radius: 0.5rem;
-  border: 1px solid var(--color-input-border);
-  /* box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.35); */
-  /* box-shadow: 0 5px 4px rgba(0, 0, 0, 0.35); */
+  border: 1px solid var(--color-pre-orders-input-border);
   margin: 0.5rem 1.4rem 0.5rem 1.4rem;
   padding: 0.5rem 1rem 0.5rem 1rem;
   font-size: 1.2rem;
@@ -363,8 +339,8 @@ textarea {
   transition: border-color 0.15s, box-shadow 0.15s;
 }
 
-textarea:focus {
-  border-color: var(--color-input-border-focus);
+.pre__order__form__group textarea:focus {
+  border-color: var(--color-pre-orders-input-border-focus);
   box-shadow: 0 0 0 2px rgba(220, 20, 60, 0.95);
   outline: 0;
 }
@@ -373,13 +349,11 @@ textarea:focus {
 /* FIXME:  INPUT FIELD TYPE =  NUMBER  FIXME:     */
 /* ---------------------------------------------- */
 
-input[type="number"] {
+.pre__order__form__group input[type="number"] {
   /* width: 25rem; */
   width: 96%;
   border-radius: 0.5rem;
-  border: 1px solid var(--color-input-border);
-  /* box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.35); */
-  /* box-shadow: 0 5px 4px rgba(0, 0, 0, 0.35); */
+  border: 1px solid var(--color-pre-orders-input-border);
   margin: 0.5rem 1.4rem 0.5rem 1.4rem;
   padding: 0.5rem 1rem 0.5rem 1rem;
   font-size: 1.2rem;
@@ -388,8 +362,8 @@ input[type="number"] {
   transition: border-color 0.15s, box-shadow 0.15s;
 }
 
-input[type="number"]:focus {
-  border-color: var(--color-input-border-focus);
+.pre__order__form__group input[type="number"]:focus {
+  border-color: var(--color-pre-orders-input-border-focus);
   box-shadow: 0 0 0 2px rgba(220, 20, 60, 0.95);
   outline: 0;
 }
@@ -398,13 +372,11 @@ input[type="number"]:focus {
 /* FIXME:  INPUT FIELD TYPE =  DATE  FIXME:       */
 /* ---------------------------------------------- */
 
-input[type="date"] {
+.pre__order__form__group input[type="date"] {
   /* width: 25rem; */
   width: 96%;
   border-radius: 0.5rem;
-  border: 1px solid var(--color-input-border);
-  /* box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.35); */
-  /* box-shadow: 0 5px 4px rgba(0, 0, 0, 0.35); */
+  border: 1px solid var(--color-pre-orders-input-border);
   margin: 0.5rem 1.4rem 0.5rem 1.4rem;
   padding: 0.5rem 1rem 0.5rem 1rem;
   font-size: 1.2rem;
@@ -412,8 +384,8 @@ input[type="date"] {
   transition: border-color 0.15s, box-shadow 0.15s;
 }
 
-input[type="date"]:focus {
-  border-color: var(--color-input-border-focus);
+.pre__order__form__group input[type="date"]:focus {
+  border-color: var(--color-pre-orders-input-border-focus);
   box-shadow: 0 0 0 2px rgba(220, 20, 60, 0.95);
   outline: 0;
 }
@@ -423,13 +395,11 @@ input[type="date"]:focus {
 /* e.g. Countries, Provinces, Titles etc.         */
 /* ---------------------------------------------- */
 
-select {
+.pre__order__form__group select {
   /* width: 25rem; */
   width: 96%;
   border-radius: 0.5rem;
-  border: 1px solid var(--color-input-border);
-  /* box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.35); */
-  /* box-shadow: 0 5px 4px rgba(0, 0, 0, 0.35); */
+  border: 1px solid var(--color-pre-orders-input-border);
   margin: 0.5rem 1.4rem 0.5rem 1.4rem;
   padding: 0.5rem 1rem 0.5rem 1rem;
   font-size: 1.2rem;
@@ -437,8 +407,8 @@ select {
   transition: border-color 0.15s, box-shadow 0.15s;
 }
 
-select:focus {
-  border-color: var(--color-input-border-focus);
+.pre__order__form__group select:focus {
+  border-color: var(--color-pre-orders-input-border-focus);
   box-shadow: 0 0 0 2px rgba(220, 20, 60, 0.95);
   outline: 0;
 }
@@ -451,7 +421,7 @@ select:focus {
 /* FIXME:  INPUT FIELD = CHECKBOX  FIXME:  */
 /* --------------------------------------- */
 
-.checkbox__option {
+.pre__order__checkbox__option {
   font-size: 1.2rem;
   font-weight: 600;
   line-height: 1.1;
@@ -468,12 +438,12 @@ select:focus {
 /* THIS IS TO HIDE THE NATIVE CHECKBOX  */
 /* ------------------------------------ */
 
-input[type="checkbox"] {
+.pre__order__form__group input[type="checkbox"] {
   /* Add if not using autoprefixer */
   -webkit-appearance: none;
   appearance: none;
   /* For iOS < 15 to remove gradient background */
-  background-color: var(--color-custom-checkbox-background);
+  background-color: var(--color-pre-orders-custom-checkbox-background);
   /* Not removed via appearance */
   margin: 0;
 }
@@ -482,15 +452,15 @@ input[type="checkbox"] {
 /* THIS IS TO DISPLAY THE CUSTOM CHECKBOX  */
 /* --------------------------------------- */
 
-input[type="checkbox"] {
+.pre__order__form__group input[type="checkbox"] {
   appearance: none;
-  background-color: var(--color-custom-checkbox-background);
+  background-color: var(--color-pre-orders-custom-checkbox-background);
   margin: 0;
   font: inherit;
-  color: var(--color-custom-checkbox-border);
+  color: var(--color-pre-orders-custom-checkbox-border);
   width: 1.5rem;
   height: 1.5rem;
-  border: 0.15em solid var(--color-custom-checkbox-border);
+  border: 0.15em solid var(--color-pre-orders-custom-checkbox-border);
   border-radius: 0.15em;
   transform: translateY(-0.075em);
   display: grid;
@@ -498,7 +468,7 @@ input[type="checkbox"] {
   cursor: pointer;
 }
 
-.checkbox__option + .checkbox__option {
+.pre__order__checkbox__option + .pre__order__checkbox__option {
   margin-top: 1rem;
 }
 
@@ -506,13 +476,13 @@ input[type="checkbox"] {
 /* CUSTOM CHECKBOX - CHECKED STATE         */
 /* --------------------------------------- */
 
-input[type="checkbox"]::before {
+.pre__order__form__group input[type="checkbox"]::before {
   content: "";
   width: 0.7rem;
   height: 0.7rem;
   transform: scale(0);
   transition: 120ms transform ease-in-out;
-  box-shadow: inset 1em 1em var(--color-custom-checkbox-checkmark);
+  box-shadow: inset 1em 1em var(--color-pre-orders-custom-checkbox-checkmark);
   /* Windows High Contrast Mode */
   background-color: CanvasText;
   /* Creating a checkmark with CLIP-PATH */
@@ -520,7 +490,7 @@ input[type="checkbox"]::before {
   clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
 }
 
-input[type="checkbox"]:checked::before {
+.pre__order__form__group input[type="checkbox"]:checked::before {
   transform: scale(1);
 }
 
@@ -528,8 +498,8 @@ input[type="checkbox"]:checked::before {
 /* CUSTOM CHECKBOX - FOCUSSED STATE        */
 /* --------------------------------------- */
 
-input[type="checkbox"]:focus {
-  outline: max(2px, 0.15em) solid var(--color-custom-checkbox-focus);
+.pre__order__form__group input[type="checkbox"]:focus {
+  outline: max(2px, 0.15em) solid var(--color-pre-orders-custom-checkbox-focus);
   outline-offset: max(1px, 0.15em);
 }
 
@@ -537,13 +507,13 @@ input[type="checkbox"]:focus {
 /* CUSTOM CHECKBOX - DISABLED STATE        */
 /* --------------------------------------- */
 
-.checkbox__option--disabled {
-  color: var(--color-custom-checkbox-disabled);
+.pre__order__checkbox__option--disabled {
+  color: var(--color-pre-orders-custom-checkbox-disabled);
   cursor: not-allowed;
 }
 
-input[type="checkbox"]:disabled {
-  color: var(--color-custom-checkbox-disabled);
+.pre__order__form__group input[type="checkbox"]:disabled {
+  color: var(--color-pre-orders-custom-checkbox-disabled);
   cursor: not-allowed;
 }
 
@@ -551,108 +521,15 @@ input[type="checkbox"]:disabled {
 /* TODO:  END OF STYLING OF CUSTOM CHECKBOX                                  */
 /* ------------------------------------------------------------------------- */
 
-/* ------------------------------------------------------------------------- */
-/* TODO: START STYLING OF CUSTOM FILE-UPLOAD                                 */
-/* ------------------------------------------------------------------------- */
-
-/* ---------------------------------------------- */
-/* FIXME: INPUT FIELD TYPE = FILE          FIXME: */
-/* ---------------------------------------------- */
-
-.file-input {
-  display: inline-block;
-  margin: 1rem 1.4rem 1rem 1.4rem;
-  padding: 1rem 1rem 1rem 1rem;
-  text-align: left;
-  background: var(--color-custom-fileinput-background);
-  /* width: 450px; */
-  width: 96%;
-  position: relative;
-  border-radius: 0.5rem;
-  box-shadow: 0px 5px 4px var(--color-custom-fileinput-shadow-01),
-    3px 5px 20px var(--color-custom-fileinput-shadow-02);
-}
-
-/* ---------------------------------------------- */
-/* HIDING THE NATIVE FILE UPLOADER                */
-/* ---------------------------------------------- */
-
-.file-input > [type="file"] {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  opacity: 0;
-  z-index: 10;
-  cursor: pointer;
-}
-
-/* -------------------------------------------- */
-/* STYLE AND DISPLAY THE CUSTOM FILE UPLOADER   */
-/* -------------------------------------------- */
-
-.file-input > .button {
-  /* display: inline-block; */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0rem 0.5rem 0.75rem 0.5rem;
-  padding: 0.8rem 1rem 0.8rem 1rem;
-  font-size: 1.3rem;
-  font-weight: 500;
-  background: var(--color-custom-fileinput-background);
-  border-radius: 0.5rem;
-  box-shadow: 0px 5px 4px var(--color-custom-fileinput-shadow-01),
-    3px 5px 20px var(--color-custom-fileinput-shadow-02);
-  cursor: pointer;
-}
-
-.file-input:hover > .button {
-  background: var(--color-custom-fileinput-background-hover);
-  color: var(--color-custom-fileinput-background-hover-text);
-}
-
-.file-input > .label {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 1.5rem 0.5rem 0rem 0.5rem;
-  font-size: 0.9rem;
-  font-weight: 500;
-  color: var(--color-custom-fileinput-label-text);
-  white-space: nowrap;
-  opacity: 0.5;
-}
-
-.file-input.-chosen > .label {
-  opacity: 1;
-}
-
-.fa {
-  font-size: 1.8rem;
-  margin: 0rem 1rem 0rem 0rem;
-}
-
-label .label__strong {
-  color: var(--color-privacy-text);
-}
-
-/* ------------------------------------------------------------------------- */
-/* TODO:  END OF STYLING OF CUSTOM FILE-UPLOAD                               */
-/* ------------------------------------------------------------------------- */
-
 /* ------------------------------------------ */
 /* FIXME:  INPUT FIELD TYPE =  EMAIL  FIXME:  */
 /* ------------------------------------------ */
 
-input[type="email"] {
+.pre__order__form__group input[type="email"] {
   /* width: 25rem; */
   width: 96%;
   border-radius: 0.5rem;
-  border: 1px solid var(--color-input-border);
-  /* box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.35); */
-  /* box-shadow: 0 5px 4px rgba(0, 0, 0, 0.35); */
+  border: 1px solid var(--color-pre-orders-input-border);
   margin: 0.5rem 1.4rem 0.5rem 1.4rem;
   padding: 0.5rem 1rem 0.5rem 1rem;
   font-size: 1.2rem;
@@ -660,8 +537,8 @@ input[type="email"] {
   transition: border-color 0.15s, box-shadow 0.15s;
 }
 
-input[type="email"]:focus {
-  border-color: var(--color-input-border-focus);
+.pre__order__form__group input[type="email"]:focus {
+  border-color: var(--color-pre-orders-input-border-focus);
   box-shadow: 0 0 0 2px rgba(220, 20, 60, 0.95);
   outline: 0;
 }
@@ -670,9 +547,9 @@ input[type="email"]:focus {
 /* FIXME:  FORM BUTTONS  FIXME:  */
 /* ----------------------------- */
 
-button {
-  background: var(--color-button-background);
-  color: var(--color-button-text);
+.pre__order__button__container button {
+  background: var(--color-pre-orders-button-background);
+  color: var(--color-pre-orders-button-text);
   border: 0;
   outline: 0;
   border-radius: 0.5rem;
@@ -692,22 +569,18 @@ button {
   text-decoration: none;
 }
 
-.button__container {
+.pre__order__button__container {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
 }
 
-.form__group {
-  margin: 0rem 0rem 1rem 1rem;
-}
-
 /* ---------------------------------------------- */
 /* FIXME:  STYLING - GOOGLE RECAPTCHA  FIXME:     */
 /* ---------------------------------------------- */
 
-.g-recaptcha {
+.pre__order__form__group .g-recaptcha {
   margin: 2rem 1rem 2rem 1rem;
   display: flex;
   justify-content: center;
@@ -725,7 +598,7 @@ button {
 /* --------------------------------------------------------------- */
 
 @media screen and (max-width: 600px) {
-  button {
+  .pre__order__button__container button {
     margin: 0rem 1rem 2rem 1rem;
     font-size: 1rem;
     display: flex;
@@ -734,57 +607,53 @@ button {
     text-align: center;
   }
 
-  .button__container {
+  .pre__order__button__container {
     flex-direction: column;
   }
 
-  .file-input {
-    margin: 1rem 0.2rem 1rem 0.2rem;
-  }
-
-  label {
+  .pre__order__form__group label {
     font-size: 1rem;
     margin: 0rem 0.6rem 0rem 0.5rem;
   }
 
-  input[type="email"] {
+  .pre__order__form__group input[type="email"] {
     margin: 0.5rem 0.2rem 0.5rem 0.2rem;
   }
 
-  .checkbox__option {
+  .pre__order__checkbox__option {
     font-size: 1.1rem;
     font-weight: 500;
     margin: 2rem 2rem 2rem 0.1rem;
   }
 
-  select {
+  .pre__order__form__group select {
     margin: 0.5rem 0.1rem 0.5rem 0.1rem;
   }
 
-  textarea {
+  .pre__order__form__group textarea {
     margin: 0.5rem 0.1rem 0.5rem 0.1rem;
   }
 
-  input[type="tel"] {
+  .pre__order__form__group input[type="tel"] {
     margin: 0.5rem 0.1rem 0.5rem 0.1rem;
   }
 
-  input[type="text"] {
+  .pre__order__form__group input[type="text"] {
     margin: 0.5rem 0.1rem 0.5rem 0.1rem;
   }
 
-  input[type="date"] {
+  .pre__order__form__group input[type="date"] {
     margin: 0.5rem 0.1rem 0.5rem 0.1rem;
   }
 
-  input[type="number"] {
+  .pre__order__form__group input[type="number"] {
     margin: 0.5rem 0.1rem 0.5rem 0.1rem;
   }
 }
 
 @media screen and (max-width: 350px) {
-  .g-recaptcha {
-    margin: 2rem 1.5rem 2rem 4.5rem;
+  .pre__order__form__group .g-recaptcha {
+    margin: 2rem 1.5rem 2rem 2rem;
     transform: scale(0.8);
     -webkit-transform: scale(0.8);
   }
