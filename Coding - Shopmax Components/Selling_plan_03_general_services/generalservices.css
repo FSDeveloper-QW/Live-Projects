@@ -162,7 +162,8 @@ h6 {
   justify-content: center;
   justify-items: center;
   text-transform: uppercase;
-  margin: 1.5rem 0rem 1.5rem 0rem;
+  margin: 0rem 0rem 1rem 0rem;
+  padding: 1.5rem 0rem 0rem 0rem;
   text-align: center;
 }
 
