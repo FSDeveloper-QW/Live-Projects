@@ -1,6 +1,6 @@
 // SCRIPT FOR DISPLAYING SELECTED FILE NAME TO BE UPLOADED
 
-var inputs = document.querySelectorAll(".file-input");
+var inputs = document.querySelectorAll(".resellers__file-input");
 
 for (var i = 0, len = inputs.length; i < len; i++) {
   customInput(inputs[i]);
