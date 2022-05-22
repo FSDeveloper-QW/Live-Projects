@@ -3,68 +3,39 @@
 /* ===================================================================================================================== */
 
 :root {
-  --color-page-background: white;
-  --color-page-header-text: white;
-  /* Setting Accordian Colours */
-  --color-accordian-item-background: white;
-  --color-accordian-item-text: black;
-  --color-accordian-item-header-active: #01a7cf;
-  --color-accordian-item-plus-and-minus-sign: #01a7cf;
-  --color-accordian-item-seperation-line: #edeade;
-  /* Setting selling plans colour palettes */
-  --color-resellers: #f88e20;
-  --color-resellers-rgb: rgb(248, 142, 32);
-  --color-sellproduct: #8b3365;
-  --color-sellproduct-rgb: rgb(139, 51, 101);
-  --color-generalservices: #544179;
-  --color-generalservices-rgb: rgb(84, 65, 121);
-  --color-professionalservices: #01a7cf;
-  --color-professionalservices-rgb: rgb(1, 167, 207);
-  /* Setting investing plans colour palettes */
-  --color-bronze: #986c43;
-  --color-bronze-rgb: rgb(152, 108, 67);
-  --color-silver: #7d7d7d;
-  --color-silver-rga: rgb(125, 125, 125);
-  --color-gold: #dc9d04;
-  --color-gold-rgb: rgb(220, 157, 4);
-  --color-platinum: #434343;
-  --color-platinum-rgb: rgb(67, 67, 67);
-  /* FORM TEXT INPUTS */
-  --color-input-border: #ccc;
-  --color-input-border-focus: #01a7cf;
-  /* FORM BUTTONS */
-  --color-button-background: #01a7cf;
-  --color-button-text: white;
-  /* CUSTOM CHECKBOX */
-  --color-custom-checkbox-border: #ccc;
-  --color-custom-checkbox-background: white;
-  --color-custom-checkbox-checkmark: #01a7cf;
-  --color-custom-checkbox-focus: #01a7cf;
-  --color-custom-checkbox-disabled: #959495;
-  /* CUSTOM RADIO BUTTON */
-  --color-custom-radiobutton-border: #ccc;
-  --color-custom-radiobutton-background: white;
-  --color-custom-radiobutton-circle: #01a7cf;
-  --color-custom-radiobutton-focus: #01a7cf;
-  --color-custom-radiobutton-disabled: #959495;
-  /* CUSTOM RANGE SLIDER (PART 1) - THUMB */
-  --color-custom-rangeslider-thumb-background: #01a7cf;
-  --color-custom-rangeslider-thumb-border: #01a7cf;
-  --color-custom-rangeslider-thumb-shadow-01: rgba(0, 0, 0, 0.35);
-  --color-custom-rangeslider-thumb-shadow-02: rgba(0, 0, 0, 0.35);
-  /* CUSTOM RANGE SLIDER (PART 2) - TRACK */
-  --color-custom-rangeslider-track-background: white;
-  --color-custom-rangeslider-track-background-focus: #faf9f6;
-  --color-custom-rangeslider-track-border: white;
-  --color-custom-rangeslider-track-shadow-01: rgba(0, 0, 0, 0.35);
-  --color-custom-rangeslider-track-shadow-02: rgba(0, 0, 0, 0.35);
-  /* FILE INPUT / UPLOAD */
-  --color-custom-fileinput-background: white;
-  --color-custom-fileinput-background-hover: #01a7cf;
-  --color-custom-fileinput-background-hover-text: white;
-  --color-custom-fileinput-label-text: black;
-  --color-custom-fileinput-shadow-01: rgba(0, 0, 0, 0.35);
-  --color-custom-fileinput-shadow-02: rgba(0, 0, 0, 0.35);
+  /* ------------------------------------------------ */
+  /* FIXME:  GENERAL COLORS - BOX SHADOWS             */
+  /* ------------------------------------------------ */
+  --color-box-shadow-01: 3px 5px 20px rgba(0, 0, 0, 0.35);
+  --color-box-shadow-02: 0px 5px 4px rgba(0, 0, 0, 0.35);
+  --color-box-shadow-03: 0px 1px 5px 3px rgba(0, 0, 0, 0.15);
+  --color-box-shadow-04: 0px 5px 20px rgba(0, 0, 0, 0.35);
+  /* ------------------------------------------------ */
+  /* FIXME:  SELL YOUR PROFESSIONAL SERVICE           */
+  /* ------------------------------------------------ */
+  --color-proservices-hex: #01a7cf;
+  --color-proservices-rgb: rgb(1, 167, 207);
+  --color-proservices-page-background: white;
+  --color-proservices-button-background: #01a7cf;
+  --color-proservices-button-text: white;
+  --color-proservices-accordian-item-background: white;
+  --color-proservices-accordian-item-text: black;
+  --color-proservices-accordian-item-header-active: #01a7cf;
+  --color-proservices-accordian-item-plus-and-minus-sign: #01a7cf;
+  --color-proservices-accordian-item-seperation-line: #edeade;
+  --color-proservices-team-accordian-item-seperation-line-alternative: #d3d3d3;
+  --color-proservices-page-header-text: white;
+  --color-proservices-input-border: #ccc;
+  --color-proservices-input-border-focus: #01a7cf;
+  --color-proservices-custom-checkbox-border: #ccc;
+  --color-proservices-custom-checkbox-background: white;
+  --color-proservices-custom-checkbox-checkmark: #01a7cf;
+  --color-proservices-custom-checkbox-focus: #01a7cf;
+  --color-proservices-custom-checkbox-disabled: #959495;
+  --color-proservices-custom-fileinput-background: white;
+  --color-proservices-custom-fileinput-background-hover: #01a7cf;
+  --color-proservices-custom-fileinput-background-hover-text: white;
+  --color-proservices-custom-fileinput-label-text: black;
 }
 
 * {
@@ -81,7 +52,7 @@ html {
 
 body {
   font-size: 1.6rem;
-  background-color: var(--color-page-background);
+  background-color: var(--color-proservices-page-background);
 }
 
 /* ===================================================================================================================== */
@@ -186,7 +157,7 @@ h6 {
 /* FIXME:  VIEW - MOBILE FIRST     */
 /* ------------------------------- */
 
-.page__title h5 {
+.proservices__page__title h5 {
   display: flex;
   justify-content: center;
   justify-items: center;
@@ -207,7 +178,7 @@ h6 {
 /* FIXME:  VIEW - MOBILE FIRST     */
 /* ------------------------------- */
 
-.video__container {
+.proservices__video__container {
   position: relative;
   height: 0;
   width: 100%;
@@ -215,7 +186,7 @@ h6 {
   padding: 0rem 0rem 56.25% 0rem;
 }
 
-.video__container iframe {
+.proservices__video__container iframe {
   position: absolute;
   top: 0;
   left: 0;
@@ -230,7 +201,7 @@ h6 {
 /* ------------------------------- */
 
 @media screen and (min-width: 768px) {
-  .video__container iframe {
+  .proservices__video__container iframe {
     padding: 0.2rem 0.75rem 0.2rem 0.75rem;
     /* border-radius: 2rem; */
   }
@@ -244,17 +215,15 @@ h6 {
 /* FIXME:  VIEW - MOBILE FIRST     */
 /* ------------------------------- */
 
-.sellingplan__banner {
+.proservices__banner {
   position: relative;
   margin: 2rem 0.4rem 2rem 0.4rem;
 }
 
-.sellingplan__banner img {
+.proservices__banner img {
   width: 100%;
   height: auto;
-  /* border: 1px solid lightgray; */
   border-radius: 0.5rem;
-  /* box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.35); */
   padding: 0.2rem 0.2rem 0.2rem 0.2rem;
 }
 
@@ -262,7 +231,7 @@ h6 {
 /* TODO:  DOWNLOAD PDF BROCHURE  */
 /* ----------------------------- */
 
-.download__pdf {
+.proservices__download__pdf {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -270,9 +239,36 @@ h6 {
   margin: -0.5rem 0rem -2rem 0rem;
 }
 
-.download__pdf a {
+.proservices__download__pdf a {
   color: white;
   text-decoration: none;
+}
+
+button.proservices__link__pdf__brochure {
+  background: var(--color-proservices-button-background);
+  color: var(--color-proservices-button-text);
+  border: 0;
+  outline: 0;
+  border-radius: 0.5rem;
+  width: 20rem;
+  height: 3rem;
+  font-size: 1.2rem;
+  font-weight: 500;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+  margin: 0.5rem 2rem 3rem 2rem;
+  padding: 1rem 1rem 1rem 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  cursor: pointer;
+  text-decoration: none;
+  transition: transform 0.5s ease-in-out;
+}
+
+button.proservices__link__pdf__brochure:hover {
+  transform: scale(1.05);
 }
 
 /* ------------------------------- */
@@ -283,7 +279,7 @@ h6 {
 /* TODO:  PART 4A - SELLING PLAN 4 - SELL YOUR PROFESSIONAL SERVICE - ACCORDIAN "MAIN" CONTAINER (HOLDING ALL ELEMENTS)  */
 /* ===================================================================================================================== */
 
-.accordian {
+.proservices__accordian {
   width: 95%;
   max-width: 128rem;
   margin: 2rem auto 2rem auto;
@@ -294,18 +290,18 @@ h6 {
 /* TODO:  PART 4B - SELLING PLAN 4 - SELL YOUR PROFESSIONAL SERVICE - ACCORDIAN "ITEMS" CONTAINER (HOLDING ALL ITEMS)    */
 /* ===================================================================================================================== */
 
-.accordian_item {
-  background-color: var(--color-accordian-item-background);
+.proservices__accordian_item {
+  background-color: var(--color-proservices-accordian-item-background);
   color: var(--color-accordian-item-text);
   margin: 1rem 0rem 1rem 0rem;
   border-radius: 0.5rem;
-  box-shadow: 3px 5px 20px 0 rgba(0, 0, 0, 0.35);
+  box-shadow: var(--color-box-shadow-01);
 }
 /* ===================================================================================================================== */
 /* TODO:  PART 4C - SELLING PLAN 4 - SELL YOUR PROFESSIONAL SERVICE - ACCORDIAN - ITEM (HEADER)                          */
 /* ===================================================================================================================== */
 
-.accordian-item-header {
+.proservices__accordian-item-header {
   display: flex;
   position: relative;
   align-items: center;
@@ -322,26 +318,26 @@ h6 {
 /* FIXME:  NOTE:  THE CSS ENTITY CODE FOR PLUS SIGN "+" = "\002B" */
 /* FIXME:  NOTE:  THE CSS ENTITY CODE FOR DOWN ARROW "v" = \25BE */
 
-.accordian-item-header::after {
+.proservices__accordian-item-header::after {
   /* content: "\25BE"; */
   content: "\002B";
   font-size: 2rem;
   position: absolute;
   right: 1rem;
-  color: var(--color-accordian-item-plus-and-minus-sign);
+  color: var(--color-proservices-accordian-item-plus-and-minus-sign);
   transition: transform 0.5s ease-in-out;
 }
 
 /* FIXME:  NOTE:  THE CSS ENTITY CODE FOR MINUS SIGN "-" = "\2212" */
 
-.accordian-item-header.active::after {
+.proservices__accordian-item-header.active::after {
   /* transform: rotate(-180deg); */
   content: "\2212";
   transform: none;
 }
 
-.accordian-item-header.active {
-  color: var(--color-accordian-item-header-active);
+.proservices__accordian-item-header.active {
+  color: var(--color-proservices-accordian-item-header-active);
 }
 
 /* ===================================================================================================================== */
@@ -350,7 +346,7 @@ h6 {
 
 /* ITEM - MAIN CONTAINER */
 
-.accordian-item-body {
+.proservices__accordian-item-body {
   /* display: none; */
   max-height: 0;
   overflow: hidden;
@@ -359,17 +355,18 @@ h6 {
 
 /* ITEM - ALL ELEMENTS CONTAINER */
 
-.accordian-item-body-content {
+.proservices__accordian-item-body-content {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin: 0rem 0rem 0rem 0rem;
   padding: 0.5rem 1rem 0.5rem 1rem;
-  border-bottom: 1px solid var(--color-accordian-item-seperation-line);
+  border-bottom: 1px solid
+    var(--color-proservices-team-accordian-item-seperation-line-alternative);
   /* border: 1px solid red; */
 }
 
-.content-statement {
+.proservices__content-statement {
   max-width: 900px;
   font-size: 1.2rem;
   font-weight: 500;
@@ -380,7 +377,7 @@ h6 {
   /* border: 1px solid green; */
 }
 
-.content-confirmation {
+.proservices__content-confirmation {
   min-width: 200px;
   display: flex;
   flex-direction: column;
@@ -388,16 +385,17 @@ h6 {
   align-items: center;
   line-height: 0.5;
   padding: 0.5rem 0.5rem 0.5rem 0.5rem;
-  border-left: 1px solid var(--color-accordian-item-seperation-line);
+  border-left: 1px solid
+    var(--color-proservices-team-accordian-item-seperation-line-alternative);
   /* border: 1px solid red; */
 }
 
-.confirmation-image img {
+.proservices__confirmation-image img {
   width: 3rem;
   height: 3rem;
 }
 
-.confirmation-text {
+.proservices__confirmation-text {
   font-size: 1.1rem;
   line-height: 0.5;
   padding: 0.5rem 0.5rem 0.5rem 0.5rem;
@@ -408,19 +406,19 @@ h6 {
 /* ===================================================================================================================== */
 
 @media screen and (max-width: 430px) {
-  .accordian-item-header {
+  .proservices__accordian-item-header {
     font-size: 1rem;
     justify-content: center;
     text-align: center;
   }
 
-  .accordian-item-body-content {
+  .proservices__accordian-item-body-content {
     flex-direction: column;
     margin: 0rem 0rem 0rem 0rem;
     padding: 0.5rem 1rem 0.5rem 1rem;
   }
 
-  .content-statement {
+  .proservices__content-statement {
     justify-content: center;
     text-align: center;
     max-width: 280px;
@@ -428,78 +426,21 @@ h6 {
     padding: 0rem 0.5rem 0rem 0.5rem;
   }
 
-  .content-confirmation {
+  .proservices__content-confirmation {
     padding: 0.25rem 0.5rem 0.25rem 0.5rem;
     border-left: none;
   }
 
-  .confirmation-image img {
+  .proservices__confirmation-image img {
     width: 2.5rem;
     height: 2.5rem;
   }
 
-  .confirmation-text {
+  .proservices__confirmation-text {
     font-size: 1rem;
     padding: 0.5rem 0.5rem 0.25rem 0.5rem;
   }
 }
-
-/* ----------------------------------------------------------------------------------------- */
-/* FIXME:  GOOGLE CHROME DEVICE - BREAKPOINTS                          TODO: VARIOUS DEVICES */
-/* ----------------------------------------------------------------------------------------- */
-
-/* TODO:  SAMSUNG GALAXY FOLD  TODO: */
-/* @media screen and (min-width: 280px) and (min-height: 653px) {
-                } */
-
-/* TODO:  SAMSUNG GALAXY S8+  TODO: */
-/* @media screen and (min-width: 360px) and (min-height: 740px) {
-                } */
-
-/* TODO:  APPLE IPHONE SE  TODO: */
-/* @media screen and (min-width: 375px) and (min-height: 667px) {
-                } */
-
-/* TODO:  APPLE IPHONE 12 PRO  TODO: */
-/* @media screen and (min-width: 390px) and (min-height: 844px) {
-                } */
-
-/* TODO:  PIXEL 5  TODO: */
-/* @media screen and (min-width: 393px) and (min-height: 851px) {
-                } */
-
-/* TODO:  SAMSUNG GALAXY A51/A71  TODO: */
-/* TODO:  SAMSUNG GALAXY S20 ULTRA  TODO: */
-/* @media screen and (min-width: 412px) and (min-height: 914px) {
-                } */
-
-/* TODO:  APPLE IPHONE XR  TODO: */
-/* @media screen and (min-width: 414px) and (min-height: 896px) {
-                } */
-
-/* TODO:  SURFACE DUO  TODO: */
-/* @media screen and (min-width: 540px) and (min-height: 720px) {
-                } */
-
-/* TODO:  APPLE IPAD MINI  TODO: */
-/* @media screen and (min-width: 768px) and (min-height: 1024px) {
-                } */
-
-/* TODO:  APPLE IPAD AIR  TODO: */
-/* @media screen and (min-width: 820px) and (min-height: 1180px) {
-                } */
-
-/* TODO:  SURFACE PRO 7  TODO: */
-/* @media screen and (min-width: 912px) and (min-height: 1368px) {
-                } */
-
-/* TODO:  NEST HUB  TODO: */
-/* @media screen and (min-width: 1024px) and (min-height: 600) {
-                } */
-
-/* TODO:  NEST HUB MAX  TODO: */
-/* @media screen and (min-width: 1280px) and (min-height: 800px) {
-                } */
 
 /* ===================================================================================================================== */
 /* TODO:  PART 5 - SELLING PLAN 4 - SELL YOUR PROFESSIONAL SERVICE - FORM HEADERS (ON REGISTRATION FORM)                 */
@@ -509,7 +450,7 @@ h6 {
 /* FIXME:  VIEW - MOBILE FIRST     */
 /* ------------------------------- */
 
-.registration_form__header {
+.proservices__registration_form__header {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -517,19 +458,19 @@ h6 {
   font-size: 1.5rem;
   font-weight: 500;
   letter-spacing: 0.2rem;
-  background-color: var(--color-professionalservices);
-  color: var(--color-page-header-text);
+  background-color: var(--color-proservices-hex);
+  color: var(--color-proservices-page-header-text);
   margin: 2.5rem 0.4rem 2rem 0.4rem;
   padding: 0.5rem 1rem 0.5rem 1rem;
   border-radius: 0.5rem;
-  box-shadow: 3px 5px 20px 0 rgba(0, 0, 0, 0.35);
+  box-shadow: var(--color-box-shadow-01);
 }
 
 /* ------------------------- */
 /* FIXME:  PRIVACY STATEMENT */
 /* ------------------------- */
 
-.privacy__statement {
+.proservices__privacy__statement {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -538,14 +479,14 @@ h6 {
   text-transform: uppercase;
 }
 
-.privacy__statement strong {
+.proservices__privacy__statement strong {
   text-decoration: none;
-  color: var(--color-professionalservices);
+  color: var(--color-proservices-hex);
 }
 
-.privacy__statement a {
+.proservices__privacy__statement a {
   text-decoration: none;
-  color: var(--color-professionalservices);
+  color: var(--color-proservices-hex);
   cursor: pointer;
 }
 
@@ -554,7 +495,7 @@ h6 {
 /* ------------------------------- */
 
 @media screen and (max-width: 430px) {
-  .registration_form__header {
+  .proservices__registration_form__header {
     font-size: 1rem;
     text-align: center;
   }
@@ -568,15 +509,15 @@ h6 {
 /* FIXME:  FORM CONTAINER  FIXME:                 */
 /* ---------------------------------------------- */
 
-/* form {
-                width: 100vw;
-              } */
+.proservices__form__group {
+  margin: 0rem 0rem 1rem 1rem;
+}
 
 /* ---------------------------------------------- */
 /* FIXME:  FORM LABEL  FIXME:                     */
 /* ---------------------------------------------- */
 
-label {
+.proservices__form__group label {
   display: block;
   font-size: 1.2rem;
   font-weight: 600;
@@ -584,7 +525,7 @@ label {
   margin: 0.5rem 1.75rem 0.5rem 1.75rem;
 }
 
-input::placeholder {
+.proservices__form__group input::placeholder {
   font-family: "Poppins", sans-serif;
 }
 
@@ -593,13 +534,11 @@ input::placeholder {
 /* e.g. "NAME" or "LAST NAME" etc.                */
 /* ---------------------------------------------- */
 
-input[type="text"] {
+.proservices__form__group input[type="text"] {
   /* width: 25rem; */
   width: 96%;
   border-radius: 0.5rem;
-  border: 1px solid var(--color-input-border);
-  /* box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.35); */
-  /* box-shadow: 0 5px 4px rgba(0, 0, 0, 0.35); */
+  border: 1px solid var(--color-proservices-input-border);
   margin: 0.5rem 1.4rem 0.5rem 1.4rem;
   padding: 0.5rem 1rem 0.5rem 1rem;
   font-size: 1.2rem;
@@ -607,8 +546,8 @@ input[type="text"] {
   transition: border-color 0.15s, box-shadow 0.15s;
 }
 
-input[type="text"]:focus {
-  border-color: var(--color-input-border-focus);
+.proservices__form__group input[type="text"]:focus {
+  border-color: var(--color-proservices-input-border-focus);
   box-shadow: 0 0 0 2px rgba(1, 167, 207, 0.95);
   outline: 0;
 }
@@ -618,13 +557,11 @@ input[type="text"]:focus {
 /* e.g. "TELEPHONE" or "MOBILE" Number etc.       */
 /* ---------------------------------------------- */
 
-input[type="tel"] {
+.proservices__form__group input[type="tel"] {
   /* width: 25rem; */
   width: 96%;
   border-radius: 0.5rem;
-  border: 1px solid var(--color-input-border);
-  /* box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.35); */
-  /* box-shadow: 0 5px 4px rgba(0, 0, 0, 0.35); */
+  border: 1px solid var(--color-proservices-input-border);
   margin: 0.5rem 1.4rem 0.5rem 1.4rem;
   padding: 0.5rem 1rem 0.5rem 1rem;
   font-size: 1.2rem;
@@ -632,8 +569,8 @@ input[type="tel"] {
   transition: border-color 0.15s, box-shadow 0.15s;
 }
 
-input[type="tel"]:focus {
-  border-color: var(--color-input-border-focus);
+.proservices__form__group input[type="tel"]:focus {
+  border-color: var(--color-proservices-input-border-focus);
   box-shadow: 0 0 0 2px rgba(1, 167, 207, 0.95);
   outline: 0;
 }
@@ -643,14 +580,12 @@ input[type="tel"]:focus {
 /* Runs over multiple lines (rows) e.g. "Address" */
 /* ---------------------------------------------- */
 
-textarea {
+.proservices__form__group textarea {
   resize: none;
   /* width: 25rem; */
   width: 96%;
   border-radius: 0.5rem;
-  border: 1px solid var(--color-input-border);
-  /* box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.35); */
-  /* box-shadow: 0 5px 4px rgba(0, 0, 0, 0.35); */
+  border: 1px solid var(--color-proservices-input-border);
   margin: 0.5rem 1.4rem 0.5rem 1.4rem;
   padding: 0.5rem 1rem 0.5rem 1rem;
   font-size: 1.2rem;
@@ -659,8 +594,8 @@ textarea {
   transition: border-color 0.15s, box-shadow 0.15s;
 }
 
-textarea:focus {
-  border-color: var(--color-input-border-focus);
+.proservices__form__group textarea:focus {
+  border-color: var(--color-proservices-input-border-focus);
   box-shadow: 0 0 0 2px rgba(1, 167, 207, 0.95);
   outline: 0;
 }
@@ -670,13 +605,11 @@ textarea:focus {
 /* e.g. Countries, Provinces, Titles etc.         */
 /* ---------------------------------------------- */
 
-select {
+.proservices__form__group select {
   /* width: 25rem; */
   width: 96%;
   border-radius: 0.5rem;
-  border: 1px solid var(--color-input-border);
-  /* box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.35); */
-  /* box-shadow: 0 5px 4px rgba(0, 0, 0, 0.35); */
+  border: 1px solid var(--color-proservices-input-border);
   margin: 0.5rem 1.4rem 0.5rem 1.4rem;
   padding: 0.5rem 1rem 0.5rem 1rem;
   font-size: 1.2rem;
@@ -684,8 +617,8 @@ select {
   transition: border-color 0.15s, box-shadow 0.15s;
 }
 
-select:focus {
-  border-color: var(--color-input-border-focus);
+.proservices__form__group select:focus {
+  border-color: var(--color-proservices-input-border-focus);
   box-shadow: 0 0 0 2px rgba(1, 167, 207, 0.95);
   outline: 0;
 }
@@ -698,29 +631,39 @@ select:focus {
 /* FIXME:  INPUT FIELD = CHECKBOX  FIXME:  */
 /* --------------------------------------- */
 
-.checkbox__option {
+.proservices__checkbox__option {
   font-size: 1.2rem;
-  font-weight: 600;
-  line-height: 1.1;
+  font-weight: 500;
+  line-height: 1.25;
   text-transform: none;
   text-align: justify;
   display: grid;
   grid-template-columns: 1rem auto;
-  gap: 2rem;
-  margin: 2rem 1.5rem 2rem 1.4rem;
+  gap: 3rem;
+  margin: 2rem 0rem 2rem 0rem;
+  padding: 1rem 1.5rem 0rem 0rem;
   cursor: pointer;
+}
+
+label.proservices__checkbox__option {
+  display: grid;
+  text-transform: initial;
+  font-size: 1.2rem;
+  font-weight: 500;
+  line-height: 1.25;
+  color: black;
 }
 
 /* ------------------------------------ */
 /* THIS IS TO HIDE THE NATIVE CHECKBOX  */
 /* ------------------------------------ */
 
-input[type="checkbox"] {
+.proservices__checkbox__option input[type="checkbox"] {
   /* Add if not using autoprefixer */
   -webkit-appearance: none;
   appearance: none;
   /* For iOS < 15 to remove gradient background */
-  background-color: var(--color-custom-checkbox-background);
+  background-color: var(--color-proservices-custom-checkbox-background);
   /* Not removed via appearance */
   margin: 0;
 }
@@ -729,15 +672,15 @@ input[type="checkbox"] {
 /* THIS IS TO DISPLAY THE CUSTOM CHECKBOX  */
 /* --------------------------------------- */
 
-input[type="checkbox"] {
+.proservices__checkbox__option input[type="checkbox"] {
   appearance: none;
-  background-color: var(--color-custom-checkbox-background);
+  background-color: var(--color-proservices-custom-checkbox-background);
   margin: 0;
   font: inherit;
-  color: var(--color-custom-checkbox-border);
+  color: var(--color-proservices-custom-checkbox-border);
   width: 1.5rem;
   height: 1.5rem;
-  border: 0.15em solid var(--color-custom-checkbox-border);
+  border: 0.15em solid var(--color-proservices-custom-checkbox-border);
   border-radius: 0.15em;
   transform: translateY(-0.075em);
   display: grid;
@@ -745,7 +688,7 @@ input[type="checkbox"] {
   cursor: pointer;
 }
 
-.checkbox__option + .checkbox__option {
+.proservices__checkbox__option + .proservices__checkbox__option {
   margin-top: 1rem;
 }
 
@@ -753,13 +696,13 @@ input[type="checkbox"] {
 /* CUSTOM CHECKBOX - CHECKED STATE         */
 /* --------------------------------------- */
 
-input[type="checkbox"]::before {
+.proservices__checkbox__option input[type="checkbox"]::before {
   content: "";
   width: 0.7rem;
   height: 0.7rem;
   transform: scale(0);
   transition: 120ms transform ease-in-out;
-  box-shadow: inset 1em 1em var(--color-custom-checkbox-checkmark);
+  box-shadow: inset 1em 1em var(--color-proservices-custom-checkbox-checkmark);
   /* Windows High Contrast Mode */
   background-color: CanvasText;
   /* Creating a checkmark with CLIP-PATH */
@@ -767,7 +710,7 @@ input[type="checkbox"]::before {
   clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
 }
 
-input[type="checkbox"]:checked::before {
+.proservices__checkbox__option input[type="checkbox"]:checked::before {
   transform: scale(1);
 }
 
@@ -775,8 +718,8 @@ input[type="checkbox"]:checked::before {
 /* CUSTOM CHECKBOX - FOCUSSED STATE        */
 /* --------------------------------------- */
 
-input[type="checkbox"]:focus {
-  outline: max(2px, 0.15em) solid var(--color-custom-checkbox-focus);
+.proservices__checkbox__option input[type="checkbox"]:focus {
+  outline: max(2px, 0.15em) solid var(--color-proservices-custom-checkbox-focus);
   outline-offset: max(1px, 0.15em);
 }
 
@@ -784,13 +727,13 @@ input[type="checkbox"]:focus {
 /* CUSTOM CHECKBOX - DISABLED STATE        */
 /* --------------------------------------- */
 
-.checkbox__option--disabled {
-  color: var(--color-custom-checkbox-disabled);
+.proservices__checkbox__option--disabled {
+  color: var(--color-proservices-custom-checkbox-disabled);
   cursor: not-allowed;
 }
 
-input[type="checkbox"]:disabled {
-  color: var(--color-custom-checkbox-disabled);
+.proservices__checkbox__option input[type="checkbox"]:disabled {
+  color: var(--color-proservices-custom-checkbox-disabled);
   cursor: not-allowed;
 }
 
@@ -806,25 +749,24 @@ input[type="checkbox"]:disabled {
 /* FIXME: INPUT FIELD TYPE = FILE          FIXME: */
 /* ---------------------------------------------- */
 
-.file-input {
+.proservices__file-input {
   display: inline-block;
   margin: 1rem 1.4rem 1rem 1.4rem;
   padding: 1rem 1rem 1rem 1rem;
   text-align: left;
-  background: var(--color-custom-fileinput-background);
+  background: var(--color-proservices-custom-fileinput-background);
   /* width: 450px; */
   width: 96%;
   position: relative;
   border-radius: 0.5rem;
-  box-shadow: 0px 5px 4px var(--color-custom-fileinput-shadow-01),
-    3px 5px 20px var(--color-custom-fileinput-shadow-02);
+  box-shadow: var(--color-box-shadow-02), var(--color-box-shadow-01);
 }
 
 /* ---------------------------------------------- */
 /* HIDING THE NATIVE FILE UPLOADER                */
 /* ---------------------------------------------- */
 
-.file-input > [type="file"] {
+.proservices__file-input > [type="file"] {
   position: absolute;
   top: 0;
   left: 0;
@@ -839,7 +781,7 @@ input[type="checkbox"]:disabled {
 /* STYLE AND DISPLAY THE CUSTOM FILE UPLOADER   */
 /* -------------------------------------------- */
 
-.file-input > .button {
+.proservices__file-input > .proservices__button {
   /* display: inline-block; */
   display: flex;
   justify-content: center;
@@ -848,31 +790,30 @@ input[type="checkbox"]:disabled {
   padding: 0.8rem 1rem 0.8rem 1rem;
   font-size: 1.3rem;
   font-weight: 500;
-  background: var(--color-custom-fileinput-background);
+  background: var(--color-proservices-custom-fileinput-background);
   border-radius: 0.5rem;
-  box-shadow: 0px 5px 4px var(--color-custom-fileinput-shadow-01),
-    3px 5px 20px var(--color-custom-fileinput-shadow-02);
+  box-shadow: var(--color-box-shadow-02), var(--color-box-shadow-01);
   cursor: pointer;
 }
 
-.file-input:hover > .button {
-  background: var(--color-custom-fileinput-background-hover);
-  color: var(--color-custom-fileinput-background-hover-text);
+.proservices__file-input:hover > .proservices__button {
+  background: var(--color-proservices-custom-fileinput-background-hover);
+  color: var(--color-proservices-custom-fileinput-background-hover-text);
 }
 
-.file-input > .label {
+.proservices__file-input > .proservices__label {
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 1.5rem 0.5rem 0rem 0.5rem;
   font-size: 0.9rem;
   font-weight: 500;
-  color: var(--color-custom-fileinput-label-text);
+  color: var(--color-proservices-custom-fileinput-label-text);
   white-space: nowrap;
   opacity: 0.5;
 }
 
-.file-input.-chosen > .label {
+.proservices__file-input.-chosen > .proservices__label {
   opacity: 1;
 }
 
@@ -881,8 +822,8 @@ input[type="checkbox"]:disabled {
   margin: 0rem 1rem 0rem 0rem;
 }
 
-label .label__strong {
-  color: var(--color-professionalservices);
+label .proservices__label__strong {
+  color: var(--color-proservices-hex);
 }
 
 /* ------------------------------------------------------------------------- */
@@ -893,13 +834,11 @@ label .label__strong {
 /* FIXME:  INPUT FIELD TYPE =  EMAIL  FIXME:  */
 /* ------------------------------------------ */
 
-input[type="email"] {
+.proservices__form__group input[type="email"] {
   /* width: 25rem; */
   width: 96%;
   border-radius: 0.5rem;
-  border: 1px solid var(--color-input-border);
-  /* box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.35); */
-  /* box-shadow: 0 5px 4px rgba(0, 0, 0, 0.35); */
+  border: 1px solid var(--color-proservices-input-border);
   margin: 0.5rem 1.4rem 0.5rem 1.4rem;
   padding: 0.5rem 1rem 0.5rem 1rem;
   font-size: 1.2rem;
@@ -907,8 +846,8 @@ input[type="email"] {
   transition: border-color 0.15s, box-shadow 0.15s;
 }
 
-input[type="email"]:focus {
-  border-color: var(--color-input-border-focus);
+.proservices__form__group input[type="email"]:focus {
+  border-color: var(--color-proservices-input-border-focus);
   box-shadow: 0 0 0 2px rgba(1, 167, 207, 0.95);
   outline: 0;
 }
@@ -917,9 +856,9 @@ input[type="email"]:focus {
 /* FIXME:  FORM BUTTONS  FIXME:  */
 /* ----------------------------- */
 
-button {
-  background: var(--color-button-background);
-  color: var(--color-button-text);
+.proservices__button__container button {
+  background: var(--color-proservices-button-background);
+  color: var(--color-proservices-button-text);
   border: 0;
   outline: 0;
   border-radius: 0.5rem;
@@ -937,24 +876,25 @@ button {
   text-align: center;
   cursor: pointer;
   text-decoration: none;
+  transition: transform 0.5s ease-in-out;
 }
 
-.button__container {
+.proservices__button__container button:hover {
+  transform: scale(1.05);
+}
+
+.proservices__button__container {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
 }
 
-.form__group {
-  margin: 0rem 0rem 1rem 1rem;
-}
-
 /* ---------------------------------------------- */
 /* FIXME:  STYLING - GOOGLE RECAPTCHA  FIXME:     */
 /* ---------------------------------------------- */
 
-.g-recaptcha {
+.proservices__form__group .g-recaptcha {
   margin: 2rem 1rem 2rem 1rem;
   display: flex;
   justify-content: center;
@@ -972,7 +912,7 @@ button {
 /* --------------------------------------------------------------- */
 
 @media screen and (max-width: 600px) {
-  button {
+  .proservices__button__container button {
     margin: 0rem 1rem 2rem 1rem;
     font-size: 1rem;
     display: flex;
@@ -981,56 +921,56 @@ button {
     text-align: center;
   }
 
-  .button__container {
+  .proservices__button__container {
     flex-direction: column;
   }
 
-  .file-input {
+  .proservices__file-input {
     margin: 1rem 0.2rem 1rem 0.2rem;
   }
 
-  label {
+  .proservices__form__group label {
     font-size: 1rem;
     margin: 0rem 0.6rem 0rem 0.5rem;
   }
 
-  input[type="email"] {
+  .proservices__form__group input[type="email"] {
     margin: 0.5rem 0.2rem 0.5rem 0.2rem;
   }
 
-  .checkbox__option {
+  .proservices__checkbox__option {
     font-size: 1.1rem;
     font-weight: 500;
     margin: 2rem 2rem 2rem 0.1rem;
   }
 
-  select {
+  .proservices__form__group select {
     margin: 0.5rem 0.1rem 0.5rem 0.1rem;
   }
 
-  textarea {
+  .proservices__form__group textarea {
     margin: 0.5rem 0.1rem 0.5rem 0.1rem;
   }
 
-  input[type="tel"] {
+  .proservices__form__group input[type="tel"] {
     margin: 0.5rem 0.1rem 0.5rem 0.1rem;
   }
 
-  input[type="text"] {
+  .proservices__form__group input[type="text"] {
     margin: 0.5rem 0.1rem 0.5rem 0.1rem;
   }
 
-  input[type="date"] {
+  .proservices__form__group input[type="date"] {
     margin: 0.5rem 0.1rem 0.5rem 0.1rem;
   }
 
-  input[type="number"] {
+  .proservices__form__group input[type="number"] {
     margin: 0.5rem 0.1rem 0.5rem 0.1rem;
   }
 }
 
 @media screen and (max-width: 350px) {
-  .g-recaptcha {
+  .proservices__form__group .g-recaptcha {
     margin: 2rem 1.5rem 2rem 4.5rem;
     transform: scale(0.8);
     -webkit-transform: scale(0.8);
