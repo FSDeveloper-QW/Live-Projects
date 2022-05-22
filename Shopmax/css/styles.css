@@ -391,6 +391,214 @@
   --color-skynamo-button-background: #e2218e;
   --color-skynamo-button-text: white;
   /* ------------------------------------------------ */
+  /* FIXME:  BECOME A RESELLER                        */
+  /* ------------------------------------------------ */
+  --color-resellers-hex: #f88e20;
+  --color-resellers-rgb: rgb(248, 142, 32);
+  --color-resellers-page-background: white;
+  --color-resellers-button-background: #f88e20;
+  --color-resellers-button-text: white;
+  --color-resellers-accordian-item-background: white;
+  --color-resellers-accordian-item-text: black;
+  --color-resellers-accordian-item-header-active: #f88e20;
+  --color-resellers-accordian-item-plus-and-minus-sign: #f88e20;
+  --color-resellers-accordian-item-seperation-line: #edeade;
+  --color-resellers-team-accordian-item-seperation-line-alternative: #d3d3d3;
+  --color-resellers-page-header-text: white;
+  --color-resellers-input-border: #ccc;
+  --color-resellers-input-border-focus: #f88e20;
+  --color-resellers-custom-checkbox-border: #ccc;
+  --color-resellers-custom-checkbox-background: white;
+  --color-resellers-custom-checkbox-checkmark: #f88e20;
+  --color-resellers-custom-checkbox-focus: #f88e20;
+  --color-resellers-custom-checkbox-disabled: #959495;
+  --color-resellers-custom-fileinput-background: white;
+  --color-resellers-custom-fileinput-background-hover: #f88e20;
+  --color-resellers-custom-fileinput-background-hover-text: white;
+  --color-resellers-custom-fileinput-label-text: black;
+  /* ------------------------------------------------ */
+  /* FIXME:  SELL YOUR PRODUCT                        */
+  /* ------------------------------------------------ */
+  --color-sellproducts-hex: #8b3365;
+  --color-sellproducts-rgb: rgb(139, 51, 101);
+  --color-sellproducts-page-background: white;
+  --color-sellproducts-button-background: #8b3365;
+  --color-sellproducts-button-text: white;
+  --color-sellproducts-accordian-item-background: white;
+  --color-sellproducts-accordian-item-text: black;
+  --color-sellproducts-accordian-item-header-active: #8b3365;
+  --color-sellproducts-accordian-item-plus-and-minus-sign: #8b3365;
+  --color-sellproducts-accordian-item-seperation-line: #edeade;
+  --color-sellproducts-team-accordian-item-seperation-line-alternative: #d3d3d3;
+  --color-sellproducts-page-header-text: white;
+  --color-sellproducts-input-border: #ccc;
+  --color-sellproducts-input-border-focus: #8b3365;
+  --color-sellproducts-custom-checkbox-border: #ccc;
+  --color-sellproducts-custom-checkbox-background: white;
+  --color-sellproducts-custom-checkbox-checkmark: #8b3365;
+  --color-sellproducts-custom-checkbox-focus: #8b3365;
+  --color-sellproducts-custom-checkbox-disabled: #959495;
+  --color-sellproducts-custom-fileinput-background: white;
+  --color-sellproducts-custom-fileinput-background-hover: #8b3365;
+  --color-sellproducts-custom-fileinput-background-hover-text: white;
+  --color-sellproducts-custom-fileinput-label-text: black;
+  /* ------------------------------------------------ */
+  /* FIXME:  SELL YOUR GENERAL SERVICE                */
+  /* ------------------------------------------------ */
+  --color-generalservices-hex: #544179;
+  --color-generalservices-rgb: rgb(84, 65, 121);
+  --color-generalservices-page-background: white;
+  --color-generalservices-button-background: #544179;
+  --color-generalservices-button-text: white;
+  --color-generalservices-accordian-item-background: white;
+  --color-generalservices-accordian-item-text: black;
+  --color-generalservices-accordian-item-header-active: #544179;
+  --color-generalservices-accordian-item-plus-and-minus-sign: #544179;
+  --color-generalservices-accordian-item-seperation-line: #edeade;
+  --color-generalservices-team-accordian-item-seperation-line-alternative: #d3d3d3;
+  --color-generalservices-page-header-text: white;
+  --color-generalservices-input-border: #ccc;
+  --color-generalservices-input-border-focus: #544179;
+  --color-generalservices-custom-checkbox-border: #ccc;
+  --color-generalservices-custom-checkbox-background: white;
+  --color-generalservices-custom-checkbox-checkmark: #544179;
+  --color-generalservices-custom-checkbox-focus: #544179;
+  --color-generalservices-custom-checkbox-disabled: #959495;
+  --color-generalservices-custom-fileinput-background: white;
+  --color-generalservices-custom-fileinput-background-hover: #544179;
+  --color-generalservices-custom-fileinput-background-hover-text: white;
+  --color-generalservices-custom-fileinput-label-text: black;
+  /* ------------------------------------------------ */
+  /* FIXME:  SELL YOUR PROFESSIONAL SERVICE           */
+  /* ------------------------------------------------ */
+  --color-proservices-hex: #01a7cf;
+  --color-proservices-rgb: rgb(1, 167, 207);
+  --color-proservices-page-background: white;
+  --color-proservices-button-background: #01a7cf;
+  --color-proservices-button-text: white;
+  --color-proservices-accordian-item-background: white;
+  --color-proservices-accordian-item-text: black;
+  --color-proservices-accordian-item-header-active: #01a7cf;
+  --color-proservices-accordian-item-plus-and-minus-sign: #01a7cf;
+  --color-proservices-accordian-item-seperation-line: #edeade;
+  --color-proservices-team-accordian-item-seperation-line-alternative: #d3d3d3;
+  --color-proservices-page-header-text: white;
+  --color-proservices-input-border: #ccc;
+  --color-proservices-input-border-focus: #01a7cf;
+  --color-proservices-custom-checkbox-border: #ccc;
+  --color-proservices-custom-checkbox-background: white;
+  --color-proservices-custom-checkbox-checkmark: #01a7cf;
+  --color-proservices-custom-checkbox-focus: #01a7cf;
+  --color-proservices-custom-checkbox-disabled: #959495;
+  --color-proservices-custom-fileinput-background: white;
+  --color-proservices-custom-fileinput-background-hover: #01a7cf;
+  --color-proservices-custom-fileinput-background-hover-text: white;
+  --color-proservices-custom-fileinput-label-text: black;
+  /* ------------------------------------------------ */
+  /* FIXME:  BRONZE INVESTING PLAN                    */
+  /* ------------------------------------------------ */
+  --color-bronze-hex: #986c43;
+  --color-bronze-rgb: rgb(152, 108, 67);
+  --color-bronze-page-background: white;
+  --color-bronze-button-background: #986c43;
+  --color-bronze-button-text: white;
+  --color-bronze-accordian-item-background: white;
+  --color-bronze-accordian-item-text: black;
+  --color-bronze-accordian-item-header-active: #986c43;
+  --color-bronze-accordian-item-plus-and-minus-sign: #986c43;
+  --color-bronze-accordian-item-seperation-line: #edeade;
+  --color-bronze-team-accordian-item-seperation-line-alternative: #d3d3d3;
+  --color-bronze-page-header-text: white;
+  --color-bronze-input-border: #ccc;
+  --color-bronze-input-border-focus: #986c43;
+  --color-bronze-custom-checkbox-border: #ccc;
+  --color-bronze-custom-checkbox-background: white;
+  --color-bronze-custom-checkbox-checkmark: #986c43;
+  --color-bronze-custom-checkbox-focus: #986c43;
+  --color-bronze-custom-checkbox-disabled: #959495;
+  --color-bronze-custom-fileinput-background: white;
+  --color-bronze-custom-fileinput-background-hover: #986c43;
+  --color-bronze-custom-fileinput-background-hover-text: white;
+  --color-bronze-custom-fileinput-label-text: black;
+  /* ------------------------------------------------ */
+  /* FIXME:  SILVER INVESTING PLAN                    */
+  /* ------------------------------------------------ */
+  --color-silver-hex: #7d7d7d;
+  --color-silver-rgb: rgb(125, 125, 125);
+  --color-silver-page-background: white;
+  --color-silver-button-background: #7d7d7d;
+  --color-silver-button-text: white;
+  --color-silver-accordian-item-background: white;
+  --color-silver-accordian-item-text: black;
+  --color-silver-accordian-item-header-active: #7d7d7d;
+  --color-silver-accordian-item-plus-and-minus-sign: #7d7d7d;
+  --color-silver-accordian-item-seperation-line: #edeade;
+  --color-silver-team-accordian-item-seperation-line-alternative: #d3d3d3;
+  --color-silver-page-header-text: white;
+  --color-silver-input-border: #ccc;
+  --color-silver-input-border-focus: #7d7d7d;
+  --color-silver-custom-checkbox-border: #ccc;
+  --color-silver-custom-checkbox-background: white;
+  --color-silver-custom-checkbox-checkmark: #7d7d7d;
+  --color-silver-custom-checkbox-focus: #7d7d7d;
+  --color-silver-custom-checkbox-disabled: #959495;
+  --color-silver-custom-fileinput-background: white;
+  --color-silver-custom-fileinput-background-hover: #7d7d7d;
+  --color-silver-custom-fileinput-background-hover-text: white;
+  --color-silver-custom-fileinput-label-text: black;
+  /* ------------------------------------------------ */
+  /* FIXME:  GOLD INVESTING PLAN                      */
+  /* ------------------------------------------------ */
+  --color-gold-hex: #dc9d04;
+  --color-gold-rgb: rgb(220, 157, 4);
+  --color-gold-page-background: white;
+  --color-gold-button-background: #dc9d04;
+  --color-gold-button-text: white;
+  --color-gold-accordian-item-background: white;
+  --color-gold-accordian-item-text: black;
+  --color-gold-accordian-item-header-active: #dc9d04;
+  --color-gold-accordian-item-plus-and-minus-sign: #dc9d04;
+  --color-gold-accordian-item-seperation-line: #edeade;
+  --color-gold-team-accordian-item-seperation-line-alternative: #d3d3d3;
+  --color-gold-page-header-text: white;
+  --color-gold-input-border: #ccc;
+  --color-gold-input-border-focus: #dc9d04;
+  --color-gold-custom-checkbox-border: #ccc;
+  --color-gold-custom-checkbox-background: white;
+  --color-gold-custom-checkbox-checkmark: #dc9d04;
+  --color-gold-custom-checkbox-focus: #dc9d04;
+  --color-gold-custom-checkbox-disabled: #959495;
+  --color-gold-custom-fileinput-background: white;
+  --color-gold-custom-fileinput-background-hover: #dc9d04;
+  --color-gold-custom-fileinput-background-hover-text: white;
+  --color-gold-custom-fileinput-label-text: black;
+  /* ------------------------------------------------ */
+  /* FIXME:  PLATINUM INVESTING PLAN                  */
+  /* ------------------------------------------------ */
+  --color-platinum-hex: #434343;
+  --color-platinum-rgb: rgb(67, 67, 67);
+  --color-platinum-page-background: white;
+  --color-platinum-button-background: #434343;
+  --color-platinum-button-text: white;
+  --color-platinum-accordian-item-background: white;
+  --color-platinum-accordian-item-text: black;
+  --color-platinum-accordian-item-header-active: #434343;
+  --color-platinum-accordian-item-plus-and-minus-sign: #434343;
+  --color-platinum-accordian-item-seperation-line: #edeade;
+  --color-platinum-team-accordian-item-seperation-line-alternative: #d3d3d3;
+  --color-platinum-page-header-text: white;
+  --color-platinum-input-border: #ccc;
+  --color-platinum-input-border-focus: #434343;
+  --color-platinum-custom-checkbox-border: #ccc;
+  --color-platinum-custom-checkbox-background: white;
+  --color-platinum-custom-checkbox-checkmark: #434343;
+  --color-platinum-custom-checkbox-focus: #434343;
+  --color-platinum-custom-checkbox-disabled: #959495;
+  --color-platinum-custom-fileinput-background: white;
+  --color-platinum-custom-fileinput-background-hover: #434343;
+  --color-platinum-custom-fileinput-background-hover-text: white;
+  --color-platinum-custom-fileinput-label-text: black;
+  /* ------------------------------------------------ */
   /* FIXME:  SECTION: COMPANY FOOTER                  */
   /* ------------------------------------------------ */
   --color-page-background: #f7f7f7;
@@ -12102,6 +12310,681 @@ label.skynamo__checkbox__option {
 /* ===================================================================================================================== */
 /* ===================================================================================================================== */
 /* FIXME:FIXME:                               SECTION - SKYNAMO (END)                                       FIXME:FIXME: */
+/* ===================================================================================================================== */
+/* ===================================================================================================================== */
+
+/* ===================================================================================================================== */
+/* ===================================================================================================================== */
+/* TODO:TODO:                            SECTION - BECOME A RESELLER (START)                                  TODO:TODO: */
+/* ===================================================================================================================== */
+/* ===================================================================================================================== */
+
+/* .become__a__reseller__page__title h5 {
+  position: relative;
+  top: 9rem;
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  text-transform: uppercase;
+  margin: 2.5rem 0rem 2.5rem 0rem;
+  text-align: center;
+  background: #eee;
+  border: 2px solid red;
+} */
+
+.become__a__reseller__section {
+  position: relative;
+  /* top: 9rem; */
+  top: 10rem;
+  /* top: 9rem; */
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  margin: 0rem 0rem 0rem 0rem;
+  padding: 0rem 0rem 2rem 0rem;
+  background-color: var(--color-what-we-do-page-background);
+  /* border: 2px solid red; */
+}
+
+/* .become__a__reseller__section img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+} */
+
+@media screen and (max-width: 830px) {
+  /* .become__a__reseller__page__title h5 {
+    position: relative;
+    top: 10rem;
+  } */
+  .become__a__reseller__section {
+    position: relative;
+    /* top: 9rem; */
+    /* top: 10rem; */
+    top: 11rem;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  /* .become__a__reseller__page__title h5 {
+    position: relative;
+    top: 13.5rem;
+  } */
+
+  .become__a__reseller__section {
+    position: relative;
+    /* top: 12.5rem; */
+    /* top: 13.5rem; */
+    top: 14.5rem;
+  }
+}
+
+/* ===================================================================================================================== */
+/* ===================================================================================================================== */
+/* FIXME:FIXME:                          SECTION - BECOME A RESELLER  (END)                                 FIXME:FIXME: */
+/* ===================================================================================================================== */
+/* ===================================================================================================================== */
+
+/* ===================================================================================================================== */
+/* ===================================================================================================================== */
+/* TODO:TODO:                            SECTION - SELL YOUR PRODUCT (START)                                  TODO:TODO: */
+/* ===================================================================================================================== */
+/* ===================================================================================================================== */
+
+/* .sell__your__product__page__title h5 {
+  position: relative;
+  top: 9rem;
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  text-transform: uppercase;
+  margin: 2.5rem 0rem 2.5rem 0rem;
+  text-align: center;
+  background: #eee;
+  border: 2px solid red;
+} */
+
+.sell__your__product__section {
+  position: relative;
+  /* top: 9rem; */
+  top: 10rem;
+  /* top: 9rem; */
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  margin: 0rem 0rem 0rem 0rem;
+  padding: 0rem 0rem 2rem 0rem;
+  background-color: var(--color-what-we-do-page-background);
+  /* border: 2px solid red; */
+}
+
+/* .sell__your__product__section img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+} */
+
+@media screen and (max-width: 830px) {
+  /* .sell__your__product__page__title h5 {
+    position: relative;
+    top: 10rem;
+  } */
+  .sell__your__product__section {
+    position: relative;
+    /* top: 9rem; */
+    /* top: 10rem; */
+    top: 11rem;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  /* .sell__your__product__page__title h5 {
+    position: relative;
+    top: 13.5rem;
+  } */
+
+  .sell__your__product__section {
+    position: relative;
+    /* top: 12.5rem; */
+    /* top: 13.5rem; */
+    top: 14.5rem;
+  }
+}
+
+/* ===================================================================================================================== */
+/* ===================================================================================================================== */
+/* FIXME:FIXME:                          SECTION - SELL YOUR PRODUCT  (END)                                 FIXME:FIXME: */
+/* ===================================================================================================================== */
+/* ===================================================================================================================== */
+
+/* ===================================================================================================================== */
+/* ===================================================================================================================== */
+/* TODO:TODO:                       SECTION - SELL YOUR GENERAL SERVICE (START)                               TODO:TODO: */
+/* ===================================================================================================================== */
+/* ===================================================================================================================== */
+
+/* .sell__your__general__service__page__title h5 {
+  position: relative;
+  top: 9rem;
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  text-transform: uppercase;
+  margin: 2.5rem 0rem 2.5rem 0rem;
+  text-align: center;
+  background: #eee;
+  border: 2px solid red;
+} */
+
+.sell__your__general__service__section {
+  position: relative;
+  /* top: 9rem; */
+  top: 10rem;
+  /* top: 9rem; */
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  margin: 0rem 0rem 0rem 0rem;
+  padding: 0rem 0rem 2rem 0rem;
+  background-color: var(--color-what-we-do-page-background);
+  /* border: 2px solid red; */
+}
+
+/* .sell__your__general__service__section img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+} */
+
+@media screen and (max-width: 830px) {
+  /* .sell__your__general__service__page__title h5 {
+    position: relative;
+    top: 10rem;
+  } */
+  .sell__your__general__service__section {
+    position: relative;
+    /* top: 9rem; */
+    /* top: 10rem; */
+    top: 11rem;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  /* .sell__your__general__service__page__title h5 {
+    position: relative;
+    top: 13.5rem;
+  } */
+
+  .sell__your__general__service__section {
+    position: relative;
+    /* top: 12.5rem; */
+    /* top: 13.5rem; */
+    top: 14.5rem;
+  }
+}
+
+/* ===================================================================================================================== */
+/* ===================================================================================================================== */
+/* FIXME:FIXME:                       SECTION - SELL YOUR GENERAL SERVICE  (END)                            FIXME:FIXME: */
+/* ===================================================================================================================== */
+/* ===================================================================================================================== */
+
+/* ===================================================================================================================== */
+/* ===================================================================================================================== */
+/* TODO:TODO:                       SECTION - SELL YOUR PROFESSIONAL SERVICE (START)                          TODO:TODO: */
+/* ===================================================================================================================== */
+/* ===================================================================================================================== */
+
+/* .sell__your__professional__service__page__title h5 {
+  position: relative;
+  top: 9rem;
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  text-transform: uppercase;
+  margin: 2.5rem 0rem 2.5rem 0rem;
+  text-align: center;
+  background: #eee;
+  border: 2px solid red;
+} */
+
+.sell__your__professional__service__section {
+  position: relative;
+  /* top: 9rem; */
+  top: 10rem;
+  /* top: 9rem; */
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  margin: 0rem 0rem 0rem 0rem;
+  padding: 0rem 0rem 2rem 0rem;
+  background-color: var(--color-what-we-do-page-background);
+  /* border: 2px solid red; */
+}
+
+/* .sell__your__professional__service__section img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+} */
+
+@media screen and (max-width: 830px) {
+  /* .sell__your__professional__service__page__title h5 {
+    position: relative;
+    top: 10rem;
+  } */
+  .sell__your__professional__service__section {
+    position: relative;
+    /* top: 9rem; */
+    /* top: 10rem; */
+    top: 11rem;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  /* .sell__your__professional__service__page__title h5 {
+    position: relative;
+    top: 13.5rem;
+  } */
+
+  .sell__your__professional__service__section {
+    position: relative;
+    /* top: 12.5rem; */
+    /* top: 13.5rem; */
+    top: 14.5rem;
+  }
+}
+
+/* ===================================================================================================================== */
+/* ===================================================================================================================== */
+/* FIXME:FIXME:                       SECTION - SELL YOUR PROFESSIONAL SERVICE  (END)                       FIXME:FIXME: */
+/* ===================================================================================================================== */
+/* ===================================================================================================================== */
+
+/* ===================================================================================================================== */
+/* ===================================================================================================================== */
+/* TODO:TODO:                             SECTION - BRONZE INVESTMENT PLAN (START)                            TODO:TODO: */
+/* ===================================================================================================================== */
+/* ===================================================================================================================== */
+
+/* .bronze__investing__plan__service__page__title h5 {
+  position: relative;
+  top: 9rem;
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  text-transform: uppercase;
+  margin: 2.5rem 0rem 2.5rem 0rem;
+  text-align: center;
+  background: #eee;
+  border: 2px solid red;
+} */
+
+.bronze__investing__plan__service__section {
+  position: relative;
+  /* top: 9rem; */
+  top: 10rem;
+  /* top: 9rem; */
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  margin: 0rem 0rem 0rem 0rem;
+  padding: 0rem 0rem 2rem 0rem;
+  background-color: var(--color-what-we-do-page-background);
+  /* border: 2px solid red; */
+}
+
+/* .bronze__investing__plan__service__section img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+} */
+
+@media screen and (max-width: 830px) {
+  /* .bronze__investing__plan__service__page__title h5 {
+    position: relative;
+    top: 10rem;
+  } */
+  .bronze__investing__plan__service__section {
+    position: relative;
+    /* top: 9rem; */
+    /* top: 10rem; */
+    top: 11rem;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  /* .bronze__investing__plan__service__page__title h5 {
+    position: relative;
+    top: 13.5rem;
+  } */
+
+  .bronze__investing__plan__service__section {
+    position: relative;
+    /* top: 12.5rem; */
+    /* top: 13.5rem; */
+    top: 14.5rem;
+  }
+}
+
+/* ===================================================================================================================== */
+/* ===================================================================================================================== */
+/* FIXME:FIXME:                            SECTION - BRONZE INVESTMENT PLAN (END)                           FIXME:FIXME: */
+/* ===================================================================================================================== */
+/* ===================================================================================================================== */
+
+/* ===================================================================================================================== */
+/* ===================================================================================================================== */
+/* TODO:TODO:                             SECTION - SILVER INVESTMENT PLAN (START)                            TODO:TODO: */
+/* ===================================================================================================================== */
+/* ===================================================================================================================== */
+
+/* .silver__investing__plan__service__page__title h5 {
+  position: relative;
+  top: 9rem;
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  text-transform: uppercase;
+  margin: 2.5rem 0rem 2.5rem 0rem;
+  text-align: center;
+  background: #eee;
+  border: 2px solid red;
+} */
+
+.silver__investing__plan__service__section {
+  position: relative;
+  /* top: 9rem; */
+  top: 10rem;
+  /* top: 9rem; */
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  margin: 0rem 0rem 0rem 0rem;
+  padding: 0rem 0rem 2rem 0rem;
+  background-color: var(--color-what-we-do-page-background);
+  /* border: 2px solid red; */
+}
+
+/* .silver__investing__plan__service__section img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+} */
+
+@media screen and (max-width: 830px) {
+  /* .silver__investing__plan__service__page__title h5 {
+    position: relative;
+    top: 10rem;
+  } */
+  .silver__investing__plan__service__section {
+    position: relative;
+    /* top: 9rem; */
+    /* top: 10rem; */
+    top: 11rem;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  /* .silver__investing__plan__service__page__title h5 {
+    position: relative;
+    top: 13.5rem;
+  } */
+
+  .silver__investing__plan__service__section {
+    position: relative;
+    /* top: 12.5rem; */
+    /* top: 13.5rem; */
+    top: 14.5rem;
+  }
+}
+
+/* ===================================================================================================================== */
+/* ===================================================================================================================== */
+/* FIXME:FIXME:                            SECTION - SILVER INVESTMENT PLAN (END)                           FIXME:FIXME: */
+/* ===================================================================================================================== */
+/* ===================================================================================================================== */
+
+/* ===================================================================================================================== */
+/* ===================================================================================================================== */
+/* TODO:TODO:                               SECTION - GOLD INVESTMENT PLAN (START)                            TODO:TODO: */
+/* ===================================================================================================================== */
+/* ===================================================================================================================== */
+
+/* .gold__investing__plan__service__page__title h5 {
+  position: relative;
+  top: 9rem;
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  text-transform: uppercase;
+  margin: 2.5rem 0rem 2.5rem 0rem;
+  text-align: center;
+  background: #eee;
+  border: 2px solid red;
+} */
+
+.gold__investing__plan__service__section {
+  position: relative;
+  /* top: 9rem; */
+  top: 10rem;
+  /* top: 9rem; */
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  margin: 0rem 0rem 0rem 0rem;
+  padding: 0rem 0rem 2rem 0rem;
+  background-color: var(--color-what-we-do-page-background);
+  /* border: 2px solid red; */
+}
+
+/* .gold__investing__plan__service__section img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+} */
+
+@media screen and (max-width: 830px) {
+  /* .gold__investing__plan__service__page__title h5 {
+    position: relative;
+    top: 10rem;
+  } */
+  .gold__investing__plan__service__section {
+    position: relative;
+    /* top: 9rem; */
+    /* top: 10rem; */
+    top: 11rem;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  /* .gold__investing__plan__service__page__title h5 {
+    position: relative;
+    top: 13.5rem;
+  } */
+
+  .gold__investing__plan__service__section {
+    position: relative;
+    /* top: 12.5rem; */
+    /* top: 13.5rem; */
+    top: 14.5rem;
+  }
+}
+
+/* ===================================================================================================================== */
+/* ===================================================================================================================== */
+/* FIXME:FIXME:                              SECTION - GOLD INVESTMENT PLAN (END)                           FIXME:FIXME: */
+/* ===================================================================================================================== */
+/* ===================================================================================================================== */
+
+/* ===================================================================================================================== */
+/* ===================================================================================================================== */
+/* TODO:TODO:                           SECTION - PLATINUM INVESTMENT PLAN (START)                            TODO:TODO: */
+/* ===================================================================================================================== */
+/* ===================================================================================================================== */
+
+/* .platinum__investing__plan__service__page__title h5 {
+  position: relative;
+  top: 9rem;
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  text-transform: uppercase;
+  margin: 2.5rem 0rem 2.5rem 0rem;
+  text-align: center;
+  background: #eee;
+  border: 2px solid red;
+} */
+
+.platinum__investing__plan__service__section {
+  position: relative;
+  /* top: 9rem; */
+  top: 10rem;
+  /* top: 9rem; */
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  margin: 0rem 0rem 0rem 0rem;
+  padding: 0rem 0rem 2rem 0rem;
+  background-color: var(--color-what-we-do-page-background);
+  /* border: 2px solid red; */
+}
+
+/* .platinum__investing__plan__service__section img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+} */
+
+@media screen and (max-width: 830px) {
+  /* .platinum__investing__plan__service__page__title h5 {
+    position: relative;
+    top: 10rem;
+  } */
+  .platinum__investing__plan__service__section {
+    position: relative;
+    /* top: 9rem; */
+    /* top: 10rem; */
+    top: 11rem;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  /* .platinum__investing__plan__service__page__title h5 {
+    position: relative;
+    top: 13.5rem;
+  } */
+
+  .platinum__investing__plan__service__section {
+    position: relative;
+    /* top: 12.5rem; */
+    /* top: 13.5rem; */
+    top: 14.5rem;
+  }
+}
+
+/* ===================================================================================================================== */
+/* ===================================================================================================================== */
+/* FIXME:FIXME:                           SECTION - PLATINUM INVESTMENT PLAN (END)                          FIXME:FIXME: */
+/* ===================================================================================================================== */
+/* ===================================================================================================================== */
+
+/* ===================================================================================================================== */
+/* ===================================================================================================================== */
+/* TODO:TODO:                                 SECTION - TEMPLATE NEW (START)                                  TODO:TODO: */
+/* ===================================================================================================================== */
+/* ===================================================================================================================== */
+
+/* .new__templates__page__title h5 {
+  position: relative;
+  top: 9rem;
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  text-transform: uppercase;
+  margin: 2.5rem 0rem 2.5rem 0rem;
+  text-align: center;
+  background: #eee;
+  border: 2px solid red;
+} */
+
+.new__templates__section {
+  position: relative;
+  /* top: 9rem; */
+  top: 10rem;
+  /* top: 9rem; */
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  margin: 0rem 0rem 0rem 0rem;
+  padding: 0rem 0rem 2rem 0rem;
+  background-color: var(--color-what-we-do-page-background);
+  /* border: 2px solid red; */
+}
+
+/* .new__templates__section img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+} */
+
+@media screen and (max-width: 830px) {
+  /* .new__templates__page__title h5 {
+    position: relative;
+    top: 10rem;
+  } */
+  .new__templates__section {
+    position: relative;
+    /* top: 9rem; */
+    /* top: 10rem; */
+    top: 11rem;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  /* .new__templates__page__title h5 {
+    position: relative;
+    top: 13.5rem;
+  } */
+
+  .new__templates__section {
+    position: relative;
+    /* top: 12.5rem; */
+    /* top: 13.5rem; */
+    top: 14.5rem;
+  }
+}
+
+/* ===================================================================================================================== */
+/* ===================================================================================================================== */
+/* FIXME:FIXME:                                SECTION - TEMPLATE NEW (END)                                 FIXME:FIXME: */
 /* ===================================================================================================================== */
 /* ===================================================================================================================== */
 
