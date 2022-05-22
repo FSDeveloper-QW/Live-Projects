@@ -1,13 +1,13 @@
 // JAVASCRIPT TO OPEN AND CLOSE THE ACCORDIAN HEADER ON CLICK-EVENT
 
 const accordianItemHeaders = document.querySelectorAll(
-  ".accordian-item-header"
+  ".platinum__accordian-item-header"
 );
 
 accordianItemHeaders.forEach((accordianItemHeader) => {
   accordianItemHeader.addEventListener("click", (event) => {
     const currentlyActiveAccordianItemHeader = document.querySelector(
-      ".accordian-item-header.active"
+      ".platinum__accordian-item-header.active"
     );
     if (
       currentlyActiveAccordianItemHeader &&
@@ -26,3 +26,24 @@ accordianItemHeaders.forEach((accordianItemHeader) => {
     }
   });
 });
+
+// SCRIPT FOR DISPLAYING SELECTED FILE NAME TO BE UPLOADED
+
+var inputs = document.querySelectorAll(".platinum__file-input");
+
+for (var i = 0, len = inputs.length; i < len; i++) {
+  customInput(inputs[i]);
+}
+
+function customInput(el) {
+  const fileInput = el.querySelector('[type="file"]');
+  const label = el.querySelector("[data-js-label]");
+
+  fileInput.onchange = fileInput.onmouseout = function () {
+    if (!fileInput.value) return;
+
+    var value = fileInput.value.replace(/^.*[\\\/]/, "");
+    el.className += " -chosen";
+    label.innerText = value;
+  };
+}
