@@ -2,7 +2,7 @@
 // TODO:  JAVASCRIPT - SCRIPT FOR COUNT-DOWN COUNTER ON PAGE
 // ========================================================================
 
-let countDate = new Date("may 24, 2022 00:00:00").getTime();
+let countDate = new Date("may 25, 2022 00:00:00").getTime();
 
 function countDown() {
   let now = new Date().getTime();
