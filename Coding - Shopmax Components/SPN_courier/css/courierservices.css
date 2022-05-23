@@ -247,7 +247,7 @@ h6 {
 /* FIXME:  MAIN CONTAINER - HOLDING ALL ELEMENTS  */
 /* ---------------------------------------------- */
 
-.product-card-container-all {
+.courierservices__product-card-container-all {
   position: relative;
   display: flex;
   justify-content: center;
@@ -268,22 +268,38 @@ h6 {
 /* FIXME:  PRODUCT CARD CONTAINER  */
 /* ------------------------------- */
 
-.product-card-container-all .product-card-701_04_01,
-.product-card-container-all .product-card-701_04_02,
-.product-card-container-all .product-card-701_04_03,
-.product-card-container-all .product-card-701_04_04,
-.product-card-container-all .product-card-701_04_05,
-.product-card-container-all .product-card-701_04_06,
-.product-card-container-all .product-card-701_04_07,
-.product-card-container-all .product-card-701_04_08,
-.product-card-container-all .product-card-701_04_09,
-.product-card-container-all .product-card-701_04_10,
-.product-card-container-all .product-card-701_04_11,
-.product-card-container-all .product-card-701_04_12,
-.product-card-container-all .product-card-701_04_13,
-.product-card-container-all .product-card-701_04_14,
-.product-card-container-all .product-card-701_04_15,
-.product-card-container-all .product-card-701_04_16 {
+.courierservices__product-card-container-all
+  .courierservices__product-card-701_04_01,
+.courierservices__product-card-container-all
+  .courierservices__product-card-701_04_02,
+.courierservices__product-card-container-all
+  .courierservices__product-card-701_04_03,
+.courierservices__product-card-container-all
+  .courierservices__product-card-701_04_04,
+.courierservices__product-card-container-all
+  .courierservices__product-card-701_04_05,
+.courierservices__product-card-container-all
+  .courierservices__product-card-701_04_06,
+.courierservices__product-card-container-all
+  .courierservices__product-card-701_04_07,
+.courierservices__product-card-container-all
+  .courierservices__product-card-701_04_08,
+.courierservices__product-card-container-all
+  .courierservices__product-card-701_04_09,
+.courierservices__product-card-container-all
+  .courierservices__product-card-701_04_10,
+.courierservices__product-card-container-all
+  .courierservices__product-card-701_04_11,
+.courierservices__product-card-container-all
+  .courierservices__product-card-701_04_12,
+.courierservices__product-card-container-all
+  .courierservices__product-card-701_04_13,
+.courierservices__product-card-container-all
+  .courierservices__product-card-701_04_14,
+.courierservices__product-card-container-all
+  .courierservices__product-card-701_04_15,
+.courierservices__product-card-container-all
+  .courierservices__product-card-701_04_16 {
   position: absolute;
   transition: transform 1s;
   transform-style: preserve-3d;
@@ -303,22 +319,38 @@ h6 {
 /* TODO:FIXME:     JAVASCRIPT : FOR FLIP FUNCTIONALITY     TODO:FIXME: */
 /* ------------------------------------------------------------------- */
 
-.product-card-container-all .product-card-701_04_01.animated,
-.product-card-container-all .product-card-701_04_02.animated,
-.product-card-container-all .product-card-701_04_03.animated,
-.product-card-container-all .product-card-701_04_04.animated,
-.product-card-container-all .product-card-701_04_05.animated,
-.product-card-container-all .product-card-701_04_06.animated,
-.product-card-container-all .product-card-701_04_07.animated,
-.product-card-container-all .product-card-701_04_08.animated,
-.product-card-container-all .product-card-701_04_09.animated,
-.product-card-container-all .product-card-701_04_10.animated,
-.product-card-container-all .product-card-701_04_11.animated,
-.product-card-container-all .product-card-701_04_12.animated,
-.product-card-container-all .product-card-701_04_13.animated,
-.product-card-container-all .product-card-701_04_14.animated,
-.product-card-container-all .product-card-701_04_15.animated,
-.product-card-container-all .product-card-701_04_16.animated {
+.courierservices__product-card-container-all
+  .courierservices__product-card-701_04_01.animated,
+.courierservices__product-card-container-all
+  .courierservices__product-card-701_04_02.animated,
+.courierservices__product-card-container-all
+  .courierservices__product-card-701_04_03.animated,
+.courierservices__product-card-container-all
+  .courierservices__product-card-701_04_04.animated,
+.courierservices__product-card-container-all
+  .courierservices__product-card-701_04_05.animated,
+.courierservices__product-card-container-all
+  .courierservices__product-card-701_04_06.animated,
+.courierservices__product-card-container-all
+  .courierservices__product-card-701_04_07.animated,
+.courierservices__product-card-container-all
+  .courierservices__product-card-701_04_08.animated,
+.courierservices__product-card-container-all
+  .courierservices__product-card-701_04_09.animated,
+.courierservices__product-card-container-all
+  .courierservices__product-card-701_04_10.animated,
+.courierservices__product-card-container-all
+  .courierservices__product-card-701_04_11.animated,
+.courierservices__product-card-container-all
+  .courierservices__product-card-701_04_12.animated,
+.courierservices__product-card-container-all
+  .courierservices__product-card-701_04_13.animated,
+.courierservices__product-card-container-all
+  .courierservices__product-card-701_04_14.animated,
+.courierservices__product-card-container-all
+  .courierservices__product-card-701_04_15.animated,
+.courierservices__product-card-container-all
+  .courierservices__product-card-701_04_16.animated {
   transform: rotateY(-180deg);
 }
 
@@ -326,22 +358,54 @@ h6 {
 /* FIXME:  SUB-CONTAINER - HOLDING ALL ELEMENTS OF CARD (FRONT)  FIXME: */
 /* -------------------------------------------------------------------- */
 
-.product-card-container-all .product-card-701_04_01 .product-card-front-side,
-.product-card-container-all .product-card-701_04_02 .product-card-front-side,
-.product-card-container-all .product-card-701_04_03 .product-card-front-side,
-.product-card-container-all .product-card-701_04_04 .product-card-front-side,
-.product-card-container-all .product-card-701_04_05 .product-card-front-side,
-.product-card-container-all .product-card-701_04_06 .product-card-front-side,
-.product-card-container-all .product-card-701_04_07 .product-card-front-side,
-.product-card-container-all .product-card-701_04_08 .product-card-front-side,
-.product-card-container-all .product-card-701_04_09 .product-card-front-side,
-.product-card-container-all .product-card-701_04_10 .product-card-front-side,
-.product-card-container-all .product-card-701_04_11 .product-card-front-side,
-.product-card-container-all .product-card-701_04_12 .product-card-front-side,
-.product-card-container-all .product-card-701_04_13 .product-card-front-side,
-.product-card-container-all .product-card-701_04_14 .product-card-front-side,
-.product-card-container-all .product-card-701_04_15 .product-card-front-side,
-.product-card-container-all .product-card-701_04_16 .product-card-front-side {
+.courierservices__product-card-container-all
+  .courierservices__product-card-701_04_01
+  .courierservices__product-card-front-side,
+.courierservices__product-card-container-all
+  .courierservices__product-card-701_04_02
+  .courierservices__product-card-front-side,
+.courierservices__product-card-container-all
+  .courierservices__product-card-701_04_03
+  .courierservices__product-card-front-side,
+.courierservices__product-card-container-all
+  .courierservices__product-card-701_04_04
+  .courierservices__product-card-front-side,
+.courierservices__product-card-container-all
+  .courierservices__product-card-701_04_05
+  .courierservices__product-card-front-side,
+.courierservices__product-card-container-all
+  .courierservices__product-card-701_04_06
+  .courierservices__product-card-front-side,
+.courierservices__product-card-container-all
+  .courierservices__product-card-701_04_07
+  .courierservices__product-card-front-side,
+.courierservices__product-card-container-all
+  .courierservices__product-card-701_04_08
+  .courierservices__product-card-front-side,
+.courierservices__product-card-container-all
+  .courierservices__product-card-701_04_09
+  .courierservices__product-card-front-side,
+.courierservices__product-card-container-all
+  .courierservices__product-card-701_04_10
+  .courierservices__product-card-front-side,
+.courierservices__product-card-container-all
+  .courierservices__product-card-701_04_11
+  .courierservices__product-card-front-side,
+.courierservices__product-card-container-all
+  .courierservices__product-card-701_04_12
+  .courierservices__product-card-front-side,
+.courierservices__product-card-container-all
+  .courierservices__product-card-701_04_13
+  .courierservices__product-card-front-side,
+.courierservices__product-card-container-all
+  .courierservices__product-card-701_04_14
+  .courierservices__product-card-front-side,
+.courierservices__product-card-container-all
+  .courierservices__product-card-701_04_15
+  .courierservices__product-card-front-side,
+.courierservices__product-card-container-all
+  .courierservices__product-card-701_04_16
+  .courierservices__product-card-front-side {
   position: absolute;
   top: 0;
   left: 0;
@@ -362,22 +426,54 @@ h6 {
 /* FIXME:  SUB-CONTAINER - HOLDING ALL ELEMENTS OF CARD (BACK)  FIXME: */
 /* -------------------------------------------------------------------- */
 
-.product-card-container-all .product-card-701_04_01 .product-card-back-side,
-.product-card-container-all .product-card-701_04_02 .product-card-back-side,
-.product-card-container-all .product-card-701_04_03 .product-card-back-side,
-.product-card-container-all .product-card-701_04_04 .product-card-back-side,
-.product-card-container-all .product-card-701_04_05 .product-card-back-side,
-.product-card-container-all .product-card-701_04_06 .product-card-back-side,
-.product-card-container-all .product-card-701_04_07 .product-card-back-side,
-.product-card-container-all .product-card-701_04_08 .product-card-back-side,
-.product-card-container-all .product-card-701_04_09 .product-card-back-side,
-.product-card-container-all .product-card-701_04_10 .product-card-back-side,
-.product-card-container-all .product-card-701_04_11 .product-card-back-side,
-.product-card-container-all .product-card-701_04_12 .product-card-back-side,
-.product-card-container-all .product-card-701_04_13 .product-card-back-side,
-.product-card-container-all .product-card-701_04_14 .product-card-back-side,
-.product-card-container-all .product-card-701_04_15 .product-card-back-side,
-.product-card-container-all .product-card-701_04_16 .product-card-back-side {
+.courierservices__product-card-container-all
+  .courierservices__product-card-701_04_01
+  .courierservices__product-card-back-side,
+.courierservices__product-card-container-all
+  .courierservices__product-card-701_04_02
+  .courierservices__product-card-back-side,
+.courierservices__product-card-container-all
+  .courierservices__product-card-701_04_03
+  .courierservices__product-card-back-side,
+.courierservices__product-card-container-all
+  .courierservices__product-card-701_04_04
+  .courierservices__product-card-back-side,
+.courierservices__product-card-container-all
+  .courierservices__product-card-701_04_05
+  .courierservices__product-card-back-side,
+.courierservices__product-card-container-all
+  .courierservices__product-card-701_04_06
+  .courierservices__product-card-back-side,
+.courierservices__product-card-container-all
+  .courierservices__product-card-701_04_07
+  .courierservices__product-card-back-side,
+.courierservices__product-card-container-all
+  .courierservices__product-card-701_04_08
+  .courierservices__product-card-back-side,
+.courierservices__product-card-container-all
+  .courierservices__product-card-701_04_09
+  .courierservices__product-card-back-side,
+.courierservices__product-card-container-all
+  .courierservices__product-card-701_04_10
+  .courierservices__product-card-back-side,
+.courierservices__product-card-container-all
+  .courierservices__product-card-701_04_11
+  .courierservices__product-card-back-side,
+.courierservices__product-card-container-all
+  .courierservices__product-card-701_04_12
+  .courierservices__product-card-back-side,
+.courierservices__product-card-container-all
+  .courierservices__product-card-701_04_13
+  .courierservices__product-card-back-side,
+.courierservices__product-card-container-all
+  .courierservices__product-card-701_04_14
+  .courierservices__product-card-back-side,
+.courierservices__product-card-container-all
+  .courierservices__product-card-701_04_15
+  .courierservices__product-card-back-side,
+.courierservices__product-card-container-all
+  .courierservices__product-card-701_04_16
+  .courierservices__product-card-back-side {
   position: absolute;
   top: 0;
   left: 0;
@@ -398,7 +494,7 @@ h6 {
 /* MEDIA QUERY - PRODUCT CARD CONTAINERS */
 
 @media screen and (max-width: 350px) {
-  .product-card-container-all {
+  .courierservices__product-card-container-all {
     margin: 2rem 0.75rem 2rem 0.75rem;
   }
 }
@@ -417,7 +513,7 @@ h6 {
 /* FIXME:  CONTAINER - TOP SECTION  */
 /* -------------------------------- */
 
-.product-card-section-top {
+.courierservices__product-card-section-top {
   position: relative;
   width: 100%;
   height: 32%;
@@ -452,7 +548,8 @@ h6 {
 /* IMAGE CONTAINER  */
 /* ---------------- */
 
-.product-card-section-top .product-card-featured-image {
+.courierservices__product-card-section-top
+  .courierservices__product-card-featured-image {
   position: relative;
   top: 0;
   left: 0;
@@ -468,7 +565,9 @@ h6 {
 /* IMAGE  */
 /* ------ */
 
-.product-card-section-top .product-card-featured-image img {
+.courierservices__product-card-section-top
+  .courierservices__product-card-featured-image
+  img {
   position: absolute;
   top: 0;
   left: 0;
@@ -486,41 +585,39 @@ h6 {
 /* FIXME:  SECTION 2 - MAIN CONTAINER  */
 /* ----------------------------------- */
 
-.product-card-section-extra-images {
+/* .product-card-section-extra-images {
   position: relative;
   height: 4.8rem;
   background: var(--color-product-card-extra-images-section-background);
-  /* border: 1px solid red; */
-}
+  border: 1px solid red;
+} */
 
 /* ------------------------------------------- */
 /* FIXME:  SECTION 2 - EXTRA IMAGES CONTAINER  */
 /* ------------------------------------------- */
 
-.product-card-section-extra-images .extra-images {
+/* .product-card-section-extra-images .extra-images {
   height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   background: var(--color-product-card-extra-images-section-background);
-  /* border: 1px solid red; */
-}
+  border: 1px solid red;
+} */
 
-.product-card-section-extra-images .extra-images img {
+/* .product-card-section-extra-images .extra-images img {
   width: 4.5rem;
   height: 4.5rem;
   margin: 0.5rem 0.5rem 0rem 0.5rem;
   padding: 0.5rem 0.5rem 0.5rem 0.5rem;
   background: var(--color-product-card-extra-image-background);
-  border-radius: 0.5rem;
-  /* box-shadow: var(--color-box-shadow-01); */
-  /* border: 1px solid var(--color-product-card-extra-image-border); */
+  border-radius: 0.5rem;  
   cursor: pointer;
 }
 
 .product-card-section-extra-images .extra-images img:hover {
   border: 3px solid var(--color-product-card-extra-image-border-hover);
-}
+} */
 
 /* ===================================================================================================================== */
 /* TODO:  PRODUCT CARD SECTION 3 - SERVICE INFORMATION                                                                   */
@@ -1091,7 +1188,7 @@ h6 {
 /* TODO:  PRODUCT CARD SECTION 7A - BUTTON (ADD TO SHOPPING CART)                                                        */
 /* ===================================================================================================================== */
 
-.info-and-cart-container {
+.courierservices__info-and-cart-container {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1203,7 +1300,7 @@ h6 {
 /* FIXME:  CONTAINER - MAIN (HOLDING ALL ELEMENTS)  FIXME: */
 /* ------------------------------------------------------- */
 
-.more-info-container {
+.courierservices__more-info-container {
   width: 100%;
   height: 5rem;
   display: flex;
@@ -1218,7 +1315,7 @@ h6 {
 /* FIXME:  BUTTON - ADD TO CART  FIXME: */
 /* ------------------------------------ */
 
-.more-info-container .btn {
+.courierservices__more-info-container .courierservices__btn {
   width: 95%;
   display: flex;
   justify-content: center;
@@ -1240,11 +1337,11 @@ h6 {
   /* border: 1px solid green; */
 }
 
-.more-info-container i.bx-list-check {
+.courierservices__more-info-container i.bx-list-check {
   font-size: 2rem;
 }
 
-.btn:hover {
+.courierservices__btn:hover {
   transform: scale(1.05);
 }
 
@@ -1363,7 +1460,7 @@ h6 {
 /* FIXME:  BUTTON "X" TO CLOSE BACK  FIXME: */
 /* ---------------------------------------- */
 
-.product-card-container-all .close {
+.courierservices__product-card-container-all .close {
   width: 2.5rem;
   height: 2.5rem;
   position: absolute;
@@ -1382,7 +1479,7 @@ h6 {
   z-index: 10;
 }
 
-.product-card-container-all .close:hover {
+.courierservices__product-card-container-all .close:hover {
   transform: scale(1.1);
 }
 
@@ -1390,7 +1487,7 @@ h6 {
 /* FIXME:  SUB-CONTAINER - HOLDING ALL CONTENT/TEXT ON BACK PROFILE  FIXME: */
 /* ------------------------------------------------------------------------ */
 
-.information-container-back {
+.courierservices__information-container-back {
   padding: 2rem 1rem 2rem 1rem;
   width: 100%;
   height: 100%;
@@ -1425,7 +1522,7 @@ h6 {
 /*      (incl. addresses + description of contents)       */
 /* ------------------------------------------------------ */
 
-.form__group {
+.courierservices__form__group {
   margin: 0rem 0rem 1rem 0rem;
 }
 
@@ -1792,7 +1889,7 @@ h6 {
 
 /* MAIN CONTAINER */
 
-.service-identification {
+.courierservices__service-identification {
   position: absolute;
   top: 28rem;
   left: 0;
@@ -1810,7 +1907,7 @@ h6 {
 /* FIXME:  PRODUCT CARD (BACK) - SERVICE CODE     */
 /* ---------------------------------------------- */
 
-.service-code {
+.courierservices__service-code {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -1821,7 +1918,7 @@ h6 {
   /* border: 1px solid blue; */
 }
 
-.service-code .service-code-title {
+.courierservices__service-code .courierservices__service-code-title {
   font-size: 0.9rem;
   font-weight: 700;
   text-decoration: none;
@@ -1832,7 +1929,7 @@ h6 {
   /* border: 1px solid yellow; */
 }
 
-.service-code .service-code-info {
+.courierservices__service-code .courierservices__service-code-info {
   font-size: 0.8rem;
   font-weight: 600;
   text-decoration: none;
@@ -1847,7 +1944,7 @@ h6 {
 /* FIXME:  PRODUCT CARD (BACK) - SERVICE CATEGORY  */
 /* ----------------------------------------------- */
 
-.service-category {
+.courierservices__service-category {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -1858,7 +1955,7 @@ h6 {
   /* border: 1px solid blue; */
 }
 
-.service-category .service-category-title {
+.courierservices__service-category .courierservices__service-category-title {
   font-size: 0.9rem;
   font-weight: 700;
   text-decoration: none;
@@ -1869,7 +1966,7 @@ h6 {
   /* border: 1px solid yellow; */
 }
 
-.service-category .service-category-info {
+.courierservices__service-category .courierservices__service-category-info {
   font-size: 0.8rem;
   font-weight: 600;
   text-decoration: none;
@@ -1887,7 +1984,7 @@ h6 {
 
 /* MAIN CONTAINER */
 
-.service-full-description {
+.courierservices__service-full-description {
   position: absolute;
   top: 32rem;
   left: 0;
@@ -1902,7 +1999,8 @@ h6 {
   /* border: 1px solid blue; */
 }
 
-.service-full-description .service-specifications-title {
+.courierservices__service-full-description
+  .courierservices__service-specifications-title {
   position: absolute;
   top: 0;
   left: 0;
@@ -1919,7 +2017,8 @@ h6 {
   /* border: 1px solid yellow; */
 }
 
-.service-full-description .service-specifications-details {
+.courierservices__service-full-description
+  .courierservices__service-specifications-details {
   position: absolute;
   top: 2rem;
   left: 0;

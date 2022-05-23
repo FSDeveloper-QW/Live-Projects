@@ -30,7 +30,7 @@ function change(image) {
 
 $(document).ready(function () {
   $(".animate-701_04_01").click(function () {
-    $(".product-card-701_04_01").toggleClass("animated");
+    $(".courierservices__product-card-701_04_01").toggleClass("animated");
     return false;
   });
 });
@@ -41,7 +41,7 @@ $(document).ready(function () {
 
 $(document).ready(function () {
   $(".animate-701_04_02").click(function () {
-    $(".product-card-701_04_02").toggleClass("animated");
+    $(".courierservices__product-card-701_04_02").toggleClass("animated");
     return false;
   });
 });
@@ -52,7 +52,7 @@ $(document).ready(function () {
 
 $(document).ready(function () {
   $(".animate-701_04_03").click(function () {
-    $(".product-card-701_04_03").toggleClass("animated");
+    $(".courierservices__product-card-701_04_03").toggleClass("animated");
     return false;
   });
 });
@@ -63,7 +63,7 @@ $(document).ready(function () {
 
 $(document).ready(function () {
   $(".animate-701_04_04").click(function () {
-    $(".product-card-701_04_04").toggleClass("animated");
+    $(".courierservices__product-card-701_04_04").toggleClass("animated");
     return false;
   });
 });
@@ -74,7 +74,7 @@ $(document).ready(function () {
 
 $(document).ready(function () {
   $(".animate-701_04_05").click(function () {
-    $(".product-card-701_04_05").toggleClass("animated");
+    $(".courierservices__product-card-701_04_05").toggleClass("animated");
     return false;
   });
 });
@@ -85,7 +85,7 @@ $(document).ready(function () {
 
 $(document).ready(function () {
   $(".animate-701_04_06").click(function () {
-    $(".product-card-701_04_06").toggleClass("animated");
+    $(".courierservices__product-card-701_04_06").toggleClass("animated");
     return false;
   });
 });
@@ -96,7 +96,7 @@ $(document).ready(function () {
 
 $(document).ready(function () {
   $(".animate-701_04_07").click(function () {
-    $(".product-card-701_04_07").toggleClass("animated");
+    $(".courierservices__product-card-701_04_07").toggleClass("animated");
     return false;
   });
 });
@@ -107,7 +107,7 @@ $(document).ready(function () {
 
 $(document).ready(function () {
   $(".animate-701_04_08").click(function () {
-    $(".product-card-701_04_08").toggleClass("animated");
+    $(".courierservices__product-card-701_04_08").toggleClass("animated");
     return false;
   });
 });
@@ -118,7 +118,7 @@ $(document).ready(function () {
 
 $(document).ready(function () {
   $(".animate-701_04_09").click(function () {
-    $(".product-card-701_04_09").toggleClass("animated");
+    $(".courierservices__product-card-701_04_09").toggleClass("animated");
     return false;
   });
 });
@@ -129,7 +129,7 @@ $(document).ready(function () {
 
 $(document).ready(function () {
   $(".animate-701_04_10").click(function () {
-    $(".product-card-701_04_10").toggleClass("animated");
+    $(".courierservices__product-card-701_04_10").toggleClass("animated");
     return false;
   });
 });
@@ -140,7 +140,7 @@ $(document).ready(function () {
 
 $(document).ready(function () {
   $(".animate-701_04_11").click(function () {
-    $(".product-card-701_04_11").toggleClass("animated");
+    $(".courierservices__product-card-701_04_11").toggleClass("animated");
     return false;
   });
 });
@@ -151,7 +151,7 @@ $(document).ready(function () {
 
 $(document).ready(function () {
   $(".animate-701_04_12").click(function () {
-    $(".product-card-701_04_12").toggleClass("animated");
+    $(".courierservices__product-card-701_04_12").toggleClass("animated");
     return false;
   });
 });
@@ -162,7 +162,7 @@ $(document).ready(function () {
 
 $(document).ready(function () {
   $(".animate-701_04_13").click(function () {
-    $(".product-card-701_04_13").toggleClass("animated");
+    $(".courierservices__product-card-701_04_13").toggleClass("animated");
     return false;
   });
 });
@@ -173,7 +173,7 @@ $(document).ready(function () {
 
 $(document).ready(function () {
   $(".animate-701_04_14").click(function () {
-    $(".product-card-701_04_14").toggleClass("animated");
+    $(".courierservices__product-card-701_04_14").toggleClass("animated");
     return false;
   });
 });
@@ -184,7 +184,7 @@ $(document).ready(function () {
 
 $(document).ready(function () {
   $(".animate-701_04_15").click(function () {
-    $(".product-card-701_04_15").toggleClass("animated");
+    $(".courierservices__product-card-701_04_15").toggleClass("animated");
     return false;
   });
 });
@@ -195,7 +195,7 @@ $(document).ready(function () {
 
 $(document).ready(function () {
   $(".animate-701_04_16").click(function () {
-    $(".product-card-701_04_16").toggleClass("animated");
+    $(".courierservices__product-card-701_04_16").toggleClass("animated");
     return false;
   });
 });
