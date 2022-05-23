@@ -240,7 +240,7 @@ h6 {
   padding: 0rem 0rem 0rem 0rem;
   border-radius: 1.5rem;
   perspective: 200rem;
-  z-index: 100;
+  z-index: 10;
   /* margin: 1rem auto 1rem auto; */
   /* box-shadow: var(--color-box-shadow-01); */
   /* border: 1px solid red; */
