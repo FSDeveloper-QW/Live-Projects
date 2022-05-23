@@ -5,6 +5,7 @@
 :root {
   /* PAGE BACKGROUND - PRODUCTS & SERVICES */
   --color-page-background: #ebf4f4;
+  --color-page-background: #a9a9a9;
   /* BOX-SHADOW CONFIGURATIONS */
   --color-box-shadow-01: 3px 5px 20px rgba(0, 0, 0, 0.35);
   --color-box-shadow-02: 0px 5px 4px rgba(0, 0, 0, 0.35);
@@ -189,7 +190,8 @@ h6 {
   justify-content: center;
   justify-items: center;
   text-transform: uppercase;
-  margin: 1.5rem 0.5rem 1.5rem 0.5rem;
+  margin: 0rem 0.5rem 1rem 0.5rem;
+  padding: 1.5rem 0rem 0rem 0rem;
   text-align: center;
 }
 
@@ -579,7 +581,7 @@ h6 {
 /* FIXME:      FOR START AND END DATES     FIXME: */
 /* ---------------------------------------------- */
 
-input[type="date"] {
+.container__dates input[type="date"] {
   /* width: 25rem; */
   /* width: 100%; */
   font-family: "Poppins", sans-serif;
@@ -593,7 +595,7 @@ input[type="date"] {
   transition: border-color 0.15s, box-shadow 0.15s;
 }
 
-input[type="date"]:focus {
+.container__dates input[type="date"]:focus {
   border-color: var(--color-input-border-focus);
   box-shadow: 0 0 0 2px rgba(220, 20, 60, 0.95);
   outline: 0;
@@ -721,7 +723,7 @@ input[type="date"]:focus {
 /* FIXME:     FOR SIZED AND COLORS         FIXME: */
 /* ---------------------------------------------- */
 
-label {
+.container__regions label {
   display: block;
   font-size: 1.1rem;
   font-weight: 600;
@@ -729,11 +731,11 @@ label {
   margin: 0.25rem 0rem 0.25rem 0rem;
 }
 
-input::placeholder {
+.container__regions input::placeholder {
   font-family: "Poppins", sans-serif;
 }
 
-select {
+.container__regions select {
   font-family: "Poppins", sans-serif;
   width: 21.75rem;
   text-align: left;
@@ -746,14 +748,14 @@ select {
   transition: border-color 0.15s, box-shadow 0.15s;
 }
 
-select:focus {
+.container__regions select:focus {
   border-color: var(--color-input-border-focus);
   box-shadow: 0 0 0 2px rgba(220, 20, 60, 0.95);
   outline: 0;
 }
 
 @media screen and (min-width: 350px) {
-  select {
+  .container__regions select {
     width: 22.5rem;
   }
 }
@@ -853,7 +855,7 @@ select:focus {
 /* FIXME:  CONTAINER - MAIN (HOLDING ALL ELEMENTS)  FIXME: */
 /* ------------------------------------------------------- */
 
-.shopping-container {
+.legal__services__shopping-container {
   width: 50%;
   height: 5rem;
   display: flex;
@@ -868,7 +870,7 @@ select:focus {
 /* FIXME:  BUTTON - ADD TO CART  FIXME: */
 /* ------------------------------------ */
 
-.shopping-container button {
+.legal__services__shopping-container button {
   display: flex;
   align-items: center;
   font-size: 0.8rem;
@@ -887,11 +889,11 @@ select:focus {
   /* border: 1px solid green; */
 }
 
-.shopping-container i.bx-cart {
+.legal__services__shopping-container i.bx-cart {
   font-size: 2rem;
 }
 
-.shopping-container button:hover {
+.legal__services__shopping-container button:hover {
   transform: scale(1.05);
   cursor: pointer;
 }
@@ -900,7 +902,7 @@ select:focus {
 /* TODO:FIXME:  JAVASCRIPT - SHOPPING CART COUNTER ANIMATION ON "ADD TO CART" BUTTON CLICK  TODO:FIXME: */
 /* ---------------------------------------------------------------------------------------------------- */
 
-.cart_counter-container span:not(.animated-counter) {
+/* .cart_counter-container span:not(.animated-counter) {
   display: flex;
 }
 
@@ -938,7 +940,7 @@ select:focus {
     right: 0.3rem;
     transform: rotate(0deg);
   }
-}
+} */
 
 /* ===================================================================================================================== */
 /* TODO:  PRODUCT CARD SECTION 7B - BUTTON (MORE INFO)                                                                   */
@@ -999,7 +1001,7 @@ select:focus {
 /* FIXME:  CONTAINER - MAIN (HOLDING ALL ELEMENTS)  FIXME: */
 /* ------------------------------------------------------- */
 
-.wishlist-container {
+.legal__services__wishlist-container {
   position: absolute;
   top: -0.3rem;
   right: -0.25rem;
@@ -1016,7 +1018,7 @@ select:focus {
 /* FIXME:  BUTTON - ADD TO WISH LIST  FIXME: */
 /* ----------------------------------------- */
 
-.wishlist-container button {
+.legal__services__wishlist-container button {
   position: absolute;
   top: 0;
   right: 0;
@@ -1030,7 +1032,7 @@ select:focus {
   /* border: 1px solid green; */
 }
 
-i.bx-heart {
+.legal__services__wishlist-container i.bx-heart {
   position: absolute;
   top: 0;
   right: 0;
@@ -1047,7 +1049,7 @@ i.bx-heart {
   transition: transform 0.3s ease-in-out;
 }
 
-.wishlist-container button i:hover {
+.legal__services__wishlist-container button i:hover {
   transform: scale(1.11);
   cursor: pointer;
 }
@@ -1056,7 +1058,7 @@ i.bx-heart {
 /* TODO:FIXME:  JAVASCRIPT - WISH LIST COUNTER ANIMATION ON "ADD TO WISH LIST" BUTTON CLICK  TODO:FIXME: */
 /* ----------------------------------------------------------------------------------------------------- */
 
-.wishlist-counter-container span:not(.wishlist-animated-counter) {
+/* .wishlist-counter-container span:not(.wishlist-animated-counter) {
   display: flex;
 }
 
@@ -1094,7 +1096,7 @@ i.bx-heart {
     right: 0.3rem;
     transform: rotate(0deg);
   }
-}
+} */
 
 /* ===================================================================================================================== */
 /* ===================================================================================================================== */
