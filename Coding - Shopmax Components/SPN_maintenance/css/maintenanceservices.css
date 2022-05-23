@@ -4,7 +4,8 @@
 
 :root {
   /* PAGE BACKGROUND - PRODUCTS & SERVICES */
-  --color-page-background: #ebf4f4;
+  /* --color-page-background: #ebf4f4; */
+  --color-page-background: #a9a9a9;
   /* BOX-SHADOW CONFIGURATIONS */
   --color-box-shadow-01: 3px 5px 20px rgba(0, 0, 0, 0.35);
   --color-box-shadow-02: 0px 5px 4px rgba(0, 0, 0, 0.35);
@@ -856,7 +857,7 @@ select:focus {
 /* TODO:FIXME:  JAVASCRIPT - SHOPPING CART COUNTER ANIMATION ON "ADD TO CART" BUTTON CLICK  TODO:FIXME: */
 /* ---------------------------------------------------------------------------------------------------- */
 
-.cart_counter-container span:not(.animated-counter) {
+/* .cart_counter-container span:not(.animated-counter) {
   display: flex;
 }
 
@@ -894,7 +895,7 @@ select:focus {
     right: 0.3rem;
     transform: rotate(0deg);
   }
-}
+} */
 
 /* ===================================================================================================================== */
 /* TODO:  PRODUCT CARD SECTION 7B - BUTTON (MORE INFO)                                                                   */
@@ -1012,7 +1013,7 @@ i.bx-heart {
 /* TODO:FIXME:  JAVASCRIPT - WISH LIST COUNTER ANIMATION ON "ADD TO WISH LIST" BUTTON CLICK  TODO:FIXME: */
 /* ----------------------------------------------------------------------------------------------------- */
 
-.wishlist-counter-container span:not(.wishlist-animated-counter) {
+/* .wishlist-counter-container span:not(.wishlist-animated-counter) {
   display: flex;
 }
 
@@ -1050,7 +1051,7 @@ i.bx-heart {
     right: 0.3rem;
     transform: rotate(0deg);
   }
-}
+} */
 
 /* ===================================================================================================================== */
 /* ===================================================================================================================== */

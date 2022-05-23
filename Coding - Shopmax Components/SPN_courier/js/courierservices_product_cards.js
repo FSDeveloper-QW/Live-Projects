@@ -17,46 +17,7 @@ function change(image) {
 }
 
 // =======================================================================================
-// TODO:  PART 2 -  SCRIPT TO ADD COUNTER TO SHOPPING CART WHEN "ADD TO CART" IS CLICKED
-// =======================================================================================
-
-let count = 0;
-
-const counter = document.getElementById("counter");
-document.getElementById("add-animation").addEventListener("click", (event) => {
-  const cl = counter.classList;
-  const c = "animated-counter";
-  count++;
-
-  counter.innerText = count;
-  cl.remove(c, cl.contains(c));
-  setTimeout(() => counter.classList.add("animated-counter"), 1);
-});
-
-// =======================================================================================
-// TODO:  PART 3 -  SCRIPT TO ADD COUNTER TO WISH LIST WHEN "ADD TO WISH LIST" IS CLICKED
-// =======================================================================================
-
-// let countWish = 0;
-
-// const wishListCounter = document.getElementById("wishlist-counter");
-// document
-//   .getElementById("wishlist-add-animation")
-//   .addEventListener("click", (event) => {
-//     const cl = wishListCounter.classList;
-//     const c = "wishlist-animated-counter";
-//     count++;
-
-//     wishListCounter.innerText = countWish;
-//     cl.remove(c, cl.contains(c));
-//     setTimeout(
-//       () => wishListCounter.classList.add("wishlist-animated-counter"),
-//       1
-//     );
-//   });
-
-// =======================================================================================
-// TODO:  PART 4 -  SCRIPT TO FLIP A PROFILE OR PRODUCT CARD (AND BACK)
+// TODO:  PART 2 -  SCRIPT TO FLIP A PROFILE OR PRODUCT CARD (AND BACK)
 // =======================================================================================
 
 // ---------------------------------------------------------------------------------------

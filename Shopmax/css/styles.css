@@ -15,6 +15,10 @@
   --color-box-shadow-03: 0px 1px 5px 3px rgba(0, 0, 0, 0.15);
   --color-box-shadow-04: 0px 5px 20px rgba(0, 0, 0, 0.35);
   /* ------------------------------------------------ */
+  /* FIXME:  SPECIAL BACKGROUND FOR PRODUCTS          */
+  /* ------------------------------------------------ */
+  --color-page-background: #a9a9a9;
+  /* ------------------------------------------------ */
   /* FIXME:  SECTION: LOGO, SEARCH BAR & SOCIAL MEDIA */
   /* ------------------------------------------------ */
   /* SEARCH BAR COLOR SCHEME */
@@ -598,6 +602,65 @@
   --color-platinum-custom-fileinput-background-hover: #434343;
   --color-platinum-custom-fileinput-background-hover-text: white;
   --color-platinum-custom-fileinput-label-text: black;
+  /* ------------------------------------------------ */
+  /* FIXME:  PRODUCTS CARDS - PROFESSIONAL SERVICES   */
+  /* ------------------------------------------------ */
+  /* PAGE BACKGROUND - PRODUCTS & SERVICES */
+  --color-page-background: #ebf4f4;
+  --color-page-background: #a9a9a9;
+  /* BOX-SHADOW CONFIGURATIONS */
+  --color-box-shadow-01: 3px 5px 20px rgba(0, 0, 0, 0.35);
+  --color-box-shadow-02: 0px 5px 4px rgba(0, 0, 0, 0.35);
+  --color-box-shadow-03: 0px 1px 5px 3px rgba(0, 0, 0, 0.15);
+  --color-box-shadow-04: 0px 5px 20px rgba(0, 0, 0, 0.35);
+  /* SHOPMAX COLOR SCHEME */
+  --color-shopmax: #dc143c;
+  --color-shopmax-rgb: rgb(220, 20, 60);
+  /* CARD COLOR SCHEME */
+  --color-product-card-brand-title: black;
+  --color-product-card-background: white;
+  --color-product-card-top-section-background: white;
+  --color-product-card-arrow-left: black;
+  --color-product-card-heart-right: #dc143c;
+  --color-product-card-extra-images-section-background: white;
+  --color-product-card-extra-image-background: white;
+  --color-product-card-extra-image-border: black;
+  --color-product-card-extra-image-border-hover: #dc143c;
+  --color-product-card-title: black;
+  --color-product-card-short-description: black;
+  --color-product-card-sizes-title: black;
+  --color-product-card-colors-title: black;
+  --color-product-card-price-currency: black;
+  --color-product-card-price-value: black;
+  /* CUSTOM RADIO BUTTON */
+  --color-custom-radiobutton-border: #ccc;
+  --color-custom-radiobutton-background: white;
+  --color-custom-radiobutton-circle: #dc143c;
+  --color-custom-radiobutton-focus: #dc143c;
+  --color-custom-radiobutton-disabled: #959495;
+  /* COLOR SCHEME FOR ADD TO CART BUTTONS, CARTS AND COUNTERS */
+  --color-add-to-cart-button-background: #dc143c;
+  --color-add-to-cart-button-text: white;
+  --color-shopping-cart-icon: black;
+  --color-shopping-cart-counter-background: #dc143c;
+  --color-shopping-cart-counter-text: white;
+  /* COLOR SCHEME FOR ADD TO WISH LIST BUTTONS, CARTS AND COUNTERS */
+  --color-add-to-wish-list-button-background: #dc143c;
+  --color-add-to-wish-list-button-text: white;
+  --color-wish-list-icon: black;
+  --color-wish-list-counter-background: #dc143c;
+  --color-wish-list-counter-text: white;
+  /* FORM TEXT INPUTS */
+  --color-input-border: #ccc;
+  --color-input-border-focus: #dc143c;
+  --color-input-border-focus-rgba: rgb(220, 20, 60);
+  /* CLOSE BUTTON - BACK CARD */
+  --color-card-back-button-close: #dc143c;
+  --color-card-back-background: white;
+  --color-card-back-text: black;
+  /* BACK OF CARD */
+  --color-heading-titles: #dc143c;
+  --color-heading-values: black;
   /* ------------------------------------------------ */
   /* FIXME:  SECTION: COMPANY FOOTER                  */
   /* ------------------------------------------------ */
@@ -1224,12 +1287,12 @@ h6 {
 /* CONTAINER HOLD WISH LIST BUTTON with "wishlist-add-animation" ID for Javascript Code */
 /* ------------------------------------------------------------------------------------ */
 
-.wishlist-container {
+/* .wishlist-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* border: 1px solid red; */
-}
+  border: 1px solid red;
+} */
 
 /* ----------------------------------------------------------------------------------- */
 /* CONTAINER HOLD THE WISHLIST COUNTER with "wishlist-counter" ID for Javascript Code  */
@@ -1312,7 +1375,7 @@ h6 {
 /* FIXME:  BUTTON - ADD TO WISH LIST  FIXME: */
 /* ----------------------------------------- */
 
-.wishlist-container button {
+/* .wishlist-container button {
   font-size: 1.5rem;
   font-weight: 600;
   letter-spacing: 0.1rem;
@@ -1326,14 +1389,14 @@ h6 {
   border: none;
   transition: transform 0.3s ease-in-out;
   box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.35);
-  /* border: 1px solid red; */
+  border: 1px solid red;
 }
 
 .wishlist-container button:hover {
   opacity: 0.9;
   transform: scale(1.02);
   cursor: pointer;
-}
+} */
 
 /* ----------------------------------- */
 /* FIXME:  COUNTER - ANIMATION  FIXME: */
@@ -1348,10 +1411,10 @@ h6 {
 }
 
 .wishlist-counter-container span .wishlist-animated-counter {
-  animation: count 0.4s ease-in-out;
+  animation: wishCount 0.4s ease-in-out;
 }
 
-@keyframes count {
+@keyframes wishCount {
   from {
     top: 0.2rem;
     right: -1.8rem;
@@ -1399,12 +1462,12 @@ h6 {
 /* CONTAINER HOLD CART BUTTON with "add-animation" ID for Javascript Code */
 /* ---------------------------------------------------------------------- */
 
-.shopping-container {
+/* .shopping-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* border: 1px solid red; */
-}
+  border: 1px solid red;
+} */
 
 /* ---------------------------------------------------------------------- */
 /* CONTAINER HOLD THE CART COUNTER with "counter" ID for Javascript Code  */
@@ -1487,7 +1550,7 @@ h6 {
 /* FIXME:  BUTTON - ADD TO CART  FIXME: */
 /* ------------------------------------ */
 
-.shopping-container button {
+/* .shopping-container button {
   font-size: 1.5rem;
   font-weight: 600;
   letter-spacing: 0.1rem;
@@ -1501,14 +1564,14 @@ h6 {
   border: none;
   transition: transform 0.3s ease-in-out;
   box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.35);
-  /* border: 1px solid red; */
+  border: 1px solid red;
 }
 
 .shopping-container button:hover {
   opacity: 0.9;
   transform: scale(1.02);
   cursor: pointer;
-}
+} */
 
 /* ---------------------------------------------------------------------------------------------------- */
 /* TODO:FIXME:  JAVASCRIPT - SHOPPING CART COUNTER ANIMATION ON "ADD TO CART" BUTTON CLICK  TODO:FIXME: */
@@ -1519,10 +1582,10 @@ h6 {
 }
 
 .cart_counter-container span .animated-counter {
-  animation: count 0.4s ease-in-out;
+  animation: shopCount 0.4s ease-in-out;
 }
 
-@keyframes count {
+@keyframes shopCount {
   from {
     top: 0.2rem;
     right: -1.8rem;
@@ -16001,31 +16064,6 @@ label .proservices__label__strong {
 }
 
 /* ===================================================================================================================== */
-/* TODO:  HEADING ELEMENTS : WEBSITE / LARGER SCREENS STYLING                                      FIXME: LARGER SCREENS */
-/* ===================================================================================================================== */
-
-@media (min-width: 600px) {
-  h1 {
-    font-size: 5rem;
-  }
-  h2 {
-    font-size: 4.2rem;
-  }
-  h3 {
-    font-size: 3.6rem;
-  }
-  h4 {
-    font-size: 3rem;
-  }
-  h5 {
-    font-size: 2.4rem;
-  }
-  h6 {
-    font-size: 1.5rem;
-  }
-}
-
-/* ===================================================================================================================== */
 /* TODO:  PART 1 - INVESTING PLAN (BRONZE) - PAGE TITLE                                                                  */
 /* ===================================================================================================================== */
 
@@ -16926,31 +16964,6 @@ label .bronze__label__strong {
     /* top: 12.5rem; */
     /* top: 13.5rem; */
     top: 14.5rem;
-  }
-}
-
-/* ===================================================================================================================== */
-/* TODO:  HEADING ELEMENTS : WEBSITE / LARGER SCREENS STYLING                                      FIXME: LARGER SCREENS */
-/* ===================================================================================================================== */
-
-@media (min-width: 600px) {
-  h1 {
-    font-size: 5rem;
-  }
-  h2 {
-    font-size: 4.2rem;
-  }
-  h3 {
-    font-size: 3.6rem;
-  }
-  h4 {
-    font-size: 3rem;
-  }
-  h5 {
-    font-size: 2.4rem;
-  }
-  h6 {
-    font-size: 1.5rem;
   }
 }
 
@@ -17859,31 +17872,6 @@ label .silver__label__strong {
 }
 
 /* ===================================================================================================================== */
-/* TODO:  HEADING ELEMENTS : WEBSITE / LARGER SCREENS STYLING                                      FIXME: LARGER SCREENS */
-/* ===================================================================================================================== */
-
-@media (min-width: 600px) {
-  h1 {
-    font-size: 5rem;
-  }
-  h2 {
-    font-size: 4.2rem;
-  }
-  h3 {
-    font-size: 3.6rem;
-  }
-  h4 {
-    font-size: 3rem;
-  }
-  h5 {
-    font-size: 2.4rem;
-  }
-  h6 {
-    font-size: 1.5rem;
-  }
-}
-
-/* ===================================================================================================================== */
 /* TODO:  PART 1 - INVESTING PLAN (GOLD) - PAGE TITLE                                                                    */
 /* ===================================================================================================================== */
 
@@ -18788,31 +18776,6 @@ label .gold__label__strong {
 }
 
 /* ===================================================================================================================== */
-/* TODO:  HEADING ELEMENTS : WEBSITE / LARGER SCREENS STYLING                                      FIXME: LARGER SCREENS */
-/* ===================================================================================================================== */
-
-@media (min-width: 600px) {
-  h1 {
-    font-size: 5rem;
-  }
-  h2 {
-    font-size: 4.2rem;
-  }
-  h3 {
-    font-size: 3.6rem;
-  }
-  h4 {
-    font-size: 3rem;
-  }
-  h5 {
-    font-size: 2.4rem;
-  }
-  h6 {
-    font-size: 1.5rem;
-  }
-}
-
-/* ===================================================================================================================== */
 /* TODO:  PART 1 - INVESTING PLAN (PLATINUM) - PAGE TITLE                                                                */
 /* ===================================================================================================================== */
 
@@ -19644,6 +19607,606 @@ label .platinum__label__strong {
 /* ===================================================================================================================== */
 /* ===================================================================================================================== */
 /* FIXME:FIXME:                           SECTION - PLATINUM INVESTMENT PLAN (END)                          FIXME:FIXME: */
+/* ===================================================================================================================== */
+/* ===================================================================================================================== */
+
+/* ===================================================================================================================== */
+/* ===================================================================================================================== */
+/* TODO:TODO:                            SECTION - BUSINESS SUPPORT SERVICES (START)                          TODO:TODO: */
+/* ===================================================================================================================== */
+/* ===================================================================================================================== */
+
+/* .business__support__services__page__title h5 {
+  position: relative;
+  top: 9rem;
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  text-transform: uppercase;
+  margin: 2.5rem 0rem 2.5rem 0rem;
+  text-align: center;
+  background: #eee;
+  border: 2px solid red;
+} */
+
+.business__support__services__section {
+  position: relative;
+  /* top: 9rem; */
+  top: 10rem;
+  /* top: 9rem; */
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  margin: 0rem 0rem 0rem 0rem;
+  padding: 0rem 0rem 2rem 0rem;
+  background-color: var(--color-what-we-do-page-background);
+  /* border: 2px solid red; */
+}
+
+/* .business__support__services__section img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+} */
+
+@media screen and (max-width: 830px) {
+  /* .business__support__services__page__title h5 {
+    position: relative;
+    top: 10rem;
+  } */
+  .business__support__services__section {
+    position: relative;
+    /* top: 9rem; */
+    /* top: 10rem; */
+    top: 11rem;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  /* .business__support__services__page__title h5 {
+    position: relative;
+    top: 13.5rem;
+  } */
+
+  .business__support__services__section {
+    position: relative;
+    /* top: 12.5rem; */
+    /* top: 13.5rem; */
+    top: 14.5rem;
+  }
+}
+
+/* ===================================================================================================================== */
+/* ===================================================================================================================== */
+/* FIXME:FIXME:                         SECTION - BUSINESS SUPPORT SERVICES (END)                           FIXME:FIXME: */
+/* ===================================================================================================================== */
+/* ===================================================================================================================== */
+
+/* ===================================================================================================================== */
+/* ===================================================================================================================== */
+/* TODO:TODO:                            SECTION - IT, CLOUD & WEB SERVICES (START)                           TODO:TODO: */
+/* ===================================================================================================================== */
+/* ===================================================================================================================== */
+
+/* .it__cloud__and__web__services__page__title h5 {
+  position: relative;
+  top: 9rem;
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  text-transform: uppercase;
+  margin: 2.5rem 0rem 2.5rem 0rem;
+  text-align: center;
+  background: #eee;
+  border: 2px solid red;
+} */
+
+.it__cloud__and__web__services__section {
+  position: relative;
+  /* top: 9rem; */
+  top: 10rem;
+  /* top: 9rem; */
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  margin: 0rem 0rem 0rem 0rem;
+  padding: 0rem 0rem 2rem 0rem;
+  background-color: var(--color-what-we-do-page-background);
+  /* border: 2px solid red; */
+}
+
+/* .it__cloud__and__web__services__section img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+} */
+
+@media screen and (max-width: 830px) {
+  /* .it__cloud__and__web__services__page__title h5 {
+    position: relative;
+    top: 10rem;
+  } */
+  .it__cloud__and__web__services__section {
+    position: relative;
+    /* top: 9rem; */
+    /* top: 10rem; */
+    top: 11rem;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  /* .it__cloud__and__web__services__page__title h5 {
+    position: relative;
+    top: 13.5rem;
+  } */
+
+  .it__cloud__and__web__services__section {
+    position: relative;
+    /* top: 12.5rem; */
+    /* top: 13.5rem; */
+    top: 14.5rem;
+  }
+}
+
+/* ===================================================================================================================== */
+/* ===================================================================================================================== */
+/* FIXME:FIXME:                         SECTION - IT, CLOUD & WEB SERVICES (END)                            FIXME:FIXME: */
+/* ===================================================================================================================== */
+/* ===================================================================================================================== */
+
+/* ===================================================================================================================== */
+/* ===================================================================================================================== */
+/* TODO:TODO:                        SECTION - LOGISTICAL & COURIER SERVICES (START)                          TODO:TODO: */
+/* ===================================================================================================================== */
+/* ===================================================================================================================== */
+
+/* .logistical__and__courier__services__page__title h5 {
+  position: relative;
+  top: 9rem;
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  text-transform: uppercase;
+  margin: 2.5rem 0rem 2.5rem 0rem;
+  text-align: center;
+  background: #eee;
+  border: 2px solid red;
+} */
+
+.logistical__and__courier__services__section {
+  position: relative;
+  /* top: 9rem; */
+  top: 10rem;
+  /* top: 9rem; */
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  margin: 0rem 0rem 0rem 0rem;
+  padding: 0rem 0rem 2rem 0rem;
+  background-color: var(--color-what-we-do-page-background);
+  /* border: 2px solid red; */
+}
+
+/* .logistical__and__courier__services__section img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+} */
+
+@media screen and (max-width: 830px) {
+  /* .logistical__and__courier__services__page__title h5 {
+    position: relative;
+    top: 10rem;
+  } */
+  .logistical__and__courier__services__section {
+    position: relative;
+    /* top: 9rem; */
+    /* top: 10rem; */
+    top: 11rem;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  /* .logistical__and__courier__services__page__title h5 {
+    position: relative;
+    top: 13.5rem;
+  } */
+
+  .logistical__and__courier__services__section {
+    position: relative;
+    /* top: 12.5rem; */
+    /* top: 13.5rem; */
+    top: 14.5rem;
+  }
+}
+
+/* ===================================================================================================================== */
+/* ===================================================================================================================== */
+/* FIXME:FIXME:                     SECTION - LOGISTICAL & COURIER SERVICES (END)                           FIXME:FIXME: */
+/* ===================================================================================================================== */
+/* ===================================================================================================================== */
+
+/* ===================================================================================================================== */
+/* ===================================================================================================================== */
+/* TODO:TODO:                                 SECTION - HEALTH CARE SERVICES (START)                          TODO:TODO: */
+/* ===================================================================================================================== */
+/* ===================================================================================================================== */
+
+/* .health__care__services__page__title h5 {
+  position: relative;
+  top: 9rem;
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  text-transform: uppercase;
+  margin: 2.5rem 0rem 2.5rem 0rem;
+  text-align: center;
+  background: #eee;
+  border: 2px solid red;
+} */
+
+.health__care__services__section {
+  position: relative;
+  /* top: 9rem; */
+  top: 10rem;
+  /* top: 9rem; */
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  margin: 0rem 0rem 0rem 0rem;
+  padding: 0rem 0rem 2rem 0rem;
+  background-color: var(--color-what-we-do-page-background);
+  /* border: 2px solid red; */
+}
+
+/* .health__care__services__section img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+} */
+
+@media screen and (max-width: 830px) {
+  /* .health__care__services__page__title h5 {
+    position: relative;
+    top: 10rem;
+  } */
+  .health__care__services__section {
+    position: relative;
+    /* top: 9rem; */
+    /* top: 10rem; */
+    top: 11rem;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  /* .health__care__services__page__title h5 {
+    position: relative;
+    top: 13.5rem;
+  } */
+
+  .health__care__services__section {
+    position: relative;
+    /* top: 12.5rem; */
+    /* top: 13.5rem; */
+    top: 14.5rem;
+  }
+}
+
+/* ===================================================================================================================== */
+/* ===================================================================================================================== */
+/* FIXME:FIXME:                              SECTION - HEALTH CARE SERVICES (END)                           FIXME:FIXME: */
+/* ===================================================================================================================== */
+/* ===================================================================================================================== */
+
+/* ===================================================================================================================== */
+/* ===================================================================================================================== */
+/* TODO:TODO:                      SECTION - RISK, FINANCIAL PLANNING & INSURANCE (START)                     TODO:TODO: */
+/* ===================================================================================================================== */
+/* ===================================================================================================================== */
+
+/* .risk__and__insurance__page__title h5 {
+  position: relative;
+  top: 9rem;
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  text-transform: uppercase;
+  margin: 2.5rem 0rem 2.5rem 0rem;
+  text-align: center;
+  background: #eee;
+  border: 2px solid red;
+} */
+
+.risk__and__insurance__section {
+  position: relative;
+  /* top: 9rem; */
+  top: 10rem;
+  /* top: 9rem; */
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  margin: 0rem 0rem 0rem 0rem;
+  padding: 0rem 0rem 2rem 0rem;
+  background-color: var(--color-what-we-do-page-background);
+  /* border: 2px solid red; */
+}
+
+/* .risk__and__insurance__section img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+} */
+
+@media screen and (max-width: 830px) {
+  /* .risk__and__insurance__page__title h5 {
+    position: relative;
+    top: 10rem;
+  } */
+  .risk__and__insurance__section {
+    position: relative;
+    /* top: 9rem; */
+    /* top: 10rem; */
+    top: 11rem;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  /* .risk__and__insurance__page__title h5 {
+    position: relative;
+    top: 13.5rem;
+  } */
+
+  .risk__and__insurance__section {
+    position: relative;
+    /* top: 12.5rem; */
+    /* top: 13.5rem; */
+    top: 14.5rem;
+  }
+}
+
+/* ===================================================================================================================== */
+/* ===================================================================================================================== */
+/* FIXME:FIXME:                   SECTION - RISK, FINANCIAL PLANNING & INSURANCE (END)                      FIXME:FIXME: */
+/* ===================================================================================================================== */
+/* ===================================================================================================================== */
+
+/* ===================================================================================================================== */
+/* ===================================================================================================================== */
+/* TODO:TODO:                                   SECTION - LEGAL SERVICES (START)                              TODO:TODO: */
+/* ===================================================================================================================== */
+/* ===================================================================================================================== */
+
+/* .legal__services__page__title h5 {
+  position: relative;
+  top: 9rem;
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  text-transform: uppercase;
+  margin: 2.5rem 0rem 2.5rem 0rem;
+  text-align: center;
+  background: #eee;
+  border: 2px solid red;
+} */
+
+.legal__services__section {
+  position: relative;
+  /* top: 9rem; */
+  top: 10rem;
+  /* top: 9rem; */
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  margin: 0rem 0rem 0rem 0rem;
+  padding: 0rem 0rem 2rem 0rem;
+  background-color: var(--color-what-we-do-page-background);
+  /* border: 2px solid red; */
+}
+
+/* .legal__services__section img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+} */
+
+@media screen and (max-width: 830px) {
+  /* .legal__services__page__title h5 {
+    position: relative;
+    top: 10rem;
+  } */
+  .legal__services__section {
+    position: relative;
+    /* top: 9rem; */
+    /* top: 10rem; */
+    top: 11rem;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  /* .legal__services__page__title h5 {
+    position: relative;
+    top: 13.5rem;
+  } */
+
+  .legal__services__section {
+    position: relative;
+    /* top: 12.5rem; */
+    /* top: 13.5rem; */
+    top: 14.5rem;
+  }
+}
+
+/* ===================================================================================================================== */
+/* ===================================================================================================================== */
+/* FIXME:FIXME:                                SECTION - LEGAL SERVICES (END)                               FIXME:FIXME: */
+/* ===================================================================================================================== */
+/* ===================================================================================================================== */
+
+/* ===================================================================================================================== */
+/* ===================================================================================================================== */
+/* TODO:TODO:                           SECTION - PROPERTY MAINTENANCE SERVICES (START)                       TODO:TODO: */
+/* ===================================================================================================================== */
+/* ===================================================================================================================== */
+
+/* .property__maintenance__services__page__title h5 {
+  position: relative;
+  top: 9rem;
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  text-transform: uppercase;
+  margin: 2.5rem 0rem 2.5rem 0rem;
+  text-align: center;
+  background: #eee;
+  border: 2px solid red;
+} */
+
+.property__maintenance__services__section {
+  position: relative;
+  /* top: 9rem; */
+  top: 10rem;
+  /* top: 9rem; */
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  margin: 0rem 0rem 0rem 0rem;
+  padding: 0rem 0rem 2rem 0rem;
+  background-color: var(--color-what-we-do-page-background);
+  /* border: 2px solid red; */
+}
+
+/* .property__maintenance__services__section img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+} */
+
+@media screen and (max-width: 830px) {
+  /* .property__maintenance__services__page__title h5 {
+    position: relative;
+    top: 10rem;
+  } */
+  .property__maintenance__services__section {
+    position: relative;
+    /* top: 9rem; */
+    /* top: 10rem; */
+    top: 11rem;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  /* .property__maintenance__services__page__title h5 {
+    position: relative;
+    top: 13.5rem;
+  } */
+
+  .property__maintenance__services__section {
+    position: relative;
+    /* top: 12.5rem; */
+    /* top: 13.5rem; */
+    top: 14.5rem;
+  }
+}
+
+/* ===================================================================================================================== */
+/* ===================================================================================================================== */
+/* FIXME:FIXME:                        SECTION - PROPERTY MAINTENANCE SERVICES (END)                        FIXME:FIXME: */
+/* ===================================================================================================================== */
+/* ===================================================================================================================== */
+
+/* ===================================================================================================================== */
+/* ===================================================================================================================== */
+/* TODO:TODO:                          SECTION - PROFESSIONAL PROPERTY SERVICES (START)                       TODO:TODO: */
+/* ===================================================================================================================== */
+/* ===================================================================================================================== */
+
+/* .professional__property__services__page__title h5 {
+  position: relative;
+  top: 9rem;
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  text-transform: uppercase;
+  margin: 2.5rem 0rem 2.5rem 0rem;
+  text-align: center;
+  background: #eee;
+  border: 2px solid red;
+} */
+
+.professional__property__services__section {
+  position: relative;
+  /* top: 9rem; */
+  top: 10rem;
+  /* top: 9rem; */
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  margin: 0rem 0rem 0rem 0rem;
+  padding: 0rem 0rem 2rem 0rem;
+  background-color: var(--color-what-we-do-page-background);
+  /* border: 2px solid red; */
+}
+
+/* .professional__property__services__section img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+} */
+
+@media screen and (max-width: 830px) {
+  /* .professional__property__services__page__title h5 {
+    position: relative;
+    top: 10rem;
+  } */
+  .professional__property__services__section {
+    position: relative;
+    /* top: 9rem; */
+    /* top: 10rem; */
+    top: 11rem;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  /* .professional__property__services__page__title h5 {
+    position: relative;
+    top: 13.5rem;
+  } */
+
+  .professional__property__services__section {
+    position: relative;
+    /* top: 12.5rem; */
+    /* top: 13.5rem; */
+    top: 14.5rem;
+  }
+}
+
+/* ===================================================================================================================== */
+/* ===================================================================================================================== */
+/* FIXME:FIXME:                       SECTION - PROFESSIONAL PROPERTY SERVICES (END)                        FIXME:FIXME: */
 /* ===================================================================================================================== */
 /* ===================================================================================================================== */
 

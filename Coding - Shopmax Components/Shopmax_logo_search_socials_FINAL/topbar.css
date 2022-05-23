@@ -608,10 +608,10 @@ body {
 }
 
 .wishlist-counter-container span .wishlist-animated-counter {
-  animation: count 0.4s ease-in-out;
+  animation: wishCount 0.4s ease-in-out;
 }
 
-@keyframes count {
+@keyframes wishCount {
   from {
     top: 0.2rem;
     right: -1.8rem;
@@ -779,10 +779,10 @@ body {
 }
 
 .cart_counter-container span .animated-counter {
-  animation: count 0.4s ease-in-out;
+  animation: shopCount 0.4s ease-in-out;
 }
 
-@keyframes count {
+@keyframes shopCount {
   from {
     top: 0.2rem;
     right: -1.8rem;
