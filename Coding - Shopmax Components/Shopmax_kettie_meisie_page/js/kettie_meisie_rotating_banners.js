@@ -4,10 +4,10 @@
 // ===================================================================================
 
 let slideIndex = 0;
-let slider = document.querySelector(".slider");
-let slides = document.querySelector(".slides");
-let slide = document.querySelectorAll(".slide");
-let dots = document.querySelectorAll(".dots span");
+let slider = document.querySelector(".kettie__meisie__slider");
+let slides = document.querySelector(".kettie__meisie__slides");
+let slide = document.querySelectorAll(".kettie__meisie__slide");
+let dots = document.querySelectorAll(".kettie__meisie__dots span");
 
 showslide();
 
