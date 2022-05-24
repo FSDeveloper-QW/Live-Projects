@@ -1046,14 +1046,14 @@ h6 {
 /* FIXME:  VIEW - MOBILE FIRST     */
 /* ------------------------------- */
 
-.kettie__meisie__page__title h5 {
+/* .kettie__meisie__page__title h5 {
   display: flex;
   justify-content: center;
   justify-items: center;
   text-transform: uppercase;
   margin: 1.5rem 0rem 1.5rem 0rem;
   text-align: center;
-}
+} */
 
 /* ===================================================================================================================== */
 /* TODO:  PART 3 - KETTIE MEISIE PROMOTIONAL PAGE - BUTTONS / LINKS TO KETTIE MEISIE WEBSITE                             */
@@ -1665,43 +1665,43 @@ section {
 /* FIXME:  PRODUCT CARD CONTAINER  */
 /* ------------------------------- */
 
-.kettie__meisie__product-card-container-all .product-card-001,
-.kettie__meisie__product-card-container-all .product-card-002,
-.kettie__meisie__product-card-container-all .product-card-003,
-.kettie__meisie__product-card-container-all .product-card-004,
-.kettie__meisie__product-card-container-all .product-card-005,
-.kettie__meisie__product-card-container-all .product-card-006,
-.kettie__meisie__product-card-container-all .product-card-101,
-.kettie__meisie__product-card-container-all .product-card-102,
-.kettie__meisie__product-card-container-all .product-card-103,
-.kettie__meisie__product-card-container-all .product-card-104,
-.kettie__meisie__product-card-container-all .product-card-105,
-.kettie__meisie__product-card-container-all .product-card-106,
-.kettie__meisie__product-card-container-all .product-card-107,
-.kettie__meisie__product-card-container-all .product-card-108,
-.kettie__meisie__product-card-container-all .product-card-109,
-.kettie__meisie__product-card-container-all .product-card-201,
-.kettie__meisie__product-card-container-all .product-card-202,
-.kettie__meisie__product-card-container-all .product-card-203,
-.kettie__meisie__product-card-container-all .product-card-301,
-.kettie__meisie__product-card-container-all .product-card-401,
-.kettie__meisie__product-card-container-all .product-card-402,
-.kettie__meisie__product-card-container-all .product-card-403,
-.kettie__meisie__product-card-container-all .product-card-404,
-.kettie__meisie__product-card-container-all .product-card-405,
-.kettie__meisie__product-card-container-all .product-card-406,
-.kettie__meisie__product-card-container-all .product-card-407,
-.kettie__meisie__product-card-container-all .product-card-408,
-.kettie__meisie__product-card-container-all .product-card-501,
-.kettie__meisie__product-card-container-all .product-card-502,
-.kettie__meisie__product-card-container-all .product-card-503,
-.kettie__meisie__product-card-container-all .product-card-504,
-.kettie__meisie__product-card-container-all .product-card-505,
-.kettie__meisie__product-card-container-all .product-card-506,
-.kettie__meisie__product-card-container-all .product-card-601,
-.kettie__meisie__product-card-container-all .product-card-602,
-.kettie__meisie__product-card-container-all .product-card-603,
-.kettie__meisie__product-card-container-all .product-card-604 {
+.kettie__meisie__product-card-container-all .kettie__meisie__product-card-001,
+.kettie__meisie__product-card-container-all .kettie__meisie__product-card-002,
+.kettie__meisie__product-card-container-all .kettie__meisie__product-card-003,
+.kettie__meisie__product-card-container-all .kettie__meisie__product-card-004,
+.kettie__meisie__product-card-container-all .kettie__meisie__product-card-005,
+.kettie__meisie__product-card-container-all .kettie__meisie__product-card-006,
+.kettie__meisie__product-card-container-all .kettie__meisie__product-card-101,
+.kettie__meisie__product-card-container-all .kettie__meisie__product-card-102,
+.kettie__meisie__product-card-container-all .kettie__meisie__product-card-103,
+.kettie__meisie__product-card-container-all .kettie__meisie__product-card-104,
+.kettie__meisie__product-card-container-all .kettie__meisie__product-card-105,
+.kettie__meisie__product-card-container-all .kettie__meisie__product-card-106,
+.kettie__meisie__product-card-container-all .kettie__meisie__product-card-107,
+.kettie__meisie__product-card-container-all .kettie__meisie__product-card-108,
+.kettie__meisie__product-card-container-all .kettie__meisie__product-card-109,
+.kettie__meisie__product-card-container-all .kettie__meisie__product-card-201,
+.kettie__meisie__product-card-container-all .kettie__meisie__product-card-202,
+.kettie__meisie__product-card-container-all .kettie__meisie__product-card-203,
+.kettie__meisie__product-card-container-all .kettie__meisie__product-card-301,
+.kettie__meisie__product-card-container-all .kettie__meisie__product-card-401,
+.kettie__meisie__product-card-container-all .kettie__meisie__product-card-402,
+.kettie__meisie__product-card-container-all .kettie__meisie__product-card-403,
+.kettie__meisie__product-card-container-all .kettie__meisie__product-card-404,
+.kettie__meisie__product-card-container-all .kettie__meisie__product-card-405,
+.kettie__meisie__product-card-container-all .kettie__meisie__product-card-406,
+.kettie__meisie__product-card-container-all .kettie__meisie__product-card-407,
+.kettie__meisie__product-card-container-all .kettie__meisie__product-card-408,
+.kettie__meisie__product-card-container-all .kettie__meisie__product-card-501,
+.kettie__meisie__product-card-container-all .kettie__meisie__product-card-502,
+.kettie__meisie__product-card-container-all .kettie__meisie__product-card-503,
+.kettie__meisie__product-card-container-all .kettie__meisie__product-card-504,
+.kettie__meisie__product-card-container-all .kettie__meisie__product-card-505,
+.kettie__meisie__product-card-container-all .kettie__meisie__product-card-506,
+.kettie__meisie__product-card-container-all .kettie__meisie__product-card-601,
+.kettie__meisie__product-card-container-all .kettie__meisie__product-card-602,
+.kettie__meisie__product-card-container-all .kettie__meisie__product-card-603,
+.kettie__meisie__product-card-container-all .kettie__meisie__product-card-604 {
   position: absolute;
   transition: transform 1s;
   transform-style: preserve-3d;
@@ -1722,43 +1722,80 @@ section {
 /* TODO:FIXME:     JAVASCRIPT : FOR FLIP FUNCTIONALITY     TODO:FIXME: */
 /* ------------------------------------------------------------------- */
 
-.kettie__meisie__product-card-container-all .product-card-001.animated,
-.kettie__meisie__product-card-container-all .product-card-002.animated,
-.kettie__meisie__product-card-container-all .product-card-003.animated,
-.kettie__meisie__product-card-container-all .product-card-004.animated,
-.kettie__meisie__product-card-container-all .product-card-005.animated,
-.kettie__meisie__product-card-container-all .product-card-006.animated,
-.kettie__meisie__product-card-container-all .product-card-101.animated,
-.kettie__meisie__product-card-container-all .product-card-102.animated,
-.kettie__meisie__product-card-container-all .product-card-103.animated,
-.kettie__meisie__product-card-container-all .product-card-104.animated,
-.kettie__meisie__product-card-container-all .product-card-105.animated,
-.kettie__meisie__product-card-container-all .product-card-106.animated,
-.kettie__meisie__product-card-container-all .product-card-107.animated,
-.kettie__meisie__product-card-container-all .product-card-108.animated,
-.kettie__meisie__product-card-container-all .product-card-109.animated,
-.kettie__meisie__product-card-container-all .product-card-201.animated,
-.kettie__meisie__product-card-container-all .product-card-202.animated,
-.kettie__meisie__product-card-container-all .product-card-203.animated,
-.kettie__meisie__product-card-container-all .product-card-301.animated,
-.kettie__meisie__product-card-container-all .product-card-401.animated,
-.kettie__meisie__product-card-container-all .product-card-402.animated,
-.kettie__meisie__product-card-container-all .product-card-403.animated,
-.kettie__meisie__product-card-container-all .product-card-404.animated,
-.kettie__meisie__product-card-container-all .product-card-405.animated,
-.kettie__meisie__product-card-container-all .product-card-406.animated,
-.kettie__meisie__product-card-container-all .product-card-407.animated,
-.kettie__meisie__product-card-container-all .product-card-408.animated,
-.kettie__meisie__product-card-container-all .product-card-501.animated,
-.kettie__meisie__product-card-container-all .product-card-502.animated,
-.kettie__meisie__product-card-container-all .product-card-503.animated,
-.kettie__meisie__product-card-container-all .product-card-504.animated,
-.kettie__meisie__product-card-container-all .product-card-505.animated,
-.kettie__meisie__product-card-container-all .product-card-506.animated,
-.kettie__meisie__product-card-container-all .product-card-601.animated,
-.kettie__meisie__product-card-container-all .product-card-602.animated,
-.kettie__meisie__product-card-container-all .product-card-603.animated,
-.kettie__meisie__product-card-container-all .product-card-604.animated {
+.kettie__meisie__product-card-container-all
+  .kettie__meisie__product-card-001.animated,
+.kettie__meisie__product-card-container-all
+  .kettie__meisie__product-card-002.animated,
+.kettie__meisie__product-card-container-all
+  .kettie__meisie__product-card-003.animated,
+.kettie__meisie__product-card-container-all
+  .kettie__meisie__product-card-004.animated,
+.kettie__meisie__product-card-container-all
+  .kettie__meisie__product-card-005.animated,
+.kettie__meisie__product-card-container-all
+  .kettie__meisie__product-card-006.animated,
+.kettie__meisie__product-card-container-all
+  .kettie__meisie__product-card-101.animated,
+.kettie__meisie__product-card-container-all
+  .kettie__meisie__product-card-102.animated,
+.kettie__meisie__product-card-container-all
+  .kettie__meisie__product-card-103.animated,
+.kettie__meisie__product-card-container-all
+  .kettie__meisie__product-card-104.animated,
+.kettie__meisie__product-card-container-all
+  .kettie__meisie__product-card-105.animated,
+.kettie__meisie__product-card-container-all
+  .kettie__meisie__product-card-106.animated,
+.kettie__meisie__product-card-container-all
+  .kettie__meisie__product-card-107.animated,
+.kettie__meisie__product-card-container-all
+  .kettie__meisie__product-card-108.animated,
+.kettie__meisie__product-card-container-all
+  .kettie__meisie__product-card-109.animated,
+.kettie__meisie__product-card-container-all
+  .kettie__meisie__product-card-201.animated,
+.kettie__meisie__product-card-container-all
+  .kettie__meisie__product-card-202.animated,
+.kettie__meisie__product-card-container-all
+  .kettie__meisie__product-card-203.animated,
+.kettie__meisie__product-card-container-all
+  .kettie__meisie__product-card-301.animated,
+.kettie__meisie__product-card-container-all
+  .kettie__meisie__product-card-401.animated,
+.kettie__meisie__product-card-container-all
+  .kettie__meisie__product-card-402.animated,
+.kettie__meisie__product-card-container-all
+  .kettie__meisie__product-card-403.animated,
+.kettie__meisie__product-card-container-all
+  .kettie__meisie__product-card-404.animated,
+.kettie__meisie__product-card-container-all
+  .kettie__meisie__product-card-405.animated,
+.kettie__meisie__product-card-container-all
+  .kettie__meisie__product-card-406.animated,
+.kettie__meisie__product-card-container-all
+  .kettie__meisie__product-card-407.animated,
+.kettie__meisie__product-card-container-all
+  .kettie__meisie__product-card-408.animated,
+.kettie__meisie__product-card-container-all
+  .kettie__meisie__product-card-501.animated,
+.kettie__meisie__product-card-container-all
+  .kettie__meisie__product-card-502.animated,
+.kettie__meisie__product-card-container-all
+  .kettie__meisie__product-card-503.animated,
+.kettie__meisie__product-card-container-all
+  .kettie__meisie__product-card-504.animated,
+.kettie__meisie__product-card-container-all
+  .kettie__meisie__product-card-505.animated,
+.kettie__meisie__product-card-container-all
+  .kettie__meisie__product-card-506.animated,
+.kettie__meisie__product-card-container-all
+  .kettie__meisie__product-card-601.animated,
+.kettie__meisie__product-card-container-all
+  .kettie__meisie__product-card-602.animated,
+.kettie__meisie__product-card-container-all
+  .kettie__meisie__product-card-603.animated,
+.kettie__meisie__product-card-container-all
+  .kettie__meisie__product-card-604.animated {
   transform: rotateY(-180deg);
 }
 
@@ -1767,115 +1804,115 @@ section {
 /* -------------------------------------------------------------------- */
 
 .kettie__meisie__product-card-container-all
-  .product-card-001
+  .kettie__meisie__product-card-001
   .kettie__meisie__product-card-front-side,
 .kettie__meisie__product-card-container-all
-  .product-card-002
+  .kettie__meisie__product-card-002
   .kettie__meisie__product-card-front-side,
 .kettie__meisie__product-card-container-all
-  .product-card-003
+  .kettie__meisie__product-card-003
   .kettie__meisie__product-card-front-side,
 .kettie__meisie__product-card-container-all
-  .product-card-004
+  .kettie__meisie__product-card-004
   .kettie__meisie__product-card-front-side,
 .kettie__meisie__product-card-container-all
-  .product-card-005
+  .kettie__meisie__product-card-005
   .kettie__meisie__product-card-front-side,
 .kettie__meisie__product-card-container-all
-  .product-card-006
+  .kettie__meisie__product-card-006
   .kettie__meisie__product-card-front-side,
 .kettie__meisie__product-card-container-all
-  .product-card-101
+  .kettie__meisie__product-card-101
   .kettie__meisie__product-card-front-side,
 .kettie__meisie__product-card-container-all
-  .product-card-102
+  .kettie__meisie__product-card-102
   .kettie__meisie__product-card-front-side,
 .kettie__meisie__product-card-container-all
-  .product-card-103
+  .kettie__meisie__product-card-103
   .kettie__meisie__product-card-front-side,
 .kettie__meisie__product-card-container-all
-  .product-card-104
+  .kettie__meisie__product-card-104
   .kettie__meisie__product-card-front-side,
 .kettie__meisie__product-card-container-all
-  .product-card-105
+  .kettie__meisie__product-card-105
   .kettie__meisie__product-card-front-side,
 .kettie__meisie__product-card-container-all
-  .product-card-106
+  .kettie__meisie__product-card-106
   .kettie__meisie__product-card-front-side,
 .kettie__meisie__product-card-container-all
-  .product-card-107
+  .kettie__meisie__product-card-107
   .kettie__meisie__product-card-front-side,
 .kettie__meisie__product-card-container-all
-  .product-card-108
+  .kettie__meisie__product-card-108
   .kettie__meisie__product-card-front-side,
 .kettie__meisie__product-card-container-all
-  .product-card-109
+  .kettie__meisie__product-card-109
   .kettie__meisie__product-card-front-side,
 .kettie__meisie__product-card-container-all
-  .product-card-201
+  .kettie__meisie__product-card-201
   .kettie__meisie__product-card-front-side,
 .kettie__meisie__product-card-container-all
-  .product-card-202
+  .kettie__meisie__product-card-202
   .kettie__meisie__product-card-front-side,
 .kettie__meisie__product-card-container-all
-  .product-card-203
+  .kettie__meisie__product-card-203
   .kettie__meisie__product-card-front-side,
 .kettie__meisie__product-card-container-all
-  .product-card-301
+  .kettie__meisie__product-card-301
   .kettie__meisie__product-card-front-side,
 .kettie__meisie__product-card-container-all
-  .product-card-401
+  .kettie__meisie__product-card-401
   .kettie__meisie__product-card-front-side,
 .kettie__meisie__product-card-container-all
-  .product-card-402
+  .kettie__meisie__product-card-402
   .kettie__meisie__product-card-front-side,
 .kettie__meisie__product-card-container-all
-  .product-card-403
+  .kettie__meisie__product-card-403
   .kettie__meisie__product-card-front-side,
 .kettie__meisie__product-card-container-all
-  .product-card-404
+  .kettie__meisie__product-card-404
   .kettie__meisie__product-card-front-side,
 .kettie__meisie__product-card-container-all
-  .product-card-405
+  .kettie__meisie__product-card-405
   .kettie__meisie__product-card-front-side,
 .kettie__meisie__product-card-container-all
-  .product-card-406
+  .kettie__meisie__product-card-406
   .kettie__meisie__product-card-front-side,
 .kettie__meisie__product-card-container-all
-  .product-card-407
+  .kettie__meisie__product-card-407
   .kettie__meisie__product-card-front-side,
 .kettie__meisie__product-card-container-all
-  .product-card-408
+  .kettie__meisie__product-card-408
   .kettie__meisie__product-card-front-side,
 .kettie__meisie__product-card-container-all
-  .product-card-501
+  .kettie__meisie__product-card-501
   .kettie__meisie__product-card-front-side,
 .kettie__meisie__product-card-container-all
-  .product-card-502
+  .kettie__meisie__product-card-502
   .kettie__meisie__product-card-front-side,
 .kettie__meisie__product-card-container-all
-  .product-card-503
+  .kettie__meisie__product-card-503
   .kettie__meisie__product-card-front-side,
 .kettie__meisie__product-card-container-all
-  .product-card-504
+  .kettie__meisie__product-card-504
   .kettie__meisie__product-card-front-side,
 .kettie__meisie__product-card-container-all
-  .product-card-505
+  .kettie__meisie__product-card-505
   .kettie__meisie__product-card-front-side,
 .kettie__meisie__product-card-container-all
-  .product-card-506
+  .kettie__meisie__product-card-506
   .kettie__meisie__product-card-front-side,
 .kettie__meisie__product-card-container-all
-  .product-card-601
+  .kettie__meisie__product-card-601
   .kettie__meisie__product-card-front-side,
 .kettie__meisie__product-card-container-all
-  .product-card-602
+  .kettie__meisie__product-card-602
   .kettie__meisie__product-card-front-side,
 .kettie__meisie__product-card-container-all
-  .product-card-603
+  .kettie__meisie__product-card-603
   .kettie__meisie__product-card-front-side,
 .kettie__meisie__product-card-container-all
-  .product-card-604
+  .kettie__meisie__product-card-604
   .kettie__meisie__product-card-front-side {
   position: absolute;
   top: 0;
@@ -1898,115 +1935,115 @@ section {
 /* -------------------------------------------------------------------- */
 
 .kettie__meisie__product-card-container-all
-  .product-card-001
+  .kettie__meisie__product-card-001
   .kettie__meisie__product-card-back-side,
 .kettie__meisie__product-card-container-all
-  .product-card-002
+  .kettie__meisie__product-card-002
   .kettie__meisie__product-card-back-side,
 .kettie__meisie__product-card-container-all
-  .product-card-003
+  .kettie__meisie__product-card-003
   .kettie__meisie__product-card-back-side,
 .kettie__meisie__product-card-container-all
-  .product-card-004
+  .kettie__meisie__product-card-004
   .kettie__meisie__product-card-back-side,
 .kettie__meisie__product-card-container-all
-  .product-card-005
+  .kettie__meisie__product-card-005
   .kettie__meisie__product-card-back-side,
 .kettie__meisie__product-card-container-all
-  .product-card-006
+  .kettie__meisie__product-card-006
   .kettie__meisie__product-card-back-side,
 .kettie__meisie__product-card-container-all
-  .product-card-101
+  .kettie__meisie__product-card-101
   .kettie__meisie__product-card-back-side,
 .kettie__meisie__product-card-container-all
-  .product-card-102
+  .kettie__meisie__product-card-102
   .kettie__meisie__product-card-back-side,
 .kettie__meisie__product-card-container-all
-  .product-card-103
+  .kettie__meisie__product-card-103
   .kettie__meisie__product-card-back-side,
 .kettie__meisie__product-card-container-all
-  .product-card-104
+  .kettie__meisie__product-card-104
   .kettie__meisie__product-card-back-side,
 .kettie__meisie__product-card-container-all
-  .product-card-105
+  .kettie__meisie__product-card-105
   .kettie__meisie__product-card-back-side,
 .kettie__meisie__product-card-container-all
-  .product-card-106
+  .kettie__meisie__product-card-106
   .kettie__meisie__product-card-back-side,
 .kettie__meisie__product-card-container-all
-  .product-card-107
+  .kettie__meisie__product-card-107
   .kettie__meisie__product-card-back-side,
 .kettie__meisie__product-card-container-all
-  .product-card-108
+  .kettie__meisie__product-card-108
   .kettie__meisie__product-card-back-side,
 .kettie__meisie__product-card-container-all
-  .product-card-109
+  .kettie__meisie__product-card-109
   .kettie__meisie__product-card-back-side,
 .kettie__meisie__product-card-container-all
-  .product-card-201
+  .kettie__meisie__product-card-201
   .kettie__meisie__product-card-back-side,
 .kettie__meisie__product-card-container-all
-  .product-card-202
+  .kettie__meisie__product-card-202
   .kettie__meisie__product-card-back-side,
 .kettie__meisie__product-card-container-all
-  .product-card-203
+  .kettie__meisie__product-card-203
   .kettie__meisie__product-card-back-side,
 .kettie__meisie__product-card-container-all
-  .product-card-301
+  .kettie__meisie__product-card-301
   .kettie__meisie__product-card-back-side,
 .kettie__meisie__product-card-container-all
-  .product-card-401
+  .kettie__meisie__product-card-401
   .kettie__meisie__product-card-back-side,
 .kettie__meisie__product-card-container-all
-  .product-card-402
+  .kettie__meisie__product-card-402
   .kettie__meisie__product-card-back-side,
 .kettie__meisie__product-card-container-all
-  .product-card-403
+  .kettie__meisie__product-card-403
   .kettie__meisie__product-card-back-side,
 .kettie__meisie__product-card-container-all
-  .product-card-404
+  .kettie__meisie__product-card-404
   .kettie__meisie__product-card-back-side,
 .kettie__meisie__product-card-container-all
-  .product-card-405
+  .kettie__meisie__product-card-405
   .kettie__meisie__product-card-back-side,
 .kettie__meisie__product-card-container-all
-  .product-card-406
+  .kettie__meisie__product-card-406
   .kettie__meisie__product-card-back-side,
 .kettie__meisie__product-card-container-all
-  .product-card-407
+  .kettie__meisie__product-card-407
   .kettie__meisie__product-card-back-side,
 .kettie__meisie__product-card-container-all
-  .product-card-408
+  .kettie__meisie__product-card-408
   .kettie__meisie__product-card-back-side,
 .kettie__meisie__product-card-container-all
-  .product-card-501
+  .kettie__meisie__product-card-501
   .kettie__meisie__product-card-back-side,
 .kettie__meisie__product-card-container-all
-  .product-card-502
+  .kettie__meisie__product-card-502
   .kettie__meisie__product-card-back-side,
 .kettie__meisie__product-card-container-all
-  .product-card-503
+  .kettie__meisie__product-card-503
   .kettie__meisie__product-card-back-side,
 .kettie__meisie__product-card-container-all
-  .product-card-504
+  .kettie__meisie__product-card-504
   .kettie__meisie__product-card-back-side,
 .kettie__meisie__product-card-container-all
-  .product-card-505
+  .kettie__meisie__product-card-505
   .kettie__meisie__product-card-back-side,
 .kettie__meisie__product-card-container-all
-  .product-card-506
+  .kettie__meisie__product-card-506
   .kettie__meisie__product-card-back-side,
 .kettie__meisie__product-card-container-all
-  .product-card-601
+  .kettie__meisie__product-card-601
   .kettie__meisie__product-card-back-side,
 .kettie__meisie__product-card-container-all
-  .product-card-602
+  .kettie__meisie__product-card-602
   .kettie__meisie__product-card-back-side,
 .kettie__meisie__product-card-container-all
-  .product-card-603
+  .kettie__meisie__product-card-603
   .kettie__meisie__product-card-back-side,
 .kettie__meisie__product-card-container-all
-  .product-card-604
+  .kettie__meisie__product-card-604
   .kettie__meisie__product-card-back-side {
   position: absolute;
   top: 0;
@@ -2097,20 +2134,20 @@ section {
 /* FIXME:  SECTION 2 - MAIN CONTAINER  */
 /* ----------------------------------- */
 
-.kettie__meisie__product-card-section-extra-images {
+/* .kettie__meisie__product-card-section-extra-images {
   position: relative;
   height: 4.8rem;
   background: var(
     --color-kettie-meisie-product-card-extra-images-section-background
   );
-  /* border: 1px solid red; */
-}
+  border: 1px solid red;
+} */
 
 /* ------------------------------------------- */
 /* FIXME:  SECTION 2 - EXTRA IMAGES CONTAINER  */
 /* ------------------------------------------- */
 
-.kettie__meisie__product-card-section-extra-images .extra-images {
+/* .kettie__meisie__product-card-section-extra-images .extra-images {
   height: 100%;
   display: flex;
   justify-content: center;
@@ -2118,25 +2155,23 @@ section {
   background: var(
     --color-kettie-meisie-product-card-extra-images-section-background
   );
-  /* border: 1px solid red; */
-}
+  border: 1px solid red;
+} */
 
-.kettie__meisie__product-card-section-extra-images .extra-images img {
+/* .kettie__meisie__product-card-section-extra-images .extra-images img {
   width: 4.5rem;
   height: 4.5rem;
   margin: 0.5rem 0.5rem 0rem 0.5rem;
   padding: 0.5rem 0.5rem 0.5rem 0.5rem;
   background: var(--color-kettie-meisie-product-card-extra-image-background);
-  border-radius: 0.5rem;
-  /* box-shadow: var(--color-box-shadow-01); */
-  /* border: 1px solid var(--color-product-card-extra-image-border); */
+  border-radius: 0.5rem;  
   cursor: pointer;
-}
+} */
 
-.kettie__meisie__product-card-section-extra-images .extra-images img:hover {
+/* .kettie__meisie__product-card-section-extra-images .extra-images img:hover {
   border: 3px solid
     var(--color-kettie-meisie-product-card-extra-image-border-hover);
-}
+} */
 
 /* ===================================================================================================================== */
 /* TODO:  PRODUCT CARD SECTION 3 - PRODUCT INFORMATION                                                                   */
@@ -2383,7 +2418,7 @@ section {
 /* TODO:  PRODUCT CARD SECTION 7A - BUTTON (ADD TO SHOPPING CART)                                                        */
 /* ===================================================================================================================== */
 
-.info-and-cart-container {
+.kettie__meisie__info-and-cart-container {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -2393,7 +2428,7 @@ section {
 /* FIXME:  CONTAINER - MAIN (HOLDING ALL ELEMENTS)  FIXME: */
 /* ------------------------------------------------------- */
 
-.shopping-container {
+.kettie__meisie__shopping-container {
   width: 50%;
   height: 5rem;
   display: flex;
@@ -2408,7 +2443,7 @@ section {
 /* FIXME:  BUTTON - ADD TO CART  FIXME: */
 /* ------------------------------------ */
 
-.shopping-container button {
+.kettie__meisie__shopping-container button {
   display: flex;
   align-items: center;
   font-size: 0.8rem;
@@ -2427,7 +2462,7 @@ section {
   /* border: 1px solid green; */
 }
 
-.shopping-container a {
+.kettie__meisie__shopping-container a {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -2436,11 +2471,11 @@ section {
   /* border: 1px solid green; */
 }
 
-.shopping-container i.bx-cart {
+.kettie__meisie__shopping-container i.bx-cart {
   font-size: 2rem;
 }
 
-.shopping-container button:hover {
+.kettie__meisie__shopping-container button:hover {
   transform: scale(1.05);
   cursor: pointer;
 }
@@ -2449,7 +2484,7 @@ section {
 /* TODO:FIXME:  JAVASCRIPT - SHOPPING CART COUNTER ANIMATION ON "ADD TO CART" BUTTON CLICK  TODO:FIXME: */
 /* ---------------------------------------------------------------------------------------------------- */
 
-.cart_counter-container span:not(.animated-counter) {
+/* .cart_counter-container span:not(.animated-counter) {
   display: flex;
 }
 
@@ -2487,7 +2522,7 @@ section {
     right: 0.3rem;
     transform: rotate(0deg);
   }
-}
+} */
 
 /* ===================================================================================================================== */
 /* TODO:  PRODUCT CARD SECTION 7B - BUTTON (MORE INFO)                                                                   */
@@ -2497,7 +2532,7 @@ section {
 /* FIXME:  CONTAINER - MAIN (HOLDING ALL ELEMENTS)  FIXME: */
 /* ------------------------------------------------------- */
 
-.more-info-container {
+.kettie__meisie__more-info-container {
   width: 50%;
   height: 5rem;
   display: flex;
@@ -2512,7 +2547,7 @@ section {
 /* FIXME:  BUTTON - ADD TO CART  FIXME: */
 /* ------------------------------------ */
 
-.more-info-container .btn {
+.kettie__meisie__more-info-container .kettie__meisie__btn {
   display: flex;
   align-items: center;
   font-size: 0.8rem;
@@ -2532,11 +2567,11 @@ section {
   /* border: 1px solid green; */
 }
 
-.more-info-container i.bx-list-check {
+.kettie__meisie__more-info-container i.bx-list-check {
   font-size: 2rem;
 }
 
-.btn:hover {
+.kettie__meisie__btn:hover {
   transform: scale(1.05);
 }
 
@@ -2548,7 +2583,7 @@ section {
 /* FIXME:  CONTAINER - MAIN (HOLDING ALL ELEMENTS)  FIXME: */
 /* ------------------------------------------------------- */
 
-.wishlist-container {
+.kettie__meisie__wishlist-container {
   position: absolute;
   top: -0.3rem;
   right: -0.25rem;
@@ -2565,7 +2600,7 @@ section {
 /* FIXME:  BUTTON - ADD TO WISH LIST  FIXME: */
 /* ----------------------------------------- */
 
-.wishlist-container button {
+.kettie__meisie__wishlist-container button {
   position: absolute;
   top: 0;
   right: 0;
@@ -2579,7 +2614,7 @@ section {
   /* border: 1px solid green; */
 }
 
-i.bx-heart {
+.kettie__meisie__wishlist-container i.bx-heart {
   position: absolute;
   top: 0;
   right: 0;
@@ -2598,7 +2633,7 @@ i.bx-heart {
   transition: transform 0.3s ease-in-out;
 }
 
-.wishlist-container button i:hover {
+.kettie__meisie__wishlist-container button i:hover {
   transform: scale(1.11);
   cursor: pointer;
 }
@@ -2607,7 +2642,7 @@ i.bx-heart {
 /* TODO:FIXME:  JAVASCRIPT - WISH LIST COUNTER ANIMATION ON "ADD TO WISH LIST" BUTTON CLICK  TODO:FIXME: */
 /* ----------------------------------------------------------------------------------------------------- */
 
-.wishlist-counter-container span:not(.wishlist-animated-counter) {
+/* .wishlist-counter-container span:not(.wishlist-animated-counter) {
   display: flex;
 }
 
@@ -2645,7 +2680,7 @@ i.bx-heart {
     right: 0.3rem;
     transform: rotate(0deg);
   }
-}
+} */
 
 /* ===================================================================================================================== */
 /* ===================================================================================================================== */

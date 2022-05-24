@@ -17,46 +17,7 @@ function change(image) {
 }
 
 // =======================================================================================
-// TODO:  PART 2 -  SCRIPT TO ADD COUNTER TO SHOPPING CART WHEN "ADD TO CART" IS CLICKED
-// =======================================================================================
-
-let count = 0;
-
-const counter = document.getElementById("counter");
-document.getElementById("add-animation").addEventListener("click", (event) => {
-  const cl = counter.classList;
-  const c = "animated-counter";
-  count++;
-
-  counter.innerText = count;
-  cl.remove(c, cl.contains(c));
-  setTimeout(() => counter.classList.add("animated-counter"), 1);
-});
-
-// =======================================================================================
-// TODO:  PART 3 -  SCRIPT TO ADD COUNTER TO WISH LIST WHEN "ADD TO WISH LIST" IS CLICKED
-// =======================================================================================
-
-let countWish = 0;
-
-const wishListCounter = document.getElementById("wishlist-counter");
-document
-  .getElementById("wishlist-add-animation")
-  .addEventListener("click", (event) => {
-    const cl = wishListCounter.classList;
-    const c = "wishlist-animated-counter";
-    count++;
-
-    wishListCounter.innerText = countWish;
-    cl.remove(c, cl.contains(c));
-    setTimeout(
-      () => wishListCounter.classList.add("wishlist-animated-counter"),
-      1
-    );
-  });
-
-// =======================================================================================
-// TODO:  PART 4 -  SCRIPT TO FLIP A PROFILE OR PRODUCT CARD (AND BACK)
+// TODO:  PART 2 -  SCRIPT TO FLIP A PROFILE OR PRODUCT CARD (AND BACK)
 // =======================================================================================
 
 // ---------------------------------------------------------------------------------------
@@ -75,7 +36,7 @@ document
 
 $(document).ready(function () {
   $(".animate-001").click(function () {
-    $(".product-card-001").toggleClass("animated");
+    $(".kettie__meisie__product-card-001").toggleClass("animated");
     return false;
   });
 });
@@ -86,7 +47,7 @@ $(document).ready(function () {
 
 $(document).ready(function () {
   $(".animate-002").click(function () {
-    $(".product-card-002").toggleClass("animated");
+    $(".kettie__meisie__product-card-002").toggleClass("animated");
     return false;
   });
 });
@@ -97,7 +58,7 @@ $(document).ready(function () {
 
 $(document).ready(function () {
   $(".animate-003").click(function () {
-    $(".product-card-003").toggleClass("animated");
+    $(".kettie__meisie__product-card-003").toggleClass("animated");
     return false;
   });
 });
@@ -108,7 +69,7 @@ $(document).ready(function () {
 
 $(document).ready(function () {
   $(".animate-004").click(function () {
-    $(".product-card-004").toggleClass("animated");
+    $(".kettie__meisie__product-card-004").toggleClass("animated");
     return false;
   });
 });
@@ -119,7 +80,7 @@ $(document).ready(function () {
 
 $(document).ready(function () {
   $(".animate-005").click(function () {
-    $(".product-card-005").toggleClass("animated");
+    $(".kettie__meisie__product-card-005").toggleClass("animated");
     return false;
   });
 });
@@ -130,7 +91,7 @@ $(document).ready(function () {
 
 $(document).ready(function () {
   $(".animate-006").click(function () {
-    $(".product-card-006").toggleClass("animated");
+    $(".kettie__meisie__product-card-006").toggleClass("animated");
     return false;
   });
 });
@@ -169,7 +130,7 @@ $(document).ready(function () {
 
 $(document).ready(function () {
   $(".animate-101").click(function () {
-    $(".product-card-101").toggleClass("animated");
+    $(".kettie__meisie__product-card-101").toggleClass("animated");
     return false;
   });
 });
@@ -180,7 +141,7 @@ $(document).ready(function () {
 
 $(document).ready(function () {
   $(".animate-102").click(function () {
-    $(".product-card-102").toggleClass("animated");
+    $(".kettie__meisie__product-card-102").toggleClass("animated");
     return false;
   });
 });
@@ -191,7 +152,7 @@ $(document).ready(function () {
 
 $(document).ready(function () {
   $(".animate-103").click(function () {
-    $(".product-card-103").toggleClass("animated");
+    $(".kettie__meisie__product-card-103").toggleClass("animated");
     return false;
   });
 });
@@ -202,7 +163,7 @@ $(document).ready(function () {
 
 $(document).ready(function () {
   $(".animate-104").click(function () {
-    $(".product-card-104").toggleClass("animated");
+    $(".kettie__meisie__product-card-104").toggleClass("animated");
     return false;
   });
 });
@@ -213,7 +174,7 @@ $(document).ready(function () {
 
 $(document).ready(function () {
   $(".animate-105").click(function () {
-    $(".product-card-105").toggleClass("animated");
+    $(".kettie__meisie__product-card-105").toggleClass("animated");
     return false;
   });
 });
@@ -224,7 +185,7 @@ $(document).ready(function () {
 
 $(document).ready(function () {
   $(".animate-106").click(function () {
-    $(".product-card-106").toggleClass("animated");
+    $(".kettie__meisie__product-card-106").toggleClass("animated");
     return false;
   });
 });
@@ -235,7 +196,7 @@ $(document).ready(function () {
 
 $(document).ready(function () {
   $(".animate-107").click(function () {
-    $(".product-card-107").toggleClass("animated");
+    $(".kettie__meisie__product-card-107").toggleClass("animated");
     return false;
   });
 });
@@ -246,7 +207,7 @@ $(document).ready(function () {
 
 $(document).ready(function () {
   $(".animate-108").click(function () {
-    $(".product-card-108").toggleClass("animated");
+    $(".kettie__meisie__product-card-108").toggleClass("animated");
     return false;
   });
 });
@@ -257,7 +218,7 @@ $(document).ready(function () {
 
 $(document).ready(function () {
   $(".animate-109").click(function () {
-    $(".product-card-109").toggleClass("animated");
+    $(".kettie__meisie__product-card-109").toggleClass("animated");
     return false;
   });
 });
@@ -284,7 +245,7 @@ $(document).ready(function () {
 
 $(document).ready(function () {
   $(".animate-201").click(function () {
-    $(".product-card-201").toggleClass("animated");
+    $(".kettie__meisie__product-card-201").toggleClass("animated");
     return false;
   });
 });
@@ -295,7 +256,7 @@ $(document).ready(function () {
 
 $(document).ready(function () {
   $(".animate-202").click(function () {
-    $(".product-card-202").toggleClass("animated");
+    $(".kettie__meisie__product-card-202").toggleClass("animated");
     return false;
   });
 });
@@ -306,7 +267,7 @@ $(document).ready(function () {
 
 $(document).ready(function () {
   $(".animate-203").click(function () {
-    $(".product-card-203").toggleClass("animated");
+    $(".kettie__meisie__product-card-203").toggleClass("animated");
     return false;
   });
 });
@@ -317,7 +278,7 @@ $(document).ready(function () {
 
 $(document).ready(function () {
   $(".animate-204").click(function () {
-    $(".product-card-204").toggleClass("animated");
+    $(".kettie__meisie__product-card-204").toggleClass("animated");
     return false;
   });
 });
@@ -328,7 +289,7 @@ $(document).ready(function () {
 
 $(document).ready(function () {
   $(".animate-205").click(function () {
-    $(".product-card-205").toggleClass("animated");
+    $(".kettie__meisie__product-card-205").toggleClass("animated");
     return false;
   });
 });
@@ -351,7 +312,7 @@ $(document).ready(function () {
 
 $(document).ready(function () {
   $(".animate-301").click(function () {
-    $(".product-card-301").toggleClass("animated");
+    $(".kettie__meisie__product-card-301").toggleClass("animated");
     return false;
   });
 });
@@ -374,7 +335,7 @@ $(document).ready(function () {
 
 $(document).ready(function () {
   $(".animate-401").click(function () {
-    $(".product-card-401").toggleClass("animated");
+    $(".kettie__meisie__product-card-401").toggleClass("animated");
     return false;
   });
 });
@@ -385,7 +346,7 @@ $(document).ready(function () {
 
 $(document).ready(function () {
   $(".animate-402").click(function () {
-    $(".product-card-402").toggleClass("animated");
+    $(".kettie__meisie__product-card-402").toggleClass("animated");
     return false;
   });
 });
@@ -396,7 +357,7 @@ $(document).ready(function () {
 
 $(document).ready(function () {
   $(".animate-403").click(function () {
-    $(".product-card-403").toggleClass("animated");
+    $(".kettie__meisie__product-card-403").toggleClass("animated");
     return false;
   });
 });
@@ -407,7 +368,7 @@ $(document).ready(function () {
 
 $(document).ready(function () {
   $(".animate-404").click(function () {
-    $(".product-card-404").toggleClass("animated");
+    $(".kettie__meisie__product-card-404").toggleClass("animated");
     return false;
   });
 });
@@ -418,7 +379,7 @@ $(document).ready(function () {
 
 $(document).ready(function () {
   $(".animate-405").click(function () {
-    $(".product-card-405").toggleClass("animated");
+    $(".kettie__meisie__product-card-405").toggleClass("animated");
     return false;
   });
 });
@@ -429,7 +390,7 @@ $(document).ready(function () {
 
 $(document).ready(function () {
   $(".animate-406").click(function () {
-    $(".product-card-406").toggleClass("animated");
+    $(".kettie__meisie__product-card-406").toggleClass("animated");
     return false;
   });
 });
@@ -440,7 +401,7 @@ $(document).ready(function () {
 
 $(document).ready(function () {
   $(".animate-407").click(function () {
-    $(".product-card-407").toggleClass("animated");
+    $(".kettie__meisie__product-card-407").toggleClass("animated");
     return false;
   });
 });
@@ -463,7 +424,7 @@ $(document).ready(function () {
 
 $(document).ready(function () {
   $(".animate-501").click(function () {
-    $(".product-card-501").toggleClass("animated");
+    $(".kettie__meisie__product-card-501").toggleClass("animated");
     return false;
   });
 });
@@ -474,7 +435,7 @@ $(document).ready(function () {
 
 $(document).ready(function () {
   $(".animate-502").click(function () {
-    $(".product-card-502").toggleClass("animated");
+    $(".kettie__meisie__product-card-502").toggleClass("animated");
     return false;
   });
 });
@@ -485,7 +446,7 @@ $(document).ready(function () {
 
 $(document).ready(function () {
   $(".animate-503").click(function () {
-    $(".product-card-503").toggleClass("animated");
+    $(".kettie__meisie__product-card-503").toggleClass("animated");
     return false;
   });
 });
@@ -496,7 +457,7 @@ $(document).ready(function () {
 
 $(document).ready(function () {
   $(".animate-504").click(function () {
-    $(".product-card-504").toggleClass("animated");
+    $(".kettie__meisie__product-card-504").toggleClass("animated");
     return false;
   });
 });
@@ -507,7 +468,7 @@ $(document).ready(function () {
 
 $(document).ready(function () {
   $(".animate-505").click(function () {
-    $(".product-card-505").toggleClass("animated");
+    $(".kettie__meisie__product-card-505").toggleClass("animated");
     return false;
   });
 });
@@ -518,7 +479,7 @@ $(document).ready(function () {
 
 $(document).ready(function () {
   $(".animate-506").click(function () {
-    $(".product-card-506").toggleClass("animated");
+    $(".kettie__meisie__product-card-506").toggleClass("animated");
     return false;
   });
 });
@@ -541,7 +502,7 @@ $(document).ready(function () {
 
 $(document).ready(function () {
   $(".animate-601").click(function () {
-    $(".product-card-601").toggleClass("animated");
+    $(".kettie__meisie__product-card-601").toggleClass("animated");
     return false;
   });
 });
@@ -552,7 +513,7 @@ $(document).ready(function () {
 
 $(document).ready(function () {
   $(".animate-602").click(function () {
-    $(".product-card-602").toggleClass("animated");
+    $(".kettie__meisie__product-card-602").toggleClass("animated");
     return false;
   });
 });
@@ -563,7 +524,7 @@ $(document).ready(function () {
 
 $(document).ready(function () {
   $(".animate-603").click(function () {
-    $(".product-card-603").toggleClass("animated");
+    $(".kettie__meisie__product-card-603").toggleClass("animated");
     return false;
   });
 });
@@ -574,7 +535,7 @@ $(document).ready(function () {
 
 $(document).ready(function () {
   $(".animate-604").click(function () {
-    $(".product-card-604").toggleClass("animated");
+    $(".kettie__meisie__product-card-604").toggleClass("animated");
     return false;
   });
 });
