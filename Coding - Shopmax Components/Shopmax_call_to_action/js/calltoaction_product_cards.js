@@ -87,46 +87,7 @@ function change015(image) {
 }
 
 // =======================================================================================
-// TODO:  PART 2 -  SCRIPT TO ADD COUNTER TO SHOPPING CART WHEN "ADD TO CART" IS CLICKED
-// =======================================================================================
-
-let count = 0;
-
-const counter = document.getElementById("counter");
-document.getElementById("add-animation").addEventListener("click", (event) => {
-  const cl = counter.classList;
-  const c = "animated-counter";
-  count++;
-
-  counter.innerText = count;
-  cl.remove(c, cl.contains(c));
-  setTimeout(() => counter.classList.add("animated-counter"), 1);
-});
-
-// =======================================================================================
-// TODO:  PART 3 -  SCRIPT TO ADD COUNTER TO WISH LIST WHEN "ADD TO WISH LIST" IS CLICKED
-// =======================================================================================
-
-let countWish = 0;
-
-const wishListCounter = document.getElementById("wishlist-counter");
-document
-  .getElementById("wishlist-add-animation")
-  .addEventListener("click", (event) => {
-    const cl = wishListCounter.classList;
-    const c = "wishlist-animated-counter";
-    count++;
-
-    wishListCounter.innerText = countWish;
-    cl.remove(c, cl.contains(c));
-    setTimeout(
-      () => wishListCounter.classList.add("wishlist-animated-counter"),
-      1
-    );
-  });
-
-// =======================================================================================
-// TODO:  PART 4 -  SCRIPT TO FLIP A PROFILE OR PRODUCT CARD (AND BACK)
+// TODO:  PART 2 -  SCRIPT TO FLIP A PROFILE OR PRODUCT CARD (AND BACK)
 // =======================================================================================
 
 // ---------------------------------------------------------------------------------------
@@ -139,7 +100,7 @@ document
 
 $(document).ready(function () {
   $(".animate-promos-01").click(function () {
-    $(".product-card-promos-01").toggleClass("animated");
+    $(".cta-product-card-promos-01").toggleClass("animated");
     return false;
   });
 });
@@ -150,7 +111,7 @@ $(document).ready(function () {
 
 $(document).ready(function () {
   $(".animate-promos-02").click(function () {
-    $(".product-card-promos-02").toggleClass("animated");
+    $(".cta-product-card-promos-02").toggleClass("animated");
     return false;
   });
 });
@@ -161,7 +122,7 @@ $(document).ready(function () {
 
 $(document).ready(function () {
   $(".animate-promos-03").click(function () {
-    $(".product-card-promos-03").toggleClass("animated");
+    $(".cta-product-card-promos-03").toggleClass("animated");
     return false;
   });
 });
@@ -172,7 +133,7 @@ $(document).ready(function () {
 
 $(document).ready(function () {
   $(".animate-promos-04").click(function () {
-    $(".product-card-promos-04").toggleClass("animated");
+    $(".cta-product-card-promos-04").toggleClass("animated");
     return false;
   });
 });
@@ -183,7 +144,7 @@ $(document).ready(function () {
 
 $(document).ready(function () {
   $(".animate-promos-05").click(function () {
-    $(".product-card-promos-05").toggleClass("animated");
+    $(".cta-product-card-promos-05").toggleClass("animated");
     return false;
   });
 });
@@ -194,7 +155,7 @@ $(document).ready(function () {
 
 $(document).ready(function () {
   $(".animate-promos-06").click(function () {
-    $(".product-card-promos-06").toggleClass("animated");
+    $(".cta-product-card-promos-06").toggleClass("animated");
     return false;
   });
 });
@@ -205,7 +166,7 @@ $(document).ready(function () {
 
 $(document).ready(function () {
   $(".animate-promos-07").click(function () {
-    $(".product-card-promos-07").toggleClass("animated");
+    $(".cta-product-card-promos-07").toggleClass("animated");
     return false;
   });
 });
@@ -216,7 +177,7 @@ $(document).ready(function () {
 
 $(document).ready(function () {
   $(".animate-promos-08").click(function () {
-    $(".product-card-promos-08").toggleClass("animated");
+    $(".cta-product-card-promos-08").toggleClass("animated");
     return false;
   });
 });
@@ -227,7 +188,7 @@ $(document).ready(function () {
 
 $(document).ready(function () {
   $(".animate-promos-09").click(function () {
-    $(".product-card-promos-09").toggleClass("animated");
+    $(".cta-product-card-promos-09").toggleClass("animated");
     return false;
   });
 });
@@ -238,7 +199,7 @@ $(document).ready(function () {
 
 $(document).ready(function () {
   $(".animate-promos-10").click(function () {
-    $(".product-card-promos-10").toggleClass("animated");
+    $(".cta-product-card-promos-10").toggleClass("animated");
     return false;
   });
 });
@@ -249,7 +210,7 @@ $(document).ready(function () {
 
 $(document).ready(function () {
   $(".animate-promos-11").click(function () {
-    $(".product-card-promos-11").toggleClass("animated");
+    $(".cta-product-card-promos-11").toggleClass("animated");
     return false;
   });
 });
@@ -260,7 +221,7 @@ $(document).ready(function () {
 
 $(document).ready(function () {
   $(".animate-promos-12").click(function () {
-    $(".product-card-promos-12").toggleClass("animated");
+    $(".cta-product-card-promos-12").toggleClass("animated");
     return false;
   });
 });
@@ -271,7 +232,7 @@ $(document).ready(function () {
 
 $(document).ready(function () {
   $(".animate-promos-13").click(function () {
-    $(".product-card-promos-13").toggleClass("animated");
+    $(".cta-product-card-promos-13").toggleClass("animated");
     return false;
   });
 });
@@ -282,7 +243,7 @@ $(document).ready(function () {
 
 $(document).ready(function () {
   $(".animate-promos-14").click(function () {
-    $(".product-card-promos-14").toggleClass("animated");
+    $(".cta-product-card-promos-14").toggleClass("animated");
     return false;
   });
 });
@@ -293,7 +254,7 @@ $(document).ready(function () {
 
 $(document).ready(function () {
   $(".animate-promos-15").click(function () {
-    $(".product-card-promos-15").toggleClass("animated");
+    $(".cta-product-card-promos-15").toggleClass("animated");
     return false;
   });
 });

@@ -5,85 +5,79 @@
 :root {
   /* PAGE BACKGROUND - PRODUCTS & SERVICES */
   /* --color-page-background: #ebf4f4; */
-  --color-page-background: #a9a9a9;
-  --color-page-text-on-buttons-or-anchors: white;
-  --color-page-text-hover: #dc143c;
+  --color-cta-page-background: #a9a9a9;
+  --color-cta-page-text-on-buttons-or-anchors: white;
+  --color-cta-page-text-hover: #dc143c;
   /* SECTION BACKGROUND */
-  --color-section-investing-plans-background: #e5e4e2;
-  --color-section-selling-plans-background: #d3d3d3;
-  --color-section-professional-services-background: #c0c0c0;
-  --color-section-latest-product-releases-background: #a9a9a9;
+  --color-cta-section-investing-plans-background: #e5e4e2;
+  --color-cta-section-selling-plans-background: #d3d3d3;
+  --color-cta-section-professional-services-background: #c0c0c0;
+  --color-cta-section-latest-product-releases-background: #a9a9a9;
   /* BOX-SHADOW CONFIGURATIONS */
   --color-box-shadow-01: 3px 5px 20px rgba(0, 0, 0, 0.35);
   --color-box-shadow-02: 0px 5px 4px rgba(0, 0, 0, 0.35);
   --color-box-shadow-03: 0px 1px 5px 3px rgba(0, 0, 0, 0.15);
   --color-box-shadow-04: 0px 5px 20px rgba(0, 0, 0, 0.35);
   /* SHOPMAX COLOR SCHEME */
-  --color-shopmax: #dc143c;
-  --color-shopmax-rgb: rgb(220, 20, 60);
+  --color-cta-shopmax: #dc143c;
+  --color-cta-shopmax-rgb: rgb(220, 20, 60);
   /* CARD COLOR SCHEME */
-  --color-product-card-brand-title: black;
-  --color-product-card-background: white;
-  --color-product-card-top-section-background: white;
-  --color-product-card-arrow-left: black;
-  --color-product-card-heart-right: #dc143c;
-  --color-product-card-extra-images-section-background: white;
-  --color-product-card-extra-image-background: white;
-  --color-product-card-extra-image-border: black;
-  --color-product-card-extra-image-border-hover: #dc143c;
-  --color-product-card-title: black;
-  --color-product-card-short-description: black;
-  --color-product-card-sizes-title: black;
-  --color-product-card-colors-title: black;
-  --color-product-card-price-currency: black;
-  --color-product-card-price-value: black;
-  /* CUSTOM RADIO BUTTON */
-  --color-custom-radiobutton-border: #ccc;
-  --color-custom-radiobutton-background: white;
-  --color-custom-radiobutton-circle: #dc143c;
-  --color-custom-radiobutton-focus: #dc143c;
-  --color-custom-radiobutton-disabled: #959495;
+  --color-cta-product-card-brand-title: black;
+  --color-cta-product-card-background: white;
+  --color-cta-product-card-top-section-background: white;
+  --color-cta-product-card-arrow-left: black;
+  --color-cta-product-card-heart-right: #dc143c;
+  --color-cta-product-card-extra-images-section-background: white;
+  --color-cta-product-card-extra-image-background: white;
+  --color-cta-product-card-extra-image-border: black;
+  --color-cta-product-card-extra-image-border-hover: #dc143c;
+  --color-cta-product-card-title: black;
+  --color-cta-product-card-short-description: black;
+  --color-cta-product-card-sizes-title: black;
+  --color-cta-product-card-colors-title: black;
+  --color-cta-product-card-price-currency: black;
+  --color-cta-product-card-price-value: black;
   /* COLOR SCHEME FOR ADD TO CART BUTTONS, CARTS AND COUNTERS */
-  --color-add-to-cart-button-background: #dc143c;
-  --color-add-to-cart-button-text: white;
-  --color-shopping-cart-icon: black;
-  --color-shopping-cart-counter-background: #dc143c;
-  --color-shopping-cart-counter-text: white;
+  --color-cta-add-to-cart-button-background: #dc143c;
+  --color-cta-add-to-cart-button-text: white;
+  --color-cta-shopping-cart-icon: black;
+  --color-cta-shopping-cart-counter-background: #dc143c;
+  --color-cta-shopping-cart-counter-text: white;
   /* COLOR SCHEME FOR ADD TO WISH LIST BUTTONS, CARTS AND COUNTERS */
-  --color-add-to-wish-list-button-background: #dc143c;
-  --color-add-to-wish-list-button-text: white;
-  --color-wish-list-icon: black;
-  --color-wish-list-counter-background: #dc143c;
-  --color-wish-list-counter-text: white;
+  --color-cta-add-to-wish-list-button-background: #dc143c;
+  --color-cta-add-to-wish-list-button-text: white;
+  --color-cta-wish-list-icon: black;
+  --color-cta-wish-list-counter-background: #dc143c;
+  --color-cta-wish-list-counter-text: white;
   /* FORM TEXT INPUTS */
-  --color-input-border: #ccc;
-  --color-input-border-focus: #dc143c;
-  --color-input-border-focus-rgba: rgb(220, 20, 60);
+  --color-cta-input-border: #ccc;
+  --color-cta-input-border-focus: #dc143c;
+  --color-cta-input-border-focus-rgba: rgb(220, 20, 60);
   /* CLOSE BUTTON - BACK CARD */
-  --color-card-back-button-close: #dc143c;
-  --color-card-back-background: white;
-  --color-card-back-text: black;
+  --color-cta-card-back-button-close: #dc143c;
+  --color-cta-card-back-background: white;
+  --color-cta-card-back-text: black;
   /* BACK OF CARD */
-  --color-heading-titles: #dc143c;
-  --color-heading-values: black;
+  --color-cta-heading-titles: #dc143c;
+  --color-cta-heading-values: black;
   /* INVESTING PLANS - COLOR SCHEMES */
-  --color-bronze: #986c43;
-  --color-bronze-rgb: rgb(152, 108, 67);
-  --color-silver: #7d7d7d;
-  --color-silver-rga: rgb(125, 125, 125);
-  --color-gold: #dc9d04;
-  --color-gold-rgb: rgb(220, 157, 4);
-  --color-platinum: #434343;
-  --color-platinum-rgb: rgb(67, 67, 67);
+  --color-cta-bronze: #986c43;
+  --color-cta-bronze-rgb: rgb(152, 108, 67);
+  --color-cta-silver: #7d7d7d;
+  --color-cta-silver-rga: rgb(125, 125, 125);
+  --color-cta-gold: #dc9d04;
+  --color-cta-gold-rgb: rgb(220, 157, 4);
+  --color-cta-platinum: #434343;
+  --color-cta-platinum-rgb: rgb(67, 67, 67);
   /* SELLING PLANS - COLOR SCHEMES */
-  --color-resellers: #f88e20;
-  --color-resellers-rgb: rgb(248, 142, 32);
-  --color-sellproduct: #8b3365;
-  --color-sellproduct-rgb: rgb(139, 51, 101);
-  --color-generalservices: #544179;
-  --color-generalservices-rgb: rgb(84, 65, 121);
-  --color-professionalservices: #01a7cf;
-  --color-professionalservices-rgb: rgb(1, 167, 207);
+  --color-cta-resellers: #f88e20;
+  --color-cta-resellers-rgb: rgb(248, 142, 32);
+  --color-cta-sellproduct: #8b3365;
+  --color-cta-sellproduct-rgb: rgb(139, 51, 101);
+  --color-cta-generalservices: #544179;
+  --color-cta-generalservices-rgb: rgb(84, 65, 121);
+  --color-cta-professionalservices: #01a7cf;
+  --color-cta-professionalservices-rgb: rgb(1, 167, 207);
 }
 
 * {
@@ -100,7 +94,7 @@ html {
 
 body {
   font-size: 1.6rem;
-  background: var(--color-page-background);
+  background: var(--color-cta-page-background);
 }
 
 a {
@@ -219,7 +213,7 @@ h6 {
   justify-content: center;
   justify-items: center;
   flex-direction: column;
-  background-color: var(--color-section-investing-plans-background);
+  background-color: var(--color-cta-section-investing-plans-background);
   /* border: 1px solid green; */
 }
 
@@ -249,7 +243,7 @@ h6 {
 }
 
 .promo__investing__plans__page__title p strong:hover {
-  color: var(--color-shopmax);
+  color: var(--color-cta-shopmax);
   transform: scale(1.05);
 }
 
@@ -265,7 +259,7 @@ h6 {
   width: 100%;
   height: auto;
   padding: 1rem 0rem 3rem 0rem;
-  background-color: var(--color-section-investing-plans-background);
+  background-color: var(--color-cta-section-investing-plans-background);
   /* border: 1px solid red; */
 }
 
@@ -298,8 +292,8 @@ h6 {
   text-align: center;
   text-decoration: none;
   border-radius: 1.5rem;
-  background-color: var(--color-bronze);
-  color: var(--color-page-text-on-buttons-or-anchors);
+  background-color: var(--color-cta-bronze);
+  color: var(--color-cta-page-text-on-buttons-or-anchors);
   box-shadow: var(--color-box-shadow-01);
   transition: transform 0.5s ease-in-out;
   cursor: pointer;
@@ -360,8 +354,8 @@ h6 {
   text-align: center;
   text-decoration: none;
   border-radius: 1.5rem;
-  background-color: var(--color-silver);
-  color: var(--color-page-text-on-buttons-or-anchors);
+  background-color: var(--color-cta-silver);
+  color: var(--color-cta-page-text-on-buttons-or-anchors);
   box-shadow: var(--color-box-shadow-01);
   transition: transform 0.5s ease-in-out;
   cursor: pointer;
@@ -422,8 +416,8 @@ h6 {
   text-align: center;
   text-decoration: none;
   border-radius: 1.5rem;
-  background-color: var(--color-gold);
-  color: var(--color-page-text-on-buttons-or-anchors);
+  background-color: var(--color-cta-gold);
+  color: var(--color-cta-page-text-on-buttons-or-anchors);
   box-shadow: var(--color-box-shadow-01);
   transition: transform 0.5s ease-in-out;
   cursor: pointer;
@@ -484,8 +478,8 @@ h6 {
   text-align: center;
   text-decoration: none;
   border-radius: 1.5rem;
-  background-color: var(--color-platinum);
-  color: var(--color-page-text-on-buttons-or-anchors);
+  background-color: var(--color-cta-platinum);
+  color: var(--color-cta-page-text-on-buttons-or-anchors);
   box-shadow: var(--color-box-shadow-01);
   transition: transform 0.5s ease-in-out;
   cursor: pointer;
@@ -558,7 +552,7 @@ h6 {
   justify-content: center;
   justify-items: center;
   flex-direction: column;
-  background-color: var(--color-section-selling-plans-background);
+  background-color: var(--color-cta-section-selling-plans-background);
   /* border: 1px solid green; */
 }
 
@@ -588,7 +582,7 @@ h6 {
 }
 
 .promo__selling__plans__page__title p strong:hover {
-  color: var(--color-shopmax);
+  color: var(--color-cta-shopmax);
   transform: scale(1.05);
 }
 
@@ -604,7 +598,7 @@ h6 {
   width: 100%;
   height: auto;
   padding: 1rem 0rem 3rem 0rem;
-  background-color: var(--color-section-selling-plans-background);
+  background-color: var(--color-cta-section-selling-plans-background);
   /* border: 1px solid red; */
 }
 
@@ -637,8 +631,8 @@ h6 {
   text-align: center;
   text-decoration: none;
   border-radius: 1.5rem;
-  background-color: var(--color-resellers);
-  color: var(--color-page-text-on-buttons-or-anchors);
+  background-color: var(--color-cta-resellers);
+  color: var(--color-cta-page-text-on-buttons-or-anchors);
   box-shadow: var(--color-box-shadow-01);
   transition: transform 0.5s ease-in-out;
   cursor: pointer;
@@ -699,8 +693,8 @@ h6 {
   text-align: center;
   text-decoration: none;
   border-radius: 1.5rem;
-  background-color: var(--color-sellproduct);
-  color: var(--color-page-text-on-buttons-or-anchors);
+  background-color: var(--color-cta-sellproduct);
+  color: var(--color-cta-page-text-on-buttons-or-anchors);
   box-shadow: var(--color-box-shadow-01);
   transition: transform 0.5s ease-in-out;
   cursor: pointer;
@@ -761,8 +755,8 @@ h6 {
   text-align: center;
   text-decoration: none;
   border-radius: 1.5rem;
-  background-color: var(--color-generalservices);
-  color: var(--color-page-text-on-buttons-or-anchors);
+  background-color: var(--color-cta-generalservices);
+  color: var(--color-cta-page-text-on-buttons-or-anchors);
   box-shadow: var(--color-box-shadow-01);
   transition: transform 0.5s ease-in-out;
   cursor: pointer;
@@ -823,8 +817,8 @@ h6 {
   text-align: center;
   text-decoration: none;
   border-radius: 1.5rem;
-  background-color: var(--color-professionalservices);
-  color: var(--color-page-text-on-buttons-or-anchors);
+  background-color: var(--color-cta-professionalservices);
+  color: var(--color-cta-page-text-on-buttons-or-anchors);
   box-shadow: var(--color-box-shadow-01);
   transition: transform 0.5s ease-in-out;
   cursor: pointer;
@@ -897,7 +891,7 @@ h6 {
   justify-content: center;
   justify-items: center;
   flex-direction: column;
-  background-color: var(--color-section-professional-services-background);
+  background-color: var(--color-cta-section-professional-services-background);
   /* border: 1px solid green; */
 }
 
@@ -927,7 +921,7 @@ h6 {
 }
 
 .promo__professional__services__page__title p strong:hover {
-  color: var(--color-shopmax);
+  color: var(--color-cta-shopmax);
   transform: scale(1.05);
 }
 
@@ -943,7 +937,7 @@ h6 {
   width: 100%;
   height: auto;
   padding: 1rem 0rem 3rem 0rem;
-  background-color: var(--color-section-professional-services-background);
+  background-color: var(--color-cta-section-professional-services-background);
   /* border: 1px solid red; */
 }
 
@@ -977,7 +971,7 @@ h6 {
   text-decoration: none;
   border-radius: 1.5rem;
   background-color: white;
-  color: var(--color-page-text-on-buttons-or-anchors);
+  color: var(--color-cta-page-text-on-buttons-or-anchors);
   box-shadow: var(--color-box-shadow-01);
   transition: transform 0.5s ease-in-out;
   cursor: pointer;
@@ -1039,7 +1033,7 @@ h6 {
   text-decoration: none;
   border-radius: 1.5rem;
   background-color: white;
-  /* color: var(--color-page-text-on-buttons-or-anchors); */
+  /* color: var(--color-cta-page-text-on-buttons-or-anchors); */
   box-shadow: var(--color-box-shadow-01);
   transition: transform 0.5s ease-in-out;
   cursor: pointer;
@@ -1101,7 +1095,7 @@ h6 {
   text-decoration: none;
   border-radius: 1.5rem;
   background-color: white;
-  color: var(--color-page-text-on-buttons-or-anchors);
+  color: var(--color-cta-page-text-on-buttons-or-anchors);
   box-shadow: var(--color-box-shadow-01);
   transition: transform 0.5s ease-in-out;
   cursor: pointer;
@@ -1163,7 +1157,7 @@ h6 {
   text-decoration: none;
   border-radius: 1.5rem;
   background-color: white;
-  color: var(--color-page-text-on-buttons-or-anchors);
+  color: var(--color-cta-page-text-on-buttons-or-anchors);
   box-shadow: var(--color-box-shadow-01);
   transition: transform 0.5s ease-in-out;
   cursor: pointer;
@@ -1225,7 +1219,7 @@ h6 {
   text-decoration: none;
   border-radius: 1.5rem;
   background-color: white;
-  color: var(--color-page-text-on-buttons-or-anchors);
+  color: var(--color-cta-page-text-on-buttons-or-anchors);
   box-shadow: var(--color-box-shadow-01);
   transition: transform 0.5s ease-in-out;
   cursor: pointer;
@@ -1287,7 +1281,7 @@ h6 {
   text-decoration: none;
   border-radius: 1.5rem;
   background-color: white;
-  color: var(--color-page-text-on-buttons-or-anchors);
+  color: var(--color-cta-page-text-on-buttons-or-anchors);
   box-shadow: var(--color-box-shadow-01);
   transition: transform 0.5s ease-in-out;
   cursor: pointer;
@@ -1349,7 +1343,7 @@ h6 {
   text-decoration: none;
   border-radius: 1.5rem;
   background-color: white;
-  color: var(--color-page-text-on-buttons-or-anchors);
+  color: var(--color-cta-page-text-on-buttons-or-anchors);
   box-shadow: var(--color-box-shadow-01);
   transition: transform 0.5s ease-in-out;
   cursor: pointer;
@@ -1411,7 +1405,7 @@ h6 {
   text-decoration: none;
   border-radius: 1.5rem;
   background-color: white;
-  color: var(--color-page-text-on-buttons-or-anchors);
+  color: var(--color-cta-page-text-on-buttons-or-anchors);
   box-shadow: var(--color-box-shadow-01);
   transition: transform 0.5s ease-in-out;
   cursor: pointer;
@@ -1485,7 +1479,7 @@ h6 {
   justify-items: center;
   text-transform: uppercase;
   margin: 1.5rem 0.5rem 1.5rem 0.5rem;
-  background-color: var(--color-section-latest-product-releases-background);
+  background-color: var(--color-cta-section-latest-product-releases-background);
   text-align: center;
 }
 
@@ -1502,7 +1496,7 @@ h6 {
   height: auto;
   object-fit: cover;
   margin: 0rem 0rem 0rem 0rem;
-  background-color: var(--color-section-latest-product-releases-background);
+  background-color: var(--color-cta-section-latest-product-releases-background);
   /* border: 2px solid red; */
 }
 
@@ -1524,7 +1518,7 @@ h6 {
 /* FIXME:  MAIN CONTAINER - HOLDING ALL ELEMENTS  */
 /* ---------------------------------------------- */
 
-.product-card-container-all {
+.cta-product-card-container-all {
   position: relative;
   display: flex;
   justify-content: center;
@@ -1545,27 +1539,27 @@ h6 {
 /* FIXME:  PRODUCT CARD CONTAINER  */
 /* ------------------------------- */
 
-.product-card-container-all .product-card-promos-01,
-.product-card-container-all .product-card-promos-02,
-.product-card-container-all .product-card-promos-03,
-.product-card-container-all .product-card-promos-04,
-.product-card-container-all .product-card-promos-05,
-.product-card-container-all .product-card-promos-06,
-.product-card-container-all .product-card-promos-07,
-.product-card-container-all .product-card-promos-08,
-.product-card-container-all .product-card-promos-09,
-.product-card-container-all .product-card-promos-10,
-.product-card-container-all .product-card-promos-11,
-.product-card-container-all .product-card-promos-12,
-.product-card-container-all .product-card-promos-13,
-.product-card-container-all .product-card-promos-14,
-.product-card-container-all .product-card-promos-15 {
+.cta-product-card-container-all .cta-product-card-promos-01,
+.cta-product-card-container-all .cta-product-card-promos-02,
+.cta-product-card-container-all .cta-product-card-promos-03,
+.cta-product-card-container-all .cta-product-card-promos-04,
+.cta-product-card-container-all .cta-product-card-promos-05,
+.cta-product-card-container-all .cta-product-card-promos-06,
+.cta-product-card-container-all .cta-product-card-promos-07,
+.cta-product-card-container-all .cta-product-card-promos-08,
+.cta-product-card-container-all .cta-product-card-promos-09,
+.cta-product-card-container-all .cta-product-card-promos-10,
+.cta-product-card-container-all .cta-product-card-promos-11,
+.cta-product-card-container-all .cta-product-card-promos-12,
+.cta-product-card-container-all .cta-product-card-promos-13,
+.cta-product-card-container-all .cta-product-card-promos-14,
+.cta-product-card-container-all .cta-product-card-promos-15 {
   position: absolute;
   transition: transform 1s;
   transform-style: preserve-3d;
   width: 100%;
   height: 100%;
-  background: var(--color-product-card-background);
+  background: var(--color-cta-product-card-background);
   border-radius: 1.5rem;
   margin: 0rem 0rem 0rem 0rem;
   padding: 0.75rem 0.75rem 0.75rem 0.75rem;
@@ -1579,21 +1573,21 @@ h6 {
 /* TODO:FIXME:     JAVASCRIPT : FOR FLIP FUNCTIONALITY     TODO:FIXME: */
 /* ------------------------------------------------------------------- */
 
-.product-card-container-all .product-card-promos-01.animated,
-.product-card-container-all .product-card-promos-02.animated,
-.product-card-container-all .product-card-promos-03.animated,
-.product-card-container-all .product-card-promos-04.animated,
-.product-card-container-all .product-card-promos-05.animated,
-.product-card-container-all .product-card-promos-06.animated,
-.product-card-container-all .product-card-promos-07.animated,
-.product-card-container-all .product-card-promos-08.animated,
-.product-card-container-all .product-card-promos-09.animated,
-.product-card-container-all .product-card-promos-10.animated,
-.product-card-container-all .product-card-promos-11.animated,
-.product-card-container-all .product-card-promos-12.animated,
-.product-card-container-all .product-card-promos-13.animated,
-.product-card-container-all .product-card-promos-14.animated,
-.product-card-container-all .product-card-promos-15.animated {
+.cta-product-card-container-all .cta-product-card-promos-01.animated,
+.cta-product-card-container-all .cta-product-card-promos-02.animated,
+.cta-product-card-container-all .cta-product-card-promos-03.animated,
+.cta-product-card-container-all .cta-product-card-promos-04.animated,
+.cta-product-card-container-all .cta-product-card-promos-05.animated,
+.cta-product-card-container-all .cta-product-card-promos-06.animated,
+.cta-product-card-container-all .cta-product-card-promos-07.animated,
+.cta-product-card-container-all .cta-product-card-promos-08.animated,
+.cta-product-card-container-all .cta-product-card-promos-09.animated,
+.cta-product-card-container-all .cta-product-card-promos-10.animated,
+.cta-product-card-container-all .cta-product-card-promos-11.animated,
+.cta-product-card-container-all .cta-product-card-promos-12.animated,
+.cta-product-card-container-all .cta-product-card-promos-13.animated,
+.cta-product-card-container-all .cta-product-card-promos-14.animated,
+.cta-product-card-container-all .cta-product-card-promos-15.animated {
   transform: rotateY(-180deg);
 }
 
@@ -1601,21 +1595,51 @@ h6 {
 /* FIXME:  SUB-CONTAINER - HOLDING ALL ELEMENTS OF CARD (FRONT)  FIXME: */
 /* -------------------------------------------------------------------- */
 
-.product-card-container-all .product-card-promos-01 .product-card-front-side,
-.product-card-container-all .product-card-promos-02 .product-card-front-side,
-.product-card-container-all .product-card-promos-03 .product-card-front-side,
-.product-card-container-all .product-card-promos-04 .product-card-front-side,
-.product-card-container-all .product-card-promos-05 .product-card-front-side,
-.product-card-container-all .product-card-promos-06 .product-card-front-side,
-.product-card-container-all .product-card-promos-07 .product-card-front-side,
-.product-card-container-all .product-card-promos-08 .product-card-front-side,
-.product-card-container-all .product-card-promos-09 .product-card-front-side,
-.product-card-container-all .product-card-promos-10 .product-card-front-side,
-.product-card-container-all .product-card-promos-11 .product-card-front-side,
-.product-card-container-all .product-card-promos-12 .product-card-front-side,
-.product-card-container-all .product-card-promos-13 .product-card-front-side,
-.product-card-container-all .product-card-promos-14 .product-card-front-side,
-.product-card-container-all .product-card-promos-15 .product-card-front-side {
+.cta-product-card-container-all
+  .cta-product-card-promos-01
+  .cta-product-card-front-side,
+.cta-product-card-container-all
+  .cta-product-card-promos-02
+  .cta-product-card-front-side,
+.cta-product-card-container-all
+  .cta-product-card-promos-03
+  .cta-product-card-front-side,
+.cta-product-card-container-all
+  .cta-product-card-promos-04
+  .cta-product-card-front-side,
+.cta-product-card-container-all
+  .cta-product-card-promos-05
+  .cta-product-card-front-side,
+.cta-product-card-container-all
+  .cta-product-card-promos-06
+  .cta-product-card-front-side,
+.cta-product-card-container-all
+  .cta-product-card-promos-07
+  .cta-product-card-front-side,
+.cta-product-card-container-all
+  .cta-product-card-promos-08
+  .cta-product-card-front-side,
+.cta-product-card-container-all
+  .cta-product-card-promos-09
+  .cta-product-card-front-side,
+.cta-product-card-container-all
+  .cta-product-card-promos-10
+  .cta-product-card-front-side,
+.cta-product-card-container-all
+  .cta-product-card-promos-11
+  .cta-product-card-front-side,
+.cta-product-card-container-all
+  .cta-product-card-promos-12
+  .cta-product-card-front-side,
+.cta-product-card-container-all
+  .cta-product-card-promos-13
+  .cta-product-card-front-side,
+.cta-product-card-container-all
+  .cta-product-card-promos-14
+  .cta-product-card-front-side,
+.cta-product-card-container-all
+  .cta-product-card-promos-15
+  .cta-product-card-front-side {
   position: absolute;
   top: 0;
   left: 0;
@@ -1623,7 +1647,7 @@ h6 {
   backface-visibility: hidden;
   width: 100%;
   height: 100%;
-  background: var(--color-product-card-background);
+  background: var(--color-cta-product-card-background);
   border-radius: 1.5rem;
   overflow: hidden;
   margin: 0rem 0rem 0rem 0rem;
@@ -1636,21 +1660,51 @@ h6 {
 /* FIXME:  SUB-CONTAINER - HOLDING ALL ELEMENTS OF CARD (BACK)  FIXME: */
 /* -------------------------------------------------------------------- */
 
-.product-card-container-all .product-card-promos-01 .product-card-back-side,
-.product-card-container-all .product-card-promos-02 .product-card-back-side,
-.product-card-container-all .product-card-promos-03 .product-card-back-side,
-.product-card-container-all .product-card-promos-04 .product-card-back-side,
-.product-card-container-all .product-card-promos-05 .product-card-back-side,
-.product-card-container-all .product-card-promos-06 .product-card-back-side,
-.product-card-container-all .product-card-promos-07 .product-card-back-side,
-.product-card-container-all .product-card-promos-08 .product-card-back-side,
-.product-card-container-all .product-card-promos-09 .product-card-back-side,
-.product-card-container-all .product-card-promos-10 .product-card-back-side,
-.product-card-container-all .product-card-promos-11 .product-card-back-side,
-.product-card-container-all .product-card-promos-12 .product-card-back-side,
-.product-card-container-all .product-card-promos-13 .product-card-back-side,
-.product-card-container-all .product-card-promos-14 .product-card-back-side,
-.product-card-container-all .product-card-promos-15 .product-card-back-side {
+.cta-product-card-container-all
+  .cta-product-card-promos-01
+  .cta-product-card-back-side,
+.cta-product-card-container-all
+  .cta-product-card-promos-02
+  .cta-product-card-back-side,
+.cta-product-card-container-all
+  .cta-product-card-promos-03
+  .cta-product-card-back-side,
+.cta-product-card-container-all
+  .cta-product-card-promos-04
+  .cta-product-card-back-side,
+.cta-product-card-container-all
+  .cta-product-card-promos-05
+  .cta-product-card-back-side,
+.cta-product-card-container-all
+  .cta-product-card-promos-06
+  .cta-product-card-back-side,
+.cta-product-card-container-all
+  .cta-product-card-promos-07
+  .cta-product-card-back-side,
+.cta-product-card-container-all
+  .cta-product-card-promos-08
+  .cta-product-card-back-side,
+.cta-product-card-container-all
+  .cta-product-card-promos-09
+  .cta-product-card-back-side,
+.cta-product-card-container-all
+  .cta-product-card-promos-10
+  .cta-product-card-back-side,
+.cta-product-card-container-all
+  .cta-product-card-promos-11
+  .cta-product-card-back-side,
+.cta-product-card-container-all
+  .cta-product-card-promos-12
+  .cta-product-card-back-side,
+.cta-product-card-container-all
+  .cta-product-card-promos-13
+  .cta-product-card-back-side,
+.cta-product-card-container-all
+  .cta-product-card-promos-14
+  .cta-product-card-back-side,
+.cta-product-card-container-all
+  .cta-product-card-promos-15
+  .cta-product-card-back-side {
   position: absolute;
   top: 0;
   left: 0;
@@ -1659,7 +1713,7 @@ h6 {
   transform: rotateY(180deg);
   width: 100%;
   height: 100%;
-  background: var(--color-product-card-background);
+  background: var(--color-cta-product-card-background);
   border-radius: 1.5rem;
   overflow: hidden;
   margin: 0rem 0rem 0rem 0rem;
@@ -1671,7 +1725,7 @@ h6 {
 /* MEDIA QUERY - PRODUCT CARD CONTAINERS */
 
 @media screen and (max-width: 350px) {
-  .product-card-container-all {
+  .cta-product-card-container-all {
     margin: 2rem 0.75rem 2rem 0.75rem;
   }
 }
@@ -1690,12 +1744,12 @@ h6 {
 /* FIXME:  CONTAINER - TOP SECTION  */
 /* -------------------------------- */
 
-.product-card-section-top {
+.cta-product-card-section-top {
   position: relative;
   width: 100%;
   height: 49%;
   border-radius: 0rem 0rem 0rem 0rem;
-  background-color: var(--color-product-card-top-section-background);
+  background-color: var(--color-cta-product-card-top-section-background);
   /* box-shadow: var(--color-box-shadow-01); */
   /* border: 1px solid red; */
 }
@@ -1708,7 +1762,7 @@ h6 {
 /* IMAGE CONTAINER  */
 /* ---------------- */
 
-.product-card-section-top .product-card-featured-image {
+.cta-product-card-section-top .cta-product-card-featured-image {
   position: relative;
   top: 0;
   left: 0;
@@ -1724,7 +1778,7 @@ h6 {
 /* IMAGE  */
 /* ------ */
 
-.product-card-section-top .product-card-featured-image img {
+.cta-product-card-section-top .cta-product-card-featured-image img {
   position: absolute;
   top: 0;
   left: 0;
@@ -1742,10 +1796,10 @@ h6 {
 /* FIXME:  SECTION 2 - MAIN CONTAINER  */
 /* ----------------------------------- */
 
-.product-card-section-extra-images {
+.cta-product-card-section-extra-images {
   position: relative;
   height: 4.8rem;
-  background: var(--color-product-card-extra-images-section-background);
+  background: var(--color-cta-product-card-extra-images-section-background);
   /* border: 1px solid red; */
 }
 
@@ -1753,29 +1807,29 @@ h6 {
 /* FIXME:  SECTION 2 - EXTRA IMAGES CONTAINER  */
 /* ------------------------------------------- */
 
-.product-card-section-extra-images .extra-images {
+.cta-product-card-section-extra-images .cta-extra-images {
   height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  background: var(--color-product-card-extra-images-section-background);
+  background: var(--color-cta-product-card-extra-images-section-background);
   /* border: 1px solid red; */
 }
 
-.product-card-section-extra-images .extra-images img {
+.cta-product-card-section-extra-images .cta-extra-images img {
   width: 4.5rem;
   height: 4.5rem;
   margin: 0.5rem 0.5rem 0rem 0.5rem;
   padding: 0.5rem 0.5rem 0.5rem 0.5rem;
-  background: var(--color-product-card-extra-image-background);
+  background: var(--color-cta-product-card-extra-image-background);
   border-radius: 0.5rem;
   /* box-shadow: var(--color-box-shadow-01); */
   /* border: 1px solid var(--color-product-card-extra-image-border); */
   cursor: pointer;
 }
 
-.product-card-section-extra-images .extra-images img:hover {
-  border: 3px solid var(--color-product-card-extra-image-border-hover);
+.cta-product-card-section-extra-images .cta-extra-images img:hover {
+  border: 3px solid var(--color-cta-product-card-extra-image-border-hover);
 }
 
 /* ===================================================================================================================== */
@@ -1786,7 +1840,7 @@ h6 {
 /* FIXME:  SECTION 3 - MAIN CONTAINER  */
 /* ----------------------------------- */
 
-.product-card-section-information {
+.cta-product-card-section-information {
   position: relative;
   width: 100%;
   height: 10rem;
@@ -1799,7 +1853,7 @@ h6 {
 /* FIXME:  PRODUCT CARD - TITLE  */
 /* ----------------------------- */
 
-.product-card-title {
+.cta-product-card-title {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1812,7 +1866,7 @@ h6 {
   font-weight: bolder;
   text-transform: uppercase;
   letter-spacing: 0.05rem;
-  color: var(--color-product-card-title);
+  color: var(--color-cta-product-card-title);
   /* border: 1px solid red; */
 }
 
@@ -1820,7 +1874,7 @@ h6 {
 /* FIXME:  PRODUCT CARD - BRIEF DESCRIPTION  */
 /* ----------------------------------------- */
 
-.product-card-short-description {
+.cta-product-card-short-description {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1832,7 +1886,7 @@ h6 {
   font-weight: 500;
   text-transform: initial;
   text-align: justify;
-  color: var(--color-product-card-short-description);
+  color: var(--color-cta-product-card-short-description);
   /* border: 1px solid red; */
 }
 
@@ -1840,7 +1894,7 @@ h6 {
 /* TODO:  PRODUCT CARD SECTION 6 - PRODUCT PRICING (NOT APPLICABLE)                                                      */
 /* ===================================================================================================================== */
 
-.product-card-pricing {
+.cta-product-card-pricing {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1848,29 +1902,29 @@ h6 {
   /* border: 1px solid red; */
 }
 
-.price__currency {
+.cta-price__currency {
   font-size: 2rem;
   font-weight: 700;
   letter-spacing: 0.1rem;
   text-transform: uppercase;
   margin: 0rem 0.5rem 0rem 0rem;
-  color: var(--color-product-card-price-currency);
+  color: var(--color-cta-product-card-price-currency);
 }
 
-.price__value {
+.cta-price__value {
   font-size: 2rem;
   font-weight: 700;
   letter-spacing: 0.1rem;
   text-transform: uppercase;
   margin: 0rem 0rem 0rem 0rem;
-  color: var(--color-product-card-price-value);
+  color: var(--color-cta-product-card-price-value);
 }
 
 /* ===================================================================================================================== */
 /* TODO:  PRODUCT CARD SECTION 7A - BUTTON (ADD TO SHOPPING CART)                                                        */
 /* ===================================================================================================================== */
 
-.info-and-cart-container {
+.cta-info-and-cart-container {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1880,7 +1934,7 @@ h6 {
 /* FIXME:  CONTAINER - MAIN (HOLDING ALL ELEMENTS)  FIXME: */
 /* ------------------------------------------------------- */
 
-.shopping-container {
+.cta-shopping-container {
   width: 50%;
   height: 5rem;
   display: flex;
@@ -1895,7 +1949,7 @@ h6 {
 /* FIXME:  BUTTON - ADD TO CART  FIXME: */
 /* ------------------------------------ */
 
-.shopping-container button {
+.cta-shopping-container button {
   display: flex;
   align-items: center;
   font-size: 0.8rem;
@@ -1905,8 +1959,8 @@ h6 {
   margin: 0rem 0rem 0rem 0rem;
   padding: 0.75rem 1rem 0.75rem 1rem;
   border-radius: 0.75rem;
-  background-color: var(--color-add-to-cart-button-background);
-  color: var(--color-add-to-cart-button-text);
+  background-color: var(--color-cta-add-to-cart-button-background);
+  color: var(--color-cta-add-to-cart-button-text);
   outline: none;
   border: none;
   transition: transform 0.3s ease-in-out;
@@ -1914,11 +1968,11 @@ h6 {
   /* border: 1px solid green; */
 }
 
-.shopping-container i.bx-cart {
+.cta-shopping-container i.bx-cart {
   font-size: 2rem;
 }
 
-.shopping-container button:hover {
+.cta-shopping-container button:hover {
   transform: scale(1.05);
   cursor: pointer;
 }
@@ -1927,7 +1981,7 @@ h6 {
 /* TODO:FIXME:  JAVASCRIPT - SHOPPING CART COUNTER ANIMATION ON "ADD TO CART" BUTTON CLICK  TODO:FIXME: */
 /* ---------------------------------------------------------------------------------------------------- */
 
-.cart_counter-container span:not(.animated-counter) {
+/* .cart_counter-container span:not(.animated-counter) {
   display: flex;
 }
 
@@ -1965,7 +2019,7 @@ h6 {
     right: 0.3rem;
     transform: rotate(0deg);
   }
-}
+} */
 
 /* ===================================================================================================================== */
 /* TODO:  PRODUCT CARD SECTION 7B - BUTTON (MORE INFO)                                                                   */
@@ -1975,7 +2029,7 @@ h6 {
 /* FIXME:  CONTAINER - MAIN (HOLDING ALL ELEMENTS)  FIXME: */
 /* ------------------------------------------------------- */
 
-.more-info-container {
+.cta-more-info-container {
   width: 50%;
   height: 5rem;
   display: flex;
@@ -1990,7 +2044,7 @@ h6 {
 /* FIXME:  BUTTON - ADD TO CART  FIXME: */
 /* ------------------------------------ */
 
-.more-info-container .btn {
+.cta-more-info-container .cta-btn {
   display: flex;
   align-items: center;
   font-size: 0.8rem;
@@ -2001,8 +2055,8 @@ h6 {
   margin: 0rem 0rem 0rem 0rem;
   padding: 0.75rem 1rem 0.75rem 1rem;
   border-radius: 0.75rem;
-  background-color: var(--color-add-to-cart-button-background);
-  color: var(--color-add-to-cart-button-text);
+  background-color: var(--color-cta-add-to-cart-button-background);
+  color: var(--color-cta-add-to-cart-button-text);
   outline: none;
   border: none;
   transition: transform 0.3s ease-in-out;
@@ -2010,11 +2064,11 @@ h6 {
   /* border: 1px solid green; */
 }
 
-.more-info-container i.bx-list-check {
+.cta-more-info-container i.bx-list-check {
   font-size: 2rem;
 }
 
-.btn:hover {
+.cta-btn:hover {
   transform: scale(1.05);
 }
 
@@ -2026,7 +2080,7 @@ h6 {
 /* FIXME:  CONTAINER - MAIN (HOLDING ALL ELEMENTS)  FIXME: */
 /* ------------------------------------------------------- */
 
-.wishlist-container {
+.cta-wishlist-container {
   position: absolute;
   top: -0.3rem;
   right: -0.25rem;
@@ -2043,7 +2097,7 @@ h6 {
 /* FIXME:  BUTTON - ADD TO WISH LIST  FIXME: */
 /* ----------------------------------------- */
 
-.wishlist-container button {
+.cta-wishlist-container button {
   position: absolute;
   top: 0;
   right: 0;
@@ -2057,7 +2111,7 @@ h6 {
   /* border: 1px solid green; */
 }
 
-i.bx-heart {
+.cta-wishlist-container i.bx-heart {
   position: absolute;
   top: 0;
   right: 0;
@@ -2066,15 +2120,15 @@ i.bx-heart {
   font-size: 1.5rem;
   font-weight: 400;
   text-transform: uppercase;
-  background-color: var(--color-add-to-wish-list-button-background);
-  color: var(--color-add-to-wish-list-button-text);
+  background-color: var(--color-cta-add-to-wish-list-button-background);
+  color: var(--color-cta-add-to-wish-list-button-text);
   margin: 0rem 0rem 0rem 0rem;
   padding: 0.25rem 0.25rem 0.25rem 0.25rem;
   border-radius: 2rem;
   transition: transform 0.3s ease-in-out;
 }
 
-.wishlist-container button i:hover {
+.cta-wishlist-container button i:hover {
   transform: scale(1.11);
   cursor: pointer;
 }
@@ -2083,7 +2137,7 @@ i.bx-heart {
 /* TODO:FIXME:  JAVASCRIPT - WISH LIST COUNTER ANIMATION ON "ADD TO WISH LIST" BUTTON CLICK  TODO:FIXME: */
 /* ----------------------------------------------------------------------------------------------------- */
 
-.wishlist-counter-container span:not(.wishlist-animated-counter) {
+/* .wishlist-counter-container span:not(.wishlist-animated-counter) {
   display: flex;
 }
 
@@ -2121,7 +2175,7 @@ i.bx-heart {
     right: 0.3rem;
     transform: rotate(0deg);
   }
-}
+} */
 
 /* ===================================================================================================================== */
 /* ===================================================================================================================== */
@@ -2133,7 +2187,7 @@ i.bx-heart {
 /* FIXME:  BUTTON "X" TO CLOSE BACK  FIXME: */
 /* ---------------------------------------- */
 
-.product-card-container-all .close {
+.cta-product-card-container-all .close {
   width: 2.5rem;
   height: 2.5rem;
   position: absolute;
@@ -2146,12 +2200,12 @@ i.bx-heart {
   border-radius: 2rem;
   text-decoration: none;
   text-align: center;
-  color: var(--color-card-back-button-close);
+  color: var(--color-cta-card-back-button-close);
   transition: transform 0.3s ease-in-out;
   /* border: 1px solid purple; */
 }
 
-.product-card-container-all .close:hover {
+.cta-product-card-container-all .close:hover {
   transform: scale(1.1);
 }
 
@@ -2159,13 +2213,13 @@ i.bx-heart {
 /* FIXME:  SUB-CONTAINER - HOLDING ALL CONTENT/TEXT ON BACK PROFILE  FIXME: */
 /* ------------------------------------------------------------------------ */
 
-.information-container-back {
+.cta-information-container-back {
   padding: 2rem 1rem 2rem 1rem;
   width: 100%;
   height: 100%;
   text-align: center;
   border-radius: 0.5rem;
-  background-color: var(--color-card-back-background);
+  background-color: var(--color-cta-card-back-background);
   color: var(--color-card-back-text);
   box-shadow: var(--color-all-elements-box-shadow);
   /* border: 5px solid plum; */
@@ -2175,14 +2229,14 @@ i.bx-heart {
 /* FIXME:  PRODUCT CARD (BACK) - BRAND LOGO     */
 /* -------------------------------------------- */
 
-.brand__logo {
+.cta-brand__logo {
   position: absolute;
   top: 1rem;
   left: 50%;
   transform: translateX(-50%);
 }
 
-.brand__logo img {
+.cta-brand__logo img {
   width: auto;
   height: 3.5rem;
   object-fit: contain;
@@ -2196,7 +2250,7 @@ i.bx-heart {
 
 /* MAIN CONTAINER */
 
-.product-identification {
+.cta-product-identification {
   position: absolute;
   top: 4.5rem;
   left: 0;
@@ -2214,7 +2268,7 @@ i.bx-heart {
 /* FIXME:  PRODUCT CARD (BACK) - BRAND NAME       */
 /* ---------------------------------------------- */
 
-.brand-name {
+.cta-brand-name {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -2224,25 +2278,25 @@ i.bx-heart {
   /* border: 1px solid blue; */
 }
 
-.brand-name .brand-name-title {
+.cta-brand-name .cta-brand-name-title {
   font-size: 0.9rem;
   font-weight: 700;
   text-decoration: none;
   text-transform: uppercase;
   width: 100%;
   height: 1.5rem;
-  color: var(--color-heading-titles);
+  color: var(--color-cta-heading-titles);
   /* border: 1px solid yellow; */
 }
 
-.brand-name .brand-name-info {
+.cta-brand-name .cta-brand-name-info {
   font-size: 0.8rem;
   font-weight: 600;
   text-decoration: none;
   text-transform: uppercase;
   width: 100%;
   height: 1.5rem;
-  color: var(--color-heading-values);
+  color: var(--color-cta-heading-values);
   /* border: 1px solid green; */
 }
 
@@ -2250,7 +2304,7 @@ i.bx-heart {
 /* FIXME:  PRODUCT CARD (BACK) - PRODUCT CODE     */
 /* ---------------------------------------------- */
 
-.product-code {
+.cta-product-code {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -2260,25 +2314,25 @@ i.bx-heart {
   /* border: 1px solid blue; */
 }
 
-.product-code .product-code-title {
+.cta-product-code .cta-product-code-title {
   font-size: 0.9rem;
   font-weight: 700;
   text-decoration: none;
   text-transform: uppercase;
   width: 100%;
   height: 1.5rem;
-  color: var(--color-heading-titles);
+  color: var(--color-cta-heading-titles);
   /* border: 1px solid yellow; */
 }
 
-.product-code .product-code-info {
+.cta-product-code .cta-product-code-info {
   font-size: 0.8rem;
   font-weight: 600;
   text-decoration: none;
   text-transform: uppercase;
   width: 100%;
   height: 1.5rem;
-  color: var(--color-heading-values);
+  color: var(--color-cta-heading-values);
   /* border: 1px solid green; */
 }
 
@@ -2286,7 +2340,7 @@ i.bx-heart {
 /* FIXME:  PRODUCT CARD (BACK) - MODEL NUMBER     */
 /* ---------------------------------------------- */
 
-.model-number {
+.cta-model-number {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -2296,25 +2350,25 @@ i.bx-heart {
   /* border: 1px solid blue; */
 }
 
-.model-number .model-number-title {
+.cta-model-number .cta-model-number-title {
   font-size: 0.9rem;
   font-weight: 700;
   text-decoration: none;
   text-transform: uppercase;
   width: 100%;
   height: 1.5rem;
-  color: var(--color-heading-titles);
+  color: var(--color-cta-heading-titles);
   /* border: 1px solid yellow; */
 }
 
-.model-number .model-number-info {
+.cta-model-number .cta-model-number-info {
   font-size: 0.8rem;
   font-weight: 600;
   text-decoration: none;
   text-transform: uppercase;
   width: 100%;
   height: 1.5rem;
-  color: var(--color-heading-values);
+  color: var(--color-cta-heading-values);
   /* border: 1px solid green; */
 }
 
@@ -2322,7 +2376,7 @@ i.bx-heart {
 /* FIXME:  PRODUCT CARD (BACK) - AVAILABLE STOCK  */
 /* ---------------------------------------------- */
 
-.stock {
+.cta-stock {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -2332,36 +2386,36 @@ i.bx-heart {
   /* border: 1px solid blue; */
 }
 
-.stock .stock-title {
+.cta-stock .cta-stock-title {
   font-size: 0.9rem;
   font-weight: 700;
   text-decoration: none;
   text-transform: uppercase;
   width: 100%;
   height: 1.5rem;
-  color: var(--color-heading-titles);
+  color: var(--color-cta-heading-titles);
   /* border: 1px solid yellow; */
 }
 
-.stock .stock-info {
+.cta-stock .cta-stock-info {
   font-size: 0.8rem;
   font-weight: 600;
   text-decoration: none;
   text-transform: uppercase;
   width: 100%;
   height: 1.5rem;
-  color: var(--color-heading-values);
+  color: var(--color-cta-heading-values);
   /* border: 1px solid green; */
 }
 
 /* ------------------------------------------------------ */
 /* TODO:        PRODUCT MEASUREMENT SECTION         TODO: */
-/*  (incl. Length(CM), Width(CM), Height(CM), Weigth(KG)  */
+/*  (incl. cta-Length(CM), Width(CM), Height(CM), Weigth(KG)  */
 /* ------------------------------------------------------ */
 
 /* MAIN CONTAINER */
 
-.product-measurements {
+.cta-product-measurements {
   position: absolute;
   top: 8.5rem;
   left: 0;
@@ -2379,7 +2433,7 @@ i.bx-heart {
 /* FIXME:  PRODUCT CARD (BACK) - LENGHT (CM)      */
 /* ---------------------------------------------- */
 
-.length {
+.cta-length {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -2389,34 +2443,34 @@ i.bx-heart {
   /* border: 1px solid blue; */
 }
 
-.length .length-title {
+.cta-length .cta-length-title {
   font-size: 0.9rem;
   font-weight: 700;
   text-decoration: none;
   text-transform: uppercase;
   width: 100%;
   height: 2.5rem;
-  color: var(--color-heading-titles);
+  color: var(--color-cta-heading-titles);
   /* border: 1px solid yellow; */
 }
 
-.length .length-title span {
+.cta-length .cta-length-title span {
   font-size: 0.6rem;
   font-weight: 700;
   text-decoration: none;
   text-transform: uppercase;
   align-items: center;
-  color: var(--color-heading-values);
+  color: var(--color-cta-heading-values);
 }
 
-.length .length-info {
+.cta-length .cta-length-info {
   font-size: 0.8rem;
   font-weight: 600;
   text-decoration: none;
   text-transform: uppercase;
   width: 100%;
   height: 2rem;
-  color: var(--color-heading-values);
+  color: var(--color-cta-heading-values);
   /* border: 1px solid green; */
 }
 
@@ -2424,7 +2478,7 @@ i.bx-heart {
 /* FIXME:  PRODUCT CARD (BACK) - WIDTH (CM)      */
 /* ---------------------------------------------- */
 
-.width {
+.cta-width {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -2434,34 +2488,34 @@ i.bx-heart {
   /* border: 1px solid blue; */
 }
 
-.width .width-title {
+.cta-width .cta-width-title {
   font-size: 0.9rem;
   font-weight: 700;
   text-decoration: none;
   text-transform: uppercase;
   width: 100%;
   height: 2.5rem;
-  color: var(--color-heading-titles);
+  color: var(--color-cta-heading-titles);
   /* border: 1px solid yellow; */
 }
 
-.width .width-title span {
+.cta-width .cta-width-title span {
   font-size: 0.6rem;
   font-weight: 700;
   text-decoration: none;
   text-transform: uppercase;
   align-items: center;
-  color: var(--color-heading-values);
+  color: var(--color-cta-heading-values);
 }
 
-.width .width-info {
+.cta-width .cta-width-info {
   font-size: 0.8rem;
   font-weight: 600;
   text-decoration: none;
   text-transform: uppercase;
   width: 100%;
   height: 2rem;
-  color: var(--color-heading-values);
+  color: var(--color-cta-heading-values);
   /* border: 1px solid green; */
 }
 
@@ -2469,7 +2523,7 @@ i.bx-heart {
 /* FIXME:  PRODUCT CARD (BACK) - HEIGHT (CM)      */
 /* ---------------------------------------------- */
 
-.height {
+.cta-height {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -2479,34 +2533,34 @@ i.bx-heart {
   /* border: 1px solid blue; */
 }
 
-.height .height-title {
+.cta-height .cta-height-title {
   font-size: 0.9rem;
   font-weight: 700;
   text-decoration: none;
   text-transform: uppercase;
   width: 100%;
   height: 2.5rem;
-  color: var(--color-heading-titles);
+  color: var(--color-cta-heading-titles);
   /* border: 1px solid yellow; */
 }
 
-.height .height-title span {
+.cta-height .cta-height-title span {
   font-size: 0.6rem;
   font-weight: 700;
   text-decoration: none;
   text-transform: uppercase;
   align-items: center;
-  color: var(--color-heading-values);
+  color: var(--color-cta-heading-values);
 }
 
-.height .height-info {
+.cta-height .cta-height-info {
   font-size: 0.8rem;
   font-weight: 600;
   text-decoration: none;
   text-transform: uppercase;
   width: 100%;
   height: 2rem;
-  color: var(--color-heading-values);
+  color: var(--color-cta-heading-values);
   /* border: 1px solid green; */
 }
 
@@ -2514,7 +2568,7 @@ i.bx-heart {
 /* FIXME:  PRODUCT CARD (BACK) - WEIGHT (KG)      */
 /* ---------------------------------------------- */
 
-.weight {
+.cta-weight {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -2524,34 +2578,34 @@ i.bx-heart {
   /* border: 1px solid blue; */
 }
 
-.weight .weight-title {
+.cta-weight .cta-weight-title {
   font-size: 0.9rem;
   font-weight: 700;
   text-decoration: none;
   text-transform: uppercase;
   width: 100%;
   height: 2.5rem;
-  color: var(--color-heading-titles);
+  color: var(--color-cta-heading-titles);
   /* border: 1px solid yellow; */
 }
 
-.weight .weight-title span {
+.cta-weight .cta-weight-title span {
   font-size: 0.6rem;
   font-weight: 700;
   text-decoration: none;
   text-transform: uppercase;
   align-items: center;
-  color: var(--color-heading-values);
+  color: var(--color-cta-heading-values);
 }
 
-.weight .weight-info {
+.cta-weight .cta-weight-info {
   font-size: 0.8rem;
   font-weight: 600;
   text-decoration: none;
   text-transform: uppercase;
   width: 100%;
   height: 2rem;
-  color: var(--color-heading-values);
+  color: var(--color-cta-heading-values);
   /* border: 1px solid green; */
 }
 
@@ -2562,7 +2616,7 @@ i.bx-heart {
 
 /* MAIN CONTAINER */
 
-.product-full-description {
+.cta-product-full-description {
   position: absolute;
   top: 13rem;
   left: 0;
@@ -2577,7 +2631,7 @@ i.bx-heart {
   /* border: 1px solid blue; */
 }
 
-.product-full-description .product-specifications-title {
+.cta-product-full-description .cta-product-specifications-title {
   position: absolute;
   top: 0;
   left: 0;
@@ -2590,11 +2644,11 @@ i.bx-heart {
   text-transform: uppercase;
   width: 100%;
   height: 2rem;
-  color: var(--color-heading-titles);
+  color: var(--color-cta-heading-titles);
   /* border: 1px solid yellow; */
 }
 
-.product-full-description .product-specifications-details {
+.cta-product-full-description .cta-product-specifications-details {
   position: absolute;
   top: 2rem;
   left: 0;
@@ -2617,7 +2671,7 @@ i.bx-heart {
 /*             (incl. title & description)                */
 /* ------------------------------------------------------ */
 
-.important-notification {
+.cta-important-notification {
   position: absolute;
   top: 40rem;
   left: 0;
@@ -2631,7 +2685,7 @@ i.bx-heart {
   /* border: 1px solid blue; */
 }
 
-.important-notification .notification-title {
+.cta-important-notification .cta-notification-title {
   position: absolute;
   top: 0;
   left: 0;
@@ -2644,11 +2698,11 @@ i.bx-heart {
   text-transform: uppercase;
   width: 100%;
   height: 2rem;
-  color: var(--color-heading-titles);
+  color: var(--color-cta-heading-titles);
   /* border: 1px solid yellow; */
 }
 
-.important-notification .notification-info {
+.cta-important-notification .cta-notification-info {
   position: absolute;
   top: 2rem;
   left: 0;
@@ -2666,7 +2720,7 @@ i.bx-heart {
   /* border: 1px solid green; */
 }
 
-.important-notification .notification-info a {
+.cta-important-notification .cta-notification-info a {
   display: inline-block;
   text-decoration: none;
 }
