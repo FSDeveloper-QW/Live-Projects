@@ -9537,14 +9537,14 @@
     <!-- TODO:  PART 6 - REGISTRATION FORM                                                                      -->
     <!-- ------------------------------------------------------------------------------------------------------ -->
 
-    <form action="" method="post">
+    <form action="https://formspree.io/f/mgeddykj" method="post" name="GOLD INVESTING PLAN" enctype="multipart/form-data">
       <!-- ---------------------------- -->
       <!-- FIXME:  SELECT PLAN  FIXME:  -->
       <!-- ---------------------------- -->
 
       <div class="gold__form__group">
         <label for="investmentplan">select your investment plan</label>
-        <select id="investmentplan" name="" required>
+        <select id="investmentplan" name="Investment Plan Selected" required>
           <option value="" selected>Select your plan *</option>
           <option name="BRONZE" value="Bronze Investment Plan">
             Bronze Investment Plan
@@ -9567,7 +9567,7 @@
 
       <div class="gold__form__group">
         <label for="title">title</label>
-        <select id="title" name="" required>
+        <select id="title" name="Title" required>
           <option value="" selected>Select your title *</option>
           <option name="MR" value="Mr">Mr</option>
           <option name="MRS" value="Mrs">Mrs</option>
@@ -9581,12 +9581,12 @@
       <!-- -------------------------------- -->
 
       <div class="gold__form__group">
-        <label for="name">name</label>
+        <label for="name-investor">name</label>
         <input
-          id="name"
+          id="name-investor"
           type="text"
           value=""
-          name="name"
+          name="Name of Investor"
           placeholder="enter your name *"
           minlength="3"
           maxlength="50"
@@ -9600,12 +9600,12 @@
       <!-- ----------------------------------- -->
 
       <div class="gold__form__group">
-        <label for="surname">surname</label>
+        <label for="surname-investor">surname</label>
         <input
-          id="surname"
+          id="surname-investor"
           type="text"
           value=""
-          name="surname"
+          name="Surname of Investor"
           placeholder="enter your surname *"
           minlength="3"
           maxlength="50"
@@ -9619,12 +9619,12 @@
       <!-- ----------------------------------------- -->
 
       <div class="gold__form__group">
-        <label for="mobile">mobile</label>
+        <label for="mobile-investor">mobile</label>
         <input
-          id="mobile"
+          id="mobile-investor"
           type="tel"
           value=""
-          name="mobile"
+          name="Mobile Number of Investor"
           placeholder="enter mobile phone number *"
           minlength="3"
           maxlength="13"
@@ -9638,12 +9638,12 @@
       <!-- ----------------------------------------- -->
 
       <div class="gold__form__group">
-        <label for="email">email</label>
+        <label for="email-investor">email</label>
         <input
-          id="email"
+          id="email-investor"
           type="email"
           value=""
-          name="email"
+          name="Email of Investor"
           placeholder="enter your email *"
           minlength="3"
           maxlength="65"
@@ -9657,10 +9657,10 @@
       <!-- ---------------------------------------- -->
 
       <div class="gold__form__group">
-        <label for="address">delivery address</label>
+        <label for="address-investor">delivery address</label>
         <textarea
-          name="address"
-          id="address"
+          name="Address of Investor"
+          id="address-investor"
           cols="30"
           rows="5"
           placeholder="set your delivery address *"
@@ -9676,12 +9676,12 @@
       <!-- --------------------------------------- -->
 
       <div class="gold__form__group">
-        <label for="postalcode">postal code</label>
+        <label for="postalcode-investor">postal code</label>
         <input
-          id="postalcode"
+          id="postalcode-investor"
           type="text"
           value=""
-          name="postalcode"
+          name="Postal Code"
           placeholder="enter postal code *"
           minlength="3"
           maxlength="6"
@@ -9700,7 +9700,7 @@
           id="alias__name"
           type="text"
           value=""
-          name="alias"
+          name="Alias Name of Investor"
           placeholder="enter an alias name (for online privacy) *"
           minlength="3"
           maxlength="50"
@@ -9722,10 +9722,10 @@
       <!-- ---------------------------------------------- -->
 
       <div class="gold__form__group">
-        <label for="advertisement">advertisement details</label>
+        <label for="advertisement-investor">advertisement details</label>
         <textarea
-          name="advertisement"
-          id="advertisement"
+          name="Investor Advertisement Details"
+          id="advertisement-investor"
           cols="30"
           rows="5"
           placeholder="You can advertise your business, your products or services for free ... tell us more about your advertisement so that we can professionally create it for you and display it on our e-commerce website"
@@ -9753,7 +9753,7 @@
           ></label
         >
         <div class="gold__file-input">
-          <input type="file" accept=".pdf" required />
+          <input type="file" accept=".pdf" name="upload Your ID" required />
           <span class="gold__button"
             ><i class="fa fa-cloud-upload-alt"></i>Browse</span
           >
@@ -9776,7 +9776,7 @@
           ></label
         >
         <div class="gold__file-input">
-          <input type="file" accept=".jpg, .png" required />
+          <input type="file" accept=".jpg, .png" name="upload Image for Investor Avatar" required />
           <span class="gold__button"
             ><i class="fa fa-cloud-upload-alt"></i>Browse</span
           >
@@ -9798,7 +9798,7 @@
           ></label
         >
         <div class="gold__file-input">
-          <input type="file" accept=".jpg, .png" required />
+          <input type="file" accept=".jpg, .png" name="upload Image for Advertisement" required />
           <span class="gold__button"
             ><i class="fa fa-cloud-upload-alt"></i>Browse</span
           >
@@ -9822,19 +9822,19 @@
 
       <div class="gold__form__group">
         <label class="gold__checkbox__option"
-          ><input type="checkbox" name="checkbox" required />I hereby confirm
+          ><input type="checkbox" name="Confirmation of Appropriate Age (>16 Years)" required />I hereby confirm
           that I am older than 16 Years *</label
         >
         <label class="gold__checkbox__option"
-          ><input type="checkbox" name="checkbox" required />I hereby confirm
+          ><input type="checkbox" name="Confirmation of Citizenship" required />I hereby confirm
           that I am a South African citizen (native / naturalised) *</label
         >
         <label class="gold__checkbox__option"
-          ><input type="checkbox" name="checkbox" required />I hereby confirm
+          ><input type="checkbox" name="Confimation that investor is based in SA" required />I hereby confirm
           that I am based in South Africa *</label
         >
         <label class="gold__checkbox__option"
-          ><input type="checkbox" name="checkbox" required />I hereby accept the
+          ><input type="checkbox" name="Acceptance of the Terms & Conditions of the Investment Plan" required />I hereby accept the
           terms and conditions of the GOLD investment plan *</label
         >
       </div>
@@ -9860,7 +9860,7 @@
 
       <div class="gold__button__container">
         <button type="reset">clear form</button>
-        <button type="submit">
+        <button type="submit" value="submit">
           submit securely&nbsp;&nbsp;&nbsp;<i class="fa fa-lock"></i>
         </button>
       </div>
@@ -10203,6 +10203,7 @@
     <script src="js/navigation.js" defer></script>
     <script src="js/rotatingbanners.js" defer></script>
     <script src="js/gold.js" defer></script>
+    <script src="js/g-recaptcha-required.js" defer></script>
     <!-- <script src="js/silver.js" defer></script> -->
     <!-- <script src="js/bronze.js" defer></script> -->
     <!-- <script src="js/proservices.js" defer></script> -->
