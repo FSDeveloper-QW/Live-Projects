@@ -8706,7 +8706,7 @@
     <!--                 TODO:  PART 2 - FORM COMPONENT - REQUEST PRODUCT QUOTE  TODO:                          -->
     <!-- ------------------------------------------------------------------------------------------------------ -->
 
-    <form action="" method="post">
+    <form action="https://formspree.io/f/mjvllwle" name="REQUEST QUOTE (PRODUCTS)" method="post">
       <!-- ---------------------------------------------------------------------------------------------------- -->
       <!--                                  TODO:  SECTION 01  TODO:                                            -->
       <!-- ---------------------------------------------------------------------------------------------------- -->
@@ -8742,7 +8742,7 @@
           >Please provide all the details of the product</label
         >
         <textarea
-          name="product_details"
+          name="Details of the product"
           id="product_details"
           cols="30"
           rows="7"
@@ -8764,7 +8764,7 @@
           id="number_of_units"
           type="number"
           value=""
-          name="number_of_units"
+          name="Total number of units required"
           placeholder="number of units you require ... *"
           min="0"
           autocomplete="off"
@@ -8806,7 +8806,7 @@
           >Provide your exact delivery address</label
         >
         <textarea
-          name="delivery-address"
+          name="Client delivery address"
           id="delivery-address"
           cols="30"
           rows="5"
@@ -8828,7 +8828,7 @@
           id="delivery-date"
           type="date"
           value=""
-          name="delivery-date"
+          name="Required delivery date"
           placeholder="enter the required delivery date ... *"
           min="2022-04-01"
           max="2099-12-31"
@@ -8854,7 +8854,7 @@
 
       <div class="product__quote__form__group">
         <label for="title">title</label>
-        <select id="title" name="" required>
+        <select id="title" name="Title" required>
           <option value="" selected>Select your title *</option>
           <option name="MR" value="Mr">Mr</option>
           <option name="MRS" value="Mrs">Mrs</option>
@@ -8873,7 +8873,7 @@
           id="name"
           type="text"
           value=""
-          name="name"
+          name="Client Name"
           placeholder="enter your name *"
           minlength="3"
           maxlength="50"
@@ -8892,7 +8892,7 @@
           id="surname"
           type="text"
           value=""
-          name="surname"
+          name="Client Surname"
           placeholder="enter your surname *"
           minlength="3"
           maxlength="50"
@@ -8911,7 +8911,7 @@
           id="mobile"
           type="tel"
           value=""
-          name="mobile"
+          name="Client Mobile Number"
           placeholder="enter mobile phone number *"
           minlength="3"
           maxlength="13"
@@ -8930,7 +8930,7 @@
           id="email"
           type="email"
           value=""
-          name="email"
+          name="Client Email Address"
           placeholder="enter your email *"
           minlength="3"
           maxlength="65"
@@ -8949,7 +8949,7 @@
           id="company__name"
           type="text"
           value=""
-          name="company"
+          name="Company Name"
           placeholder="enter your full company name ..."
           minlength="3"
           maxlength="75"
@@ -8967,7 +8967,7 @@
           id="VAT"
           type="text"
           value=""
-          name="VAT"
+          name="Company VAT Number"
           placeholder="enter your VAT Number ..."
           minlength="3"
           maxlength="12"
@@ -8987,7 +8987,7 @@
           id="company__position"
           type="text"
           value=""
-          name="company-position"
+          name="Position / Designation at the Company"
           placeholder="enter your position at the company ..."
           minlength="3"
           maxlength="75"
@@ -9005,7 +9005,7 @@
           id="telephone"
           type="tel"
           value=""
-          name="telephone"
+          name="Company Telephone"
           placeholder="enter company telephone number ..."
           minlength="3"
           maxlength="13"
@@ -9020,7 +9020,7 @@
       <div class="product__quote__form__group">
         <label for="address">residential / business / postal address</label>
         <textarea
-          name="address"
+          name="Billing Address"
           id="address"
           cols="30"
           rows="5"
@@ -9042,7 +9042,7 @@
           id="postalcode"
           type="text"
           value=""
-          name="postalcode"
+          name="Postal Code"
           placeholder="enter postal code *"
           minlength="3"
           maxlength="6"
@@ -9071,10 +9071,10 @@
         <label for="product__quote__subscription"
           >Were you assisted or referred by one of our Resellers? *</label
         >
-        <select id="product__quote__subscription" name="" required>
+        <select id="product__quote__subscription" name="Did a Reseller Provide Assistance?" required>
           <option value="" selected>please select ...</option>
           <option name="Yes" value="Yes">Yes</option>
-          <option name="Already-signed-up" value="Already using Skynamo">
+          <option name="No" value="No">
             No
           </option>
         </select>
@@ -9085,14 +9085,14 @@
       <!-- ---------------------------------------------- -->
 
       <div class="product__quote__form__group">
-        <label for="name"
+        <label for="reseller-name"
           >If "YES", please provide the name of the reseller (if known)</label
         >
         <input
-          id="name"
+          id="reseller-name"
           type="text"
           value=""
-          name="name"
+          name="Name of Reseller who assisted"
           placeholder="enter reseller name and surname ..."
           minlength="3"
           maxlength="75"
@@ -9113,7 +9113,7 @@
           id="reseller-code"
           type="text"
           value=""
-          name="reseller-code"
+          name="Reseller Code"
           placeholder="enter reseller's 5-digit sales code (i.e WC128) ..."
           minlength="3"
           maxlength="75"
@@ -9137,11 +9137,11 @@
 
       <div class="product__quote__form__group">
         <label class="product__quote__checkbox__option"
-          ><input type="checkbox" name="checkbox" required />I hereby confirm
+          ><input type="checkbox" name="Confirmation that details provided are correct" required />I hereby confirm
           that all the details provided above are correct *</label
         >
         <label class="product__quote__checkbox__option"
-          ><input type="checkbox" name="checkbox" required />I hereby confirm
+          ><input type="checkbox" name="Confirm acceptance of Popi & Privacy Policy" required />I hereby confirm
           that I accept the company's POPI and Privacy policy to protect my
           personal information *</label
         >
@@ -9154,11 +9154,10 @@
       <!-- Current Site Key - SHOPMAX Website               -->
       <!-- ------------------------------------------------ -->
 
-      <div class="product__quote__form__group">
-        <div
-          class="g-recaptcha"
+      <div class="product__quote__form__group">        
+        <div                              
+          class="g-recaptcha"          
           data-sitekey="6Ldzh1AfAAAAACWDbEHGqvipSqHbEBYwZahZHWcO"
-          data-theme="light"
         ></div>
       </div>
 
@@ -9168,7 +9167,7 @@
 
       <div class="product__quote__button__container">
         <button type="reset">clear form</button>
-        <button type="submit">
+        <button type="submit" value="submit">
           submit securely&nbsp;&nbsp;&nbsp;<i class="fa fa-lock"></i>
         </button>
       </div>
@@ -9512,6 +9511,7 @@
     <script src="js/rotatingbanners.js" defer></script>
     <script src="js/accordian_open_and_close.js" defer></script>
     <script src="js/profile_card_flip.js" defer></script>
+    <script src="js/g-recaptcha-required.js" defer></script>
     <!-- <script src="js/shopperlogin.js" defer></script> -->
     <!-- <script src="js/sellerlogin.js" defer></script> -->
     <!-- <script src="js/investorlogin.js" defer></script> -->

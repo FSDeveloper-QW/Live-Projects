@@ -9690,14 +9690,14 @@
     <!-- TODO:  PART 6 - REGISTRATION FORM                                                                      -->
     <!-- ------------------------------------------------------------------------------------------------------ -->
 
-    <form action="" method="post">
+    <form action="https://formspree.io/f/xbjwwyyl" name="SELL YOUR PRODUCT" method="post" enctype="multipart/form-data">
       <!-- ------------------------------------- -->
       <!-- FIXME:  SELECT YOUR PROVINCE  FIXME:  -->
       <!-- ------------------------------------- -->
 
       <div class="sellproduct__form__group">
         <label for="province">In which province of SA are you based?</label>
-        <select id="province" name="" required>
+        <select id="province" name="In which province is the Seller based" required>
           <option value="" selected>Select your province ...</option>
           <option name="P01" value="Western Cape">Western Cape</option>
           <option name="P02" value="Eastern Cape">Eastern Cape</option>
@@ -9719,7 +9719,7 @@
         <label for="region"
           >In which regional area of your province are you based?</label
         >
-        <select id="region" name="" required>
+        <select id="region" name="In which regional area is the Seller based" required>
           <option value="" selected>Select your region ...</option>
           <optgroup label="Western Cape">
             <option name="R01" value="Cape Peninsula">Cape Peninsula</option>
@@ -9821,7 +9821,7 @@
           >Select the city / town where you will be selling your product
           from</label
         >
-        <select id="citytown" name="" required>
+        <select id="citytown" name="From which City/Town will the Seller operate" required>
           <option value="" selected>Select your city/town ...</option>
           <optgroup label="Western Cape - Cape Peninsula">
             <option name="C01" value="Athlone">Athlone</option>
@@ -10844,7 +10844,7 @@
 
       <div class="sellproduct__form__group">
         <label for="title">title</label>
-        <select id="title" name="" required>
+        <select id="title" name="Title" required>
           <option value="" selected>Select your title *</option>
           <option name="MR" value="Mr">Mr</option>
           <option name="MRS" value="Mrs">Mrs</option>
@@ -10858,12 +10858,12 @@
       <!-- -------------------------------- -->
 
       <div class="sellproduct__form__group">
-        <label for="name">name</label>
+        <label for="name-seller">name</label>
         <input
-          id="name"
+          id="name-seller"
           type="text"
           value=""
-          name="name"
+          name="Name of Seller"
           placeholder="enter your name *"
           minlength="3"
           maxlength="50"
@@ -10877,12 +10877,12 @@
       <!-- ----------------------------------- -->
 
       <div class="sellproduct__form__group">
-        <label for="surname">surname</label>
+        <label for="surname-seller">surname</label>
         <input
-          id="surname"
+          id="surname-seller"
           type="text"
           value=""
-          name="surname"
+          name="Surname of Seller"
           placeholder="enter your surname *"
           minlength="3"
           maxlength="50"
@@ -10896,12 +10896,12 @@
       <!-- ----------------------------------------- -->
 
       <div class="sellproduct__form__group">
-        <label for="mobile">mobile</label>
+        <label for="mobile-seller">mobile</label>
         <input
-          id="mobile"
+          id="mobile-seller"
           type="tel"
           value=""
-          name="mobile"
+          name="Mobile Number of Seller"
           placeholder="enter mobile phone number *"
           minlength="3"
           maxlength="13"
@@ -10915,12 +10915,12 @@
       <!-- ----------------------------------------- -->
 
       <div class="sellproduct__form__group">
-        <label for="email">email</label>
+        <label for="email-seller">email</label>
         <input
-          id="email"
+          id="email-seller"
           type="email"
           value=""
-          name="email"
+          name="Email of Seller"
           placeholder="enter your email *"
           minlength="3"
           maxlength="65"
@@ -10934,10 +10934,10 @@
       <!-- ---------------------------------------- -->
 
       <div class="sellproduct__form__group">
-        <label for="address">physical residential / business address</label>
+        <label for="address-seller">physical residential / business address</label>
         <textarea
-          name="address"
-          id="address"
+          name="Address of Seller"
+          id="address-seller"
           cols="30"
           rows="5"
           placeholder="provide your physical residential / business address *"
@@ -10953,12 +10953,12 @@
       <!-- --------------------------------------- -->
 
       <div class="sellproduct__form__group">
-        <label for="postalcode">postal code</label>
+        <label for="postalcode-seller">postal code</label>
         <input
-          id="postalcode"
+          id="postalcode-seller"
           type="text"
           value=""
-          name="postalcode"
+          name="Postal Code"
           placeholder="enter postal code *"
           minlength="3"
           maxlength="6"
@@ -10981,7 +10981,7 @@
 
       <div class="sellproduct__form__group">
         <label for="marketplace-products">Select your product category</label>
-        <select id="marketplace-products" name="marketplace-products" required>
+        <select id="marketplace-products" name="Marketplace Product Category" required>
           <option value="" selected>Select your product category</option>
           <optgroup label="Marketplace Product Categories">
             <option name="MPP01" value="Arts & crafts">Arts & crafts</option>
@@ -11026,7 +11026,7 @@
           id="productname__long"
           type="text"
           value=""
-          name="productname-long"
+          name="Full Name of the Product"
           placeholder="enter full product name"
           minlength="3"
           maxlength="50"
@@ -11045,7 +11045,7 @@
           id="productname__short"
           type="text"
           value=""
-          name="productname-short"
+          name="Short Name of the Product"
           placeholder="enter short product name"
           minlength="3"
           maxlength="50"
@@ -11061,7 +11061,7 @@
       <div class="sellproduct__form__group">
         <label for="product__description">full product description</label>
         <textarea
-          name="product-description"
+          name="Product Description"
           id="product__description"
           cols="30"
           rows="5"
@@ -11080,7 +11080,7 @@
       <div class="sellproduct__form__group">
         <label for="product__warranty">product warranty details</label>
         <textarea
-          name="product-warranty"
+          name="Product Warranty Details"
           id="product__warranty"
           cols="30"
           rows="5"
@@ -11099,7 +11099,7 @@
       <div class="sellproduct__form__group">
         <label for="product__shipping">product shipping details</label>
         <textarea
-          name="product-shipping"
+          name="Product Shipping Details"
           id="product__shipping"
           cols="30"
           rows="5"
@@ -11118,7 +11118,7 @@
       <div class="sellproduct__form__group">
         <label for="product__returns">product returns procedure</label>
         <textarea
-          name="returns-procedure"
+          name="Product Returns Procedure"
           id="product__returns"
           cols="30"
           rows="5"
@@ -11137,7 +11137,7 @@
       <div class="sellproduct__form__group">
         <label for="product__other">any other product details</label>
         <textarea
-          name="other-details"
+          name="Any other Product Details"
           id="product__other"
           cols="30"
           rows="5"
@@ -11158,7 +11158,7 @@
           id="product__price"
           type="text"
           value=""
-          name="selling-price"
+          name="The Selling Price of the Product"
           placeholder="selling price (incl. vat and shipping costs)"
           minlength="2"
           maxlength="10"
@@ -11189,7 +11189,7 @@
           ></label
         >
         <div class="sellproduct__file-input">
-          <input type="file" accept=".pdf" required />
+          <input type="file" accept=".pdf" name="upload Your ID"   required />
           <span class="sellproduct__button"
             ><i class="fa fa-cloud-upload-alt"></i>Browse</span
           >
@@ -11212,7 +11212,7 @@
           ></label
         >
         <div class="sellproduct__file-input">
-          <input type="file" accept=".pdf" required />
+          <input type="file" accept=".pdf" name="upload Proof of Address" required />
           <span class="sellproduct__button"
             ><i class="fa fa-cloud-upload-alt"></i>Browse</span
           >
@@ -11235,7 +11235,7 @@
           ></label
         >
         <div class="sellproduct__file-input">
-          <input type="file" accept=".jpg, .png" required />
+          <input type="file" accept=".jpg, .png" name="upload Product Image" required />
           <span class="sellproduct__button"
             ><i class="fa fa-cloud-upload-alt"></i>Browse</span
           >
@@ -11259,23 +11259,23 @@
 
       <div class="sellproduct__form__group">
         <label class="sellproduct__checkbox__option"
-          ><input type="checkbox" name="checkbox" required />I hereby confirm
+          ><input type="checkbox" name="Confirmation of Age (Older than 18)" required />I hereby confirm
           that I am older than 18 Years *</label
         >
         <label class="sellproduct__checkbox__option"
-          ><input type="checkbox" name="checkbox" required />I hereby confirm
+          ><input type="checkbox" name="Confirmation of SA Citizenship" required />I hereby confirm
           that I am a South African citizen (native / naturalised) *</label
         >
         <label class="sellproduct__checkbox__option"
-          ><input type="checkbox" name="checkbox" required />I hereby confirm
+          ><input type="checkbox" name="Confirmaton that Reseller is based in SA" required />I hereby confirm
           that I am based in South Africa *</label
         >
         <label class="sellproduct__checkbox__option"
-          ><input type="checkbox" name="checkbox" required />I hereby confirm
+          ><input type="checkbox" name="Confirmation of Language Proficiency (English)" required />I hereby confirm
           that I speak, write and understand English *</label
         >
         <label class="sellproduct__checkbox__option"
-          ><input type="checkbox" name="checkbox" required />I hereby accept the
+          ><input type="checkbox" name="Acceptance of Selling Plan Terms & Conditions" required />I hereby accept the
           terms and conditions of this MARKETPLACE (MP) selling plan for
           products *</label
         >
@@ -11302,7 +11302,7 @@
 
       <div class="sellproduct__button__container">
         <button type="reset">clear form</button>
-        <button type="submit">
+        <button type="submit" value="submit">
           submit securely&nbsp;&nbsp;&nbsp;<i class="fa fa-lock"></i>
         </button>
       </div>
@@ -11645,6 +11645,7 @@
     <script src="js/navigation.js" defer></script>
     <script src="js/rotatingbanners.js" defer></script>
     <script src="js/sellproducts.js" defer></script>
+    <script src="js/g-recaptcha-required.js" defer></script>
     <!-- <script src="js/resellers.js" defer></script> -->
     <!-- <script src="js/accordian_open_and_close.js" defer></script>
     <script src="js/profile_card_flip.js" defer></script> -->    

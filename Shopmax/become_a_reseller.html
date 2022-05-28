@@ -9662,14 +9662,14 @@
     <!-- TODO:  PART 6 - REGISTRATION FORM                                                                      -->
     <!-- ------------------------------------------------------------------------------------------------------ -->
 
-    <form action="" method="post">
+    <form action="https://formspree.io/f/mwkyybbe" name="BECOME A RESELLER" method="post" enctype="multipart/form-data">
       <!-- ------------------------------------- -->
       <!-- FIXME:  SELECT YOUR PROVINCE  FIXME:  -->
       <!-- ------------------------------------- -->
 
       <div class="resellers__form__group">
         <label for="province">In which province of SA are you based?</label>
-        <select id="province" name="" required>
+        <select id="province" name="In Which Province is the New Reseller based" required>
           <option value="" selected>Select your province ...</option>
           <option name="P01" value="Western Cape">Western Cape</option>
           <option name="P02" value="Eastern Cape">Eastern Cape</option>
@@ -9689,7 +9689,7 @@
 
       <div class="resellers__form__group">
         <label for="region">In which regional area of your province are you based?</label>
-        <select id="region" name="" required>
+        <select id="region" name="In which regional area is the Reseller based" required>
           <option value="" selected>Select your region ...</option>
           <optgroup label="Western Cape">
             <option name="R01" value="Cape Peninsula">Cape Peninsula</option>
@@ -9788,7 +9788,7 @@
 
       <div class="resellers__form__group">
         <label for="citytown">Select the city / town where you will be working from as RESELLER</label>
-        <select id="citytown" name="" required>
+        <select id="citytown" name="From which City/Town will the Reseller operate" required>
           <option value="" selected>Select your city/town ...</option>
           <optgroup label="Western Cape - Cape Peninsula">
             <option name="C01" value="Athlone">Athlone</option>
@@ -10813,7 +10813,7 @@
 
       <div class="resellers__form__group">
         <label for="title">title</label>
-        <select id="title" name="" required>
+        <select id="title" name="Title" required>
           <option value="" selected>Select your title *</option>
           <option name="MR" value="Mr">Mr</option>
           <option name="MRS" value="Mrs">Mrs</option>
@@ -10827,12 +10827,12 @@
       <!-- -------------------------------- -->
 
       <div class="resellers__form__group">
-        <label for="name">name</label>
+        <label for="name-reseller">name</label>
         <input
-          id="name"
+          id="name-reseller"
           type="text"
           value=""
-          name="name"
+          name="Name of Reseller"
           placeholder="enter your name *"
           minlength="3"
           maxlength="50"
@@ -10846,12 +10846,12 @@
       <!-- ----------------------------------- -->
 
       <div class="resellers__form__group">
-        <label for="surname">surname</label>
+        <label for="surname-reseller">surname</label>
         <input
-          id="surname"
+          id="surname-reseller"
           type="text"
           value=""
-          name="surname"
+          name="Surname of Reseller"
           placeholder="enter your surname *"
           minlength="3"
           maxlength="50"
@@ -10865,12 +10865,12 @@
       <!-- ----------------------------------------- -->
 
       <div class="resellers__form__group">
-        <label for="mobile">mobile</label>
+        <label for="mobile-reseller">mobile</label>
         <input
-          id="mobile"
+          id="mobile-reseller"
           type="tel"
           value=""
-          name="mobile"
+          name="Mobile Number of Reseller"
           placeholder="enter mobile phone number *"
           minlength="3"
           maxlength="13"
@@ -10884,12 +10884,12 @@
       <!-- ----------------------------------------- -->
 
       <div class="resellers__form__group">
-        <label for="email">email</label>
+        <label for="email-reseller">email</label>
         <input
-          id="email"
+          id="email-reseller"
           type="email"
           value=""
-          name="email"
+          name="Email of Reseller"
           placeholder="enter your email *"
           minlength="3"
           maxlength="65"
@@ -10903,10 +10903,10 @@
       <!-- ---------------------------------------- -->
 
       <div class="resellers__form__group">
-        <label for="address">physical residential / business address</label>
+        <label for="address-reseller">physical residential / business address</label>
         <textarea
-          name="address"
-          id="address"
+          name="Address of the Reseller"
+          id="address-reseller"
           cols="30"
           rows="5"
           placeholder="provide your physical residential / business address *"
@@ -10922,12 +10922,12 @@
       <!-- --------------------------------------- -->
 
       <div class="resellers__form__group">
-        <label for="postalcode">postal code</label>
+        <label for="postalcode-reseller">postal code</label>
         <input
-          id="postalcode"
+          id="postalcode-reseller"
           type="text"
           value=""
-          name="postalcode"
+          name="Postal Code"
           placeholder="enter postal code *"
           minlength="3"
           maxlength="6"
@@ -10954,7 +10954,7 @@
           ></label
         >
         <div class="resellers__file-input">
-          <input type="file" accept=".pdf" required />
+          <input type="file" accept=".pdf" name="upload ID" required />
           <span class="resellers__button"
             ><i class="fa fa-cloud-upload-alt"></i>Browse</span
           >
@@ -10976,7 +10976,7 @@
           ></label
         >
         <div class="resellers__file-input">
-          <input type="file" accept=".pdf" required />
+          <input type="file" accept=".pdf" name="upload Proof of Residence" required />
           <span class="resellers__button"
             ><i class="fa fa-cloud-upload-alt"></i>Browse</span
           >
@@ -10998,7 +10998,7 @@
           ></label
         >
         <div class="resellers__file-input">
-          <input type="file" accept=".pdf" required />
+          <input type="file" accept=".pdf" name="upload CV" required />
           <span class="resellers__button"
             ><i class="fa fa-cloud-upload-alt"></i>Browse</span
           >
@@ -11020,7 +11020,7 @@
           ></label
         >
         <div class="resellers__file-input">
-          <input type="file" accept=".jpg, .png" required />
+          <input type="file" accept=".jpg, .png" name="upload Photo" required />
           <span class="resellers__button"
             ><i class="fa fa-cloud-upload-alt"></i>Browse</span
           >
@@ -11044,43 +11044,43 @@
 
       <div class="resellers__form__group">
         <label class="resellers__checkbox__option"
-          ><input type="checkbox" name="checkbox" required />I hereby confirm
+          ><input type="checkbox" name="Confirmation of Age (Older than 18)" required />I hereby confirm
           that I am older than 18 Years *</label
         >
         <label class="resellers__checkbox__option"
-          ><input type="checkbox" name="checkbox" required />I hereby confirm
+          ><input type="checkbox" name="Confirmation of SA Citizenship" required />I hereby confirm
           that I am a South African citizen (native / naturalised) *</label
         >
         <label class="resellers__checkbox__option"
-          ><input type="checkbox" name="checkbox" required />I hereby confirm
+          ><input type="checkbox" name="Confirmaton that Reseller is based in SA" required />I hereby confirm
           that I am based in South Africa *</label
         >
         <label class="resellers__checkbox__option"
-          ><input type="checkbox" name="checkbox" required />I hereby confirm
+          ><input type="checkbox" name="Confirmation of Qualification (Min Grade 12)" required />I hereby confirm
           that I have successfully completed Grade 12 / Matric *</label
         >
         <label class="resellers__checkbox__option"
-          ><input type="checkbox" name="checkbox" required />I hereby confirm
+          ><input type="checkbox" name="Confirmation of Language Proficiency (English)" required />I hereby confirm
           that I speak, write and understand English *</label
         >
         <label class="resellers__checkbox__option"
-          ><input type="checkbox" name="checkbox" required />I hereby confirm
+          ><input type="checkbox" name="Confirmation of Computer Skills (Advanced)" required />I hereby confirm
           that I have advanced computer skills (Excel, Word, Outlook & Internet) *</label
         >
         <label class="resellers__checkbox__option"
-          ><input type="checkbox" name="checkbox" required />I hereby confirm
+          ><input type="checkbox" name="Confirmation of Social Media Skills (Advanced)" required />I hereby confirm
           that I have advanced social media skills (Facebook, Instagram, Twitter & YouTube) *</label
         >
         <label class="resellers__checkbox__option"
-          ><input type="checkbox" name="checkbox" required />I hereby confirm
+          ><input type="checkbox" name="Confirmation of Access to PC/Laptop and Phone" required />I hereby confirm
           that I have my own PC/laptop and phone (or have access to these devices) *</label
         >
         <label class="resellers__checkbox__option"
-          ><input type="checkbox" name="checkbox" required />I hereby confirm
+          ><input type="checkbox" name="Confirmation of Access to Connectivity (Wi-Fi)" required />I hereby confirm
           that I have my own internet / Wi-Fi connection (or have access to connectivity) *</label
         >
         <label class="resellers__checkbox__option"
-          ><input type="checkbox" name="checkbox" required />I hereby accept the
+          ><input type="checkbox" name="Acceptance of Selling Plan Terms & Conditions" required />I hereby accept the
           terms and conditions of this RESELLER NETWORK (RN) selling plan *</label
         >
       </div>
@@ -11106,7 +11106,7 @@
 
       <div class="resellers__button__container">
         <button type="reset">clear form</button>
-        <button type="submit">
+        <button type="submit" value="submit">
           submit securely&nbsp;&nbsp;&nbsp;<i class="fa fa-lock"></i>
         </button>
       </div>
@@ -11449,6 +11449,7 @@
     <script src="js/navigation.js" defer></script>
     <script src="js/rotatingbanners.js" defer></script>
     <script src="js/resellers.js" defer></script>
+    <script src="js/g-recaptcha-required.js" defer></script>
     <!-- <script src="js/accordian_open_and_close.js" defer></script>
     <script src="js/profile_card_flip.js" defer></script> -->    
     <!-- <script src="js/shopperlogin.js" defer></script> -->

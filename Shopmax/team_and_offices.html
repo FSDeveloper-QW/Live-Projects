@@ -10578,14 +10578,14 @@
     <!-- TODO:  CONTACT FORM - CONTENT                                                                          -->
     <!-- ------------------------------------------------------------------------------------------------------ -->
 
-    <form action="" method="post">
+    <form action="https://formspree.io/f/xyyoownq" name="General Contact Form" method="post">
       <!-- ----------------------------- -->
       <!-- FIXME:  SELECT TITLE  FIXME:  -->
       <!-- ----------------------------- -->
 
       <div class="offices__form__group">
         <label for="title">title</label>
-        <select id="title" name="" required>
+        <select id="title" name="Title of Person" required>
           <option value="" selected>Select your title *</option>
           <option name="MR" value="Mr">Mr</option>
           <option name="MRS" value="Mrs">Mrs</option>
@@ -10604,7 +10604,7 @@
           id="name"
           type="text"
           value=""
-          name="name"
+          name="Name of Person"
           placeholder="enter your name *"
           minlength="3"
           maxlength="50"
@@ -10623,7 +10623,7 @@
           id="surname"
           type="text"
           value=""
-          name="surname"
+          name="Surname of Person"
           placeholder="enter your surname *"
           minlength="3"
           maxlength="50"
@@ -10642,7 +10642,7 @@
           id="mobile"
           type="tel"
           value=""
-          name="mobile"
+          name="Mobile Number"
           placeholder="enter mobile phone number *"
           minlength="3"
           maxlength="13"
@@ -10661,7 +10661,7 @@
           id="email"
           type="email"
           value=""
-          name="email"
+          name="Email Address"
           placeholder="enter your email *"
           minlength="3"
           maxlength="65"
@@ -10680,7 +10680,7 @@
           id="subject"
           type="text"
           value=""
-          name="subject"
+          name="Subject / Reason for Contact"
           placeholder="enter your subject ... *"
           minlength="3"
           maxlength="100"
@@ -10706,6 +10706,7 @@
           minlength="3"
           maxlength="135"
           autocomplete="off"
+          required
         ></textarea>
       </div>
 
@@ -10715,7 +10716,7 @@
 
       <div class="offices__form__group">
         <label class="offices__checkbox__option"
-          ><input type="checkbox" name="checkbox" required />I hereby confirm
+          ><input type="checkbox" name="Confirmation that details are correct" required />I hereby confirm
           that all the details provided above are correct *</label
         >
       </div>
@@ -10741,7 +10742,7 @@
 
       <div class="offices__button__container">
         <button type="reset">clear form</button>
-        <button type="submit">
+        <button type="submit" value="submit">
           submit securely&nbsp;&nbsp;&nbsp;<i class="fa fa-lock"></i>
         </button>
       </div>
@@ -11086,6 +11087,7 @@
     <script src="js/rotatingbanners.js" defer></script>
     <script src="js/accordian_open_and_close.js" defer></script>
     <script src="js/profile_card_flip.js" defer></script>
+    <script src="js/g-recaptcha-required.js" defer></script>
     <!-- <script src="js/shopperlogin.js" defer></script> -->
     <!-- <script src="js/sellerlogin.js" defer></script> -->
     <!-- <script src="js/investorlogin.js" defer></script> -->

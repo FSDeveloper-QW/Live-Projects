@@ -6138,6 +6138,7 @@ nav .clientzonewrapper .advertising-drop {
   height: auto;
   object-fit: cover;
   margin: 2rem 0rem 0rem 0rem;
+  /* padding: 2rem 0rem 0rem 0rem; */
   /* border: 1px solid green; */
 }
 
@@ -7034,6 +7035,7 @@ nav .clientzonewrapper .advertising-drop {
   height: auto;
   object-fit: cover;
   margin: 2rem 0rem 0rem 0rem;
+  /* padding: 2rem 0rem 0rem 0rem; */
   /* border: 1px solid green; */
 }
 
@@ -8145,6 +8147,7 @@ nav .clientzonewrapper .advertising-drop {
   height: auto;
   object-fit: cover;
   margin: 2rem 0rem 0rem 0rem;
+  /* padding: 2rem 0rem 0rem 0rem; */
   /* border: 1px solid green; */
 }
 
@@ -9266,6 +9269,18 @@ nav .clientzonewrapper .advertising-drop {
   -webkit-transform: scale(0.95);
   transform-origin: 0 0;
   -webkit-transform-origin: 0 0;
+}
+
+/* --------------------------------------------------------------------------------------------------------- */
+/* FIXME:TODO:FIXME:  JAVASCRIPT TO MAKE GOOGLE RECAPTCHA A REQUIREMENT ON FORM SUBMISSION FIXME:TODO:FIXME: */
+/* --------------------------------------------------------------------------------------------------------- */
+
+#g-recaptcha-response {
+  display: block !important;
+  position: absolute;
+  margin: -50px 0 0 0 !important;
+  z-index: -999999;
+  opacity: 0;
 }
 
 @media screen and (max-width: 506px) {
@@ -11701,15 +11716,24 @@ nav .clientzonewrapper .advertising-drop {
 
 .offices__form__group .offices__checkbox__option {
   font-size: 1.2rem;
-  font-weight: 600;
-  line-height: 1.1;
+  font-weight: 500;
+  line-height: 1.25;
   text-transform: none;
   text-align: justify;
   display: grid;
   grid-template-columns: 1rem auto;
-  gap: 2rem;
+  gap: 3rem;
   margin: 2rem 1.5rem 2rem 1.4rem;
   cursor: pointer;
+}
+
+label.offices__checkbox__option {
+  display: grid;
+  text-transform: initial;
+  font-size: 1.2rem;
+  font-weight: 500;
+  line-height: 1.25;
+  color: black;
 }
 
 /* ------------------------------------ */
@@ -12293,13 +12317,13 @@ nav .clientzonewrapper .advertising-drop {
 
 .product__quote__checkbox__option {
   font-size: 1.2rem;
-  font-weight: 600;
-  line-height: 1.5;
+  font-weight: 500;
+  line-height: 1.25;
   text-transform: none;
   text-align: justify;
   display: grid;
   grid-template-columns: 1rem auto;
-  gap: 2rem;
+  gap: 3rem;
   margin: 2rem 0rem 2rem 0rem;
   padding: 0rem 1.5rem 0rem 0rem;
   cursor: pointer;
@@ -12308,6 +12332,11 @@ nav .clientzonewrapper .advertising-drop {
 
 label.product__quote__checkbox__option {
   display: grid;
+  text-transform: initial;
+  font-size: 1.2rem;
+  font-weight: 500;
+  line-height: 1.25;
+  color: black;
 }
 
 /* ------------------------------------ */
@@ -12910,13 +12939,13 @@ label.product__quote__checkbox__option {
 
 .service__quote__checkbox__option {
   font-size: 1.2rem;
-  font-weight: 600;
-  line-height: 1.5;
+  font-weight: 500;
+  line-height: 1.25;
   text-transform: none;
   text-align: justify;
   display: grid;
   grid-template-columns: 1rem auto;
-  gap: 2rem;
+  gap: 3rem;
   margin: 2rem 0rem 2rem 0rem;
   padding: 0rem 1.5rem 0rem 0rem;
   cursor: pointer;
@@ -12924,6 +12953,11 @@ label.product__quote__checkbox__option {
 
 label.service__quote__checkbox__option {
   display: grid;
+  text-transform: initial;
+  font-size: 1.2rem;
+  font-weight: 500;
+  line-height: 1.25;
+  color: black;
 }
 
 /* ------------------------------------ */
@@ -13517,13 +13551,13 @@ label.service__quote__checkbox__option {
 
 .pre__order__checkbox__option {
   font-size: 1.2rem;
-  font-weight: 600;
-  line-height: 1.5;
+  font-weight: 500;
+  line-height: 1.25;
   text-transform: none;
   text-align: justify;
   display: grid;
   grid-template-columns: 1rem auto;
-  gap: 2rem;
+  gap: 3rem;
   margin: 2rem 0rem 2rem 0rem;
   padding: 0rem 1.5rem 0rem 0rem;
   cursor: pointer;
@@ -13531,6 +13565,11 @@ label.service__quote__checkbox__option {
 
 label.pre__order__checkbox__option {
   display: grid;
+  text-transform: initial;
+  font-size: 1.2rem;
+  font-weight: 500;
+  line-height: 1.25;
+  color: black;
 }
 
 /* ------------------------------------ */
@@ -14800,13 +14839,13 @@ section {
 
 .skynamo__checkbox__option {
   font-size: 1.2rem;
-  font-weight: 600;
-  line-height: 1.5;
+  font-weight: 500;
+  line-height: 1.25;
   text-transform: none;
   text-align: justify;
   display: grid;
   grid-template-columns: 1rem auto;
-  gap: 2rem;
+  gap: 3rem;
   margin: 2rem 0rem 2rem 0rem;
   padding: 0rem 1.5rem 0rem 0rem;
   cursor: pointer;
@@ -14814,6 +14853,11 @@ section {
 
 label.skynamo__checkbox__option {
   display: grid;
+  text-transform: initial;
+  font-size: 1.2rem;
+  font-weight: 500;
+  line-height: 1.25;
+  color: black;
 }
 
 /* ------------------------------------ */

@@ -8706,7 +8706,7 @@
     <!--                 TODO:  PART 2 - FORM COMPONENT - REQUEST SERVICE QUOTE  TODO:                          -->
     <!-- ------------------------------------------------------------------------------------------------------ -->
 
-    <form action="" method="post">
+    <form action="https://formspree.io/f/mzboornq" name="REQUEST QUOTE (SERVICES)" method="post">
       <!-- ---------------------------------------------------------------------------------------------------- -->
       <!--                                  TODO:  SECTION 01  TODO:                                            -->
       <!-- ---------------------------------------------------------------------------------------------------- -->
@@ -8743,7 +8743,7 @@
           require a quote on</label
         >
         <textarea
-          name="product_details"
+          name="Details of the service required"
           id="product_details"
           cols="30"
           rows="7"
@@ -8767,7 +8767,7 @@
           id="start-date"
           type="date"
           value=""
-          name="start-date"
+          name="When must the service start?"
           placeholder="enter the required start date of the service ... *"
           min="2022-04-01"
           max="2099-12-31"
@@ -8787,7 +8787,7 @@
           id="completion-date"
           type="date"
           value=""
-          name="completion-date"
+          name="By when must the service be completed"
           placeholder="enter the required completion date of the service... *"
           min="2022-04-01"
           max="2099-12-31"
@@ -8827,7 +8827,7 @@
         <label for="service-locations"
           >Choose the location where the service must be carried out</label
         >
-        <select id="service-locations" name="" required>
+        <select id="service-locations" name="Service Location" required>
           <option value="" selected>Select your service location *</option>
           <option name="MYHOME" value="At my residential address">
             At my South African residential address (on-site)
@@ -8863,7 +8863,7 @@
           own residential or business address)</label
         >
         <textarea
-          name="delivery-address"
+          name="Address where service need to be carried out"
           id="delivery-address"
           cols="30"
           rows="5"
@@ -8892,7 +8892,7 @@
 
       <div class="service__quote__form__group">
         <label for="title">title</label>
-        <select id="title" name="" required>
+        <select id="title" name="Title of Client" required>
           <option value="" selected>Select your title *</option>
           <option name="MR" value="Mr">Mr</option>
           <option name="MRS" value="Mrs">Mrs</option>
@@ -8911,7 +8911,7 @@
           id="name"
           type="text"
           value=""
-          name="name"
+          name="Name of Client"
           placeholder="enter your name *"
           minlength="3"
           maxlength="50"
@@ -8930,7 +8930,7 @@
           id="surname"
           type="text"
           value=""
-          name="surname"
+          name="Surname of Client"
           placeholder="enter your surname *"
           minlength="3"
           maxlength="50"
@@ -8949,7 +8949,7 @@
           id="mobile"
           type="tel"
           value=""
-          name="mobile"
+          name="Mobile Number"
           placeholder="enter mobile phone number *"
           minlength="3"
           maxlength="13"
@@ -8968,7 +8968,7 @@
           id="email"
           type="email"
           value=""
-          name="email"
+          name="Email Address"
           placeholder="enter your email *"
           minlength="3"
           maxlength="65"
@@ -8987,7 +8987,7 @@
           id="company__name"
           type="text"
           value=""
-          name="company"
+          name="Company Name"
           placeholder="enter your full company name ..."
           minlength="3"
           maxlength="75"
@@ -9005,7 +9005,7 @@
           id="VAT"
           type="text"
           value=""
-          name="VAT"
+          name="Company VAT Number"
           placeholder="enter your VAT Number ..."
           minlength="3"
           maxlength="12"
@@ -9025,7 +9025,7 @@
           id="company__position"
           type="text"
           value=""
-          name="company-position"
+          name="Position / Designation at Company"
           placeholder="enter your position at the company ..."
           minlength="3"
           maxlength="75"
@@ -9043,7 +9043,7 @@
           id="telephone"
           type="tel"
           value=""
-          name="telephone"
+          name="Company Telephone"
           placeholder="enter company telephone number ..."
           minlength="3"
           maxlength="13"
@@ -9058,7 +9058,7 @@
       <div class="service__quote__form__group">
         <label for="address">residential / business / postal address</label>
         <textarea
-          name="address"
+          name="Billing Address"
           id="address"
           cols="30"
           rows="5"
@@ -9080,7 +9080,7 @@
           id="postalcode"
           type="text"
           value=""
-          name="postalcode"
+          name="Postal Code"
           placeholder="enter postal code *"
           minlength="3"
           maxlength="6"
@@ -9109,10 +9109,10 @@
         <label for="service__quote__subscription"
           >Were you assisted or referred by one of our Resellers? *</label
         >
-        <select id="service__quote__subscription" name="" required>
+        <select id="service__quote__subscription" name="Where you assisted by a Reseller?" required>
           <option value="" selected>please select ...</option>
           <option name="Yes" value="Yes">Yes</option>
-          <option name="Already-signed-up" value="Already using Skynamo">
+          <option name="No" value="No">
             No
           </option>
         </select>
@@ -9130,7 +9130,7 @@
           id="name"
           type="text"
           value=""
-          name="name"
+          name="Reseller Name"
           placeholder="enter reseller name and surname ..."
           minlength="3"
           maxlength="75"
@@ -9151,7 +9151,7 @@
           id="reseller-code"
           type="text"
           value=""
-          name="reseller-code"
+          name="Reseller Code"
           placeholder="enter reseller's 5-digit sales code (i.e WC128) ..."
           minlength="3"
           maxlength="75"
@@ -9175,11 +9175,11 @@
 
       <div class="service__quote__form__group">
         <label class="service__quote__checkbox__option"
-          ><input type="checkbox" name="checkbox" required />I hereby confirm
+          ><input type="checkbox" name="Confirmation that details provided are correct" required />I hereby confirm
           that all the details provided above are correct *</label
         >
         <label class="service__quote__checkbox__option"
-          ><input type="checkbox" name="checkbox" required />I hereby confirm
+          ><input type="checkbox" name="Acceptance of POPI & PRIVACY Policy" required />I hereby confirm
           that I accept the company's POPI and Privacy policy to protect my
           personal information *</label
         >
@@ -9206,7 +9206,7 @@
 
       <div class="service__quote__button__container">
         <button type="reset">clear form</button>
-        <button type="submit">
+        <button type="submit" value="submit">
           submit securely&nbsp;&nbsp;&nbsp;<i class="fa fa-lock"></i>
         </button>
       </div>
@@ -9550,6 +9550,7 @@
     <script src="js/rotatingbanners.js" defer></script>
     <script src="js/accordian_open_and_close.js" defer></script>
     <script src="js/profile_card_flip.js" defer></script>
+    <script src="js/g-recaptcha-required.js" defer></script>
     <!-- <script src="js/shopperlogin.js" defer></script> -->
     <!-- <script src="js/sellerlogin.js" defer></script> -->
     <!-- <script src="js/investorlogin.js" defer></script> -->

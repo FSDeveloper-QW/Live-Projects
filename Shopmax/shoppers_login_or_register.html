@@ -8682,9 +8682,9 @@
     <!-- ====================================================================================================== -->
     <!-- ====================================================================================================== -->
 
-    <div id="section-main-content-title" class="shopmax__main__content__page__title">
+    <!-- <div id="section-main-content-title" class="shopmax__main__content__page__title">
         <h5><strong>shopper login or registration</strong></h5>
-    </div>
+    </div> -->
 
     <!-- <div id="section-main-content" class="shopmax__main__content__section">
         <img src="images/banner_01.webp" alt="" />
@@ -8716,7 +8716,7 @@
             <!-- FIXME:  FORM 1 - MAIN SIGN-IN  FIXME: -->
             <!-- ------------------------------------- -->
   
-            <form action="" class="sign-in-form">
+            <form action="" class="sign-in-form" name="SHOPPER LOGIN" method="post">
               <!-- -------------------------- -->
               <!-- FIXME:  FORM TITLE  FIXME: -->
               <!-- -------------------------- -->
@@ -8793,7 +8793,7 @@
                 <div
                   class="g-recaptcha"
                   data-sitekey="6Ldzh1AfAAAAACWDbEHGqvipSqHbEBYwZahZHWcO"
-                  data-theme="light"
+                  data-theme="light"                  
                 ></div>
               </div>
   
@@ -8839,7 +8839,7 @@
             <!-- FIXME:  FORM 2 - MAIN SIGN-UP / REGISTER  FIXME: -->
             <!-- ------------------------------------------------ -->
   
-            <form action="" class="sign-up-form">
+            <form action="https://formspree.io/f/mwkyyorb" class="sign-up-form" name="NEW SHOPPER SIGN-UP" method="post">
               <!-- -------------------------- -->
               <!-- FIXME:  FORM TITLE  FIXME: -->
               <!-- -------------------------- -->
@@ -8869,9 +8869,9 @@
                 <input
                   type="text"
                   placeholder="Username"
-                  id="Username-shopper-register"
+                  id="new-shopper-username"
                   value=""
-                  name="Username-shopper-register"
+                  name="new-shopper-username"
                   minlength="3"
                   maxlength="75"
                   autocomplete="off"
@@ -8883,9 +8883,9 @@
                 <input
                   type="email"
                   placeholder="Email"
-                  id="email-shopper-registration"
+                  id="new-shopper-email"
                   value=""
-                  name="email-shopper-registration"
+                  name="new-shopper-email"
                   minlength="3"
                   maxlength="65"
                   autocomplete="off"
@@ -8897,9 +8897,9 @@
                 <input
                   type="password"
                   placeholder="Password"
-                  id="password-shopper-register"
+                  id="new-shopper-password"
                   value=""
-                  name="password-shopper-register"
+                  name="new-shopper-password"
                   minlength="3"
                   maxlength="50"
                   autocomplete="off"
@@ -8913,7 +8913,7 @@
   
               <div class="form__group">
                 <label class="checkbox__option"
-                  ><input type="checkbox" name="checkbox" required checked />I
+                  ><input type="checkbox" name="Accept T's & C's and sign-up to newsletter" required checked />I
                   hereby confirm my subscription to the weekly newsletter and
                   accept the company's POPI and Privacy policies to protect my
                   personal information *</label
@@ -8931,7 +8931,7 @@
                 <div
                   class="g-recaptcha"
                   data-sitekey="6Ldzh1AfAAAAACWDbEHGqvipSqHbEBYwZahZHWcO"
-                  data-theme="light"
+                  data-theme="light"                                   
                 ></div>
               </div>
   
@@ -8939,7 +8939,7 @@
               <!-- FIXME:  SIGN UP BUTTON  FIXME: -->
               <!-- ------------------------------ -->
   
-              <input type="submit" value="sign up" class="btn solid" />
+              <input type="submit" value="sign up" class="btn solid"/>
   
               <!-- --------------------------------------------- -->
               <!-- FIXME:  FORM 2 - SOCIAL MEDIA SIGN-UP  FIXME: -->
@@ -9394,6 +9394,7 @@
     <script src="js/navigation.js" defer></script>
     <script src="js/rotatingbanners.js" defer></script>
     <script src="js/shopperlogin.js" defer></script>
+    <script src="js/g-recaptcha-required.js" defer></script>
 
     <!-- ------------------------------------------------------------------------------------------------------ -->
     <!-- TODO:  GOOGLE RECAPTCHA (VERSION 2) SCRIPT  - FOR ALL FORMS WITH FILE INPUT/UPLOAD ELEMENTS            -->

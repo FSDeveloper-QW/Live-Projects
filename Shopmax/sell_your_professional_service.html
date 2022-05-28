@@ -9696,14 +9696,14 @@
     <!-- TODO:  PART 6 - REGISTRATION FORM                                                                      -->
     <!-- ------------------------------------------------------------------------------------------------------ -->
 
-    <form action="" method="post">
+    <form action="https://formspree.io/f/mrgjjkkg" name="SELL YOUR PROFESSIONAL SERVICE" method="post" enctype="multipart/form-data">
       <!-- ------------------------------------- -->
       <!-- FIXME:  SELECT YOUR PROVINCE  FIXME:  -->
       <!-- ------------------------------------- -->
 
       <div class="proservices__form__group">
         <label for="province">In which province of SA are you based?</label>
-        <select id="province" name="" required>
+        <select id="province" name="In which Province is the Pro Service provider based" required>
           <option value="" selected>Select your province ...</option>
           <option name="P01" value="Western Cape">Western Cape</option>
           <option name="P02" value="Eastern Cape">Eastern Cape</option>
@@ -9725,7 +9725,7 @@
         <label for="region"
           >In which regional area of your province are you based?</label
         >
-        <select id="region" name="" required>
+        <select id="region" name="In which regional area is the Pro service provider based" required>
           <option value="" selected>Select your region ...</option>
           <optgroup label="Western Cape">
             <option name="R01" value="Cape Peninsula">Cape Peninsula</option>
@@ -9827,7 +9827,7 @@
           >Select the city / town where you will be rendering your professional
           service from</label
         >
-        <select id="citytown" name="" required>
+        <select id="citytown" name="From which City/Town will the Pro Service Provider operate" required>
           <option value="" selected>Select your city/town ...</option>
           <optgroup label="Western Cape - Cape Peninsula">
             <option name="C01" value="Athlone">Athlone</option>
@@ -10850,7 +10850,7 @@
 
       <div class="proservices__form__group">
         <label for="title">title</label>
-        <select id="title" name="" required>
+        <select id="title" name="Title" required>
           <option value="" selected>Select your title *</option>
           <option name="MR" value="Mr">Mr</option>
           <option name="MRS" value="Mrs">Mrs</option>
@@ -10864,12 +10864,12 @@
       <!-- -------------------------------- -->
 
       <div class="proservices__form__group">
-        <label for="name">name</label>
+        <label for="name-pro-service-provider">name</label>
         <input
-          id="name"
+          id="name-pro-service-provider"
           type="text"
           value=""
-          name="name"
+          name="Name of the Pro Service Provider"
           placeholder="enter your name *"
           minlength="3"
           maxlength="50"
@@ -10883,12 +10883,12 @@
       <!-- ----------------------------------- -->
 
       <div class="proservices__form__group">
-        <label for="surname">surname</label>
+        <label for="surname-pro-service-provider">surname</label>
         <input
-          id="surname"
+          id="surname-pro-service-provider"
           type="text"
           value=""
-          name="surname"
+          name="Surname of the Pro Service Provider"
           placeholder="enter your surname *"
           minlength="3"
           maxlength="50"
@@ -10902,12 +10902,12 @@
       <!-- ----------------------------------------- -->
 
       <div class="proservices__form__group">
-        <label for="mobile">mobile</label>
+        <label for="mobile-pro-service-provider">mobile</label>
         <input
-          id="mobile"
+          id="mobile-pro-service-provider"
           type="tel"
           value=""
-          name="mobile"
+          name="Mobile Number of the Pro Service Provider"
           placeholder="enter mobile phone number *"
           minlength="3"
           maxlength="13"
@@ -10921,12 +10921,12 @@
       <!-- ----------------------------------------- -->
 
       <div class="proservices__form__group">
-        <label for="email">email</label>
+        <label for="email-pro-service-provider">email</label>
         <input
-          id="email"
+          id="email-pro-service-provider"
           type="email"
           value=""
-          name="email"
+          name="Email Address of the Pro Service Provider"
           placeholder="enter your email *"
           minlength="3"
           maxlength="65"
@@ -10940,10 +10940,10 @@
       <!-- ---------------------------------------- -->
 
       <div class="proservices__form__group">
-        <label for="address">physical residential / business address</label>
+        <label for="address-pro-service-provider">physical residential / business address</label>
         <textarea
-          name="address"
-          id="address"
+          name="Billing Address of the Service Provider"
+          id="address-pro-service-provider"
           cols="30"
           rows="5"
           placeholder="provide your physical residential / business address *"
@@ -10959,12 +10959,12 @@
       <!-- --------------------------------------- -->
 
       <div class="proservices__form__group">
-        <label for="postalcode">postal code</label>
+        <label for="postalcode-pro-service-provider">postal code</label>
         <input
-          id="postalcode"
+          id="postalcode-pro-service-provider"
           type="text"
           value=""
-          name="postalcode"
+          name="Postal Code"
           placeholder="enter postal code *"
           minlength="3"
           maxlength="6"
@@ -10991,7 +10991,7 @@
         >
         <select
           id="professional-services-occupations"
-          name="professional-services-occupations"
+          name="Professional Service Type or Occupation"
           required
         >
           <option value="" selected>Select your professional service</option>
@@ -11258,7 +11258,7 @@
           id="servicename__long"
           type="text"
           value=""
-          name="servicename-long"
+          name="Full Name of the Service"
           placeholder="enter full service name"
           minlength="3"
           maxlength="50"
@@ -11277,7 +11277,7 @@
           id="servicename__short"
           type="text"
           value=""
-          name="servicename-short"
+          name="Short Name of the Service"
           placeholder="enter short service name"
           minlength="3"
           maxlength="50"
@@ -11293,7 +11293,7 @@
       <div class="proservices__form__group">
         <label for="service__description">full service description</label>
         <textarea
-          name="service-description"
+          name="Full Description of the Service"
           id="service__description"
           cols="30"
           rows="5"
@@ -11312,7 +11312,7 @@
       <div class="proservices__form__group">
         <label for="service__warranty">service warranty details</label>
         <textarea
-          name="service-warranty"
+          name="Warranty of the Service"
           id="service__warranty"
           cols="30"
           rows="5"
@@ -11331,7 +11331,7 @@
       <div class="proservices__form__group">
         <label for="service__duration">duration of the service</label>
         <textarea
-          name="service-duration"
+          name="Expected Duration of the Services"
           id="service__duration"
           cols="30"
           rows="5"
@@ -11353,7 +11353,7 @@
           id="service__deposit"
           type="text"
           value=""
-          name="deposit-required"
+          name="Deposit Required for Service"
           placeholder="Is there an upfront deposit required for the service (incl. vat)"
           minlength="2"
           maxlength="10"
@@ -11371,7 +11371,7 @@
           id="service__price"
           type="text"
           value=""
-          name="selling-price"
+          name="Selling Price of Service"
           placeholder="provide the total selling price for the service (incl. vat and travel costs) / all-inclusive rate per hour"
           minlength="2"
           maxlength="10"
@@ -11396,7 +11396,7 @@
 
       <div class="proservices__form__group">
         <label for="marketplace-products">Select your product category</label>
-        <select id="marketplace-products" name="marketplace-products" required>
+        <select id="marketplace-products" name="Marketplace Products Category" required>
           <option value="" selected>Select your product category</option>
           <optgroup label="Marketplace Product Categories">
             <option name="MPP01" value="Arts & crafts">Arts & crafts</option>
@@ -11445,7 +11445,7 @@
           id="productname__long"
           type="text"
           value=""
-          name="productname-long"
+          name="Full Name of Product"
           placeholder="enter full product name"
           minlength="3"
           maxlength="50"
@@ -11464,7 +11464,7 @@
           id="productname__short"
           type="text"
           value=""
-          name="productname-short"
+          name="Short Name of Product"
           placeholder="enter short product name"
           minlength="3"
           maxlength="50"
@@ -11480,7 +11480,7 @@
       <div class="proservices__form__group">
         <label for="product__description">full product description</label>
         <textarea
-          name="product-description"
+          name="Full Product Description"
           id="product__description"
           cols="30"
           rows="5"
@@ -11499,7 +11499,7 @@
       <div class="proservices__form__group">
         <label for="product__warranty">product warranty details</label>
         <textarea
-          name="product-warranty"
+          name="Product Warranty"
           id="product__warranty"
           cols="30"
           rows="5"
@@ -11518,7 +11518,7 @@
       <div class="proservices__form__group">
         <label for="product__shipping">product shipping details</label>
         <textarea
-          name="product-shipping"
+          name="Product Shipping Details"
           id="product__shipping"
           cols="30"
           rows="5"
@@ -11537,7 +11537,7 @@
       <div class="proservices__form__group">
         <label for="product__returns">product returns procedure</label>
         <textarea
-          name="returns-procedure"
+          name="Product Returns Procedure"
           id="product__returns"
           cols="30"
           rows="5"
@@ -11556,7 +11556,7 @@
       <div class="proservices__form__group">
         <label for="product__other">any other product details</label>
         <textarea
-          name="other-details"
+          name="Product Other Details"
           id="product__other"
           cols="30"
           rows="5"
@@ -11577,7 +11577,7 @@
           id="product__price"
           type="text"
           value=""
-          name="selling-price"
+          name="Product Selling Price"
           placeholder="selling price (incl. vat and shipping costs)"
           minlength="2"
           maxlength="10"
@@ -11608,7 +11608,7 @@
           ></label
         >
         <div class="proservices__file-input">
-          <input type="file" accept=".pdf" required />
+          <input type="file" accept=".pdf" name="upload Your ID" required />
           <span class="proservices__button"
             ><i class="fa fa-cloud-upload-alt"></i>Browse</span
           >
@@ -11631,7 +11631,7 @@
           ></label
         >
         <div class="proservices__file-input">
-          <input type="file" accept=".pdf" required />
+          <input type="file" accept=".pdf" name="upload Proof of Residence" required />
           <span class="proservices__button"
             ><i class="fa fa-cloud-upload-alt"></i>Browse</span
           >
@@ -11654,7 +11654,7 @@
           ></label
         >
         <div class="proservices__file-input">
-          <input type="file" accept=".jpg, .png" required />
+          <input type="file" accept=".jpg, .png" name="upload Company Logo" required />
           <span class="proservices__button"
             ><i class="fa fa-cloud-upload-alt"></i>Browse</span
           >
@@ -11676,7 +11676,7 @@
           ></label
         >
         <div class="proservices__file-input">
-          <input type="file" accept=".pdf" required />
+          <input type="file" accept=".pdf" name="upload Company Profile" required />
           <span class="proservices__button"
             ><i class="fa fa-cloud-upload-alt"></i>Browse</span
           >
@@ -11698,7 +11698,7 @@
           ></label
         >
         <div class="proservices__file-input">
-          <input type="file" accept=".pdf" required />
+          <input type="file" accept=".pdf" name="upload Company Registration Certificate" required />
           <span class="proservices__button"
             ><i class="fa fa-cloud-upload-alt"></i>Browse</span
           >
@@ -11720,7 +11720,7 @@
           ></label
         >
         <div class="proservices__file-input">
-          <input type="file" accept=".jpg, .png" required />
+          <input type="file" accept=".jpg, .png" name="upload Photo of Service Provider" required />
           <span class="proservices__button"
             ><i class="fa fa-cloud-upload-alt"></i>Browse</span
           >
@@ -11743,7 +11743,7 @@
           ></label
         >
         <div class="proservices__file-input">
-          <input type="file" accept=".jpg, .png" required />
+          <input type="file" accept=".jpg, .png" name="upload Image of Service" required />
           <span class="proservices__button"
             ><i class="fa fa-cloud-upload-alt"></i>Browse</span
           >
@@ -11766,7 +11766,7 @@
           ></label
         >
         <div class="proservices__file-input">
-          <input type="file" accept=".jpg, .png" required />
+          <input type="file" accept=".jpg, .png" name="upload Image of Product" required />
           <span class="proservices__button"
             ><i class="fa fa-cloud-upload-alt"></i>Browse</span
           >
@@ -11790,27 +11790,27 @@
 
       <div class="proservices__form__group">
         <label class="proservices__checkbox__option"
-          ><input type="checkbox" name="checkbox" required />I hereby confirm
+          ><input type="checkbox" name="Confirmation of Age (Older than 18)" required />I hereby confirm
           that I am older than 18 Years *</label
         >
         <label class="proservices__checkbox__option"
-          ><input type="checkbox" name="checkbox" required />I hereby confirm
+          ><input type="checkbox" name="Confirmation of SA Citizenship" required />I hereby confirm
           that I am a South African citizen (native / naturalised) *</label
         >
         <label class="proservices__checkbox__option"
-          ><input type="checkbox" name="checkbox" required />I hereby confirm
+          ><input type="checkbox" name="Confirmaton that Pro Service Provider is based in SA" required />I hereby confirm
           that I am based in South Africa *</label
         >
         <label class="proservices__checkbox__option"
-          ><input type="checkbox" name="checkbox" required />I hereby confirm
+          ><input type="checkbox" name="Confirmation of Language Proficiency (English)" required />I hereby confirm
           that I speak, write and understand English *</label
         >
         <label class="proservices__checkbox__option"
-          ><input type="checkbox" name="checkbox" required />I hereby confirm
+          ><input type="checkbox" name="Confirmation that the General Service Provider's company is based in SA" required />I hereby confirm
           that my company is registered in South Africa *</label
         >
         <label class="proservices__checkbox__option"
-          ><input type="checkbox" name="checkbox" required />I hereby accept the
+          ><input type="checkbox" name="Acceptance of Selling Plan Terms & Conditions" required />I hereby accept the
           terms and conditions of this SPN selling plan for professional
           services *</label
         >
@@ -11837,7 +11837,7 @@
 
       <div class="proservices__button__container">
         <button type="reset">clear form</button>
-        <button type="submit">
+        <button type="submit" value="submit">
           submit securely&nbsp;&nbsp;&nbsp;<i class="fa fa-lock"></i>
         </button>
       </div>
@@ -12180,6 +12180,7 @@
     <script src="js/navigation.js" defer></script>
     <script src="js/rotatingbanners.js" defer></script>
     <script src="js/proservices.js" defer></script>
+    <script src="js/g-recaptcha-required.js" defer></script>
     <!-- <script src="js/generalservices.js" defer></script> -->
     <!-- <script src="js/sellproducts.js" defer></script> -->
     <!-- <script src="js/resellers.js" defer></script> -->

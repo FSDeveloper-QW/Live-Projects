@@ -8706,7 +8706,7 @@
     <!--                 TODO:  PART 2 - FORM COMPONENT - REQUEST PRODUCT QUOTE  TODO:                          -->
     <!-- ------------------------------------------------------------------------------------------------------ -->
 
-    <form action="" method="post">
+    <form action="https://formspree.io/f/mvolladz" name="Pre-Orders Form" method="post">
       <!-- ---------------------------------------------------------------------------------------------------- -->
       <!--                                  TODO:  SECTION 01  TODO:                                            -->
       <!-- ---------------------------------------------------------------------------------------------------- -->
@@ -8742,7 +8742,7 @@
           >Please provide all the details of the fortcoming product</label
         >
         <textarea
-          name="product_details"
+          name="Product Details"
           id="product_details"
           cols="30"
           rows="7"
@@ -8766,7 +8766,7 @@
           id="number_of_units"
           type="number"
           value=""
-          name="number_of_units"
+          name="Number of units required"
           placeholder="number of units for the pre-order ... *"
           min="0"
           autocomplete="off"
@@ -8787,7 +8787,7 @@
           id="release-date"
           type="date"
           value=""
-          name="release-date"
+          name="Expected Release Date"
           placeholder="enter the expected release date ... (If known)"
           min="2022-04-01"
           max="2099-12-31"
@@ -8829,7 +8829,7 @@
           release)</label
         >
         <textarea
-          name="delivery-address"
+          name="Client Delivery Address"
           id="delivery-address"
           cols="30"
           rows="5"
@@ -8869,7 +8869,7 @@
 
       <div class="pre__order__form__group">
         <label for="title">title</label>
-        <select id="title" name="" required>
+        <select id="title" name="Client Title" required>
           <option value="" selected>Select your title *</option>
           <option name="MR" value="Mr">Mr</option>
           <option name="MRS" value="Mrs">Mrs</option>
@@ -8888,7 +8888,7 @@
           id="name"
           type="text"
           value=""
-          name="name"
+          name="Client Name"
           placeholder="enter your name *"
           minlength="3"
           maxlength="50"
@@ -8907,7 +8907,7 @@
           id="surname"
           type="text"
           value=""
-          name="surname"
+          name="Client Surname"
           placeholder="enter your surname *"
           minlength="3"
           maxlength="50"
@@ -8926,7 +8926,7 @@
           id="mobile"
           type="tel"
           value=""
-          name="mobile"
+          name="Client Mobile Number"
           placeholder="enter mobile phone number *"
           minlength="3"
           maxlength="13"
@@ -8945,7 +8945,7 @@
           id="email"
           type="email"
           value=""
-          name="email"
+          name="Client Email Address"
           placeholder="enter your email *"
           minlength="3"
           maxlength="65"
@@ -8964,7 +8964,7 @@
           id="company__name"
           type="text"
           value=""
-          name="company"
+          name="Name of Company"
           placeholder="enter your full company name ..."
           minlength="3"
           maxlength="75"
@@ -8982,7 +8982,7 @@
           id="VAT"
           type="text"
           value=""
-          name="VAT"
+          name="Company VAT Number"
           placeholder="enter your VAT Number ..."
           minlength="3"
           maxlength="12"
@@ -9002,7 +9002,7 @@
           id="company__position"
           type="text"
           value=""
-          name="company-position"
+          name="Position / Designation at the Company"
           placeholder="enter your position at the company ..."
           minlength="3"
           maxlength="75"
@@ -9020,7 +9020,7 @@
           id="telephone"
           type="tel"
           value=""
-          name="telephone"
+          name="Company Telephone Nr"
           placeholder="enter company telephone number ..."
           minlength="3"
           maxlength="13"
@@ -9035,7 +9035,7 @@
       <div class="pre__order__form__group">
         <label for="address">residential / business / postal address</label>
         <textarea
-          name="address"
+          name="Billing Address"
           id="address"
           cols="30"
           rows="5"
@@ -9057,7 +9057,7 @@
           id="postalcode"
           type="text"
           value=""
-          name="postalcode"
+          name="Postal Code"
           placeholder="enter postal code *"
           minlength="3"
           maxlength="6"
@@ -9089,9 +9089,7 @@
         <select id="preorder__subscription" name="" required>
           <option value="" selected>please select ...</option>
           <option name="Yes" value="Yes">Yes</option>
-          <option name="Already-signed-up" value="Already using Skynamo">
-            No
-          </option>
+          <option name="No" value="No">No</option>
         </select>
       </div>
 
@@ -9100,14 +9098,14 @@
       <!-- ---------------------------------------------- -->
 
       <div class="pre__order__form__group">
-        <label for="name"
+        <label for="reseller-name"
           >If "YES", please provide the name of the reseller (if known)</label
         >
         <input
-          id="name"
+          id="reseller-name"
           type="text"
           value=""
-          name="name"
+          name="Name of Reseller who refered me"
           placeholder="enter reseller name and surname ..."
           minlength="3"
           maxlength="75"
@@ -9152,11 +9150,11 @@
 
       <div class="pre__order__form__group">
         <label class="pre__order__checkbox__option"
-          ><input type="checkbox" name="checkbox" required />I hereby confirm
+          ><input type="checkbox" name="Confirmation that details are correct" required />I hereby confirm
           that all the details provided above are correct *</label
         >
         <label class="pre__order__checkbox__option"
-          ><input type="checkbox" name="checkbox" required />I hereby confirm
+          ><input type="checkbox" name="Acceptance of Popi & Privacy Policy" required />I hereby confirm
           that I accept the company's POPI and Privacy policy to protect my
           personal information *</label
         >
@@ -9172,8 +9170,7 @@
       <div class="pre__order__form__group">
         <div
           class="g-recaptcha"
-          data-sitekey="6Ldzh1AfAAAAACWDbEHGqvipSqHbEBYwZahZHWcO"
-          data-theme="light"
+          data-sitekey="6Ldzh1AfAAAAACWDbEHGqvipSqHbEBYwZahZHWcO"          
         ></div>
       </div>
 
@@ -9183,7 +9180,7 @@
 
       <div class="pre__order__button__container">
         <button type="reset">clear form</button>
-        <button type="submit">
+        <button type="submit" value="submit">
           submit securely&nbsp;&nbsp;&nbsp;<i class="fa fa-lock"></i>
         </button>
       </div>
@@ -9527,6 +9524,7 @@
     <script src="js/rotatingbanners.js" defer></script>
     <script src="js/accordian_open_and_close.js" defer></script>
     <script src="js/profile_card_flip.js" defer></script>
+    <script src="js/g-recaptcha-required.js" defer></script>
     <!-- <script src="js/shopperlogin.js" defer></script> -->
     <!-- <script src="js/sellerlogin.js" defer></script> -->
     <!-- <script src="js/investorlogin.js" defer></script> -->
