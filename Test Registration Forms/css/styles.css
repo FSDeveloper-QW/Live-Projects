@@ -6177,6 +6177,7 @@ nav .clientzonewrapper .advertising-drop {
   overflow: hidden;
   border-radius: 0.5rem;
   box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.35);
+  /* border: 2px solid plum; */
 }
 
 /* SET THE CONTAINER (BEFORE) - DOUBLE THE SIZE OF THE ORGINAL CONTAINER */
@@ -6312,7 +6313,7 @@ nav .clientzonewrapper .advertising-drop {
   padding: 0rem 1rem 0rem 0.5rem;
   max-width: 30rem;
   width: 100%;
-  height: 4.5rem;
+  height: 4rem;
   background-color: var(--color-shopper-login-page-input-field-background);
 }
 
@@ -6361,7 +6362,11 @@ nav .clientzonewrapper .advertising-drop {
   text-transform: uppercase;
   margin: 0rem 0rem 0rem 0rem;
   padding: 0.5rem 0rem 0.5rem 0rem;
+  display: flex;
+  justify-content: center;
+  text-align: center;
   color: var(--color-shopper-login-page-social-media-text);
+  /* border: 1px solid green; */
 }
 
 /* --------------------------------------------- */
@@ -6402,7 +6407,7 @@ nav .clientzonewrapper .advertising-drop {
 /* FIXME:  FORM (BUTTON)  FIXME: */
 /* ----------------------------- */
 
-.shopper__login__registration__container .btn {
+/* .shopper__login__registration__container .btn {
   border: none;
   outline: none;
   border-radius: 1rem;
@@ -6418,51 +6423,89 @@ nav .clientzonewrapper .advertising-drop {
   letter-spacing: 0.2rem;
   text-transform: uppercase;
   transition: 0.5s;
-  /* opacity: 1; */
+  opacity: 1;
 }
 
 .shopper__login__registration__container .btn:hover {
   opacity: 0.95;
   transform: scale(1.05);
+} */
+
+.shopper__login__button__container button {
+  background: #dc143c;
+  color: white;
+  border: none;
+  outline: none;
+  border-radius: 1rem;
+  width: 30rem;
+  height: 3.5rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
+  /* margin: 0.5rem 2rem 0.5rem 2rem;
+  padding: 0.5rem 1rem 0.5rem 1rem; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  cursor: pointer;
+  text-decoration: none;
+  transition: transform 0.5s ease-in-out;
+}
+
+.shopper__login__button__container button:hover {
+  transform: scale(1.05);
+}
+
+.shopper__login__button__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 600px) {
+  .shopper__login__button__container button {
+    margin: 0rem 0rem 2rem 0rem;
+    font-size: 1rem;
+    width: 30rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .shopper__login__button__container {
+    flex-direction: column;
+  }
 }
 
 /* ---------------------------------------------- */
 /* FIXME:  STYLING - GOOGLE RECAPTCHA  FIXME:     */
 /* ---------------------------------------------- */
 
-/* .shopper__registration__form__group .g-recaptcha {
+.seller__login__form__group .g-recaptcha {
   width: 100%;
   margin: 0.5rem 0.5rem 0rem 2rem;
   display: flex;
   justify-content: center;
-  align-items: center; */
-/* transform: scale(0.89); */
-/* transform: scale(0.95); */
-/* -webkit-transform: scale(0.89); */
-/* -webkit-transform: scale(0.95);
+  align-items: center;
+  /* transform: scale(0.89); */
+  transform: scale(0.95);
+  /* -webkit-transform: scale(0.89); */
+  -webkit-transform: scale(0.95);
   transform-origin: 0 0;
   -webkit-transform-origin: 0 0;
-} */
-
-/* --------------------------------------------------------------------------------------------------------- */
-/* FIXME:TODO:FIXME:  JAVASCRIPT TO MAKE GOOGLE RECAPTCHA A REQUIREMENT ON FORM SUBMISSION FIXME:TODO:FIXME: */
-/* --------------------------------------------------------------------------------------------------------- */
-
-/* #g-recaptcha-responses .shopper__registration__form__group {
-  display: block !important;
-  position: absolute;
-  margin: -50px 0 0 0 !important;
-  z-index: -999999;
-  opacity: 0;
 }
 
-@media screen and (max-width: 506px) {
-  .shopper__registration__form__group .g-recaptcha {
-    margin: 0.5rem 0.5rem -1.8rem 7.5rem;
+@media screen and (max-width: 350px) {
+  .seller__login__form__group .g-recaptcha {
+    margin: 0rem 0.5rem -2rem 10.5rem;
     transform: scale(0.67);
     -webkit-transform: scale(0.67);
   }
-} */
+}
 
 /* ===================================================================================================================== */
 /* TODO:  PART 4 - REGISTER AND LOGIN PAGE - LEFT AND RIGHT PANELS                                                       */
@@ -6512,8 +6555,8 @@ nav .clientzonewrapper .advertising-drop {
 
 .shopper__login__registration__container .left-panel {
   pointer-events: all;
-  /* padding: 3rem 17% 2rem 12%; */
-  padding: 3rem 17% 2rem 12%;
+  padding: 1.5rem 12% 1.5rem 12%;
+  border: 2px solid orange;
 }
 
 /* -------------------------------------- */
@@ -6523,7 +6566,8 @@ nav .clientzonewrapper .advertising-drop {
 .shopper__login__registration__container .right-panel {
   pointer-events: none;
   /* padding: 3rem 12% 2rem 17%; */
-  padding: 3rem 17% 2rem 12%;
+  padding: 1.5rem 12% 1.5rem 12%;
+  border: 2px solid purple;
 }
 
 /* ----------------------------- */
@@ -6565,10 +6609,10 @@ nav .clientzonewrapper .advertising-drop {
   color: white;
   width: 15rem;
   height: 4rem;
+  border-radius: 1.5rem;
   font-size: 1.5rem;
   font-weight: 700;
   letter-spacing: 0.2rem;
-  border-radius: 1.5rem;
   text-transform: uppercase;
 }
 
@@ -6736,7 +6780,7 @@ nav .clientzonewrapper .advertising-drop {
 /* TODO:  PART 6 - FORM - CHECKBOX OPTIONS                                                                               */
 /* ===================================================================================================================== */
 
-.shopper__login__registration__container .form__group {
+.shopper__login__registration__container .seller__login__form__group {
   margin: 0rem 0rem 0rem 0rem;
   display: flex;
   justify-content: center;
@@ -6745,7 +6789,7 @@ nav .clientzonewrapper .advertising-drop {
   border-radius: 1rem;
 }
 
-.shopper__login__registration__container .form__group__double {
+.shopper__login__registration__container .seller__login__form__group__double {
   margin: 0rem 0rem 0rem 0rem;
   display: flex;
   flex-direction: column;
@@ -7029,13 +7073,13 @@ nav .clientzonewrapper .advertising-drop {
     font-size: 1.3rem;
   }
 
-  .shopper__login__registration__container .form__group {
+  .shopper__login__registration__container .seller__login__form__group {
     margin: 0.5rem 0rem 1rem -2.75rem;
     padding: 0rem 0rem 0rem 0rem;
     max-width: 21rem;
   }
 
-  .shopper__login__registration__container .form__group__double {
+  .shopper__login__registration__container .seller__login__form__group__double {
     margin: 0.5rem 0rem 1rem -2.75rem;
     padding: 0rem 0rem 0rem 0rem;
     max-width: 21rem;
@@ -7074,14 +7118,14 @@ nav .clientzonewrapper .advertising-drop {
 
 .seller__login__registration__section {
   position: relative;
-  top: 10rem;
+  top: 6.5rem;
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
   height: auto;
   object-fit: cover;
-  margin: 0rem 0rem 0rem 0rem;
+  margin: 2rem 0rem 0rem 0rem;
   /* padding: 2rem 0rem 0rem 0rem; */
   /* border: 1px solid green; */
 }
@@ -7095,14 +7139,14 @@ nav .clientzonewrapper .advertising-drop {
 @media screen and (max-width: 830px) {
   .seller__login__registration__section {
     position: relative;
-    top: 11rem;
+    top: 7.5rem;
   }
 }
 
 @media screen and (max-width: 450px) {
   .seller__login__registration__section {
     position: relative;
-    top: 14.5rem;
+    top: 11rem;
   }
 }
 
@@ -7208,7 +7252,7 @@ nav .clientzonewrapper .advertising-drop {
   justify-content: center;
   align-items: center;
   text-align: center;
-  margin: 0.5rem 0rem 0.5rem 0rem;
+  margin: 1rem 0rem 1rem 0rem;
   font-size: 2rem;
   font-weight: 700;
   letter-spacing: 0.1rem;
@@ -7226,7 +7270,7 @@ nav .clientzonewrapper .advertising-drop {
   justify-content: center;
   align-items: center;
   text-align: center;
-  margin: 0rem 0.4rem 1rem 0.4rem;
+  margin: 0rem 0.4rem 1.5rem 0.4rem;
   font-size: 1.2rem;
   font-weight: 500;
   letter-spacing: 0.1rem;
@@ -7261,7 +7305,7 @@ nav .clientzonewrapper .advertising-drop {
   padding: 0rem 1rem 0rem 0.5rem;
   max-width: 30rem;
   width: 100%;
-  height: 4rem;
+  height: 4.5rem;
   background-color: var(--color-seller-login-page-input-field-background);
 }
 
@@ -7274,7 +7318,7 @@ nav .clientzonewrapper .advertising-drop {
   padding: 0rem 1rem 0rem 0.5rem;
   max-width: 30rem;
   width: 100%;
-  height: 4rem;
+  height: 4.5rem;
   background-color: var(--color-seller-login-page-input-field-background);
 }
 
@@ -7284,7 +7328,7 @@ nav .clientzonewrapper .advertising-drop {
 
 .seller__login__registration__container .input-field i {
   text-align: center;
-  line-height: 4rem;
+  line-height: 4.5rem;
   font-size: 1.6rem;
   transition: 0.5s;
   color: var(--color-seller-login-page-input-field-icons);
@@ -7292,7 +7336,7 @@ nav .clientzonewrapper .advertising-drop {
 
 .seller__login__registration__container .input-field-identification i {
   text-align: center;
-  line-height: 4rem;
+  line-height: 4.5rem;
   font-size: 2rem;
   transition: 0.5s;
   color: var(--color-seller-login-page-input-field-icons);
@@ -7341,9 +7385,6 @@ nav .clientzonewrapper .advertising-drop {
   text-transform: uppercase;
   margin: 0rem 0rem 0rem 0rem;
   padding: 0.5rem 0rem 0.5rem 0rem;
-  display: flex;
-  justify-content: center;
-  text-align: center;
   color: var(--color-seller-login-page-social-media-text);
 }
 
@@ -7418,7 +7459,6 @@ nav .clientzonewrapper .advertising-drop {
 /* ---------------------------- */
 
 .seller__login__registration__container .image {
-  padding: 5rem 5rem 5rem 5rem;
   width: 100%;
   transition: transform 1.1s ease-in-out;
   transition-delay: 0.4s;
@@ -7457,8 +7497,7 @@ nav .clientzonewrapper .advertising-drop {
 
 .seller__login__registration__container .left-panel {
   pointer-events: all;
-  /* padding: 3rem 17% 2rem 12%; */
-  padding: 1.5rem 12% 1.5rem 12%;
+  padding: 3rem 17% 2rem 12%;
 }
 
 /* -------------------------------------- */
@@ -7467,8 +7506,7 @@ nav .clientzonewrapper .advertising-drop {
 
 .seller__login__registration__container .right-panel {
   pointer-events: none;
-  /* padding: 3rem 12% 2rem 17%; */
-  padding: 1.5rem 12% 1.5rem 12%;
+  padding: 3rem 12% 2rem 17%;
 }
 
 /* ----------------------------- */
@@ -7482,8 +7520,8 @@ nav .clientzonewrapper .advertising-drop {
 }
 
 .seller__login__registration__container .panel h3 {
-  font-size: 2.2rem;
-  font-weight: 600;
+  font-size: 2.5rem;
+  font-weight: 700;
   text-transform: uppercase;
   line-height: 1;
 }
@@ -7502,13 +7540,11 @@ nav .clientzonewrapper .advertising-drop {
   margin: 0rem 0rem 0rem 0rem;
   background: none;
   border: 2px solid var(--color-seller-panel-button-border);
-  color: white;
-  width: 15rem;
+  width: 18rem;
   height: 4rem;
   font-size: 1.5rem;
   font-weight: 700;
   letter-spacing: 0.2rem;
-  border-radius: 1.5rem;
   text-transform: uppercase;
 }
 
@@ -8194,14 +8230,14 @@ nav .clientzonewrapper .advertising-drop {
 
 .investor__login__registration__section {
   position: relative;
-  top: 10rem;
+  top: 6.5rem;
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
   height: auto;
   object-fit: cover;
-  margin: 0rem 0rem 0rem 0rem;
+  margin: 2rem 0rem 0rem 0rem;
   /* padding: 2rem 0rem 0rem 0rem; */
   /* border: 1px solid green; */
 }
@@ -8215,14 +8251,14 @@ nav .clientzonewrapper .advertising-drop {
 @media screen and (max-width: 830px) {
   .investor__login__registration__section {
     position: relative;
-    top: 11rem;
+    top: 7.5rem;
   }
 }
 
 @media screen and (max-width: 450px) {
   .investor__login__registration__section {
     position: relative;
-    top: 14.5rem;
+    top: 11rem;
   }
 }
 
@@ -8328,7 +8364,7 @@ nav .clientzonewrapper .advertising-drop {
   justify-content: center;
   align-items: center;
   text-align: center;
-  margin: 0.5rem 0rem 0.5rem 0rem;
+  margin: 1rem 0rem 1rem 0rem;
   font-size: 2rem;
   font-weight: 700;
   letter-spacing: 0.1rem;
@@ -8346,7 +8382,7 @@ nav .clientzonewrapper .advertising-drop {
   justify-content: center;
   align-items: center;
   text-align: center;
-  margin: 0rem 0.4rem 1rem 0.4rem;
+  margin: 0rem 0.4rem 1.5rem 0.4rem;
   font-size: 1.2rem;
   font-weight: 500;
   letter-spacing: 0.1rem;
@@ -8396,7 +8432,7 @@ nav .clientzonewrapper .advertising-drop {
   padding: 0rem 1rem 0rem 0.5rem;
   max-width: 30rem;
   width: 100%;
-  height: 4rem;
+  height: 4.5rem;
   background-color: var(--color-investor-login-page-input-field-background);
 }
 
@@ -8406,7 +8442,7 @@ nav .clientzonewrapper .advertising-drop {
 
 .investor__login__registration__container .input-field i {
   text-align: center;
-  line-height: 4rem;
+  line-height: 4.5rem;
   font-size: 1.6rem;
   transition: 0.5s;
   color: var(--color-investor-login-page-input-field-icons);
@@ -8414,7 +8450,7 @@ nav .clientzonewrapper .advertising-drop {
 
 .investor__login__registration__container .input-field-identification i {
   text-align: center;
-  line-height: 4rem;
+  line-height: 4.5rem;
   font-size: 2rem;
   transition: 0.5s;
   color: var(--color-investor-login-page-input-field-icons);
@@ -8463,9 +8499,6 @@ nav .clientzonewrapper .advertising-drop {
   text-transform: uppercase;
   margin: 0rem 0rem 0rem 0rem;
   padding: 0.5rem 0rem 0.5rem 0rem;
-  display: flex;
-  justify-content: center;
-  text-align: center;
   color: var(--color-investor-login-page-social-media-text);
 }
 
@@ -8542,7 +8575,6 @@ nav .clientzonewrapper .advertising-drop {
 /* ---------------------------- */
 
 .investor__login__registration__container .image {
-  padding: 5rem 5rem 5rem 5rem;
   width: 100%;
   transition: transform 1.1s ease-in-out;
   transition-delay: 0.4s;
@@ -8581,8 +8613,7 @@ nav .clientzonewrapper .advertising-drop {
 
 .investor__login__registration__container .left-panel {
   pointer-events: all;
-  /* padding: 3rem 17% 2rem 12%; */
-  padding: 1.5rem 12% 1.5rem 12%;
+  padding: 3rem 17% 2rem 12%;
 }
 
 /* -------------------------------------- */
@@ -8591,8 +8622,7 @@ nav .clientzonewrapper .advertising-drop {
 
 .investor__login__registration__container .right-panel {
   pointer-events: none;
-  /* padding: 3rem 12% 2rem 17%; */
-  padding: 1.5rem 12% 1.5rem 12%;
+  padding: 3rem 12% 2rem 17%;
 }
 
 /* ----------------------------- */
@@ -8603,23 +8633,18 @@ nav .clientzonewrapper .advertising-drop {
   color: var(--color-investor-panel-text);
   transition: transform 0.9s ease-in-out;
   transition-delay: 0.6s;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
 }
 
 .investor__login__registration__container .panel h3 {
-  font-size: 2.2rem;
-  font-weight: 600;
+  font-size: 2.5rem;
+  font-weight: 700;
   text-transform: uppercase;
   line-height: 1;
 }
 
 .investor__login__registration__container .panel p {
   font-size: 1.3rem;
-  padding: 0rem 0rem 1rem 0rem;
+  padding: 0.5rem 0rem 2.5rem 0rem;
   text-align: justify;
 }
 
@@ -8631,9 +8656,7 @@ nav .clientzonewrapper .advertising-drop {
   margin: 0rem 0rem 0rem 0rem;
   background: none;
   border: 2px solid var(--color-investor-panel-button-border);
-  color: white;
-  border-radius: 1.5rem;
-  width: 15rem;
+  width: 18rem;
   height: 4rem;
   font-size: 1.5rem;
   font-weight: 700;
