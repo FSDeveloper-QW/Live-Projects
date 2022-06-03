@@ -3523,7 +3523,7 @@ nav .clientzonewrapper .advertising-drop {
 /* ===================================================================================================================== */
 /* ===================================================================================================================== */
 
-/* .shopmax__main__call__to__action__page__title h5 {
+/* .shopmax__gift__cards__page__title h5 {
   position: relative;
   top: 9rem;
   display: flex;
@@ -3536,7 +3536,7 @@ nav .clientzonewrapper .advertising-drop {
   border: 2px solid red;
 } */
 
-.shopmax__main__call__to__action__section {
+.shopmax__gift__cards__section {
   position: relative;
   top: 10rem;
   display: flex;
@@ -3550,19 +3550,19 @@ nav .clientzonewrapper .advertising-drop {
   /* border: 2px solid red; */
 }
 
-.shopmax__main__call__to__action__section img {
+.shopmax__gift__cards__section img {
   width: 100%;
   height: 100%;
   object-fit: contain;
 }
 
 @media screen and (max-width: 830px) {
-  /* .shopmax__main__call__to__action__page__title h5 {
+  /* .shopmax__gift__cards__page__title h5 {
     position: relative;
     top: 10rem;
   } */
 
-  .shopmax__main__call__to__action__section {
+  .shopmax__gift__cards__section {
     position: relative;
     /* top: 9rem; */
     top: 11rem;
@@ -3570,17 +3570,84 @@ nav .clientzonewrapper .advertising-drop {
 }
 
 @media screen and (max-width: 450px) {
-  /* .shopmax__main__call__to__action__page__title h5 {
+  /* .shopmax__gift__cards__page__title h5 {
     position: relative;
     top: 13.5rem;
   } */
 
-  .shopmax__main__call__to__action__section {
+  .shopmax__gift__cards__section {
     position: relative;
     /* top: 12.5rem; */
     top: 14.5rem;
   }
 }
+
+/* --------------------------------------------------------------------------------------------------------------------- */
+
+/* .gift__voucher__order__form__page__title h5 {
+  position: relative;
+  top: 9rem;
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  text-transform: uppercase;
+  margin: 2.5rem 0rem 2.5rem 0rem;
+  text-align: center;
+  background: #eee;
+  border: 2px solid red;
+} */
+
+.gift__voucher__order__form__section {
+  position: relative;
+  /* top: 9rem; */
+  top: 10rem;
+  /* top: 9rem; */
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  margin: 0rem 0rem 0rem 0rem;
+  padding: 1rem 0rem 1rem 0rem;
+  background-color: #e5e4e2;
+  /* border: 2px solid green; */
+}
+
+/* .gift__voucher__order__form__section img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+} */
+
+@media screen and (max-width: 830px) {
+  /* .gift__voucher__order__form__page__title h5 {
+    position: relative;
+    top: 10rem;
+  } */
+  .gift__voucher__order__form__section {
+    position: relative;
+    /* top: 9rem; */
+    /* top: 10rem; */
+    top: 11rem;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  /* .gift__voucher__order__form__page__title h5 {
+    position: relative;
+    top: 13.5rem;
+  } */
+
+  .gift__voucher__order__form__section {
+    position: relative;
+    /* top: 12.5rem; */
+    /* top: 13.5rem; */
+    top: 14.5rem;
+  }
+}
+
+/* --------------------------------------------------------------------------------------------------------------------- */
 
 /* ===================================================================================================================== */
 /* TODO:  PART 1A - MAIN PAGE - CALL TO ACTION - PAGE TITLE (INVESTING PLANS PROMO)                                      */
@@ -3594,7 +3661,7 @@ nav .clientzonewrapper .advertising-drop {
 /* FIXME:  TITLE & CALL TO ACTION TEXT */
 /* ----------------------------------- */
 
-.promo__investing__plans__page__title {
+.shopmax__gift__cards__page__title {
   display: flex;
   justify-content: center;
   justify-items: center;
@@ -3603,7 +3670,7 @@ nav .clientzonewrapper .advertising-drop {
   /* border: 1px solid green; */
 }
 
-.promo__investing__plans__page__title h5 {
+.shopmax__gift__cards__page__title h5 {
   display: flex;
   justify-content: center;
   justify-items: center;
@@ -3612,7 +3679,7 @@ nav .clientzonewrapper .advertising-drop {
   text-align: center;
 }
 
-.promo__investing__plans__page__title p {
+.shopmax__gift__cards__page__title p {
   text-align: justify;
   text-transform: initial;
   margin: 0.5rem 3rem 1rem 3rem;
@@ -3621,14 +3688,14 @@ nav .clientzonewrapper .advertising-drop {
   font-weight: 500;
 }
 
-.promo__investing__plans__page__title p strong {
+.shopmax__gift__cards__page__title p strong {
   font-size: 1.5rem;
   font-weight: 700;
   line-height: 1.8;
   cursor: pointer;
 }
 
-.promo__investing__plans__page__title p strong:hover {
+.shopmax__gift__cards__page__title p strong:hover {
   color: var(--color-cta-shopmax);
   transform: scale(1.05);
 }
@@ -3637,7 +3704,7 @@ nav .clientzonewrapper .advertising-drop {
 /* FIXME:  OPTIONS - CONTAINER  */
 /* ---------------------------- */
 
-.promo__investing__plans__options {
+.gift__vouchers__special__day__options {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -3653,7 +3720,7 @@ nav .clientzonewrapper .advertising-drop {
 /* FIXME:  OPTION 1 - BRONZE  */
 /* -------------------------- */
 
-.promo__investing__option__01 {
+.gift__voucher__special__days {
   position: relative;
   width: 26rem;
   height: 13rem;
@@ -3666,7 +3733,7 @@ nav .clientzonewrapper .advertising-drop {
   /* border: 1px solid green; */
 }
 
-.promo__investing__option__01 a {
+.gift__voucher__special__days a {
   position: absolute;
   top: 0;
   left: 0;
@@ -3678,25 +3745,25 @@ nav .clientzonewrapper .advertising-drop {
   text-align: center;
   text-decoration: none;
   border-radius: 1.5rem;
-  background-color: var(--color-cta-bronze);
-  color: var(--color-cta-page-text-on-buttons-or-anchors);
+  /* background-color: var(--color-cta-bronze);
+  color: var(--color-cta-page-text-on-buttons-or-anchors); */
   box-shadow: var(--color-box-shadow-01);
   transition: transform 0.5s ease-in-out;
   cursor: pointer;
 }
 
-.promo__investing__option__01 a p {
+/* .gift__voucher__special__days a p {
   font-size: 1.5rem;
   font-weight: 400;
   text-transform: uppercase;
 }
 
-.promo__investing__option__01 a p strong {
+.gift__voucher__special__days a p strong {
   font-size: 2rem;
   font-weight: 600;
-}
+} */
 
-.promo__investing__option__01 a img {
+.gift__voucher__special__days a img {
   position: absolute;
   top: 0;
   left: 0;
@@ -3707,193 +3774,7 @@ nav .clientzonewrapper .advertising-drop {
   /* border: 1px solid purple; */
 }
 
-.promo__investing__option__01 a:hover {
-  transform: scale(1.04);
-}
-
-/* -------------------------- */
-/* FIXME:  OPTION 2 - SILVER  */
-/* -------------------------- */
-
-.promo__investing__option__02 {
-  position: relative;
-  width: 26rem;
-  height: 13rem;
-  margin: 2rem 2rem 2rem 2rem;
-  padding: 0rem 0rem 0rem 0rem;
-  border-radius: 1.5rem;
-  border: none;
-  outline: none;
-  box-shadow: var(--color-box-shadow-01);
-  /* border: 1px solid green; */
-}
-
-.promo__investing__option__02 a {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  text-decoration: none;
-  border-radius: 1.5rem;
-  background-color: var(--color-cta-silver);
-  color: var(--color-cta-page-text-on-buttons-or-anchors);
-  box-shadow: var(--color-box-shadow-01);
-  transition: transform 0.5s ease-in-out;
-  cursor: pointer;
-}
-
-.promo__investing__option__02 a p {
-  font-size: 1.5rem;
-  font-weight: 400;
-  text-transform: uppercase;
-}
-
-.promo__investing__option__02 a p strong {
-  font-size: 2rem;
-  font-weight: 600;
-}
-
-.promo__investing__option__02 a img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  border-radius: 1.5rem;
-  object-fit: contain;
-  /* border: 1px solid green; */
-}
-
-.promo__investing__option__02 a:hover {
-  transform: scale(1.04);
-}
-
-/* -------------------------- */
-/* FIXME:  OPTION 3 - GOLD    */
-/* -------------------------- */
-
-.promo__investing__option__03 {
-  position: relative;
-  width: 26rem;
-  height: 13rem;
-  margin: 2rem 2rem 2rem 2rem;
-  padding: 0rem 0rem 0rem 0rem;
-  border-radius: 1.5rem;
-  border: none;
-  outline: none;
-  box-shadow: var(--color-box-shadow-01);
-  /* border: 1px solid green; */
-}
-
-.promo__investing__option__03 a {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  text-decoration: none;
-  border-radius: 1.5rem;
-  background-color: var(--color-cta-gold);
-  color: var(--color-cta-page-text-on-buttons-or-anchors);
-  box-shadow: var(--color-box-shadow-01);
-  transition: transform 0.5s ease-in-out;
-  cursor: pointer;
-}
-
-.promo__investing__option__03 a p {
-  font-size: 1.5rem;
-  font-weight: 400;
-  text-transform: uppercase;
-}
-
-.promo__investing__option__03 a p strong {
-  font-size: 2rem;
-  font-weight: 600;
-}
-
-.promo__investing__option__03 a img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  border-radius: 1.5rem;
-  object-fit: contain;
-  /* border: 1px solid green; */
-}
-
-.promo__investing__option__03 a:hover {
-  transform: scale(1.04);
-}
-
-/* ---------------------------- */
-/* FIXME:  OPTION 4 - PLATINUM  */
-/* ---------------------------- */
-
-.promo__investing__option__04 {
-  position: relative;
-  width: 26rem;
-  height: 13rem;
-  margin: 2rem 2rem 2rem 2rem;
-  padding: 0rem 0rem 0rem 0rem;
-  border-radius: 1.5rem;
-  border: none;
-  outline: none;
-  box-shadow: var(--color-box-shadow-01);
-  /* border: 1px solid green; */
-}
-
-.promo__investing__option__04 a {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  text-decoration: none;
-  border-radius: 1.5rem;
-  background-color: var(--color-cta-platinum);
-  color: var(--color-cta-page-text-on-buttons-or-anchors);
-  box-shadow: var(--color-box-shadow-01);
-  transition: transform 0.5s ease-in-out;
-  cursor: pointer;
-}
-
-.promo__investing__option__04 a p {
-  font-size: 1.5rem;
-  font-weight: 400;
-  text-transform: uppercase;
-}
-
-.promo__investing__option__04 a p strong {
-  font-size: 2rem;
-  font-weight: 600;
-}
-
-.promo__investing__option__04 a img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  border-radius: 1.5rem;
-  object-fit: contain;
-  /* border: 1px solid green; */
-}
-
-.promo__investing__option__04 a:hover {
+.gift__voucher__special__days a:hover {
   transform: scale(1.04);
 }
 
@@ -3902,19 +3783,16 @@ nav .clientzonewrapper .advertising-drop {
 /* -------------------------------------------------- */
 
 @media screen and (max-width: 300px) {
-  .promo__investing__plans__page__title h5 {
+  .shopmax__gift__cards__page__title h5 {
     margin: 2rem 1.5rem 2rem 1.5rem;
     text-align: center;
   }
 
-  .promo__investing__plans__page__title p {
+  .shopmax__gift__cards__page__title p {
     margin: 0.5rem 1.5rem 1rem 1.5rem;
   }
 
-  .promo__investing__option__01,
-  .promo__investing__option__02,
-  .promo__investing__option__03,
-  .promo__investing__option__04 {
+  .gift__voucher__special__days {
     margin: 2rem 0.2rem 2rem 0.2rem;
     width: 24rem;
     height: 12rem;
@@ -3968,6 +3846,531 @@ nav .clientzonewrapper .advertising-drop {
     -webkit-transform: scale(0.67);
   }
 }
+
+/* ===================================================================================================================== */
+/* ===================================================================================================================== */
+/* TODO:TODO:                       SECTION - GIFT VOUCHER ORDER FORM (START)                                 TODO:TODO: */
+/* ===================================================================================================================== */
+/* ===================================================================================================================== */
+
+/* ------------------------------- */
+/* FIXME:  VIEW - MOBILE FIRST     */
+/* ------------------------------- */
+
+.purchase__gift__voucher__form__header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  font-weight: 500;
+  letter-spacing: 0.2rem;
+  background-color: var(--color-quote-services-form-header-background);
+  color: var(--color-quote-services-form-header-text);
+  margin: 2.5rem 0.4rem 2rem 0.4rem;
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  border-radius: 0.5rem;
+  box-shadow: var(--color-box-shadow-01);
+}
+
+/* ------------------------- */
+/* FIXME:  PRIVACY STATEMENT */
+/* ------------------------- */
+
+.purchase__gift__voucher__privacy__statement {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 1rem 0.4rem 2rem 0.4rem;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+}
+
+.purchase__gift__voucher__privacy__statement strong {
+  text-decoration: none;
+  color: var(--color-quote-services-privacy-text);
+}
+
+.purchase__gift__voucher__privacy__statement a {
+  text-decoration: none;
+  color: var(--color-quote-services-privacy-text);
+  cursor: pointer;
+}
+
+/* --------------------------- */
+/* FIXME:  DELIVERY LOCATION  */
+/* --------------------------- */
+
+.purchase__gift__voucher__delivery__location {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 1rem 0.4rem 2rem 0.4rem;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+}
+
+.purchase__gift__voucher__delivery__location strong {
+  text-decoration: none;
+  color: var(--color-quote-services-delivery-cost-text);
+}
+
+.purchase__gift__voucher__delivery__location a {
+  text-decoration: none;
+  color: var(--color-quote-services-delivery-cost-text);
+  cursor: pointer;
+}
+
+/* ------------------------------- */
+/* FIXME:  VIEW - LARGER SCREENS   */
+/* ------------------------------- */
+
+@media screen and (max-width: 430px) {
+  .purchase__gift__voucher__form__header {
+    font-size: 1rem;
+    text-align: center;
+  }
+}
+
+/* ===================================================================================================================== */
+/* TODO:  PART 2B - REQUEST SERVICE QUOTE                                                                                */
+/* ===================================================================================================================== */
+
+/* ---------------------------------------------- */
+/* FIXME:  FORM CONTAINER  FIXME:                 */
+/* ---------------------------------------------- */
+
+.purchase__gift__voucher__form__group {
+  margin: 0rem 0rem 1rem 1rem;
+}
+
+/* ---------------------------------------------- */
+/* FIXME:  FORM LABEL  FIXME:                     */
+/* ---------------------------------------------- */
+
+.purchase__gift__voucher__form__group label {
+  display: block;
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin: 0.5rem 1.75rem 0.5rem 1.75rem;
+}
+
+.purchase__gift__voucher__form__group input::placeholder {
+  font-family: "Poppins", sans-serif;
+}
+
+/* ---------------------------------------------- */
+/* FIXME:  INPUT FIELD TYPE =  TEXT  FIXME:       */
+/* e.g. "NAME" or "LAST NAME" etc.                */
+/* ---------------------------------------------- */
+
+.purchase__gift__voucher__form__group input[type="text"] {
+  /* width: 25rem; */
+  width: 96%;
+  border-radius: 0.5rem;
+  border: 1px solid var(--color-quote-services-input-border);
+  margin: 0.5rem 1.4rem 0.5rem 1.4rem;
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: border-color 0.15s, box-shadow 0.15s;
+}
+
+.purchase__gift__voucher__form__group input[type="text"]:focus {
+  border-color: var(--color-quote-services-input-border-focus);
+  box-shadow: 0 0 0 2px rgba(220, 20, 60, 0.95);
+  outline: 0;
+}
+
+/* ---------------------------------------------- */
+/* FIXME:  INPUT FIELD TYPE =  TEL  FIXME:        */
+/* e.g. "TELEPHONE" or "MOBILE" Number etc.       */
+/* ---------------------------------------------- */
+
+.purchase__gift__voucher__form__group input[type="tel"] {
+  /* width: 25rem; */
+  width: 96%;
+  border-radius: 0.5rem;
+  border: 1px solid var(--color-quote-services-input-border);
+  margin: 0.5rem 1.4rem 0.5rem 1.4rem;
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: border-color 0.15s, box-shadow 0.15s;
+}
+
+.purchase__gift__voucher__form__group input[type="tel"]:focus {
+  border-color: var(--color-quote-services-input-border-focus);
+  box-shadow: 0 0 0 2px rgba(220, 20, 60, 0.95);
+  outline: 0;
+}
+
+/* ---------------------------------------------- */
+/* FIXME:  INPUT FIELD TYPE =  TEXTAREA  FIXME:   */
+/* Runs over multiple lines (rows) e.g. "Address" */
+/* ---------------------------------------------- */
+
+.purchase__gift__voucher__form__group textarea {
+  resize: none;
+  /* width: 25rem; */
+  width: 96%;
+  border-radius: 0.5rem;
+  border: 1px solid var(--color-quote-services-input-border);
+  margin: 0.5rem 1.4rem 0.5rem 1.4rem;
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  font-size: 1.2rem;
+  font-family: "poppins", sans-serif;
+  cursor: pointer;
+  transition: border-color 0.15s, box-shadow 0.15s;
+}
+
+.purchase__gift__voucher__form__group textarea:focus {
+  border-color: var(--color-quote-services-input-border-focus);
+  box-shadow: 0 0 0 2px rgba(220, 20, 60, 0.95);
+  outline: 0;
+}
+
+/* ---------------------------------------------- */
+/* FIXME:  INPUT FIELD TYPE =  NUMBER  FIXME:     */
+/* ---------------------------------------------- */
+
+.purchase__gift__voucher__form__group input[type="number"] {
+  /* width: 25rem; */
+  width: 96%;
+  border-radius: 0.5rem;
+  border: 1px solid var(--color-quote-services-input-border);
+  margin: 0.5rem 1.4rem 0.5rem 1.4rem;
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  font-size: 1.2rem;
+  font-family: "poppins", sans-serif;
+  cursor: pointer;
+  transition: border-color 0.15s, box-shadow 0.15s;
+}
+
+.purchase__gift__voucher__form__group input[type="number"]:focus {
+  border-color: var(--color-quote-services-input-border-focus);
+  box-shadow: 0 0 0 2px rgba(220, 20, 60, 0.95);
+  outline: 0;
+}
+
+/* ---------------------------------------------- */
+/* FIXME:  INPUT FIELD TYPE =  DATE  FIXME:       */
+/* ---------------------------------------------- */
+
+.purchase__gift__voucher__form__group input[type="date"] {
+  /* width: 25rem; */
+  width: 96%;
+  border-radius: 0.5rem;
+  border: 1px solid var(--color-quote-services-input-border);
+  margin: 0.5rem 1.4rem 0.5rem 1.4rem;
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: border-color 0.15s, box-shadow 0.15s;
+}
+
+.purchase__gift__voucher__form__group input[type="date"]:focus {
+  border-color: var(--color-quote-services-input-border-focus);
+  box-shadow: 0 0 0 2px rgba(220, 20, 60, 0.95);
+  outline: 0;
+}
+
+/* ---------------------------------------------- */
+/* FIXME:  INPUT FIELD = DROPDOWN LIST     FIXME: */
+/* e.g. Countries, Provinces, Titles etc.         */
+/* ---------------------------------------------- */
+
+.purchase__gift__voucher__form__group select {
+  /* width: 25rem; */
+  width: 96%;
+  border-radius: 0.5rem;
+  border: 1px solid var(--color-quote-services-input-border);
+  margin: 0.5rem 1.4rem 0.5rem 1.4rem;
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: border-color 0.15s, box-shadow 0.15s;
+}
+
+.purchase__gift__voucher__form__group select:focus {
+  border-color: var(--color-quote-services-input-border-focus);
+  box-shadow: 0 0 0 2px rgba(220, 20, 60, 0.95);
+  outline: 0;
+}
+
+/* ------------------------------------------------------------------------- */
+/* TODO:  START STYLING OF CUSTOM CHECKBOX                                   */
+/* ------------------------------------------------------------------------- */
+
+/* --------------------------------------- */
+/* FIXME:  INPUT FIELD = CHECKBOX  FIXME:  */
+/* --------------------------------------- */
+
+.purchase__gift__voucher__checkbox__option {
+  font-size: 1.2rem;
+  font-weight: 500;
+  line-height: 1.25;
+  text-transform: none;
+  text-align: justify;
+  display: grid;
+  grid-template-columns: 1rem auto;
+  gap: 3rem;
+  margin: 2rem 0rem 2rem 0rem;
+  padding: 0rem 1.5rem 0rem 0rem;
+  cursor: pointer;
+}
+
+label.purchase__gift__voucher__checkbox__option {
+  display: grid;
+  text-transform: initial;
+  font-size: 1.2rem;
+  font-weight: 500;
+  line-height: 1.25;
+  color: black;
+}
+
+/* ------------------------------------ */
+/* THIS IS TO HIDE THE NATIVE CHECKBOX  */
+/* ------------------------------------ */
+
+.purchase__gift__voucher__checkbox__option input[type="checkbox"] {
+  /* Add if not using autoprefixer */
+  -webkit-appearance: none;
+  appearance: none;
+  /* For iOS < 15 to remove gradient background */
+  background-color: var(--color-quote-services-custom-checkbox-background);
+  /* Not removed via appearance */
+  margin: 0;
+}
+
+/* --------------------------------------- */
+/* THIS IS TO DISPLAY THE CUSTOM CHECKBOX  */
+/* --------------------------------------- */
+
+.purchase__gift__voucher__checkbox__option input[type="checkbox"] {
+  appearance: none;
+  background-color: var(--color-quote-services-custom-checkbox-background);
+  margin: 0;
+  font: inherit;
+  color: var(--color-quote-services-custom-checkbox-border);
+  width: 1.5rem;
+  height: 1.5rem;
+  border: 0.15em solid var(--color-quote-services-custom-checkbox-border);
+  border-radius: 0.15em;
+  transform: translateY(-0.075em);
+  display: grid;
+  place-content: center;
+  cursor: pointer;
+}
+
+.purchase__gift__voucher__checkbox__option
+  + .purchase__gift__voucher__checkbox__option {
+  margin-top: 1rem;
+}
+
+/* --------------------------------------- */
+/* CUSTOM CHECKBOX - CHECKED STATE         */
+/* --------------------------------------- */
+
+.purchase__gift__voucher__checkbox__option input[type="checkbox"]::before {
+  content: "";
+  width: 0.7rem;
+  height: 0.7rem;
+  transform: scale(0);
+  transition: 120ms transform ease-in-out;
+  box-shadow: inset 1em 1em
+    var(--color-quote-services-custom-checkbox-checkmark);
+  /* Windows High Contrast Mode */
+  background-color: CanvasText;
+  /* Creating a checkmark with CLIP-PATH */
+  transform-origin: bottom left;
+  clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
+}
+
+.purchase__gift__voucher__checkbox__option
+  input[type="checkbox"]:checked::before {
+  transform: scale(1);
+}
+
+/* --------------------------------------- */
+/* CUSTOM CHECKBOX - FOCUSSED STATE        */
+/* --------------------------------------- */
+
+.purchase__gift__voucher__checkbox__option input[type="checkbox"]:focus {
+  outline: max(2px, 0.15em) solid
+    var(--color-quote-services-custom-checkbox-focus);
+  outline-offset: max(1px, 0.15em);
+}
+
+/* --------------------------------------- */
+/* CUSTOM CHECKBOX - DISABLED STATE        */
+/* --------------------------------------- */
+
+.purchase__gift__voucher__checkbox__option--disabled {
+  color: var(--color-quote-services-custom-checkbox-disabled);
+  cursor: not-allowed;
+}
+
+.purchase__gift__voucher__checkbox__option input[type="checkbox"]:disabled {
+  color: var(--color-quote-services-custom-checkbox-disabled);
+  cursor: not-allowed;
+}
+
+/* ------------------------------------------------------------------------- */
+/* TODO:  END OF STYLING OF CUSTOM CHECKBOX                                  */
+/* ------------------------------------------------------------------------- */
+
+/* ------------------------------------------ */
+/* FIXME:  INPUT FIELD TYPE =  EMAIL  FIXME:  */
+/* ------------------------------------------ */
+
+.purchase__gift__voucher__form__group input[type="email"] {
+  /* width: 25rem; */
+  width: 96%;
+  border-radius: 0.5rem;
+  border: 1px solid var(--color-quote-services-input-border);
+  margin: 0.5rem 1.4rem 0.5rem 1.4rem;
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: border-color 0.15s, box-shadow 0.15s;
+}
+
+.purchase__gift__voucher__form__group input[type="email"]:focus {
+  border-color: var(--color-quote-services-input-border-focus);
+  box-shadow: 0 0 0 2px rgba(220, 20, 60, 0.95);
+  outline: 0;
+}
+
+/* ----------------------------- */
+/* FIXME:  FORM BUTTONS  FIXME:  */
+/* ----------------------------- */
+
+.purchase__gift__voucher__button__container button {
+  background: var(--color-quote-services-button-background);
+  color: var(--color-quote-services-button-text);
+  border: 0;
+  outline: 0;
+  border-radius: 0.5rem;
+  width: 20rem;
+  height: 3rem;
+  font-size: 1.2rem;
+  font-weight: 500;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+  margin: 0.5rem 2rem 3rem 2rem;
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  cursor: pointer;
+  text-decoration: none;
+  transition: transform 0.5s ease-in-out;
+}
+
+.purchase__gift__voucher__button__container button:hover {
+  transform: scale(1.05);
+}
+
+.purchase__gift__voucher__button__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ---------------------------------------------- */
+/* FIXME:  STYLING - GOOGLE RECAPTCHA  FIXME:     */
+/* ---------------------------------------------- */
+
+.purchase__gift__voucher__form__group .g-recaptcha {
+  margin: 2rem 1rem 2rem 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* transform: scale(0.89); */
+  transform: scale(1);
+  /* -webkit-transform: scale(0.89); */
+  -webkit-transform: scale(1);
+  transform-origin: 0 0;
+  -webkit-transform-origin: 0 0;
+}
+
+/* --------------------------------------------------------------- */
+/* FIXME:  FINAL MEDIA QUERY - REGISTRATION FORM (SMALLER SCREENS) */
+/* --------------------------------------------------------------- */
+
+@media screen and (max-width: 600px) {
+  .purchase__gift__voucher__button__container button {
+    margin: 0rem 1rem 2rem 1rem;
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .purchase__gift__voucher__button__container {
+    flex-direction: column;
+  }
+
+  .purchase__gift__voucher__form__group label {
+    font-size: 1rem;
+    margin: 0rem 0.6rem 0rem 0.5rem;
+  }
+
+  .purchase__gift__voucher__form__group input[type="email"] {
+    margin: 0.5rem 0.2rem 0.5rem 0.2rem;
+  }
+
+  .purchase__gift__voucher__checkbox__option {
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin: 2rem 2rem 2rem 0.1rem;
+  }
+
+  .purchase__gift__voucher__form__group select {
+    margin: 0.5rem 0.1rem 0.5rem 0.1rem;
+  }
+
+  .purchase__gift__voucher__form__group textarea {
+    margin: 0.5rem 0.1rem 0.5rem 0.1rem;
+  }
+
+  .purchase__gift__voucher__form__group input[type="tel"] {
+    margin: 0.5rem 0.1rem 0.5rem 0.1rem;
+  }
+
+  .purchase__gift__voucher__form__group input[type="text"] {
+    margin: 0.5rem 0.1rem 0.5rem 0.1rem;
+  }
+
+  .purchase__gift__voucher__form__group input[type="date"] {
+    margin: 0.5rem 0.1rem 0.5rem 0.1rem;
+  }
+
+  .purchase__gift__voucher__form__group input[type="number"] {
+    margin: 0.5rem 0.1rem 0.5rem 0.1rem;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .purchase__gift__voucher__form__group .g-recaptcha {
+    margin: 2rem 1.5rem 2rem 2rem;
+    transform: scale(0.8);
+    -webkit-transform: scale(0.8);
+  }
+}
+
+/* ===================================================================================================================== */
+/* ===================================================================================================================== */
+/* FIXME:FIXME:                      SECTION - GIFT VOUCHER ORDER FORM (END)                                FIXME:FIXME: */
+/* ===================================================================================================================== */
+/* ===================================================================================================================== */
 
 /* ===================================================================================================================== */
 /* ===================================================================================================================== */
@@ -4588,618 +4991,6 @@ label.product__quote__checkbox__option {
 /* ===================================================================================================================== */
 /* ===================================================================================================================== */
 /* FIXME:FIXME:                        SECTION - REQUEST PRODUCT QUOTE (END)                                FIXME:FIXME: */
-/* ===================================================================================================================== */
-/* ===================================================================================================================== */
-
-/* ===================================================================================================================== */
-/* ===================================================================================================================== */
-/* TODO:TODO:                         SECTION - REQUEST SERVICE QUOTE (START)                                 TODO:TODO: */
-/* ===================================================================================================================== */
-/* ===================================================================================================================== */
-
-/* .service__quote__page__title h5 {
-  position: relative;
-  top: 9rem;
-  display: flex;
-  justify-content: center;
-  justify-items: center;
-  text-transform: uppercase;
-  margin: 2.5rem 0rem 2.5rem 0rem;
-  text-align: center;
-  background: #eee;
-  border: 2px solid red;
-} */
-
-.service__quote__section {
-  position: relative;
-  /* top: 9rem; */
-  top: 10rem;
-  /* top: 9rem; */
-  /* display: flex;
-  justify-content: center;
-  align-items: center; */
-  width: 100%;
-  height: auto;
-  object-fit: cover;
-  margin: 0rem 0rem 0rem 0rem;
-  padding: 0rem 0rem 2rem 0rem;
-  background-color: var(--color-what-we-do-page-background);
-  /* border: 2px solid red; */
-}
-
-/* .service__quote__section img {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-} */
-
-@media screen and (max-width: 830px) {
-  /* .service__quote__page__title h5 {
-    position: relative;
-    top: 10rem;
-  } */
-  .service__quote__section {
-    position: relative;
-    /* top: 9rem; */
-    /* top: 10rem; */
-    top: 11rem;
-  }
-}
-
-@media screen and (max-width: 450px) {
-  /* .service__quote__page__title h5 {
-    position: relative;
-    top: 13.5rem;
-  } */
-
-  .service__quote__section {
-    position: relative;
-    /* top: 12.5rem; */
-    /* top: 13.5rem; */
-    top: 14.5rem;
-  }
-}
-
-/* ===================================================================================================================== */
-/* TODO:  PART 1 - REQUEST SERVICE QUOTE - PAGE TITLE                                                                    */
-/* ===================================================================================================================== */
-
-/* ------------------------------- */
-/* FIXME:  VIEW - MOBILE FIRST     */
-/* ------------------------------- */
-
-.service__quote__page__title h5 {
-  display: flex;
-  justify-content: center;
-  justify-items: center;
-  text-transform: uppercase;
-  margin: 0rem 0rem 0rem 0rem;
-  padding: 1.5rem 0rem 0rem 0rem;
-  text-align: center;
-}
-
-/* ------------------------------- */
-/* FIXME:  VIEW - LARGER SCREENS   */
-/* ------------------------------- */
-
-/* ===================================================================================================================== */
-/* TODO:  PART 2A - REQUEST SERVICE QUOTE                                                                                */
-/* ===================================================================================================================== */
-
-/* ------------------------------- */
-/* FIXME:  VIEW - MOBILE FIRST     */
-/* ------------------------------- */
-
-.service__quote__form__header {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-transform: uppercase;
-  font-size: 1.5rem;
-  font-weight: 500;
-  letter-spacing: 0.2rem;
-  background-color: var(--color-quote-services-form-header-background);
-  color: var(--color-quote-services-form-header-text);
-  margin: 2.5rem 0.4rem 2rem 0.4rem;
-  padding: 0.5rem 1rem 0.5rem 1rem;
-  border-radius: 0.5rem;
-  box-shadow: var(--color-box-shadow-01);
-}
-
-/* ------------------------- */
-/* FIXME:  PRIVACY STATEMENT */
-/* ------------------------- */
-
-.service__quote__privacy__statement {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  margin: 1rem 0.4rem 2rem 0.4rem;
-  font-size: 1.2rem;
-  text-transform: uppercase;
-}
-
-.service__quote__privacy__statement strong {
-  text-decoration: none;
-  color: var(--color-quote-services-privacy-text);
-}
-
-.service__quote__privacy__statement a {
-  text-decoration: none;
-  color: var(--color-quote-services-privacy-text);
-  cursor: pointer;
-}
-
-/* --------------------------- */
-/* FIXME:  DELIVERY LOCATION  */
-/* --------------------------- */
-
-.service__quote__delivery__location {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  margin: 1rem 0.4rem 2rem 0.4rem;
-  font-size: 1.2rem;
-  text-transform: uppercase;
-}
-
-.service__quote__delivery__location strong {
-  text-decoration: none;
-  color: var(--color-quote-services-delivery-cost-text);
-}
-
-.service__quote__delivery__location a {
-  text-decoration: none;
-  color: var(--color-quote-services-delivery-cost-text);
-  cursor: pointer;
-}
-
-/* ------------------------------- */
-/* FIXME:  VIEW - LARGER SCREENS   */
-/* ------------------------------- */
-
-@media screen and (max-width: 430px) {
-  .service__quote__form__header {
-    font-size: 1rem;
-    text-align: center;
-  }
-}
-
-/* ===================================================================================================================== */
-/* TODO:  PART 2B - REQUEST SERVICE QUOTE                                                                                */
-/* ===================================================================================================================== */
-
-/* ---------------------------------------------- */
-/* FIXME:  FORM CONTAINER  FIXME:                 */
-/* ---------------------------------------------- */
-
-.service__quote__form__group {
-  margin: 0rem 0rem 1rem 1rem;
-}
-
-/* ---------------------------------------------- */
-/* FIXME:  FORM LABEL  FIXME:                     */
-/* ---------------------------------------------- */
-
-.service__quote__form__group label {
-  display: block;
-  font-size: 1.2rem;
-  font-weight: 600;
-  text-transform: uppercase;
-  margin: 0.5rem 1.75rem 0.5rem 1.75rem;
-}
-
-.service__quote__form__group input::placeholder {
-  font-family: "Poppins", sans-serif;
-}
-
-/* ---------------------------------------------- */
-/* FIXME:  INPUT FIELD TYPE =  TEXT  FIXME:       */
-/* e.g. "NAME" or "LAST NAME" etc.                */
-/* ---------------------------------------------- */
-
-.service__quote__form__group input[type="text"] {
-  /* width: 25rem; */
-  width: 96%;
-  border-radius: 0.5rem;
-  border: 1px solid var(--color-quote-services-input-border);
-  margin: 0.5rem 1.4rem 0.5rem 1.4rem;
-  padding: 0.5rem 1rem 0.5rem 1rem;
-  font-size: 1.2rem;
-  cursor: pointer;
-  transition: border-color 0.15s, box-shadow 0.15s;
-}
-
-.service__quote__form__group input[type="text"]:focus {
-  border-color: var(--color-quote-services-input-border-focus);
-  box-shadow: 0 0 0 2px rgba(220, 20, 60, 0.95);
-  outline: 0;
-}
-
-/* ---------------------------------------------- */
-/* FIXME:  INPUT FIELD TYPE =  TEL  FIXME:        */
-/* e.g. "TELEPHONE" or "MOBILE" Number etc.       */
-/* ---------------------------------------------- */
-
-.service__quote__form__group input[type="tel"] {
-  /* width: 25rem; */
-  width: 96%;
-  border-radius: 0.5rem;
-  border: 1px solid var(--color-quote-services-input-border);
-  margin: 0.5rem 1.4rem 0.5rem 1.4rem;
-  padding: 0.5rem 1rem 0.5rem 1rem;
-  font-size: 1.2rem;
-  cursor: pointer;
-  transition: border-color 0.15s, box-shadow 0.15s;
-}
-
-.service__quote__form__group input[type="tel"]:focus {
-  border-color: var(--color-quote-services-input-border-focus);
-  box-shadow: 0 0 0 2px rgba(220, 20, 60, 0.95);
-  outline: 0;
-}
-
-/* ---------------------------------------------- */
-/* FIXME:  INPUT FIELD TYPE =  TEXTAREA  FIXME:   */
-/* Runs over multiple lines (rows) e.g. "Address" */
-/* ---------------------------------------------- */
-
-.service__quote__form__group textarea {
-  resize: none;
-  /* width: 25rem; */
-  width: 96%;
-  border-radius: 0.5rem;
-  border: 1px solid var(--color-quote-services-input-border);
-  margin: 0.5rem 1.4rem 0.5rem 1.4rem;
-  padding: 0.5rem 1rem 0.5rem 1rem;
-  font-size: 1.2rem;
-  font-family: "poppins", sans-serif;
-  cursor: pointer;
-  transition: border-color 0.15s, box-shadow 0.15s;
-}
-
-.service__quote__form__group textarea:focus {
-  border-color: var(--color-quote-services-input-border-focus);
-  box-shadow: 0 0 0 2px rgba(220, 20, 60, 0.95);
-  outline: 0;
-}
-
-/* ---------------------------------------------- */
-/* FIXME:  INPUT FIELD TYPE =  NUMBER  FIXME:     */
-/* ---------------------------------------------- */
-
-.service__quote__form__group input[type="number"] {
-  /* width: 25rem; */
-  width: 96%;
-  border-radius: 0.5rem;
-  border: 1px solid var(--color-quote-services-input-border);
-  margin: 0.5rem 1.4rem 0.5rem 1.4rem;
-  padding: 0.5rem 1rem 0.5rem 1rem;
-  font-size: 1.2rem;
-  font-family: "poppins", sans-serif;
-  cursor: pointer;
-  transition: border-color 0.15s, box-shadow 0.15s;
-}
-
-.service__quote__form__group input[type="number"]:focus {
-  border-color: var(--color-quote-services-input-border-focus);
-  box-shadow: 0 0 0 2px rgba(220, 20, 60, 0.95);
-  outline: 0;
-}
-
-/* ---------------------------------------------- */
-/* FIXME:  INPUT FIELD TYPE =  DATE  FIXME:       */
-/* ---------------------------------------------- */
-
-.service__quote__form__group input[type="date"] {
-  /* width: 25rem; */
-  width: 96%;
-  border-radius: 0.5rem;
-  border: 1px solid var(--color-quote-services-input-border);
-  margin: 0.5rem 1.4rem 0.5rem 1.4rem;
-  padding: 0.5rem 1rem 0.5rem 1rem;
-  font-size: 1.2rem;
-  cursor: pointer;
-  transition: border-color 0.15s, box-shadow 0.15s;
-}
-
-.service__quote__form__group input[type="date"]:focus {
-  border-color: var(--color-quote-services-input-border-focus);
-  box-shadow: 0 0 0 2px rgba(220, 20, 60, 0.95);
-  outline: 0;
-}
-
-/* ---------------------------------------------- */
-/* FIXME:  INPUT FIELD = DROPDOWN LIST     FIXME: */
-/* e.g. Countries, Provinces, Titles etc.         */
-/* ---------------------------------------------- */
-
-.service__quote__form__group select {
-  /* width: 25rem; */
-  width: 96%;
-  border-radius: 0.5rem;
-  border: 1px solid var(--color-quote-services-input-border);
-  margin: 0.5rem 1.4rem 0.5rem 1.4rem;
-  padding: 0.5rem 1rem 0.5rem 1rem;
-  font-size: 1.2rem;
-  cursor: pointer;
-  transition: border-color 0.15s, box-shadow 0.15s;
-}
-
-.service__quote__form__group select:focus {
-  border-color: var(--color-quote-services-input-border-focus);
-  box-shadow: 0 0 0 2px rgba(220, 20, 60, 0.95);
-  outline: 0;
-}
-
-/* ------------------------------------------------------------------------- */
-/* TODO:  START STYLING OF CUSTOM CHECKBOX                                   */
-/* ------------------------------------------------------------------------- */
-
-/* --------------------------------------- */
-/* FIXME:  INPUT FIELD = CHECKBOX  FIXME:  */
-/* --------------------------------------- */
-
-.service__quote__checkbox__option {
-  font-size: 1.2rem;
-  font-weight: 500;
-  line-height: 1.25;
-  text-transform: none;
-  text-align: justify;
-  display: grid;
-  grid-template-columns: 1rem auto;
-  gap: 3rem;
-  margin: 2rem 0rem 2rem 0rem;
-  padding: 0rem 1.5rem 0rem 0rem;
-  cursor: pointer;
-}
-
-label.service__quote__checkbox__option {
-  display: grid;
-  text-transform: initial;
-  font-size: 1.2rem;
-  font-weight: 500;
-  line-height: 1.25;
-  color: black;
-}
-
-/* ------------------------------------ */
-/* THIS IS TO HIDE THE NATIVE CHECKBOX  */
-/* ------------------------------------ */
-
-.service__quote__checkbox__option input[type="checkbox"] {
-  /* Add if not using autoprefixer */
-  -webkit-appearance: none;
-  appearance: none;
-  /* For iOS < 15 to remove gradient background */
-  background-color: var(--color-quote-services-custom-checkbox-background);
-  /* Not removed via appearance */
-  margin: 0;
-}
-
-/* --------------------------------------- */
-/* THIS IS TO DISPLAY THE CUSTOM CHECKBOX  */
-/* --------------------------------------- */
-
-.service__quote__checkbox__option input[type="checkbox"] {
-  appearance: none;
-  background-color: var(--color-quote-services-custom-checkbox-background);
-  margin: 0;
-  font: inherit;
-  color: var(--color-quote-services-custom-checkbox-border);
-  width: 1.5rem;
-  height: 1.5rem;
-  border: 0.15em solid var(--color-quote-services-custom-checkbox-border);
-  border-radius: 0.15em;
-  transform: translateY(-0.075em);
-  display: grid;
-  place-content: center;
-  cursor: pointer;
-}
-
-.service__quote__checkbox__option + .service__quote__checkbox__option {
-  margin-top: 1rem;
-}
-
-/* --------------------------------------- */
-/* CUSTOM CHECKBOX - CHECKED STATE         */
-/* --------------------------------------- */
-
-.service__quote__checkbox__option input[type="checkbox"]::before {
-  content: "";
-  width: 0.7rem;
-  height: 0.7rem;
-  transform: scale(0);
-  transition: 120ms transform ease-in-out;
-  box-shadow: inset 1em 1em
-    var(--color-quote-services-custom-checkbox-checkmark);
-  /* Windows High Contrast Mode */
-  background-color: CanvasText;
-  /* Creating a checkmark with CLIP-PATH */
-  transform-origin: bottom left;
-  clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
-}
-
-.service__quote__checkbox__option input[type="checkbox"]:checked::before {
-  transform: scale(1);
-}
-
-/* --------------------------------------- */
-/* CUSTOM CHECKBOX - FOCUSSED STATE        */
-/* --------------------------------------- */
-
-.service__quote__checkbox__option input[type="checkbox"]:focus {
-  outline: max(2px, 0.15em) solid
-    var(--color-quote-services-custom-checkbox-focus);
-  outline-offset: max(1px, 0.15em);
-}
-
-/* --------------------------------------- */
-/* CUSTOM CHECKBOX - DISABLED STATE        */
-/* --------------------------------------- */
-
-.service__quote__checkbox__option--disabled {
-  color: var(--color-quote-services-custom-checkbox-disabled);
-  cursor: not-allowed;
-}
-
-.service__quote__checkbox__option input[type="checkbox"]:disabled {
-  color: var(--color-quote-services-custom-checkbox-disabled);
-  cursor: not-allowed;
-}
-
-/* ------------------------------------------------------------------------- */
-/* TODO:  END OF STYLING OF CUSTOM CHECKBOX                                  */
-/* ------------------------------------------------------------------------- */
-
-/* ------------------------------------------ */
-/* FIXME:  INPUT FIELD TYPE =  EMAIL  FIXME:  */
-/* ------------------------------------------ */
-
-.service__quote__form__group input[type="email"] {
-  /* width: 25rem; */
-  width: 96%;
-  border-radius: 0.5rem;
-  border: 1px solid var(--color-quote-services-input-border);
-  margin: 0.5rem 1.4rem 0.5rem 1.4rem;
-  padding: 0.5rem 1rem 0.5rem 1rem;
-  font-size: 1.2rem;
-  cursor: pointer;
-  transition: border-color 0.15s, box-shadow 0.15s;
-}
-
-.service__quote__form__group input[type="email"]:focus {
-  border-color: var(--color-quote-services-input-border-focus);
-  box-shadow: 0 0 0 2px rgba(220, 20, 60, 0.95);
-  outline: 0;
-}
-
-/* ----------------------------- */
-/* FIXME:  FORM BUTTONS  FIXME:  */
-/* ----------------------------- */
-
-.service__quote__button__container button {
-  background: var(--color-quote-services-button-background);
-  color: var(--color-quote-services-button-text);
-  border: 0;
-  outline: 0;
-  border-radius: 0.5rem;
-  width: 20rem;
-  height: 3rem;
-  font-size: 1.2rem;
-  font-weight: 500;
-  letter-spacing: 0.1rem;
-  text-transform: uppercase;
-  margin: 0.5rem 2rem 3rem 2rem;
-  padding: 0.5rem 1rem 0.5rem 1rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  cursor: pointer;
-  text-decoration: none;
-  transition: transform 0.5s ease-in-out;
-}
-
-.service__quote__button__container button:hover {
-  transform: scale(1.05);
-}
-
-.service__quote__button__container {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-}
-
-/* ---------------------------------------------- */
-/* FIXME:  STYLING - GOOGLE RECAPTCHA  FIXME:     */
-/* ---------------------------------------------- */
-
-.service__quote__form__group .g-recaptcha {
-  margin: 2rem 1rem 2rem 1rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  /* transform: scale(0.89); */
-  transform: scale(1);
-  /* -webkit-transform: scale(0.89); */
-  -webkit-transform: scale(1);
-  transform-origin: 0 0;
-  -webkit-transform-origin: 0 0;
-}
-
-/* --------------------------------------------------------------- */
-/* FIXME:  FINAL MEDIA QUERY - REGISTRATION FORM (SMALLER SCREENS) */
-/* --------------------------------------------------------------- */
-
-@media screen and (max-width: 600px) {
-  .service__quote__button__container button {
-    margin: 0rem 1rem 2rem 1rem;
-    font-size: 1rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-  }
-
-  .service__quote__button__container {
-    flex-direction: column;
-  }
-
-  .service__quote__form__group label {
-    font-size: 1rem;
-    margin: 0rem 0.6rem 0rem 0.5rem;
-  }
-
-  .service__quote__form__group input[type="email"] {
-    margin: 0.5rem 0.2rem 0.5rem 0.2rem;
-  }
-
-  .service__quote__checkbox__option {
-    font-size: 1.1rem;
-    font-weight: 500;
-    margin: 2rem 2rem 2rem 0.1rem;
-  }
-
-  .service__quote__form__group select {
-    margin: 0.5rem 0.1rem 0.5rem 0.1rem;
-  }
-
-  .service__quote__form__group textarea {
-    margin: 0.5rem 0.1rem 0.5rem 0.1rem;
-  }
-
-  .service__quote__form__group input[type="tel"] {
-    margin: 0.5rem 0.1rem 0.5rem 0.1rem;
-  }
-
-  .service__quote__form__group input[type="text"] {
-    margin: 0.5rem 0.1rem 0.5rem 0.1rem;
-  }
-
-  .service__quote__form__group input[type="date"] {
-    margin: 0.5rem 0.1rem 0.5rem 0.1rem;
-  }
-
-  .service__quote__form__group input[type="number"] {
-    margin: 0.5rem 0.1rem 0.5rem 0.1rem;
-  }
-}
-
-@media screen and (max-width: 350px) {
-  .service__quote__form__group .g-recaptcha {
-    margin: 2rem 1.5rem 2rem 2rem;
-    transform: scale(0.8);
-    -webkit-transform: scale(0.8);
-  }
-}
-
-/* ===================================================================================================================== */
-/* ===================================================================================================================== */
-/* FIXME:FIXME:                        SECTION - REQUEST SERVICE QUOTE (END)                                FIXME:FIXME: */
 /* ===================================================================================================================== */
 /* ===================================================================================================================== */
 
