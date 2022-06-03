@@ -6430,25 +6430,25 @@ nav .clientzonewrapper .advertising-drop {
 /* FIXME:  STYLING - GOOGLE RECAPTCHA  FIXME:     */
 /* ---------------------------------------------- */
 
-.shopper__registration__form__group .g-recaptcha {
+/* .shopper__registration__form__group .g-recaptcha {
   width: 100%;
   margin: 0.5rem 0.5rem 0rem 2rem;
   display: flex;
   justify-content: center;
-  align-items: center;
-  /* transform: scale(0.89); */
-  transform: scale(0.95);
-  /* -webkit-transform: scale(0.89); */
-  -webkit-transform: scale(0.95);
+  align-items: center; */
+/* transform: scale(0.89); */
+/* transform: scale(0.95); */
+/* -webkit-transform: scale(0.89); */
+/* -webkit-transform: scale(0.95);
   transform-origin: 0 0;
   -webkit-transform-origin: 0 0;
-}
+} */
 
 /* --------------------------------------------------------------------------------------------------------- */
 /* FIXME:TODO:FIXME:  JAVASCRIPT TO MAKE GOOGLE RECAPTCHA A REQUIREMENT ON FORM SUBMISSION FIXME:TODO:FIXME: */
 /* --------------------------------------------------------------------------------------------------------- */
 
-#g-recaptcha-response {
+/* #g-recaptcha-responses .shopper__registration__form__group {
   display: block !important;
   position: absolute;
   margin: -50px 0 0 0 !important;
@@ -6462,7 +6462,7 @@ nav .clientzonewrapper .advertising-drop {
     transform: scale(0.67);
     -webkit-transform: scale(0.67);
   }
-}
+} */
 
 /* ===================================================================================================================== */
 /* TODO:  PART 4 - REGISTER AND LOGIN PAGE - LEFT AND RIGHT PANELS                                                       */
