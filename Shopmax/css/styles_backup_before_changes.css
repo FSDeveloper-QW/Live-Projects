@@ -211,14 +211,14 @@
   --color-investor-custom-checkbox-border: #ccc;
   --color-investor-custom-checkbox-background: white;
   --color-investor-custom-checkbox-checkmark: #434343;
-  --color-investor-custom-checkbox-focus: #434343;
+  --color-investor-custom-checkbox-focus: ##434343;
   --color-investor-custom-checkbox-disabled: #959495;
   /* CUSTOM CHECKBOX */
-  /* --color-investor-custom-checkbox-border: #ccc;
+  --color-investor-custom-checkbox-border: #ccc;
   --color-investor-custom-checkbox-background: white;
   --color-investor-custom-checkbox-checkmark: #434343;
   --color-investor-custom-checkbox-focus: #434343;
-  --color-investor-custom-checkbox-disabled: #959495; */
+  --color-investor-custom-checkbox-disabled: #959495;
   /* BUTTON - SELLING PLANS */
   --color-investor-selling-plan-buttons-background: #434343;
   --color-investor-selling-plan-buttons-text: white;
@@ -2847,7 +2847,7 @@ nav .clientzonewrapper .advertising-drop {
   position: relative;
   top: 0;
   left: 0;
-  /* transform: translateY(0%, 0%); */
+  transform: translateY(0%, 0%);
   width: 100%;
   height: 100%;
   justify-content: center;
@@ -2924,7 +2924,7 @@ nav .clientzonewrapper .advertising-drop {
   padding: 0.2rem 1rem 0.2rem 1rem;
   transition: 0.4s linear;
   border-radius: 0.5rem;
-  background: var(--color-button-background);
+  background-color: var(--color-button-background);
   outline: none;
   border: 1px solid white;
   z-index: 2;
@@ -3375,7 +3375,7 @@ nav .clientzonewrapper .advertising-drop {
   }
 }
 
-@media screen and (min-width: 1024px) and (min-height: 600px) {
+@media screen and (min-width: 1024px) and (min-height: 600) {
   .slider {
     min-height: 58.5vh;
   }
@@ -33662,7 +33662,7 @@ label .platinum__label__strong {
   position: relative;
   top: 0;
   left: 0;
-  /* transform: translateY(0%, 0%); */
+  transform: translateY(0%, 0%);
   width: 100%;
   height: 100%;
   justify-content: center;
@@ -33740,7 +33740,7 @@ label .platinum__label__strong {
   padding: 0.2rem 1rem 0.2rem 1rem;
   transition: 0.4s linear;
   border-radius: 0.5rem;
-  background: var(--color-kettie-meisie-button-background);
+  background-color: var(--color-kettie-meisie-button-background);
   outline: none;
   border: 1px solid white;
   z-index: 2;
@@ -34191,7 +34191,7 @@ label .platinum__label__strong {
   }
 }
 
-@media screen and (min-width: 1024px) and (min-height: 600px) {
+@media screen and (min-width: 1024px) and (min-height: 600) {
   .kettie__meisie__slider {
     min-height: 58.5vh;
   }
@@ -37702,7 +37702,7 @@ hr {
     display: flex;
     flex-direction: column;
     column-count: 1;
-    /* flex: wrap; */
+    flex: wrap;
     align-items: center;
     text-align: center;
   }
@@ -37900,7 +37900,7 @@ hr {
 }
 
 /* TODO:  NEST HUB  TODO: */
-@media screen and (min-width: 1024px) and (min-height: 600px) {
+@media screen and (min-width: 1024px) and (min-height: 600) {
 }
 
 /* TODO:  NEST HUB MAX  TODO: */
