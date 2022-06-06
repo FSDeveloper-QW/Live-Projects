@@ -9895,7 +9895,7 @@ nav .clientzonewrapper .advertising-drop {
 /* FIXME:  VIEW - MOBILE FIRST     */
 /* ------------------------------- */
 
-.a__to__z__whistleblowing__page__content {
+.a__to__z__whistleblowing__page__content section {
   margin: 1.5rem 0rem 1.5rem 0rem;
 }
 
@@ -9944,7 +9944,7 @@ nav .clientzonewrapper .advertising-drop {
   margin: 2rem 0rem 0rem 0rem;
 }
 
-.a__to__z__whistleblowing__buttons__container a {
+.a__to__z__whistleblowing__buttons__container button {
   text-decoration: none;
   text-transform: uppercase;
   width: 15rem;
@@ -9955,16 +9955,20 @@ nav .clientzonewrapper .advertising-drop {
   padding: 1rem 1rem 1rem 1rem;
   border: none;
   outline: none;
-  text-align: center;
   background: var(--color-button-background-atoz-whistleblowing);
-  color: var(--color-button-text-atoz-whistleblowing);
   border-radius: 0.5rem;
   box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.35);
   cursor: pointer;
-  transition: transform 0.3s ease-in-out;
+  transition: transform 0.5s ease-in-out;
 }
 
-.a__to__z__whistleblowing__buttons__container a:hover {
+.a__to__z__whistleblowing__buttons__container button a {
+  text-decoration: none;
+  color: var(--color-button-text-atoz-whistleblowing);
+  cursor: pointer;
+}
+
+.a__to__z__whistleblowing__buttons__container button:hover {
   transform: scale(1.05);
 }
 
@@ -9973,7 +9977,7 @@ nav .clientzonewrapper .advertising-drop {
 /* ------------------------------- */
 
 @media screen and (min-width: 720px) {
-  .a__to__z__whistleblowing__page__content h6 {
+  .a__to__z__whistleblowing__page__content section h6 {
     font-size: 1.6rem;
   }
 
@@ -10010,11 +10014,7 @@ nav .clientzonewrapper .advertising-drop {
     margin: 3rem 0rem 3rem 0rem;
   }
 
-  /* .a__to__z__whistleblowing__buttons__container button {
-    margin: 0rem 2rem 0rem 2rem;
-  } */
-
-  .a__to__z__whistleblowing__buttons__container a {
+  .a__to__z__whistleblowing__buttons__container button {
     margin: 0rem 2rem 0rem 2rem;
   }
 }
@@ -10440,8 +10440,6 @@ nav .clientzonewrapper .advertising-drop {
   width: 100%;
   height: 100%;
   padding: 0.45rem 0.75rem 0.45rem 0.75rem;
-  border: none;
-  outline: none;
   /* border-radius: 1.5rem; */
 }
 
@@ -10464,12 +10462,12 @@ nav .clientzonewrapper .advertising-drop {
 /* FIXME:  VIEW - MOBILE FIRST     */
 /* ------------------------------- */
 
-.what__we__do__page__content {
+.what__we__do__page__content section {
   margin: 1.5rem 0rem 0rem 0rem;
   background-color: var(--color-what-we-do-page-background);
 }
 
-.what__we__do__page__content h6 {
+.what__we__do__page__content section h6 {
   text-transform: uppercase;
   font-size: 1.3rem;
 }
@@ -10539,22 +10537,14 @@ nav .clientzonewrapper .advertising-drop {
   padding: 0.5rem 0rem 0.5rem 0rem;
 }
 
-.what__we__do__buttons__container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.what__we__do__link__pdf__brochure,
-.what__we__do__link__explainer__video {
+.what__we__do__buttons__container button {
   text-decoration: none;
   text-transform: uppercase;
   width: 15rem;
-  font-size: 0.9rem;
+  font-size: 1rem;
   font-weight: 600;
-  margin: 0rem 1rem 1rem 1rem;
-  padding: 0.75rem 0.5rem 0.75rem 0.5rem;
+  margin: 0rem 0rem 1rem 0rem;
+  padding: 1rem 1rem 1rem 1rem;
   letter-spacing: 0.05rem;
   border: none;
   outline: none;
@@ -10563,19 +10553,15 @@ nav .clientzonewrapper .advertising-drop {
   box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.35);
   transition: transform 0.5s ease-in-out;
   cursor: pointer;
-  text-align: center;
 }
 
-.what__we__do__link__pdf__brochure a,
-.what__we__do__link__explainer__video a {
+.what__we__do__buttons__container button a {
   text-decoration: none;
   color: var(--color-what-we-do-button-text);
   cursor: pointer;
-  margin: 0rem 0rem 0rem 0rem;
 }
 
-.what__we__do__link__pdf__brochure:hover,
-.what__we__do__link__explainer__video:hover {
+.what__we__do__buttons__container button:hover {
   transform: scale(1.04);
 }
 
@@ -10584,7 +10570,7 @@ nav .clientzonewrapper .advertising-drop {
 /* ------------------------------- */
 
 @media screen and (min-width: 720px) {
-  .what__we__do__page__content h6 {
+  .what__we__do__page__content section h6 {
     font-size: 1.6rem;
   }
 
@@ -10598,17 +10584,10 @@ nav .clientzonewrapper .advertising-drop {
     justify-content: center;
     align-items: center;
     margin: 2rem 0rem 2rem 0rem;
-    row-gap: 1rem;
   }
 
-  .what__we__do__link__pdf__brochure,
-  .what__we__do__link__explainer__video {
-    margin: 0rem 0.75rem 1rem 0.75rem;
-  }
-
-  .what__we__do__link__pdf__brochure a,
-  .what__we__do__link__explainer__video a {
-    margin: 0rem 0rem 0rem 0rem;
+  .what__we__do__buttons__container button {
+    margin: 0rem 1rem 0rem 0rem;
   }
 }
 
