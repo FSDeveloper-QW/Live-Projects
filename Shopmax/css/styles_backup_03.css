@@ -10242,7 +10242,7 @@ nav .clientzonewrapper .advertising-drop {
 /* FIXME:  VIEW - MOBILE FIRST     */
 /* ------------------------------- */
 
-.ue__page__content p {
+.ue__page__content section {
   margin: 1.5rem 0rem 1.5rem 0rem;
 }
 
@@ -10268,19 +10268,15 @@ nav .clientzonewrapper .advertising-drop {
   margin: 2rem 0rem 0rem 0rem;
 }
 
-.ue__link__certificate,
-.ue__link__website,
-.ue__link__membership,
-.ue__link__donations,
-.ue__link__contact {
+.ue__buttons__container button {
   text-decoration: none;
   text-transform: uppercase;
   width: 15rem;
-  font-size: 0.9rem;
+  font-size: 1rem;
   font-weight: 600;
   letter-spacing: 0.2rem;
   margin: 0rem 0rem 1rem 0rem;
-  padding: 1rem 0.5rem 1rem 0.5rem;
+  padding: 1rem 1rem 1rem 1rem;
   border: none;
   outline: none;
   background: var(--color-button-background-ue);
@@ -10288,24 +10284,15 @@ nav .clientzonewrapper .advertising-drop {
   box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.35);
   transition: transform 0.5s ease-in-out;
   cursor: pointer;
-  text-align: center;
 }
 
-.ue__link__certificate a,
-.ue__link__website a,
-.ue__link__membership a,
-.ue__link__donations a,
-.ue__link__contact a {
+.ue__buttons__container button a {
   text-decoration: none;
   color: var(--color-button-text-ue);
   cursor: pointer;
 }
 
-.ue__link__certificate:hover,
-.ue__link__website:hover,
-.ue__link__membership:hover,
-.ue__link__donations:hover,
-.ue__link__contact:hover {
+.ue__buttons__container button:hover {
   transform: scale(1.05);
 }
 
@@ -10325,23 +10312,10 @@ nav .clientzonewrapper .advertising-drop {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    margin: 2rem 0rem 2rem 0rem;
-    row-gap: 1rem;
+    margin: 3rem 0rem 3rem 0rem;
   }
 
-  .ue__link__certificate,
-  .ue__link__website,
-  .ue__link__membership,
-  .ue__link__donations,
-  .ue__link__contact {
-    margin: 1rem 1rem 1rem 1rem;
-  }
-
-  .ue__link__certificate a,
-  .ue__link__website a,
-  .ue__link__membership a,
-  .ue__link__donations a,
-  .ue__link__contact a {
+  .ue__buttons__container button {
     margin: 1rem 1rem 1rem 1rem;
   }
 }
