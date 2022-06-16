@@ -4963,19 +4963,6 @@ nav .clientzonewrapper .advertising-drop {
 /* ===================================================================================================================== */
 /* ===================================================================================================================== */
 
-/* .shopping__cart__page__title h5 {
-  position: relative;
-  top: 9rem;
-  display: flex;
-  justify-content: center;
-  justify-items: center;
-  text-transform: uppercase;
-  margin: 2.5rem 0rem 2.5rem 0rem;
-  text-align: center;
-  background: #eee;
-  border: 2px solid red;
-} */
-
 .shopping__cart__section {
   position: relative;
   top: 10rem;
@@ -4990,18 +4977,7 @@ nav .clientzonewrapper .advertising-drop {
   /* border: 2px solid red; */
 }
 
-.shopping__cart__section img {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-}
-
 @media screen and (max-width: 830px) {
-  /* .shopping__cart__page__title h5 {
-    position: relative;
-    top: 10rem;
-  } */
-
   .shopping__cart__section {
     position: relative;
     /* top: 9rem; */
@@ -5010,11 +4986,6 @@ nav .clientzonewrapper .advertising-drop {
 }
 
 @media screen and (max-width: 450px) {
-  /* .shopping__cart__page__title h5 {
-    position: relative;
-    top: 13.5rem;
-  } */
-
   .shopping__cart__section {
     position: relative;
     /* top: 12.5rem; */
@@ -5679,13 +5650,13 @@ nav .clientzonewrapper .advertising-drop {
   justify-content: center;
   /* align-items: center; */
   text-align: center;
-  font-size: 0.8rem;
-  font-weight: 700;
+  font-size: 0.85rem;
+  font-weight: 500;
   font-family: "Poppins", sans-serif;
   text-transform: uppercase;
   line-height: 1.8;
   color: black;
-  margin: 0rem 0.5rem 1rem 0.5rem;
+  margin: 0.25rem 0.5rem 1rem 0.5rem;
   /* border: 1px solid red; */
 }
 
@@ -5732,11 +5703,19 @@ input.discount__code {
   width: 100%;
   height: 2rem;
   font-size: 1.2rem;
-  font-weight: 500;
-  text-transform: lowercase;
+  font-weight: 700;
+  text-transform: uppercase;
   outline: none;
   border: none;
+  color: #dc143c;
   /* border: 1px solid lightgray; */
+}
+
+input.discount__code::placeholder {
+  color: black;
+  font-size: 1rem;
+  font-weight: 500;
+  text-transform: lowercase;
 }
 
 .apply__discount__button button {
@@ -5821,12 +5800,13 @@ input.discount__code {
   align-items: center;
   text-align: left;
   height: 3rem;
-  margin: 0.5rem 0.5rem 0.5rem 0.5rem;
+  border-top: 2px solid #e5e4e2;
+  margin: 0.5rem 1rem 0.5rem 1rem;
   /* border: 1px solid red; */
 }
 
 .subtotal__title {
-  width: 50%;
+  width: 45%;
 }
 
 .subtotal__title p {
@@ -5860,7 +5840,7 @@ input.discount__code {
 }
 
 .subtotal__value {
-  width: 40%;
+  width: 45%;
 }
 
 .subtotal__value span {
@@ -5887,12 +5867,12 @@ input.discount__code {
   align-items: center;
   text-align: left;
   height: 3rem;
-  margin: 0.5rem 0.5rem 0.5rem 0.5rem;
+  margin: 0.5rem 1rem 0.5rem 1rem;
   /* border: 1px solid red; */
 }
 
 .shipping__cost__title {
-  width: 50%;
+  width: 45%;
 }
 
 .shipping__cost__title p {
@@ -5926,7 +5906,7 @@ input.discount__code {
 }
 
 .shipping__cost__value {
-  width: 40%;
+  width: 45%;
 }
 
 .shipping__cost__value span {
@@ -5953,12 +5933,12 @@ input.discount__code {
   align-items: center;
   text-align: left;
   height: 3rem;
-  margin: 0.5rem 0.5rem 0.5rem 0.5rem;
+  margin: 0.5rem 1rem 0.5rem 1rem;
   /* border: 1px solid red; */
 }
 
 .discount__amount__title {
-  width: 50%;
+  width: 45%;
 }
 
 .discount__amount__title p {
@@ -5992,7 +5972,7 @@ input.discount__code {
 }
 
 .discount__amount__value {
-  width: 40%;
+  width: 45%;
 }
 
 .discount__amount__value span {
@@ -6019,12 +5999,14 @@ input.discount__code {
   align-items: center;
   text-align: left;
   height: 3rem;
-  margin: 0.5rem 0.5rem 0.5rem 0.5rem;
+  margin: 0.5rem 1rem 0.5rem 1rem;
+  border-top: 2px solid #e5e4e2;
+  border-bottom: 2px solid #e5e4e2;
   /* border: 1px solid red; */
 }
 
 .total__price__title {
-  width: 50%;
+  width: 45%;
 }
 
 .total__price__title p {
@@ -6058,7 +6040,7 @@ input.discount__code {
 }
 
 .total__price__value {
-  width: 40%;
+  width: 45%;
 }
 
 .total__price__value span {
@@ -6075,13 +6057,31 @@ input.discount__code {
   /* border: 1px solid green; */
 }
 
+.shipping__cost__reason p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  height: 4rem;
+  font-size: 0.85rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: black;
+  margin: 0rem 0rem 0rem 0rem;
+  padding: 0rem 1rem 0rem 1rem;
+  /* border-radius: 0rem 0rem 1rem 1rem; */
+  /* border: 1px solid green; */
+}
+
 .vat__statement p {
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
   width: 100%;
   height: 3rem;
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   font-weight: 700;
   text-transform: uppercase;
   color: black;
@@ -6092,11 +6092,11 @@ input.discount__code {
 
 /* ===================================================================================================================== */
 /* ===================================================================================================================== */
-/* TODO:TODO:                         SECTION - REQUEST PRODUCT QUOTE (START)                                 TODO:TODO: */
+/* TODO:TODO:                         SHOPPING CART (FORM) - BILLING DETAILS                                  TODO:TODO: */
 /* ===================================================================================================================== */
 /* ===================================================================================================================== */
 
-/* .product__quote__page__title h5 {
+/* .shopmax__shopping__cart__page__title h5 {
   position: relative;
   top: 9rem;
   display: flex;
@@ -6109,7 +6109,7 @@ input.discount__code {
   border: 2px solid red;
 } */
 
-.product__quote__section {
+.shopmax__shopping__cart__section {
   position: relative;
   /* top: 9rem; */
   top: 0rem;
@@ -6126,18 +6126,18 @@ input.discount__code {
   /* border: 2px solid red; */
 }
 
-/* .product__quote__section img {
+/* .shopmax__shopping__cart__section img {
   width: 100%;
   height: 100%;
   object-fit: contain;
 } */
 
 @media screen and (max-width: 830px) {
-  /* .product__quote__page__title h5 {
+  /* .shopmax__shopping__cart__page__title h5 {
     position: relative;
     top: 10rem;
   } */
-  .product__quote__section {
+  .shopmax__shopping__cart__section {
     position: relative;
     /* top: 9rem; */
     /* top: 10rem; */
@@ -6146,12 +6146,12 @@ input.discount__code {
 }
 
 @media screen and (max-width: 450px) {
-  /* .product__quote__page__title h5 {
+  /* .shopmax__shopping__cart__page__title h5 {
     position: relative;
     top: 13.5rem;
   } */
 
-  .product__quote__section {
+  .shopmax__shopping__cart__section {
     position: relative;
     /* top: 12.5rem; */
     /* top: 13.5rem; */
@@ -6160,14 +6160,14 @@ input.discount__code {
 }
 
 /* ===================================================================================================================== */
-/* TODO:  PART 1 - REQUEST PRODUCT QUOTE - PAGE TITLE                                                                    */
+/* TODO:  SHOPPING CART (FORM)                                                                                           */
 /* ===================================================================================================================== */
 
 /* ------------------------------- */
 /* FIXME:  VIEW - MOBILE FIRST     */
 /* ------------------------------- */
 
-.products__quote__page__title h5 {
+/* .products__quote__page__title h5 {
   display: flex;
   justify-content: center;
   justify-items: center;
@@ -6175,21 +6175,21 @@ input.discount__code {
   margin: 0rem 0rem 0rem 0rem;
   padding: 1.5rem 0rem 0rem 0rem;
   text-align: center;
-}
+} */
 
 /* ------------------------------- */
 /* FIXME:  VIEW - LARGER SCREENS   */
 /* ------------------------------- */
 
 /* ===================================================================================================================== */
-/* TODO:  PART 2A - REQUEST PRODUCT QUOTE                                                                                */
+/* TODO:  SHOPPING CART (HEADER)                                                                                         */
 /* ===================================================================================================================== */
 
 /* ------------------------------- */
 /* FIXME:  VIEW - MOBILE FIRST     */
 /* ------------------------------- */
 
-.product__quote__form__header {
+.shopmax__shopping__cart__form__header {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -6209,7 +6209,7 @@ input.discount__code {
 /* FIXME:  PRIVACY STATEMENT */
 /* ------------------------- */
 
-.product__quote__privacy__statement {
+.shopmax__shopping__cart__privacy__statement {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -6219,12 +6219,12 @@ input.discount__code {
   text-transform: uppercase;
 }
 
-.product__quote__privacy__statement strong {
+.shopmax__shopping__cart__privacy__statement strong {
   text-decoration: none;
   color: var(--color-quote-products-privacy-text);
 }
 
-.product__quote__privacy__statement a {
+.shopmax__shopping__cart__privacy__statement a {
   text-decoration: none;
   color: var(--color-quote-products-privacy-text);
   cursor: pointer;
@@ -6234,7 +6234,7 @@ input.discount__code {
 /* FIXME:  SHIPPING STATEMENT  */
 /* --------------------------- */
 
-.product__quote__delivery__cost {
+.shopmax__shopping__cart__delivery__cost {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -6244,12 +6244,12 @@ input.discount__code {
   text-transform: uppercase;
 }
 
-.product__quote__delivery__cost strong {
+.shopmax__shopping__cart__delivery__cost strong {
   text-decoration: none;
   color: var(--color-quote-products-delivery-cost-text);
 }
 
-.product__quote__delivery__cost a {
+.shopmax__shopping__cart__delivery__cost a {
   text-decoration: none;
   color: var(--color-quote-products-delivery-cost-text);
   cursor: pointer;
@@ -6260,7 +6260,7 @@ input.discount__code {
 /* ------------------------------- */
 
 @media screen and (max-width: 430px) {
-  .product__quote__form__header {
+  .shopmax__shopping__cart__form__header {
     font-size: 1rem;
     text-align: center;
   }
@@ -6278,11 +6278,11 @@ input.discount__code {
 /* FIXME:  FORM LABEL  FIXME:                     */
 /* ---------------------------------------------- */
 
-.product__quote__form__group {
+.shopmax__shopping__cart__form__group {
   margin: 0rem 0rem 1rem 1rem;
 }
 
-.product__quote__form__group label {
+.shopmax__shopping__cart__form__group label {
   display: block;
   font-size: 1.2rem;
   font-weight: 600;
@@ -6290,7 +6290,7 @@ input.discount__code {
   margin: 0.5rem 1.75rem 0.5rem 1.75rem;
 }
 
-.product__quote__form__group input::placeholder {
+.shopmax__shopping__cart__form__group input::placeholder {
   font-family: "Poppins", sans-serif;
 }
 
@@ -6299,7 +6299,7 @@ input.discount__code {
 /* e.g. "NAME" or "LAST NAME" etc.                */
 /* ---------------------------------------------- */
 
-.product__quote__form__group input[type="text"] {
+.shopmax__shopping__cart__form__group input[type="text"] {
   /* width: 25rem; */
   width: 96%;
   border-radius: 0.5rem;
@@ -6311,10 +6311,15 @@ input.discount__code {
   transition: border-color 0.15s, box-shadow 0.15s;
 }
 
-.product__quote__form__group input[type="text"]:focus {
+.shopmax__shopping__cart__form__group input[type="text"]:focus {
   border-color: var(--color-quote-products-input-border-focus);
   box-shadow: 0 0 0 2px rgba(220, 20, 60, 0.95);
   outline: 0;
+}
+
+.shopmax__shopping__cart__form__group input[type="text"]::placeholder {
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
 }
 
 /* ---------------------------------------------- */
@@ -6322,7 +6327,7 @@ input.discount__code {
 /* e.g. "TELEPHONE" or "MOBILE" Number etc.       */
 /* ---------------------------------------------- */
 
-.product__quote__form__group input[type="tel"] {
+.shopmax__shopping__cart__form__group input[type="tel"] {
   /* width: 25rem; */
   width: 96%;
   border-radius: 0.5rem;
@@ -6334,10 +6339,42 @@ input.discount__code {
   transition: border-color 0.15s, box-shadow 0.15s;
 }
 
-.product__quote__form__group input[type="tel"]:focus {
+.shopmax__shopping__cart__form__group input[type="tel"]:focus {
   border-color: var(--color-quote-products-input-border-focus);
   box-shadow: 0 0 0 2px rgba(220, 20, 60, 0.95);
   outline: 0;
+}
+
+.shopmax__shopping__cart__form__group input[type="tel"]::placeholder {
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+}
+
+/* ------------------------------------------ */
+/* FIXME:  INPUT FIELD TYPE =  EMAIL  FIXME:  */
+/* ------------------------------------------ */
+
+.shopmax__shopping__cart__form__group input[type="email"] {
+  /* width: 25rem; */
+  width: 96%;
+  border-radius: 0.5rem;
+  border: 1px solid var(--color-quote-products-input-border);
+  margin: 0.5rem 1.4rem 0.5rem 1.4rem;
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: border-color 0.15s, box-shadow 0.15s;
+}
+
+.shopmax__shopping__cart__form__group input[type="email"]:focus {
+  border-color: var(--color-quote-products-input-border-focus);
+  box-shadow: 0 0 0 2px rgba(220, 20, 60, 0.95);
+  outline: 0;
+}
+
+.shopmax__shopping__cart__form__group input[type="email"]::placeholder {
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
 }
 
 /* ---------------------------------------------- */
@@ -6345,7 +6382,7 @@ input.discount__code {
 /* Runs over multiple lines (rows) e.g. "Address" */
 /* ---------------------------------------------- */
 
-.product__quote__form__group textarea {
+.shopmax__shopping__cart__form__group textarea {
   resize: none;
   /* width: 25rem; */
   width: 96%;
@@ -6359,17 +6396,22 @@ input.discount__code {
   transition: border-color 0.15s, box-shadow 0.15s;
 }
 
-.product__quote__form__group textarea:focus {
+.shopmax__shopping__cart__form__group textarea:focus {
   border-color: var(--color-quote-products-input-border-focus);
   box-shadow: 0 0 0 2px rgba(220, 20, 60, 0.95);
   outline: 0;
+}
+
+.shopmax__shopping__cart__form__group textarea::placeholder {
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
 }
 
 /* ---------------------------------------------- */
 /* FIXME:  INPUT FIELD TYPE =  NUMBER  FIXME:     */
 /* ---------------------------------------------- */
 
-.product__quote__form__group input[type="number"] {
+.shopmax__shopping__cart__form__group input[type="number"] {
   /* width: 25rem; */
   width: 96%;
   border-radius: 0.5rem;
@@ -6382,7 +6424,7 @@ input.discount__code {
   transition: border-color 0.15s, box-shadow 0.15s;
 }
 
-.product__quote__form__group input[type="number"]:focus {
+.shopmax__shopping__cart__form__group input[type="number"]:focus {
   border-color: var(--color-quote-products-input-border-focus);
   box-shadow: 0 0 0 2px rgba(220, 20, 60, 0.95);
   outline: 0;
@@ -6392,7 +6434,7 @@ input.discount__code {
 /* FIXME:  INPUT FIELD TYPE =  DATE  FIXME:       */
 /* ---------------------------------------------- */
 
-.product__quote__form__group input[type="date"] {
+.shopmax__shopping__cart__form__group input[type="date"] {
   /* width: 25rem; */
   width: 96%;
   border-radius: 0.5rem;
@@ -6404,10 +6446,15 @@ input.discount__code {
   transition: border-color 0.15s, box-shadow 0.15s;
 }
 
-.product__quote__form__group input[type="date"]:focus {
+.shopmax__shopping__cart__form__group input[type="date"]:focus {
   border-color: var(--color-quote-products-input-border-focus);
   box-shadow: 0 0 0 2px rgba(220, 20, 60, 0.95);
   outline: 0;
+}
+
+.shopmax__shopping__cart__form__group input[type="date"]::placeholder {
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
 }
 
 /* ---------------------------------------------- */
@@ -6415,7 +6462,7 @@ input.discount__code {
 /* e.g. Countries, Provinces, Titles etc.         */
 /* ---------------------------------------------- */
 
-.product__quote__form__group select {
+.shopmax__shopping__cart__form__group select {
   /* width: 25rem; */
   width: 96%;
   border-radius: 0.5rem;
@@ -6427,10 +6474,15 @@ input.discount__code {
   transition: border-color 0.15s, box-shadow 0.15s;
 }
 
-.product__quote__form__group select:focus {
+.shopmax__shopping__cart__form__group select:focus {
   border-color: var(--color-quote-products-input-border-focus);
   box-shadow: 0 0 0 2px rgba(220, 20, 60, 0.95);
   outline: 0;
+}
+
+.shopmax__shopping__cart__form__group select::placeholder {
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
 }
 
 /* ------------------------------------------------------------------------- */
@@ -6441,7 +6493,7 @@ input.discount__code {
 /* FIXME:  INPUT FIELD = CHECKBOX  FIXME:  */
 /* --------------------------------------- */
 
-.product__quote__checkbox__option {
+.shopmax__shopping__cart__checkbox__option {
   font-size: 1.2rem;
   font-weight: 500;
   line-height: 1.25;
@@ -6456,7 +6508,7 @@ input.discount__code {
   /* border: 1px solid red; */
 }
 
-label.product__quote__checkbox__option {
+label.shopmax__shopping__cart__checkbox__option {
   display: grid;
   text-transform: initial;
   font-size: 1.2rem;
@@ -6469,7 +6521,7 @@ label.product__quote__checkbox__option {
 /* THIS IS TO HIDE THE NATIVE CHECKBOX  */
 /* ------------------------------------ */
 
-.product__quote__checkbox__option input[type="checkbox"] {
+.shopmax__shopping__cart__checkbox__option input[type="checkbox"] {
   /* Add if not using autoprefixer */
   -webkit-appearance: none;
   appearance: none;
@@ -6483,7 +6535,7 @@ label.product__quote__checkbox__option {
 /* THIS IS TO DISPLAY THE CUSTOM CHECKBOX  */
 /* --------------------------------------- */
 
-.product__quote__checkbox__option input[type="checkbox"] {
+.shopmax__shopping__cart__checkbox__option input[type="checkbox"] {
   appearance: none;
   background-color: var(--color-quote-products-custom-checkbox-background);
   margin: 0;
@@ -6499,7 +6551,8 @@ label.product__quote__checkbox__option {
   cursor: pointer;
 }
 
-.product__quote__checkbox__option + .product__quote__checkbox__option {
+.shopmax__shopping__cart__checkbox__option
+  + .shopmax__shopping__cart__checkbox__option {
   margin-top: 1rem;
 }
 
@@ -6507,7 +6560,7 @@ label.product__quote__checkbox__option {
 /* CUSTOM CHECKBOX - CHECKED STATE         */
 /* --------------------------------------- */
 
-.product__quote__checkbox__option input[type="checkbox"]::before {
+.shopmax__shopping__cart__checkbox__option input[type="checkbox"]::before {
   content: "";
   width: 0.7rem;
   height: 0.7rem;
@@ -6522,7 +6575,8 @@ label.product__quote__checkbox__option {
   clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
 }
 
-.product__quote__checkbox__option input[type="checkbox"]:checked::before {
+.shopmax__shopping__cart__checkbox__option
+  input[type="checkbox"]:checked::before {
   transform: scale(1);
 }
 
@@ -6530,7 +6584,7 @@ label.product__quote__checkbox__option {
 /* CUSTOM CHECKBOX - FOCUSSED STATE        */
 /* --------------------------------------- */
 
-.product__quote__checkbox__option input[type="checkbox"]:focus {
+.shopmax__shopping__cart__checkbox__option input[type="checkbox"]:focus {
   outline: max(2px, 0.15em) solid
     var(--color-quote-products-custom-checkbox-focus);
   outline-offset: max(1px, 0.15em);
@@ -6540,12 +6594,12 @@ label.product__quote__checkbox__option {
 /* CUSTOM CHECKBOX - DISABLED STATE        */
 /* --------------------------------------- */
 
-.product__quote__checkbox__option--disabled {
+.shopmax__shopping__cart__checkbox__option--disabled {
   color: var(--color-quote-products-custom-checkbox-disabled);
   cursor: not-allowed;
 }
 
-.product__quote__checkbox__option input[type="checkbox"]:disabled {
+.shopmax__shopping__cart__checkbox__option input[type="checkbox"]:disabled {
   color: var(--color-quote-products-custom-checkbox-disabled);
   cursor: not-allowed;
 }
@@ -6554,45 +6608,23 @@ label.product__quote__checkbox__option {
 /* TODO:  END OF STYLING OF CUSTOM CHECKBOX                                  */
 /* ------------------------------------------------------------------------- */
 
-/* ------------------------------------------ */
-/* FIXME:  INPUT FIELD TYPE =  EMAIL  FIXME:  */
-/* ------------------------------------------ */
+/* -------------------------------------------------- */
+/* FIXME:  FORM BUTTONS (SUBMISSION & CLEAR)  FIXME:  */
+/* -------------------------------------------------- */
 
-.product__quote__form__group input[type="email"] {
-  /* width: 25rem; */
-  width: 96%;
-  border-radius: 0.5rem;
-  border: 1px solid var(--color-quote-products-input-border);
-  margin: 0.5rem 1.4rem 0.5rem 1.4rem;
-  padding: 0.5rem 1rem 0.5rem 1rem;
-  font-size: 1.2rem;
-  cursor: pointer;
-  transition: border-color 0.15s, box-shadow 0.15s;
-}
-
-.product__quote__form__group input[type="email"]:focus {
-  border-color: var(--color-quote-products-input-border-focus);
-  box-shadow: 0 0 0 2px rgba(220, 20, 60, 0.95);
-  outline: 0;
-}
-
-/* ----------------------------- */
-/* FIXME:  FORM BUTTONS  FIXME:  */
-/* ----------------------------- */
-
-.product__quote__button__container button {
+.shopmax__shopping__cart__button__container button {
   background: var(--color-quote-products-button-background);
   color: var(--color-quote-products-button-text);
   border: 0;
   outline: 0;
   border-radius: 0.5rem;
-  width: 20rem;
+  width: 15rem;
   height: 3rem;
-  font-size: 1.2rem;
-  font-weight: 500;
+  font-size: 1rem;
+  font-weight: 600;
   letter-spacing: 0.1rem;
   text-transform: uppercase;
-  margin: 0.5rem 2rem 3rem 2rem;
+  margin: 0.5rem 2rem 2rem 2rem;
   padding: 0.5rem 1rem 0.5rem 1rem;
   display: flex;
   justify-content: center;
@@ -6601,28 +6633,75 @@ label.product__quote__checkbox__option {
   cursor: pointer;
   text-decoration: none;
   transition: transform 0.5s ease-in-out;
+  box-shadow: var(--color-box-shadow-01);
 }
 
-.product__quote__button__container button:hover {
+.shopmax__shopping__cart__button__container button:hover {
   transform: scale(1.05);
 }
 
-.product__quote__button__container {
+.shopmax__shopping__cart__button__container {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
 }
 
-/* .product__quote__form__group {
-  margin: 0rem 0rem 1rem 1rem;
-} */
+/* -------------------------------------------------- */
+/* FIXME:  FORM BUTTONS (PAYMENT OPTIONS)     FIXME:  */
+/* -------------------------------------------------- */
+
+/* ------------------------------ */
+/* PAYFAST & YOCO PAYMENT OPTIONS */
+/* ------------------------------ */
+
+.shopmax__shopping__cart__button__container a {
+  border: 0;
+  outline: 0;
+  border-radius: 0.5rem;
+  width: 15rem;
+  height: 3rem;
+  font-size: 1rem;
+  font-weight: 500;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+  margin: 0.5rem 2rem 2rem 2rem;
+  padding: 0.25rem 1rem 0.25rem 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  cursor: pointer;
+  text-decoration: none;
+  transition: transform 0.5s ease-in-out;
+  box-shadow: var(--color-box-shadow-01);
+}
+
+.shopmax__shopping__cart__button__container a:hover {
+  transform: scale(1.05);
+}
+
+.shopmax__shopping__cart__button__container a img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.payfast__payment {
+  background: white;
+  color: black;
+}
+
+.yoco__payment {
+  background: #00a9e0;
+  color: white;
+}
 
 /* ---------------------------------------------- */
 /* FIXME:  STYLING - GOOGLE RECAPTCHA  FIXME:     */
 /* ---------------------------------------------- */
 
-.product__quote__form__group .g-recaptcha {
+.shopmax__shopping__cart__form__group .g-recaptcha {
   margin: 2rem 1rem 2rem 1rem;
   display: flex;
   justify-content: center;
@@ -6640,7 +6719,7 @@ label.product__quote__checkbox__option {
 /* --------------------------------------------------------------- */
 
 @media screen and (max-width: 600px) {
-  .product__quote__button__container button {
+  .shopmax__shopping__cart__button__container button {
     margin: 0rem 1rem 2rem 1rem;
     font-size: 1rem;
     display: flex;
@@ -6649,58 +6728,54 @@ label.product__quote__checkbox__option {
     text-align: center;
   }
 
-  .product__quote__button__container {
+  .shopmax__shopping__cart__button__container {
     flex-direction: column;
   }
 
-  /* .file-input {
-    margin: 1rem 0.2rem 1rem 0.2rem;
-  } */
-
-  .product__quote__form__group label {
+  .shopmax__shopping__cart__form__group label {
     font-size: 1rem;
     margin: 0rem 0.6rem 0rem 0.5rem;
   }
 
-  .product__quote__form__group input[type="email"] {
+  .shopmax__shopping__cart__form__group input[type="email"] {
     margin: 0.5rem 0.2rem 0.5rem 0.2rem;
   }
 
-  .product__quote__checkbox__option {
+  .shopmax__shopping__cart__checkbox__option {
     font-size: 1.1rem;
     font-weight: 500;
     margin: 2rem 2rem 2rem 0.1rem;
     /* border: 1px solid red; */
   }
 
-  .product__quote__form__group select {
+  .shopmax__shopping__cart__form__group select {
     margin: 0.5rem 0.1rem 0.5rem 0.1rem;
   }
 
-  .product__quote__form__group textarea {
+  .shopmax__shopping__cart__form__group textarea {
     margin: 0.5rem 0.1rem 0.5rem 0.1rem;
   }
 
-  .product__quote__form__group input[type="tel"] {
+  .shopmax__shopping__cart__form__group input[type="tel"] {
     margin: 0.5rem 0.1rem 0.5rem 0.1rem;
   }
 
-  .product__quote__form__group input[type="text"] {
+  .shopmax__shopping__cart__form__group input[type="text"] {
     margin: 0.5rem 0.1rem 0.5rem 0.1rem;
   }
 
-  .product__quote__form__group input[type="date"] {
+  .shopmax__shopping__cart__form__group input[type="date"] {
     margin: 0.5rem 0.1rem 0.5rem 0.1rem;
   }
 
-  .product__quote__form__group input[type="number"] {
+  .shopmax__shopping__cart__form__group input[type="number"] {
     margin: 0.5rem 0.1rem 0.5rem 0.1rem;
   }
 }
 
 @media screen and (max-width: 350px) {
-  .product__quote__form__group .g-recaptcha {
-    margin: 2rem 1.5rem 2rem 2rem;
+  .shopmax__shopping__cart__form__group .g-recaptcha {
+    margin: 2rem 0.5rem 2rem 4rem;
     transform: scale(0.8);
     -webkit-transform: scale(0.8);
   }

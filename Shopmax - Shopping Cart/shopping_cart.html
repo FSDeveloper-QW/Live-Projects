@@ -8700,13 +8700,7 @@
     <!-- ====================================================================================================== -->
     <!-- ====================================================================================================== -->
 
-    <!-- <div id="section-shopping-cart" class="shopping__cart__page__title">
-        <h5><strong></strong></h5>
-    </div> -->
-
     <div id="section-shopping-cart" class="shopping__cart__section">
-      <!-- <img src="images/banner_01.webp" alt="" /> -->
-
       <!-- FIXME:FIXME:FIXME:FIXME:  REPLACE BELOW -->
 
       <!-- ==================================================================================================== -->
@@ -8842,7 +8836,7 @@
 
           <div class="cart__summary__title">
             <p class="main__title">cart summary</p>
-            <p class="sub__title">(Currency: SA Rand)</p>
+            <p class="sub__title">Currency: South African Rand</p>
           </div>
 
           <!-- ================================================== -->
@@ -8865,7 +8859,7 @@
               type="text"
               value=""
               name="Discount Code"
-              placeholder="enter discount code"
+              placeholder="enter discount code here"
               minlength="3"
               maxlength="10"
               autocomplete="off"
@@ -8905,11 +8899,11 @@
           <!-- ======================================= -->
           <div class="cart__summary__shipping__cost__container">
             <div class="shipping__cost__title">
-              <p>+ shipping</p>
+              <p>+ shipping **</p>
             </div>
             <div class="shipping__cost__currency"><p>R</p></div>
             <div class="shipping__cost__value">
-              <span>99</span>
+              <span>179</span>
             </div>
           </div>
 
@@ -8937,8 +8931,19 @@
             </div>
             <div class="total__price__currency"><p>R</p></div>
             <div class="total__price__value">
-              <span>15548</span>
+              <span>15628</span>
             </div>
+          </div>
+
+          <!-- =========================================== -->
+          <!-- FIXME:  SECTION: SHIPPING STATEMENT  FIXME: -->
+          <!-- =========================================== -->
+
+          <div class="shipping__cost__reason">
+            <p>
+              ** Default Shipping Cost applied for delivery to your doorstop
+              anywhere is South Africa
+            </p>
           </div>
 
           <!-- ====================================== -->
@@ -8951,28 +8956,37 @@
         </div>
       </div>
 
-      <!-- ==================================================================================================== -->
-      <!-- TODO:                             CART BILLING INFORMATION                                     TODO: -->
-      <!-- ==================================================================================================== -->
+      <!-- ========================================================================================================= -->
+      <!-- TODO:                                     SHOPPING CART (FORM)                                      TODO: -->
+      <!-- ========================================================================================================= -->
 
-      <div id="section-product-quote-content" class="product__quote__section">
-        <!-- ------------------------------------------------------------------------------------------------------ -->
-        <!--                 TODO:  PART 2 - FORM COMPONENT - REQUEST PRODUCT QUOTE  TODO:                          -->
-        <!-- ------------------------------------------------------------------------------------------------------ -->
-        <form action="" name="" method="post">
-          <!-- ---------------------------------------------------------------------------------------------------- -->
-          <!--                                  TODO:  SECTION 01  TODO:                                            -->
-          <!-- ---------------------------------------------------------------------------------------------------- -->
-          <!-- -------------------------------------------------- -->
-          <!-- FIXME:  HEADER - DETAILS OF THE PRODUCT/S  FIXME:  -->
-          <!-- -------------------------------------------------- -->
-          <div class="product__quote__form__header">
-            section 1 : Your billing details
+      <div
+        id="section-shopping-cart-form"
+        class="shopmax__shopping__cart__section"
+      >
+        <!-- FORM START -->
+        <form
+          action="https://formspree.io/f/myyoojwl"
+          name="SHOPPING CART ORDER FORM"
+          method="post"
+        >
+          <!-- =============================== -->
+          <!-- TODO:  SECTION 1 (TITLE)  TODO: -->
+          <!-- =============================== -->
+
+          <!-- ================================================ -->
+          <!-- FIXME:  HEADER - BUYER'S BILLING DETAILS  FIXME: -->
+          <!-- ================================================ -->
+
+          <div class="shopmax__shopping__cart__form__header">
+            section 1 : Shopper's billing details for invoicing
           </div>
-          <!-- --------------------------------------------------- -->
-          <!-- FIXME:  SUB-HEADER - POPI & PRIVACY POLICY  FIXME:  -->
-          <!-- --------------------------------------------------- -->
-          <div class="product__quote__privacy__statement">
+
+          <!-- ==================================================== -->
+          <!-- FIXME:  NOTIFICATION - POPI & PRIVACY POLICY  FIXME: -->
+          <!-- ==================================================== -->
+
+          <div class="shopmax__shopping__cart__privacy__statement">
             <p>
               view our<a href="pdf/shopmax_popi_policy.pdf" target="_blank"
                 ><strong>&nbsp;&nbsp;POPI&nbsp;&nbsp;</strong></a
@@ -8981,141 +8995,163 @@
               >Policies.
             </p>
           </div>
-          <!-- ----------------------------- -->
-          <!-- FIXME:  SELECT TITLE  FIXME:  -->
-          <!-- ----------------------------- -->
-          <div class="product__quote__form__group">
-            <label for="title">title</label>
+
+          <!-- ===================================== -->
+          <!-- TODO:  SECTION 1 (FORM-INPUTS)  TODO: -->
+          <!-- ===================================== -->
+
+          <!-- ===================================== -->
+          <!-- FIXME:          TITLE          FIXME: -->
+          <!-- ===================================== -->
+
+          <div class="shopmax__shopping__cart__form__group">
+            <label for="title">title *</label>
             <select id="title" name="Title" required>
-              <option value="" selected>Select your title *</option>
-              <option name="MR" value="Mr">Mr</option>
-              <option name="MRS" value="Mrs">Mrs</option>
-              <option name="MS" value="Ms">Ms</option>
-              <option name="MISS" value="Miss">Miss</option>
+              <option value="" selected>-</option>
+              <option id="MR" value="Mr">Mr</option>
+              <option id="MRS" value="Mrs">Mrs</option>
+              <option id="MS" value="Ms">Ms</option>
+              <option id="MISS" value="Miss">Miss</option>
             </select>
           </div>
-          <!-- -------------------------------- -->
-          <!-- FIXME:  ENTER YOUR NAME  FIXME:  -->
-          <!-- -------------------------------- -->
-          <div class="product__quote__form__group">
-            <label for="name">name</label>
+
+          <!-- ===================================== -->
+          <!-- FIXME:           NAME          FIXME: -->
+          <!-- ===================================== -->
+
+          <div class="shopmax__shopping__cart__form__group">
+            <label for="name">name *</label>
             <input
               id="name"
               type="text"
               value=""
               name="Client Name"
-              placeholder="enter your name *"
+              placeholder="shopper's name"
               minlength="3"
               maxlength="50"
               autocomplete="off"
               required
             />
           </div>
-          <!-- ----------------------------------- -->
-          <!-- FIXME:  ENTER YOUR SURNAME  FIXME:  -->
-          <!-- ----------------------------------- -->
-          <div class="product__quote__form__group">
-            <label for="surname">surname</label>
+
+          <!-- ===================================== -->
+          <!-- FIXME:          SURNAME        FIXME: -->
+          <!-- ===================================== -->
+
+          <div class="shopmax__shopping__cart__form__group">
+            <label for="surname">surname *</label>
             <input
               id="surname"
               type="text"
               value=""
               name="Client Surname"
-              placeholder="enter your surname *"
+              placeholder="shopper's surname"
               minlength="3"
               maxlength="50"
               autocomplete="off"
               required
             />
           </div>
-          <!-- ----------------------------------------- -->
-          <!-- FIXME:  ENTER YOUR MOBILE NUMBER  FIXME:  -->
-          <!-- ----------------------------------------- -->
-          <div class="product__quote__form__group">
-            <label for="mobile">mobile</label>
+
+          <!-- ===================================== -->
+          <!-- FIXME:      MOBILE NUMBER      FIXME: -->
+          <!-- ===================================== -->
+
+          <div class="shopmax__shopping__cart__form__group">
+            <label for="mobile">mobile *</label>
             <input
               id="mobile"
               type="tel"
               value=""
               name="Client Mobile Number"
-              placeholder="enter mobile phone number *"
+              placeholder="shopper's mobile nr"
               minlength="3"
               maxlength="13"
               autocomplete="off"
               required
             />
           </div>
-          <!-- ----------------------------------------- -->
-          <!-- FIXME:  ENTER YOUR EMAIL ADDRESS  FIXME:  -->
-          <!-- ----------------------------------------- -->
-          <div class="product__quote__form__group">
-            <label for="email">email</label>
+
+          <!-- ===================================== -->
+          <!-- FIXME:      EMAIL ADDRESS      FIXME: -->
+          <!-- ===================================== -->
+
+          <div class="shopmax__shopping__cart__form__group">
+            <label for="email">email *</label>
             <input
               id="email"
               type="email"
               value=""
               name="Client Email Address"
-              placeholder="enter your email *"
+              placeholder="shopper's email"
               minlength="3"
               maxlength="65"
               autocomplete="off"
               required
             />
           </div>
-          <!-- ---------------------------------------- -->
-          <!-- FIXME:  ENTER YOUR COMPANY NAME  FIXME:  -->
-          <!-- ---------------------------------------- -->
-          <div class="product__quote__form__group">
+
+          <!-- ===================================== -->
+          <!-- FIXME:       COMPANY NAME      FIXME: -->
+          <!-- ===================================== -->
+
+          <div class="shopmax__shopping__cart__form__group">
             <label for="company__name">company name (if applicable)</label>
             <input
               id="company__name"
               type="text"
               value=""
               name="Company Name"
-              placeholder="enter your full company name ..."
+              placeholder="shopper's company name"
               minlength="3"
               maxlength="75"
               autocomplete="off"
             />
           </div>
-          <!-- -------------------------------------- -->
-          <!-- FIXME:  ENTER YOUR VAT NUMBER  FIXME:  -->
-          <!-- -------------------------------------- -->
-          <div class="product__quote__form__group">
-            <label for="VAT">VAT number (if applicable)</label>
+
+          <!-- ===================================== -->
+          <!-- FIXME:    COMPANY VAT NUMBER   FIXME: -->
+          <!-- ===================================== -->
+
+          <div class="shopmax__shopping__cart__form__group">
+            <label for="VAT">Company VAT number (if applicable)</label>
             <input
               id="VAT"
               type="text"
               value=""
               name="Company VAT Number"
-              placeholder="enter your VAT Number ..."
+              placeholder="shopper's company VAT number"
               minlength="3"
               maxlength="12"
               autocomplete="off"
             />
           </div>
-          <!-- --------------------------------------------- -->
-          <!-- FIXME:  YOUR POSITION AT THE COMPANY  FIXME:  -->
-          <!-- --------------------------------------------- -->
-          <div class="product__quote__form__group">
+
+          <!-- ===================================== -->
+          <!-- FIXME:   COMPANY DESIGNATION   FIXME: -->
+          <!-- ===================================== -->
+
+          <div class="shopmax__shopping__cart__form__group">
             <label for="company__position"
-              >What is your position at the company (if applicable)?</label
+              >Shopper's position at the company (if applicable)?</label
             >
             <input
               id="company__position"
               type="text"
               value=""
               name="Position / Designation at the Company"
-              placeholder="enter your position at the company ..."
+              placeholder="shopper's position at the company"
               minlength="3"
               maxlength="75"
               autocomplete="off"
             />
           </div>
-          <!-- ---------------------------------------------- -->
-          <!-- FIXME:  ENTER YOUR COMPANY TEL NUMBER  FIXME:  -->
-          <!-- ---------------------------------------------- -->
-          <div class="product__quote__form__group">
+
+          <!-- ================================== -->
+          <!-- FIXME:  COMPANY TEL NUMBER  FIXME: -->
+          <!-- ================================== -->
+
+          <div class="shopmax__shopping__cart__form__group">
             <label for="telephone"
               >company telephone number (if applicable)</label
             >
@@ -9124,134 +9160,161 @@
               type="tel"
               value=""
               name="Company Telephone"
-              placeholder="enter company telephone number ..."
+              placeholder="shopper's company tel nr"
               minlength="3"
               maxlength="13"
               autocomplete="off"
             />
           </div>
-          <!-- ----------------------------------------------------- -->
-          <!-- FIXME:  ENTER YOUR BUSINESS / POSTAL ADDRESS  FIXME:  -->
-          <!-- ----------------------------------------------------- -->
-          <div class="product__quote__form__group">
-            <label for="address">residential / business / postal address</label>
+
+          <!-- ================================== -->
+          <!-- FIXME:   BILLING ADDRESS    FIXME: -->
+          <!-- ================================== -->
+
+          <div class="shopmax__shopping__cart__form__group">
+            <label for="address">Shopper's billing address *</label>
             <textarea
               name="Billing Address"
               id="address"
               cols="30"
               rows="5"
-              placeholder="provide your residential, business or postal address ... *"
+              placeholder="shopper's billing address"
               minlength="3"
               maxlength="135"
               autocomplete="off"
               required
             ></textarea>
           </div>
-          <!-- --------------------------------------- -->
-          <!-- FIXME:  ENTER YOUR POSTAL CODE  FIXME:  -->
-          <!-- --------------------------------------- -->
-          <div class="product__quote__form__group">
-            <label for="postalcode">postal code</label>
+
+          <!-- ================================== -->
+          <!-- FIXME:      POSTAL CODE     FIXME:  -->
+          <!-- ================================== -->
+
+          <div class="shopmax__shopping__cart__form__group">
+            <label for="postalcode">postal code *</label>
             <input
               id="postalcode"
               type="text"
               value=""
               name="Postal Code"
-              placeholder="enter postal code *"
+              placeholder="postal code"
               minlength="3"
               maxlength="6"
               autocomplete="off"
               required
             />
           </div>
-          <!-- ---------------------------------------------------------------------------------------------------- -->
-          <!--                                  TODO:  SECTION 02  TODO:                                            -->
-          <!-- ---------------------------------------------------------------------------------------------------- -->
-          <!-- ------------------------------------------ -->
-          <!-- FIXME:  HEADER - DELIVERY ADDRESS  FIXME:  -->
-          <!-- ------------------------------------------ -->
-          <div class="product__quote__form__header">
-            section 2 : your delivery address
+
+          <!-- =============================== -->
+          <!-- TODO:  SECTION 2 (TITLE)  TODO: -->
+          <!-- =============================== -->
+
+          <!-- ========================================= -->
+          <!-- FIXME:  HEADER - DELIVERY ADDRESS  FIXME: -->
+          <!-- ========================================= -->
+
+          <div class="shopmax__shopping__cart__form__header">
+            section 2 : Shopper's delivery address / PostNet Branch
           </div>
-          <!-- ------------------------------------------- -->
-          <!-- FIXME:  SUB-HEADER - DELIVERY COSTS  FIXME: -->
-          <!-- ------------------------------------------- -->
-          <div class="product__quote__delivery__cost">
+
+          <!-- ============================================= -->
+          <!-- FIXME:  NOTIFICATION - DELIVERY COSTS  FIXME: -->
+          <!-- ============================================= -->
+
+          <div class="shopmax__shopping__cart__delivery__cost">
             <p>
-              We deliver to your door anywhere in South Africa - view our
-              <a href="pdf/shopmax_delivery_costs.pdf" target="_blank"
+              We deliver to your door anywhere in South Africa - view<a
+                href="pdf/shopmax_delivery_costs.pdf"
+                target="_blank"
                 ><strong>&nbsp;DELIVERY COSTS&nbsp;</strong></a
               >
             </p>
           </div>
-          <!-- ----------------------------------- -->
-          <!-- FIXME:  DELIVERY ADDRESSES  FIXME:  -->
-          <!-- ----------------------------------- -->
-          <div class="product__quote__form__group">
+
+          <!-- ===================================== -->
+          <!-- TODO:  SECTION 2 (FORM-INPUTS)  TODO: -->
+          <!-- ===================================== -->
+
+          <!-- ================================== -->
+          <!-- FIXME:  DELIVERY ADDRESSES  FIXME: -->
+          <!-- ================================== -->
+
+          <div class="shopmax__shopping__cart__form__group">
             <label for="delivery-address"
-              >Provide your exact delivery address or details of your closest
-              PostNet Branch</label
+              >Delivery address or details of closest PostNet Branch (to
+              activate R80 Saving) *</label
             >
             <textarea
               name="Client delivery address"
               id="delivery-address"
               cols="30"
               rows="5"
-              placeholder="please provide the contact person, contact number and exact delivery address (with postal code) ... *"
+              placeholder="provide details of closest PostNet Branch or exact delivery address (with Postal Code)"
               minlength="3"
               maxlength="250"
               autocomplete="off"
               required
             ></textarea>
           </div>
-          <!-- --------------------------------------------- -->
-          <!-- FIXME:  YOUR REQUIRED DELIVERY DATE?  FIXME:  -->
-          <!-- --------------------------------------------- -->
-          <div class="product__quote__form__group">
-            <label for="delivery-date"
-              >What is your required delivery date?</label
-            >
+
+          <!-- ============================= -->
+          <!-- FIXME:  DELIVERY DATE  FIXME: -->
+          <!-- ============================= -->
+
+          <div class="shopmax__shopping__cart__form__group">
+            <label for="delivery-date">Required delivery date? *</label>
             <input
               id="delivery-date"
               type="date"
               value=""
               name="Required delivery date"
-              placeholder="enter the required delivery date ... *"
               min="2022-04-01"
               max="2099-12-31"
               required
             />
           </div>
-          <!-- ---------------------------------------------------------------------------------------------------- -->
-          <!--                                  TODO:  SECTION 04  TODO:                                            -->
-          <!-- ---------------------------------------------------------------------------------------------------- -->
-          <!-- ------------------------------------------------------------ -->
+
+          <!-- =============================== -->
+          <!-- TODO:  SECTION 3 (TITLE)  TODO: -->
+          <!-- =============================== -->
+
+          <!-- ============================================================ -->
           <!-- FIXME:  HEADER - WHERE YOU ASSISTED BY ANY RESELLERS  FIXME: -->
-          <!-- ------------------------------------------------------------ -->
-          <div class="product__quote__form__header">
-            section 4 : Did one of our resellers assist you?
+          <!-- ============================================================ -->
+
+          <div class="shopmax__shopping__cart__form__header">
+            section 3 : Did any of our resellers assist you?
           </div>
-          <!-- -------------------------------------------------- -->
+
+          <!-- ===================================== -->
+          <!-- TODO:  SECTION 3 (FORM-INPUTS)  TODO: -->
+          <!-- ===================================== -->
+
+          <!-- ==================================================== -->
           <!-- FIXME:  WHERE YOU ASSISTED BY ANY RESELLERS?  FIXME: -->
-          <!-- ---------------------------------------------------- -->
-          <div class="product__quote__form__group">
-            <label for="product__quote__subscription"
-              >Were you assisted or referred by one of our Resellers? *</label
+          <!-- ==================================================== -->
+
+          <div class="shopmax__shopping__cart__form__group">
+            <label for="shopmax__shopping__cart__subscription"
+              >Were you assisted or referred to Shopmax by one of our Resellers?
+              *</label
             >
             <select
-              id="product__quote__subscription"
+              id="shopmax__shopping__cart__subscription"
               name="Did a Reseller Provide Assistance?"
               required
             >
-              <option value="" selected>please select ...</option>
-              <option name="Yes" value="Yes">Yes</option>
-              <option name="No" value="No">No</option>
+              <option value="" selected>-</option>
+              <option id="Yes" value="Yes">Yes</option>
+              <option id="No" value="No">No</option>
             </select>
           </div>
-          <!-- ---------------------------------------------- -->
+
+          <!-- ============================================== -->
           <!-- FIXME:  ENTER THE NAME OF THE RESELLER  FIXME: -->
-          <!-- ---------------------------------------------- -->
-          <div class="product__quote__form__group">
+          <!-- ============================================== -->
+
+          <div class="shopmax__shopping__cart__form__group">
             <label for="reseller-name"
               >If "YES", please provide the name of the reseller (if
               known)</label
@@ -9261,16 +9324,18 @@
               type="text"
               value=""
               name="Name of Reseller who assisted"
-              placeholder="enter reseller name and surname ..."
+              placeholder="reseller name and surname"
               minlength="3"
               maxlength="75"
               autocomplete="off"
             />
           </div>
-          <!-- ----------------------------------- -->
+
+          <!-- =================================== -->
           <!-- FIXME:  ENTER RESELLER CODE  FIXME: -->
-          <!-- ----------------------------------- -->
-          <div class="product__quote__form__group">
+          <!-- =================================== -->
+
+          <div class="shopmax__shopping__cart__form__group">
             <label for="reseller-code"
               >Alternatively, please provide the reseller's sales code (if
               known)</label
@@ -9280,26 +9345,31 @@
               type="text"
               value=""
               name="Reseller Code"
-              placeholder="enter reseller's 5-digit sales code (i.e WC128) ..."
+              placeholder="reseller's 5-digit sales code (i.e WC128)"
               minlength="3"
               maxlength="75"
               autocomplete="off"
             />
           </div>
-          <!-- ---------------------------------------------------------------------------------------------------- -->
-          <!--                                  TODO:  SECTION 05  TODO:                                            -->
-          <!-- ---------------------------------------------------------------------------------------------------- -->
-          <!-- --------------------------------------------------------- -->
-          <!-- FIXME:  HEADER - ACCEPT THE TERMS AND CONDITIONS  FIXME:  -->
-          <!-- --------------------------------------------------------- -->
-          <div class="product__quote__form__header">
-            confirmation of details
+
+          <!-- =============================== -->
+          <!-- TODO:  SECTION 4 (TITLE)  TODO: -->
+          <!-- =============================== -->
+
+          <!-- ======================================================== -->
+          <!-- FIXME:  HEADER - ACCEPT THE TERMS AND CONDITIONS  FIXME: -->
+          <!-- ======================================================== -->
+
+          <div class="shopmax__shopping__cart__form__header">
+            Section 4: confirmation of order and payment options
           </div>
-          <!-- --------------------------------------------------------- -->
-          <!-- FIXME:  HEADER - ACCEPT THE TERMS AND CONDITIONS  FIXME:  -->
-          <!-- --------------------------------------------------------- -->
-          <div class="product__quote__form__group">
-            <label class="product__quote__checkbox__option"
+
+          <!-- ========================== -->
+          <!-- FIXME:  CHECKBOXES  FIXME: -->
+          <!-- ========================== -->
+
+          <div class="shopmax__shopping__cart__form__group">
+            <label class="shopmax__shopping__cart__checkbox__option"
               ><input
                 type="checkbox"
                 name="Confirmation that details provided are correct"
@@ -9307,7 +9377,7 @@
               />I hereby confirm that all the details provided above are correct
               *</label
             >
-            <label class="product__quote__checkbox__option"
+            <label class="shopmax__shopping__cart__checkbox__option"
               ><input
                 type="checkbox"
                 name="Confirm acceptance of Popi & Privacy Policy"
@@ -9315,27 +9385,50 @@
               />I hereby confirm that I accept the company's POPI and Privacy
               policy to protect my personal information *</label
             >
+            <label class="shopmax__shopping__cart__checkbox__option"
+              ><input type="checkbox" name="Discount Notice" required />DO YOU
+              NEED A FURTHER 1% DISCOUNT ON YOUR ORDER? Choose the "PAY ON
+              INVOICE" payment option *</label
+            >
+            <label class="shopmax__shopping__cart__checkbox__option"
+              ><input type="checkbox" name="Discount Notice" required />DO YOU
+              NEED A R80 SHIPPING DISCOUNT? Provide details of a PostNet Branch
+              near you and choose the "PAY ON INVOICE" payment option *</label
+            >
           </div>
-          <!-- ------------------------------------------------ -->
-          <!-- FIXME:  GOOGLE RECAPTCHA IMPLEMENTATION  FIXME:  -->
-          <!-- Google Recaptcha (Version 2)                     -->
-          <!-- "I am not a Robot"                               -->
-          <!-- Current Site Key - SHOPMAX Website               -->
-          <!-- ------------------------------------------------ -->
-          <div class="product__quote__form__group">
+
+          <!-- =============================================== -->
+          <!-- FIXME:  GOOGLE RECAPTCHA IMPLEMENTATION  FIXME: -->
+          <!-- Google Recaptcha (Version 2)                    -->
+          <!-- "I am not a Robot"                              -->
+          <!-- Current Site Key - SHOPMAX Website              -->
+          <!-- =============================================== -->
+
+          <div class="shopmax__shopping__cart__form__group">
             <div
               class="g-recaptcha"
               data-sitekey="6Ldzh1AfAAAAACWDbEHGqvipSqHbEBYwZahZHWcO"
             ></div>
           </div>
-          <!-- ----------------------------------------- -->
-          <!-- FIXME:  CLEAR AND SUBMIT BUTTONS  FIXME:  -->
-          <!-- ----------------------------------------- -->
-          <div class="product__quote__button__container">
-            <button type="reset">clear form</button>
+
+          <!-- ======================================== -->
+          <!-- FIXME:  CLEAR AND SUBMIT BUTTONS  FIXME: -->
+          <!-- ======================================== -->
+
+          <div class="shopmax__shopping__cart__button__container">
+            <!-- <button type="reset">clear form</button> -->
             <button type="submit" value="submit">
-              submit securely&nbsp;&nbsp;&nbsp;<i class="fa fa-lock"></i>
+              pay on invoice&nbsp;&nbsp;&nbsp;<i class="fa fa-lock"></i>
             </button>
+            <a href="" class="payfast__payment"
+              ><img src="images/payments_payfast.webp" alt="Payfast Logo" />
+              &nbsp;&nbsp;&nbsp;<i class="fa fa-lock"></i
+            ></a>
+            <a href="" class="yoco__payment"
+              ><img
+                src="images/payments_yoco.webp"
+                alt="" />&nbsp;&nbsp;&nbsp;<i class="fa fa-lock"></i
+            ></a>
           </div>
         </form>
       </div>
