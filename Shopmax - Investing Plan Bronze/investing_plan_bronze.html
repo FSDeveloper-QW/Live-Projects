@@ -120,7 +120,7 @@
     <!-- TODO:   CSS STYLE SHEET (INTERNAL) - LINK YOUR HTML DOCUMENT TO YOUR OWN CSS STYLE SHEET               -->
     <!-- ====================================================================================================== -->
 
-    <link rel="stylesheet" href="css/investing_plan_bronze.css" />
+    <link rel="stylesheet" href="css/investing_plans.css" />
 
     <!-- ====================================================================================================== -->
     <!-- TODO:   CSS STYLE SHEET (EXTERNAL) - LINK TO NORMALISE.CSS STYLE SHEET (ONLY IF REQUIRED)              -->
@@ -8735,7 +8735,6 @@
           height="315"
           src="https://www.youtube.com/embed/Cy9LPPopzks"
           title="YouTube video player"
-          frameborder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowfullscreen
         ></iframe>
@@ -9585,18 +9584,18 @@
 
         <div class="bronze__form__group">
           <label for="investmentplan">select your investment plan</label>
-          <select id="investmentplan" name="Investment Plan Selected" required>
+          <select id="investmentplan" name="Investment Plan Selected">
             <!-- <option value="" selected>Select your plan *</option> -->
-            <option name="BRONZE" value="Bronze Investment Plan" selected>
+            <option id="BRONZE" value="Bronze Investment Plan" selected>
               Bronze Investment Plan
             </option>
-            <option name="SILVER" value="Silver Investment Plan" disabled>
+            <option id="SILVER" value="Silver Investment Plan" disabled>
               Silver Investment Plan
             </option>
-            <option name="GOLD" value="Gold Investment Plan" disabled>
+            <option id="GOLD" value="Gold Investment Plan" disabled>
               Gold Investment Plan
             </option>
-            <option name="PLATINUM" value="Platinum Investment Plan" disabled>
+            <option id="PLATINUM" value="Platinum Investment Plan" disabled>
               Platinum Investment Plan
             </option>
           </select>
@@ -9610,10 +9609,10 @@
           <label for="title">title</label>
           <select id="title" name="Title" required>
             <option value="" selected>Select your title *</option>
-            <option name="MR" value="Mr">Mr</option>
-            <option name="MRS" value="Mrs">Mrs</option>
-            <option name="MS" value="Ms">Ms</option>
-            <option name="MISS" value="Miss">Miss</option>
+            <option id="MR" value="Mr">Mr</option>
+            <option id="MRS" value="Mrs">Mrs</option>
+            <option id="MS" value="Ms">Ms</option>
+            <option id="MISS" value="Miss">Miss</option>
           </select>
         </div>
 
@@ -9777,6 +9776,35 @@
         </div>
 
         <!-- =============================================== -->
+        <!-- FIXME:  FORM HEADER - WHO ASSISTED YOU  FIXME:  -->
+        <!-- ================================================ -->
+
+        <div class="bronze__registration_form__header">
+          WHO INTRODUCED OR ASSISTED YOU?
+        </div>
+
+        <!-- ======================================= -->
+        <!-- FIXME:  SELECT SALES EXECUTIVE  FIXME:  -->
+        <!-- ======================================= -->
+
+        <div class="bronze__form__group">
+          <label for="sales-executive">Who introduced or assisted you?</label>
+          <select id="sales-executive" name="Sales Executive" required>
+            <option value="" selected>-</option>
+            <option id="Stephen" value="Stephen">
+              Shopmax Sales Executive - Stephen
+            </option>
+            <option id="Sonja" value="Sonja">
+              Shopmax Sales Executive - Sonja
+            </option>
+            <option id="Mariolane" value="Mariolane">
+              Shopmax Sales Executive - Mariolane
+            </option>
+            <option id="Nobody" value="Nobody">Nobody assisted me</option>
+          </select>
+        </div>
+
+        <!-- =============================================== -->
         <!-- FIXME:  HEADER : UPLOAD YOUR DOCUMENTS  FIXME:  -->
         <!-- =============================================== -->
 
@@ -9789,14 +9817,20 @@
         <!-- =============================== -->
 
         <div class="bronze__form__group">
-          <label for="file"
+          <label for="file-id"
             >please upload :&nbsp;&nbsp;
             <strong class="bronze__label__strong"
               >certified id / passport *</strong
             ></label
           >
           <div class="bronze__file-input">
-            <input type="file" accept=".pdf" name="upload your ID" required />
+            <input
+              id="file-id"
+              type="file"
+              accept=".pdf"
+              name="upload your ID"
+              required
+            />
             <span class="bronze__button"
               ><i class="fa fa-cloud-upload-alt"></i>Browse</span
             >
@@ -9811,7 +9845,7 @@
         <!-- =================================== -->
 
         <div class="bronze__form__group">
-          <label for="file"
+          <label for="file-avatar"
             >please upload :&nbsp;&nbsp;
             <strong class="bronze__label__strong"
               >any avatar (picture) to complement your "alias name" (for online
@@ -9820,10 +9854,10 @@
           >
           <div class="bronze__file-input">
             <input
+              id="file-avatar"
               type="file"
               accept=".jpg, .png"
               name="upload Image for Investor Avatar"
-              required
             />
             <span class="bronze__button"
               ><i class="fa fa-cloud-upload-alt"></i>Browse</span
@@ -9839,7 +9873,7 @@
         <!-- ======================================================== -->
 
         <div class="bronze__form__group">
-          <label for="file"
+          <label for="file-pic"
             >please upload :&nbsp;&nbsp;
             <strong class="bronze__label__strong"
               >A logo / picture for your free advertisement *</strong
@@ -9847,10 +9881,10 @@
           >
           <div class="bronze__file-input">
             <input
+              id="file-pic"
               type="file"
               accept=".jpg, .png"
               name="upload Image for Advertisement"
-              required
             />
             <span class="bronze__button"
               ><i class="fa fa-cloud-upload-alt"></i>Browse</span

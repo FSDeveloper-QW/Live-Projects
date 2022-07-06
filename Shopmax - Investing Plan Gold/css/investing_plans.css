@@ -3538,11 +3538,11 @@ nav .clientzonewrapper .advertising-drop {
 
 /* ===================================================================================================================== */
 /* ===================================================================================================================== */
-/* TODO:TODO:                                SECTION - NEW PAGE CONTENT (START)                               TODO:TODO: */
+/* TODO:TODO:                           SECTION - BRONZE INVESTING PLAN (START)                               TODO:TODO: */
 /* ===================================================================================================================== */
 /* ===================================================================================================================== */
 
-/* .shopmax__gift__cards__page__title h5 {
+/* .bronze__investing__plan__service__page__title h5 {
   position: relative;
   top: 9rem;
   display: flex;
@@ -3555,57 +3555,3604 @@ nav .clientzonewrapper .advertising-drop {
   border: 2px solid red;
 } */
 
-.shopmax__gift__cards__section {
+.bronze__investing__plan__service__section {
   position: relative;
+  /* top: 9rem; */
   top: 10rem;
-  display: flex;
+  /* top: 9rem; */
+  /* display: flex;
   justify-content: center;
-  flex-direction: column;
-  align-items: center;
+  align-items: center; */
   width: 100%;
   height: auto;
   object-fit: cover;
   margin: 0rem 0rem 0rem 0rem;
+  padding: 0rem 0rem 2rem 0rem;
+  background-color: var(--color-what-we-do-page-background);
   /* border: 2px solid red; */
 }
 
-.shopmax__gift__cards__section img {
+/* .bronze__investing__plan__service__section img {
   width: 100%;
   height: 100%;
   object-fit: contain;
-}
+} */
 
 @media screen and (max-width: 830px) {
-  /* .shopmax__gift__cards__page__title h5 {
+  /* .bronze__investing__plan__service__page__title h5 {
     position: relative;
     top: 10rem;
   } */
-
-  .shopmax__gift__cards__section {
+  .bronze__investing__plan__service__section {
     position: relative;
     /* top: 9rem; */
+    /* top: 10rem; */
     top: 11rem;
   }
 }
 
 @media screen and (max-width: 450px) {
-  /* .shopmax__gift__cards__page__title h5 {
+  /* .bronze__investing__plan__service__page__title h5 {
     position: relative;
     top: 13.5rem;
   } */
 
-  .shopmax__gift__cards__section {
+  .bronze__investing__plan__service__section {
     position: relative;
     /* top: 12.5rem; */
+    /* top: 13.5rem; */
     top: 14.5rem;
   }
 }
 
-/* --------------------------------------------------------------------------------------------------------------------- */
+/* ===================================================================================================================== */
+/* TODO:  PART 1 - INVESTING PLAN (BRONZE) - PAGE TITLE                                                                  */
+/* ===================================================================================================================== */
+
+/* ------------------------------- */
+/* FIXME:  VIEW - MOBILE FIRST     */
+/* ------------------------------- */
+
+.bronze__page__title h5 {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  text-transform: uppercase;
+  margin: 0rem 0rem 1rem 0rem;
+  padding: 1.5rem 0rem 0rem 0rem;
+  text-align: center;
+}
+
+/* ------------------------------- */
+/* FIXME:  VIEW - LARGER SCREENS   */
+/* ------------------------------- */
+
+/* ===================================================================================================================== */
+/* TODO:  PART 2 - INVESTING PLAN (BRONZE) - EMBEDDED YOUTUBE VIDEO                                                      */
+/* ===================================================================================================================== */
+
+/* ------------------------------- */
+/* FIXME:  VIEW - MOBILE FIRST     */
+/* ------------------------------- */
+
+.bronze__video__container {
+  position: relative;
+  height: 0;
+  width: 100%;
+  margin: 0rem 0rem 1.5rem 0rem;
+  padding: 0rem 0rem 56.25% 0rem;
+}
+
+.bronze__video__container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+  padding: 0.45rem 0.75rem 0.45rem 0.75rem;
+  /* border-radius: 1.5rem; */
+}
+
+/* ------------------------------- */
+/* FIXME:  VIEW - LARGER SCREENS   */
+/* ------------------------------- */
+
+@media screen and (min-width: 768px) {
+  .bronze__video__container iframe {
+    padding: 0.2rem 0.75rem 0.2rem 0.75rem;
+    /* border-radius: 2rem; */
+  }
+}
+
+/* ===================================================================================================================== */
+/* TODO:  PART 3 - INVESTING PLAN (BRONZE) - BANNER & DOWNLOAD PDF BROCHURE                                              */
+/* ===================================================================================================================== */
+
+/* ------------------------------- */
+/* FIXME:  VIEW - MOBILE FIRST     */
+/* ------------------------------- */
+
+.bronze__banner {
+  position: relative;
+  margin: 2rem 0.4rem 2rem 0.4rem;
+}
+
+.bronze__banner img {
+  width: 100%;
+  height: auto;
+  border-radius: 0.5rem;
+  padding: 0.2rem 0.2rem 0.2rem 0.2rem;
+}
+
+/* ----------------------------- */
+/* TODO:  DOWNLOAD PDF BROCHURE  */
+/* ----------------------------- */
+
+.bronze__download__pdf {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: -0.5rem 0rem -2rem 0rem;
+}
+
+.bronze__download__pdf a {
+  color: white;
+  text-decoration: none;
+}
+
+button.bronze__link__pdf__brochure {
+  background: var(--color-bronze-button-background);
+  color: var(--color-bronze-button-text);
+  border: 0;
+  outline: 0;
+  border-radius: 0.5rem;
+  width: 20rem;
+  height: 3rem;
+  font-size: 1.2rem;
+  font-weight: 500;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+  margin: 0.5rem 2rem 3rem 2rem;
+  padding: 1rem 1rem 1rem 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  cursor: pointer;
+  text-decoration: none;
+  transition: transform 0.5s ease-in-out;
+}
+
+button.bronze__link__pdf__brochure:hover {
+  transform: scale(1.05);
+}
+
+/* ------------------------------- */
+/* FIXME:  VIEW - LARGER SCREENS   */
+/* ------------------------------- */
+
+/* ===================================================================================================================== */
+/* TODO:  PART 4A - INVESTING PLAN (BRONZE) - ACCORDIAN "MAIN" CONTAINER (HOLDING ALL ELEMENTS)                          */
+/* ===================================================================================================================== */
+
+.bronze__accordian {
+  width: 95%;
+  max-width: 128rem;
+  margin: 2rem auto 2rem auto;
+  /* border: 1px solid white; */
+}
+
+/* ===================================================================================================================== */
+/* TODO:  PART 4B - INVESTING PLAN (BRONZE) - ACCORDIAN "ITEMS" CONTAINER (HOLDING ALL ITEMS)                            */
+/* ===================================================================================================================== */
+
+.bronze__accordian_item {
+  background-color: var(--color-bronze-accordian-item-background);
+  color: var(--color-accordian-item-text);
+  margin: 1rem 0rem 1rem 0rem;
+  border-radius: 0.5rem;
+  box-shadow: var(--color-box-shadow-01);
+}
+/* ===================================================================================================================== */
+/* TODO:  PART 4C - INVESTING PLAN (BRONZE) - ACCORDIAN - ITEM (HEADER)                                                  */
+/* ===================================================================================================================== */
+
+.bronze__accordian-item-header {
+  display: flex;
+  position: relative;
+  align-items: center;
+  min-height: 3.5rem;
+  line-height: 1.25rem;
+  font-size: 1.3rem;
+  font-weight: 600;
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
+  padding: 0.5rem 3rem 0.5rem 1rem;
+  cursor: pointer;
+}
+
+/* FIXME:  NOTE:  THE CSS ENTITY CODE FOR PLUS SIGN "+" = "\002B" */
+/* FIXME:  NOTE:  THE CSS ENTITY CODE FOR DOWN ARROW "v" = \25BE */
+
+.bronze__accordian-item-header::after {
+  /* content: "\25BE"; */
+  content: "\002B";
+  font-size: 2rem;
+  position: absolute;
+  right: 1rem;
+  color: var(--color-bronze-accordian-item-plus-and-minus-sign);
+  transition: transform 0.5s ease-in-out;
+}
+
+/* FIXME:  NOTE:  THE CSS ENTITY CODE FOR MINUS SIGN "-" = "\2212" */
+
+.bronze__accordian-item-header.active::after {
+  /* transform: rotate(-180deg); */
+  content: "\2212";
+  transform: none;
+}
+
+.bronze__accordian-item-header.active {
+  color: var(--color-bronze-accordian-item-header-active);
+}
+
+/* ===================================================================================================================== */
+/* TODO:  PART 4D - INVESTING PLAN (BRONZE) - ACCORDIAN-ITEM (BODY)                                                      */
+/* ===================================================================================================================== */
+
+/* ITEM - MAIN CONTAINER */
+
+.bronze__accordian-item-body {
+  /* display: none; */
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+/* ITEM - ALL ELEMENTS CONTAINER */
+
+.bronze__accordian-item-body-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0rem 0rem 0rem 0rem;
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  border-bottom: 1px solid
+    var(--color-bronze-team-accordian-item-seperation-line-alternative);
+  /* border: 1px solid red; */
+}
+
+.bronze__content-statement {
+  max-width: 900px;
+  font-size: 1.2rem;
+  font-weight: 500;
+  text-align: justify;
+  letter-spacing: 0.025rem;
+  line-height: 1.5;
+  padding: 0rem 1rem 0rem 1rem;
+  /* border: 1px solid green; */
+}
+
+.bronze__content-confirmation {
+  min-width: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  line-height: 0.5;
+  padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+  border-left: 1px solid
+    var(--color-bronze-team-accordian-item-seperation-line-alternative);
+  /* border: 1px solid red; */
+}
+
+.bronze__confirmation-image img {
+  width: 3rem;
+  height: 3rem;
+}
+
+.bronze__confirmation-text {
+  font-size: 1.1rem;
+  line-height: 0.5;
+  padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+}
+
+/* ===================================================================================================================== */
+/* TODO:  PART 4E - INVESTING PLAN (BRONZE) - MEDIA QUERY (LARGER DEVICES)                                               */
+/* ===================================================================================================================== */
+
+@media screen and (max-width: 430px) {
+  .bronze__accordian-item-header {
+    font-size: 1rem;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .bronze__accordian-item-body-content {
+    flex-direction: column;
+    margin: 0rem 0rem 0rem 0rem;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+  }
+
+  .bronze__content-statement {
+    justify-content: center;
+    text-align: center;
+    max-width: 280px;
+    font-size: 1rem;
+    padding: 0rem 0.5rem 0rem 0.5rem;
+  }
+
+  .bronze__content-confirmation {
+    padding: 0.25rem 0.5rem 0.25rem 0.5rem;
+    border-left: none;
+  }
+
+  .bronze__confirmation-image img {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+
+  .bronze__confirmation-text {
+    font-size: 1rem;
+    padding: 0.5rem 0.5rem 0.25rem 0.5rem;
+  }
+}
+
+/* ===================================================================================================================== */
+/* TODO:  PART 5 - INVESTING PLAN (BRONZE) - FORM HEADERS (ON REGISTRATION FORM)                                         */
+/* ===================================================================================================================== */
+
+/* ------------------------------- */
+/* FIXME:  VIEW - MOBILE FIRST     */
+/* ------------------------------- */
+
+.bronze__registration_form__header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  font-weight: 500;
+  letter-spacing: 0.2rem;
+  background-color: var(--color-bronze-hex);
+  color: var(--color-bronze-page-header-text);
+  margin: 2.5rem 0.4rem 2rem 0.4rem;
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  border-radius: 0.5rem;
+  box-shadow: var(--color-box-shadow-01);
+}
+
+/* ------------------------- */
+/* FIXME:  PRIVACY STATEMENT */
+/* ------------------------- */
+
+.bronze__privacy__statement {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem 0.4rem 2rem 0.4rem;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+}
+
+.bronze__privacy__statement strong {
+  text-decoration: none;
+  color: var(--color-bronze-hex);
+}
+
+.bronze__privacy__statement a {
+  text-decoration: none;
+  color: var(--color-bronze-hex);
+  cursor: pointer;
+}
+
+/* ------------------------------- */
+/* FIXME:  VIEW - LARGER SCREENS   */
+/* ------------------------------- */
+
+@media screen and (max-width: 430px) {
+  .bronze__registration_form__header {
+    font-size: 1rem;
+    text-align: center;
+  }
+}
+
+/* ===================================================================================================================== */
+/* TODO:  PART 6 - INVESTING PLAN (BRONZE) - REGISTRATION FORM                                                           */
+/* ===================================================================================================================== */
+
+/* ---------------------------------------------- */
+/* FIXME:  FORM CONTAINER  FIXME:                 */
+/* ---------------------------------------------- */
+
+.bronze__form__group {
+  margin: 0rem 0rem 1rem 1rem;
+}
+
+/* ---------------------------------------------- */
+/* FIXME:  FORM LABEL  FIXME:                     */
+/* ---------------------------------------------- */
+
+.bronze__form__group label {
+  display: block;
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin: 0.5rem 1.75rem 0.5rem 1.75rem;
+}
+
+.bronze__form__group input::placeholder {
+  font-family: "Poppins", sans-serif;
+}
+
+/* ---------------------------------------------- */
+/* FIXME:  INPUT FIELD TYPE =  TEXT  FIXME:       */
+/* e.g. "NAME" or "LAST NAME" etc.                */
+/* ---------------------------------------------- */
+
+.bronze__form__group input[type="text"] {
+  /* width: 25rem; */
+  width: 96%;
+  border-radius: 0.5rem;
+  border: 1px solid var(--color-bronze-input-border);
+  margin: 0.5rem 1.4rem 0.5rem 1.4rem;
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: border-color 0.15s, box-shadow 0.15s;
+}
+
+.bronze__form__group input[type="text"]:focus {
+  border-color: var(--color-bronze-input-border-focus);
+  box-shadow: 0 0 0 2px rgba(152, 108, 67, 0.95);
+  outline: 0;
+}
+
+/* ---------------------------------------------- */
+/* FIXME:  INPUT FIELD TYPE =  TEL  FIXME:        */
+/* e.g. "TELEPHONE" or "MOBILE" Number etc.       */
+/* ---------------------------------------------- */
+
+.bronze__form__group input[type="tel"] {
+  /* width: 25rem; */
+  width: 96%;
+  border-radius: 0.5rem;
+  border: 1px solid var(--color-bronze-input-border);
+  margin: 0.5rem 1.4rem 0.5rem 1.4rem;
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: border-color 0.15s, box-shadow 0.15s;
+}
+
+.bronze__form__group input[type="tel"]:focus {
+  border-color: var(--color-bronze-input-border-focus);
+  box-shadow: 0 0 0 2px rgba(152, 108, 67, 0.95);
+  outline: 0;
+}
+
+/* ---------------------------------------------- */
+/* FIXME:  INPUT FIELD TYPE =  TEXTAREA  FIXME:   */
+/* Runs over multiple lines (rows) e.g. "Address" */
+/* ---------------------------------------------- */
+
+.bronze__form__group textarea {
+  resize: none;
+  /* width: 25rem; */
+  width: 96%;
+  border-radius: 0.5rem;
+  border: 1px solid var(--color-bronze-input-border);
+  margin: 0.5rem 1.4rem 0.5rem 1.4rem;
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  font-size: 1.2rem;
+  font-family: "poppins", sans-serif;
+  cursor: pointer;
+  transition: border-color 0.15s, box-shadow 0.15s;
+}
+
+.bronze__form__group textarea:focus {
+  border-color: var(--color-bronze-input-border-focus);
+  box-shadow: 0 0 0 2px rgba(152, 108, 67, 0.95);
+  outline: 0;
+}
+
+/* ---------------------------------------------- */
+/* FIXME:  INPUT FIELD = DROPDOWN LIST     FIXME: */
+/* e.g. Countries, Provinces, Titles etc.         */
+/* ---------------------------------------------- */
+
+.bronze__form__group select {
+  /* width: 25rem; */
+  width: 96%;
+  border-radius: 0.5rem;
+  border: 1px solid var(--color-bronze-input-border);
+  margin: 0.5rem 1.4rem 0.5rem 1.4rem;
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: border-color 0.15s, box-shadow 0.15s;
+}
+
+.bronze__form__group select:focus {
+  border-color: var(--color-bronze-input-border-focus);
+  box-shadow: 0 0 0 2px rgba(152, 108, 67, 0.95);
+  outline: 0;
+}
+
+/* ------------------------------------------------------------------------- */
+/* TODO:  START STYLING OF CUSTOM CHECKBOX                                   */
+/* ------------------------------------------------------------------------- */
+
+/* --------------------------------------- */
+/* FIXME:  INPUT FIELD = CHECKBOX  FIXME:  */
+/* --------------------------------------- */
+
+.bronze__checkbox__option {
+  font-size: 1.2rem;
+  font-weight: 500;
+  line-height: 1.25;
+  text-transform: none;
+  text-align: justify;
+  display: grid;
+  grid-template-columns: 1rem auto;
+  gap: 3rem;
+  margin: 2rem 0rem 2rem 0rem;
+  padding: 1rem 1.5rem 0rem 0rem;
+  cursor: pointer;
+}
+
+label.bronze__checkbox__option {
+  display: grid;
+  text-transform: initial;
+  font-size: 1.2rem;
+  font-weight: 500;
+  line-height: 1.25;
+  color: black;
+}
+
+/* ------------------------------------ */
+/* THIS IS TO HIDE THE NATIVE CHECKBOX  */
+/* ------------------------------------ */
+
+.bronze__checkbox__option input[type="checkbox"] {
+  /* Add if not using autoprefixer */
+  -webkit-appearance: none;
+  appearance: none;
+  /* For iOS < 15 to remove gradient background */
+  background-color: var(--color-bronze-custom-checkbox-background);
+  /* Not removed via appearance */
+  margin: 0;
+}
+
+/* --------------------------------------- */
+/* THIS IS TO DISPLAY THE CUSTOM CHECKBOX  */
+/* --------------------------------------- */
+
+.bronze__checkbox__option input[type="checkbox"] {
+  appearance: none;
+  background-color: var(--color-bronze-custom-checkbox-background);
+  margin: 0;
+  font: inherit;
+  color: var(--color-bronze-custom-checkbox-border);
+  width: 1.5rem;
+  height: 1.5rem;
+  border: 0.15em solid var(--color-bronze-custom-checkbox-border);
+  border-radius: 0.15em;
+  transform: translateY(-0.075em);
+  display: grid;
+  place-content: center;
+  cursor: pointer;
+}
+
+.bronze__checkbox__option + .bronze__checkbox__option {
+  margin-top: 1rem;
+}
+
+/* --------------------------------------- */
+/* CUSTOM CHECKBOX - CHECKED STATE         */
+/* --------------------------------------- */
+
+.bronze__checkbox__option input[type="checkbox"]::before {
+  content: "";
+  width: 0.7rem;
+  height: 0.7rem;
+  transform: scale(0);
+  transition: 120ms transform ease-in-out;
+  box-shadow: inset 1em 1em var(--color-bronze-custom-checkbox-checkmark);
+  /* Windows High Contrast Mode */
+  background-color: CanvasText;
+  /* Creating a checkmark with CLIP-PATH */
+  transform-origin: bottom left;
+  clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
+}
+
+.bronze__checkbox__option input[type="checkbox"]:checked::before {
+  transform: scale(1);
+}
+
+/* --------------------------------------- */
+/* CUSTOM CHECKBOX - FOCUSSED STATE        */
+/* --------------------------------------- */
+
+.bronze__checkbox__option input[type="checkbox"]:focus {
+  outline: max(2px, 0.15em) solid var(--color-bronze-custom-checkbox-focus);
+  outline-offset: max(1px, 0.15em);
+}
+
+/* --------------------------------------- */
+/* CUSTOM CHECKBOX - DISABLED STATE        */
+/* --------------------------------------- */
+
+.bronze__checkbox__option--disabled {
+  color: var(--color-bronze-custom-checkbox-disabled);
+  cursor: not-allowed;
+}
+
+.bronze__checkbox__option input[type="checkbox"]:disabled {
+  color: var(--color-bronze-custom-checkbox-disabled);
+  cursor: not-allowed;
+}
+
+/* ------------------------------------------------------------------------- */
+/* TODO:  END OF STYLING OF CUSTOM CHECKBOX                                  */
+/* ------------------------------------------------------------------------- */
+
+/* ------------------------------------------------------------------------- */
+/* TODO: START STYLING OF CUSTOM FILE-UPLOAD                                 */
+/* ------------------------------------------------------------------------- */
+
+/* ---------------------------------------------- */
+/* FIXME: INPUT FIELD TYPE = FILE          FIXME: */
+/* ---------------------------------------------- */
+
+.bronze__file-input {
+  display: inline-block;
+  margin: 1rem 1.4rem 1rem 1.4rem;
+  padding: 1rem 1rem 1rem 1rem;
+  text-align: left;
+  background: var(--color-bronze-custom-fileinput-background);
+  /* width: 450px; */
+  width: 96%;
+  position: relative;
+  border-radius: 0.5rem;
+  box-shadow: var(--color-box-shadow-02), var(--color-box-shadow-01);
+}
+
+/* ---------------------------------------------- */
+/* HIDING THE NATIVE FILE UPLOADER                */
+/* ---------------------------------------------- */
+
+.bronze__file-input > [type="file"] {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  z-index: 10;
+  cursor: pointer;
+}
+
+/* -------------------------------------------- */
+/* STYLE AND DISPLAY THE CUSTOM FILE UPLOADER   */
+/* -------------------------------------------- */
+
+.bronze__file-input > .bronze__button {
+  /* display: inline-block; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0rem 0.5rem 0.75rem 0.5rem;
+  padding: 0.8rem 1rem 0.8rem 1rem;
+  font-size: 1.3rem;
+  font-weight: 500;
+  background: var(--color-bronze-custom-fileinput-background);
+  border-radius: 0.5rem;
+  box-shadow: var(--color-box-shadow-02), var(--color-box-shadow-01);
+  cursor: pointer;
+}
+
+.bronze__file-input:hover > .bronze__button {
+  background: var(--color-bronze-custom-fileinput-background-hover);
+  color: var(--color-bronze-custom-fileinput-background-hover-text);
+}
+
+.bronze__file-input > .bronze__label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1.5rem 0.5rem 0rem 0.5rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--color-custom-fileinput-label-text);
+  white-space: nowrap;
+  opacity: 0.5;
+}
+
+.bronze__file-input.-chosen > .bronze__label {
+  opacity: 1;
+}
+
+.bronze__file-input .fa {
+  font-size: 1.8rem;
+  margin: 0rem 1rem 0rem 0rem;
+}
+
+label .bronze__label__strong {
+  color: var(--color-bronze-hex);
+}
+
+/* ------------------------------------------------------------------------- */
+/* TODO:  END OF STYLING OF CUSTOM FILE-UPLOAD                               */
+/* ------------------------------------------------------------------------- */
+
+/* ------------------------------------------ */
+/* FIXME:  INPUT FIELD TYPE =  EMAIL  FIXME:  */
+/* ------------------------------------------ */
+
+.bronze__form__group input[type="email"] {
+  /* width: 25rem; */
+  width: 96%;
+  border-radius: 0.5rem;
+  border: 1px solid var(--color-bronze-input-border);
+  margin: 0.5rem 1.4rem 0.5rem 1.4rem;
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: border-color 0.15s, box-shadow 0.15s;
+}
+
+.bronze__form__group input[type="email"]:focus {
+  border-color: var(--color-bronze-input-border-focus);
+  box-shadow: 0 0 0 2px rgba(152, 108, 67, 0.95);
+  outline: 0;
+}
+
+/* ----------------------------- */
+/* FIXME:  FORM BUTTONS  FIXME:  */
+/* ----------------------------- */
+
+.bronze__button__container button {
+  background: var(--color-bronze-button-background);
+  color: var(--color-bronze-button-text);
+  border: 0;
+  outline: 0;
+  border-radius: 0.5rem;
+  width: 20rem;
+  height: 3rem;
+  font-size: 1.2rem;
+  font-weight: 500;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+  margin: 0.5rem 2rem 3rem 2rem;
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  cursor: pointer;
+  text-decoration: none;
+  transition: transform 0.5s ease-in-out;
+}
+
+.bronze__button__container button:hover {
+  transform: scale(1.05);
+}
+
+.bronze__button__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ---------------------------------------------- */
+/* FIXME:  STYLING - GOOGLE RECAPTCHA  FIXME:     */
+/* ---------------------------------------------- */
+
+.bronze__form__group .g-recaptcha {
+  margin: 2rem 1rem 2rem 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* transform: scale(0.89); */
+  transform: scale(1);
+  /* -webkit-transform: scale(0.89); */
+  -webkit-transform: scale(1);
+  transform-origin: 0 0;
+  -webkit-transform-origin: 0 0;
+}
+
+/* --------------------------------------------------------------- */
+/* FIXME:  FINAL MEDIA QUERY - REGISTRATION FORM (SMALLER SCREENS) */
+/* --------------------------------------------------------------- */
+
+@media screen and (max-width: 600px) {
+  button {
+    margin: 0rem 1rem 2rem 1rem;
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .bronze__button__container {
+    flex-direction: column;
+  }
+
+  .bronze__file-input {
+    margin: 1rem 0.2rem 1rem 0.2rem;
+  }
+
+  .bronze__form__group label {
+    font-size: 1rem;
+    margin: 0rem 0.6rem 0rem 0.5rem;
+  }
+
+  .bronze__form__group input[type="email"] {
+    margin: 0.5rem 0.2rem 0.5rem 0.2rem;
+  }
+
+  .bronze__checkbox__option {
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin: 2rem 2rem 2rem 0.1rem;
+  }
+
+  .bronze__form__group select {
+    margin: 0.5rem 0.1rem 0.5rem 0.1rem;
+  }
+
+  .bronze__form__group textarea {
+    margin: 0.5rem 0.1rem 0.5rem 0.1rem;
+  }
+
+  .bronze__form__group input[type="tel"] {
+    margin: 0.5rem 0.1rem 0.5rem 0.1rem;
+  }
+
+  .bronze__form__group input[type="text"] {
+    margin: 0.5rem 0.1rem 0.5rem 0.1rem;
+  }
+
+  .bronze__form__group input[type="date"] {
+    margin: 0.5rem 0.1rem 0.5rem 0.1rem;
+  }
+
+  .bronze__form__group input[type="number"] {
+    margin: 0.5rem 0.1rem 0.5rem 0.1rem;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .bronze__form__group .g-recaptcha {
+    margin: 2rem 1.5rem 2rem 2.5rem;
+    transform: scale(0.8);
+    -webkit-transform: scale(0.8);
+  }
+}
 
 /* ===================================================================================================================== */
 /* ===================================================================================================================== */
-/* FIXME:FIXME:                      SECTION - GIFT VOUCHER ORDER FORM (END)                                FIXME:FIXME: */
+/* FIXME:FIXME:                        SECTION - BRONZE INVESTING PLAN (END)                                FIXME:FIXME: */
+/* ===================================================================================================================== */
+/* ===================================================================================================================== */
+
+/* ===================================================================================================================== */
+/* ===================================================================================================================== */
+/* TODO:TODO:                             SECTION - SILVER INVESTMENT PLAN (START)                            TODO:TODO: */
+/* ===================================================================================================================== */
+/* ===================================================================================================================== */
+
+/* .silver__investing__plan__service__page__title h5 {
+  position: relative;
+  top: 9rem;
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  text-transform: uppercase;
+  margin: 2.5rem 0rem 2.5rem 0rem;
+  text-align: center;
+  background: #eee;
+  border: 2px solid red;
+} */
+
+.silver__investing__plan__service__section {
+  position: relative;
+  /* top: 9rem; */
+  top: 10rem;
+  /* top: 9rem; */
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  margin: 0rem 0rem 0rem 0rem;
+  padding: 0rem 0rem 2rem 0rem;
+  background-color: var(--color-what-we-do-page-background);
+  /* border: 2px solid red; */
+}
+
+/* .silver__investing__plan__service__section img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+} */
+
+@media screen and (max-width: 830px) {
+  /* .silver__investing__plan__service__page__title h5 {
+    position: relative;
+    top: 10rem;
+  } */
+  .silver__investing__plan__service__section {
+    position: relative;
+    /* top: 9rem; */
+    /* top: 10rem; */
+    top: 11rem;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  /* .silver__investing__plan__service__page__title h5 {
+    position: relative;
+    top: 13.5rem;
+  } */
+
+  .silver__investing__plan__service__section {
+    position: relative;
+    /* top: 12.5rem; */
+    /* top: 13.5rem; */
+    top: 14.5rem;
+  }
+}
+
+/* ===================================================================================================================== */
+/* TODO:  PART 1 - INVESTING PLAN (SILVER) - PAGE TITLE                                                                  */
+/* ===================================================================================================================== */
+
+/* ------------------------------- */
+/* FIXME:  VIEW - MOBILE FIRST     */
+/* ------------------------------- */
+
+.silver__page__title h5 {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  text-transform: uppercase;
+  margin: 0rem 0rem 1rem 0rem;
+  padding: 1.5rem 0rem 0rem 0rem;
+  text-align: center;
+}
+
+/* ------------------------------- */
+/* FIXME:  VIEW - LARGER SCREENS   */
+/* ------------------------------- */
+
+/* ===================================================================================================================== */
+/* TODO:  PART 2 - INVESTING PLAN (SILVER) - EMBEDDED YOUTUBE VIDEO                                                      */
+/* ===================================================================================================================== */
+
+/* ------------------------------- */
+/* FIXME:  VIEW - MOBILE FIRST     */
+/* ------------------------------- */
+
+.silver__video__container {
+  position: relative;
+  height: 0;
+  width: 100%;
+  margin: 0rem 0rem 1.5rem 0rem;
+  padding: 0rem 0rem 56.25% 0rem;
+}
+
+.silver__video__container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+  padding: 0.45rem 0.75rem 0.45rem 0.75rem;
+  /* border-radius: 1.5rem; */
+}
+
+/* ------------------------------- */
+/* FIXME:  VIEW - LARGER SCREENS   */
+/* ------------------------------- */
+
+@media screen and (min-width: 768px) {
+  .silver__video__container iframe {
+    padding: 0.2rem 0.75rem 0.2rem 0.75rem;
+    /* border-radius: 2rem; */
+  }
+}
+
+/* ===================================================================================================================== */
+/* TODO:  PART 3 - INVESTING PLAN (SILVER) - BANNER & DOWNLOAD PDF BROCHURE                                              */
+/* ===================================================================================================================== */
+
+/* ------------------------------- */
+/* FIXME:  VIEW - MOBILE FIRST     */
+/* ------------------------------- */
+
+.silver__banner {
+  position: relative;
+  margin: 2rem 0.4rem 2rem 0.4rem;
+}
+
+.silver__banner img {
+  width: 100%;
+  height: auto;
+  border-radius: 0.5rem;
+  padding: 0.2rem 0.2rem 0.2rem 0.2rem;
+}
+
+/* ----------------------------- */
+/* TODO:  DOWNLOAD PDF BROCHURE  */
+/* ----------------------------- */
+
+.silver__download__pdf {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: -0.5rem 0rem -2rem 0rem;
+}
+
+.silver__download__pdf a {
+  color: white;
+  text-decoration: none;
+}
+
+button.silver__link__pdf__brochure {
+  background: var(--color-silver-button-background);
+  color: var(--color-silver-button-text);
+  border: 0;
+  outline: 0;
+  border-radius: 0.5rem;
+  width: 20rem;
+  height: 3rem;
+  font-size: 1.2rem;
+  font-weight: 500;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+  margin: 0.5rem 2rem 3rem 2rem;
+  padding: 1rem 1rem 1rem 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  cursor: pointer;
+  text-decoration: none;
+  transition: transform 0.5s ease-in-out;
+}
+
+button.silver__link__pdf__brochure:hover {
+  transform: scale(1.05);
+}
+
+/* ------------------------------- */
+/* FIXME:  VIEW - LARGER SCREENS   */
+/* ------------------------------- */
+
+/* ===================================================================================================================== */
+/* TODO:  PART 4A - INVESTING PLAN (SILVER) - ACCORDIAN "MAIN" CONTAINER (HOLDING ALL ELEMENTS)                          */
+/* ===================================================================================================================== */
+
+.silver__accordian {
+  width: 95%;
+  max-width: 128rem;
+  margin: 2rem auto 2rem auto;
+  /* border: 1px solid white; */
+}
+
+/* ===================================================================================================================== */
+/* TODO:  PART 4B - INVESTING PLAN (SILVER) - ACCORDIAN "ITEMS" CONTAINER (HOLDING ALL ITEMS)                            */
+/* ===================================================================================================================== */
+
+.silver__accordian_item {
+  background-color: var(--color-silver-accordian-item-background);
+  color: var(--color-silver-accordian-item-text);
+  margin: 1rem 0rem 1rem 0rem;
+  border-radius: 0.5rem;
+  box-shadow: var(--color-box-shadow-01);
+}
+/* ===================================================================================================================== */
+/* TODO:  PART 4C - INVESTING PLAN (SILVER) - ACCORDIAN - ITEM (HEADER)                                                  */
+/* ===================================================================================================================== */
+
+.silver__accordian-item-header {
+  display: flex;
+  position: relative;
+  align-items: center;
+  min-height: 3.5rem;
+  line-height: 1.25rem;
+  font-size: 1.3rem;
+  font-weight: 600;
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
+  padding: 0.5rem 3rem 0.5rem 1rem;
+  cursor: pointer;
+}
+
+/* FIXME:  NOTE:  THE CSS ENTITY CODE FOR PLUS SIGN "+" = "\002B" */
+/* FIXME:  NOTE:  THE CSS ENTITY CODE FOR DOWN ARROW "v" = \25BE */
+
+.silver__accordian-item-header::after {
+  /* content: "\25BE"; */
+  content: "\002B";
+  font-size: 2rem;
+  position: absolute;
+  right: 1rem;
+  color: var(--color-silver-accordian-item-plus-and-minus-sign);
+  transition: transform 0.5s ease-in-out;
+}
+
+/* FIXME:  NOTE:  THE CSS ENTITY CODE FOR MINUS SIGN "-" = "\2212" */
+
+.silver__accordian-item-header.active::after {
+  /* transform: rotate(-180deg); */
+  content: "\2212";
+  transform: none;
+}
+
+.silver__accordian-item-header.active {
+  color: var(--color-silver-accordian-item-header-active);
+}
+
+/* ===================================================================================================================== */
+/* TODO:  PART 4D - INVESTING PLAN (SILVER) - ACCORDIAN-ITEM (BODY)                                                      */
+/* ===================================================================================================================== */
+
+/* ITEM - MAIN CONTAINER */
+
+.silver__accordian-item-body {
+  /* display: none; */
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+/* ITEM - ALL ELEMENTS CONTAINER */
+
+.silver__accordian-item-body-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0rem 0rem 0rem 0rem;
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  border-bottom: 1px solid
+    var(--color-silver-team-accordian-item-seperation-line-alternative);
+  /* border: 1px solid red; */
+}
+
+.silver__content-statement {
+  max-width: 900px;
+  font-size: 1.2rem;
+  font-weight: 500;
+  text-align: justify;
+  letter-spacing: 0.025rem;
+  line-height: 1.5;
+  padding: 0rem 1rem 0rem 1rem;
+  /* border: 1px solid green; */
+}
+
+.silver__content-confirmation {
+  min-width: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  line-height: 0.5;
+  padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+  border-left: 1px solid
+    var(--color-silver-team-accordian-item-seperation-line-alternative);
+  /* border: 1px solid red; */
+}
+
+.silver__confirmation-image img {
+  width: 3rem;
+  height: 3rem;
+}
+
+.silver__confirmation-text {
+  font-size: 1.1rem;
+  line-height: 0.5;
+  padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+}
+
+/* ===================================================================================================================== */
+/* TODO:  PART 4E - INVESTING PLAN (SILVER) - MEDIA QUERY (LARGER DEVICES)                                               */
+/* ===================================================================================================================== */
+
+@media screen and (max-width: 430px) {
+  .silver__accordian-item-header {
+    font-size: 1rem;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .silver__accordian-item-body-content {
+    flex-direction: column;
+    margin: 0rem 0rem 0rem 0rem;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+  }
+
+  .silver__content-statement {
+    justify-content: center;
+    text-align: center;
+    max-width: 280px;
+    font-size: 1rem;
+    padding: 0rem 0.5rem 0rem 0.5rem;
+  }
+
+  .silver__content-confirmation {
+    padding: 0.25rem 0.5rem 0.25rem 0.5rem;
+    border-left: none;
+  }
+
+  .silver__confirmation-image img {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+
+  .silver__confirmation-text {
+    font-size: 1rem;
+    padding: 0.5rem 0.5rem 0.25rem 0.5rem;
+  }
+}
+
+/* ===================================================================================================================== */
+/* TODO:  PART 5 - INVESTING PLAN (SILVER) - FORM HEADERS (ON REGISTRATION FORM)                                         */
+/* ===================================================================================================================== */
+
+/* ------------------------------- */
+/* FIXME:  VIEW - MOBILE FIRST     */
+/* ------------------------------- */
+
+.silver__registration_form__header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  font-weight: 500;
+  letter-spacing: 0.2rem;
+  background-color: var(--color-silver-hex);
+  color: var(--color-silver-page-header-text);
+  margin: 2.5rem 0.4rem 2rem 0.4rem;
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  border-radius: 0.5rem;
+  box-shadow: var(--color-box-shadow-01);
+}
+
+/* ------------------------- */
+/* FIXME:  PRIVACY STATEMENT */
+/* ------------------------- */
+
+.silver__privacy__statement {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem 0.4rem 2rem 0.4rem;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+}
+
+.silver__privacy__statement strong {
+  text-decoration: none;
+  color: var(--color-silver-hex);
+}
+
+.silver__privacy__statement a {
+  text-decoration: none;
+  color: var(--color-silver-hex);
+  cursor: pointer;
+}
+
+/* ------------------------------- */
+/* FIXME:  VIEW - LARGER SCREENS   */
+/* ------------------------------- */
+
+@media screen and (max-width: 430px) {
+  .silver__registration_form__header {
+    font-size: 1rem;
+    text-align: center;
+  }
+}
+
+/* ===================================================================================================================== */
+/* TODO:  PART 6 - INVESTING PLAN (SILVER) - REGISTRATION FORM                                                           */
+/* ===================================================================================================================== */
+
+/* ---------------------------------------------- */
+/* FIXME:  FORM CONTAINER  FIXME:                 */
+/* ---------------------------------------------- */
+
+.silver__form__group {
+  margin: 0rem 0rem 1rem 1rem;
+}
+
+/* ---------------------------------------------- */
+/* FIXME:  FORM LABEL  FIXME:                     */
+/* ---------------------------------------------- */
+
+.silver__form__group label {
+  display: block;
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin: 0.5rem 1.75rem 0.5rem 1.75rem;
+}
+
+.silver__form__group input::placeholder {
+  font-family: "Poppins", sans-serif;
+}
+
+/* ---------------------------------------------- */
+/* FIXME:  INPUT FIELD TYPE =  TEXT  FIXME:       */
+/* e.g. "NAME" or "LAST NAME" etc.                */
+/* ---------------------------------------------- */
+
+.silver__form__group input[type="text"] {
+  /* width: 25rem; */
+  width: 96%;
+  border-radius: 0.5rem;
+  border: 1px solid var(--color-silver-input-border);
+  margin: 0.5rem 1.4rem 0.5rem 1.4rem;
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: border-color 0.15s, box-shadow 0.15s;
+}
+
+.silver__form__group input[type="text"]:focus {
+  border-color: var(--color-silver-input-border-focus);
+  box-shadow: 0 0 0 2px rgba(125, 125, 125, 0.95);
+  outline: 0;
+}
+
+/* ---------------------------------------------- */
+/* FIXME:  INPUT FIELD TYPE =  TEL  FIXME:        */
+/* e.g. "TELEPHONE" or "MOBILE" Number etc.       */
+/* ---------------------------------------------- */
+
+.silver__form__group input[type="tel"] {
+  /* width: 25rem; */
+  width: 96%;
+  border-radius: 0.5rem;
+  border: 1px solid var(--color-silver-input-border);
+  margin: 0.5rem 1.4rem 0.5rem 1.4rem;
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: border-color 0.15s, box-shadow 0.15s;
+}
+
+.silver__form__group input[type="tel"]:focus {
+  border-color: var(--color-silver-input-border-focus);
+  box-shadow: 0 0 0 2px rgba(125, 125, 125, 0.95);
+  outline: 0;
+}
+
+/* ---------------------------------------------- */
+/* FIXME:  INPUT FIELD TYPE =  TEXTAREA  FIXME:   */
+/* Runs over multiple lines (rows) e.g. "Address" */
+/* ---------------------------------------------- */
+
+.silver__form__group textarea {
+  resize: none;
+  /* width: 25rem; */
+  width: 96%;
+  border-radius: 0.5rem;
+  border: 1px solid var(--color-silver-input-border);
+  margin: 0.5rem 1.4rem 0.5rem 1.4rem;
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  font-size: 1.2rem;
+  font-family: "poppins", sans-serif;
+  cursor: pointer;
+  transition: border-color 0.15s, box-shadow 0.15s;
+}
+
+.silver__form__group textarea:focus {
+  border-color: var(--color-silver-input-border-focus);
+  box-shadow: 0 0 0 2px rgba(125, 125, 125, 0.95);
+  outline: 0;
+}
+
+/* ---------------------------------------------- */
+/* FIXME:  INPUT FIELD = DROPDOWN LIST     FIXME: */
+/* e.g. Countries, Provinces, Titles etc.         */
+/* ---------------------------------------------- */
+
+.silver__form__group select {
+  /* width: 25rem; */
+  width: 96%;
+  border-radius: 0.5rem;
+  border: 1px solid var(--color-silver-input-border);
+  margin: 0.5rem 1.4rem 0.5rem 1.4rem;
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: border-color 0.15s, box-shadow 0.15s;
+}
+
+.silver__form__group select:focus {
+  border-color: var(--color-silver-input-border-focus);
+  box-shadow: 0 0 0 2px rgba(125, 125, 125, 0.95);
+  outline: 0;
+}
+
+/* ------------------------------------------------------------------------- */
+/* TODO:  START STYLING OF CUSTOM CHECKBOX                                   */
+/* ------------------------------------------------------------------------- */
+
+/* --------------------------------------- */
+/* FIXME:  INPUT FIELD = CHECKBOX  FIXME:  */
+/* --------------------------------------- */
+
+.silver__checkbox__option {
+  font-size: 1.2rem;
+  font-weight: 500;
+  line-height: 1.25;
+  text-transform: none;
+  text-align: justify;
+  display: grid;
+  grid-template-columns: 1rem auto;
+  gap: 3rem;
+  margin: 2rem 0rem 2rem 0rem;
+  padding: 1rem 1.5rem 0rem 0rem;
+  cursor: pointer;
+}
+
+label.silver__checkbox__option {
+  display: grid;
+  text-transform: initial;
+  font-size: 1.2rem;
+  font-weight: 500;
+  line-height: 1.25;
+  color: black;
+}
+
+/* ------------------------------------ */
+/* THIS IS TO HIDE THE NATIVE CHECKBOX  */
+/* ------------------------------------ */
+
+.silver__checkbox__option input[type="checkbox"] {
+  /* Add if not using autoprefixer */
+  -webkit-appearance: none;
+  appearance: none;
+  /* For iOS < 15 to remove gradient background */
+  background-color: var(--color-silver-custom-checkbox-background);
+  /* Not removed via appearance */
+  margin: 0;
+}
+
+/* --------------------------------------- */
+/* THIS IS TO DISPLAY THE CUSTOM CHECKBOX  */
+/* --------------------------------------- */
+
+.silver__checkbox__option input[type="checkbox"] {
+  appearance: none;
+  background-color: var(--color-silver-custom-checkbox-background);
+  margin: 0;
+  font: inherit;
+  color: var(--color-silver-custom-checkbox-border);
+  width: 1.5rem;
+  height: 1.5rem;
+  border: 0.15em solid var(--color-silver-custom-checkbox-border);
+  border-radius: 0.15em;
+  transform: translateY(-0.075em);
+  display: grid;
+  place-content: center;
+  cursor: pointer;
+}
+
+.silver__checkbox__option + .silver__checkbox__option {
+  margin-top: 1rem;
+}
+
+/* --------------------------------------- */
+/* CUSTOM CHECKBOX - CHECKED STATE         */
+/* --------------------------------------- */
+
+.silver__checkbox__option input[type="checkbox"]::before {
+  content: "";
+  width: 0.7rem;
+  height: 0.7rem;
+  transform: scale(0);
+  transition: 120ms transform ease-in-out;
+  box-shadow: inset 1em 1em var(--color-silver-custom-checkbox-checkmark);
+  /* Windows High Contrast Mode */
+  background-color: CanvasText;
+  /* Creating a checkmark with CLIP-PATH */
+  transform-origin: bottom left;
+  clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
+}
+
+.silver__checkbox__option input[type="checkbox"]:checked::before {
+  transform: scale(1);
+}
+
+/* --------------------------------------- */
+/* CUSTOM CHECKBOX - FOCUSSED STATE        */
+/* --------------------------------------- */
+
+.silver__checkbox__option input[type="checkbox"]:focus {
+  outline: max(2px, 0.15em) solid var(--color-silver-custom-checkbox-focus);
+  outline-offset: max(1px, 0.15em);
+}
+
+/* --------------------------------------- */
+/* CUSTOM CHECKBOX - DISABLED STATE        */
+/* --------------------------------------- */
+
+.silver__checkbox__option--disabled {
+  color: var(--color-silver-custom-checkbox-disabled);
+  cursor: not-allowed;
+}
+
+.silver__checkbox__option input[type="checkbox"]:disabled {
+  color: var(--color-silver-custom-checkbox-disabled);
+  cursor: not-allowed;
+}
+
+/* ------------------------------------------------------------------------- */
+/* TODO:  END OF STYLING OF CUSTOM CHECKBOX                                  */
+/* ------------------------------------------------------------------------- */
+
+/* ------------------------------------------------------------------------- */
+/* TODO: START STYLING OF CUSTOM FILE-UPLOAD                                 */
+/* ------------------------------------------------------------------------- */
+
+/* ---------------------------------------------- */
+/* FIXME: INPUT FIELD TYPE = FILE          FIXME: */
+/* ---------------------------------------------- */
+
+.silver__file-input {
+  display: inline-block;
+  margin: 1rem 1.4rem 1rem 1.4rem;
+  padding: 1rem 1rem 1rem 1rem;
+  text-align: left;
+  background: var(--color-silver-custom-fileinput-background);
+  /* width: 450px; */
+  width: 96%;
+  position: relative;
+  border-radius: 0.5rem;
+  box-shadow: var(--color-box-shadow-02), var(--color-box-shadow-01);
+}
+
+/* ---------------------------------------------- */
+/* HIDING THE NATIVE FILE UPLOADER                */
+/* ---------------------------------------------- */
+
+.silver__file-input > [type="file"] {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  z-index: 10;
+  cursor: pointer;
+}
+
+/* -------------------------------------------- */
+/* STYLE AND DISPLAY THE CUSTOM FILE UPLOADER   */
+/* -------------------------------------------- */
+
+.silver__file-input > .silver__button {
+  /* display: inline-block; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0rem 0.5rem 0.75rem 0.5rem;
+  padding: 0.8rem 1rem 0.8rem 1rem;
+  font-size: 1.3rem;
+  font-weight: 500;
+  background: var(--color-silver-custom-fileinput-background);
+  border-radius: 0.5rem;
+  box-shadow: var(--color-box-shadow-02), var(--color-box-shadow-01);
+  cursor: pointer;
+}
+
+.silver__file-input:hover > .silver__button {
+  background: var(--color-silver-custom-fileinput-background-hover);
+  color: var(--color-silver-custom-fileinput-background-hover-text);
+}
+
+.silver__file-input > .silver__label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1.5rem 0.5rem 0rem 0.5rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--color-silver-custom-fileinput-label-text);
+  white-space: nowrap;
+  opacity: 0.5;
+}
+
+.silver__file-input.-chosen > .silver__label {
+  opacity: 1;
+}
+
+.silver__file-input .fa {
+  font-size: 1.8rem;
+  margin: 0rem 1rem 0rem 0rem;
+}
+
+label .silver__label__strong {
+  color: var(--color-silver-hex);
+}
+
+/* ------------------------------------------------------------------------- */
+/* TODO:  END OF STYLING OF CUSTOM FILE-UPLOAD                               */
+/* ------------------------------------------------------------------------- */
+
+/* ------------------------------------------ */
+/* FIXME:  INPUT FIELD TYPE =  EMAIL  FIXME:  */
+/* ------------------------------------------ */
+
+.silver__form__group input[type="email"] {
+  /* width: 25rem; */
+  width: 96%;
+  border-radius: 0.5rem;
+  border: 1px solid var(--color-silver-input-border);
+  margin: 0.5rem 1.4rem 0.5rem 1.4rem;
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: border-color 0.15s, box-shadow 0.15s;
+}
+
+.silver__form__group input[type="email"]:focus {
+  border-color: var(--color-silver-input-border-focus);
+  box-shadow: 0 0 0 2px rgba(125, 125, 125, 0.95);
+  outline: 0;
+}
+
+/* ----------------------------- */
+/* FIXME:  FORM BUTTONS  FIXME:  */
+/* ----------------------------- */
+
+.silver__button__container button {
+  background: var(--color-silver-button-background);
+  color: var(--color-silver-button-text);
+  border: 0;
+  outline: 0;
+  border-radius: 0.5rem;
+  width: 20rem;
+  height: 3rem;
+  font-size: 1.2rem;
+  font-weight: 500;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+  margin: 0.5rem 2rem 3rem 2rem;
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  cursor: pointer;
+  text-decoration: none;
+  transition: transform 0.5s ease-in-out;
+}
+
+.silver__button__container button:hover {
+  transform: scale(1.05);
+}
+
+.silver__button__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ---------------------------------------------- */
+/* FIXME:  STYLING - GOOGLE RECAPTCHA  FIXME:     */
+/* ---------------------------------------------- */
+
+.silver__form__group .g-recaptcha {
+  margin: 2rem 1rem 2rem 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* transform: scale(0.89); */
+  transform: scale(1);
+  /* -webkit-transform: scale(0.89); */
+  -webkit-transform: scale(1);
+  transform-origin: 0 0;
+  -webkit-transform-origin: 0 0;
+}
+
+/* --------------------------------------------------------------- */
+/* FIXME:  FINAL MEDIA QUERY - REGISTRATION FORM (SMALLER SCREENS) */
+/* --------------------------------------------------------------- */
+
+@media screen and (max-width: 600px) {
+  .silver__button__container button {
+    margin: 0rem 1rem 2rem 1rem;
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .silver__button__container {
+    flex-direction: column;
+  }
+
+  .silver__file-input {
+    margin: 1rem 0.2rem 1rem 0.2rem;
+  }
+
+  .silver__form__group label {
+    font-size: 1rem;
+    margin: 0rem 0.6rem 0rem 0.5rem;
+  }
+
+  .silver__form__group input[type="email"] {
+    margin: 0.5rem 0.2rem 0.5rem 0.2rem;
+  }
+
+  .silver__checkbox__option {
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin: 2rem 2rem 2rem 0.1rem;
+  }
+
+  .silver__form__group select {
+    margin: 0.5rem 0.1rem 0.5rem 0.1rem;
+  }
+
+  .silver__form__group textarea {
+    margin: 0.5rem 0.1rem 0.5rem 0.1rem;
+  }
+
+  .silver__form__group input[type="tel"] {
+    margin: 0.5rem 0.1rem 0.5rem 0.1rem;
+  }
+
+  .silver__form__group input[type="text"] {
+    margin: 0.5rem 0.1rem 0.5rem 0.1rem;
+  }
+
+  .silver__form__group input[type="date"] {
+    margin: 0.5rem 0.1rem 0.5rem 0.1rem;
+  }
+
+  .silver__form__group input[type="number"] {
+    margin: 0.5rem 0.1rem 0.5rem 0.1rem;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .silver__form__group .g-recaptcha {
+    margin: 2rem 1.5rem 2rem 2.5rem;
+    transform: scale(0.8);
+    -webkit-transform: scale(0.8);
+  }
+}
+
+/* ===================================================================================================================== */
+/* ===================================================================================================================== */
+/* FIXME:FIXME:                            SECTION - SILVER INVESTMENT PLAN (END)                           FIXME:FIXME: */
+/* ===================================================================================================================== */
+/* ===================================================================================================================== */
+
+/* ===================================================================================================================== */
+/* ===================================================================================================================== */
+/* TODO:TODO:                               SECTION - GOLD INVESTMENT PLAN (START)                            TODO:TODO: */
+/* ===================================================================================================================== */
+/* ===================================================================================================================== */
+
+/* .gold__investing__plan__service__page__title h5 {
+  position: relative;
+  top: 9rem;
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  text-transform: uppercase;
+  margin: 2.5rem 0rem 2.5rem 0rem;
+  text-align: center;
+  background: #eee;
+  border: 2px solid red;
+} */
+
+.gold__investing__plan__service__section {
+  position: relative;
+  /* top: 9rem; */
+  top: 10rem;
+  /* top: 9rem; */
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  margin: 0rem 0rem 0rem 0rem;
+  padding: 0rem 0rem 2rem 0rem;
+  background-color: var(--color-what-we-do-page-background);
+  /* border: 2px solid red; */
+}
+
+/* .gold__investing__plan__service__section img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+} */
+
+@media screen and (max-width: 830px) {
+  /* .gold__investing__plan__service__page__title h5 {
+    position: relative;
+    top: 10rem;
+  } */
+  .gold__investing__plan__service__section {
+    position: relative;
+    /* top: 9rem; */
+    /* top: 10rem; */
+    top: 11rem;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  /* .gold__investing__plan__service__page__title h5 {
+    position: relative;
+    top: 13.5rem;
+  } */
+
+  .gold__investing__plan__service__section {
+    position: relative;
+    /* top: 12.5rem; */
+    /* top: 13.5rem; */
+    top: 14.5rem;
+  }
+}
+
+/* ===================================================================================================================== */
+/* TODO:  PART 1 - INVESTING PLAN (GOLD) - PAGE TITLE                                                                    */
+/* ===================================================================================================================== */
+
+/* ------------------------------- */
+/* FIXME:  VIEW - MOBILE FIRST     */
+/* ------------------------------- */
+
+.gold__page__title h5 {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  text-transform: uppercase;
+  margin: 0rem 0rem 1rem 0rem;
+  padding: 1.5rem 0rem 0rem 0rem;
+  text-align: center;
+}
+
+/* ------------------------------- */
+/* FIXME:  VIEW - LARGER SCREENS   */
+/* ------------------------------- */
+
+/* ===================================================================================================================== */
+/* TODO:  PART 2 - INVESTING PLAN (GOLD) - EMBEDDED YOUTUBE VIDEO                                                        */
+/* ===================================================================================================================== */
+
+/* ------------------------------- */
+/* FIXME:  VIEW - MOBILE FIRST     */
+/* ------------------------------- */
+
+.gold__video__container {
+  position: relative;
+  height: 0;
+  width: 100%;
+  margin: 0rem 0rem 1.5rem 0rem;
+  padding: 0rem 0rem 56.25% 0rem;
+}
+
+.gold__video__container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+  padding: 0.45rem 0.75rem 0.45rem 0.75rem;
+  /* border-radius: 1.5rem; */
+}
+
+/* ------------------------------- */
+/* FIXME:  VIEW - LARGER SCREENS   */
+/* ------------------------------- */
+
+@media screen and (min-width: 768px) {
+  .gold__video__container iframe {
+    padding: 0.2rem 0.75rem 0.2rem 0.75rem;
+    /* border-radius: 2rem; */
+  }
+}
+
+/* ===================================================================================================================== */
+/* TODO:  PART 3 - INVESTING PLAN (GOLD) - BANNER & DOWNLOAD PDF BROCHURE                                                */
+/* ===================================================================================================================== */
+
+/* ------------------------------- */
+/* FIXME:  VIEW - MOBILE FIRST     */
+/* ------------------------------- */
+
+.gold__banner {
+  position: relative;
+  margin: 2rem 0.4rem 2rem 0.4rem;
+}
+
+.gold__banner img {
+  width: 100%;
+  height: auto;
+  border-radius: 0.5rem;
+  padding: 0.2rem 0.2rem 0.2rem 0.2rem;
+}
+
+/* ----------------------------- */
+/* TODO:  DOWNLOAD PDF BROCHURE  */
+/* ----------------------------- */
+
+.gold__download__pdf {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: -0.5rem 0rem -2rem 0rem;
+}
+
+.gold__download__pdf a {
+  color: white;
+  text-decoration: none;
+}
+
+button.gold__link__pdf__brochure {
+  background: var(--color-gold-button-background);
+  color: var(--color-gold-button-text);
+  border: 0;
+  outline: 0;
+  border-radius: 0.5rem;
+  width: 20rem;
+  height: 3rem;
+  font-size: 1.2rem;
+  font-weight: 500;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+  margin: 0.5rem 2rem 3rem 2rem;
+  padding: 1rem 1rem 1rem 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  cursor: pointer;
+  text-decoration: none;
+  transition: transform 0.5s ease-in-out;
+}
+
+button.gold__link__pdf__brochure:hover {
+  transform: scale(1.05);
+}
+
+/* ------------------------------- */
+/* FIXME:  VIEW - LARGER SCREENS   */
+/* ------------------------------- */
+
+/* ===================================================================================================================== */
+/* TODO:  PART 4A - INVESTING PLAN (GOLD) - ACCORDIAN "MAIN" CONTAINER (HOLDING ALL ELEMENTS)                            */
+/* ===================================================================================================================== */
+
+.gold__accordian {
+  width: 95%;
+  max-width: 128rem;
+  margin: 2rem auto 2rem auto;
+  /* border: 1px solid white; */
+}
+
+/* ===================================================================================================================== */
+/* TODO:  PART 4B - INVESTING PLAN (GOLD) - ACCORDIAN "ITEMS" CONTAINER (HOLDING ALL ITEMS)                              */
+/* ===================================================================================================================== */
+
+.gold__accordian_item {
+  background-color: var(--color-gold-accordian-item-background);
+  color: var(--color-gold-accordian-item-text);
+  margin: 1rem 0rem 1rem 0rem;
+  border-radius: 0.5rem;
+  box-shadow: var(--color-box-shadow-01);
+}
+/* ===================================================================================================================== */
+/* TODO:  PART 4C - INVESTING PLAN (GOLD) - ACCORDIAN - ITEM (HEADER)                                                    */
+/* ===================================================================================================================== */
+
+.gold__accordian-item-header {
+  display: flex;
+  position: relative;
+  align-items: center;
+  min-height: 3.5rem;
+  line-height: 1.25rem;
+  font-size: 1.3rem;
+  font-weight: 600;
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
+  padding: 0.5rem 3rem 0.5rem 1rem;
+  cursor: pointer;
+}
+
+/* FIXME:  NOTE:  THE CSS ENTITY CODE FOR PLUS SIGN "+" = "\002B" */
+/* FIXME:  NOTE:  THE CSS ENTITY CODE FOR DOWN ARROW "v" = \25BE */
+
+.gold__accordian-item-header::after {
+  /* content: "\25BE"; */
+  content: "\002B";
+  font-size: 2rem;
+  position: absolute;
+  right: 1rem;
+  color: var(--color-gold-accordian-item-plus-and-minus-sign);
+  transition: transform 0.5s ease-in-out;
+}
+
+/* FIXME:  NOTE:  THE CSS ENTITY CODE FOR MINUS SIGN "-" = "\2212" */
+
+.gold__accordian-item-header.active::after {
+  /* transform: rotate(-180deg); */
+  content: "\2212";
+  transform: none;
+}
+
+.gold__accordian-item-header.active {
+  color: var(--color-gold-accordian-item-header-active);
+}
+
+/* ===================================================================================================================== */
+/* TODO:  PART 4D - INVESTING PLAN (GOLD) - ACCORDIAN-ITEM (BODY)                                                        */
+/* ===================================================================================================================== */
+
+/* ITEM - MAIN CONTAINER */
+
+.gold__accordian-item-body {
+  /* display: none; */
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+/* ITEM - ALL ELEMENTS CONTAINER */
+
+.gold__accordian-item-body-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0rem 0rem 0rem 0rem;
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  border-bottom: 1px solid
+    var(--color-gold-team-accordian-item-seperation-line-alternative);
+  /* border: 1px solid red; */
+}
+
+.gold__content-statement {
+  max-width: 900px;
+  font-size: 1.2rem;
+  font-weight: 500;
+  text-align: justify;
+  letter-spacing: 0.025rem;
+  line-height: 1.5;
+  padding: 0rem 1rem 0rem 1rem;
+  /* border: 1px solid green; */
+}
+
+.gold__content-confirmation {
+  min-width: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  line-height: 0.5;
+  padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+  border-left: 1px solid
+    var(--color-gold-team-accordian-item-seperation-line-alternative);
+  /* border: 1px solid red; */
+}
+
+.gold__confirmation-image img {
+  width: 3rem;
+  height: 3rem;
+}
+
+.gold__confirmation-text {
+  font-size: 1.1rem;
+  line-height: 0.5;
+  padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+}
+
+/* ===================================================================================================================== */
+/* TODO:  PART 4E - INVESTING PLAN (GOLD) - MEDIA QUERY (LARGER DEVICES)                                                 */
+/* ===================================================================================================================== */
+
+@media screen and (max-width: 430px) {
+  .gold__accordian-item-header {
+    font-size: 1rem;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .gold__accordian-item-body-content {
+    flex-direction: column;
+    margin: 0rem 0rem 0rem 0rem;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+  }
+
+  .gold__content-statement {
+    justify-content: center;
+    text-align: center;
+    max-width: 280px;
+    font-size: 1rem;
+    padding: 0rem 0.5rem 0rem 0.5rem;
+  }
+
+  .gold__content-confirmation {
+    padding: 0.25rem 0.5rem 0.25rem 0.5rem;
+    border-left: none;
+  }
+
+  .gold__confirmation-image img {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+
+  .gold__confirmation-text {
+    font-size: 1rem;
+    padding: 0.5rem 0.5rem 0.25rem 0.5rem;
+  }
+}
+
+/* ===================================================================================================================== */
+/* TODO:  PART 5 - INVESTING PLAN (GOLD) - FORM HEADERS (ON REGISTRATION FORM)                                           */
+/* ===================================================================================================================== */
+
+/* ------------------------------- */
+/* FIXME:  VIEW - MOBILE FIRST     */
+/* ------------------------------- */
+
+.gold__registration_form__header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  font-weight: 500;
+  letter-spacing: 0.2rem;
+  background-color: var(--color-gold-hex);
+  color: var(--color-gold-page-header-text);
+  margin: 2.5rem 0.4rem 2rem 0.4rem;
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  border-radius: 0.5rem;
+  box-shadow: var(--color-box-shadow-01);
+}
+
+/* ------------------------- */
+/* FIXME:  PRIVACY STATEMENT */
+/* ------------------------- */
+
+.gold__privacy__statement {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem 0.4rem 2rem 0.4rem;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+}
+
+.gold__privacy__statement strong {
+  text-decoration: none;
+  color: var(--color-gold-hex);
+}
+
+.gold__privacy__statement a {
+  text-decoration: none;
+  color: var(--color-gold-hex);
+  cursor: pointer;
+}
+
+/* ------------------------------- */
+/* FIXME:  VIEW - LARGER SCREENS   */
+/* ------------------------------- */
+
+@media screen and (max-width: 430px) {
+  .gold__registration_form__header {
+    font-size: 1rem;
+    text-align: center;
+  }
+}
+
+/* ===================================================================================================================== */
+/* TODO:  PART 6 - INVESTING PLAN (GOLD) - REGISTRATION FORM                                                             */
+/* ===================================================================================================================== */
+
+/* ---------------------------------------------- */
+/* FIXME:  FORM CONTAINER  FIXME:                 */
+/* ---------------------------------------------- */
+
+.gold__form__group {
+  margin: 0rem 0rem 1rem 1rem;
+}
+
+/* ---------------------------------------------- */
+/* FIXME:  FORM LABEL  FIXME:                     */
+/* ---------------------------------------------- */
+
+.gold__form__group label {
+  display: block;
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin: 0.5rem 1.75rem 0.5rem 1.75rem;
+}
+
+.gold__form__group input::placeholder {
+  font-family: "Poppins", sans-serif;
+}
+
+/* ---------------------------------------------- */
+/* FIXME:  INPUT FIELD TYPE =  TEXT  FIXME:       */
+/* e.g. "NAME" or "LAST NAME" etc.                */
+/* ---------------------------------------------- */
+
+.gold__form__group input[type="text"] {
+  /* width: 25rem; */
+  width: 96%;
+  border-radius: 0.5rem;
+  border: 1px solid var(--color-gold-input-border);
+  margin: 0.5rem 1.4rem 0.5rem 1.4rem;
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: border-color 0.15s, box-shadow 0.15s;
+}
+
+.gold__form__group input[type="text"]:focus {
+  border-color: var(--color-gold-input-border-focus);
+  box-shadow: 0 0 0 2px rgba(220, 157, 4, 0.95);
+  outline: 0;
+}
+
+/* ---------------------------------------------- */
+/* FIXME:  INPUT FIELD TYPE =  TEL  FIXME:        */
+/* e.g. "TELEPHONE" or "MOBILE" Number etc.       */
+/* ---------------------------------------------- */
+
+.gold__form__group input[type="tel"] {
+  /* width: 25rem; */
+  width: 96%;
+  border-radius: 0.5rem;
+  border: 1px solid var(--color-gold-input-border);
+  margin: 0.5rem 1.4rem 0.5rem 1.4rem;
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: border-color 0.15s, box-shadow 0.15s;
+}
+
+.gold__form__group input[type="tel"]:focus {
+  border-color: var(--color-gold-input-border-focus);
+  box-shadow: 0 0 0 2px rgba(220, 157, 4, 0.95);
+  outline: 0;
+}
+
+/* ---------------------------------------------- */
+/* FIXME:  INPUT FIELD TYPE =  TEXTAREA  FIXME:   */
+/* Runs over multiple lines (rows) e.g. "Address" */
+/* ---------------------------------------------- */
+
+.gold__form__group textarea {
+  resize: none;
+  /* width: 25rem; */
+  width: 96%;
+  border-radius: 0.5rem;
+  border: 1px solid var(--color-gold-input-border);
+  margin: 0.5rem 1.4rem 0.5rem 1.4rem;
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  font-size: 1.2rem;
+  font-family: "poppins", sans-serif;
+  cursor: pointer;
+  transition: border-color 0.15s, box-shadow 0.15s;
+}
+
+.gold__form__group textarea:focus {
+  border-color: var(--color-gold-input-border-focus);
+  box-shadow: 0 0 0 2px rgba(220, 157, 4, 0.95);
+  outline: 0;
+}
+
+/* ---------------------------------------------- */
+/* FIXME:  INPUT FIELD = DROPDOWN LIST     FIXME: */
+/* e.g. Countries, Provinces, Titles etc.         */
+/* ---------------------------------------------- */
+
+.gold__form__group select {
+  /* width: 25rem; */
+  width: 96%;
+  border-radius: 0.5rem;
+  border: 1px solid var(--color-gold-input-border);
+  margin: 0.5rem 1.4rem 0.5rem 1.4rem;
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: border-color 0.15s, box-shadow 0.15s;
+}
+
+.gold__form__group select:focus {
+  border-color: var(--color-gold-input-border-focus);
+  box-shadow: 0 0 0 2px rgba(220, 157, 4, 0.95);
+  outline: 0;
+}
+
+/* ------------------------------------------------------------------------- */
+/* TODO:  START STYLING OF CUSTOM CHECKBOX                                   */
+/* ------------------------------------------------------------------------- */
+
+/* --------------------------------------- */
+/* FIXME:  INPUT FIELD = CHECKBOX  FIXME:  */
+/* --------------------------------------- */
+
+.gold__checkbox__option {
+  font-size: 1.2rem;
+  font-weight: 500;
+  line-height: 1.25;
+  text-transform: none;
+  text-align: justify;
+  display: grid;
+  grid-template-columns: 1rem auto;
+  gap: 3rem;
+  margin: 2rem 0rem 2rem 0rem;
+  padding: 1rem 1.5rem 0rem 0rem;
+  cursor: pointer;
+}
+
+label.gold__checkbox__option {
+  display: grid;
+  text-transform: initial;
+  font-size: 1.2rem;
+  font-weight: 500;
+  line-height: 1.25;
+  color: black;
+}
+
+/* ------------------------------------ */
+/* THIS IS TO HIDE THE NATIVE CHECKBOX  */
+/* ------------------------------------ */
+
+.gold__checkbox__option input[type="checkbox"] {
+  /* Add if not using autoprefixer */
+  -webkit-appearance: none;
+  appearance: none;
+  /* For iOS < 15 to remove gradient background */
+  background-color: var(--color-gold-custom-checkbox-background);
+  /* Not removed via appearance */
+  margin: 0;
+}
+
+/* --------------------------------------- */
+/* THIS IS TO DISPLAY THE CUSTOM CHECKBOX  */
+/* --------------------------------------- */
+
+.gold__checkbox__option input[type="checkbox"] {
+  appearance: none;
+  background-color: var(--color-gold-custom-checkbox-background);
+  margin: 0;
+  font: inherit;
+  color: var(--color-gold-custom-checkbox-border);
+  width: 1.5rem;
+  height: 1.5rem;
+  border: 0.15em solid var(--color-gold-custom-checkbox-border);
+  border-radius: 0.15em;
+  transform: translateY(-0.075em);
+  display: grid;
+  place-content: center;
+  cursor: pointer;
+}
+
+.gold__checkbox__option + .gold__checkbox__option {
+  margin-top: 1rem;
+}
+
+/* --------------------------------------- */
+/* CUSTOM CHECKBOX - CHECKED STATE         */
+/* --------------------------------------- */
+
+.gold__checkbox__option input[type="checkbox"]::before {
+  content: "";
+  width: 0.7rem;
+  height: 0.7rem;
+  transform: scale(0);
+  transition: 120ms transform ease-in-out;
+  box-shadow: inset 1em 1em var(--color-gold-custom-checkbox-checkmark);
+  /* Windows High Contrast Mode */
+  background-color: CanvasText;
+  /* Creating a checkmark with CLIP-PATH */
+  transform-origin: bottom left;
+  clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
+}
+
+.gold__checkbox__option input[type="checkbox"]:checked::before {
+  transform: scale(1);
+}
+
+/* --------------------------------------- */
+/* CUSTOM CHECKBOX - FOCUSSED STATE        */
+/* --------------------------------------- */
+
+.gold__checkbox__option input[type="checkbox"]:focus {
+  outline: max(2px, 0.15em) solid var(--color-gold-custom-checkbox-focus);
+  outline-offset: max(1px, 0.15em);
+}
+
+/* --------------------------------------- */
+/* CUSTOM CHECKBOX - DISABLED STATE        */
+/* --------------------------------------- */
+
+.gold__checkbox__option--disabled {
+  color: var(--color-gold-custom-checkbox-disabled);
+  cursor: not-allowed;
+}
+
+.gold__checkbox__option input[type="checkbox"]:disabled {
+  color: var(--color-gold-custom-checkbox-disabled);
+  cursor: not-allowed;
+}
+
+/* ------------------------------------------------------------------------- */
+/* TODO:  END OF STYLING OF CUSTOM CHECKBOX                                  */
+/* ------------------------------------------------------------------------- */
+
+/* ------------------------------------------------------------------------- */
+/* TODO: START STYLING OF CUSTOM FILE-UPLOAD                                 */
+/* ------------------------------------------------------------------------- */
+
+/* ---------------------------------------------- */
+/* FIXME: INPUT FIELD TYPE = FILE          FIXME: */
+/* ---------------------------------------------- */
+
+.gold__file-input {
+  display: inline-block;
+  margin: 1rem 1.4rem 1rem 1.4rem;
+  padding: 1rem 1rem 1rem 1rem;
+  text-align: left;
+  background: var(--color-gold-custom-fileinput-background);
+  /* width: 450px; */
+  width: 96%;
+  position: relative;
+  border-radius: 0.5rem;
+  box-shadow: var(--color-box-shadow-02), var(--color-box-shadow-01);
+}
+
+/* ---------------------------------------------- */
+/* HIDING THE NATIVE FILE UPLOADER                */
+/* ---------------------------------------------- */
+
+.gold__file-input > [type="file"] {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  z-index: 10;
+  cursor: pointer;
+}
+
+/* -------------------------------------------- */
+/* STYLE AND DISPLAY THE CUSTOM FILE UPLOADER   */
+/* -------------------------------------------- */
+
+.gold__file-input > .gold__button {
+  /* display: inline-block; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0rem 0.5rem 0.75rem 0.5rem;
+  padding: 0.8rem 1rem 0.8rem 1rem;
+  font-size: 1.3rem;
+  font-weight: 500;
+  background: var(--color-gold-custom-fileinput-background);
+  border-radius: 0.5rem;
+  box-shadow: var(--color-box-shadow-02), var(--color-box-shadow-01);
+  cursor: pointer;
+}
+
+.gold__file-input:hover > .gold__button {
+  background: var(--color-gold-custom-fileinput-background-hover);
+  color: var(--color-gold-custom-fileinput-background-hover-text);
+}
+
+.gold__file-input > .gold__label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1.5rem 0.5rem 0rem 0.5rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--color-custom-fileinput-label-text);
+  white-space: nowrap;
+  opacity: 0.5;
+}
+
+.gold__file-input.-chosen > .gold__label {
+  opacity: 1;
+}
+
+.gold__file-input .fa {
+  font-size: 1.8rem;
+  margin: 0rem 1rem 0rem 0rem;
+}
+
+label .gold__label__strong {
+  color: var(--color-gold-hex);
+}
+
+/* ------------------------------------------------------------------------- */
+/* TODO:  END OF STYLING OF CUSTOM FILE-UPLOAD                               */
+/* ------------------------------------------------------------------------- */
+
+/* ------------------------------------------ */
+/* FIXME:  INPUT FIELD TYPE =  EMAIL  FIXME:  */
+/* ------------------------------------------ */
+
+.gold__form__group input[type="email"] {
+  /* width: 25rem; */
+  width: 96%;
+  border-radius: 0.5rem;
+  border: 1px solid var(--color-gold-input-border);
+  margin: 0.5rem 1.4rem 0.5rem 1.4rem;
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: border-color 0.15s, box-shadow 0.15s;
+}
+
+.gold__form__group input[type="email"]:focus {
+  border-color: var(--color-gold-input-border-focus);
+  box-shadow: 0 0 0 2px rgba(220, 157, 4, 0.95);
+  outline: 0;
+}
+
+/* ----------------------------- */
+/* FIXME:  FORM BUTTONS  FIXME:  */
+/* ----------------------------- */
+
+.gold__button__container button {
+  background: var(--color-gold-button-background);
+  color: var(--color-gold-button-text);
+  border: 0;
+  outline: 0;
+  border-radius: 0.5rem;
+  width: 20rem;
+  height: 3rem;
+  font-size: 1.2rem;
+  font-weight: 500;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+  margin: 0.5rem 2rem 3rem 2rem;
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  cursor: pointer;
+  text-decoration: none;
+  transition: transform 0.5s ease-in-out;
+}
+
+.gold__button__container button:hover {
+  transform: scale(1.05);
+}
+
+.gold__button__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ---------------------------------------------- */
+/* FIXME:  STYLING - GOOGLE RECAPTCHA  FIXME:     */
+/* ---------------------------------------------- */
+
+.gold__form__group .g-recaptcha {
+  margin: 2rem 1rem 2rem 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* transform: scale(0.89); */
+  transform: scale(1);
+  /* -webkit-transform: scale(0.89); */
+  -webkit-transform: scale(1);
+  transform-origin: 0 0;
+  -webkit-transform-origin: 0 0;
+}
+
+/* --------------------------------------------------------------- */
+/* FIXME:  FINAL MEDIA QUERY - REGISTRATION FORM (SMALLER SCREENS) */
+/* --------------------------------------------------------------- */
+
+@media screen and (max-width: 600px) {
+  .gold__button__container button {
+    margin: 0rem 1rem 2rem 1rem;
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .gold__button__container {
+    flex-direction: column;
+  }
+
+  .gold__file-input {
+    margin: 1rem 0.2rem 1rem 0.2rem;
+  }
+
+  .gold__form__group label {
+    font-size: 1rem;
+    margin: 0rem 0.6rem 0rem 0.5rem;
+  }
+
+  .gold__form__group input[type="email"] {
+    margin: 0.5rem 0.2rem 0.5rem 0.2rem;
+  }
+
+  .gold__checkbox__option {
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin: 2rem 2rem 2rem 0.1rem;
+  }
+
+  .gold__form__group select {
+    margin: 0.5rem 0.1rem 0.5rem 0.1rem;
+  }
+
+  .gold__form__group textarea {
+    margin: 0.5rem 0.1rem 0.5rem 0.1rem;
+  }
+
+  .gold__form__group input[type="tel"] {
+    margin: 0.5rem 0.1rem 0.5rem 0.1rem;
+  }
+
+  .gold__form__group input[type="text"] {
+    margin: 0.5rem 0.1rem 0.5rem 0.1rem;
+  }
+
+  .gold__form__group input[type="date"] {
+    margin: 0.5rem 0.1rem 0.5rem 0.1rem;
+  }
+
+  .gold__form__group input[type="number"] {
+    margin: 0.5rem 0.1rem 0.5rem 0.1rem;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .gold__form__group .g-recaptcha {
+    margin: 2rem 1.5rem 2rem 2.5rem;
+    transform: scale(0.8);
+    -webkit-transform: scale(0.8);
+  }
+}
+
+/* ===================================================================================================================== */
+/* ===================================================================================================================== */
+/* FIXME:FIXME:                              SECTION - GOLD INVESTMENT PLAN (END)                           FIXME:FIXME: */
+/* ===================================================================================================================== */
+/* ===================================================================================================================== */
+
+/* ===================================================================================================================== */
+/* ===================================================================================================================== */
+/* TODO:TODO:                           SECTION - PLATINUM INVESTMENT PLAN (START)                            TODO:TODO: */
+/* ===================================================================================================================== */
+/* ===================================================================================================================== */
+
+/* .platinum__investing__plan__service__page__title h5 {
+  position: relative;
+  top: 9rem;
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  text-transform: uppercase;
+  margin: 2.5rem 0rem 2.5rem 0rem;
+  text-align: center;
+  background: #eee;
+  border: 2px solid red;
+} */
+
+.platinum__investing__plan__service__section {
+  position: relative;
+  /* top: 9rem; */
+  top: 10rem;
+  /* top: 9rem; */
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  margin: 0rem 0rem 0rem 0rem;
+  padding: 0rem 0rem 2rem 0rem;
+  background-color: var(--color-what-we-do-page-background);
+  /* border: 2px solid red; */
+}
+
+/* .platinum__investing__plan__service__section img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+} */
+
+@media screen and (max-width: 830px) {
+  /* .platinum__investing__plan__service__page__title h5 {
+    position: relative;
+    top: 10rem;
+  } */
+  .platinum__investing__plan__service__section {
+    position: relative;
+    /* top: 9rem; */
+    /* top: 10rem; */
+    top: 11rem;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  /* .platinum__investing__plan__service__page__title h5 {
+    position: relative;
+    top: 13.5rem;
+  } */
+
+  .platinum__investing__plan__service__section {
+    position: relative;
+    /* top: 12.5rem; */
+    /* top: 13.5rem; */
+    top: 14.5rem;
+  }
+}
+
+/* ===================================================================================================================== */
+/* TODO:  PART 1 - INVESTING PLAN (PLATINUM) - PAGE TITLE                                                                */
+/* ===================================================================================================================== */
+
+/* ------------------------------- */
+/* FIXME:  VIEW - MOBILE FIRST     */
+/* ------------------------------- */
+
+.platinum__page__title h5 {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  text-transform: uppercase;
+  margin: 0rem 0rem 1rem 0rem;
+  padding: 1.5rem 0rem 0rem 0rem;
+  text-align: center;
+}
+
+/* ------------------------------- */
+/* FIXME:  VIEW - LARGER SCREENS   */
+/* ------------------------------- */
+
+/* ===================================================================================================================== */
+/* TODO:  PART 2 - INVESTING PLAN (PLATINUM) - EMBEDDED YOUTUBE VIDEO                                                    */
+/* ===================================================================================================================== */
+
+/* ------------------------------- */
+/* FIXME:  VIEW - MOBILE FIRST     */
+/* ------------------------------- */
+
+.platinum__video__container {
+  position: relative;
+  height: 0;
+  width: 100%;
+  margin: 0rem 0rem 1.5rem 0rem;
+  padding: 0rem 0rem 56.25% 0rem;
+}
+
+.platinum__video__container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+  padding: 0.45rem 0.75rem 0.45rem 0.75rem;
+  /* border-radius: 1.5rem; */
+}
+
+/* ------------------------------- */
+/* FIXME:  VIEW - LARGER SCREENS   */
+/* ------------------------------- */
+
+@media screen and (min-width: 768px) {
+  .platinum__video__container iframe {
+    padding: 0.2rem 0.75rem 0.2rem 0.75rem;
+    /* border-radius: 2rem; */
+  }
+}
+
+/* ===================================================================================================================== */
+/* TODO:  PART 3 - INVESTING PLAN (PLATINUM) - BANNER & DOWNLOAD PDF BROCHURE                                            */
+/* ===================================================================================================================== */
+
+/* ------------------------------- */
+/* FIXME:  VIEW - MOBILE FIRST     */
+/* ------------------------------- */
+
+.platinum__banner {
+  position: relative;
+  margin: 2rem 0.4rem 2rem 0.4rem;
+}
+
+.platinum__banner img {
+  width: 100%;
+  height: auto;
+  border-radius: 0.5rem;
+  padding: 0.2rem 0.2rem 0.2rem 0.2rem;
+}
+
+/* ----------------------------- */
+/* TODO:  DOWNLOAD PDF BROCHURE  */
+/* ----------------------------- */
+
+.platinum__download__pdf {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: -0.5rem 0rem -2rem 0rem;
+}
+
+.platinum__download__pdf a {
+  color: white;
+  text-decoration: none;
+}
+
+button.platinum__link__pdf__brochure {
+  background: var(--color-platinum-button-background);
+  color: var(--color-platinum-button-text);
+  border: 0;
+  outline: 0;
+  border-radius: 0.5rem;
+  width: 20rem;
+  height: 3rem;
+  font-size: 1.2rem;
+  font-weight: 500;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+  margin: 0.5rem 2rem 3rem 2rem;
+  padding: 1rem 1rem 1rem 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  cursor: pointer;
+  text-decoration: none;
+  transition: transform 0.5s ease-in-out;
+}
+
+button.platinum__link__pdf__brochure:hover {
+  transform: scale(1.05);
+}
+
+/* ------------------------------- */
+/* FIXME:  VIEW - LARGER SCREENS   */
+/* ------------------------------- */
+
+/* ===================================================================================================================== */
+/* TODO:  PART 4A - INVESTING PLAN (PLATINUM) - ACCORDIAN "MAIN" CONTAINER (HOLDING ALL ELEMENTS)                        */
+/* ===================================================================================================================== */
+
+.platinum__accordian {
+  width: 95%;
+  max-width: 128rem;
+  margin: 2rem auto 2rem auto;
+  /* border: 1px solid white; */
+}
+
+/* ===================================================================================================================== */
+/* TODO:  PART 4B - INVESTING PLAN (PLATINUM) - ACCORDIAN "ITEMS" CONTAINER (HOLDING ALL ITEMS)                          */
+/* ===================================================================================================================== */
+
+.platinum__accordian_item {
+  background-color: var(--color-platinum-accordian-item-background);
+  color: var(--color-platinum-accordian-item-text);
+  margin: 1rem 0rem 1rem 0rem;
+  border-radius: 0.5rem;
+  box-shadow: var(--color-box-shadow-01);
+}
+/* ===================================================================================================================== */
+/* TODO:  PART 4C - INVESTING PLAN (PLATINUM) - ACCORDIAN - ITEM (HEADER)                                                */
+/* ===================================================================================================================== */
+
+.platinum__accordian-item-header {
+  display: flex;
+  position: relative;
+  align-items: center;
+  min-height: 3.5rem;
+  line-height: 1.25rem;
+  font-size: 1.3rem;
+  font-weight: 600;
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
+  padding: 0.5rem 3rem 0.5rem 1rem;
+  cursor: pointer;
+}
+
+/* FIXME:  NOTE:  THE CSS ENTITY CODE FOR PLUS SIGN "+" = "\002B" */
+/* FIXME:  NOTE:  THE CSS ENTITY CODE FOR DOWN ARROW "v" = \25BE */
+
+.platinum__accordian-item-header::after {
+  /* content: "\25BE"; */
+  content: "\002B";
+  font-size: 2rem;
+  position: absolute;
+  right: 1rem;
+  color: var(--color-platinum-accordian-item-plus-and-minus-sign);
+  transition: transform 0.5s ease-in-out;
+}
+
+/* FIXME:  NOTE:  THE CSS ENTITY CODE FOR MINUS SIGN "-" = "\2212" */
+
+.platinum__accordian-item-header.active::after {
+  /* transform: rotate(-180deg); */
+  content: "\2212";
+  transform: none;
+}
+
+.platinum__accordian-item-header.active {
+  color: var(--color-platinum-accordian-item-header-active);
+}
+
+/* ===================================================================================================================== */
+/* TODO:  PART 4D - INVESTING PLAN (PLATINUM) - ACCORDIAN-ITEM (BODY)                                                    */
+/* ===================================================================================================================== */
+
+/* ITEM - MAIN CONTAINER */
+
+.platinum__accordian-item-body {
+  /* display: none; */
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+/* ITEM - ALL ELEMENTS CONTAINER */
+
+.platinum__accordian-item-body-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0rem 0rem 0rem 0rem;
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  border-bottom: 1px solid
+    var(--color-platinum-team-accordian-item-seperation-line-alternative);
+  /* border: 1px solid red; */
+}
+
+.platinum__content-statement {
+  max-width: 900px;
+  font-size: 1.2rem;
+  font-weight: 500;
+  text-align: justify;
+  letter-spacing: 0.025rem;
+  line-height: 1.5;
+  padding: 0rem 1rem 0rem 1rem;
+  /* border: 1px solid green; */
+}
+
+.platinum__content-confirmation {
+  min-width: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  line-height: 0.5;
+  padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+  border-left: 1px solid
+    var(--color-platinum-team-accordian-item-seperation-line-alternative);
+  /* border: 1px solid red; */
+}
+
+.platinum__confirmation-image img {
+  width: 3rem;
+  height: 3rem;
+}
+
+.platinum__confirmation-text {
+  font-size: 1.1rem;
+  line-height: 0.5;
+  padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+}
+
+/* ===================================================================================================================== */
+/* TODO:  PART 4E - INVESTING PLAN (PLATINUM) - MEDIA QUERY (LARGER DEVICES)                                                 */
+/* ===================================================================================================================== */
+
+@media screen and (max-width: 430px) {
+  .platinum__accordian-item-header {
+    font-size: 1rem;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .platinum__accordian-item-body-content {
+    flex-direction: column;
+    margin: 0rem 0rem 0rem 0rem;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+  }
+
+  .platinum__content-statement {
+    justify-content: center;
+    text-align: center;
+    max-width: 280px;
+    font-size: 1rem;
+    padding: 0rem 0.5rem 0rem 0.5rem;
+  }
+
+  .platinum__content-confirmation {
+    padding: 0.25rem 0.5rem 0.25rem 0.5rem;
+    border-left: none;
+  }
+
+  .platinum__confirmation-image img {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+
+  .platinum__confirmation-text {
+    font-size: 1rem;
+    padding: 0.5rem 0.5rem 0.25rem 0.5rem;
+  }
+}
+
+/* ===================================================================================================================== */
+/* TODO:  PART 5 - INVESTING PLAN (PLATINUM) - FORM HEADERS (ON REGISTRATION FORM)                                       */
+/* ===================================================================================================================== */
+
+/* ------------------------------- */
+/* FIXME:  VIEW - MOBILE FIRST     */
+/* ------------------------------- */
+
+.platinum__registration_form__header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  font-weight: 500;
+  letter-spacing: 0.2rem;
+  background-color: var(--color-platinum-hex);
+  color: var(--color-platinum-page-header-text);
+  margin: 2.5rem 0.4rem 2rem 0.4rem;
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  border-radius: 0.5rem;
+  box-shadow: var(--color-box-shadow-01);
+}
+
+/* ------------------------- */
+/* FIXME:  PRIVACY STATEMENT */
+/* ------------------------- */
+
+.platinum__privacy__statement {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem 0.4rem 2rem 0.4rem;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+}
+
+.platinum__privacy__statement strong {
+  text-decoration: none;
+  color: var(--color-platinum-hex);
+}
+
+.platinum__privacy__statement a {
+  text-decoration: none;
+  color: var(--color-platinum-hex);
+  cursor: pointer;
+}
+
+/* ------------------------------- */
+/* FIXME:  VIEW - LARGER SCREENS   */
+/* ------------------------------- */
+
+@media screen and (max-width: 430px) {
+  .platinum__registration_form__header {
+    font-size: 1rem;
+    text-align: center;
+  }
+}
+
+/* ===================================================================================================================== */
+/* TODO:  PART 6 - INVESTING PLAN (GOLD) - REGISTRATION FORM                                                             */
+/* ===================================================================================================================== */
+
+/* ---------------------------------------------- */
+/* FIXME:  FORM CONTAINER  FIXME:                 */
+/* ---------------------------------------------- */
+
+.platinum__form__group {
+  margin: 0rem 0rem 1rem 1rem;
+}
+
+/* ---------------------------------------------- */
+/* FIXME:  FORM LABEL  FIXME:                     */
+/* ---------------------------------------------- */
+
+.platinum__form__group label {
+  display: block;
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin: 0.5rem 1.75rem 0.5rem 1.75rem;
+}
+
+.platinum__form__group input::placeholder {
+  font-family: "Poppins", sans-serif;
+}
+
+/* ---------------------------------------------- */
+/* FIXME:  INPUT FIELD TYPE =  TEXT  FIXME:       */
+/* e.g. "NAME" or "LAST NAME" etc.                */
+/* ---------------------------------------------- */
+
+.platinum__form__group input[type="text"] {
+  /* width: 25rem; */
+  width: 96%;
+  border-radius: 0.5rem;
+  border: 1px solid var(--color-platinum-input-border);
+  margin: 0.5rem 1.4rem 0.5rem 1.4rem;
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: border-color 0.15s, box-shadow 0.15s;
+}
+
+.platinum__form__group input[type="text"]:focus {
+  border-color: var(--color-platinum-input-border-focus);
+  box-shadow: 0 0 0 2px rgba(67, 67, 67, 0.95);
+  outline: 0;
+}
+
+/* ---------------------------------------------- */
+/* FIXME:  INPUT FIELD TYPE =  TEL  FIXME:        */
+/* e.g. "TELEPHONE" or "MOBILE" Number etc.       */
+/* ---------------------------------------------- */
+
+.platinum__form__group input[type="tel"] {
+  /* width: 25rem; */
+  width: 96%;
+  border-radius: 0.5rem;
+  border: 1px solid var(--color-platinum-input-border);
+  margin: 0.5rem 1.4rem 0.5rem 1.4rem;
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: border-color 0.15s, box-shadow 0.15s;
+}
+
+.platinum__form__group input[type="tel"]:focus {
+  border-color: var(--color-platinum-input-border-focus);
+  box-shadow: 0 0 0 2px rgba(67, 67, 67, 0.95);
+  outline: 0;
+}
+
+/* ---------------------------------------------- */
+/* FIXME:  INPUT FIELD TYPE =  TEXTAREA  FIXME:   */
+/* Runs over multiple lines (rows) e.g. "Address" */
+/* ---------------------------------------------- */
+
+.platinum__form__group textarea {
+  resize: none;
+  /* width: 25rem; */
+  width: 96%;
+  border-radius: 0.5rem;
+  border: 1px solid var(--color-platinum-input-border);
+  margin: 0.5rem 1.4rem 0.5rem 1.4rem;
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  font-size: 1.2rem;
+  font-family: "poppins", sans-serif;
+  cursor: pointer;
+  transition: border-color 0.15s, box-shadow 0.15s;
+}
+
+.platinum__form__group textarea:focus {
+  border-color: var(--color-platinum-input-border-focus);
+  box-shadow: 0 0 0 2px rgba(67, 67, 67, 0.95);
+  outline: 0;
+}
+
+/* ---------------------------------------------- */
+/* FIXME:  INPUT FIELD = DROPDOWN LIST     FIXME: */
+/* e.g. Countries, Provinces, Titles etc.         */
+/* ---------------------------------------------- */
+
+.platinum__form__group select {
+  /* width: 25rem; */
+  width: 96%;
+  border-radius: 0.5rem;
+  border: 1px solid var(--color-platinum-input-border);
+  margin: 0.5rem 1.4rem 0.5rem 1.4rem;
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: border-color 0.15s, box-shadow 0.15s;
+}
+
+.platinum__form__group select:focus {
+  border-color: var(--color-platinum-input-border-focus);
+  box-shadow: 0 0 0 2px rgba(67, 67, 67, 0.95);
+  outline: 0;
+}
+
+/* ------------------------------------------------------------------------- */
+/* TODO:  START STYLING OF CUSTOM CHECKBOX                                   */
+/* ------------------------------------------------------------------------- */
+
+/* --------------------------------------- */
+/* FIXME:  INPUT FIELD = CHECKBOX  FIXME:  */
+/* --------------------------------------- */
+
+.platinum__checkbox__option {
+  font-size: 1.2rem;
+  font-weight: 500;
+  line-height: 1.25;
+  text-transform: none;
+  text-align: justify;
+  display: grid;
+  grid-template-columns: 1rem auto;
+  gap: 3rem;
+  margin: 2rem 0rem 2rem 0rem;
+  padding: 1rem 1.5rem 0rem 0rem;
+  cursor: pointer;
+}
+
+label.platinum__checkbox__option {
+  display: grid;
+  text-transform: initial;
+  font-size: 1.2rem;
+  font-weight: 500;
+  line-height: 1.25;
+  color: black;
+}
+
+/* ------------------------------------ */
+/* THIS IS TO HIDE THE NATIVE CHECKBOX  */
+/* ------------------------------------ */
+
+.platinum__checkbox__option input[type="checkbox"] {
+  /* Add if not using autoprefixer */
+  -webkit-appearance: none;
+  appearance: none;
+  /* For iOS < 15 to remove gradient background */
+  background-color: var(--color-platinum-custom-checkbox-background);
+  /* Not removed via appearance */
+  margin: 0;
+}
+
+/* --------------------------------------- */
+/* THIS IS TO DISPLAY THE CUSTOM CHECKBOX  */
+/* --------------------------------------- */
+
+.platinum__checkbox__option input[type="checkbox"] {
+  appearance: none;
+  background-color: var(--color-platinum-custom-checkbox-background);
+  margin: 0;
+  font: inherit;
+  color: var(--color-platinum-custom-checkbox-border);
+  width: 1.5rem;
+  height: 1.5rem;
+  border: 0.15em solid var(--color-platinum-custom-checkbox-border);
+  border-radius: 0.15em;
+  transform: translateY(-0.075em);
+  display: grid;
+  place-content: center;
+  cursor: pointer;
+}
+
+.platinum__checkbox__option + .platinum__checkbox__option {
+  margin-top: 1rem;
+}
+
+/* --------------------------------------- */
+/* CUSTOM CHECKBOX - CHECKED STATE         */
+/* --------------------------------------- */
+
+.platinum__checkbox__option input[type="checkbox"]::before {
+  content: "";
+  width: 0.7rem;
+  height: 0.7rem;
+  transform: scale(0);
+  transition: 120ms transform ease-in-out;
+  box-shadow: inset 1em 1em var(--color-platinum-custom-checkbox-checkmark);
+  /* Windows High Contrast Mode */
+  background-color: CanvasText;
+  /* Creating a checkmark with CLIP-PATH */
+  transform-origin: bottom left;
+  clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
+}
+
+.platinum__checkbox__option input[type="checkbox"]:checked::before {
+  transform: scale(1);
+}
+
+/* --------------------------------------- */
+/* CUSTOM CHECKBOX - FOCUSSED STATE        */
+/* --------------------------------------- */
+
+.platinum__checkbox__option input[type="checkbox"]:focus {
+  outline: max(2px, 0.15em) solid var(--color-platinum-custom-checkbox-focus);
+  outline-offset: max(1px, 0.15em);
+}
+
+/* --------------------------------------- */
+/* CUSTOM CHECKBOX - DISABLED STATE        */
+/* --------------------------------------- */
+
+.platinum__checkbox__option--disabled {
+  color: var(--color-platinum-custom-checkbox-disabled);
+  cursor: not-allowed;
+}
+
+.platinum__checkbox__option input[type="checkbox"]:disabled {
+  color: var(--color-platinum-custom-checkbox-disabled);
+  cursor: not-allowed;
+}
+
+/* ------------------------------------------------------------------------- */
+/* TODO:  END OF STYLING OF CUSTOM CHECKBOX                                  */
+/* ------------------------------------------------------------------------- */
+
+/* ------------------------------------------------------------------------- */
+/* TODO: START STYLING OF CUSTOM FILE-UPLOAD                                 */
+/* ------------------------------------------------------------------------- */
+
+/* ---------------------------------------------- */
+/* FIXME: INPUT FIELD TYPE = FILE          FIXME: */
+/* ---------------------------------------------- */
+
+.platinum__file-input {
+  display: inline-block;
+  margin: 1rem 1.4rem 1rem 1.4rem;
+  padding: 1rem 1rem 1rem 1rem;
+  text-align: left;
+  background: var(--color-platinum-custom-fileinput-background);
+  /* width: 450px; */
+  width: 96%;
+  position: relative;
+  border-radius: 0.5rem;
+  box-shadow: var(--color-box-shadow-02), var(--color-box-shadow-01);
+}
+
+/* ---------------------------------------------- */
+/* HIDING THE NATIVE FILE UPLOADER                */
+/* ---------------------------------------------- */
+
+.platinum__file-input > [type="file"] {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  z-index: 10;
+  cursor: pointer;
+}
+
+/* -------------------------------------------- */
+/* STYLE AND DISPLAY THE CUSTOM FILE UPLOADER   */
+/* -------------------------------------------- */
+
+.platinum__file-input > .platinum__button {
+  /* display: inline-block; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0rem 0.5rem 0.75rem 0.5rem;
+  padding: 0.8rem 1rem 0.8rem 1rem;
+  font-size: 1.3rem;
+  font-weight: 500;
+  background: var(--color-platinum-custom-fileinput-background);
+  border-radius: 0.5rem;
+  box-shadow: var(--color-box-shadow-02), var(--color-box-shadow-01);
+  cursor: pointer;
+}
+
+.platinum__file-input:hover > .platinum__button {
+  background: var(--color-platinum-custom-fileinput-background-hover);
+  color: var(--color-platinum-custom-fileinput-background-hover-text);
+}
+
+.platinum__file-input > .platinum__label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1.5rem 0.5rem 0rem 0.5rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--color-platinum-custom-fileinput-label-text);
+  white-space: nowrap;
+  opacity: 0.5;
+}
+
+.platinum__file-input.-chosen > .platinum__label {
+  opacity: 1;
+}
+
+.platinum__file-input .fa {
+  font-size: 1.8rem;
+  margin: 0rem 1rem 0rem 0rem;
+}
+
+label .platinum__label__strong {
+  color: var(--color-platinum-hex);
+}
+
+/* ------------------------------------------------------------------------- */
+/* TODO:  END OF STYLING OF CUSTOM FILE-UPLOAD                               */
+/* ------------------------------------------------------------------------- */
+
+/* ------------------------------------------ */
+/* FIXME:  INPUT FIELD TYPE =  EMAIL  FIXME:  */
+/* ------------------------------------------ */
+
+.platinum__form__group input[type="email"] {
+  /* width: 25rem; */
+  width: 96%;
+  border-radius: 0.5rem;
+  border: 1px solid var(--color-platinum-input-border);
+  margin: 0.5rem 1.4rem 0.5rem 1.4rem;
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: border-color 0.15s, box-shadow 0.15s;
+}
+
+.platinum__form__group input[type="email"]:focus {
+  border-color: var(--color-platinum-input-border-focus);
+  box-shadow: 0 0 0 2px rgba(67, 67, 67, 0.95);
+  outline: 0;
+}
+
+/* ----------------------------- */
+/* FIXME:  FORM BUTTONS  FIXME:  */
+/* ----------------------------- */
+
+.platinum__button__container button {
+  background: var(--color-platinum-button-background);
+  color: var(--color-platinum-button-text);
+  border: 0;
+  outline: 0;
+  border-radius: 0.5rem;
+  width: 20rem;
+  height: 3rem;
+  font-size: 1.2rem;
+  font-weight: 500;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+  margin: 0.5rem 2rem 3rem 2rem;
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  cursor: pointer;
+  text-decoration: none;
+  transition: transform 0.5s ease-in-out;
+}
+
+.platinum__button__container button:hover {
+  transform: scale(1.05);
+}
+
+.platinum__button__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ---------------------------------------------- */
+/* FIXME:  STYLING - GOOGLE RECAPTCHA  FIXME:     */
+/* ---------------------------------------------- */
+
+.platinum__form__group .g-recaptcha {
+  margin: 2rem 1rem 2rem 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* transform: scale(0.89); */
+  transform: scale(1);
+  /* -webkit-transform: scale(0.89); */
+  -webkit-transform: scale(1);
+  transform-origin: 0 0;
+  -webkit-transform-origin: 0 0;
+}
+
+/* --------------------------------------------------------------- */
+/* FIXME:  FINAL MEDIA QUERY - REGISTRATION FORM (SMALLER SCREENS) */
+/* --------------------------------------------------------------- */
+
+@media screen and (max-width: 600px) {
+  .platinum__button__container button {
+    margin: 0rem 1rem 2rem 1rem;
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .platinum__button__container {
+    flex-direction: column;
+  }
+
+  .platinum__file-input {
+    margin: 1rem 0.2rem 1rem 0.2rem;
+  }
+
+  .platinum__form__group label {
+    font-size: 1rem;
+    margin: 0rem 0.6rem 0rem 0.5rem;
+  }
+
+  .platinum__form__group input[type="email"] {
+    margin: 0.5rem 0.2rem 0.5rem 0.2rem;
+  }
+
+  .platinum__checkbox__option {
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin: 2rem 2rem 2rem 0.1rem;
+  }
+
+  .platinum__form__group select {
+    margin: 0.5rem 0.1rem 0.5rem 0.1rem;
+  }
+
+  .platinum__form__group textarea {
+    margin: 0.5rem 0.1rem 0.5rem 0.1rem;
+  }
+
+  .platinum__form__group input[type="tel"] {
+    margin: 0.5rem 0.1rem 0.5rem 0.1rem;
+  }
+
+  .platinum__form__group input[type="text"] {
+    margin: 0.5rem 0.1rem 0.5rem 0.1rem;
+  }
+
+  .platinum__form__group input[type="date"] {
+    margin: 0.5rem 0.1rem 0.5rem 0.1rem;
+  }
+
+  .platinum__form__group input[type="number"] {
+    margin: 0.5rem 0.1rem 0.5rem 0.1rem;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .platinum__form__group .g-recaptcha {
+    margin: 2rem 1.5rem 2rem 2.5rem;
+    transform: scale(0.8);
+    -webkit-transform: scale(0.8);
+  }
+}
+
+/* ===================================================================================================================== */
+/* ===================================================================================================================== */
+/* FIXME:FIXME:                           SECTION - PLATINUM INVESTMENT PLAN (END)                          FIXME:FIXME: */
 /* ===================================================================================================================== */
 /* ===================================================================================================================== */
 
