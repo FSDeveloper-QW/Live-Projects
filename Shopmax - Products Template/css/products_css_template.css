@@ -3542,24 +3542,9 @@ nav .clientzonewrapper .advertising-drop {
 /* ===================================================================================================================== */
 /* ===================================================================================================================== */
 
-/* .shopmax__product__page__template__title h5 {
+.product__page__container {
   position: relative;
-  top: 9rem;
-  display: flex;
-  justify-content: center;
-  justify-items: center;
-  text-transform: uppercase;
-  margin: 2.5rem 0rem 2.5rem 0rem;
-  text-align: center;
-  background: #eee;
-  border: 2px solid red;
-} */
-
-.shopmax__product__page__template__section {
-  position: relative;
-  /* top: 10rem; */
-  top: 9rem;
-  /* top: 9rem; */
+  top: 10rem;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -3567,68 +3552,53 @@ nav .clientzonewrapper .advertising-drop {
   width: 100%;
   height: auto;
   object-fit: cover;
-  margin: 1rem 0rem 0rem 0rem;
+  margin: 0rem 0rem 0rem 0rem;
+  background-color: #eee;
   /* border: 2px solid red; */
 }
 
-.shopmax__product__page__template__section img {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-}
-
 @media screen and (max-width: 830px) {
-  /* .shopmax__product__page__template__title h5 {
+  .product__page__container {
     position: relative;
-    top: 10rem;
-  } */
-  .shopmax__product__page__template__section {
-    position: relative;
-    /* top: 9rem; */
-    top: 10rem;
+    top: 11rem;
   }
 }
 
 @media screen and (max-width: 450px) {
-  /* .shopmax__product__page__template__title h5 {
+  .product__page__container {
     position: relative;
-    top: 13.5rem;
-  } */
-
-  .shopmax__product__page__template__section {
-    position: relative;
-    /* top: 12.5rem; */
-    top: 13.5rem;
+    top: 14.5rem;
   }
 }
 
 /* --------------------------------------------------------------------------------------------------------------------- */
 
 /* ===================================================================================================================== */
-/* TODO:  PART 1D - MAIN PAGE - CALL TO ACTION - PAGE TITLE (LATEST PRODUCT PROMOTIONS) - 15 UNITS                       */
+/* TODO:  PART 1 - PRODUCT PAGE TITLE                                                                                    */
 /* ===================================================================================================================== */
 
 /* ------------------------------- */
 /* FIXME:  VIEW - MOBILE FIRST     */
 /* ------------------------------- */
 
-.promo__latest__product__promotions__page__title h5 {
+.product__page__title h5 {
   display: flex;
   justify-content: center;
   justify-items: center;
   text-transform: uppercase;
-  width: 100vw;
+  width: 100%;
   margin: 0rem 0.5rem 0rem 0.5rem;
   padding: 1.5rem 0rem 1.5rem 0rem;
-  background-color: var(--color-cta-section-latest-product-releases-background);
+  background-color: #eee;
   text-align: center;
+  /* border: 2px solid purple; */
 }
 
 /* ===================================================================================================================== */
 /* TODO:  PART 2 - MAIN PAGE - CALL TO ACTION - CONTAINER HOLDING ALL PRODUCT CARDS                                      */
 /* ===================================================================================================================== */
 
-.latest__products__all__product__cards__container {
+.all__product__cards__container {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -3636,16 +3606,10 @@ nav .clientzonewrapper .advertising-drop {
   width: 100%;
   height: auto;
   object-fit: cover;
-  margin: 0rem 0rem -1rem 0rem;
-  background-color: var(--color-cta-section-latest-product-releases-background);
-  /* border: 2px solid red; */
+  margin: 0rem 0rem 0rem 0rem;
+  background-color: #eee;
+  /* border: 2px solid green; */
 }
-
-/* .bss__all__service__cards__container img {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-} */
 
 /* ===================================================================================================================== */
 /* TODO:  PART 3 - PRODUCTS - PRODUCT CARDS                                                                              */
@@ -3659,7 +3623,7 @@ nav .clientzonewrapper .advertising-drop {
 /* FIXME:  MAIN CONTAINER - HOLDING ALL ELEMENTS  */
 /* ---------------------------------------------- */
 
-.cta-product-card-container-all {
+.single__product__card__container {
   position: relative;
   display: flex;
   justify-content: center;
@@ -3680,21 +3644,21 @@ nav .clientzonewrapper .advertising-drop {
 /* FIXME:  PRODUCT CARD CONTAINER  */
 /* ------------------------------- */
 
-.cta-product-card-container-all .cta-product-card-promos-01,
-.cta-product-card-container-all .cta-product-card-promos-02,
-.cta-product-card-container-all .cta-product-card-promos-03,
-.cta-product-card-container-all .cta-product-card-promos-04,
-.cta-product-card-container-all .cta-product-card-promos-05,
-.cta-product-card-container-all .cta-product-card-promos-06,
-.cta-product-card-container-all .cta-product-card-promos-07,
-.cta-product-card-container-all .cta-product-card-promos-08,
-.cta-product-card-container-all .cta-product-card-promos-09,
-.cta-product-card-container-all .cta-product-card-promos-10,
-.cta-product-card-container-all .cta-product-card-promos-11,
-.cta-product-card-container-all .cta-product-card-promos-12,
-.cta-product-card-container-all .cta-product-card-promos-13,
-.cta-product-card-container-all .cta-product-card-promos-14,
-.cta-product-card-container-all .cta-product-card-promos-15 {
+.single__product__card__container .product-card-01,
+.single__product__card__container .product-card-02,
+.single__product__card__container .product-card-03,
+.single__product__card__container .product-card-04,
+.single__product__card__container .product-card-05,
+.single__product__card__container .product-card-06,
+.single__product__card__container .product-card-07,
+.single__product__card__container .product-card-08,
+.single__product__card__container .product-card-09,
+.single__product__card__container .product-card-10,
+.single__product__card__container .product-card-11,
+.single__product__card__container .product-card-12,
+.single__product__card__container .product-card-13,
+.single__product__card__container .product-card-14,
+.single__product__card__container .product-card-15 {
   position: absolute;
   transition: transform 1s;
   transform-style: preserve-3d;
@@ -3714,21 +3678,21 @@ nav .clientzonewrapper .advertising-drop {
 /* TODO:FIXME:     JAVASCRIPT : FOR FLIP FUNCTIONALITY     TODO:FIXME: */
 /* ------------------------------------------------------------------- */
 
-.cta-product-card-container-all .cta-product-card-promos-01.animated,
-.cta-product-card-container-all .cta-product-card-promos-02.animated,
-.cta-product-card-container-all .cta-product-card-promos-03.animated,
-.cta-product-card-container-all .cta-product-card-promos-04.animated,
-.cta-product-card-container-all .cta-product-card-promos-05.animated,
-.cta-product-card-container-all .cta-product-card-promos-06.animated,
-.cta-product-card-container-all .cta-product-card-promos-07.animated,
-.cta-product-card-container-all .cta-product-card-promos-08.animated,
-.cta-product-card-container-all .cta-product-card-promos-09.animated,
-.cta-product-card-container-all .cta-product-card-promos-10.animated,
-.cta-product-card-container-all .cta-product-card-promos-11.animated,
-.cta-product-card-container-all .cta-product-card-promos-12.animated,
-.cta-product-card-container-all .cta-product-card-promos-13.animated,
-.cta-product-card-container-all .cta-product-card-promos-14.animated,
-.cta-product-card-container-all .cta-product-card-promos-15.animated {
+.single__product__card__container .product-card-01.animated,
+.single__product__card__container .product-card-02.animated,
+.single__product__card__container .product-card-03.animated,
+.single__product__card__container .product-card-04.animated,
+.single__product__card__container .product-card-05.animated,
+.single__product__card__container .product-card-06.animated,
+.single__product__card__container .product-card-07.animated,
+.single__product__card__container .product-card-08.animated,
+.single__product__card__container .product-card-09.animated,
+.single__product__card__container .product-card-10.animated,
+.single__product__card__container .product-card-11.animated,
+.single__product__card__container .product-card-12.animated,
+.single__product__card__container .product-card-13.animated,
+.single__product__card__container .product-card-14.animated,
+.single__product__card__container .product-card-15.animated {
   transform: rotateY(-180deg);
 }
 
@@ -3736,51 +3700,21 @@ nav .clientzonewrapper .advertising-drop {
 /* FIXME:  SUB-CONTAINER - HOLDING ALL ELEMENTS OF CARD (FRONT)  FIXME: */
 /* -------------------------------------------------------------------- */
 
-.cta-product-card-container-all
-  .cta-product-card-promos-01
-  .cta-product-card-front-side,
-.cta-product-card-container-all
-  .cta-product-card-promos-02
-  .cta-product-card-front-side,
-.cta-product-card-container-all
-  .cta-product-card-promos-03
-  .cta-product-card-front-side,
-.cta-product-card-container-all
-  .cta-product-card-promos-04
-  .cta-product-card-front-side,
-.cta-product-card-container-all
-  .cta-product-card-promos-05
-  .cta-product-card-front-side,
-.cta-product-card-container-all
-  .cta-product-card-promos-06
-  .cta-product-card-front-side,
-.cta-product-card-container-all
-  .cta-product-card-promos-07
-  .cta-product-card-front-side,
-.cta-product-card-container-all
-  .cta-product-card-promos-08
-  .cta-product-card-front-side,
-.cta-product-card-container-all
-  .cta-product-card-promos-09
-  .cta-product-card-front-side,
-.cta-product-card-container-all
-  .cta-product-card-promos-10
-  .cta-product-card-front-side,
-.cta-product-card-container-all
-  .cta-product-card-promos-11
-  .cta-product-card-front-side,
-.cta-product-card-container-all
-  .cta-product-card-promos-12
-  .cta-product-card-front-side,
-.cta-product-card-container-all
-  .cta-product-card-promos-13
-  .cta-product-card-front-side,
-.cta-product-card-container-all
-  .cta-product-card-promos-14
-  .cta-product-card-front-side,
-.cta-product-card-container-all
-  .cta-product-card-promos-15
-  .cta-product-card-front-side {
+.single__product__card__container .product-card-01 .product-card-front-side,
+.single__product__card__container .product-card-02 .product-card-front-side,
+.single__product__card__container .product-card-03 .product-card-front-side,
+.single__product__card__container .product-card-04 .product-card-front-side,
+.single__product__card__container .product-card-05 .product-card-front-side,
+.single__product__card__container .product-card-06 .product-card-front-side,
+.single__product__card__container .product-card-07 .product-card-front-side,
+.single__product__card__container .product-card-08 .product-card-front-side,
+.single__product__card__container .product-card-09 .product-card-front-side,
+.single__product__card__container .product-card-10 .product-card-front-side,
+.single__product__card__container .product-card-11 .product-card-front-side,
+.single__product__card__container .product-card-12 .product-card-front-side,
+.single__product__card__container .product-card-13 .product-card-front-side,
+.single__product__card__container .product-card-14 .product-card-front-side,
+.single__product__card__container .product-card-15 .product-card-front-side {
   position: absolute;
   top: 0;
   left: 0;
@@ -3801,51 +3735,21 @@ nav .clientzonewrapper .advertising-drop {
 /* FIXME:  SUB-CONTAINER - HOLDING ALL ELEMENTS OF CARD (BACK)  FIXME: */
 /* -------------------------------------------------------------------- */
 
-.cta-product-card-container-all
-  .cta-product-card-promos-01
-  .cta-product-card-back-side,
-.cta-product-card-container-all
-  .cta-product-card-promos-02
-  .cta-product-card-back-side,
-.cta-product-card-container-all
-  .cta-product-card-promos-03
-  .cta-product-card-back-side,
-.cta-product-card-container-all
-  .cta-product-card-promos-04
-  .cta-product-card-back-side,
-.cta-product-card-container-all
-  .cta-product-card-promos-05
-  .cta-product-card-back-side,
-.cta-product-card-container-all
-  .cta-product-card-promos-06
-  .cta-product-card-back-side,
-.cta-product-card-container-all
-  .cta-product-card-promos-07
-  .cta-product-card-back-side,
-.cta-product-card-container-all
-  .cta-product-card-promos-08
-  .cta-product-card-back-side,
-.cta-product-card-container-all
-  .cta-product-card-promos-09
-  .cta-product-card-back-side,
-.cta-product-card-container-all
-  .cta-product-card-promos-10
-  .cta-product-card-back-side,
-.cta-product-card-container-all
-  .cta-product-card-promos-11
-  .cta-product-card-back-side,
-.cta-product-card-container-all
-  .cta-product-card-promos-12
-  .cta-product-card-back-side,
-.cta-product-card-container-all
-  .cta-product-card-promos-13
-  .cta-product-card-back-side,
-.cta-product-card-container-all
-  .cta-product-card-promos-14
-  .cta-product-card-back-side,
-.cta-product-card-container-all
-  .cta-product-card-promos-15
-  .cta-product-card-back-side {
+.single__product__card__container .product-card-01 .product-card-back-side,
+.single__product__card__container .product-card-02 .product-card-back-side,
+.single__product__card__container .product-card-03 .product-card-back-side,
+.single__product__card__container .product-card-04 .product-card-back-side,
+.single__product__card__container .product-card-05 .product-card-back-side,
+.single__product__card__container .product-card-06 .product-card-back-side,
+.single__product__card__container .product-card-07 .product-card-back-side,
+.single__product__card__container .product-card-08 .product-card-back-side,
+.single__product__card__container .product-card-09 .product-card-back-side,
+.single__product__card__container .product-card-10 .product-card-back-side,
+.single__product__card__container .product-card-11 .product-card-back-side,
+.single__product__card__container .product-card-12 .product-card-back-side,
+.single__product__card__container .product-card-13 .product-card-back-side,
+.single__product__card__container .product-card-14 .product-card-back-side,
+.single__product__card__container .product-card-15 .product-card-back-side {
   position: absolute;
   top: 0;
   left: 0;
@@ -3866,7 +3770,7 @@ nav .clientzonewrapper .advertising-drop {
 /* MEDIA QUERY - PRODUCT CARD CONTAINERS */
 
 @media screen and (max-width: 350px) {
-  .cta-product-card-container-all {
+  .single__product__card__container {
     margin: 2rem 0.75rem 2rem 0.75rem;
   }
 }
@@ -3885,7 +3789,7 @@ nav .clientzonewrapper .advertising-drop {
 /* FIXME:  CONTAINER - TOP SECTION  */
 /* -------------------------------- */
 
-.cta-product-card-section-top {
+.product-card-front-top-section {
   position: relative;
   width: 100%;
   height: 49%;
@@ -3903,7 +3807,7 @@ nav .clientzonewrapper .advertising-drop {
 /* IMAGE CONTAINER  */
 /* ---------------- */
 
-.cta-product-card-section-top .cta-product-card-featured-image {
+.product-card-front-top-section .product-card-main-featured-image {
   position: relative;
   top: 0;
   left: 0;
@@ -3919,7 +3823,7 @@ nav .clientzonewrapper .advertising-drop {
 /* IMAGE  */
 /* ------ */
 
-.cta-product-card-section-top .cta-product-card-featured-image img {
+.product-card-front-top-section .product-card-main-featured-image img {
   position: absolute;
   top: 0;
   left: 0;
@@ -3937,7 +3841,7 @@ nav .clientzonewrapper .advertising-drop {
 /* FIXME:  SECTION 2 - MAIN CONTAINER  */
 /* ----------------------------------- */
 
-.cta-product-card-section-extra-images {
+.product-card-extra-images-container {
   position: relative;
   height: 4.8rem;
   background: var(--color-cta-product-card-extra-images-section-background);
@@ -3948,7 +3852,7 @@ nav .clientzonewrapper .advertising-drop {
 /* FIXME:  SECTION 2 - EXTRA IMAGES CONTAINER  */
 /* ------------------------------------------- */
 
-.cta-product-card-section-extra-images .cta-extra-images {
+.product-card-extra-images-container .extra-product-images {
   height: 100%;
   display: flex;
   justify-content: center;
@@ -3957,7 +3861,7 @@ nav .clientzonewrapper .advertising-drop {
   /* border: 1px solid red; */
 }
 
-.cta-product-card-section-extra-images .cta-extra-images img {
+.product-card-extra-images-container .extra-product-images img {
   width: 4.5rem;
   height: 4.5rem;
   margin: 0.5rem 0.5rem 0rem 0.5rem;
@@ -3969,7 +3873,7 @@ nav .clientzonewrapper .advertising-drop {
   cursor: pointer;
 }
 
-.cta-product-card-section-extra-images .cta-extra-images img:hover {
+.product-card-extra-images-container .extra-product-images img:hover {
   border: 3px solid var(--color-cta-product-card-extra-image-border-hover);
 }
 
@@ -4328,7 +4232,7 @@ nav .clientzonewrapper .advertising-drop {
 /* FIXME:  BUTTON "X" TO CLOSE BACK  FIXME: */
 /* ---------------------------------------- */
 
-.cta-product-card-container-all .close {
+.single__product__card__container .close {
   width: 2.5rem;
   height: 2.5rem;
   position: absolute;
@@ -4346,7 +4250,7 @@ nav .clientzonewrapper .advertising-drop {
   /* border: 1px solid purple; */
 }
 
-.cta-product-card-container-all .close:hover {
+.single__product__card__container .close:hover {
   transform: scale(1.1);
 }
 
