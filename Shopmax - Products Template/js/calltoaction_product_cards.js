@@ -99,7 +99,7 @@ function product015(image) {
 // ---------------------------------------------------------------------------------------
 
 $(document).ready(function () {
-  $(".animate-promos-01").click(function () {
+  $(".animate-card-flip-01").click(function () {
     $(".product-card-01").toggleClass("animated");
     return false;
   });
@@ -110,7 +110,7 @@ $(document).ready(function () {
 // ---------------------------------------------------------------------------------------
 
 $(document).ready(function () {
-  $(".animate-promos-02").click(function () {
+  $(".animate-card-flip-02").click(function () {
     $(".product-card-02").toggleClass("animated");
     return false;
   });
@@ -121,7 +121,7 @@ $(document).ready(function () {
 // ---------------------------------------------------------------------------------------
 
 $(document).ready(function () {
-  $(".animate-promos-03").click(function () {
+  $(".animate-card-flip-03").click(function () {
     $(".product-card-03").toggleClass("animated");
     return false;
   });
@@ -132,7 +132,7 @@ $(document).ready(function () {
 // ---------------------------------------------------------------------------------------
 
 $(document).ready(function () {
-  $(".animate-promos-04").click(function () {
+  $(".animate-card-flip-04").click(function () {
     $(".product-card-04").toggleClass("animated");
     return false;
   });
@@ -143,7 +143,7 @@ $(document).ready(function () {
 // ---------------------------------------------------------------------------------------
 
 $(document).ready(function () {
-  $(".animate-promos-05").click(function () {
+  $(".animate-card-flip-05").click(function () {
     $(".product-card-05").toggleClass("animated");
     return false;
   });
@@ -154,7 +154,7 @@ $(document).ready(function () {
 // ---------------------------------------------------------------------------------------
 
 $(document).ready(function () {
-  $(".animate-promos-06").click(function () {
+  $(".animate-card-flip-06").click(function () {
     $(".product-card-06").toggleClass("animated");
     return false;
   });
@@ -165,7 +165,7 @@ $(document).ready(function () {
 // ---------------------------------------------------------------------------------------
 
 $(document).ready(function () {
-  $(".animate-promos-07").click(function () {
+  $(".animate-card-flip-07").click(function () {
     $(".product-card-07").toggleClass("animated");
     return false;
   });
@@ -176,7 +176,7 @@ $(document).ready(function () {
 // ---------------------------------------------------------------------------------------
 
 $(document).ready(function () {
-  $(".animate-promos-08").click(function () {
+  $(".animate-card-flip-08").click(function () {
     $(".product-card-08").toggleClass("animated");
     return false;
   });
@@ -187,7 +187,7 @@ $(document).ready(function () {
 // ---------------------------------------------------------------------------------------
 
 $(document).ready(function () {
-  $(".animate-promos-09").click(function () {
+  $(".animate-card-flip-09").click(function () {
     $(".product-card-09").toggleClass("animated");
     return false;
   });
@@ -198,7 +198,7 @@ $(document).ready(function () {
 // ---------------------------------------------------------------------------------------
 
 $(document).ready(function () {
-  $(".animate-promos-10").click(function () {
+  $(".animate-card-flip-10").click(function () {
     $(".product-card-10").toggleClass("animated");
     return false;
   });
@@ -209,7 +209,7 @@ $(document).ready(function () {
 // ---------------------------------------------------------------------------------------
 
 $(document).ready(function () {
-  $(".animate-promos-11").click(function () {
+  $(".animate-card-flip-11").click(function () {
     $(".product-card-11").toggleClass("animated");
     return false;
   });
@@ -220,7 +220,7 @@ $(document).ready(function () {
 // ---------------------------------------------------------------------------------------
 
 $(document).ready(function () {
-  $(".animate-promos-12").click(function () {
+  $(".animate-card-flip-12").click(function () {
     $(".product-card-12").toggleClass("animated");
     return false;
   });
@@ -231,7 +231,7 @@ $(document).ready(function () {
 // ---------------------------------------------------------------------------------------
 
 $(document).ready(function () {
-  $(".animate-promos-13").click(function () {
+  $(".animate-card-flip-13").click(function () {
     $(".product-card-13").toggleClass("animated");
     return false;
   });
@@ -242,7 +242,7 @@ $(document).ready(function () {
 // ---------------------------------------------------------------------------------------
 
 $(document).ready(function () {
-  $(".animate-promos-14").click(function () {
+  $(".animate-card-flip-14").click(function () {
     $(".product-card-14").toggleClass("animated");
     return false;
   });
@@ -253,7 +253,7 @@ $(document).ready(function () {
 // ---------------------------------------------------------------------------------------
 
 $(document).ready(function () {
-  $(".animate-promos-15").click(function () {
+  $(".animate-card-flip-15").click(function () {
     $(".product-card-15").toggleClass("animated");
     return false;
   });

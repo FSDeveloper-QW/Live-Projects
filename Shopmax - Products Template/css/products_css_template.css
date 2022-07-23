@@ -3881,11 +3881,11 @@ nav .clientzonewrapper .advertising-drop {
 /* TODO:  PRODUCT CARD SECTION 3 - PRODUCT INFORMATION                                                                   */
 /* ===================================================================================================================== */
 
-/* ----------------------------------- */
-/* FIXME:  SECTION 3 - MAIN CONTAINER  */
-/* ----------------------------------- */
+/* --------------------------------------------------- */
+/* FIXME:  PRODUCT CARD - BRIEF INFORMATION CONTAINER  */
+/* --------------------------------------------------- */
 
-.cta-product-card-section-information {
+.product-card-brief-information-container {
   position: relative;
   width: 100%;
   height: 10rem;
@@ -3898,7 +3898,7 @@ nav .clientzonewrapper .advertising-drop {
 /* FIXME:  PRODUCT CARD - TITLE  */
 /* ----------------------------- */
 
-.cta-product-card-title {
+.product-card-title {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -3919,7 +3919,7 @@ nav .clientzonewrapper .advertising-drop {
 /* FIXME:  PRODUCT CARD - BRIEF DESCRIPTION  */
 /* ----------------------------------------- */
 
-.cta-product-card-short-description {
+.product-card-short-description {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -3936,10 +3936,14 @@ nav .clientzonewrapper .advertising-drop {
 }
 
 /* ===================================================================================================================== */
-/* TODO:  PRODUCT CARD SECTION 6 - PRODUCT PRICING (NOT APPLICABLE)                                                      */
+/* TODO:  PRODUCT CARD - PRODUCT PRICING                                                                                 */
 /* ===================================================================================================================== */
 
-.cta-product-card-pricing {
+/* ----------------------------------------- */
+/* FIXME:  PRODUCT CARD - PRICING CONTAINER  */
+/* ----------------------------------------- */
+
+.product-card-pricing-container {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -3947,7 +3951,11 @@ nav .clientzonewrapper .advertising-drop {
   /* border: 1px solid red; */
 }
 
-.cta-price__currency {
+/* ------------------------------------------ */
+/* FIXME:  PRODUCT CARD - PRICING (CURRENCY)  */
+/* ------------------------------------------ */
+
+.product-card-price-currency {
   font-size: 2rem;
   font-weight: 700;
   letter-spacing: 0.1rem;
@@ -3956,7 +3964,11 @@ nav .clientzonewrapper .advertising-drop {
   color: var(--color-cta-product-card-price-currency);
 }
 
-.cta-price__value {
+/* --------------------------------------- */
+/* FIXME:  PRODUCT CARD - PRICING (VALUE)  */
+/* --------------------------------------- */
+
+.product-card-price-value {
   font-size: 2rem;
   font-weight: 700;
   letter-spacing: 0.1rem;
@@ -3966,20 +3978,21 @@ nav .clientzonewrapper .advertising-drop {
 }
 
 /* ===================================================================================================================== */
-/* TODO:  PRODUCT CARD SECTION 7A - BUTTON (ADD TO SHOPPING CART)                                                        */
+/* TODO:  PRODUCT CARD - BUTTON (ADD TO SHOPPING CART)                                                                   */
 /* ===================================================================================================================== */
 
-.cta-info-and-cart-container {
+.product-card-buttons-container {
   display: flex;
   justify-content: center;
   align-items: center;
+  /* border: 1px solid green; */
 }
 
-/* ------------------------------------------------------- */
-/* FIXME:  CONTAINER - MAIN (HOLDING ALL ELEMENTS)  FIXME: */
-/* ------------------------------------------------------- */
+/* --------------------------------------- */
+/* FIXME:  CONTAINER - ADD-TO-CART  FIXME: */
+/* --------------------------------------- */
 
-.cta-shopping-container {
+.add-to-cart-container {
   width: 50%;
   height: 5rem;
   display: flex;
@@ -3991,10 +4004,10 @@ nav .clientzonewrapper .advertising-drop {
 }
 
 /* ------------------------------------ */
-/* FIXME:  BUTTON - ADD TO CART  FIXME: */
+/* FIXME:  BUTTON - ADD-TO-CART  FIXME: */
 /* ------------------------------------ */
 
-.cta-shopping-container button {
+.add-to-cart-container button {
   display: flex;
   align-items: center;
   font-size: 0.8rem;
@@ -4013,11 +4026,11 @@ nav .clientzonewrapper .advertising-drop {
   /* border: 1px solid green; */
 }
 
-.cta-shopping-container i.bx-cart {
+.add-to-cart-container i.bx-cart {
   font-size: 2rem;
 }
 
-.cta-shopping-container button:hover {
+.add-to-cart-container button:hover {
   transform: scale(1.05);
   cursor: pointer;
 }
@@ -4067,14 +4080,14 @@ nav .clientzonewrapper .advertising-drop {
 } */
 
 /* ===================================================================================================================== */
-/* TODO:  PRODUCT CARD SECTION 7B - BUTTON (MORE INFO)                                                                   */
+/* TODO:  PRODUCT CARD - BUTTON (MORE INFO)                                                                              */
 /* ===================================================================================================================== */
 
-/* ------------------------------------------------------- */
-/* FIXME:  CONTAINER - MAIN (HOLDING ALL ELEMENTS)  FIXME: */
-/* ------------------------------------------------------- */
+/* ------------------------------------- */
+/* FIXME:  CONTAINER - MORE INFO  FIXME: */
+/* ------------------------------------- */
 
-.cta-more-info-container {
+.more-info-container {
   width: 50%;
   height: 5rem;
   display: flex;
@@ -4085,11 +4098,11 @@ nav .clientzonewrapper .advertising-drop {
   /* border: 1px solid red; */
 }
 
-/* ------------------------------------ */
-/* FIXME:  BUTTON - ADD TO CART  FIXME: */
-/* ------------------------------------ */
+/* ---------------------------------- */
+/* FIXME:  BUTTON - MORE INFO  FIXME: */
+/* ---------------------------------- */
 
-.cta-more-info-container .cta-btn {
+.more-info-container .more-info-btn {
   display: flex;
   align-items: center;
   font-size: 0.8rem;
@@ -4109,23 +4122,23 @@ nav .clientzonewrapper .advertising-drop {
   /* border: 1px solid green; */
 }
 
-.cta-more-info-container i.bx-list-check {
+.more-info-container i.bx-list-check {
   font-size: 2rem;
 }
 
-.cta-btn:hover {
+.more-info-btn:hover {
   transform: scale(1.05);
 }
 
 /* ===================================================================================================================== */
-/* TODO:  PRODUCT CARD SECTION 7C - BUTTON (ADD TO WISH LIST                                                             */
+/* TODO:  PRODUCT CARD - BUTTON (ADD TO WISHLIST)                                                                        */
 /* ===================================================================================================================== */
 
-/* ------------------------------------------------------- */
-/* FIXME:  CONTAINER - MAIN (HOLDING ALL ELEMENTS)  FIXME: */
-/* ------------------------------------------------------- */
+/* ------------------------------------------- */
+/* FIXME:  CONTAINER - ADD-TO-WISHLIST  FIXME: */
+/* -------------------------------------------- */
 
-.cta-wishlist-container {
+.add-to-wishlist-container {
   position: absolute;
   top: -0.3rem;
   right: -0.25rem;
@@ -4139,10 +4152,10 @@ nav .clientzonewrapper .advertising-drop {
 }
 
 /* ----------------------------------------- */
-/* FIXME:  BUTTON - ADD TO WISH LIST  FIXME: */
+/* FIXME:  BUTTON - ADD-TO-WISHLIST  FIXME: */
 /* ----------------------------------------- */
 
-.cta-wishlist-container button {
+.add-to-wishlist-container button {
   position: absolute;
   top: 0;
   right: 0;
@@ -4156,7 +4169,7 @@ nav .clientzonewrapper .advertising-drop {
   /* border: 1px solid green; */
 }
 
-.cta-wishlist-container i.bx-heart {
+.add-to-wishlist-container i.bx-heart {
   position: absolute;
   top: 0;
   right: 0;
@@ -4173,7 +4186,7 @@ nav .clientzonewrapper .advertising-drop {
   transition: transform 0.3s ease-in-out;
 }
 
-.cta-wishlist-container button i:hover {
+.add-to-wishlist-container button i:hover {
   transform: scale(1.11);
   cursor: pointer;
 }
