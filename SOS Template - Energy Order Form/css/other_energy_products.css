@@ -4067,39 +4067,110 @@ nav .clientzonewrapper .advertising-drop {
 }
 
 /* ===================================================================================================================== */
-/* TODO:  ORDER FORM ELEMENTS                                                                                            */
+/*                         FIXME:  ACCORDIAN - FOR EXTRA PRODUCTS TO ORDER (START)  FIXME:                               */
 /* ===================================================================================================================== */
 
-/* ------------------------------- */
-/* FIXME:  VIEW - MOBILE FIRST     */
-/* ------------------------------- */
+.add_products_to_order_accordian {
+  width: 95%;
+  max-width: 128rem;
+  margin: 2rem auto 2rem auto;
+}
 
-.more__products__notification {
-  font-family: "Poppins", sans-serif;
+/* ===================================================================================================================== */
+/* TODO:  ACCORDIAN (OPEN & CLOSES) - CONTAINER HOLDING ALL ELEMENTS (ADD MORE PRODUCTS & QUANTITIES TO THE ORDER LIST)  */
+/* ===================================================================================================================== */
+
+.add_products_to_order_accordian_item {
+  background-color: var(
+    --color-team-accordian-item-backgroundaccordian-item-background
+  );
+  color: var(--color-team-accordian-item-text);
+  margin: 1rem 0rem 1rem 0rem;
+  border-radius: 0.5rem;
+  box-shadow: var(--color-box-shadow-01);
+}
+
+/* ===================================================================================================================== */
+/* TODO:  ACCORDIAN (OPEN & CLOSES) - HEADER / TITLE                                                                     */
+/* ===================================================================================================================== */
+
+.add_products_to_order-accordian-item-header {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  min-height: 3.5rem;
+  line-height: 1.25rem;
   font-size: 1.2rem;
   font-weight: 600;
-  color: #dc143c;
-  margin: 0rem 2.75rem 0rem 2.75rem;
-  text-align: center;
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
+  padding: 0.5rem 3rem 0.5rem 1rem;
+  cursor: pointer;
 }
 
-/* ------------------------------- */
-/* FIXME:  VIEW - LARGER SCREENS   */
-/* ------------------------------- */
+/* FIXME:  NOTE:  THE CSS ENTITY CODE FOR PLUS SIGN "+" = "\002B" */
+/* FIXME:  NOTE:  THE CSS ENTITY CODE FOR DOWN ARROW "v" = \25BE */
 
-@media screen and (max-width: 600px) {
-  .more__products__notification {
+.add_products_to_order-accordian-item-header::after {
+  /* content: "\25BE"; */
+  content: "\002B";
+  font-size: 2rem;
+  position: absolute;
+  right: 1rem;
+  color: var(--color-team-accordian-item-plus-and-minus-sign);
+  transition: transform 0.5s ease-in-out;
+}
+
+/* FIXME:  NOTE:  THE CSS ENTITY CODE FOR MINUS SIGN "-" = "\2212" */
+
+.add_products_to_order-accordian-item-header.active::after {
+  /* transform: rotate(-180deg); */
+  content: "\2212";
+  transform: none;
+}
+
+.add_products_to_order-accordian-item-header.active {
+  color: var(--color-team-accordian-item-header-active);
+}
+
+/* ===================================================================================================================== */
+/* TODO:  ACCORDIAN (OPEN & CLOSES) - ITEMS CONTAINER                                                                    */
+/* ===================================================================================================================== */
+
+.add_products_to_order-accordian-item-body {
+  /* display: none; */
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+.add_products_to_order_accordian-item-body {
+  /* display: none; */
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+/* ===================================================================================================================== */
+/* TODO:  MEDIA QUERY (LARGER DEVICES)                                                                                   */
+/* ===================================================================================================================== */
+
+@media screen and (max-width: 430px) {
+  .add_products_to_order-accordian-item-header {
     font-size: 1rem;
+    justify-content: center;
     text-align: center;
-    margin: 0rem 2.5rem 0rem 1.5rem;
   }
 }
 
-@media screen and (max-width: 470px) {
-  .more__products__notification {
-    margin: 0rem 2rem 0rem 1.5rem;
-  }
-}
+/* ===================================================================================================================== */
+/*                            FIXME:  ACCORDIAN - FOR EXTRA PRODUCTS TO ORDER (END)  FIXME:                              */
+/* ===================================================================================================================== */
+
+/* ===================================================================================================================== */
+/* TODO:  ORDER FORM ELEMENTS                                                                                            */
+/* ===================================================================================================================== */
 
 /* ---------------------------------------------- */
 /* FIXME:  FORM CONTAINER  FIXME:                 */
