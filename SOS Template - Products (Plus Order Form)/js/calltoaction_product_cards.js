@@ -21,6 +21,21 @@ var container012 = document.getElementById("featured__product__image__12");
 var container013 = document.getElementById("featured__product__image__13");
 var container014 = document.getElementById("featured__product__image__14");
 var container015 = document.getElementById("featured__product__image__15");
+var container016 = document.getElementById("featured__product__image__16");
+var container017 = document.getElementById("featured__product__image__17");
+var container018 = document.getElementById("featured__product__image__18");
+var container019 = document.getElementById("featured__product__image__19");
+var container020 = document.getElementById("featured__product__image__20");
+var container021 = document.getElementById("featured__product__image__21");
+var container022 = document.getElementById("featured__product__image__22");
+var container023 = document.getElementById("featured__product__image__23");
+var container024 = document.getElementById("featured__product__image__24");
+var container025 = document.getElementById("featured__product__image__25");
+var container026 = document.getElementById("featured__product__image__26");
+var container027 = document.getElementById("featured__product__image__27");
+var container028 = document.getElementById("featured__product__image__28");
+var container029 = document.getElementById("featured__product__image__29");
+var container030 = document.getElementById("featured__product__image__30");
 
 // --------------------------------------------------------------------------------------
 // FIXME:  FUNCTION TO CHANGE IMAGE IN THE VARIABLE "CONTAINER"
@@ -86,16 +101,76 @@ function product015(image) {
   container015.src = image.src;
 }
 
+function product016(image) {
+  container016.src = image.src;
+}
+
+function product017(image) {
+  container017.src = image.src;
+}
+
+function product018(image) {
+  container018.src = image.src;
+}
+
+function product019(image) {
+  container019.src = image.src;
+}
+
+function product020(image) {
+  container020.src = image.src;
+}
+
+function product021(image) {
+  container021.src = image.src;
+}
+
+function product022(image) {
+  container022.src = image.src;
+}
+
+function product023(image) {
+  container023.src = image.src;
+}
+
+function product024(image) {
+  container024.src = image.src;
+}
+
+function product025(image) {
+  container025.src = image.src;
+}
+
+function product026(image) {
+  container026.src = image.src;
+}
+
+function product027(image) {
+  container027.src = image.src;
+}
+
+function product028(image) {
+  container028.src = image.src;
+}
+
+function product029(image) {
+  container029.src = image.src;
+}
+
+function product030(image) {
+  container030.src = image.src;
+}
+
 // =======================================================================================
-// TODO:  PART 2 -  SCRIPT TO FLIP A PROFILE OR PRODUCT CARD (AND BACK)
+// TODO:  PART 2 - SCRIPT TO FLIP A PROFILE OR PRODUCT CARD (AND BACK)
 // =======================================================================================
 
 // ---------------------------------------------------------------------------------------
-// TODO: PRODUCT CARDS (15 LATEST PRODUCT RELEASES / PROMOTIONS)
+// TODO:  ALL PRODUCT CARDS
 // ---------------------------------------------------------------------------------------
 
 // ---------------------------------------------------------------------------------------
-// FIXME:  CARD 001 - main_product_promos_01 - APPLE IPAD MINI (5G)
+// FIXME:  PRODUCT CARD 001
 // ---------------------------------------------------------------------------------------
 
 $(document).ready(function () {
@@ -106,7 +181,7 @@ $(document).ready(function () {
 });
 
 // ---------------------------------------------------------------------------------------
-// FIXME:  CARD 002 - main_product_promos_02 - APPLE MACBOOK M1 PRO 16” LAPTOP
+// FIXME:  PRODUCT CARD 002
 // ---------------------------------------------------------------------------------------
 
 $(document).ready(function () {
@@ -117,7 +192,7 @@ $(document).ready(function () {
 });
 
 // ---------------------------------------------------------------------------------------
-// FIXME:  CARD 003 - main_product_promos_03 - DELL 32” 4K MONITOR
+// FIXME:  PRODUCT CARD 003
 // ---------------------------------------------------------------------------------------
 
 $(document).ready(function () {
@@ -128,7 +203,7 @@ $(document).ready(function () {
 });
 
 // ---------------------------------------------------------------------------------------
-// FIXME:  CARD 004 - main_product_promos_04 - DELL XPS 15 9520 LAPTOP
+// FIXME:  PRODUCT CARD 004
 // ---------------------------------------------------------------------------------------
 
 $(document).ready(function () {
@@ -139,7 +214,7 @@ $(document).ready(function () {
 });
 
 // ---------------------------------------------------------------------------------------
-// FIXME:  CARD 005 - main_product_promos_05 - HP 290 G4 PC & MONITOR BUNDLE
+// FIXME:  PRODUCT CARD 005
 // ---------------------------------------------------------------------------------------
 
 $(document).ready(function () {
@@ -150,7 +225,7 @@ $(document).ready(function () {
 });
 
 // ---------------------------------------------------------------------------------------
-// FIXME:  CARD 006 - main_product_promos_06 - HP ZBOOK FURY 15 G8 LAPTOP
+// FIXME:  PRODUCT CARD 006
 // ---------------------------------------------------------------------------------------
 
 $(document).ready(function () {
@@ -161,7 +236,7 @@ $(document).ready(function () {
 });
 
 // ---------------------------------------------------------------------------------------
-// FIXME:  CARD 007 - main_product_promos_07 - HUAWEI MATEBOOK X PRO
+// FIXME:  PRODUCT CARD 007
 // ---------------------------------------------------------------------------------------
 
 $(document).ready(function () {
@@ -172,7 +247,7 @@ $(document).ready(function () {
 });
 
 // ---------------------------------------------------------------------------------------
-// FIXME:  CARD 008 - main_product_promos_08 - HUAWEI MATEVIEW GT
+// FIXME:  PRODUCT CARD 008
 // ---------------------------------------------------------------------------------------
 
 $(document).ready(function () {
@@ -183,7 +258,7 @@ $(document).ready(function () {
 });
 
 // ---------------------------------------------------------------------------------------
-// FIXME:  CARD 009 - main_product_promos_09 - HUAWEI P50 PRO
+// FIXME:  PRODUCT CARD 009
 // ---------------------------------------------------------------------------------------
 
 $(document).ready(function () {
@@ -194,7 +269,7 @@ $(document).ready(function () {
 });
 
 // ---------------------------------------------------------------------------------------
-// FIXME:  CARD 010 - main_product_promos_10 - HUAWEI WATCH 3 GT RUNNER
+// FIXME:  PRODUCT CARD 010
 // ---------------------------------------------------------------------------------------
 
 $(document).ready(function () {
@@ -205,7 +280,7 @@ $(document).ready(function () {
 });
 
 // ---------------------------------------------------------------------------------------
-// FIXME:  CARD 011 - main_product_promos_11 - LENOVO TAB P11
+// FIXME:  PRODUCT CARD 011
 // ---------------------------------------------------------------------------------------
 
 $(document).ready(function () {
@@ -216,7 +291,7 @@ $(document).ready(function () {
 });
 
 // ---------------------------------------------------------------------------------------
-// FIXME:  CARD 012 - main_product_promos_12 - LENOVO THINKPAD P15V (GEN 2)
+// FIXME:  PRODUCT CARD 012
 // ---------------------------------------------------------------------------------------
 
 $(document).ready(function () {
@@ -227,7 +302,7 @@ $(document).ready(function () {
 });
 
 // ---------------------------------------------------------------------------------------
-// FIXME:  CARD 013 - main_product_promos_13 - SAMSUNG GALAXY S22 ULTRA (5G)
+// FIXME:  PRODUCT CARD 013
 // ---------------------------------------------------------------------------------------
 
 $(document).ready(function () {
@@ -238,7 +313,7 @@ $(document).ready(function () {
 });
 
 // ---------------------------------------------------------------------------------------
-// FIXME:  CARD 014 - main_product_promos_14 - SAMSUNG GALAXY TAB S8 ULTRA (5G)
+// FIXME:  PRODUCT CARD 014
 // ---------------------------------------------------------------------------------------
 
 $(document).ready(function () {
@@ -249,7 +324,7 @@ $(document).ready(function () {
 });
 
 // ---------------------------------------------------------------------------------------
-// FIXME:  CARD 015 - main_product_promos_15 - SAMSUNG GALAXY WATCH 4 CLASSIC (LTE) – 46MM
+// FIXME:  PRODUCT CARD 015
 // ---------------------------------------------------------------------------------------
 
 $(document).ready(function () {
@@ -258,3 +333,169 @@ $(document).ready(function () {
     return false;
   });
 });
+
+// ---------------------------------------------------------------------------------------
+// FIXME:  PRODUCT CARD 016
+// ---------------------------------------------------------------------------------------
+
+$(document).ready(function () {
+  $(".animate-card-flip-16").click(function () {
+    $(".product-card-16").toggleClass("animated");
+    return false;
+  });
+});
+
+// ---------------------------------------------------------------------------------------
+// FIXME:  PRODUCT CARD 017
+// ---------------------------------------------------------------------------------------
+
+$(document).ready(function () {
+  $(".animate-card-flip-17").click(function () {
+    $(".product-card-17").toggleClass("animated");
+    return false;
+  });
+});
+
+// ---------------------------------------------------------------------------------------
+// FIXME:  PRODUCT CARD 018
+// ---------------------------------------------------------------------------------------
+
+$(document).ready(function () {
+  $(".animate-card-flip-18").click(function () {
+    $(".product-card-18").toggleClass("animated");
+    return false;
+  });
+});
+
+// ---------------------------------------------------------------------------------------
+// FIXME:  PRODUCT CARD 019
+// ---------------------------------------------------------------------------------------
+
+$(document).ready(function () {
+  $(".animate-card-flip-19").click(function () {
+    $(".product-card-19").toggleClass("animated");
+    return false;
+  });
+});
+
+// ---------------------------------------------------------------------------------------
+// FIXME:  PRODUCT CARD 020
+// ---------------------------------------------------------------------------------------
+
+$(document).ready(function () {
+  $(".animate-card-flip-20").click(function () {
+    $(".product-card-20").toggleClass("animated");
+    return false;
+  });
+});
+
+// ---------------------------------------------------------------------------------------
+// FIXME:  PRODUCT CARD 021
+// ---------------------------------------------------------------------------------------
+
+$(document).ready(function () {
+  $(".animate-card-flip-21").click(function () {
+    $(".product-card-21").toggleClass("animated");
+    return false;
+  });
+});
+
+// ---------------------------------------------------------------------------------------
+// FIXME:  PRODUCT CARD 022
+// ---------------------------------------------------------------------------------------
+
+$(document).ready(function () {
+  $(".animate-card-flip-22").click(function () {
+    $(".product-card-22").toggleClass("animated");
+    return false;
+  });
+});
+
+// ---------------------------------------------------------------------------------------
+// FIXME:  PRODUCT CARD 023
+// ---------------------------------------------------------------------------------------
+
+$(document).ready(function () {
+  $(".animate-card-flip-23").click(function () {
+    $(".product-card-23").toggleClass("animated");
+    return false;
+  });
+});
+
+// ---------------------------------------------------------------------------------------
+// FIXME:  PRODUCT CARD 024
+// ---------------------------------------------------------------------------------------
+
+$(document).ready(function () {
+  $(".animate-card-flip-24").click(function () {
+    $(".product-card-24").toggleClass("animated");
+    return false;
+  });
+});
+
+// ---------------------------------------------------------------------------------------
+// FIXME:  PRODUCT CARD 025
+// ---------------------------------------------------------------------------------------
+
+$(document).ready(function () {
+  $(".animate-card-flip-25").click(function () {
+    $(".product-card-25").toggleClass("animated");
+    return false;
+  });
+});
+
+// ---------------------------------------------------------------------------------------
+// FIXME:  PRODUCT CARD 026
+// ---------------------------------------------------------------------------------------
+
+$(document).ready(function () {
+  $(".animate-card-flip-26").click(function () {
+    $(".product-card-26").toggleClass("animated");
+    return false;
+  });
+});
+
+// ---------------------------------------------------------------------------------------
+// FIXME:  PRODUCT CARD 027
+// ---------------------------------------------------------------------------------------
+
+$(document).ready(function () {
+  $(".animate-card-flip-27").click(function () {
+    $(".product-card-27").toggleClass("animated");
+    return false;
+  });
+});
+
+// ---------------------------------------------------------------------------------------
+// FIXME:  PRODUCT CARD 028
+// ---------------------------------------------------------------------------------------
+
+$(document).ready(function () {
+  $(".animate-card-flip-28").click(function () {
+    $(".product-card-28").toggleClass("animated");
+    return false;
+  });
+});
+
+// ---------------------------------------------------------------------------------------
+// FIXME:  PRODUCT CARD 029
+// ---------------------------------------------------------------------------------------
+
+$(document).ready(function () {
+  $(".animate-card-flip-29").click(function () {
+    $(".product-card-29").toggleClass("animated");
+    return false;
+  });
+});
+
+// ---------------------------------------------------------------------------------------
+// FIXME:  PRODUCT CARD 030
+// ---------------------------------------------------------------------------------------
+
+$(document).ready(function () {
+  $(".animate-card-flip-30").click(function () {
+    $(".product-card-30").toggleClass("animated");
+    return false;
+  });
+});
+
