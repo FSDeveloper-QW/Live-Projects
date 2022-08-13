@@ -3708,7 +3708,7 @@ nav .clientzonewrapper .advertising-drop {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;  
+  align-items: center;
   margin: -2rem 0rem 0rem 0rem;
   /* border: 1px solid green; */
 }
@@ -4301,8 +4301,6 @@ nav .clientzonewrapper .advertising-drop {
   cursor: pointer;
 }
 
-
-
 /* ---------------------------------------------------------------------------------------------------- */
 /* TODO:FIXME:  JAVASCRIPT - SHOPPING CART COUNTER ANIMATION ON "ADD TO CART" BUTTON CLICK  TODO:FIXME: */
 /* ---------------------------------------------------------------------------------------------------- */
@@ -4472,7 +4470,7 @@ nav .clientzonewrapper .advertising-drop {
   font-size: 1.35rem;
   font-weight: 700;
   color: #dc143c;
-  margin: 0rem 0.75rem 0rem 0rem;  
+  margin: 0rem 0.75rem 0rem 0rem;
 }
 
 /* ----------------------------------------------------------------------------------------------------- */
