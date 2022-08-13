@@ -3847,7 +3847,22 @@ nav .clientzonewrapper .advertising-drop {
 .single__product__card__container .product-card-27,
 .single__product__card__container .product-card-28,
 .single__product__card__container .product-card-29,
-.single__product__card__container .product-card-30 {
+.single__product__card__container .product-card-30,
+.single__product__card__container .product-card-31,
+.single__product__card__container .product-card-32,
+.single__product__card__container .product-card-33,
+.single__product__card__container .product-card-34,
+.single__product__card__container .product-card-35,
+.single__product__card__container .product-card-36,
+.single__product__card__container .product-card-37,
+.single__product__card__container .product-card-38,
+.single__product__card__container .product-card-39,
+.single__product__card__container .product-card-40,
+.single__product__card__container .product-card-41,
+.single__product__card__container .product-card-42,
+.single__product__card__container .product-card-43,
+.single__product__card__container .product-card-44,
+.single__product__card__container .product-card-45 {
   position: absolute;
   transition: transform 1s;
   transform-style: preserve-3d;
@@ -3896,7 +3911,22 @@ nav .clientzonewrapper .advertising-drop {
 .single__product__card__container .product-card-27.animated,
 .single__product__card__container .product-card-28.animated,
 .single__product__card__container .product-card-29.animated,
-.single__product__card__container .product-card-30.animated {
+.single__product__card__container .product-card-30.animated,
+.single__product__card__container .product-card-31.animated,
+.single__product__card__container .product-card-32.animated,
+.single__product__card__container .product-card-33.animated,
+.single__product__card__container .product-card-34.animated,
+.single__product__card__container .product-card-35.animated,
+.single__product__card__container .product-card-36.animated,
+.single__product__card__container .product-card-37.animated,
+.single__product__card__container .product-card-38.animated,
+.single__product__card__container .product-card-39.animated,
+.single__product__card__container .product-card-40.animated,
+.single__product__card__container .product-card-41.animated,
+.single__product__card__container .product-card-42.animated,
+.single__product__card__container .product-card-43.animated,
+.single__product__card__container .product-card-44.animated,
+.single__product__card__container .product-card-45.animated {
   transform: rotateY(-180deg);
 }
 
@@ -3933,7 +3963,22 @@ nav .clientzonewrapper .advertising-drop {
 .single__product__card__container .product-card-27 .product-card-front-side,
 .single__product__card__container .product-card-28 .product-card-front-side,
 .single__product__card__container .product-card-29 .product-card-front-side,
-.single__product__card__container .product-card-30 .product-card-front-side {
+.single__product__card__container .product-card-30 .product-card-front-side,
+.single__product__card__container .product-card-31 .product-card-front-side,
+.single__product__card__container .product-card-32 .product-card-front-side,
+.single__product__card__container .product-card-33 .product-card-front-side,
+.single__product__card__container .product-card-34 .product-card-front-side,
+.single__product__card__container .product-card-35 .product-card-front-side,
+.single__product__card__container .product-card-36 .product-card-front-side,
+.single__product__card__container .product-card-37 .product-card-front-side,
+.single__product__card__container .product-card-38 .product-card-front-side,
+.single__product__card__container .product-card-39 .product-card-front-side,
+.single__product__card__container .product-card-40 .product-card-front-side,
+.single__product__card__container .product-card-41 .product-card-front-side,
+.single__product__card__container .product-card-42 .product-card-front-side,
+.single__product__card__container .product-card-43 .product-card-front-side,
+.single__product__card__container .product-card-44 .product-card-front-side,
+.single__product__card__container .product-card-45 .product-card-front-side {
   position: absolute;
   top: 0;
   left: 0;
@@ -3983,7 +4028,22 @@ nav .clientzonewrapper .advertising-drop {
 .single__product__card__container .product-card-27 .product-card-back-side,
 .single__product__card__container .product-card-28 .product-card-back-side,
 .single__product__card__container .product-card-29 .product-card-back-side,
-.single__product__card__container .product-card-30 .product-card-back-side {
+.single__product__card__container .product-card-30 .product-card-back-side,
+.single__product__card__container .product-card-31 .product-card-back-side,
+.single__product__card__container .product-card-32 .product-card-back-side,
+.single__product__card__container .product-card-33 .product-card-back-side,
+.single__product__card__container .product-card-34 .product-card-back-side,
+.single__product__card__container .product-card-35 .product-card-back-side,
+.single__product__card__container .product-card-36 .product-card-back-side,
+.single__product__card__container .product-card-37 .product-card-back-side,
+.single__product__card__container .product-card-38 .product-card-back-side,
+.single__product__card__container .product-card-39 .product-card-back-side,
+.single__product__card__container .product-card-40 .product-card-back-side,
+.single__product__card__container .product-card-41 .product-card-back-side,
+.single__product__card__container .product-card-42 .product-card-back-side,
+.single__product__card__container .product-card-43 .product-card-back-side,
+.single__product__card__container .product-card-44 .product-card-back-side,
+.single__product__card__container .product-card-45 .product-card-back-side {
   position: absolute;
   top: 0;
   left: 0;

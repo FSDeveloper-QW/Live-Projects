@@ -36,6 +36,21 @@ var container027 = document.getElementById("featured__product__image__27");
 var container028 = document.getElementById("featured__product__image__28");
 var container029 = document.getElementById("featured__product__image__29");
 var container030 = document.getElementById("featured__product__image__30");
+var container031 = document.getElementById("featured__product__image__31");
+var container032 = document.getElementById("featured__product__image__32");
+var container033 = document.getElementById("featured__product__image__33");
+var container034 = document.getElementById("featured__product__image__34");
+var container035 = document.getElementById("featured__product__image__35");
+var container036 = document.getElementById("featured__product__image__36");
+var container037 = document.getElementById("featured__product__image__37");
+var container038 = document.getElementById("featured__product__image__38");
+var container039 = document.getElementById("featured__product__image__39");
+var container040 = document.getElementById("featured__product__image__40");
+var container041 = document.getElementById("featured__product__image__41");
+var container042 = document.getElementById("featured__product__image__42");
+var container043 = document.getElementById("featured__product__image__43");
+var container044 = document.getElementById("featured__product__image__44");
+var container045 = document.getElementById("featured__product__image__45");
 
 // --------------------------------------------------------------------------------------
 // FIXME:  FUNCTION TO CHANGE IMAGE IN THE VARIABLE "CONTAINER"
@@ -159,6 +174,66 @@ function product029(image) {
 
 function product030(image) {
   container030.src = image.src;
+}
+
+function product031(image) {
+  container031.src = image.src;
+}
+
+function product032(image) {
+  container032.src = image.src;
+}
+
+function product033(image) {
+  container033.src = image.src;
+}
+
+function product034(image) {
+  container034.src = image.src;
+}
+
+function product035(image) {
+  container035.src = image.src;
+}
+
+function product036(image) {
+  container036.src = image.src;
+}
+
+function product037(image) {
+  container037.src = image.src;
+}
+
+function product038(image) {
+  container038.src = image.src;
+}
+
+function product039(image) {
+  container039.src = image.src;
+}
+
+function product040(image) {
+  container040.src = image.src;
+}
+
+function product041(image) {
+  container041.src = image.src;
+}
+
+function product042(image) {
+  container042.src = image.src;
+}
+
+function product043(image) {
+  container043.src = image.src;
+}
+
+function product044(image) {
+  container044.src = image.src;
+}
+
+function product045(image) {
+  container045.src = image.src;
 }
 
 // =======================================================================================
@@ -499,3 +574,167 @@ $(document).ready(function () {
   });
 });
 
+// ---------------------------------------------------------------------------------------
+// FIXME:  PRODUCT CARD 031
+// ---------------------------------------------------------------------------------------
+
+$(document).ready(function () {
+  $(".animate-card-flip-31").click(function () {
+    $(".product-card-31").toggleClass("animated");
+    return false;
+  });
+});
+
+// ---------------------------------------------------------------------------------------
+// FIXME:  PRODUCT CARD 032
+// ---------------------------------------------------------------------------------------
+
+$(document).ready(function () {
+  $(".animate-card-flip-32").click(function () {
+    $(".product-card-32").toggleClass("animated");
+    return false;
+  });
+});
+
+// ---------------------------------------------------------------------------------------
+// FIXME:  PRODUCT CARD 033
+// ---------------------------------------------------------------------------------------
+
+$(document).ready(function () {
+  $(".animate-card-flip-33").click(function () {
+    $(".product-card-33").toggleClass("animated");
+    return false;
+  });
+});
+
+// ---------------------------------------------------------------------------------------
+// FIXME:  PRODUCT CARD 034
+// ---------------------------------------------------------------------------------------
+
+$(document).ready(function () {
+  $(".animate-card-flip-34").click(function () {
+    $(".product-card-34").toggleClass("animated");
+    return false;
+  });
+});
+
+// ---------------------------------------------------------------------------------------
+// FIXME:  PRODUCT CARD 035
+// ---------------------------------------------------------------------------------------
+
+$(document).ready(function () {
+  $(".animate-card-flip-35").click(function () {
+    $(".product-card-35").toggleClass("animated");
+    return false;
+  });
+});
+
+// ---------------------------------------------------------------------------------------
+// FIXME:  PRODUCT CARD 036
+// ---------------------------------------------------------------------------------------
+
+$(document).ready(function () {
+  $(".animate-card-flip-36").click(function () {
+    $(".product-card-36").toggleClass("animated");
+    return false;
+  });
+});
+
+// ---------------------------------------------------------------------------------------
+// FIXME:  PRODUCT CARD 037
+// ---------------------------------------------------------------------------------------
+
+$(document).ready(function () {
+  $(".animate-card-flip-37").click(function () {
+    $(".product-card-37").toggleClass("animated");
+    return false;
+  });
+});
+
+// ---------------------------------------------------------------------------------------
+// FIXME:  PRODUCT CARD 038
+// ---------------------------------------------------------------------------------------
+
+$(document).ready(function () {
+  $(".animate-card-flip-38").click(function () {
+    $(".product-card-38").toggleClass("animated");
+    return false;
+  });
+});
+
+// ---------------------------------------------------------------------------------------
+// FIXME:  PRODUCT CARD 039
+// ---------------------------------------------------------------------------------------
+
+$(document).ready(function () {
+  $(".animate-card-flip-39").click(function () {
+    $(".product-card-39").toggleClass("animated");
+    return false;
+  });
+});
+
+// ---------------------------------------------------------------------------------------
+// FIXME:  PRODUCT CARD 040
+// ---------------------------------------------------------------------------------------
+
+$(document).ready(function () {
+  $(".animate-card-flip-40").click(function () {
+    $(".product-card-40").toggleClass("animated");
+    return false;
+  });
+});
+
+// ---------------------------------------------------------------------------------------
+// FIXME:  PRODUCT CARD 041
+// ---------------------------------------------------------------------------------------
+
+$(document).ready(function () {
+  $(".animate-card-flip-41").click(function () {
+    $(".product-card-41").toggleClass("animated");
+    return false;
+  });
+});
+
+// ---------------------------------------------------------------------------------------
+// FIXME:  PRODUCT CARD 042
+// ---------------------------------------------------------------------------------------
+
+$(document).ready(function () {
+  $(".animate-card-flip-42").click(function () {
+    $(".product-card-42").toggleClass("animated");
+    return false;
+  });
+});
+
+// ---------------------------------------------------------------------------------------
+// FIXME:  PRODUCT CARD 043
+// ---------------------------------------------------------------------------------------
+
+$(document).ready(function () {
+  $(".animate-card-flip-43").click(function () {
+    $(".product-card-43").toggleClass("animated");
+    return false;
+  });
+});
+
+// ---------------------------------------------------------------------------------------
+// FIXME:  PRODUCT CARD 044
+// ---------------------------------------------------------------------------------------
+
+$(document).ready(function () {
+  $(".animate-card-flip-44").click(function () {
+    $(".product-card-44").toggleClass("animated");
+    return false;
+  });
+});
+
+// ---------------------------------------------------------------------------------------
+// FIXME:  PRODUCT CARD 045
+// ---------------------------------------------------------------------------------------
+
+$(document).ready(function () {
+  $(".animate-card-flip-45").click(function () {
+    $(".product-card-45").toggleClass("animated");
+    return false;
+  });
+});
