@@ -3633,8 +3633,9 @@ nav .clientzonewrapper .advertising-drop {
   /* ------------------------------------------------ */
   /* FIXME:  COLOR SCHEME (THIS WEEK) FOR PROMOTIONS  */
   /* ------------------------------------------------ */
-  --color-scheme-weekly-promotions: #004390;
-  --color-scheme-weekly-promotions-rgb: rgb(0, 67, 144);
+  --color-scheme-weekly-promotions: #ffd51e;
+  --color-scheme-weekly-promotions-rgb: rgb(255, 213, 30);
+  --color-scheme-weekly-text-color: black;
 }
 
 /* =========================================================== */
@@ -3743,7 +3744,7 @@ nav .clientzonewrapper .advertising-drop {
 
 .new__page__button a {
   text-decoration: none;
-  color: white;
+  color: var(--color-scheme-weekly-text-color);
   cursor: pointer;
 }
 
@@ -3841,7 +3842,7 @@ nav .clientzonewrapper .advertising-drop {
 
 .download__product__full__specs__button a {
   text-decoration: none;
-  color: white;
+  color: var(--color-scheme-weekly-text-color);
   cursor: pointer;
 }
 
@@ -4006,7 +4007,7 @@ nav .clientzonewrapper .advertising-drop {
   font-weight: 500;
   letter-spacing: 0.2rem;
   background-color: var(--color-scheme-weekly-promotions);
-  color: var(--color-quote-products-form-header-text);
+  color: var(--color-scheme-weekly-text-color);
   margin: 1rem 0.4rem 2rem 0.4rem;
   padding: 0.5rem 1rem 0.5rem 1rem;
   border-radius: 0.5rem;
@@ -4223,7 +4224,7 @@ nav .clientzonewrapper .advertising-drop {
 
 .order__form__section__element input[type="text"]:focus {
   border-color: var(--color-scheme-weekly-promotions);
-  box-shadow: 0 0 0 2px rgba(0, 67, 144, 0.95);
+  box-shadow: 0 0 0 2px rgba(255, 213, 30, 0.95);
   outline: 0;
 }
 
@@ -4251,7 +4252,7 @@ nav .clientzonewrapper .advertising-drop {
 
 .order__form__section__element input[type="tel"]:focus {
   border-color: var(--color-scheme-weekly-promotions);
-  box-shadow: 0 0 0 2px rgba(0, 67, 144, 0.95);
+  box-shadow: 0 0 0 2px rgba(255, 213, 30, 0.95);
   outline: 0;
 }
 
@@ -4278,7 +4279,7 @@ nav .clientzonewrapper .advertising-drop {
 
 .order__form__section__element input[type="email"]:focus {
   border-color: var(--color-scheme-weekly-promotions);
-  box-shadow: 0 0 0 2px rgba(0, 67, 144, 0.95);
+  box-shadow: 0 0 0 2px rgba(255, 213, 30, 0.95);
   outline: 0;
 }
 
@@ -4308,7 +4309,7 @@ nav .clientzonewrapper .advertising-drop {
 
 .order__form__section__element textarea:focus {
   border-color: var(--color-scheme-weekly-promotions);
-  box-shadow: 0 0 0 2px rgba(0, 67, 144, 0.95);
+  box-shadow: 0 0 0 2px rgba(255, 213, 30, 0.95);
   outline: 0;
 }
 
@@ -4336,7 +4337,7 @@ nav .clientzonewrapper .advertising-drop {
 
 .order__form__section__element input[type="number"]:focus {
   border-color: var(--color-scheme-weekly-promotions);
-  box-shadow: 0 0 0 2px rgba(0, 67, 144, 0.95);
+  box-shadow: 0 0 0 2px rgba(255, 213, 30, 0.95);
   outline: 0;
 }
 
@@ -4358,7 +4359,7 @@ nav .clientzonewrapper .advertising-drop {
 
 .order__form__section__element input[type="date"]:focus {
   border-color: var(--color-scheme-weekly-promotions);
-  box-shadow: 0 0 0 2px rgba(0, 67, 144, 0.95);
+  box-shadow: 0 0 0 2px rgba(255, 213, 30, 0.95);
   outline: 0;
 }
 
@@ -4386,7 +4387,7 @@ nav .clientzonewrapper .advertising-drop {
 
 .order__form__section__element select:focus {
   border-color: var(--color-scheme-weekly-promotions);
-  box-shadow: 0 0 0 2px rgba(0, 67, 144, 0.95);
+  box-shadow: 0 0 0 2px rgba(255, 213, 30, 0.95);
   outline: 0;
 }
 
@@ -4520,7 +4521,7 @@ label.order__form__checkbox__option {
 
 .order__form__submit__button__container button {
   background: var(--color-scheme-weekly-promotions);
-  color: var(--color-quote-products-button-text);
+  color: var(--color-scheme-weekly-text-color);
   border: 0;
   outline: 0;
   border-radius: 0.5rem;
