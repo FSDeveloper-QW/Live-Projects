@@ -3633,9 +3633,9 @@ nav .clientzonewrapper .advertising-drop {
   /* ------------------------------------------------ */
   /* FIXME:  COLOR SCHEME (THIS WEEK) FOR PROMOTIONS  */
   /* ------------------------------------------------ */
-  --color-scheme-weekly-promotions: #ffd51e;
-  --color-scheme-weekly-promotions-rgb: rgb(255, 213, 30);
-  --color-scheme-weekly-text-color: black;
+  --color-scheme-weekly-promotions: #f96f13;
+  --color-scheme-weekly-promotions-rgb: rgb(249, 111, 19);
+  --color-scheme-weekly-text-color: white;
 }
 
 /* =========================================================== */
@@ -4082,7 +4082,14 @@ nav .clientzonewrapper .advertising-drop {
 .add_products_to_order_accordian {
   width: 95%;
   max-width: 128rem;
-  margin: 2rem auto 2rem auto;
+  margin: 2rem 2rem 2rem 2.5rem;
+  /* border: 1px solid green; */
+}
+
+@media screen and (max-width: 830px) {
+  .add_products_to_order_accordian {
+    margin: 2rem auto 2rem auto;
+  }
 }
 
 /* ===================================================================================================================== */
@@ -4224,7 +4231,7 @@ nav .clientzonewrapper .advertising-drop {
 
 .order__form__section__element input[type="text"]:focus {
   border-color: var(--color-scheme-weekly-promotions);
-  box-shadow: 0 0 0 2px rgba(255, 213, 30, 0.95);
+  box-shadow: 0 0 0 2px rgba(249, 111, 19, 0.95);
   outline: 0;
 }
 
@@ -4252,7 +4259,7 @@ nav .clientzonewrapper .advertising-drop {
 
 .order__form__section__element input[type="tel"]:focus {
   border-color: var(--color-scheme-weekly-promotions);
-  box-shadow: 0 0 0 2px rgba(255, 213, 30, 0.95);
+  box-shadow: 0 0 0 2px rgba(249, 111, 19, 0.95);
   outline: 0;
 }
 
@@ -4279,7 +4286,7 @@ nav .clientzonewrapper .advertising-drop {
 
 .order__form__section__element input[type="email"]:focus {
   border-color: var(--color-scheme-weekly-promotions);
-  box-shadow: 0 0 0 2px rgba(255, 213, 30, 0.95);
+  box-shadow: 0 0 0 2px rgba(249, 111, 19, 0.95);
   outline: 0;
 }
 
@@ -4309,7 +4316,7 @@ nav .clientzonewrapper .advertising-drop {
 
 .order__form__section__element textarea:focus {
   border-color: var(--color-scheme-weekly-promotions);
-  box-shadow: 0 0 0 2px rgba(255, 213, 30, 0.95);
+  box-shadow: 0 0 0 2px rgba(249, 111, 19, 0.95);
   outline: 0;
 }
 
@@ -4337,7 +4344,7 @@ nav .clientzonewrapper .advertising-drop {
 
 .order__form__section__element input[type="number"]:focus {
   border-color: var(--color-scheme-weekly-promotions);
-  box-shadow: 0 0 0 2px rgba(255, 213, 30, 0.95);
+  box-shadow: 0 0 0 2px rgba(249, 111, 19, 0.95);
   outline: 0;
 }
 
@@ -4359,7 +4366,7 @@ nav .clientzonewrapper .advertising-drop {
 
 .order__form__section__element input[type="date"]:focus {
   border-color: var(--color-scheme-weekly-promotions);
-  box-shadow: 0 0 0 2px rgba(255, 213, 30, 0.95);
+  box-shadow: 0 0 0 2px rgba(249, 111, 19, 0.95);
   outline: 0;
 }
 
@@ -4387,7 +4394,7 @@ nav .clientzonewrapper .advertising-drop {
 
 .order__form__section__element select:focus {
   border-color: var(--color-scheme-weekly-promotions);
-  box-shadow: 0 0 0 2px rgba(255, 213, 30, 0.95);
+  box-shadow: 0 0 0 2px rgba(249, 111, 19, 0.95);
   outline: 0;
 }
 
