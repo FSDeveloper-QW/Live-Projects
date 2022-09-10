@@ -5239,7 +5239,15 @@ nav .clientzonewrapper .advertising-drop {
 .add_products_to_order_accordian {
   width: 95%;
   max-width: 128rem;
-  margin: 2rem auto 2rem auto;
+  /* margin: 2rem auto 2rem auto; */
+  margin: 2rem 2rem 2rem 2.5rem;
+  /* border: 1px solid green; */
+}
+
+@media screen and (max-width: 830px) {
+  .add_products_to_order_accordian {
+    margin: 2rem auto 2rem auto;
+  }
 }
 
 /* ===================================================================================================================== */
