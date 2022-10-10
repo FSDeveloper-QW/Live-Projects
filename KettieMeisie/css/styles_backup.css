@@ -575,7 +575,7 @@ a {
 
 /* _______________________________________________________________________________________ */
 
-/* FIXME: SECTION 4 (PRE-ORDERS) - VOORAFBESTELLINGS (BANNER)                              */
+/* FIXME: SECTION 4A (PRE-ORDERS) - VOORAFBESTELLINGS (BANNER)                             */
 
 /* _______________________________________________________________________________________ */
 
@@ -823,7 +823,7 @@ a {
 
 /* _______________________________________________________________________________________ */
 
-/* FIXME: SECTION 5 (COMPETITIONS) - KOMPETISIES (BANNER)                                  */
+/* FIXME: SECTION 5A (COMPETITIONS) - KOMPETISIES (BANNER)                                 */
 
 /* _______________________________________________________________________________________ */
 
@@ -831,7 +831,7 @@ a {
 /* TODO: MOBILE (first) : Screen sizes between 320px - 768px                               */
 /* _______________________________________________________________________________________ */
 
-.kompetisies__banner {
+/* .kompetisies__banner {
   position: relative;
   top: 0;
   left: 0;
@@ -870,13 +870,13 @@ a {
   top: 70%;
   left: 50%;
   transform: translate(-50%, -50%);
-}
+} */
 
 /* ______________________________________________________________________________________________________ */
 /* TODO: MEDIA QUERY (KOMPETISIES - BANNER) - TABLET / LAPTOP / PC - Screen sizes larger than 768px       */
 /* ______________________________________________________________________________________________________ */
 
-@media screen and (min-width: 768px) {
+/* @media screen and (min-width: 768px) {
   .kompetisies__header__01 {
     font-size: 4rem;
   }
@@ -884,7 +884,7 @@ a {
   .kompetisies__header__02 {
     font-size: 3rem;
   }
-}
+} */
 
 /* _______________________________________________________________________________________ */
 /* KOMPETISIES COMPONENT - TODO: LINKS TO DOWNLOADABLE PDF - BANNER                        */
@@ -894,7 +894,7 @@ a {
 /* TODO: MOBILE (first) : Screen sizes between 320px - 768px                               */
 /* _______________________________________________________________________________________ */
 
-.kompetisies__links__banner {
+/* .kompetisies__links__banner {
   position: relative;
   top: 0;
   left: 0;
@@ -933,13 +933,13 @@ a {
   top: 35%;
   left: 50%;
   transform: translate(-50%, -50%);
-}
+} */
 
 /* _____________________________________________________________________________________________________ */
 /* TODO: MEDIA QUERY (VOORAFBESTELLINGS - LINKS) - TABLET / LAPTOP / PC - Screen sizes larger than 768px */
 /* _____________________________________________________________________________________________________ */
 
-@media screen and (min-width: 768px) {
+/* @media screen and (min-width: 768px) {
   .kompetisies__links__header__01 {
     font-size: 5rem;
   }
@@ -947,13 +947,13 @@ a {
   .kompetisies__links__header__02 {
     font-size: 3rem;
   }
-}
+} */
 
 /* _______________________________________________________________________________________ */
 /* NAVIGATION COMPONENT 1 - TODO: DOWNLOAD KOMPETISIE BROSJURE - LAERSKOLE                 */
 /* _______________________________________________________________________________________ */
 
-.kompetisies__brochure__links {
+/* .kompetisies__brochure__links {
   background: #1a354a;
   display: flex;
   row-gap: 0;
@@ -961,13 +961,13 @@ a {
   justify-content: center;
   margin-top: -0.6rem;
   margin-bottom: -2.5rem;
-}
+} */
 
 /* _______________________________________________________________________________________ */
 /* TODO: MOBILE (first) : Screen sizes between 320px - 768px                               */
 /* _______________________________________________________________________________________ */
 
-.navigation__download__brochure__kompetisies__laerskole__background-all {
+/* .navigation__download__brochure__kompetisies__laerskole__background-all {
   background: #1a354a;
   padding-top: 1rem;
 }
@@ -998,13 +998,13 @@ a {
 
 .navigation__download__brochure__kompetisies__laerskole__checkout-link:hover {
   color: var(--color-nav__noord-link-hover);
-}
+} */
 
 /* _____________________________________________________________________________________________________________________ */
 /* TODO: MEDIA QUERY (COMPETITION - NAVIGATION 1 - LAERSKOLE - TABLET / LAPTOP / PC - Screen sizes larger than 768px     */
 /* _____________________________________________________________________________________________________________________ */
 
-@media screen and (min-width: 768px) {
+/* @media screen and (min-width: 768px) {
   .navigation__download__brochure__kompetisies__laerskole__checkout {
     margin-top: 0;
   }
@@ -1012,7 +1012,7 @@ a {
   .navigation__download__brochure__kompetisies__laerskole__checkout-link {
     font-size: 2.2rem;
   }
-}
+} */
 
 /* _______________________________________________________________________________________ */
 /* NAVIGATION COMPONENT 2 - TODO: DOWNLOAD KOMPETISIES BROSJURE - HOERSKOLE                */
@@ -1022,7 +1022,7 @@ a {
 /* TODO: MOBILE (first) : Screen sizes between 320px - 768px                               */
 /* _______________________________________________________________________________________ */
 
-.navigation__download__brochure__kompetisies__hoerskole__background-all {
+/* .navigation__download__brochure__kompetisies__hoerskole__background-all {
   background: #1a354a;
   padding-top: 1rem;
 }
@@ -1053,18 +1053,110 @@ a {
 
 .navigation__download__brochure__kompetisies__hoerskole__checkout-link:hover {
   color: var(--color-nav__noord-link-hover);
-}
+} */
 
 /* _______________________________________________________________________________________________________________________ */
 /* TODO: MEDIA QUERY (VOORAFBESTELLINGS - NAVIGATION 2 - KINDERS) - TABLET / LAPTOP / PC - Screen sizes larger than 768px  */
 /* _______________________________________________________________________________________________________________________ */
 
-@media screen and (min-width: 768px) {
+/* @media screen and (min-width: 768px) {
   .navigation__download__brochure__kompetisies__hoerskole__checkout {
     margin-top: 0;
   }
 
   .navigation__download__brochure__kompetisies__hoerskole__checkout-link {
+    font-size: 2.2rem;
+  }
+} */
+
+/* _______________________________________________________________________________________ */
+
+/* FIXME: SECTION 5B (PRE-ORDER) - KALENDER                                                */
+
+/* _______________________________________________________________________________________ */
+
+/* _______________________________________________________________________________________ */
+/* TODO: MOBILE (FIRST) : Screen sizes between 320px - 768px                               */
+/* _______________________________________________________________________________________ */
+
+.kalender__banner {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+.kalender__bannner {
+  margin-top: 0;
+}
+
+.kalender__image {
+  width: 100%;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+/* _______________________________________________________________________________________ */
+/* NAVIGATION COMPONENT 1 - TODO: DOWNLOAD KALENDER BESTELVORM                             */
+/* _______________________________________________________________________________________ */
+
+.kalender__bestelvorm__link {
+  background: #1a354a;
+  display: flex;
+  row-gap: 0;
+  column-gap: 3rem;
+  justify-content: center;
+  margin-top: -0.6rem;
+  margin-bottom: -2.5rem;
+}
+
+/* _______________________________________________________________________________________ */
+/* TODO: MOBILE (FIRST) : Screen sizes between 320px - 768px                               */
+/* _______________________________________________________________________________________ */
+
+.navigation__download__bestelvorm__kalender__background-all {
+  background: #1a354a;
+  padding-top: 1rem;
+}
+
+.navigation__download__bestelvorm__kalender__background-link {
+  background: #1a354a;
+}
+
+.navigation__download__bestelvorm__kalender__checkout {
+  background: #1a354a;
+  display: flex;
+  justify-content: center;
+  margin-top: 0;
+}
+
+.navigation__download__bestelvorm__kalender__checkout-image {
+  width: 35px;
+  height: 35px;
+  padding-right: 2rem;
+}
+
+.navigation__download__bestelvorm__kalender__checkout-link {
+  color: #ffffff;
+  font-size: 1.4rem;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.navigation__download__bestelvorm__kalender__checkout-link:hover {
+  color: var(--color-nav__noord-link-hover);
+}
+
+/* _____________________________________________________________________________________________________________________ */
+/* TODO: MEDIA QUERY (NAVIGATION 1 - KALENDER BESTELVORM - TABLET / LAPTOP / PC - Screen sizes larger than 768px         */
+/* _____________________________________________________________________________________________________________________ */
+
+@media screen and (min-width: 768px) {
+  .navigation__download__bestelvorm__kalender__checkout {
+    margin-top: 0;
+  }
+
+  .navigation__download__bestelvorm__kalender__checkout-link {
     font-size: 2.2rem;
   }
 }
@@ -7290,6 +7382,468 @@ a {
   margin-bottom: 0;
 }
 
+/* ____________________________________________________________________________________________ */
+/* FIXME: PRODUCT 39 - CARD & SPECIFICATIONS - STYWE PAS - INIWOUD (SWART)                      */
+/* ____________________________________________________________________________________________ */
+
+.background__product-39 {
+  width: auto;
+  background: var(--color-clothing__product__01__heading);
+}
+
+.spacing__product-39 {
+  row-gap: 5rem;
+  column-gap: 2rem;
+  margin: 0 5rem;
+}
+
+.image__product-39 {
+  width: 100%;
+}
+
+.product-39__content {
+  text-align: center;
+  margin-top: -1rem;
+}
+
+.product-39__name {
+  font-size: 4rem;
+  font-weight: 700;
+  margin-top: 0;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.product-39__specifications {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 3px;
+  text-transform: lowercase;
+}
+
+.product-39__specifications-list {
+  list-style-type: none;
+  font-size: 1.5rem;
+  line-height: 1.5;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+.product-39__sizes {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 3px;
+  text-transform: lowercase;
+}
+
+.product-39__sizes-list {
+  text-align: center;
+  font-size: 1.5rem;
+  line-height: 1.5;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/* .product-39__colours {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 3px;
+  text-transform: lowercase;
+} */
+
+/* .product-39__colours-list {
+  text-align: centre;
+  font-size: 1.7rem;
+  line-height: 1.5;
+  margin-top: 0;
+  margin-bottom: 0;
+} */
+
+/* .product-39__category {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 3px;
+  text-transform: lowercase;
+} */
+
+/* .product-39__category-name {
+  text-align: centre;
+  font-size: 1.7rem;
+  line-height: 1.5;
+  margin-top: 0;
+  margin-bottom: 0;
+} */
+
+/* .product-39__product__number {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 3px;
+  text-transform: lowercase;
+} */
+
+/* .product-39__sku {
+  text-align: centre;
+  font-size: 1.7rem;
+  line-height: 1.5;
+  margin-top: 0;
+  margin-bottom: 0;
+} */
+
+/* .product-39__range {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 3px;
+  text-transform: lowercase;
+} */
+
+/* .product-39__range-name {
+  text-align: centre;
+  font-size: 1.7rem;
+  line-height: 1.5;
+  margin-top: 0;
+  margin-bottom: 0;
+} */
+
+/* .product-39__price-heading {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 3px;
+  text-transform: lowercase;
+} */
+
+.product-39__price {
+  text-align: center;
+  font-size: 5rem;
+  font-weight: 700;
+  line-height: 1.5;
+  margin-top: 1rem;
+  margin-bottom: 0;
+}
+
+/* ____________________________________________________________________________________________ */
+/* FIXME: PRODUCT 40 - CARD & SPECIFICATIONS - T-HEMP - INIWOUD (SWART)                          */
+/* ____________________________________________________________________________________________ */
+
+.background__product-40 {
+  width: auto;
+  background: var(--color-clothing__product__01__heading);
+}
+
+.spacing__product-40 {
+  row-gap: 5rem;
+  column-gap: 2rem;
+  margin: 0 5rem;
+}
+
+.image__product-40 {
+  width: 100%;
+}
+
+.product-40__content {
+  text-align: center;
+  margin-top: -1rem;
+}
+
+.product-40__name {
+  font-size: 4rem;
+  font-weight: 700;
+  margin-top: 0;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.product-40__specifications {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 3px;
+  text-transform: lowercase;
+}
+
+.product-40__specifications-list {
+  list-style-type: none;
+  font-size: 1.5rem;
+  line-height: 1.5;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+.product-40__sizes {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 3px;
+  text-transform: lowercase;
+}
+
+.product-40__sizes-list {
+  text-align: center;
+  font-size: 1.5rem;
+  line-height: 1.5;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/* .product-40__colours {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 3px;
+  text-transform: lowercase;
+} */
+
+/* .product-40__colours-list {
+  text-align: centre;
+  font-size: 1.7rem;
+  line-height: 1.5;
+  margin-top: 0;
+  margin-bottom: 0;
+} */
+
+/* .product-40__category {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 3px;
+  text-transform: lowercase;
+} */
+
+/* .product-40__category-name {
+  text-align: centre;
+  font-size: 1.7rem;
+  line-height: 1.5;
+  margin-top: 0;
+  margin-bottom: 0;
+} */
+
+/* .product-40__product__number {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 3px;
+  text-transform: lowercase;
+} */
+
+/* .product-40__sku {
+  text-align: centre;
+  font-size: 1.7rem;
+  line-height: 1.5;
+  margin-top: 0;
+  margin-bottom: 0;
+} */
+
+/* .product-40__range {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 3px;
+  text-transform: lowercase;
+} */
+
+/* .product-40__range-name {
+  text-align: centre;
+  font-size: 1.7rem;
+  line-height: 1.5;
+  margin-top: 0;
+  margin-bottom: 0;
+} */
+
+/* .product-40__price-heading {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 3px;
+  text-transform: lowercase;
+} */
+
+.product-40__price {
+  text-align: center;
+  font-size: 5rem;
+  font-weight: 700;
+  line-height: 1.5;
+  margin-top: 1rem;
+  margin-bottom: 0;
+}
+
+/* ____________________________________________________________________________________________ */
+/* FIXME: PRODUCT 41 - CARD & SPECIFICATIONS - T-HEMP - INIWOUD (GROEN)                         */
+/* ____________________________________________________________________________________________ */
+
+.background__product-41 {
+  width: auto;
+  background: var(--color-clothing__product__01__heading);
+}
+
+.spacing__product-41 {
+  row-gap: 5rem;
+  column-gap: 2rem;
+  margin: 0 5rem;
+}
+
+.image__product-41 {
+  width: 100%;
+}
+
+.product-41__content {
+  text-align: center;
+  margin-top: -1rem;
+}
+
+.product-41__name {
+  font-size: 4rem;
+  font-weight: 700;
+  margin-top: 0;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.product-41__specifications {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 3px;
+  text-transform: lowercase;
+}
+
+.product-41__specifications-list {
+  list-style-type: none;
+  font-size: 1.5rem;
+  line-height: 1.5;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+.product-41__sizes {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 3px;
+  text-transform: lowercase;
+}
+
+.product-41__sizes-list {
+  text-align: center;
+  font-size: 1.5rem;
+  line-height: 1.5;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/* .product-41__colours {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 3px;
+  text-transform: lowercase;
+} */
+
+/* .product-41__colours-list {
+  text-align: centre;
+  font-size: 1.7rem;
+  line-height: 1.5;
+  margin-top: 0;
+  margin-bottom: 0;
+} */
+
+/* .product-41__category {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 3px;
+  text-transform: lowercase;
+} */
+
+/* .product-41__category-name {
+  text-align: centre;
+  font-size: 1.7rem;
+  line-height: 1.5;
+  margin-top: 0;
+  margin-bottom: 0;
+} */
+
+/* .product-41__product__number {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 3px;
+  text-transform: lowercase;
+} */
+
+/* .product-41__sku {
+  text-align: centre;
+  font-size: 1.7rem;
+  line-height: 1.5;
+  margin-top: 0;
+  margin-bottom: 0;
+} */
+
+/* .product-41__range {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 3px;
+  text-transform: lowercase;
+} */
+
+/* .product-41__range-name {
+  text-align: centre;
+  font-size: 1.7rem;
+  line-height: 1.5;
+  margin-top: 0;
+  margin-bottom: 0;
+} */
+
+/* .product-41__price-heading {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 3px;
+  text-transform: lowercase;
+} */
+
+.product-41__price {
+  text-align: center;
+  font-size: 5rem;
+  font-weight: 700;
+  line-height: 1.5;
+  margin-top: 1rem;
+  margin-bottom: 0;
+}
+
 /* __________________________________________________________________________________________________________ */
 /* PRODUCT BLOCK COMPONENT - TODO: NAVIGATION (DOWNLOAD BROCHURE) - "lAAI BROSJURE AF                         */
 /* ALL PRODUCTS USE THE SAME NAVIGATION (DOWNLOAD BROCHURE) - LINK TO MOODBOARD BROCHURE & MANUAL ORDER FORM  */
@@ -7410,7 +7964,10 @@ a {
   .product-35__name,
   .product-36__name,
   .product-37__name,
-  .product-38__name {
+  .product-38__name,
+  .product-39__name,
+  .product-40__name,
+  .product-41__name {
     margin-top: 8rem;
   }
 
@@ -7451,7 +8008,10 @@ a {
   .product-35__specifications-list,
   .product-36__specifications-list,
   .product-37__specifications-list,
-  .product-38__specifications-list {
+  .product-38__specifications-list,
+  .product-39__specifications-list,
+  .product-40__specifications-list,
+  .product-41__specifications-list {
     font-size: 1.6rem;
   }
 
@@ -7492,7 +8052,10 @@ a {
   .product-35__sizes-list,
   .product-36__sizes-list,
   .product-37__sizes-list,
-  .product-38__sizes-list {
+  .product-38__sizes-list,
+  .product-39__sizes-list,
+  .product-40__sizes-list,
+  .product-41__sizes-list {
     font-size: 1.6rem;
   }
 
@@ -8787,9 +9350,10 @@ button {
 .facebook,
 .instagram,
 .twitter,
+.tiktok,
 .youtube {
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
 }
 
 .footer__contactus {
@@ -8890,9 +9454,10 @@ button {
   .facebook,
   .instagram,
   .twitter,
+  .tiktok,
   .youtube {
-    width: 35px;
-    height: 35px;
+    width: 28px;
+    height: 28px;
   }
 
   .footer__contactus {
