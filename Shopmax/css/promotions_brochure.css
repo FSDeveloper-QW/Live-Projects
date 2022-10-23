@@ -3633,10 +3633,12 @@ nav .clientzonewrapper .advertising-drop {
   /* ------------------------------------------------ */
   /* FIXME:  COLOR SCHEME (THIS WEEK) FOR PROMOTIONS  */
   /* ------------------------------------------------ */
-  --color-scheme-weekly-promotions: #48505b;
-  --color-scheme-weekly-promotions-rgb: rgb(72, 80, 91);
+  --color-scheme-weekly-promotions: #03989e;
+  --color-scheme-weekly-promotions-rgb: rgb(3, 152, 158);
   --color-scheme-weekly-text-color: white;
 }
+
+/* GOTO LINE 4233 to Change the RGB Colours */
 
 /* =========================================================== */
 /* FIXME:  NEW PAGE - CONTAINER (HOLDING ALL ELEMENTS)  FIXME: */
@@ -4231,7 +4233,7 @@ nav .clientzonewrapper .advertising-drop {
 
 .order__form__section__element input[type="text"]:focus {
   border-color: var(--color-scheme-weekly-promotions);
-  box-shadow: 0 0 0 2px rgba(72, 80, 91, 0.95);
+  box-shadow: 0 0 0 2px rgba(3, 152, 158, 0.95);
   outline: 0;
 }
 
@@ -4259,7 +4261,7 @@ nav .clientzonewrapper .advertising-drop {
 
 .order__form__section__element input[type="tel"]:focus {
   border-color: var(--color-scheme-weekly-promotions);
-  box-shadow: 0 0 0 2px rgba(72, 80, 91, 0.95);
+  box-shadow: 0 0 0 2px rgba(3, 152, 158, 0.95);
   outline: 0;
 }
 
@@ -4286,7 +4288,7 @@ nav .clientzonewrapper .advertising-drop {
 
 .order__form__section__element input[type="email"]:focus {
   border-color: var(--color-scheme-weekly-promotions);
-  box-shadow: 0 0 0 2px rgba(72, 80, 91, 0.95);
+  box-shadow: 0 0 0 2px rgba(3, 152, 158, 0.95);
   outline: 0;
 }
 
@@ -4316,7 +4318,7 @@ nav .clientzonewrapper .advertising-drop {
 
 .order__form__section__element textarea:focus {
   border-color: var(--color-scheme-weekly-promotions);
-  box-shadow: 0 0 0 2px rgba(72, 80, 91, 0.95);
+  box-shadow: 0 0 0 2px rgba(3, 152, 158, 0.95);
   outline: 0;
 }
 
@@ -4344,7 +4346,7 @@ nav .clientzonewrapper .advertising-drop {
 
 .order__form__section__element input[type="number"]:focus {
   border-color: var(--color-scheme-weekly-promotions);
-  box-shadow: 0 0 0 2px rgba(72, 80, 91, 0.95);
+  box-shadow: 0 0 0 2px rgba(3, 152, 158, 0.95);
   outline: 0;
 }
 
@@ -4366,7 +4368,7 @@ nav .clientzonewrapper .advertising-drop {
 
 .order__form__section__element input[type="date"]:focus {
   border-color: var(--color-scheme-weekly-promotions);
-  box-shadow: 0 0 0 2px rgba(72, 80, 91, 0.95);
+  box-shadow: 0 0 0 2px rgba(3, 152, 158, 0.95);
   outline: 0;
 }
 
@@ -4394,7 +4396,7 @@ nav .clientzonewrapper .advertising-drop {
 
 .order__form__section__element select:focus {
   border-color: var(--color-scheme-weekly-promotions);
-  box-shadow: 0 0 0 2px rgba(72, 80, 91, 0.95);
+  box-shadow: 0 0 0 2px rgba(3, 152, 158, 0.95);
   outline: 0;
 }
 
