@@ -3768,6 +3768,217 @@ nav .clientzonewrapper .advertising-drop {
 
 /* FIXME:FIXME:FIXME:  ENTER NEW PAGE CONTENT BELOW  FIXME:FIXME:FIXME: */
 
+/* ===================================================================================================================== */
+/* TODO:  PART 1 - PAGE CONTAINER (HOLDING ALL ELEMENTS) - WEBSITE UNDER CONSTRUCTION ("WUC")                            */
+/* ===================================================================================================================== */
+
+/* ------------------------------------------ */
+/* FIXME:  MAIN CONTAINER - FOR ALL ELEMENTS  */
+/* ------------------------------------------ */
+
+.wuc-container {
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 2rem 7% 2rem 7%;
+  background: var(--color-container-background);
+  min-height: 100vh;
+  gap: 2.5rem;
+  padding-bottom: 8rem;
+}
+
+/* ---------------------------------------------------------- */
+/* FIXME:  CONTENT CONTAINER - FOR ALL CONTENT (EXCL. IMAGE)  */
+/* ---------------------------------------------------------- */
+
+/* --------------------------- */
+/* TODO:  CONTENT - CONTAINER  */
+/* --------------------------- */
+
+.wuc-container .wuc-content {
+  flex: 1 1 40rem;
+  text-align: center;
+}
+
+/* -------------------------- */
+/* TODO:  CONTENT 1 - TITLE   */
+/* -------------------------- */
+
+.wuc-container .wuc-content .wuc-title {
+  font-size: 2.5rem;
+  font-weight: 600;
+  letter-spacing: 0.3rem;
+  text-transform: uppercase;
+  color: var(--color-container-title);
+  margin: 0rem 0rem 1.5rem 0rem;
+  /* text-align: center; */
+}
+
+/* ----------------------------- */
+/* TODO:  CONTENT 2 - PARAGRAPH  */
+/* ----------------------------- */
+
+.wuc-container .wuc-content p {
+  font-size: 1.1rem;
+  font-weight: 500;
+  letter-spacing: 0.1rem;
+  text-transform: initial;
+  text-align: justify;
+  color: var(--color-container-paragraph);
+  padding: 1rem 0rem 1rem 0rem;
+}
+
+/* ------------------------------- */
+/* TODO:  CONTENT 3 - COUNT-DOWN   */
+/* ------------------------------- */
+
+/* ----------------------- */
+/* COUNT-DOWN - CONTAINER  */
+/* ----------------------- */
+
+.wuc-container .wuc-content .wuc-count-down {
+  display: flex;
+  gap: 1.5rem;
+  margin: 1rem 0rem 1rem 0rem;
+  padding: 0.5rem 0rem 0.5rem 0rem;
+  /* border: 1px solid green; */
+}
+
+/* ---------------------- */
+/* TIME BOX - CONTAINER   */
+/* ----------------------- */
+
+.wuc-container .wuc-content .wuc-count-down .wuc-box {
+  padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+  flex: 1 1 2rem;
+  text-align: center;
+  background: var(--color-time-container-background);
+  border: 1px solid lightgray;
+  border-radius: 1rem;
+  box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.35);
+  /* border: 1px solid blue; */
+  height: 6.75rem;
+}
+
+/* -------------------- */
+/* TIMEBOX - CONTENTS   */
+/* -------------------- */
+
+/* TIME - NUMBERS */
+
+.wuc-container .wuc-content .wuc-count-down .wuc-box h3 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  letter-spacing: 0.2rem;
+  padding: 0rem 0.5rem 0rem 0.5rem;
+  color: var(--color-time-container-time-number);
+  /* border: 1px solid purple; */
+}
+
+.wuc-box-number {
+  margin-bottom: -2rem;
+}
+
+/* TIME - TEXT */
+
+.wuc-container .wuc-content .wuc-count-down .wuc-box span {
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
+  padding: 0rem 0.5rem 0rem 0.5rem;
+  color: var(--color-time-container-time-text);
+  /* border: 1px solid purple; */
+}
+
+/* ---------------------------------------- */
+/* FIXME:  BUTTON - EMAIL US                */
+/* ---------------------------------------- */
+
+.wuc-container .wuc-content .wuc-btn {
+  display: inline-block;
+  width: 20rem;
+  margin: 2rem 0rem 0rem 0rem;
+  padding: 0.8rem 3rem 0.8rem 3rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+  letter-spacing: 0.3rem;
+  text-transform: uppercase;
+  border-radius: 1rem;
+  box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.35);
+  background: var(--color-notify-button-background);
+  color: var(--color-notify-button-text);
+  transition: 02s ease-out;
+  text-align: center;
+}
+
+.wuc-container .wuc-content .wuc-btn:hover {
+  opacity: 0.95;
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+/* ---------------------------------------- */
+/* FIXME:  IMAGE CONTAINER - FOR THE IMAGE  */
+/* ---------------------------------------- */
+
+.wuc-container .wuc-image {
+  flex: 1 1 40rem;
+  padding: 1rem 1rem 1rem 1rem;
+}
+
+.wuc-container .wuc-image img {
+  width: 100%;
+}
+
+/* ===================================================================================================================== */
+/* TODO:  PART 2 - MEDIA QUERIES FOR SMALLER SCREEN / PHONES                                                             */
+/* ===================================================================================================================== */
+
+@media (max-width: 510px) {
+  .wuc-container {
+    padding: 2rem 2rem 2rem 2rem;
+  }
+
+  .wuc-container .wuc-content {
+    text-align: center;
+  }
+
+  .wuc-container .wuc-content .wuc-title {
+    font-size: 2.3rem;
+    letter-spacing: 0.1rem;
+    margin: 1rem 0rem 1rem 0rem;
+  }
+
+  .wuc-container .wuc-content p {
+    font-size: 1.2rem;
+  }
+
+  .wuc-container .wuc-content .wuc-count-down {
+    gap: 0.5rem;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .wuc-container .wuc-content .wuc-count-down .wuc-box {
+    margin: 1rem 0.5rem 1rem 0.5rem;
+    width: 20rem;
+  }
+
+  .wuc-container .wuc-content .wuc-count-down .wuc-box h3 {
+    font-size: 2.5rem;
+    letter-spacing: 0.1rem;
+  }
+
+  .wuc-container .wuc-content .wuc-count-down .wuc-box span {
+    font-size: 1.1rem;
+    letter-spacing: 0.1rem;
+  }
+}
+
 /* FIXME:FIXME:FIXME:  ENTER NEW PAGE CONTENT ABOVE  FIXME:FIXME:FIXME: */
 
 /* ===================================================================================================================== */
