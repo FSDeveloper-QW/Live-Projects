@@ -4373,6 +4373,484 @@ nav .clientzonewrapper .advertising-drop {
 }
 
 /* ===================================================================================================================== */
+/* TODO:TODO:                        MAIN INDEX PAGE (CALL-TO-ACTION) - ENERGY PROJECTS                       TODO:TODO: */
+/* ===================================================================================================================== */
+
+/* =================================== */
+/* FIXME:  BACKGROUND COLOR SCHEME     */
+/* =================================== */
+
+:root {
+  --color-cta-energy-products-background-01: #e5e4e2;
+  --color-cta-energy-products-background-02: #d3d3d3;
+  --color-cta-energy-products-background-03: #c0c0c0;
+  --color-cta-energy-products-background-04: #a9a9a9;
+}
+
+/* =================================== */
+/* FIXME:  VIEW - MOBILE FIRST         */
+/* =================================== */
+
+/* =================================== */
+/* FIXME:  TITLE & CALL TO ACTION TEXT */
+/* =================================== */
+
+.promo__energy__products__page__title {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  flex-direction: column;
+  background-color: var(--color-cta-apple-reseller-background-02);
+  /* border: 1px solid green; */
+}
+
+.promo__energy__products__page__title h5 {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  text-transform: uppercase;
+  width: 100vw;
+  margin: 0rem 0.5rem 0rem 0.5rem;
+  padding: 1.5rem 0rem 0rem 0rem;
+  text-align: center;
+}
+
+.promo__energy__products__page__title p {
+  text-align: justify;
+  text-transform: initial;
+  margin: 0.5rem 3rem 1rem 3rem;
+  font-size: 1.4rem;
+  line-height: 1.8;
+  font-weight: 500;
+}
+
+.promo__energy__products__page__title p strong {
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1.8;
+  cursor: pointer;
+}
+
+.promo__energy__products__page__title p strong:hover {
+  color: var(--color-cta-shopmax);
+  transform: scale(1.05);
+}
+
+/* ============================================= */
+/* FIXME:  OPTIONS - CONTAINER                   */
+/* ============================================= */
+
+.promo__energy__products__options {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  height: auto;
+  padding: 1rem 0rem 3rem 0rem;
+  background-color: var(--color-cta-apple-reseller-background-02);
+  /* border: 1px solid red; */
+}
+
+/* ============================================= */
+/* FIXME:  OPTION 1 - POWER BANKS                */
+/* ============================================= */
+
+.promo__energy__products__option__01 {
+  position: relative;
+  width: 26rem;
+  height: 18.5rem;
+  margin: 2rem 2rem 2rem 2rem;
+  padding: 0rem 0rem 0rem 0rem;
+  border-radius: 1.5rem;
+  border: none;
+  outline: none;
+  box-shadow: var(--color-box-shadow-01);
+  /* border: 1px solid green; */
+}
+
+.promo__energy__products__option__01 a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 1.5rem;
+  background-color: white;
+  color: var(--color-cta-page-text-on-buttons-or-anchors);
+  box-shadow: var(--color-box-shadow-01);
+  transition: transform 0.5s ease-in-out;
+  cursor: pointer;
+}
+
+.promo__energy__products__option__01 a p {
+  font-size: 1.5rem;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.promo__energy__products__option__01 a p strong {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.promo__energy__products__option__01 a img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 1.5rem;
+  object-fit: contain;
+  /* border: 1px solid purple; */
+}
+
+.promo__energy__products__option__01 a:hover {
+  transform: scale(1.04);
+}
+
+/* ============================================ */
+/* FIXME:  OPTION 2 - UNINTERRUPTED POWER (UPS) */
+/* ============================================ */
+
+.promo__energy__products__option__02 {
+  position: relative;
+  width: 26rem;
+  height: 18.5rem;
+  margin: 2rem 2rem 2rem 2rem;
+  padding: 0rem 0rem 0rem 0rem;
+  border-radius: 1.5rem;
+  border: none;
+  outline: none;
+  box-shadow: var(--color-box-shadow-01);
+  /* border: 1px solid green; */
+}
+
+.promo__energy__products__option__02 a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 1.5rem;
+  background-color: white;
+  /* color: var(--color-cta-page-text-on-buttons-or-anchors); */
+  box-shadow: var(--color-box-shadow-01);
+  transition: transform 0.5s ease-in-out;
+  cursor: pointer;
+}
+
+.promo__energy__products__option__02 a p {
+  font-size: 1.5rem;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.promo__energy__products__option__02 a p strong {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.promo__energy__products__option__02 a img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 1.5rem;
+  object-fit: contain;
+  /* border: 1px solid green; */
+}
+
+.promo__energy__products__option__02 a:hover {
+  transform: scale(1.04);
+}
+
+/* ======================================================== */
+/* FIXME:  OPTION 3 - BATTERIES & ACCESSORIES               */
+/* ======================================================== */
+
+.promo__energy__products__option__03 {
+  position: relative;
+  width: 26rem;
+  height: 18.5rem;
+  margin: 2rem 2rem 2rem 2rem;
+  padding: 0rem 0rem 0rem 0rem;
+  border-radius: 1.5rem;
+  border: none;
+  outline: none;
+  box-shadow: var(--color-box-shadow-01);
+  /* border: 1px solid green; */
+}
+
+.promo__energy__products__option__03 a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 1.5rem;
+  background-color: white;
+  color: var(--color-cta-page-text-on-buttons-or-anchors);
+  box-shadow: var(--color-box-shadow-01);
+  transition: transform 0.5s ease-in-out;
+  cursor: pointer;
+}
+
+.promo__energy__products__option__03 a p {
+  font-size: 1.5rem;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.promo__energy__products__option__03 a p strong {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.promo__energy__products__option__03 a img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 1.5rem;
+  object-fit: contain;
+  /* border: 1px solid green; */
+}
+
+.promo__energy__products__option__03 a:hover {
+  transform: scale(1.04);
+}
+
+/* =================================================== */
+/* FIXME:  OPTION 4 - INVERTERS & POWER STATIONS       */
+/* =================================================== */
+
+.promo__energy__products__option__04 {
+  position: relative;
+  width: 26rem;
+  height: 18.5rem;
+  margin: 2rem 2rem 2rem 2rem;
+  padding: 0rem 0rem 0rem 0rem;
+  border-radius: 1.5rem;
+  border: none;
+  outline: none;
+  box-shadow: var(--color-box-shadow-01);
+  /* border: 1px solid green; */
+}
+
+.promo__energy__products__option__04 a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 1.5rem;
+  background-color: white;
+  color: var(--color-cta-page-text-on-buttons-or-anchors);
+  box-shadow: var(--color-box-shadow-01);
+  transition: transform 0.5s ease-in-out;
+  cursor: pointer;
+}
+
+.promo__energy__products__option__04 a p {
+  font-size: 1.5rem;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.promo__energy__products__option__04 a p strong {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.promo__energy__products__option__04 a img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 1.5rem;
+  object-fit: contain;
+  /* border: 1px solid green; */
+}
+
+.promo__energy__products__option__04 a:hover {
+  transform: scale(1.04);
+}
+
+/* =================================================== */
+/* FIXME:  OPTION 5 - FUEL GENERATORS                  */
+/* =================================================== */
+
+.promo__energy__products__option__05 {
+  position: relative;
+  width: 26rem;
+  height: 18.5rem;
+  margin: 2rem 2rem 2rem 2rem;
+  padding: 0rem 0rem 0rem 0rem;
+  border-radius: 1.5rem;
+  border: none;
+  outline: none;
+  box-shadow: var(--color-box-shadow-01);
+  /* border: 1px solid green; */
+}
+
+.promo__energy__products__option__05 a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 1.5rem;
+  background-color: white;
+  color: var(--color-cta-page-text-on-buttons-or-anchors);
+  box-shadow: var(--color-box-shadow-01);
+  transition: transform 0.5s ease-in-out;
+  cursor: pointer;
+}
+
+.promo__energy__products__option__05 a p {
+  font-size: 1.5rem;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.promo__energy__products__option__05 a p strong {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.promo__energy__products__option__05 a img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 1.5rem;
+  object-fit: contain;
+  /* border: 1px solid green; */
+}
+
+.promo__energy__products__option__05 a:hover {
+  transform: scale(1.04);
+}
+
+/* =================================================== */
+/* FIXME:  OPTION 6 - SOLAR PANELS                     */
+/* =================================================== */
+
+.promo__energy__products__option__06 {
+  position: relative;
+  width: 26rem;
+  height: 18.5rem;
+  margin: 2rem 2rem 2rem 2rem;
+  padding: 0rem 0rem 0rem 0rem;
+  border-radius: 1.5rem;
+  border: none;
+  outline: none;
+  box-shadow: var(--color-box-shadow-01);
+  /* border: 1px solid green; */
+}
+
+.promo__energy__products__option__06 a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 1.5rem;
+  background-color: white;
+  color: var(--color-cta-page-text-on-buttons-or-anchors);
+  box-shadow: var(--color-box-shadow-01);
+  transition: transform 0.5s ease-in-out;
+  cursor: pointer;
+}
+
+.promo__energy__products__option__06 a p {
+  font-size: 1.5rem;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.promo__energy__products__option__06 a p strong {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.promo__energy__products__option__06 a img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 1.5rem;
+  object-fit: contain;
+  /* border: 1px solid green; */
+}
+
+.promo__energy__products__option__06 a:hover {
+  transform: scale(1.04);
+}
+
+/* ================================================== */
+/* FIXME:  MEDIA QURIES - FOR LARGER SCREENS  FIXME:  */
+/* ================================================== */
+
+@media screen and (max-width: 300px) {
+  .promo__energy__products__page__title h5 {
+    margin: 2rem 1.5rem 2rem 1.5rem;
+    text-align: center;
+  }
+
+  .promo__energy__products__page__title p {
+    margin: 0.5rem 1.5rem 1rem 1.5rem;
+  }
+
+  .promo__energy__products__option__01,
+  .promo__energy__products__option__02,
+  .promo__energy__products__option__03,
+  .promo__energy__products__option__04,
+  .promo__energy__products__option__05,
+  .promo__energy__products__option__06 {
+    margin: 2rem 0.2rem 2rem 0.2rem;
+    width: 24rem;
+    height: 17.08rem;
+  }
+}
+
+/* ===================================================================================================================== */
 /* TODO:TODO:                     MAIN INDEX PAGE (CALL-TO-ACTION) - PROFESSIONAL SERVICES                    TODO:TODO: */
 /* ===================================================================================================================== */
 
