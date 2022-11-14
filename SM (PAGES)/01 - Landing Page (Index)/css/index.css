@@ -3768,6 +3768,1214 @@ nav .clientzonewrapper .advertising-drop {
 
 /* FIXME:FIXME:FIXME:  ENTER NEW PAGE CONTENT BELOW  FIXME:FIXME:FIXME: */
 
+/* ===================================================================================================================== */
+/* TODO:TODO:                 MAIN INDEX PAGE (CALL-TO-ACTION) - AUTHORISED APPLE RESELLER                    TODO:TODO: */
+/* ===================================================================================================================== */
+
+/* =================================== */
+/* FIXME:  BACKGROUND COLOR SCHEME     */
+/* =================================== */
+
+:root {
+  --color-cta-apple-reseller-background-01: #e5e4e2;
+  --color-cta-apple-reseller-background-02: #d3d3d3;
+  --color-cta-apple-reseller-background-03: #c0c0c0;
+  --color-cta-apple-reseller-background-04: #a9a9a9;
+}
+
+/* =================================== */
+/* FIXME:  VIEW - MOBILE FIRST         */
+/* =================================== */
+
+/* =================================== */
+/* FIXME:  TITLE & CALL TO ACTION TEXT */
+/* =================================== */
+
+.promo__apple__reseller__page__title {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  flex-direction: column;
+  background-color: var(--color-cta-apple-reseller-background-01);
+  /* border: 1px solid green; */
+}
+
+.promo__apple__reseller__page__title h5 {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  text-transform: uppercase;
+  width: 100vw;
+  margin: 0rem 0.5rem 0rem 0.5rem;
+  padding: 1.5rem 0rem 0rem 0rem;
+  text-align: center;
+}
+
+.promo__apple__reseller__page__title p {
+  text-align: justify;
+  text-transform: initial;
+  margin: 0.5rem 3rem 1rem 3rem;
+  font-size: 1.4rem;
+  line-height: 1.8;
+  font-weight: 500;
+}
+
+.promo__apple__reseller__page__title p strong {
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1.8;
+  cursor: pointer;
+}
+
+.promo__apple__reseller__page__title p strong:hover {
+  color: var(--color-cta-shopmax);
+  transform: scale(1.05);
+}
+
+/* ============================================= */
+/* FIXME:  OPTIONS - CONTAINER                   */
+/* ============================================= */
+
+.promo__apple__reseller__options {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  height: auto;
+  padding: 1rem 0rem 3rem 0rem;
+  background-color: var(--color-cta-apple-reseller-background-01);
+  /* border: 1px solid red; */
+}
+
+/* ============================================= */
+/* FIXME:  OPTION 1 - APPLE IPHONES              */
+/* ============================================= */
+
+.promo__apple__reseller__option__01 {
+  position: relative;
+  width: 26rem;
+  height: 18.5rem;
+  margin: 2rem 2rem 2rem 2rem;
+  padding: 0rem 0rem 0rem 0rem;
+  border-radius: 1.5rem;
+  border: none;
+  outline: none;
+  box-shadow: var(--color-box-shadow-01);
+  /* border: 1px solid green; */
+}
+
+.promo__apple__reseller__option__01 a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 1.5rem;
+  background-color: white;
+  color: var(--color-cta-page-text-on-buttons-or-anchors);
+  box-shadow: var(--color-box-shadow-01);
+  transition: transform 0.5s ease-in-out;
+  cursor: pointer;
+}
+
+.promo__apple__reseller__option__01 a p {
+  font-size: 1.5rem;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.promo__apple__reseller__option__01 a p strong {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.promo__apple__reseller__option__01 a img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 1.5rem;
+  object-fit: contain;
+  /* border: 1px solid purple; */
+}
+
+.promo__apple__reseller__option__01 a:hover {
+  transform: scale(1.04);
+}
+
+/* ============================================ */
+/* FIXME:  OPTION 2 - APPLE IPADS               */
+/* ============================================ */
+
+.promo__apple__reseller__option__02 {
+  position: relative;
+  width: 26rem;
+  height: 18.5rem;
+  margin: 2rem 2rem 2rem 2rem;
+  padding: 0rem 0rem 0rem 0rem;
+  border-radius: 1.5rem;
+  border: none;
+  outline: none;
+  box-shadow: var(--color-box-shadow-01);
+  /* border: 1px solid green; */
+}
+
+.promo__apple__reseller__option__02 a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 1.5rem;
+  background-color: white;
+  /* color: var(--color-cta-page-text-on-buttons-or-anchors); */
+  box-shadow: var(--color-box-shadow-01);
+  transition: transform 0.5s ease-in-out;
+  cursor: pointer;
+}
+
+.promo__apple__reseller__option__02 a p {
+  font-size: 1.5rem;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.promo__apple__reseller__option__02 a p strong {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.promo__apple__reseller__option__02 a img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 1.5rem;
+  object-fit: contain;
+  /* border: 1px solid green; */
+}
+
+.promo__apple__reseller__option__02 a:hover {
+  transform: scale(1.04);
+}
+
+/* ======================================================== */
+/* FIXME:  OPTION 3 - APPLE WATCH                           */
+/* ======================================================== */
+
+.promo__apple__reseller__option__03 {
+  position: relative;
+  width: 26rem;
+  height: 18.5rem;
+  margin: 2rem 2rem 2rem 2rem;
+  padding: 0rem 0rem 0rem 0rem;
+  border-radius: 1.5rem;
+  border: none;
+  outline: none;
+  box-shadow: var(--color-box-shadow-01);
+  /* border: 1px solid green; */
+}
+
+.promo__apple__reseller__option__03 a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 1.5rem;
+  background-color: white;
+  color: var(--color-cta-page-text-on-buttons-or-anchors);
+  box-shadow: var(--color-box-shadow-01);
+  transition: transform 0.5s ease-in-out;
+  cursor: pointer;
+}
+
+.promo__apple__reseller__option__03 a p {
+  font-size: 1.5rem;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.promo__apple__reseller__option__03 a p strong {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.promo__apple__reseller__option__03 a img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 1.5rem;
+  object-fit: contain;
+  /* border: 1px solid green; */
+}
+
+.promo__apple__reseller__option__03 a:hover {
+  transform: scale(1.04);
+}
+
+/* =================================================== */
+/* FIXME:  OPTION 4 - APPLE MACBOOKS                   */
+/* =================================================== */
+
+.promo__apple__reseller__option__04 {
+  position: relative;
+  width: 26rem;
+  height: 18.5rem;
+  margin: 2rem 2rem 2rem 2rem;
+  padding: 0rem 0rem 0rem 0rem;
+  border-radius: 1.5rem;
+  border: none;
+  outline: none;
+  box-shadow: var(--color-box-shadow-01);
+  /* border: 1px solid green; */
+}
+
+.promo__apple__reseller__option__04 a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 1.5rem;
+  background-color: white;
+  color: var(--color-cta-page-text-on-buttons-or-anchors);
+  box-shadow: var(--color-box-shadow-01);
+  transition: transform 0.5s ease-in-out;
+  cursor: pointer;
+}
+
+.promo__apple__reseller__option__04 a p {
+  font-size: 1.5rem;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.promo__apple__reseller__option__04 a p strong {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.promo__apple__reseller__option__04 a img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 1.5rem;
+  object-fit: contain;
+  /* border: 1px solid green; */
+}
+
+.promo__apple__reseller__option__04 a:hover {
+  transform: scale(1.04);
+}
+
+/* =================================================== */
+/* FIXME:  OPTION 5 - APPLE MACS, IMACS, MAC STUDIO    */
+/* =================================================== */
+
+.promo__apple__reseller__option__05 {
+  position: relative;
+  width: 26rem;
+  height: 18.5rem;
+  margin: 2rem 2rem 2rem 2rem;
+  padding: 0rem 0rem 0rem 0rem;
+  border-radius: 1.5rem;
+  border: none;
+  outline: none;
+  box-shadow: var(--color-box-shadow-01);
+  /* border: 1px solid green; */
+}
+
+.promo__apple__reseller__option__05 a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 1.5rem;
+  background-color: white;
+  color: var(--color-cta-page-text-on-buttons-or-anchors);
+  box-shadow: var(--color-box-shadow-01);
+  transition: transform 0.5s ease-in-out;
+  cursor: pointer;
+}
+
+.promo__apple__reseller__option__05 a p {
+  font-size: 1.5rem;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.promo__apple__reseller__option__05 a p strong {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.promo__apple__reseller__option__05 a img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 1.5rem;
+  object-fit: contain;
+  /* border: 1px solid green; */
+}
+
+.promo__apple__reseller__option__05 a:hover {
+  transform: scale(1.04);
+}
+
+/* =================================================== */
+/* FIXME:  OPTION 6 - APPLE TV                         */
+/* =================================================== */
+
+.promo__apple__reseller__option__06 {
+  position: relative;
+  width: 26rem;
+  height: 18.5rem;
+  margin: 2rem 2rem 2rem 2rem;
+  padding: 0rem 0rem 0rem 0rem;
+  border-radius: 1.5rem;
+  border: none;
+  outline: none;
+  box-shadow: var(--color-box-shadow-01);
+  /* border: 1px solid green; */
+}
+
+.promo__apple__reseller__option__06 a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 1.5rem;
+  background-color: white;
+  color: var(--color-cta-page-text-on-buttons-or-anchors);
+  box-shadow: var(--color-box-shadow-01);
+  transition: transform 0.5s ease-in-out;
+  cursor: pointer;
+}
+
+.promo__apple__reseller__option__06 a p {
+  font-size: 1.5rem;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.promo__apple__reseller__option__06 a p strong {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.promo__apple__reseller__option__06 a img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 1.5rem;
+  object-fit: contain;
+  /* border: 1px solid green; */
+}
+
+.promo__apple__reseller__option__06 a:hover {
+  transform: scale(1.04);
+}
+
+/* =================================================== */
+/* FIXME:  OPTION 7 - APPLE IPODS (EARPHONES)          */
+/* =================================================== */
+
+.promo__apple__reseller__option__07 {
+  position: relative;
+  width: 26rem;
+  height: 18.5rem;
+  margin: 2rem 2rem 2rem 2rem;
+  padding: 0rem 0rem 0rem 0rem;
+  border-radius: 1.5rem;
+  border: none;
+  outline: none;
+  box-shadow: var(--color-box-shadow-01);
+  /* border: 1px solid green; */
+}
+
+.promo__apple__reseller__option__07 a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 1.5rem;
+  background-color: white;
+  color: var(--color-cta-page-text-on-buttons-or-anchors);
+  box-shadow: var(--color-box-shadow-01);
+  transition: transform 0.5s ease-in-out;
+  cursor: pointer;
+}
+
+.promo__apple__reseller__option__07 a p {
+  font-size: 1.5rem;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.promo__apple__reseller__option__07 a p strong {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.promo__apple__reseller__option__07 a img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 1.5rem;
+  object-fit: contain;
+  /* border: 1px solid green; */
+}
+
+.promo__apple__reseller__option__07 a:hover {
+  transform: scale(1.04);
+}
+
+/* =================================================== */
+/* FIXME:  OPTION 8 - APPLE CHARGERS AND ACCESSORIES   */
+/* =================================================== */
+
+.promo__apple__reseller__option__08 {
+  position: relative;
+  width: 26rem;
+  height: 18.5rem;
+  margin: 2rem 2rem 2rem 2rem;
+  padding: 0rem 0rem 0rem 0rem;
+  border-radius: 1.5rem;
+  border: none;
+  outline: none;
+  box-shadow: var(--color-box-shadow-01);
+  /* border: 1px solid green; */
+}
+
+.promo__apple__reseller__option__08 a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 1.5rem;
+  background-color: white;
+  color: var(--color-cta-page-text-on-buttons-or-anchors);
+  box-shadow: var(--color-box-shadow-01);
+  transition: transform 0.5s ease-in-out;
+  cursor: pointer;
+}
+
+.promo__apple__reseller__option__08 a p {
+  font-size: 1.5rem;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.promo__apple__reseller__option__08 a p strong {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.promo__apple__reseller__option__08 a img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 1.5rem;
+  object-fit: contain;
+  /* border: 1px solid green; */
+}
+
+.promo__apple__reseller__option__08 a:hover {
+  transform: scale(1.04);
+}
+
+/* ================================================== */
+/* FIXME:  MEDIA QURIES - FOR LARGER SCREENS  FIXME:  */
+/* ================================================== */
+
+@media screen and (max-width: 300px) {
+  .promo__apple__reseller__page__title h5 {
+    margin: 2rem 1.5rem 2rem 1.5rem;
+    text-align: center;
+  }
+
+  .promo__apple__reseller__page__title p {
+    margin: 0.5rem 1.5rem 1rem 1.5rem;
+  }
+
+  .promo__apple__reseller__option__01,
+  .promo__apple__reseller__option__02,
+  .promo__apple__reseller__option__03,
+  .promo__apple__reseller__option__04,
+  .promo__apple__reseller__option__05,
+  .promo__apple__reseller__option__06,
+  .promo__apple__reseller__option__07,
+  .promo__apple__reseller__option__08 {
+    margin: 2rem 0.2rem 2rem 0.2rem;
+    width: 24rem;
+    height: 17.08rem;
+  }
+}
+
+/* ===================================================================================================================== */
+/* TODO:TODO:                     MAIN INDEX PAGE (CALL-TO-ACTION) - PROFESSIONAL SERVICES                    TODO:TODO: */
+/* ===================================================================================================================== */
+
+/* =================================== */
+/* FIXME:  BACKGROUND COLOR SCHEME     */
+/* =================================== */
+
+:root {
+  --color-cta-professional-services-background-01: #e5e4e2;
+  --color-cta-professional-services-background-02: #d3d3d3;
+  --color-cta-professional-services-background-03: #c0c0c0;
+  --color-cta-professional-services-background-04: #a9a9a9;
+}
+
+/* =================================== */
+/* FIXME:  VIEW - MOBILE FIRST         */
+/* =================================== */
+
+/* =================================== */
+/* FIXME:  TITLE & CALL TO ACTION TEXT */
+/* =================================== */
+
+.promo__professional__services__page__title {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  flex-direction: column;
+  background-color: var(--color-cta-professional-services-background-04);
+  /* border: 1px solid green; */
+}
+
+.promo__professional__services__page__title h5 {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  text-transform: uppercase;
+  width: 100vw;
+  margin: 0rem 0.5rem 0rem 0.5rem;
+  padding: 1.5rem 0rem 0rem 0rem;
+  text-align: center;
+}
+
+.promo__professional__services__page__title p {
+  text-align: justify;
+  text-transform: initial;
+  margin: 0.5rem 3rem 1rem 3rem;
+  font-size: 1.4rem;
+  line-height: 1.8;
+  font-weight: 500;
+}
+
+.promo__professional__services__page__title p strong {
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1.8;
+  cursor: pointer;
+}
+
+.promo__professional__services__page__title p strong:hover {
+  color: var(--color-cta-shopmax);
+  transform: scale(1.05);
+}
+
+/* ============================================= */
+/* FIXME:  OPTIONS - CONTAINER                   */
+/* ============================================= */
+
+.promo__professional__services__options {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  height: auto;
+  padding: 1rem 0rem 3rem 0rem;
+  background-color: var(--color-cta-professional-services-background-04);
+  /* border: 1px solid red; */
+}
+
+/* ============================================= */
+/* FIXME:  OPTION 1 - BUSINESS SUPPORT SERVICES  */
+/* ============================================= */
+
+.promo__professional__services__option__01 {
+  position: relative;
+  width: 26rem;
+  height: 18.5rem;
+  margin: 2rem 2rem 2rem 2rem;
+  padding: 0rem 0rem 0rem 0rem;
+  border-radius: 1.5rem;
+  border: none;
+  outline: none;
+  box-shadow: var(--color-box-shadow-01);
+  /* border: 1px solid green; */
+}
+
+.promo__professional__services__option__01 a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 1.5rem;
+  background-color: white;
+  color: var(--color-cta-page-text-on-buttons-or-anchors);
+  box-shadow: var(--color-box-shadow-01);
+  transition: transform 0.5s ease-in-out;
+  cursor: pointer;
+}
+
+.promo__professional__services__option__01 a p {
+  font-size: 1.5rem;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.promo__professional__services__option__01 a p strong {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.promo__professional__services__option__01 a img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 1.5rem;
+  object-fit: contain;
+  /* border: 1px solid purple; */
+}
+
+.promo__professional__services__option__01 a:hover {
+  transform: scale(1.04);
+}
+
+/* ============================================ */
+/* FIXME:  OPTION 2 - IT, CLOUD & WEB SERVICES  */
+/* ============================================ */
+
+.promo__professional__services__option__02 {
+  position: relative;
+  width: 26rem;
+  height: 18.5rem;
+  margin: 2rem 2rem 2rem 2rem;
+  padding: 0rem 0rem 0rem 0rem;
+  border-radius: 1.5rem;
+  border: none;
+  outline: none;
+  box-shadow: var(--color-box-shadow-01);
+  /* border: 1px solid green; */
+}
+
+.promo__professional__services__option__02 a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 1.5rem;
+  background-color: white;
+  /* color: var(--color-cta-page-text-on-buttons-or-anchors); */
+  box-shadow: var(--color-box-shadow-01);
+  transition: transform 0.5s ease-in-out;
+  cursor: pointer;
+}
+
+.promo__professional__services__option__02 a p {
+  font-size: 1.5rem;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.promo__professional__services__option__02 a p strong {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.promo__professional__services__option__02 a img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 1.5rem;
+  object-fit: contain;
+  /* border: 1px solid green; */
+}
+
+.promo__professional__services__option__02 a:hover {
+  transform: scale(1.04);
+}
+
+/* ======================================================== */
+/* FIXME:  OPTION 3 - RISK, FINANCIAL PLANNING & INSURANCE  */
+/* ======================================================== */
+
+.promo__professional__services__option__03 {
+  position: relative;
+  width: 26rem;
+  height: 18.5rem;
+  margin: 2rem 2rem 2rem 2rem;
+  padding: 0rem 0rem 0rem 0rem;
+  border-radius: 1.5rem;
+  border: none;
+  outline: none;
+  box-shadow: var(--color-box-shadow-01);
+  /* border: 1px solid green; */
+}
+
+.promo__professional__services__option__03 a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 1.5rem;
+  background-color: white;
+  color: var(--color-cta-page-text-on-buttons-or-anchors);
+  box-shadow: var(--color-box-shadow-01);
+  transition: transform 0.5s ease-in-out;
+  cursor: pointer;
+}
+
+.promo__professional__services__option__03 a p {
+  font-size: 1.5rem;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.promo__professional__services__option__03 a p strong {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.promo__professional__services__option__03 a img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 1.5rem;
+  object-fit: contain;
+  /* border: 1px solid green; */
+}
+
+.promo__professional__services__option__03 a:hover {
+  transform: scale(1.04);
+}
+
+/* =================================================== */
+/* FIXME:  OPTION 4 - LEGAL SERVICES                   */
+/* =================================================== */
+
+.promo__professional__services__option__04 {
+  position: relative;
+  width: 26rem;
+  height: 18.5rem;
+  margin: 2rem 2rem 2rem 2rem;
+  padding: 0rem 0rem 0rem 0rem;
+  border-radius: 1.5rem;
+  border: none;
+  outline: none;
+  box-shadow: var(--color-box-shadow-01);
+  /* border: 1px solid green; */
+}
+
+.promo__professional__services__option__04 a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 1.5rem;
+  background-color: white;
+  color: var(--color-cta-page-text-on-buttons-or-anchors);
+  box-shadow: var(--color-box-shadow-01);
+  transition: transform 0.5s ease-in-out;
+  cursor: pointer;
+}
+
+.promo__professional__services__option__04 a p {
+  font-size: 1.5rem;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.promo__professional__services__option__04 a p strong {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.promo__professional__services__option__04 a img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 1.5rem;
+  object-fit: contain;
+  /* border: 1px solid green; */
+}
+
+.promo__professional__services__option__04 a:hover {
+  transform: scale(1.04);
+}
+
+/* =================================================== */
+/* FIXME:  OPTION 5 - COURIER SERVICES                 */
+/* =================================================== */
+
+.promo__professional__services__option__05 {
+  position: relative;
+  width: 26rem;
+  height: 18.5rem;
+  margin: 2rem 2rem 2rem 2rem;
+  padding: 0rem 0rem 0rem 0rem;
+  border-radius: 1.5rem;
+  border: none;
+  outline: none;
+  box-shadow: var(--color-box-shadow-01);
+  /* border: 1px solid green; */
+}
+
+.promo__professional__services__option__05 a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 1.5rem;
+  background-color: white;
+  color: var(--color-cta-page-text-on-buttons-or-anchors);
+  box-shadow: var(--color-box-shadow-01);
+  transition: transform 0.5s ease-in-out;
+  cursor: pointer;
+}
+
+.promo__professional__services__option__05 a p {
+  font-size: 1.5rem;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.promo__professional__services__option__05 a p strong {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.promo__professional__services__option__05 a img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 1.5rem;
+  object-fit: contain;
+  /* border: 1px solid green; */
+}
+
+.promo__professional__services__option__05 a:hover {
+  transform: scale(1.04);
+}
+
+/* =================================================== */
+/* FIXME:  OPTION 6 - PROFESSIONAL PROPERTY SERVICES   */
+/* =================================================== */
+
+.promo__professional__services__option__06 {
+  position: relative;
+  width: 26rem;
+  height: 18.5rem;
+  margin: 2rem 2rem 2rem 2rem;
+  padding: 0rem 0rem 0rem 0rem;
+  border-radius: 1.5rem;
+  border: none;
+  outline: none;
+  box-shadow: var(--color-box-shadow-01);
+  /* border: 1px solid green; */
+}
+
+.promo__professional__services__option__06 a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 1.5rem;
+  background-color: white;
+  color: var(--color-cta-page-text-on-buttons-or-anchors);
+  box-shadow: var(--color-box-shadow-01);
+  transition: transform 0.5s ease-in-out;
+  cursor: pointer;
+}
+
+.promo__professional__services__option__06 a p {
+  font-size: 1.5rem;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.promo__professional__services__option__06 a p strong {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.promo__professional__services__option__06 a img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 1.5rem;
+  object-fit: contain;
+  /* border: 1px solid green; */
+}
+
+.promo__professional__services__option__06 a:hover {
+  transform: scale(1.04);
+}
+
+/* =================================================== */
+/* FIXME:  OPTION 7 - PROPERTY MAINTENANCE SERVICES    */
+/* =================================================== */
+
+.promo__professional__services__option__07 {
+  position: relative;
+  width: 26rem;
+  height: 18.5rem;
+  margin: 2rem 2rem 2rem 2rem;
+  padding: 0rem 0rem 0rem 0rem;
+  border-radius: 1.5rem;
+  border: none;
+  outline: none;
+  box-shadow: var(--color-box-shadow-01);
+  /* border: 1px solid green; */
+}
+
+.promo__professional__services__option__07 a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 1.5rem;
+  background-color: white;
+  color: var(--color-cta-page-text-on-buttons-or-anchors);
+  box-shadow: var(--color-box-shadow-01);
+  transition: transform 0.5s ease-in-out;
+  cursor: pointer;
+}
+
+.promo__professional__services__option__07 a p {
+  font-size: 1.5rem;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.promo__professional__services__option__07 a p strong {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.promo__professional__services__option__07 a img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 1.5rem;
+  object-fit: contain;
+  /* border: 1px solid green; */
+}
+
+.promo__professional__services__option__07 a:hover {
+  transform: scale(1.04);
+}
+
+/* =================================================== */
+/* FIXME:  OPTION 8 - HEATLH CARE SERVICES             */
+/* =================================================== */
+
+.promo__professional__services__option__08 {
+  position: relative;
+  width: 26rem;
+  height: 18.5rem;
+  margin: 2rem 2rem 2rem 2rem;
+  padding: 0rem 0rem 0rem 0rem;
+  border-radius: 1.5rem;
+  border: none;
+  outline: none;
+  box-shadow: var(--color-box-shadow-01);
+  /* border: 1px solid green; */
+}
+
+.promo__professional__services__option__08 a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 1.5rem;
+  background-color: white;
+  color: var(--color-cta-page-text-on-buttons-or-anchors);
+  box-shadow: var(--color-box-shadow-01);
+  transition: transform 0.5s ease-in-out;
+  cursor: pointer;
+}
+
+.promo__professional__services__option__08 a p {
+  font-size: 1.5rem;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.promo__professional__services__option__08 a p strong {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.promo__professional__services__option__08 a img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 1.5rem;
+  object-fit: contain;
+  /* border: 1px solid green; */
+}
+
+.promo__professional__services__option__08 a:hover {
+  transform: scale(1.04);
+}
+
+/* ================================================== */
+/* FIXME:  MEDIA QURIES - FOR LARGER SCREENS  FIXME:  */
+/* ================================================== */
+
+@media screen and (max-width: 300px) {
+  .promo__professional__services__page__title h5 {
+    margin: 2rem 1.5rem 2rem 1.5rem;
+    text-align: center;
+  }
+
+  .promo__professional__services__page__title p {
+    margin: 0.5rem 1.5rem 1rem 1.5rem;
+  }
+
+  .promo__professional__services__option__01,
+  .promo__professional__services__option__02,
+  .promo__professional__services__option__03,
+  .promo__professional__services__option__04,
+  .promo__professional__services__option__05,
+  .promo__professional__services__option__06,
+  .promo__professional__services__option__07,
+  .promo__professional__services__option__08 {
+    margin: 2rem 0.2rem 2rem 0.2rem;
+    width: 24rem;
+    height: 17.08rem;
+  }
+}
+
 /* FIXME:FIXME:FIXME:  ENTER NEW PAGE CONTENT ABOVE  FIXME:FIXME:FIXME: */
 
 /* ===================================================================================================================== */
