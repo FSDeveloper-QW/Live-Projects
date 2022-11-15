@@ -120,7 +120,7 @@
     <!-- TODO:   CSS STYLE SHEET (INTERNAL) - LINK YOUR HTML DOCUMENT TO YOUR OWN CSS STYLE SHEET               -->
     <!-- ====================================================================================================== -->
 
-    <link rel="stylesheet" href="css/starter_page_template.css" />
+    <link rel="stylesheet" href="css/sellers_login.css" />
 
     <!-- ====================================================================================================== -->
     <!-- TODO:   CSS STYLE SHEET (EXTERNAL) - LINK TO NORMALISE.CSS STYLE SHEET (ONLY IF REQUIRED)              -->
@@ -8617,35 +8617,332 @@
     <!-- ====================================================================================================== -->
     <!-- ====================================================================================================== -->
 
-    <div id="new-page-container" class="new__page__container">
-      <!-- =================================================== -->
-      <!-- FIXME:  NEW PAGE - PAGE MAIN AND SUB TITLES  FIXME: -->
-      <!-- =================================================== -->
+    <!-- FIXME:FIXME:FIXME:FIXME:  REPLACE NEW PAGE CONTENT BELOW  FIXME:FIXME:FIXME:FIXME: -->
 
-      <div class="new__page__title">
-        <h5><strong>apple phones</strong></h5>
-      </div>
+    <!-- ====================================================================================================== -->
+    <!-- ====================================================================================================== -->
+    <!-- TODO:TODO:                   SECTION - SELLER LOGIN / REGISTER (START)                      TODO:TODO: -->
+    <!-- ====================================================================================================== -->
+    <!-- ====================================================================================================== -->
 
-      <!-- <div class="new__page__sub__title">
-        <p>(Product ID in top right corner)</p>
-      </div> -->
+    <div
+      id="section-seller-registration"
+      class="seller__login__registration__section"
+    >
+      <!-- <img src="images/banner_01.webp" alt="" /> -->
+      <div class="seller__login__registration__container">
+        <!-- FIXME:FIXME:FIXME:FIXME:  REPLACE BELOW -->
 
-      <!-- =========================================================== -->
-      <!-- FIXME:  NEW PAGE - BUTTON LINKS / DONWLOAD BROCHURE  FIXME: -->
-      <!-- =========================================================== -->
+        <!-- ------------------------------------------------ -->
+        <!-- TODO:  FORM SECTION - SIGN-IN AND SIGN-UP  TODO: -->
+        <!-- ------------------------------------------------ -->
+        <div class="forms-container">
+          <div class="signin-signup">
+            <!-- ----------------------------------------------------------------------------------------------- -->
 
-      <!-- <div class="new__page__buttons__container">
-        <div class="new__page__button">
-          <a href="pdf/shopmax_energy_solutions_brochure.pdf" target="_blank"
-            >download brochure</a
-          >
+            <!-- ------------------------------------- -->
+            <!-- FIXME:  FORM 1 - MAIN SIGN-IN  FIXME: -->
+            <!-- ------------------------------------- -->
+
+            <form
+              action=""
+              class="sign-in-form"
+              name="SHOPPER LOGIN"
+              method="post"
+            >
+              <!-- -------------------------- -->
+              <!-- FIXME:  FORM TITLE  FIXME: -->
+              <!-- -------------------------- -->
+
+              <div class="title">seller login</div>
+
+              <!-- --------------------------------------------------- -->
+              <!-- FIXME:  SUB-HEADER - POPI & PRIVACY POLICY  FIXME:  -->
+              <!-- --------------------------------------------------- -->
+
+              <div class="product__quote__privacy__statement">
+                <p>
+                  view our<a href="pdf/shopmax_popi_policy.pdf" target="_blank"
+                    ><strong>&nbsp;&nbsp;POPI&nbsp;&nbsp;</strong></a
+                  >and<a href="pdf/shopmax_privacy_policy.pdf" target="_blank"
+                    ><strong>&nbsp;&nbsp;PRIVACY&nbsp;&nbsp;</strong></a
+                  >Policies.
+                </p>
+              </div>
+
+              <!-- ------------------------------------------------ -->
+              <!-- FIXME:  SELECT WHAT SELLER IS LOGGING IN  FIXME: -->
+              <!-- ------------------------------------------------ -->
+
+              <div class="input-field-identification">
+                <i class="bx bx-id-card"></i>
+                <select id="seller_identification" name="" required>
+                  <option value="" selected>Select seller ID ... *</option>
+                  <option name="reseller" value="reseller">
+                    Shopmax reseller
+                  </option>
+                  <option name="products" value="products">
+                    Marketplace Products
+                  </option>
+                  <option name="general services" value="general services">
+                    General service provider
+                  </option>
+                  <option
+                    name="professional services"
+                    value="professional services"
+                  >
+                    Professional service provider
+                  </option>
+                </select>
+              </div>
+
+              <!-- ---------------------------- -->
+              <!-- FIXME:  INPUT FIELDS  FIXME: -->
+              <!-- ---------------------------- -->
+
+              <div class="input-field">
+                <i class="fas fa-user"></i>
+                <input
+                  type="text"
+                  placeholder="Username *"
+                  id="Username"
+                  value=""
+                  name="Username"
+                  minlength="3"
+                  maxlength="75"
+                  autocomplete="off"
+                  required
+                />
+              </div>
+              <div class="input-field">
+                <i class="fas fa-lock"></i>
+                <input
+                  type="password"
+                  placeholder="Password *"
+                  id="password"
+                  value=""
+                  name="password"
+                  minlength="3"
+                  maxlength="50"
+                  autocomplete="off"
+                  required
+                />
+              </div>
+
+              <!-- --------------------------------------------------------- -->
+              <!-- FIXME:  HEADER - ACCEPT THE TERMS AND CONDITIONS  FIXME:  -->
+              <!-- --------------------------------------------------------- -->
+
+              <div class="form__group__double">
+                <label class="checkbox__option"
+                  ><input type="checkbox" name="checkbox" required />I hereby
+                  accept the company's POPI and Privacy policies to protect my
+                  personal information *</label
+                >
+              </div>
+
+              <!-- ------------------------------------------------ -->
+              <!-- FIXME:  GOOGLE RECAPTCHA IMPLEMENTATION  FIXME:  -->
+              <!-- Google Recaptcha (Version 2)                     -->
+              <!-- "I am not a Robot"                               -->
+              <!-- Current Site Key - SHOPMAX Website               -->
+              <!-- ------------------------------------------------ -->
+
+              <div class="form__group">
+                <div
+                  class="g-recaptcha"
+                  data-sitekey="6Ldzh1AfAAAAACWDbEHGqvipSqHbEBYwZahZHWcO"
+                  data-theme="light"
+                ></div>
+              </div>
+
+              <!-- ------------------------------ -->
+              <!-- FIXME:  SIGN IN BUTTON  FIXME: -->
+              <!-- ------------------------------ -->
+
+              <input type="submit" value="login" class="btn solid" />
+
+              <!-- --------------------------------------------- -->
+              <!-- FIXME:  FORM 1 - SOCIAL MEDIA SIGN-IN  FIXME: -->
+              <!-- --------------------------------------------- -->
+
+              <p class="social-text">or via social media</p>
+              <div class="social-media">
+                <a
+                  href="https://www.facebook.com"
+                  class="social-icon"
+                  target="_blank"
+                  ><i class="fab fa-facebook-f"></i
+                ></a>
+                <a
+                  href="https://twitter.com"
+                  class="social-icon"
+                  target="_blank"
+                  ><i class="fab fa-twitter"></i
+                ></a>
+                <a
+                  href="https://accounts.google.com/"
+                  class="social-icon"
+                  target="_blank"
+                  ><i class="fab fa-google"></i
+                ></a>
+                <a
+                  href="https://www.linkedin.com"
+                  class="social-icon"
+                  target="_blank"
+                  ><i class="fab fa-linkedin-in"></i
+                ></a>
+              </div>
+            </form>
+
+            <!-- ----------------------------------------------------------------------------------------------- -->
+
+            <!-- ------------------------------------------------ -->
+            <!-- FIXME:  FORM 2 - MAIN SIGN-UP / REGISTER  FIXME: -->
+            <!-- ------------------------------------------------ -->
+
+            <form
+              action=""
+              class="sign-up-form"
+              name="SELLER OPTIONS"
+              method="post"
+            >
+              <!-- -------------------------- -->
+              <!-- FIXME:  FORM TITLE  FIXME: -->
+              <!-- -------------------------- -->
+
+              <div class="title">Choose your selling plan</div>
+
+              <!-- -------------------------------------------- - -->
+              <!-- FIXME:  SUB-HEADER - SELLING BROCHURES  FIXME: -->
+              <!-- ---------------------------------------------- -->
+
+              <div class="product__quote__privacy__statement">
+                <p>
+                  Download our<a
+                    href="pdf/shopmax_all_selling_plan_brochures.pdf"
+                    target="_blank"
+                    ><strong
+                      >&nbsp;&nbsp;SELLING BROCHURES&nbsp;&nbsp;</strong
+                    ></a
+                  >
+                </p>
+              </div>
+
+              <div class="all-plans-container">
+                <!-- --------------------------------------- -->
+                <!-- FIXME:  BUTTON - SELLING PLAN 1  FIXME: -->
+                <!-- --------------------------------------- -->
+                <button class="selling-plan-1-button">
+                  <a href="become_a_reseller.html">become a reseller (free)</a>
+                </button>
+                <!-- --------------------------------------- -->
+                <!-- FIXME:  BUTTON - SELLING PLAN 2  FIXME: -->
+                <!-- --------------------------------------- -->
+                <button class="selling-plan-2-button">
+                  <a href="sell_your_product.html">sell products (R30)</a>
+                </button>
+                <!-- --------------------------------------- -->
+                <!-- FIXME:  BUTTON - SELLING PLAN 3  FIXME: -->
+                <!-- --------------------------------------- -->
+                <button class="selling-plan-3-button">
+                  <a href="sell_your_general_service.html"
+                    >general services (R45)</a
+                  >
+                </button>
+                <!-- --------------------------------------- -->
+                <!-- FIXME:  BUTTON - SELLING PLAN 4  FIXME: -->
+                <!-- --------------------------------------- -->
+                <button class="selling-plan-4-button">
+                  <a href="sell_your_professional_service.html"
+                    >professional services (R75)</a
+                  >
+                </button>
+              </div>
+
+              <!-- -------------------------------------------- - -->
+              <!-- FIXME:  SUB-HEADER - PRICING STRUCTURE  FIXME: -->
+              <!-- ---------------------------------------------- -->
+
+              <div class="product__quote__privacy__statement">
+                <p>Fees per month <strong>(incl. VAT)</strong></p>
+              </div>
+            </form>
+
+            <!-- ----------------------------------------------------------------------------------------------- -->
+            <!--                          FIXME:  END OF FORM SECTION  FIXME:                                    -->
+            <!-- ----------------------------------------------------------------------------------------------- -->
+          </div>
         </div>
-      </div> -->
 
-      <!-- FIXME:FIXME:FIXME:FIXME:  REPLACE NEW PAGE CONTENT BELOW  FIXME:FIXME:FIXME:FIXME: -->
+        <!-- ------------------------------------ -->
+        <!-- TODO:  IMAGES / THEME SECTION  TODO: -->
+        <!-- ------------------------------------ -->
 
-      <!-- FIXME:FIXME:FIXME:FIXME:  REPLACE NEW PAGE CONTENT ABOVE  FIXME:FIXME:FIXME:FIXME: -->
+        <div class="panels-container">
+          <!-- -------------------------- -->
+          <!-- FIXME:  LEFT PANEL  FIXME: -->
+          <!-- -------------------------- -->
+
+          <div class="panel left-panel">
+            <div class="content">
+              <h3>Not yet a seller ?</h3>
+              <p>
+                Our simplied <strong>E-COMMERCE PLATFORM</strong> allow you to
+                either become a reseller or promote your own products, general
+                and professional services conveniently to clients across South
+                Africa ... sign up for any of our
+                <strong>4 SELLING PLANS</strong> and unlock your own true
+                potential ... <strong>Let's go make it happen</strong> !
+              </p>
+              <button class="btn transparent" id="sign-up-btn">
+                learn more
+              </button>
+            </div>
+            <img
+              src="images_pages/Login_and_Registration/sellers_multi_tasking.svg"
+              alt=""
+              class="image"
+            />
+          </div>
+
+          <!-- --------------------------- -->
+          <!-- FIXME:  RIGHT PANEL  FIXME: -->
+          <!-- --------------------------- -->
+
+          <div class="panel right-panel">
+            <div class="content">
+              <h3>Already a seller ?</h3>
+              <p>
+                Let's get started to <strong>list, market and sell</strong> your
+                products and services on our e-commerce platform and
+                exponentially grow your client base across South Africa ... It's
+                time to <strong> unleash the CEO in you </strong> !
+              </p>
+              <button class="btn transparent" id="sign-in-btn">login</button>
+            </div>
+            <img
+              src="images_pages/Login_and_Registration/career_progress.svg"
+              alt=""
+              class="image"
+            />
+          </div>
+
+          <!-- ----------------------------------------------------------------------------------------------- -->
+          <!--                          FIXME:  END OF PANEL SECTION  FIXME:                                   -->
+          <!-- ----------------------------------------------------------------------------------------------- -->
+        </div>
+        <!-- FIXME:FIXME:FIXME:FIXME:  REPLACE ABOVE -->
+      </div>
     </div>
+
+    <!-- ====================================================================================================== -->
+    <!-- ====================================================================================================== -->
+    <!-- FIXME:FIXME:                  SECTION - SELLER LOGIN / REGISTER (ENDS)                    FIXME:FIXME: -->
+    <!-- ====================================================================================================== -->
+    <!-- ====================================================================================================== -->
+
+    <!-- FIXME:FIXME:FIXME:FIXME:  REPLACE NEW PAGE CONTENT ABOVE  FIXME:FIXME:FIXME:FIXME: -->
 
     <!-- ====================================================================================================== -->
     <!-- ====================================================================================================== -->
@@ -9067,6 +9364,7 @@
     <script src="js/animation_addtowishlist.js" defer></script>
     <script src="js/navigation.js" defer></script>
     <script src="js/rotatingbanners.js" defer></script>
+    <script src="js/sellerlogin.js" defer></script>
 
     <!-- ====================================================================================================== -->
     <!-- NOTE: "PAGE UNDER CONSTRUCTION" SCRIPT (APPLICABLE TO ALL PAGES UNDER CONSTRUCTION)                    -->
@@ -9083,7 +9381,7 @@
       src="js/product_order_form_accordian_open_and_close.js"
       defer
     ></script> -->
-    <!-- <script src="js/g-recaptcha-required.js" defer></script> -->
+    <script src="js/g-recaptcha-required.js" defer></script>
 
     <!-- ====================================================================================================== -->
     <!-- TODO:  GOOGLE RECAPTCHA (VERSION 2) SCRIPT  - FOR ALL FORMS WITH FILE INPUT/UPLOAD ELEMENTS            -->
