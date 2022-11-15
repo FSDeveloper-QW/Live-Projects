@@ -120,7 +120,7 @@
     <!-- TODO:   CSS STYLE SHEET (INTERNAL) - LINK YOUR HTML DOCUMENT TO YOUR OWN CSS STYLE SHEET               -->
     <!-- ====================================================================================================== -->
 
-    <link rel="stylesheet" href="css/starter_page_template.css" />
+    <link rel="stylesheet" href="css/request_service_quote.css" />
 
     <!-- ====================================================================================================== -->
     <!-- TODO:   CSS STYLE SHEET (EXTERNAL) - LINK TO NORMALISE.CSS STYLE SHEET (ONLY IF REQUIRED)              -->
@@ -8617,32 +8617,541 @@
     <!-- ====================================================================================================== -->
     <!-- ====================================================================================================== -->
 
-    <div id="new-page-container" class="new__page__container">
-      <!-- =================================================== -->
-      <!-- FIXME:  NEW PAGE - PAGE MAIN AND SUB TITLES  FIXME: -->
-      <!-- =================================================== -->
+    <div id="section-service-quote-content" class="service__quote__section">
+      <!-- FIXME:FIXME:FIXME:FIXME:  REPLACE NEW PAGE CONTENT BELOW  FIXME:FIXME:FIXME:FIXME: -->
 
-      <div class="new__page__title">
-        <h5><strong>apple phones</strong></h5>
+      <!-- ------------------------------------------------------------------------------------------------------ -->
+      <!--                               TODO:  REQUEST SERVICE QUOTE  TODO:                                      -->
+      <!-- ------------------------------------------------------------------------------------------------------ -->
+
+      <!-- ------------------------------------------------------------------------------------------------------ -->
+      <!--                                TODO:  PART 1 - PAGE TITLE  TODO:                                       -->
+      <!-- ------------------------------------------------------------------------------------------------------ -->
+
+      <div class="service__quote__page__title">
+        <h5><strong>request service quote</strong></h5>
       </div>
 
-      <!-- <div class="new__page__sub__title">
-        <p>(Product ID in top right corner)</p>
-      </div> -->
+      <!-- ------------------------------------------------------------------------------------------------------ -->
+      <!--                 TODO:  PART 2 - FORM COMPONENT - REQUEST SERVICE QUOTE  TODO:                          -->
+      <!-- ------------------------------------------------------------------------------------------------------ -->
 
-      <!-- =========================================================== -->
-      <!-- FIXME:  NEW PAGE - BUTTON LINKS / DONWLOAD BROCHURE  FIXME: -->
-      <!-- =========================================================== -->
+      <form
+        action="https://formspree.io/f/mzboornq"
+        name="REQUEST QUOTE (SERVICES)"
+        method="post"
+      >
+        <!-- ---------------------------------------------------------------------------------------------------- -->
+        <!--                                  TODO:  SECTION 01  TODO:                                            -->
+        <!-- ---------------------------------------------------------------------------------------------------- -->
 
-      <!-- <div class="new__page__buttons__container">
-        <div class="new__page__button">
-          <a href="pdf/shopmax_energy_solutions_brochure.pdf" target="_blank"
-            >download brochure</a
+        <!-- ------------------------------------------------ -->
+        <!-- FIXME:  HEADER - DETAILS OF THE SERVICE  FIXME:  -->
+        <!-- ------------------------------------------------ -->
+
+        <div class="service__quote__form__header">
+          section 1 : Details of the service
+        </div>
+
+        <!-- --------------------------------------------------- -->
+        <!-- FIXME:  SUB-HEADER - POPI & PRIVACY POLICY  FIXME:  -->
+        <!-- --------------------------------------------------- -->
+
+        <div class="service__quote__privacy__statement">
+          <p>
+            view our<a href="pdf/shopmax_popi_policy.pdf" target="_blank"
+              ><strong>&nbsp;&nbsp;POPI&nbsp;&nbsp;</strong></a
+            >and<a href="pdf/shopmax_privacy_policy.pdf" target="_blank"
+              ><strong>&nbsp;&nbsp;PRIVACY&nbsp;&nbsp;</strong></a
+            >Policies.
+          </p>
+        </div>
+
+        <!-- ------------------------------- -->
+        <!-- FIXME:  SERVICE DETAILS  FIXME: -->
+        <!-- ------------------------------- -->
+
+        <div class="service__quote__form__group">
+          <label for="product_details"
+            >Please provide brief details of the general or business service you
+            require a quote on</label
+          >
+          <textarea
+            name="Details of the service required"
+            id="product_details"
+            cols="30"
+            rows="7"
+            placeholder="Please provide as much details about the specific general or business services you require, in order for us to quote swiftly and accurately on the required service ... *"
+            minlength="10"
+            maxlength="1000"
+            autocomplete="off"
+            required
+          ></textarea>
+        </div>
+
+        <!-- ------------------------------------- -->
+        <!-- FIXME:  START DATE OF SERVICE  FIXME: -->
+        <!-- ------------------------------------- -->
+
+        <div class="service__quote__form__group">
+          <label for="start-date"
+            >By which date do you need the service to start?</label
+          >
+          <input
+            id="start-date"
+            type="date"
+            value=""
+            name="When must the service start?"
+            placeholder="enter the required start date of the service ... *"
+            min="2022-04-01"
+            max="2099-12-31"
+            required
+          />
+        </div>
+
+        <!-- ----------------------------------- -->
+        <!-- FIXME:  END DATE OF SERVICE  FIXME: -->
+        <!-- ----------------------------------- -->
+
+        <div class="service__quote__form__group">
+          <label for="completion-date"
+            >By which date do you need the service to be completed?</label
+          >
+          <input
+            id="completion-date"
+            type="date"
+            value=""
+            name="By when must the service be completed"
+            placeholder="enter the required completion date of the service... *"
+            min="2022-04-01"
+            max="2099-12-31"
+            required
+          />
+        </div>
+
+        <!-- ---------------------------------------------------------------------------------------------------- -->
+        <!--                                  TODO:  SECTION 02  TODO:                                            -->
+        <!-- ---------------------------------------------------------------------------------------------------- -->
+
+        <!-- ---------------------------------------- -->
+        <!-- FIXME:  HEADER - SERVICE ADDRESS  FIXME: -->
+        <!-- ---------------------------------------- -->
+
+        <div class="service__quote__form__header">
+          section 2 : where must the service be carried out
+        </div>
+
+        <!-- ----------------------------------------------- -->
+        <!-- FIXME:  SUB-HEADER - DELIVERY LOCATIONS  FIXME: -->
+        <!-- ----------------------------------------------- -->
+
+        <div class="service__quote__delivery__location">
+          <p>
+            We can deliver the service at any
+            <strong>South African</strong> or
+            <strong>International</strong> destination
+          </p>
+        </div>
+
+        <!-- ----------------------------------------- -->
+        <!-- FIXME:  SELECT DELIVERY LOCATIONS  FIXME:  -->
+        <!-- ----------------------------------------- -->
+
+        <div class="service__quote__form__group">
+          <label for="service-locations"
+            >Choose the location where the service must be carried out</label
+          >
+          <select id="service-locations" name="Service Location" required>
+            <option value="" selected>Select your service location *</option>
+            <option value="At my residential address">
+              At my South African residential address (on-site)
+            </option>
+            <option value="At my business address">
+              At my South African business address (on-site)
+            </option>
+            <option value="At Service Provider Business Address">
+              At the service provider's South African business address
+            </option>
+            <option
+              value="It can be carried out REMOTELY by the Service Provider"
+            >
+              At an international destination
+            </option>
+            <option value="At an International Destination">
+              REMOTELY from any location
+            </option>
+          </select>
+        </div>
+
+        <!-- ----------------------------------- -->
+        <!-- FIXME:  DELIVERY ADDRESSES  FIXME:  -->
+        <!-- ----------------------------------- -->
+
+        <div class="service__quote__form__group">
+          <label for="delivery-address"
+            >Please provide the exact service address (If required on-site at
+            your own residential or business address)</label
+          >
+          <textarea
+            name="Address where service need to be carried out"
+            id="delivery-address"
+            cols="30"
+            rows="5"
+            placeholder="please provide the contact person, contact number and exact address (with postal code) where the service must be carried out ... "
+            minlength="3"
+            maxlength="250"
+            autocomplete="off"
+          ></textarea>
+        </div>
+
+        <!-- ---------------------------------------------------------------------------------------------------- -->
+        <!--                                  TODO:  SECTION 03  TODO:                                            -->
+        <!-- ---------------------------------------------------------------------------------------------------- -->
+
+        <!-- ---------------------------------------- -->
+        <!-- FIXME:  HEADER - BILLING DETAILS  FIXME: -->
+        <!-- ---------------------------------------- -->
+
+        <div class="service__quote__form__header">
+          section 3 : Your billing details
+        </div>
+
+        <!-- ----------------------------- -->
+        <!-- FIXME:  SELECT TITLE  FIXME:  -->
+        <!-- ----------------------------- -->
+
+        <div class="service__quote__form__group">
+          <label for="title">title</label>
+          <select id="title" name="Title of Client" required>
+            <option value="" selected>Select your title *</option>
+            <option value="Mr">Mr</option>
+            <option value="Mrs">Mrs</option>
+            <option value="Ms">Ms</option>
+            <option value="Miss">Miss</option>
+          </select>
+        </div>
+
+        <!-- -------------------------------- -->
+        <!-- FIXME:  ENTER YOUR NAME  FIXME:  -->
+        <!-- -------------------------------- -->
+
+        <div class="service__quote__form__group">
+          <label for="name">name</label>
+          <input
+            id="name"
+            type="text"
+            value=""
+            name="Name of Client"
+            placeholder="enter your name *"
+            minlength="3"
+            maxlength="50"
+            autocomplete="off"
+            required
+          />
+        </div>
+
+        <!-- ----------------------------------- -->
+        <!-- FIXME:  ENTER YOUR SURNAME  FIXME:  -->
+        <!-- ----------------------------------- -->
+
+        <div class="service__quote__form__group">
+          <label for="surname">surname</label>
+          <input
+            id="surname"
+            type="text"
+            value=""
+            name="Surname of Client"
+            placeholder="enter your surname *"
+            minlength="3"
+            maxlength="50"
+            autocomplete="off"
+            required
+          />
+        </div>
+
+        <!-- ----------------------------------------- -->
+        <!-- FIXME:  ENTER YOUR MOBILE NUMBER  FIXME:  -->
+        <!-- ----------------------------------------- -->
+
+        <div class="service__quote__form__group">
+          <label for="mobile">mobile</label>
+          <input
+            id="mobile"
+            type="tel"
+            value=""
+            name="Mobile Number"
+            placeholder="enter mobile phone number *"
+            minlength="3"
+            maxlength="13"
+            autocomplete="off"
+            required
+          />
+        </div>
+
+        <!-- ----------------------------------------- -->
+        <!-- FIXME:  ENTER YOUR EMAIL ADDRESS  FIXME:  -->
+        <!-- ----------------------------------------- -->
+
+        <div class="service__quote__form__group">
+          <label for="email">email</label>
+          <input
+            id="email"
+            type="email"
+            value=""
+            name="Email Address"
+            placeholder="enter your email *"
+            minlength="3"
+            maxlength="65"
+            autocomplete="off"
+            required
+          />
+        </div>
+
+        <!-- ---------------------------------------- -->
+        <!-- FIXME:  ENTER YOUR COMPANY NAME  FIXME:  -->
+        <!-- ---------------------------------------- -->
+
+        <div class="service__quote__form__group">
+          <label for="company__name">company name (if applicable)</label>
+          <input
+            id="company__name"
+            type="text"
+            value=""
+            name="Company Name"
+            placeholder="enter your full company name ..."
+            minlength="3"
+            maxlength="75"
+            autocomplete="off"
+          />
+        </div>
+
+        <!-- -------------------------------------- -->
+        <!-- FIXME:  ENTER YOUR VAT NUMBER  FIXME:  -->
+        <!-- -------------------------------------- -->
+
+        <div class="service__quote__form__group">
+          <label for="VAT">VAT number (if applicable)</label>
+          <input
+            id="VAT"
+            type="text"
+            value=""
+            name="Company VAT Number"
+            placeholder="enter your VAT Number ..."
+            minlength="3"
+            maxlength="12"
+            autocomplete="off"
+          />
+        </div>
+
+        <!-- --------------------------------------------- -->
+        <!-- FIXME:  YOUR POSITION AT THE COMPANY  FIXME:  -->
+        <!-- --------------------------------------------- -->
+
+        <div class="service__quote__form__group">
+          <label for="company__position"
+            >What is your position at the company (if applicable)?</label
+          >
+          <input
+            id="company__position"
+            type="text"
+            value=""
+            name="Position / Designation at Company"
+            placeholder="enter your position at the company ..."
+            minlength="3"
+            maxlength="75"
+            autocomplete="off"
+          />
+        </div>
+
+        <!-- ---------------------------------------------- -->
+        <!-- FIXME:  ENTER YOUR COMPANY TEL NUMBER  FIXME:  -->
+        <!-- ---------------------------------------------- -->
+
+        <div class="service__quote__form__group">
+          <label for="telephone"
+            >company telephone number (if applicable)</label
+          >
+          <input
+            id="telephone"
+            type="tel"
+            value=""
+            name="Company Telephone"
+            placeholder="enter company telephone number ..."
+            minlength="3"
+            maxlength="13"
+            autocomplete="off"
+          />
+        </div>
+
+        <!-- ----------------------------------------------------- -->
+        <!-- FIXME:  ENTER YOUR BUSINESS / POSTAL ADDRESS  FIXME:  -->
+        <!-- ----------------------------------------------------- -->
+
+        <div class="service__quote__form__group">
+          <label for="address">residential / business / postal address</label>
+          <textarea
+            name="Billing Address"
+            id="address"
+            cols="30"
+            rows="5"
+            placeholder="provide your residential, business or postal address ... *"
+            minlength="3"
+            maxlength="135"
+            autocomplete="off"
+            required
+          ></textarea>
+        </div>
+
+        <!-- --------------------------------------- -->
+        <!-- FIXME:  ENTER YOUR POSTAL CODE  FIXME:  -->
+        <!-- --------------------------------------- -->
+
+        <div class="service__quote__form__group">
+          <label for="postalcode">postal code</label>
+          <input
+            id="postalcode"
+            type="text"
+            value=""
+            name="Postal Code"
+            placeholder="enter postal code *"
+            minlength="3"
+            maxlength="6"
+            autocomplete="off"
+            required
+          />
+        </div>
+
+        <!-- ---------------------------------------------------------------------------------------------------- -->
+        <!--                                  TODO:  SECTION 04  TODO:                                            -->
+        <!-- ---------------------------------------------------------------------------------------------------- -->
+
+        <!-- ------------------------------------------------------------ -->
+        <!-- FIXME:  HEADER - WHERE YOU ASSISTED BY ANY RESELLERS  FIXME: -->
+        <!-- ------------------------------------------------------------ -->
+
+        <div class="service__quote__form__header">
+          section 4 : Did one of our resellers assist you?
+        </div>
+
+        <!-- -------------------------------------------------- -->
+        <!-- FIXME:  WHERE YOU ASSISTED BY ANY RESELLERS?  FIXME: -->
+        <!-- ---------------------------------------------------- -->
+
+        <div class="service__quote__form__group">
+          <label for="service__quote__subscription"
+            >Were you assisted or referred by one of our Resellers? *</label
+          >
+          <select
+            id="service__quote__subscription"
+            name="Where you assisted by a Reseller?"
+            required
+          >
+            <option value="" selected>please select ...</option>
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+          </select>
+        </div>
+
+        <!-- ---------------------------------------------- -->
+        <!-- FIXME:  ENTER THE NAME OF THE RESELLER  FIXME: -->
+        <!-- ---------------------------------------------- -->
+
+        <div class="service__quote__form__group">
+          <label for="name"
+            >If "YES", please provide the name of the reseller (if known)</label
+          >
+          <input
+            id="name"
+            type="text"
+            value=""
+            name="Reseller Name"
+            placeholder="enter reseller name and surname ..."
+            minlength="3"
+            maxlength="75"
+            autocomplete="off"
+          />
+        </div>
+
+        <!-- ----------------------------------- -->
+        <!-- FIXME:  ENTER RESELLER CODE  FIXME: -->
+        <!-- ----------------------------------- -->
+
+        <div class="service__quote__form__group">
+          <label for="reseller-code"
+            >Alternatively, please provide the reseller's sales code (if
+            known)</label
+          >
+          <input
+            id="reseller-code"
+            type="text"
+            value=""
+            name="Reseller Code"
+            placeholder="enter reseller's 5-digit sales code (i.e WC128) ..."
+            minlength="3"
+            maxlength="75"
+            autocomplete="off"
+          />
+        </div>
+
+        <!-- ---------------------------------------------------------------------------------------------------- -->
+        <!--                                  TODO:  SECTION 05  TODO:                                            -->
+        <!-- ---------------------------------------------------------------------------------------------------- -->
+
+        <!-- --------------------------------------------------------- -->
+        <!-- FIXME:  HEADER - ACCEPT THE TERMS AND CONDITIONS  FIXME:  -->
+        <!-- --------------------------------------------------------- -->
+
+        <div class="service__quote__form__header">confirmation of details</div>
+
+        <!-- --------------------------------------------------------- -->
+        <!-- FIXME:  HEADER - ACCEPT THE TERMS AND CONDITIONS  FIXME:  -->
+        <!-- --------------------------------------------------------- -->
+
+        <div class="service__quote__form__group">
+          <label class="service__quote__checkbox__option"
+            ><input
+              type="checkbox"
+              name="Confirmation that details provided are correct"
+              required
+            />I hereby confirm that all the details provided above are correct
+            *</label
+          >
+          <label class="service__quote__checkbox__option"
+            ><input
+              type="checkbox"
+              name="Acceptance of POPI & PRIVACY Policy"
+              required
+            />I hereby confirm that I accept the company's POPI and Privacy
+            policy to protect my personal information *</label
           >
         </div>
-      </div> -->
 
-      <!-- FIXME:FIXME:FIXME:FIXME:  REPLACE NEW PAGE CONTENT BELOW  FIXME:FIXME:FIXME:FIXME: -->
+        <!-- ------------------------------------------------ -->
+        <!-- FIXME:  GOOGLE RECAPTCHA IMPLEMENTATION  FIXME:  -->
+        <!-- Google Recaptcha (Version 2)                     -->
+        <!-- "I am not a Robot"                               -->
+        <!-- Current Site Key - SHOPMAX Website               -->
+        <!-- ------------------------------------------------ -->
+
+        <div class="service__quote__form__group">
+          <div
+            class="g-recaptcha"
+            data-sitekey="6Ldzh1AfAAAAACWDbEHGqvipSqHbEBYwZahZHWcO"
+            data-theme="light"
+          ></div>
+        </div>
+
+        <!-- ----------------------------------------- -->
+        <!-- FIXME:  CLEAR AND SUBMIT BUTTONS  FIXME:  -->
+        <!-- ----------------------------------------- -->
+
+        <div class="service__quote__button__container">
+          <button type="reset">clear form</button>
+          <button type="submit" value="submit">
+            submit securely&nbsp;&nbsp;&nbsp;<i class="fa fa-lock"></i>
+          </button>
+        </div>
+      </form>
 
       <!-- FIXME:FIXME:FIXME:FIXME:  REPLACE NEW PAGE CONTENT ABOVE  FIXME:FIXME:FIXME:FIXME: -->
     </div>
@@ -9067,6 +9576,8 @@
     <script src="js/animation_addtowishlist.js" defer></script>
     <script src="js/navigation.js" defer></script>
     <script src="js/rotatingbanners.js" defer></script>
+    <script src="js/accordian_open_and_close.js" defer></script>
+    <script src="js/profile_card_flip.js" defer></script>
 
     <!-- ====================================================================================================== -->
     <!-- NOTE: "PAGE UNDER CONSTRUCTION" SCRIPT (APPLICABLE TO ALL PAGES UNDER CONSTRUCTION)                    -->
@@ -9083,7 +9594,7 @@
       src="js/product_order_form_accordian_open_and_close.js"
       defer
     ></script> -->
-    <!-- <script src="js/g-recaptcha-required.js" defer></script> -->
+    <script src="js/g-recaptcha-required.js" defer></script>
 
     <!-- ====================================================================================================== -->
     <!-- TODO:  GOOGLE RECAPTCHA (VERSION 2) SCRIPT  - FOR ALL FORMS WITH FILE INPUT/UPLOAD ELEMENTS            -->
