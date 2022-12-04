@@ -738,6 +738,9 @@ h6 {
   --color-slide-text-button-background-hover: #065bb3;
   --color-slide-text-button-border: #ffffff;
   --color-slide-arrows: #065bb3;
+  --color-slide-arrows-hover: #000000;
+  --color-slide-dots-background-active: #065bb3;
+  --color-slide-dots-background-active-border: #ffffff;
   --color-slide-dots-background-not-active: #ffffff;
   --color-slide-dots-background-not-active-border: #ffffff;
   --color-slide-dots-background-not-active-hover: #065bb3;
@@ -1014,7 +1017,8 @@ h6 {
 }
 
 .slider .arrows:hover {
-  text-shadow: 0px 0px 10px black, 0px 0px 10px black;
+  text-shadow: 0px 0px 10px var(--color-slide-arrows-hover),
+    0px 0px 10px var(--color-slide-arrows-hover);
 }
 
 .slider .prev {
@@ -1059,12 +1063,12 @@ h6 {
   background-color: var(
     --color-slide-dots-background-not-active-hover
   ) !important;
-  border: 2px solid #fff;
+  border: 2px solid var(--color-slide-dots-background-not-active-border);
 }
 
 .dot-active {
-  background-color: var(--color-debt-masters-light-blue) !important;
-  border: 2px solid var(--color-slide-dots-background-not-active-border);
+  background-color: var(--color-slide-dots-background-active) !important;
+  border: 2px solid var(--color-slide-dots-background-active-border);
 }
 
 /* ===================================================================================================================== */
@@ -1716,12 +1720,24 @@ h6 {
   /* border: 2px solid red; */
 }
 
+/* =============================================================== */
+/* TODO:  RESPONSIVE DESIGN - MEDIA QUERY - FOR OTHER SCREEN SIZES */
+/* =============================================================== */
+
+/* ============================= */
+/* FIXME:  BREAKPOINT:  830 px   */
+/* ============================= */
+
 @media screen and (max-width: 830px) {
   .new__page__container {
     position: relative;
     top: 11rem;
   }
 }
+
+/* ============================= */
+/* FIXME:  BREAKPOINT:  450 px   */
+/* ============================= */
 
 @media screen and (max-width: 450px) {
   .new__page__container {
@@ -1810,9 +1826,13 @@ h6 {
   transform: scale(1.05);
 }
 
-/* =============================== */
-/* FIXME:  VIEW - LARGER SCREENS   */
-/* =============================== */
+/* =============================================================== */
+/* TODO:  RESPONSIVE DESIGN - MEDIA QUERY - FOR OTHER SCREEN SIZED */
+/* =============================================================== */
+
+/* ============================= */
+/* FIXME:  BREAKPOINT:  670 px   */
+/* ============================= */
 
 @media screen and (min-width: 670px) {
   .new__page__buttons__container {
@@ -1840,6 +1860,30 @@ h6 {
 /* ===================================================================================================================== */
 /* ===================================================================================================================== */
 
+:root {
+  /* ================================================ */
+  /* FIXME:  COLOR SCHEME - FOOTER                    */
+  /* ================================================ */
+
+  --color-footer-section-background: #ffffff;
+  --color-footer-section-text-main-title: #065bb3;
+  --color-footer-section-text-profile-description: #000000;
+  --color-footer-section-text-profile-description-tagline: #000000;
+  --color-footer-section-social-media-icons: #ffffff;
+  --color-footer-section-social-media-icons-hover: #ffffff;
+  --color-footer-section-social-media-icons-background: #ffffff;
+  --color-footer-section-column-group-header: #0b1128;
+  --color-footer-section-column-group-list_items: #000000;
+  --color-footer-section-column-group-list_items-hover: #065bb3;
+  --color-footer-section-column-group-list_items-strong: #065bb3;
+  --color-footer-section-column-group-list_items-strong-hover: #0b1128;
+  --color-footer-section-horisontal-line: #d3d3d3;
+  --color-footer-section-contact-numbers-text: #000000;
+  --color-footer-section-copyright-text: #0b1128;
+  --color-footer-section-policies-text: #065bb3;
+  --color-footer-section-policies-text-hover: #0b1128;
+}
+
 .debt__masters__footer__section {
   position: relative;
   top: 10rem;
@@ -1854,12 +1898,24 @@ h6 {
   /* border: 2px solid green; */
 }
 
+/* =============================================================== */
+/* TODO:  RESPONSIVE DESIGN - MEDIA QUERY - FOR OTHER SCREEN SIZES */
+/* =============================================================== */
+
+/* ============================= */
+/* FIXME:  BREAKPOINT:  830 px   */
+/* ============================= */
+
 @media screen and (max-width: 830px) {
   .debt__masters__footer__section {
     position: relative;
     top: 11rem;
   }
 }
+
+/* ============================= */
+/* FIXME:  BREAKPOINT:  450 px   */
+/* ============================= */
 
 @media screen and (max-width: 450px) {
   .debt__masters__footer__section {
@@ -1868,32 +1924,32 @@ h6 {
   }
 }
 
-/* ------------------------------------- */
+/* ===================================== */
 /* REMOVE BULLET POINTS FROM LIST ITEMS  */
-/* ------------------------------------- */
+/* ===================================== */
 
 li {
   list-style: none;
 }
 
-/* ------------------------------------- */
+/* ===================================== */
 /* REMOVE "UNDERLINES" FROM ANCHORS      */
-/* ------------------------------------- */
+/* ===================================== */
 
 a {
   text-decoration: none;
 }
 
-/* ------------------------------------- */
+/* ===================================== */
 /* SETTING FOOTER'S BASIC STYLES         */
-/* ------------------------------------- */
+/* ===================================== */
 
 footer {
   position: relative;
   width: 100%;
   bottom: 0;
   left: 0;
-  background-color: var(--color-footer-background);
+  background-color: var(--color-footer-section-background);
   box-shadow: 0 16px 70px -8px rgba(0, 0, 0, 0.25);
   transition: background 0.3s linear;
 }
@@ -1916,14 +1972,26 @@ footer {
   /* border: 2px solid red; */
 }
 
+/* =============================================================== */
+/* TODO:  RESPONSIVE DESIGN - MEDIA QUERY - FOR OTHER SCREEN SIZES */
+/* =============================================================== */
+
+/* ============================= */
+/* FIXME:  BREAKPOINT:  830 px   */
+/* ============================= */
+
 /* @media screen and (max-width: 830px) {
   .contact__us__page__title__container {
     position: relative;
     top: 11rem;
   }
-}
+} */
 
-@media screen and (max-width: 450px) {
+/* ============================= */
+/* FIXME:  BREAKPOINT:  450 px   */
+/* ============================= */
+
+/* @media screen and (max-width: 450px) {
   .contact__us__page__title__container {
     position: relative;
     top: 14.5rem;
@@ -1942,7 +2010,7 @@ footer {
   width: 100%;
   padding: 0rem 1rem 0rem 1rem;
   text-align: center;
-  color: var(--color-debt-masters-light-blue);
+  color: var(--color-footer-section-text-main-title);
   /* border: 2px solid purple; */
 }
 
@@ -2000,13 +2068,13 @@ footer {
 }
 
 .footer__profile__description p {
-  color: var(--color-footer-description-area-text);
+  color: var(--color-footer-section-text-profile-description);
   font-weight: 400;
   line-height: 1.8rem;
 }
 
 .tagline {
-  color: var(--color-tagline);
+  color: var(--color-footer-section-text-profile-description-tagline);
 }
 
 /* ===================================================================================================================== */
@@ -2026,7 +2094,10 @@ footer {
   z-index: 0;
 }
 
-/* NOTE: Translate (width, height) */
+/* ====================================== */
+/* TODO:  NOTE: Translate (width, height) */
+/* ====================================== */
+
 .footer__profile__social__media__links ul {
   position: relative;
   top: 0%;
@@ -2052,12 +2123,12 @@ footer {
   font-size: 1.8rem;
   line-height: 1.8rem;
   transition: 0.6s;
-  /* color: var(--color-box-icons-normal); */
-  color: white;
+  /* color: var(--color-footer-section-social-media-icons); */
+  color: var(--color-footer-section-social-media-icons);
 }
 
 .footer__profile__social__media__links ul li .bx:hover {
-  color: var(--color-box-icons-hover);
+  color: var(--color-footer-section-social-media-icons-hover);
 }
 
 .footer__profile__social__media__links ul li a {
@@ -2066,7 +2137,7 @@ footer {
   width: 3rem;
   height: 3rem;
   border-radius: 50%;
-  /* background-color: var(--color-box-icons-anchor); */
+  /* background-color: var(--color-footer-section-social-media-icons-background); */
   background-color: var(--color-debt-masters-dark-blue);
   /* background-color: var(--color-debt-masters-light-blue); */
   text-align: center;
@@ -2075,13 +2146,16 @@ footer {
   /* border: 1px solid black; */
 }
 
-/* NOTE: Translate (width, height) */
+/* ====================================== */
+/* TODO:  NOTE: Translate (width, height) */
+/* ====================================== */
+
 .footer__profile__social__media__links ul li a:hover {
   transform: translate(0, -0.4rem);
 }
 
 /* ============================== */
-/* Implement on hover - FACEBOOK  */
+/* IMPLEMENT ON HOVER - FACEBOOK  */
 /* ============================== */
 
 .footer__profile__social__media__links ul li:nth-child(1) a:hover {
@@ -2091,7 +2165,7 @@ footer {
 }
 
 /* =============================== */
-/* Implement on hover - INSTAGRAM  */
+/* IMPLEMENT ON HOVER - INSTAGRAM  */
 /* =============================== */
 
 .footer__profile__social__media__links ul li:nth-child(2) a:hover {
@@ -2101,7 +2175,7 @@ footer {
 }
 
 /* ============================= */
-/* Implement on hover - TWITTER  */
+/* IMPLEMENT ON HOVER - TWITTER  */
 /* ============================= */
 
 .footer__profile__social__media__links ul li:nth-child(3) a:hover {
@@ -2111,7 +2185,7 @@ footer {
 }
 
 /* ============================== */
-/* Implement on hover - LINKEDIN  */
+/* IMPLEMENT ON HOVER - LINKEDIN  */
 /* ============================== */
 
 .footer__profile__social__media__links ul li:nth-child(4) a:hover {
@@ -2120,7 +2194,7 @@ footer {
   /* background-color: var(--color-debt-masters-dark-blue); */
 }
 /* ============================= */
-/* Implement on hover - YOUTUBE  */
+/* IMPLEMENT ON HOVER - YOUTUBE  */
 /* ============================= */
 
 .footer__profile__social__media__links ul li:nth-child(5) a:hover {
@@ -2129,14 +2203,20 @@ footer {
   /* background-color: var(--color-debt-masters-dark-blue); */
 }
 
-/* Implement on hover - WHATSAPP  */
+/* ============================== */
+/* IMPLEMENT ON HOVER - WHATSAPP  */
+/* ============================== */
+
 .footer__profile__social__media__links ul li:nth-child(6) a:hover {
   /* background-color: var(--color-whatsapp); */
   background-color: var(--color-debt-masters-light-blue);
   /* background-color: var(--color-debt-masters-dark-blue); */
 }
 
-/* Implement on hover - EMAIL  */
+/* =========================== */
+/* IMPLEMENT ON HOVER - EMAIL  */
+/* =========================== */
+
 .footer__profile__social__media__links ul li:nth-child(7) a:hover {
   /* background-color: var(--color-email); */
   background-color: var(--color-debt-masters-light-blue);
@@ -2167,8 +2247,7 @@ footer {
 }
 
 li.footer__column__group__name {
-  color: var(--color-debt-masters-dark-blue);
-  /* color: black; */
+  color: var(--color-footer-section-column-group-header);
   text-transform: uppercase;
   font-size: 1.4rem;
   font-weight: 600;
@@ -2179,7 +2258,7 @@ li.footer__column__group__name {
 }
 
 .footer__column__group__header li a {
-  color: black;
+  color: var(--color-footer-section-column-group-list_items);
   font-size: 1.3rem;
   font-weight: 500;
   line-height: 0.9rem;
@@ -2187,7 +2266,7 @@ li.footer__column__group__name {
 }
 
 .footer__column__group__header li a:hover {
-  color: var(--color-debt-masters-light-blue);
+  color: var(--color-footer-section-column-group-list_items-hover);
   font-weight: 600;
   cursor: pointer;
 }
@@ -2200,28 +2279,28 @@ li.footer__column__group__name {
 }
 
 .request__call__back strong {
-  color: var(--color-debt-masters-light-blue);
+  color: var(--color-footer-section-column-group-list_items-strong);
   text-transform: none;
   font-size: 1.3rem;
   font-weight: 700;
 }
 
 .request__call__back strong:hover {
-  color: var(--color-debt-masters-dark-blue);
+  color: var(--color-footer-section-column-group-list_items-strong-hover);
   text-transform: none;
   font-size: 1.3rem;
   font-weight: 700;
 }
 
 .online__application strong {
-  color: var(--color-debt-masters-light-blue);
+  color: var(--color-footer-section-column-group-list_items-strong);
   text-transform: none;
   font-size: 1.3rem;
   font-weight: 700;
 }
 
 .online__application strong:hover {
-  color: var(--color-debt-masters-dark-blue);
+  color: var(--color-footer-section-column-group-list_items-strong-hover);
   text-transform: none;
   font-size: 1.3rem;
   font-weight: 700;
@@ -2230,7 +2309,7 @@ li.footer__column__group__name {
 hr {
   height: 0.1rem;
   border: none;
-  background-color: var(--color-horisontal-line);
+  background-color: var(--color-footer-section-horisontal-line);
   margin: 1rem 0rem 1.5rem 0rem;
 }
 
@@ -2247,21 +2326,21 @@ hr {
   font-family: "Poppins", sans-serif;
   font-size: 1.3rem;
   font-weight: 500;
-  color: black;
+  color: var(--color-footer-section-contact-numbers-text);
 }
 
 .footer__column__group__telephone img,
 .footer__column__group__fax img,
 .footer__column__group__whatsapp img,
 .footer__column__group__email img {
-  width: 1.5rem;
-  height: 1.5rem;
+  width: 1.7rem;
+  height: 1.7rem;
 }
 
 .footer__column__group__email a,
 .footer__column__group__whatsapp a {
   text-decoration: none;
-  color: black;
+  color: var(--color-footer-section-contact-numbers-text);
 }
 
 /* ============================================ */
@@ -2280,7 +2359,7 @@ hr {
 
 .copy__right {
   margin: 0rem 0rem 0rem 0.5rem;
-  color: var(--color-debt-masters-dark-blue);
+  color: var(--color-footer-section-copyright-text);
   display: flex;
   align-items: center;
 }
@@ -2293,21 +2372,23 @@ hr {
 }
 
 .footer__bottom__policies a {
-  color: var(--color-debt-masters-light-blue);
+  color: var(--color-footer-section-policies-text);
   font-size: 1.4rem;
   font-weight: 600;
   margin: 0rem 0.5rem 0rem 2rem;
 }
 
 .footer__bottom__policies a:hover {
-  color: var(--color-debt-masters-dark-blue);
+  color: var(--color-footer-section-policies-text-hover);
 }
 
 /* ===================================================================================================================== */
 /* TODO:  PART 6 - RESPONSIVE DESIGN (MEDIA QUERIES)                                                                     */
 /* ===================================================================================================================== */
 
-/* --------------------------------------TODO: 1250px */
+/* ============================= */
+/* FIXME:  BREAKPOINT:  1250 px  */
+/* ============================= */
 
 @media screen and (max-width: 1250px) {
   .footer__column__group__header {
@@ -2315,7 +2396,9 @@ hr {
   }
 }
 
-/* --------------------------------------TODO: 1207px */
+/* ============================= */
+/* FIXME:  BREAKPOINT:  1207 px  */
+/* ============================= */
 
 @media screen and (max-width: 1207px) {
   .footer__column__group__header {
@@ -2323,7 +2406,9 @@ hr {
   }
 }
 
-/* --------------------------------------TODO: 1200px */
+/* ============================= */
+/* FIXME:  BREAKPOINT:  1200 px  */
+/* ============================= */
 
 @media screen and (max-width: 1200px) {
   .footer__column__group__header {
@@ -2331,7 +2416,9 @@ hr {
   }
 }
 
-/* --------------------------------------TODO: 1167px */
+/* ============================= */
+/* FIXME:  BREAKPOINT:  1167 px  */
+/* ============================= */
 
 @media screen and (max-width: 1167px) {
   .footer__column__group__header {
@@ -2339,7 +2426,9 @@ hr {
   }
 }
 
-/* --------------------------------------TODO: 1150px */
+/* ============================= */
+/* FIXME:  BREAKPOINT:  1150 px  */
+/* ============================= */
 
 @media screen and (max-width: 1150px) {
   .footer__column__group__header {
@@ -2347,7 +2436,9 @@ hr {
   }
 }
 
-/* --------------------------------------TODO: 1127px */
+/* ============================= */
+/* FIXME:  BREAKPOINT:  1127 px  */
+/* ============================= */
 
 @media screen and (max-width: 1127px) {
   .footer__column__group__header {
@@ -2355,7 +2446,9 @@ hr {
   }
 }
 
-/* --------------------------------------TODO: 1125px */
+/* ============================= */
+/* FIXME:  BREAKPOINT:  1125 px  */
+/* ============================= */
 
 @media screen and (max-width: 1125px) {
   .footer__column__group__header {
@@ -2363,7 +2456,9 @@ hr {
   }
 }
 
-/* --------------------------------------TODO: 1087px */
+/* ============================= */
+/* FIXME:  BREAKPOINT:  1087 px  */
+/* ============================= */
 
 @media screen and (max-width: 1087px) {
   .footer__column__group__header {
@@ -2371,7 +2466,9 @@ hr {
   }
 }
 
-/* --------------------------------------TODO: 1075px */
+/* ============================= */
+/* FIXME:  BREAKPOINT:  1075 px  */
+/* ============================= */
 
 @media screen and (max-width: 1075px) {
   .footer__column__group__header {
@@ -2379,7 +2476,9 @@ hr {
   }
 }
 
-/* --------------------------------------TODO: 1047px */
+/* ============================= */
+/* FIXME:  BREAKPOINT:  1047 px  */
+/* ============================= */
 
 @media screen and (max-width: 1047px) {
   .footer__column__group__header {
@@ -2387,7 +2486,9 @@ hr {
   }
 }
 
-/* --------------------------------------TODO: 1030px */
+/* ============================= */
+/* FIXME:  BREAKPOINT:  1030 px  */
+/* ============================= */
 
 @media screen and (max-width: 1030px) {
   .footer__column__group__header {
@@ -2396,7 +2497,9 @@ hr {
   }
 }
 
-/* --------------------------------------TODO: 1000px */
+/* ============================= */
+/* FIXME:  BREAKPOINT:  1000 px  */
+/* ============================= */
 
 @media screen and (max-width: 1000px) {
   .footer__column__group__header {
@@ -2404,7 +2507,9 @@ hr {
   }
 }
 
-/* --------------------------------------TODO: 980px */
+/* ============================= */
+/* FIXME:  BREAKPOINT:  980 px   */
+/* ============================= */
 
 @media screen and (max-width: 980px) {
   .footer__column__group__header {
@@ -2412,7 +2517,9 @@ hr {
   }
 }
 
-/* --------------------------------------TODO: 950px */
+/* ============================= */
+/* FIXME:  BREAKPOINT:  950 px   */
+/* ============================= */
 
 @media screen and (max-width: 950px) {
   .footer__column__group__header {
@@ -2420,7 +2527,9 @@ hr {
   }
 }
 
-/* --------------------------------------TODO: 930px */
+/* ============================= */
+/* FIXME:  BREAKPOINT:  930 px   */
+/* ============================= */
 
 @media screen and (max-width: 930px) {
   .footer__column__group__header {
@@ -2428,7 +2537,9 @@ hr {
   }
 }
 
-/* --------------------------------------TODO: 910px */
+/* ============================= */
+/* FIXME:  BREAKPOINT:  910 px   */
+/* ============================= */
 
 @media screen and (max-width: 910px) {
   .footer__profile__description {
@@ -2444,7 +2555,9 @@ hr {
   }
 }
 
-/* --------------------------------------TODO: 875px */
+/* ============================= */
+/* FIXME:  BREAKPOINT:  875 px   */
+/* ============================= */
 
 @media screen and (max-width: 875px) {
   .footer__profile__description {
@@ -2478,6 +2591,10 @@ hr {
   }
 }
 
+/* ============================= */
+/* FIXME:  BREAKPOINT:  850 px   */
+/* ============================= */
+
 @media screen and (max-width: 850px) {
   .footer__profile__description {
     font-size: 0.9rem;
@@ -2489,7 +2606,9 @@ hr {
   }
 }
 
-/* --------------------------------------TODO: 820px */
+/* ============================= */
+/* FIXME:  BREAKPOINT:  820 px   */
+/* ============================= */
 
 @media screen and (max-width: 820px) {
   .footer__profile__description {
@@ -2526,7 +2645,9 @@ hr {
   }
 }
 
-/* --------------------------------------TODO: 780px */
+/* ============================= */
+/* FIXME:  BREAKPOINT:  780 px   */
+/* ============================= */
 
 /* FIXME: SERVICE_AREA SPLIT INTO 2 COLUMN / 2 ROWS  */
 
@@ -2550,19 +2671,19 @@ hr {
     /* border: 1px solid green; */
   }
 
-  .footer__column__container__all .about__us {
+  /* .footer__column__container__all .about__us {
     width: 15rem;
     margin: 0rem 0rem 0rem 0rem;
     padding: 0rem 0rem 0rem 0rem;
-    /* border: 1px solid red; */
-  }
+    border: 1px solid red;
+  } */
 
-  .footer__column__container__all .sellers {
+  /* .footer__column__container__all .sellers {
     width: 15rem;
     margin: 0rem 0rem 0rem 0rem;
     padding: 0rem 0rem 0rem 0rem;
-    /* border: 1px solid red; */
-  }
+    border: 1px solid red;
+  } */
 
   .footer__column__container__all .footer__column__content {
     width: 15rem;
@@ -2579,19 +2700,19 @@ hr {
     /* border: 1px solid red; */
   }
 
-  .footer__column__content .advertising {
+  /* .footer__column__content .advertising {
     width: 15rem;
     margin: 0rem 0rem 0rem 0rem;
     padding: 0rem 0rem 0rem 0rem;
-    /* border: 1px solid red; */
+    border: 1px solid red;
   }
 
   .footer__column__container__all .shoppers {
     width: 15rem;
     margin: 0rem 0rem 0rem 0rem;
     padding: 0rem 0rem 0rem 0rem;
-    /* border: 1px solid red; */
-  }
+    border: 1px solid red;
+  } */
 
   .footer__bottom {
     display: flex;
@@ -2636,21 +2757,21 @@ hr {
     margin: 0rem 1rem 0rem 1rem;
   }
 
-  .about__us {
+  /* .about__us {
     margin: 0rem 0rem 0rem 20%;
-  }
+  } */
 
-  .sellers {
+  /* .sellers {
     margin: 0rem 0rem 0rem 6%;
-  }
+  } */
 
   .footer__column__group__number {
     margin: 0rem 0rem 0rem 20%;
   }
 
-  .shoppers {
+  /* .shoppers {
     margin: 0rem 0rem 0rem 11.5%;
-  }
+  } */
 
   /* ------------------------------ */
 
@@ -2668,7 +2789,9 @@ hr {
   }
 }
 
-/* --------------------------------------TODO: 425px */
+/* ============================= */
+/* FIXME:  BREAKPOINT:  425 px   */
+/* ============================= */
 
 @media screen and (max-width: 425px) {
   .footer__profile__description {
@@ -2680,7 +2803,9 @@ hr {
   }
 }
 
-/* --------------------------------------TODO: 415px */
+/* ============================= */
+/* FIXME:  BREAKPOINT:  415 px   */
+/* ============================= */
 
 /* FIXME: SERVICE_AREA SPLIT INTO 1 COLUMN / 4 ROWS  */
 
@@ -2702,13 +2827,13 @@ hr {
     text-align: center;
   }
 
-  .footer__column__container__all .about__us {
+  /* .footer__column__container__all .about__us {
     margin: 0rem 0rem 0.5rem 0rem;
   }
 
   .footer__column__container__all .sellers {
     margin: 0rem 0rem 0.5rem 0rem;
-  }
+  } */
 
   .footer__column__container__all .footer__column__content {
     margin: 0rem 0rem 0rem 0rem;
@@ -2718,16 +2843,18 @@ hr {
     margin: 0rem 0rem 0.5rem 0rem;
   }
 
-  .footer__column__content .advertising {
+  /* .footer__column__content .advertising {
     margin: 0rem 0rem 0.5rem 0rem;
   }
 
   .footer__column__container__all .shoppers {
     margin: 0rem 0rem 0rem 0rem;
-  }
+  } */
 }
 
-/* --------------------------------------TODO: 330px */
+/* ============================= */
+/* FIXME:  BREAKPOINT:  330 px   */
+/* ============================= */
 
 @media screen and (max-width: 330px) {
   .footer__profile__description {
