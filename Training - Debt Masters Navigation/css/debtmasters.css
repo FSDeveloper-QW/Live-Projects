@@ -365,7 +365,7 @@ h6 {
 /* FIXME:  REMOVE STICKY NAV BAR FOR SMALLER DEVICE SCREENS - 830 PIXEL BREAKPOINT */
 /* =============================================================================== */
 
-@media screen and (max-width: 830px) {
+@media screen and (max-width: 822px) {
   .fixed__navigation__bar {
     position: relative;
   }
@@ -441,15 +441,284 @@ h6 {
 /* =================================================== */
 
 .top_navigation_links_container {
-  display: grid;
-  grid-template-columns: 4fr 1fr;
+  /* display: grid;
+  grid-template-columns: 4fr 1fr; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   width: 100%;
   height: 8rem;
   border-radius: 0;
   margin: 0rem 0rem 0rem 0rem;
-  padding: 0rem 2rem 0rem 2rem;
+  padding: 0rem 0rem 0rem 0rem;
   /* border: 1px solid orange; */
 }
+
+/* ===================================================================================================================== */
+/* FIXME: NAVIGATION LINKS (START)                                                                                       */
+/* ===================================================================================================================== */
+
+/* ===================================================================================================================== */
+/* TODO:  CSS - RESPONSIVE NAVIGATION BAR WITH DROPDOWN AND HAMBURGER MENU                                               */
+/* ===================================================================================================================== */
+
+/* ============================================================== */
+/* FIXME:  MAIN NAVIGATION CONTAINER (HOLDS ALL ELEMENTS)  FIXME: */
+/* ============================================================== */
+
+:root {
+  /* ================================================ */
+  /* FIXME:  COLOR SCHEME - NAVIGATION                */
+  /* ================================================ */
+
+  --color-navigation-text-option-1: #065bb3;
+  --color-navigation-text-option-1-hover: #0b1128;
+  --color-navigation-text-option-2: #0b1128;
+  --color-navigation-text-option-2-hover: #065bb3;
+  --color-navigation-box-shadow-01: 3px 5px 20px rgba(0, 0, 0, 0.2);
+  --color-navigation-box-shadow-02: 0px 5px 4px rgba(0, 0, 0, 0.2);
+  --color-navigation-box-shadow-03: 0px 1px 5px 3px rgba(0, 0, 0, 0.15);
+  --color-navigation-box-shadow-04: 0px 5px 20px rgba(0, 0, 0, 0.2);
+  --color-navigation-background-horisontal: #ffffff;
+  --color-navigation-background-vertical: #ffffff;
+  --color-navigation-background-sub-menu: #f7f7f7;
+  --color-navigation-logo: #000000;
+  --color-navigation-arrows: #065bb3;
+  --color-navigation-hamburger-icon: #065bb3;
+}
+
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 0rem 10rem 0rem 10rem;
+  background: var(--color-navigation-background-horisontal);
+  width: 100%;
+  /* box-sizing: border-box; */
+}
+
+/* ========================================================================= */
+/* TODO:  OPTIONAL: IF A BACKGROUND IMAGE IS USED BEHIND THE NAVIGATION BAR */
+/* ========================================================================= */
+
+/* body {
+  background: url(bg.jp);
+  background-attachment: fixed;
+  background-position: center;
+} */
+
+/* ============================ */
+/* FIXME:  LOGO SECTION  FIXME: */
+/* ============================ */
+
+.header .logo {
+  color: var(--color-navigation-logo);
+  height: 5rem;
+  line-height: 5rem;
+  font-size: 2.4rem;
+  font-weight: bold;
+  float: left;
+}
+
+/* ================================ */
+/* FIXME:  NAVIGATION LINKS  FIXME: */
+/* ================================ */
+
+nav {
+  /* float: right; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* float: left; */
+  width: 100%;
+  border: 1px solid red;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav ul li {
+  list-style: none;
+  /* FOR DROP-DOWN-LIST BELOW */
+  position: relative;
+}
+
+/* ============================================ */
+/* TODO:  CSS FOR DROP-DOWN-LIST BELOW (START)  */
+/* ============================================ */
+
+/* DOWN ARROW */
+
+nav ul li.sub-menu:before {
+  content: "\f0d7";
+  font-family: fontAwesome;
+  position: absolute;
+  line-height: 5rem;
+  color: var(--color-navigation-arrows);
+  right: 0.5rem;
+}
+
+/* UP ARROW */
+
+nav ul li.active.sub-menu:before {
+  content: "\f0d8";
+}
+
+nav ul li ul {
+  position: absolute;
+  left: 0;
+  background: var(--color-navigation-background-vertical);
+  border-radius: 0.5rem;
+  box-shadow: var(--color-navigation-box-shadow-04);
+  display: none;
+}
+
+nav ul li.active ul {
+  display: block;
+}
+
+nav ul li ul li {
+  display: block;
+  width: 20rem;
+}
+
+nav ul li ul li a {
+  font-weight: 550;
+  text-decoration: none;
+  text-transform: initial;
+  background: var(--color-navigation-background-sub-menu);
+}
+
+/* =========================================== */
+/* TODO:  CSS FOR DROP-DOWN-LIST BELOW (END)   */
+/* =========================================== */
+
+nav ul li a {
+  display: block;
+  height: 5rem;
+  line-height: 5rem;
+  padding: 0rem 2rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: var(--color-navigation-text-option-2);
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+  color: var(--color-navigation-text-option-2-hover);
+  /* FIXME:  NOTE: Use BACKGROUND Property if you want a bar over the text */
+  /* background: #065bb3; */
+}
+
+/* ============================== */
+/* FIXME:  HAMBURGER ICON  FIXME: */
+/* ============================== */
+
+.menu-toggle {
+  color: var(--color-navigation-hamburger-icon);
+  float: right;
+  font-size: 2.4rem;
+  line-height: 5rem;
+  cursor: pointer;
+  display: none;
+}
+
+/* =================================================================== */
+/* FIXME:  RESPONSIVE MEDIA QUERIES - FOR SMALLER SCREEN SIZES  FIXME: */
+/* =================================================================== */
+
+@media (max-width: 970px) {
+  nav ul li a {
+    padding: 0rem 2rem;
+    font-size: 1.4rem;
+  }
+}
+
+@media (max-width: 925px) {
+  nav ul li a {
+    padding: 0rem 2rem;
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 890px) {
+  nav ul li a {
+    padding: 0rem 2rem;
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 855px) {
+  nav ul li a {
+    padding: 0rem 2rem;
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 822px) {
+  /* .header {
+    padding: 0 2rem;
+  } */
+
+  .menu-toggle {
+    display: block;
+  }
+
+  nav {
+    /* display: none; */
+    position: absolute;
+    top: 5rem;
+    /* left: 0; */
+    left: -100%;
+    width: 100%;
+    /* height: 100%; */
+    height: calc(100vh - 5rem);
+    transition: 0.5s;
+    /* FIXME:  NOTE: Use BACKGROUND Property if you want a bar over the text */
+    /* background: lightblue; */
+  }
+
+  nav.active {
+    left: 0;
+  }
+
+  nav ul {
+    display: block;
+    text-align: center;
+  }
+
+  /* SEPARATION LINE BETWEEN LIST ITEMS */
+
+  nav ul li a {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.075);
+  }
+
+  /* ======================================== */
+  /* TODO:  MEDIA QUERIES FOR SUB-MENU ITEMS  */
+  /* ======================================== */
+
+  nav ul li.active ul {
+    position: relative;
+    background: var(--color-navigation-background-sub-menu);
+  }
+
+  nav ul li ul li {
+    width: 100%;
+  }
+
+  nav ul li.sub-menu:before {
+    right: 2.75rem;
+  }
+}
+
+/* ===================================================================================================================== */
+/* FIXME:  NAVIGATION LINKS (END)                                                                                        */
+/* ===================================================================================================================== */
 
 /* ===================================================================================================================== */
 /* TODO:  PART 4 - CONTAINER (SOCIAL) - SOCIAL MEDIA LINKS                                                               */
@@ -600,7 +869,7 @@ h6 {
 /* FIXME:  BREAKPOINT:  830 px */
 /* =========================== */
 
-@media screen and (max-width: 830px) {
+@media screen and (max-width: 822px) {
   .top_bar_container_all {
     display: flex;
     flex-direction: column;
