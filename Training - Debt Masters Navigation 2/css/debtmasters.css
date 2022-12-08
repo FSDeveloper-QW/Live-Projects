@@ -1085,7 +1085,7 @@ h6 {
 
 @media screen and (min-width: 250px) {
   .slider {
-    min-height: 14vh;
+    min-height: 12vh;
   }
 }
 
@@ -1095,7 +1095,7 @@ h6 {
 
 @media screen and (min-width: 280px) {
   .slider {
-    min-height: 14.5vh;
+    min-height: 18.5vh;
   }
 
   .slide-data .slide__title p {
@@ -1124,9 +1124,9 @@ h6 {
   }
 }
 
-/* ==================================== */
-/* FIXME:  BREAKPOINT:  280 px - 653 px */
-/* ==================================== */
+/* ========================================================== */
+/* FIXME:  BREAKPOINT:  280 px - 653 px (SAMSUNG GALAXY FOLD) */
+/* ========================================================== */
 
 @media screen and (min-width: 280px) and (min-height: 653px) {
   .slider {
@@ -1140,7 +1140,7 @@ h6 {
 
 @media screen and (min-width: 350px) {
   .slider {
-    min-height: 18.5vh;
+    min-height: 17vh;
   }
 
   .slide-data .slide__title p {
@@ -1169,9 +1169,9 @@ h6 {
   }
 }
 
-/* ==================================== */
-/* FIXME:  BREAKPOINT:  360 px - 740 px */
-/* ==================================== */
+/* ======================================================== */
+/* FIXME:  BREAKPOINT:  360 px - 740 px (SAMSUNG GALAXY S8+ */
+/* ======================================================== */
 
 @media screen and (min-width: 360px) and (min-height: 740px) {
   .slider {
@@ -1179,9 +1179,9 @@ h6 {
   }
 }
 
-/* ==================================== */
-/* FIXME:  BREAKPOINT:  375 px - 667 px */
-/* ==================================== */
+/* ================================================ */
+/* FIXME:  BREAKPOINT:  375 px - 667 px (IPHONE SE) */
+/* ================================================ */
 
 @media screen and (min-width: 375px) and (min-height: 667px) {
   .slider {
@@ -1189,9 +1189,9 @@ h6 {
   }
 }
 
-/* ==================================== */
-/* FIXME:  BREAKPOINT:  390 px - 844 px */
-/* ==================================== */
+/* ================================================ */
+/* FIXME:  BREAKPOINT:  390 px - 844 px (IPHONE 12) */
+/* ================================================ */
 
 @media screen and (min-width: 390px) and (min-height: 844px) {
   .slider {
@@ -1199,9 +1199,9 @@ h6 {
   }
 }
 
-/* ==================================== */
-/* FIXME:  BREAKPOINT:  393 px - 851 px */
-/* ==================================== */
+/* ============================================== */
+/* FIXME:  BREAKPOINT:  393 px - 851 px (PIXEL 5) */
+/* ============================================== */
 
 @media screen and (min-width: 393px) and (min-height: 851px) {
   .slider {
@@ -1215,7 +1215,7 @@ h6 {
 
 @media screen and (min-width: 400px) {
   .slider {
-    min-height: 21.25vh;
+    min-height: 19.5vh;
   }
 
   .slide-data .slide__title p {
@@ -1244,9 +1244,9 @@ h6 {
   }
 }
 
-/* ==================================== */
-/* FIXME:  BREAKPOINT:  412 px - 914 px */
-/* ==================================== */
+/* ================================================================ */
+/* FIXME:  BREAKPOINT:  412 px - 914 px (SAMSUNG GALAXY A51 / A71)  */
+/* ================================================================ */
 
 @media screen and (min-width: 412px) and (min-height: 914px) {
   .slider {
@@ -1254,9 +1254,9 @@ h6 {
   }
 }
 
-/* ==================================== */
-/* FIXME:  BREAKPOINT:  414 px - 896 px */
-/* ==================================== */
+/* ====================================================================== */
+/* FIXME:  BREAKPOINT:  414 px - 896 px (IPHONE XR) (SAMSUNG GALAXY S20)  */
+/* ====================================================================== */
 
 @media screen and (min-width: 414px) and (min-height: 896px) {
   .slider {
@@ -1270,7 +1270,7 @@ h6 {
 
 @media screen and (min-width: 500px) {
   .slider {
-    min-height: 26.75vh;
+    min-height: 24.5vh;
   }
 
   .slide-data .slide__title p {
@@ -1299,9 +1299,9 @@ h6 {
   }
 }
 
-/* ==================================== */
-/* FIXME:  BREAKPOINT:  540 px - 720 px */
-/* ==================================== */
+/* ================================================== */
+/* FIXME:  BREAKPOINT:  540 px - 720 px (SURFACE DUO) */
+/* ================================================== */
 
 @media screen and (min-width: 540px) and (min-height: 720px) {
   .slider {
@@ -1315,7 +1315,7 @@ h6 {
 
 @media screen and (min-width: 600px) {
   .slider {
-    min-height: 32.5vh;
+    min-height: 30vh;
   }
 
   .slide-data .slide__title p {
@@ -1350,7 +1350,7 @@ h6 {
 
 @media screen and (min-width: 700px) {
   .slider {
-    min-height: 38vh;
+    min-height: 35vh;
   }
 
   .slide-data .slide__title p {
@@ -1379,9 +1379,9 @@ h6 {
   }
 }
 
-/* ====================================== */
-/* FIXME:  BREAKPOINT:  768 px - 1024 px  */
-/* ====================================== */
+/* ======================================================= */
+/* FIXME:  BREAKPOINT:  768 px - 1024 px (APPLE IPAD MINI) */
+/* ======================================================= */
 
 @media screen and (min-width: 768px) and (min-height: 1024px) {
   .slider {
@@ -1395,7 +1395,7 @@ h6 {
 
 @media screen and (min-width: 800px) {
   .slider {
-    min-height: 43.5vh;
+    min-height: 41vh;
   }
 
   .slide-data .slide__title p {
@@ -1424,9 +1424,9 @@ h6 {
   }
 }
 
-/* ====================================== */
-/* FIXME:  BREAKPOINT:  820 px - 1180 px  */
-/* ====================================== */
+/* ====================================================== */
+/* FIXME:  BREAKPOINT:  820 px - 1180 px (APPLE IPAD AIR) */
+/* ====================================================== */
 
 @media screen and (min-width: 820px) and (min-height: 1180px) {
   .slider {
@@ -1440,7 +1440,7 @@ h6 {
 
 @media screen and (min-width: 900px) {
   .slider {
-    min-height: 49vh;
+    min-height: 45vh;
   }
 
   .slide-data .slide__title p {
@@ -1469,9 +1469,9 @@ h6 {
   }
 }
 
-/* ====================================== */
-/* FIXME:  BREAKPOINT:  912 px - 1368 px  */
-/* ====================================== */
+/* ====================================================== */
+/* FIXME:  BREAKPOINT:  912 px - 1368 px (SURFACE PRO 7)  */
+/* ====================================================== */
 
 @media screen and (min-width: 912px) and (min-height: 1368px) {
   .slider {
@@ -1485,7 +1485,7 @@ h6 {
 
 @media screen and (min-width: 1000px) {
   .slider {
-    min-height: 54.5vh;
+    min-height: 50vh;
   }
 
   .slide-data .slide__title p {
@@ -1514,9 +1514,9 @@ h6 {
   }
 }
 
-/* ====================================== */
-/* FIXME:  BREAKPOINT:  1024 px - 600 px  */
-/* ====================================== */
+/* ================================================= */
+/* FIXME:  BREAKPOINT:  1024 px - 600 px (NEST HUB)  */
+/* ================================================= */
 
 @media screen and (min-width: 1024px) and (min-height: 600px) {
   .slider {
@@ -1530,7 +1530,7 @@ h6 {
 
 @media screen and (min-width: 1029px) {
   .slider {
-    min-height: 56.25vh;
+    min-height: 51.5vh;
   }
 
   .slide-data .slide__title p {
@@ -1565,7 +1565,7 @@ h6 {
 
 @media screen and (min-width: 1040px) {
   .slider {
-    min-height: 58vh;
+    min-height: 52vh;
   }
 }
 
@@ -1575,7 +1575,7 @@ h6 {
 
 @media screen and (min-width: 1050px) {
   .slider {
-    min-height: 58.75vh;
+    min-height: 53vh;
   }
 }
 
@@ -1585,7 +1585,7 @@ h6 {
 
 @media screen and (min-width: 1100px) {
   .slider {
-    min-height: 61.5vh;
+    min-height: 56vh;
   }
 
   .slide-data .slide__title p {
