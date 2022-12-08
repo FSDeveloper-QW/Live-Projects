@@ -152,7 +152,8 @@ header {
   padding: 0rem 10rem 0rem 10rem;
   background: var(--color-navigation-background-horisontal);
   width: 100%;
-  /* box-sizing: border-box; */
+  padding: 1rem 1rem 1rem 1rem;
+  border: 1px solid orange;
 }
 
 /* ========================================================================= */
@@ -171,12 +172,40 @@ header {
 
 header .logo {
   color: var(--color-navigation-logo);
-  height: 5rem;
-  line-height: 5rem;
+  height: 8rem;
+  line-height: 8rem;
   font-size: 2.4rem;
   font-weight: bold;
   float: left;
+  /* border: 1px solid pink; */
 }
+
+header .logo img {
+  width: 8rem;
+  height: 8rem;
+  padding: 0rem 0rem 0rem 0rem;
+}
+
+/* .top_bar_container_image {
+  position: relative;
+  margin: 0rem 0rem 0rem 0rem;
+  padding: 0rem 0rem 0rem 0rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 5rem;
+  height: 5rem;
+  border: 1px solid red;
+}
+
+.top_bar_container_image .top_bar_debt_masters_logo {
+  display: block;
+  width: 100%;
+  height: 5rem;
+  object-fit: contain;
+  padding: 0.2rem 0.2rem 0.2rem 0.2rem;
+  border: 1px solid purple;
+} */
 
 /* ================================ */
 /* FIXME:  NAVIGATION LINKS  FIXME: */
@@ -184,23 +213,36 @@ header .logo {
 
 header nav {
   float: right;
+  height: 8rem;
+  border: 1px solid purple;
+  width: 90%;
 }
 
 header nav ul {
   margin: 0;
   padding: 0;
   display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem 0rem 2rem 0rem;
+  /* border: 1px solid green; */
 }
 
 header nav ul li {
   list-style: none;
   /* FOR DROP-DOWN-LIST BELOW */
   position: relative;
+  /* border: 2px solid brown; */
 }
 
 /* ============================================ */
 /* TODO:  CSS FOR DROP-DOWN-LIST BELOW (START)  */
 /* ============================================ */
+
+/* .sub-menu {
+  border: 1px solid pink;
+} */
 
 /* DOWN ARROW */
 
@@ -208,9 +250,10 @@ header nav ul li.sub-menu:before {
   content: "\f0d7";
   font-family: fontAwesome;
   position: absolute;
-  line-height: 5rem;
+  line-height: 4rem;
   color: var(--color-navigation-arrows);
   right: 0.5rem;
+  /* border: 1px solid red; */
 }
 
 /* UP ARROW */
@@ -221,11 +264,13 @@ header nav ul li.active.sub-menu:before {
 
 header nav ul li ul {
   position: absolute;
+  top: 3rem;
   left: 0;
   background: var(--color-navigation-background-vertical);
-  border-radius: 0.5rem;
-  box-shadow: var(--color-navigation-box-shadow-04);
+  border-radius: 1rem;
+  box-shadow: var(--color-navigation-box-shadow-02);
   display: none;
+  /* border: 1px solid purple; */
 }
 
 header nav ul li.active ul {
@@ -234,7 +279,8 @@ header nav ul li.active ul {
 
 header nav ul li ul li {
   display: block;
-  width: 20rem;
+  width: 21rem;
+  /* border: 1px solid purple; */
 }
 
 header nav ul li ul li a {
@@ -242,6 +288,7 @@ header nav ul li ul li a {
   text-decoration: none;
   text-transform: initial;
   background: var(--color-navigation-background-sub-menu);
+  /* border: 2px solid pink; */
 }
 
 /* =========================================== */
@@ -250,14 +297,17 @@ header nav ul li ul li a {
 
 header nav ul li a {
   display: block;
-  height: 5rem;
-  line-height: 5rem;
+  height: 4rem;
+  line-height: 4rem;
   padding: 0rem 2rem;
   font-size: 1.5rem;
   font-weight: 600;
   text-decoration: none;
   text-transform: uppercase;
   color: var(--color-navigation-text-option-2);
+  border: 2px solid gold;
+  width: 22rem;
+  text-align: center;
 }
 
 header nav ul li a:hover,
@@ -274,10 +324,11 @@ header nav ul li a.active {
 .menu-toggle {
   color: var(--color-navigation-hamburger-icon);
   float: right;
-  font-size: 2.4rem;
-  line-height: 5rem;
+  font-size: 4rem;
+  line-height: 8rem;
   cursor: pointer;
   display: none;
+  /* border: 1px solid red; */
 }
 
 /* =================================================================== */
@@ -286,7 +337,7 @@ header nav ul li a.active {
 
 @media (max-width: 991px) {
   header {
-    padding: 0 2rem;
+    padding: 1rem 1rem 1rem 1rem;
   }
 
   .menu-toggle {
@@ -296,12 +347,12 @@ header nav ul li a.active {
   header nav {
     /* display: none; */
     position: absolute;
-    top: 5rem;
+    top: 8rem;
     /* left: 0; */
     left: -100%;
     width: 100%;
     /* height: 100%; */
-    height: calc(100vh - 5rem);
+    height: calc(100vh - 7rem);
     transition: 0.5s;
     /* FIXME:  NOTE: Use BACKGROUND Property if you want a bar over the text */
     /* background: lightblue; */
@@ -331,6 +382,13 @@ header nav ul li a.active {
     background: var(--color-navigation-background-sub-menu);
   }
 
+  header nav ul li ul {
+    /* top: -1.5rem; */
+    margin-top: -3rem;
+    /* border: 1px solid red; */
+    margin-bottom: 3.5rem;
+  }
+
   header nav ul li ul li {
     width: 100%;
   }
@@ -339,6 +397,318 @@ header nav ul li a.active {
     right: 2.75rem;
   }
 }
+
+/* ==================================================== */
+/* FIXME:FIXME:  SOCIAL MEDIA ICONS BELOW  FIXME:FIXME: */
+/* ==================================================== */
+
+/* ===================================================================================================================== */
+/* TODO:  PART 4 - CONTAINER (SOCIAL) - SOCIAL MEDIA LINKS                                                               */
+/* ===================================================================================================================== */
+
+/* ==================================== */
+/* COLOURS USED FOR SOCIAL MEDIA LINKS  */
+/* ==================================== */
+
+:root {
+  /* ================================================ */
+  /* FIXME:  SOCIAL MEDIA COLOR SCHEMES               */
+  /* ================================================ */
+  --color-facebook1: #1877f2;
+  --color-facebook2: #3b5998;
+  --color-instagram: #c32aa3;
+  --color-twitter: #1da1f2;
+  --color-linkedin: #0a66c2;
+  --color-tiktok-pink: #ff0050;
+  --color-tiktok-aqua: #00f2ea;
+  --color-tiktok-black: #000000;
+  --color-youtube: #ff0000;
+  --color-whatsapp: #25d366;
+  --color-telegram: #0088cc;
+  --color-email: #555555;
+
+  /* ================================================ */
+  /* FIXME:  GENERAL CORPORATE COLORS - DEBT MASTERS  */
+  /* ================================================ */
+
+  --color-debt-masters-dark-blue: #0b1128;
+  --color-debt-masters-light-blue: #065bb3;
+
+  /* ================================================ */
+  /* FIXME:  COLOR SCHEME - NAVIGATION                */
+  /* ================================================ */
+
+  --color-navigation-bar-background: #ffffff;
+  --color-navigation-social-media-icons: #ffffff;
+  --color-navigation-social-media-icons-hover: #ffffff;
+  --color-navigation-social-media-icons-background: #ffffff;
+
+  /* ================================================ */
+  /* FIXME:  GENERAL COLORS - BOX SHADOWS             */
+  /* ================================================ */
+
+  --color-box-shadow-01: 3px 5px 20px rgba(0, 0, 0, 0.35);
+  --color-box-shadow-02: 0px 5px 4px rgba(0, 0, 0, 0.35);
+  --color-box-shadow-03: 0px 1px 5px 3px rgba(0, 0, 0, 0.15);
+  --color-box-shadow-04: 0px 5px 20px rgba(0, 0, 0, 0.35);
+}
+
+/* MAIN CONTAINER - HOLDING ALL SOCIAL MEDIA COMPONENTS TOGETHER  */
+.top_bar_container_social {
+  position: relative;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0rem 0rem 0rem 0rem;
+  padding: 0rem 0rem 0.5rem 0rem;
+  width: 100%;
+  height: 8rem;
+  /* border: 1px solid green; */
+}
+
+/* =============================== */
+/* NOTE: TRANSLATE (WIDTH, HEIGHT) */
+/* =============================== */
+
+.top_bar_social-media ul {
+  position: relative;
+  top: 0%;
+  left: 0%;
+  transform: translate(0%, 0%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0rem 0rem 0rem 0rem;
+  padding: 0rem 0rem 0rem 0rem;
+}
+
+.top_bar_social-media ul li {
+  list-style: none;
+  margin: 0rem 0.5rem 0rem 0.5rem;
+}
+
+.top_bar_social-media ul li .bx {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 2rem;
+  line-height: 2rem;
+  transition: 0.6s;
+  color: var(--color-navigation-social-media-icons);
+}
+
+.top_bar_social-media ul li .bx:hover {
+  color: var(--color-navigation-social-media-icons-hover);
+}
+
+.top_bar_social-media ul li a {
+  position: relative;
+  display: block;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  /* background-color: var(--color-navigation-social-media-icons-background); */
+  /* background-color: var(--color-debt-masters-dark-blue); */
+  background-color: var(--color-debt-masters-light-blue);
+  text-align: center;
+  transition: 0.6s;
+  box-shadow: var(--color-box-shadow-02);
+  /* border: 1px solid black; */
+}
+
+/* =============================== */
+/* NOTE: TRANSLATE (WIDTH, HEIGHT) */
+/* =============================== */
+
+.top_bar_social-media ul li a:hover {
+  transform: translate(0, -0.4rem);
+}
+
+/* ============================== */
+/* IMPLEMENT ON HOVER - FACEBOOK  */
+/* ============================== */
+
+.top_bar_social-media ul li:nth-child(1) a:hover {
+  /* background-color: var(--color-facebook2); */
+  /* background-color: var(--color-debt-masters-light-blue); */
+  background-color: var(--color-debt-masters-dark-blue);
+}
+
+/* =============================== */
+/* IMPLEMENT ON HOVER - INSTAGRAM  */
+/* =============================== */
+
+.top_bar_social-media ul li:nth-child(2) a:hover {
+  /* background-color: var(--color-instagram); */
+  /* background-color: var(--color-debt-masters-light-blue); */
+  background-color: var(--color-debt-masters-dark-blue);
+}
+
+/* ============================= */
+/* IMPLEMENT ON HOVER - TWITTER  */
+/* ============================= */
+
+.top_bar_social-media ul li:nth-child(3) a:hover {
+  /* background-color: var(--color-twitter); */
+  /* background-color: var(--color-debt-masters-light-blue); */
+  background-color: var(--color-debt-masters-dark-blue);
+}
+
+/* ============================== */
+/* IMPLEMENT ON HOVER - LINKEDIN  */
+/* ============================== */
+
+.top_bar_social-media ul li:nth-child(4) a:hover {
+  /* background-color: var(--color-linkedin); */
+  /* background-color: var(--color-debt-masters-light-blue); */
+  background-color: var(--color-debt-masters-dark-blue);
+}
+
+/* ============================ */
+/* IMPLEMENT ON HOVER - TIKTOK  */
+/* ============================ */
+
+.top_bar_social-media ul li:nth-child(5) a:hover {
+  /* background-color: var(--color-tiktok-black); */
+  /* background-color: var(--color-debt-masters-light-blue); */
+  background-color: var(--color-debt-masters-dark-blue);
+}
+/* ============================= */
+/* IMPLEMENT ON HOVER - YOUTUBE  */
+/* ============================= */
+
+.top_bar_social-media ul li:nth-child(6) a:hover {
+  /* background-color: var(--color-youtube); */
+  /* background-color: var(--color-debt-masters-light-blue); */
+  background-color: var(--color-debt-masters-dark-blue);
+}
+
+/* ===================================================================================================================== */
+/* TODO:  PART 6 - RESPONSIVE / MOBILE VIEW (ALL MEDIA QUERIES) - FOR 2ND COMPONENT                                      */
+/* ===================================================================================================================== */
+
+/* =========================== */
+/* FIXME:  BREAKPOINT:  830 px */
+/* =========================== */
+
+@media screen and (max-width: 822px) {
+  .top_bar_container_all {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .top_navigation_links_container {
+    max-width: 41rem;
+    margin: 1rem auto 1rem auto;
+  }
+
+  .top_bar_social-media ul li {
+    margin: 0.5rem 2rem 0rem 2rem;
+  }
+}
+
+/* =========================== */
+/* FIXME:  BREAKPOINT:  520 px */
+/* =========================== */
+
+@media screen and (max-width: 520px) {
+  .top_navigation_links_container {
+    max-width: 39rem;
+    margin: 1rem auto 1rem auto;
+  }
+
+  .top_bar_social-media ul li {
+    margin: 0rem 1.8rem 0rem 1.8rem;
+  }
+}
+
+/* =========================== */
+/* FIXME:  BREAKPOINT:  450 px */
+/* =========================== */
+
+@media screen and (max-width: 450px) {
+  .top_navigation_links_container {
+    display: flex;
+    flex-direction: column;
+    max-width: 33rem;
+    margin: 1rem auto 1rem auto;
+    padding: 0rem 0rem 0rem 0rem;
+  }
+
+  .top_bar_container_social {
+    top: 4rem;
+  }
+
+  .top_bar_social-media ul li {
+    margin: 0rem 1.7rem 0rem 1.7rem;
+  }
+}
+
+/* =========================== */
+/* FIXME:  BREAKPOINT:  400 px */
+/* =========================== */
+
+@media screen and (max-width: 400px) {
+  .top_navigation_links_container {
+    max-width: 30rem;
+  }
+
+  .top_bar_social-media ul li {
+    margin: 0rem 1.4rem 0rem 1.4rem;
+  }
+}
+
+/* =========================== */
+/* FIXME:  BREAKPOINT:  350 px */
+/* =========================== */
+
+@media screen and (max-width: 350px) {
+  .top_navigation_links_container {
+    width: 26rem;
+  }
+
+  .top_bar_social-media ul li {
+    margin: 0rem 1rem 0rem 1rem;
+    /* transform: scale(0.75); */
+  }
+}
+
+/* =========================== */
+/* FIXME:  BREAKPOINT:  320 px */
+/* =========================== */
+
+@media screen and (max-width: 320px) {
+  .top_navigation_links_container {
+    width: 23.5rem;
+  }
+
+  .top_bar_social-media ul li {
+    margin: 0rem 0.75rem 0rem 0.75rem;
+    /* transform: scale(0.75); */
+  }
+}
+
+/* =========================== */
+/* FIXME:  BREAKPOINT:  300 px */
+/* =========================== */
+
+@media screen and (max-width: 300px) {
+  .top_navigation_links_container {
+    width: 22rem;
+  }
+
+  .top_bar_social-media ul li {
+    margin: 0rem 0.6rem 0rem 0.6rem;
+    /* transform: scale(0.75); */
+  }
+}
+
+/* ==================================================== */
+/* FIXME:FIXME:  SOCIAL MEDIA ICONS ABOVE  FIXME:FIXME: */
+/* ==================================================== */
 
 /* ===================================================================================================================== */
 /*                                                                                            TODO:  STYLING ENDS  TODO: */
