@@ -2852,7 +2852,7 @@ li.footer__column__group__name {
 }
 
 .footer__column__group__item {
-  color: black;
+  color: var(--color-footer-section-column-group-list_items);
   text-transform: none;
   font-size: 1.3rem;
   font-weight: 500;

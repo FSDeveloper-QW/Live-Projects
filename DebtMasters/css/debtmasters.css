@@ -2271,10 +2271,11 @@ li.footer__column__group__name {
 }
 
 .footer__column__group__item {
-  color: black;
+  color: var(--color-footer-section-column-group-list_items);
   text-transform: none;
   font-size: 1.3rem;
   font-weight: 500;
+  /* border: 1px solid pink; */
 }
 
 .request__call__back strong {
@@ -2716,6 +2717,8 @@ hr {
 @media screen and (max-width: 370px) {
   .footer__profile__description {
     margin: 1rem 0.5rem 2rem 0.5rem;
+    max-width: 30rem;
+    height: 8rem;
   }
 
   .footer__profile__social__media__links ul li {
@@ -2723,25 +2726,36 @@ hr {
   }
 
   .footer__profile__container img {
-    width: 15rem;
+    width: 21rem;
+    margin: 0rem 0.5rem 0rem 0.5rem;
   }
 
-  .footer__profile__description {
+  /* .footer__profile__description {
     max-width: 15rem;
-  }
+  } */
 
   .footer__profile__description p {
-    width: 22rem;
-    margin: 0rem 1rem 0rem -3.5rem;
+    width: 100%;
+    margin: 0rem 0rem 0rem 0rem;
   }
 
   .footer__profile__social__media__container {
-    max-width: 15rem;
-    margin: 0rem 0rem 0rem 0.5rem;
+    max-width: 100%;
+    margin: 0rem 0rem 0rem 0rem;
   }
 
   .footer__content__container {
-    max-width: 35rem;
+    max-width: 100%;
+  }
+
+  .footer__profile__container {
+    width: 22rem;
+    margin: 0rem 0rem 0rem -2rem;
+  }
+
+  .footer__column__container__all {
+    /* border: 1px solid blue; */
+    margin: 1.5rem 0rem 0rem -2rem;
   }
 }
 
