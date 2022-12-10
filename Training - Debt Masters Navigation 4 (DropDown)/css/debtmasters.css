@@ -43,7 +43,7 @@
   /* ------------------------------------------------ */
   /* FIXME:  SPECIAL BACKGROUND FOR PRODUCTS          */
   /* ------------------------------------------------ */
-  --color-page-background: #a9a9a9;
+  /* --color-page-background: #a9a9a9; */
   /* ------------------------------------------------ */
   /* FIXME:  SECTION: LOGO, SEARCH BAR & SOCIAL MEDIA */
   /* ------------------------------------------------ */
@@ -58,65 +58,65 @@
   /* --color-wishlist: #555555;
   --color-shopping: #555555; */
   /* BOX-ICONS */
-  --color-box-icons-normal: black;
+  /* --color-box-icons-normal: black;
   --color-box-icons-hover: white;
-  --color-box-icons-anchor: white;
+  --color-box-icons-anchor: white; */
   /* USER ACCOUNT ICON */
-  --color-user-account: black;
-  --color-user-account-hover: #dc143c;
+  /* --color-user-account: black;
+  --color-user-account-hover: #dc143c; */
   /* COLOR SCHEME FOR ADD TO CART BUTTONS, CARTS AND COUNTERS */
-  --color-add-to-cart-button-background: #dc143c;
+  /* --color-add-to-cart-button-background: #dc143c;
   --color-add-to-cart-button-text: white;
   --color-shopping-cart-icon: black;
   --color-shopping-cart-icon-hover: #dc143c;
   --color-shopping-cart-counter-background: #dc143c;
-  --color-shopping-cart-counter-text: white;
+  --color-shopping-cart-counter-text: white; */
   /* COLOR SCHEME FOR ADD TO WISH LIST BUTTONS, CARTS AND COUNTERS */
-  --color-add-to-wish-list-button-background: #dc143c;
+  /* --color-add-to-wish-list-button-background: #dc143c;
   --color-add-to-wish-list-button-text: white;
   --color-wish-list-icon: black;
   --color-wish-list-icon-hover: #dc143c;
   --color-wish-list-counter-background: #dc143c;
-  --color-wish-list-counter-text: white;
+  --color-wish-list-counter-text: white; */
   /* SHOPPING ICONS GROUP */
-  --color-shopping-group-icons-background-01: #efefef;
-  --color-shopping-group-icons-background-02: #ebf4f4;
+  /* --color-shopping-group-icons-background-01: #efefef;
+  --color-shopping-group-icons-background-02: #ebf4f4; */
   /* ------------------------------------------------ */
   /* FIXME:  SECTION: MAIN NAVIGATION                 */
   /* ------------------------------------------------ */
   /* COLOR SCHEME - PAGE BACKGROUND */
   /* --color-page-background: #18191a; */
-  --color-page-background: white;
+  /* --color-page-background: white; */
   /* COLOR SCHEME - TOP NAVIGATION */
   /* --color-top-navigation-background: #242526; */
-  --color-top-navigation-background: white;
+  /* --color-top-navigation-background: white; */
   /* --color-top-navigation-text: #b0b3b8; */
-  --color-top-navigation-text: black;
+  /* --color-top-navigation-text: black; */
   /* COLOR SCHEME - TOP NAVIGATION DROP-DOWN ICON */
-  --topnavigation-dropdown-icon-color: #dc143c;
+  /* --topnavigation-dropdown-icon-color: #dc143c; */
   /* COLOR SCHEME - DROP-DOWN MENU CONTAINER & TOOLTIP */
   /* --color-tooltip-background: #242526; */
-  --color-tooltip-background: white;
+  /* --color-tooltip-background: white; */
   /* --color-drop-down-container: #242526; */
-  --color-drop-down-container: white;
+  /* --color-drop-down-container: white; */
   /* COLOR SCHEME - UNORDERED LIST, LIST ITEMS, ANCHORS (ALL LEVELS) */
   /* --color-menu-items-all-levels: #b0b3b8; */
-  --color-menu-items-all-levels: black;
+  /* --color-menu-items-all-levels: black; */
   /* --color-menu-items-all-levels-hover: #3a3b3c; */
-  --color-menu-items-all-levels-hover: lightgray;
+  /* --color-menu-items-all-levels-hover: lightgray; */
   /* COLOR SCHEME - ICON CONTAINER */
-  --color-icon-container: white;
+  /* --color-icon-container: white; */
   /* COLOR SCHEME - RIGHT ARROW */
-  --color-icon-right-angle: #dc143c;
+  /* --color-icon-right-angle: #dc143c; */
   /* COLOR SCHEME - BACK-BUTTON ICON (ARROW) AND TEXT */
-  --color-back-button-arrow-and-text: black;
-  --color-back-button-arrow-only: #dc143c;
+  /* --color-back-button-arrow-and-text: black; */
+  /* --color-back-button-arrow-only: #dc143c; */
 
   /* ------------------------------------------------ */
   /* FIXME:  SECTION: SHOPPER LOGIN/REGISTRATION      */
   /* ------------------------------------------------ */
   /* SHOPPER - REGISTER & LOGIN PAGE */
-  --color-shopper-login-page-background-1: white;
+  /* --color-shopper-login-page-background-1: white;
   --color-shopper-login-page-background-2: #dc143c;
   --color-shopper-login-page-title: black;
   --color-shopper-login-page-input-field-background: #f0f0f0;
@@ -129,29 +129,29 @@
   --color-shopper-login-page-social-media-icons-border: black;
   --color-shopper-login-page-social-media-icons-border-hover: #dc143c;
   --color-shopper-login-page-social-media-icons: black;
-  --color-shopper-login-page-social-media-icons-hover: #dc143c;
+  --color-shopper-login-page-social-media-icons-hover: #dc143c; */
   /* --color-background-linear-gradient-1: #dc143c; */
-  --color-shopper-background-linear-gradient-1: #eb2d53;
-  --color-shopper-background-linear-gradient-2: #e91640;
+  /* --color-shopper-background-linear-gradient-1: #eb2d53; */
+  /* --color-shopper-background-linear-gradient-2: #e91640; */
   /* --color-shopper-background-linear-gradient-2: #eb2d53; */
   /* --color-shopper-background-linear-gradient-2: #f05c79; */
   /* --color-shopper-background-linear-gradient-2: #f6a2b3; */
   /* --color-shopper-background-linear-gradient-2: #fde8ec; */
-  --color-shopper-panel-text: white;
-  --color-shopper-panel-button-border: white;
+  /* --color-shopper-panel-text: white;
+  --color-shopper-panel-button-border: white; */
   /* PRIVACY STATEMENT */
-  --color-shopper-privacy-text: #dc143c;
+  /* --color-shopper-privacy-text: #dc143c; */
   /* CUSTOM CHECKBOX */
-  --color-shopper-custom-checkbox-border: #ccc;
+  /* --color-shopper-custom-checkbox-border: #ccc;
   --color-shopper-custom-checkbox-background: white;
   --color-shopper-custom-checkbox-checkmark: #dc143c;
   --color-shopper-custom-checkbox-focus: #dc143c;
-  --color-shopper-custom-checkbox-disabled: #959495;
+  --color-shopper-custom-checkbox-disabled: #959495; */
 
   /* ------------------------------------------------ */
   /* FIXME:  SECTION: COMPANY FOOTER                  */
   /* ------------------------------------------------ */
-  --color-page-background: #f7f7f7;
+  /* --color-page-background: #f7f7f7;
   --color-footer-background: white;
   --color-logo-name: black;
   --color-footer-description-area-text: black;
@@ -162,7 +162,7 @@
   --color-horisontal-line: #f0f0f0;
   --color-copyright: black;
   --color-policies: #dc143c;
-  --color-policies-hover: black;
+  --color-policies-hover: black; */
 
   /* =================================================== */
   /*                 END OF COLOR SCHEMES                */
@@ -173,7 +173,7 @@
 /* FIXME:   SIZING OF THE MAIN NAVIGATION ITEMS   FIXME: */
 /* ===================================================== */
 
-:root {
+/* :root {
   --topnavigation-button-width: 26rem;
   --topnavigation-line-height: 2rem;
   --topnavigation-font-size: 1.25rem;
@@ -187,7 +187,7 @@
   --icon-circle-width: 1.8rem;
   --icon-right-angle-font-size: 1.8rem;
   --icon-back-button-font-size: 1.35rem;
-}
+} */
 
 /* ===================================================================================================================== */
 /* FIXME:  SPECIAL NOTES (IN TERMS OF THE MAIN NAVIGATION                                                                  */
@@ -215,10 +215,10 @@ body {
   font-size: 1.6rem;
 }
 
-::selection {
+/* ::selection {
   background: var(--color-page-background);
   color: var(--color-search-input-background);
-}
+} */
 
 input {
   font-family: "poppins", sans-serif;
@@ -463,11 +463,11 @@ h6 {
   height: 8rem;
   margin: 0rem 0rem 0rem 0rem;
   padding: 0rem 0rem 0rem 0rem;
-  border: 2px solid red;
+  /* border: 2px solid red; */
 }
 
+/* .debt__review__process, */
 .about__us,
-.debt__review__process,
 .request__call__back__top,
 .contact__us {
   display: flex;
@@ -478,8 +478,8 @@ h6 {
   /* border: 1px solid orange; */
 }
 
+/* .debt__review__process a, */
 .about__us a,
-.debt__review__process a,
 .request__call__back__top a,
 .contact__us a {
   display: flex;
@@ -493,12 +493,223 @@ h6 {
   cursor: pointer;
 }
 
+/* .debt__review__process a:hover, */
 .about__us a:hover,
-.debt__review__process a:hover,
 .request__call__back__top a:hover,
 .contact__us a:hover {
   color: var(--color-debt-masters-light-blue);
 }
+
+/* ======================================================= */
+/* TODO:TODO:  NAVIGATION DROP-DOWN MENU BELOW  TODO:TODO: */
+/* ======================================================= */
+
+/* ========================================================================= */
+/* TODO:  SECTION - DROP-DOWN NAVIGATION                                     */
+/* ========================================================================= */
+
+:root {
+  /* ================================================ */
+  /* FIXME:  COLOR SCHEME - NAVIGATION                */
+  /* ================================================ */
+
+  --color-navigation-bar-background: #ffffff;
+  --color-navigation-text-option-1: #065bb3;
+  --color-navigation-text-option-1-hover: #0b1128;
+  --color-navigation-text-option-2: #0b1128;
+  --color-navigation-text-option-2-hover: #065bb3;
+  --color-navigation-box-shadow-01: 3px 5px 20px rgba(0, 0, 0, 0.35);
+  --color-navigation-box-shadow-02: 0px 5px 4px rgba(0, 0, 0, 0.35);
+  --color-navigation-box-shadow-03: 0px 1px 5px 3px rgba(0, 0, 0, 0.15);
+  --color-navigation-box-shadow-04: 0px 5px 20px rgba(0, 0, 0, 0.35);
+  --color-navigation-background-horisontal: #ffffff;
+  --color-navigation-background-vertical: #ffffff;
+  --color-navigation-background-sub-menu-1: #f7f7f7;
+  --color-navigation-background-sub-menu-2: #faf9f6;
+  --color-navigation-background-sub-menu-3: #fffff0;
+  --color-navigation-background-sub-menu-4: #edeade;
+}
+
+/* ================================================================== */
+/* FIXME:  NAVIGATION BAR CONTAINER (HOLDING ALL NAVIGATION ELEMENTS  */
+/* ================================================================== */
+
+.navigation__container {
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color-navigation-background-horisontal);
+  color: var(--color-navigation-background-horisontal);
+  width: 100vw;
+  /* border: 1px solid greenyellow; */
+}
+
+/* FIXME:  OPTION 1 : Make "navigation__container" STICKY ON SCROLL          */
+/* Use this option when there is nothing above the navbor                    */
+
+.navigation__container {
+  /* A - Add the BROWSER COMPATIBILITY Sets for STICKY                       */
+  /* A - Set the POSITION of the navbar to FIXED or STICKY                   */
+  /* FIXED - No items above NAVBAR / STICKY - There are Items above NAVBAR   */
+  /* B - Set the position on TOP to ZERO                                     */
+  position: -webkit-sticky;
+  position: -moz-sticky;
+  position: -ms-sticky;
+  position: -o-sticky;
+  position: sticky;
+  top: 0%;
+}
+
+/* ========================================================================= */
+/* FIXME:  NAVIGATION MAIN LIST-ITEMS / LINKS                                */
+/* ========================================================================= */
+
+.navigation__main__links {
+  margin: 0rem 0rem 0rem 0rem;
+  padding: 0rem 1rem 0rem 0rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color-navigation-background-horisontal);
+  gap: 3rem;
+  /* border: 1px solid pink; */
+}
+
+/* ========================================================================== */
+/* FIXME:  NAVIGATION - SUB-MENU LINKS (CONTAINER HOLDING ALL SUB-MENU ITEMS) */
+/* ========================================================================== */
+
+.debt__review__process {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 2.5rem;
+  margin: 0rem 1rem 0rem 1rem;
+  padding: 0rem 0rem 0rem 0rem;
+  /* border: 1px solid orange; */
+}
+
+.navigation__sub__menu__links {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 0rem 1rem 0rem 0rem;
+  gap: 0.5rem;
+  /* border: 1px solid purple; */
+}
+
+.navigation__sub__menu__links a:hover {
+  color: var(--color-navigation-text-option-2-hover);
+}
+
+/* ========================================================================== */
+/* FIXME:  NAVIGATION BUTTONS (LINKS) / TOP-MENU-ITEM & SUB-MENU0ITEMS        */
+/* ========================================================================== */
+
+/* =========================== */
+/* TODO:  TOP-MENU-ITEM  TODO: */
+/* =========================== */
+
+.navigation__button {
+  background: none;
+  border: none;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: var(--color-navigation-text-option-2);
+  font-family: "Poppins";
+  font-style: normal;
+  font-size: 1.5rem;
+  font-weight: 600;
+  cursor: pointer;
+  margin: 0rem 0rem 0rem 0rem;
+  padding: 0rem 1rem 0rem 1rem;
+  /* border: 1px solid orange; */
+}
+
+/* ============================ */
+/* TODO:  SUB-MENU-ITEMS  TODO: */
+/* ============================ */
+
+.navigation__button.alternative {
+  text-transform: none;
+  font-weight: 500;
+}
+
+.navigation__button.alternative strong {
+  color: var(--color-navigation-text-option-2);
+}
+
+.navigation__button.alternative strong:hover {
+  color: var(--color-navigation-text-option-2-hover);
+}
+
+/* ======================================= */
+/* TODO:TODO:  JAVASCRIPT CODE  TODO:TODO: */
+/* ======================================= */
+
+.navigation__dropdown.active > .navigation__button,
+.navigation__button:hover {
+  color: var(--color-navigation-text-option-2-hover);
+  font-weight: 600;
+}
+
+.navigation__dropdown {
+  position: relative;
+}
+
+/* ========================================================================== */
+/* FIXME:   DROPDOWN-MENU APPEARANCE - ACTIONS AND STYLES (WHEN NON-ACTIVE)   */
+/* ========================================================================== */
+
+.navigation__dropdown__menu {
+  opacity: 0;
+  position: absolute;
+  left: 0;
+  top: calc(100% + 0.5rem);
+  /* width: max-content; */
+  width: 18.5rem;
+  padding: 1rem 0.25rem 1rem 0.25rem;
+  border-radius: 0.75rem;
+  pointer-events: none;
+  transform: translateY(-0.5rem);
+  transition: opacity 175ms ease-in-out, transform 175ms ease-in-out;
+  box-shadow: var(--color-navigation-box-shadow-01);
+  background-color: var(--color-navigation-background-sub-menu-2);
+  /* border: 1px solid red; */
+  z-index: 1;
+}
+
+/* ========================================================================== */
+/* FIXME:  DROPDOWN-MENU APPEARANCE - ACTIONS AND STYLES (WHEN ACTIVE)        */
+/* ========================================================================== */
+
+/* TODO:  COMMENTS  TODO: */
+
+/* SET OPACITY TO 1 SO THAT THE "navigation__dropdown__menu" CAN DISPLAY WHEN
+   ACTIVE */
+
+/* HOW TO READ BELOW STATEMENT: 
+   SELECT THE "navigation__button" LINK THAT IS INSIDE THE "navigation__dropdown
+   TO DISPLAY THE "navigation__dropdown__menu", WHENEVER THE "navigation__button"
+   LINK IS FOCUSSED  */
+
+/* ======================================= */
+/* TODO:TODO:  JAVASCRIPT CODE  TODO:TODO: */
+/* ======================================= */
+
+.navigation__dropdown.active
+  > .navigation__button
+  + .navigation__dropdown__menu {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+/* ======================================================= */
+/* TODO:TODO:  NAVIGATION DROP-DOWN MENU ABOVE  TODO:TODO: */
+/* ======================================================= */
 
 /* =================================================== */
 /* FIXME:  RESPONSIVE DESIGN - SMALLER SCREENS  FIXME: */
@@ -510,10 +721,18 @@ h6 {
 
 @media screen and (max-width: 1050px) {
   .about__us,
-  .debt__review__process,
+  /* .debt__review__process, */
   .request__call__back__top,
   .contact__us {
     margin: 0rem 0.5rem 0rem 0.5rem;
+    padding: 0rem 1rem 0rem 1rem;
+  }
+
+  .debt__review__process {
+    margin: 0rem 0.5rem 0rem 0.5rem;
+  }
+
+  .navigation__button {
     padding: 0rem 1rem 0rem 1rem;
   }
 }
@@ -524,15 +743,30 @@ h6 {
 
 @media screen and (max-width: 990px) {
   .about__us,
-  .debt__review__process,
+  /* .debt__review__process, */
   .request__call__back__top,
   .contact__us {
     margin: 0rem 0.5rem 0rem 0.5rem;
     padding: 0rem 1rem 0rem 1rem;
   }
 
+  .debt__review__process {
+    margin: 0rem 0.5rem 0rem 0.5rem;
+    height: 2.3rem;
+    padding: 0rem 0rem 0.1rem 0rem;
+  }
+
+  .navigation__button {
+    padding: 0rem 1rem 0rem 1rem;
+    font-size: 1.4rem;
+  }
+
+  .navigation__dropdown__menu {
+    width: 17rem;
+  }
+
   .about__us a,
-  .debt__review__process a,
+  /* .debt__review__process a, */
   .request__call__back__top a,
   .contact__us a {
     font-size: 1.4rem;
@@ -545,10 +779,23 @@ h6 {
 
 @media screen and (max-width: 940px) {
   .about__us a,
-  .debt__review__process a,
+  /* .debt__review__process a, */
   .request__call__back__top a,
   .contact__us a {
     font-size: 1.35rem;
+  }
+
+  .navigation__button {
+    font-size: 1.35rem;
+  }
+
+  .navigation__dropdown__menu {
+    width: 16.5rem;
+  }
+
+  .debt__review__process {
+    height: 2.25rem;
+    padding: 0rem 0rem 0.3rem 0rem;
   }
 }
 
@@ -558,9 +805,13 @@ h6 {
 
 @media screen and (max-width: 925px) {
   .about__us a,
-  .debt__review__process a,
+  /* .debt__review__process a, */
   .request__call__back__top a,
   .contact__us a {
+    font-size: 1.3rem;
+  }
+
+  .navigation__button {
     font-size: 1.3rem;
   }
 }
@@ -571,11 +822,21 @@ h6 {
 
 @media screen and (max-width: 900px) {
   .about__us,
-  .debt__review__process,
+  /* .debt__review__process, */
   .request__call__back__top,
   .contact__us {
     margin: 0rem 0rem 0rem 0rem;
     padding: 0rem 1rem 0rem 1rem;
+  }
+
+  .debt__review__process {
+    margin: 0rem 0rem 0rem 0rem;
+    height: 2.25rem;
+    padding: 0rem 0rem 0.3rem 0rem;
+  }
+
+  .navigation__dropdown__menu {
+    width: 16rem;
   }
 }
 
@@ -585,10 +846,24 @@ h6 {
 
 @media screen and (max-width: 860px) {
   .about__us a,
-  .debt__review__process a,
+  /* .debt__review__process a, */
   .request__call__back__top a,
   .contact__us a {
     font-size: 1.2rem;
+  }
+
+  .navigation__button {
+    font-size: 1.2rem;
+  }
+
+  .debt__review__process {
+    margin: 0rem 0rem 0rem 0rem;
+    height: 2rem;
+    padding: 0rem 0rem 0.3rem 0rem;
+  }
+
+  .navigation__dropdown__menu {
+    width: 15rem;
   }
 }
 
@@ -605,7 +880,7 @@ h6 {
   }
 
   .about__us,
-  .debt__review__process,
+  /* .debt__review__process, */
   .request__call__back__top,
   .contact__us {
     margin: 0rem 0.5rem 0rem 0.5rem;
@@ -613,10 +888,24 @@ h6 {
   }
 
   .about__us a,
-  .debt__review__process a,
+  /* .debt__review__process a, */
   .request__call__back__top a,
   .contact__us a {
     font-size: 1.4rem;
+  }
+
+  .navigation__button {
+    font-size: 1.4rem;
+  }
+
+  .debt__review__process {
+    margin: 0rem 0.5rem 0rem 0.5rem;
+    height: 2.3rem;
+    padding: 0rem 0rem 0.3rem 0rem;
+  }
+
+  .navigation__dropdown__menu {
+    width: 17rem;
   }
 }
 
@@ -950,7 +1239,7 @@ h6 {
   height: auto;
   object-fit: cover;
   margin: 0rem 0rem 0rem 0rem;
-  border: 2px solid yellow;
+  /* border: 2px solid yellow; */
 }
 
 /* ============================================================ */
@@ -974,7 +1263,7 @@ h6 {
 @media screen and (max-width: 650px) {
   .debt__masters__main__hero__banner {
     position: relative;
-    top: 18.75rem;
+    top: 19.5rem;
   }
 }
 
@@ -985,7 +1274,7 @@ h6 {
 @media screen and (max-width: 450px) {
   .debt__masters__main__hero__banner {
     position: relative;
-    top: 18.75rem;
+    top: 19.5rem;
   }
 }
 
@@ -2076,7 +2365,7 @@ h6 {
   object-fit: cover;
   margin: 0rem 0rem 0rem 0rem;
   background-color: #eee;
-  border: 2px solid red;
+  /* border: 2px solid red; */
 }
 
 /* =============================================================== */
@@ -2101,7 +2390,7 @@ h6 {
 @media screen and (max-width: 650px) {
   .new__page__container {
     position: relative;
-    top: 18.75rem;
+    top: 19.5rem;
   }
 }
 
@@ -2112,7 +2401,7 @@ h6 {
 @media screen and (max-width: 600px) {
   .new__page__container {
     position: relative;
-    top: 18.75rem;
+    top: 19.5rem;
   }
 }
 
@@ -2123,7 +2412,7 @@ h6 {
 @media screen and (max-width: 450px) {
   .new__page__container {
     position: relative;
-    top: 18.75rem;
+    top: 19.5rem;
   }
 }
 
@@ -2277,7 +2566,7 @@ h6 {
   /* height: auto; */
   object-fit: cover;
   margin: 0rem 0rem 0rem 0rem;
-  border: 2px solid green;
+  /* border: 2px solid green; */
 }
 
 /* =============================================================== */
@@ -2303,7 +2592,7 @@ h6 {
 @media screen and (max-width: 650px) {
   .debt__masters__footer__section {
     position: relative;
-    top: 18.75rem;
+    top: 19.5rem;
     /* margin: 0rem 0rem 0rem 0rem; */
   }
 }
@@ -2315,7 +2604,7 @@ h6 {
 @media screen and (max-width: 450px) {
   .debt__masters__footer__section {
     position: relative;
-    top: 18.75rem;
+    top: 19.5rem;
   }
 }
 
