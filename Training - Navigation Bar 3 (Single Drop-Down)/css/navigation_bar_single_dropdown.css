@@ -1,0 +1,213 @@
+/* ========================================================================= */
+/* TODO:   DROP-DOWN NAVIGATION ITEMS FOR WEBSITE                            */
+/* ========================================================================= */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", "roboto", "open sans", sans-serif;
+}
+
+/* ========================================================================= */
+/* FIXME:   STANDARD FONT-SITE : 62.5% of 16px (Std Size) = 10px             */
+/* ========================================================================= */
+
+html {
+  font-size: 62.5%;
+}
+
+/* ========================================================================= */
+/* TODO:  SECTION - DROP-DOWN NAVIGATION                                     */
+/* ========================================================================= */
+
+:root {
+  /* ================================================ */
+  /* FIXME:  COLOR SCHEME - NAVIGATION                */
+  /* ================================================ */
+
+  --color-navigation-bar-background: #ffffff;
+  --color-navigation-text-option-1: #065bb3;
+  --color-navigation-text-option-1-hover: #0b1128;
+  --color-navigation-text-option-2: #0b1128;
+  --color-navigation-text-option-2-hover: #065bb3;
+  --color-navigation-box-shadow-01: 3px 5px 20px rgba(0, 0, 0, 0.35);
+  --color-navigation-box-shadow-02: 0px 5px 4px rgba(0, 0, 0, 0.35);
+  --color-navigation-box-shadow-03: 0px 1px 5px 3px rgba(0, 0, 0, 0.15);
+  --color-navigation-box-shadow-04: 0px 5px 20px rgba(0, 0, 0, 0.35);
+  --color-navigation-background-horisontal: #ffffff;
+  --color-navigation-background-vertical: #ffffff;
+  --color-navigation-background-sub-menu-1: #f7f7f7;
+  --color-navigation-background-sub-menu-2: #faf9f6;
+  --color-navigation-background-sub-menu-3: #fffff0;
+  --color-navigation-background-sub-menu-4: #edeade;
+}
+
+/* ================================================================== */
+/* FIXME:  NAVIGATION BAR CONTAINER (HOLDING ALL NAVIGATION ELEMENTS  */
+/* ================================================================== */
+
+.navigation__container {
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color-navigation-background-horisontal);
+  color: var(--color-navigation-background-horisontal);
+  width: 100vw;
+  /* border: 1px solid greenyellow; */
+}
+
+/* FIXME:  OPTION 1 : Make "navigation__container" STICKY ON SCROLL          */
+/* Use this option when there is nothing above the navbor                    */
+
+.navigation__container {
+  /* A - Add the BROWSER COMPATIBILITY Sets for STICKY                       */
+  /* A - Set the POSITION of the navbar to FIXED or STICKY                   */
+  /* FIXED - No items above NAVBAR / STICKY - There are Items above NAVBAR   */
+  /* B - Set the position on TOP to ZERO                                     */
+  position: -webkit-sticky;
+  position: -moz-sticky;
+  position: -ms-sticky;
+  position: -o-sticky;
+  position: sticky;
+  top: 0%;
+}
+
+/* ========================================================================= */
+/* FIXME:  NAVIGATION MAIN LIST-ITEMS / LINKS                                */
+/* ========================================================================= */
+
+.navigation__main__links {
+  margin: 1rem 0rem 1rem 0rem;
+  padding: 0.5rem 1rem 0rem 0rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color-navigation-background-horisontal);
+  gap: 3rem;
+  /* border: 1px solid pink; */
+}
+
+/* ========================================================================== */
+/* FIXME:  NAVIGATION - SUB-MENU LINKS (CONTAINER HOLDING ALL SUB-MENU ITEMS) */
+/* ========================================================================== */
+
+.navigation__sub__menu__links {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 0.5rem 1rem 0.5rem 0rem;
+  gap: 0.5rem;
+  /* border: 1px solid orange; */
+}
+
+.navigation__sub__menu__links a:hover {
+  color: var(--color-navigation-text-option-2-hover);
+}
+
+/* ========================================================================== */
+/* FIXME:  NAVIGATION BUTTONS (LINKS) / TOP-MENU-ITEM & SUB-MENU0ITEMS        */
+/* ========================================================================== */
+
+/* =========================== */
+/* TODO:  TOP-MENU-ITEM  TODO: */
+/* =========================== */
+
+.navigation__button {
+  background: none;
+  border: none;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: var(--color-navigation-text-option-2);
+  font-family: "Poppins";
+  font-style: normal;
+  font-size: 1.5rem;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 0rem 0rem 0.5rem 1rem;
+  margin: 0 0 0 0;
+}
+
+/* ============================ */
+/* TODO:  SUB-MENU-ITEMS  TODO: */
+/* ============================ */
+
+.navigation__button.alternative {
+  text-transform: none;
+  font-weight: 500;
+}
+
+.navigation__button.alternative strong {
+  color: var(--color-navigation-text-option-2);
+}
+
+.navigation__button.alternative strong:hover {
+  color: var(--color-navigation-text-option-2-hover);
+}
+
+/* ======================================= */
+/* TODO:TODO:  JAVASCRIPT CODE  TODO:TODO: */
+/* ======================================= */
+
+.navigation__dropdown.active > .navigation__button,
+.navigation__button:hover {
+  color: var(--color-navigation-text-option-2-hover);
+  font-weight: 600;
+}
+
+.navigation__dropdown {
+  position: relative;
+}
+
+/* ========================================================================== */
+/* FIXME:   DROPDOWN-MENU APPEARANCE - ACTIONS AND STYLES (WHEN NON-ACTIVE)   */
+/* ========================================================================== */
+
+.navigation__dropdown__menu {
+  opacity: 0;
+  position: absolute;
+  left: 0;
+  top: calc(100% + 0.05rem);
+  /* width: max-content; */
+  width: 19rem;
+  padding: 1rem 0.25rem 1rem 0.25rem;
+  border-radius: 0.75rem;
+  pointer-events: none;
+  transform: translateY(-0.5rem);
+  transition: opacity 175ms ease-in-out, transform 175ms ease-in-out;
+  box-shadow: var(--color-navigation-box-shadow-01);
+  background-color: var(--color-navigation-background-sub-menu-2);
+  /* border: 1px solid red; */
+  z-index: 1;
+}
+
+/* ========================================================================== */
+/* FIXME:  DROPDOWN-MENU APPEARANCE - ACTIONS AND STYLES (WHEN ACTIVE)        */
+/* ========================================================================== */
+
+/* TODO:  COMMENTS  TODO: */
+
+/* SET OPACITY TO 1 SO THAT THE "navigation__dropdown__menu" CAN DISPLAY WHEN
+   ACTIVE */
+
+/* HOW TO READ BELOW STATEMENT: 
+   SELECT THE "navigation__button" LINK THAT IS INSIDE THE "navigation__dropdown
+   TO DISPLAY THE "navigation__dropdown__menu", WHENEVER THE "navigation__button"
+   LINK IS FOCUSSED  */
+
+/* ======================================= */
+/* TODO:TODO:  JAVASCRIPT CODE  TODO:TODO: */
+/* ======================================= */
+
+.navigation__dropdown.active
+  > .navigation__button
+  + .navigation__dropdown__menu {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
