@@ -2345,15 +2345,79 @@ h6 {
 
 /* ===================================================================================================================== */
 /* ===================================================================================================================== */
-/* TODO:TODO:   SECTION - NEW PAGE CONTAINER WITH TITLE & BUTTON (TO LINKS / DOWNLOADABLE BROCHURE) (START)   TODO:TODO: */
+/* TODO:TODO:                                 SECTION 1 (START) - ABOUT US                                    TODO:TODO: */
+/* ===================================================================================================================== */
+/* ===================================================================================================================== */
+
+:root {
+  /* ========================================================= */
+  /* SHADES OF GREY COLOUR SCHEMES (FOR PAGE BACKGROUNDS)      */
+  /* ========================================================= */
+  --color-section-background-01-grey: #808080;
+  --color-section-background-02-gainsboro: #dcdcdc;
+  --color-section-background-03-lightgrey: #d3d3d3;
+  --color-section-background-04-silver: #c0c0c0;
+  --color-section-background-05-platinum: #e5e4e2;
+  --color-section-background-06-darkgrey: #a9a9a9;
+  --color-section-background-07-lightslategrey: #778899;
+  --color-section-background-08-slategrey: #708090;
+  --color-section-background-09-dimgrey: #696969;
+  --color-section-background-10-isabelline: #f4f0ec;
+  --color-section-background-11-timberwolf: #dbd7d2;
+  --color-section-background-12-lavendergrey: #c4c3d0;
+  --color-section-background-13-pastelgrey: #cfcfc4;
+  --color-section-background-14-palesilver: #c9c0bb;
+  --color-section-background-15-ashgrey: #b2beb5;
+  --color-section-background-16-cadetgrey: #91a3b0;
+  --color-section-background-17-gunmetalgrey: #818589;
+  --color-section-background-18-gunmetalgrey: #818589;
+  --color-section-background-19-smoke: #848884;
+  --color-section-background-20-steelgrey: #71797e;
+
+  /* ========================================================= */
+  /* SHADES OF WHITE COLOUR SCHEMES (FOR PAGE BACKGROUNDS)     */
+  /* ========================================================= */
+
+  --color-section-background-21-white: #ffffff;
+  --color-section-background-22-vanilla: #f3e5ab;
+  --color-section-background-23-seashell: #fff5ee;
+  --color-section-background-24-pearl: #e2dfd2;
+  --color-section-background-25-peach: #ffe5b4;
+  --color-section-background-26-parhment: #fcf5e5;
+  --color-section-background-27-offwhite: #faf9f6;
+  --color-section-background-28-navajowhite: #ffdead;
+  --color-section-background-29-linen: #e9dcc9;
+  --color-section-background-30-ivory: #fffff0;
+  --color-section-background-31-eggshell: #f0ead6;
+  --color-section-background-32-cream: #fffdd0;
+  --color-section-background-33-cornsilk: #fff8dc;
+  --color-section-background-34-bonewhite: #f9f6ee;
+  --color-section-background-35-beige: #f5f5dc;
+  --color-section-background-36-alabaster: #edeade;
+
+  /* ========================================================= */
+  /* SECTION COLOUR SCHEMES                                    */
+  /* ========================================================= */
+  --color-section-about-us-background: #eee;
+  --color-section-about-us-main-header-text: #065bb3;
+  --color-section-about-us-sub-header-text: #0b1128;
+  --color-section-about-us-internal-header-text: #0b1128;
+  --color-section-about-us-internal-description-text: #000000;
+  --color-section-about-us-buttons-background: #0b1128;
+  --color-section-about-us-buttons-text: #ffffff;
+}
+
+/* ===================================================================================================================== */
+/* ===================================================================================================================== */
+/* FIXME:FIXME:  SECTION 1 - ABOUT US (HEADER)                                                              FIXME:FIXME: */
 /* ===================================================================================================================== */
 /* ===================================================================================================================== */
 
 /* =========================================================== */
-/* FIXME:  NEW PAGE - CONTAINER (HOLDING ALL ELEMENTS)  FIXME: */
+/* FIXME:  ABOUT US - CONTAINER (HOLDING ALL ELEMENTS)  FIXME: */
 /* =========================================================== */
 
-.new__page__container {
+.about__us__container {
   position: relative;
   top: 10rem;
   display: flex;
@@ -2364,7 +2428,7 @@ h6 {
   height: auto;
   object-fit: cover;
   margin: 0rem 0rem 0rem 0rem;
-  background-color: #eee;
+  background-color: var(--color-section-about-us-background);
   /* border: 2px solid red; */
 }
 
@@ -2377,7 +2441,7 @@ h6 {
 /* ============================= */
 
 @media screen and (max-width: 830px) {
-  .new__page__container {
+  .about__us__container {
     position: relative;
     top: 11rem;
   }
@@ -2388,7 +2452,7 @@ h6 {
 /* ============================= */
 
 @media screen and (max-width: 650px) {
-  .new__page__container {
+  .about__us__container {
     position: relative;
     top: 19.5rem;
   }
@@ -2399,7 +2463,7 @@ h6 {
 /* ============================= */
 
 @media screen and (max-width: 600px) {
-  .new__page__container {
+  .about__us__container {
     position: relative;
     top: 19.5rem;
   }
@@ -2410,55 +2474,58 @@ h6 {
 /* ============================= */
 
 @media screen and (max-width: 450px) {
-  .new__page__container {
+  .about__us__container {
     position: relative;
     top: 19.5rem;
   }
 }
 
 /* ========================================================== */
-/* FIXME:  NEW PAGE - FULL TITLE OF THE PAGE           FIXME: */
+/* FIXME:  ABOUT US - MAIN TITLE                       FIXME: */
 /* ========================================================== */
 
-.new__page__title h5 {
+.about__us__title h5 {
   display: flex;
   justify-content: center;
   justify-items: center;
   text-transform: uppercase;
   width: 100%;
   padding: 1.5rem 1rem 1.5rem 1rem;
-  background-color: #eee;
+  color: var(--color-section-about-us-main-header-text);
+  background-color: var(--color-section-about-us-background);
   text-align: center;
   /* border: 2px solid purple; */
 }
 
 /* ========================================================== */
-/* FIXME:  NEW PAGE - SUB-TITLE OF THE PAGE            FIXME: */
+/* FIXME:  ABOUT US - SUB-TITLE                        FIXME: */
 /* ========================================================== */
 
-.new__page__sub__title p {
+.about__us__sub__title p {
   display: flex;
   justify-content: center;
   justify-items: center;
-  font-size: 1.2rem;
+  font-size: 1.6rem;
+  font-weight: 700;
   text-transform: uppercase;
   width: 100%;
   margin: -4rem 0rem 0rem 0rem;
   padding: 0rem 1rem 0rem 1rem;
-  background-color: #eee;
+  color: var(--color-section-about-us-sub-header-text);
+  background-color: var(--color-section-about-us-background);
   text-align: center;
   /* border: 2px solid purple; */
 }
 
-/* ========================================================== */
-/* FIXME:  NEW PAGE - LINKS OR DOWNLOADABLE BROCHURES  FIXME: */
-/* ========================================================== */
+/* ====================================================================== */
+/* FIXME:  ABOUT US - BUTTONS FOR LINKS OR DOWNLOADABLE BROCHURES  FIXME: */
+/* ====================================================================== */
 
 /* =============================== */
 /* FIXME:  VIEW - MOBILE FIRST     */
 /* =============================== */
 
-.new__page__buttons__container {
+.about__us__buttons__container {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -2467,7 +2534,7 @@ h6 {
   /* border: 1px solid green; */
 }
 
-.new__page__button {
+.about__us__button {
   text-decoration: none;
   text-transform: uppercase;
   width: 18rem;
@@ -2478,21 +2545,21 @@ h6 {
   padding: 1rem 0.5rem 1rem 0.5rem;
   border: none;
   outline: none;
-  background: #dc143c;
+  background: var(--color-section-about-us-buttons-background);
   border-radius: 0.5rem;
-  box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.35);
+  box-shadow: var(--color-box-shadow-01);
   transition: transform 0.5s ease-in-out;
   cursor: pointer;
   text-align: center;
 }
 
-.new__page__button a {
+.about__us__button a {
   text-decoration: none;
-  color: white;
+  color: var(--color-section-about-us-buttons-text);
   cursor: pointer;
 }
 
-.new__page__button:hover {
+.about__us__button:hover {
   transform: scale(1.05);
 }
 
@@ -2505,7 +2572,7 @@ h6 {
 /* ============================= */
 
 @media screen and (min-width: 670px) {
-  .new__page__buttons__container {
+  .about__us__buttons__container {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -2516,13 +2583,2051 @@ h6 {
 
 /* ===================================================================================================================== */
 /* ===================================================================================================================== */
-/* FIXME:FIXME:  SECTION - NEW PAGE CONTAINER WITH TITLE & BUTTON (TO LINKS / DOWNLOADABLE BROCHURE) (END)  FIXME:FIXME: */
+/* FIXME:FIXME:  SECTION 1 - ABOUT US (CONTENT)                                                             FIXME:FIXME: */
 /* ===================================================================================================================== */
 /* ===================================================================================================================== */
 
 /* FIXME:FIXME:FIXME:  ENTER NEW PAGE CONTENT BELOW  FIXME:FIXME:FIXME: */
 
 /* FIXME:FIXME:FIXME:  ENTER NEW PAGE CONTENT ABOVE  FIXME:FIXME:FIXME: */
+
+/* ===================================================================================================================== */
+/* ===================================================================================================================== */
+/* TODO:TODO:                                   SECTION 1 (END) - ABOUT US                                    TODO:TODO: */
+/* ===================================================================================================================== */
+/* ===================================================================================================================== */
+
+/* ===================================================================================================================== */
+/* ===================================================================================================================== */
+/* TODO:TODO:                 SECTION 2 (START) - DEBT REVIEW PROCESS (WHEN TO CONSIDER)                      TODO:TODO: */
+/* ===================================================================================================================== */
+/* ===================================================================================================================== */
+
+:root {
+  /* ========================================================= */
+  /* SHADES OF GREY COLOUR SCHEMES (FOR PAGE BACKGROUNDS)      */
+  /* ========================================================= */
+  --color-section-background-01-grey: #808080;
+  --color-section-background-02-gainsboro: #dcdcdc;
+  --color-section-background-03-lightgrey: #d3d3d3;
+  --color-section-background-04-silver: #c0c0c0;
+  --color-section-background-05-platinum: #e5e4e2;
+  --color-section-background-06-darkgrey: #a9a9a9;
+  --color-section-background-07-lightslategrey: #778899;
+  --color-section-background-08-slategrey: #708090;
+  --color-section-background-09-dimgrey: #696969;
+  --color-section-background-10-isabelline: #f4f0ec;
+  --color-section-background-11-timberwolf: #dbd7d2;
+  --color-section-background-12-lavendergrey: #c4c3d0;
+  --color-section-background-13-pastelgrey: #cfcfc4;
+  --color-section-background-14-palesilver: #c9c0bb;
+  --color-section-background-15-ashgrey: #b2beb5;
+  --color-section-background-16-cadetgrey: #91a3b0;
+  --color-section-background-17-gunmetalgrey: #818589;
+  --color-section-background-18-gunmetalgrey: #818589;
+  --color-section-background-19-smoke: #848884;
+  --color-section-background-20-steelgrey: #71797e;
+
+  /* ========================================================= */
+  /* SHADES OF WHITE COLOUR SCHEMES (FOR PAGE BACKGROUNDS)     */
+  /* ========================================================= */
+
+  --color-section-background-21-white: #ffffff;
+  --color-section-background-22-vanilla: #f3e5ab;
+  --color-section-background-23-seashell: #fff5ee;
+  --color-section-background-24-pearl: #e2dfd2;
+  --color-section-background-25-peach: #ffe5b4;
+  --color-section-background-26-parhment: #fcf5e5;
+  --color-section-background-27-offwhite: #faf9f6;
+  --color-section-background-28-navajowhite: #ffdead;
+  --color-section-background-29-linen: #e9dcc9;
+  --color-section-background-30-ivory: #fffff0;
+  --color-section-background-31-eggshell: #f0ead6;
+  --color-section-background-32-cream: #fffdd0;
+  --color-section-background-33-cornsilk: #fff8dc;
+  --color-section-background-34-bonewhite: #f9f6ee;
+  --color-section-background-35-beige: #f5f5dc;
+  --color-section-background-36-alabaster: #edeade;
+
+  /* ========================================================= */
+  /* SECTION COLOUR SCHEMES                                    */
+  /* ========================================================= */
+  --color-section-when-to-consider-background: #eee;
+  --color-section-when-to-consider-main-header-text: #065bb3;
+  --color-section-when-to-consider-sub-header-text: #0b1128;
+  --color-section-when-to-consider-internal-header-text: #0b1128;
+  --color-section-when-to-consider-internal-description-text: #000000;
+  --color-section-when-to-consider-buttons-background: #0b1128;
+  --color-section-when-to-consider-buttons-text: #ffffff;
+}
+
+/* ===================================================================================================================== */
+/* ===================================================================================================================== */
+/* FIXME:FIXME:  SECTION 2 - DEBT REVIEW PROCESS (WHEN TO CONSIDER) (HEADER)                                FIXME:FIXME: */
+/* ===================================================================================================================== */
+/* ===================================================================================================================== */
+
+/* ========================================================================================= */
+/* FIXME:  DEBT REVIEW PROCESS (WHEN TO CONSIDER) - CONTAINER (HOLDING ALL ELEMENTS)  FIXME: */
+/* ========================================================================================= */
+
+.when__to__consider__container {
+  position: relative;
+  top: 10rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  margin: 0rem 0rem 0rem 0rem;
+  background-color: var(--color-section-when-to-consider-background);
+  /* border: 2px solid red; */
+}
+
+/* =============================================================== */
+/* TODO:  RESPONSIVE DESIGN - MEDIA QUERY - FOR OTHER SCREEN SIZES */
+/* =============================================================== */
+
+/* ============================= */
+/* FIXME:  BREAKPOINT:  830 px   */
+/* ============================= */
+
+@media screen and (max-width: 830px) {
+  .when__to__consider__container {
+    position: relative;
+    top: 11rem;
+  }
+}
+
+/* ============================= */
+/* FIXME:  BREAKPOINT:  650 px   */
+/* ============================= */
+
+@media screen and (max-width: 650px) {
+  .when__to__consider__container {
+    position: relative;
+    top: 19.5rem;
+  }
+}
+
+/* ============================= */
+/* FIXME:  BREAKPOINT:  600 px   */
+/* ============================= */
+
+@media screen and (max-width: 600px) {
+  .when__to__consider__container {
+    position: relative;
+    top: 19.5rem;
+  }
+}
+
+/* ============================= */
+/* FIXME:  BREAKPOINT:  450 px   */
+/* ============================= */
+
+@media screen and (max-width: 450px) {
+  .when__to__consider__container {
+    position: relative;
+    top: 19.5rem;
+  }
+}
+
+/* ===================================================================== */
+/* FIXME:  DEBT REVIEW PROCESS (WHEN TO CONSIDER) - MAIN TITLE    FIXME: */
+/* ===================================================================== */
+
+.when__to__consider__title h5 {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  text-transform: uppercase;
+  width: 100%;
+  padding: 1.5rem 1rem 1.5rem 1rem;
+  color: var(--color-section-when-to-consider-main-header-text);
+  background-color: var(--color-section-when-to-consider-background);
+  text-align: center;
+  /* border: 2px solid purple; */
+}
+
+/* ===================================================================== */
+/* FIXME:  DEBT REVIEW PROCESS (WHEN TO CONSIDER) - SUB-TITLE     FIXME: */
+/* ===================================================================== */
+
+.when__to__consider__sub__title p {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  font-size: 1.6rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  width: 100%;
+  margin: -4rem 0rem 0rem 0rem;
+  padding: 0rem 1rem 0rem 1rem;
+  color: var(--color-section-when-to-consider-sub-header-text);
+  background-color: var(--color-section-when-to-consider-background);
+  text-align: center;
+  /* border: 2px solid purple; */
+}
+
+/* ==================================================================================================== */
+/* FIXME:  DEBT REVIEW PROCESS (WHEN TO CONSIDER) - BUTTONS FOR LINKS OR DOWNLOADABLE BROCHURES  FIXME: */
+/* ==================================================================================================== */
+
+/* =============================== */
+/* FIXME:  VIEW - MOBILE FIRST     */
+/* =============================== */
+
+.when__to__consider__buttons__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: -2rem 0rem 0rem 0rem;
+  /* border: 1px solid green; */
+}
+
+.when__to__consider__button {
+  text-decoration: none;
+  text-transform: uppercase;
+  width: 18rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  letter-spacing: 0.2rem;
+  margin: 1rem 1rem 2.5rem 1rem;
+  padding: 1rem 0.5rem 1rem 0.5rem;
+  border: none;
+  outline: none;
+  background: var(--color-section-when-to-consider-buttons-background);
+  border-radius: 0.5rem;
+  box-shadow: var(--color-box-shadow-01);
+  transition: transform 0.5s ease-in-out;
+  cursor: pointer;
+  text-align: center;
+}
+
+.when__to__consider__button a {
+  text-decoration: none;
+  color: var(--color-section-when-to-consider-buttons-text);
+  cursor: pointer;
+}
+
+.when__to__consider__button:hover {
+  transform: scale(1.05);
+}
+
+/* =============================================================== */
+/* TODO:  RESPONSIVE DESIGN - MEDIA QUERY - FOR OTHER SCREEN SIZED */
+/* =============================================================== */
+
+/* ============================= */
+/* FIXME:  BREAKPOINT:  670 px   */
+/* ============================= */
+
+@media screen and (min-width: 670px) {
+  .when__to__consider__buttons__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    /* row-gap: 1rem; */
+  }
+}
+
+/* ===================================================================================================================== */
+/* ===================================================================================================================== */
+/* FIXME:FIXME:  SECTION 2 - DEBT REVIEW PROCESS (WHEN TO CONSIDER) (CONTENT)                               FIXME:FIXME: */
+/* ===================================================================================================================== */
+/* ===================================================================================================================== */
+
+/* FIXME:FIXME:FIXME:  ENTER NEW PAGE CONTENT BELOW  FIXME:FIXME:FIXME: */
+
+/* FIXME:FIXME:FIXME:  ENTER NEW PAGE CONTENT ABOVE  FIXME:FIXME:FIXME: */
+
+/* ===================================================================================================================== */
+/* ===================================================================================================================== */
+/* TODO:TODO:                     SECTION 2 (END) - DEBT REVIEW PROCESS (WHEN TO CONSIDER)                    TODO:TODO: */
+/* ===================================================================================================================== */
+/* ===================================================================================================================== */
+
+/* ===================================================================================================================== */
+/* ===================================================================================================================== */
+/* TODO:TODO:                      SECTION 3 (START) - DEBT REVIEW PROCESS (THE PURPOSE)                      TODO:TODO: */
+/* ===================================================================================================================== */
+/* ===================================================================================================================== */
+
+:root {
+  /* ========================================================= */
+  /* SHADES OF GREY COLOUR SCHEMES (FOR PAGE BACKGROUNDS)      */
+  /* ========================================================= */
+  --color-section-background-01-grey: #808080;
+  --color-section-background-02-gainsboro: #dcdcdc;
+  --color-section-background-03-lightgrey: #d3d3d3;
+  --color-section-background-04-silver: #c0c0c0;
+  --color-section-background-05-platinum: #e5e4e2;
+  --color-section-background-06-darkgrey: #a9a9a9;
+  --color-section-background-07-lightslategrey: #778899;
+  --color-section-background-08-slategrey: #708090;
+  --color-section-background-09-dimgrey: #696969;
+  --color-section-background-10-isabelline: #f4f0ec;
+  --color-section-background-11-timberwolf: #dbd7d2;
+  --color-section-background-12-lavendergrey: #c4c3d0;
+  --color-section-background-13-pastelgrey: #cfcfc4;
+  --color-section-background-14-palesilver: #c9c0bb;
+  --color-section-background-15-ashgrey: #b2beb5;
+  --color-section-background-16-cadetgrey: #91a3b0;
+  --color-section-background-17-gunmetalgrey: #818589;
+  --color-section-background-18-gunmetalgrey: #818589;
+  --color-section-background-19-smoke: #848884;
+  --color-section-background-20-steelgrey: #71797e;
+
+  /* ========================================================= */
+  /* SHADES OF WHITE COLOUR SCHEMES (FOR PAGE BACKGROUNDS)     */
+  /* ========================================================= */
+
+  --color-section-background-21-white: #ffffff;
+  --color-section-background-22-vanilla: #f3e5ab;
+  --color-section-background-23-seashell: #fff5ee;
+  --color-section-background-24-pearl: #e2dfd2;
+  --color-section-background-25-peach: #ffe5b4;
+  --color-section-background-26-parhment: #fcf5e5;
+  --color-section-background-27-offwhite: #faf9f6;
+  --color-section-background-28-navajowhite: #ffdead;
+  --color-section-background-29-linen: #e9dcc9;
+  --color-section-background-30-ivory: #fffff0;
+  --color-section-background-31-eggshell: #f0ead6;
+  --color-section-background-32-cream: #fffdd0;
+  --color-section-background-33-cornsilk: #fff8dc;
+  --color-section-background-34-bonewhite: #f9f6ee;
+  --color-section-background-35-beige: #f5f5dc;
+  --color-section-background-36-alabaster: #edeade;
+
+  /* ========================================================= */
+  /* SECTION COLOUR SCHEMES                                    */
+  /* ========================================================= */
+  --color-section-the-purpose-background: #eee;
+  --color-section-the-purpose-main-header-text: #065bb3;
+  --color-section-the-purpose-sub-header-text: #0b1128;
+  --color-section-the-purpose-internal-header-text: #0b1128;
+  --color-section-the-purpose-internal-description-text: #000000;
+  --color-section-the-purpose-buttons-background: #0b1128;
+  --color-section-the-purpose-buttons-text: #ffffff;
+}
+
+/* ===================================================================================================================== */
+/* ===================================================================================================================== */
+/* FIXME:FIXME:  SECTION 3 - DEBT REVIEW PROCESS (THE PURPOSE) (HEADER)                                     FIXME:FIXME: */
+/* ===================================================================================================================== */
+/* ===================================================================================================================== */
+
+/* ========================================================================================= */
+/* FIXME:  DEBT REVIEW PROCESS (THE PURPOSE) - CONTAINER (HOLDING ALL ELEMENTS)       FIXME: */
+/* ========================================================================================= */
+
+.the__purpose__container {
+  position: relative;
+  top: 10rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  margin: 0rem 0rem 0rem 0rem;
+  background-color: var(--color-section-the-purpose-background);
+  /* border: 2px solid red; */
+}
+
+/* =============================================================== */
+/* TODO:  RESPONSIVE DESIGN - MEDIA QUERY - FOR OTHER SCREEN SIZES */
+/* =============================================================== */
+
+/* ============================= */
+/* FIXME:  BREAKPOINT:  830 px   */
+/* ============================= */
+
+@media screen and (max-width: 830px) {
+  .the__purpose__container {
+    position: relative;
+    top: 11rem;
+  }
+}
+
+/* ============================= */
+/* FIXME:  BREAKPOINT:  650 px   */
+/* ============================= */
+
+@media screen and (max-width: 650px) {
+  .the__purpose__container {
+    position: relative;
+    top: 19.5rem;
+  }
+}
+
+/* ============================= */
+/* FIXME:  BREAKPOINT:  600 px   */
+/* ============================= */
+
+@media screen and (max-width: 600px) {
+  .the__purpose__container {
+    position: relative;
+    top: 19.5rem;
+  }
+}
+
+/* ============================= */
+/* FIXME:  BREAKPOINT:  450 px   */
+/* ============================= */
+
+@media screen and (max-width: 450px) {
+  .the__purpose__container {
+    position: relative;
+    top: 19.5rem;
+  }
+}
+
+/* ===================================================================== */
+/* FIXME:  DEBT REVIEW PROCESS (THE PURPOSE) - MAIN TITLE         FIXME: */
+/* ===================================================================== */
+
+.the__purpose__title h5 {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  text-transform: uppercase;
+  width: 100%;
+  padding: 1.5rem 1rem 1.5rem 1rem;
+  color: var(--color-section-the-purpose-main-header-text);
+  background-color: var(--color-section-the-purpose-background);
+  text-align: center;
+  /* border: 2px solid purple; */
+}
+
+/* ===================================================================== */
+/* FIXME:  DEBT REVIEW PROCESS (THE PURPOSE) - SUB-TITLE          FIXME: */
+/* ===================================================================== */
+
+.the__purpose__sub__title p {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  font-size: 1.6rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  width: 100%;
+  margin: -4rem 0rem 0rem 0rem;
+  padding: 0rem 1rem 0rem 1rem;
+  color: var(--color-section-the-purpose-sub-header-text);
+  background-color: var(--color-section-the-purpose-background);
+  text-align: center;
+  /* border: 2px solid purple; */
+}
+
+/* ==================================================================================================== */
+/* FIXME:  DEBT REVIEW PROCESS (THE PURPOSE) - BUTTONS FOR LINKS OR DOWNLOADABLE BROCHURES       FIXME: */
+/* ==================================================================================================== */
+
+/* =============================== */
+/* FIXME:  VIEW - MOBILE FIRST     */
+/* =============================== */
+
+.the__purpose__buttons__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: -2rem 0rem 0rem 0rem;
+  /* border: 1px solid green; */
+}
+
+.the__purpose__button {
+  text-decoration: none;
+  text-transform: uppercase;
+  width: 18rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  letter-spacing: 0.2rem;
+  margin: 1rem 1rem 2.5rem 1rem;
+  padding: 1rem 0.5rem 1rem 0.5rem;
+  border: none;
+  outline: none;
+  background: var(--color-section-the-purpose-buttons-background);
+  border-radius: 0.5rem;
+  box-shadow: var(--color-box-shadow-01);
+  transition: transform 0.5s ease-in-out;
+  cursor: pointer;
+  text-align: center;
+}
+
+.the__purpose__button a {
+  text-decoration: none;
+  color: var(--color-section-the-purpose-buttons-text);
+  cursor: pointer;
+}
+
+.the__purpose__button:hover {
+  transform: scale(1.05);
+}
+
+/* =============================================================== */
+/* TODO:  RESPONSIVE DESIGN - MEDIA QUERY - FOR OTHER SCREEN SIZED */
+/* =============================================================== */
+
+/* ============================= */
+/* FIXME:  BREAKPOINT:  670 px   */
+/* ============================= */
+
+@media screen and (min-width: 670px) {
+  .the__purpose__buttons__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    /* row-gap: 1rem; */
+  }
+}
+
+/* ===================================================================================================================== */
+/* ===================================================================================================================== */
+/* FIXME:FIXME:  SECTION 3 - DEBT REVIEW PROCESS (THE PURPOSE) (CONTENT)                                    FIXME:FIXME: */
+/* ===================================================================================================================== */
+/* ===================================================================================================================== */
+
+/* FIXME:FIXME:FIXME:  ENTER NEW PAGE CONTENT BELOW  FIXME:FIXME:FIXME: */
+
+/* FIXME:FIXME:FIXME:  ENTER NEW PAGE CONTENT ABOVE  FIXME:FIXME:FIXME: */
+
+/* ===================================================================================================================== */
+/* ===================================================================================================================== */
+/* TODO:TODO:                        SECTION 3 (END) - DEBT REVIEW PROCESS (THE PURPOSE)                      TODO:TODO: */
+/* ===================================================================================================================== */
+/* ===================================================================================================================== */
+
+/* ===================================================================================================================== */
+/* ===================================================================================================================== */
+/* TODO:TODO:                    SECTION 4 (START) - DEBT REVIEW PROCESS (BRIEF OVERVIEW)                     TODO:TODO: */
+/* ===================================================================================================================== */
+/* ===================================================================================================================== */
+
+:root {
+  /* ========================================================= */
+  /* SHADES OF GREY COLOUR SCHEMES (FOR PAGE BACKGROUNDS)      */
+  /* ========================================================= */
+  --color-section-background-01-grey: #808080;
+  --color-section-background-02-gainsboro: #dcdcdc;
+  --color-section-background-03-lightgrey: #d3d3d3;
+  --color-section-background-04-silver: #c0c0c0;
+  --color-section-background-05-platinum: #e5e4e2;
+  --color-section-background-06-darkgrey: #a9a9a9;
+  --color-section-background-07-lightslategrey: #778899;
+  --color-section-background-08-slategrey: #708090;
+  --color-section-background-09-dimgrey: #696969;
+  --color-section-background-10-isabelline: #f4f0ec;
+  --color-section-background-11-timberwolf: #dbd7d2;
+  --color-section-background-12-lavendergrey: #c4c3d0;
+  --color-section-background-13-pastelgrey: #cfcfc4;
+  --color-section-background-14-palesilver: #c9c0bb;
+  --color-section-background-15-ashgrey: #b2beb5;
+  --color-section-background-16-cadetgrey: #91a3b0;
+  --color-section-background-17-gunmetalgrey: #818589;
+  --color-section-background-18-gunmetalgrey: #818589;
+  --color-section-background-19-smoke: #848884;
+  --color-section-background-20-steelgrey: #71797e;
+
+  /* ========================================================= */
+  /* SHADES OF WHITE COLOUR SCHEMES (FOR PAGE BACKGROUNDS)     */
+  /* ========================================================= */
+
+  --color-section-background-21-white: #ffffff;
+  --color-section-background-22-vanilla: #f3e5ab;
+  --color-section-background-23-seashell: #fff5ee;
+  --color-section-background-24-pearl: #e2dfd2;
+  --color-section-background-25-peach: #ffe5b4;
+  --color-section-background-26-parhment: #fcf5e5;
+  --color-section-background-27-offwhite: #faf9f6;
+  --color-section-background-28-navajowhite: #ffdead;
+  --color-section-background-29-linen: #e9dcc9;
+  --color-section-background-30-ivory: #fffff0;
+  --color-section-background-31-eggshell: #f0ead6;
+  --color-section-background-32-cream: #fffdd0;
+  --color-section-background-33-cornsilk: #fff8dc;
+  --color-section-background-34-bonewhite: #f9f6ee;
+  --color-section-background-35-beige: #f5f5dc;
+  --color-section-background-36-alabaster: #edeade;
+
+  /* ========================================================= */
+  /* SECTION COLOUR SCHEMES                                    */
+  /* ========================================================= */
+  --color-section-brief-overview-background: #eee;
+  --color-section-brief-overview-main-header-text: #065bb3;
+  --color-section-brief-overview-sub-header-text: #0b1128;
+  --color-section-brief-overview-internal-header-text: #0b1128;
+  --color-section-brief-overview-internal-description-text: #000000;
+  --color-section-brief-overview-buttons-background: #0b1128;
+  --color-section-brief-overview-buttons-text: #ffffff;
+}
+
+/* ===================================================================================================================== */
+/* ===================================================================================================================== */
+/* FIXME:FIXME:  SECTION 4 - DEBT REVIEW PROCESS (BRIEF OVERVIEW) (HEADER)                                  FIXME:FIXME: */
+/* ===================================================================================================================== */
+/* ===================================================================================================================== */
+
+/* ========================================================================================= */
+/* FIXME:  DEBT REVIEW PROCESS (BRIEF OVERVIEW) - CONTAINER (HOLDING ALL ELEMENTS)    FIXME: */
+/* ========================================================================================= */
+
+.brief__overview__container {
+  position: relative;
+  top: 10rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  margin: 0rem 0rem 0rem 0rem;
+  background-color: var(--color-section-brief-overview-background);
+  /* border: 2px solid red; */
+}
+
+/* =============================================================== */
+/* TODO:  RESPONSIVE DESIGN - MEDIA QUERY - FOR OTHER SCREEN SIZES */
+/* =============================================================== */
+
+/* ============================= */
+/* FIXME:  BREAKPOINT:  830 px   */
+/* ============================= */
+
+@media screen and (max-width: 830px) {
+  .brief__overview__container {
+    position: relative;
+    top: 11rem;
+  }
+}
+
+/* ============================= */
+/* FIXME:  BREAKPOINT:  650 px   */
+/* ============================= */
+
+@media screen and (max-width: 650px) {
+  .brief__overview__container {
+    position: relative;
+    top: 19.5rem;
+  }
+}
+
+/* ============================= */
+/* FIXME:  BREAKPOINT:  600 px   */
+/* ============================= */
+
+@media screen and (max-width: 600px) {
+  .brief__overview__container {
+    position: relative;
+    top: 19.5rem;
+  }
+}
+
+/* ============================= */
+/* FIXME:  BREAKPOINT:  450 px   */
+/* ============================= */
+
+@media screen and (max-width: 450px) {
+  .brief__overview__container {
+    position: relative;
+    top: 19.5rem;
+  }
+}
+
+/* ===================================================================== */
+/* FIXME:  DEBT REVIEW PROCESS (BRIEF OVERVIEW) - MAIN TITLE      FIXME: */
+/* ===================================================================== */
+
+.brief__overview__title h5 {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  text-transform: uppercase;
+  width: 100%;
+  padding: 1.5rem 1rem 1.5rem 1rem;
+  color: var(--color-section-brief-overview-main-header-text);
+  background-color: var(--color-section-brief-overview-background);
+  text-align: center;
+  /* border: 2px solid purple; */
+}
+
+/* ===================================================================== */
+/* FIXME:  DEBT REVIEW PROCESS (BRIEF OVERVIEW) - SUB-TITLE      FIXME: */
+/* ===================================================================== */
+
+.brief__overview__sub__title p {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  font-size: 1.6rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  width: 100%;
+  margin: -4rem 0rem 0rem 0rem;
+  padding: 0rem 1rem 0rem 1rem;
+  color: var(--color-section-brief-overview-sub-header-text);
+  background-color: var(--color-section-brief-overview-background);
+  text-align: center;
+  /* border: 2px solid purple; */
+}
+
+/* ==================================================================================================== */
+/* FIXME:  DEBT REVIEW PROCESS (BRIEF OVERVIEW) - BUTTONS FOR LINKS OR DOWNLOADABLE BROCHURES    FIXME: */
+/* ==================================================================================================== */
+
+/* =============================== */
+/* FIXME:  VIEW - MOBILE FIRST     */
+/* =============================== */
+
+.brief__overview__buttons__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: -2rem 0rem 0rem 0rem;
+  /* border: 1px solid green; */
+}
+
+.brief__overview__button {
+  text-decoration: none;
+  text-transform: uppercase;
+  width: 18rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  letter-spacing: 0.2rem;
+  margin: 1rem 1rem 2.5rem 1rem;
+  padding: 1rem 0.5rem 1rem 0.5rem;
+  border: none;
+  outline: none;
+  background: var(--color-section-brief-overview-buttons-background);
+  border-radius: 0.5rem;
+  box-shadow: var(--color-box-shadow-01);
+  transition: transform 0.5s ease-in-out;
+  cursor: pointer;
+  text-align: center;
+}
+
+.brief__overview__button a {
+  text-decoration: none;
+  color: var(--color-section-brief-overview-buttons-text);
+  cursor: pointer;
+}
+
+.brief__overview__button:hover {
+  transform: scale(1.05);
+}
+
+/* =============================================================== */
+/* TODO:  RESPONSIVE DESIGN - MEDIA QUERY - FOR OTHER SCREEN SIZED */
+/* =============================================================== */
+
+/* ============================= */
+/* FIXME:  BREAKPOINT:  670 px   */
+/* ============================= */
+
+@media screen and (min-width: 670px) {
+  .brief__overview__buttons__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    /* row-gap: 1rem; */
+  }
+}
+
+/* ===================================================================================================================== */
+/* ===================================================================================================================== */
+/* FIXME:FIXME:  SECTION 4 - DEBT REVIEW PROCESS (BRIEF OVERVIEW) (CONTENT)                                 FIXME:FIXME: */
+/* ===================================================================================================================== */
+/* ===================================================================================================================== */
+
+/* FIXME:FIXME:FIXME:  ENTER NEW PAGE CONTENT BELOW  FIXME:FIXME:FIXME: */
+
+/* FIXME:FIXME:FIXME:  ENTER NEW PAGE CONTENT ABOVE  FIXME:FIXME:FIXME: */
+
+/* ===================================================================================================================== */
+/* ===================================================================================================================== */
+/* TODO:TODO:                      SECTION 4 (END) - DEBT REVIEW PROCESS (BRIEF OVERVIEW)                     TODO:TODO: */
+/* ===================================================================================================================== */
+/* ===================================================================================================================== */
+
+/* ===================================================================================================================== */
+/* ===================================================================================================================== */
+/* TODO:TODO:                      SECTION 5 (START) - DEBT REVIEW PROCESS (THE PROCESS)                      TODO:TODO: */
+/* ===================================================================================================================== */
+/* ===================================================================================================================== */
+
+:root {
+  /* ========================================================= */
+  /* SHADES OF GREY COLOUR SCHEMES (FOR PAGE BACKGROUNDS)      */
+  /* ========================================================= */
+  --color-section-background-01-grey: #808080;
+  --color-section-background-02-gainsboro: #dcdcdc;
+  --color-section-background-03-lightgrey: #d3d3d3;
+  --color-section-background-04-silver: #c0c0c0;
+  --color-section-background-05-platinum: #e5e4e2;
+  --color-section-background-06-darkgrey: #a9a9a9;
+  --color-section-background-07-lightslategrey: #778899;
+  --color-section-background-08-slategrey: #708090;
+  --color-section-background-09-dimgrey: #696969;
+  --color-section-background-10-isabelline: #f4f0ec;
+  --color-section-background-11-timberwolf: #dbd7d2;
+  --color-section-background-12-lavendergrey: #c4c3d0;
+  --color-section-background-13-pastelgrey: #cfcfc4;
+  --color-section-background-14-palesilver: #c9c0bb;
+  --color-section-background-15-ashgrey: #b2beb5;
+  --color-section-background-16-cadetgrey: #91a3b0;
+  --color-section-background-17-gunmetalgrey: #818589;
+  --color-section-background-18-gunmetalgrey: #818589;
+  --color-section-background-19-smoke: #848884;
+  --color-section-background-20-steelgrey: #71797e;
+
+  /* ========================================================= */
+  /* SHADES OF WHITE COLOUR SCHEMES (FOR PAGE BACKGROUNDS)     */
+  /* ========================================================= */
+
+  --color-section-background-21-white: #ffffff;
+  --color-section-background-22-vanilla: #f3e5ab;
+  --color-section-background-23-seashell: #fff5ee;
+  --color-section-background-24-pearl: #e2dfd2;
+  --color-section-background-25-peach: #ffe5b4;
+  --color-section-background-26-parhment: #fcf5e5;
+  --color-section-background-27-offwhite: #faf9f6;
+  --color-section-background-28-navajowhite: #ffdead;
+  --color-section-background-29-linen: #e9dcc9;
+  --color-section-background-30-ivory: #fffff0;
+  --color-section-background-31-eggshell: #f0ead6;
+  --color-section-background-32-cream: #fffdd0;
+  --color-section-background-33-cornsilk: #fff8dc;
+  --color-section-background-34-bonewhite: #f9f6ee;
+  --color-section-background-35-beige: #f5f5dc;
+  --color-section-background-36-alabaster: #edeade;
+
+  /* ========================================================= */
+  /* SECTION COLOUR SCHEMES                                    */
+  /* ========================================================= */
+  --color-section-the-process-background: #eee;
+  --color-section-the-process-main-header-text: #065bb3;
+  --color-section-the-process-sub-header-text: #0b1128;
+  --color-section-the-process-internal-header-text: #0b1128;
+  --color-section-the-process-internal-description-text: #000000;
+  --color-section-the-process-buttons-background: #0b1128;
+  --color-section-the-process-buttons-text: #ffffff;
+}
+
+/* ===================================================================================================================== */
+/* ===================================================================================================================== */
+/* FIXME:FIXME:  SECTION 5 - DEBT REVIEW PROCESS (THE PROCESS) (HEADER)                                     FIXME:FIXME: */
+/* ===================================================================================================================== */
+/* ===================================================================================================================== */
+
+/* ========================================================================================= */
+/* FIXME:  DEBT REVIEW PROCESS (THE PROCESS) - CONTAINER (HOLDING ALL ELEMENTS)       FIXME: */
+/* ========================================================================================= */
+
+.the__process__container {
+  position: relative;
+  top: 10rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  margin: 0rem 0rem 0rem 0rem;
+  background-color: var(--color-section-the-process-background);
+  /* border: 2px solid red; */
+}
+
+/* =============================================================== */
+/* TODO:  RESPONSIVE DESIGN - MEDIA QUERY - FOR OTHER SCREEN SIZES */
+/* =============================================================== */
+
+/* ============================= */
+/* FIXME:  BREAKPOINT:  830 px   */
+/* ============================= */
+
+@media screen and (max-width: 830px) {
+  .the__process__container {
+    position: relative;
+    top: 11rem;
+  }
+}
+
+/* ============================= */
+/* FIXME:  BREAKPOINT:  650 px   */
+/* ============================= */
+
+@media screen and (max-width: 650px) {
+  .the__process__container {
+    position: relative;
+    top: 19.5rem;
+  }
+}
+
+/* ============================= */
+/* FIXME:  BREAKPOINT:  600 px   */
+/* ============================= */
+
+@media screen and (max-width: 600px) {
+  .the__process__container {
+    position: relative;
+    top: 19.5rem;
+  }
+}
+
+/* ============================= */
+/* FIXME:  BREAKPOINT:  450 px   */
+/* ============================= */
+
+@media screen and (max-width: 450px) {
+  .the__process__container {
+    position: relative;
+    top: 19.5rem;
+  }
+}
+
+/* ===================================================================== */
+/* FIXME:  DEBT REVIEW PROCESS (THE PROCESS) - MAIN TITLE         FIXME: */
+/* ===================================================================== */
+
+.the__process__title h5 {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  text-transform: uppercase;
+  width: 100%;
+  padding: 1.5rem 1rem 1.5rem 1rem;
+  color: var(--color-section-the-process-main-header-text);
+  background-color: var(--color-section-the-process-background);
+  text-align: center;
+  /* border: 2px solid purple; */
+}
+
+/* ===================================================================== */
+/* FIXME:  DEBT REVIEW PROCESS (THE PROCESS) - SUB-TITLE          FIXME: */
+/* ===================================================================== */
+
+.the__process__sub__title p {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  font-size: 1.6rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  width: 100%;
+  margin: -4rem 0rem 0rem 0rem;
+  padding: 0rem 1rem 0rem 1rem;
+  color: var(--color-section-the-process-sub-header-text);
+  background-color: var(--color-section-the-process-background);
+  text-align: center;
+  /* border: 2px solid purple; */
+}
+
+/* ==================================================================================================== */
+/* FIXME:  DEBT REVIEW PROCESS (THE PROCESS) - BUTTONS FOR LINKS OR DOWNLOADABLE BROCHURES       FIXME: */
+/* ==================================================================================================== */
+
+/* =============================== */
+/* FIXME:  VIEW - MOBILE FIRST     */
+/* =============================== */
+
+.the__process__buttons__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: -2rem 0rem 0rem 0rem;
+  /* border: 1px solid green; */
+}
+
+.the__process__button {
+  text-decoration: none;
+  text-transform: uppercase;
+  width: 18rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  letter-spacing: 0.2rem;
+  margin: 1rem 1rem 2.5rem 1rem;
+  padding: 1rem 0.5rem 1rem 0.5rem;
+  border: none;
+  outline: none;
+  background: var(--color-section-the-process-buttons-background);
+  border-radius: 0.5rem;
+  box-shadow: var(--color-box-shadow-01);
+  transition: transform 0.5s ease-in-out;
+  cursor: pointer;
+  text-align: center;
+}
+
+.the__process__button a {
+  text-decoration: none;
+  color: var(--color-section-the-process-buttons-text);
+  cursor: pointer;
+}
+
+.the__process__button:hover {
+  transform: scale(1.05);
+}
+
+/* =============================================================== */
+/* TODO:  RESPONSIVE DESIGN - MEDIA QUERY - FOR OTHER SCREEN SIZED */
+/* =============================================================== */
+
+/* ============================= */
+/* FIXME:  BREAKPOINT:  670 px   */
+/* ============================= */
+
+@media screen and (min-width: 670px) {
+  .the__process__buttons__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    /* row-gap: 1rem; */
+  }
+}
+
+/* ===================================================================================================================== */
+/* ===================================================================================================================== */
+/* FIXME:FIXME:  SECTION 5 - DEBT REVIEW PROCESS (THE PROCESS) (CONTENT)                                    FIXME:FIXME: */
+/* ===================================================================================================================== */
+/* ===================================================================================================================== */
+
+/* FIXME:FIXME:FIXME:  ENTER NEW PAGE CONTENT BELOW  FIXME:FIXME:FIXME: */
+
+/* FIXME:FIXME:FIXME:  ENTER NEW PAGE CONTENT ABOVE  FIXME:FIXME:FIXME: */
+
+/* ===================================================================================================================== */
+/* ===================================================================================================================== */
+/* TODO:TODO:                        SECTION 5 (END) - DEBT REVIEW PROCESS (THE PROCESS)                      TODO:TODO: */
+/* ===================================================================================================================== */
+/* ===================================================================================================================== */
+
+/* ===================================================================================================================== */
+/* ===================================================================================================================== */
+/* TODO:TODO:                     SECTION 6 (START) - DEBT REVIEW PROCESS (CONSEQUENCES)                      TODO:TODO: */
+/* ===================================================================================================================== */
+/* ===================================================================================================================== */
+
+:root {
+  /* ========================================================= */
+  /* SHADES OF GREY COLOUR SCHEMES (FOR PAGE BACKGROUNDS)      */
+  /* ========================================================= */
+  --color-section-background-01-grey: #808080;
+  --color-section-background-02-gainsboro: #dcdcdc;
+  --color-section-background-03-lightgrey: #d3d3d3;
+  --color-section-background-04-silver: #c0c0c0;
+  --color-section-background-05-platinum: #e5e4e2;
+  --color-section-background-06-darkgrey: #a9a9a9;
+  --color-section-background-07-lightslategrey: #778899;
+  --color-section-background-08-slategrey: #708090;
+  --color-section-background-09-dimgrey: #696969;
+  --color-section-background-10-isabelline: #f4f0ec;
+  --color-section-background-11-timberwolf: #dbd7d2;
+  --color-section-background-12-lavendergrey: #c4c3d0;
+  --color-section-background-13-pastelgrey: #cfcfc4;
+  --color-section-background-14-palesilver: #c9c0bb;
+  --color-section-background-15-ashgrey: #b2beb5;
+  --color-section-background-16-cadetgrey: #91a3b0;
+  --color-section-background-17-gunmetalgrey: #818589;
+  --color-section-background-18-gunmetalgrey: #818589;
+  --color-section-background-19-smoke: #848884;
+  --color-section-background-20-steelgrey: #71797e;
+
+  /* ========================================================= */
+  /* SHADES OF WHITE COLOUR SCHEMES (FOR PAGE BACKGROUNDS)     */
+  /* ========================================================= */
+
+  --color-section-background-21-white: #ffffff;
+  --color-section-background-22-vanilla: #f3e5ab;
+  --color-section-background-23-seashell: #fff5ee;
+  --color-section-background-24-pearl: #e2dfd2;
+  --color-section-background-25-peach: #ffe5b4;
+  --color-section-background-26-parhment: #fcf5e5;
+  --color-section-background-27-offwhite: #faf9f6;
+  --color-section-background-28-navajowhite: #ffdead;
+  --color-section-background-29-linen: #e9dcc9;
+  --color-section-background-30-ivory: #fffff0;
+  --color-section-background-31-eggshell: #f0ead6;
+  --color-section-background-32-cream: #fffdd0;
+  --color-section-background-33-cornsilk: #fff8dc;
+  --color-section-background-34-bonewhite: #f9f6ee;
+  --color-section-background-35-beige: #f5f5dc;
+  --color-section-background-36-alabaster: #edeade;
+
+  /* ========================================================= */
+  /* SECTION COLOUR SCHEMES                                    */
+  /* ========================================================= */
+  --color-section-consequences-background: #eee;
+  --color-section-consequences-main-header-text: #065bb3;
+  --color-section-consequences-sub-header-text: #0b1128;
+  --color-section-consequences-internal-header-text: #0b1128;
+  --color-section-consequences-internal-description-text: #000000;
+  --color-section-consequences-buttons-background: #0b1128;
+  --color-section-consequences-buttons-text: #ffffff;
+}
+
+/* ===================================================================================================================== */
+/* ===================================================================================================================== */
+/* FIXME:FIXME:  SECTION 6 - DEBT REVIEW PROCESS (CONSEQUENCES) (HEADER)                                    FIXME:FIXME: */
+/* ===================================================================================================================== */
+/* ===================================================================================================================== */
+
+/* ========================================================================================= */
+/* FIXME:  DEBT REVIEW PROCESS (CONSEQUENCES) - CONTAINER (HOLDING ALL ELEMENTS)      FIXME: */
+/* ========================================================================================= */
+
+.consequences__container {
+  position: relative;
+  top: 10rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  margin: 0rem 0rem 0rem 0rem;
+  background-color: var(--color-section-consequences-background);
+  /* border: 2px solid red; */
+}
+
+/* =============================================================== */
+/* TODO:  RESPONSIVE DESIGN - MEDIA QUERY - FOR OTHER SCREEN SIZES */
+/* =============================================================== */
+
+/* ============================= */
+/* FIXME:  BREAKPOINT:  830 px   */
+/* ============================= */
+
+@media screen and (max-width: 830px) {
+  .consequences__container {
+    position: relative;
+    top: 11rem;
+  }
+}
+
+/* ============================= */
+/* FIXME:  BREAKPOINT:  650 px   */
+/* ============================= */
+
+@media screen and (max-width: 650px) {
+  .consequences__container {
+    position: relative;
+    top: 19.5rem;
+  }
+}
+
+/* ============================= */
+/* FIXME:  BREAKPOINT:  600 px   */
+/* ============================= */
+
+@media screen and (max-width: 600px) {
+  .consequences__container {
+    position: relative;
+    top: 19.5rem;
+  }
+}
+
+/* ============================= */
+/* FIXME:  BREAKPOINT:  450 px   */
+/* ============================= */
+
+@media screen and (max-width: 450px) {
+  .consequences__container {
+    position: relative;
+    top: 19.5rem;
+  }
+}
+
+/* ===================================================================== */
+/* FIXME:  DEBT REVIEW PROCESS (CONSEQUENCES) - MAIN TITLE        FIXME: */
+/* ===================================================================== */
+
+.consequences__title h5 {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  text-transform: uppercase;
+  width: 100%;
+  padding: 1.5rem 1rem 1.5rem 1rem;
+  color: var(--color-section-consequences-main-header-text);
+  background-color: var(--color-section-consequences-background);
+  text-align: center;
+  /* border: 2px solid purple; */
+}
+
+/* ===================================================================== */
+/* FIXME:  DEBT REVIEW PROCESS (CONSEQUENCES) - SUB-TITLE         FIXME: */
+/* ===================================================================== */
+
+.consequences__sub__title p {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  font-size: 1.6rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  width: 100%;
+  margin: -4rem 0rem 0rem 0rem;
+  padding: 0rem 1rem 0rem 1rem;
+  color: var(--color-section-consequences-sub-header-text);
+  background-color: var(--color-section-consequences-background);
+  text-align: center;
+  /* border: 2px solid purple; */
+}
+
+/* ==================================================================================================== */
+/* FIXME:  DEBT REVIEW PROCESS (CONSEQUENCES) - BUTTONS FOR LINKS OR DOWNLOADABLE BROCHURES      FIXME: */
+/* ==================================================================================================== */
+
+/* =============================== */
+/* FIXME:  VIEW - MOBILE FIRST     */
+/* =============================== */
+
+.consequences__buttons__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: -2rem 0rem 0rem 0rem;
+  /* border: 1px solid green; */
+}
+
+.consequences__button {
+  text-decoration: none;
+  text-transform: uppercase;
+  width: 18rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  letter-spacing: 0.2rem;
+  margin: 1rem 1rem 2.5rem 1rem;
+  padding: 1rem 0.5rem 1rem 0.5rem;
+  border: none;
+  outline: none;
+  background: var(--color-section-consequences-buttons-background);
+  border-radius: 0.5rem;
+  box-shadow: var(--color-box-shadow-01);
+  transition: transform 0.5s ease-in-out;
+  cursor: pointer;
+  text-align: center;
+}
+
+.consequences__button a {
+  text-decoration: none;
+  color: var(--color-section-consequences-buttons-text);
+  cursor: pointer;
+}
+
+.consequences__button:hover {
+  transform: scale(1.05);
+}
+
+/* =============================================================== */
+/* TODO:  RESPONSIVE DESIGN - MEDIA QUERY - FOR OTHER SCREEN SIZED */
+/* =============================================================== */
+
+/* ============================= */
+/* FIXME:  BREAKPOINT:  670 px   */
+/* ============================= */
+
+@media screen and (min-width: 670px) {
+  .consequences__buttons__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    /* row-gap: 1rem; */
+  }
+}
+
+/* ===================================================================================================================== */
+/* ===================================================================================================================== */
+/* FIXME:FIXME:  SECTION 6 - DEBT REVIEW PROCESS (CONSEQUENCES) (CONTENT)                                   FIXME:FIXME: */
+/* ===================================================================================================================== */
+/* ===================================================================================================================== */
+
+/* FIXME:FIXME:FIXME:  ENTER NEW PAGE CONTENT BELOW  FIXME:FIXME:FIXME: */
+
+/* FIXME:FIXME:FIXME:  ENTER NEW PAGE CONTENT ABOVE  FIXME:FIXME:FIXME: */
+
+/* ===================================================================================================================== */
+/* ===================================================================================================================== */
+/* TODO:TODO:                       SECTION 6 (END) - DEBT REVIEW PROCESS (CONSEQUENCES)                      TODO:TODO: */
+/* ===================================================================================================================== */
+/* ===================================================================================================================== */
+
+/* ===================================================================================================================== */
+/* ===================================================================================================================== */
+/* TODO:TODO:                   SECTION 7 (START) - DEBT REVIEW PROCESS (RESPONSIBILITIES)                    TODO:TODO: */
+/* ===================================================================================================================== */
+/* ===================================================================================================================== */
+
+:root {
+  /* ========================================================= */
+  /* SHADES OF GREY COLOUR SCHEMES (FOR PAGE BACKGROUNDS)      */
+  /* ========================================================= */
+  --color-section-background-01-grey: #808080;
+  --color-section-background-02-gainsboro: #dcdcdc;
+  --color-section-background-03-lightgrey: #d3d3d3;
+  --color-section-background-04-silver: #c0c0c0;
+  --color-section-background-05-platinum: #e5e4e2;
+  --color-section-background-06-darkgrey: #a9a9a9;
+  --color-section-background-07-lightslategrey: #778899;
+  --color-section-background-08-slategrey: #708090;
+  --color-section-background-09-dimgrey: #696969;
+  --color-section-background-10-isabelline: #f4f0ec;
+  --color-section-background-11-timberwolf: #dbd7d2;
+  --color-section-background-12-lavendergrey: #c4c3d0;
+  --color-section-background-13-pastelgrey: #cfcfc4;
+  --color-section-background-14-palesilver: #c9c0bb;
+  --color-section-background-15-ashgrey: #b2beb5;
+  --color-section-background-16-cadetgrey: #91a3b0;
+  --color-section-background-17-gunmetalgrey: #818589;
+  --color-section-background-18-gunmetalgrey: #818589;
+  --color-section-background-19-smoke: #848884;
+  --color-section-background-20-steelgrey: #71797e;
+
+  /* ========================================================= */
+  /* SHADES OF WHITE COLOUR SCHEMES (FOR PAGE BACKGROUNDS)     */
+  /* ========================================================= */
+
+  --color-section-background-21-white: #ffffff;
+  --color-section-background-22-vanilla: #f3e5ab;
+  --color-section-background-23-seashell: #fff5ee;
+  --color-section-background-24-pearl: #e2dfd2;
+  --color-section-background-25-peach: #ffe5b4;
+  --color-section-background-26-parhment: #fcf5e5;
+  --color-section-background-27-offwhite: #faf9f6;
+  --color-section-background-28-navajowhite: #ffdead;
+  --color-section-background-29-linen: #e9dcc9;
+  --color-section-background-30-ivory: #fffff0;
+  --color-section-background-31-eggshell: #f0ead6;
+  --color-section-background-32-cream: #fffdd0;
+  --color-section-background-33-cornsilk: #fff8dc;
+  --color-section-background-34-bonewhite: #f9f6ee;
+  --color-section-background-35-beige: #f5f5dc;
+  --color-section-background-36-alabaster: #edeade;
+
+  /* ========================================================= */
+  /* SECTION COLOUR SCHEMES                                    */
+  /* ========================================================= */
+  --color-section-responsibilities-background: #eee;
+  --color-section-responsibilities-main-header-text: #065bb3;
+  --color-section-responsibilities-sub-header-text: #0b1128;
+  --color-section-responsibilities-internal-header-text: #0b1128;
+  --color-section-responsibilities-internal-description-text: #000000;
+  --color-section-responsibilities-buttons-background: #0b1128;
+  --color-section-responsibilities-buttons-text: #ffffff;
+}
+
+/* ===================================================================================================================== */
+/* ===================================================================================================================== */
+/* FIXME:FIXME:  SECTION 7 - DEBT REVIEW PROCESS (RESPONSIBILITIES) (HEADER)                                FIXME:FIXME: */
+/* ===================================================================================================================== */
+/* ===================================================================================================================== */
+
+/* ========================================================================================= */
+/* FIXME:  DEBT REVIEW PROCESS (RESPONSIBILITIES) - CONTAINER (HOLDING ALL ELEMENTS)      FIXME: */
+/* ========================================================================================= */
+
+.responsibilities__container {
+  position: relative;
+  top: 10rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  margin: 0rem 0rem 0rem 0rem;
+  background-color: var(--color-section-responsibilities-background);
+  /* border: 2px solid red; */
+}
+
+/* =============================================================== */
+/* TODO:  RESPONSIVE DESIGN - MEDIA QUERY - FOR OTHER SCREEN SIZES */
+/* =============================================================== */
+
+/* ============================= */
+/* FIXME:  BREAKPOINT:  830 px   */
+/* ============================= */
+
+@media screen and (max-width: 830px) {
+  .responsibilities__container {
+    position: relative;
+    top: 11rem;
+  }
+}
+
+/* ============================= */
+/* FIXME:  BREAKPOINT:  650 px   */
+/* ============================= */
+
+@media screen and (max-width: 650px) {
+  .responsibilities__container {
+    position: relative;
+    top: 19.5rem;
+  }
+}
+
+/* ============================= */
+/* FIXME:  BREAKPOINT:  600 px   */
+/* ============================= */
+
+@media screen and (max-width: 600px) {
+  .responsibilities__container {
+    position: relative;
+    top: 19.5rem;
+  }
+}
+
+/* ============================= */
+/* FIXME:  BREAKPOINT:  450 px   */
+/* ============================= */
+
+@media screen and (max-width: 450px) {
+  .responsibilities__container {
+    position: relative;
+    top: 19.5rem;
+  }
+}
+
+/* ===================================================================== */
+/* FIXME:  DEBT REVIEW PROCESS (RESPONSIBILITIES) - MAIN TITLE    FIXME: */
+/* ===================================================================== */
+
+.responsibilities__title h5 {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  text-transform: uppercase;
+  width: 100%;
+  padding: 1.5rem 1rem 1.5rem 1rem;
+  color: var(--color-section-responsibilities-main-header-text);
+  background-color: var(--color-section-responsibilities-background);
+  text-align: center;
+  /* border: 2px solid purple; */
+}
+
+/* ===================================================================== */
+/* FIXME:  DEBT REVIEW PROCESS (RESPONSIBILITIES) - SUB-TITLE     FIXME: */
+/* ===================================================================== */
+
+.responsibilities__sub__title p {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  font-size: 1.6rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  width: 100%;
+  margin: -4rem 0rem 0rem 0rem;
+  padding: 0rem 1rem 0rem 1rem;
+  color: var(--color-section-responsibilities-sub-header-text);
+  background-color: var(--color-section-responsibilities-background);
+  text-align: center;
+  /* border: 2px solid purple; */
+}
+
+/* ==================================================================================================== */
+/* FIXME:  DEBT REVIEW PROCESS (RESPONSIBILITIES) - BUTTONS FOR LINKS OR DOWNLOADABLE BROCHURES  FIXME: */
+/* ==================================================================================================== */
+
+/* =============================== */
+/* FIXME:  VIEW - MOBILE FIRST     */
+/* =============================== */
+
+.responsibilities__buttons__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: -2rem 0rem 0rem 0rem;
+  /* border: 1px solid green; */
+}
+
+.responsibilities__button {
+  text-decoration: none;
+  text-transform: uppercase;
+  width: 18rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  letter-spacing: 0.2rem;
+  margin: 1rem 1rem 2.5rem 1rem;
+  padding: 1rem 0.5rem 1rem 0.5rem;
+  border: none;
+  outline: none;
+  background: var(--color-section-responsibilities-buttons-background);
+  border-radius: 0.5rem;
+  box-shadow: var(--color-box-shadow-01);
+  transition: transform 0.5s ease-in-out;
+  cursor: pointer;
+  text-align: center;
+}
+
+.responsibilities__button a {
+  text-decoration: none;
+  color: var(--color-section-responsibilities-buttons-text);
+  cursor: pointer;
+}
+
+.responsibilities__button:hover {
+  transform: scale(1.05);
+}
+
+/* =============================================================== */
+/* TODO:  RESPONSIVE DESIGN - MEDIA QUERY - FOR OTHER SCREEN SIZED */
+/* =============================================================== */
+
+/* ============================= */
+/* FIXME:  BREAKPOINT:  670 px   */
+/* ============================= */
+
+@media screen and (min-width: 670px) {
+  .responsibilities__buttons__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    /* row-gap: 1rem; */
+  }
+}
+
+/* ===================================================================================================================== */
+/* ===================================================================================================================== */
+/* FIXME:FIXME:  SECTION 7 - DEBT REVIEW PROCESS (RESPONSIBILITIES) (CONTENT)                               FIXME:FIXME: */
+/* ===================================================================================================================== */
+/* ===================================================================================================================== */
+
+/* FIXME:FIXME:FIXME:  ENTER NEW PAGE CONTENT BELOW  FIXME:FIXME:FIXME: */
+
+/* FIXME:FIXME:FIXME:  ENTER NEW PAGE CONTENT ABOVE  FIXME:FIXME:FIXME: */
+
+/* ===================================================================================================================== */
+/* ===================================================================================================================== */
+/* TODO:TODO:                     SECTION 7 (END) - DEBT REVIEW PROCESS (RESPONSIBILITIES)                    TODO:TODO: */
+/* ===================================================================================================================== */
+/* ===================================================================================================================== */
+
+/* ===================================================================================================================== */
+/* ===================================================================================================================== */
+/* TODO:TODO:                     SECTION 8 (START) - DEBT REVIEW PROCESS (FEE STRUCTURE)                     TODO:TODO: */
+/* ===================================================================================================================== */
+/* ===================================================================================================================== */
+
+:root {
+  /* ========================================================= */
+  /* SHADES OF GREY COLOUR SCHEMES (FOR PAGE BACKGROUNDS)      */
+  /* ========================================================= */
+  --color-section-background-01-grey: #808080;
+  --color-section-background-02-gainsboro: #dcdcdc;
+  --color-section-background-03-lightgrey: #d3d3d3;
+  --color-section-background-04-silver: #c0c0c0;
+  --color-section-background-05-platinum: #e5e4e2;
+  --color-section-background-06-darkgrey: #a9a9a9;
+  --color-section-background-07-lightslategrey: #778899;
+  --color-section-background-08-slategrey: #708090;
+  --color-section-background-09-dimgrey: #696969;
+  --color-section-background-10-isabelline: #f4f0ec;
+  --color-section-background-11-timberwolf: #dbd7d2;
+  --color-section-background-12-lavendergrey: #c4c3d0;
+  --color-section-background-13-pastelgrey: #cfcfc4;
+  --color-section-background-14-palesilver: #c9c0bb;
+  --color-section-background-15-ashgrey: #b2beb5;
+  --color-section-background-16-cadetgrey: #91a3b0;
+  --color-section-background-17-gunmetalgrey: #818589;
+  --color-section-background-18-gunmetalgrey: #818589;
+  --color-section-background-19-smoke: #848884;
+  --color-section-background-20-steelgrey: #71797e;
+
+  /* ========================================================= */
+  /* SHADES OF WHITE COLOUR SCHEMES (FOR PAGE BACKGROUNDS)     */
+  /* ========================================================= */
+
+  --color-section-background-21-white: #ffffff;
+  --color-section-background-22-vanilla: #f3e5ab;
+  --color-section-background-23-seashell: #fff5ee;
+  --color-section-background-24-pearl: #e2dfd2;
+  --color-section-background-25-peach: #ffe5b4;
+  --color-section-background-26-parhment: #fcf5e5;
+  --color-section-background-27-offwhite: #faf9f6;
+  --color-section-background-28-navajowhite: #ffdead;
+  --color-section-background-29-linen: #e9dcc9;
+  --color-section-background-30-ivory: #fffff0;
+  --color-section-background-31-eggshell: #f0ead6;
+  --color-section-background-32-cream: #fffdd0;
+  --color-section-background-33-cornsilk: #fff8dc;
+  --color-section-background-34-bonewhite: #f9f6ee;
+  --color-section-background-35-beige: #f5f5dc;
+  --color-section-background-36-alabaster: #edeade;
+
+  /* ========================================================= */
+  /* SECTION COLOUR SCHEMES                                    */
+  /* ========================================================= */
+  --color-section-fee-structure-background: #eee;
+  --color-section-fee-structure-main-header-text: #065bb3;
+  --color-section-fee-structure-sub-header-text: #0b1128;
+  --color-section-fee-structure-internal-header-text: #0b1128;
+  --color-section-fee-structure-internal-description-text: #000000;
+  --color-section-fee-structure-buttons-background: #0b1128;
+  --color-section-fee-structure-buttons-text: #ffffff;
+}
+
+/* ===================================================================================================================== */
+/* ===================================================================================================================== */
+/* FIXME:FIXME:  SECTION 8 - DEBT REVIEW PROCESS (FEE STRUCTURE) (HEADER)                                   FIXME:FIXME: */
+/* ===================================================================================================================== */
+/* ===================================================================================================================== */
+
+/* ========================================================================================= */
+/* FIXME:  DEBT REVIEW PROCESS (FEE STRUCTURE) - CONTAINER (HOLDING ALL ELEMENTS)     FIXME: */
+/* ========================================================================================= */
+
+.fee__structure__container {
+  position: relative;
+  top: 10rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  margin: 0rem 0rem 0rem 0rem;
+  background-color: var(--color-section-fee-structure-background);
+  /* border: 2px solid red; */
+}
+
+/* =============================================================== */
+/* TODO:  RESPONSIVE DESIGN - MEDIA QUERY - FOR OTHER SCREEN SIZES */
+/* =============================================================== */
+
+/* ============================= */
+/* FIXME:  BREAKPOINT:  830 px   */
+/* ============================= */
+
+@media screen and (max-width: 830px) {
+  .fee__structure__container {
+    position: relative;
+    top: 11rem;
+  }
+}
+
+/* ============================= */
+/* FIXME:  BREAKPOINT:  650 px   */
+/* ============================= */
+
+@media screen and (max-width: 650px) {
+  .fee__structure__container {
+    position: relative;
+    top: 19.5rem;
+  }
+}
+
+/* ============================= */
+/* FIXME:  BREAKPOINT:  600 px   */
+/* ============================= */
+
+@media screen and (max-width: 600px) {
+  .fee__structure__container {
+    position: relative;
+    top: 19.5rem;
+  }
+}
+
+/* ============================= */
+/* FIXME:  BREAKPOINT:  450 px   */
+/* ============================= */
+
+@media screen and (max-width: 450px) {
+  .fee__structure__container {
+    position: relative;
+    top: 19.5rem;
+  }
+}
+
+/* ===================================================================== */
+/* FIXME:  DEBT REVIEW PROCESS (FEE STRUCTURE) - MAIN TITLE       FIXME: */
+/* ===================================================================== */
+
+.fee__structure__title h5 {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  text-transform: uppercase;
+  width: 100%;
+  padding: 1.5rem 1rem 1.5rem 1rem;
+  color: var(--color-section-fee-structure-main-header-text);
+  background-color: var(--color-section-fee-structure-background);
+  text-align: center;
+  /* border: 2px solid purple; */
+}
+
+/* ===================================================================== */
+/* FIXME:  DEBT REVIEW PROCESS (FEE STRUCTURE) - SUB-TITLE        FIXME: */
+/* ===================================================================== */
+
+.fee__structure__sub__title p {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  font-size: 1.6rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  width: 100%;
+  margin: -4rem 0rem 0rem 0rem;
+  padding: 0rem 1rem 0rem 1rem;
+  color: var(--color-section-fee-structure-sub-header-text);
+  background-color: var(--color-section-fee-structure-background);
+  text-align: center;
+  /* border: 2px solid purple; */
+}
+
+/* ==================================================================================================== */
+/* FIXME:  DEBT REVIEW PROCESS (FEE STRUCTURE) - BUTTONS FOR LINKS OR DOWNLOADABLE BROCHURES     FIXME: */
+/* ==================================================================================================== */
+
+/* =============================== */
+/* FIXME:  VIEW - MOBILE FIRST     */
+/* =============================== */
+
+.fee__structure__buttons__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: -2rem 0rem 0rem 0rem;
+  /* border: 1px solid green; */
+}
+
+.fee__structure__button {
+  text-decoration: none;
+  text-transform: uppercase;
+  width: 18rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  letter-spacing: 0.2rem;
+  margin: 1rem 1rem 2.5rem 1rem;
+  padding: 1rem 0.5rem 1rem 0.5rem;
+  border: none;
+  outline: none;
+  background: var(--color-section-fee-structure-buttons-background);
+  border-radius: 0.5rem;
+  box-shadow: var(--color-box-shadow-01);
+  transition: transform 0.5s ease-in-out;
+  cursor: pointer;
+  text-align: center;
+}
+
+.fee__structure__button a {
+  text-decoration: none;
+  color: var(--color-section-fee-structure-buttons-text);
+  cursor: pointer;
+}
+
+.fee__structure__button:hover {
+  transform: scale(1.05);
+}
+
+/* =============================================================== */
+/* TODO:  RESPONSIVE DESIGN - MEDIA QUERY - FOR OTHER SCREEN SIZED */
+/* =============================================================== */
+
+/* ============================= */
+/* FIXME:  BREAKPOINT:  670 px   */
+/* ============================= */
+
+@media screen and (min-width: 670px) {
+  .fee__structure__buttons__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    /* row-gap: 1rem; */
+  }
+}
+
+/* ===================================================================================================================== */
+/* ===================================================================================================================== */
+/* FIXME:FIXME:  SECTION 8 - DEBT REVIEW PROCESS (FEE STRUCTURE) (CONTENT)                                  FIXME:FIXME: */
+/* ===================================================================================================================== */
+/* ===================================================================================================================== */
+
+/* FIXME:FIXME:FIXME:  ENTER NEW PAGE CONTENT BELOW  FIXME:FIXME:FIXME: */
+
+/* FIXME:FIXME:FIXME:  ENTER NEW PAGE CONTENT ABOVE  FIXME:FIXME:FIXME: */
+
+/* ===================================================================================================================== */
+/* ===================================================================================================================== */
+/* TODO:TODO:                      SECTION 8 (END) - DEBT REVIEW PROCESS (FEE STRUCTURE)                     TODO:TODO: */
+/* ===================================================================================================================== */
+/* ===================================================================================================================== */
+
+/* ===================================================================================================================== */
+/* ===================================================================================================================== */
+/* TODO:TODO:                         SECTION 9 (START) - DEBT REVIEW PROCESS (FAQS)                          TODO:TODO: */
+/* ===================================================================================================================== */
+/* ===================================================================================================================== */
+
+:root {
+  /* ========================================================= */
+  /* SHADES OF GREY COLOUR SCHEMES (FOR PAGE BACKGROUNDS)      */
+  /* ========================================================= */
+  --color-section-background-01-grey: #808080;
+  --color-section-background-02-gainsboro: #dcdcdc;
+  --color-section-background-03-lightgrey: #d3d3d3;
+  --color-section-background-04-silver: #c0c0c0;
+  --color-section-background-05-platinum: #e5e4e2;
+  --color-section-background-06-darkgrey: #a9a9a9;
+  --color-section-background-07-lightslategrey: #778899;
+  --color-section-background-08-slategrey: #708090;
+  --color-section-background-09-dimgrey: #696969;
+  --color-section-background-10-isabelline: #f4f0ec;
+  --color-section-background-11-timberwolf: #dbd7d2;
+  --color-section-background-12-lavendergrey: #c4c3d0;
+  --color-section-background-13-pastelgrey: #cfcfc4;
+  --color-section-background-14-palesilver: #c9c0bb;
+  --color-section-background-15-ashgrey: #b2beb5;
+  --color-section-background-16-cadetgrey: #91a3b0;
+  --color-section-background-17-gunmetalgrey: #818589;
+  --color-section-background-18-gunmetalgrey: #818589;
+  --color-section-background-19-smoke: #848884;
+  --color-section-background-20-steelgrey: #71797e;
+
+  /* ========================================================= */
+  /* SHADES OF WHITE COLOUR SCHEMES (FOR PAGE BACKGROUNDS)     */
+  /* ========================================================= */
+
+  --color-section-background-21-white: #ffffff;
+  --color-section-background-22-vanilla: #f3e5ab;
+  --color-section-background-23-seashell: #fff5ee;
+  --color-section-background-24-pearl: #e2dfd2;
+  --color-section-background-25-peach: #ffe5b4;
+  --color-section-background-26-parhment: #fcf5e5;
+  --color-section-background-27-offwhite: #faf9f6;
+  --color-section-background-28-navajowhite: #ffdead;
+  --color-section-background-29-linen: #e9dcc9;
+  --color-section-background-30-ivory: #fffff0;
+  --color-section-background-31-eggshell: #f0ead6;
+  --color-section-background-32-cream: #fffdd0;
+  --color-section-background-33-cornsilk: #fff8dc;
+  --color-section-background-34-bonewhite: #f9f6ee;
+  --color-section-background-35-beige: #f5f5dc;
+  --color-section-background-36-alabaster: #edeade;
+
+  /* ========================================================= */
+  /* SECTION COLOUR SCHEMES                                    */
+  /* ========================================================= */
+  --color-section-faqs-background: #eee;
+  --color-section-faqs-main-header-text: #065bb3;
+  --color-section-faqs-sub-header-text: #0b1128;
+  --color-section-faqs-internal-header-text: #0b1128;
+  --color-section-faqs-internal-description-text: #000000;
+  --color-section-faqs-buttons-background: #0b1128;
+  --color-section-faqs-buttons-text: #ffffff;
+}
+
+/* ===================================================================================================================== */
+/* ===================================================================================================================== */
+/* FIXME:FIXME:  SECTION 9 - DEBT REVIEW PROCESS (FAQS) (HEADER)                                            FIXME:FIXME: */
+/* ===================================================================================================================== */
+/* ===================================================================================================================== */
+
+/* ========================================================================================= */
+/* FIXME:  DEBT REVIEW PROCESS (FAQS) - CONTAINER (HOLDING ALL ELEMENTS)              FIXME: */
+/* ========================================================================================= */
+
+.FAQS__container {
+  position: relative;
+  top: 10rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  margin: 0rem 0rem 0rem 0rem;
+  background-color: var(--color-section-faqs-background);
+  /* border: 2px solid red; */
+}
+
+/* =============================================================== */
+/* TODO:  RESPONSIVE DESIGN - MEDIA QUERY - FOR OTHER SCREEN SIZES */
+/* =============================================================== */
+
+/* ============================= */
+/* FIXME:  BREAKPOINT:  830 px   */
+/* ============================= */
+
+@media screen and (max-width: 830px) {
+  .FAQS__container {
+    position: relative;
+    top: 11rem;
+  }
+}
+
+/* ============================= */
+/* FIXME:  BREAKPOINT:  650 px   */
+/* ============================= */
+
+@media screen and (max-width: 650px) {
+  .FAQS__container {
+    position: relative;
+    top: 19.5rem;
+  }
+}
+
+/* ============================= */
+/* FIXME:  BREAKPOINT:  600 px   */
+/* ============================= */
+
+@media screen and (max-width: 600px) {
+  .FAQS__container {
+    position: relative;
+    top: 19.5rem;
+  }
+}
+
+/* ============================= */
+/* FIXME:  BREAKPOINT:  450 px   */
+/* ============================= */
+
+@media screen and (max-width: 450px) {
+  .FAQS__container {
+    position: relative;
+    top: 19.5rem;
+  }
+}
+
+/* ===================================================================== */
+/* FIXME:  DEBT REVIEW PROCESS (FAQS) - MAIN TITLE                FIXME: */
+/* ===================================================================== */
+
+.FAQS__title h5 {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  text-transform: uppercase;
+  width: 100%;
+  padding: 1.5rem 1rem 1.5rem 1rem;
+  color: var(--color-section-faqs-main-header-text);
+  background-color: var(--color-section-faqs-background);
+  text-align: center;
+  /* border: 2px solid purple; */
+}
+
+/* ===================================================================== */
+/* FIXME:  DEBT REVIEW PROCESS (FAQS) - SUB-TITLE                 FIXME: */
+/* ===================================================================== */
+
+.FAQS__sub__title p {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  font-size: 1.6rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  width: 100%;
+  margin: -4rem 0rem 0rem 0rem;
+  padding: 0rem 1rem 0rem 1rem;
+  color: var(--color-section-faqs-sub-header-text);
+  background-color: var(--color-section-faqs-background);
+  text-align: center;
+  /* border: 2px solid purple; */
+}
+
+/* ==================================================================================================== */
+/* FIXME:  DEBT REVIEW PROCESS (FAQS) - BUTTONS FOR LINKS OR DOWNLOADABLE BROCHURES              FIXME: */
+/* ==================================================================================================== */
+
+/* =============================== */
+/* FIXME:  VIEW - MOBILE FIRST     */
+/* =============================== */
+
+.FAQS__buttons__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: -2rem 0rem 0rem 0rem;
+  /* border: 1px solid green; */
+}
+
+.FAQS__button {
+  text-decoration: none;
+  text-transform: uppercase;
+  width: 18rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  letter-spacing: 0.2rem;
+  margin: 1rem 1rem 2.5rem 1rem;
+  padding: 1rem 0.5rem 1rem 0.5rem;
+  border: none;
+  outline: none;
+  background: var(--color-section-faqs-buttons-background);
+  border-radius: 0.5rem;
+  box-shadow: var(--color-box-shadow-01);
+  transition: transform 0.5s ease-in-out;
+  cursor: pointer;
+  text-align: center;
+}
+
+.FAQS__button a {
+  text-decoration: none;
+  color: var(--color-section-faqs-buttons-text);
+  cursor: pointer;
+}
+
+.FAQS__button:hover {
+  transform: scale(1.05);
+}
+
+/* =============================================================== */
+/* TODO:  RESPONSIVE DESIGN - MEDIA QUERY - FOR OTHER SCREEN SIZED */
+/* =============================================================== */
+
+/* ============================= */
+/* FIXME:  BREAKPOINT:  670 px   */
+/* ============================= */
+
+@media screen and (min-width: 670px) {
+  .FAQS__buttons__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    /* row-gap: 1rem; */
+  }
+}
+
+/* ===================================================================================================================== */
+/* ===================================================================================================================== */
+/* FIXME:FIXME:  SECTION 9 - DEBT REVIEW PROCESS (FAQS) (CONTENT)                                           FIXME:FIXME: */
+/* ===================================================================================================================== */
+/* ===================================================================================================================== */
+
+/* FIXME:FIXME:FIXME:  ENTER NEW PAGE CONTENT BELOW  FIXME:FIXME:FIXME: */
+
+/* FIXME:FIXME:FIXME:  ENTER NEW PAGE CONTENT ABOVE  FIXME:FIXME:FIXME: */
+
+/* ===================================================================================================================== */
+/* ===================================================================================================================== */
+/* TODO:TODO:                           SECTION 9 (END) - DEBT REVIEW PROCESS (FAQS)                          TODO:TODO: */
+/* ===================================================================================================================== */
+/* ===================================================================================================================== */
 
 /* ===================================================================================================================== */
 /* ===================================================================================================================== */
