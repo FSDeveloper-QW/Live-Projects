@@ -224,6 +224,13 @@ input {
   font-family: "poppins", sans-serif;
 }
 
+.horizontal__row__height {
+  height: 0.1rem;
+  border: none;
+  background-color: black;
+  margin: 0rem 0rem 0rem 0rem;
+}
+
 /* ===================================================================================================================== */
 /* TODO:  SET THE RESPONSIVE DEFAULT SIZES FOR ALL HEADING ELEMENTS (H1 - H6)                                      TODO: */
 /* ===================================================================================================================== */
@@ -2398,7 +2405,8 @@ h6 {
   /* ========================================================= */
   /* SECTION COLOUR SCHEMES                                    */
   /* ========================================================= */
-  --color-section-about-us-background: #eee;
+  --color-section-about-us-background: #ffffff;
+  --color-section-about-us-border-bottom: #e5e4e2;
   --color-section-about-us-main-header-text: #065bb3;
   --color-section-about-us-sub-header-text: #0b1128;
   --color-section-about-us-internal-header-text: #0b1128;
@@ -2429,6 +2437,7 @@ h6 {
   object-fit: cover;
   margin: 0rem 0rem 0rem 0rem;
   background-color: var(--color-section-about-us-background);
+  border-bottom: 1px solid var(--color-section-about-us-border-bottom);
   /* border: 2px solid red; */
 }
 
@@ -2652,7 +2661,8 @@ h6 {
   /* ========================================================= */
   /* SECTION COLOUR SCHEMES                                    */
   /* ========================================================= */
-  --color-section-when-to-consider-background: #eee;
+  --color-section-when-to-consider-background: #ffffff;
+  --color-section-when-to-consider-border-bottom: #e5e4e2;
   --color-section-when-to-consider-main-header-text: #065bb3;
   --color-section-when-to-consider-sub-header-text: #0b1128;
   --color-section-when-to-consider-internal-header-text: #0b1128;
@@ -2683,6 +2693,7 @@ h6 {
   object-fit: cover;
   margin: 0rem 0rem 0rem 0rem;
   background-color: var(--color-section-when-to-consider-background);
+  border-bottom: 1px solid var(--color-section-when-to-consider-border-bottom);
   /* border: 2px solid red; */
 }
 
@@ -2906,8 +2917,10 @@ h6 {
   /* ========================================================= */
   /* SECTION COLOUR SCHEMES                                    */
   /* ========================================================= */
-  --color-section-the-purpose-background: #eee;
-  --color-section-the-purpose-main-header-text: #065bb3;
+  --color-section-the-purpose-background: #ffffff;
+  --color-section-the-purpose-border-bottom: #e5e4e2;
+  /* --color-section-the-purpose-main-header-text: #065bb3; */
+  --color-section-the-purpose-main-header-text: #ffffff;
   --color-section-the-purpose-sub-header-text: #0b1128;
   --color-section-the-purpose-internal-header-text: #0b1128;
   --color-section-the-purpose-internal-description-text: #000000;
@@ -2937,6 +2950,7 @@ h6 {
   object-fit: cover;
   margin: 0rem 0rem 0rem 0rem;
   background-color: var(--color-section-the-purpose-background);
+  border-bottom: 1px solid var(--color-section-the-purpose-border-bottom);
   /* border: 2px solid red; */
 }
 
@@ -3160,8 +3174,10 @@ h6 {
   /* ========================================================= */
   /* SECTION COLOUR SCHEMES                                    */
   /* ========================================================= */
-  --color-section-brief-overview-background: #eee;
-  --color-section-brief-overview-main-header-text: #065bb3;
+  --color-section-brief-overview-background: #ffffff;
+  --color-section-brief-overview-border-bottom: #e5e4e2;
+  /* --color-section-brief-overview-main-header-text: #065bb3; */
+  --color-section-brief-overview-main-header-text: #ffffff;
   --color-section-brief-overview-sub-header-text: #0b1128;
   --color-section-brief-overview-internal-header-text: #0b1128;
   --color-section-brief-overview-internal-description-text: #000000;
@@ -3191,6 +3207,7 @@ h6 {
   object-fit: cover;
   margin: 0rem 0rem 0rem 0rem;
   background-color: var(--color-section-brief-overview-background);
+  border-bottom: 1px solid var(--color-section-brief-overview-border-bottom);
   /* border: 2px solid red; */
 }
 
@@ -3414,8 +3431,10 @@ h6 {
   /* ========================================================= */
   /* SECTION COLOUR SCHEMES                                    */
   /* ========================================================= */
-  --color-section-the-process-background: #eee;
-  --color-section-the-process-main-header-text: #065bb3;
+  --color-section-the-process-background: #ffffff;
+  --color-section-the-process-border-bottom: #e5e4e2;
+  /* --color-section-the-process-main-header-text: #065bb3; */
+  --color-section-the-process-main-header-text: #ffffff;
   --color-section-the-process-sub-header-text: #0b1128;
   --color-section-the-process-internal-header-text: #0b1128;
   --color-section-the-process-internal-description-text: #000000;
@@ -3445,6 +3464,7 @@ h6 {
   object-fit: cover;
   margin: 0rem 0rem 0rem 0rem;
   background-color: var(--color-section-the-process-background);
+  border-bottom: 1px solid var(--color-section-the-process-border-bottom);
   /* border: 2px solid red; */
 }
 
@@ -3668,8 +3688,10 @@ h6 {
   /* ========================================================= */
   /* SECTION COLOUR SCHEMES                                    */
   /* ========================================================= */
-  --color-section-consequences-background: #eee;
-  --color-section-consequences-main-header-text: #065bb3;
+  --color-section-consequences-background: #ffffff;
+  --color-section-consequences-border-bottom: #e5e4e2;
+  /* --color-section-consequences-main-header-text: #065bb3; */
+  --color-section-consequences-main-header-text: #ffffff;
   --color-section-consequences-sub-header-text: #0b1128;
   --color-section-consequences-internal-header-text: #0b1128;
   --color-section-consequences-internal-description-text: #000000;
@@ -3699,6 +3721,7 @@ h6 {
   object-fit: cover;
   margin: 0rem 0rem 0rem 0rem;
   background-color: var(--color-section-consequences-background);
+  border-bottom: 1px solid var(--color-section-consequences-border-bottom);
   /* border: 2px solid red; */
 }
 
@@ -3922,8 +3945,10 @@ h6 {
   /* ========================================================= */
   /* SECTION COLOUR SCHEMES                                    */
   /* ========================================================= */
-  --color-section-responsibilities-background: #eee;
-  --color-section-responsibilities-main-header-text: #065bb3;
+  --color-section-responsibilities-background: #ffffff;
+  --color-section-responsibilities-border-bottom: #e5e4e2;
+  /* --color-section-responsibilities-main-header-text: #065bb3; */
+  --color-section-responsibilities-main-header-text: #ffffff;
   --color-section-responsibilities-sub-header-text: #0b1128;
   --color-section-responsibilities-internal-header-text: #0b1128;
   --color-section-responsibilities-internal-description-text: #000000;
@@ -3953,6 +3978,7 @@ h6 {
   object-fit: cover;
   margin: 0rem 0rem 0rem 0rem;
   background-color: var(--color-section-responsibilities-background);
+  border-bottom: 1px solid var(--color-section-responsibilities-border-bottom);
   /* border: 2px solid red; */
 }
 
@@ -4176,8 +4202,10 @@ h6 {
   /* ========================================================= */
   /* SECTION COLOUR SCHEMES                                    */
   /* ========================================================= */
-  --color-section-fee-structure-background: #eee;
-  --color-section-fee-structure-main-header-text: #065bb3;
+  --color-section-fee-structure-background: #ffffff;
+  --color-section-fee-structure-border-bottom: #e5e4e2;
+  /* --color-section-fee-structure-main-header-text: #065bb3; */
+  --color-section-fee-structure-main-header-text: #ffffff;
   --color-section-fee-structure-sub-header-text: #0b1128;
   --color-section-fee-structure-internal-header-text: #0b1128;
   --color-section-fee-structure-internal-description-text: #000000;
@@ -4207,6 +4235,7 @@ h6 {
   object-fit: cover;
   margin: 0rem 0rem 0rem 0rem;
   background-color: var(--color-section-fee-structure-background);
+  border-bottom: 1px solid var(--color-section-fee-structure-border-bottom);
   /* border: 2px solid red; */
 }
 
@@ -4430,8 +4459,10 @@ h6 {
   /* ========================================================= */
   /* SECTION COLOUR SCHEMES                                    */
   /* ========================================================= */
-  --color-section-faqs-background: #eee;
-  --color-section-faqs-main-header-text: #065bb3;
+  --color-section-faqs-background: #ffffff;
+  --color-section-faqs-border-bottom: #e5e4e2;
+  /* --color-section-faqs-main-header-text: #065bb3; */
+  --color-section-faqs-main-header-text: #ffffff;
   --color-section-faqs-sub-header-text: #0b1128;
   --color-section-faqs-internal-header-text: #0b1128;
   --color-section-faqs-internal-description-text: #000000;
@@ -4461,6 +4492,7 @@ h6 {
   object-fit: cover;
   margin: 0rem 0rem 0rem 0rem;
   background-color: var(--color-section-faqs-background);
+  border-bottom: 1px solid var(--color-section-faqs-border-bottom);
   /* border: 2px solid red; */
 }
 
@@ -4626,6 +4658,262 @@ h6 {
 /* ===================================================================================================================== */
 /* ===================================================================================================================== */
 /* TODO:TODO:                           SECTION 9 (END) - DEBT REVIEW PROCESS (FAQS)                          TODO:TODO: */
+/* ===================================================================================================================== */
+/* ===================================================================================================================== */
+
+/* ===================================================================================================================== */
+/* ===================================================================================================================== */
+/* TODO:TODO:                             SECTION 10 (START) - REQUEST CALL-BACK                              TODO:TODO: */
+/* ===================================================================================================================== */
+/* ===================================================================================================================== */
+
+:root {
+  /* ========================================================= */
+  /* SHADES OF GREY COLOUR SCHEMES (FOR PAGE BACKGROUNDS)      */
+  /* ========================================================= */
+  --color-section-background-01-grey: #808080;
+  --color-section-background-02-gainsboro: #dcdcdc;
+  --color-section-background-03-lightgrey: #d3d3d3;
+  --color-section-background-04-silver: #c0c0c0;
+  --color-section-background-05-platinum: #e5e4e2;
+  --color-section-background-06-darkgrey: #a9a9a9;
+  --color-section-background-07-lightslategrey: #778899;
+  --color-section-background-08-slategrey: #708090;
+  --color-section-background-09-dimgrey: #696969;
+  --color-section-background-10-isabelline: #f4f0ec;
+  --color-section-background-11-timberwolf: #dbd7d2;
+  --color-section-background-12-lavendergrey: #c4c3d0;
+  --color-section-background-13-pastelgrey: #cfcfc4;
+  --color-section-background-14-palesilver: #c9c0bb;
+  --color-section-background-15-ashgrey: #b2beb5;
+  --color-section-background-16-cadetgrey: #91a3b0;
+  --color-section-background-17-gunmetalgrey: #818589;
+  --color-section-background-18-gunmetalgrey: #818589;
+  --color-section-background-19-smoke: #848884;
+  --color-section-background-20-steelgrey: #71797e;
+
+  /* ========================================================= */
+  /* SHADES OF WHITE COLOUR SCHEMES (FOR PAGE BACKGROUNDS)     */
+  /* ========================================================= */
+
+  --color-section-background-21-white: #ffffff;
+  --color-section-background-22-vanilla: #f3e5ab;
+  --color-section-background-23-seashell: #fff5ee;
+  --color-section-background-24-pearl: #e2dfd2;
+  --color-section-background-25-peach: #ffe5b4;
+  --color-section-background-26-parhment: #fcf5e5;
+  --color-section-background-27-offwhite: #faf9f6;
+  --color-section-background-28-navajowhite: #ffdead;
+  --color-section-background-29-linen: #e9dcc9;
+  --color-section-background-30-ivory: #fffff0;
+  --color-section-background-31-eggshell: #f0ead6;
+  --color-section-background-32-cream: #fffdd0;
+  --color-section-background-33-cornsilk: #fff8dc;
+  --color-section-background-34-bonewhite: #f9f6ee;
+  --color-section-background-35-beige: #f5f5dc;
+  --color-section-background-36-alabaster: #edeade;
+
+  /* ========================================================= */
+  /* SECTION COLOUR SCHEMES                                    */
+  /* ========================================================= */
+  --color-section-request-call-back-background: #ffffff;
+  --color-section-request-call-back-border-bottom: #e5e4e2;
+  --color-section-request-call-back-main-header-text: #065bb3;
+  --color-section-request-call-back-sub-header-text: #0b1128;
+  --color-section-request-call-back-internal-header-text: #0b1128;
+  --color-section-request-call-back-internal-description-text: #000000;
+  --color-section-request-call-back-buttons-background: #0b1128;
+  --color-section-request-call-back-buttons-text: #ffffff;
+}
+
+/* ===================================================================================================================== */
+/* ===================================================================================================================== */
+/* FIXME:FIXME:  SECTION 10 - REQUEST CALL-BACK (HEADER)                                                    FIXME:FIXME: */
+/* ===================================================================================================================== */
+/* ===================================================================================================================== */
+
+/* ========================================================================================= */
+/* FIXME:  REQUEST CALL-BACK - CONTAINER (HOLDING ALL ELEMENTS)                       FIXME: */
+/* ========================================================================================= */
+
+.request__call__back__container {
+  position: relative;
+  top: 10rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  margin: 0rem 0rem 0rem 0rem;
+  background-color: var(--color-section-request-call-back-background);
+  border-bottom: 1px solid var(--color-section-request-call-back-border-bottom);
+  /* border: 2px solid red; */
+}
+
+/* =============================================================== */
+/* TODO:  RESPONSIVE DESIGN - MEDIA QUERY - FOR OTHER SCREEN SIZES */
+/* =============================================================== */
+
+/* ============================= */
+/* FIXME:  BREAKPOINT:  830 px   */
+/* ============================= */
+
+@media screen and (max-width: 830px) {
+  .request__call__back__container {
+    position: relative;
+    top: 11rem;
+  }
+}
+
+/* ============================= */
+/* FIXME:  BREAKPOINT:  650 px   */
+/* ============================= */
+
+@media screen and (max-width: 650px) {
+  .request__call__back__container {
+    position: relative;
+    top: 19.5rem;
+  }
+}
+
+/* ============================= */
+/* FIXME:  BREAKPOINT:  600 px   */
+/* ============================= */
+
+@media screen and (max-width: 600px) {
+  .request__call__back__container {
+    position: relative;
+    top: 19.5rem;
+  }
+}
+
+/* ============================= */
+/* FIXME:  BREAKPOINT:  450 px   */
+/* ============================= */
+
+@media screen and (max-width: 450px) {
+  .request__call__back__container {
+    position: relative;
+    top: 19.5rem;
+  }
+}
+
+/* ===================================================================== */
+/* FIXME:  REQUEST CALL-BACK - MAIN TITLE                         FIXME: */
+/* ===================================================================== */
+
+.request__call__back__title h5 {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  text-transform: uppercase;
+  width: 100%;
+  padding: 1.5rem 1rem 1.5rem 1rem;
+  color: var(--color-section-request-call-back-main-header-text);
+  background-color: var(--color-section-request-call-back-background);
+  text-align: center;
+  /* border: 2px solid purple; */
+}
+
+/* ===================================================================== */
+/* FIXME:  REQUEST CALL-BACK - SUB-TITLE                          FIXME: */
+/* ===================================================================== */
+
+.request__call__back__sub__title p {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  font-size: 1.6rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  width: 100%;
+  margin: -4rem 0rem 0rem 0rem;
+  padding: 0rem 1rem 0rem 1rem;
+  color: var(--color-section-request-call-back-sub-header-text);
+  background-color: var(--color-section-request-call-back-background);
+  text-align: center;
+  /* border: 2px solid purple; */
+}
+
+/* ==================================================================================================== */
+/* FIXME:  REQUEST CALL-BACK - BUTTONS FOR LINKS OR DOWNLOADABLE BROCHURES                       FIXME: */
+/* ==================================================================================================== */
+
+/* =============================== */
+/* FIXME:  VIEW - MOBILE FIRST     */
+/* =============================== */
+
+.request__call__back__buttons__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: -2rem 0rem 0rem 0rem;
+  /* border: 1px solid green; */
+}
+
+.request__call__back__button {
+  text-decoration: none;
+  text-transform: uppercase;
+  width: 18rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  letter-spacing: 0.2rem;
+  margin: 1rem 1rem 2.5rem 1rem;
+  padding: 1rem 0.5rem 1rem 0.5rem;
+  border: none;
+  outline: none;
+  background: var(--color-section-request-call-back-buttons-background);
+  border-radius: 0.5rem;
+  box-shadow: var(--color-box-shadow-01);
+  transition: transform 0.5s ease-in-out;
+  cursor: pointer;
+  text-align: center;
+}
+
+.request__call__back__button a {
+  text-decoration: none;
+  color: var(--color-section-request-call-back-buttons-text);
+  cursor: pointer;
+}
+
+.request__call__back__button:hover {
+  transform: scale(1.05);
+}
+
+/* =============================================================== */
+/* TODO:  RESPONSIVE DESIGN - MEDIA QUERY - FOR OTHER SCREEN SIZED */
+/* =============================================================== */
+
+/* ============================= */
+/* FIXME:  BREAKPOINT:  670 px   */
+/* ============================= */
+
+@media screen and (min-width: 670px) {
+  .request__call__back__buttons__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    /* row-gap: 1rem; */
+  }
+}
+
+/* ===================================================================================================================== */
+/* ===================================================================================================================== */
+/* FIXME:FIXME:  SECTION 10 - REQUEST CALL-BACK (CONTENT)                                                   FIXME:FIXME: */
+/* ===================================================================================================================== */
+/* ===================================================================================================================== */
+
+/* FIXME:FIXME:FIXME:  ENTER NEW PAGE CONTENT BELOW  FIXME:FIXME:FIXME: */
+
+/* FIXME:FIXME:FIXME:  ENTER NEW PAGE CONTENT ABOVE  FIXME:FIXME:FIXME: */
+
+/* ===================================================================================================================== */
+/* ===================================================================================================================== */
+/* TODO:TODO:                               SECTION 10 (END) - REQUEST CALL-BACK                              TODO:TODO: */
 /* ===================================================================================================================== */
 /* ===================================================================================================================== */
 
