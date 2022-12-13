@@ -2514,7 +2514,7 @@ h6 {
   display: flex;
   justify-content: center;
   justify-items: center;
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   font-weight: 700;
   text-transform: uppercase;
   width: 100%;
@@ -2638,7 +2638,7 @@ h6 {
   margin: 1rem 1rem 1rem 1rem;
   /* padding: 0rem 0rem 27% 0rem; */
   /* padding: 0rem 0rem 56.25% 0rem; */
-  padding: 0rem 0rem 90% 0rem;
+  padding: 0rem 0rem 100% 0rem;
   /* border: 1px solid red; */
 }
 
@@ -3053,7 +3053,7 @@ h6 {
   display: flex;
   justify-content: center;
   justify-items: center;
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   font-weight: 700;
   text-transform: uppercase;
   width: 100%;
@@ -3177,7 +3177,7 @@ h6 {
   margin: 1rem 1rem 1rem -1rem;
   /* padding: 0rem 0rem 27% 0rem; */
   /* padding: 0rem 0rem 56.25% 0rem; */
-  padding: 0rem 0rem 90% 0rem;
+  padding: 0rem 0rem 100% 0rem;
   /* border: 1px solid red; */
 }
 
@@ -3594,7 +3594,7 @@ h6 {
   display: flex;
   justify-content: center;
   justify-items: center;
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   font-weight: 700;
   text-transform: uppercase;
   width: 100%;
@@ -3718,7 +3718,7 @@ h6 {
   margin: 1rem 1rem 1rem 1rem;
   /* padding: 0rem 0rem 27% 0rem; */
   /* padding: 0rem 0rem 56.25% 0rem; */
-  padding: 0rem 0rem 90% 0rem;
+  padding: 0rem 0rem 100% 0rem;
   /* border: 1px solid red; */
 }
 
@@ -4134,7 +4134,7 @@ h6 {
   display: flex;
   justify-content: center;
   justify-items: center;
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   font-weight: 700;
   text-transform: uppercase;
   width: 100%;
@@ -4217,6 +4217,290 @@ h6 {
 /* ===================================================================================================================== */
 
 /* FIXME:FIXME:FIXME:  ENTER NEW PAGE CONTENT BELOW  FIXME:FIXME:FIXME: */
+
+/* ======================================================================================= */
+/* TODO:  DEBT REVIEW PROCESS (BRIEF OVERVIEW) (CONTENT) - CONTAINER HOLDING ALL ELEMENTS  */
+/* ======================================================================================= */
+
+.brief__overview__content__container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 2rem;
+  margin: 0rem 0.5rem 0rem 0.5rem;
+  padding: 1rem 0.5rem 1rem 0.5rem;
+  /* border: 1px solid yellow; */
+  width: 100%;
+}
+
+/* =============================================================== */
+/* TODO:  RESPONSIVE DESIGN - MEDIA QUERY - FOR OTHER SCREEN SIZED */
+/* =============================================================== */
+
+/* ============================= */
+/* FIXME:  BREAKPOINT:  670 px   */
+/* ============================= */
+
+@media screen and (max-width: 800px) {
+  .brief__overview__content__container {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+/* ======================================================================================= */
+/* TODO:  DEBT REVIEW PROCESS (BRIEF OVERVIEW) (CONTENT) - CONTAINER HOLDING ALL IMAGES    */
+/* ======================================================================================= */
+
+.brief__overview__content__image {
+  position: relative;
+  height: 0;
+  width: 100%;
+  margin: 1rem 1rem 1rem -1rem;
+  /* padding: 0rem 0rem 27% 0rem; */
+  /* padding: 0rem 0rem 56.25% 0rem; */
+  padding: 0rem 0rem 100% 0rem;
+  /* border: 1px solid red; */
+}
+
+.brief__overview__content__image img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 0rem 0rem 0rem 0rem;
+}
+
+/* =============================================================== */
+/* TODO:  RESPONSIVE DESIGN - MEDIA QUERY - FOR OTHER SCREEN SIZED */
+/* =============================================================== */
+
+/* ============================= */
+/* FIXME:  BREAKPOINT:  800 px   */
+/* ============================= */
+
+@media screen and (max-width: 800px) {
+  .brief__overview__content__image {
+    margin: 1rem 1rem 1rem 1rem;
+    padding: 0rem 0rem 70% 0rem;
+    width: 97.5%;
+  }
+}
+
+/* ============================= */
+/* FIXME:  BREAKPOINT:  650 px   */
+/* ============================= */
+
+@media screen and (max-width: 650px) {
+  .brief__overview__content__image {
+    width: 96.75%;
+  }
+}
+
+/* ============================= */
+/* FIXME:  BREAKPOINT:  600 px   */
+/* ============================= */
+
+@media screen and (max-width: 600px) {
+  .brief__overview__content__image {
+    width: 96.5%;
+  }
+}
+
+/* ============================= */
+/* FIXME:  BREAKPOINT:  500 px   */
+/* ============================= */
+
+@media screen and (max-width: 500px) {
+  .brief__overview__content__image {
+    width: 96%;
+  }
+}
+
+/* ============================= */
+/* FIXME:  BREAKPOINT:  450 px   */
+/* ============================= */
+
+@media screen and (max-width: 450px) {
+  .brief__overview__content__image {
+    width: 95.5%;
+  }
+}
+
+/* ============================= */
+/* FIXME:  BREAKPOINT:  400 px   */
+/* ============================= */
+
+@media screen and (max-width: 400px) {
+  .brief__overview__content__image {
+    width: 95%;
+  }
+}
+
+/* ============================= */
+/* FIXME:  BREAKPOINT:  350 px   */
+/* ============================= */
+
+@media screen and (max-width: 350px) {
+  .brief__overview__content__image {
+    width: 94%;
+  }
+}
+
+/* ============================= */
+/* FIXME:  BREAKPOINT:  280 px   */
+/* ============================= */
+
+@media screen and (max-width: 280px) {
+  .brief__overview__content__image {
+    width: 92%;
+  }
+}
+
+/* ======================================================================================= */
+/* TODO:  DEBT REVIEW PROCESS (BRIEF OVERVIEW) (CONTENT) - CONTAINER HOLDING ALL TEXT      */
+/* ======================================================================================= */
+
+.brief__overview__content__text__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 1rem 1rem 1rem 1rem;
+  padding: 0rem 0rem 0rem 0rem;
+  /* border: 1px solid green; */
+}
+
+/* ============================================================================================ */
+/* TODO:  DEBT REVIEW PROCESS (BRIEF OVERVIEW) (CONTENT) - CONTAINER HOLDING ALL TEXT - HEADER  */
+/* ============================================================================================ */
+
+.brief__overview__content__text__header {
+  margin: 1rem 1rem 1rem 1rem;
+  padding: 0rem 1rem 0rem 1rem;
+  width: 95%;
+  /* border: 1px solid purple; */
+}
+
+.brief__overview__content__text__header p {
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1.5;
+  width: 100%;
+  color: var(--color-section-brief-overview-internal-header-text);
+  text-transform: uppercase;
+  /* border: 1px solid purple; */
+}
+
+/* ================================================================================================= */
+/* TODO:  DEBT REVIEW PROCESS (BRIEF OVERVIEW) (CONTENT) - CONTAINER HOLDING ALL TEXT - DESCRIPTION  */
+/* ================================================================================================= */
+
+.brief__overview__content__text__description {
+  margin: 1rem 1rem 1rem 1rem;
+  padding: 0rem 1rem 0rem 1rem;
+  width: 95%;
+  /* border: 1px solid orange; */
+}
+
+.brief__overview__content__text__description p {
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 1.5;
+  width: 100%;
+  color: var(--color-section-brief-overview-internal-description-text);
+  text-align: justify;
+  /* border: 1px solid orange; */
+}
+
+/* =============================================================== */
+/* TODO:  RESPONSIVE DESIGN - MEDIA QUERY - FOR OTHER SCREEN SIZED */
+/* =============================================================== */
+
+/* ============================= */
+/* FIXME:  BREAKPOINT:  990 px   */
+/* ============================= */
+
+@media screen and (max-width: 990px) {
+  .brief__overview__content__text__header p {
+    font-size: 1.4rem;
+  }
+
+  .brief__overview__content__text__description p {
+    font-size: 1.4rem;
+  }
+}
+
+/* ============================= */
+/* FIXME:  BREAKPOINT:  940 px   */
+/* ============================= */
+
+@media screen and (max-width: 940px) {
+  .brief__overview__content__text__header p {
+    font-size: 1.35rem;
+  }
+
+  .brief__overview__content__text__description p {
+    font-size: 1.35rem;
+  }
+}
+
+/* ============================= */
+/* FIXME:  BREAKPOINT:  925 px   */
+/* ============================= */
+
+@media screen and (max-width: 925px) {
+  .brief__overview__content__text__header p {
+    font-size: 1.3rem;
+  }
+
+  .brief__overview__content__text__description p {
+    font-size: 1.3rem;
+  }
+}
+
+/* ============================= */
+/* FIXME:  BREAKPOINT:  860 px   */
+/* ============================= */
+
+@media screen and (max-width: 860px) {
+  .brief__overview__content__text__header p {
+    font-size: 1.2rem;
+  }
+
+  .brief__overview__content__text__description p {
+    font-size: 1.2rem;
+  }
+}
+
+/* ============================= */
+/* FIXME:  BREAKPOINT:  830 px   */
+/* ============================= */
+
+@media screen and (max-width: 830px) {
+  .brief__overview__content__text__header p {
+    font-size: 1.3rem;
+  }
+
+  .brief__overview__content__text__description p {
+    font-size: 1.3rem;
+  }
+}
+
+/* ============================= */
+/* FIXME:  BREAKPOINT:  650 px   */
+/* ============================= */
+
+@media screen and (max-width: 650px) {
+  .brief__overview__content__text__header p {
+    font-size: 1.2rem;
+  }
+
+  .brief__overview__content__text__description p {
+    font-size: 1.2rem;
+  }
+}
 
 /* FIXME:FIXME:FIXME:  ENTER NEW PAGE CONTENT ABOVE  FIXME:FIXME:FIXME: */
 
@@ -4391,7 +4675,7 @@ h6 {
   display: flex;
   justify-content: center;
   justify-items: center;
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   font-weight: 700;
   text-transform: uppercase;
   width: 100%;
@@ -4474,6 +4758,289 @@ h6 {
 /* ===================================================================================================================== */
 
 /* FIXME:FIXME:FIXME:  ENTER NEW PAGE CONTENT BELOW  FIXME:FIXME:FIXME: */
+
+/* ==================================================================================== */
+/* TODO:  DEBT REVIEW PROCESS (THE PROCESS) (CONTENT) - CONTAINER HOLDING ALL ELEMENTS  */
+/* ==================================================================================== */
+
+.the__process__content__container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 2rem;
+  margin: 0rem 0.5rem 0rem 0.5rem;
+  padding: 1rem 0.5rem 1rem 0.5rem;
+  /* border: 1px solid yellow; */
+  width: 100%;
+}
+
+/* =============================================================== */
+/* TODO:  RESPONSIVE DESIGN - MEDIA QUERY - FOR OTHER SCREEN SIZED */
+/* =============================================================== */
+
+/* ============================= */
+/* FIXME:  BREAKPOINT:  800 px   */
+/* ============================= */
+
+@media screen and (max-width: 800px) {
+  .the__process__content__container {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+/* ==================================================================================== */
+/* TODO:  DEBT REVIEW PROCESS (THE PROCESS) (CONTENT) - CONTAINER HOLDING ALL IMAGES    */
+/* ==================================================================================== */
+
+.the__process__content__image {
+  position: relative;
+  height: 0;
+  width: 100%;
+  margin: 1rem 1rem 1rem 1rem;
+  /* padding: 0rem 0rem 27% 0rem; */
+  /* padding: 0rem 0rem 56.25% 0rem; */
+  padding: 0rem 0rem 100% 0rem;
+  /* border: 1px solid red; */
+}
+
+.the__process__content__image img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 0rem 0rem 0rem 0rem;
+}
+
+/* =============================================================== */
+/* TODO:  RESPONSIVE DESIGN - MEDIA QUERY - FOR OTHER SCREEN SIZED */
+/* =============================================================== */
+
+/* ============================= */
+/* FIXME:  BREAKPOINT:  800 px   */
+/* ============================= */
+
+@media screen and (max-width: 800px) {
+  .the__process__content__image {
+    padding: 0rem 0rem 70% 0rem;
+    width: 97.5%;
+  }
+}
+
+/* ============================= */
+/* FIXME:  BREAKPOINT:  650 px   */
+/* ============================= */
+
+@media screen and (max-width: 650px) {
+  .the__process__content__image {
+    width: 96.75%;
+  }
+}
+
+/* ============================= */
+/* FIXME:  BREAKPOINT:  600 px   */
+/* ============================= */
+
+@media screen and (max-width: 600px) {
+  .the__process__content__image {
+    width: 96.5%;
+  }
+}
+
+/* ============================= */
+/* FIXME:  BREAKPOINT:  500 px   */
+/* ============================= */
+
+@media screen and (max-width: 500px) {
+  .the__process__content__image {
+    width: 96%;
+  }
+}
+
+/* ============================= */
+/* FIXME:  BREAKPOINT:  450 px   */
+/* ============================= */
+
+@media screen and (max-width: 450px) {
+  .the__process__content__image {
+    width: 95.5%;
+  }
+}
+
+/* ============================= */
+/* FIXME:  BREAKPOINT:  400 px   */
+/* ============================= */
+
+@media screen and (max-width: 400px) {
+  .the__process__content__image {
+    width: 95%;
+  }
+}
+
+/* ============================= */
+/* FIXME:  BREAKPOINT:  350 px   */
+/* ============================= */
+
+@media screen and (max-width: 350px) {
+  .the__process__content__image {
+    width: 94%;
+  }
+}
+
+/* ============================= */
+/* FIXME:  BREAKPOINT:  280 px   */
+/* ============================= */
+
+@media screen and (max-width: 280px) {
+  .the__process__content__image {
+    width: 92%;
+  }
+}
+
+/* ==================================================================================== */
+/* TODO:  DEBT REVIEW PROCESS (THE PROCESS) (CONTENT) - CONTAINER HOLDING ALL TEXT      */
+/* ==================================================================================== */
+
+.the__process__content__text__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 1rem 1rem 1rem 1rem;
+  padding: 0rem 0rem 0rem 0rem;
+  /* border: 1px solid green; */
+}
+
+/* ========================================================================================= */
+/* TODO:  DEBT REVIEW PROCESS (THE PROCESS) (CONTENT) - CONTAINER HOLDING ALL TEXT - HEADER  */
+/* ========================================================================================= */
+
+.the__process__content__text__header {
+  margin: 1rem 1rem 1rem 1rem;
+  padding: 0rem 1rem 0rem 1rem;
+  width: 95%;
+  /* border: 1px solid purple; */
+}
+
+.the__process__content__text__header p {
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1.5;
+  width: 100%;
+  color: var(--color-section-the-process-internal-header-text);
+  text-transform: uppercase;
+  /* border: 1px solid pink; */
+}
+
+/* ============================================================================================== */
+/* TODO:  DEBT REVIEW PROCESS (THE PROCESS) (CONTENT) - CONTAINER HOLDING ALL TEXT - DESCRIPTION  */
+/* ============================================================================================== */
+
+.the__process__content__text__description {
+  margin: 1rem 1rem 1rem 1rem;
+  padding: 0rem 1rem 0rem 1rem;
+  width: 95%;
+  /* border: 1px solid orange; */
+}
+
+.the__process__content__text__description p {
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 1.5;
+  width: 100%;
+  color: var(--color-section-the-process-internal-description-text);
+  text-align: justify;
+  /* border: 1px solid orange; */
+}
+
+/* =============================================================== */
+/* TODO:  RESPONSIVE DESIGN - MEDIA QUERY - FOR OTHER SCREEN SIZED */
+/* =============================================================== */
+
+/* ============================= */
+/* FIXME:  BREAKPOINT:  990 px   */
+/* ============================= */
+
+@media screen and (max-width: 990px) {
+  .the__process__content__text__header p {
+    font-size: 1.4rem;
+  }
+
+  .the__process__content__text__description p {
+    font-size: 1.4rem;
+  }
+}
+
+/* ============================= */
+/* FIXME:  BREAKPOINT:  940 px   */
+/* ============================= */
+
+@media screen and (max-width: 940px) {
+  .the__process__content__text__header p {
+    font-size: 1.35rem;
+  }
+
+  .the__process__content__text__description p {
+    font-size: 1.35rem;
+  }
+}
+
+/* ============================= */
+/* FIXME:  BREAKPOINT:  925 px   */
+/* ============================= */
+
+@media screen and (max-width: 925px) {
+  .the__process__content__text__header p {
+    font-size: 1.3rem;
+  }
+
+  .the__process__content__text__description p {
+    font-size: 1.3rem;
+  }
+}
+
+/* ============================= */
+/* FIXME:  BREAKPOINT:  860 px   */
+/* ============================= */
+
+@media screen and (max-width: 860px) {
+  .the__process__content__text__header p {
+    font-size: 1.2rem;
+  }
+
+  .the__process__content__text__description p {
+    font-size: 1.2rem;
+  }
+}
+
+/* ============================= */
+/* FIXME:  BREAKPOINT:  830 px   */
+/* ============================= */
+
+@media screen and (max-width: 830px) {
+  .the__process__content__text__header p {
+    font-size: 1.3rem;
+  }
+
+  .the__process__content__text__description p {
+    font-size: 1.3rem;
+  }
+}
+
+/* ============================= */
+/* FIXME:  BREAKPOINT:  650 px   */
+/* ============================= */
+
+@media screen and (max-width: 650px) {
+  .the__process__content__text__header p {
+    font-size: 1.2rem;
+  }
+
+  .the__process__content__text__description p {
+    font-size: 1.2rem;
+  }
+}
 
 /* FIXME:FIXME:FIXME:  ENTER NEW PAGE CONTENT ABOVE  FIXME:FIXME:FIXME: */
 
@@ -4648,7 +5215,7 @@ h6 {
   display: flex;
   justify-content: center;
   justify-items: center;
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   font-weight: 700;
   text-transform: uppercase;
   width: 100%;
@@ -4732,6 +5299,290 @@ h6 {
 
 /* FIXME:FIXME:FIXME:  ENTER NEW PAGE CONTENT BELOW  FIXME:FIXME:FIXME: */
 
+/* ======================================================================================= */
+/* TODO:  DEBT REVIEW PROCESS (CONSEQUENCES) (CONTENT) - CONTAINER HOLDING ALL ELEMENTS    */
+/* ======================================================================================= */
+
+.consequences__content__container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 2rem;
+  margin: 0rem 0.5rem 0rem 0.5rem;
+  padding: 1rem 0.5rem 1rem 0.5rem;
+  /* border: 1px solid yellow; */
+  width: 100%;
+}
+
+/* =============================================================== */
+/* TODO:  RESPONSIVE DESIGN - MEDIA QUERY - FOR OTHER SCREEN SIZED */
+/* =============================================================== */
+
+/* ============================= */
+/* FIXME:  BREAKPOINT:  670 px   */
+/* ============================= */
+
+@media screen and (max-width: 800px) {
+  .consequences__content__container {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+/* ======================================================================================= */
+/* TODO:  DEBT REVIEW PROCESS (CONSEQUENCES) (CONTENT) - CONTAINER HOLDING ALL IMAGES      */
+/* ======================================================================================= */
+
+.consequences__content__image {
+  position: relative;
+  height: 0;
+  width: 100%;
+  margin: 1rem 1rem 1rem -1rem;
+  /* padding: 0rem 0rem 27% 0rem; */
+  /* padding: 0rem 0rem 56.25% 0rem; */
+  padding: 0rem 0rem 100% 0rem;
+  /* border: 1px solid red; */
+}
+
+.consequences__content__image img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 0rem 0rem 0rem 0rem;
+}
+
+/* =============================================================== */
+/* TODO:  RESPONSIVE DESIGN - MEDIA QUERY - FOR OTHER SCREEN SIZED */
+/* =============================================================== */
+
+/* ============================= */
+/* FIXME:  BREAKPOINT:  800 px   */
+/* ============================= */
+
+@media screen and (max-width: 800px) {
+  .consequences__content__image {
+    margin: 1rem 1rem 1rem 1rem;
+    padding: 0rem 0rem 70% 0rem;
+    width: 97.5%;
+  }
+}
+
+/* ============================= */
+/* FIXME:  BREAKPOINT:  650 px   */
+/* ============================= */
+
+@media screen and (max-width: 650px) {
+  .consequences__content__image {
+    width: 96.75%;
+  }
+}
+
+/* ============================= */
+/* FIXME:  BREAKPOINT:  600 px   */
+/* ============================= */
+
+@media screen and (max-width: 600px) {
+  .consequences__content__image {
+    width: 96.5%;
+  }
+}
+
+/* ============================= */
+/* FIXME:  BREAKPOINT:  500 px   */
+/* ============================= */
+
+@media screen and (max-width: 500px) {
+  .consequences__content__image {
+    width: 96%;
+  }
+}
+
+/* ============================= */
+/* FIXME:  BREAKPOINT:  450 px   */
+/* ============================= */
+
+@media screen and (max-width: 450px) {
+  .consequences__content__image {
+    width: 95.5%;
+  }
+}
+
+/* ============================= */
+/* FIXME:  BREAKPOINT:  400 px   */
+/* ============================= */
+
+@media screen and (max-width: 400px) {
+  .consequences__content__image {
+    width: 95%;
+  }
+}
+
+/* ============================= */
+/* FIXME:  BREAKPOINT:  350 px   */
+/* ============================= */
+
+@media screen and (max-width: 350px) {
+  .consequences__content__image {
+    width: 94%;
+  }
+}
+
+/* ============================= */
+/* FIXME:  BREAKPOINT:  280 px   */
+/* ============================= */
+
+@media screen and (max-width: 280px) {
+  .consequences__content__image {
+    width: 92%;
+  }
+}
+
+/* ======================================================================================= */
+/* TODO:  DEBT REVIEW PROCESS (CONSEQUENCES) (CONTENT) - CONTAINER HOLDING ALL TEXT        */
+/* ======================================================================================= */
+
+.consequences__content__text__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 1rem 1rem 1rem 1rem;
+  padding: 0rem 0rem 0rem 0rem;
+  /* border: 1px solid green; */
+}
+
+/* ============================================================================================ */
+/* TODO:  DEBT REVIEW PROCESS (CONSEQUENCES) (CONTENT) - CONTAINER HOLDING ALL TEXT - HEADER    */
+/* ============================================================================================ */
+
+.consequences__content__text__header {
+  margin: 1rem 1rem 1rem 1rem;
+  padding: 0rem 1rem 0rem 1rem;
+  width: 95%;
+  /* border: 1px solid purple; */
+}
+
+.consequences__content__text__header p {
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1.5;
+  width: 100%;
+  color: var(--color-section-consequences-internal-header-text);
+  text-transform: uppercase;
+  /* border: 1px solid purple; */
+}
+
+/* ================================================================================================= */
+/* TODO:  DEBT REVIEW PROCESS (CONSEQUENCES) (CONTENT) - CONTAINER HOLDING ALL TEXT - DESCRIPTION    */
+/* ================================================================================================= */
+
+.consequences__content__text__description {
+  margin: 1rem 1rem 1rem 1rem;
+  padding: 0rem 1rem 0rem 1rem;
+  width: 95%;
+  /* border: 1px solid orange; */
+}
+
+.consequences__content__text__description p {
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 1.5;
+  width: 100%;
+  color: var(--color-section-consequences-internal-description-text);
+  text-align: justify;
+  /* border: 1px solid orange; */
+}
+
+/* =============================================================== */
+/* TODO:  RESPONSIVE DESIGN - MEDIA QUERY - FOR OTHER SCREEN SIZED */
+/* =============================================================== */
+
+/* ============================= */
+/* FIXME:  BREAKPOINT:  990 px   */
+/* ============================= */
+
+@media screen and (max-width: 990px) {
+  .consequences__content__text__header p {
+    font-size: 1.4rem;
+  }
+
+  .consequences__content__text__description p {
+    font-size: 1.4rem;
+  }
+}
+
+/* ============================= */
+/* FIXME:  BREAKPOINT:  940 px   */
+/* ============================= */
+
+@media screen and (max-width: 940px) {
+  .consequences__content__text__header p {
+    font-size: 1.35rem;
+  }
+
+  .consequences__content__text__description p {
+    font-size: 1.35rem;
+  }
+}
+
+/* ============================= */
+/* FIXME:  BREAKPOINT:  925 px   */
+/* ============================= */
+
+@media screen and (max-width: 925px) {
+  .consequences__content__text__header p {
+    font-size: 1.3rem;
+  }
+
+  .consequences__content__text__description p {
+    font-size: 1.3rem;
+  }
+}
+
+/* ============================= */
+/* FIXME:  BREAKPOINT:  860 px   */
+/* ============================= */
+
+@media screen and (max-width: 860px) {
+  .consequences__content__text__header p {
+    font-size: 1.2rem;
+  }
+
+  .consequences__content__text__description p {
+    font-size: 1.2rem;
+  }
+}
+
+/* ============================= */
+/* FIXME:  BREAKPOINT:  830 px   */
+/* ============================= */
+
+@media screen and (max-width: 830px) {
+  .consequences__content__text__header p {
+    font-size: 1.3rem;
+  }
+
+  .consequences__content__text__description p {
+    font-size: 1.3rem;
+  }
+}
+
+/* ============================= */
+/* FIXME:  BREAKPOINT:  650 px   */
+/* ============================= */
+
+@media screen and (max-width: 650px) {
+  .consequences__content__text__header p {
+    font-size: 1.2rem;
+  }
+
+  .consequences__content__text__description p {
+    font-size: 1.2rem;
+  }
+}
+
 /* FIXME:FIXME:FIXME:  ENTER NEW PAGE CONTENT ABOVE  FIXME:FIXME:FIXME: */
 
 /* ===================================================================================================================== */
@@ -4812,9 +5663,9 @@ h6 {
 /* ===================================================================================================================== */
 /* ===================================================================================================================== */
 
-/* ========================================================================================= */
+/* ============================================================================================= */
 /* FIXME:  DEBT REVIEW PROCESS (RESPONSIBILITIES) - CONTAINER (HOLDING ALL ELEMENTS)      FIXME: */
-/* ========================================================================================= */
+/* ============================================================================================= */
 
 .responsibilities__container {
   position: relative;
@@ -4905,7 +5756,7 @@ h6 {
   display: flex;
   justify-content: center;
   justify-items: center;
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   font-weight: 700;
   text-transform: uppercase;
   width: 100%;
@@ -4988,6 +5839,289 @@ h6 {
 /* ===================================================================================================================== */
 
 /* FIXME:FIXME:FIXME:  ENTER NEW PAGE CONTENT BELOW  FIXME:FIXME:FIXME: */
+
+/* ======================================================================================== */
+/* TODO:  DEBT REVIEW PROCESS (RESPONSIBILITIES (CONTENT) - CONTAINER HOLDING ALL ELEMENTS  */
+/* ======================================================================================== */
+
+.responsibilities__content__container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 2rem;
+  margin: 0rem 0.5rem 0rem 0.5rem;
+  padding: 1rem 0.5rem 1rem 0.5rem;
+  /* border: 1px solid yellow; */
+  width: 100%;
+}
+
+/* =============================================================== */
+/* TODO:  RESPONSIVE DESIGN - MEDIA QUERY - FOR OTHER SCREEN SIZED */
+/* =============================================================== */
+
+/* ============================= */
+/* FIXME:  BREAKPOINT:  800 px   */
+/* ============================= */
+
+@media screen and (max-width: 800px) {
+  .responsibilities__content__container {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+/* ========================================================================================= */
+/* TODO:  DEBT REVIEW PROCESS (RESPONSIBILITIES) (CONTENT) - CONTAINER HOLDING ALL IMAGES    */
+/* ========================================================================================= */
+
+.responsibilities__content__image {
+  position: relative;
+  height: 0;
+  width: 100%;
+  margin: 1rem 1rem 1rem 1rem;
+  /* padding: 0rem 0rem 27% 0rem; */
+  /* padding: 0rem 0rem 56.25% 0rem; */
+  padding: 0rem 0rem 100% 0rem;
+  /* border: 1px solid red; */
+}
+
+.responsibilities__content__image img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 0rem 0rem 0rem 0rem;
+}
+
+/* =============================================================== */
+/* TODO:  RESPONSIVE DESIGN - MEDIA QUERY - FOR OTHER SCREEN SIZED */
+/* =============================================================== */
+
+/* ============================= */
+/* FIXME:  BREAKPOINT:  800 px   */
+/* ============================= */
+
+@media screen and (max-width: 800px) {
+  .responsibilities__content__image {
+    padding: 0rem 0rem 70% 0rem;
+    width: 97.5%;
+  }
+}
+
+/* ============================= */
+/* FIXME:  BREAKPOINT:  650 px   */
+/* ============================= */
+
+@media screen and (max-width: 650px) {
+  .responsibilities__content__image {
+    width: 96.75%;
+  }
+}
+
+/* ============================= */
+/* FIXME:  BREAKPOINT:  600 px   */
+/* ============================= */
+
+@media screen and (max-width: 600px) {
+  .responsibilities__content__image {
+    width: 96.5%;
+  }
+}
+
+/* ============================= */
+/* FIXME:  BREAKPOINT:  500 px   */
+/* ============================= */
+
+@media screen and (max-width: 500px) {
+  .responsibilities__content__image {
+    width: 96%;
+  }
+}
+
+/* ============================= */
+/* FIXME:  BREAKPOINT:  450 px   */
+/* ============================= */
+
+@media screen and (max-width: 450px) {
+  .responsibilities__content__image {
+    width: 95.5%;
+  }
+}
+
+/* ============================= */
+/* FIXME:  BREAKPOINT:  400 px   */
+/* ============================= */
+
+@media screen and (max-width: 400px) {
+  .responsibilities__content__image {
+    width: 95%;
+  }
+}
+
+/* ============================= */
+/* FIXME:  BREAKPOINT:  350 px   */
+/* ============================= */
+
+@media screen and (max-width: 350px) {
+  .responsibilities__content__image {
+    width: 94%;
+  }
+}
+
+/* ============================= */
+/* FIXME:  BREAKPOINT:  280 px   */
+/* ============================= */
+
+@media screen and (max-width: 280px) {
+  .responsibilities__content__image {
+    width: 92%;
+  }
+}
+
+/* ========================================================================================= */
+/* TODO:  DEBT REVIEW PROCESS (RESPONSIBILITIES) (CONTENT) - CONTAINER HOLDING ALL TEXT      */
+/* ========================================================================================= */
+
+.responsibilities__content__text__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 1rem 1rem 1rem 1rem;
+  padding: 0rem 0rem 0rem 0rem;
+  /* border: 1px solid green; */
+}
+
+/* ============================================================================================== */
+/* TODO:  DEBT REVIEW PROCESS (RESPONSIBILITIES) (CONTENT) - CONTAINER HOLDING ALL TEXT - HEADER  */
+/* ============================================================================================== */
+
+.responsibilities__content__text__header {
+  margin: 1rem 1rem 1rem 1rem;
+  padding: 0rem 1rem 0rem 1rem;
+  width: 95%;
+  /* border: 1px solid purple; */
+}
+
+.responsibilities__content__text__header p {
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1.5;
+  width: 100%;
+  color: var(--color-section-responsibilities-internal-header-text);
+  text-transform: uppercase;
+  /* border: 1px solid pink; */
+}
+
+/* =================================================================================================== */
+/* TODO:  DEBT REVIEW PROCESS (RESPONSIBILITIES) (CONTENT) - CONTAINER HOLDING ALL TEXT - DESCRIPTION  */
+/* =================================================================================================== */
+
+.responsibilities__content__text__description {
+  margin: 1rem 1rem 1rem 1rem;
+  padding: 0rem 1rem 0rem 1rem;
+  width: 95%;
+  /* border: 1px solid orange; */
+}
+
+.responsibilities__content__text__description p {
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 1.5;
+  width: 100%;
+  color: var(--color-section-responsibilities-internal-description-text);
+  text-align: justify;
+  /* border: 1px solid orange; */
+}
+
+/* =============================================================== */
+/* TODO:  RESPONSIVE DESIGN - MEDIA QUERY - FOR OTHER SCREEN SIZED */
+/* =============================================================== */
+
+/* ============================= */
+/* FIXME:  BREAKPOINT:  990 px   */
+/* ============================= */
+
+@media screen and (max-width: 990px) {
+  .responsibilities__content__text__header p {
+    font-size: 1.4rem;
+  }
+
+  .responsibilities__content__text__description p {
+    font-size: 1.4rem;
+  }
+}
+
+/* ============================= */
+/* FIXME:  BREAKPOINT:  940 px   */
+/* ============================= */
+
+@media screen and (max-width: 940px) {
+  .responsibilities__content__text__header p {
+    font-size: 1.35rem;
+  }
+
+  .responsibilities__content__text__description p {
+    font-size: 1.35rem;
+  }
+}
+
+/* ============================= */
+/* FIXME:  BREAKPOINT:  925 px   */
+/* ============================= */
+
+@media screen and (max-width: 925px) {
+  .responsibilities__content__text__header p {
+    font-size: 1.3rem;
+  }
+
+  .responsibilities__content__text__description p {
+    font-size: 1.3rem;
+  }
+}
+
+/* ============================= */
+/* FIXME:  BREAKPOINT:  860 px   */
+/* ============================= */
+
+@media screen and (max-width: 860px) {
+  .responsibilities__content__text__header p {
+    font-size: 1.2rem;
+  }
+
+  .responsibilities__content__text__description p {
+    font-size: 1.2rem;
+  }
+}
+
+/* ============================= */
+/* FIXME:  BREAKPOINT:  830 px   */
+/* ============================= */
+
+@media screen and (max-width: 830px) {
+  .responsibilities__content__text__header p {
+    font-size: 1.3rem;
+  }
+
+  .responsibilities__content__text__description p {
+    font-size: 1.3rem;
+  }
+}
+
+/* ============================= */
+/* FIXME:  BREAKPOINT:  650 px   */
+/* ============================= */
+
+@media screen and (max-width: 650px) {
+  .responsibilities__content__text__header p {
+    font-size: 1.2rem;
+  }
+
+  .responsibilities__content__text__description p {
+    font-size: 1.2rem;
+  }
+}
 
 /* FIXME:FIXME:FIXME:  ENTER NEW PAGE CONTENT ABOVE  FIXME:FIXME:FIXME: */
 
@@ -5162,7 +6296,7 @@ h6 {
   display: flex;
   justify-content: center;
   justify-items: center;
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   font-weight: 700;
   text-transform: uppercase;
   width: 100%;
@@ -5245,6 +6379,290 @@ h6 {
 /* ===================================================================================================================== */
 
 /* FIXME:FIXME:FIXME:  ENTER NEW PAGE CONTENT BELOW  FIXME:FIXME:FIXME: */
+
+/* ======================================================================================= */
+/* TODO:  DEBT REVIEW PROCESS (FEE STRUCTURE) (CONTENT) - CONTAINER HOLDING ALL ELEMENTS   */
+/* ======================================================================================= */
+
+.fee__structure__content__container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 2rem;
+  margin: 0rem 0.5rem 0rem 0.5rem;
+  padding: 1rem 0.5rem 1rem 0.5rem;
+  /* border: 1px solid yellow; */
+  width: 100%;
+}
+
+/* =============================================================== */
+/* TODO:  RESPONSIVE DESIGN - MEDIA QUERY - FOR OTHER SCREEN SIZED */
+/* =============================================================== */
+
+/* ============================= */
+/* FIXME:  BREAKPOINT:  670 px   */
+/* ============================= */
+
+@media screen and (max-width: 800px) {
+  .fee__structure__content__container {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+/* ======================================================================================= */
+/* TODO:  DEBT REVIEW PROCESS (FEE STRUCTURE) (CONTENT) - CONTAINER HOLDING ALL IMAGES     */
+/* ======================================================================================= */
+
+.fee__structure__content__image {
+  position: relative;
+  height: 0;
+  width: 100%;
+  margin: 1rem 1rem 1rem -1rem;
+  /* padding: 0rem 0rem 27% 0rem; */
+  /* padding: 0rem 0rem 56.25% 0rem; */
+  padding: 0rem 0rem 100% 0rem;
+  /* border: 1px solid red; */
+}
+
+.fee__structure__content__image img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 0rem 0rem 0rem 0rem;
+}
+
+/* =============================================================== */
+/* TODO:  RESPONSIVE DESIGN - MEDIA QUERY - FOR OTHER SCREEN SIZED */
+/* =============================================================== */
+
+/* ============================= */
+/* FIXME:  BREAKPOINT:  800 px   */
+/* ============================= */
+
+@media screen and (max-width: 800px) {
+  .fee__structure__content__image {
+    margin: 1rem 1rem 1rem 1rem;
+    padding: 0rem 0rem 70% 0rem;
+    width: 97.5%;
+  }
+}
+
+/* ============================= */
+/* FIXME:  BREAKPOINT:  650 px   */
+/* ============================= */
+
+@media screen and (max-width: 650px) {
+  .fee__structure__content__image {
+    width: 96.75%;
+  }
+}
+
+/* ============================= */
+/* FIXME:  BREAKPOINT:  600 px   */
+/* ============================= */
+
+@media screen and (max-width: 600px) {
+  .fee__structure__content__image {
+    width: 96.5%;
+  }
+}
+
+/* ============================= */
+/* FIXME:  BREAKPOINT:  500 px   */
+/* ============================= */
+
+@media screen and (max-width: 500px) {
+  .fee__structure__content__image {
+    width: 96%;
+  }
+}
+
+/* ============================= */
+/* FIXME:  BREAKPOINT:  450 px   */
+/* ============================= */
+
+@media screen and (max-width: 450px) {
+  .fee__structure__content__image {
+    width: 95.5%;
+  }
+}
+
+/* ============================= */
+/* FIXME:  BREAKPOINT:  400 px   */
+/* ============================= */
+
+@media screen and (max-width: 400px) {
+  .fee__structure__content__image {
+    width: 95%;
+  }
+}
+
+/* ============================= */
+/* FIXME:  BREAKPOINT:  350 px   */
+/* ============================= */
+
+@media screen and (max-width: 350px) {
+  .fee__structure__content__image {
+    width: 94%;
+  }
+}
+
+/* ============================= */
+/* FIXME:  BREAKPOINT:  280 px   */
+/* ============================= */
+
+@media screen and (max-width: 280px) {
+  .fee__structure__content__image {
+    width: 92%;
+  }
+}
+
+/* ======================================================================================= */
+/* TODO:  DEBT REVIEW PROCESS (FEE STRUCTURE) (CONTENT) - CONTAINER HOLDING ALL TEXT       */
+/* ======================================================================================= */
+
+.fee__structure__content__text__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 1rem 1rem 1rem 1rem;
+  padding: 0rem 0rem 0rem 0rem;
+  /* border: 1px solid green; */
+}
+
+/* ============================================================================================ */
+/* TODO:  DEBT REVIEW PROCESS (FEE STRUCTURE) (CONTENT) - CONTAINER HOLDING ALL TEXT - HEADER   */
+/* ============================================================================================ */
+
+.fee__structure__content__text__header {
+  margin: 1rem 1rem 1rem 1rem;
+  padding: 0rem 1rem 0rem 1rem;
+  width: 95%;
+  /* border: 1px solid purple; */
+}
+
+.fee__structure__content__text__header p {
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1.5;
+  width: 100%;
+  color: var(--color-section-fee-structure-internal-header-text);
+  text-transform: uppercase;
+  /* border: 1px solid purple; */
+}
+
+/* ================================================================================================= */
+/* TODO:  DEBT REVIEW PROCESS (FEE STRUCTURE) (CONTENT) - CONTAINER HOLDING ALL TEXT - DESCRIPTION   */
+/* ================================================================================================= */
+
+.fee__structure__content__text__description {
+  margin: 1rem 1rem 1rem 1rem;
+  padding: 0rem 1rem 0rem 1rem;
+  width: 95%;
+  /* border: 1px solid orange; */
+}
+
+.fee__structure__content__text__description p {
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 1.5;
+  width: 100%;
+  color: var(--color-section-fee-structure-internal-description-text);
+  text-align: justify;
+  /* border: 1px solid orange; */
+}
+
+/* =============================================================== */
+/* TODO:  RESPONSIVE DESIGN - MEDIA QUERY - FOR OTHER SCREEN SIZED */
+/* =============================================================== */
+
+/* ============================= */
+/* FIXME:  BREAKPOINT:  990 px   */
+/* ============================= */
+
+@media screen and (max-width: 990px) {
+  .fee__structure__content__text__header p {
+    font-size: 1.4rem;
+  }
+
+  .fee__structure__content__text__description p {
+    font-size: 1.4rem;
+  }
+}
+
+/* ============================= */
+/* FIXME:  BREAKPOINT:  940 px   */
+/* ============================= */
+
+@media screen and (max-width: 940px) {
+  .fee__structure__content__text__header p {
+    font-size: 1.35rem;
+  }
+
+  .fee__structure__content__text__description p {
+    font-size: 1.35rem;
+  }
+}
+
+/* ============================= */
+/* FIXME:  BREAKPOINT:  925 px   */
+/* ============================= */
+
+@media screen and (max-width: 925px) {
+  .fee__structure__content__text__header p {
+    font-size: 1.3rem;
+  }
+
+  .fee__structure__content__text__description p {
+    font-size: 1.3rem;
+  }
+}
+
+/* ============================= */
+/* FIXME:  BREAKPOINT:  860 px   */
+/* ============================= */
+
+@media screen and (max-width: 860px) {
+  .fee__structure__content__text__header p {
+    font-size: 1.2rem;
+  }
+
+  .fee__structure__content__text__description p {
+    font-size: 1.2rem;
+  }
+}
+
+/* ============================= */
+/* FIXME:  BREAKPOINT:  830 px   */
+/* ============================= */
+
+@media screen and (max-width: 830px) {
+  .fee__structure__content__text__header p {
+    font-size: 1.3rem;
+  }
+
+  .fee__structure__content__text__description p {
+    font-size: 1.3rem;
+  }
+}
+
+/* ============================= */
+/* FIXME:  BREAKPOINT:  650 px   */
+/* ============================= */
+
+@media screen and (max-width: 650px) {
+  .fee__structure__content__text__header p {
+    font-size: 1.2rem;
+  }
+
+  .fee__structure__content__text__description p {
+    font-size: 1.2rem;
+  }
+}
 
 /* FIXME:FIXME:FIXME:  ENTER NEW PAGE CONTENT ABOVE  FIXME:FIXME:FIXME: */
 
