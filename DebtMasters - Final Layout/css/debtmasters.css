@@ -7,6 +7,51 @@
 /* ========================================================== */
 
 :root {
+  /* ========================================================= */
+  /* SHADES OF GREY COLOUR SCHEMES (FOR PAGE BACKGROUNDS)      */
+  /* ========================================================= */
+  --color-section-background-01-grey: #808080;
+  --color-section-background-02-gainsboro: #dcdcdc;
+  --color-section-background-03-lightgrey: #d3d3d3;
+  --color-section-background-04-silver: #c0c0c0;
+  --color-section-background-05-platinum: #e5e4e2;
+  --color-section-background-06-darkgrey: #a9a9a9;
+  --color-section-background-07-lightslategrey: #778899;
+  --color-section-background-08-slategrey: #708090;
+  --color-section-background-09-dimgrey: #696969;
+  --color-section-background-10-isabelline: #f4f0ec;
+  --color-section-background-11-timberwolf: #dbd7d2;
+  --color-section-background-12-lavendergrey: #c4c3d0;
+  --color-section-background-13-pastelgrey: #cfcfc4;
+  --color-section-background-14-palesilver: #c9c0bb;
+  --color-section-background-15-ashgrey: #b2beb5;
+  --color-section-background-16-cadetgrey: #91a3b0;
+  --color-section-background-17-gunmetalgrey: #818589;
+  --color-section-background-18-gunmetalgrey: #818589;
+  --color-section-background-19-smoke: #848884;
+  --color-section-background-20-steelgrey: #71797e;
+
+  /* ========================================================= */
+  /* SHADES OF WHITE COLOUR SCHEMES (FOR PAGE BACKGROUNDS)     */
+  /* ========================================================= */
+
+  --color-section-background-21-white: #ffffff;
+  --color-section-background-22-vanilla: #f3e5ab;
+  --color-section-background-23-seashell: #fff5ee;
+  --color-section-background-24-pearl: #e2dfd2;
+  --color-section-background-25-peach: #ffe5b4;
+  --color-section-background-26-parhment: #fcf5e5;
+  --color-section-background-27-offwhite: #faf9f6;
+  --color-section-background-28-navajowhite: #ffdead;
+  --color-section-background-29-linen: #e9dcc9;
+  --color-section-background-30-ivory: #fffff0;
+  --color-section-background-31-eggshell: #f0ead6;
+  --color-section-background-32-cream: #fffdd0;
+  --color-section-background-33-cornsilk: #fff8dc;
+  --color-section-background-34-bonewhite: #f9f6ee;
+  --color-section-background-35-beige: #f5f5dc;
+  --color-section-background-36-alabaster: #edeade;
+
   /* ================================================ */
   /* FIXME:  GENERAL COLORS - BOX SHADOWS             */
   /* ================================================ */
@@ -2358,51 +2403,6 @@ h6 {
 
 :root {
   /* ========================================================= */
-  /* SHADES OF GREY COLOUR SCHEMES (FOR PAGE BACKGROUNDS)      */
-  /* ========================================================= */
-  --color-section-background-01-grey: #808080;
-  --color-section-background-02-gainsboro: #dcdcdc;
-  --color-section-background-03-lightgrey: #d3d3d3;
-  --color-section-background-04-silver: #c0c0c0;
-  --color-section-background-05-platinum: #e5e4e2;
-  --color-section-background-06-darkgrey: #a9a9a9;
-  --color-section-background-07-lightslategrey: #778899;
-  --color-section-background-08-slategrey: #708090;
-  --color-section-background-09-dimgrey: #696969;
-  --color-section-background-10-isabelline: #f4f0ec;
-  --color-section-background-11-timberwolf: #dbd7d2;
-  --color-section-background-12-lavendergrey: #c4c3d0;
-  --color-section-background-13-pastelgrey: #cfcfc4;
-  --color-section-background-14-palesilver: #c9c0bb;
-  --color-section-background-15-ashgrey: #b2beb5;
-  --color-section-background-16-cadetgrey: #91a3b0;
-  --color-section-background-17-gunmetalgrey: #818589;
-  --color-section-background-18-gunmetalgrey: #818589;
-  --color-section-background-19-smoke: #848884;
-  --color-section-background-20-steelgrey: #71797e;
-
-  /* ========================================================= */
-  /* SHADES OF WHITE COLOUR SCHEMES (FOR PAGE BACKGROUNDS)     */
-  /* ========================================================= */
-
-  --color-section-background-21-white: #ffffff;
-  --color-section-background-22-vanilla: #f3e5ab;
-  --color-section-background-23-seashell: #fff5ee;
-  --color-section-background-24-pearl: #e2dfd2;
-  --color-section-background-25-peach: #ffe5b4;
-  --color-section-background-26-parhment: #fcf5e5;
-  --color-section-background-27-offwhite: #faf9f6;
-  --color-section-background-28-navajowhite: #ffdead;
-  --color-section-background-29-linen: #e9dcc9;
-  --color-section-background-30-ivory: #fffff0;
-  --color-section-background-31-eggshell: #f0ead6;
-  --color-section-background-32-cream: #fffdd0;
-  --color-section-background-33-cornsilk: #fff8dc;
-  --color-section-background-34-bonewhite: #f9f6ee;
-  --color-section-background-35-beige: #f5f5dc;
-  --color-section-background-36-alabaster: #edeade;
-
-  /* ========================================================= */
   /* SECTION COLOUR SCHEMES                                    */
   /* ========================================================= */
   --color-section-about-us-background: #ffffff;
@@ -2603,9 +2603,12 @@ h6 {
 /* =========================================================== */
 
 .about__us__content__container {
-  display: grid;
+  /* display: grid;
   grid-template-columns: repeat(2, 1fr);
-  column-gap: 2rem;
+  column-gap: 2rem; */
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.5rem;
   margin: 0rem 0.5rem 0rem 0.5rem;
   padding: 1rem 0.5rem 1rem 0.5rem;
   /* border: 1px solid yellow; */
@@ -2620,12 +2623,12 @@ h6 {
 /* FIXME:  BREAKPOINT:  800 px   */
 /* ============================= */
 
-@media screen and (max-width: 800px) {
+/* @media screen and (max-width: 800px) {
   .about__us__content__container {
     display: flex;
     flex-direction: column;
   }
-}
+} */
 
 /* =========================================================== */
 /* TODO:  ABOUT US (CONTENT) - CONTAINER HOLDING ALL IMAGES    */
@@ -2635,10 +2638,11 @@ h6 {
   position: relative;
   height: 0;
   width: 100%;
-  margin: 1rem 1rem 1rem 1rem;
+  margin: 1rem 1rem 1rem 0rem;
   /* padding: 0rem 0rem 27% 0rem; */
   /* padding: 0rem 0rem 56.25% 0rem; */
-  padding: 0rem 0rem 100% 0rem;
+  /* padding: 0rem 0rem 100% 0rem; */
+  padding: 0rem 0rem 30% 0rem;
   /* border: 1px solid red; */
 }
 
@@ -2656,13 +2660,62 @@ h6 {
 /* =============================================================== */
 
 /* ============================= */
+/* FIXME:  BREAKPOINT:  1050 px  */
+/* ============================= */
+
+@media screen and (max-width: 1050px) {
+  .about__us__content__image {
+    /* padding: 0rem 0rem 70% 0rem; */
+    padding: 0rem 0rem 32.5% 0rem;
+    /* width: 97.5%; */
+  }
+}
+
+/* ============================= */
+/* FIXME:  BREAKPOINT:  1000 px  */
+/* ============================= */
+
+@media screen and (max-width: 1000px) {
+  .about__us__content__image {
+    /* padding: 0rem 0rem 70% 0rem; */
+    padding: 0rem 0rem 35% 0rem;
+    /* width: 97.5%; */
+  }
+}
+
+/* ============================= */
+/* FIXME:  BREAKPOINT:  900 px   */
+/* ============================= */
+
+@media screen and (max-width: 900px) {
+  .about__us__content__image {
+    /* padding: 0rem 0rem 70% 0rem; */
+    padding: 0rem 0rem 37.5% 0rem;
+    /* width: 97.5%; */
+  }
+}
+
+/* ============================= */
 /* FIXME:  BREAKPOINT:  800 px   */
 /* ============================= */
 
 @media screen and (max-width: 800px) {
   .about__us__content__image {
-    padding: 0rem 0rem 70% 0rem;
-    width: 97.5%;
+    /* padding: 0rem 0rem 70% 0rem; */
+    padding: 0rem 0rem 42.5% 0rem;
+    /* width: 97.5%; */
+  }
+}
+
+/* ============================= */
+/* FIXME:  BREAKPOINT:  700 px   */
+/* ============================= */
+
+@media screen and (max-width: 700px) {
+  .about__us__content__image {
+    /* padding: 0rem 0rem 70% 0rem; */
+    padding: 0rem 0rem 48% 0rem;
+    /* width: 97.5%; */
   }
 }
 
@@ -2672,7 +2725,8 @@ h6 {
 
 @media screen and (max-width: 650px) {
   .about__us__content__image {
-    width: 96.75%;
+    padding: 0rem 0rem 51% 0rem;
+    /* width: 96.75%; */
   }
 }
 
@@ -2682,7 +2736,8 @@ h6 {
 
 @media screen and (max-width: 600px) {
   .about__us__content__image {
-    width: 96.5%;
+    padding: 0rem 0rem 56% 0rem;
+    /* width: 96.5%; */
   }
 }
 
@@ -2692,7 +2747,8 @@ h6 {
 
 @media screen and (max-width: 500px) {
   .about__us__content__image {
-    width: 96%;
+    padding: 0rem 0rem 65% 0rem;
+    /* width: 96%; */
   }
 }
 
@@ -2702,7 +2758,8 @@ h6 {
 
 @media screen and (max-width: 450px) {
   .about__us__content__image {
-    width: 95.5%;
+    padding: 0rem 0rem 70% 0rem;
+    /* width: 95.5%; */
   }
 }
 
@@ -2712,7 +2769,8 @@ h6 {
 
 @media screen and (max-width: 400px) {
   .about__us__content__image {
-    width: 95%;
+    padding: 0rem 0rem 75% 0rem;
+    /* width: 95%; */
   }
 }
 
@@ -2722,7 +2780,8 @@ h6 {
 
 @media screen and (max-width: 350px) {
   .about__us__content__image {
-    width: 94%;
+    padding: 0rem 0rem 75% 0rem;
+    /* width: 94%; */
   }
 }
 
@@ -2732,7 +2791,8 @@ h6 {
 
 @media screen and (max-width: 280px) {
   .about__us__content__image {
-    width: 92%;
+    padding: 0rem 0rem 75% 0rem;
+    /* width: 92%; */
   }
 }
 
@@ -2873,6 +2933,20 @@ h6 {
 
 @media screen and (max-width: 650px) {
   .about__us__content__text__header p {
+    font-size: 1.3rem;
+  }
+
+  .about__us__content__text__description p {
+    font-size: 1.3rem;
+  }
+}
+
+/* ============================= */
+/* FIXME:  BREAKPOINT:  350 px   */
+/* ============================= */
+
+@media screen and (max-width: 350px) {
+  .about__us__content__text__header p {
     font-size: 1.2rem;
   }
 
@@ -2896,51 +2970,6 @@ h6 {
 /* ===================================================================================================================== */
 
 :root {
-  /* ========================================================= */
-  /* SHADES OF GREY COLOUR SCHEMES (FOR PAGE BACKGROUNDS)      */
-  /* ========================================================= */
-  --color-section-background-01-grey: #808080;
-  --color-section-background-02-gainsboro: #dcdcdc;
-  --color-section-background-03-lightgrey: #d3d3d3;
-  --color-section-background-04-silver: #c0c0c0;
-  --color-section-background-05-platinum: #e5e4e2;
-  --color-section-background-06-darkgrey: #a9a9a9;
-  --color-section-background-07-lightslategrey: #778899;
-  --color-section-background-08-slategrey: #708090;
-  --color-section-background-09-dimgrey: #696969;
-  --color-section-background-10-isabelline: #f4f0ec;
-  --color-section-background-11-timberwolf: #dbd7d2;
-  --color-section-background-12-lavendergrey: #c4c3d0;
-  --color-section-background-13-pastelgrey: #cfcfc4;
-  --color-section-background-14-palesilver: #c9c0bb;
-  --color-section-background-15-ashgrey: #b2beb5;
-  --color-section-background-16-cadetgrey: #91a3b0;
-  --color-section-background-17-gunmetalgrey: #818589;
-  --color-section-background-18-gunmetalgrey: #818589;
-  --color-section-background-19-smoke: #848884;
-  --color-section-background-20-steelgrey: #71797e;
-
-  /* ========================================================= */
-  /* SHADES OF WHITE COLOUR SCHEMES (FOR PAGE BACKGROUNDS)     */
-  /* ========================================================= */
-
-  --color-section-background-21-white: #ffffff;
-  --color-section-background-22-vanilla: #f3e5ab;
-  --color-section-background-23-seashell: #fff5ee;
-  --color-section-background-24-pearl: #e2dfd2;
-  --color-section-background-25-peach: #ffe5b4;
-  --color-section-background-26-parhment: #fcf5e5;
-  --color-section-background-27-offwhite: #faf9f6;
-  --color-section-background-28-navajowhite: #ffdead;
-  --color-section-background-29-linen: #e9dcc9;
-  --color-section-background-30-ivory: #fffff0;
-  --color-section-background-31-eggshell: #f0ead6;
-  --color-section-background-32-cream: #fffdd0;
-  --color-section-background-33-cornsilk: #fff8dc;
-  --color-section-background-34-bonewhite: #f9f6ee;
-  --color-section-background-35-beige: #f5f5dc;
-  --color-section-background-36-alabaster: #edeade;
-
   /* ========================================================= */
   /* SECTION COLOUR SCHEMES                                    */
   /* ========================================================= */
@@ -3142,9 +3171,12 @@ h6 {
 /* =================================================================== */
 
 .when__to__consider__content__container {
-  display: grid;
+  /* display: grid;
   grid-template-columns: repeat(2, 1fr);
-  column-gap: 2rem;
+  column-gap: 2rem; */
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.5rem;
   margin: 0rem 0.5rem 0rem 0.5rem;
   padding: 1rem 0.5rem 1rem 0.5rem;
   /* border: 1px solid yellow; */
@@ -3156,15 +3188,15 @@ h6 {
 /* =============================================================== */
 
 /* ============================= */
-/* FIXME:  BREAKPOINT:  670 px   */
+/* FIXME:  BREAKPOINT:  800 px   */
 /* ============================= */
 
-@media screen and (max-width: 800px) {
+/* @media screen and (max-width: 800px) {
   .when__to__consider__content__container {
     display: flex;
     flex-direction: column;
   }
-}
+} */
 
 /* =================================================================== */
 /* TODO:  WHEN TO CONSIDER (CONTENT) - CONTAINER HOLDING ALL IMAGES    */
@@ -3174,10 +3206,11 @@ h6 {
   position: relative;
   height: 0;
   width: 100%;
-  margin: 1rem 1rem 1rem -1rem;
+  margin: 1rem 1rem 1rem 0rem;
   /* padding: 0rem 0rem 27% 0rem; */
   /* padding: 0rem 0rem 56.25% 0rem; */
-  padding: 0rem 0rem 100% 0rem;
+  /* padding: 0rem 0rem 100% 0rem; */
+  padding: 0rem 0rem 30% 0rem;
   /* border: 1px solid red; */
 }
 
@@ -3195,14 +3228,62 @@ h6 {
 /* =============================================================== */
 
 /* ============================= */
+/* FIXME:  BREAKPOINT:  1050 px  */
+/* ============================= */
+
+@media screen and (max-width: 1050px) {
+  .when__to__consider__content__image {
+    /* padding: 0rem 0rem 70% 0rem; */
+    padding: 0rem 0rem 32.5% 0rem;
+    /* width: 97.5%; */
+  }
+}
+
+/* ============================= */
+/* FIXME:  BREAKPOINT:  1000 px  */
+/* ============================= */
+
+@media screen and (max-width: 1000px) {
+  .when__to__consider__content__image {
+    /* padding: 0rem 0rem 70% 0rem; */
+    padding: 0rem 0rem 35% 0rem;
+    /* width: 97.5%; */
+  }
+}
+
+/* ============================= */
+/* FIXME:  BREAKPOINT:  900 px   */
+/* ============================= */
+
+@media screen and (max-width: 900px) {
+  .when__to__consider__content__image {
+    /* padding: 0rem 0rem 70% 0rem; */
+    padding: 0rem 0rem 37.5% 0rem;
+    /* width: 97.5%; */
+  }
+}
+
+/* ============================= */
 /* FIXME:  BREAKPOINT:  800 px   */
 /* ============================= */
 
 @media screen and (max-width: 800px) {
   .when__to__consider__content__image {
-    margin: 1rem 1rem 1rem 1rem;
-    padding: 0rem 0rem 70% 0rem;
-    width: 97.5%;
+    /* padding: 0rem 0rem 70% 0rem; */
+    padding: 0rem 0rem 42.5% 0rem;
+    /* width: 97.5%; */
+  }
+}
+
+/* ============================= */
+/* FIXME:  BREAKPOINT:  700 px   */
+/* ============================= */
+
+@media screen and (max-width: 700px) {
+  .when__to__consider__content__image {
+    /* padding: 0rem 0rem 70% 0rem; */
+    padding: 0rem 0rem 48% 0rem;
+    /* width: 97.5%; */
   }
 }
 
@@ -3222,7 +3303,8 @@ h6 {
 
 @media screen and (max-width: 600px) {
   .when__to__consider__content__image {
-    width: 96.5%;
+    padding: 0rem 0rem 56% 0rem;
+    /* width: 96.5%; */
   }
 }
 
@@ -3232,7 +3314,8 @@ h6 {
 
 @media screen and (max-width: 500px) {
   .when__to__consider__content__image {
-    width: 96%;
+    padding: 0rem 0rem 65% 0rem;
+    /* width: 96%; */
   }
 }
 
@@ -3242,7 +3325,8 @@ h6 {
 
 @media screen and (max-width: 450px) {
   .when__to__consider__content__image {
-    width: 95.5%;
+    padding: 0rem 0rem 70% 0rem;
+    /* width: 95.5%; */
   }
 }
 
@@ -3252,7 +3336,8 @@ h6 {
 
 @media screen and (max-width: 400px) {
   .when__to__consider__content__image {
-    width: 95%;
+    padding: 0rem 0rem 75% 0rem;
+    /* width: 95%; */
   }
 }
 
@@ -3262,7 +3347,8 @@ h6 {
 
 @media screen and (max-width: 350px) {
   .when__to__consider__content__image {
-    width: 94%;
+    padding: 0rem 0rem 75% 0rem;
+    /* width: 94%; */
   }
 }
 
@@ -3272,7 +3358,8 @@ h6 {
 
 @media screen and (max-width: 280px) {
   .when__to__consider__content__image {
-    width: 92%;
+    padding: 0rem 0rem 75% 0rem;
+    /* width: 92%; */
   }
 }
 
@@ -3413,6 +3500,20 @@ h6 {
 
 @media screen and (max-width: 650px) {
   .when__to__consider__content__text__header p {
+    font-size: 1.3rem;
+  }
+
+  .when__to__consider__content__text__description p {
+    font-size: 1.3rem;
+  }
+}
+
+/* ============================= */
+/* FIXME:  BREAKPOINT:  350 px   */
+/* ============================= */
+
+@media screen and (max-width: 350px) {
+  .when__to__consider__content__text__header p {
     font-size: 1.2rem;
   }
 
@@ -3436,51 +3537,6 @@ h6 {
 /* ===================================================================================================================== */
 
 :root {
-  /* ========================================================= */
-  /* SHADES OF GREY COLOUR SCHEMES (FOR PAGE BACKGROUNDS)      */
-  /* ========================================================= */
-  --color-section-background-01-grey: #808080;
-  --color-section-background-02-gainsboro: #dcdcdc;
-  --color-section-background-03-lightgrey: #d3d3d3;
-  --color-section-background-04-silver: #c0c0c0;
-  --color-section-background-05-platinum: #e5e4e2;
-  --color-section-background-06-darkgrey: #a9a9a9;
-  --color-section-background-07-lightslategrey: #778899;
-  --color-section-background-08-slategrey: #708090;
-  --color-section-background-09-dimgrey: #696969;
-  --color-section-background-10-isabelline: #f4f0ec;
-  --color-section-background-11-timberwolf: #dbd7d2;
-  --color-section-background-12-lavendergrey: #c4c3d0;
-  --color-section-background-13-pastelgrey: #cfcfc4;
-  --color-section-background-14-palesilver: #c9c0bb;
-  --color-section-background-15-ashgrey: #b2beb5;
-  --color-section-background-16-cadetgrey: #91a3b0;
-  --color-section-background-17-gunmetalgrey: #818589;
-  --color-section-background-18-gunmetalgrey: #818589;
-  --color-section-background-19-smoke: #848884;
-  --color-section-background-20-steelgrey: #71797e;
-
-  /* ========================================================= */
-  /* SHADES OF WHITE COLOUR SCHEMES (FOR PAGE BACKGROUNDS)     */
-  /* ========================================================= */
-
-  --color-section-background-21-white: #ffffff;
-  --color-section-background-22-vanilla: #f3e5ab;
-  --color-section-background-23-seashell: #fff5ee;
-  --color-section-background-24-pearl: #e2dfd2;
-  --color-section-background-25-peach: #ffe5b4;
-  --color-section-background-26-parhment: #fcf5e5;
-  --color-section-background-27-offwhite: #faf9f6;
-  --color-section-background-28-navajowhite: #ffdead;
-  --color-section-background-29-linen: #e9dcc9;
-  --color-section-background-30-ivory: #fffff0;
-  --color-section-background-31-eggshell: #f0ead6;
-  --color-section-background-32-cream: #fffdd0;
-  --color-section-background-33-cornsilk: #fff8dc;
-  --color-section-background-34-bonewhite: #f9f6ee;
-  --color-section-background-35-beige: #f5f5dc;
-  --color-section-background-36-alabaster: #edeade;
-
   /* ========================================================= */
   /* SECTION COLOUR SCHEMES                                    */
   /* ========================================================= */
@@ -3683,9 +3739,12 @@ h6 {
 /* ==================================================================================== */
 
 .the__purpose__content__container {
-  display: grid;
+  /* display: grid;
   grid-template-columns: repeat(2, 1fr);
-  column-gap: 2rem;
+  column-gap: 2rem; */
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.5rem;
   margin: 0rem 0.5rem 0rem 0.5rem;
   padding: 1rem 0.5rem 1rem 0.5rem;
   /* border: 1px solid yellow; */
@@ -3700,12 +3759,12 @@ h6 {
 /* FIXME:  BREAKPOINT:  800 px   */
 /* ============================= */
 
-@media screen and (max-width: 800px) {
+/* @media screen and (max-width: 800px) {
   .the__purpose__content__container {
     display: flex;
     flex-direction: column;
   }
-}
+} */
 
 /* ==================================================================================== */
 /* TODO:  DEBT REVIEW PROCESS (THE PURPOSE) (CONTENT) - CONTAINER HOLDING ALL IMAGES    */
@@ -3715,10 +3774,11 @@ h6 {
   position: relative;
   height: 0;
   width: 100%;
-  margin: 1rem 1rem 1rem 1rem;
+  margin: 1rem 1rem 1rem 0rem;
   /* padding: 0rem 0rem 27% 0rem; */
   /* padding: 0rem 0rem 56.25% 0rem; */
-  padding: 0rem 0rem 100% 0rem;
+  /* padding: 0rem 0rem 100% 0rem; */
+  padding: 0rem 0rem 30% 0rem;
   /* border: 1px solid red; */
 }
 
@@ -3736,13 +3796,62 @@ h6 {
 /* =============================================================== */
 
 /* ============================= */
+/* FIXME:  BREAKPOINT:  1050 px  */
+/* ============================= */
+
+@media screen and (max-width: 1050px) {
+  .the__purpose__content__image {
+    /* padding: 0rem 0rem 70% 0rem; */
+    padding: 0rem 0rem 32.5% 0rem;
+    /* width: 97.5%; */
+  }
+}
+
+/* ============================= */
+/* FIXME:  BREAKPOINT:  1000 px  */
+/* ============================= */
+
+@media screen and (max-width: 1000px) {
+  .the__purpose__content__image {
+    /* padding: 0rem 0rem 70% 0rem; */
+    padding: 0rem 0rem 35% 0rem;
+    /* width: 97.5%; */
+  }
+}
+
+/* ============================= */
+/* FIXME:  BREAKPOINT:  900 px   */
+/* ============================= */
+
+@media screen and (max-width: 900px) {
+  .the__purpose__content__image {
+    /* padding: 0rem 0rem 70% 0rem; */
+    padding: 0rem 0rem 37.5% 0rem;
+    /* width: 97.5%; */
+  }
+}
+
+/* ============================= */
 /* FIXME:  BREAKPOINT:  800 px   */
 /* ============================= */
 
 @media screen and (max-width: 800px) {
   .the__purpose__content__image {
-    padding: 0rem 0rem 70% 0rem;
-    width: 97.5%;
+    /* padding: 0rem 0rem 70% 0rem; */
+    padding: 0rem 0rem 42.5% 0rem;
+    /* width: 97.5%; */
+  }
+}
+
+/* ============================= */
+/* FIXME:  BREAKPOINT:  700 px   */
+/* ============================= */
+
+@media screen and (max-width: 700px) {
+  .the__purpose__content__image {
+    /* padding: 0rem 0rem 70% 0rem; */
+    padding: 0rem 0rem 48% 0rem;
+    /* width: 97.5%; */
   }
 }
 
@@ -3752,7 +3861,8 @@ h6 {
 
 @media screen and (max-width: 650px) {
   .the__purpose__content__image {
-    width: 96.75%;
+    padding: 0rem 0rem 51% 0rem;
+    /* width: 96.75%; */
   }
 }
 
@@ -3762,7 +3872,8 @@ h6 {
 
 @media screen and (max-width: 600px) {
   .the__purpose__content__image {
-    width: 96.5%;
+    padding: 0rem 0rem 56% 0rem;
+    /* width: 96.5%; */
   }
 }
 
@@ -3772,7 +3883,8 @@ h6 {
 
 @media screen and (max-width: 500px) {
   .the__purpose__content__image {
-    width: 96%;
+    padding: 0rem 0rem 65% 0rem;
+    /* width: 96%; */
   }
 }
 
@@ -3782,7 +3894,8 @@ h6 {
 
 @media screen and (max-width: 450px) {
   .the__purpose__content__image {
-    width: 95.5%;
+    padding: 0rem 0rem 70% 0rem;
+    /* width: 95.5%; */
   }
 }
 
@@ -3792,7 +3905,8 @@ h6 {
 
 @media screen and (max-width: 400px) {
   .the__purpose__content__image {
-    width: 95%;
+    padding: 0rem 0rem 75% 0rem;
+    /* width: 95%; */
   }
 }
 
@@ -3802,7 +3916,8 @@ h6 {
 
 @media screen and (max-width: 350px) {
   .the__purpose__content__image {
-    width: 94%;
+    padding: 0rem 0rem 75% 0rem;
+    /* width: 94%; */
   }
 }
 
@@ -3812,7 +3927,8 @@ h6 {
 
 @media screen and (max-width: 280px) {
   .the__purpose__content__image {
-    width: 92%;
+    padding: 0rem 0rem 75% 0rem;
+    /* width: 92%; */
   }
 }
 
@@ -3953,6 +4069,20 @@ h6 {
 
 @media screen and (max-width: 650px) {
   .the__purpose__content__text__header p {
+    font-size: 1.3rem;
+  }
+
+  .the__purpose__content__text__description p {
+    font-size: 1.3rem;
+  }
+}
+
+/* ============================= */
+/* FIXME:  BREAKPOINT:  350 px   */
+/* ============================= */
+
+@media screen and (max-width: 350px) {
+  .the__purpose__content__text__header p {
     font-size: 1.2rem;
   }
 
@@ -3976,51 +4106,6 @@ h6 {
 /* ===================================================================================================================== */
 
 :root {
-  /* ========================================================= */
-  /* SHADES OF GREY COLOUR SCHEMES (FOR PAGE BACKGROUNDS)      */
-  /* ========================================================= */
-  --color-section-background-01-grey: #808080;
-  --color-section-background-02-gainsboro: #dcdcdc;
-  --color-section-background-03-lightgrey: #d3d3d3;
-  --color-section-background-04-silver: #c0c0c0;
-  --color-section-background-05-platinum: #e5e4e2;
-  --color-section-background-06-darkgrey: #a9a9a9;
-  --color-section-background-07-lightslategrey: #778899;
-  --color-section-background-08-slategrey: #708090;
-  --color-section-background-09-dimgrey: #696969;
-  --color-section-background-10-isabelline: #f4f0ec;
-  --color-section-background-11-timberwolf: #dbd7d2;
-  --color-section-background-12-lavendergrey: #c4c3d0;
-  --color-section-background-13-pastelgrey: #cfcfc4;
-  --color-section-background-14-palesilver: #c9c0bb;
-  --color-section-background-15-ashgrey: #b2beb5;
-  --color-section-background-16-cadetgrey: #91a3b0;
-  --color-section-background-17-gunmetalgrey: #818589;
-  --color-section-background-18-gunmetalgrey: #818589;
-  --color-section-background-19-smoke: #848884;
-  --color-section-background-20-steelgrey: #71797e;
-
-  /* ========================================================= */
-  /* SHADES OF WHITE COLOUR SCHEMES (FOR PAGE BACKGROUNDS)     */
-  /* ========================================================= */
-
-  --color-section-background-21-white: #ffffff;
-  --color-section-background-22-vanilla: #f3e5ab;
-  --color-section-background-23-seashell: #fff5ee;
-  --color-section-background-24-pearl: #e2dfd2;
-  --color-section-background-25-peach: #ffe5b4;
-  --color-section-background-26-parhment: #fcf5e5;
-  --color-section-background-27-offwhite: #faf9f6;
-  --color-section-background-28-navajowhite: #ffdead;
-  --color-section-background-29-linen: #e9dcc9;
-  --color-section-background-30-ivory: #fffff0;
-  --color-section-background-31-eggshell: #f0ead6;
-  --color-section-background-32-cream: #fffdd0;
-  --color-section-background-33-cornsilk: #fff8dc;
-  --color-section-background-34-bonewhite: #f9f6ee;
-  --color-section-background-35-beige: #f5f5dc;
-  --color-section-background-36-alabaster: #edeade;
-
   /* ========================================================= */
   /* SECTION COLOUR SCHEMES                                    */
   /* ========================================================= */
@@ -4223,9 +4308,12 @@ h6 {
 /* ======================================================================================= */
 
 .brief__overview__content__container {
-  display: grid;
+  /* display: grid;
   grid-template-columns: repeat(2, 1fr);
-  column-gap: 2rem;
+  column-gap: 2rem; */
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.5rem;
   margin: 0rem 0.5rem 0rem 0.5rem;
   padding: 1rem 0.5rem 1rem 0.5rem;
   /* border: 1px solid yellow; */
@@ -4237,15 +4325,15 @@ h6 {
 /* =============================================================== */
 
 /* ============================= */
-/* FIXME:  BREAKPOINT:  670 px   */
+/* FIXME:  BREAKPOINT:  800 px   */
 /* ============================= */
 
-@media screen and (max-width: 800px) {
+/* @media screen and (max-width: 800px) {
   .brief__overview__content__container {
     display: flex;
     flex-direction: column;
   }
-}
+} */
 
 /* ======================================================================================= */
 /* TODO:  DEBT REVIEW PROCESS (BRIEF OVERVIEW) (CONTENT) - CONTAINER HOLDING ALL IMAGES    */
@@ -4255,10 +4343,11 @@ h6 {
   position: relative;
   height: 0;
   width: 100%;
-  margin: 1rem 1rem 1rem -1rem;
+  margin: 1rem 1rem 1rem 0rem;
   /* padding: 0rem 0rem 27% 0rem; */
   /* padding: 0rem 0rem 56.25% 0rem; */
-  padding: 0rem 0rem 100% 0rem;
+  /* padding: 0rem 0rem 100% 0rem; */
+  padding: 0rem 0rem 30% 0rem;
   /* border: 1px solid red; */
 }
 
@@ -4276,14 +4365,62 @@ h6 {
 /* =============================================================== */
 
 /* ============================= */
+/* FIXME:  BREAKPOINT:  1050 px  */
+/* ============================= */
+
+@media screen and (max-width: 1050px) {
+  .brief__overview__content__image {
+    /* padding: 0rem 0rem 70% 0rem; */
+    padding: 0rem 0rem 32.5% 0rem;
+    /* width: 97.5%; */
+  }
+}
+
+/* ============================= */
+/* FIXME:  BREAKPOINT:  1000 px  */
+/* ============================= */
+
+@media screen and (max-width: 1000px) {
+  .brief__overview__content__image {
+    /* padding: 0rem 0rem 70% 0rem; */
+    padding: 0rem 0rem 35% 0rem;
+    /* width: 97.5%; */
+  }
+}
+
+/* ============================= */
+/* FIXME:  BREAKPOINT:  900 px   */
+/* ============================= */
+
+@media screen and (max-width: 900px) {
+  .brief__overview__content__image {
+    /* padding: 0rem 0rem 70% 0rem; */
+    padding: 0rem 0rem 37.5% 0rem;
+    /* width: 97.5%; */
+  }
+}
+
+/* ============================= */
 /* FIXME:  BREAKPOINT:  800 px   */
 /* ============================= */
 
 @media screen and (max-width: 800px) {
   .brief__overview__content__image {
-    margin: 1rem 1rem 1rem 1rem;
-    padding: 0rem 0rem 70% 0rem;
-    width: 97.5%;
+    /* padding: 0rem 0rem 70% 0rem; */
+    padding: 0rem 0rem 42.5% 0rem;
+    /* width: 97.5%; */
+  }
+}
+
+/* ============================= */
+/* FIXME:  BREAKPOINT:  700 px   */
+/* ============================= */
+
+@media screen and (max-width: 700px) {
+  .brief__overview__content__image {
+    /* padding: 0rem 0rem 70% 0rem; */
+    padding: 0rem 0rem 48% 0rem;
+    /* width: 97.5%; */
   }
 }
 
@@ -4293,7 +4430,8 @@ h6 {
 
 @media screen and (max-width: 650px) {
   .brief__overview__content__image {
-    width: 96.75%;
+    padding: 0rem 0rem 51% 0rem;
+    /* width: 96.75%; */
   }
 }
 
@@ -4303,7 +4441,8 @@ h6 {
 
 @media screen and (max-width: 600px) {
   .brief__overview__content__image {
-    width: 96.5%;
+    padding: 0rem 0rem 56% 0rem;
+    /* width: 96.5%; */
   }
 }
 
@@ -4313,7 +4452,8 @@ h6 {
 
 @media screen and (max-width: 500px) {
   .brief__overview__content__image {
-    width: 96%;
+    padding: 0rem 0rem 65% 0rem;
+    /* width: 96%; */
   }
 }
 
@@ -4323,7 +4463,8 @@ h6 {
 
 @media screen and (max-width: 450px) {
   .brief__overview__content__image {
-    width: 95.5%;
+    padding: 0rem 0rem 70% 0rem;
+    /* width: 95.5%; */
   }
 }
 
@@ -4333,7 +4474,8 @@ h6 {
 
 @media screen and (max-width: 400px) {
   .brief__overview__content__image {
-    width: 95%;
+    padding: 0rem 0rem 75% 0rem;
+    /* width: 95%; */
   }
 }
 
@@ -4343,7 +4485,8 @@ h6 {
 
 @media screen and (max-width: 350px) {
   .brief__overview__content__image {
-    width: 94%;
+    padding: 0rem 0rem 75% 0rem;
+    /* width: 94%; */
   }
 }
 
@@ -4353,7 +4496,8 @@ h6 {
 
 @media screen and (max-width: 280px) {
   .brief__overview__content__image {
-    width: 92%;
+    padding: 0rem 0rem 75% 0rem;
+    /* width: 92%; */
   }
 }
 
@@ -4494,6 +4638,20 @@ h6 {
 
 @media screen and (max-width: 650px) {
   .brief__overview__content__text__header p {
+    font-size: 1.3rem;
+  }
+
+  .brief__overview__content__text__description p {
+    font-size: 1.3rem;
+  }
+}
+
+/* ============================= */
+/* FIXME:  BREAKPOINT:  350 px   */
+/* ============================= */
+
+@media screen and (max-width: 350px) {
+  .brief__overview__content__text__header p {
     font-size: 1.2rem;
   }
 
@@ -4517,51 +4675,6 @@ h6 {
 /* ===================================================================================================================== */
 
 :root {
-  /* ========================================================= */
-  /* SHADES OF GREY COLOUR SCHEMES (FOR PAGE BACKGROUNDS)      */
-  /* ========================================================= */
-  --color-section-background-01-grey: #808080;
-  --color-section-background-02-gainsboro: #dcdcdc;
-  --color-section-background-03-lightgrey: #d3d3d3;
-  --color-section-background-04-silver: #c0c0c0;
-  --color-section-background-05-platinum: #e5e4e2;
-  --color-section-background-06-darkgrey: #a9a9a9;
-  --color-section-background-07-lightslategrey: #778899;
-  --color-section-background-08-slategrey: #708090;
-  --color-section-background-09-dimgrey: #696969;
-  --color-section-background-10-isabelline: #f4f0ec;
-  --color-section-background-11-timberwolf: #dbd7d2;
-  --color-section-background-12-lavendergrey: #c4c3d0;
-  --color-section-background-13-pastelgrey: #cfcfc4;
-  --color-section-background-14-palesilver: #c9c0bb;
-  --color-section-background-15-ashgrey: #b2beb5;
-  --color-section-background-16-cadetgrey: #91a3b0;
-  --color-section-background-17-gunmetalgrey: #818589;
-  --color-section-background-18-gunmetalgrey: #818589;
-  --color-section-background-19-smoke: #848884;
-  --color-section-background-20-steelgrey: #71797e;
-
-  /* ========================================================= */
-  /* SHADES OF WHITE COLOUR SCHEMES (FOR PAGE BACKGROUNDS)     */
-  /* ========================================================= */
-
-  --color-section-background-21-white: #ffffff;
-  --color-section-background-22-vanilla: #f3e5ab;
-  --color-section-background-23-seashell: #fff5ee;
-  --color-section-background-24-pearl: #e2dfd2;
-  --color-section-background-25-peach: #ffe5b4;
-  --color-section-background-26-parhment: #fcf5e5;
-  --color-section-background-27-offwhite: #faf9f6;
-  --color-section-background-28-navajowhite: #ffdead;
-  --color-section-background-29-linen: #e9dcc9;
-  --color-section-background-30-ivory: #fffff0;
-  --color-section-background-31-eggshell: #f0ead6;
-  --color-section-background-32-cream: #fffdd0;
-  --color-section-background-33-cornsilk: #fff8dc;
-  --color-section-background-34-bonewhite: #f9f6ee;
-  --color-section-background-35-beige: #f5f5dc;
-  --color-section-background-36-alabaster: #edeade;
-
   /* ========================================================= */
   /* SECTION COLOUR SCHEMES                                    */
   /* ========================================================= */
@@ -4764,9 +4877,12 @@ h6 {
 /* ==================================================================================== */
 
 .the__process__content__container {
-  display: grid;
+  /* display: grid;
   grid-template-columns: repeat(2, 1fr);
-  column-gap: 2rem;
+  column-gap: 2rem; */
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.5rem;
   margin: 0rem 0.5rem 0rem 0.5rem;
   padding: 1rem 0.5rem 1rem 0.5rem;
   /* border: 1px solid yellow; */
@@ -4781,12 +4897,12 @@ h6 {
 /* FIXME:  BREAKPOINT:  800 px   */
 /* ============================= */
 
-@media screen and (max-width: 800px) {
+/* @media screen and (max-width: 800px) {
   .the__process__content__container {
     display: flex;
     flex-direction: column;
   }
-}
+} */
 
 /* ==================================================================================== */
 /* TODO:  DEBT REVIEW PROCESS (THE PROCESS) (CONTENT) - CONTAINER HOLDING ALL IMAGES    */
@@ -4796,10 +4912,11 @@ h6 {
   position: relative;
   height: 0;
   width: 100%;
-  margin: 1rem 1rem 1rem 1rem;
+  margin: 1rem 1rem 1rem 0rem;
   /* padding: 0rem 0rem 27% 0rem; */
   /* padding: 0rem 0rem 56.25% 0rem; */
-  padding: 0rem 0rem 100% 0rem;
+  /* padding: 0rem 0rem 100% 0rem; */
+  padding: 0rem 0rem 30% 0rem;
   /* border: 1px solid red; */
 }
 
@@ -4817,13 +4934,62 @@ h6 {
 /* =============================================================== */
 
 /* ============================= */
+/* FIXME:  BREAKPOINT:  1050 px  */
+/* ============================= */
+
+@media screen and (max-width: 1050px) {
+  .the__process__content__image {
+    /* padding: 0rem 0rem 70% 0rem; */
+    padding: 0rem 0rem 32.5% 0rem;
+    /* width: 97.5%; */
+  }
+}
+
+/* ============================= */
+/* FIXME:  BREAKPOINT:  1000 px  */
+/* ============================= */
+
+@media screen and (max-width: 1000px) {
+  .the__process__content__image {
+    /* padding: 0rem 0rem 70% 0rem; */
+    padding: 0rem 0rem 35% 0rem;
+    /* width: 97.5%; */
+  }
+}
+
+/* ============================= */
+/* FIXME:  BREAKPOINT:  900 px   */
+/* ============================= */
+
+@media screen and (max-width: 900px) {
+  .the__process__content__image {
+    /* padding: 0rem 0rem 70% 0rem; */
+    padding: 0rem 0rem 37.5% 0rem;
+    /* width: 97.5%; */
+  }
+}
+
+/* ============================= */
 /* FIXME:  BREAKPOINT:  800 px   */
 /* ============================= */
 
 @media screen and (max-width: 800px) {
   .the__process__content__image {
-    padding: 0rem 0rem 70% 0rem;
-    width: 97.5%;
+    /* padding: 0rem 0rem 70% 0rem; */
+    padding: 0rem 0rem 42.5% 0rem;
+    /* width: 97.5%; */
+  }
+}
+
+/* ============================= */
+/* FIXME:  BREAKPOINT:  700 px   */
+/* ============================= */
+
+@media screen and (max-width: 700px) {
+  .the__process__content__image {
+    /* padding: 0rem 0rem 70% 0rem; */
+    padding: 0rem 0rem 48% 0rem;
+    /* width: 97.5%; */
   }
 }
 
@@ -4833,7 +4999,8 @@ h6 {
 
 @media screen and (max-width: 650px) {
   .the__process__content__image {
-    width: 96.75%;
+    padding: 0rem 0rem 51% 0rem;
+    /* width: 96.75%; */
   }
 }
 
@@ -4843,7 +5010,8 @@ h6 {
 
 @media screen and (max-width: 600px) {
   .the__process__content__image {
-    width: 96.5%;
+    padding: 0rem 0rem 56% 0rem;
+    /* width: 96.5%; */
   }
 }
 
@@ -4853,7 +5021,8 @@ h6 {
 
 @media screen and (max-width: 500px) {
   .the__process__content__image {
-    width: 96%;
+    padding: 0rem 0rem 65% 0rem;
+    /* width: 96%; */
   }
 }
 
@@ -4863,7 +5032,8 @@ h6 {
 
 @media screen and (max-width: 450px) {
   .the__process__content__image {
-    width: 95.5%;
+    padding: 0rem 0rem 70% 0rem;
+    /* width: 95.5%; */
   }
 }
 
@@ -4873,7 +5043,8 @@ h6 {
 
 @media screen and (max-width: 400px) {
   .the__process__content__image {
-    width: 95%;
+    padding: 0rem 0rem 75% 0rem;
+    /* width: 95%; */
   }
 }
 
@@ -4883,7 +5054,8 @@ h6 {
 
 @media screen and (max-width: 350px) {
   .the__process__content__image {
-    width: 94%;
+    padding: 0rem 0rem 75% 0rem;
+    /* width: 94%; */
   }
 }
 
@@ -4893,7 +5065,8 @@ h6 {
 
 @media screen and (max-width: 280px) {
   .the__process__content__image {
-    width: 92%;
+    padding: 0rem 0rem 75% 0rem;
+    /* width: 92%; */
   }
 }
 
@@ -5034,6 +5207,20 @@ h6 {
 
 @media screen and (max-width: 650px) {
   .the__process__content__text__header p {
+    font-size: 1.3rem;
+  }
+
+  .the__process__content__text__description p {
+    font-size: 1.3rem;
+  }
+}
+
+/* ============================= */
+/* FIXME:  BREAKPOINT:  350 px   */
+/* ============================= */
+
+@media screen and (max-width: 350px) {
+  .the__process__content__text__header p {
     font-size: 1.2rem;
   }
 
@@ -5057,51 +5244,6 @@ h6 {
 /* ===================================================================================================================== */
 
 :root {
-  /* ========================================================= */
-  /* SHADES OF GREY COLOUR SCHEMES (FOR PAGE BACKGROUNDS)      */
-  /* ========================================================= */
-  --color-section-background-01-grey: #808080;
-  --color-section-background-02-gainsboro: #dcdcdc;
-  --color-section-background-03-lightgrey: #d3d3d3;
-  --color-section-background-04-silver: #c0c0c0;
-  --color-section-background-05-platinum: #e5e4e2;
-  --color-section-background-06-darkgrey: #a9a9a9;
-  --color-section-background-07-lightslategrey: #778899;
-  --color-section-background-08-slategrey: #708090;
-  --color-section-background-09-dimgrey: #696969;
-  --color-section-background-10-isabelline: #f4f0ec;
-  --color-section-background-11-timberwolf: #dbd7d2;
-  --color-section-background-12-lavendergrey: #c4c3d0;
-  --color-section-background-13-pastelgrey: #cfcfc4;
-  --color-section-background-14-palesilver: #c9c0bb;
-  --color-section-background-15-ashgrey: #b2beb5;
-  --color-section-background-16-cadetgrey: #91a3b0;
-  --color-section-background-17-gunmetalgrey: #818589;
-  --color-section-background-18-gunmetalgrey: #818589;
-  --color-section-background-19-smoke: #848884;
-  --color-section-background-20-steelgrey: #71797e;
-
-  /* ========================================================= */
-  /* SHADES OF WHITE COLOUR SCHEMES (FOR PAGE BACKGROUNDS)     */
-  /* ========================================================= */
-
-  --color-section-background-21-white: #ffffff;
-  --color-section-background-22-vanilla: #f3e5ab;
-  --color-section-background-23-seashell: #fff5ee;
-  --color-section-background-24-pearl: #e2dfd2;
-  --color-section-background-25-peach: #ffe5b4;
-  --color-section-background-26-parhment: #fcf5e5;
-  --color-section-background-27-offwhite: #faf9f6;
-  --color-section-background-28-navajowhite: #ffdead;
-  --color-section-background-29-linen: #e9dcc9;
-  --color-section-background-30-ivory: #fffff0;
-  --color-section-background-31-eggshell: #f0ead6;
-  --color-section-background-32-cream: #fffdd0;
-  --color-section-background-33-cornsilk: #fff8dc;
-  --color-section-background-34-bonewhite: #f9f6ee;
-  --color-section-background-35-beige: #f5f5dc;
-  --color-section-background-36-alabaster: #edeade;
-
   /* ========================================================= */
   /* SECTION COLOUR SCHEMES                                    */
   /* ========================================================= */
@@ -5304,9 +5446,12 @@ h6 {
 /* ======================================================================================= */
 
 .consequences__content__container {
-  display: grid;
+  /* display: grid;
   grid-template-columns: repeat(2, 1fr);
-  column-gap: 2rem;
+  column-gap: 2rem; */
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.5rem;
   margin: 0rem 0.5rem 0rem 0.5rem;
   padding: 1rem 0.5rem 1rem 0.5rem;
   /* border: 1px solid yellow; */
@@ -5321,12 +5466,12 @@ h6 {
 /* FIXME:  BREAKPOINT:  670 px   */
 /* ============================= */
 
-@media screen and (max-width: 800px) {
+/* @media screen and (max-width: 800px) {
   .consequences__content__container {
     display: flex;
     flex-direction: column;
   }
-}
+} */
 
 /* ======================================================================================= */
 /* TODO:  DEBT REVIEW PROCESS (CONSEQUENCES) (CONTENT) - CONTAINER HOLDING ALL IMAGES      */
@@ -5336,10 +5481,11 @@ h6 {
   position: relative;
   height: 0;
   width: 100%;
-  margin: 1rem 1rem 1rem -1rem;
+  margin: 1rem 1rem 1rem 0rem;
   /* padding: 0rem 0rem 27% 0rem; */
   /* padding: 0rem 0rem 56.25% 0rem; */
-  padding: 0rem 0rem 100% 0rem;
+  /* padding: 0rem 0rem 100% 0rem; */
+  padding: 0rem 0rem 30% 0rem;
   /* border: 1px solid red; */
 }
 
@@ -5357,14 +5503,62 @@ h6 {
 /* =============================================================== */
 
 /* ============================= */
+/* FIXME:  BREAKPOINT:  1050 px  */
+/* ============================= */
+
+@media screen and (max-width: 1050px) {
+  .consequences__content__image {
+    /* padding: 0rem 0rem 70% 0rem; */
+    padding: 0rem 0rem 32.5% 0rem;
+    /* width: 97.5%; */
+  }
+}
+
+/* ============================= */
+/* FIXME:  BREAKPOINT:  1000 px  */
+/* ============================= */
+
+@media screen and (max-width: 1000px) {
+  .consequences__content__image {
+    /* padding: 0rem 0rem 70% 0rem; */
+    padding: 0rem 0rem 35% 0rem;
+    /* width: 97.5%; */
+  }
+}
+
+/* ============================= */
+/* FIXME:  BREAKPOINT:  900 px   */
+/* ============================= */
+
+@media screen and (max-width: 900px) {
+  .consequences__content__image {
+    /* padding: 0rem 0rem 70% 0rem; */
+    padding: 0rem 0rem 37.5% 0rem;
+    /* width: 97.5%; */
+  }
+}
+
+/* ============================= */
 /* FIXME:  BREAKPOINT:  800 px   */
 /* ============================= */
 
 @media screen and (max-width: 800px) {
   .consequences__content__image {
-    margin: 1rem 1rem 1rem 1rem;
-    padding: 0rem 0rem 70% 0rem;
-    width: 97.5%;
+    /* padding: 0rem 0rem 70% 0rem; */
+    padding: 0rem 0rem 42.5% 0rem;
+    /* width: 97.5%; */
+  }
+}
+
+/* ============================= */
+/* FIXME:  BREAKPOINT:  700 px   */
+/* ============================= */
+
+@media screen and (max-width: 700px) {
+  .consequences__content__image {
+    /* padding: 0rem 0rem 70% 0rem; */
+    padding: 0rem 0rem 48% 0rem;
+    /* width: 97.5%; */
   }
 }
 
@@ -5374,7 +5568,8 @@ h6 {
 
 @media screen and (max-width: 650px) {
   .consequences__content__image {
-    width: 96.75%;
+    padding: 0rem 0rem 51% 0rem;
+    /* width: 96.75%; */
   }
 }
 
@@ -5384,7 +5579,8 @@ h6 {
 
 @media screen and (max-width: 600px) {
   .consequences__content__image {
-    width: 96.5%;
+    padding: 0rem 0rem 56% 0rem;
+    /* width: 96.5%; */
   }
 }
 
@@ -5394,7 +5590,8 @@ h6 {
 
 @media screen and (max-width: 500px) {
   .consequences__content__image {
-    width: 96%;
+    padding: 0rem 0rem 65% 0rem;
+    /* width: 96%; */
   }
 }
 
@@ -5404,7 +5601,8 @@ h6 {
 
 @media screen and (max-width: 450px) {
   .consequences__content__image {
-    width: 95.5%;
+    padding: 0rem 0rem 70% 0rem;
+    /* width: 95.5%; */
   }
 }
 
@@ -5414,7 +5612,8 @@ h6 {
 
 @media screen and (max-width: 400px) {
   .consequences__content__image {
-    width: 95%;
+    padding: 0rem 0rem 75% 0rem;
+    /* width: 95%; */
   }
 }
 
@@ -5424,7 +5623,8 @@ h6 {
 
 @media screen and (max-width: 350px) {
   .consequences__content__image {
-    width: 94%;
+    padding: 0rem 0rem 75% 0rem;
+    /* width: 94%; */
   }
 }
 
@@ -5434,7 +5634,8 @@ h6 {
 
 @media screen and (max-width: 280px) {
   .consequences__content__image {
-    width: 92%;
+    padding: 0rem 0rem 75% 0rem;
+    /* width: 92%; */
   }
 }
 
@@ -5575,6 +5776,20 @@ h6 {
 
 @media screen and (max-width: 650px) {
   .consequences__content__text__header p {
+    font-size: 1.3rem;
+  }
+
+  .consequences__content__text__description p {
+    font-size: 1.3rem;
+  }
+}
+
+/* ============================= */
+/* FIXME:  BREAKPOINT:  350 px   */
+/* ============================= */
+
+@media screen and (max-width: 350px) {
+  .consequences__content__text__header p {
     font-size: 1.2rem;
   }
 
@@ -5598,51 +5813,6 @@ h6 {
 /* ===================================================================================================================== */
 
 :root {
-  /* ========================================================= */
-  /* SHADES OF GREY COLOUR SCHEMES (FOR PAGE BACKGROUNDS)      */
-  /* ========================================================= */
-  --color-section-background-01-grey: #808080;
-  --color-section-background-02-gainsboro: #dcdcdc;
-  --color-section-background-03-lightgrey: #d3d3d3;
-  --color-section-background-04-silver: #c0c0c0;
-  --color-section-background-05-platinum: #e5e4e2;
-  --color-section-background-06-darkgrey: #a9a9a9;
-  --color-section-background-07-lightslategrey: #778899;
-  --color-section-background-08-slategrey: #708090;
-  --color-section-background-09-dimgrey: #696969;
-  --color-section-background-10-isabelline: #f4f0ec;
-  --color-section-background-11-timberwolf: #dbd7d2;
-  --color-section-background-12-lavendergrey: #c4c3d0;
-  --color-section-background-13-pastelgrey: #cfcfc4;
-  --color-section-background-14-palesilver: #c9c0bb;
-  --color-section-background-15-ashgrey: #b2beb5;
-  --color-section-background-16-cadetgrey: #91a3b0;
-  --color-section-background-17-gunmetalgrey: #818589;
-  --color-section-background-18-gunmetalgrey: #818589;
-  --color-section-background-19-smoke: #848884;
-  --color-section-background-20-steelgrey: #71797e;
-
-  /* ========================================================= */
-  /* SHADES OF WHITE COLOUR SCHEMES (FOR PAGE BACKGROUNDS)     */
-  /* ========================================================= */
-
-  --color-section-background-21-white: #ffffff;
-  --color-section-background-22-vanilla: #f3e5ab;
-  --color-section-background-23-seashell: #fff5ee;
-  --color-section-background-24-pearl: #e2dfd2;
-  --color-section-background-25-peach: #ffe5b4;
-  --color-section-background-26-parhment: #fcf5e5;
-  --color-section-background-27-offwhite: #faf9f6;
-  --color-section-background-28-navajowhite: #ffdead;
-  --color-section-background-29-linen: #e9dcc9;
-  --color-section-background-30-ivory: #fffff0;
-  --color-section-background-31-eggshell: #f0ead6;
-  --color-section-background-32-cream: #fffdd0;
-  --color-section-background-33-cornsilk: #fff8dc;
-  --color-section-background-34-bonewhite: #f9f6ee;
-  --color-section-background-35-beige: #f5f5dc;
-  --color-section-background-36-alabaster: #edeade;
-
   /* ========================================================= */
   /* SECTION COLOUR SCHEMES                                    */
   /* ========================================================= */
@@ -5845,9 +6015,12 @@ h6 {
 /* ======================================================================================== */
 
 .responsibilities__content__container {
-  display: grid;
+  /* display: grid;
   grid-template-columns: repeat(2, 1fr);
-  column-gap: 2rem;
+  column-gap: 2rem; */
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.5rem;
   margin: 0rem 0.5rem 0rem 0.5rem;
   padding: 1rem 0.5rem 1rem 0.5rem;
   /* border: 1px solid yellow; */
@@ -5862,12 +6035,12 @@ h6 {
 /* FIXME:  BREAKPOINT:  800 px   */
 /* ============================= */
 
-@media screen and (max-width: 800px) {
+/* @media screen and (max-width: 800px) {
   .responsibilities__content__container {
     display: flex;
     flex-direction: column;
   }
-}
+} */
 
 /* ========================================================================================= */
 /* TODO:  DEBT REVIEW PROCESS (RESPONSIBILITIES) (CONTENT) - CONTAINER HOLDING ALL IMAGES    */
@@ -5877,10 +6050,11 @@ h6 {
   position: relative;
   height: 0;
   width: 100%;
-  margin: 1rem 1rem 1rem 1rem;
+  margin: 1rem 1rem 1rem 0rem;
   /* padding: 0rem 0rem 27% 0rem; */
   /* padding: 0rem 0rem 56.25% 0rem; */
-  padding: 0rem 0rem 100% 0rem;
+  /* padding: 0rem 0rem 100% 0rem; */
+  padding: 0rem 0rem 30% 0rem;
   /* border: 1px solid red; */
 }
 
@@ -5898,13 +6072,62 @@ h6 {
 /* =============================================================== */
 
 /* ============================= */
+/* FIXME:  BREAKPOINT:  1050 px  */
+/* ============================= */
+
+@media screen and (max-width: 1050px) {
+  .responsibilities__content__image {
+    /* padding: 0rem 0rem 70% 0rem; */
+    padding: 0rem 0rem 32.5% 0rem;
+    /* width: 97.5%; */
+  }
+}
+
+/* ============================= */
+/* FIXME:  BREAKPOINT:  1000 px  */
+/* ============================= */
+
+@media screen and (max-width: 1000px) {
+  .responsibilities__content__image {
+    /* padding: 0rem 0rem 70% 0rem; */
+    padding: 0rem 0rem 35% 0rem;
+    /* width: 97.5%; */
+  }
+}
+
+/* ============================= */
+/* FIXME:  BREAKPOINT:  900 px   */
+/* ============================= */
+
+@media screen and (max-width: 900px) {
+  .responsibilities__content__image {
+    /* padding: 0rem 0rem 70% 0rem; */
+    padding: 0rem 0rem 37.5% 0rem;
+    /* width: 97.5%; */
+  }
+}
+
+/* ============================= */
 /* FIXME:  BREAKPOINT:  800 px   */
 /* ============================= */
 
 @media screen and (max-width: 800px) {
   .responsibilities__content__image {
-    padding: 0rem 0rem 70% 0rem;
-    width: 97.5%;
+    /* padding: 0rem 0rem 70% 0rem; */
+    padding: 0rem 0rem 42.5% 0rem;
+    /* width: 97.5%; */
+  }
+}
+
+/* ============================= */
+/* FIXME:  BREAKPOINT:  700 px   */
+/* ============================= */
+
+@media screen and (max-width: 700px) {
+  .responsibilities__content__image {
+    /* padding: 0rem 0rem 70% 0rem; */
+    padding: 0rem 0rem 48% 0rem;
+    /* width: 97.5%; */
   }
 }
 
@@ -5924,7 +6147,8 @@ h6 {
 
 @media screen and (max-width: 600px) {
   .responsibilities__content__image {
-    width: 96.5%;
+    padding: 0rem 0rem 56% 0rem;
+    /* width: 96.5%; */
   }
 }
 
@@ -5934,7 +6158,8 @@ h6 {
 
 @media screen and (max-width: 500px) {
   .responsibilities__content__image {
-    width: 96%;
+    padding: 0rem 0rem 65% 0rem;
+    /* width: 96%; */
   }
 }
 
@@ -5944,7 +6169,8 @@ h6 {
 
 @media screen and (max-width: 450px) {
   .responsibilities__content__image {
-    width: 95.5%;
+    padding: 0rem 0rem 70% 0rem;
+    /* width: 95.5%; */
   }
 }
 
@@ -5954,7 +6180,8 @@ h6 {
 
 @media screen and (max-width: 400px) {
   .responsibilities__content__image {
-    width: 95%;
+    padding: 0rem 0rem 75% 0rem;
+    /* width: 95%; */
   }
 }
 
@@ -5964,7 +6191,8 @@ h6 {
 
 @media screen and (max-width: 350px) {
   .responsibilities__content__image {
-    width: 94%;
+    padding: 0rem 0rem 75% 0rem;
+    /* width: 94%; */
   }
 }
 
@@ -5974,7 +6202,8 @@ h6 {
 
 @media screen and (max-width: 280px) {
   .responsibilities__content__image {
-    width: 92%;
+    padding: 0rem 0rem 75% 0rem;
+    /* width: 92%; */
   }
 }
 
@@ -6115,6 +6344,20 @@ h6 {
 
 @media screen and (max-width: 650px) {
   .responsibilities__content__text__header p {
+    font-size: 1.3rem;
+  }
+
+  .responsibilities__content__text__description p {
+    font-size: 1.3rem;
+  }
+}
+
+/* ============================= */
+/* FIXME:  BREAKPOINT:  350 px   */
+/* ============================= */
+
+@media screen and (max-width: 350px) {
+  .responsibilities__content__text__header p {
     font-size: 1.2rem;
   }
 
@@ -6138,51 +6381,6 @@ h6 {
 /* ===================================================================================================================== */
 
 :root {
-  /* ========================================================= */
-  /* SHADES OF GREY COLOUR SCHEMES (FOR PAGE BACKGROUNDS)      */
-  /* ========================================================= */
-  --color-section-background-01-grey: #808080;
-  --color-section-background-02-gainsboro: #dcdcdc;
-  --color-section-background-03-lightgrey: #d3d3d3;
-  --color-section-background-04-silver: #c0c0c0;
-  --color-section-background-05-platinum: #e5e4e2;
-  --color-section-background-06-darkgrey: #a9a9a9;
-  --color-section-background-07-lightslategrey: #778899;
-  --color-section-background-08-slategrey: #708090;
-  --color-section-background-09-dimgrey: #696969;
-  --color-section-background-10-isabelline: #f4f0ec;
-  --color-section-background-11-timberwolf: #dbd7d2;
-  --color-section-background-12-lavendergrey: #c4c3d0;
-  --color-section-background-13-pastelgrey: #cfcfc4;
-  --color-section-background-14-palesilver: #c9c0bb;
-  --color-section-background-15-ashgrey: #b2beb5;
-  --color-section-background-16-cadetgrey: #91a3b0;
-  --color-section-background-17-gunmetalgrey: #818589;
-  --color-section-background-18-gunmetalgrey: #818589;
-  --color-section-background-19-smoke: #848884;
-  --color-section-background-20-steelgrey: #71797e;
-
-  /* ========================================================= */
-  /* SHADES OF WHITE COLOUR SCHEMES (FOR PAGE BACKGROUNDS)     */
-  /* ========================================================= */
-
-  --color-section-background-21-white: #ffffff;
-  --color-section-background-22-vanilla: #f3e5ab;
-  --color-section-background-23-seashell: #fff5ee;
-  --color-section-background-24-pearl: #e2dfd2;
-  --color-section-background-25-peach: #ffe5b4;
-  --color-section-background-26-parhment: #fcf5e5;
-  --color-section-background-27-offwhite: #faf9f6;
-  --color-section-background-28-navajowhite: #ffdead;
-  --color-section-background-29-linen: #e9dcc9;
-  --color-section-background-30-ivory: #fffff0;
-  --color-section-background-31-eggshell: #f0ead6;
-  --color-section-background-32-cream: #fffdd0;
-  --color-section-background-33-cornsilk: #fff8dc;
-  --color-section-background-34-bonewhite: #f9f6ee;
-  --color-section-background-35-beige: #f5f5dc;
-  --color-section-background-36-alabaster: #edeade;
-
   /* ========================================================= */
   /* SECTION COLOUR SCHEMES                                    */
   /* ========================================================= */
@@ -6385,9 +6583,12 @@ h6 {
 /* ======================================================================================= */
 
 .fee__structure__content__container {
-  display: grid;
+  /* display: grid;
   grid-template-columns: repeat(2, 1fr);
-  column-gap: 2rem;
+  column-gap: 2rem; */
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.5rem;
   margin: 0rem 0.5rem 0rem 0.5rem;
   padding: 1rem 0.5rem 1rem 0.5rem;
   /* border: 1px solid yellow; */
@@ -6402,12 +6603,12 @@ h6 {
 /* FIXME:  BREAKPOINT:  670 px   */
 /* ============================= */
 
-@media screen and (max-width: 800px) {
+/* @media screen and (max-width: 800px) {
   .fee__structure__content__container {
     display: flex;
     flex-direction: column;
   }
-}
+} */
 
 /* ======================================================================================= */
 /* TODO:  DEBT REVIEW PROCESS (FEE STRUCTURE) (CONTENT) - CONTAINER HOLDING ALL IMAGES     */
@@ -6417,10 +6618,11 @@ h6 {
   position: relative;
   height: 0;
   width: 100%;
-  margin: 1rem 1rem 1rem -1rem;
+  margin: 1rem 1rem 1rem 0rem;
   /* padding: 0rem 0rem 27% 0rem; */
   /* padding: 0rem 0rem 56.25% 0rem; */
-  padding: 0rem 0rem 100% 0rem;
+  /* padding: 0rem 0rem 100% 0rem; */
+  padding: 0rem 0rem 30% 0rem;
   /* border: 1px solid red; */
 }
 
@@ -6438,14 +6640,62 @@ h6 {
 /* =============================================================== */
 
 /* ============================= */
+/* FIXME:  BREAKPOINT:  1050 px  */
+/* ============================= */
+
+@media screen and (max-width: 1050px) {
+  .fee__structure__content__image {
+    /* padding: 0rem 0rem 70% 0rem; */
+    padding: 0rem 0rem 32.5% 0rem;
+    /* width: 97.5%; */
+  }
+}
+
+/* ============================= */
+/* FIXME:  BREAKPOINT:  1000 px  */
+/* ============================= */
+
+@media screen and (max-width: 1000px) {
+  .fee__structure__content__image {
+    /* padding: 0rem 0rem 70% 0rem; */
+    padding: 0rem 0rem 35% 0rem;
+    /* width: 97.5%; */
+  }
+}
+
+/* ============================= */
+/* FIXME:  BREAKPOINT:  900 px   */
+/* ============================= */
+
+@media screen and (max-width: 900px) {
+  .fee__structure__content__image {
+    /* padding: 0rem 0rem 70% 0rem; */
+    padding: 0rem 0rem 37.5% 0rem;
+    /* width: 97.5%; */
+  }
+}
+
+/* ============================= */
 /* FIXME:  BREAKPOINT:  800 px   */
 /* ============================= */
 
 @media screen and (max-width: 800px) {
   .fee__structure__content__image {
-    margin: 1rem 1rem 1rem 1rem;
-    padding: 0rem 0rem 70% 0rem;
-    width: 97.5%;
+    /* padding: 0rem 0rem 70% 0rem; */
+    padding: 0rem 0rem 42.5% 0rem;
+    /* width: 97.5%; */
+  }
+}
+
+/* ============================= */
+/* FIXME:  BREAKPOINT:  700 px   */
+/* ============================= */
+
+@media screen and (max-width: 700px) {
+  .fee__structure__content__image {
+    /* padding: 0rem 0rem 70% 0rem; */
+    padding: 0rem 0rem 48% 0rem;
+    /* width: 97.5%; */
   }
 }
 
@@ -6455,7 +6705,8 @@ h6 {
 
 @media screen and (max-width: 650px) {
   .fee__structure__content__image {
-    width: 96.75%;
+    padding: 0rem 0rem 51% 0rem;
+    /* width: 96.75%; */
   }
 }
 
@@ -6465,7 +6716,8 @@ h6 {
 
 @media screen and (max-width: 600px) {
   .fee__structure__content__image {
-    width: 96.5%;
+    padding: 0rem 0rem 56% 0rem;
+    /* width: 96.5%; */
   }
 }
 
@@ -6475,7 +6727,8 @@ h6 {
 
 @media screen and (max-width: 500px) {
   .fee__structure__content__image {
-    width: 96%;
+    padding: 0rem 0rem 65% 0rem;
+    /* width: 96%; */
   }
 }
 
@@ -6485,7 +6738,8 @@ h6 {
 
 @media screen and (max-width: 450px) {
   .fee__structure__content__image {
-    width: 95.5%;
+    padding: 0rem 0rem 70% 0rem;
+    /* width: 95.5%; */
   }
 }
 
@@ -6495,7 +6749,8 @@ h6 {
 
 @media screen and (max-width: 400px) {
   .fee__structure__content__image {
-    width: 95%;
+    padding: 0rem 0rem 75% 0rem;
+    /* width: 95%; */
   }
 }
 
@@ -6505,7 +6760,8 @@ h6 {
 
 @media screen and (max-width: 350px) {
   .fee__structure__content__image {
-    width: 94%;
+    padding: 0rem 0rem 75% 0rem;
+    /* width: 94%; */
   }
 }
 
@@ -6515,7 +6771,8 @@ h6 {
 
 @media screen and (max-width: 280px) {
   .fee__structure__content__image {
-    width: 92%;
+    padding: 0rem 0rem 75% 0rem;
+    /* width: 92%; */
   }
 }
 
@@ -6655,6 +6912,20 @@ h6 {
 /* ============================= */
 
 @media screen and (max-width: 650px) {
+  .fee__structure__content__text__header p {
+    font-size: 1.3rem;
+  }
+
+  .fee__structure__content__text__description p {
+    font-size: 1.3rem;
+  }
+}
+
+/* ============================= */
+/* FIXME:  BREAKPOINT:  350 px   */
+/* ============================= */
+
+@media screen and (max-width: 350px) {
   .fee__structure__content__text__header p {
     font-size: 1.2rem;
   }
