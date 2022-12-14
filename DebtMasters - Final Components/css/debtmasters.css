@@ -276,6 +276,12 @@ input {
   margin: 0rem 0rem 0rem 0rem;
 }
 
+@media screen and (max-width: 610px) {
+  .horizontal__row__height {
+    display: none;
+  }
+}
+
 /* ===================================================================================================================== */
 /* TODO:  SET THE RESPONSIVE DEFAULT SIZES FOR ALL HEADING ELEMENTS (H1 - H6)                                      TODO: */
 /* ===================================================================================================================== */
@@ -2437,7 +2443,7 @@ h6 {
   object-fit: cover;
   margin: 0rem 0rem 0rem 0rem;
   background-color: var(--color-section-about-us-background);
-  border-bottom: 1px solid var(--color-section-about-us-border-bottom);
+  /* border-bottom: 1px solid var(--color-section-about-us-border-bottom); */
   /* border: 2px solid red; */
 }
 
@@ -3006,6 +3012,7 @@ h6 {
   margin: 0rem 0rem 0rem 0rem;
   background-color: var(--color-section-when-to-consider-background);
   border-bottom: 1px solid var(--color-section-when-to-consider-border-bottom);
+  border-top: 1px solid var(--color-section-when-to-consider-border-bottom);
   /* border: 2px solid red; */
 }
 
@@ -3573,7 +3580,7 @@ h6 {
   object-fit: cover;
   margin: 0rem 0rem 0rem 0rem;
   background-color: var(--color-section-the-purpose-background);
-  border-bottom: 1px solid var(--color-section-the-purpose-border-bottom);
+  /* border-bottom: 1px solid var(--color-section-the-purpose-border-bottom); */
   /* border: 2px solid red; */
 }
 
@@ -4142,7 +4149,8 @@ h6 {
   object-fit: cover;
   margin: 0rem 0rem 0rem 0rem;
   background-color: var(--color-section-brief-overview-background);
-  border-bottom: 1px solid var(--color-section-brief-overview-border-bottom);
+  /* border-bottom: 1px solid var(--color-section-brief-overview-border-bottom); */
+  border-top: 1px solid var(--color-section-brief-overview-border-bottom);
   /* border: 2px solid red; */
 }
 
@@ -4712,6 +4720,7 @@ h6 {
   margin: 0rem 0rem 0rem 0rem;
   background-color: var(--color-section-the-process-background);
   border-bottom: 1px solid var(--color-section-the-process-border-bottom);
+  border-top: 1px solid var(--color-section-the-process-border-bottom);
   /* border: 2px solid red; */
 }
 
@@ -6951,51 +6960,6 @@ h6 {
 
 :root {
   /* ========================================================= */
-  /* SHADES OF GREY COLOUR SCHEMES (FOR PAGE BACKGROUNDS)      */
-  /* ========================================================= */
-  --color-section-background-01-grey: #808080;
-  --color-section-background-02-gainsboro: #dcdcdc;
-  --color-section-background-03-lightgrey: #d3d3d3;
-  --color-section-background-04-silver: #c0c0c0;
-  --color-section-background-05-platinum: #e5e4e2;
-  --color-section-background-06-darkgrey: #a9a9a9;
-  --color-section-background-07-lightslategrey: #778899;
-  --color-section-background-08-slategrey: #708090;
-  --color-section-background-09-dimgrey: #696969;
-  --color-section-background-10-isabelline: #f4f0ec;
-  --color-section-background-11-timberwolf: #dbd7d2;
-  --color-section-background-12-lavendergrey: #c4c3d0;
-  --color-section-background-13-pastelgrey: #cfcfc4;
-  --color-section-background-14-palesilver: #c9c0bb;
-  --color-section-background-15-ashgrey: #b2beb5;
-  --color-section-background-16-cadetgrey: #91a3b0;
-  --color-section-background-17-gunmetalgrey: #818589;
-  --color-section-background-18-gunmetalgrey: #818589;
-  --color-section-background-19-smoke: #848884;
-  --color-section-background-20-steelgrey: #71797e;
-
-  /* ========================================================= */
-  /* SHADES OF WHITE COLOUR SCHEMES (FOR PAGE BACKGROUNDS)     */
-  /* ========================================================= */
-
-  --color-section-background-21-white: #ffffff;
-  --color-section-background-22-vanilla: #f3e5ab;
-  --color-section-background-23-seashell: #fff5ee;
-  --color-section-background-24-pearl: #e2dfd2;
-  --color-section-background-25-peach: #ffe5b4;
-  --color-section-background-26-parhment: #fcf5e5;
-  --color-section-background-27-offwhite: #faf9f6;
-  --color-section-background-28-navajowhite: #ffdead;
-  --color-section-background-29-linen: #e9dcc9;
-  --color-section-background-30-ivory: #fffff0;
-  --color-section-background-31-eggshell: #f0ead6;
-  --color-section-background-32-cream: #fffdd0;
-  --color-section-background-33-cornsilk: #fff8dc;
-  --color-section-background-34-bonewhite: #f9f6ee;
-  --color-section-background-35-beige: #f5f5dc;
-  --color-section-background-36-alabaster: #edeade;
-
-  /* ========================================================= */
   /* SECTION COLOUR SCHEMES                                    */
   /* ========================================================= */
   --color-section-faqs-background: #ffffff;
@@ -7007,6 +6971,7 @@ h6 {
   --color-section-faqs-internal-description-text: #000000;
   --color-section-faqs-buttons-background: #0b1128;
   --color-section-faqs-buttons-text: #ffffff;
+  --color-section-faqs-accordian-internal-links: #e5e4e2;
 }
 
 /* ===================================================================================================================== */
@@ -7031,7 +6996,7 @@ h6 {
   object-fit: cover;
   margin: 0rem 0rem 0rem 0rem;
   background-color: var(--color-section-faqs-background);
-  border-bottom: 1px solid var(--color-section-faqs-border-bottom);
+  /* border-bottom: 1px solid var(--color-section-faqs-border-bottom); */
   /* border: 2px solid red; */
 }
 
@@ -7192,6 +7157,347 @@ h6 {
 
 /* FIXME:FIXME:FIXME:  ENTER NEW PAGE CONTENT BELOW  FIXME:FIXME:FIXME: */
 
+/* ======================================================================================= */
+/* TODO:  DEBT REVIEW PROCESS (FAQS) (CONTENT) - CONTAINER HOLDING ALL ELEMENTS            */
+/* ======================================================================================= */
+
+.FAQS__content__container {
+  /* display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 2rem; */
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.5rem;
+  margin: 0rem 0.5rem 0rem 0.5rem;
+  padding: 1rem 0.5rem 1rem 0.5rem;
+  /* border: 1px solid yellow; */
+  width: 100%;
+}
+
+/* =============================================================== */
+/* TODO:  RESPONSIVE DESIGN - MEDIA QUERY - FOR OTHER SCREEN SIZED */
+/* =============================================================== */
+
+/* ============================= */
+/* FIXME:  BREAKPOINT:  670 px   */
+/* ============================= */
+
+/* @media screen and (max-width: 800px) {
+  .FAQS__content__container {
+    display: flex;
+    flex-direction: column;
+  }
+} */
+
+/* ======================================================================================= */
+/* TODO:  DEBT REVIEW PROCESS (FAQS) (CONTENT) - CONTAINER HOLDING ALL IMAGES              */
+/* ======================================================================================= */
+
+.FAQS__content__image {
+  position: relative;
+  height: 0;
+  width: 100%;
+  margin: 1rem 1rem 1rem 0rem;
+  /* padding: 0rem 0rem 27% 0rem; */
+  /* padding: 0rem 0rem 56.25% 0rem; */
+  /* padding: 0rem 0rem 100% 0rem; */
+  padding: 0rem 0rem 30% 0rem;
+  /* border: 1px solid red; */
+}
+
+.FAQS__content__image img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 0rem 0rem 0rem 0rem;
+}
+
+/* =============================================================== */
+/* TODO:  RESPONSIVE DESIGN - MEDIA QUERY - FOR OTHER SCREEN SIZED */
+/* =============================================================== */
+
+/* ============================= */
+/* FIXME:  BREAKPOINT:  1050 px  */
+/* ============================= */
+
+@media screen and (max-width: 1050px) {
+  .FAQS__content__image {
+    /* padding: 0rem 0rem 70% 0rem; */
+    padding: 0rem 0rem 32.5% 0rem;
+    /* width: 97.5%; */
+  }
+}
+
+/* ============================= */
+/* FIXME:  BREAKPOINT:  1000 px  */
+/* ============================= */
+
+@media screen and (max-width: 1000px) {
+  .FAQS__content__image {
+    /* padding: 0rem 0rem 70% 0rem; */
+    padding: 0rem 0rem 35% 0rem;
+    /* width: 97.5%; */
+  }
+}
+
+/* ============================= */
+/* FIXME:  BREAKPOINT:  900 px   */
+/* ============================= */
+
+@media screen and (max-width: 900px) {
+  .FAQS__content__image {
+    /* padding: 0rem 0rem 70% 0rem; */
+    padding: 0rem 0rem 37.5% 0rem;
+    /* width: 97.5%; */
+  }
+}
+
+/* ============================= */
+/* FIXME:  BREAKPOINT:  800 px   */
+/* ============================= */
+
+@media screen and (max-width: 800px) {
+  .FAQS__content__image {
+    /* padding: 0rem 0rem 70% 0rem; */
+    padding: 0rem 0rem 42.5% 0rem;
+    /* width: 97.5%; */
+  }
+}
+
+/* ============================= */
+/* FIXME:  BREAKPOINT:  700 px   */
+/* ============================= */
+
+@media screen and (max-width: 700px) {
+  .FAQS__content__image {
+    /* padding: 0rem 0rem 70% 0rem; */
+    padding: 0rem 0rem 48% 0rem;
+    /* width: 97.5%; */
+  }
+}
+
+/* ============================= */
+/* FIXME:  BREAKPOINT:  650 px   */
+/* ============================= */
+
+@media screen and (max-width: 650px) {
+  .FAQS__content__image {
+    padding: 0rem 0rem 51% 0rem;
+    /* width: 96.75%; */
+  }
+}
+
+/* ============================= */
+/* FIXME:  BREAKPOINT:  600 px   */
+/* ============================= */
+
+@media screen and (max-width: 600px) {
+  .FAQS__content__image {
+    padding: 0rem 0rem 56% 0rem;
+    /* width: 96.5%; */
+  }
+}
+
+/* ============================= */
+/* FIXME:  BREAKPOINT:  500 px   */
+/* ============================= */
+
+@media screen and (max-width: 500px) {
+  .FAQS__content__image {
+    padding: 0rem 0rem 65% 0rem;
+    /* width: 96%; */
+  }
+}
+
+/* ============================= */
+/* FIXME:  BREAKPOINT:  450 px   */
+/* ============================= */
+
+@media screen and (max-width: 450px) {
+  .FAQS__content__image {
+    padding: 0rem 0rem 70% 0rem;
+    /* width: 95.5%; */
+  }
+}
+
+/* ============================= */
+/* FIXME:  BREAKPOINT:  400 px   */
+/* ============================= */
+
+@media screen and (max-width: 400px) {
+  .FAQS__content__image {
+    padding: 0rem 0rem 75% 0rem;
+    /* width: 95%; */
+  }
+}
+
+/* ============================= */
+/* FIXME:  BREAKPOINT:  350 px   */
+/* ============================= */
+
+@media screen and (max-width: 350px) {
+  .FAQS__content__image {
+    padding: 0rem 0rem 75% 0rem;
+    /* width: 94%; */
+  }
+}
+
+/* ============================= */
+/* FIXME:  BREAKPOINT:  280 px   */
+/* ============================= */
+
+@media screen and (max-width: 280px) {
+  .FAQS__content__image {
+    padding: 0rem 0rem 75% 0rem;
+    /* width: 92%; */
+  }
+}
+
+/* ===================================================================================================================== */
+/* TODO:  DEBT MASTERS - ACCORDIAN "MAIN" CONTAINER (HOLDING ALL ELEMENTS)                                               */
+/* ===================================================================================================================== */
+
+.debt__masters__accordian {
+  width: 95%;
+  max-width: 128rem;
+  margin: 2rem auto 2rem auto;
+  /* border: 1px solid white; */
+}
+
+/* ===================================================================================================================== */
+/* TODO:  DEBT MASTERS - ACCORDIAN "ITEMS" CONTAINER (HOLDING ALL ITEMS)                                                 */
+/* ===================================================================================================================== */
+
+.debt__masters__accordian_item {
+  /* background-color: #065bb3; */
+  /* color: white; */
+  /* background-color: white; */
+  /* color: #0b1128; */
+  background-color: #0b1128;
+  color: white;
+  margin: 1rem 0rem 1rem 0rem;
+  padding: 0.5rem 0rem 0.5rem 0rem;
+  border-radius: 0.5rem;
+  box-shadow: var(--color-box-shadow-01);
+}
+/* ===================================================================================================================== */
+/* TODO:  DEBT MASTERS - ACCORDIAN - ITEM (HEADER)                                                                       */
+/* ===================================================================================================================== */
+
+.debt__masters__accordian-item-header {
+  display: flex;
+  position: relative;
+  align-items: center;
+  min-height: 3.5rem;
+  line-height: 1.25rem;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.3rem;
+  font-weight: 600;
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
+  padding: 0.5rem 3rem 0.5rem 1rem;
+  cursor: pointer;
+}
+
+/* FIXME:  NOTE:  THE CSS ENTITY CODE FOR PLUS SIGN "+" = "\002B" */
+/* FIXME:  NOTE:  THE CSS ENTITY CODE FOR DOWN ARROW "v" = \25BE */
+
+.debt__masters__accordian-item-header::after {
+  /* content: "\25BE"; */
+  content: "\002B";
+  font-size: 2rem;
+  position: absolute;
+  right: 1rem;
+  color: var(--color-platinum-accordian-item-plus-and-minus-sign);
+  transition: transform 0.5s ease-in-out;
+}
+
+/* FIXME:  NOTE:  THE CSS ENTITY CODE FOR MINUS SIGN "-" = "\2212" */
+
+.debt__masters__accordian-item-header.active::after {
+  /* transform: rotate(-180deg); */
+  content: "\2212";
+  transform: none;
+}
+
+.debt__masters__accordian-item-header.active {
+  color: var(--color-platinum-accordian-item-header-active);
+}
+
+/* ===================================================================================================================== */
+/* TODO:  DEBT MASTERS - ACCORDIAN-ITEM (BODY)                                                                           */
+/* ===================================================================================================================== */
+
+/* ITEM - MAIN CONTAINER */
+
+.debt__masters__accordian-item-body {
+  /* display: none; */
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+/* ITEM - ALL ELEMENTS CONTAINER */
+
+.debt__masters__accordian-item-body-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0rem 0rem 0rem 0rem;
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  /* border: 1px solid red; */
+}
+
+.debt__masters__content-statement {
+  max-width: 100%;
+  font-size: 1.3rem;
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
+  text-align: justify;
+  letter-spacing: 0.025rem;
+  line-height: 1.5;
+  padding: 0rem 1rem 0rem 1rem;
+  /* border: 1px solid green; */
+}
+
+.debt__masters__content-statement a {
+  text-decoration: none;
+  color: var(--color-section-faqs-buttons-text);
+  cursor: pointer;
+}
+
+.debt__masters__content-statement a:hover {
+  color: var(--color-section-faqs-accordian-internal-links);
+}
+
+/* ===================================================================================================================== */
+/* TODO:  DEBT MASTERS - MEDIA QUERY (LARGER DEVICES)                                                                    */
+/* ===================================================================================================================== */
+
+@media screen and (max-width: 430px) {
+  .debt__masters__accordian-item-header {
+    font-size: 1rem;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .debt__masters__accordian-item-body-content {
+    flex-direction: column;
+    margin: 0rem 0rem 0rem 0rem;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+  }
+
+  .debt__masters__content-statement {
+    justify-content: center;
+    text-align: justify;
+    max-width: 280px;
+    font-size: 1rem;
+    padding: 0rem 0.5rem 0rem 0.5rem;
+  }
+}
+
 /* FIXME:FIXME:FIXME:  ENTER NEW PAGE CONTENT ABOVE  FIXME:FIXME:FIXME: */
 
 /* ===================================================================================================================== */
@@ -7207,51 +7513,6 @@ h6 {
 /* ===================================================================================================================== */
 
 :root {
-  /* ========================================================= */
-  /* SHADES OF GREY COLOUR SCHEMES (FOR PAGE BACKGROUNDS)      */
-  /* ========================================================= */
-  --color-section-background-01-grey: #808080;
-  --color-section-background-02-gainsboro: #dcdcdc;
-  --color-section-background-03-lightgrey: #d3d3d3;
-  --color-section-background-04-silver: #c0c0c0;
-  --color-section-background-05-platinum: #e5e4e2;
-  --color-section-background-06-darkgrey: #a9a9a9;
-  --color-section-background-07-lightslategrey: #778899;
-  --color-section-background-08-slategrey: #708090;
-  --color-section-background-09-dimgrey: #696969;
-  --color-section-background-10-isabelline: #f4f0ec;
-  --color-section-background-11-timberwolf: #dbd7d2;
-  --color-section-background-12-lavendergrey: #c4c3d0;
-  --color-section-background-13-pastelgrey: #cfcfc4;
-  --color-section-background-14-palesilver: #c9c0bb;
-  --color-section-background-15-ashgrey: #b2beb5;
-  --color-section-background-16-cadetgrey: #91a3b0;
-  --color-section-background-17-gunmetalgrey: #818589;
-  --color-section-background-18-gunmetalgrey: #818589;
-  --color-section-background-19-smoke: #848884;
-  --color-section-background-20-steelgrey: #71797e;
-
-  /* ========================================================= */
-  /* SHADES OF WHITE COLOUR SCHEMES (FOR PAGE BACKGROUNDS)     */
-  /* ========================================================= */
-
-  --color-section-background-21-white: #ffffff;
-  --color-section-background-22-vanilla: #f3e5ab;
-  --color-section-background-23-seashell: #fff5ee;
-  --color-section-background-24-pearl: #e2dfd2;
-  --color-section-background-25-peach: #ffe5b4;
-  --color-section-background-26-parhment: #fcf5e5;
-  --color-section-background-27-offwhite: #faf9f6;
-  --color-section-background-28-navajowhite: #ffdead;
-  --color-section-background-29-linen: #e9dcc9;
-  --color-section-background-30-ivory: #fffff0;
-  --color-section-background-31-eggshell: #f0ead6;
-  --color-section-background-32-cream: #fffdd0;
-  --color-section-background-33-cornsilk: #fff8dc;
-  --color-section-background-34-bonewhite: #f9f6ee;
-  --color-section-background-35-beige: #f5f5dc;
-  --color-section-background-36-alabaster: #edeade;
-
   /* ========================================================= */
   /* SECTION COLOUR SCHEMES                                    */
   /* ========================================================= */
@@ -7288,6 +7549,7 @@ h6 {
   margin: 0rem 0rem 0rem 0rem;
   background-color: var(--color-section-request-call-back-background);
   border-bottom: 1px solid var(--color-section-request-call-back-border-bottom);
+  border-top: 1px solid var(--color-section-request-call-back-border-bottom);
   /* border: 2px solid red; */
 }
 
@@ -7447,6 +7709,204 @@ h6 {
 /* ===================================================================================================================== */
 
 /* FIXME:FIXME:FIXME:  ENTER NEW PAGE CONTENT BELOW  FIXME:FIXME:FIXME: */
+
+/* ======================================================================================= */
+/* TODO:  DEBT REVIEW PROCESS (FEE STRUCTURE) (CONTENT) - CONTAINER HOLDING ALL ELEMENTS   */
+/* ======================================================================================= */
+
+.request__call__back__content__container {
+  /* display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 2rem; */
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.5rem;
+  margin: 0rem 0.5rem 0rem 0.5rem;
+  padding: 1rem 0.5rem 1rem 0.5rem;
+  /* border: 1px solid yellow; */
+  width: 100%;
+}
+
+/* =============================================================== */
+/* TODO:  RESPONSIVE DESIGN - MEDIA QUERY - FOR OTHER SCREEN SIZED */
+/* =============================================================== */
+
+/* ============================= */
+/* FIXME:  BREAKPOINT:  670 px   */
+/* ============================= */
+
+/* @media screen and (max-width: 800px) {
+  .request__call__back__content__container {
+    display: flex;
+    flex-direction: column;
+  }
+} */
+
+/* ======================================================================================= */
+/* TODO:  DEBT REVIEW PROCESS (FEE STRUCTURE) (CONTENT) - CONTAINER HOLDING ALL IMAGES     */
+/* ======================================================================================= */
+
+.request__call__back__content__image {
+  position: relative;
+  height: 0;
+  width: 100%;
+  margin: 1rem 1rem 1rem 0rem;
+  /* padding: 0rem 0rem 27% 0rem; */
+  /* padding: 0rem 0rem 56.25% 0rem; */
+  /* padding: 0rem 0rem 100% 0rem; */
+  padding: 0rem 0rem 30% 0rem;
+  /* border: 1px solid red; */
+}
+
+.request__call__back__content__image img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 0rem 0rem 0rem 0rem;
+}
+
+/* =============================================================== */
+/* TODO:  RESPONSIVE DESIGN - MEDIA QUERY - FOR OTHER SCREEN SIZED */
+/* =============================================================== */
+
+/* ============================= */
+/* FIXME:  BREAKPOINT:  1050 px  */
+/* ============================= */
+
+@media screen and (max-width: 1050px) {
+  .request__call__back__content__image {
+    /* padding: 0rem 0rem 70% 0rem; */
+    padding: 0rem 0rem 32.5% 0rem;
+    /* width: 97.5%; */
+  }
+}
+
+/* ============================= */
+/* FIXME:  BREAKPOINT:  1000 px  */
+/* ============================= */
+
+@media screen and (max-width: 1000px) {
+  .request__call__back__content__image {
+    /* padding: 0rem 0rem 70% 0rem; */
+    padding: 0rem 0rem 35% 0rem;
+    /* width: 97.5%; */
+  }
+}
+
+/* ============================= */
+/* FIXME:  BREAKPOINT:  900 px   */
+/* ============================= */
+
+@media screen and (max-width: 900px) {
+  .request__call__back__content__image {
+    /* padding: 0rem 0rem 70% 0rem; */
+    padding: 0rem 0rem 37.5% 0rem;
+    /* width: 97.5%; */
+  }
+}
+
+/* ============================= */
+/* FIXME:  BREAKPOINT:  800 px   */
+/* ============================= */
+
+@media screen and (max-width: 800px) {
+  .request__call__back__content__image {
+    /* padding: 0rem 0rem 70% 0rem; */
+    padding: 0rem 0rem 42.5% 0rem;
+    /* width: 97.5%; */
+  }
+}
+
+/* ============================= */
+/* FIXME:  BREAKPOINT:  700 px   */
+/* ============================= */
+
+@media screen and (max-width: 700px) {
+  .request__call__back__content__image {
+    /* padding: 0rem 0rem 70% 0rem; */
+    padding: 0rem 0rem 48% 0rem;
+    /* width: 97.5%; */
+  }
+}
+
+/* ============================= */
+/* FIXME:  BREAKPOINT:  650 px   */
+/* ============================= */
+
+@media screen and (max-width: 650px) {
+  .request__call__back__content__image {
+    padding: 0rem 0rem 51% 0rem;
+    /* width: 96.75%; */
+  }
+}
+
+/* ============================= */
+/* FIXME:  BREAKPOINT:  600 px   */
+/* ============================= */
+
+@media screen and (max-width: 600px) {
+  .request__call__back__content__image {
+    padding: 0rem 0rem 56% 0rem;
+    /* width: 96.5%; */
+  }
+}
+
+/* ============================= */
+/* FIXME:  BREAKPOINT:  500 px   */
+/* ============================= */
+
+@media screen and (max-width: 500px) {
+  .request__call__back__content__image {
+    padding: 0rem 0rem 65% 0rem;
+    /* width: 96%; */
+  }
+}
+
+/* ============================= */
+/* FIXME:  BREAKPOINT:  450 px   */
+/* ============================= */
+
+@media screen and (max-width: 450px) {
+  .request__call__back__content__image {
+    padding: 0rem 0rem 70% 0rem;
+    /* width: 95.5%; */
+  }
+}
+
+/* ============================= */
+/* FIXME:  BREAKPOINT:  400 px   */
+/* ============================= */
+
+@media screen and (max-width: 400px) {
+  .request__call__back__content__image {
+    padding: 0rem 0rem 75% 0rem;
+    /* width: 95%; */
+  }
+}
+
+/* ============================= */
+/* FIXME:  BREAKPOINT:  350 px   */
+/* ============================= */
+
+@media screen and (max-width: 350px) {
+  .request__call__back__content__image {
+    padding: 0rem 0rem 75% 0rem;
+    /* width: 94%; */
+  }
+}
+
+/* ============================= */
+/* FIXME:  BREAKPOINT:  280 px   */
+/* ============================= */
+
+@media screen and (max-width: 280px) {
+  .request__call__back__content__image {
+    padding: 0rem 0rem 75% 0rem;
+    /* width: 92%; */
+  }
+}
 
 /* FIXME:FIXME:FIXME:  ENTER NEW PAGE CONTENT ABOVE  FIXME:FIXME:FIXME: */
 
