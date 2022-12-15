@@ -276,7 +276,7 @@ input {
   margin: 0rem 0rem 0rem 0rem;
 }
 
-@media screen and (max-width: 610px) {
+@media screen and (max-width: 650px) {
   .horizontal__row__height {
     display: none;
   }
@@ -2444,6 +2444,7 @@ h6 {
   margin: 0rem 0rem 0rem 0rem;
   background-color: var(--color-section-about-us-background);
   /* border-bottom: 1px solid var(--color-section-about-us-border-bottom); */
+  border-top: 1px solid var(--color-section-about-us-border-bottom);
   /* border: 2px solid red; */
 }
 
@@ -3581,6 +3582,7 @@ h6 {
   margin: 0rem 0rem 0rem 0rem;
   background-color: var(--color-section-the-purpose-background);
   /* border-bottom: 1px solid var(--color-section-the-purpose-border-bottom); */
+  border-top: 1px solid var(--color-section-the-purpose-border-bottom);
   /* border: 2px solid red; */
 }
 
@@ -7516,7 +7518,8 @@ h6 {
   /* ========================================================= */
   /* SECTION COLOUR SCHEMES                                    */
   /* ========================================================= */
-  --color-section-request-call-back-background: #ffffff;
+  /* --color-section-request-call-back-background: #ffffff; */
+  --color-section-request-call-back-background: #eee;
   --color-section-request-call-back-border-bottom: #e5e4e2;
   --color-section-request-call-back-main-header-text: #065bb3;
   --color-section-request-call-back-sub-header-text: #0b1128;
@@ -7905,6 +7908,629 @@ h6 {
   .request__call__back__content__image {
     padding: 0rem 0rem 75% 0rem;
     /* width: 92%; */
+  }
+}
+
+/* ===================================================================================================================== */
+/* TODO:  DEBT MASTERS - FORM HEADERS (ON REGISTRATION FORM)                                                             */
+/* ===================================================================================================================== */
+
+:root {
+  /* FORM - BACKGROUND */
+  --color-form-section-background-1: #e5e4e2;
+  --color-form-section-background-2: #eee;
+  /* FORM - SECTION HEADERS */
+  --color-form-section-header-background-1: #0b1128;
+  --color-form-section-header-background-1-rgb: rgb(11, 17, 40);
+  --color-form-section-header-background-2: #065bb3;
+  --color-form-section-header-background-2-rgb: rgb(6, 91, 179);
+  --color-form-section-header-text: #ffffff;
+  /* FORM - POPI, PRIVACY & OTHER STATEMENTS */
+  --color-form-section-policy-statements-1: #0b1128;
+  --color-form-section-policy-statements-2: #065bb3;
+  /* FORM - INPUT AREAS */
+  --color-form-section-input-border: #ccc;
+  --color-form-section-input-border-focus: #0b1128;
+  --color-form-section-input-border-focus-rgb: rgba(11, 17, 40, 0.95);
+  /* FORM - CHECK BOXES */
+  --color-form-section-checkbox-background-hidden: #ffffff;
+  --color-form-section-checkbox-background-active: #ffffff;
+  --color-form-section-checkbox-border-active: #ccc;
+  --color-form-section-checkbox-tick-mark-active: #0b1128;
+  --color-form-section-checkbox-disabled-state: #959495;
+  /* FORM - FILE UPLOAD */
+  --color-form-section-file-upload-background: #ffffff;
+  --color-form-section-file-upload-background-hover: #0b1128;
+  --color-form-section-file-upload-background-text: #ffffff;
+  --color-form-section-file-upload-label-text: #0b1128;
+  /* FORM - CLEAR AND SUBMIT BUTTONS  */
+  --color-form-section-submit-button-background: #0b1128;
+  --color-form-section-submit-button-text: #ffffff;
+}
+
+/* ==================================================================================== */
+/* TODO:TODO:  BACKGROUND COLOR OF THE FORM SECTION - TITLE & IMAGE SECTION  TODO:TODO: */
+/* ==================================================================================== */
+
+.debt__masters__call__back__form__section {
+  position: relative;
+  top: 0rem;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  margin: 0rem 0rem 0rem 0rem;
+  padding: 0rem 0rem 2rem 0rem;
+  background-color: var(--color-form-section-background-2);
+  /* border: 2px solid red; */
+}
+
+@media screen and (max-width: 830px) {
+  .debt__masters__call__back__form__section {
+    position: relative;
+    top: 0rem;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .debt__masters__call__back__form__section {
+    position: relative;
+    top: 0rem;
+  }
+}
+
+/* ============================================================================= */
+/* TODO:TODO:  BACKGROUND COLOR OF THE FORM SECTION - HEADER SECTION  TODO:TODO: */
+/* ============================================================================= */
+
+/* =============================== */
+/* FIXME:  VIEW - MOBILE FIRST     */
+/* =============================== */
+
+.debt__masters__registration_form__header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  font-weight: 500;
+  letter-spacing: 0.2rem;
+  background-color: var(--color-form-section-header-background-1);
+  color: var(--color-form-section-header-text);
+  margin: 2.5rem 0.4rem 2rem 0.4rem;
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  border-radius: 0.5rem;
+  box-shadow: var(--color-box-shadow-01);
+}
+
+/* ========================= */
+/* FIXME:  POLICY STATEMENTS */
+/* ========================= */
+
+.debt__masters__privacy__statement {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 1rem 0.4rem 2rem 0.4rem;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+}
+
+.debt__masters__no__obligation__callback__statement {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 1rem 0.4rem 0rem 0.4rem;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+}
+
+/* =============================================================================== */
+/* TODO:TODO:  BACKGROUND COLOR OF THE FORM SECTION - POLICY STATEMENTS TODO:TODO: */
+/* =============================================================================== */
+
+.debt__masters__no__obligation__callback__statement strong {
+  color: var(--color-form-section-policy-statements-1);
+}
+
+.debt__masters__privacy__statement strong {
+  text-decoration: none;
+  color: var(--color-form-section-policy-statements-1);
+}
+
+.debt__masters__privacy__statement a {
+  text-decoration: none;
+  color: var(--color-form-section-policy-statements-1);
+  cursor: pointer;
+}
+
+/* =============================== */
+/* FIXME:  VIEW - LARGER SCREENS   */
+/* =============================== */
+
+@media screen and (max-width: 430px) {
+  .debt__masters__registration_form__header {
+    font-size: 1rem;
+    text-align: center;
+  }
+}
+
+/* ===================================================================================================================== */
+/* TODO:  DEBT MASTERS - REGISTRATION FORM                                                                               */
+/* ===================================================================================================================== */
+
+/* ============================================== */
+/* FIXME:  FORM CONTAINER  FIXME:                 */
+/* ============================================== */
+
+.debt__masters__form__group {
+  margin: 0rem 0rem 1rem 1rem;
+}
+
+/* ============================================== */
+/* FIXME:  FORM LABEL  FIXME:                     */
+/* ============================================== */
+
+.debt__masters__form__group label {
+  display: block;
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin: 0.5rem 1.75rem 0.5rem 1.75rem;
+}
+
+.debt__masters__form__group input::placeholder {
+  font-family: "Poppins", sans-serif;
+}
+
+/* ============================================== */
+/* FIXME:  INPUT FIELD TYPE =  TEXT  FIXME:       */
+/* e.g. "NAME" or "LAST NAME" etc.                */
+/* ============================================== */
+
+.debt__masters__form__group input[type="text"] {
+  /* width: 25rem; */
+  width: 96%;
+  border-radius: 0.5rem;
+  border: 1.25px solid var(--color-form-section-input-border);
+  margin: 0.5rem 1.4rem 0.5rem 1.4rem;
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: border-color 0.15s, box-shadow 0.15s;
+}
+
+.debt__masters__form__group input[type="text"]:focus {
+  border-color: var(--color-form-section-input-border-focus);
+  box-shadow: 0 0 0 2px var(--color-form-section-input-border-focus-rgb);
+  outline: 0;
+}
+
+/* ============================================== */
+/* FIXME:  INPUT FIELD TYPE =  TEL  FIXME:        */
+/* e.g. "TELEPHONE" or "MOBILE" Number etc.       */
+/* ============================================== */
+
+.debt__masters__form__group input[type="tel"] {
+  /* width: 25rem; */
+  width: 96%;
+  border-radius: 0.5rem;
+  border: 1px solid var(--color-form-section-input-border);
+  margin: 0.5rem 1.4rem 0.5rem 1.4rem;
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: border-color 0.15s, box-shadow 0.15s;
+}
+
+.debt__masters__form__group input[type="tel"]:focus {
+  border-color: var(--color-form-section-input-border-focus);
+  box-shadow: 0 0 0 2px var(--color-form-section-input-border-focus-rgb);
+  outline: 0;
+}
+
+/* ============================================== */
+/* FIXME:  INPUT FIELD TYPE =  TEXTAREA  FIXME:   */
+/* Runs over multiple lines (rows) e.g. "Address" */
+/* ============================================== */
+
+.debt__masters__form__group textarea {
+  resize: none;
+  /* width: 25rem; */
+  width: 96%;
+  border-radius: 0.5rem;
+  border: 1px solid var(--color-form-section-input-border);
+  margin: 0.5rem 1.4rem 0.5rem 1.4rem;
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  font-size: 1.2rem;
+  font-family: "poppins", sans-serif;
+  cursor: pointer;
+  transition: border-color 0.15s, box-shadow 0.15s;
+}
+
+.debt__masters__form__group textarea:focus {
+  border-color: var(--color-form-section-input-border-focus);
+  box-shadow: 0 0 0 2px var(--color-form-section-input-border-focus-rgb);
+  outline: 0;
+}
+
+/* ============================================== */
+/* FIXME:  INPUT FIELD = DROPDOWN LIST     FIXME: */
+/* e.g. Countries, Provinces, Titles etc.         */
+/* ============================================== */
+
+.debt__masters__form__group select {
+  /* width: 25rem; */
+  width: 96%;
+  border-radius: 0.5rem;
+  border: 1px solid var(--color-form-section-input-border);
+  margin: 0.5rem 1.4rem 0.5rem 1.4rem;
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: border-color 0.15s, box-shadow 0.15s;
+}
+
+.debt__masters__form__group select:focus {
+  border-color: var(--color-form-section-input-border-focus);
+  box-shadow: 0 0 0 2px rgba(11, 17, 40, 0.95);
+  outline: 0;
+}
+
+/* ========================================================================= */
+/* TODO:  START STYLING OF CUSTOM CHECKBOX                                   */
+/* ========================================================================= */
+
+/* ======================================= */
+/* FIXME:  INPUT FIELD = CHECKBOX  FIXME:  */
+/* ======================================= */
+
+.debt__masters__checkbox__option {
+  font-size: 1.2rem;
+  font-weight: 500;
+  line-height: 1.25;
+  text-transform: none;
+  text-align: justify;
+  display: grid;
+  grid-template-columns: 1rem auto;
+  gap: 3rem;
+  margin: 2rem 0rem 2rem 0rem;
+  padding: 1rem 1.5rem 0rem 0rem;
+  cursor: pointer;
+}
+
+label.debt__masters__checkbox__option {
+  display: grid;
+  text-transform: initial;
+  font-size: 1.2rem;
+  font-weight: 500;
+  line-height: 1.25;
+  color: black;
+}
+
+/* ==================================== */
+/* THIS IS TO HIDE THE NATIVE CHECKBOX  */
+/* ==================================== */
+
+.debt__masters__checkbox__option input[type="checkbox"] {
+  /* Add if not using autoprefixer */
+  -webkit-appearance: none;
+  appearance: none;
+  /* For iOS < 15 to remove gradient background */
+  background-color: var(--color-form-section-checkbox-background-hidden);
+  /* Not removed via appearance */
+  margin: 0;
+}
+
+/* ======================================= */
+/* THIS IS TO DISPLAY THE CUSTOM CHECKBOX  */
+/* ======================================= */
+
+.debt__masters__checkbox__option input[type="checkbox"] {
+  appearance: none;
+  background-color: var(--color-form-section-checkbox-background-active);
+  margin: 0;
+  font: inherit;
+  /* color: var(--color-form-section-checkbox-background-active); */
+  width: 1.5rem;
+  height: 1.5rem;
+  border: 1.25px solid var(--color-form-section-checkbox-border-active);
+  border-radius: 0.15em;
+  transform: translateY(-0.075em);
+  display: grid;
+  place-content: center;
+  cursor: pointer;
+}
+
+.debt__masters__checkbox__option + .debt__masters__checkbox__option {
+  margin-top: 1rem;
+}
+
+/* ======================================= */
+/* CUSTOM CHECKBOX - CHECKED STATE         */
+/* ======================================= */
+
+.debt__masters__checkbox__option input[type="checkbox"]::before {
+  content: "";
+  width: 0.7rem;
+  height: 0.7rem;
+  transform: scale(0);
+  transition: 120ms transform ease-in-out;
+  box-shadow: inset 1rem 1rem
+    var(--color-form-section-checkbox-tick-mark-active);
+  /* Windows High Contrast Mode */
+  background-color: CanvasText;
+  /* Creating a checkmark with CLIP-PATH */
+  transform-origin: bottom left;
+  clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
+}
+
+.debt__masters__checkbox__option input[type="checkbox"]:checked::before {
+  transform: scale(1);
+}
+
+/* ======================================= */
+/* CUSTOM CHECKBOX - FOCUSSED STATE        */
+/* ======================================= */
+
+.debt__masters__checkbox__option input[type="checkbox"]:focus {
+  outline: max(2px, 0.15em) solid var(--color-form-section-input-border-focus);
+  outline-offset: max(1px, 0.15em);
+}
+
+/* ======================================= */
+/* CUSTOM CHECKBOX - DISABLED STATE        */
+/* ======================================= */
+
+.debt__masters__checkbox__option--disabled {
+  color: var(--color-form-section-checkbox-disabled-state);
+  cursor: not-allowed;
+}
+
+.debt__masters__checkbox__option input[type="checkbox"]:disabled {
+  color: var(--color-form-section-checkbox-disabled-state);
+  cursor: not-allowed;
+}
+
+/* ========================================================================= */
+/* TODO:  END OF STYLING OF CUSTOM CHECKBOX                                  */
+/* ========================================================================= */
+
+/* ========================================================================= */
+/* TODO: START STYLING OF CUSTOM FILE-UPLOAD                                 */
+/* ========================================================================= */
+
+/* ============================================== */
+/* FIXME: INPUT FIELD TYPE = FILE          FIXME: */
+/* ============================================== */
+
+.debt__masters__file-input {
+  display: inline-block;
+  margin: 1rem 1.4rem 1rem 1.4rem;
+  padding: 1rem 1rem 1rem 1rem;
+  text-align: left;
+  background: var(--color-form-section-file-upload-background);
+  /* width: 450px; */
+  width: 96%;
+  position: relative;
+  border-radius: 0.5rem;
+  box-shadow: var(--color-box-shadow-02), var(--color-box-shadow-01);
+}
+
+/* ============================================== */
+/* HIDING THE NATIVE FILE UPLOADER                */
+/* ============================================== */
+
+.debt__masters__file-input > [type="file"] {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  z-index: 10;
+  cursor: pointer;
+}
+
+/* ============================================ */
+/* STYLE AND DISPLAY THE CUSTOM FILE UPLOADER   */
+/* ============================================ */
+
+.debt__masters__file-input > .debt__masters__button {
+  /* display: inline-block; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0rem 0.5rem 0.75rem 0.5rem;
+  padding: 0.8rem 1rem 0.8rem 1rem;
+  font-size: 1.3rem;
+  font-weight: 500;
+  background: var(--color-form-section-file-upload-background);
+  border-radius: 0.5rem;
+  box-shadow: var(--color-box-shadow-02), var(--color-box-shadow-01);
+  cursor: pointer;
+}
+
+.debt__masters__file-input:hover > .debt__masters__button {
+  background: var(--color-form-section-file-upload-background-hover);
+  color: var(--color-form-section-file-upload-background-text);
+}
+
+.debt__masters__file-input > .debt__masters__label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1.5rem 0.5rem 0rem 0.5rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--color-form-section-file-upload-label-text);
+  white-space: nowrap;
+  opacity: 0.5;
+}
+
+.debt__masters__file-input.-chosen > .debt__masters__label {
+  opacity: 1;
+}
+
+.debt__masters__file-input .fa {
+  font-size: 1.8rem;
+  margin: 0rem 1rem 0rem 0rem;
+}
+
+label .debt__masters__label__strong {
+  color: var(--color-form-section-file-upload-label-text);
+}
+
+/* ========================================================================= */
+/* TODO:  END OF STYLING OF CUSTOM FILE-UPLOAD                               */
+/* ========================================================================= */
+
+/* ========================================== */
+/* FIXME:  INPUT FIELD TYPE =  EMAIL  FIXME:  */
+/* ========================================== */
+
+.debt__masters__form__group input[type="email"] {
+  /* width: 25rem; */
+  width: 96%;
+  border-radius: 0.5rem;
+  border: 1px solid var(--color-form-section-input-border);
+  margin: 0.5rem 1.4rem 0.5rem 1.4rem;
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: border-color 0.15s, box-shadow 0.15s;
+}
+
+.debt__masters__form__group input[type="email"]:focus {
+  border-color: var(--color-form-section-input-border-focus);
+  box-shadow: 0 0 0 2px var(--color-form-section-input-border-focus-rgb);
+  outline: 0;
+}
+
+/* ============================= */
+/* FIXME:  FORM BUTTONS  FIXME:  */
+/* ============================= */
+
+.debt__masters__button__container button {
+  background: var(--color-form-section-submit-button-background);
+  color: var(--color-form-section-submit-button-text);
+  border: 0;
+  outline: 0;
+  border-radius: 0.5rem;
+  width: 20rem;
+  height: 3rem;
+  font-size: 1.2rem;
+  font-weight: 500;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+  margin: 0.5rem 2rem 3rem 2rem;
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  cursor: pointer;
+  text-decoration: none;
+  transition: transform 0.5s ease-in-out;
+}
+
+.debt__masters__button__container button:hover {
+  transform: scale(1.05);
+}
+
+.debt__masters__button__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ============================================== */
+/* FIXME:  STYLING - GOOGLE RECAPTCHA  FIXME:     */
+/* ============================================== */
+
+.debt__masters__form__group .g-recaptcha {
+  margin: 2rem 1rem 2rem 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* transform: scale(0.89); */
+  transform: scale(1);
+  /* -webkit-transform: scale(0.89); */
+  -webkit-transform: scale(1);
+  transform-origin: 0 0;
+  -webkit-transform-origin: 0 0;
+  /* border: 1px solid red; */
+}
+
+/* =============================================================== */
+/* FIXME:  FINAL MEDIA QUERY - REGISTRATION FORM (SMALLER SCREENS) */
+/* =============================================================== */
+
+@media screen and (max-width: 600px) {
+  .debt__masters__button__container button {
+    margin: 0rem 1rem 2rem 1rem;
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .debt__masters__button__container {
+    flex-direction: column;
+  }
+
+  .debt__masters__file-input {
+    margin: 1rem 0.2rem 1rem 0.2rem;
+  }
+
+  .debt__masters__form__group label {
+    font-size: 1rem;
+    margin: 0rem 0.6rem 0rem 0.5rem;
+  }
+
+  .debt__masters__form__group input[type="email"] {
+    margin: 0.5rem 0.2rem 0.5rem 0.2rem;
+  }
+
+  .debt__masters__checkbox__option {
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin: 2rem 2rem 2rem 0.1rem;
+  }
+
+  .debt__masters__form__group select {
+    margin: 0.5rem 0.1rem 0.5rem 0.1rem;
+  }
+
+  .debt__masters__form__group textarea {
+    margin: 0.5rem 0.1rem 0.5rem 0.1rem;
+  }
+
+  .debt__masters__form__group input[type="tel"] {
+    margin: 0.5rem 0.1rem 0.5rem 0.1rem;
+  }
+
+  .debt__masters__form__group input[type="text"] {
+    margin: 0.5rem 0.1rem 0.5rem 0.1rem;
+  }
+
+  .debt__masters__form__group input[type="date"] {
+    margin: 0.5rem 0.1rem 0.5rem 0.1rem;
+  }
+
+  .debt__masters__form__group input[type="number"] {
+    margin: 0.5rem 0.1rem 0.5rem 0.1rem;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .debt__masters__form__group .g-recaptcha {
+    margin: 2rem 1rem 2rem 4.75rem;
+    transform: scale(0.79);
+    -webkit-transform: scale(0.79);
   }
 }
 
