@@ -2444,7 +2444,7 @@ h6 {
   margin: 0rem 0rem 0rem 0rem;
   background-color: var(--color-section-about-us-background);
   /* border-bottom: 1px solid var(--color-section-about-us-border-bottom); */
-  border-top: 1px solid var(--color-section-about-us-border-bottom);
+  /* border-top: 1px solid var(--color-section-about-us-border-bottom); */
   /* border: 2px solid red; */
 }
 
@@ -3012,7 +3012,7 @@ h6 {
   object-fit: cover;
   margin: 0rem 0rem 0rem 0rem;
   background-color: var(--color-section-when-to-consider-background);
-  border-bottom: 1px solid var(--color-section-when-to-consider-border-bottom);
+  /* border-bottom: 1px solid var(--color-section-when-to-consider-border-bottom); */
   border-top: 1px solid var(--color-section-when-to-consider-border-bottom);
   /* border: 2px solid red; */
 }
