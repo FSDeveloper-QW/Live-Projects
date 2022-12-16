@@ -272,15 +272,16 @@ input {
 .horizontal__row__height {
   height: 0.1rem;
   border: none;
-  background-color: black;
+  background-color: white;
   margin: 0rem 0rem 0rem 0rem;
 }
 
-@media screen and (max-width: 650px) {
+/* @media screen and (max-width: 650px) {
   .horizontal__row__height {
     display: none;
+    background-color: white;
   }
-}
+} */
 
 /* ===================================================================================================================== */
 /* TODO:  SET THE RESPONSIVE DEFAULT SIZES FOR ALL HEADING ELEMENTS (H1 - H6)                                      TODO: */
@@ -2444,7 +2445,7 @@ h6 {
   margin: 0rem 0rem 0rem 0rem;
   background-color: var(--color-section-about-us-background);
   /* border-bottom: 1px solid var(--color-section-about-us-border-bottom); */
-  /* border-top: 1px solid var(--color-section-about-us-border-bottom); */
+  border-top: 1px solid var(--color-section-about-us-border-bottom);
   /* border: 2px solid red; */
 }
 
