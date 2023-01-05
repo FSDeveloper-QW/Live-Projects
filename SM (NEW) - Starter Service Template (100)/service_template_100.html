@@ -9075,7 +9075,7 @@
           <!-- ============================================== -->
 
           <div class="order__form__section__title">
-            section 1 : Select the Service required
+            section 1 : Select the Service
           </div>
 
           <!-- ============================================================== -->
@@ -9101,7 +9101,9 @@
           <!-- ======================= -->
 
           <div class="order__form__section__element">
-            <label for="order-form-options-01">SELECT THE SERVICE *</label>
+            <label for="order-form-options-01"
+              >SELECT THE SERVICE YOU REQUIRE *</label
+            >
             <select id="order-form-options-01" name="SERVICE 1" required>
               <option value="" selected>Please Select</option>
               <option value="001 - ">001 -</option>
@@ -9318,7 +9320,7 @@
           <!-- ============================================== -->
 
           <div class="order__form__section__title">
-            section 2 : Select where the service must be carried out
+            section 2 : Where and how must the service be carried out
           </div>
 
           <!-- ============================================================ -->
@@ -9330,10 +9332,7 @@
           <!-- ===================================== -->
 
           <div class="order__form__section__element">
-            <label for="province"
-              >In which province of South Africa do you require the service?
-              *</label
-            >
+            <label for="province">Your province in South Africa *</label>
             <select
               id="province"
               name="In which province is the service required"
@@ -9357,10 +9356,7 @@
           <!-- ========================================= -->
 
           <div class="order__form__section__element">
-            <label for="region"
-              >In which regional area of the selected province do you require
-              the service? *</label
-            >
+            <label for="region">Your regional area in the province *</label>
             <select
               id="region"
               name="In which regional area is the Reseller based"
@@ -9477,9 +9473,7 @@
           <!-- ======================================= -->
 
           <div class="order__form__section__element">
-            <label for="citytown"
-              >Select the city / town where you require the service *</label
-            >
+            <label for="citytown">Your city / town *</label>
             <select
               id="citytown"
               name="From which City/Town will the Reseller operate"
@@ -10636,8 +10630,7 @@
 
           <div class="order__form__section__element">
             <label for="service-location"
-              >Select the location or premises where the service must be carried
-              out? *</label
+              >How must the service be carried out? *</label
             >
             <select
               id="service-location"
@@ -10645,8 +10638,7 @@
               required
             >
               <option value="" selected>
-                Select your preferred location for the service to be carried out
-                ...
+                Select your preferred method ...
               </option>
               <option name="client-onsite" value="Client premises (On-site)">
                 Carry out the service at the Client's premises (On-site)
@@ -10656,10 +10648,10 @@
                 value="Service provider premises (On-site)"
               >
                 Carry out the service at the Service Provider's premises
-                (On-site)
+                (Off-site)
               </option>
               <option name="anypremises" value="Anywhere">
-                The service can be carried out remotely from anywhere
+                Carry out the service remotely from anywhere
               </option>
             </select>
           </div>
@@ -10675,7 +10667,7 @@
           <!-- ============================================== -->
 
           <div class="order__form__section__title">
-            section 3 : Select the Dates when you require the Service
+            section 3 : Provide the Dates when you require the Service
           </div>
 
           <!-- ============================================================ -->
@@ -10687,14 +10679,11 @@
           <!-- ========================================= -->
 
           <div class="order__form__section__element">
-            <label for="delivery-date"
-              >By when do you want the service to start?</label
-            >
+            <label for="delivery-date">Start Date</label>
             <input
               id="delivery-date"
               type="date"
               value=""
-              name="Required Delivery Date"
               min="2023-01-01"
               max="2099-12-31"
             />
@@ -10705,14 +10694,11 @@
           <!-- ========================================= -->
 
           <div class="order__form__section__element">
-            <label for="delivery-date"
-              >By when do you want the service to end?</label
-            >
+            <label for="delivery-date">End Date</label>
             <input
               id="delivery-date"
               type="date"
               value=""
-              name="Required Delivery Date"
               min="2023-01-01"
               max="2099-12-31"
             />
@@ -10742,8 +10728,9 @@
 
           <div class="order__form__section__element">
             <label for="further-requirements"
-              >Please Provide more specific details about the service you
-              require, to assist us with the quoting *</label
+              >Provide more specific details about the service you require, to
+              assist us with preparing your quote and allocate the correct
+              Service Provider for the service *</label
             >
             <textarea
               name="Further Requirements"
@@ -10769,7 +10756,7 @@
           <!-- ============================================== -->
 
           <div class="order__form__section__title">
-            section 5 : Provide your billing details (For quotes and invoices)
+            section 5 : your billing details (For quotes and invoices)
           </div>
 
           <!-- ============================================================ -->
@@ -10783,7 +10770,7 @@
           <div class="order__form__section__element">
             <label for="title">title *</label>
             <select id="title" name="Title" required>
-              <option value="" selected>-</option>
+              <option value="" selected>Select your title</option>
               <option id="MR" value="Mr">Mr</option>
               <option id="MRS" value="Mrs">Mrs</option>
               <option id="MS" value="Ms">Ms</option>
@@ -10802,7 +10789,7 @@
               type="text"
               value=""
               name="Client Name"
-              placeholder="your name"
+              placeholder="enter your name"
               minlength="3"
               maxlength="50"
               autocomplete="off"
@@ -10821,7 +10808,7 @@
               type="text"
               value=""
               name="Client Surname"
-              placeholder="your surname"
+              placeholder="enter your surname"
               minlength="3"
               maxlength="50"
               autocomplete="off"
@@ -10840,7 +10827,7 @@
               type="tel"
               value=""
               name="Client Mobile Number"
-              placeholder="your mobile nr"
+              placeholder="enter your mobile nr"
               minlength="3"
               maxlength="13"
               autocomplete="off"
@@ -10859,7 +10846,7 @@
               type="email"
               value=""
               name="Client Email Address"
-              placeholder="your email"
+              placeholder="enter your email address"
               minlength="3"
               maxlength="65"
               autocomplete="off"
@@ -10909,14 +10896,14 @@
 
           <div class="order__form__section__element">
             <label for="company__position"
-              >Your position at the company (if applicable)?</label
+              >position at the company (if applicable)</label
             >
             <input
               id="company__position"
               type="text"
               value=""
               name="Position / Designation at the Company"
-              placeholder="your position at the company"
+              placeholder="enter your position at the company"
               minlength="3"
               maxlength="75"
               autocomplete="off"
@@ -10928,9 +10915,7 @@
           <!-- ================================== -->
 
           <div class="order__form__section__element">
-            <label for="telephone"
-              >company telephone number (if applicable)</label
-            >
+            <label for="telephone">company tel number (if applicable)</label>
             <input
               id="telephone"
               type="tel"
@@ -10948,13 +10933,13 @@
           <!-- ================================== -->
 
           <div class="order__form__section__element">
-            <label for="address">Your billing address *</label>
+            <label for="address">billing address *</label>
             <textarea
               name="Billing Address"
               id="address"
               cols="30"
               rows="5"
-              placeholder="enter billing address"
+              placeholder="enter your billing address"
               minlength="3"
               maxlength="135"
               autocomplete="off"
@@ -10992,7 +10977,7 @@
           <!-- ============================================== -->
 
           <div class="order__form__section__title">
-            Section 6: Confirmation of details
+            Section 6: Confirm your details
           </div>
 
           <!-- ========================== -->
