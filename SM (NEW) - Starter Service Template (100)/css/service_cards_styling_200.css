@@ -6620,6 +6620,20 @@ nav .clientzonewrapper .advertising-drop {
   --color-order-form-input-field-border-focus: #01a7cf;
   --color-order-form-input-field-border-focus-box-shadow: 0 0 0 2px
     rgba(1, 167, 207, 0.95);
+  /* =============== */
+  /* FORM CHECKBOXES */
+  /* =============== */
+  --color-order-form-checkbox-label: #000000;
+  --color-order-form-checkbox-background: #ffffff;
+  --color-order-form-checkbox-border: #ccc;
+  --color-order-form-checkbox-checkmark: #01a7cf;
+  --color-order-form-checkbox-focus: #01a7cf;
+  --color-order-form-checkbox-disabled: #959495;
+  /* ===================== */
+  /* FORM - SUBMIT BUTTONS */
+  /* ===================== */
+  --color-order-form-buttons-background: #01a7cf;
+  --color-order-form-buttons-text: #ffffff;
 }
 
 /* ================================================================== */
@@ -7130,7 +7144,7 @@ label.order__form__checkbox__option {
   font-size: 1.2rem;
   font-weight: 500;
   line-height: 1.25;
-  color: black;
+  color: var(--color-order-form-checkbox-label);
 }
 
 /* ------------------------------------ */
@@ -7142,7 +7156,7 @@ label.order__form__checkbox__option {
   -webkit-appearance: none;
   appearance: none;
   /* For iOS < 15 to remove gradient background */
-  background-color: var(--color-quote-products-custom-checkbox-background);
+  background-color: var(--color-order-form-checkbox-background);
   /* Not removed via appearance */
   margin: 0;
 }
@@ -7153,13 +7167,13 @@ label.order__form__checkbox__option {
 
 .order__form__checkbox__option input[type="checkbox"] {
   appearance: none;
-  background-color: var(--color-quote-products-custom-checkbox-background);
+  background-color: var(--color-order-form-checkbox-background);
   margin: 0;
   font: inherit;
-  color: var(--color-quote-products-custom-checkbox-border);
+  color: var(--color-order-form-checkbox-border);
   width: 1.5rem;
   height: 1.5rem;
-  border: 0.15em solid var(--color-quote-products-custom-checkbox-border);
+  border: 0.15em solid var(--color-order-form-checkbox-border);
   border-radius: 0.15em;
   transform: translateY(-0.075em);
   display: grid;
@@ -7181,8 +7195,7 @@ label.order__form__checkbox__option {
   height: 0.7rem;
   transform: scale(0);
   transition: 120ms transform ease-in-out;
-  box-shadow: inset 1em 1em
-    var(--color-quote-products-custom-checkbox-checkmark);
+  box-shadow: inset 1em 1em var(--color-order-form-checkbox-checkmark);
   /* Windows High Contrast Mode */
   background-color: CanvasText;
   /* Creating a checkmark with CLIP-PATH */
@@ -7199,8 +7212,7 @@ label.order__form__checkbox__option {
 /* --------------------------------------- */
 
 .order__form__checkbox__option input[type="checkbox"]:focus {
-  outline: max(2px, 0.15em) solid
-    var(--color-quote-products-custom-checkbox-focus);
+  outline: max(2px, 0.15em) solid var(--color-order-form-checkbox-focus);
   outline-offset: max(1px, 0.15em);
 }
 
@@ -7209,12 +7221,12 @@ label.order__form__checkbox__option {
 /* --------------------------------------- */
 
 .order__form__checkbox__option--disabled {
-  color: var(--color-quote-products-custom-checkbox-disabled);
+  color: var(--color-order-form-checkbox-disabled);
   cursor: not-allowed;
 }
 
 .order__form__checkbox__option input[type="checkbox"]:disabled {
-  color: var(--color-quote-products-custom-checkbox-disabled);
+  color: var(--color-order-form-checkbox-disabled);
   cursor: not-allowed;
 }
 
@@ -7227,8 +7239,8 @@ label.order__form__checkbox__option {
 /* -------------------------------------------------- */
 
 .order__form__submit__button__container button {
-  background: var(--color-quote-products-button-background);
-  color: var(--color-quote-products-button-text);
+  background: var(--color-order-form-buttons-background);
+  color: var(--color-order-form-buttons-text);
   border: 0;
   outline: 0;
   border-radius: 0.5rem;

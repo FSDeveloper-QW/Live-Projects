@@ -3633,6 +3633,39 @@ nav .clientzonewrapper .advertising-drop {
 /* ===================================================================================================================== */
 /* ===================================================================================================================== */
 
+:root {
+  /* ========================================================== */
+  /* PAGE BACKGROUND - FOR SERVICE PRODUCT CARDS                */
+  /* ========================================================== */
+  --color-service-product-cards-backgrounds: #eee;
+  /* --color-service-product-cards-button-background: #dc143c; */
+  --color-service-product-cards-button-background: #01a7cf;
+  --color-service-product-cards-buttons-text: #ffffff;
+  --color-service-product-cards-identification-number-text: #01a7cf;
+  --color-service-product-cards-close-button-x: #01a7cf;
+  /* ========================================================== */
+  /* CARD BACKGROUND & TEXT                                     */
+  /* ========================================================== */
+  --color-individual-service-product-cards-background: #ffffff;
+  --color-individual-service-product-cards-extra-image-border: #000000;
+  --color-individual-service-product-cards-extra-image-border-hover: #dc143c;
+  --color-individual-service-product-cards-text-title: #000000;
+  --color-individual-service-product-cards-text-description: #000000;
+  --color-individual-service-product-cards-text-price-currency: #000000;
+  --color-individual-service-product-cards-text-price-value: #000000;
+  --color-individual-service-product-cards-back-heading-main-title: #01a7cf;
+  --color-individual-service-product-cards-back-heading-sub-title: #000000;
+  /* ========================================================== */
+  /* COLOR SCHEMES - FOR SERVICE PRODUCT CARDS                  */
+  /* ========================================================== */
+  --color-scheme-shopmax-hex: #dc143c;
+  --color-scheme-shopmax-rgb: rgb(220, 20, 60);
+  --color-scheme-general-services-hex: #544179;
+  --color-scheme-general-services-rgb: rgb(84, 65, 121);
+  --color-scheme-professional-services-hex: #01a7cf;
+  --color-scheme-professional-services-rgb: rgb(1, 167, 207);
+}
+
 /* =========================================================== */
 /* FIXME:  NEW PAGE - CONTAINER (HOLDING ALL ELEMENTS)  FIXME: */
 /* =========================================================== */
@@ -3648,7 +3681,7 @@ nav .clientzonewrapper .advertising-drop {
   height: auto;
   object-fit: cover;
   margin: 0rem 0rem 0rem 0rem;
-  background-color: #eee;
+  background-color: var(--color-service-product-cards-backgrounds);
   /* border: 2px solid red; */
 }
 
@@ -3677,7 +3710,7 @@ nav .clientzonewrapper .advertising-drop {
   text-transform: uppercase;
   width: 100%;
   padding: 1.5rem 1rem 1.5rem 1rem;
-  background-color: #eee;
+  background-color: var(--color-service-product-cards-backgrounds);
   text-align: center;
   /* border: 2px solid purple; */
 }
@@ -3695,7 +3728,7 @@ nav .clientzonewrapper .advertising-drop {
   width: 100%;
   margin: -4rem 0rem 0rem 0rem;
   padding: 0rem 1rem 0rem 1rem;
-  background-color: #eee;
+  background-color: var(--color-service-product-cards-backgrounds);
   text-align: center;
   /* border: 2px solid purple; */
 }
@@ -3728,9 +3761,9 @@ nav .clientzonewrapper .advertising-drop {
   padding: 1rem 0.5rem 1rem 0.5rem;
   border: none;
   outline: none;
-  background: #dc143c;
+  background: var(--color-scheme-shopmax-hex);
   border-radius: 0.5rem;
-  box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.35);
+  box-shadow: var(--color-box-shadow-01);
   transition: transform 0.5s ease-in-out;
   cursor: pointer;
   text-align: center;
@@ -3738,7 +3771,7 @@ nav .clientzonewrapper .advertising-drop {
 
 .new__page__button a {
   text-decoration: none;
-  color: white;
+  color: var(--color-service-product-cards-buttons-text);
   cursor: pointer;
 }
 
@@ -3787,7 +3820,7 @@ nav .clientzonewrapper .advertising-drop {
   height: auto;
   object-fit: cover;
   margin: 0rem 0rem 0rem 0rem;
-  background-color: #eee;
+  background-color: var(--color-service-product-cards-backgrounds);
   /* border: 2px solid green; */
 }
 
@@ -4029,7 +4062,7 @@ nav .clientzonewrapper .advertising-drop {
   transform-style: preserve-3d;
   width: 100%;
   height: 100%;
-  background: var(--color-cta-product-card-background);
+  background: var(--color-individual-service-product-cards-background);
   border-radius: 1.5rem;
   margin: 0rem 0rem 0rem 0rem;
   padding: 0.75rem 0.75rem 0.75rem 0.75rem;
@@ -4857,7 +4890,7 @@ nav .clientzonewrapper .advertising-drop {
   backface-visibility: hidden;
   width: 100%;
   height: 100%;
-  background: var(--color-cta-product-card-background);
+  background: var(--color-individual-service-product-cards-background);
   border-radius: 1.5rem;
   overflow: hidden;
   margin: 0rem 0rem 0rem 0rem;
@@ -5478,7 +5511,7 @@ nav .clientzonewrapper .advertising-drop {
   transform: rotateY(180deg);
   width: 100%;
   height: 100%;
-  background: var(--color-cta-product-card-background);
+  background: var(--color-individual-service-product-cards-background);
   border-radius: 1.5rem;
   overflow: hidden;
   margin: 0rem 0rem 0rem 0rem;
@@ -5514,7 +5547,7 @@ nav .clientzonewrapper .advertising-drop {
   width: 100%;
   height: 60%;
   border-radius: 0rem 0rem 0rem 0rem;
-  background-color: var(--color-cta-product-card-top-section-background);
+  background-color: var(--color-individual-service-product-cards-background);
   /* box-shadow: var(--color-box-shadow-01); */
   /* border: 1px solid red; */
 }
@@ -5554,7 +5587,7 @@ nav .clientzonewrapper .advertising-drop {
 }
 
 /* ===================================================================================================================== */
-/* TODO:  SERVICE PRODUCT CARD SECTION 2 - EXTRA PRODUCT IMAGES                                                          */
+/* TODO:  SERVICE PRODUCT CARD SECTION 2 - EXTRA SERVICE IMAGES                                                          */
 /* ===================================================================================================================== */
 
 /* =================================== */
@@ -5564,7 +5597,7 @@ nav .clientzonewrapper .advertising-drop {
 .service-card-extra-images-container {
   position: relative;
   height: 4.8rem;
-  background: var(--color-cta-product-card-extra-images-section-background);
+  background: var(--color-individual-service-product-cards-background);
   /* border: 1px solid red; */
 }
 
@@ -5577,7 +5610,7 @@ nav .clientzonewrapper .advertising-drop {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: var(--color-cta-product-card-extra-images-section-background);
+  background: var(--color-individual-service-product-cards-background);
   /* border: 1px solid red; */
 }
 
@@ -5586,15 +5619,16 @@ nav .clientzonewrapper .advertising-drop {
   height: 4.5rem;
   margin: 0.5rem 0.5rem 0rem 0.5rem;
   padding: 0.5rem 0.5rem 0.5rem 0.5rem;
-  background: var(--color-cta-product-card-extra-image-background);
+  background: var(--color-individual-service-product-cards-background);
   border-radius: 0.5rem;
   /* box-shadow: var(--color-box-shadow-01); */
-  /* border: 1px solid var(--color-product-card-extra-image-border); */
+  /* border: 1px solid var(--color-individual-service-product-cards-extra-image-border); */
   cursor: pointer;
 }
 
 .service-card-extra-images-container .extra-service-images img:hover {
-  border: 3px solid var(--color-cta-product-card-extra-image-border-hover);
+  border: 3px solid
+    var(--color-individual-service-product-cards-extra-image-border-hover);
 }
 
 /* ===================================================================================================================== */
@@ -5631,7 +5665,7 @@ nav .clientzonewrapper .advertising-drop {
   font-weight: bolder;
   text-transform: uppercase;
   letter-spacing: 0.05rem;
-  color: var(--color-cta-product-card-title);
+  color: var(--color-individual-service-product-cards-text-title);
   /* border: 1px solid red; */
 }
 
@@ -5651,7 +5685,7 @@ nav .clientzonewrapper .advertising-drop {
   font-weight: 500;
   text-transform: initial;
   text-align: justify;
-  color: var(--color-cta-product-card-short-description);
+  color: var(--color-individual-service-product-cards-text-description);
   /* border: 1px solid red; */
 }
 
@@ -5681,7 +5715,7 @@ nav .clientzonewrapper .advertising-drop {
   letter-spacing: 0.1rem;
   text-transform: uppercase;
   margin: 0rem 0.5rem 0rem 0rem;
-  color: var(--color-cta-product-card-price-currency);
+  color: var(--color-individual-service-product-cards-text-price-currency);
 }
 
 /* =============================================== */
@@ -5694,7 +5728,7 @@ nav .clientzonewrapper .advertising-drop {
   letter-spacing: 0.1rem;
   text-transform: uppercase;
   margin: 0rem 0rem 0rem 0rem;
-  color: var(--color-cta-product-card-price-value);
+  color: var(--color-individual-service-product-cards-text-price-value);
 }
 
 /* ===================================================================================================================== */
@@ -5737,12 +5771,12 @@ nav .clientzonewrapper .advertising-drop {
   margin: 0rem 0rem 0rem 0rem;
   padding: 0.75rem 1rem 0.75rem 1rem;
   border-radius: 0.75rem;
-  background-color: var(--color-cta-add-to-cart-button-background);
-  color: var(--color-cta-add-to-cart-button-text);
+  background-color: var(--color-service-product-cards-button-background);
+  color: var(--color-service-product-cards-buttons-text);
   outline: none;
   border: none;
   transition: transform 0.3s ease-in-out;
-  box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.35);
+  box-shadow: var(--color-box-shadow-01);
   /* border: 1px solid green; */
 }
 
@@ -5755,9 +5789,9 @@ nav .clientzonewrapper .advertising-drop {
   cursor: pointer;
 }
 
-/* ================== */
-/* PLACE ORDER BUTTON */
-/* ================== */
+/* ============================== */
+/* PLACE ORDER / GET QUOTE BUTTON */
+/* ============================== */
 
 .add-to-cart-container a {
   display: flex;
@@ -5769,12 +5803,12 @@ nav .clientzonewrapper .advertising-drop {
   margin: 0rem 0rem 0rem 0rem;
   padding: 0.75rem 1rem 0.75rem 1rem;
   border-radius: 0.75rem;
-  background-color: var(--color-cta-add-to-cart-button-background);
-  color: var(--color-cta-add-to-cart-button-text);
+  background-color: var(--color-service-product-cards-button-background);
+  color: var(--color-service-product-cards-buttons-text);
   outline: none;
   border: none;
   transition: transform 0.3s ease-in-out;
-  box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.35);
+  box-shadow: var(--color-box-shadow-01);
   /* border: 1px solid green; */
 }
 
@@ -5865,12 +5899,12 @@ nav .clientzonewrapper .advertising-drop {
   margin: 0rem 0rem 0rem 0rem;
   padding: 0.75rem 1rem 0.75rem 1rem;
   border-radius: 0.75rem;
-  background-color: var(--color-cta-add-to-cart-button-background);
-  color: var(--color-cta-add-to-cart-button-text);
+  background-color: var(--color-service-product-cards-button-background);
+  color: var(--color-service-product-cards-buttons-text);
   outline: none;
   border: none;
   transition: transform 0.3s ease-in-out;
-  box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.35);
+  box-shadow: var(--color-box-shadow-01);
   /* border: 1px solid green; */
 }
 
@@ -5899,7 +5933,7 @@ nav .clientzonewrapper .advertising-drop {
   z-index: 200;
   outline: none;
   border: none;
-  background: white;
+  background: var(--color-individual-service-product-cards-background);
   /* border: 1px solid red; */
 }
 
@@ -5915,7 +5949,7 @@ nav .clientzonewrapper .advertising-drop {
   height: 100%;
   outline: none;
   border: none;
-  background: white;
+  background: var(--color-individual-service-product-cards-background);
   padding: 0rem 0rem 0rem 0rem;
   cursor: pointer;
   /* border: 1px solid green; */
@@ -5930,8 +5964,8 @@ nav .clientzonewrapper .advertising-drop {
   font-size: 1.5rem;
   font-weight: 400;
   text-transform: uppercase;
-  background-color: var(--color-cta-add-to-wish-list-button-background);
-  color: var(--color-cta-add-to-wish-list-button-text);
+  background-color: var(--color-service-product-cards-button-background);
+  color: var(--color-service-product-cards-buttons-text);
   margin: 0rem 0rem 0rem 0rem;
   padding: 0.25rem 0.25rem 0.25rem 0.25rem;
   border-radius: 2rem;
@@ -5943,9 +5977,9 @@ nav .clientzonewrapper .advertising-drop {
   cursor: pointer;
 }
 
-/* ================================== */
-/* PRODUCT CARD IDENTIFICATION NUMBER */
-/* ================================== */
+/* ========================================== */
+/* SERVICE PRODUCT CARD IDENTIFICATION NUMBER */
+/* ========================================== */
 
 .add-to-wishlist-container p {
   position: absolute;
@@ -5955,7 +5989,7 @@ nav .clientzonewrapper .advertising-drop {
   height: 100%;
   font-size: 1.35rem;
   font-weight: 700;
-  color: #dc143c;
+  color: var(--color-service-product-cards-identification-number-text);
   margin: 0rem 0.75rem 0rem 0rem;
 }
 
@@ -6026,7 +6060,7 @@ nav .clientzonewrapper .advertising-drop {
   border-radius: 2rem;
   text-decoration: none;
   text-align: center;
-  color: var(--color-cta-card-back-button-close);
+  color: var(--color-service-product-cards-close-button-x);
   transition: transform 0.3s ease-in-out;
   /* border: 1px solid purple; */
   z-index: 5;
@@ -6046,9 +6080,9 @@ nav .clientzonewrapper .advertising-drop {
   height: 100%;
   text-align: center;
   border-radius: 0.5rem;
-  background-color: var(--color-cta-card-back-background);
-  color: var(--color-card-back-text);
-  box-shadow: var(--color-all-elements-box-shadow);
+  background-color: var(--color-individual-service-product-cards-background);
+  color: var(--color-individual-service-product-cards-text-title);
+  /* box-shadow: var(--color-all-elements-box-shadow); */
   /* border: 1px solid plum; */
 }
 
@@ -6112,7 +6146,7 @@ nav .clientzonewrapper .advertising-drop {
   text-transform: uppercase;
   width: 100%;
   height: 1.5rem;
-  color: var(--color-cta-heading-titles);
+  color: var(--color-individual-service-product-cards-back-heading-main-title);
   /* border: 1px solid yellow; */
 }
 
@@ -6123,7 +6157,7 @@ nav .clientzonewrapper .advertising-drop {
   text-transform: uppercase;
   width: 100%;
   height: 1.5rem;
-  color: var(--color-cta-heading-values);
+  color: var(--color-individual-service-product-cards-back-heading-sub-title);
   /* border: 1px solid green; */
 }
 
@@ -6148,7 +6182,7 @@ nav .clientzonewrapper .advertising-drop {
   text-transform: uppercase;
   width: 100%;
   height: 2rem;
-  color: var(--color-cta-heading-titles);
+  color: var(--color-individual-service-product-cards-back-heading-main-title);
   /* border: 1px solid yellow; */
 }
 
@@ -6159,7 +6193,7 @@ nav .clientzonewrapper .advertising-drop {
   text-transform: uppercase;
   width: 100%;
   height: 3rem;
-  color: var(--color-cta-heading-values);
+  color: var(--color-individual-service-product-cards-back-heading-sub-title);
   /* border: 1px solid green; */
 }
 
@@ -6184,7 +6218,7 @@ nav .clientzonewrapper .advertising-drop {
   text-transform: uppercase;
   width: 100%;
   height: 2rem;
-  color: var(--color-cta-heading-titles);
+  color: var(--color-individual-service-product-cards-back-heading-main-title);
   /* border: 1px solid yellow; */
 }
 
@@ -6195,7 +6229,7 @@ nav .clientzonewrapper .advertising-drop {
   text-transform: uppercase;
   width: 100%;
   height: 3rem;
-  color: var(--color-cta-heading-values);
+  color: var(--color-individual-service-product-cards-back-heading-sub-title);
   /* border: 1px solid green; */
 }
 
@@ -6220,7 +6254,7 @@ nav .clientzonewrapper .advertising-drop {
   text-transform: uppercase;
   width: 100%;
   height: 1.5rem;
-  color: var(--color-cta-heading-titles);
+  color: var(--color-individual-service-product-cards-back-heading-main-title);
   /* border: 1px solid yellow; */
 }
 
@@ -6231,7 +6265,7 @@ nav .clientzonewrapper .advertising-drop {
   text-transform: uppercase;
   width: 100%;
   height: 1.5rem;
-  color: var(--color-cta-heading-values);
+  color: var(--color-individual-service-product-cards-back-heading-sub-title);
   /* border: 1px solid green; */
 }
 
@@ -6277,7 +6311,7 @@ nav .clientzonewrapper .advertising-drop {
   text-transform: uppercase;
   width: 100%;
   height: 2.5rem;
-  color: var(--color-cta-heading-titles);
+  color: var(--color-individual-service-product-cards-back-heading-main-title);
   /* border: 1px solid yellow; */
 }
 
@@ -6287,7 +6321,7 @@ nav .clientzonewrapper .advertising-drop {
   text-decoration: none;
   text-transform: uppercase;
   align-items: center;
-  color: var(--color-cta-heading-values);
+  color: var(--color-individual-service-product-cards-back-heading-sub-title);
 }
 
 .service-length-container .service-length-info {
@@ -6297,7 +6331,7 @@ nav .clientzonewrapper .advertising-drop {
   text-transform: uppercase;
   width: 100%;
   height: 2rem;
-  color: var(--color-cta-heading-values);
+  color: var(--color-individual-service-product-cards-back-heading-sub-title);
   /* border: 1px solid green; */
 }
 
@@ -6322,7 +6356,7 @@ nav .clientzonewrapper .advertising-drop {
   text-transform: uppercase;
   width: 100%;
   height: 2.5rem;
-  color: var(--color-cta-heading-titles);
+  color: var(--color-individual-service-product-cards-back-heading-main-title);
   /* border: 1px solid yellow; */
 }
 
@@ -6332,7 +6366,7 @@ nav .clientzonewrapper .advertising-drop {
   text-decoration: none;
   text-transform: uppercase;
   align-items: center;
-  color: var(--color-cta-heading-values);
+  color: var(--color-individual-service-product-cards-back-heading-sub-title);
 }
 
 .service-width-container .service-width-info {
@@ -6342,7 +6376,7 @@ nav .clientzonewrapper .advertising-drop {
   text-transform: uppercase;
   width: 100%;
   height: 2rem;
-  color: var(--color-cta-heading-values);
+  color: var(--color-individual-service-product-cards-back-heading-sub-title);
   /* border: 1px solid green; */
 }
 
@@ -6367,7 +6401,7 @@ nav .clientzonewrapper .advertising-drop {
   text-transform: uppercase;
   width: 100%;
   height: 2.5rem;
-  color: var(--color-cta-heading-titles);
+  color: var(--color-individual-service-product-cards-back-heading-main-title);
   /* border: 1px solid yellow; */
 }
 
@@ -6377,7 +6411,7 @@ nav .clientzonewrapper .advertising-drop {
   text-decoration: none;
   text-transform: uppercase;
   align-items: center;
-  color: var(--color-cta-heading-values);
+  color: var(--color-individual-service-product-cards-back-heading-sub-title);
 }
 
 .service-height-container .service-height-info {
@@ -6387,7 +6421,7 @@ nav .clientzonewrapper .advertising-drop {
   text-transform: uppercase;
   width: 100%;
   height: 2rem;
-  color: var(--color-cta-heading-values);
+  color: var(--color-individual-service-product-cards-back-heading-sub-title);
   /* border: 1px solid green; */
 }
 
@@ -6412,7 +6446,7 @@ nav .clientzonewrapper .advertising-drop {
   text-transform: uppercase;
   width: 100%;
   height: 2.5rem;
-  color: var(--color-cta-heading-titles);
+  color: var(--color-individual-service-product-cards-back-heading-main-title);
   /* border: 1px solid yellow; */
 }
 
@@ -6422,7 +6456,7 @@ nav .clientzonewrapper .advertising-drop {
   text-decoration: none;
   text-transform: uppercase;
   align-items: center;
-  color: var(--color-cta-heading-values);
+  color: var(--color-individual-service-product-cards-back-heading-sub-title);
 }
 
 .service-weight-container .service-weight-info {
@@ -6432,7 +6466,7 @@ nav .clientzonewrapper .advertising-drop {
   text-transform: uppercase;
   width: 100%;
   height: 2rem;
-  color: var(--color-cta-heading-values);
+  color: var(--color-individual-service-product-cards-back-heading-sub-title);
   /* border: 1px solid green; */
 }
 
@@ -6471,7 +6505,7 @@ nav .clientzonewrapper .advertising-drop {
   text-transform: uppercase;
   width: 100%;
   height: 2rem;
-  color: var(--color-cta-heading-titles);
+  color: var(--color-individual-service-product-cards-back-heading-main-title);
   /* border: 1px solid yellow; */
 }
 
@@ -6526,7 +6560,7 @@ nav .clientzonewrapper .advertising-drop {
   text-transform: uppercase;
   width: 100%;
   height: 2.35rem;
-  color: var(--color-cta-heading-titles);
+  color: var(--color-individual-service-product-cards-back-heading-main-title);
   /* border: 1px solid yellow; */
 }
 
@@ -6539,7 +6573,7 @@ nav .clientzonewrapper .advertising-drop {
   align-items: center;
   text-align: justify;
   font-size: 0.8rem;
-  font-weight: 500;
+  font-weight: 600;
   text-decoration: none;
   padding: 0rem 1rem 0rem 1rem;
   width: 100%;
@@ -6567,6 +6601,41 @@ nav .clientzonewrapper .advertising-drop {
 /* ===================================================================================================================== */
 /* ===================================================================================================================== */
 
+:root {
+  --color-order-form-background: #eee;
+  --color-order-form-section-heading-background: #01a7cf;
+  --color-order-form-section-heading-text: #ffffff;
+  --color-order-form-privacy-and-popi-text: #01a7cf;
+  --color-order-form-delivery-costs-text: #01a7cf;
+  /* ========================================================= */
+  /* FORM ACCORDIANS - ADD MORE PRODUCTS / SERVICES            */
+  /* ========================================================= */
+  --color-order-form-accordian-background: #eee;
+  --color-order-form-accordian-text: #000000;
+  --color-order-form-accordian-plus-and-minus-sign: #01a7cf;
+  /* ========================================================= */
+  /* INPUT FIELDS - BORDERS, BORDERS-FOCUS, BORDERS-BOX-SHADOW */
+  /* ========================================================= */
+  --color-order-form-input-field-border: #ccc;
+  --color-order-form-input-field-border-focus: #01a7cf;
+  --color-order-form-input-field-border-focus-box-shadow: 0 0 0 2px
+    rgba(1, 167, 207, 0.95);
+  /* =============== */
+  /* FORM CHECKBOXES */
+  /* =============== */
+  --color-order-form-checkbox-label: #000000;
+  --color-order-form-checkbox-background: #ffffff;
+  --color-order-form-checkbox-border: #ccc;
+  --color-order-form-checkbox-checkmark: #01a7cf;
+  --color-order-form-checkbox-focus: #01a7cf;
+  --color-order-form-checkbox-disabled: #959495;
+  /* ===================== */
+  /* FORM - SUBMIT BUTTONS */
+  /* ===================== */
+  --color-order-form-buttons-background: #01a7cf;
+  --color-order-form-buttons-text: #ffffff;
+}
+
 /* ================================================================== */
 /* FIXME:  ORDER FORM - CONTAINER (HOLDING ALL FORM ELEMENTS)  FIXME: */
 /* ================================================================== */
@@ -6580,7 +6649,7 @@ nav .clientzonewrapper .advertising-drop {
   object-fit: cover;
   margin: 0rem 0rem 0rem 0rem;
   padding: 0rem 0rem 2rem 0rem;
-  background-color: #eee;
+  background-color: var(--color-order-form-background);
   /* border: 2px solid blue; */
 }
 
@@ -6611,7 +6680,7 @@ nav .clientzonewrapper .advertising-drop {
   text-transform: uppercase;
   width: 100%;
   padding: 0.5rem 1rem 0.5rem 1rem;
-  background-color: #eee;
+  background-color: var(--color-order-form-background);
   text-align: center;
   /* border: 2px solid purple; */
 }
@@ -6629,7 +6698,7 @@ nav .clientzonewrapper .advertising-drop {
   width: 100%;
   margin: -2.75rem 0rem 2rem 0rem;
   padding: 0rem 1rem 0rem 1rem;
-  background-color: #eee;
+  background-color: var(--color-order-form-background);
   text-align: center;
   /* border: 2px solid purple; */
 }
@@ -6638,9 +6707,9 @@ nav .clientzonewrapper .advertising-drop {
 /* TODO:  ORDER FORM - SECTIONS                                                                                          */
 /* ===================================================================================================================== */
 
-/* ------------------------------- */
+/* =============================== */
 /* FIXME:  VIEW - MOBILE FIRST     */
-/* ------------------------------- */
+/* =============================== */
 
 .order__form__section__title {
   display: flex;
@@ -6650,17 +6719,17 @@ nav .clientzonewrapper .advertising-drop {
   font-size: 1.5rem;
   font-weight: 500;
   letter-spacing: 0.2rem;
-  background-color: var(--color-quote-products-form-header-background);
-  color: var(--color-quote-products-form-header-text);
+  background-color: var(--color-order-form-section-heading-background);
+  color: var(--color-order-form-section-heading-text);
   margin: 1rem 0.4rem 2rem 0.4rem;
   padding: 0.5rem 1rem 0.5rem 1rem;
   border-radius: 0.5rem;
   box-shadow: var(--color-box-shadow-01);
 }
 
-/* ------------------------- */
+/* ========================= */
 /* FIXME:  PRIVACY STATEMENT */
-/* ------------------------- */
+/* ========================= */
 
 .order__form__privacy__statement {
   display: flex;
@@ -6674,18 +6743,18 @@ nav .clientzonewrapper .advertising-drop {
 
 .order__form__privacy__statement strong {
   text-decoration: none;
-  color: var(--color-quote-products-privacy-text);
+  color: var(--color-order-form-privacy-and-popi-text);
 }
 
 .order__form__privacy__statement a {
   text-decoration: none;
-  color: var(--color-quote-products-privacy-text);
+  color: var(--color-order-form-privacy-and-popi-text);
   cursor: pointer;
 }
 
-/* --------------------------- */
+/* =========================== */
 /* FIXME:  SHIPPING STATEMENT  */
-/* --------------------------- */
+/* =========================== */
 
 .order__form__delivery__cost {
   display: flex;
@@ -6699,18 +6768,18 @@ nav .clientzonewrapper .advertising-drop {
 
 .order__form__delivery__cost strong {
   text-decoration: none;
-  color: var(--color-quote-products-delivery-cost-text);
+  color: var(--color-order-form-delivery-costs-text);
 }
 
 .order__form__delivery__cost a {
   text-decoration: none;
-  color: var(--color-quote-products-delivery-cost-text);
+  color: var(--color-order-form-delivery-costs-text);
   cursor: pointer;
 }
 
-/* ------------------------------- */
+/* =============================== */
 /* FIXME:  VIEW - LARGER SCREENS   */
-/* ------------------------------- */
+/* =============================== */
 
 @media screen and (max-width: 430px) {
   .order__form__section__title {
@@ -6742,10 +6811,8 @@ nav .clientzonewrapper .advertising-drop {
 /* ===================================================================================================================== */
 
 .add_products_to_order_accordian_item {
-  background-color: var(
-    --color-team-accordian-item-backgroundaccordian-item-background
-  );
-  color: var(--color-team-accordian-item-text);
+  background-color: var(--color-order-form-accordian-background);
+  color: var(--color-order-form-accordian-text);
   margin: 1rem 0rem 1rem 0rem;
   border-radius: 0.5rem;
   box-shadow: var(--color-box-shadow-01);
@@ -6779,7 +6846,7 @@ nav .clientzonewrapper .advertising-drop {
   font-size: 2rem;
   position: absolute;
   right: 1rem;
-  color: var(--color-team-accordian-item-plus-and-minus-sign);
+  color: var(--color-order-form-accordian-plus-and-minus-sign);
   transition: transform 0.5s ease-in-out;
 }
 
@@ -6792,7 +6859,7 @@ nav .clientzonewrapper .advertising-drop {
 }
 
 .add_products_to_order-accordian-item-header.active {
-  color: var(--color-team-accordian-item-header-active);
+  color: var(--color-order-form-accordian-plus-and-minus-sign);
 }
 
 /* ===================================================================================================================== */
@@ -6833,13 +6900,13 @@ nav .clientzonewrapper .advertising-drop {
 /* TODO:  ORDER FORM ELEMENTS                                                                                            */
 /* ===================================================================================================================== */
 
-/* ---------------------------------------------- */
+/* ============================================== */
 /* FIXME:  FORM CONTAINER  FIXME:                 */
-/* ---------------------------------------------- */
+/* ============================================== */
 
-/* ---------------------------------------------- */
+/* ============================================== */
 /* FIXME:  FORM LABEL  FIXME:                     */
-/* ---------------------------------------------- */
+/* ============================================== */
 
 .order__form__section__element {
   margin: 0rem 0rem 1rem 1rem;
@@ -6857,16 +6924,16 @@ nav .clientzonewrapper .advertising-drop {
   font-family: "Poppins", sans-serif;
 }
 
-/* ---------------------------------------------- */
+/* ============================================== */
 /* FIXME:  INPUT FIELD TYPE =  TEXT  FIXME:       */
 /* e.g. "NAME" or "LAST NAME" etc.                */
-/* ---------------------------------------------- */
+/* ============================================== */
 
 .order__form__section__element input[type="text"] {
   /* width: 25rem; */
   width: 96%;
   border-radius: 0.5rem;
-  border: 1px solid var(--color-quote-products-input-border);
+  border: 1px solid var(--color-order-form-input-field-border);
   margin: 0.5rem 1.4rem 0.5rem 1.4rem;
   padding: 0.5rem 1rem 0.5rem 1rem;
   font-size: 1.2rem;
@@ -6875,8 +6942,8 @@ nav .clientzonewrapper .advertising-drop {
 }
 
 .order__form__section__element input[type="text"]:focus {
-  border-color: var(--color-quote-products-input-border-focus);
-  box-shadow: 0 0 0 2px rgba(220, 20, 60, 0.95);
+  border-color: var(--color-order-form-input-field-border-focus);
+  box-shadow: var(--color-order-form-input-field-border-focus-box-shadow);
   outline: 0;
 }
 
@@ -6894,7 +6961,7 @@ nav .clientzonewrapper .advertising-drop {
   /* width: 25rem; */
   width: 96%;
   border-radius: 0.5rem;
-  border: 1px solid var(--color-quote-products-input-border);
+  border: 1px solid var(--color-order-form-input-field-border);
   margin: 0.5rem 1.4rem 0.5rem 1.4rem;
   padding: 0.5rem 1rem 0.5rem 1rem;
   font-size: 1.2rem;
@@ -6903,8 +6970,8 @@ nav .clientzonewrapper .advertising-drop {
 }
 
 .order__form__section__element input[type="tel"]:focus {
-  border-color: var(--color-quote-products-input-border-focus);
-  box-shadow: 0 0 0 2px rgba(220, 20, 60, 0.95);
+  border-color: var(--color-order-form-input-field-border-focus);
+  box-shadow: var(--color-order-form-input-field-border-focus-box-shadow);
   outline: 0;
 }
 
@@ -6921,7 +6988,7 @@ nav .clientzonewrapper .advertising-drop {
   /* width: 25rem; */
   width: 96%;
   border-radius: 0.5rem;
-  border: 1px solid var(--color-quote-products-input-border);
+  border: 1px solid var(--color-order-form-input-field-border);
   margin: 0.5rem 1.4rem 0.5rem 1.4rem;
   padding: 0.5rem 1rem 0.5rem 1rem;
   font-size: 1.2rem;
@@ -6930,8 +6997,8 @@ nav .clientzonewrapper .advertising-drop {
 }
 
 .order__form__section__element input[type="email"]:focus {
-  border-color: var(--color-quote-products-input-border-focus);
-  box-shadow: 0 0 0 2px rgba(220, 20, 60, 0.95);
+  border-color: var(--color-order-form-input-field-border-focus);
+  box-shadow: var(--color-order-form-input-field-border-focus-box-shadow);
   outline: 0;
 }
 
@@ -6950,7 +7017,7 @@ nav .clientzonewrapper .advertising-drop {
   /* width: 25rem; */
   width: 96%;
   border-radius: 0.5rem;
-  border: 1px solid var(--color-quote-products-input-border);
+  border: 1px solid var(--color-order-form-input-field-border);
   margin: 0.5rem 1.4rem 0.5rem 1.4rem;
   padding: 0.5rem 1rem 0.5rem 1rem;
   font-size: 1.2rem;
@@ -6960,8 +7027,8 @@ nav .clientzonewrapper .advertising-drop {
 }
 
 .order__form__section__element textarea:focus {
-  border-color: var(--color-quote-products-input-border-focus);
-  box-shadow: 0 0 0 2px rgba(220, 20, 60, 0.95);
+  border-color: var(--color-order-form-input-field-border-focus);
+  box-shadow: var(--color-order-form-input-field-border-focus-box-shadow);
   outline: 0;
 }
 
@@ -6978,7 +7045,7 @@ nav .clientzonewrapper .advertising-drop {
   /* width: 25rem; */
   width: 96%;
   border-radius: 0.5rem;
-  border: 1px solid var(--color-quote-products-input-border);
+  border: 1px solid var(--color-order-form-input-field-border);
   margin: 0.5rem 1.4rem 0.5rem 1.4rem;
   padding: 0.5rem 1rem 0.5rem 1rem;
   font-size: 1.2rem;
@@ -6988,8 +7055,8 @@ nav .clientzonewrapper .advertising-drop {
 }
 
 .order__form__section__element input[type="number"]:focus {
-  border-color: var(--color-quote-products-input-border-focus);
-  box-shadow: 0 0 0 2px rgba(220, 20, 60, 0.95);
+  border-color: var(--color-order-form-input-field-border-focus);
+  box-shadow: var(--color-order-form-input-field-border-focus-box-shadow);
   outline: 0;
 }
 
@@ -7001,7 +7068,7 @@ nav .clientzonewrapper .advertising-drop {
   /* width: 25rem; */
   width: 96%;
   border-radius: 0.5rem;
-  border: 1px solid var(--color-quote-products-input-border);
+  border: 1px solid var(--color-order-form-input-field-border);
   margin: 0.5rem 1.4rem 0.5rem 1.4rem;
   padding: 0.5rem 1rem 0.5rem 1rem;
   font-size: 1.2rem;
@@ -7010,8 +7077,8 @@ nav .clientzonewrapper .advertising-drop {
 }
 
 .order__form__section__element input[type="date"]:focus {
-  border-color: var(--color-quote-products-input-border-focus);
-  box-shadow: 0 0 0 2px rgba(220, 20, 60, 0.95);
+  border-color: var(--color-order-form-input-field-border-focus);
+  box-shadow: var(--color-order-form-input-field-border-focus-box-shadow);
   outline: 0;
 }
 
@@ -7029,7 +7096,7 @@ nav .clientzonewrapper .advertising-drop {
   /* width: 25rem; */
   width: 96%;
   border-radius: 0.5rem;
-  border: 1px solid var(--color-quote-products-input-border);
+  border: 1px solid var(--color-order-form-input-field-border);
   margin: 0.5rem 1.4rem 0.5rem 1.4rem;
   padding: 0.5rem 1rem 0.5rem 1rem;
   font-size: 1.2rem;
@@ -7038,8 +7105,8 @@ nav .clientzonewrapper .advertising-drop {
 }
 
 .order__form__section__element select:focus {
-  border-color: var(--color-quote-products-input-border-focus);
-  box-shadow: 0 0 0 2px rgba(220, 20, 60, 0.95);
+  border-color: var(--color-order-form-input-field-border-focus);
+  box-shadow: var(--color-order-form-input-field-border-focus-box-shadow);
   outline: 0;
 }
 
@@ -7077,7 +7144,7 @@ label.order__form__checkbox__option {
   font-size: 1.2rem;
   font-weight: 500;
   line-height: 1.25;
-  color: black;
+  color: var(--color-order-form-checkbox-label);
 }
 
 /* ------------------------------------ */
@@ -7089,7 +7156,7 @@ label.order__form__checkbox__option {
   -webkit-appearance: none;
   appearance: none;
   /* For iOS < 15 to remove gradient background */
-  background-color: var(--color-quote-products-custom-checkbox-background);
+  background-color: var(--color-order-form-checkbox-background);
   /* Not removed via appearance */
   margin: 0;
 }
@@ -7100,13 +7167,13 @@ label.order__form__checkbox__option {
 
 .order__form__checkbox__option input[type="checkbox"] {
   appearance: none;
-  background-color: var(--color-quote-products-custom-checkbox-background);
+  background-color: var(--color-order-form-checkbox-background);
   margin: 0;
   font: inherit;
-  color: var(--color-quote-products-custom-checkbox-border);
+  color: var(--color-order-form-checkbox-border);
   width: 1.5rem;
   height: 1.5rem;
-  border: 0.15em solid var(--color-quote-products-custom-checkbox-border);
+  border: 0.15em solid var(--color-order-form-checkbox-border);
   border-radius: 0.15em;
   transform: translateY(-0.075em);
   display: grid;
@@ -7128,8 +7195,7 @@ label.order__form__checkbox__option {
   height: 0.7rem;
   transform: scale(0);
   transition: 120ms transform ease-in-out;
-  box-shadow: inset 1em 1em
-    var(--color-quote-products-custom-checkbox-checkmark);
+  box-shadow: inset 1em 1em var(--color-order-form-checkbox-checkmark);
   /* Windows High Contrast Mode */
   background-color: CanvasText;
   /* Creating a checkmark with CLIP-PATH */
@@ -7146,8 +7212,7 @@ label.order__form__checkbox__option {
 /* --------------------------------------- */
 
 .order__form__checkbox__option input[type="checkbox"]:focus {
-  outline: max(2px, 0.15em) solid
-    var(--color-quote-products-custom-checkbox-focus);
+  outline: max(2px, 0.15em) solid var(--color-order-form-checkbox-focus);
   outline-offset: max(1px, 0.15em);
 }
 
@@ -7156,12 +7221,12 @@ label.order__form__checkbox__option {
 /* --------------------------------------- */
 
 .order__form__checkbox__option--disabled {
-  color: var(--color-quote-products-custom-checkbox-disabled);
+  color: var(--color-order-form-checkbox-disabled);
   cursor: not-allowed;
 }
 
 .order__form__checkbox__option input[type="checkbox"]:disabled {
-  color: var(--color-quote-products-custom-checkbox-disabled);
+  color: var(--color-order-form-checkbox-disabled);
   cursor: not-allowed;
 }
 
@@ -7174,8 +7239,8 @@ label.order__form__checkbox__option {
 /* -------------------------------------------------- */
 
 .order__form__submit__button__container button {
-  background: var(--color-quote-products-button-background);
-  color: var(--color-quote-products-button-text);
+  background: var(--color-order-form-buttons-background);
+  color: var(--color-order-form-buttons-text);
   border: 0;
   outline: 0;
   border-radius: 0.5rem;
