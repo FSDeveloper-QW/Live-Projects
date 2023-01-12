@@ -8708,8 +8708,9 @@
                   Hair, nail, beauty <br />and spa therapy
                 </div>
                 <div class="service-card-short-description">
-                  Book a consultation for a hair, nail, beauty or spa treatments
-                  at an experienced service provider in your city/town.
+                  Spoil yourself with a hair, nail, beauty, spa treatments or
+                  any other related services at an experienced service provider
+                  in your city/town.
                 </div>
               </div>
 
@@ -8827,10 +8828,14 @@
                     detailed service description
                   </p>
                   <p class="service-full-specifications-details">
-                    This service entails making a booking for a hair, nail,
-                    beauty or spa treatments at an experienced service provider
-                    in your city/town. The booking fee is usually payable
-                    upfront.
+                    Relax and spoil yourself by making a booking for a hair cut
+                    and treatment, manicure, pedicure, facial treatment, make-up
+                    session, spa treatments and getaways, sunbed tanning
+                    session, EMS body training / sculpting session or any type
+                    of massage at an experienced service provider in your
+                    city/town. The booking fee is usually payable upfront,
+                    however some services can also stretch over a fixed
+                    pre-determined period of time
                   </p>
                 </div>
 
@@ -8942,18 +8947,39 @@
             <select id="order-form-options-01" name="SERVICE 1" required>
               <option value="" selected>Please Select</option>
               <option
-                value="001 - Book a Hair, nail, beauty or spa therapy session"
+                value="001 - Make an appointment for a hair cut and treatment"
               >
-                001 - Book a Hair, nail, beauty or spa therapy session
+                001 - Make an appointment for a hair cut and treatment
               </option>
-              <!-- <option value="002 - ">002 -</option>
-              <option value="003 - ">003 -</option>
-              <option value="004 - ">004 -</option>
-              <option value="005 - ">005 -</option>
-              <option value="006 - ">006 -</option>
-              <option value="007 - ">007 -</option>
-              <option value="008 - ">008 -</option>
-              <option value="009 - ">009 -</option>               -->
+              <option value="002 - Make an appointment for a manicure">
+                002 - Make an appointment for a manicure
+              </option>
+              <option value="003 - Make an appointment for a pedicure">
+                003 - Make an appointment for a pedicure
+              </option>
+              <option value="004 - Make an appointment for a facial treatment">
+                004 - Make an appointment for a facial treatment
+              </option>
+              <option value="005 - Make an appointment for a make-up session">
+                005 - Make an appointment for a make-up session
+              </option>
+              <option value="006 - Make an appointment for a spa treatment">
+                006 - Make an appointment for a spa treatment
+              </option>
+              <option
+                value="007 - Make an appointment for a tanning session on a Sunbed"
+              >
+                007 - Make an appointment for a tanning session on a Sunbed
+              </option>
+              <option
+                value="008 - Make an appointment for an EMS Body Training and Sculpting Session"
+              >
+                008 - Make an appointment for an EMS Body Training and Sculpting
+                Session
+              </option>
+              <option value="009 - Make an appointment for a full body massage">
+                009 - Make an appointment for a full body massage
+              </option>
               <!-- <option value="010 - ">010 -</option>
               <option value="011 - ">011 -</option>
               <option value="012 - ">012 -</option>
@@ -10430,6 +10456,47 @@
 
           <hr />
 
+          <!-- ================================== -->
+          <!-- FIXME:   SERVICE ADDRESS    FIXME: -->
+          <!-- ================================== -->
+
+          <div class="order__form__section__element">
+            <label for="service-address"
+              >Provide the exact address where the service need to be carried
+              out (if not at the service provider premises)</label
+            >
+            <textarea
+              name="Service Address"
+              id="service-address"
+              cols="30"
+              rows="5"
+              placeholder="enter the exeact address for the service to be carried out (if applicable)"
+              minlength="3"
+              maxlength="135"
+              autocomplete="off"
+            ></textarea>
+          </div>
+
+          <!-- ======================================= -->
+          <!-- FIXME:  SERVICE POSTAL CODE     FIXME:  -->
+          <!-- ======================================= -->
+
+          <div class="order__form__section__element">
+            <label for="service-postalcode">service address postal code</label>
+            <input
+              id="service-postalcode"
+              type="text"
+              value=""
+              name="Service Address Postal Code"
+              placeholder="enter postal code of the service address"
+              minlength="3"
+              maxlength="6"
+              autocomplete="off"
+            />
+          </div>
+
+          <hr />
+
           <!-- ============================================================================ -->
           <!-- TODO:      ORDER FORM - SECTION 3 - SELECT DATES OF YOUR SERVICE       TODO: -->
           <!-- ============================================================================ -->
@@ -10749,7 +10816,77 @@
           <!-- ============================================== -->
 
           <div class="order__form__section__title">
-            Section 6: Confirm your details
+            Section 6: Upload any Documents, Artwork or Designs
+          </div>
+
+          <!-- ================================================= -->
+          <!-- FIXME:  UPLOAD PDF DOCUMENTS (DOCX, PDF)   FIXME: -->
+          <!-- ================================================= -->
+
+          <div class="order__form__section__element">
+            <label for="file"
+              >please upload (Only if applicable) :&nbsp;&nbsp;
+              <strong class="order__form__label__strong"
+                >Upload any documents relating to your service request (PDF or
+                .docx)</strong
+              ></label
+            >
+            <div class="order__form__file-input">
+              <input
+                type="file"
+                accept=".pdf, .docx"
+                name="upload Your Documents"
+              />
+              <span class="order__form__button"
+                ><i class="fa fa-cloud-upload-alt"></i>Browse</span
+              >
+              <span class="order__form__label" data-js-label
+                >Format required (PDF or .docx) - No file selected yet</span
+              >
+            </div>
+          </div>
+
+          <hr />
+
+          <!-- =============================================== -->
+          <!-- FIXME:  UPLOAD IMAGES (PNG, JPG, JPEG)   FIXME: -->
+          <!-- =============================================== -->
+
+          <div class="order__form__section__element">
+            <label for="file"
+              >please upload (Only if applicable) :&nbsp;&nbsp;
+              <strong class="order__form__label__strong"
+                >Upload any Artwork or Designs relating to your service request
+                (JPG, JPEG or PNG)</strong
+              ></label
+            >
+            <div class="order__form__file-input">
+              <input
+                type="file"
+                accept=".jpg, .jpeg, .png"
+                name="upload Your Document"
+              />
+              <span class="order__form__button"
+                ><i class="fa fa-cloud-upload-alt"></i>Browse</span
+              >
+              <span class="order__form__label" data-js-label
+                >Format required (JPG, JPEG or PNG) - No file selected yet</span
+              >
+            </div>
+          </div>
+
+          <hr />
+
+          <!-- ============================================================== -->
+          <!-- TODO:  ORDER FORM - SECTION 7 - CONFIRMATION OF DETAILS  TODO: -->
+          <!-- ============================================================== -->
+
+          <!-- ============================================== -->
+          <!-- FIXME:  ORDER FORM - SECTION 7 - TITLE  FIXME: -->
+          <!-- ============================================== -->
+
+          <div class="order__form__section__title">
+            Section 7: Confirm your details
           </div>
 
           <!-- ========================== -->
@@ -11243,6 +11380,7 @@
     <script src="js/animation_addtowishlist.js" defer></script>
     <script src="js/navigation.js" defer></script>
     <script src="js/rotatingbanners.js" defer></script>
+    <script src="js/services_file_upload.js" defer></script>
 
     <!-- ====================================================================================================== -->
     <!-- NOTE: "PAGE UNDER CONSTRUCTION" SCRIPT (APPLICABLE TO ALL PAGES UNDER CONSTRUCTION)                    -->

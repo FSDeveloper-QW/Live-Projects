@@ -8623,7 +8623,7 @@
       <!-- =================================================== -->
 
       <div class="new__page__title">
-        <h5><strong>Laundry Services</strong></h5>
+        <h5><strong>Electronic & Device Repairs</strong></h5>
       </div>
 
       <!-- FIXME:FIXME:FIXME:FIXME:  REPLACE NEW PAGE CONTENT BELOW  FIXME:FIXME:FIXME:FIXME: -->
@@ -8640,7 +8640,7 @@
         <!-- ==================================================================================================== -->
 
         <div class="single__service__product__card__container">
-          <div id="2_1_3_0_0_1" class="service-card-01">
+          <div id="2_1_9_0_0_1" class="service-card-01">
             <!-- ================================================================================================ -->
             <!-- ================================================================================================ -->
             <!-- FIXME:FIXME:                  SERVICE PRODUCT CARD (FRONT)                          FIXME:FIXME: -->
@@ -8692,7 +8692,7 @@
 
                 <div class="service-card-main-featured-image">
                   <img
-                    src="images_services/2_1_3_0_0_1_A.webp"
+                    src="images_services/2_1_9_0_0_1_A.webp"
                     id="featured__service__image__01"
                     alt=""
                   />
@@ -8704,11 +8704,12 @@
               <!-- ============================================================================================== -->
 
               <div class="service-card-brief-information-container">
-                <div class="service-card-title">Laundry Services</div>
+                <div class="service-card-title">
+                  Electronic & <br />Device Repairs
+                </div>
                 <div class="service-card-short-description">
-                  Hire a company specialising in doing large scale laundry
-                  services for homes, guest houses, businesses and the
-                  hospitality industry.
+                  Repair Services for any small, medium and large electronic
+                  products and devices.
                 </div>
               </div>
 
@@ -8802,7 +8803,7 @@
 
                   <div class="service-code-container">
                     <p class="service-code-title">service sku</p>
-                    <p class="service-code-info">2_1_3_0_0_1</p>
+                    <p class="service-code-info">2_1_9_0_0_1</p>
                   </div>
 
                   <!-- ================================ -->
@@ -8811,7 +8812,9 @@
 
                   <div class="service-model-number-container">
                     <p class="service-model-number-title">service category</p>
-                    <p class="service-model-number-info">Laundry Services</p>
+                    <p class="service-model-number-info">
+                      Electronic & Device Repairs
+                    </p>
                   </div>
                 </div>
 
@@ -8824,13 +8827,14 @@
                     detailed service description
                   </p>
                   <p class="service-full-specifications-details">
-                    The service entails the hiring of a company company that
-                    provide laundry services on a large / industrial scale for
-                    homes, AirBNB, Guest Houses, Hotels, Businesses and the
-                    wider vacation and hospitality industry. The service can be
-                    carried out as a once-off service or can be facilitated in
-                    terms of fixed term laundry contract between the client and
-                    the service provider.
+                    The service entails the repairing of electronic products and
+                    devices of any size by specialised and qualified service
+                    providers. A fixed warranty period on the repaired device is
+                    usually attached to the service provided. A quote is usually
+                    prepared after the service provider has thoroughly inspected
+                    the product/device (usually free of charge) and has
+                    established what repairs are needed. Payment is expected
+                    upfront before the service will be carried out.
                   </p>
                 </div>
 
@@ -8940,13 +8944,13 @@
               >SELECT THE SERVICE YOU REQUIRE *</label
             >
             <select id="order-form-options-01" name="SERVICE 1" required>
-              <option value="" selected>Please Select</option>
+              <option value="" disabled>Please Select</option>
               <option
-                value="001 - Hire a company specialising in doing large scale laundry
-                services"
+                value="001 - Hire an individual or company for any Electronic & Device Repairs"
+                selected
               >
-                001 - Hire a company specialising in doing large scale laundry
-                services
+                001 - Hire an individual or company for any Electronic & Device
+                Repairs
               </option>
               <!-- <option value="002 - ">002 -</option>
               <option value="003 - ">003 -</option>
@@ -10432,6 +10436,47 @@
 
           <hr />
 
+          <!-- ================================== -->
+          <!-- FIXME:   SERVICE ADDRESS    FIXME: -->
+          <!-- ================================== -->
+
+          <div class="order__form__section__element">
+            <label for="service-address"
+              >Provide the exact address where the service need to be carried
+              out (if not at the service provider premises)</label
+            >
+            <textarea
+              name="Service Address"
+              id="service-address"
+              cols="30"
+              rows="5"
+              placeholder="enter the exeact address for the service to be carried out (if applicable)"
+              minlength="3"
+              maxlength="135"
+              autocomplete="off"
+            ></textarea>
+          </div>
+
+          <!-- ======================================= -->
+          <!-- FIXME:  SERVICE POSTAL CODE     FIXME:  -->
+          <!-- ======================================= -->
+
+          <div class="order__form__section__element">
+            <label for="service-postalcode">service address postal code</label>
+            <input
+              id="service-postalcode"
+              type="text"
+              value=""
+              name="Service Address Postal Code"
+              placeholder="enter postal code of the service address"
+              minlength="3"
+              maxlength="6"
+              autocomplete="off"
+            />
+          </div>
+
+          <hr />
+
           <!-- ============================================================================ -->
           <!-- TODO:      ORDER FORM - SECTION 3 - SELECT DATES OF YOUR SERVICE       TODO: -->
           <!-- ============================================================================ -->
@@ -10751,7 +10796,77 @@
           <!-- ============================================== -->
 
           <div class="order__form__section__title">
-            Section 6: Confirm your details
+            Section 6: Upload any Documents, Artwork or Designs
+          </div>
+
+          <!-- ================================================= -->
+          <!-- FIXME:  UPLOAD PDF DOCUMENTS (DOCX, PDF)   FIXME: -->
+          <!-- ================================================= -->
+
+          <div class="order__form__section__element">
+            <label for="file"
+              >please upload (Only if applicable) :&nbsp;&nbsp;
+              <strong class="order__form__label__strong"
+                >Upload any documents relating to your service request (PDF or
+                .docx)</strong
+              ></label
+            >
+            <div class="order__form__file-input">
+              <input
+                type="file"
+                accept=".pdf, .docx"
+                name="upload Your Documents"
+              />
+              <span class="order__form__button"
+                ><i class="fa fa-cloud-upload-alt"></i>Browse</span
+              >
+              <span class="order__form__label" data-js-label
+                >Format required (PDF or .docx) - No file selected yet</span
+              >
+            </div>
+          </div>
+
+          <hr />
+
+          <!-- =============================================== -->
+          <!-- FIXME:  UPLOAD IMAGES (PNG, JPG, JPEG)   FIXME: -->
+          <!-- =============================================== -->
+
+          <div class="order__form__section__element">
+            <label for="file"
+              >please upload (Only if applicable) :&nbsp;&nbsp;
+              <strong class="order__form__label__strong"
+                >Upload any Artwork or Designs relating to your service request
+                (JPG, JPEG or PNG)</strong
+              ></label
+            >
+            <div class="order__form__file-input">
+              <input
+                type="file"
+                accept=".jpg, .jpeg, .png"
+                name="upload Your Document"
+              />
+              <span class="order__form__button"
+                ><i class="fa fa-cloud-upload-alt"></i>Browse</span
+              >
+              <span class="order__form__label" data-js-label
+                >Format required (JPG, JPEG or PNG) - No file selected yet</span
+              >
+            </div>
+          </div>
+
+          <hr />
+
+          <!-- ============================================================== -->
+          <!-- TODO:  ORDER FORM - SECTION 7 - CONFIRMATION OF DETAILS  TODO: -->
+          <!-- ============================================================== -->
+
+          <!-- ============================================== -->
+          <!-- FIXME:  ORDER FORM - SECTION 7 - TITLE  FIXME: -->
+          <!-- ============================================== -->
+
+          <div class="order__form__section__title">
+            Section 7: Confirm your details
           </div>
 
           <!-- ========================== -->
@@ -11245,6 +11360,7 @@
     <script src="js/animation_addtowishlist.js" defer></script>
     <script src="js/navigation.js" defer></script>
     <script src="js/rotatingbanners.js" defer></script>
+    <script src="js/services_file_upload.js" defer></script>
 
     <!-- ====================================================================================================== -->
     <!-- NOTE: "PAGE UNDER CONSTRUCTION" SCRIPT (APPLICABLE TO ALL PAGES UNDER CONSTRUCTION)                    -->

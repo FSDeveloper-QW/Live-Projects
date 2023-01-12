@@ -8623,7 +8623,7 @@
       <!-- =================================================== -->
 
       <div class="new__page__title">
-        <h5><strong>Printing Services</strong></h5>
+        <h5><strong>Printing & Scanning Services</strong></h5>
       </div>
 
       <!-- FIXME:FIXME:FIXME:FIXME:  REPLACE NEW PAGE CONTENT BELOW  FIXME:FIXME:FIXME:FIXME: -->
@@ -8704,7 +8704,9 @@
               <!-- ============================================================================================== -->
 
               <div class="service-card-brief-information-container">
-                <div class="service-card-title">Printing Services</div>
+                <div class="service-card-title">
+                  Printing and <br />Scanning Services
+                </div>
                 <div class="service-card-short-description">
                   Professional and specialised printing & scanning services for
                   large scale projects and marketing purposes.
@@ -8810,7 +8812,9 @@
 
                   <div class="service-model-number-container">
                     <p class="service-model-number-title">service category</p>
-                    <p class="service-model-number-info">Printing Services</p>
+                    <p class="service-model-number-info">
+                      Printing & Scanning Services
+                    </p>
                   </div>
                 </div>
 
@@ -8940,12 +8944,13 @@
               >SELECT THE SERVICE YOU REQUIRE *</label
             >
             <select id="order-form-options-01" name="SERVICE 1" required>
-              <option value="" selected>Please Select</option>
+              <option value="" disabled>Please Select</option>
               <option
-                value="001 - Utilise the services of a company specialising in Large Scale Printing Services"
+                value="001 - Hire a company for any Large Scale Printing & Scanning Services"
+                selected
               >
-                001 - Utilise the services of a company specialising in Large
-                Scale Printing Services
+                001 - Hire a company for any Large Scale Printing & Scanning
+                Services
               </option>
               <!-- <option value="002 - ">002 -</option>
               <option value="003 - ">003 -</option>
@@ -10407,7 +10412,7 @@
               name="Where must the service be carried out"
               required
             >
-              <option value="" selected>
+              <option value="" disabled>
                 Select your preferred method ...
               </option>
               <option id="client-home" value="Client Home" disabled>
@@ -10432,6 +10437,47 @@
                 business
               </option>
             </select>
+          </div>
+
+          <hr />
+
+          <!-- ================================== -->
+          <!-- FIXME:   SERVICE ADDRESS    FIXME: -->
+          <!-- ================================== -->
+
+          <div class="order__form__section__element">
+            <label for="service-address"
+              >Provide the exact address where the service need to be carried
+              out (if not at the service provider premises)</label
+            >
+            <textarea
+              name="Service Address"
+              id="service-address"
+              cols="30"
+              rows="5"
+              placeholder="enter the exeact address for the service to be carried out (if applicable)"
+              minlength="3"
+              maxlength="135"
+              autocomplete="off"
+            ></textarea>
+          </div>
+
+          <!-- ======================================= -->
+          <!-- FIXME:  SERVICE POSTAL CODE     FIXME:  -->
+          <!-- ======================================= -->
+
+          <div class="order__form__section__element">
+            <label for="service-postalcode">service address postal code</label>
+            <input
+              id="service-postalcode"
+              type="text"
+              value=""
+              name="Service Address Postal Code"
+              placeholder="enter postal code of the service address"
+              minlength="3"
+              maxlength="6"
+              autocomplete="off"
+            />
           </div>
 
           <hr />
