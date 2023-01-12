@@ -6634,6 +6634,13 @@ nav .clientzonewrapper .advertising-drop {
   /* ===================== */
   --color-order-form-buttons-background: #01a7cf;
   --color-order-form-buttons-text: #ffffff;
+  /* ================== */
+  /* FORM - FILE UPLOAD */
+  /* ================== */
+  --color-order-form-file-upload-background: #ffffff;
+  --color-order-form-file-upload-background-text: #ffffff;
+  --color-order-form-file-upload-background-hover: #01a7cf;
+  --color-order-form-file-upload-label-text: #01a7cf;
 }
 
 /* ================================================================== */
@@ -6952,10 +6959,10 @@ nav .clientzonewrapper .advertising-drop {
   font-size: 1rem;
 }
 
-/* ---------------------------------------------- */
+/* ============================================== */
 /* FIXME:  INPUT FIELD TYPE =  TEL  FIXME:        */
 /* e.g. "TELEPHONE" or "MOBILE" Number etc.       */
-/* ---------------------------------------------- */
+/* ============================================== */
 
 .order__form__section__element input[type="tel"] {
   /* width: 25rem; */
@@ -6980,9 +6987,9 @@ nav .clientzonewrapper .advertising-drop {
   font-size: 1rem;
 }
 
-/* ------------------------------------------ */
+/* ========================================== */
 /* FIXME:  INPUT FIELD TYPE =  EMAIL  FIXME:  */
-/* ------------------------------------------ */
+/* ========================================== */
 
 .order__form__section__element input[type="email"] {
   /* width: 25rem; */
@@ -7007,10 +7014,10 @@ nav .clientzonewrapper .advertising-drop {
   font-size: 1rem;
 }
 
-/* ---------------------------------------------- */
+/* ============================================== */
 /* FIXME:  INPUT FIELD TYPE =  TEXTAREA  FIXME:   */
 /* Runs over multiple lines (rows) e.g. "Address" */
-/* ---------------------------------------------- */
+/* ============================================== */
 
 .order__form__section__element textarea {
   resize: none;
@@ -7037,9 +7044,9 @@ nav .clientzonewrapper .advertising-drop {
   font-size: 1rem;
 }
 
-/* ---------------------------------------------- */
+/* ============================================== */
 /* FIXME:  INPUT FIELD TYPE =  NUMBER  FIXME:     */
-/* ---------------------------------------------- */
+/* ============================================== */
 
 .order__form__section__element input[type="number"] {
   /* width: 25rem; */
@@ -7060,9 +7067,9 @@ nav .clientzonewrapper .advertising-drop {
   outline: 0;
 }
 
-/* ---------------------------------------------- */
+/* ============================================== */
 /* FIXME:  INPUT FIELD TYPE =  DATE  FIXME:       */
-/* ---------------------------------------------- */
+/* ============================================== */
 
 .order__form__section__element input[type="date"] {
   /* width: 25rem; */
@@ -7087,10 +7094,10 @@ nav .clientzonewrapper .advertising-drop {
   font-size: 1rem;
 }
 
-/* ---------------------------------------------- */
+/* ============================================== */
 /* FIXME:  INPUT FIELD = DROPDOWN LIST     FIXME: */
 /* e.g. Countries, Provinces, Titles etc.         */
-/* ---------------------------------------------- */
+/* ============================================== */
 
 .order__form__section__element select {
   /* width: 25rem; */
@@ -7115,13 +7122,13 @@ nav .clientzonewrapper .advertising-drop {
   font-size: 1rem;
 }
 
-/* ------------------------------------------------------------------------- */
+/* ========================================================================= */
 /* TODO:  START STYLING OF CUSTOM CHECKBOX                                   */
-/* ------------------------------------------------------------------------- */
+/* ========================================================================= */
 
-/* --------------------------------------- */
+/* ======================================= */
 /* FIXME:  INPUT FIELD = CHECKBOX  FIXME:  */
-/* --------------------------------------- */
+/* ======================================= */
 
 .order__form__checkbox__option {
   font-size: 1.2rem;
@@ -7147,9 +7154,9 @@ label.order__form__checkbox__option {
   color: var(--color-order-form-checkbox-label);
 }
 
-/* ------------------------------------ */
+/* ==================================== */
 /* THIS IS TO HIDE THE NATIVE CHECKBOX  */
-/* ------------------------------------ */
+/* ==================================== */
 
 .order__form__checkbox__option input[type="checkbox"] {
   /* Add if not using autoprefixer */
@@ -7161,9 +7168,9 @@ label.order__form__checkbox__option {
   margin: 0;
 }
 
-/* --------------------------------------- */
+/* ======================================= */
 /* THIS IS TO DISPLAY THE CUSTOM CHECKBOX  */
-/* --------------------------------------- */
+/* ======================================= */
 
 .order__form__checkbox__option input[type="checkbox"] {
   appearance: none;
@@ -7185,9 +7192,9 @@ label.order__form__checkbox__option {
   margin-top: 1rem;
 }
 
-/* --------------------------------------- */
+/* ======================================= */
 /* CUSTOM CHECKBOX - CHECKED STATE         */
-/* --------------------------------------- */
+/* ======================================= */
 
 .order__form__checkbox__option input[type="checkbox"]::before {
   content: "";
@@ -7207,18 +7214,18 @@ label.order__form__checkbox__option {
   transform: scale(1);
 }
 
-/* --------------------------------------- */
+/* ======================================= */
 /* CUSTOM CHECKBOX - FOCUSSED STATE        */
-/* --------------------------------------- */
+/* ======================================= */
 
 .order__form__checkbox__option input[type="checkbox"]:focus {
   outline: max(2px, 0.15em) solid var(--color-order-form-checkbox-focus);
   outline-offset: max(1px, 0.15em);
 }
 
-/* --------------------------------------- */
+/* ======================================= */
 /* CUSTOM CHECKBOX - DISABLED STATE        */
-/* --------------------------------------- */
+/* ======================================= */
 
 .order__form__checkbox__option--disabled {
   color: var(--color-order-form-checkbox-disabled);
@@ -7230,13 +7237,102 @@ label.order__form__checkbox__option {
   cursor: not-allowed;
 }
 
-/* ------------------------------------------------------------------------- */
+/* ========================================================================= */
 /* TODO:  END OF STYLING OF CUSTOM CHECKBOX                                  */
-/* ------------------------------------------------------------------------- */
+/* ========================================================================= */
 
-/* -------------------------------------------------- */
+/* ========================================================================= */
+/* TODO: START STYLING OF CUSTOM FILE-UPLOAD                                 */
+/* ========================================================================= */
+
+/* ============================================== */
+/* FIXME: INPUT FIELD TYPE = FILE          FIXME: */
+/* ============================================== */
+
+.order__form__file-input {
+  display: inline-block;
+  margin: 1rem 1.4rem 1rem 1.4rem;
+  padding: 1rem 1rem 1rem 1rem;
+  text-align: left;
+  background: var(--color-order-form-file-upload-background);
+  /* width: 450px; */
+  width: 96%;
+  position: relative;
+  border-radius: 0.5rem;
+  box-shadow: var(--color-box-shadow-02), var(--color-box-shadow-01);
+}
+
+/* ============================================== */
+/* HIDING THE NATIVE FILE UPLOADER                */
+/* ============================================== */
+
+.order__form__file-input > [type="file"] {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  z-index: 10;
+  cursor: pointer;
+}
+
+/* ============================================ */
+/* STYLE AND DISPLAY THE CUSTOM FILE UPLOADER   */
+/* ============================================ */
+
+.order__form__file-input > .order__form__button {
+  /* display: inline-block; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0rem 0.5rem 0.75rem 0.5rem;
+  padding: 0.8rem 1rem 0.8rem 1rem;
+  font-size: 1.3rem;
+  font-weight: 500;
+  background: var(--color-order-form-file-upload-background);
+  border-radius: 0.5rem;
+  box-shadow: var(--color-box-shadow-02), var(--color-box-shadow-01);
+  cursor: pointer;
+}
+
+.order__form__file-input:hover > .order__form__button {
+  background: var(--color-order-form-file-upload-background-hover);
+  color: var(--color-order-form-file-upload-background-text);
+}
+
+.order__form__file-input > .order__form__label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1.5rem 0.5rem 0rem 0.5rem;
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--color-order-form-file-upload-label-text);
+  white-space: nowrap;
+  /* opacity: 0.5; */
+}
+
+.order__form__file-input.-chosen > .order__form__label {
+  opacity: 1;
+}
+
+.order__form__file-input .fa {
+  font-size: 1.8rem;
+  margin: 0rem 1rem 0rem 0rem;
+}
+
+label .order__form__label__strong {
+  color: var(--color-order-form-file-upload-label-text);
+}
+
+/* ========================================================================= */
+/* TODO:  END OF STYLING OF CUSTOM FILE-UPLOAD                               */
+/* ========================================================================= */
+
+/* ================================================== */
 /* FIXME:  FORM BUTTONS (SUBMISSION & CLEAR)  FIXME:  */
-/* -------------------------------------------------- */
+/* ================================================== */
 
 .order__form__submit__button__container button {
   background: var(--color-order-form-buttons-background);
@@ -7273,13 +7369,13 @@ label.order__form__checkbox__option {
   align-items: center;
 }
 
-/* -------------------------------------------------- */
+/* ================================================== */
 /* FIXME:  FORM BUTTONS (PAYMENT OPTIONS)     FIXME:  */
-/* -------------------------------------------------- */
+/* ================================================== */
 
-/* ------------------------------ */
+/* ============================== */
 /* PAYFAST & YOCO PAYMENT OPTIONS */
-/* ------------------------------ */
+/* ============================== */
 
 .order__form__submit__button__container a {
   border: 0;
@@ -7323,9 +7419,9 @@ label.order__form__checkbox__option {
   color: white;
 }
 
-/* ---------------------------------------------- */
+/* ============================================== */
 /* FIXME:  STYLING - GOOGLE RECAPTCHA  FIXME:     */
-/* ---------------------------------------------- */
+/* ============================================== */
 
 .order__form__section__element .g-recaptcha {
   margin: 2rem 1rem 2rem 1rem;
@@ -7340,9 +7436,9 @@ label.order__form__checkbox__option {
   -webkit-transform-origin: 0 0;
 }
 
-/* --------------------------------------------------------------- */
+/* =============================================================== */
 /* FIXME:  FINAL MEDIA QUERY - REGISTRATION FORM (SMALLER SCREENS) */
-/* --------------------------------------------------------------- */
+/* =============================================================== */
 
 @media screen and (max-width: 600px) {
   .order__form__submit__button__container button {
