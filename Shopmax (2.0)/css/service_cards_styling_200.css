@@ -7454,6 +7454,10 @@ label .order__form__label__strong {
     flex-direction: column;
   }
 
+  .order__form__file-input {
+    margin: 1rem 0.2rem 1rem 0.2rem;
+  }
+
   .order__form__section__element label {
     font-size: 1rem;
     margin: 0rem 0.6rem 0rem 0.5rem;
