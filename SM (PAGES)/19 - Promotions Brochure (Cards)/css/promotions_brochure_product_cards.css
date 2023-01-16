@@ -3633,6 +3633,89 @@ nav .clientzonewrapper .advertising-drop {
 /* ===================================================================================================================== */
 /* ===================================================================================================================== */
 
+:root {
+  /* ==================================================================== */
+  /* FIXME:FIXME:FIXME:  PRODUCT CARDS COLOUR SCHEMES  FIXME:FIXME:FIXME: */
+  /* ==================================================================== */
+  /* ======================== */
+  /* COLOR SCHEME - HEX & RGB */
+  /* ======================== */
+  --color-promo-page-color-scheme-hex: #f9ba32;
+  --color-promo-page-color-scheme-rga: rgb(249, 186, 50);
+  /* ======================== */
+  /* PAGE BACKGROUND COLOUR   */
+  /* ======================== */
+  --color-promo-page-background: #eee;
+  /* ======================== */
+  /* DOWNLOAD BUTTON COLOURS  */
+  /* ======================== */
+  --color-promo-page-download-button-background: #f9ba32;
+  --color-promo-page-download-button-text: #ffffff;
+  /* --color-promo-page-download-button-text: #000000; */
+  /* =================================================== */
+  /* PRODUCT CARDS - IDENTIFICATION / BUTTONS / CLOSE-X  */
+  /* =================================================== */
+  --color-promo-page-product-cards-button-background: #f9ba32;
+  --color-promo-page-product-cards-buttons-text: #ffffff;
+  /* --color-promo-page-product-cards-buttons-text: #000000; */
+  --color-promo-page-product-cards-identification-number-text: #f9ba32;
+  --color-promo-page-product-cards-close-button-x: #f9ba32;
+  /* =========================================================== */
+  /* PRODUCT CARDS - BACKGROUND / IMAGES / TITLES . DESCRIPTIONS  */
+  /* ============================================================ */
+  --color-promo-page-product-cards-background: #ffffff;
+  --color-promo-page-product-cards-extra-image-border: #000000;
+  --color-promo-page-product-cards-extra-image-border-hover: #f9ba32;
+  --color-promo-page-product-cards-text-title: #000000;
+  --color-promo-page-product-cards-text-description: #000000;
+  --color-promo-page-product-cards-text-price-currency: #000000;
+  --color-promo-page-product-cards-text-price-value: #000000;
+  --color-promo-page-product-cards-back-heading-main-title: #f9ba32;
+  --color-promo-page-product-cards-back-heading-sub-title: #000000;
+  /* ================================================================= */
+  /* FIXME:FIXME:FIXME:  ORDER FORM COLOUR SCHEMES  FIXME:FIXME:FIXME: */
+  /* ================================================================= */
+  --color-order-form-background: #eee;
+  --color-order-form-section-heading-background: #f9ba32;
+  --color-order-form-section-heading-text: #ffffff;
+  --color-order-form-privacy-and-popi-text: #f9ba32;
+  --color-order-form-delivery-costs-text: #f9ba32;
+  /* ========================================================= */
+  /* FORM ACCORDIANS - ADD MORE PRODUCTS / SERVICES            */
+  /* ========================================================= */
+  --color-order-form-accordian-background: #eee;
+  --color-order-form-accordian-text: #000000;
+  --color-order-form-accordian-plus-and-minus-sign: #f9ba32;
+  /* ========================================================= */
+  /* INPUT FIELDS - BORDERS, BORDERS-FOCUS, BORDERS-BOX-SHADOW */
+  /* ========================================================= */
+  --color-order-form-input-field-border: #ccc;
+  --color-order-form-input-field-border-focus: #f9ba32;
+  --color-order-form-input-field-border-focus-box-shadow: 0 0 0 2px
+    rgba(249, 186, 50, 0.95);
+  /* =============== */
+  /* FORM CHECKBOXES */
+  /* =============== */
+  --color-order-form-checkbox-label: #000000;
+  --color-order-form-checkbox-background: #ffffff;
+  --color-order-form-checkbox-border: #ccc;
+  --color-order-form-checkbox-checkmark: #f9ba32;
+  --color-order-form-checkbox-focus: #f9ba32;
+  --color-order-form-checkbox-disabled: #959495;
+  /* ===================== */
+  /* FORM - SUBMIT BUTTONS */
+  /* ===================== */
+  --color-order-form-buttons-background: #f9ba32;
+  --color-order-form-buttons-text: #ffffff;
+  /* ================== */
+  /* FORM - FILE UPLOAD */
+  /* ================== */
+  --color-order-form-file-upload-background: #ffffff;
+  --color-order-form-file-upload-background-text: #ffffff;
+  --color-order-form-file-upload-background-hover: #f9ba32;
+  --color-order-form-file-upload-label-text: #f9ba32;
+}
+
 /* =========================================================== */
 /* FIXME:  NEW PAGE - CONTAINER (HOLDING ALL ELEMENTS)  FIXME: */
 /* =========================================================== */
@@ -3648,7 +3731,7 @@ nav .clientzonewrapper .advertising-drop {
   height: auto;
   object-fit: cover;
   margin: 0rem 0rem 0rem 0rem;
-  background-color: #eee;
+  background-color: var(--color-promo-page-background);
   /* border: 2px solid red; */
 }
 
@@ -3677,7 +3760,7 @@ nav .clientzonewrapper .advertising-drop {
   text-transform: uppercase;
   width: 100%;
   padding: 1.5rem 1rem 1.5rem 1rem;
-  background-color: #eee;
+  background-color: var(--color-promo-page-background);
   text-align: center;
   /* border: 2px solid purple; */
 }
@@ -3690,12 +3773,12 @@ nav .clientzonewrapper .advertising-drop {
   display: flex;
   justify-content: center;
   justify-items: center;
-  font-size: 1.2rem;
+  font-size: 1.8rem;
   text-transform: uppercase;
   width: 100%;
-  margin: -4rem 0rem 0rem 0rem;
+  margin: -3.5rem 0rem 2rem 0rem;
   padding: 0rem 1rem 0rem 1rem;
-  background-color: #eee;
+  background-color: var(--color-promo-page-background);
   text-align: center;
   /* border: 2px solid purple; */
 }
@@ -3728,9 +3811,9 @@ nav .clientzonewrapper .advertising-drop {
   padding: 1rem 0.5rem 1rem 0.5rem;
   border: none;
   outline: none;
-  background: #dc143c;
+  background: var(--color-promo-page-download-button-background);
   border-radius: 0.5rem;
-  box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.35);
+  box-shadow: var(--color-box-shadow-01);
   transition: transform 0.5s ease-in-out;
   cursor: pointer;
   text-align: center;
@@ -3738,7 +3821,7 @@ nav .clientzonewrapper .advertising-drop {
 
 .new__page__button a {
   text-decoration: none;
-  color: white;
+  color: var(--color-promo-page-download-button-text);
   cursor: pointer;
 }
 
@@ -3787,7 +3870,7 @@ nav .clientzonewrapper .advertising-drop {
   height: auto;
   object-fit: cover;
   margin: 0rem 0rem 0rem 0rem;
-  background-color: #eee;
+  background-color: var(--color-promo-page-background);
   /* border: 2px solid green; */
 }
 
@@ -3799,9 +3882,9 @@ nav .clientzonewrapper .advertising-drop {
 /* TODO:  MAIN PRODUCT CARD (CONTAINERS)                                                                                 */
 /* ===================================================================================================================== */
 
-/* ---------------------------------------------- */
+/* ============================================== */
 /* FIXME:  MAIN CONTAINER - HOLDING ALL ELEMENTS  */
-/* ---------------------------------------------- */
+/* ============================================== */
 
 .single__product__card__container {
   position: relative;
@@ -3820,9 +3903,9 @@ nav .clientzonewrapper .advertising-drop {
   /* border: 1px solid red; */
 }
 
-/* ------------------------------- */
+/* =============================== */
 /* FIXME:  PRODUCT CARD CONTAINER  */
-/* ------------------------------- */
+/* =============================== */
 
 .single__product__card__container .product-card-01,
 .single__product__card__container .product-card-02,
@@ -4029,7 +4112,7 @@ nav .clientzonewrapper .advertising-drop {
   transform-style: preserve-3d;
   width: 100%;
   height: 100%;
-  background: var(--color-cta-product-card-background);
+  background: var(--color-promo-page-product-cards-background);
   border-radius: 1.5rem;
   margin: 0rem 0rem 0rem 0rem;
   padding: 0.75rem 0.75rem 0.75rem 0.75rem;
@@ -4039,9 +4122,9 @@ nav .clientzonewrapper .advertising-drop {
   /* border: 1px solid red; */
 }
 
-/* ------------------------------------------------------------------- */
+/* =================================================================== */
 /* TODO:FIXME:     JAVASCRIPT : FOR FLIP FUNCTIONALITY     TODO:FIXME: */
-/* ------------------------------------------------------------------- */
+/* =================================================================== */
 
 .single__product__card__container .product-card-01.animated,
 .single__product__card__container .product-card-02.animated,
@@ -4246,9 +4329,9 @@ nav .clientzonewrapper .advertising-drop {
   transform: rotateY(-180deg);
 }
 
-/* -------------------------------------------------------------------- */
+/* ==================================================================== */
 /* FIXME:  SUB-CONTAINER - HOLDING ALL ELEMENTS OF CARD (FRONT)  FIXME: */
-/* -------------------------------------------------------------------- */
+/* ==================================================================== */
 
 .single__product__card__container .product-card-01 .product-card-front-side,
 .single__product__card__container .product-card-02 .product-card-front-side,
@@ -4457,7 +4540,7 @@ nav .clientzonewrapper .advertising-drop {
   backface-visibility: hidden;
   width: 100%;
   height: 100%;
-  background: var(--color-cta-product-card-background);
+  background: var(--color-promo-page-product-cards-background);
   border-radius: 1.5rem;
   overflow: hidden;
   margin: 0rem 0rem 0rem 0rem;
@@ -4466,9 +4549,9 @@ nav .clientzonewrapper .advertising-drop {
   /* border: 1px solid red; */
 }
 
-/* ------------------------------------------------------------------- */
+/* =================================================================== */
 /* FIXME:  SUB-CONTAINER - HOLDING ALL ELEMENTS OF CARD (BACK)  FIXME: */
-/* -------------------------------------------------------------------- */
+/* =================================================================== */
 
 .single__product__card__container .product-card-01 .product-card-back-side,
 .single__product__card__container .product-card-02 .product-card-back-side,
@@ -4678,7 +4761,7 @@ nav .clientzonewrapper .advertising-drop {
   transform: rotateY(180deg);
   width: 100%;
   height: 100%;
-  background: var(--color-cta-product-card-background);
+  background: var(--color-promo-page-product-cards-background);
   border-radius: 1.5rem;
   overflow: hidden;
   margin: 0rem 0rem 0rem 0rem;
@@ -4705,27 +4788,27 @@ nav .clientzonewrapper .advertising-drop {
 /* TODO:  PRODUCT CARD SECTION 1 (TOP)                                                                                   */
 /* ===================================================================================================================== */
 
-/* -------------------------------- */
+/* ================================ */
 /* FIXME:  CONTAINER - TOP SECTION  */
-/* -------------------------------- */
+/* ================================ */
 
 .product-card-front-top-section {
   position: relative;
   width: 100%;
   height: 49%;
   border-radius: 0rem 0rem 0rem 0rem;
-  background-color: var(--color-cta-product-card-top-section-background);
+  background-color: var(--color-promo-page-product-cards-background);
   /* box-shadow: var(--color-box-shadow-01); */
   /* border: 1px solid red; */
 }
 
-/* ----------------------------------------------------------------- */
+/* ================================================================= */
 /* FIXME:  TOP SECTION - PRODUCT FEATURED IMAGE (CURRENTLY SHOWING)  */
-/* ----------------------------------------------------------------- */
+/* ================================================================= */
 
-/* ---------------- */
+/* ================ */
 /* IMAGE CONTAINER  */
-/* ---------------- */
+/* ================ */
 
 .product-card-front-top-section .product-card-main-featured-image {
   position: relative;
@@ -4739,9 +4822,9 @@ nav .clientzonewrapper .advertising-drop {
   /* border: 1px solid red; */
 }
 
-/* ------ */
+/* ====== */
 /* IMAGE  */
-/* ------ */
+/* ====== */
 
 .product-card-front-top-section .product-card-main-featured-image img {
   position: absolute;
@@ -4757,27 +4840,27 @@ nav .clientzonewrapper .advertising-drop {
 /* TODO:  PRODUCT CARD SECTION 2 - EXTRA PRODUCT IMAGES                                                                  */
 /* ===================================================================================================================== */
 
-/* ----------------------------------- */
+/* =================================== */
 /* FIXME:  SECTION 2 - MAIN CONTAINER  */
-/* ----------------------------------- */
+/* =================================== */
 
 .product-card-extra-images-container {
   position: relative;
   height: 4.8rem;
-  background: var(--color-cta-product-card-extra-images-section-background);
+  background: var(--color-promo-page-product-cards-background);
   /* border: 1px solid red; */
 }
 
-/* ------------------------------------------- */
+/* =========================================== */
 /* FIXME:  SECTION 2 - EXTRA IMAGES CONTAINER  */
-/* ------------------------------------------- */
+/* =========================================== */
 
 .product-card-extra-images-container .extra-product-images {
   height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  background: var(--color-cta-product-card-extra-images-section-background);
+  background: var(--color-promo-page-product-cards-background);
   /* border: 1px solid red; */
 }
 
@@ -4786,24 +4869,25 @@ nav .clientzonewrapper .advertising-drop {
   height: 4.5rem;
   margin: 0.5rem 0.5rem 0rem 0.5rem;
   padding: 0.5rem 0.5rem 0.5rem 0.5rem;
-  background: var(--color-cta-product-card-extra-image-background);
+  background: var(--color-promo-page-product-cards-background);
   border-radius: 0.5rem;
   /* box-shadow: var(--color-box-shadow-01); */
-  /* border: 1px solid var(--color-product-card-extra-image-border); */
+  /* border: 1px solid var(--color-promo-page-product-cards-extra-image-border); */
   cursor: pointer;
 }
 
 .product-card-extra-images-container .extra-product-images img:hover {
-  border: 3px solid var(--color-cta-product-card-extra-image-border-hover);
+  border: 3px solid
+    var(--color-promo-page-product-cards-extra-image-border-hover);
 }
 
 /* ===================================================================================================================== */
 /* TODO:  PRODUCT CARD SECTION 3 - PRODUCT INFORMATION                                                                   */
 /* ===================================================================================================================== */
 
-/* --------------------------------------------------- */
+/* =================================================== */
 /* FIXME:  PRODUCT CARD - BRIEF INFORMATION CONTAINER  */
-/* --------------------------------------------------- */
+/* =================================================== */
 
 .product-card-brief-information-container {
   position: relative;
@@ -4814,9 +4898,9 @@ nav .clientzonewrapper .advertising-drop {
   /* border: 1px solid red; */
 }
 
-/* ----------------------------- */
+/* ============================= */
 /* FIXME:  PRODUCT CARD - TITLE  */
-/* ----------------------------- */
+/* ============================= */
 
 .product-card-title {
   display: flex;
@@ -4831,13 +4915,13 @@ nav .clientzonewrapper .advertising-drop {
   font-weight: bolder;
   text-transform: uppercase;
   letter-spacing: 0.05rem;
-  color: var(--color-cta-product-card-title);
+  color: var(--color-promo-page-product-cards-text-title);
   /* border: 1px solid red; */
 }
 
-/* ----------------------------------------- */
+/* ========================================= */
 /* FIXME:  PRODUCT CARD - BRIEF DESCRIPTION  */
-/* ----------------------------------------- */
+/* ========================================= */
 
 .product-card-short-description {
   display: flex;
@@ -4851,7 +4935,7 @@ nav .clientzonewrapper .advertising-drop {
   font-weight: 500;
   text-transform: initial;
   text-align: justify;
-  color: var(--color-cta-product-card-short-description);
+  color: var(--color-promo-page-product-cards-text-description);
   /* border: 1px solid red; */
 }
 
@@ -4859,9 +4943,9 @@ nav .clientzonewrapper .advertising-drop {
 /* TODO:  PRODUCT CARD - PRODUCT PRICING                                                                                 */
 /* ===================================================================================================================== */
 
-/* ----------------------------------------- */
+/* ========================================= */
 /* FIXME:  PRODUCT CARD - PRICING CONTAINER  */
-/* ----------------------------------------- */
+/* ========================================= */
 
 .product-card-pricing-container {
   display: flex;
@@ -4871,9 +4955,9 @@ nav .clientzonewrapper .advertising-drop {
   /* border: 1px solid red; */
 }
 
-/* ------------------------------------------ */
+/* ========================================== */
 /* FIXME:  PRODUCT CARD - PRICING (CURRENCY)  */
-/* ------------------------------------------ */
+/* ========================================== */
 
 .product-card-price-currency {
   font-size: 2rem;
@@ -4881,12 +4965,12 @@ nav .clientzonewrapper .advertising-drop {
   letter-spacing: 0.1rem;
   text-transform: uppercase;
   margin: 0rem 0.5rem 0rem 0rem;
-  color: var(--color-cta-product-card-price-currency);
+  color: var(--color-promo-page-product-cards-text-price-currency);
 }
 
-/* --------------------------------------- */
+/* ======================================= */
 /* FIXME:  PRODUCT CARD - PRICING (VALUE)  */
-/* --------------------------------------- */
+/* ======================================= */
 
 .product-card-price-value {
   font-size: 2rem;
@@ -4894,7 +4978,7 @@ nav .clientzonewrapper .advertising-drop {
   letter-spacing: 0.1rem;
   text-transform: uppercase;
   margin: 0rem 0rem 0rem 0rem;
-  color: var(--color-cta-product-card-price-value);
+  color: var(--color-promo-page-product-cards-text-price-value);
 }
 
 /* ===================================================================================================================== */
@@ -4908,9 +4992,9 @@ nav .clientzonewrapper .advertising-drop {
   /* border: 1px solid green; */
 }
 
-/* --------------------------------------- */
+/* ======================================= */
 /* FIXME:  CONTAINER - ADD-TO-CART  FIXME: */
-/* --------------------------------------- */
+/* ======================================= */
 
 .add-to-cart-container {
   width: 50%;
@@ -4923,9 +5007,9 @@ nav .clientzonewrapper .advertising-drop {
   /* border: 1px solid red; */
 }
 
-/* ------------------------------------ */
+/* ==================================== */
 /* FIXME:  BUTTON - ADD-TO-CART  FIXME: */
-/* ------------------------------------ */
+/* ==================================== */
 
 .add-to-cart-container button {
   display: flex;
@@ -4937,12 +5021,12 @@ nav .clientzonewrapper .advertising-drop {
   margin: 0rem 0rem 0rem 0rem;
   padding: 0.75rem 1rem 0.75rem 1rem;
   border-radius: 0.75rem;
-  background-color: var(--color-cta-add-to-cart-button-background);
-  color: var(--color-cta-add-to-cart-button-text);
+  background-color: var(--color-promo-page-product-cards-button-background);
+  color: var(--color-promo-page-product-cards-buttons-text);
   outline: none;
   border: none;
   transition: transform 0.3s ease-in-out;
-  box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.35);
+  box-shadow: var(--color-box-shadow-01);
   /* border: 1px solid green; */
 }
 
@@ -4955,9 +5039,9 @@ nav .clientzonewrapper .advertising-drop {
   cursor: pointer;
 }
 
-/* ================== */
-/* PLACE ORDER BUTTON */
-/* ================== */
+/* ============================== */
+/* PLACE ORDER / GET QUOTE BUTTON */
+/* ============================== */
 
 .add-to-cart-container a {
   display: flex;
@@ -4969,12 +5053,12 @@ nav .clientzonewrapper .advertising-drop {
   margin: 0rem 0rem 0rem 0rem;
   padding: 0.75rem 1rem 0.75rem 1rem;
   border-radius: 0.75rem;
-  background-color: var(--color-cta-add-to-cart-button-background);
-  color: var(--color-cta-add-to-cart-button-text);
+  background-color: var(--color-promo-page-product-cards-button-background);
+  color: var(--color-promo-page-product-cards-buttons-text);
   outline: none;
   border: none;
   transition: transform 0.3s ease-in-out;
-  box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.35);
+  box-shadow: var(--color-box-shadow-01);
   /* border: 1px solid green; */
 }
 
@@ -4987,9 +5071,9 @@ nav .clientzonewrapper .advertising-drop {
   cursor: pointer;
 }
 
-/* ---------------------------------------------------------------------------------------------------- */
+/* ==================================================================================================== */
 /* TODO:FIXME:  JAVASCRIPT - SHOPPING CART COUNTER ANIMATION ON "ADD TO CART" BUTTON CLICK  TODO:FIXME: */
-/* ---------------------------------------------------------------------------------------------------- */
+/* ==================================================================================================== */
 
 /* .cart_counter-container span:not(.animated-counter) {
   display: flex;
@@ -5035,9 +5119,9 @@ nav .clientzonewrapper .advertising-drop {
 /* TODO:  PRODUCT CARD - BUTTON (MORE INFO)                                                                              */
 /* ===================================================================================================================== */
 
-/* ------------------------------------- */
+/* ===================================== */
 /* FIXME:  CONTAINER - MORE INFO  FIXME: */
-/* ------------------------------------- */
+/* ===================================== */
 
 .more-info-container {
   width: 50%;
@@ -5050,9 +5134,9 @@ nav .clientzonewrapper .advertising-drop {
   /* border: 1px solid red; */
 }
 
-/* ---------------------------------- */
+/* ================================== */
 /* FIXME:  BUTTON - MORE INFO  FIXME: */
-/* ---------------------------------- */
+/* ================================== */
 
 .more-info-container .more-info-btn {
   display: flex;
@@ -5065,12 +5149,12 @@ nav .clientzonewrapper .advertising-drop {
   margin: 0rem 0rem 0rem 0rem;
   padding: 0.75rem 1rem 0.75rem 1rem;
   border-radius: 0.75rem;
-  background-color: var(--color-cta-add-to-cart-button-background);
-  color: var(--color-cta-add-to-cart-button-text);
+  background-color: var(--color-promo-page-product-cards-button-background);
+  color: var(--color-promo-page-product-cards-buttons-text);
   outline: none;
   border: none;
   transition: transform 0.3s ease-in-out;
-  box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.35);
+  box-shadow: var(--color-box-shadow-01);
   /* border: 1px solid green; */
 }
 
@@ -5086,9 +5170,9 @@ nav .clientzonewrapper .advertising-drop {
 /* TODO:  PRODUCT CARD - BUTTON (ADD TO WISHLIST)                                                                        */
 /* ===================================================================================================================== */
 
-/* ------------------------------------------- */
+/* =========================================== */
 /* FIXME:  CONTAINER - ADD-TO-WISHLIST  FIXME: */
-/* -------------------------------------------- */
+/* =========================================== */
 
 .add-to-wishlist-container {
   position: absolute;
@@ -5099,13 +5183,13 @@ nav .clientzonewrapper .advertising-drop {
   z-index: 200;
   outline: none;
   border: none;
-  background: white;
+  background: var(--color-promo-page-product-cards-background);
   /* border: 1px solid red; */
 }
 
-/* ----------------------------------------- */
-/* FIXME:  BUTTON - ADD-TO-WISHLIST  FIXME: */
-/* ----------------------------------------- */
+/* ========================================= */
+/* FIXME:  BUTTON - ADD-TO-WISHLIST  FIXME:  */
+/* ========================================= */
 
 .add-to-wishlist-container button {
   position: absolute;
@@ -5115,7 +5199,7 @@ nav .clientzonewrapper .advertising-drop {
   height: 100%;
   outline: none;
   border: none;
-  background: white;
+  background: var(--color-promo-page-product-cards-background);
   padding: 0rem 0rem 0rem 0rem;
   cursor: pointer;
   /* border: 1px solid green; */
@@ -5130,8 +5214,8 @@ nav .clientzonewrapper .advertising-drop {
   font-size: 1.5rem;
   font-weight: 400;
   text-transform: uppercase;
-  background-color: var(--color-cta-add-to-wish-list-button-background);
-  color: var(--color-cta-add-to-wish-list-button-text);
+  background-color: var(--color-promo-page-product-cards-button-background);
+  color: var(--color-promo-page-product-cards-buttons-text);
   margin: 0rem 0rem 0rem 0rem;
   padding: 0.25rem 0.25rem 0.25rem 0.25rem;
   border-radius: 2rem;
@@ -5155,13 +5239,13 @@ nav .clientzonewrapper .advertising-drop {
   height: 100%;
   font-size: 1.35rem;
   font-weight: 700;
-  color: #dc143c;
+  color: var(--color-promo-page-product-cards-identification-number-text);
   margin: 0rem 0.75rem 0rem 0rem;
 }
 
-/* ----------------------------------------------------------------------------------------------------- */
+/* ===================================================================================================== */
 /* TODO:FIXME:  JAVASCRIPT - WISH LIST COUNTER ANIMATION ON "ADD TO WISH LIST" BUTTON CLICK  TODO:FIXME: */
-/* ----------------------------------------------------------------------------------------------------- */
+/* ===================================================================================================== */
 
 /* .wishlist-counter-container span:not(.wishlist-animated-counter) {
   display: flex;
@@ -5209,9 +5293,9 @@ nav .clientzonewrapper .advertising-drop {
 /* ===================================================================================================================== */
 /* ===================================================================================================================== */
 
-/* ---------------------------------------- */
+/* ======================================== */
 /* FIXME:  BUTTON "X" TO CLOSE BACK  FIXME: */
-/* ---------------------------------------- */
+/* ======================================== */
 
 .single__product__card__container .close {
   width: 2.5rem;
@@ -5226,7 +5310,7 @@ nav .clientzonewrapper .advertising-drop {
   border-radius: 2rem;
   text-decoration: none;
   text-align: center;
-  color: var(--color-cta-card-back-button-close);
+  color: var(--color-promo-page-product-cards-close-button-x);
   transition: transform 0.3s ease-in-out;
   /* border: 1px solid purple; */
 }
@@ -5235,9 +5319,9 @@ nav .clientzonewrapper .advertising-drop {
   transform: scale(1.1);
 }
 
-/* ------------------------------------------------------------------------ */
+/* ======================================================================== */
 /* FIXME:  SUB-CONTAINER - HOLDING ALL CONTENT/TEXT ON BACK PROFILE  FIXME: */
-/* ------------------------------------------------------------------------ */
+/* ======================================================================== */
 
 .product-information-container-back {
   padding: 2rem 1rem 2rem 1rem;
@@ -5245,15 +5329,15 @@ nav .clientzonewrapper .advertising-drop {
   height: 100%;
   text-align: center;
   border-radius: 0.5rem;
-  background-color: var(--color-cta-card-back-background);
-  color: var(--color-card-back-text);
-  box-shadow: var(--color-all-elements-box-shadow);
+  background-color: var(--color-promo-page-product-cards-background);
+  color: var(--color-promo-page-product-cards-text-title);
+  /* box-shadow: var(--color-all-elements-box-shadow); */
   /* border: 5px solid plum; */
 }
 
-/* -------------------------------------------- */
+/* ============================================ */
 /* FIXME:  PRODUCT CARD (BACK) - BRAND LOGO     */
-/* -------------------------------------------- */
+/* ============================================ */
 
 .product-brand-logo {
   position: absolute;
@@ -5269,10 +5353,10 @@ nav .clientzonewrapper .advertising-drop {
   padding: 0.5rem 0.5rem 0.5rem 0.5rem;
 }
 
-/* ------------------------------------------------------ */
+/* ====================================================== */
 /* TODO:     PRODUCT IDENTIFICATION SECTION         TODO: */
 /* (incl. brand name, product code, model number & stock) */
-/* ------------------------------------------------------ */
+/* ====================================================== */
 
 /* MAIN CONTAINER */
 
@@ -5290,9 +5374,9 @@ nav .clientzonewrapper .advertising-drop {
   /* border: 1px solid red; */
 }
 
-/* ---------------------------------------------- */
+/* ============================================== */
 /* FIXME:  PRODUCT CARD (BACK) - BRAND NAME       */
-/* ---------------------------------------------- */
+/* ============================================== */
 
 .product-brand-name-container {
   display: flex;
@@ -5311,7 +5395,7 @@ nav .clientzonewrapper .advertising-drop {
   text-transform: uppercase;
   width: 100%;
   height: 1.5rem;
-  color: var(--color-cta-heading-titles);
+  color: var(--color-promo-page-product-cards-back-heading-main-title);
   /* border: 1px solid yellow; */
 }
 
@@ -5322,13 +5406,13 @@ nav .clientzonewrapper .advertising-drop {
   text-transform: uppercase;
   width: 100%;
   height: 1.5rem;
-  color: var(--color-cta-heading-values);
+  color: var(--color-promo-page-product-cards-back-heading-sub-title);
   /* border: 1px solid green; */
 }
 
-/* ---------------------------------------------- */
+/* ============================================== */
 /* FIXME:  PRODUCT CARD (BACK) - PRODUCT CODE     */
-/* ---------------------------------------------- */
+/* ============================================== */
 
 .product-code-container {
   display: flex;
@@ -5347,7 +5431,7 @@ nav .clientzonewrapper .advertising-drop {
   text-transform: uppercase;
   width: 100%;
   height: 1.5rem;
-  color: var(--color-cta-heading-titles);
+  color: var(--color-promo-page-product-cards-back-heading-main-title);
   /* border: 1px solid yellow; */
 }
 
@@ -5358,13 +5442,13 @@ nav .clientzonewrapper .advertising-drop {
   text-transform: uppercase;
   width: 100%;
   height: 1.5rem;
-  color: var(--color-cta-heading-values);
+  color: var(--color-promo-page-product-cards-back-heading-sub-title);
   /* border: 1px solid green; */
 }
 
-/* ---------------------------------------------- */
+/* ============================================== */
 /* FIXME:  PRODUCT CARD (BACK) - MODEL NUMBER     */
-/* ---------------------------------------------- */
+/* ============================================== */
 
 .product-model-number-container {
   display: flex;
@@ -5383,7 +5467,7 @@ nav .clientzonewrapper .advertising-drop {
   text-transform: uppercase;
   width: 100%;
   height: 1.5rem;
-  color: var(--color-cta-heading-titles);
+  color: var(--color-promo-page-product-cards-back-heading-main-title);
   /* border: 1px solid yellow; */
 }
 
@@ -5394,13 +5478,13 @@ nav .clientzonewrapper .advertising-drop {
   text-transform: uppercase;
   width: 100%;
   height: 1.5rem;
-  color: var(--color-cta-heading-values);
+  color: var(--color-promo-page-product-cards-back-heading-sub-title);
   /* border: 1px solid green; */
 }
 
-/* ---------------------------------------------- */
+/* ============================================== */
 /* FIXME:  PRODUCT CARD (BACK) - AVAILABLE STOCK  */
-/* ---------------------------------------------- */
+/* ============================================== */
 
 .product-stock-available-container {
   display: flex;
@@ -5419,7 +5503,7 @@ nav .clientzonewrapper .advertising-drop {
   text-transform: uppercase;
   width: 100%;
   height: 1.5rem;
-  color: var(--color-cta-heading-titles);
+  color: var(--color-promo-page-product-cards-back-heading-main-title);
   /* border: 1px solid yellow; */
 }
 
@@ -5430,14 +5514,14 @@ nav .clientzonewrapper .advertising-drop {
   text-transform: uppercase;
   width: 100%;
   height: 1.5rem;
-  color: var(--color-cta-heading-values);
+  color: var(--color-promo-page-product-cards-back-heading-sub-title);
   /* border: 1px solid green; */
 }
 
-/* ------------------------------------------------------ */
-/* TODO:        PRODUCT MEASUREMENT SECTION         TODO: */
+/* ========================================================== */
+/* TODO:        PRODUCT MEASUREMENT SECTION         TODO:     */
 /*  (incl. cta-Length(CM), Width(CM), Height(CM), Weigth(KG)  */
-/* ------------------------------------------------------ */
+/* ========================================================== */
 
 /* MAIN CONTAINER */
 
@@ -5455,9 +5539,9 @@ nav .clientzonewrapper .advertising-drop {
   /* border: 1px solid red; */
 }
 
-/* ---------------------------------------------- */
+/* ============================================== */
 /* FIXME:  PRODUCT CARD (BACK) - LENGHT (CM)      */
-/* ---------------------------------------------- */
+/* ============================================== */
 
 .product-length-container {
   display: flex;
@@ -5476,7 +5560,7 @@ nav .clientzonewrapper .advertising-drop {
   text-transform: uppercase;
   width: 100%;
   height: 2.5rem;
-  color: var(--color-cta-heading-titles);
+  color: var(--color-promo-page-product-cards-back-heading-main-title);
   /* border: 1px solid yellow; */
 }
 
@@ -5486,7 +5570,7 @@ nav .clientzonewrapper .advertising-drop {
   text-decoration: none;
   text-transform: uppercase;
   align-items: center;
-  color: var(--color-cta-heading-values);
+  color: var(--color-promo-page-product-cards-back-heading-sub-title);
 }
 
 .product-length-container .product-length-info {
@@ -5496,13 +5580,13 @@ nav .clientzonewrapper .advertising-drop {
   text-transform: uppercase;
   width: 100%;
   height: 2rem;
-  color: var(--color-cta-heading-values);
+  color: var(--color-promo-page-product-cards-back-heading-sub-title);
   /* border: 1px solid green; */
 }
 
-/* ---------------------------------------------- */
-/* FIXME:  PRODUCT CARD (BACK) - WIDTH (CM)      */
-/* ---------------------------------------------- */
+/* ============================================== */
+/* FIXME:  PRODUCT CARD (BACK) - WIDTH (CM)       */
+/* ============================================== */
 
 .product-width-container {
   display: flex;
@@ -5521,7 +5605,7 @@ nav .clientzonewrapper .advertising-drop {
   text-transform: uppercase;
   width: 100%;
   height: 2.5rem;
-  color: var(--color-cta-heading-titles);
+  color: var(--color-promo-page-product-cards-back-heading-main-title);
   /* border: 1px solid yellow; */
 }
 
@@ -5531,7 +5615,7 @@ nav .clientzonewrapper .advertising-drop {
   text-decoration: none;
   text-transform: uppercase;
   align-items: center;
-  color: var(--color-cta-heading-values);
+  color: var(--color-promo-page-product-cards-back-heading-sub-title);
 }
 
 .product-width-container .product-width-info {
@@ -5541,13 +5625,13 @@ nav .clientzonewrapper .advertising-drop {
   text-transform: uppercase;
   width: 100%;
   height: 2rem;
-  color: var(--color-cta-heading-values);
+  color: var(--color-promo-page-product-cards-back-heading-sub-title);
   /* border: 1px solid green; */
 }
 
-/* ---------------------------------------------- */
+/* ============================================== */
 /* FIXME:  PRODUCT CARD (BACK) - HEIGHT (CM)      */
-/* ---------------------------------------------- */
+/* ============================================== */
 
 .product-height-container {
   display: flex;
@@ -5566,7 +5650,7 @@ nav .clientzonewrapper .advertising-drop {
   text-transform: uppercase;
   width: 100%;
   height: 2.5rem;
-  color: var(--color-cta-heading-titles);
+  color: var(--color-promo-page-product-cards-back-heading-main-title);
   /* border: 1px solid yellow; */
 }
 
@@ -5576,7 +5660,7 @@ nav .clientzonewrapper .advertising-drop {
   text-decoration: none;
   text-transform: uppercase;
   align-items: center;
-  color: var(--color-cta-heading-values);
+  color: var(--color-promo-page-product-cards-back-heading-sub-title);
 }
 
 .product-height-container .product-height-info {
@@ -5586,13 +5670,13 @@ nav .clientzonewrapper .advertising-drop {
   text-transform: uppercase;
   width: 100%;
   height: 2rem;
-  color: var(--color-cta-heading-values);
+  color: var(--color-promo-page-product-cards-back-heading-sub-title);
   /* border: 1px solid green; */
 }
 
-/* ---------------------------------------------- */
+/* ============================================== */
 /* FIXME:  PRODUCT CARD (BACK) - WEIGHT (KG)      */
-/* ---------------------------------------------- */
+/* ============================================== */
 
 .product-weight-container {
   display: flex;
@@ -5611,7 +5695,7 @@ nav .clientzonewrapper .advertising-drop {
   text-transform: uppercase;
   width: 100%;
   height: 2.5rem;
-  color: var(--color-cta-heading-titles);
+  color: var(--color-promo-page-product-cards-back-heading-main-title);
   /* border: 1px solid yellow; */
 }
 
@@ -5621,7 +5705,7 @@ nav .clientzonewrapper .advertising-drop {
   text-decoration: none;
   text-transform: uppercase;
   align-items: center;
-  color: var(--color-cta-heading-values);
+  color: var(--color-promo-page-product-cards-back-heading-sub-title);
 }
 
 .product-weight-container .product-weight-info {
@@ -5631,14 +5715,14 @@ nav .clientzonewrapper .advertising-drop {
   text-transform: uppercase;
   width: 100%;
   height: 2rem;
-  color: var(--color-cta-heading-values);
+  color: var(--color-promo-page-product-cards-back-heading-sub-title);
   /* border: 1px solid green; */
 }
 
-/* ------------------------------------------------------ */
+/* ====================================================== */
 /* TODO:     PRODUCT FULL DESCRIPTION SECTION       TODO: */
 /*             (incl. title & description)                */
-/* ------------------------------------------------------ */
+/* ====================================================== */
 
 /* MAIN CONTAINER */
 
@@ -5670,7 +5754,7 @@ nav .clientzonewrapper .advertising-drop {
   text-transform: uppercase;
   width: 100%;
   height: 2rem;
-  color: var(--color-cta-heading-titles);
+  color: var(--color-promo-page-product-cards-back-heading-main-title);
   /* border: 1px solid yellow; */
 }
 
@@ -5692,10 +5776,10 @@ nav .clientzonewrapper .advertising-drop {
   /* border: 1px solid green; */
 }
 
-/* ------------------------------------------------------ */
+/* ====================================================== */
 /* TODO:     IMPORTANT NOTIFICATIONS SECTION        TODO: */
 /*             (incl. title & description)                */
-/* ------------------------------------------------------ */
+/* ====================================================== */
 
 .product-card-important-notification-container {
   position: absolute;
@@ -5725,7 +5809,7 @@ nav .clientzonewrapper .advertising-drop {
   text-transform: uppercase;
   width: 100%;
   height: 2rem;
-  color: var(--color-cta-heading-titles);
+  color: var(--color-promo-page-product-cards-back-heading-main-title);
   /* border: 1px solid yellow; */
 }
 
@@ -5779,7 +5863,7 @@ nav .clientzonewrapper .advertising-drop {
   object-fit: cover;
   margin: 0rem 0rem 0rem 0rem;
   padding: 0rem 0rem 2rem 0rem;
-  background-color: #eee;
+  background-color: var(--color-order-form-background);
   /* border: 2px solid blue; */
 }
 
@@ -5810,7 +5894,7 @@ nav .clientzonewrapper .advertising-drop {
   text-transform: uppercase;
   width: 100%;
   padding: 0.5rem 1rem 0.5rem 1rem;
-  background-color: #eee;
+  background-color: var(--color-order-form-background);
   text-align: center;
   /* border: 2px solid purple; */
 }
@@ -5828,7 +5912,7 @@ nav .clientzonewrapper .advertising-drop {
   width: 100%;
   margin: -2.75rem 0rem 2rem 0rem;
   padding: 0rem 1rem 0rem 1rem;
-  background-color: #eee;
+  background-color: var(--color-order-form-background);
   text-align: center;
   /* border: 2px solid purple; */
 }
@@ -5837,9 +5921,9 @@ nav .clientzonewrapper .advertising-drop {
 /* TODO:  ORDER FORM - SECTIONS                                                                                          */
 /* ===================================================================================================================== */
 
-/* ------------------------------- */
+/* =============================== */
 /* FIXME:  VIEW - MOBILE FIRST     */
-/* ------------------------------- */
+/* =============================== */
 
 .order__form__section__title {
   display: flex;
@@ -5849,17 +5933,17 @@ nav .clientzonewrapper .advertising-drop {
   font-size: 1.5rem;
   font-weight: 500;
   letter-spacing: 0.2rem;
-  background-color: var(--color-quote-products-form-header-background);
-  color: var(--color-quote-products-form-header-text);
+  background-color: var(--color-order-form-section-heading-background);
+  color: var(--color-order-form-section-heading-text);
   margin: 1rem 0.4rem 2rem 0.4rem;
   padding: 0.5rem 1rem 0.5rem 1rem;
   border-radius: 0.5rem;
   box-shadow: var(--color-box-shadow-01);
 }
 
-/* ------------------------- */
+/* ========================= */
 /* FIXME:  PRIVACY STATEMENT */
-/* ------------------------- */
+/* ========================= */
 
 .order__form__privacy__statement {
   display: flex;
@@ -5873,18 +5957,18 @@ nav .clientzonewrapper .advertising-drop {
 
 .order__form__privacy__statement strong {
   text-decoration: none;
-  color: var(--color-quote-products-privacy-text);
+  color: var(--color-order-form-privacy-and-popi-text);
 }
 
 .order__form__privacy__statement a {
   text-decoration: none;
-  color: var(--color-quote-products-privacy-text);
+  color: var(--color-order-form-privacy-and-popi-text);
   cursor: pointer;
 }
 
-/* --------------------------- */
+/* =========================== */
 /* FIXME:  SHIPPING STATEMENT  */
-/* --------------------------- */
+/* =========================== */
 
 .order__form__delivery__cost {
   display: flex;
@@ -5898,18 +5982,18 @@ nav .clientzonewrapper .advertising-drop {
 
 .order__form__delivery__cost strong {
   text-decoration: none;
-  color: var(--color-quote-products-delivery-cost-text);
+  color: var(--color-order-form-delivery-costs-text);
 }
 
 .order__form__delivery__cost a {
   text-decoration: none;
-  color: var(--color-quote-products-delivery-cost-text);
+  color: var(--color-order-form-delivery-costs-text);
   cursor: pointer;
 }
 
-/* ------------------------------- */
+/* =============================== */
 /* FIXME:  VIEW - LARGER SCREENS   */
-/* ------------------------------- */
+/* =============================== */
 
 @media screen and (max-width: 430px) {
   .order__form__section__title {
@@ -5941,10 +6025,8 @@ nav .clientzonewrapper .advertising-drop {
 /* ===================================================================================================================== */
 
 .add_products_to_order_accordian_item {
-  background-color: var(
-    --color-team-accordian-item-backgroundaccordian-item-background
-  );
-  color: var(--color-team-accordian-item-text);
+  background-color: var(--color-order-form-accordian-background);
+  color: var(--color-order-form-accordian-text);
   margin: 1rem 0rem 1rem 0rem;
   border-radius: 0.5rem;
   box-shadow: var(--color-box-shadow-01);
@@ -5978,7 +6060,7 @@ nav .clientzonewrapper .advertising-drop {
   font-size: 2rem;
   position: absolute;
   right: 1rem;
-  color: var(--color-team-accordian-item-plus-and-minus-sign);
+  color: var(--color-order-form-accordian-plus-and-minus-sign);
   transition: transform 0.5s ease-in-out;
 }
 
@@ -5991,7 +6073,7 @@ nav .clientzonewrapper .advertising-drop {
 }
 
 .add_products_to_order-accordian-item-header.active {
-  color: var(--color-team-accordian-item-header-active);
+  color: var(--color-order-form-accordian-plus-and-minus-sign);
 }
 
 /* ===================================================================================================================== */
@@ -6032,13 +6114,13 @@ nav .clientzonewrapper .advertising-drop {
 /* TODO:  ORDER FORM ELEMENTS                                                                                            */
 /* ===================================================================================================================== */
 
-/* ---------------------------------------------- */
+/* ============================================== */
 /* FIXME:  FORM CONTAINER  FIXME:                 */
-/* ---------------------------------------------- */
+/* ============================================== */
 
-/* ---------------------------------------------- */
+/* ============================================== */
 /* FIXME:  FORM LABEL  FIXME:                     */
-/* ---------------------------------------------- */
+/* ============================================== */
 
 .order__form__section__element {
   margin: 0rem 0rem 1rem 1rem;
@@ -6056,16 +6138,16 @@ nav .clientzonewrapper .advertising-drop {
   font-family: "Poppins", sans-serif;
 }
 
-/* ---------------------------------------------- */
+/* ============================================== */
 /* FIXME:  INPUT FIELD TYPE =  TEXT  FIXME:       */
 /* e.g. "NAME" or "LAST NAME" etc.                */
-/* ---------------------------------------------- */
+/* ============================================== */
 
 .order__form__section__element input[type="text"] {
   /* width: 25rem; */
   width: 96%;
   border-radius: 0.5rem;
-  border: 1px solid var(--color-quote-products-input-border);
+  border: 1px solid var(--color-order-form-input-field-border);
   margin: 0.5rem 1.4rem 0.5rem 1.4rem;
   padding: 0.5rem 1rem 0.5rem 1rem;
   font-size: 1.2rem;
@@ -6074,8 +6156,8 @@ nav .clientzonewrapper .advertising-drop {
 }
 
 .order__form__section__element input[type="text"]:focus {
-  border-color: var(--color-quote-products-input-border-focus);
-  box-shadow: 0 0 0 2px rgba(220, 20, 60, 0.95);
+  border-color: var(--color-order-form-input-field-border-focus);
+  box-shadow: var(--color-order-form-input-field-border-focus-box-shadow);
   outline: 0;
 }
 
@@ -6084,16 +6166,16 @@ nav .clientzonewrapper .advertising-drop {
   font-size: 1rem;
 }
 
-/* ---------------------------------------------- */
+/* ============================================== */
 /* FIXME:  INPUT FIELD TYPE =  TEL  FIXME:        */
 /* e.g. "TELEPHONE" or "MOBILE" Number etc.       */
-/* ---------------------------------------------- */
+/* ============================================== */
 
 .order__form__section__element input[type="tel"] {
   /* width: 25rem; */
   width: 96%;
   border-radius: 0.5rem;
-  border: 1px solid var(--color-quote-products-input-border);
+  border: 1px solid var(--color-order-form-input-field-border);
   margin: 0.5rem 1.4rem 0.5rem 1.4rem;
   padding: 0.5rem 1rem 0.5rem 1rem;
   font-size: 1.2rem;
@@ -6102,8 +6184,8 @@ nav .clientzonewrapper .advertising-drop {
 }
 
 .order__form__section__element input[type="tel"]:focus {
-  border-color: var(--color-quote-products-input-border-focus);
-  box-shadow: 0 0 0 2px rgba(220, 20, 60, 0.95);
+  border-color: var(--color-order-form-input-field-border-focus);
+  box-shadow: var(--color-order-form-input-field-border-focus-box-shadow);
   outline: 0;
 }
 
@@ -6112,15 +6194,15 @@ nav .clientzonewrapper .advertising-drop {
   font-size: 1rem;
 }
 
-/* ------------------------------------------ */
+/* ========================================== */
 /* FIXME:  INPUT FIELD TYPE =  EMAIL  FIXME:  */
-/* ------------------------------------------ */
+/* ========================================== */
 
 .order__form__section__element input[type="email"] {
   /* width: 25rem; */
   width: 96%;
   border-radius: 0.5rem;
-  border: 1px solid var(--color-quote-products-input-border);
+  border: 1px solid var(--color-order-form-input-field-border);
   margin: 0.5rem 1.4rem 0.5rem 1.4rem;
   padding: 0.5rem 1rem 0.5rem 1rem;
   font-size: 1.2rem;
@@ -6129,8 +6211,8 @@ nav .clientzonewrapper .advertising-drop {
 }
 
 .order__form__section__element input[type="email"]:focus {
-  border-color: var(--color-quote-products-input-border-focus);
-  box-shadow: 0 0 0 2px rgba(220, 20, 60, 0.95);
+  border-color: var(--color-order-form-input-field-border-focus);
+  box-shadow: var(--color-order-form-input-field-border-focus-box-shadow);
   outline: 0;
 }
 
@@ -6139,17 +6221,17 @@ nav .clientzonewrapper .advertising-drop {
   font-size: 1rem;
 }
 
-/* ---------------------------------------------- */
+/* ============================================== */
 /* FIXME:  INPUT FIELD TYPE =  TEXTAREA  FIXME:   */
 /* Runs over multiple lines (rows) e.g. "Address" */
-/* ---------------------------------------------- */
+/* ============================================== */
 
 .order__form__section__element textarea {
   resize: none;
   /* width: 25rem; */
   width: 96%;
   border-radius: 0.5rem;
-  border: 1px solid var(--color-quote-products-input-border);
+  border: 1px solid var(--color-order-form-input-field-border);
   margin: 0.5rem 1.4rem 0.5rem 1.4rem;
   padding: 0.5rem 1rem 0.5rem 1rem;
   font-size: 1.2rem;
@@ -6159,8 +6241,8 @@ nav .clientzonewrapper .advertising-drop {
 }
 
 .order__form__section__element textarea:focus {
-  border-color: var(--color-quote-products-input-border-focus);
-  box-shadow: 0 0 0 2px rgba(220, 20, 60, 0.95);
+  border-color: var(--color-order-form-input-field-border-focus);
+  box-shadow: var(--color-order-form-input-field-border-focus-box-shadow);
   outline: 0;
 }
 
@@ -6169,15 +6251,15 @@ nav .clientzonewrapper .advertising-drop {
   font-size: 1rem;
 }
 
-/* ---------------------------------------------- */
+/* ============================================== */
 /* FIXME:  INPUT FIELD TYPE =  NUMBER  FIXME:     */
-/* ---------------------------------------------- */
+/* ============================================== */
 
 .order__form__section__element input[type="number"] {
   /* width: 25rem; */
   width: 96%;
   border-radius: 0.5rem;
-  border: 1px solid var(--color-quote-products-input-border);
+  border: 1px solid var(--color-order-form-input-field-border);
   margin: 0.5rem 1.4rem 0.5rem 1.4rem;
   padding: 0.5rem 1rem 0.5rem 1rem;
   font-size: 1.2rem;
@@ -6187,20 +6269,20 @@ nav .clientzonewrapper .advertising-drop {
 }
 
 .order__form__section__element input[type="number"]:focus {
-  border-color: var(--color-quote-products-input-border-focus);
-  box-shadow: 0 0 0 2px rgba(220, 20, 60, 0.95);
+  border-color: var(--color-order-form-input-field-border-focus);
+  box-shadow: var(--color-order-form-input-field-border-focus-box-shadow);
   outline: 0;
 }
 
-/* ---------------------------------------------- */
+/* ============================================== */
 /* FIXME:  INPUT FIELD TYPE =  DATE  FIXME:       */
-/* ---------------------------------------------- */
+/* ============================================== */
 
 .order__form__section__element input[type="date"] {
   /* width: 25rem; */
   width: 96%;
   border-radius: 0.5rem;
-  border: 1px solid var(--color-quote-products-input-border);
+  border: 1px solid var(--color-order-form-input-field-border);
   margin: 0.5rem 1.4rem 0.5rem 1.4rem;
   padding: 0.5rem 1rem 0.5rem 1rem;
   font-size: 1.2rem;
@@ -6209,8 +6291,8 @@ nav .clientzonewrapper .advertising-drop {
 }
 
 .order__form__section__element input[type="date"]:focus {
-  border-color: var(--color-quote-products-input-border-focus);
-  box-shadow: 0 0 0 2px rgba(220, 20, 60, 0.95);
+  border-color: var(--color-order-form-input-field-border-focus);
+  box-shadow: var(--color-order-form-input-field-border-focus-box-shadow);
   outline: 0;
 }
 
@@ -6219,16 +6301,16 @@ nav .clientzonewrapper .advertising-drop {
   font-size: 1rem;
 }
 
-/* ---------------------------------------------- */
+/* ============================================== */
 /* FIXME:  INPUT FIELD = DROPDOWN LIST     FIXME: */
 /* e.g. Countries, Provinces, Titles etc.         */
-/* ---------------------------------------------- */
+/* ============================================== */
 
 .order__form__section__element select {
   /* width: 25rem; */
   width: 96%;
   border-radius: 0.5rem;
-  border: 1px solid var(--color-quote-products-input-border);
+  border: 1px solid var(--color-order-form-input-field-border);
   margin: 0.5rem 1.4rem 0.5rem 1.4rem;
   padding: 0.5rem 1rem 0.5rem 1rem;
   font-size: 1.2rem;
@@ -6237,8 +6319,8 @@ nav .clientzonewrapper .advertising-drop {
 }
 
 .order__form__section__element select:focus {
-  border-color: var(--color-quote-products-input-border-focus);
-  box-shadow: 0 0 0 2px rgba(220, 20, 60, 0.95);
+  border-color: var(--color-order-form-input-field-border-focus);
+  box-shadow: var(--color-order-form-input-field-border-focus-box-shadow);
   outline: 0;
 }
 
@@ -6247,13 +6329,13 @@ nav .clientzonewrapper .advertising-drop {
   font-size: 1rem;
 }
 
-/* ------------------------------------------------------------------------- */
+/* ========================================================================= */
 /* TODO:  START STYLING OF CUSTOM CHECKBOX                                   */
-/* ------------------------------------------------------------------------- */
+/* ========================================================================= */
 
-/* --------------------------------------- */
+/* ======================================= */
 /* FIXME:  INPUT FIELD = CHECKBOX  FIXME:  */
-/* --------------------------------------- */
+/* ======================================= */
 
 .order__form__checkbox__option {
   font-size: 1.2rem;
@@ -6276,36 +6358,36 @@ label.order__form__checkbox__option {
   font-size: 1.2rem;
   font-weight: 500;
   line-height: 1.25;
-  color: black;
+  color: var(--color-order-form-checkbox-label);
 }
 
-/* ------------------------------------ */
+/* ==================================== */
 /* THIS IS TO HIDE THE NATIVE CHECKBOX  */
-/* ------------------------------------ */
+/* ==================================== */
 
 .order__form__checkbox__option input[type="checkbox"] {
   /* Add if not using autoprefixer */
   -webkit-appearance: none;
   appearance: none;
   /* For iOS < 15 to remove gradient background */
-  background-color: var(--color-quote-products-custom-checkbox-background);
+  background-color: var(--color-order-form-checkbox-background);
   /* Not removed via appearance */
   margin: 0;
 }
 
-/* --------------------------------------- */
+/* ======================================= */
 /* THIS IS TO DISPLAY THE CUSTOM CHECKBOX  */
-/* --------------------------------------- */
+/* ======================================= */
 
 .order__form__checkbox__option input[type="checkbox"] {
   appearance: none;
-  background-color: var(--color-quote-products-custom-checkbox-background);
+  background-color: var(--color-order-form-checkbox-background);
   margin: 0;
   font: inherit;
-  color: var(--color-quote-products-custom-checkbox-border);
+  color: var(--color-order-form-checkbox-border);
   width: 1.5rem;
   height: 1.5rem;
-  border: 0.15em solid var(--color-quote-products-custom-checkbox-border);
+  border: 0.15em solid var(--color-order-form-checkbox-border);
   border-radius: 0.15em;
   transform: translateY(-0.075em);
   display: grid;
@@ -6317,9 +6399,9 @@ label.order__form__checkbox__option {
   margin-top: 1rem;
 }
 
-/* --------------------------------------- */
+/* ======================================= */
 /* CUSTOM CHECKBOX - CHECKED STATE         */
-/* --------------------------------------- */
+/* ======================================= */
 
 .order__form__checkbox__option input[type="checkbox"]::before {
   content: "";
@@ -6327,8 +6409,7 @@ label.order__form__checkbox__option {
   height: 0.7rem;
   transform: scale(0);
   transition: 120ms transform ease-in-out;
-  box-shadow: inset 1em 1em
-    var(--color-quote-products-custom-checkbox-checkmark);
+  box-shadow: inset 1em 1em var(--color-order-form-checkbox-checkmark);
   /* Windows High Contrast Mode */
   background-color: CanvasText;
   /* Creating a checkmark with CLIP-PATH */
@@ -6340,41 +6421,129 @@ label.order__form__checkbox__option {
   transform: scale(1);
 }
 
-/* --------------------------------------- */
+/* ======================================= */
 /* CUSTOM CHECKBOX - FOCUSSED STATE        */
-/* --------------------------------------- */
+/* ======================================= */
 
 .order__form__checkbox__option input[type="checkbox"]:focus {
-  outline: max(2px, 0.15em) solid
-    var(--color-quote-products-custom-checkbox-focus);
+  outline: max(2px, 0.15em) solid var(--color-order-form-checkbox-focus);
   outline-offset: max(1px, 0.15em);
 }
 
-/* --------------------------------------- */
+/* ======================================= */
 /* CUSTOM CHECKBOX - DISABLED STATE        */
-/* --------------------------------------- */
+/* ======================================= */
 
 .order__form__checkbox__option--disabled {
-  color: var(--color-quote-products-custom-checkbox-disabled);
+  color: var(--color-order-form-checkbox-disabled);
   cursor: not-allowed;
 }
 
 .order__form__checkbox__option input[type="checkbox"]:disabled {
-  color: var(--color-quote-products-custom-checkbox-disabled);
+  color: var(--color-order-form-checkbox-disabled);
   cursor: not-allowed;
 }
 
-/* ------------------------------------------------------------------------- */
+/* ========================================================================= */
 /* TODO:  END OF STYLING OF CUSTOM CHECKBOX                                  */
-/* ------------------------------------------------------------------------- */
+/* ========================================================================= */
 
-/* -------------------------------------------------- */
+/* ========================================================================= */
+/* TODO: START STYLING OF CUSTOM FILE-UPLOAD                                 */
+/* ========================================================================= */
+
+/* ============================================== */
+/* FIXME: INPUT FIELD TYPE = FILE          FIXME: */
+/* ============================================== */
+
+.order__form__file-input {
+  display: inline-block;
+  margin: 1rem 1.4rem 1rem 1.4rem;
+  padding: 1rem 1rem 1rem 1rem;
+  text-align: left;
+  background: var(--color-order-form-file-upload-background);
+  /* width: 450px; */
+  width: 96%;
+  position: relative;
+  border-radius: 0.5rem;
+  box-shadow: var(--color-box-shadow-02), var(--color-box-shadow-01);
+}
+
+/* ============================================== */
+/* HIDING THE NATIVE FILE UPLOADER                */
+/* ============================================== */
+
+.order__form__file-input > [type="file"] {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  z-index: 10;
+  cursor: pointer;
+}
+
+/* ============================================ */
+/* STYLE AND DISPLAY THE CUSTOM FILE UPLOADER   */
+/* ============================================ */
+
+.order__form__file-input > .order__form__button {
+  /* display: inline-block; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0rem 0.5rem 0.75rem 0.5rem;
+  padding: 0.8rem 1rem 0.8rem 1rem;
+  font-size: 1.3rem;
+  font-weight: 500;
+  background: var(--color-order-form-file-upload-background);
+  border-radius: 0.5rem;
+  box-shadow: var(--color-box-shadow-02), var(--color-box-shadow-01);
+  cursor: pointer;
+}
+
+.order__form__file-input:hover > .order__form__button {
+  background: var(--color-order-form-file-upload-background-hover);
+  color: var(--color-order-form-file-upload-background-text);
+}
+
+.order__form__file-input > .order__form__label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1.5rem 0.5rem 0rem 0.5rem;
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--color-order-form-file-upload-label-text);
+  white-space: nowrap;
+  /* opacity: 0.5; */
+}
+
+.order__form__file-input.-chosen > .order__form__label {
+  opacity: 1;
+}
+
+.order__form__file-input .fa {
+  font-size: 1.8rem;
+  margin: 0rem 1rem 0rem 0rem;
+}
+
+label .order__form__label__strong {
+  color: var(--color-order-form-file-upload-label-text);
+}
+
+/* ========================================================================= */
+/* TODO:  END OF STYLING OF CUSTOM FILE-UPLOAD                               */
+/* ========================================================================= */
+
+/* ================================================== */
 /* FIXME:  FORM BUTTONS (SUBMISSION & CLEAR)  FIXME:  */
-/* -------------------------------------------------- */
+/* ================================================== */
 
 .order__form__submit__button__container button {
-  background: var(--color-quote-products-button-background);
-  color: var(--color-quote-products-button-text);
+  background: var(--color-order-form-buttons-background);
+  color: var(--color-order-form-buttons-text);
   border: 0;
   outline: 0;
   border-radius: 0.5rem;
@@ -6407,13 +6576,13 @@ label.order__form__checkbox__option {
   align-items: center;
 }
 
-/* -------------------------------------------------- */
+/* ================================================== */
 /* FIXME:  FORM BUTTONS (PAYMENT OPTIONS)     FIXME:  */
-/* -------------------------------------------------- */
+/* ================================================== */
 
-/* ------------------------------ */
+/* ============================== */
 /* PAYFAST & YOCO PAYMENT OPTIONS */
-/* ------------------------------ */
+/* ============================== */
 
 .order__form__submit__button__container a {
   border: 0;
@@ -6457,9 +6626,9 @@ label.order__form__checkbox__option {
   color: white;
 }
 
-/* ---------------------------------------------- */
+/* ============================================== */
 /* FIXME:  STYLING - GOOGLE RECAPTCHA  FIXME:     */
-/* ---------------------------------------------- */
+/* ============================================== */
 
 .order__form__section__element .g-recaptcha {
   margin: 2rem 1rem 2rem 1rem;
@@ -6474,9 +6643,9 @@ label.order__form__checkbox__option {
   -webkit-transform-origin: 0 0;
 }
 
-/* --------------------------------------------------------------- */
+/* =============================================================== */
 /* FIXME:  FINAL MEDIA QUERY - REGISTRATION FORM (SMALLER SCREENS) */
-/* --------------------------------------------------------------- */
+/* =============================================================== */
 
 @media screen and (max-width: 600px) {
   .order__form__submit__button__container button {
@@ -6490,6 +6659,10 @@ label.order__form__checkbox__option {
 
   .order__form__submit__button__container {
     flex-direction: column;
+  }
+
+  .order__form__file-input {
+    margin: 1rem 0.2rem 1rem 0.2rem;
   }
 
   .order__form__section__element label {
@@ -6543,7 +6716,7 @@ label.order__form__checkbox__option {
 
 /* ===================================================================================================================== */
 /* ===================================================================================================================== */
-/* FIXME:FIXME:                             SECTION - PRODUCT ORDER FORM (END)                              FIXME:FIXME: */
+/* FIXME:FIXME:                             SECTION - SERVICE ORDER FORM (END)                              FIXME:FIXME: */
 /* ===================================================================================================================== */
 /* ===================================================================================================================== */
 
