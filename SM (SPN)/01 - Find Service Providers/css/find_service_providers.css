@@ -3769,7 +3769,7 @@ nav .clientzonewrapper .advertising-drop {
 /* FIXME:FIXME:FIXME:  ENTER NEW PAGE CONTENT BELOW  FIXME:FIXME:FIXME: */
 
 /* ===================================================================================================================== */
-/* TODO:TODO:                 MAIN INDEX PAGE (CALL-TO-ACTION) - AUTHORISED APPLE RESELLER                    TODO:TODO: */
+/* TODO:TODO:             SELECT THE PROVINCE WHERE YOU WOULD LIKE THE SERVICE TO BE CARRIED OUT              TODO:TODO: */
 /* ===================================================================================================================== */
 
 /* =================================== */
@@ -3777,77 +3777,22 @@ nav .clientzonewrapper .advertising-drop {
 /* =================================== */
 
 :root {
-  --color-cta-apple-reseller-background-01: #e5e4e2;
-  --color-cta-apple-reseller-background-02: #d3d3d3;
-  --color-cta-apple-reseller-background-03: #c0c0c0;
-  --color-cta-apple-reseller-background-04: #a9a9a9;
+  --color-spn-provinces-background-01: #eee;
+  /* --color-spn-provinces-background-01: #e5e4e2; */
+  --color-spn-provinces-background-02: #d3d3d3;
+  --color-spn-provinces-background-03: #c0c0c0;
+  --color-spn-provinces-background-04: #a9a9a9;
 }
 
 /* =================================== */
 /* FIXME:  VIEW - MOBILE FIRST         */
 /* =================================== */
 
-/* =================================== */
-/* FIXME:  TITLE & CALL TO ACTION TEXT */
-/* =================================== */
-
-.promo__apple__reseller__page__title {
-  display: flex;
-  justify-content: center;
-  justify-items: center;
-  flex-direction: column;
-  background-color: var(--color-cta-apple-reseller-background-01);
-  /* border: 1px solid green; */
-}
-
-.promo__apple__reseller__page__title h5 {
-  display: flex;
-  justify-content: center;
-  justify-items: center;
-  text-transform: uppercase;
-  width: 100vw;
-  margin: 0rem 0.5rem 0rem 0.5rem;
-  padding: 1.5rem 2.5rem 0rem 2.5rem;
-  text-align: center;
-}
-
-.promo__apple__reseller__page__title h6 {
-  display: flex;
-  justify-content: center;
-  justify-items: center;
-  text-transform: none;
-  width: 100vw;
-  margin: 0rem 0.5rem 0rem 0.5rem;
-  padding: 1rem 5rem 1rem 5rem;
-  text-align: center;
-}
-
-.promo__apple__reseller__page__title p {
-  text-align: justify;
-  text-transform: initial;
-  margin: 0.5rem 3rem 1rem 3rem;
-  font-size: 1.4rem;
-  line-height: 1.8;
-  font-weight: 500;
-}
-
-.promo__apple__reseller__page__title p strong {
-  font-size: 1.5rem;
-  font-weight: 700;
-  line-height: 1.8;
-  cursor: pointer;
-}
-
-.promo__apple__reseller__page__title p strong:hover {
-  color: var(--color-cta-shopmax);
-  transform: scale(1.05);
-}
-
 /* ============================================= */
 /* FIXME:  OPTIONS - CONTAINER                   */
 /* ============================================= */
 
-.promo__apple__reseller__options {
+.spn__provinces__container {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -3855,18 +3800,18 @@ nav .clientzonewrapper .advertising-drop {
   width: 100%;
   height: auto;
   padding: 1rem 0rem 3rem 0rem;
-  background-color: var(--color-cta-apple-reseller-background-01);
+  background-color: var(--color-spn-provinces-background-01);
   /* border: 1px solid red; */
 }
 
 /* ============================================= */
-/* FIXME:  OPTION 1 - APPLE IPHONES              */
+/* FIXME:  OPTION 1 - NORTHERN CAPE              */
 /* ============================================= */
 
-.promo__apple__reseller__option__01 {
+.spn__province__01 {
   position: relative;
   width: 26rem;
-  height: 18.5rem;
+  height: 26rem;
   margin: 2rem 2rem 2rem 2rem;
   padding: 0rem 0rem 0rem 0rem;
   border-radius: 1.5rem;
@@ -3876,7 +3821,7 @@ nav .clientzonewrapper .advertising-drop {
   /* border: 1px solid green; */
 }
 
-.promo__apple__reseller__option__01 a {
+.spn__province__01 a {
   position: absolute;
   top: 0;
   left: 0;
@@ -3895,18 +3840,18 @@ nav .clientzonewrapper .advertising-drop {
   cursor: pointer;
 }
 
-.promo__apple__reseller__option__01 a p {
+.spn__province__01 a p {
   font-size: 1.5rem;
   font-weight: 400;
   text-transform: uppercase;
 }
 
-.promo__apple__reseller__option__01 a p strong {
+.spn__province__01 a p strong {
   font-size: 2rem;
   font-weight: 600;
 }
 
-.promo__apple__reseller__option__01 a img {
+.spn__province__01 a img {
   position: absolute;
   top: 0;
   left: 0;
@@ -3917,18 +3862,18 @@ nav .clientzonewrapper .advertising-drop {
   /* border: 1px solid purple; */
 }
 
-.promo__apple__reseller__option__01 a:hover {
+.spn__province__01 a:hover {
   transform: scale(1.04);
 }
 
 /* ============================================ */
-/* FIXME:  OPTION 2 - APPLE IPADS               */
+/* FIXME:  OPTION 2 - WESTERN CAPE              */
 /* ============================================ */
 
-.promo__apple__reseller__option__02 {
+.spn__province__02 {
   position: relative;
   width: 26rem;
-  height: 18.5rem;
+  height: 26rem;
   margin: 2rem 2rem 2rem 2rem;
   padding: 0rem 0rem 0rem 0rem;
   border-radius: 1.5rem;
@@ -3938,7 +3883,7 @@ nav .clientzonewrapper .advertising-drop {
   /* border: 1px solid green; */
 }
 
-.promo__apple__reseller__option__02 a {
+.spn__province__02 a {
   position: absolute;
   top: 0;
   left: 0;
@@ -3957,18 +3902,18 @@ nav .clientzonewrapper .advertising-drop {
   cursor: pointer;
 }
 
-.promo__apple__reseller__option__02 a p {
+.spn__province__02 a p {
   font-size: 1.5rem;
   font-weight: 400;
   text-transform: uppercase;
 }
 
-.promo__apple__reseller__option__02 a p strong {
+.spn__province__02 a p strong {
   font-size: 2rem;
   font-weight: 600;
 }
 
-.promo__apple__reseller__option__02 a img {
+.spn__province__02 a img {
   position: absolute;
   top: 0;
   left: 0;
@@ -3979,18 +3924,18 @@ nav .clientzonewrapper .advertising-drop {
   /* border: 1px solid green; */
 }
 
-.promo__apple__reseller__option__02 a:hover {
+.spn__province__02 a:hover {
   transform: scale(1.04);
 }
 
 /* ======================================================== */
-/* FIXME:  OPTION 3 - APPLE WATCH                           */
+/* FIXME:  OPTION 3 - EASTERN CAPE                          */
 /* ======================================================== */
 
-.promo__apple__reseller__option__03 {
+.spn__province__03 {
   position: relative;
   width: 26rem;
-  height: 18.5rem;
+  height: 26rem;
   margin: 2rem 2rem 2rem 2rem;
   padding: 0rem 0rem 0rem 0rem;
   border-radius: 1.5rem;
@@ -4000,7 +3945,7 @@ nav .clientzonewrapper .advertising-drop {
   /* border: 1px solid green; */
 }
 
-.promo__apple__reseller__option__03 a {
+.spn__province__03 a {
   position: absolute;
   top: 0;
   left: 0;
@@ -4019,18 +3964,18 @@ nav .clientzonewrapper .advertising-drop {
   cursor: pointer;
 }
 
-.promo__apple__reseller__option__03 a p {
+.spn__province__03 a p {
   font-size: 1.5rem;
   font-weight: 400;
   text-transform: uppercase;
 }
 
-.promo__apple__reseller__option__03 a p strong {
+.spn__province__03 a p strong {
   font-size: 2rem;
   font-weight: 600;
 }
 
-.promo__apple__reseller__option__03 a img {
+.spn__province__03 a img {
   position: absolute;
   top: 0;
   left: 0;
@@ -4041,18 +3986,18 @@ nav .clientzonewrapper .advertising-drop {
   /* border: 1px solid green; */
 }
 
-.promo__apple__reseller__option__03 a:hover {
+.spn__province__03 a:hover {
   transform: scale(1.04);
 }
 
 /* =================================================== */
-/* FIXME:  OPTION 4 - APPLE MACBOOKS                   */
+/* FIXME:  OPTION 4 - KWAZULU-NATAL                    */
 /* =================================================== */
 
-.promo__apple__reseller__option__04 {
+.spn__province__04 {
   position: relative;
   width: 26rem;
-  height: 18.5rem;
+  height: 26rem;
   margin: 2rem 2rem 2rem 2rem;
   padding: 0rem 0rem 0rem 0rem;
   border-radius: 1.5rem;
@@ -4062,7 +4007,7 @@ nav .clientzonewrapper .advertising-drop {
   /* border: 1px solid green; */
 }
 
-.promo__apple__reseller__option__04 a {
+.spn__province__04 a {
   position: absolute;
   top: 0;
   left: 0;
@@ -4081,18 +4026,18 @@ nav .clientzonewrapper .advertising-drop {
   cursor: pointer;
 }
 
-.promo__apple__reseller__option__04 a p {
+.spn__province__04 a p {
   font-size: 1.5rem;
   font-weight: 400;
   text-transform: uppercase;
 }
 
-.promo__apple__reseller__option__04 a p strong {
+.spn__province__04 a p strong {
   font-size: 2rem;
   font-weight: 600;
 }
 
-.promo__apple__reseller__option__04 a img {
+.spn__province__04 a img {
   position: absolute;
   top: 0;
   left: 0;
@@ -4103,18 +4048,18 @@ nav .clientzonewrapper .advertising-drop {
   /* border: 1px solid green; */
 }
 
-.promo__apple__reseller__option__04 a:hover {
+.spn__province__04 a:hover {
   transform: scale(1.04);
 }
 
 /* =================================================== */
-/* FIXME:  OPTION 5 - APPLE MACS, IMACS, MAC STUDIO    */
+/* FIXME:  OPTION 5 - GAUTENG                          */
 /* =================================================== */
 
-.promo__apple__reseller__option__05 {
+.spn__province__05 {
   position: relative;
   width: 26rem;
-  height: 18.5rem;
+  height: 26rem;
   margin: 2rem 2rem 2rem 2rem;
   padding: 0rem 0rem 0rem 0rem;
   border-radius: 1.5rem;
@@ -4124,7 +4069,7 @@ nav .clientzonewrapper .advertising-drop {
   /* border: 1px solid green; */
 }
 
-.promo__apple__reseller__option__05 a {
+.spn__province__05 a {
   position: absolute;
   top: 0;
   left: 0;
@@ -4143,18 +4088,18 @@ nav .clientzonewrapper .advertising-drop {
   cursor: pointer;
 }
 
-.promo__apple__reseller__option__05 a p {
+.spn__province__05 a p {
   font-size: 1.5rem;
   font-weight: 400;
   text-transform: uppercase;
 }
 
-.promo__apple__reseller__option__05 a p strong {
+.spn__province__05 a p strong {
   font-size: 2rem;
   font-weight: 600;
 }
 
-.promo__apple__reseller__option__05 a img {
+.spn__province__05 a img {
   position: absolute;
   top: 0;
   left: 0;
@@ -4165,18 +4110,18 @@ nav .clientzonewrapper .advertising-drop {
   /* border: 1px solid green; */
 }
 
-.promo__apple__reseller__option__05 a:hover {
+.spn__province__05 a:hover {
   transform: scale(1.04);
 }
 
 /* =================================================== */
-/* FIXME:  OPTION 6 - APPLE TV                         */
+/* FIXME:  OPTION 6 - FREE STATE                       */
 /* =================================================== */
 
-.promo__apple__reseller__option__06 {
+.spn__province__06 {
   position: relative;
   width: 26rem;
-  height: 18.5rem;
+  height: 26rem;
   margin: 2rem 2rem 2rem 2rem;
   padding: 0rem 0rem 0rem 0rem;
   border-radius: 1.5rem;
@@ -4186,7 +4131,7 @@ nav .clientzonewrapper .advertising-drop {
   /* border: 1px solid green; */
 }
 
-.promo__apple__reseller__option__06 a {
+.spn__province__06 a {
   position: absolute;
   top: 0;
   left: 0;
@@ -4205,18 +4150,18 @@ nav .clientzonewrapper .advertising-drop {
   cursor: pointer;
 }
 
-.promo__apple__reseller__option__06 a p {
+.spn__province__06 a p {
   font-size: 1.5rem;
   font-weight: 400;
   text-transform: uppercase;
 }
 
-.promo__apple__reseller__option__06 a p strong {
+.spn__province__06 a p strong {
   font-size: 2rem;
   font-weight: 600;
 }
 
-.promo__apple__reseller__option__06 a img {
+.spn__province__06 a img {
   position: absolute;
   top: 0;
   left: 0;
@@ -4227,18 +4172,18 @@ nav .clientzonewrapper .advertising-drop {
   /* border: 1px solid green; */
 }
 
-.promo__apple__reseller__option__06 a:hover {
+.spn__province__06 a:hover {
   transform: scale(1.04);
 }
 
 /* =================================================== */
-/* FIXME:  OPTION 7 - APPLE IPODS (EARPHONES)          */
+/* FIXME:  OPTION 7 - NORTH WEST                       */
 /* =================================================== */
 
-.promo__apple__reseller__option__07 {
+.spn__province__07 {
   position: relative;
   width: 26rem;
-  height: 18.5rem;
+  height: 26rem;
   margin: 2rem 2rem 2rem 2rem;
   padding: 0rem 0rem 0rem 0rem;
   border-radius: 1.5rem;
@@ -4248,7 +4193,7 @@ nav .clientzonewrapper .advertising-drop {
   /* border: 1px solid green; */
 }
 
-.promo__apple__reseller__option__07 a {
+.spn__province__07 a {
   position: absolute;
   top: 0;
   left: 0;
@@ -4267,18 +4212,18 @@ nav .clientzonewrapper .advertising-drop {
   cursor: pointer;
 }
 
-.promo__apple__reseller__option__07 a p {
+.spn__province__07 a p {
   font-size: 1.5rem;
   font-weight: 400;
   text-transform: uppercase;
 }
 
-.promo__apple__reseller__option__07 a p strong {
+.spn__province__07 a p strong {
   font-size: 2rem;
   font-weight: 600;
 }
 
-.promo__apple__reseller__option__07 a img {
+.spn__province__07 a img {
   position: absolute;
   top: 0;
   left: 0;
@@ -4289,18 +4234,18 @@ nav .clientzonewrapper .advertising-drop {
   /* border: 1px solid green; */
 }
 
-.promo__apple__reseller__option__07 a:hover {
+.spn__province__07 a:hover {
   transform: scale(1.04);
 }
 
 /* =================================================== */
-/* FIXME:  OPTION 8 - APPLE CHARGERS AND ACCESSORIES   */
+/* FIXME:  OPTION 8 - LIMPOPO                          */
 /* =================================================== */
 
-.promo__apple__reseller__option__08 {
+.spn__province__08 {
   position: relative;
   width: 26rem;
-  height: 18.5rem;
+  height: 26rem;
   margin: 2rem 2rem 2rem 2rem;
   padding: 0rem 0rem 0rem 0rem;
   border-radius: 1.5rem;
@@ -4310,7 +4255,7 @@ nav .clientzonewrapper .advertising-drop {
   /* border: 1px solid green; */
 }
 
-.promo__apple__reseller__option__08 a {
+.spn__province__08 a {
   position: absolute;
   top: 0;
   left: 0;
@@ -4329,18 +4274,18 @@ nav .clientzonewrapper .advertising-drop {
   cursor: pointer;
 }
 
-.promo__apple__reseller__option__08 a p {
+.spn__province__08 a p {
   font-size: 1.5rem;
   font-weight: 400;
   text-transform: uppercase;
 }
 
-.promo__apple__reseller__option__08 a p strong {
+.spn__province__08 a p strong {
   font-size: 2rem;
   font-weight: 600;
 }
 
-.promo__apple__reseller__option__08 a img {
+.spn__province__08 a img {
   position: absolute;
   top: 0;
   left: 0;
@@ -4351,7 +4296,69 @@ nav .clientzonewrapper .advertising-drop {
   /* border: 1px solid green; */
 }
 
-.promo__apple__reseller__option__08 a:hover {
+.spn__province__08 a:hover {
+  transform: scale(1.04);
+}
+
+/* =================================================== */
+/* FIXME:  OPTION 9 - MPUMALANGA                       */
+/* =================================================== */
+
+.spn__province__09 {
+  position: relative;
+  width: 26rem;
+  height: 26rem;
+  margin: 2rem 2rem 2rem 2rem;
+  padding: 0rem 0rem 0rem 0rem;
+  border-radius: 1.5rem;
+  border: none;
+  outline: none;
+  box-shadow: var(--color-box-shadow-01);
+  /* border: 1px solid green; */
+}
+
+.spn__province__09 a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 1.5rem;
+  background-color: white;
+  color: var(--color-cta-page-text-on-buttons-or-anchors);
+  box-shadow: var(--color-box-shadow-01);
+  transition: transform 0.5s ease-in-out;
+  cursor: pointer;
+}
+
+.spn__province__09 a p {
+  font-size: 1.5rem;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.spn__province__09 a p strong {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.spn__province__09 a img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 1.5rem;
+  object-fit: contain;
+  /* border: 1px solid green; */
+}
+
+.spn__province__09 a:hover {
   transform: scale(1.04);
 }
 
@@ -4360,32 +4367,18 @@ nav .clientzonewrapper .advertising-drop {
 /* ================================================== */
 
 @media screen and (max-width: 300px) {
-  .promo__apple__reseller__page__title h5 {
-    margin: 2rem 1.5rem 1rem 1.5rem;
-    text-align: center;
-  }
-
-  .promo__apple__reseller__page__title h6 {
-    margin: 0rem 1.5rem 2rem 1.5rem;
-    padding: 0rem 2rem 0rem 2rem;
-    text-align: justify;
-  }
-
-  .promo__apple__reseller__page__title p {
-    margin: 0.5rem 1.5rem 1rem 1.5rem;
-  }
-
-  .promo__apple__reseller__option__01,
-  .promo__apple__reseller__option__02,
-  .promo__apple__reseller__option__03,
-  .promo__apple__reseller__option__04,
-  .promo__apple__reseller__option__05,
-  .promo__apple__reseller__option__06,
-  .promo__apple__reseller__option__07,
-  .promo__apple__reseller__option__08 {
+  .spn__province__01,
+  .spn__province__02,
+  .spn__province__03,
+  .spn__province__04,
+  .spn__province__05,
+  .spn__province__06,
+  .spn__province__07,
+  .spn__province__08,
+  .spn__province__09 {
     margin: 2rem 0.2rem 2rem 0.2rem;
     width: 24rem;
-    height: 17.08rem;
+    height: 24rem;
   }
 }
 
