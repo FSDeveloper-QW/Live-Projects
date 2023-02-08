@@ -3769,7 +3769,7 @@ nav .clientzonewrapper .advertising-drop {
 /* FIXME:FIXME:FIXME:  ENTER NEW PAGE CONTENT BELOW  FIXME:FIXME:FIXME: */
 
 /* ===================================================================================================================== */
-/* TODO:TODO:             SELECT THE PROVINCE WHERE YOU WOULD LIKE THE SERVICE TO BE CARRIED OUT              TODO:TODO: */
+/* TODO:TODO:           FIND A RESELLER: SELECT THE PROVINCE WHERE YOU OR YOUR BUSINESS ARE BASED             TODO:TODO: */
 /* ===================================================================================================================== */
 
 /* =================================== */
@@ -3777,11 +3777,11 @@ nav .clientzonewrapper .advertising-drop {
 /* =================================== */
 
 :root {
-  --color-spn-provinces-background-01: #eee;
-  /* --color-spn-provinces-background-01: #e5e4e2; */
-  --color-spn-provinces-background-02: #d3d3d3;
-  --color-spn-provinces-background-03: #c0c0c0;
-  --color-spn-provinces-background-04: #a9a9a9;
+  --color-reseller-provinces-background-01: #eee;
+  /* --color-reseller-provinces-background-01: #e5e4e2; */
+  --color-reseller-provinces-background-02: #d3d3d3;
+  --color-reseller-provinces-background-03: #c0c0c0;
+  --color-reseller-provinces-background-04: #a9a9a9;
 }
 
 /* =================================== */
@@ -3792,7 +3792,7 @@ nav .clientzonewrapper .advertising-drop {
 /* FIXME:  OPTIONS - CONTAINER                   */
 /* ============================================= */
 
-.spn__provinces__container {
+.reseller__provinces__container {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -3800,7 +3800,7 @@ nav .clientzonewrapper .advertising-drop {
   width: 100%;
   height: auto;
   padding: 1rem 0rem 3rem 0rem;
-  background-color: var(--color-spn-provinces-background-01);
+  background-color: var(--color-reseller-provinces-background-01);
   /* border: 1px solid red; */
 }
 
@@ -3808,7 +3808,7 @@ nav .clientzonewrapper .advertising-drop {
 /* FIXME:  OPTION 1 - NORTHERN CAPE              */
 /* ============================================= */
 
-.spn__province__01 {
+.resellers__province__01 {
   position: relative;
   width: 26rem;
   height: 26rem;
@@ -3821,7 +3821,7 @@ nav .clientzonewrapper .advertising-drop {
   /* border: 1px solid green; */
 }
 
-.spn__province__01 a {
+.resellers__province__01 a {
   position: absolute;
   top: 0;
   left: 0;
@@ -3840,18 +3840,18 @@ nav .clientzonewrapper .advertising-drop {
   cursor: pointer;
 }
 
-.spn__province__01 a p {
+.resellers__province__01 a p {
   font-size: 1.5rem;
   font-weight: 400;
   text-transform: uppercase;
 }
 
-.spn__province__01 a p strong {
+.resellers__province__01 a p strong {
   font-size: 2rem;
   font-weight: 600;
 }
 
-.spn__province__01 a img {
+.resellers__province__01 a img {
   position: absolute;
   top: 0;
   left: 0;
@@ -3862,7 +3862,7 @@ nav .clientzonewrapper .advertising-drop {
   /* border: 1px solid purple; */
 }
 
-.spn__province__01 a:hover {
+.resellers__province__01 a:hover {
   transform: scale(1.04);
 }
 
@@ -3870,7 +3870,7 @@ nav .clientzonewrapper .advertising-drop {
 /* FIXME:  OPTION 2 - WESTERN CAPE              */
 /* ============================================ */
 
-.spn__province__02 {
+.resellers__province__02 {
   position: relative;
   width: 26rem;
   height: 26rem;
@@ -3883,7 +3883,7 @@ nav .clientzonewrapper .advertising-drop {
   /* border: 1px solid green; */
 }
 
-.spn__province__02 a {
+.resellers__province__02 a {
   position: absolute;
   top: 0;
   left: 0;
@@ -3902,18 +3902,18 @@ nav .clientzonewrapper .advertising-drop {
   cursor: pointer;
 }
 
-.spn__province__02 a p {
+.resellers__province__02 a p {
   font-size: 1.5rem;
   font-weight: 400;
   text-transform: uppercase;
 }
 
-.spn__province__02 a p strong {
+.resellers__province__02 a p strong {
   font-size: 2rem;
   font-weight: 600;
 }
 
-.spn__province__02 a img {
+.resellers__province__02 a img {
   position: absolute;
   top: 0;
   left: 0;
@@ -3924,7 +3924,7 @@ nav .clientzonewrapper .advertising-drop {
   /* border: 1px solid green; */
 }
 
-.spn__province__02 a:hover {
+.resellers__province__02 a:hover {
   transform: scale(1.04);
 }
 
@@ -3932,7 +3932,7 @@ nav .clientzonewrapper .advertising-drop {
 /* FIXME:  OPTION 3 - EASTERN CAPE                          */
 /* ======================================================== */
 
-.spn__province__03 {
+.resellers__province__03 {
   position: relative;
   width: 26rem;
   height: 26rem;
@@ -3945,7 +3945,7 @@ nav .clientzonewrapper .advertising-drop {
   /* border: 1px solid green; */
 }
 
-.spn__province__03 a {
+.resellers__province__03 a {
   position: absolute;
   top: 0;
   left: 0;
@@ -3964,18 +3964,18 @@ nav .clientzonewrapper .advertising-drop {
   cursor: pointer;
 }
 
-.spn__province__03 a p {
+.resellers__province__03 a p {
   font-size: 1.5rem;
   font-weight: 400;
   text-transform: uppercase;
 }
 
-.spn__province__03 a p strong {
+.resellers__province__03 a p strong {
   font-size: 2rem;
   font-weight: 600;
 }
 
-.spn__province__03 a img {
+.resellers__province__03 a img {
   position: absolute;
   top: 0;
   left: 0;
@@ -3986,7 +3986,7 @@ nav .clientzonewrapper .advertising-drop {
   /* border: 1px solid green; */
 }
 
-.spn__province__03 a:hover {
+.resellers__province__03 a:hover {
   transform: scale(1.04);
 }
 
@@ -3994,7 +3994,7 @@ nav .clientzonewrapper .advertising-drop {
 /* FIXME:  OPTION 4 - KWAZULU-NATAL                    */
 /* =================================================== */
 
-.spn__province__04 {
+.resellers__province__04 {
   position: relative;
   width: 26rem;
   height: 26rem;
@@ -4007,7 +4007,7 @@ nav .clientzonewrapper .advertising-drop {
   /* border: 1px solid green; */
 }
 
-.spn__province__04 a {
+.resellers__province__04 a {
   position: absolute;
   top: 0;
   left: 0;
@@ -4026,18 +4026,18 @@ nav .clientzonewrapper .advertising-drop {
   cursor: pointer;
 }
 
-.spn__province__04 a p {
+.resellers__province__04 a p {
   font-size: 1.5rem;
   font-weight: 400;
   text-transform: uppercase;
 }
 
-.spn__province__04 a p strong {
+.resellers__province__04 a p strong {
   font-size: 2rem;
   font-weight: 600;
 }
 
-.spn__province__04 a img {
+.resellers__province__04 a img {
   position: absolute;
   top: 0;
   left: 0;
@@ -4048,7 +4048,7 @@ nav .clientzonewrapper .advertising-drop {
   /* border: 1px solid green; */
 }
 
-.spn__province__04 a:hover {
+.resellers__province__04 a:hover {
   transform: scale(1.04);
 }
 
@@ -4056,7 +4056,7 @@ nav .clientzonewrapper .advertising-drop {
 /* FIXME:  OPTION 5 - GAUTENG                          */
 /* =================================================== */
 
-.spn__province__05 {
+.resellers__province__05 {
   position: relative;
   width: 26rem;
   height: 26rem;
@@ -4069,7 +4069,7 @@ nav .clientzonewrapper .advertising-drop {
   /* border: 1px solid green; */
 }
 
-.spn__province__05 a {
+.resellers__province__05 a {
   position: absolute;
   top: 0;
   left: 0;
@@ -4088,18 +4088,18 @@ nav .clientzonewrapper .advertising-drop {
   cursor: pointer;
 }
 
-.spn__province__05 a p {
+.resellers__province__05 a p {
   font-size: 1.5rem;
   font-weight: 400;
   text-transform: uppercase;
 }
 
-.spn__province__05 a p strong {
+.resellers__province__05 a p strong {
   font-size: 2rem;
   font-weight: 600;
 }
 
-.spn__province__05 a img {
+.resellers__province__05 a img {
   position: absolute;
   top: 0;
   left: 0;
@@ -4110,7 +4110,7 @@ nav .clientzonewrapper .advertising-drop {
   /* border: 1px solid green; */
 }
 
-.spn__province__05 a:hover {
+.resellers__province__05 a:hover {
   transform: scale(1.04);
 }
 
@@ -4118,7 +4118,7 @@ nav .clientzonewrapper .advertising-drop {
 /* FIXME:  OPTION 6 - FREE STATE                       */
 /* =================================================== */
 
-.spn__province__06 {
+.resellers__province__06 {
   position: relative;
   width: 26rem;
   height: 26rem;
@@ -4131,7 +4131,7 @@ nav .clientzonewrapper .advertising-drop {
   /* border: 1px solid green; */
 }
 
-.spn__province__06 a {
+.resellers__province__06 a {
   position: absolute;
   top: 0;
   left: 0;
@@ -4150,18 +4150,18 @@ nav .clientzonewrapper .advertising-drop {
   cursor: pointer;
 }
 
-.spn__province__06 a p {
+.resellers__province__06 a p {
   font-size: 1.5rem;
   font-weight: 400;
   text-transform: uppercase;
 }
 
-.spn__province__06 a p strong {
+.resellers__province__06 a p strong {
   font-size: 2rem;
   font-weight: 600;
 }
 
-.spn__province__06 a img {
+.resellers__province__06 a img {
   position: absolute;
   top: 0;
   left: 0;
@@ -4172,7 +4172,7 @@ nav .clientzonewrapper .advertising-drop {
   /* border: 1px solid green; */
 }
 
-.spn__province__06 a:hover {
+.resellers__province__06 a:hover {
   transform: scale(1.04);
 }
 
@@ -4180,7 +4180,7 @@ nav .clientzonewrapper .advertising-drop {
 /* FIXME:  OPTION 7 - NORTH WEST                       */
 /* =================================================== */
 
-.spn__province__07 {
+.resellers__province__07 {
   position: relative;
   width: 26rem;
   height: 26rem;
@@ -4193,7 +4193,7 @@ nav .clientzonewrapper .advertising-drop {
   /* border: 1px solid green; */
 }
 
-.spn__province__07 a {
+.resellers__province__07 a {
   position: absolute;
   top: 0;
   left: 0;
@@ -4212,18 +4212,18 @@ nav .clientzonewrapper .advertising-drop {
   cursor: pointer;
 }
 
-.spn__province__07 a p {
+.resellers__province__07 a p {
   font-size: 1.5rem;
   font-weight: 400;
   text-transform: uppercase;
 }
 
-.spn__province__07 a p strong {
+.resellers__province__07 a p strong {
   font-size: 2rem;
   font-weight: 600;
 }
 
-.spn__province__07 a img {
+.resellers__province__07 a img {
   position: absolute;
   top: 0;
   left: 0;
@@ -4234,7 +4234,7 @@ nav .clientzonewrapper .advertising-drop {
   /* border: 1px solid green; */
 }
 
-.spn__province__07 a:hover {
+.resellers__province__07 a:hover {
   transform: scale(1.04);
 }
 
@@ -4242,7 +4242,7 @@ nav .clientzonewrapper .advertising-drop {
 /* FIXME:  OPTION 8 - LIMPOPO                          */
 /* =================================================== */
 
-.spn__province__08 {
+.resellers__province__08 {
   position: relative;
   width: 26rem;
   height: 26rem;
@@ -4255,7 +4255,7 @@ nav .clientzonewrapper .advertising-drop {
   /* border: 1px solid green; */
 }
 
-.spn__province__08 a {
+.resellers__province__08 a {
   position: absolute;
   top: 0;
   left: 0;
@@ -4274,18 +4274,18 @@ nav .clientzonewrapper .advertising-drop {
   cursor: pointer;
 }
 
-.spn__province__08 a p {
+.resellers__province__08 a p {
   font-size: 1.5rem;
   font-weight: 400;
   text-transform: uppercase;
 }
 
-.spn__province__08 a p strong {
+.resellers__province__08 a p strong {
   font-size: 2rem;
   font-weight: 600;
 }
 
-.spn__province__08 a img {
+.resellers__province__08 a img {
   position: absolute;
   top: 0;
   left: 0;
@@ -4296,7 +4296,7 @@ nav .clientzonewrapper .advertising-drop {
   /* border: 1px solid green; */
 }
 
-.spn__province__08 a:hover {
+.resellers__province__08 a:hover {
   transform: scale(1.04);
 }
 
@@ -4304,7 +4304,7 @@ nav .clientzonewrapper .advertising-drop {
 /* FIXME:  OPTION 9 - MPUMALANGA                       */
 /* =================================================== */
 
-.spn__province__09 {
+.resellers__province__09 {
   position: relative;
   width: 26rem;
   height: 26rem;
@@ -4317,7 +4317,7 @@ nav .clientzonewrapper .advertising-drop {
   /* border: 1px solid green; */
 }
 
-.spn__province__09 a {
+.resellers__province__09 a {
   position: absolute;
   top: 0;
   left: 0;
@@ -4336,18 +4336,18 @@ nav .clientzonewrapper .advertising-drop {
   cursor: pointer;
 }
 
-.spn__province__09 a p {
+.resellers__province__09 a p {
   font-size: 1.5rem;
   font-weight: 400;
   text-transform: uppercase;
 }
 
-.spn__province__09 a p strong {
+.resellers__province__09 a p strong {
   font-size: 2rem;
   font-weight: 600;
 }
 
-.spn__province__09 a img {
+.resellers__province__09 a img {
   position: absolute;
   top: 0;
   left: 0;
@@ -4358,7 +4358,7 @@ nav .clientzonewrapper .advertising-drop {
   /* border: 1px solid green; */
 }
 
-.spn__province__09 a:hover {
+.resellers__province__09 a:hover {
   transform: scale(1.04);
 }
 
@@ -4367,15 +4367,15 @@ nav .clientzonewrapper .advertising-drop {
 /* ================================================== */
 
 @media screen and (max-width: 300px) {
-  .spn__province__01,
-  .spn__province__02,
-  .spn__province__03,
-  .spn__province__04,
-  .spn__province__05,
-  .spn__province__06,
-  .spn__province__07,
-  .spn__province__08,
-  .spn__province__09 {
+  .resellers__province__01,
+  .resellers__province__02,
+  .resellers__province__03,
+  .resellers__province__04,
+  .resellers__province__05,
+  .resellers__province__06,
+  .resellers__province__07,
+  .resellers__province__08,
+  .resellers__province__09 {
     margin: 2rem 0.2rem 2rem 0.2rem;
     width: 24rem;
     height: 24rem;
