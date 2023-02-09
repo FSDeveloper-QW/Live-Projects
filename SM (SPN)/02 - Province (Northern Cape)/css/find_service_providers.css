@@ -3633,6 +3633,10 @@ nav .clientzonewrapper .advertising-drop {
 /* ===================================================================================================================== */
 /* ===================================================================================================================== */
 
+:root {
+  --color-new-page-background: #eee;
+}
+
 /* =========================================================== */
 /* FIXME:  NEW PAGE - CONTAINER (HOLDING ALL ELEMENTS)  FIXME: */
 /* =========================================================== */
@@ -3648,7 +3652,7 @@ nav .clientzonewrapper .advertising-drop {
   height: auto;
   object-fit: cover;
   margin: 0rem 0rem 0rem 0rem;
-  background-color: #eee;
+  background-color: var(--color-new-page-background);
   /* border: 2px solid red; */
 }
 
@@ -3677,7 +3681,7 @@ nav .clientzonewrapper .advertising-drop {
   text-transform: uppercase;
   width: 100%;
   padding: 1.5rem 1rem 1.5rem 1rem;
-  background-color: #eee;
+  background-color: var(--color-new-page-background);
   text-align: center;
   /* border: 2px solid purple; */
 }
@@ -3695,7 +3699,7 @@ nav .clientzonewrapper .advertising-drop {
   width: 100%;
   margin: -3rem 0rem 0rem 0rem;
   padding: 0rem 1rem 0rem 1rem;
-  background-color: #eee;
+  background-color: var(--color-new-page-background);
   text-align: center;
   /* border: 2px solid purple; */
 }
@@ -3786,6 +3790,8 @@ nav .clientzonewrapper .advertising-drop {
   --color-spn-provinces-background-02: #d3d3d3;
   --color-spn-provinces-background-03: #c0c0c0;
   --color-spn-provinces-background-04: #a9a9a9;
+  --color-spn-provinces-anchor-background: #ffffff;
+  --color-spn-provinces-anchor-text: #ffffff;
 }
 
 /* =================================== */
@@ -3837,8 +3843,8 @@ nav .clientzonewrapper .advertising-drop {
   text-align: center;
   text-decoration: none;
   border-radius: 1.5rem;
-  background-color: white;
-  color: var(--color-cta-page-text-on-buttons-or-anchors);
+  background-color: var(--color-spn-provinces-anchor-background);
+  color: var(--color-spn-provinces-anchor-text);
   box-shadow: var(--color-box-shadow-01);
   transition: transform 0.5s ease-in-out;
   cursor: pointer;
@@ -3899,8 +3905,8 @@ nav .clientzonewrapper .advertising-drop {
   text-align: center;
   text-decoration: none;
   border-radius: 1.5rem;
-  background-color: white;
-  /* color: var(--color-cta-page-text-on-buttons-or-anchors); */
+  background-color: var(--color-spn-provinces-anchor-background);
+  color: var(--color-spn-provinces-anchor-text);
   box-shadow: var(--color-box-shadow-01);
   transition: transform 0.5s ease-in-out;
   cursor: pointer;
@@ -3961,8 +3967,8 @@ nav .clientzonewrapper .advertising-drop {
   text-align: center;
   text-decoration: none;
   border-radius: 1.5rem;
-  background-color: white;
-  color: var(--color-cta-page-text-on-buttons-or-anchors);
+  background-color: var(--color-spn-provinces-anchor-background);
+  color: var(--color-spn-provinces-anchor-text);
   box-shadow: var(--color-box-shadow-01);
   transition: transform 0.5s ease-in-out;
   cursor: pointer;
@@ -4023,8 +4029,8 @@ nav .clientzonewrapper .advertising-drop {
   text-align: center;
   text-decoration: none;
   border-radius: 1.5rem;
-  background-color: white;
-  color: var(--color-cta-page-text-on-buttons-or-anchors);
+  background-color: var(--color-spn-provinces-anchor-background);
+  color: var(--color-spn-provinces-anchor-text);
   box-shadow: var(--color-box-shadow-01);
   transition: transform 0.5s ease-in-out;
   cursor: pointer;
@@ -4085,8 +4091,8 @@ nav .clientzonewrapper .advertising-drop {
   text-align: center;
   text-decoration: none;
   border-radius: 1.5rem;
-  background-color: white;
-  color: var(--color-cta-page-text-on-buttons-or-anchors);
+  background-color: var(--color-spn-provinces-anchor-background);
+  color: var(--color-spn-provinces-anchor-text);
   box-shadow: var(--color-box-shadow-01);
   transition: transform 0.5s ease-in-out;
   cursor: pointer;
@@ -4147,8 +4153,8 @@ nav .clientzonewrapper .advertising-drop {
   text-align: center;
   text-decoration: none;
   border-radius: 1.5rem;
-  background-color: white;
-  color: var(--color-cta-page-text-on-buttons-or-anchors);
+  background-color: var(--color-spn-provinces-anchor-background);
+  color: var(--color-spn-provinces-anchor-text);
   box-shadow: var(--color-box-shadow-01);
   transition: transform 0.5s ease-in-out;
   cursor: pointer;
@@ -4209,8 +4215,8 @@ nav .clientzonewrapper .advertising-drop {
   text-align: center;
   text-decoration: none;
   border-radius: 1.5rem;
-  background-color: white;
-  color: var(--color-cta-page-text-on-buttons-or-anchors);
+  background-color: var(--color-spn-provinces-anchor-background);
+  color: var(--color-spn-provinces-anchor-text);
   box-shadow: var(--color-box-shadow-01);
   transition: transform 0.5s ease-in-out;
   cursor: pointer;
@@ -4271,8 +4277,8 @@ nav .clientzonewrapper .advertising-drop {
   text-align: center;
   text-decoration: none;
   border-radius: 1.5rem;
-  background-color: white;
-  color: var(--color-cta-page-text-on-buttons-or-anchors);
+  background-color: var(--color-spn-provinces-anchor-background);
+  color: var(--color-spn-provinces-anchor-text);
   box-shadow: var(--color-box-shadow-01);
   transition: transform 0.5s ease-in-out;
   cursor: pointer;
@@ -4333,8 +4339,8 @@ nav .clientzonewrapper .advertising-drop {
   text-align: center;
   text-decoration: none;
   border-radius: 1.5rem;
-  background-color: white;
-  color: var(--color-cta-page-text-on-buttons-or-anchors);
+  background-color: var(--color-spn-provinces-anchor-background);
+  color: var(--color-spn-provinces-anchor-text);
   box-shadow: var(--color-box-shadow-01);
   transition: transform 0.5s ease-in-out;
   cursor: pointer;
@@ -4395,11 +4401,6 @@ nav .clientzonewrapper .advertising-drop {
 /* ===================================================================================================================== */
 
 :root {
-  --color-spn-provinces-background-01: #eee;
-  /* --color-spn-provinces-background-01: #e5e4e2; */
-  --color-spn-provinces-background-02: #d3d3d3;
-  --color-spn-provinces-background-03: #c0c0c0;
-  --color-spn-provinces-background-04: #a9a9a9;
   --color-spn-regional-area-accordian-background: #01a7cf;
   --color-spn-regional-area-accordian-text: #ffffff;
   --color-spn-regional-area-accordian-plus-and-minus-sign: #ffffff;
@@ -4407,10 +4408,164 @@ nav .clientzonewrapper .advertising-drop {
   --color-spn-regional-area-accordian-background-active: #01a7cf;
   --color-spn-regional-area-accordian-body-background-active: #ffffff;
   --color-spn-regional-area-accordian-body-text-active: #000000;
+  --color-spn-regional-area-background: #eee;
+  --color-spn-regional-area-button-background: #01a7cf;
+  --color-spn-regional-area-button-text: #ffffff;
 }
 
 /* ============================================================= */
 /* FIXME:  SPN REGIONAL AREA - SELECTION SECTION (START)  FIXME: */
+/* ============================================================= */
+
+/* =============================== */
+/* FIXME:  VIEW - MOBILE FIRST     */
+/* =============================== */
+
+/* .spn__regional__area__selection_section {
+  display: grid;
+  grid-template-columns: repeat(2, 50% 50%);
+  column-gap: 2rem;
+  margin: 0rem 0.5rem 0.5rem 0.5rem;
+  padding: 0.5rem 0.5rem 0.5rem 1rem;
+  border-radius: 0rem 0rem 0.25rem 0.25rem;
+  background-color: var(
+    --color-spn-regional-area-accordian-body-background-active
+  ); */
+/* color: var(--color-spn-regional-area-accordian-body-text-active); */
+/* border-bottom: 2px solid var(--color-team-accordian-item-seperation-line); */
+/* } */
+
+/* .spn__regional__area__selection_section p {
+  font-size: 1.5rem;
+} */
+
+/* =============================== */
+/* FIXME:  VIEW - LARGER SCREENS   */
+/* =============================== */
+
+/* @media screen and (max-width: 670px) {
+  .spn__regional__area__selection_section {
+    display: flex;
+    flex-direction: column;
+  }
+} */
+
+/* ================================================= */
+/* TODO:  CONTAINER - REGIONAL AREA SELECTION  TODO: */
+/* ================================================= */
+
+/* =============================== */
+/* FIXME:  VIEW - MOBILE FIRST     */
+/* =============================== */
+
+.spn__regional__area__selection__section {
+  display: grid;
+  grid-template-columns: repeat(2, 50% 50%);
+  width: 95%;
+  height: auto;
+  margin: 2rem 0rem 2rem 0rem;
+  background-color: var(--color-spn-regional-area-background);
+  border: 3px solid purple;
+}
+
+/* =============================== */
+/* FIXME:  VIEW - LARGER SCREENS   */
+/* =============================== */
+
+@media screen and (max-width: 670px) {
+  .spn__regional__area__selection_section {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+/* ===================================== */
+/* TODO:  SELECTED PROVINCE - MAP  TODO: */
+/* ===================================== */
+
+.spn__selected__provincial__map {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid red;
+}
+
+.spn__selected__provincial__map img {
+  width: 40rem;
+  height: 40rem;
+}
+
+/* ================================================== */
+/* FIXME:  CONTAINER - REGIONAL AREAS BUTTONS  FIXME: */
+/* ================================================== */
+
+/* =============================== */
+/* FIXME:  VIEW - MOBILE FIRST     */
+/* =============================== */
+
+.spn__select__regional__area {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid yellow;
+}
+
+/* .new__page__buttons__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: -2rem 0rem 0rem 0rem;
+  border: 1px solid green;
+} */
+
+.regional__area__button {
+  text-decoration: none;
+  text-transform: uppercase;
+  width: 20rem;
+  font-size: 1.3rem;
+  font-weight: 600;
+  letter-spacing: 0.1rem;
+  margin: 1rem 1rem 1rem 1rem;
+  padding: 1rem 0.5rem 1rem 0.5rem;
+  border: none;
+  outline: none;
+  background: var(--color-spn-regional-area-button-background);
+  border-radius: 0.5rem;
+  box-shadow: var(--color-box-shadow-01);
+  transition: transform 0.5s ease-in-out;
+  cursor: pointer;
+  text-align: center;
+}
+
+.regional__area__button a {
+  text-decoration: none;
+  color: var(--color-spn-regional-area-button-text);
+  cursor: pointer;
+}
+
+.regional__area__button:hover {
+  transform: scale(1.05);
+}
+
+/* =============================== */
+/* FIXME:  VIEW - LARGER SCREENS   */
+/* =============================== */
+
+@media screen and (min-width: 670px) {
+  .spn__select__regional__area {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* row-gap: 1rem; */
+  }
+}
+
+/* ============================================================= */
+/* FIXME:  SPN REGIONAL AREA - SELECTION SECTION (END)    FIXME: */
 /* ============================================================= */
 
 /* ========================================================== */
@@ -4517,9 +4672,9 @@ nav .clientzonewrapper .advertising-drop {
 /* TODO:  REGIONAL AREA - INDIVIDUAL ITEMS                                                                               */
 /* ===================================================================================================================== */
 
-/* ---------------------------------------- */
+/* ======================================== */
 /* ITEM (MAIN CONTAINER)                    */
-/* ---------------------------------------- */
+/* ======================================== */
 
 .spn_regional_area_accordian_item_body {
   /* display: none; */
@@ -4535,13 +4690,13 @@ nav .clientzonewrapper .advertising-drop {
   transition: max-height 0.2s ease-out;
 }
 
-/* ----------------------------------------------- */
+/* =============================================== */
 /* ITEM (ALL ELEMENTS CONTAINER)                   */
-/* ----------------------------------------------- */
+/* =============================================== */
 
-/* ------------------------------- */
+/* =============================== */
 /* FIXME:  VIEW - MOBILE FIRST     */
-/* ------------------------------- */
+/* =============================== */
 
 .spn_regional_area_accordian_item_body_content {
   display: grid;
@@ -4561,9 +4716,9 @@ nav .clientzonewrapper .advertising-drop {
   font-size: 1.5rem;
 }
 
-/* ------------------------------- */
+/* =============================== */
 /* FIXME:  VIEW - LARGER SCREENS   */
-/* ------------------------------- */
+/* =============================== */
 
 @media screen and (max-width: 670px) {
   .spn_regional_area_accordian_item_body_content {
@@ -4572,32 +4727,9 @@ nav .clientzonewrapper .advertising-drop {
   }
 }
 
-/* --------------------------------- */
-/* EMBEDDED VIDEO                    */
-/* --------------------------------- */
-
-.offices__map {
-  position: relative;
-  height: 0;
-  width: 100%;
-  /* height: auto; */
-  margin: 1rem 0rem 1rem 0rem;
-  /* padding: 0rem 0rem 27% 0rem; */
-  padding: 0rem 0rem 56.25% 0rem;
-}
-
-.offices__map img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  padding: 0rem 0rem 0rem 0rem;
-}
-
-/* -------------------------------------- */
+/* ====================================== */
 /* CONTENT (CONTAINER)                    */
-/* -------------------------------------- */
+/* ====================================== */
 
 .offices__details__container {
   display: flex;
@@ -4609,9 +4741,9 @@ nav .clientzonewrapper .advertising-drop {
   padding: 0rem 0rem 0rem 0rem;
 }
 
-/* -------------------------------------- */
+/* ====================================== */
 /* CONTENT (HEADER)                       */
-/* -------------------------------------- */
+/* ====================================== */
 
 .offices__header p {
   margin: 1rem 0.25rem 1rem 0.25rem;
@@ -4623,9 +4755,9 @@ nav .clientzonewrapper .advertising-drop {
   text-transform: uppercase;
 }
 
-/* ---------------------------------------- */
+/* ======================================== */
 /* CONTENT (DESCRIPTION)                    */
-/* ---------------------------------------- */
+/* ======================================== */
 
 .offices__description p {
   margin: 1rem 0.25rem 1rem 0.25rem;
