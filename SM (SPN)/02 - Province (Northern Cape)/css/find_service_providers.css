@@ -3690,7 +3690,7 @@ nav .clientzonewrapper .advertising-drop {
   display: flex;
   justify-content: center;
   justify-items: center;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   text-transform: uppercase;
   width: 100%;
   margin: -3rem 0rem 0rem 0rem;
@@ -3767,6 +3767,10 @@ nav .clientzonewrapper .advertising-drop {
 /* ===================================================================================================================== */
 
 /* FIXME:FIXME:FIXME:  ENTER NEW PAGE CONTENT BELOW  FIXME:FIXME:FIXME: */
+
+/* ===================================================================================================================== */
+/*                                      FIXME:FIXME:   PROVINCES (START)   FIXME:FIXME:                                  */
+/* ===================================================================================================================== */
 
 /* ===================================================================================================================== */
 /* TODO:TODO:             SELECT THE PROVINCE WHERE YOU WOULD LIKE THE SERVICE TO BE CARRIED OUT              TODO:TODO: */
@@ -4381,6 +4385,324 @@ nav .clientzonewrapper .advertising-drop {
     height: 24rem;
   }
 }
+
+/* ===================================================================================================================== */
+/*                                      FIXME:FIXME:   PROVINCES (END)   FIXME:FIXME:                                    */
+/* ===================================================================================================================== */
+
+/* ===================================================================================================================== */
+/*                                   FIXME:FIXME:   REGIONAL AREA (START)   FIXME:FIXME:                                 */
+/* ===================================================================================================================== */
+
+:root {
+  --color-spn-provinces-background-01: #eee;
+  /* --color-spn-provinces-background-01: #e5e4e2; */
+  --color-spn-provinces-background-02: #d3d3d3;
+  --color-spn-provinces-background-03: #c0c0c0;
+  --color-spn-provinces-background-04: #a9a9a9;
+  --color-spn-regional-area-accordian-background: #01a7cf;
+  --color-spn-regional-area-accordian-text: #ffffff;
+  --color-spn-regional-area-accordian-plus-and-minus-sign: #ffffff;
+  --color-spn-regional-area-accordian-header-active: #ffffff;
+  --color-spn-regional-area-accordian-background-active: #01a7cf;
+  --color-spn-regional-area-accordian-body-background-active: #ffffff;
+  --color-spn-regional-area-accordian-body-text-active: #000000;
+}
+
+/* ============================================================= */
+/* FIXME:  SPN REGIONAL AREA - SELECTION SECTION (START)  FIXME: */
+/* ============================================================= */
+
+/* ========================================================== */
+/* FIXME:  ACCORDIAN - MAIN TITLE                      FIXME: */
+/* ========================================================== */
+
+.accordian__main__title h6 {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  text-transform: uppercase;
+  width: 100%;
+  padding: 1.5rem 1rem 1.5rem 1rem;
+  background-color: var(--color-spn-provinces-background-01);
+  text-align: center;
+  /* border: 2px solid purple; */
+}
+
+/* ========================================================== */
+/* FIXME:  NEW PAGE - SUB-TITLE OF THE PAGE            FIXME: */
+/* ========================================================== */
+
+.accordian__sub__title p {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  width: 100%;
+  margin: -3rem 0rem 0rem 0rem;
+  padding: 0rem 1rem 0rem 1rem;
+  background-color: var(--color-spn-provinces-background-01);
+  text-align: center;
+  /* border: 2px solid purple; */
+}
+
+/* ===================================================================================================================== */
+/* TODO:  REGIONAL AREA - ACCORDIAN "MAIN" CONTAINER (HOLDING ALL ELEMENTS)                                              */
+/* ===================================================================================================================== */
+
+.spn_regional_area_accordian {
+  width: 95%;
+  max-width: 128rem;
+  margin: 1rem auto 3rem auto;
+}
+
+/* ===================================================================================================================== */
+/* TODO:  REGIONAL AREA - ACCORDIAN "ITEMS" CONTAINER (HOLDING ALL ITEMS)                                                */
+/* ===================================================================================================================== */
+
+.spn_regional_area_accordian_item {
+  background-color: var(--color-spn-regional-area-accordian-background);
+  color: var(--color-spn-regional-area-accordian-text);
+  margin: 1rem 0rem 1.5rem 0rem;
+  border-radius: 0.5rem;
+  box-shadow: var(--color-box-shadow-01);
+}
+/* ===================================================================================================================== */
+/* TODO:  REGIONAL AREA - ACCORDIAN - ITEM (HEADER)                                                                      */
+/* ===================================================================================================================== */
+
+.spn_regional_area_accordian_item_header {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  min-height: 3.5rem;
+  line-height: 1.25rem;
+  font-size: 1.3rem;
+  font-weight: 600;
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
+  padding: 0.5rem 3rem 0.5rem 1rem;
+  cursor: pointer;
+}
+
+/* FIXME:  NOTE:  THE CSS ENTITY CODE FOR PLUS SIGN "+" = "\002B" */
+/* FIXME:  NOTE:  THE CSS ENTITY CODE FOR DOWN ARROW "v" = \25BE */
+
+.spn_regional_area_accordian_item_header::after {
+  /* content: "\25BE"; */
+  content: "\002B";
+  font-size: 2rem;
+  position: absolute;
+  right: 1rem;
+  color: var(--color-spn-regional-area-accordian-plus-and-minus-sign);
+  transition: transform 0.5s ease-in-out;
+}
+
+/* FIXME:  NOTE:  THE CSS ENTITY CODE FOR MINUS SIGN "-" = "\2212" */
+
+.spn_regional_area_accordian_item_header.active::after {
+  /* transform: rotate(-180deg); */
+  content: "\2212";
+  transform: none;
+}
+
+.spn_regional_area_accordian_item_header.active {
+  background-color: var(--color-spn-regional-area-accordian-background-active);
+  color: var(--color-spn-regional-area-accordian-header-active);
+}
+
+/* ===================================================================================================================== */
+/* TODO:  REGIONAL AREA - INDIVIDUAL ITEMS                                                                               */
+/* ===================================================================================================================== */
+
+/* ---------------------------------------- */
+/* ITEM (MAIN CONTAINER)                    */
+/* ---------------------------------------- */
+
+.spn_regional_area_accordian_item_body {
+  /* display: none; */
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+.spn_regional_area_accordian_item_body {
+  /* display: none; */
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+/* ----------------------------------------------- */
+/* ITEM (ALL ELEMENTS CONTAINER)                   */
+/* ----------------------------------------------- */
+
+/* ------------------------------- */
+/* FIXME:  VIEW - MOBILE FIRST     */
+/* ------------------------------- */
+
+.spn_regional_area_accordian_item_body_content {
+  display: grid;
+  grid-template-columns: repeat(3, 33.33% 33.33% 33.33%);
+  column-gap: 2rem;
+  margin: 0rem 0.5rem 0.5rem 0.5rem;
+  padding: 0.5rem 0.5rem 0.5rem 1rem;
+  border-radius: 0rem 0rem 0.25rem 0.25rem;
+  background-color: var(
+    --color-spn-regional-area-accordian-body-background-active
+  );
+  color: var(--color-spn-regional-area-accordian-body-text-active);
+  /* border-bottom: 2px solid var(--color-team-accordian-item-seperation-line); */
+}
+
+.spn_regional_area_accordian_item_body_content p {
+  font-size: 1.5rem;
+}
+
+/* ------------------------------- */
+/* FIXME:  VIEW - LARGER SCREENS   */
+/* ------------------------------- */
+
+@media screen and (max-width: 670px) {
+  .spn_regional_area_accordian_item_body_content {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+/* --------------------------------- */
+/* EMBEDDED VIDEO                    */
+/* --------------------------------- */
+
+.offices__map {
+  position: relative;
+  height: 0;
+  width: 100%;
+  /* height: auto; */
+  margin: 1rem 0rem 1rem 0rem;
+  /* padding: 0rem 0rem 27% 0rem; */
+  padding: 0rem 0rem 56.25% 0rem;
+}
+
+.offices__map img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 0rem 0rem 0rem 0rem;
+}
+
+/* -------------------------------------- */
+/* CONTENT (CONTAINER)                    */
+/* -------------------------------------- */
+
+.offices__details__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 1rem 0rem 1rem 0rem;
+  padding: 0rem 0rem 0rem 0rem;
+}
+
+/* -------------------------------------- */
+/* CONTENT (HEADER)                       */
+/* -------------------------------------- */
+
+.offices__header p {
+  margin: 1rem 0.25rem 1rem 0.25rem;
+  padding: 0rem 0rem 0rem 0rem;
+  font-size: 1.7rem;
+  font-weight: bolder;
+  line-height: 1.5;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+}
+
+/* ---------------------------------------- */
+/* CONTENT (DESCRIPTION)                    */
+/* ---------------------------------------- */
+
+.offices__description p {
+  margin: 1rem 0.25rem 1rem 0.25rem;
+  padding: 0rem 0rem 0rem 0rem;
+  font-size: 1.3rem;
+  font-weight: 500;
+  line-height: 1.5;
+  text-align: justify;
+}
+
+/* EMAIL - PROVINCES */
+
+.offices__email__container p {
+  margin: 2rem 0.25rem 0rem 0.25rem;
+  padding: 0rem 0rem 0rem 0rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  line-height: 1.5;
+  text-align: justify;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+}
+
+.offices__email__container a {
+  text-decoration: none;
+  color: black;
+}
+
+.offices__email__container a i {
+  margin: 1rem 0rem 0rem 0rem;
+  font-size: 2.3rem;
+  cursor: pointer;
+  transition: transform 0.5s ease-in-out;
+}
+
+.offices__email__container a i:hover {
+  transform: scale(1.1);
+  color: var(--color-team-card-front-socials-icon-hover);
+}
+
+/* ===================================================================================================================== */
+/* TODO:  MEDIA QUERY (LARGER DEVICES)                                                                                   */
+/* ===================================================================================================================== */
+
+@media screen and (max-width: 430px) {
+  .spn_regional_area_accordian-item-header {
+    font-size: 1rem;
+    justify-content: center;
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 670px) {
+  .offices__header {
+    font-size: 1.5rem;
+  }
+
+  .offices__description {
+    font-size: 1.4rem;
+  }
+
+  .offices__email__container a i {
+    font-size: 3rem;
+  }
+}
+
+/* ===================================================================================================================== */
+/*                                    FIXME:FIXME:   REGIONAL AREA (END)   FIXME:FIXME:                                  */
+/* ===================================================================================================================== */
+
+/* ===================================================================================================================== */
+/*                                    FIXME:FIXME:   CITY / TOWN (START)   FIXME:FIXME:                                  */
+/* ===================================================================================================================== */
+
+/* ===================================================================================================================== */
+/*                                     FIXME:FIXME:   CITY / TOWN (END)   FIXME:FIXME:                                   */
+/* ===================================================================================================================== */
 
 /* FIXME:FIXME:FIXME:  ENTER NEW PAGE CONTENT ABOVE  FIXME:FIXME:FIXME: */
 
