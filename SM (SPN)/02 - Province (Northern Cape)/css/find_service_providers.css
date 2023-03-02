@@ -3076,13 +3076,13 @@ nav .clientzonewrapper .advertising-drop {
 
 @media screen and (min-width: 250px) {
   .slider {
-    min-height: 14vh;
+    min-height: 12vh;
   }
 }
 
-@media screen and (min-width: 280px) {
+@media screen and (min-width: 280px) and (min-height: 657px) {
   .slider {
-    min-height: 14.5vh;
+    min-height: 14vh;
   }
 
   .slide-data .slide__title p {
@@ -3093,12 +3093,7 @@ nav .clientzonewrapper .advertising-drop {
   .slide-data .slide__content p {
     font-size: 0.65rem;
     line-height: 1.2;
-  }
-
-  /* .slide-data .slide__button button {
-    font-size: 0.65rem;
-    line-height: 1;
-  } */
+  }  
 
   .slide-data .slide__button a {
     font-size: 0.65rem;
@@ -3124,7 +3119,7 @@ nav .clientzonewrapper .advertising-drop {
 
 @media screen and (min-width: 350px) {
   .slider {
-    min-height: 18.5vh;
+    min-height: 17vh;
   }
 
   .slide-data .slide__title p {
@@ -3136,11 +3131,6 @@ nav .clientzonewrapper .advertising-drop {
     font-size: 0.75rem;
     line-height: 1.2;
   }
-
-  /* .slide-data .slide__button button {
-    font-size: 0.75rem;
-    line-height: 1;
-  } */
 
   .slide-data .slide__button a {
     font-size: 0.75rem;
@@ -3184,7 +3174,7 @@ nav .clientzonewrapper .advertising-drop {
 
 @media screen and (min-width: 400px) {
   .slider {
-    min-height: 21.25vh;
+    min-height: 20vh;
   }
 
   .slide-data .slide__title p {
@@ -3195,12 +3185,7 @@ nav .clientzonewrapper .advertising-drop {
   .slide-data .slide__content p {
     font-size: 0.85rem;
     line-height: 1.2;
-  }
-
-  /* .slide-data .slide__button button {
-    font-size: 0.85rem;
-    line-height: 1.15;
-  } */
+  }  
 
   .slide-data .slide__button a {
     font-size: 0.85rem;
@@ -3232,7 +3217,7 @@ nav .clientzonewrapper .advertising-drop {
 
 @media screen and (min-width: 500px) {
   .slider {
-    min-height: 26.75vh;
+    min-height: 25vh;
   }
 
   .slide-data .slide__title p {
@@ -3243,12 +3228,7 @@ nav .clientzonewrapper .advertising-drop {
   .slide-data .slide__content p {
     font-size: 0.95rem;
     line-height: 1.2;
-  }
-
-  /* .slide-data .slide__button button {
-    font-size: 0.95rem;
-    line-height: 1.2;
-  } */
+  }  
 
   .slide-data .slide__button a {
     font-size: 0.95rem;
@@ -3274,7 +3254,7 @@ nav .clientzonewrapper .advertising-drop {
 
 @media screen and (min-width: 600px) {
   .slider {
-    min-height: 32.5vh;
+    min-height: 30vh;
   }
 
   .slide-data .slide__title p {
@@ -3285,12 +3265,7 @@ nav .clientzonewrapper .advertising-drop {
   .slide-data .slide__content p {
     font-size: 1.05rem;
     line-height: 1.2;
-  }
-
-  /* .slide-data .slide__button button {
-    font-size: 1.05rem;
-    line-height: 1.2;
-  } */
+  }  
 
   .slide-data .slide__button a {
     font-size: 1.05rem;
@@ -3310,7 +3285,7 @@ nav .clientzonewrapper .advertising-drop {
 
 @media screen and (min-width: 700px) {
   .slider {
-    min-height: 38vh;
+    min-height: 35vh;
   }
 
   .slide-data .slide__title p {
@@ -3321,12 +3296,7 @@ nav .clientzonewrapper .advertising-drop {
   .slide-data .slide__content p {
     font-size: 1.2rem;
     line-height: 1.4;
-  }
-
-  /* .slide-data .slide__button button {
-    font-size: 1.2rem;
-    line-height: 1.4;
-  } */
+  }  
 
   .slide-data .slide__button a {
     font-size: 1.2rem;
@@ -3352,7 +3322,7 @@ nav .clientzonewrapper .advertising-drop {
 
 @media screen and (min-width: 800px) {
   .slider {
-    min-height: 43.5vh;
+    min-height: 41vh;
   }
 
   .slide-data .slide__title p {
@@ -3363,12 +3333,7 @@ nav .clientzonewrapper .advertising-drop {
   .slide-data .slide__content p {
     font-size: 1.3rem;
     line-height: 1.5;
-  }
-
-  /* .slide-data .slide__button button {
-    font-size: 1.3rem;
-    line-height: 1.5;
-  } */
+  }  
 
   .slide-data .slide__button a {
     font-size: 1.3rem;
@@ -3394,7 +3359,7 @@ nav .clientzonewrapper .advertising-drop {
 
 @media screen and (min-width: 900px) {
   .slider {
-    min-height: 49vh;
+    min-height: 46vh;
   }
 
   .slide-data .slide__title p {
@@ -3405,12 +3370,7 @@ nav .clientzonewrapper .advertising-drop {
   .slide-data .slide__content p {
     font-size: 1.35rem;
     line-height: 1.5;
-  }
-
-  /* .slide-data .slide__button button {
-    font-size: 1.35rem;
-    line-height: 1.5;
-  } */
+  }  
 
   .slide-data .slide__button a {
     font-size: 1.35rem;
@@ -3436,7 +3396,7 @@ nav .clientzonewrapper .advertising-drop {
 
 @media screen and (min-width: 1000px) {
   .slider {
-    min-height: 54.5vh;
+    min-height: 51vh;
   }
 
   .slide-data .slide__title p {
@@ -3447,12 +3407,7 @@ nav .clientzonewrapper .advertising-drop {
   .slide-data .slide__content p {
     font-size: 1.4rem;
     line-height: 1.5;
-  }
-
-  /* .slide-data .slide__button button {
-    font-size: 1.4rem;
-    line-height: 1.5;
-  } */
+  }  
 
   .slide-data .slide__button a {
     font-size: 1.4rem;
@@ -3478,7 +3433,7 @@ nav .clientzonewrapper .advertising-drop {
 
 @media screen and (min-width: 1029px) {
   .slider {
-    min-height: 56.25vh;
+    min-height: 53vh;
   }
 
   .slide-data .slide__title p {
@@ -3489,12 +3444,7 @@ nav .clientzonewrapper .advertising-drop {
   .slide-data .slide__content p {
     font-size: 1.45rem;
     line-height: 1.5;
-  }
-
-  /* .slide-data .slide__button button {
-    font-size: 1.45rem;
-    line-height: 1.5;
-  } */
+  }  
 
   .slide-data .slide__button a {
     font-size: 1.45rem;
@@ -3514,19 +3464,19 @@ nav .clientzonewrapper .advertising-drop {
 
 @media screen and (min-width: 1040px) {
   .slider {
-    min-height: 58vh;
+    min-height: 53vh;
   }
 }
 
 @media screen and (min-width: 1050px) {
   .slider {
-    min-height: 58.75vh;
+    min-height: 53.5vh;
   }
 }
 
 @media screen and (min-width: 1100px) {
   .slider {
-    min-height: 61.5vh;
+    min-height: 56.5vh;
   }
 
   .slide-data .slide__title p {
@@ -3537,12 +3487,7 @@ nav .clientzonewrapper .advertising-drop {
   .slide-data .slide__content p {
     font-size: 1.5rem;
     line-height: 1.5;
-  }
-
-  /* .slide-data .slide__button button {
-    font-size: 1.5rem;
-    line-height: 1.5;
-  } */
+  }  
 
   .slide-data .slide__button a {
     font-size: 1.5rem;
@@ -3579,12 +3524,7 @@ nav .clientzonewrapper .advertising-drop {
   .slide-data .slide__content p {
     font-size: 1.6rem;
     line-height: 1.5;
-  }
-
-  /* .slide-data .slide__button button {
-    font-size: 1.6rem;
-    line-height: 1.5;
-  } */
+  }  
 
   .slide-data .slide__button a {
     font-size: 1.6rem;
@@ -3620,6 +3560,90 @@ nav .clientzonewrapper .advertising-drop {
     min-height: 54.75vh;
   }
 }
+
+/* ============ */
+/* DELL-MONITOR */
+/* ============ */
+
+@media screen and (min-width: 280px) and (min-height: 969px) {
+  .slider {
+    min-height: 9vh;
+  }
+}
+
+@media screen and (min-width: 350px) and (min-height: 969px) {
+  .slider {
+    min-height: 11vh;
+  }
+}
+
+@media screen and (min-width: 400px) and (min-height: 969px) {
+  .slider {
+    min-height: 13vh;
+  }
+}
+
+@media screen and (min-width: 500px) and (min-height: 969px) {
+  .slider {
+    min-height: 17vh;
+  }
+}
+
+@media screen and (min-width: 600px) and (min-height: 969px) {
+  .slider {
+    min-height: 20.5vh;
+  }
+}
+
+@media screen and (min-width: 700px) and (min-height: 969px) {
+  .slider {
+    min-height: 24vh;
+  }
+}
+
+@media screen and (min-width: 700px) and (min-height: 969px) {
+  .slider {
+    min-height: 24vh;
+  }
+}
+
+@media screen and (min-width: 800px) and (min-height: 969px) {
+  .slider {
+    min-height: 27.5vh;
+  }
+}
+
+@media screen and (min-width: 830px) and (min-height: 969px) {
+  .slider {
+    min-height: 28vh;
+  }
+}
+
+@media screen and (min-width: 900px) and (min-height: 969px) {
+  .slider {
+    min-height: 31vh;
+  }
+}
+
+@media screen and (min-width: 1000px) and (min-height: 969px) {
+  .slider {
+    min-height: 34.5vh;
+  }
+}
+
+@media screen and (min-width: 1285px) and (min-height: 969px) {
+  .slider {
+    min-height: 44.5vh;
+  }
+}
+
+@media screen and (min-width: 1560px) and (min-height: 969px) {
+  .slider {
+    min-height: 54vh;
+  }
+}
+
+/* ============================= */
 
 /* ===================================================================================================================== */
 /* ===================================================================================================================== */
@@ -4620,8 +4644,8 @@ nav .clientzonewrapper .advertising-drop {
   background-color: var(--color-spn-regional-area-accordian-background);
   color: var(--color-spn-regional-area-accordian-text);
   margin: 1rem 0rem 1.5rem 0rem;
-  border-radius: 0.5rem;
-  box-shadow: var(--color-box-shadow-01);
+  border-radius: 0.5rem;  
+  box-shadow: var(--color-box-shadow-01);  
 }
 /* ===================================================================================================================== */
 /* TODO:  REGIONAL AREA - ACCORDIAN - ITEM (HEADER)                                                                      */
@@ -4639,7 +4663,7 @@ nav .clientzonewrapper .advertising-drop {
   letter-spacing: 0.2rem;
   text-transform: uppercase;
   padding: 0.5rem 3rem 0.5rem 1rem;
-  cursor: pointer;
+  cursor: pointer;  
 }
 
 /* FIXME:  NOTE:  THE CSS ENTITY CODE FOR PLUS SIGN "+" = "\002B" */
