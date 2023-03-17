@@ -741,7 +741,7 @@
               value=""
               name="First Names of applicant"
               placeholder="enter your first names *"
-              minlength="3"
+              minlength="5"
               maxlength="50"
               autocomplete="off"
               required
@@ -760,7 +760,7 @@
               value=""
               name="Surname of applicant"
               placeholder="enter your surname *"
-              minlength="3"
+              minlength="5"
               maxlength="50"
               autocomplete="off"
               required
@@ -779,8 +779,8 @@
               value=""
               name="ID number of applicant"
               placeholder="enter your id number *"
-              minlength="3"
-              maxlength="50"
+              minlength="13"
+              maxlength="13"
               autocomplete="off"
               required
             />
@@ -798,7 +798,7 @@
               value=""
               name="Passport number of applicant"
               placeholder="enter your passport number (if applicable)"
-              minlength="3"
+              minlength="8"
               maxlength="50"
               autocomplete="off"
             />
@@ -810,7 +810,7 @@
 
           <div class="debt__masters__form__group">
             <label for="gender">gender</label>
-            <select id="gender" name="Gender of applicant">
+            <select id="gender" name="Gender of applicant" required>
               <option value="" selected>Select your gender</option>
               <option id="Male" value="Male">Male</option>
               <option id="Female" value="Female">Female</option>
@@ -823,7 +823,7 @@
 
           <div class="debt__masters__form__group">
             <label for="ethnicGroup">Ethnic Group</label>
-            <select id="ethnicGroup" name="Ethnic Group of applicant">
+            <select id="ethnicGroup" name="Ethnic Group of applicant" required>
               <option value="" selected>Select your ethnic group</option>
               <option id="African" value="African">African</option>
               <option id="Coloured" value="Coloured">Coloured</option>
@@ -870,7 +870,7 @@
 
           <div class="debt__masters__form__group">
             <label for="language">language preference</label>
-            <select id="language" name="Language preference of applicant">
+            <select id="language" name="Language preference of applicant" required>
               <option value="" selected>Select your language preference</option>
               <option id="English" value="English">English</option>
               <option id="Afrikaans" value="Afrikaans">Afrikaans</option>
@@ -899,7 +899,7 @@
               value=""
               name="Email address of applicant"
               placeholder="enter your email address *"
-              minlength="3"
+              minlength="10"
               maxlength="65"
               autocomplete="off"
               required
@@ -918,7 +918,7 @@
               value=""
               name="Mobile number of applicant"
               placeholder="enter mobile phone number *"
-              minlength="3"
+              minlength="13"
               maxlength="13"
               autocomplete="off"
               required
@@ -937,7 +937,7 @@
               value=""
               name="Home number of applicant"
               placeholder="enter home phone number"
-              minlength="3"
+              minlength="13"
               maxlength="13"
               autocomplete="off"
             />
@@ -955,7 +955,7 @@
               cols="30"
               rows="5"
               placeholder="provide your residential / physical address *"
-              minlength="3"
+              minlength="25"
               maxlength="500"
               autocomplete="off"
               required
@@ -976,8 +976,8 @@
               value=""
               name="Residential / Physical Postal code of applicant"
               placeholder="enter residential / physical postal code *"
-              minlength="3"
-              maxlength="6"
+              minlength="4"
+              maxlength="4"
               autocomplete="off"
               required
             />
@@ -995,7 +995,7 @@
               cols="30"
               rows="5"
               placeholder="provide your postal address"
-              minlength="3"
+              minlength="15"
               maxlength="500"
               autocomplete="off"
             ></textarea>
@@ -1013,8 +1013,8 @@
               value=""
               name="Postal code of applicant"
               placeholder="enter postal code"
-              minlength="3"
-              maxlength="6"
+              minlength="4"
+              maxlength="4"
               autocomplete="off"
             />
           </div>
@@ -1041,7 +1041,7 @@
               value=""
               name="The employer of the applicant"
               placeholder="enter name of your employer *"
-              minlength="3"
+              minlength="10"
               maxlength="50"
               autocomplete="off"
               required
@@ -1060,7 +1060,7 @@
               value=""
               name="Job title of the applicant"
               placeholder="enter your job title at your employer *"
-              minlength="3"
+              minlength="7"
               maxlength="50"
               autocomplete="off"
               required
@@ -1079,9 +1079,10 @@
               value=""
               name="Work number of applicant"
               placeholder="enter work phone number"
-              minlength="3"
+              minlength="10"
               maxlength="13"
               autocomplete="off"
+              required
             />
           </div>
 
@@ -1097,9 +1098,10 @@
               cols="30"
               rows="5"
               placeholder="provide your employer's physical address"
-              minlength="3"
+              minlength="15"
               maxlength="500"
               autocomplete="off"
+              required
             ></textarea>
           </div>
 
@@ -1115,9 +1117,10 @@
               value=""
               name="Employer postal code of applicant"
               placeholder="enter your employer's postal code"
-              minlength="3"
-              maxlength="6"
+              minlength="4"
+              maxlength="4"
               autocomplete="off"
+              required
             />
           </div>
 
@@ -1169,7 +1172,7 @@
               value=""
               name="Dependent 1 - Name and Surname"
               placeholder="enter the name and surname of your 1st dependent"
-              minlength="3"
+              minlength="5"
               maxlength="50"
               autocomplete="off"
             />
@@ -1227,12 +1230,12 @@
             <label for="dependentID-1">Dependent 1 - ID Number</label>
             <input
               id="dependentID-1"
-              type="text"
+              type="tel"
               value=""
               name="Dependent 1 - ID Number"
               placeholder="ID Number of Dependent 1"
-              minlength="3"
-              maxlength="50"
+              minlength="13"
+              maxlength="13"
               autocomplete="off"
             />
           </div>
@@ -1257,7 +1260,7 @@
               value=""
               name="Dependent 2 - Name and Surname"
               placeholder="enter the name and surname of your 2nd dependent"
-              minlength="3"
+              minlength="5"
               maxlength="50"
               autocomplete="off"
             />
@@ -1315,12 +1318,12 @@
             <label for="dependentID-2">Dependent 2 - ID Number</label>
             <input
               id="dependentID-2"
-              type="text"
+              type="tel"
               value=""
               name="Dependent 2 - ID Number"
               placeholder="ID Number of Dependent 2"
-              minlength="3"
-              maxlength="50"
+              minlength="13"
+              maxlength="13"
               autocomplete="off"
             />
           </div>
@@ -1345,7 +1348,7 @@
               value=""
               name="Dependent 3 - Name and Surname"
               placeholder="enter the name and surname of your 3rd dependent"
-              minlength="3"
+              minlength="5"
               maxlength="50"
               autocomplete="off"
             />
@@ -1403,12 +1406,12 @@
             <label for="dependentID-3">Dependent 3 - ID Number</label>
             <input
               id="dependentID-3"
-              type="text"
+              type="tel"
               value=""
               name="Dependent 3 - ID Number"
               placeholder="ID Number of Dependent 3"
-              minlength="3"
-              maxlength="50"
+              minlength="13"
+              maxlength="13"
               autocomplete="off"
             />
           </div>
@@ -1433,7 +1436,7 @@
               value=""
               name="Dependent 4 - Name and Surname"
               placeholder="enter the name and surname of your 4th dependent"
-              minlength="3"
+              minlength="5"
               maxlength="50"
               autocomplete="off"
             />
@@ -1491,12 +1494,12 @@
             <label for="dependentID-4">Dependent 4 - ID Number</label>
             <input
               id="dependentID-4"
-              type="text"
+              type="tel"
               value=""
               name="Dependent 4 - ID Number"
               placeholder="ID Number of Dependent 4"
-              minlength="3"
-              maxlength="50"
+              minlength="13"
+              maxlength="13"
               autocomplete="off"
             />
           </div>
@@ -1572,7 +1575,7 @@
               value=""
               name="Applicant - Gross Monthly Salary Income"
               placeholder="Provide Gross Monthly Salary Income *"
-              min="0"
+              min="1000"
               autocomplete="off"
               required
             />
@@ -1594,6 +1597,7 @@
               placeholder="Provide Monthly Commission Income"
               min="0"
               autocomplete="off"
+              required
             />
           </div>
 
@@ -1613,6 +1617,7 @@
               placeholder="Provide Monthly Overtime Income"
               min="0"
               autocomplete="off"
+              required
             />
           </div>
 
@@ -1632,6 +1637,7 @@
               placeholder="Provide Monthly Rental Income"
               min="0"
               autocomplete="off"
+              required
             />
           </div>
 
@@ -1651,6 +1657,7 @@
               placeholder="Provide Monthly Child Maintenance Income"
               min="0"
               autocomplete="off"
+              required
             />
           </div>
 
@@ -1685,6 +1692,7 @@
               placeholder="PAYE Deduction"
               min="0"
               autocomplete="off"
+              required
             />
           </div>
 
@@ -1702,6 +1710,7 @@
               placeholder="UIF Deduction"
               min="0"
               autocomplete="off"
+              required
             />
           </div>
 
@@ -1721,6 +1730,7 @@
               placeholder="Pension / Provident Fund Deduction"
               min="0"
               autocomplete="off"
+              required
             />
           </div>
 
@@ -1740,6 +1750,7 @@
               placeholder="Medical Aid Deduction"
               min="0"
               autocomplete="off"
+              required
             />
           </div>
 
@@ -1759,6 +1770,7 @@
               placeholder="Garnishee Orders Deduction"
               min="0"
               autocomplete="off"
+              required
             />
           </div>
 
@@ -1778,6 +1790,7 @@
               placeholder="Staff Loans Deduction"
               min="0"
               autocomplete="off"
+              required
             />
           </div>
 
@@ -1797,6 +1810,7 @@
               placeholder="Other Salary Deductions Deduction"
               min="0"
               autocomplete="off"
+              required
             />
           </div>
 
@@ -1833,6 +1847,7 @@
               placeholder="Food / Groceries / Clothing Deduction"
               min="0"
               autocomplete="off"
+              required
             />
           </div>
 
@@ -1852,6 +1867,7 @@
               placeholder="Property Rental Deduction"
               min="0"
               autocomplete="off"
+              required
             />
           </div>
 
@@ -1871,6 +1887,7 @@
               placeholder="Water, Electricity, Rates & Levies Deduction"
               min="0"
               autocomplete="off"
+              required
             />
           </div>
 
@@ -1890,6 +1907,7 @@
               placeholder="Security Deduction"
               min="0"
               autocomplete="off"
+              required
             />
           </div>
 
@@ -1909,6 +1927,7 @@
               placeholder="School Fees Deduction"
               min="0"
               autocomplete="off"
+              required
             />
           </div>
 
@@ -1928,6 +1947,7 @@
               placeholder="Short Term Insurance Deduction"
               min="0"
               autocomplete="off"
+              required
             />
           </div>
 
@@ -1947,6 +1967,7 @@
               placeholder="Vehicle Insurance Deduction"
               min="0"
               autocomplete="off"
+              required
             />
           </div>
 
@@ -1966,6 +1987,7 @@
               placeholder="Life Insurance Deduction"
               min="0"
               autocomplete="off"
+              required
             />
           </div>
 
@@ -1985,6 +2007,7 @@
               placeholder="Fuel & Transport Deduction"
               min="0"
               autocomplete="off"
+              required
             />
           </div>
 
@@ -2004,6 +2027,7 @@
               placeholder="Child Maintenance Deduction"
               min="0"
               autocomplete="off"
+              required
             />
           </div>
 
@@ -2023,6 +2047,7 @@
               placeholder="Medical Costs Deduction"
               min="0"
               autocomplete="off"
+              required
             />
           </div>
 
@@ -2042,6 +2067,7 @@
               placeholder="Telephone & Internet Deduction"
               min="0"
               autocomplete="off"
+              required
             />
           </div>
 
@@ -2061,6 +2087,7 @@
               placeholder="Other Living Expenses Deduction"
               min="0"
               autocomplete="off"
+              required
             />
           </div>
 
@@ -2094,9 +2121,10 @@
               value=""
               name="Creditor 1 - Name of Creditor"
               placeholder="enter the name of your 1st creditor"
-              minlength="3"
+              minlength="8"
               maxlength="50"
               autocomplete="off"
+              required
             />
           </div>
 
@@ -2112,9 +2140,10 @@
               value=""
               name="Creditor 1 - Account Type"
               placeholder="Account Type with your 1st creditor"
-              minlength="3"
+              minlength="5"
               maxlength="50"
               autocomplete="off"
+              required
             />
           </div>
 
@@ -2132,9 +2161,10 @@
               value=""
               name="Creditor 1 - Account Number"
               placeholder="Account Number with your 1st creditor"
-              minlength="3"
+              minlength="5"
               maxlength="50"
               autocomplete="off"
+              required
             />
           </div>
 
@@ -2152,8 +2182,9 @@
               value=""
               name="Creditor 1 - Current Outstanding Balance"
               placeholder="Current Outstanding Balance with your 1st creditor"
-              min="0"
+              min="1"
               autocomplete="off"
+              required
             />
           </div>
 
@@ -2171,8 +2202,9 @@
               value=""
               name="Creditor 1 - Current Monthly Instalment"
               placeholder="Current Monthly Instalment with your 1st creditor"
-              min="0"
+              min="1"
               autocomplete="off"
+              required
             />
           </div>
 
@@ -2196,9 +2228,10 @@
               value=""
               name="Creditor 2 - Name of Creditor"
               placeholder="enter the name of your 2nd creditor"
-              minlength="3"
+              minlength="8"
               maxlength="50"
               autocomplete="off"
+              required
             />
           </div>
 
@@ -2214,9 +2247,10 @@
               value=""
               name="Creditor 2 - Account Type"
               placeholder="Account Type with your 2nd creditor"
-              minlength="3"
+              minlength="5"
               maxlength="50"
               autocomplete="off"
+              required
             />
           </div>
 
@@ -2234,9 +2268,10 @@
               value=""
               name="Creditor 2 - Account Number"
               placeholder="Account Number with your 2nd creditor"
-              minlength="3"
+              minlength="5"
               maxlength="50"
               autocomplete="off"
+              required
             />
           </div>
 
@@ -2254,8 +2289,9 @@
               value=""
               name="Creditor 2 - Current Outstanding Balance"
               placeholder="Current Outstanding Balance with your 2nd creditor"
-              min="0"
+              min="1"
               autocomplete="off"
+              required
             />
           </div>
 
@@ -2273,8 +2309,9 @@
               value=""
               name="Creditor 2 - Current Monthly Instalment"
               placeholder="Current Monthly Instalment with your 2nd creditor"
-              min="0"
+              min="1"
               autocomplete="off"
+              required
             />
           </div>
 
@@ -2298,9 +2335,10 @@
               value=""
               name="Creditor 3 - Name of Creditor"
               placeholder="enter the name of your 3rd creditor"
-              minlength="3"
+              minlength="8"
               maxlength="50"
               autocomplete="off"
+              required
             />
           </div>
 
@@ -2316,9 +2354,10 @@
               value=""
               name="Creditor 3 - Account Type"
               placeholder="Account Type with your 3rd creditor"
-              minlength="3"
+              minlength="5"
               maxlength="50"
               autocomplete="off"
+              required
             />
           </div>
 
@@ -2336,9 +2375,10 @@
               value=""
               name="Creditor 3 - Account Number"
               placeholder="Account Number with your 3rd creditor"
-              minlength="3"
+              minlength="5"
               maxlength="50"
               autocomplete="off"
+              required
             />
           </div>
 
@@ -2356,8 +2396,9 @@
               value=""
               name="Creditor 3 - Current Outstanding Balance"
               placeholder="Current Outstanding Balance with your 3rd creditor"
-              min="0"
+              min="1"
               autocomplete="off"
+              required
             />
           </div>
 
@@ -2375,8 +2416,9 @@
               value=""
               name="Creditor 3 - Current Monthly Instalment"
               placeholder="Current Monthly Instalment with your 3rd creditor"
-              min="0"
+              min="1"
               autocomplete="off"
+              required
             />
           </div>
 
@@ -2400,7 +2442,7 @@
               value=""
               name="Creditor 4 - Name of Creditor"
               placeholder="enter the name of your 4th creditor"
-              minlength="3"
+              minlength="8"
               maxlength="50"
               autocomplete="off"
             />
@@ -2418,7 +2460,7 @@
               value=""
               name="Creditor 4 - Account Type"
               placeholder="Account Type with your 4th creditor"
-              minlength="3"
+              minlength="5"
               maxlength="50"
               autocomplete="off"
             />
@@ -2438,7 +2480,7 @@
               value=""
               name="Creditor 4 - Account Number"
               placeholder="Account Number with your 4th creditor"
-              minlength="3"
+              minlength="5"
               maxlength="50"
               autocomplete="off"
             />
@@ -2458,7 +2500,7 @@
               value=""
               name="Creditor 4 - Current Outstanding Balance"
               placeholder="Current Outstanding Balance with your 4th creditor"
-              min="0"
+              min="1"
               autocomplete="off"
             />
           </div>
@@ -2477,7 +2519,7 @@
               value=""
               name="Creditor 4 - Current Monthly Instalment"
               placeholder="Current Monthly Instalment with your 4th creditor"
-              min="0"
+              min="1"
               autocomplete="off"
             />
           </div>
@@ -2502,7 +2544,7 @@
               value=""
               name="Creditor 5 - Name of Creditor"
               placeholder="enter the name of your 5th creditor"
-              minlength="3"
+              minlength="8"
               maxlength="50"
               autocomplete="off"
             />
@@ -2520,7 +2562,7 @@
               value=""
               name="Creditor 5 - Account Type"
               placeholder="Account Type with your 5th creditor"
-              minlength="3"
+              minlength="5"
               maxlength="50"
               autocomplete="off"
             />
@@ -2540,7 +2582,7 @@
               value=""
               name="Creditor 5 - Account Number"
               placeholder="Account Number with your 5th creditor"
-              minlength="3"
+              minlength="5"
               maxlength="50"
               autocomplete="off"
             />
@@ -2560,7 +2602,7 @@
               value=""
               name="Creditor 5 - Current Outstanding Balance"
               placeholder="Current Outstanding Balance with your 5th creditor"
-              min="0"
+              min="1"
               autocomplete="off"
             />
           </div>
@@ -2579,7 +2621,7 @@
               value=""
               name="Creditor 5 - Current Monthly Instalment"
               placeholder="Current Monthly Instalment with your 5th creditor"
-              min="0"
+              min="1"
               autocomplete="off"
             />
           </div>
@@ -2604,7 +2646,7 @@
               value=""
               name="Creditor 6 - Name of Creditor"
               placeholder="enter the name of your 6th creditor"
-              minlength="3"
+              minlength="8"
               maxlength="50"
               autocomplete="off"
             />
@@ -2622,7 +2664,7 @@
               value=""
               name="Creditor 6 - Account Type"
               placeholder="Account Type with your 6th creditor"
-              minlength="3"
+              minlength="5"
               maxlength="50"
               autocomplete="off"
             />
@@ -2642,7 +2684,7 @@
               value=""
               name="Creditor 6 - Account Number"
               placeholder="Account Number with your 6th creditor"
-              minlength="3"
+              minlength="5"
               maxlength="50"
               autocomplete="off"
             />
@@ -2662,7 +2704,7 @@
               value=""
               name="Creditor 6 - Current Outstanding Balance"
               placeholder="Current Outstanding Balance with your 6th creditor"
-              min="0"
+              min="1"
               autocomplete="off"
             />
           </div>
@@ -2681,7 +2723,7 @@
               value=""
               name="Creditor 6 - Current Monthly Instalment"
               placeholder="Current Monthly Instalment with your 6th creditor"
-              min="0"
+              min="1"
               autocomplete="off"
             />
           </div>
@@ -2706,7 +2748,7 @@
               value=""
               name="Creditor 7 - Name of Creditor"
               placeholder="enter the name of your 7th creditor"
-              minlength="3"
+              minlength="8"
               maxlength="50"
               autocomplete="off"
             />
@@ -2724,7 +2766,7 @@
               value=""
               name="Creditor 7 - Account Type"
               placeholder="Account Type with your 7th creditor"
-              minlength="3"
+              minlength="5"
               maxlength="50"
               autocomplete="off"
             />
@@ -2744,7 +2786,7 @@
               value=""
               name="Creditor 7 - Account Number"
               placeholder="Account Number with your 7th creditor"
-              minlength="3"
+              minlength="5"
               maxlength="50"
               autocomplete="off"
             />
@@ -2764,7 +2806,7 @@
               value=""
               name="Creditor 7 - Current Outstanding Balance"
               placeholder="Current Outstanding Balance with your 7th creditor"
-              min="0"
+              min="1"
               autocomplete="off"
             />
           </div>
@@ -2783,7 +2825,7 @@
               value=""
               name="Creditor 7 - Current Monthly Instalment"
               placeholder="Current Monthly Instalment with your 7th creditor"
-              min="0"
+              min="1"
               autocomplete="off"
             />
           </div>
@@ -2808,7 +2850,7 @@
               value=""
               name="Creditor 8 - Name of Creditor"
               placeholder="enter the name of your 8th creditor"
-              minlength="3"
+              minlength="8"
               maxlength="50"
               autocomplete="off"
             />
@@ -2826,7 +2868,7 @@
               value=""
               name="Creditor 8 - Account Type"
               placeholder="Account Type with your 8th creditor"
-              minlength="3"
+              minlength="5"
               maxlength="50"
               autocomplete="off"
             />
@@ -2846,7 +2888,7 @@
               value=""
               name="Creditor 8 - Account Number"
               placeholder="Account Number with your 8th creditor"
-              minlength="3"
+              minlength="5"
               maxlength="50"
               autocomplete="off"
             />
@@ -2866,7 +2908,7 @@
               value=""
               name="Creditor 8 - Current Outstanding Balance"
               placeholder="Current Outstanding Balance with your 8th creditor"
-              min="0"
+              min="1"
               autocomplete="off"
             />
           </div>
@@ -2885,7 +2927,7 @@
               value=""
               name="Creditor 8 - Current Monthly Instalment"
               placeholder="Current Monthly Instalment with your 8th creditor"
-              min="0"
+              min="1"
               autocomplete="off"
             />
           </div>
@@ -2910,7 +2952,7 @@
               value=""
               name="Creditor 9 - Name of Creditor"
               placeholder="enter the name of your 9th creditor"
-              minlength="3"
+              minlength="8"
               maxlength="50"
               autocomplete="off"
             />
@@ -2928,7 +2970,7 @@
               value=""
               name="Creditor 9 - Account Type"
               placeholder="Account Type with your 9th creditor"
-              minlength="3"
+              minlength="5"
               maxlength="50"
               autocomplete="off"
             />
@@ -2948,7 +2990,7 @@
               value=""
               name="Creditor 9 - Account Number"
               placeholder="Account Number with your 9th creditor"
-              minlength="3"
+              minlength="5"
               maxlength="50"
               autocomplete="off"
             />
@@ -2968,7 +3010,7 @@
               value=""
               name="Creditor 9 - Current Outstanding Balance"
               placeholder="Current Outstanding Balance with your 9th creditor"
-              min="0"
+              min="1"
               autocomplete="off"
             />
           </div>
@@ -2987,7 +3029,7 @@
               value=""
               name="Creditor 9 - Current Monthly Instalment"
               placeholder="Current Monthly Instalment with your 9th creditor"
-              min="0"
+              min="1"
               autocomplete="off"
             />
           </div>
@@ -3012,7 +3054,7 @@
               value=""
               name="Creditor 10 - Name of Creditor"
               placeholder="enter the name of your 10th creditor"
-              minlength="3"
+              minlength="8"
               maxlength="50"
               autocomplete="off"
             />
@@ -3032,7 +3074,7 @@
               value=""
               name="Creditor 10 - Account Type"
               placeholder="Account Type with your 10th creditor"
-              minlength="3"
+              minlength="5"
               maxlength="50"
               autocomplete="off"
             />
@@ -3052,7 +3094,7 @@
               value=""
               name="Creditor 10 - Account Number"
               placeholder="Account Number with your 10th creditor"
-              minlength="3"
+              minlength="5"
               maxlength="50"
               autocomplete="off"
             />
@@ -3072,7 +3114,7 @@
               value=""
               name="Creditor 10 - Current Outstanding Balance"
               placeholder="Current Outstanding Balance with your 10th creditor"
-              min="0"
+              min="1"
               autocomplete="off"
             />
           </div>
@@ -3091,7 +3133,7 @@
               value=""
               name="Creditor 10 - Current Monthly Instalment"
               placeholder="Current Monthly Instalment with your 10th creditor"
-              min="0"
+              min="1"
               autocomplete="off"
             />
           </div>
@@ -4161,6 +4203,7 @@
             <select
               id="previous-debt-review"
               name="Previously under Debt Review"
+              required
             >
               <option value="" selected>Select Yes or No</option>
               <option id="YES" value="YES">YES</option>
@@ -4183,7 +4226,7 @@
               value=""
               name="Details of previous debt counsellor"
               placeholder="Details of previous debt counsellor"
-              minlength="3"
+              minlength="10"
               maxlength="50"
               autocomplete="off"
             />
@@ -4203,7 +4246,7 @@
               value=""
               name="Reasons for leaving previous Debt Counsellor"
               placeholder="Provide your Reasons"
-              minlength="3"
+              minlength="10"
               maxlength="500"
               autocomplete="off"
             />
@@ -4218,6 +4261,7 @@
             <select
               id="previous-court-order"
               name="Previous Court Order issued?"
+              required
             >
               <option value="" selected>Select Yes or No</option>
               <option id="YES" value="YES">YES</option>
@@ -4254,9 +4298,10 @@
               cols="30"
               rows="5"
               placeholder="Reasons for over-indebtedness"
-              minlength="3"
+              minlength="10"
               maxlength="1000"
               autocomplete="off"
+              required
             ></textarea>
           </div>
 
@@ -4288,10 +4333,12 @@
             <select
               id="spouse-employment-status"
               name="Is your spouse employed?"
+              required
             >
               <option value="" selected>Select Yes or No</option>
               <option id="YES" value="YES">YES</option>
               <option id="NO" value="NO">NO</option>
+              <option id="NA" value="NA">NOT APPLICABLE</option>
             </select>
           </div>
 
@@ -4306,13 +4353,14 @@
             >
             <input
               id="spouse-contribution-to-expenses"
-              type="text"
+              type="number"
               value=""
               name="Spouse monthly contribution to expenses"
               placeholder="provide the monthly amount"
-              minlength="3"
+              minlength="0"
               maxlength="50"
               autocomplete="off"
+              required
             />
           </div>
 
@@ -4360,7 +4408,7 @@
               value=""
               name="First Names of spouse"
               placeholder="enter your spouse's first names"
-              minlength="3"
+              minlength="5"
               maxlength="50"
               autocomplete="off"
             />
@@ -4378,7 +4426,7 @@
               value=""
               name="Surname of spouse"
               placeholder="enter your spouse's surname"
-              minlength="3"
+              minlength="5"
               maxlength="50"
               autocomplete="off"
             />
@@ -4392,12 +4440,12 @@
             <label for="idnumber-spouse">id number</label>
             <input
               id="idnumber-spouse"
-              type="text"
+              type="tel"
               value=""
               name="ID number of spouse"
               placeholder="enter your spouse's id number"
-              minlength="3"
-              maxlength="50"
+              minlength="13"
+              maxlength="13"
               autocomplete="off"
             />
           </div>
@@ -4414,8 +4462,8 @@
               value=""
               name="Passport number of spouse"
               placeholder="enter your spouse's passport number (if applicable)"
-              minlength="3"
-              maxlength="50"
+              minlength="5"
+              maxlength="15"
               autocomplete="off"
             />
           </div>
@@ -4462,7 +4510,7 @@
               value=""
               name="Email address of spouse"
               placeholder="enter your spouse's email address"
-              minlength="3"
+              minlength="8"
               maxlength="65"
               autocomplete="off"
             />
@@ -4480,7 +4528,7 @@
               value=""
               name="Mobile number of spouse"
               placeholder="enter spouse's mobile phone number"
-              minlength="3"
+              minlength="13"
               maxlength="13"
               autocomplete="off"
             />
@@ -4498,7 +4546,7 @@
               value=""
               name="Home number of spouse"
               placeholder="enter spouse's work phone number"
-              minlength="3"
+              minlength="10"
               maxlength="13"
               autocomplete="off"
             />
@@ -4533,7 +4581,7 @@
               value=""
               name="The employer of the spouse"
               placeholder="enter spouse's name of your employer"
-              minlength="3"
+              minlength="8"
               maxlength="50"
               autocomplete="off"
             />
@@ -4551,7 +4599,7 @@
               value=""
               name="Job title of the spouse"
               placeholder="enter your spouse's job title at the employer"
-              minlength="3"
+              minlength="8"
               maxlength="50"
               autocomplete="off"
             />
@@ -4569,7 +4617,7 @@
               cols="30"
               rows="5"
               placeholder="provide your spouse's employer's physical address"
-              minlength="3"
+              minlength="10"
               maxlength="500"
               autocomplete="off"
             ></textarea>
@@ -4587,8 +4635,8 @@
               value=""
               name="Employer postal code of spouse"
               placeholder="enter your spouse's employer's postal code"
-              minlength="3"
-              maxlength="6"
+              minlength="4"
+              maxlength="4"
               autocomplete="off"
             />
           </div>
@@ -4627,6 +4675,7 @@
               placeholder="Provide Spouse Gross Monthly Salary Income"
               min="0"
               autocomplete="off"
+              required
             />
           </div>
 
@@ -4646,6 +4695,7 @@
               placeholder="Provide Spouse's Monthly Commission Income"
               min="0"
               autocomplete="off"
+              required
             />
           </div>
 
@@ -4665,6 +4715,7 @@
               placeholder="Provide Spouse's Monthly Overtime Income"
               min="0"
               autocomplete="off"
+              required
             />
           </div>
 
@@ -4684,6 +4735,7 @@
               placeholder="Provide Spouse's Monthly Rental Income"
               min="0"
               autocomplete="off"
+              required
             />
           </div>
 
@@ -4703,6 +4755,7 @@
               placeholder="Provide Monthly Child Maintenance Income"
               min="0"
               autocomplete="off"
+              required
             />
           </div>
 
@@ -4737,6 +4790,7 @@
               placeholder="Spouse's PAYE Deduction"
               min="0"
               autocomplete="off"
+              required
             />
           </div>
 
@@ -4754,6 +4808,7 @@
               placeholder="Spouse's UIF Deduction"
               min="0"
               autocomplete="off"
+              required
             />
           </div>
 
@@ -4773,6 +4828,7 @@
               placeholder="Spouse's Pension / Provident Fund Deduction"
               min="0"
               autocomplete="off"
+              required
             />
           </div>
 
@@ -4792,6 +4848,7 @@
               placeholder="Spouse's Medical Aid Deduction"
               min="0"
               autocomplete="off"
+              required
             />
           </div>
 
@@ -4811,6 +4868,7 @@
               placeholder="Spouse's Garnishee Orders Deduction"
               min="0"
               autocomplete="off"
+              required
             />
           </div>
 
@@ -4830,6 +4888,7 @@
               placeholder="Spouse's Staff Loans Deduction"
               min="0"
               autocomplete="off"
+              required
             />
           </div>
 
@@ -4849,6 +4908,7 @@
               placeholder="Spouse's Other Salary Deductions Deduction"
               min="0"
               autocomplete="off"
+              required
             />
           </div>
 
@@ -4885,6 +4945,7 @@
               placeholder="Food / Groceries / Clothing Deduction"
               min="0"
               autocomplete="off"
+              required
             />
           </div>
 
@@ -4904,6 +4965,7 @@
               placeholder="Property Rental Deduction"
               min="0"
               autocomplete="off"
+              required
             />
           </div>
 
@@ -4923,6 +4985,7 @@
               placeholder="Water, Electricity, Rates & Levies Deduction"
               min="0"
               autocomplete="off"
+              required
             />
           </div>
 
@@ -4940,6 +5003,7 @@
               placeholder="Security Deduction"
               min="0"
               autocomplete="off"
+              required
             />
           </div>
 
@@ -4959,6 +5023,7 @@
               placeholder="School Fees Deduction"
               min="0"
               autocomplete="off"
+              required
             />
           </div>
 
@@ -4978,6 +5043,7 @@
               placeholder="Short Term Insurance Deduction"
               min="0"
               autocomplete="off"
+              required
             />
           </div>
 
@@ -4997,6 +5063,7 @@
               placeholder="Vehicle Insurance Deduction"
               min="0"
               autocomplete="off"
+              required
             />
           </div>
 
@@ -5016,6 +5083,7 @@
               placeholder="Life Insurance Deduction"
               min="0"
               autocomplete="off"
+              required
             />
           </div>
 
@@ -5035,6 +5103,7 @@
               placeholder="Fuel & Transport Deduction"
               min="0"
               autocomplete="off"
+              required
             />
           </div>
 
@@ -5054,6 +5123,7 @@
               placeholder="Child Maintenance Deduction"
               min="0"
               autocomplete="off"
+              required
             />
           </div>
 
@@ -5073,6 +5143,7 @@
               placeholder="Medical Costs Deduction"
               min="0"
               autocomplete="off"
+              required
             />
           </div>
 
@@ -5092,6 +5163,7 @@
               placeholder="Telephone & Internet Deduction"
               min="0"
               autocomplete="off"
+              required
             />
           </div>
 
@@ -5111,6 +5183,7 @@
               placeholder="Other Living Expenses Deduction"
               min="0"
               autocomplete="off"
+              required
             />
           </div>
 
