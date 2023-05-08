@@ -4468,7 +4468,7 @@ nav .clientzonewrapper .advertising-drop {
 /* FIXME:  VIEW - LARGER SCREENS   */
 /* =============================== */
 
-@media screen and (max-width: 670px) {
+@media screen and (max-width: 830px) {
   .spn__regional__area__selection__container {
     display: flex;
     flex-direction: column;
@@ -4502,7 +4502,7 @@ nav .clientzonewrapper .advertising-drop {
 /* FIXME:  VIEW - LARGER SCREENS   */
 /* =============================== */
 
-@media screen and (max-width: 670px) {
+@media screen and (max-width: 830px) {
   .spn__selected__provincial__map {
     border: none;
   }
@@ -4557,6 +4557,7 @@ nav .clientzonewrapper .advertising-drop {
   justify-content: center;
   align-items: center;
   width: 100%;
+  /* border-right: 1px solid #a9a9a9; */
   /* border-left: 1px solid #a9a9a9; */
   /* border: 1px solid yellow; */
 }
