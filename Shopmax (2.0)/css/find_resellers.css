@@ -3659,7 +3659,7 @@ nav .clientzonewrapper .advertising-drop {
 
 :root {
   --color-new-page-background: #eee;
-  --color-resellers-service-providers-heading-text: #f88e20;
+  --color-resellers-heading-text: #f88e20;
 }
 
 /* =========================================================== */
@@ -3730,7 +3730,7 @@ nav .clientzonewrapper .advertising-drop {
 }
 
 .new__page__sub__title strong {
-  color: var(--color-resellers-service-providers-heading-text);  
+  color: var(--color-resellers-heading-text);
 }
 
 /* ========================================================== */
@@ -3806,7 +3806,7 @@ nav .clientzonewrapper .advertising-drop {
 /* ===================================================================================================================== */
 
 /* ===================================================================================================================== */
-/* TODO:TODO:             SELECT THE PROVINCE WHERE YOU WOULD LIKE THE SERVICE TO BE CARRIED OUT              TODO:TODO: */
+/* TODO:TODO:           FIND A RESELLER: SELECT THE PROVINCE WHERE YOU OR YOUR BUSINESS ARE BASED             TODO:TODO: */
 /* ===================================================================================================================== */
 
 /* =================================== */
@@ -3814,13 +3814,13 @@ nav .clientzonewrapper .advertising-drop {
 /* =================================== */
 
 :root {
-  --color-resellers-provinces-background-01: #eee;
-  /* --color-resellers-provinces-background-01: #e5e4e2; */
-  --color-resellers-provinces-background-02: #d3d3d3;
-  --color-resellers-provinces-background-03: #c0c0c0;
-  --color-resellers-provinces-background-04: #a9a9a9;
-  --color-resellers-provinces-anchor-background: #ffffff;
-  --color-resellers-provinces-anchor-text: #ffffff;
+  --color-reseller-provinces-background-01: #eee;
+  /* --color-reseller-provinces-background-01: #e5e4e2; */
+  --color-reseller-provinces-background-02: #d3d3d3;
+  --color-reseller-provinces-background-03: #c0c0c0;
+  --color-reseller-provinces-background-04: #a9a9a9;
+  --color-reseller-provinces-anchor-background: #ffffff;
+  --color-reseller-provinces-anchor-text: #ffffff;
 }
 
 /* =================================== */
@@ -3831,7 +3831,7 @@ nav .clientzonewrapper .advertising-drop {
 /* FIXME:  OPTIONS - CONTAINER                   */
 /* ============================================= */
 
-.resellers__provinces__container {
+.reseller__provinces__container {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -3839,7 +3839,7 @@ nav .clientzonewrapper .advertising-drop {
   width: 100%;
   height: auto;
   padding: 1rem 0rem 3rem 0rem;
-  background-color: var(--color-resellers-provinces-background-01);
+  background-color: var(--color-reseller-provinces-background-01);
   /* border: 1px solid red; */
 }
 
@@ -3872,8 +3872,8 @@ nav .clientzonewrapper .advertising-drop {
   text-align: center;
   text-decoration: none;
   border-radius: 1.5rem;
-  background-color: var(--color-resellers-provinces-anchor-background);
-  color: var(--color-resellers-provinces-anchor-text);
+  background-color: var(--color-reseller-provinces-anchor-background);
+  color: var(--color-reseller-provinces-anchor-text);
   box-shadow: var(--color-box-shadow-01);
   transition: transform 0.5s ease-in-out;
   cursor: pointer;
@@ -3934,8 +3934,8 @@ nav .clientzonewrapper .advertising-drop {
   text-align: center;
   text-decoration: none;
   border-radius: 1.5rem;
-  background-color: var(--color-resellers-provinces-anchor-background);
-  color: var(--color-resellers-provinces-anchor-text);
+  background-color: var(--color-reseller-provinces-anchor-background);
+  color: var(--color-reseller-provinces-anchor-text);
   box-shadow: var(--color-box-shadow-01);
   transition: transform 0.5s ease-in-out;
   cursor: pointer;
@@ -3996,8 +3996,8 @@ nav .clientzonewrapper .advertising-drop {
   text-align: center;
   text-decoration: none;
   border-radius: 1.5rem;
-  background-color: var(--color-resellers-provinces-anchor-background);
-  color: var(--color-resellers-provinces-anchor-text);
+  background-color: var(--color-reseller-provinces-anchor-background);
+  color: var(--color-reseller-provinces-anchor-text);
   box-shadow: var(--color-box-shadow-01);
   transition: transform 0.5s ease-in-out;
   cursor: pointer;
@@ -4058,8 +4058,8 @@ nav .clientzonewrapper .advertising-drop {
   text-align: center;
   text-decoration: none;
   border-radius: 1.5rem;
-  background-color: var(--color-resellers-provinces-anchor-background);
-  color: var(--color-resellers-provinces-anchor-text);
+  background-color: var(--color-reseller-provinces-anchor-background);
+  color: var(--color-reseller-provinces-anchor-text);
   box-shadow: var(--color-box-shadow-01);
   transition: transform 0.5s ease-in-out;
   cursor: pointer;
@@ -4120,8 +4120,8 @@ nav .clientzonewrapper .advertising-drop {
   text-align: center;
   text-decoration: none;
   border-radius: 1.5rem;
-  background-color: var(--color-resellers-provinces-anchor-background);
-  color: var(--color-resellers-provinces-anchor-text);
+  background-color: var(--color-reseller-provinces-anchor-background);
+  color: var(--color-reseller-provinces-anchor-text);
   box-shadow: var(--color-box-shadow-01);
   transition: transform 0.5s ease-in-out;
   cursor: pointer;
@@ -4182,8 +4182,8 @@ nav .clientzonewrapper .advertising-drop {
   text-align: center;
   text-decoration: none;
   border-radius: 1.5rem;
-  background-color: var(--color-resellers-provinces-anchor-background);
-  color: var(--color-resellers-provinces-anchor-text);
+  background-color: var(--color-reseller-provinces-anchor-background);
+  color: var(--color-reseller-provinces-anchor-text);
   box-shadow: var(--color-box-shadow-01);
   transition: transform 0.5s ease-in-out;
   cursor: pointer;
@@ -4244,8 +4244,8 @@ nav .clientzonewrapper .advertising-drop {
   text-align: center;
   text-decoration: none;
   border-radius: 1.5rem;
-  background-color: var(--color-resellers-provinces-anchor-background);
-  color: var(--color-resellers-provinces-anchor-text);
+  background-color: var(--color-reseller-provinces-anchor-background);
+  color: var(--color-reseller-provinces-anchor-text);
   box-shadow: var(--color-box-shadow-01);
   transition: transform 0.5s ease-in-out;
   cursor: pointer;
@@ -4306,8 +4306,8 @@ nav .clientzonewrapper .advertising-drop {
   text-align: center;
   text-decoration: none;
   border-radius: 1.5rem;
-  background-color: var(--color-resellers-provinces-anchor-background);
-  color: var(--color-resellers-provinces-anchor-text);
+  background-color: var(--color-reseller-provinces-anchor-background);
+  color: var(--color-reseller-provinces-anchor-text);
   box-shadow: var(--color-box-shadow-01);
   transition: transform 0.5s ease-in-out;
   cursor: pointer;
@@ -4368,8 +4368,8 @@ nav .clientzonewrapper .advertising-drop {
   text-align: center;
   text-decoration: none;
   border-radius: 1.5rem;
-  background-color: var(--color-resellers-provinces-anchor-background);
-  color: var(--color-resellers-provinces-anchor-text);
+  background-color: var(--color-reseller-provinces-anchor-background);
+  color: var(--color-reseller-provinces-anchor-text);
   box-shadow: var(--color-box-shadow-01);
   transition: transform 0.5s ease-in-out;
   cursor: pointer;
@@ -4442,9 +4442,9 @@ nav .clientzonewrapper .advertising-drop {
   --color-resellers-regional-area-button-text: #ffffff;
 }
 
-/* ============================================================= */
-/* FIXME:  SPN REGIONAL AREA - SELECTION SECTION (START)  FIXME: */
-/* ============================================================= */
+/* =================================================================== */
+/* FIXME:  RESELLERS REGIONAL AREA - SELECTION SECTION (START)  FIXME: */
+/* =================================================================== */
 
 /* ================================================= */
 /* TODO:  CONTAINER - REGIONAL AREA SELECTION  TODO: */
@@ -4473,7 +4473,7 @@ nav .clientzonewrapper .advertising-drop {
 /* FIXME:  VIEW - LARGER SCREENS   */
 /* =============================== */
 
-@media screen and (max-width: 830px) {
+@media screen and (max-width: 670px) {
   .resellers__regional__area__selection__container {
     display: flex;
     flex-direction: column;
@@ -4507,7 +4507,7 @@ nav .clientzonewrapper .advertising-drop {
 /* FIXME:  VIEW - LARGER SCREENS   */
 /* =============================== */
 
-@media screen and (max-width: 830px) {
+@media screen and (max-width: 670px) {
   .resellers__selected__provincial__map {
     border: none;
   }
@@ -4562,7 +4562,6 @@ nav .clientzonewrapper .advertising-drop {
   justify-content: center;
   align-items: center;
   width: 100%;
-  /* border-right: 1px solid #a9a9a9; */
   /* border-left: 1px solid #a9a9a9; */
   /* border: 1px solid yellow; */
 }
@@ -4614,9 +4613,9 @@ nav .clientzonewrapper .advertising-drop {
   }
 }
 
-/* ============================================================= */
-/* FIXME:  SPN REGIONAL AREA - SELECTION SECTION (END)    FIXME: */
-/* ============================================================= */
+/* =================================================================== */
+/* FIXME:  RESELLERS REGIONAL AREA - SELECTION SECTION (END)    FIXME: */
+/* =================================================================== */
 
 /* ========================================================== */
 /* FIXME:  ACCORDIAN - MAIN TITLE                      FIXME: */
