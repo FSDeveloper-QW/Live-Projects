@@ -3659,6 +3659,7 @@ nav .clientzonewrapper .advertising-drop {
 
 :root {
   --color-new-page-background: #eee;
+  --color-spn-service-providers-heading-text: #01a7cf;
 }
 
 /* =========================================================== */
@@ -3714,7 +3715,7 @@ nav .clientzonewrapper .advertising-drop {
 /* FIXME:  NEW PAGE - SUB-TITLE OF THE PAGE            FIXME: */
 /* ========================================================== */
 
-.new__page__sub__title p {
+.new__page__sub__title {
   display: flex;
   justify-content: center;
   justify-items: center;
@@ -3726,6 +3727,10 @@ nav .clientzonewrapper .advertising-drop {
   background-color: var(--color-new-page-background);
   text-align: center;
   /* border: 2px solid purple; */
+}
+
+.new__page__sub__title strong {
+  color: var(--color-spn-service-providers-heading-text);  
 }
 
 /* ========================================================== */
