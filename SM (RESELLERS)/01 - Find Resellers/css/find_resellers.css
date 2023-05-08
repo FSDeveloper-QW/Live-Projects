@@ -3633,6 +3633,11 @@ nav .clientzonewrapper .advertising-drop {
 /* ===================================================================================================================== */
 /* ===================================================================================================================== */
 
+:root {
+  --color-new-page-background: #eee;
+  --color-resellers-heading-text: #f88e20;
+}
+
 /* =========================================================== */
 /* FIXME:  NEW PAGE - CONTAINER (HOLDING ALL ELEMENTS)  FIXME: */
 /* =========================================================== */
@@ -3648,7 +3653,7 @@ nav .clientzonewrapper .advertising-drop {
   height: auto;
   object-fit: cover;
   margin: 0rem 0rem 0rem 0rem;
-  background-color: #eee;
+  background-color: var(--color-new-page-background);
   /* border: 2px solid red; */
 }
 
@@ -3677,7 +3682,7 @@ nav .clientzonewrapper .advertising-drop {
   text-transform: uppercase;
   width: 100%;
   padding: 1.5rem 1rem 1.5rem 1rem;
-  background-color: #eee;
+  background-color: var(--color-new-page-background);
   text-align: center;
   /* border: 2px solid purple; */
 }
@@ -3686,19 +3691,25 @@ nav .clientzonewrapper .advertising-drop {
 /* FIXME:  NEW PAGE - SUB-TITLE OF THE PAGE            FIXME: */
 /* ========================================================== */
 
-.new__page__sub__title p {
+.new__page__sub__title {
   display: flex;
   justify-content: center;
   justify-items: center;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   text-transform: uppercase;
   width: 100%;
   margin: -3rem 0rem 0rem 0rem;
   padding: 0rem 1rem 0rem 1rem;
-  background-color: #eee;
+  background-color: var(--color-new-page-background);
   text-align: center;
   /* border: 2px solid purple; */
 }
+
+.new__page__sub__title strong {
+  color: var(--color-resellers-heading-text);  
+}
+
+
 
 /* ========================================================== */
 /* FIXME:  NEW PAGE - LINKS OR DOWNLOADABLE BROCHURES  FIXME: */
