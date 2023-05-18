@@ -3629,9 +3629,15 @@ nav .clientzonewrapper .advertising-drop {
 
 /* ===================================================================================================================== */
 /* ===================================================================================================================== */
-/* TODO:TODO:   SECTION - NEW PAGE CONTAINER WITH TITLE & BUTTON (TO LINKS / DOWNLOADABLE BROCHURE) (START)   TODO:TODO: */
+/* TODO:TODO:                 SECTION - NEW PAGE CONTAINER WITH TITLE & SUB-TITLE (START)                     TODO:TODO: */
 /* ===================================================================================================================== */
 /* ===================================================================================================================== */
+
+:root {
+  --color-new-page-background: #eee;
+  --color-spn-service-providers-heading-text: #01a7cf;
+}
+
 
 /* =========================================================== */
 /* FIXME:  NEW PAGE - CONTAINER (HOLDING ALL ELEMENTS)  FIXME: */
@@ -3648,7 +3654,7 @@ nav .clientzonewrapper .advertising-drop {
   height: auto;
   object-fit: cover;
   margin: 0rem 0rem 0rem 0rem;
-  background-color: #eee;
+  background-color: var(--color-new-page-background);
   /* border: 2px solid red; */
 }
 
@@ -3677,7 +3683,7 @@ nav .clientzonewrapper .advertising-drop {
   text-transform: uppercase;
   width: 100%;
   padding: 1.5rem 1rem 1.5rem 1rem;
-  background-color: #eee;
+  background-color: var(--color-new-page-background);
   text-align: center;
   /* border: 2px solid purple; */
 }
@@ -3686,83 +3692,25 @@ nav .clientzonewrapper .advertising-drop {
 /* FIXME:  NEW PAGE - SUB-TITLE OF THE PAGE            FIXME: */
 /* ========================================================== */
 
-.new__page__sub__title p {
+.new__page__sub__title {
   display: flex;
   justify-content: center;
   justify-items: center;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   text-transform: uppercase;
   width: 100%;
-  margin: -4rem 0rem 0rem 0rem;
+  margin: -1.5rem 0rem 3rem 0rem;
   padding: 0rem 1rem 0rem 1rem;
-  background-color: #eee;
+  background-color: var(--color-new-page-background);
   text-align: center;
   /* border: 2px solid purple; */
 }
 
-/* ========================================================== */
-/* FIXME:  NEW PAGE - LINKS OR DOWNLOADABLE BROCHURES  FIXME: */
-/* ========================================================== */
 
-/* =============================== */
-/* FIXME:  VIEW - MOBILE FIRST     */
-/* =============================== */
-
-.new__page__buttons__container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin: -2rem 0rem 0rem 0rem;
-  /* border: 1px solid green; */
-}
-
-.new__page__button {
-  text-decoration: none;
-  text-transform: uppercase;
-  width: 18rem;
-  font-size: 0.9rem;
-  font-weight: 600;
-  letter-spacing: 0.2rem;
-  margin: 1rem 1rem 2.5rem 1rem;
-  padding: 1rem 0.5rem 1rem 0.5rem;
-  border: none;
-  outline: none;
-  background: #dc143c;
-  border-radius: 0.5rem;
-  box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.35);
-  transition: transform 0.5s ease-in-out;
-  cursor: pointer;
-  text-align: center;
-}
-
-.new__page__button a {
-  text-decoration: none;
-  color: white;
-  cursor: pointer;
-}
-
-.new__page__button:hover {
-  transform: scale(1.05);
-}
-
-/* =============================== */
-/* FIXME:  VIEW - LARGER SCREENS   */
-/* =============================== */
-
-@media screen and (min-width: 670px) {
-  .new__page__buttons__container {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    /* row-gap: 1rem; */
-  }
-}
 
 /* ===================================================================================================================== */
 /* ===================================================================================================================== */
-/* FIXME:FIXME:  SECTION - NEW PAGE CONTAINER WITH TITLE & BUTTON (TO LINKS / DOWNLOADABLE BROCHURE) (END)  FIXME:FIXME: */
+/* FIXME:FIXME:             SECTION - SECTION - NEW PAGE CONTAINER WITH TITLE & SUB-TITLE (END)             FIXME:FIXME: */
 /* ===================================================================================================================== */
 /* ===================================================================================================================== */
 
@@ -3770,15 +3718,30 @@ nav .clientzonewrapper .advertising-drop {
 
 /* ===================================================================================================================== */
 /* ===================================================================================================================== */
-/* TODO:TODO:                                 SECTION - PRODUCT CARDS (START)                                 TODO:TODO: */
+/* TODO:TODO:                        SECTION - SERVICE PROVIDER CREDENTIAL CARDS (START)                      TODO:TODO: */
 /* ===================================================================================================================== */
 /* ===================================================================================================================== */
 
+:root {
+  --color-new-page-background: #eee;
+  --color-spn-service-providers-heading-text: #01a7cf;
+  --color-box-shadow-01: 3px 5px 20px rgba(0, 0, 0, 0.35);
+  --color-service-provider-cards-container-background-all: #eee;
+  --color-service-provider-cards-container-background-single: #ffffff;
+  --color-service-provider-cards-container-background-top-section: #ffffff;
+  --color-service-provider-cards-container-background-extra-images-section: #ffffff;
+  --color-service-provider-cards-container-extra-images-section-hover: #01a7cf;
+  --color-service-provider-cards-title: #000000;  
+  --color-service-provider-cards-short-description: #000000;  
+  --color-service-provider-cards-pricing-currency: #000000;  
+  --color-service-provider-cards-price-value: #000000;  
+}
+
 /* ===================================================================================================================== */
-/* TODO:  CONTAINER HOLDING ALL PRODUCT CARDS                                                                            */
+/* TODO:  CONTAINER HOLDING ALL SERVICE PROVIDER CARDS                                                                   */
 /* ===================================================================================================================== */
 
-.all__product__cards__container {
+.all__service__provider__cards__container {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -3787,23 +3750,23 @@ nav .clientzonewrapper .advertising-drop {
   height: auto;
   object-fit: cover;
   margin: 0rem 0rem 0rem 0rem;
-  background-color: #eee;
+  background-color: var(--color-service-provider-cards-container-background-all);
   /* border: 2px solid green; */
 }
 
 /* ===================================================================================================================== */
-/* TODO:  PRODUCTS - PRODUCT CARDS                                                                                       */
+/* TODO:  SERVICES - SERVICE PROVIDER CARDS                                                                              */
 /* ===================================================================================================================== */
 
 /* ===================================================================================================================== */
-/* TODO:  MAIN PRODUCT CARD (CONTAINERS)                                                                                 */
+/* TODO:  MAIN SERVICE PROVIDER CARD (CONTAINERS)                                                                        */
 /* ===================================================================================================================== */
 
-/* ---------------------------------------------- */
+/* ============================================== */
 /* FIXME:  MAIN CONTAINER - HOLDING ALL ELEMENTS  */
-/* ---------------------------------------------- */
+/* ============================================== */
 
-.single__product__card__container {
+.single__service__provider__card__container {
   position: relative;
   display: flex;
   justify-content: center;
@@ -3820,216 +3783,22 @@ nav .clientzonewrapper .advertising-drop {
   /* border: 1px solid red; */
 }
 
-/* ------------------------------- */
-/* FIXME:  PRODUCT CARD CONTAINER  */
-/* ------------------------------- */
+/* ======================================== */
+/* FIXME:  SERVICE PROVIDER CARD CONTAINER  */
+/* ======================================== */
 
-.single__product__card__container .product-card-01,
-.single__product__card__container .product-card-02,
-.single__product__card__container .product-card-03,
-.single__product__card__container .product-card-04,
-.single__product__card__container .product-card-05,
-.single__product__card__container .product-card-06,
-.single__product__card__container .product-card-07,
-.single__product__card__container .product-card-08,
-.single__product__card__container .product-card-09,
-.single__product__card__container .product-card-10,
-.single__product__card__container .product-card-11,
-.single__product__card__container .product-card-12,
-.single__product__card__container .product-card-13,
-.single__product__card__container .product-card-14,
-.single__product__card__container .product-card-15,
-.single__product__card__container .product-card-16,
-.single__product__card__container .product-card-17,
-.single__product__card__container .product-card-18,
-.single__product__card__container .product-card-19,
-.single__product__card__container .product-card-20,
-.single__product__card__container .product-card-21,
-.single__product__card__container .product-card-22,
-.single__product__card__container .product-card-23,
-.single__product__card__container .product-card-24,
-.single__product__card__container .product-card-25,
-.single__product__card__container .product-card-26,
-.single__product__card__container .product-card-27,
-.single__product__card__container .product-card-28,
-.single__product__card__container .product-card-29,
-.single__product__card__container .product-card-30,
-.single__product__card__container .product-card-31,
-.single__product__card__container .product-card-32,
-.single__product__card__container .product-card-33,
-.single__product__card__container .product-card-34,
-.single__product__card__container .product-card-35,
-.single__product__card__container .product-card-36,
-.single__product__card__container .product-card-37,
-.single__product__card__container .product-card-38,
-.single__product__card__container .product-card-39,
-.single__product__card__container .product-card-40,
-.single__product__card__container .product-card-41,
-.single__product__card__container .product-card-42,
-.single__product__card__container .product-card-43,
-.single__product__card__container .product-card-44,
-.single__product__card__container .product-card-45,
-.single__product__card__container .product-card-46,
-.single__product__card__container .product-card-47,
-.single__product__card__container .product-card-48,
-.single__product__card__container .product-card-49,
-.single__product__card__container .product-card-50,
-.single__product__card__container .product-card-51,
-.single__product__card__container .product-card-52,
-.single__product__card__container .product-card-53,
-.single__product__card__container .product-card-54,
-.single__product__card__container .product-card-55,
-.single__product__card__container .product-card-56,
-.single__product__card__container .product-card-57,
-.single__product__card__container .product-card-58,
-.single__product__card__container .product-card-59,
-.single__product__card__container .product-card-60,
-.single__product__card__container .product-card-61,
-.single__product__card__container .product-card-62,
-.single__product__card__container .product-card-63,
-.single__product__card__container .product-card-64,
-.single__product__card__container .product-card-65,
-.single__product__card__container .product-card-66,
-.single__product__card__container .product-card-67,
-.single__product__card__container .product-card-68,
-.single__product__card__container .product-card-69,
-.single__product__card__container .product-card-70,
-.single__product__card__container .product-card-71,
-.single__product__card__container .product-card-72,
-.single__product__card__container .product-card-73,
-.single__product__card__container .product-card-74,
-.single__product__card__container .product-card-75,
-.single__product__card__container .product-card-76,
-.single__product__card__container .product-card-77,
-.single__product__card__container .product-card-78,
-.single__product__card__container .product-card-79,
-.single__product__card__container .product-card-80,
-.single__product__card__container .product-card-81,
-.single__product__card__container .product-card-82,
-.single__product__card__container .product-card-83,
-.single__product__card__container .product-card-84,
-.single__product__card__container .product-card-85,
-.single__product__card__container .product-card-86,
-.single__product__card__container .product-card-87,
-.single__product__card__container .product-card-88,
-.single__product__card__container .product-card-89,
-.single__product__card__container .product-card-90,
-.single__product__card__container .product-card-91,
-.single__product__card__container .product-card-92,
-.single__product__card__container .product-card-93,
-.single__product__card__container .product-card-94,
-.single__product__card__container .product-card-95,
-.single__product__card__container .product-card-96,
-.single__product__card__container .product-card-97,
-.single__product__card__container .product-card-98,
-.single__product__card__container .product-card-99,
-.single__product__card__container .product-card-100,
-.single__product__card__container .product-card-101,
-.single__product__card__container .product-card-102,
-.single__product__card__container .product-card-103,
-.single__product__card__container .product-card-104,
-.single__product__card__container .product-card-105,
-.single__product__card__container .product-card-106,
-.single__product__card__container .product-card-107,
-.single__product__card__container .product-card-108,
-.single__product__card__container .product-card-109,
-.single__product__card__container .product-card-110,
-.single__product__card__container .product-card-111,
-.single__product__card__container .product-card-112,
-.single__product__card__container .product-card-113,
-.single__product__card__container .product-card-114,
-.single__product__card__container .product-card-115,
-.single__product__card__container .product-card-116,
-.single__product__card__container .product-card-117,
-.single__product__card__container .product-card-118,
-.single__product__card__container .product-card-119,
-.single__product__card__container .product-card-120,
-.single__product__card__container .product-card-121,
-.single__product__card__container .product-card-122,
-.single__product__card__container .product-card-123,
-.single__product__card__container .product-card-124,
-.single__product__card__container .product-card-125,
-.single__product__card__container .product-card-126,
-.single__product__card__container .product-card-127,
-.single__product__card__container .product-card-128,
-.single__product__card__container .product-card-129,
-.single__product__card__container .product-card-130,
-.single__product__card__container .product-card-131,
-.single__product__card__container .product-card-132,
-.single__product__card__container .product-card-133,
-.single__product__card__container .product-card-134,
-.single__product__card__container .product-card-135,
-.single__product__card__container .product-card-136,
-.single__product__card__container .product-card-137,
-.single__product__card__container .product-card-138,
-.single__product__card__container .product-card-139,
-.single__product__card__container .product-card-140,
-.single__product__card__container .product-card-141,
-.single__product__card__container .product-card-142,
-.single__product__card__container .product-card-143,
-.single__product__card__container .product-card-144,
-.single__product__card__container .product-card-145,
-.single__product__card__container .product-card-146,
-.single__product__card__container .product-card-147,
-.single__product__card__container .product-card-148,
-.single__product__card__container .product-card-149,
-.single__product__card__container .product-card-150,
-.single__product__card__container .product-card-151,
-.single__product__card__container .product-card-152,
-.single__product__card__container .product-card-153,
-.single__product__card__container .product-card-154,
-.single__product__card__container .product-card-155,
-.single__product__card__container .product-card-156,
-.single__product__card__container .product-card-157,
-.single__product__card__container .product-card-158,
-.single__product__card__container .product-card-159,
-.single__product__card__container .product-card-160,
-.single__product__card__container .product-card-161,
-.single__product__card__container .product-card-162,
-.single__product__card__container .product-card-163,
-.single__product__card__container .product-card-164,
-.single__product__card__container .product-card-165,
-.single__product__card__container .product-card-166,
-.single__product__card__container .product-card-167,
-.single__product__card__container .product-card-168,
-.single__product__card__container .product-card-169,
-.single__product__card__container .product-card-170,
-.single__product__card__container .product-card-171,
-.single__product__card__container .product-card-172,
-.single__product__card__container .product-card-173,
-.single__product__card__container .product-card-174,
-.single__product__card__container .product-card-175,
-.single__product__card__container .product-card-176,
-.single__product__card__container .product-card-177,
-.single__product__card__container .product-card-178,
-.single__product__card__container .product-card-179,
-.single__product__card__container .product-card-180,
-.single__product__card__container .product-card-181,
-.single__product__card__container .product-card-182,
-.single__product__card__container .product-card-183,
-.single__product__card__container .product-card-184,
-.single__product__card__container .product-card-185,
-.single__product__card__container .product-card-186,
-.single__product__card__container .product-card-187,
-.single__product__card__container .product-card-188,
-.single__product__card__container .product-card-189,
-.single__product__card__container .product-card-190,
-.single__product__card__container .product-card-191,
-.single__product__card__container .product-card-192,
-.single__product__card__container .product-card-193,
-.single__product__card__container .product-card-194,
-.single__product__card__container .product-card-195,
-.single__product__card__container .product-card-196,
-.single__product__card__container .product-card-197,
-.single__product__card__container .product-card-198,
-.single__product__card__container .product-card-199,
-.single__product__card__container .product-card-200 {
+.single__service__provider__card__container .service-provider-card-01,
+.single__service__provider__card__container .service-provider-card-02,
+.single__service__provider__card__container .service-provider-card-03,
+.single__service__provider__card__container .service-provider-card-04,
+.single__service__provider__card__container .service-provider-card-05,
+.single__service__provider__card__container .service-provider-card-06 {
   position: absolute;
   transition: transform 1s;
   transform-style: preserve-3d;
   width: 100%;
   height: 100%;
-  background: var(--color-cta-product-card-background);
+  background: var(--color-service-provider-cards-container-background-single);
   border-radius: 1.5rem;
   margin: 0rem 0rem 0rem 0rem;
   padding: 0.75rem 0.75rem 0.75rem 0.75rem;
@@ -4039,417 +3808,29 @@ nav .clientzonewrapper .advertising-drop {
   /* border: 1px solid red; */
 }
 
-/* ------------------------------------------------------------------- */
+/* =================================================================== */
 /* TODO:FIXME:     JAVASCRIPT : FOR FLIP FUNCTIONALITY     TODO:FIXME: */
-/* ------------------------------------------------------------------- */
+/* =================================================================== */
 
-.single__product__card__container .product-card-01.animated,
-.single__product__card__container .product-card-02.animated,
-.single__product__card__container .product-card-03.animated,
-.single__product__card__container .product-card-04.animated,
-.single__product__card__container .product-card-05.animated,
-.single__product__card__container .product-card-06.animated,
-.single__product__card__container .product-card-07.animated,
-.single__product__card__container .product-card-08.animated,
-.single__product__card__container .product-card-09.animated,
-.single__product__card__container .product-card-10.animated,
-.single__product__card__container .product-card-11.animated,
-.single__product__card__container .product-card-12.animated,
-.single__product__card__container .product-card-13.animated,
-.single__product__card__container .product-card-14.animated,
-.single__product__card__container .product-card-15.animated,
-.single__product__card__container .product-card-16.animated,
-.single__product__card__container .product-card-17.animated,
-.single__product__card__container .product-card-18.animated,
-.single__product__card__container .product-card-19.animated,
-.single__product__card__container .product-card-20.animated,
-.single__product__card__container .product-card-21.animated,
-.single__product__card__container .product-card-22.animated,
-.single__product__card__container .product-card-23.animated,
-.single__product__card__container .product-card-24.animated,
-.single__product__card__container .product-card-25.animated,
-.single__product__card__container .product-card-26.animated,
-.single__product__card__container .product-card-27.animated,
-.single__product__card__container .product-card-28.animated,
-.single__product__card__container .product-card-29.animated,
-.single__product__card__container .product-card-30.animated,
-.single__product__card__container .product-card-31.animated,
-.single__product__card__container .product-card-32.animated,
-.single__product__card__container .product-card-33.animated,
-.single__product__card__container .product-card-34.animated,
-.single__product__card__container .product-card-35.animated,
-.single__product__card__container .product-card-36.animated,
-.single__product__card__container .product-card-37.animated,
-.single__product__card__container .product-card-38.animated,
-.single__product__card__container .product-card-39.animated,
-.single__product__card__container .product-card-40.animated,
-.single__product__card__container .product-card-41.animated,
-.single__product__card__container .product-card-42.animated,
-.single__product__card__container .product-card-43.animated,
-.single__product__card__container .product-card-44.animated,
-.single__product__card__container .product-card-45.animated,
-.single__product__card__container .product-card-46.animated,
-.single__product__card__container .product-card-47.animated,
-.single__product__card__container .product-card-48.animated,
-.single__product__card__container .product-card-49.animated,
-.single__product__card__container .product-card-50.animated,
-.single__product__card__container .product-card-51.animated,
-.single__product__card__container .product-card-52.animated,
-.single__product__card__container .product-card-53.animated,
-.single__product__card__container .product-card-54.animated,
-.single__product__card__container .product-card-55.animated,
-.single__product__card__container .product-card-56.animated,
-.single__product__card__container .product-card-57.animated,
-.single__product__card__container .product-card-58.animated,
-.single__product__card__container .product-card-59.animated,
-.single__product__card__container .product-card-60.animated,
-.single__product__card__container .product-card-61.animated,
-.single__product__card__container .product-card-62.animated,
-.single__product__card__container .product-card-63.animated,
-.single__product__card__container .product-card-64.animated,
-.single__product__card__container .product-card-65.animated,
-.single__product__card__container .product-card-66.animated,
-.single__product__card__container .product-card-67.animated,
-.single__product__card__container .product-card-68.animated,
-.single__product__card__container .product-card-69.animated,
-.single__product__card__container .product-card-70.animated,
-.single__product__card__container .product-card-71.animated,
-.single__product__card__container .product-card-72.animated,
-.single__product__card__container .product-card-73.animated,
-.single__product__card__container .product-card-74.animated,
-.single__product__card__container .product-card-75.animated,
-.single__product__card__container .product-card-76.animated,
-.single__product__card__container .product-card-77.animated,
-.single__product__card__container .product-card-78.animated,
-.single__product__card__container .product-card-79.animated,
-.single__product__card__container .product-card-80.animated,
-.single__product__card__container .product-card-81.animated,
-.single__product__card__container .product-card-82.animated,
-.single__product__card__container .product-card-83.animated,
-.single__product__card__container .product-card-84.animated,
-.single__product__card__container .product-card-85.animated,
-.single__product__card__container .product-card-86.animated,
-.single__product__card__container .product-card-87.animated,
-.single__product__card__container .product-card-88.animated,
-.single__product__card__container .product-card-89.animated,
-.single__product__card__container .product-card-90.animated,
-.single__product__card__container .product-card-91.animated,
-.single__product__card__container .product-card-92.animated,
-.single__product__card__container .product-card-93.animated,
-.single__product__card__container .product-card-94.animated,
-.single__product__card__container .product-card-95.animated,
-.single__product__card__container .product-card-96.animated,
-.single__product__card__container .product-card-97.animated,
-.single__product__card__container .product-card-98.animated,
-.single__product__card__container .product-card-99.animated,
-.single__product__card__container .product-card-100.animated,
-.single__product__card__container .product-card-101.animated,
-.single__product__card__container .product-card-102.animated,
-.single__product__card__container .product-card-103.animated,
-.single__product__card__container .product-card-104.animated,
-.single__product__card__container .product-card-105.animated,
-.single__product__card__container .product-card-106.animated,
-.single__product__card__container .product-card-107.animated,
-.single__product__card__container .product-card-108.animated,
-.single__product__card__container .product-card-109.animated,
-.single__product__card__container .product-card-110.animated,
-.single__product__card__container .product-card-111.animated,
-.single__product__card__container .product-card-112.animated,
-.single__product__card__container .product-card-113.animated,
-.single__product__card__container .product-card-114.animated,
-.single__product__card__container .product-card-115.animated,
-.single__product__card__container .product-card-116.animated,
-.single__product__card__container .product-card-117.animated,
-.single__product__card__container .product-card-118.animated,
-.single__product__card__container .product-card-119.animated,
-.single__product__card__container .product-card-120.animated,
-.single__product__card__container .product-card-121.animated,
-.single__product__card__container .product-card-122.animated,
-.single__product__card__container .product-card-123.animated,
-.single__product__card__container .product-card-124.animated,
-.single__product__card__container .product-card-125.animated,
-.single__product__card__container .product-card-126.animated,
-.single__product__card__container .product-card-127.animated,
-.single__product__card__container .product-card-128.animated,
-.single__product__card__container .product-card-129.animated,
-.single__product__card__container .product-card-130.animated,
-.single__product__card__container .product-card-131.animated,
-.single__product__card__container .product-card-132.animated,
-.single__product__card__container .product-card-133.animated,
-.single__product__card__container .product-card-134.animated,
-.single__product__card__container .product-card-135.animated,
-.single__product__card__container .product-card-136.animated,
-.single__product__card__container .product-card-137.animated,
-.single__product__card__container .product-card-138.animated,
-.single__product__card__container .product-card-139.animated,
-.single__product__card__container .product-card-140.animated,
-.single__product__card__container .product-card-141.animated,
-.single__product__card__container .product-card-142.animated,
-.single__product__card__container .product-card-143.animated,
-.single__product__card__container .product-card-144.animated,
-.single__product__card__container .product-card-145.animated,
-.single__product__card__container .product-card-146.animated,
-.single__product__card__container .product-card-147.animated,
-.single__product__card__container .product-card-148.animated,
-.single__product__card__container .product-card-149.animated,
-.single__product__card__container .product-card-150.animated,
-.single__product__card__container .product-card-151.animated,
-.single__product__card__container .product-card-152.animated,
-.single__product__card__container .product-card-153.animated,
-.single__product__card__container .product-card-154.animated,
-.single__product__card__container .product-card-155.animated,
-.single__product__card__container .product-card-156.animated,
-.single__product__card__container .product-card-157.animated,
-.single__product__card__container .product-card-158.animated,
-.single__product__card__container .product-card-159.animated,
-.single__product__card__container .product-card-160.animated,
-.single__product__card__container .product-card-161.animated,
-.single__product__card__container .product-card-162.animated,
-.single__product__card__container .product-card-163.animated,
-.single__product__card__container .product-card-164.animated,
-.single__product__card__container .product-card-165.animated,
-.single__product__card__container .product-card-166.animated,
-.single__product__card__container .product-card-167.animated,
-.single__product__card__container .product-card-168.animated,
-.single__product__card__container .product-card-169.animated,
-.single__product__card__container .product-card-170.animated,
-.single__product__card__container .product-card-171.animated,
-.single__product__card__container .product-card-172.animated,
-.single__product__card__container .product-card-173.animated,
-.single__product__card__container .product-card-174.animated,
-.single__product__card__container .product-card-175.animated,
-.single__product__card__container .product-card-176.animated,
-.single__product__card__container .product-card-177.animated,
-.single__product__card__container .product-card-178.animated,
-.single__product__card__container .product-card-179.animated,
-.single__product__card__container .product-card-180.animated,
-.single__product__card__container .product-card-181.animated,
-.single__product__card__container .product-card-182.animated,
-.single__product__card__container .product-card-183.animated,
-.single__product__card__container .product-card-184.animated,
-.single__product__card__container .product-card-185.animated,
-.single__product__card__container .product-card-186.animated,
-.single__product__card__container .product-card-187.animated,
-.single__product__card__container .product-card-188.animated,
-.single__product__card__container .product-card-189.animated,
-.single__product__card__container .product-card-190.animated,
-.single__product__card__container .product-card-191.animated,
-.single__product__card__container .product-card-192.animated,
-.single__product__card__container .product-card-193.animated,
-.single__product__card__container .product-card-194.animated,
-.single__product__card__container .product-card-195.animated,
-.single__product__card__container .product-card-196.animated,
-.single__product__card__container .product-card-197.animated,
-.single__product__card__container .product-card-198.animated,
-.single__product__card__container .product-card-199.animated,
-.single__product__card__container .product-card-200.animated {
+.single__service__provider__card__container .service-provider-card-01.animated,
+.single__service__provider__card__container .service-provider-card-02.animated,
+.single__service__provider__card__container .service-provider-card-03.animated,
+.single__service__provider__card__container .service-provider-card-04.animated,
+.single__service__provider__card__container .service-provider-card-05.animated,
+.single__service__provider__card__container .service-provider-card-06.animated {
   transform: rotateY(-180deg);
 }
 
-/* -------------------------------------------------------------------- */
+/* ==================================================================== */
 /* FIXME:  SUB-CONTAINER - HOLDING ALL ELEMENTS OF CARD (FRONT)  FIXME: */
-/* -------------------------------------------------------------------- */
+/* ==================================================================== */
 
-.single__product__card__container .product-card-01 .product-card-front-side,
-.single__product__card__container .product-card-02 .product-card-front-side,
-.single__product__card__container .product-card-03 .product-card-front-side,
-.single__product__card__container .product-card-04 .product-card-front-side,
-.single__product__card__container .product-card-05 .product-card-front-side,
-.single__product__card__container .product-card-06 .product-card-front-side,
-.single__product__card__container .product-card-07 .product-card-front-side,
-.single__product__card__container .product-card-08 .product-card-front-side,
-.single__product__card__container .product-card-09 .product-card-front-side,
-.single__product__card__container .product-card-10 .product-card-front-side,
-.single__product__card__container .product-card-11 .product-card-front-side,
-.single__product__card__container .product-card-12 .product-card-front-side,
-.single__product__card__container .product-card-13 .product-card-front-side,
-.single__product__card__container .product-card-14 .product-card-front-side,
-.single__product__card__container .product-card-15 .product-card-front-side,
-.single__product__card__container .product-card-16 .product-card-front-side,
-.single__product__card__container .product-card-17 .product-card-front-side,
-.single__product__card__container .product-card-18 .product-card-front-side,
-.single__product__card__container .product-card-19 .product-card-front-side,
-.single__product__card__container .product-card-20 .product-card-front-side,
-.single__product__card__container .product-card-21 .product-card-front-side,
-.single__product__card__container .product-card-22 .product-card-front-side,
-.single__product__card__container .product-card-23 .product-card-front-side,
-.single__product__card__container .product-card-24 .product-card-front-side,
-.single__product__card__container .product-card-25 .product-card-front-side,
-.single__product__card__container .product-card-26 .product-card-front-side,
-.single__product__card__container .product-card-27 .product-card-front-side,
-.single__product__card__container .product-card-28 .product-card-front-side,
-.single__product__card__container .product-card-29 .product-card-front-side,
-.single__product__card__container .product-card-30 .product-card-front-side,
-.single__product__card__container .product-card-31 .product-card-front-side,
-.single__product__card__container .product-card-32 .product-card-front-side,
-.single__product__card__container .product-card-33 .product-card-front-side,
-.single__product__card__container .product-card-34 .product-card-front-side,
-.single__product__card__container .product-card-35 .product-card-front-side,
-.single__product__card__container .product-card-36 .product-card-front-side,
-.single__product__card__container .product-card-37 .product-card-front-side,
-.single__product__card__container .product-card-38 .product-card-front-side,
-.single__product__card__container .product-card-39 .product-card-front-side,
-.single__product__card__container .product-card-40 .product-card-front-side,
-.single__product__card__container .product-card-41 .product-card-front-side,
-.single__product__card__container .product-card-42 .product-card-front-side,
-.single__product__card__container .product-card-43 .product-card-front-side,
-.single__product__card__container .product-card-44 .product-card-front-side,
-.single__product__card__container .product-card-45 .product-card-front-side,
-.single__product__card__container .product-card-46 .product-card-front-side,
-.single__product__card__container .product-card-47 .product-card-front-side,
-.single__product__card__container .product-card-48 .product-card-front-side,
-.single__product__card__container .product-card-49 .product-card-front-side,
-.single__product__card__container .product-card-50 .product-card-front-side,
-.single__product__card__container .product-card-51 .product-card-front-side,
-.single__product__card__container .product-card-52 .product-card-front-side,
-.single__product__card__container .product-card-53 .product-card-front-side,
-.single__product__card__container .product-card-54 .product-card-front-side,
-.single__product__card__container .product-card-55 .product-card-front-side,
-.single__product__card__container .product-card-56 .product-card-front-side,
-.single__product__card__container .product-card-57 .product-card-front-side,
-.single__product__card__container .product-card-58 .product-card-front-side,
-.single__product__card__container .product-card-59 .product-card-front-side,
-.single__product__card__container .product-card-60 .product-card-front-side,
-.single__product__card__container .product-card-61 .product-card-front-side,
-.single__product__card__container .product-card-62 .product-card-front-side,
-.single__product__card__container .product-card-63 .product-card-front-side,
-.single__product__card__container .product-card-64 .product-card-front-side,
-.single__product__card__container .product-card-65 .product-card-front-side,
-.single__product__card__container .product-card-66 .product-card-front-side,
-.single__product__card__container .product-card-67 .product-card-front-side,
-.single__product__card__container .product-card-68 .product-card-front-side,
-.single__product__card__container .product-card-69 .product-card-front-side,
-.single__product__card__container .product-card-70 .product-card-front-side,
-.single__product__card__container .product-card-71 .product-card-front-side,
-.single__product__card__container .product-card-72 .product-card-front-side,
-.single__product__card__container .product-card-73 .product-card-front-side,
-.single__product__card__container .product-card-74 .product-card-front-side,
-.single__product__card__container .product-card-75 .product-card-front-side,
-.single__product__card__container .product-card-76 .product-card-front-side,
-.single__product__card__container .product-card-77 .product-card-front-side,
-.single__product__card__container .product-card-78 .product-card-front-side,
-.single__product__card__container .product-card-79 .product-card-front-side,
-.single__product__card__container .product-card-80 .product-card-front-side,
-.single__product__card__container .product-card-81 .product-card-front-side,
-.single__product__card__container .product-card-82 .product-card-front-side,
-.single__product__card__container .product-card-83 .product-card-front-side,
-.single__product__card__container .product-card-84 .product-card-front-side,
-.single__product__card__container .product-card-85 .product-card-front-side,
-.single__product__card__container .product-card-86 .product-card-front-side,
-.single__product__card__container .product-card-87 .product-card-front-side,
-.single__product__card__container .product-card-88 .product-card-front-side,
-.single__product__card__container .product-card-89 .product-card-front-side,
-.single__product__card__container .product-card-90 .product-card-front-side,
-.single__product__card__container .product-card-91 .product-card-front-side,
-.single__product__card__container .product-card-92 .product-card-front-side,
-.single__product__card__container .product-card-93 .product-card-front-side,
-.single__product__card__container .product-card-94 .product-card-front-side,
-.single__product__card__container .product-card-95 .product-card-front-side,
-.single__product__card__container .product-card-96 .product-card-front-side,
-.single__product__card__container .product-card-97 .product-card-front-side,
-.single__product__card__container .product-card-98 .product-card-front-side,
-.single__product__card__container .product-card-99 .product-card-front-side,
-.single__product__card__container .product-card-100 .product-card-front-side,
-.single__product__card__container .product-card-101 .product-card-front-side,
-.single__product__card__container .product-card-102 .product-card-front-side,
-.single__product__card__container .product-card-103 .product-card-front-side,
-.single__product__card__container .product-card-104 .product-card-front-side,
-.single__product__card__container .product-card-105 .product-card-front-side,
-.single__product__card__container .product-card-106 .product-card-front-side,
-.single__product__card__container .product-card-107 .product-card-front-side,
-.single__product__card__container .product-card-108 .product-card-front-side,
-.single__product__card__container .product-card-109 .product-card-front-side,
-.single__product__card__container .product-card-110 .product-card-front-side,
-.single__product__card__container .product-card-111 .product-card-front-side,
-.single__product__card__container .product-card-112 .product-card-front-side,
-.single__product__card__container .product-card-113 .product-card-front-side,
-.single__product__card__container .product-card-114 .product-card-front-side,
-.single__product__card__container .product-card-115 .product-card-front-side,
-.single__product__card__container .product-card-116 .product-card-front-side,
-.single__product__card__container .product-card-117 .product-card-front-side,
-.single__product__card__container .product-card-118 .product-card-front-side,
-.single__product__card__container .product-card-119 .product-card-front-side,
-.single__product__card__container .product-card-120 .product-card-front-side,
-.single__product__card__container .product-card-121 .product-card-front-side,
-.single__product__card__container .product-card-122 .product-card-front-side,
-.single__product__card__container .product-card-123 .product-card-front-side,
-.single__product__card__container .product-card-124 .product-card-front-side,
-.single__product__card__container .product-card-125 .product-card-front-side,
-.single__product__card__container .product-card-126 .product-card-front-side,
-.single__product__card__container .product-card-127 .product-card-front-side,
-.single__product__card__container .product-card-128 .product-card-front-side,
-.single__product__card__container .product-card-129 .product-card-front-side,
-.single__product__card__container .product-card-130 .product-card-front-side,
-.single__product__card__container .product-card-131 .product-card-front-side,
-.single__product__card__container .product-card-132 .product-card-front-side,
-.single__product__card__container .product-card-133 .product-card-front-side,
-.single__product__card__container .product-card-134 .product-card-front-side,
-.single__product__card__container .product-card-135 .product-card-front-side,
-.single__product__card__container .product-card-136 .product-card-front-side,
-.single__product__card__container .product-card-137 .product-card-front-side,
-.single__product__card__container .product-card-138 .product-card-front-side,
-.single__product__card__container .product-card-139 .product-card-front-side,
-.single__product__card__container .product-card-140 .product-card-front-side,
-.single__product__card__container .product-card-141 .product-card-front-side,
-.single__product__card__container .product-card-142 .product-card-front-side,
-.single__product__card__container .product-card-143 .product-card-front-side,
-.single__product__card__container .product-card-144 .product-card-front-side,
-.single__product__card__container .product-card-145 .product-card-front-side,
-.single__product__card__container .product-card-146 .product-card-front-side,
-.single__product__card__container .product-card-147 .product-card-front-side,
-.single__product__card__container .product-card-148 .product-card-front-side,
-.single__product__card__container .product-card-149 .product-card-front-side,
-.single__product__card__container .product-card-150 .product-card-front-side,
-.single__product__card__container .product-card-151 .product-card-front-side,
-.single__product__card__container .product-card-152 .product-card-front-side,
-.single__product__card__container .product-card-153 .product-card-front-side,
-.single__product__card__container .product-card-154 .product-card-front-side,
-.single__product__card__container .product-card-155 .product-card-front-side,
-.single__product__card__container .product-card-156 .product-card-front-side,
-.single__product__card__container .product-card-157 .product-card-front-side,
-.single__product__card__container .product-card-158 .product-card-front-side,
-.single__product__card__container .product-card-159 .product-card-front-side,
-.single__product__card__container .product-card-160 .product-card-front-side,
-.single__product__card__container .product-card-161 .product-card-front-side,
-.single__product__card__container .product-card-162 .product-card-front-side,
-.single__product__card__container .product-card-163 .product-card-front-side,
-.single__product__card__container .product-card-164 .product-card-front-side,
-.single__product__card__container .product-card-165 .product-card-front-side,
-.single__product__card__container .product-card-166 .product-card-front-side,
-.single__product__card__container .product-card-167 .product-card-front-side,
-.single__product__card__container .product-card-168 .product-card-front-side,
-.single__product__card__container .product-card-169 .product-card-front-side,
-.single__product__card__container .product-card-170 .product-card-front-side,
-.single__product__card__container .product-card-171 .product-card-front-side,
-.single__product__card__container .product-card-172 .product-card-front-side,
-.single__product__card__container .product-card-173 .product-card-front-side,
-.single__product__card__container .product-card-174 .product-card-front-side,
-.single__product__card__container .product-card-175 .product-card-front-side,
-.single__product__card__container .product-card-176 .product-card-front-side,
-.single__product__card__container .product-card-177 .product-card-front-side,
-.single__product__card__container .product-card-178 .product-card-front-side,
-.single__product__card__container .product-card-179 .product-card-front-side,
-.single__product__card__container .product-card-180 .product-card-front-side,
-.single__product__card__container .product-card-181 .product-card-front-side,
-.single__product__card__container .product-card-182 .product-card-front-side,
-.single__product__card__container .product-card-183 .product-card-front-side,
-.single__product__card__container .product-card-184 .product-card-front-side,
-.single__product__card__container .product-card-185 .product-card-front-side,
-.single__product__card__container .product-card-186 .product-card-front-side,
-.single__product__card__container .product-card-187 .product-card-front-side,
-.single__product__card__container .product-card-188 .product-card-front-side,
-.single__product__card__container .product-card-189 .product-card-front-side,
-.single__product__card__container .product-card-190 .product-card-front-side,
-.single__product__card__container .product-card-191 .product-card-front-side,
-.single__product__card__container .product-card-192 .product-card-front-side,
-.single__product__card__container .product-card-193 .product-card-front-side,
-.single__product__card__container .product-card-194 .product-card-front-side,
-.single__product__card__container .product-card-195 .product-card-front-side,
-.single__product__card__container .product-card-196 .product-card-front-side,
-.single__product__card__container .product-card-197 .product-card-front-side,
-.single__product__card__container .product-card-198 .product-card-front-side,
-.single__product__card__container .product-card-199 .product-card-front-side,
-.single__product__card__container .product-card-200 .product-card-front-side {
+.single__service__provider__card__container .service-provider-card-01 .service-provider-card-front-side,
+.single__service__provider__card__container .service-provider-card-02 .service-provider-card-front-side,
+.single__service__provider__card__container .service-provider-card-03 .service-provider-card-front-side,
+.single__service__provider__card__container .service-provider-card-04 .service-provider-card-front-side,
+.single__service__provider__card__container .service-provider-card-05 .service-provider-card-front-side,
+.single__service__provider__card__container .service-provider-card-06 .service-provider-card-front-side {
   position: absolute;
   top: 0;
   left: 0;
@@ -4457,7 +3838,7 @@ nav .clientzonewrapper .advertising-drop {
   backface-visibility: hidden;
   width: 100%;
   height: 100%;
-  background: var(--color-cta-product-card-background);
+  background: var(--color-service-provider-cards-container-background-single);
   border-radius: 1.5rem;
   overflow: hidden;
   margin: 0rem 0rem 0rem 0rem;
@@ -4466,210 +3847,16 @@ nav .clientzonewrapper .advertising-drop {
   /* border: 1px solid red; */
 }
 
-/* ------------------------------------------------------------------- */
-/* FIXME:  SUB-CONTAINER - HOLDING ALL ELEMENTS OF CARD (BACK)  FIXME: */
-/* -------------------------------------------------------------------- */
+/* ==================================================================== */
+/* FIXME:  SUB-CONTAINER - HOLDING ALL ELEMENTS OF CARD (BACK)   FIXME: */
+/* ==================================================================== */
 
-.single__product__card__container .product-card-01 .product-card-back-side,
-.single__product__card__container .product-card-02 .product-card-back-side,
-.single__product__card__container .product-card-03 .product-card-back-side,
-.single__product__card__container .product-card-04 .product-card-back-side,
-.single__product__card__container .product-card-05 .product-card-back-side,
-.single__product__card__container .product-card-06 .product-card-back-side,
-.single__product__card__container .product-card-07 .product-card-back-side,
-.single__product__card__container .product-card-08 .product-card-back-side,
-.single__product__card__container .product-card-09 .product-card-back-side,
-.single__product__card__container .product-card-10 .product-card-back-side,
-.single__product__card__container .product-card-11 .product-card-back-side,
-.single__product__card__container .product-card-12 .product-card-back-side,
-.single__product__card__container .product-card-13 .product-card-back-side,
-.single__product__card__container .product-card-14 .product-card-back-side,
-.single__product__card__container .product-card-15 .product-card-back-side,
-.single__product__card__container .product-card-16 .product-card-back-side,
-.single__product__card__container .product-card-17 .product-card-back-side,
-.single__product__card__container .product-card-18 .product-card-back-side,
-.single__product__card__container .product-card-19 .product-card-back-side,
-.single__product__card__container .product-card-20 .product-card-back-side,
-.single__product__card__container .product-card-21 .product-card-back-side,
-.single__product__card__container .product-card-22 .product-card-back-side,
-.single__product__card__container .product-card-23 .product-card-back-side,
-.single__product__card__container .product-card-24 .product-card-back-side,
-.single__product__card__container .product-card-25 .product-card-back-side,
-.single__product__card__container .product-card-26 .product-card-back-side,
-.single__product__card__container .product-card-27 .product-card-back-side,
-.single__product__card__container .product-card-28 .product-card-back-side,
-.single__product__card__container .product-card-29 .product-card-back-side,
-.single__product__card__container .product-card-30 .product-card-back-side,
-.single__product__card__container .product-card-31 .product-card-back-side,
-.single__product__card__container .product-card-32 .product-card-back-side,
-.single__product__card__container .product-card-33 .product-card-back-side,
-.single__product__card__container .product-card-34 .product-card-back-side,
-.single__product__card__container .product-card-35 .product-card-back-side,
-.single__product__card__container .product-card-36 .product-card-back-side,
-.single__product__card__container .product-card-37 .product-card-back-side,
-.single__product__card__container .product-card-38 .product-card-back-side,
-.single__product__card__container .product-card-39 .product-card-back-side,
-.single__product__card__container .product-card-40 .product-card-back-side,
-.single__product__card__container .product-card-41 .product-card-back-side,
-.single__product__card__container .product-card-42 .product-card-back-side,
-.single__product__card__container .product-card-43 .product-card-back-side,
-.single__product__card__container .product-card-44 .product-card-back-side,
-.single__product__card__container .product-card-45 .product-card-back-side,
-.single__product__card__container .product-card-46 .product-card-back-side,
-.single__product__card__container .product-card-47 .product-card-back-side,
-.single__product__card__container .product-card-48 .product-card-back-side,
-.single__product__card__container .product-card-49 .product-card-back-side,
-.single__product__card__container .product-card-50 .product-card-back-side,
-.single__product__card__container .product-card-51 .product-card-back-side,
-.single__product__card__container .product-card-52 .product-card-back-side,
-.single__product__card__container .product-card-53 .product-card-back-side,
-.single__product__card__container .product-card-54 .product-card-back-side,
-.single__product__card__container .product-card-55 .product-card-back-side,
-.single__product__card__container .product-card-56 .product-card-back-side,
-.single__product__card__container .product-card-57 .product-card-back-side,
-.single__product__card__container .product-card-58 .product-card-back-side,
-.single__product__card__container .product-card-59 .product-card-back-side,
-.single__product__card__container .product-card-60 .product-card-back-side,
-.single__product__card__container .product-card-61 .product-card-back-side,
-.single__product__card__container .product-card-62 .product-card-back-side,
-.single__product__card__container .product-card-63 .product-card-back-side,
-.single__product__card__container .product-card-64 .product-card-back-side,
-.single__product__card__container .product-card-65 .product-card-back-side,
-.single__product__card__container .product-card-66 .product-card-back-side,
-.single__product__card__container .product-card-67 .product-card-back-side,
-.single__product__card__container .product-card-68 .product-card-back-side,
-.single__product__card__container .product-card-69 .product-card-back-side,
-.single__product__card__container .product-card-70 .product-card-back-side,
-.single__product__card__container .product-card-71 .product-card-back-side,
-.single__product__card__container .product-card-72 .product-card-back-side,
-.single__product__card__container .product-card-73 .product-card-back-side,
-.single__product__card__container .product-card-74 .product-card-back-side,
-.single__product__card__container .product-card-75 .product-card-back-side,
-.single__product__card__container .product-card-76 .product-card-back-side,
-.single__product__card__container .product-card-77 .product-card-back-side,
-.single__product__card__container .product-card-78 .product-card-back-side,
-.single__product__card__container .product-card-79 .product-card-back-side,
-.single__product__card__container .product-card-80 .product-card-back-side,
-.single__product__card__container .product-card-81 .product-card-back-side,
-.single__product__card__container .product-card-82 .product-card-back-side,
-.single__product__card__container .product-card-83 .product-card-back-side,
-.single__product__card__container .product-card-84 .product-card-back-side,
-.single__product__card__container .product-card-85 .product-card-back-side,
-.single__product__card__container .product-card-86 .product-card-back-side,
-.single__product__card__container .product-card-87 .product-card-back-side,
-.single__product__card__container .product-card-88 .product-card-back-side,
-.single__product__card__container .product-card-89 .product-card-back-side,
-.single__product__card__container .product-card-90 .product-card-back-side,
-.single__product__card__container .product-card-91 .product-card-back-side,
-.single__product__card__container .product-card-92 .product-card-back-side,
-.single__product__card__container .product-card-93 .product-card-back-side,
-.single__product__card__container .product-card-94 .product-card-back-side,
-.single__product__card__container .product-card-95 .product-card-back-side,
-.single__product__card__container .product-card-96 .product-card-back-side,
-.single__product__card__container .product-card-97 .product-card-back-side,
-.single__product__card__container .product-card-98 .product-card-back-side,
-.single__product__card__container .product-card-99 .product-card-back-side,
-.single__product__card__container .product-card-100 .product-card-back-side,
-.single__product__card__container .product-card-101 .product-card-back-side,
-.single__product__card__container .product-card-102 .product-card-back-side,
-.single__product__card__container .product-card-103 .product-card-back-side,
-.single__product__card__container .product-card-104 .product-card-back-side,
-.single__product__card__container .product-card-105 .product-card-back-side,
-.single__product__card__container .product-card-106 .product-card-back-side,
-.single__product__card__container .product-card-107 .product-card-back-side,
-.single__product__card__container .product-card-108 .product-card-back-side,
-.single__product__card__container .product-card-109 .product-card-back-side,
-.single__product__card__container .product-card-110 .product-card-back-side,
-.single__product__card__container .product-card-111 .product-card-back-side,
-.single__product__card__container .product-card-112 .product-card-back-side,
-.single__product__card__container .product-card-113 .product-card-back-side,
-.single__product__card__container .product-card-114 .product-card-back-side,
-.single__product__card__container .product-card-115 .product-card-back-side,
-.single__product__card__container .product-card-116 .product-card-back-side,
-.single__product__card__container .product-card-117 .product-card-back-side,
-.single__product__card__container .product-card-118 .product-card-back-side,
-.single__product__card__container .product-card-119 .product-card-back-side,
-.single__product__card__container .product-card-120 .product-card-back-side,
-.single__product__card__container .product-card-121 .product-card-back-side,
-.single__product__card__container .product-card-122 .product-card-back-side,
-.single__product__card__container .product-card-123 .product-card-back-side,
-.single__product__card__container .product-card-124 .product-card-back-side,
-.single__product__card__container .product-card-125 .product-card-back-side,
-.single__product__card__container .product-card-126 .product-card-back-side,
-.single__product__card__container .product-card-127 .product-card-back-side,
-.single__product__card__container .product-card-128 .product-card-back-side,
-.single__product__card__container .product-card-129 .product-card-back-side,
-.single__product__card__container .product-card-130 .product-card-back-side,
-.single__product__card__container .product-card-131 .product-card-back-side,
-.single__product__card__container .product-card-132 .product-card-back-side,
-.single__product__card__container .product-card-133 .product-card-back-side,
-.single__product__card__container .product-card-134 .product-card-back-side,
-.single__product__card__container .product-card-135 .product-card-back-side,
-.single__product__card__container .product-card-136 .product-card-back-side,
-.single__product__card__container .product-card-137 .product-card-back-side,
-.single__product__card__container .product-card-138 .product-card-back-side,
-.single__product__card__container .product-card-139 .product-card-back-side,
-.single__product__card__container .product-card-140 .product-card-back-side,
-.single__product__card__container .product-card-141 .product-card-back-side,
-.single__product__card__container .product-card-142 .product-card-back-side,
-.single__product__card__container .product-card-143 .product-card-back-side,
-.single__product__card__container .product-card-144 .product-card-back-side,
-.single__product__card__container .product-card-145 .product-card-back-side,
-.single__product__card__container .product-card-146 .product-card-back-side,
-.single__product__card__container .product-card-147 .product-card-back-side,
-.single__product__card__container .product-card-148 .product-card-back-side,
-.single__product__card__container .product-card-149 .product-card-back-side,
-.single__product__card__container .product-card-150 .product-card-back-side,
-.single__product__card__container .product-card-151 .product-card-back-side,
-.single__product__card__container .product-card-152 .product-card-back-side,
-.single__product__card__container .product-card-153 .product-card-back-side,
-.single__product__card__container .product-card-154 .product-card-back-side,
-.single__product__card__container .product-card-155 .product-card-back-side,
-.single__product__card__container .product-card-156 .product-card-back-side,
-.single__product__card__container .product-card-157 .product-card-back-side,
-.single__product__card__container .product-card-158 .product-card-back-side,
-.single__product__card__container .product-card-159 .product-card-back-side,
-.single__product__card__container .product-card-160 .product-card-back-side,
-.single__product__card__container .product-card-161 .product-card-back-side,
-.single__product__card__container .product-card-162 .product-card-back-side,
-.single__product__card__container .product-card-163 .product-card-back-side,
-.single__product__card__container .product-card-164 .product-card-back-side,
-.single__product__card__container .product-card-165 .product-card-back-side,
-.single__product__card__container .product-card-166 .product-card-back-side,
-.single__product__card__container .product-card-167 .product-card-back-side,
-.single__product__card__container .product-card-168 .product-card-back-side,
-.single__product__card__container .product-card-169 .product-card-back-side,
-.single__product__card__container .product-card-170 .product-card-back-side,
-.single__product__card__container .product-card-171 .product-card-back-side,
-.single__product__card__container .product-card-172 .product-card-back-side,
-.single__product__card__container .product-card-173 .product-card-back-side,
-.single__product__card__container .product-card-174 .product-card-back-side,
-.single__product__card__container .product-card-175 .product-card-back-side,
-.single__product__card__container .product-card-176 .product-card-back-side,
-.single__product__card__container .product-card-177 .product-card-back-side,
-.single__product__card__container .product-card-178 .product-card-back-side,
-.single__product__card__container .product-card-179 .product-card-back-side,
-.single__product__card__container .product-card-180 .product-card-back-side,
-.single__product__card__container .product-card-181 .product-card-back-side,
-.single__product__card__container .product-card-182 .product-card-back-side,
-.single__product__card__container .product-card-183 .product-card-back-side,
-.single__product__card__container .product-card-184 .product-card-back-side,
-.single__product__card__container .product-card-185 .product-card-back-side,
-.single__product__card__container .product-card-186 .product-card-back-side,
-.single__product__card__container .product-card-187 .product-card-back-side,
-.single__product__card__container .product-card-188 .product-card-back-side,
-.single__product__card__container .product-card-189 .product-card-back-side,
-.single__product__card__container .product-card-190 .product-card-back-side,
-.single__product__card__container .product-card-191 .product-card-back-side,
-.single__product__card__container .product-card-192 .product-card-back-side,
-.single__product__card__container .product-card-193 .product-card-back-side,
-.single__product__card__container .product-card-194 .product-card-back-side,
-.single__product__card__container .product-card-195 .product-card-back-side,
-.single__product__card__container .product-card-196 .product-card-back-side,
-.single__product__card__container .product-card-197 .product-card-back-side,
-.single__product__card__container .product-card-198 .product-card-back-side,
-.single__product__card__container .product-card-199 .product-card-back-side,
-.single__product__card__container .product-card-200 .product-card-back-side {
+.single__service__provider__card__container .service-provider-card-01 .service-provider-card-back-side,
+.single__service__provider__card__container .service-provider-card-02 .service-provider-card-back-side,
+.single__service__provider__card__container .service-provider-card-03 .service-provider-card-back-side,
+.single__service__provider__card__container .service-provider-card-04 .service-provider-card-back-side,
+.single__service__provider__card__container .service-provider-card-05 .service-provider-card-back-side,
+.single__service__provider__card__container .service-provider-card-06 .service-provider-card-back-side {
   position: absolute;
   top: 0;
   left: 0;
@@ -4678,7 +3865,7 @@ nav .clientzonewrapper .advertising-drop {
   transform: rotateY(180deg);
   width: 100%;
   height: 100%;
-  background: var(--color-cta-product-card-background);
+  background: var(--color-service-provider-cards-container-background-single);
   border-radius: 1.5rem;
   overflow: hidden;
   margin: 0rem 0rem 0rem 0rem;
@@ -4687,47 +3874,47 @@ nav .clientzonewrapper .advertising-drop {
   /* border: 1px solid red; */
 }
 
-/* MEDIA QUERY - PRODUCT CARD CONTAINERS */
+/* MEDIA QUERY - SERVICE PROVIDER CARD CONTAINERS */
 
 @media screen and (max-width: 350px) {
-  .single__product__card__container {
+  .single__service__provider__card__container {
     margin: 2rem 0.75rem 2rem 0.75rem;
   }
 }
 
 /* ===================================================================================================================== */
 /* ===================================================================================================================== */
-/*                                           TODO:  PRODUCT CARD (FRONT)  TODO:                                           */
+/*                                     TODO:  SERVICE PROVIDER CARD (FRONT)  TODO:                                       */
 /* ===================================================================================================================== */
 /* ===================================================================================================================== */
 
 /* ===================================================================================================================== */
-/* TODO:  PRODUCT CARD SECTION 1 (TOP)                                                                                   */
+/* TODO:  SERVICE PROVIDER CARD SECTION 1 (TOP)                                                                          */
 /* ===================================================================================================================== */
 
-/* -------------------------------- */
+/* ================================ */
 /* FIXME:  CONTAINER - TOP SECTION  */
-/* -------------------------------- */
+/* ================================ */
 
-.product-card-front-top-section {
+.service-provider-card-front-top-section {
   position: relative;
   width: 100%;
   height: 49%;
   border-radius: 0rem 0rem 0rem 0rem;
-  background-color: var(--color-cta-product-card-top-section-background);
+  background-color: var(--color-service-provider-cards-container-background-top-section);
   /* box-shadow: var(--color-box-shadow-01); */
   /* border: 1px solid red; */
 }
 
-/* ----------------------------------------------------------------- */
-/* FIXME:  TOP SECTION - PRODUCT FEATURED IMAGE (CURRENTLY SHOWING)  */
-/* ----------------------------------------------------------------- */
+/* ========================================================================== */
+/* FIXME:  TOP SECTION - SERVICE PROVIDER FEATURED IMAGE (CURRENTLY SHOWING)  */
+/* ========================================================================== */
 
-/* ---------------- */
+/* ================ */
 /* IMAGE CONTAINER  */
-/* ---------------- */
+/* ================ */
 
-.product-card-front-top-section .product-card-main-featured-image {
+.service-provider-card-front-top-section .service-provider-card-main-featured-image {
   position: relative;
   top: 0;
   left: 0;
@@ -4739,11 +3926,11 @@ nav .clientzonewrapper .advertising-drop {
   /* border: 1px solid red; */
 }
 
-/* ------ */
-/* IMAGE  */
-/* ------ */
+/* ================ */
+/* IMAGE            */
+/* ================ */
 
-.product-card-front-top-section .product-card-main-featured-image img {
+.service-provider-card-front-top-section .service-provider-card-main-featured-image img {
   position: absolute;
   top: 0;
   left: 0;
@@ -4754,58 +3941,58 @@ nav .clientzonewrapper .advertising-drop {
 }
 
 /* ===================================================================================================================== */
-/* TODO:  PRODUCT CARD SECTION 2 - EXTRA PRODUCT IMAGES                                                                  */
+/* TODO:  SERVICE PROVIDER CARD SECTION 2 - EXTRA SERVICE PROVIDER IMAGES                                                */
 /* ===================================================================================================================== */
 
-/* ----------------------------------- */
+/* =================================== */
 /* FIXME:  SECTION 2 - MAIN CONTAINER  */
-/* ----------------------------------- */
+/* =================================== */
 
-.product-card-extra-images-container {
+.service-provider-card-extra-images-container {
   position: relative;
   height: 4.8rem;
-  background: var(--color-cta-product-card-extra-images-section-background);
+  background: var(--color-service-provider-cards-container-background-extra-images-section);
   /* border: 1px solid red; */
 }
 
-/* ------------------------------------------- */
+/* =========================================== */
 /* FIXME:  SECTION 2 - EXTRA IMAGES CONTAINER  */
-/* ------------------------------------------- */
+/* =========================================== */
 
-.product-card-extra-images-container .extra-product-images {
+.service-provider-card-extra-images-container .extra-product-images {
   height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  background: var(--color-cta-product-card-extra-images-section-background);
+  background: var(--color-service-provider-cards-container-background-extra-images-section);
   /* border: 1px solid red; */
 }
 
-.product-card-extra-images-container .extra-product-images img {
+.service-provider-card-extra-images-container .extra-product-images img {
   width: 4.5rem;
   height: 4.5rem;
   margin: 0.5rem 0.5rem 0rem 0.5rem;
   padding: 0.5rem 0.5rem 0.5rem 0.5rem;
-  background: var(--color-cta-product-card-extra-image-background);
+  background: var(--color-service-provider-cards-container-background-extra-images-section);
   border-radius: 0.5rem;
   /* box-shadow: var(--color-box-shadow-01); */
-  /* border: 1px solid var(--color-product-card-extra-image-border); */
+  /* border: 1px solid var(--color-service-provider-card-extra-image-border); */
   cursor: pointer;
 }
 
-.product-card-extra-images-container .extra-product-images img:hover {
-  border: 3px solid var(--color-cta-product-card-extra-image-border-hover);
+.service-provider-card-extra-images-container .extra-product-images img:hover {
+  border: 3px solid var(--color-service-provider-cards-container-extra-images-section-hover);
 }
 
 /* ===================================================================================================================== */
-/* TODO:  PRODUCT CARD SECTION 3 - PRODUCT INFORMATION                                                                   */
+/* TODO:  SERVICE PROVIDER CARD SECTION 3 - SERVICE PROVIDER INFORMATION                                                 */
 /* ===================================================================================================================== */
 
-/* --------------------------------------------------- */
-/* FIXME:  PRODUCT CARD - BRIEF INFORMATION CONTAINER  */
-/* --------------------------------------------------- */
+/* ============================================================ */
+/* FIXME:  SERVICE PROVIDER CARD - BRIEF INFORMATION CONTAINER  */
+/* ============================================================ */
 
-.product-card-brief-information-container {
+.service-provider-card-brief-information-container {
   position: relative;
   width: 100%;
   height: 10rem;
@@ -4814,11 +4001,11 @@ nav .clientzonewrapper .advertising-drop {
   /* border: 1px solid red; */
 }
 
-/* ----------------------------- */
-/* FIXME:  PRODUCT CARD - TITLE  */
-/* ----------------------------- */
+/* ====================================== */
+/* FIXME:  SERVICE PROVIDER CARD - TITLE  */
+/* ====================================== */
 
-.product-card-title {
+.service-provider-card-title {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -4831,15 +4018,15 @@ nav .clientzonewrapper .advertising-drop {
   font-weight: bolder;
   text-transform: uppercase;
   letter-spacing: 0.05rem;
-  color: var(--color-cta-product-card-title);
+  color: var(--color-service-provider-cards-title);
   /* border: 1px solid red; */
 }
 
-/* ----------------------------------------- */
-/* FIXME:  PRODUCT CARD - BRIEF DESCRIPTION  */
-/* ----------------------------------------- */
+/* ================================================== */
+/* FIXME:  SERVICE PROVIDER CARD - BRIEF DESCRIPTION  */
+/* ================================================== */
 
-.product-card-short-description {
+.service-provider-card-short-description {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -4851,19 +4038,19 @@ nav .clientzonewrapper .advertising-drop {
   font-weight: 500;
   text-transform: initial;
   text-align: justify;
-  color: var(--color-cta-product-card-short-description);
+  color: var(--color-service-provider-cards-short-description);
   /* border: 1px solid red; */
 }
 
 /* ===================================================================================================================== */
-/* TODO:  PRODUCT CARD - PRODUCT PRICING                                                                                 */
+/* TODO:  SERVICE PROVIDER CARD - SERVICE PRICING                                                                        */
 /* ===================================================================================================================== */
 
-/* ----------------------------------------- */
-/* FIXME:  PRODUCT CARD - PRICING CONTAINER  */
-/* ----------------------------------------- */
+/* ================================================== */
+/* FIXME:  SERVICE PROVIDER CARD - PRICING CONTAINER  */
+/* ================================================== */
 
-.product-card-pricing-container {
+.service-provider-card-pricing-container {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -4871,37 +4058,37 @@ nav .clientzonewrapper .advertising-drop {
   /* border: 1px solid red; */
 }
 
-/* ------------------------------------------ */
-/* FIXME:  PRODUCT CARD - PRICING (CURRENCY)  */
-/* ------------------------------------------ */
+/* =================================================== */
+/* FIXME:  SERVICE PROVIDER CARD - PRICING (CURRENCY)  */
+/* =================================================== */
 
-.product-card-price-currency {
+.service-provider-card-price-currency {
   font-size: 2rem;
   font-weight: 700;
   letter-spacing: 0.1rem;
   text-transform: uppercase;
   margin: 0rem 0.5rem 0rem 0rem;
-  color: var(--color-cta-product-card-price-currency);
+  color: var(--color-service-provider-cards-pricing-currency);
 }
 
-/* --------------------------------------- */
-/* FIXME:  PRODUCT CARD - PRICING (VALUE)  */
-/* --------------------------------------- */
+/* ================================================ */
+/* FIXME:  SERVICE PROVIDER CARD - PRICING (VALUE)  */
+/* ================================================ */
 
-.product-card-price-value {
+.service-provider-card-price-value {
   font-size: 2rem;
   font-weight: 700;
   letter-spacing: 0.1rem;
   text-transform: uppercase;
   margin: 0rem 0rem 0rem 0rem;
-  color: var(--color-cta-product-card-price-value);
+  color: var(--color-service-provider-cards-price-value);
 }
 
 /* ===================================================================================================================== */
-/* TODO:  PRODUCT CARD - BUTTON (ADD TO SHOPPING CART)                                                                   */
+/* TODO:  SERVICE PROVIDER CARD - BUTTON (ADD TO SHOPPING CART)                                                          */
 /* ===================================================================================================================== */
 
-.product-card-buttons-container {
+.service-provider-card-buttons-container {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -5213,7 +4400,7 @@ nav .clientzonewrapper .advertising-drop {
 /* FIXME:  BUTTON "X" TO CLOSE BACK  FIXME: */
 /* ---------------------------------------- */
 
-.single__product__card__container .close {
+.single__service__provider__card__container .close {
   width: 2.5rem;
   height: 2.5rem;
   position: absolute;
@@ -5231,7 +4418,7 @@ nav .clientzonewrapper .advertising-drop {
   /* border: 1px solid purple; */
 }
 
-.single__product__card__container .close:hover {
+.single__service__provider__card__container .close:hover {
   transform: scale(1.1);
 }
 
@@ -5239,7 +4426,7 @@ nav .clientzonewrapper .advertising-drop {
 /* FIXME:  SUB-CONTAINER - HOLDING ALL CONTENT/TEXT ON BACK PROFILE  FIXME: */
 /* ------------------------------------------------------------------------ */
 
-.product-information-container-back {
+.service-provider-information-container-back {
   padding: 2rem 1rem 2rem 1rem;
   width: 100%;
   height: 100%;
@@ -5255,14 +4442,14 @@ nav .clientzonewrapper .advertising-drop {
 /* FIXME:  PRODUCT CARD (BACK) - BRAND LOGO     */
 /* -------------------------------------------- */
 
-.product-brand-logo {
+.service-provider-brand-logo {
   position: absolute;
   top: 1rem;
   left: 50%;
   transform: translateX(-50%);
 }
 
-.product-brand-logo img {
+.service-provider-brand-logo img {
   width: auto;
   height: 3.5rem;
   object-fit: contain;
@@ -5276,7 +4463,7 @@ nav .clientzonewrapper .advertising-drop {
 
 /* MAIN CONTAINER */
 
-.product-identification-container-back {
+.service-provider-identification-container-back {
   position: absolute;
   top: 4.5rem;
   left: 0;
@@ -5294,7 +4481,7 @@ nav .clientzonewrapper .advertising-drop {
 /* FIXME:  PRODUCT CARD (BACK) - BRAND NAME       */
 /* ---------------------------------------------- */
 
-.product-brand-name-container {
+.service-provider-brand-name-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -5304,7 +4491,7 @@ nav .clientzonewrapper .advertising-drop {
   /* border: 1px solid blue; */
 }
 
-.product-brand-name-container .product-brand-name-title {
+.service-provider-brand-name-container .service-provider-brand-name-title {
   font-size: 0.9rem;
   font-weight: 700;
   text-decoration: none;
@@ -5315,7 +4502,7 @@ nav .clientzonewrapper .advertising-drop {
   /* border: 1px solid yellow; */
 }
 
-.product-brand-name-container .product-brand-name-info {
+.service-provider-brand-name-container .service-provider-brand-name-info {
   font-size: 0.8rem;
   font-weight: 600;
   text-decoration: none;
@@ -5330,7 +4517,7 @@ nav .clientzonewrapper .advertising-drop {
 /* FIXME:  PRODUCT CARD (BACK) - PRODUCT CODE     */
 /* ---------------------------------------------- */
 
-.product-code-container {
+.service-provider-code-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -5340,7 +4527,7 @@ nav .clientzonewrapper .advertising-drop {
   /* border: 1px solid blue; */
 }
 
-.product-code-container .product-code-title {
+.service-provider-code-container .service-provider-code-title {
   font-size: 0.9rem;
   font-weight: 700;
   text-decoration: none;
@@ -5351,7 +4538,7 @@ nav .clientzonewrapper .advertising-drop {
   /* border: 1px solid yellow; */
 }
 
-.product-code-container .product-code-info {
+.service-provider-code-container .service-provider-code-info {
   font-size: 0.8rem;
   font-weight: 600;
   text-decoration: none;
@@ -5366,7 +4553,7 @@ nav .clientzonewrapper .advertising-drop {
 /* FIXME:  PRODUCT CARD (BACK) - MODEL NUMBER     */
 /* ---------------------------------------------- */
 
-.product-model-number-container {
+.service-provider-model-number-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -5376,7 +4563,7 @@ nav .clientzonewrapper .advertising-drop {
   /* border: 1px solid blue; */
 }
 
-.product-model-number-container .product-model-number-title {
+.service-provider-model-number-container .service-provider-model-number-title {
   font-size: 0.9rem;
   font-weight: 700;
   text-decoration: none;
@@ -5387,7 +4574,7 @@ nav .clientzonewrapper .advertising-drop {
   /* border: 1px solid yellow; */
 }
 
-.product-model-number-container .product-model-number-info {
+.service-provider-model-number-container .service-provider-model-number-info {
   font-size: 0.8rem;
   font-weight: 600;
   text-decoration: none;
@@ -5402,7 +4589,7 @@ nav .clientzonewrapper .advertising-drop {
 /* FIXME:  PRODUCT CARD (BACK) - AVAILABLE STOCK  */
 /* ---------------------------------------------- */
 
-.product-stock-available-container {
+.service-provider-stock-available-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -5412,7 +4599,7 @@ nav .clientzonewrapper .advertising-drop {
   /* border: 1px solid blue; */
 }
 
-.product-stock-available-container .product-stock-available-title {
+.service-provider-stock-available-container .service-provider-stock-available-title {
   font-size: 0.9rem;
   font-weight: 700;
   text-decoration: none;
@@ -5423,7 +4610,7 @@ nav .clientzonewrapper .advertising-drop {
   /* border: 1px solid yellow; */
 }
 
-.product-stock-available-container .product-stock-available-info {
+.service-provider-stock-available-container .service-provider-stock-available-info {
   font-size: 0.8rem;
   font-weight: 600;
   text-decoration: none;
@@ -5441,7 +4628,7 @@ nav .clientzonewrapper .advertising-drop {
 
 /* MAIN CONTAINER */
 
-.product-measurements-container {
+.service-provider-measurements-container {
   position: absolute;
   top: 8.5rem;
   left: 0;
@@ -5459,7 +4646,7 @@ nav .clientzonewrapper .advertising-drop {
 /* FIXME:  PRODUCT CARD (BACK) - LENGHT (CM)      */
 /* ---------------------------------------------- */
 
-.product-length-container {
+.service-provider-length-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -5469,7 +4656,7 @@ nav .clientzonewrapper .advertising-drop {
   /* border: 1px solid blue; */
 }
 
-.product-length-container .product-length-title {
+.service-provider-length-container .service-provider-length-title {
   font-size: 0.9rem;
   font-weight: 700;
   text-decoration: none;
@@ -5480,7 +4667,7 @@ nav .clientzonewrapper .advertising-drop {
   /* border: 1px solid yellow; */
 }
 
-.product-length-container .product-length-title span {
+.service-provider-length-container .service-provider-length-title span {
   font-size: 0.6rem;
   font-weight: 700;
   text-decoration: none;
@@ -5489,7 +4676,7 @@ nav .clientzonewrapper .advertising-drop {
   color: var(--color-cta-heading-values);
 }
 
-.product-length-container .product-length-info {
+.service-provider-length-container .service-provider-length-info {
   font-size: 0.8rem;
   font-weight: 600;
   text-decoration: none;
@@ -5504,7 +4691,7 @@ nav .clientzonewrapper .advertising-drop {
 /* FIXME:  PRODUCT CARD (BACK) - WIDTH (CM)      */
 /* ---------------------------------------------- */
 
-.product-width-container {
+.service-provider-width-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -5514,7 +4701,7 @@ nav .clientzonewrapper .advertising-drop {
   /* border: 1px solid blue; */
 }
 
-.product-width-container .product-width-title {
+.service-provider-width-container .service-provider-width-title {
   font-size: 0.9rem;
   font-weight: 700;
   text-decoration: none;
@@ -5525,7 +4712,7 @@ nav .clientzonewrapper .advertising-drop {
   /* border: 1px solid yellow; */
 }
 
-.product-width-container .product-width-title span {
+.service-provider-width-container .service-provider-width-title span {
   font-size: 0.6rem;
   font-weight: 700;
   text-decoration: none;
@@ -5534,7 +4721,7 @@ nav .clientzonewrapper .advertising-drop {
   color: var(--color-cta-heading-values);
 }
 
-.product-width-container .product-width-info {
+.service-provider-width-container .service-provider-width-info {
   font-size: 0.8rem;
   font-weight: 600;
   text-decoration: none;
@@ -5549,7 +4736,7 @@ nav .clientzonewrapper .advertising-drop {
 /* FIXME:  PRODUCT CARD (BACK) - HEIGHT (CM)      */
 /* ---------------------------------------------- */
 
-.product-height-container {
+.service-provider-height-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -5559,7 +4746,7 @@ nav .clientzonewrapper .advertising-drop {
   /* border: 1px solid blue; */
 }
 
-.product-height-container .product-height-title {
+.service-provider-height-container .service-provider-height-title {
   font-size: 0.9rem;
   font-weight: 700;
   text-decoration: none;
@@ -5570,7 +4757,7 @@ nav .clientzonewrapper .advertising-drop {
   /* border: 1px solid yellow; */
 }
 
-.product-height-container .product-height-title span {
+.service-provider-height-container .service-provider-height-title span {
   font-size: 0.6rem;
   font-weight: 700;
   text-decoration: none;
@@ -5579,7 +4766,7 @@ nav .clientzonewrapper .advertising-drop {
   color: var(--color-cta-heading-values);
 }
 
-.product-height-container .product-height-info {
+.service-provider-height-container .service-provider-height-info {
   font-size: 0.8rem;
   font-weight: 600;
   text-decoration: none;
@@ -5594,7 +4781,7 @@ nav .clientzonewrapper .advertising-drop {
 /* FIXME:  PRODUCT CARD (BACK) - WEIGHT (KG)      */
 /* ---------------------------------------------- */
 
-.product-weight-container {
+.service-provider-weight-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -5604,7 +4791,7 @@ nav .clientzonewrapper .advertising-drop {
   /* border: 1px solid blue; */
 }
 
-.product-weight-container .product-weight-title {
+.service-provider-weight-container .service-provider-weight-title {
   font-size: 0.9rem;
   font-weight: 700;
   text-decoration: none;
@@ -5615,7 +4802,7 @@ nav .clientzonewrapper .advertising-drop {
   /* border: 1px solid yellow; */
 }
 
-.product-weight-container .product-weight-title span {
+.service-provider-weight-container .service-provider-weight-title span {
   font-size: 0.6rem;
   font-weight: 700;
   text-decoration: none;
@@ -5624,7 +4811,7 @@ nav .clientzonewrapper .advertising-drop {
   color: var(--color-cta-heading-values);
 }
 
-.product-weight-container .product-weight-info {
+.service-provider-weight-container .service-provider-weight-info {
   font-size: 0.8rem;
   font-weight: 600;
   text-decoration: none;
@@ -5642,7 +4829,7 @@ nav .clientzonewrapper .advertising-drop {
 
 /* MAIN CONTAINER */
 
-.product-full-description-container {
+.service-provider-full-description-container {
   position: absolute;
   top: 13rem;
   left: 0;
@@ -5657,7 +4844,7 @@ nav .clientzonewrapper .advertising-drop {
   /* border: 1px solid blue; */
 }
 
-.product-full-description-container .product-full-specifications-title {
+.service-provider-full-description-container .service-provider-full-specifications-title {
   position: absolute;
   top: 0;
   left: 0;
@@ -5674,7 +4861,7 @@ nav .clientzonewrapper .advertising-drop {
   /* border: 1px solid yellow; */
 }
 
-.product-full-description-container .product-full-specifications-details {
+.service-provider-full-description-container .service-provider-full-specifications-details {
   position: absolute;
   top: 2rem;
   left: 0;
@@ -5697,7 +4884,7 @@ nav .clientzonewrapper .advertising-drop {
 /*             (incl. title & description)                */
 /* ------------------------------------------------------ */
 
-.product-card-important-notification-container {
+.service-provider-card-important-notification-container {
   position: absolute;
   top: 40rem;
   left: 0;
@@ -5711,8 +4898,8 @@ nav .clientzonewrapper .advertising-drop {
   /* border: 1px solid blue; */
 }
 
-.product-card-important-notification-container
-  .product-card-notification-title {
+.service-provider-card-important-notification-container
+  .service-provider-card-notification-title {
   position: absolute;
   top: 0;
   left: 0;
@@ -5729,7 +4916,7 @@ nav .clientzonewrapper .advertising-drop {
   /* border: 1px solid yellow; */
 }
 
-.product-card-important-notification-container .product-card-notification-info {
+.service-provider-card-important-notification-container .service-provider-card-notification-info {
   position: absolute;
   top: 2rem;
   left: 0;
@@ -5747,8 +4934,8 @@ nav .clientzonewrapper .advertising-drop {
   /* border: 1px solid green; */
 }
 
-.product-card-important-notification-container
-  .product-card-notification-info
+.service-provider-card-important-notification-container
+  .service-provider-card-notification-info
   a {
   display: inline-block;
   text-decoration: none;
@@ -5756,7 +4943,7 @@ nav .clientzonewrapper .advertising-drop {
 
 /* ===================================================================================================================== */
 /* ===================================================================================================================== */
-/* FIXME:FIXME:                                 SECTION - PRODUCT CARDS (END)                               FIXME:FIXME: */
+/* FIXME:FIXME:                    SECTION - SERVICE PROVIDER CREDENTIAL CARDS (END)                        FIXME:FIXME: */
 /* ===================================================================================================================== */
 /* ===================================================================================================================== */
 
