@@ -3782,7 +3782,7 @@ nav .clientzonewrapper .advertising-drop {
   justify-content: center;
   align-items: center;
   width: 26rem;
-  height: 50rem;
+  height: 49rem;
   margin: 2rem 2rem 2rem 2rem;
   padding: 0rem 0rem 0rem 0rem;
   border-radius: 1.5rem;
@@ -3943,12 +3943,12 @@ nav .clientzonewrapper .advertising-drop {
 }
 
 /* ========================================================================== */
-/* FIXME:  TOP SECTION - SERVICE PROVIDER FEATURED IMAGE (CURRENTLY SHOWING)  */
+/* FIXME:  TOP SECTION - SERVICE PROVIDER - COMPANY LOGO                      */
 /* ========================================================================== */
 
-/* ================ */
-/* IMAGE CONTAINER  */
-/* ================ */
+/* =============================== */
+/* IMAGE CONTAINER - COMPANY LOGO  */
+/* =============================== */
 
 .service-provider-card-front-top-section .service-provider-card-logo-section {
   position: relative;
@@ -3962,9 +3962,9 @@ nav .clientzonewrapper .advertising-drop {
   /* border: 1px solid red; */
 }
 
-/* ================ */
-/* IMAGE            */
-/* ================ */
+/* ==================== */
+/* IMAGE - COMPANY LOGO */
+/* ==================== */
 
 .service-provider-card-front-top-section
   .service-provider-card-logo-section
@@ -4043,7 +4043,7 @@ nav .clientzonewrapper .advertising-drop {
   height: 3rem;
   margin: 0rem 0rem 0rem 0rem;
   padding: 0rem 0.5rem 0rem 0.5rem;
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 
 /* ============================================= */
@@ -4051,6 +4051,7 @@ nav .clientzonewrapper .advertising-drop {
 /* ============================================= */
 
 .service-provider-card-company-name {
+  position: absolute;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -4059,12 +4060,76 @@ nav .clientzonewrapper .advertising-drop {
   width: 100%;
   height: 3rem;
   font-size: 1.5rem;
-  line-height: 1.3;
   font-weight: bolder;
   text-transform: uppercase;
-  letter-spacing: 0.05rem;
   color: var(--color-service-provider-cards-title);
+  /* line-height: 1.3; */
+  /* letter-spacing: 0.05rem; */
   /* border: 1px solid red; */
+}
+
+/* ================================================ */
+/* FIXME:  SERVICE PROVIDER CARD - SERVICE CATEGORY */
+/* ================================================ */
+
+/* ====================================================== */
+/* TODO:  SERVICE PROVIDER IDENTIFICATION SECTION   TODO: */
+/*                   (Service Category)                   */
+/* ====================================================== */
+
+/* MAIN CONTAINER */
+
+.service-provider-service-category-container {
+  /* position: absolute;
+  top: 4.5rem;
+  left: 0; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 4rem;
+  margin: 1rem 0rem 0rem 0rem;
+  padding: 0rem 0rem 0rem 0rem;
+  /* border: 1px solid red; */
+}
+
+/* ================================================= */
+/* FIXME:  SERVICE PROVIDER - SERVICE CATEGORY       */
+/* ================================================= */
+
+.service-provider-main-category-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  height: 4rem;
+  /* border: 1px solid blue; */
+}
+
+.service-provider-main-category-heading {
+  font-size: 1.2rem;
+  font-weight: 700;
+  line-height: 1.5;
+  text-decoration: none;
+  text-transform: uppercase;
+  width: 100%;
+  height: 2rem;
+  color: var(--color-service-provider-cards-back-heading-titles);
+  /* border: 1px solid yellow; */
+}
+
+.service-provider-main-category-value {
+  font-size: 1.2rem;
+  font-weight: 500;
+  line-height: 1.5;
+  text-decoration: none;
+  text-transform: uppercase;
+  width: 100%;
+  height: 2rem;
+  color: var(--color-service-provider-cards-back-heading-values);
+  /* border: 1px solid green; */
 }
 
 /* ================================================ */
@@ -4089,7 +4154,7 @@ nav .clientzonewrapper .advertising-drop {
   height: 4rem;
   margin: 1rem 0rem 0rem 0rem;
   padding: 0rem 0rem 0rem 0rem;
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 
 /* ================================================= */
@@ -4104,7 +4169,7 @@ nav .clientzonewrapper .advertising-drop {
   text-align: center;
   width: 100%;
   height: 4rem;
-  border: 1px solid blue;
+  /* border: 1px solid blue; */
 }
 
 .service-provider-code-heading {
@@ -4116,7 +4181,7 @@ nav .clientzonewrapper .advertising-drop {
   width: 100%;
   height: 2rem;
   color: var(--color-service-provider-cards-back-heading-titles);
-  border: 1px solid yellow;
+  /* border: 1px solid yellow; */
 }
 
 .service-provider-code-value {
@@ -4128,7 +4193,7 @@ nav .clientzonewrapper .advertising-drop {
   width: 100%;
   height: 2rem;
   color: var(--color-service-provider-cards-back-heading-values);
-  border: 1px solid green;
+  /* border: 1px solid green; */
 }
 
 /* ============================================================ */
@@ -4142,28 +4207,30 @@ nav .clientzonewrapper .advertising-drop {
   align-items: center;
   text-align: center;
   width: 100%;
-  height: 3rem;
+  height: 4rem;
   /* border: 1px solid blue; */
 }
 
-.service-provider-province-container .service-provider-province-title {
-  font-size: 0.9rem;
+.service-provider-province-heading {
+  font-size: 1.2rem;
   font-weight: 700;
+  line-height: 1.5;
   text-decoration: none;
   text-transform: uppercase;
   width: 100%;
-  height: 1.5rem;
+  height: 2rem;
   color: var(--color-service-provider-cards-back-heading-titles);
   /* border: 1px solid yellow; */
 }
 
-.service-provider-province-container .service-provider-province-info {
-  font-size: 0.8rem;
-  font-weight: 600;
+.service-provider-province-value {
+  font-size: 1.2rem;
+  font-weight: 500;
+  line-height: 1.5;
   text-decoration: none;
   text-transform: uppercase;
   width: 100%;
-  height: 1.5rem;
+  height: 2rem;
   color: var(--color-service-provider-cards-back-heading-values);
   /* border: 1px solid green; */
 }
@@ -4172,13 +4239,104 @@ nav .clientzonewrapper .advertising-drop {
 /* FIXME:  SERVICE PROVIDER CARD - REGION & CITY    */
 /* ================================================ */
 
-/* ================================================ */
-/* FIXME:  SERVICE PROVIDER CARD - SERVICE CATEGORY */
-/* ================================================ */
+/* ====================================================== */
+/* TODO:  SERVICE PROVIDER IDENTIFICATION SECTION   TODO: */
+/*                   (Region / City)                      */
+/* ====================================================== */
 
-/* ================================================ */
-/* FIXME:  SERVICE PROVIDER CARD - SERVICE PROVIDED */
-/* ================================================ */
+/* MAIN CONTAINER */
+
+.service-provider-region-and-city-container {
+  /* position: absolute;
+  top: 4.5rem;
+  left: 0; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 4rem;
+  margin: 1rem 0rem 1rem 0rem;
+  padding: 0rem 0rem 0rem 0rem;
+  /* border: 1px solid red; */
+}
+
+/* ================================================= */
+/* FIXME:  SERVICE PROVIDER - REGION                 */
+/* ================================================= */
+
+.service-provider-region-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  height: 4rem;
+  /* border: 1px solid blue; */
+}
+
+.service-provider-region-heading {
+  font-size: 1.2rem;
+  font-weight: 700;
+  line-height: 1.5;
+  text-decoration: none;
+  text-transform: uppercase;
+  width: 100%;
+  height: 2rem;
+  color: var(--color-service-provider-cards-back-heading-titles);
+  /* border: 1px solid yellow; */
+}
+
+.service-provider-region-value {
+  font-size: 1.2rem;
+  font-weight: 500;
+  line-height: 1.5;
+  text-decoration: none;
+  text-transform: uppercase;
+  width: 100%;
+  height: 2rem;
+  color: var(--color-service-provider-cards-back-heading-values);
+  /* border: 1px solid green; */
+}
+
+/* ============================================================ */
+/* FIXME:  SERVICE PROVIDER - CITY                              */
+/* ============================================================ */
+
+.service-provider-city-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  height: 4rem;
+  /* border: 1px solid blue; */
+}
+
+.service-provider-city-heading {
+  font-size: 1.2rem;
+  font-weight: 700;
+  line-height: 1.5;
+  text-decoration: none;
+  text-transform: uppercase;
+  width: 100%;
+  height: 2rem;
+  color: var(--color-service-provider-cards-back-heading-titles);
+  /* border: 1px solid yellow; */
+}
+
+.service-provider-city-value {
+  font-size: 1.2rem;
+  font-weight: 500;
+  line-height: 1.5;
+  text-decoration: none;
+  text-transform: uppercase;
+  width: 100%;
+  height: 2rem;
+  color: var(--color-service-provider-cards-back-heading-values);
+  /* border: 1px solid green; */
+}
 
 /* ================================================== */
 /* FIXME:  SERVICE PROVIDER CARD - BRIEF DESCRIPTION  */
@@ -4592,310 +4750,159 @@ nav .clientzonewrapper .advertising-drop {
   transform: scale(1.1);
 }
 
-/* ======================================================================== */
-/* FIXME:  SUB-CONTAINER - HOLDING ALL CONTENT/TEXT ON BACK PROFILE  FIXME: */
-/* ======================================================================== */
+/* ======================================================================================= */
 
-.service-provider-information-container-back {
-  padding: 2rem 1rem 2rem 1rem;
+/* ===================================================================================================================== */
+/* TODO:  SERVICE PROVIDER - CONTACT PERSON PHOTO                                                                        */
+/* ===================================================================================================================== */
+
+/* ================================ */
+/* FIXME:  CONTAINER - TOP SECTION  */
+/* ================================ */
+
+.service-provider-card-back-top-section {
+  position: relative;
+  width: 100%;
+  height: 50%;
+  border-radius: 0rem 0rem 0rem 0rem;
+  background-color: var(
+    --color-service-provider-cards-container-background-top-section
+  );
+  /* box-shadow: var(--color-box-shadow-01); */
+  /* border: 1px solid red; */
+}
+
+/* ========================================================================== */
+/* FIXME:  TOP SECTION - SERVICE PROVIDER - CONTACT PERSON PHOTO              */
+/* ========================================================================== */
+
+/* ======================== */
+/* IMAGE CONTAINER - PHOTO  */
+/* ======================== */
+
+.service-provider-card-back-top-section .service-provider-card-photo-section {
+  position: relative;
+  top: 0;
+  left: 0;
+  margin: 0rem 0rem 0rem 0rem;
+  padding: 0rem 0rem 0rem 0rem;
   width: 100%;
   height: 100%;
-  text-align: center;
-  border-radius: 0.5rem;
-  background-color: var(--color-service-provider-cards-back-background);
-  color: var(--color-service-provider-cards-back-text);
-  /* box-shadow: var(--color-all-elements-box-shadow); */
-  /* border: 5px solid plum; */
+  z-index: 0;
+  /* border: 1px solid red; */
 }
 
-/* ===================================================== */
-/* FIXME:  SERVICE PROVIDER CARD (BACK) - BRAND LOGO     */
-/* ===================================================== */
+/* ================ */
+/* IMAGE - PHOTO    */
+/* ================ */
 
-.service-provider-brand-logo {
+.service-provider-card-back-top-section
+  .service-provider-card-photo-section
+  img {
   position: absolute;
-  top: 1rem;
-  left: 50%;
-  transform: translateX(-50%);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  padding: 0.25rem 1rem 0.25rem 1rem;
 }
 
-.service-provider-brand-logo img {
-  width: auto;
-  height: 3.5rem;
-  object-fit: contain;
-  padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+/* ======================================================================================= */
+
+/* ===================================================================================================================== */
+/* TODO:  SERVICE PROVIDER - CONTACT PERSON NAME                                                                         */
+/* ===================================================================================================================== */
+
+/* ============================================================== */
+/* FIXME:  SERVICE PROVIDER CARD - CONTACT PERSON NAME CONTAINER  */
+/* ============================================================== */
+
+.service-provider-card-brief-information-container {
+  position: relative;
+  width: 100%;
+  height: 3rem;
+  margin: 0rem 0rem 0rem 0rem;
+  padding: 0rem 0.5rem 0rem 0.5rem;
+  /* border: 1px solid red; */
 }
+
+/* ==================================================== */
+/* FIXME:  SERVICE PROVIDER CARD - CONTACT PERSON NAME  */
+/* ==================================================== */
+
+.service-provider-card-contact-person-name {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0.2rem 0rem 0.2rem 0rem;
+  width: 100%;
+  height: 3rem;
+  font-size: 1.5rem;
+  font-weight: bolder;
+  text-transform: uppercase;
+  color: var(--color-service-provider-cards-title);
+  /* border: 1px solid red; */
+}
+
+/* ===================================================================================================================== */
+/* TODO:  SERVICE PROVIDER - TELEPHONE AND MOBILE                                                                        */
+/* ===================================================================================================================== */
 
 /* ====================================================== */
-/* TODO:  SERVICE PROVIDER IDENTIFICATION SECTION   TODO: */
-/* (incl. brand name, product code, model number & stock) */
+/* TODO:  SERVICE PROVIDER CONTACT DETAILS SECTION  TODO: */
+/*                (Telephone / Mobile)                    */
 /* ====================================================== */
 
 /* MAIN CONTAINER */
 
-.service-provider-identification-container-back {
-  position: absolute;
+.service-provider-telephone-and-mobile-container {
+  /* position: absolute;
   top: 4.5rem;
-  left: 0;
+  left: 0; */
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
   height: 4rem;
-  margin: 0rem 0rem 0rem 0rem;
-  padding: 0rem 0rem 0rem 0rem;
-  border: 1px solid red;
-}
-
-/* ================================================= */
-/* FIXME:  SERVICE PROVIDER CARD (BACK) - BRAND NAME */
-/* ================================================= */
-
-.service-provider-brand-name-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 3rem;
-  /* border: 1px solid blue; */
-}
-
-.service-provider-brand-name-container .service-provider-brand-name-title {
-  font-size: 0.9rem;
-  font-weight: 700;
-  text-decoration: none;
-  text-transform: uppercase;
-  width: 100%;
-  height: 1.5rem;
-  color: var(--color-service-provider-cards-back-heading-titles);
-  /* border: 1px solid yellow; */
-}
-
-.service-provider-brand-name-container .service-provider-brand-name-info {
-  font-size: 0.8rem;
-  font-weight: 600;
-  text-decoration: none;
-  text-transform: uppercase;
-  width: 100%;
-  height: 1.5rem;
-  color: var(--color-service-provider-cards-back-heading-values);
-  /* border: 1px solid green; */
-}
-
-/* ============================================================ */
-/* FIXME:  SERVICE PROVIDER CARD (BACK) - SERVICE PROVIDER CODE */
-/* ============================================================ */
-
-.service-provider-code-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 3rem;
-  /* border: 1px solid blue; */
-}
-
-.service-provider-code-container .service-provider-code-title {
-  font-size: 0.9rem;
-  font-weight: 700;
-  text-decoration: none;
-  text-transform: uppercase;
-  width: 100%;
-  height: 1.5rem;
-  color: var(--color-service-provider-cards-back-heading-titles);
-  /* border: 1px solid yellow; */
-}
-
-.service-provider-code-container .service-provider-code-info {
-  font-size: 0.8rem;
-  font-weight: 600;
-  text-decoration: none;
-  text-transform: uppercase;
-  width: 100%;
-  height: 1.5rem;
-  color: var(--color-service-provider-cards-back-heading-values);
-  /* border: 1px solid green; */
-}
-
-/* =================================================== */
-/* FIXME:  SERVICE PROVIDER CARD (BACK) - MODEL NUMBER */
-/* =================================================== */
-
-.service-provider-model-number-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 3rem;
-  /* border: 1px solid blue; */
-}
-
-.service-provider-model-number-container .service-provider-model-number-title {
-  font-size: 0.9rem;
-  font-weight: 700;
-  text-decoration: none;
-  text-transform: uppercase;
-  width: 100%;
-  height: 1.5rem;
-  color: var(--color-service-provider-cards-back-heading-titles);
-  /* border: 1px solid yellow; */
-}
-
-.service-provider-model-number-container .service-provider-model-number-info {
-  font-size: 0.8rem;
-  font-weight: 600;
-  text-decoration: none;
-  text-transform: uppercase;
-  width: 100%;
-  height: 1.5rem;
-  color: var(--color-service-provider-cards-back-heading-values);
-  /* border: 1px solid green; */
-}
-
-/* ======================================================= */
-/* FIXME:  SERVICE PROVIDER CARD (BACK) - AVAILABLE STOCK  */
-/* ======================================================= */
-
-.service-provider-stock-available-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 3rem;
-  /* border: 1px solid blue; */
-}
-
-.service-provider-stock-available-container
-  .service-provider-stock-available-title {
-  font-size: 0.9rem;
-  font-weight: 700;
-  text-decoration: none;
-  text-transform: uppercase;
-  width: 100%;
-  height: 1.5rem;
-  color: var(--color-service-provider-cards-back-heading-titles);
-  /* border: 1px solid yellow; */
-}
-
-.service-provider-stock-available-container
-  .service-provider-stock-available-info {
-  font-size: 0.8rem;
-  font-weight: 600;
-  text-decoration: none;
-  text-transform: uppercase;
-  width: 100%;
-  height: 1.5rem;
-  color: var(--color-service-provider-cards-back-heading-values);
-  /* border: 1px solid green; */
-}
-
-/* =============================================================== */
-/* TODO:        SERVICE PROVIDER MEASUREMENT SECTION         TODO: */
-/*  (incl. cta-Length(CM), Width(CM), Height(CM), Weigth(KG)       */
-/* =============================================================== */
-
-/* MAIN CONTAINER */
-
-.service-provider-measurements-container {
-  position: absolute;
-  top: 8.5rem;
-  left: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 4.5rem;
-  margin: 0rem 0rem 0rem 0rem;
+  margin: 1rem 0rem 1rem 0rem;
   padding: 0rem 0rem 0rem 0rem;
   /* border: 1px solid red; */
 }
 
-/* ================================================== */
-/* FIXME:  SERVICE PROVIDER CARD (BACK) - LENGHT (CM) */
-/* ================================================== */
-
-.service-provider-length-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 4.5rem;
-  /* border: 1px solid blue; */
-}
-
-.service-provider-length-container .service-provider-length-title {
-  font-size: 0.9rem;
-  font-weight: 700;
-  text-decoration: none;
-  text-transform: uppercase;
-  width: 100%;
-  height: 2.5rem;
-  color: var(--color-service-provider-cards-back-heading-titles);
-  /* border: 1px solid yellow; */
-}
-
-.service-provider-length-container .service-provider-length-title span {
-  font-size: 0.6rem;
-  font-weight: 700;
-  text-decoration: none;
-  text-transform: uppercase;
-  align-items: center;
-  color: var(--color-service-provider-cards-back-heading-values);
-}
-
-.service-provider-length-container .service-provider-length-info {
-  font-size: 0.8rem;
-  font-weight: 600;
-  text-decoration: none;
-  text-transform: uppercase;
-  width: 100%;
-  height: 2rem;
-  color: var(--color-service-provider-cards-back-heading-values);
-  /* border: 1px solid green; */
-}
-
 /* ================================================= */
-/* FIXME:  SERVICE PROVIDER CARD (BACK) - WIDTH (CM) */
+/* FIXME:  SERVICE PROVIDER - TELEPHONE NUMBER       */
 /* ================================================= */
 
-.service-provider-width-container {
+.service-provider-telephone-number-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
   width: 100%;
-  height: 4.5rem;
+  height: 4rem;
   /* border: 1px solid blue; */
 }
 
-.service-provider-width-container .service-provider-width-title {
-  font-size: 0.9rem;
+.service-provider-telephone-number-heading {
+  font-size: 1.2rem;
   font-weight: 700;
+  line-height: 1.5;
   text-decoration: none;
   text-transform: uppercase;
   width: 100%;
-  height: 2.5rem;
+  height: 2rem;
   color: var(--color-service-provider-cards-back-heading-titles);
   /* border: 1px solid yellow; */
 }
 
-.service-provider-width-container .service-provider-width-title span {
-  font-size: 0.6rem;
-  font-weight: 700;
-  text-decoration: none;
-  text-transform: uppercase;
-  align-items: center;
-  color: var(--color-service-provider-cards-back-heading-values);
-}
-
-.service-provider-width-container .service-provider-width-info {
-  font-size: 0.8rem;
-  font-weight: 600;
+.service-provider-telephone-number-value {
+  font-size: 1.2rem;
+  font-weight: 500;
+  line-height: 1.5;
   text-decoration: none;
   text-transform: uppercase;
   width: 100%;
@@ -4904,43 +4911,37 @@ nav .clientzonewrapper .advertising-drop {
   /* border: 1px solid green; */
 }
 
-/* ================================================== */
-/* FIXME:  SERVICE PROVIDER CARD (BACK) - HEIGHT (CM) */
-/* ================================================== */
+/* ============================================================ */
+/* FIXME:  SERVICE PROVIDER - MOBILE NUMBER                     */
+/* ============================================================ */
 
-.service-provider-height-container {
+.service-provider-mobile-number-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
   width: 100%;
-  height: 4.5rem;
+  height: 4rem;
   /* border: 1px solid blue; */
 }
 
-.service-provider-height-container .service-provider-height-title {
-  font-size: 0.9rem;
+.service-provider-mobile-number-heading {
+  font-size: 1.2rem;
   font-weight: 700;
+  line-height: 1.5;
   text-decoration: none;
   text-transform: uppercase;
   width: 100%;
-  height: 2.5rem;
+  height: 2rem;
   color: var(--color-service-provider-cards-back-heading-titles);
   /* border: 1px solid yellow; */
 }
 
-.service-provider-height-container .service-provider-height-title span {
-  font-size: 0.6rem;
-  font-weight: 700;
-  text-decoration: none;
-  text-transform: uppercase;
-  align-items: center;
-  color: var(--color-service-provider-cards-back-heading-values);
-}
-
-.service-provider-height-container .service-provider-height-info {
-  font-size: 0.8rem;
-  font-weight: 600;
+.service-provider-mobile-number-value {
+  font-size: 1.2rem;
+  font-weight: 500;
+  line-height: 1.5;
   text-decoration: none;
   text-transform: uppercase;
   width: 100%;
@@ -4949,83 +4950,50 @@ nav .clientzonewrapper .advertising-drop {
   /* border: 1px solid green; */
 }
 
-/* ================================================== */
-/* FIXME:  SERVICE PROVIDER CARD (BACK) - WEIGHT (KG) */
-/* ================================================== */
-
-.service-provider-weight-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 4.5rem;
-  /* border: 1px solid blue; */
-}
-
-.service-provider-weight-container .service-provider-weight-title {
-  font-size: 0.9rem;
-  font-weight: 700;
-  text-decoration: none;
-  text-transform: uppercase;
-  width: 100%;
-  height: 2.5rem;
-  color: var(--color-service-provider-cards-back-heading-titles);
-  /* border: 1px solid yellow; */
-}
-
-.service-provider-weight-container .service-provider-weight-title span {
-  font-size: 0.6rem;
-  font-weight: 700;
-  text-decoration: none;
-  text-transform: uppercase;
-  align-items: center;
-  color: var(--color-service-provider-cards-back-heading-values);
-}
-
-.service-provider-weight-container .service-provider-weight-info {
-  font-size: 0.8rem;
-  font-weight: 600;
-  text-decoration: none;
-  text-transform: uppercase;
-  width: 100%;
-  height: 2rem;
-  color: var(--color-service-provider-cards-back-heading-values);
-  /* border: 1px solid green; */
-}
+/* ===================================================================================================================== */
+/* TODO:  SERVICE PROVIDER - WHATSAPP AND EMAIL                                                                          */
+/* ===================================================================================================================== */
 
 /* ====================================================== */
-/* TODO: SERVICE PROVIDER FULL DESCRIPTION SECTION  TODO: */
-/*             (incl. title & description)                */
+/* TODO:  SERVICE PROVIDER CONTACT DETAILS SECTION  TODO: */
+/*                  (WhatsApp / Email)                    */
 /* ====================================================== */
 
 /* MAIN CONTAINER */
 
-.service-provider-full-description-container {
-  position: absolute;
-  top: 13rem;
-  left: 0;
+.service-provider-whatsapp-and-email-container {
+  /* position: absolute;
+  top: 4.5rem;
+  left: 0; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 4rem;
+  margin: 0rem 0rem 1rem 0rem;
+  padding: 0rem 0rem 0rem 0rem;
+  /* border: 1px solid red; */
+}
+
+/* ================================================= */
+/* FIXME:  SERVICE PROVIDER - WHATSAPP NUMBER        */
+/* ================================================= */
+
+.service-provider-whatsapp-number-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
-  margin: 0rem 0rem 0rem 0rem;
   width: 100%;
-  height: 27rem;
+  height: 4rem;
   /* border: 1px solid blue; */
 }
 
-.service-provider-full-description-container
-  .service-provider-full-specifications-title {
-  position: absolute;
-  top: 0;
-  left: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 0.9rem;
+.service-provider-whatsapp-number-heading {
+  font-size: 1.2rem;
   font-weight: 700;
+  line-height: 1.5;
   text-decoration: none;
   text-transform: uppercase;
   width: 100%;
@@ -5034,54 +5002,37 @@ nav .clientzonewrapper .advertising-drop {
   /* border: 1px solid yellow; */
 }
 
-.service-provider-full-description-container
-  .service-provider-full-specifications-details {
-  position: absolute;
-  top: 2rem;
-  left: 0;
-  display: flex;
-  justify-content: center;
-  /* align-items: center; */
-  text-align: justify;
-  font-size: 0.8rem;
+.service-provider-whatsapp-number-value {
+  font-size: 1.2rem;
   font-weight: 500;
+  line-height: 1.5;
   text-decoration: none;
-  text-transform: initial;
-  padding: 0.25rem 1rem 0.25rem 1rem;
+  text-transform: uppercase;
   width: 100%;
-  height: 25rem;
+  height: 2rem;
+  color: var(--color-service-provider-cards-back-heading-values);
   /* border: 1px solid green; */
 }
 
-/* ====================================================== */
-/* TODO:     IMPORTANT NOTIFICATIONS SECTION        TODO: */
-/*             (incl. title & description)                */
-/* ====================================================== */
+/* ============================================================ */
+/* FIXME:  SERVICE PROVIDER - EMAIL ADDRESS                     */
+/* ============================================================ */
 
-.service-provider-card-important-notification-container {
-  position: absolute;
-  top: 40rem;
-  left: 0;
+.service-provider-email-address-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
   width: 100%;
-  height: 6rem;
-  border-radius: 0rem 0rem 1.5rem 1.5rem;
+  height: 4rem;
   /* border: 1px solid blue; */
 }
 
-.service-provider-card-important-notification-container
-  .service-provider-card-notification-title {
-  position: absolute;
-  top: 0;
-  left: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 0.9rem;
+.service-provider-email-address-heading {
+  font-size: 1.2rem;
   font-weight: 700;
+  line-height: 1.5;
   text-decoration: none;
   text-transform: uppercase;
   width: 100%;
@@ -5090,30 +5041,213 @@ nav .clientzonewrapper .advertising-drop {
   /* border: 1px solid yellow; */
 }
 
-.service-provider-card-important-notification-container
-  .service-provider-card-notification-info {
-  position: absolute;
-  top: 2rem;
-  left: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  font-size: 0.8rem;
-  font-weight: 700;
+.service-provider-email-address-value {
+  font-size: 1.2rem;
+  font-weight: 500;
+  line-height: 1.5;
   text-decoration: none;
-  padding: 0rem 1rem 0rem 1rem;
+  text-transform: uppercase;
   width: 100%;
-  height: 3.7rem;
-  border-radius: 0rem 0rem 1.5rem 1.5rem;
+  height: 2rem;
+  color: var(--color-service-provider-cards-back-heading-values);
   /* border: 1px solid green; */
 }
 
-.service-provider-card-important-notification-container
-  .service-provider-card-notification-info
-  a {
-  display: inline-block;
+/* ===================================================================================================================== */
+/* TODO:  SERVICE PROVIDER - SOCIAL MEDIA                                                                                */
+/* ===================================================================================================================== */
+
+/* ====================================================== */
+/* TODO:  SERVICE PROVIDER SOCIAL MEDIA SECTION     TODO: */
+/*  (Social Media - FB, IG, Twitter, LinkedIn, YouTube)   */
+/* ====================================================== */
+
+/* MAIN CONTAINER */
+
+.service-provider-social-media-container {
+  /* position: absolute;
+  top: 4.5rem;
+  left: 0; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 4rem;
+  margin: 1rem 0rem 1rem 0rem;
+  padding: 0rem 0rem 0rem 0rem;
+  /* border: 1px solid red; */
+}
+
+/* ================================================= */
+/* FIXME:  SERVICE PROVIDER - SOCIAL MEDIA           */
+/* ================================================= */
+
+.service-provider-social-media-icons-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  height: 4rem;
+  /* border: 1px solid blue; */
+}
+
+.service-provider-social-media-icons-heading {
+  font-size: 1.2rem;
+  font-weight: 700;
+  line-height: 1.5;
   text-decoration: none;
+  text-transform: uppercase;
+  width: 100%;
+  height: 2rem;
+  margin-bottom: 0.5rem;
+  color: var(--color-service-provider-cards-back-heading-titles);
+  /* border: 1px solid yellow; */
+}
+
+.service-provider-social-media-icons-value {
+  font-size: 1.2rem;
+  font-weight: 500;
+  line-height: 1.5;
+  text-decoration: none;
+  text-transform: uppercase;
+  width: 100%;
+  height: 2rem;
+  color: var(--color-service-provider-cards-back-heading-values);
+  /* border: 1px solid green; */
+}
+
+/* ===================================================================================================================== */
+/* TODO:  SERVICE PROVIDER CARD - CONTAINER NAVIGATIONS BUTTONS (END OF CARD)                                            */
+/* ===================================================================================================================== */
+
+.service-provider-download-brochure-container {
+  width: 50%;
+  height: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0rem 0rem 1rem 0rem;
+  padding: 0.25rem 0.25rem 0.25rem 0.25rem;
+  /* border: 1px solid red; */
+}
+
+.service-provider-visit-website-container {
+  width: 50%;
+  height: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0rem 0rem 1rem 0rem;
+  padding: 0.25rem 0.25rem 0.25rem 0.25rem;
+  /* border: 1px solid red; */
+}
+
+/* ===================================================================================================================== */
+/* TODO:  SERVICE PROVIDER - BUTTON: DOWNLOAD COMPANY BROCHURE                                                           */
+/* ===================================================================================================================== */
+
+.service-provider-download-brochure-container a {
+  display: flex;
+  align-items: center;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+  margin: 0rem 0rem 0rem 0rem;
+  padding: 0.75rem 1rem 0.75rem 1rem;
+  border-radius: 0.75rem;
+  background-color: var(
+    --color-service-provider-cards-add-to-cart-button-background
+  );
+  color: var(--color-service-provider-cards-add-to-cart-button-text);
+  outline: none;
+  border: none;
+  transition: transform 0.3s ease-in-out;
+  box-shadow: var(--color-box-shadow-01);
+  /* border: 1px solid green; */
+}
+
+.service-provider-download-brochure-container i.bx-book-open {
+  font-size: 2rem;
+}
+
+.service-provider-download-brochure-container a:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+/* ===================================================================================================================== */
+/* TODO:  SERVICE PROVIDER - BUTTON: VISIT WEBSITE                                                                       */
+/* ===================================================================================================================== */
+
+.service-provider-visit-website-container a {
+  display: flex;
+  align-items: center;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+  margin: 0rem 0rem 0rem 0rem;
+  padding: 0.75rem 1rem 0.75rem 1rem;
+  border-radius: 0.75rem;
+  background-color: var(
+    --color-service-provider-cards-add-to-cart-button-background
+  );
+  color: var(--color-service-provider-cards-add-to-cart-button-text);
+  outline: none;
+  border: none;
+  transition: transform 0.3s ease-in-out;
+  box-shadow: var(--color-box-shadow-01);
+  /* border: 1px solid green; */
+}
+
+.service-provider-visit-website-container i.bx-globe {
+  font-size: 2rem;
+}
+
+.service-provider-visit-website-container a:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+/* ===================================================================================================================== */
+/* TODO:  SERVICE PROVIDER - CONTACT US - SOCIAL MEDIA ICONS                                                             */
+/* ===================================================================================================================== */
+
+.footer__socialmedia {
+  font-size: 2.5rem;
+  font-weight: 600;
+  text-align: center;
+  width: 100%;
+  /* margin-top: 4rem; */
+  color: black;
+}
+
+.facebook,
+.instagram,
+.twitter,
+.tiktok,
+.youtube {
+  width: 25px;
+  height: 25px;
+}
+
+@media screen and (min-width: 768px) {
+  .footer__socialmedia {
+    font-size: 2rem;
+    margin-top: 0;
+  }
+
+  .facebook,
+  .instagram,
+  .twitter,
+  .tiktok,
+  .youtube {
+    width: 25px;
+    height: 25px;
+  }
 }
 
 /* ===================================================================================================================== */
