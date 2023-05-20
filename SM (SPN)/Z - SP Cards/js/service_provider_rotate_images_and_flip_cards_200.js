@@ -7,49 +7,49 @@
 // ========================================================================================
 
 var container001 = document.getElementById(
-  "featured__service__provider__image__01"
+  "featured__service__provider__logo__01"
 );
 var container002 = document.getElementById(
-  "featured__service__provider__image__02"
+  "featured__service__provider__logo__02"
 );
 var container003 = document.getElementById(
-  "featured__service__provider__image__03"
+  "featured__service__provider__logo__03"
 );
 var container004 = document.getElementById(
-  "featured__service__provider__image__04"
+  "featured__service__provider__logo__04"
 );
 var container005 = document.getElementById(
-  "featured__service__provider__image__05"
+  "featured__service__provider__logo__05"
 );
 var container006 = document.getElementById(
-  "featured__service__provider__image__06"
+  "featured__service__provider__logo__06"
 );
 
 // ========================================================================================
 // FIXME:  FUNCTION TO CHANGE IMAGE IN THE VARIABLE "CONTAINER"
 // ========================================================================================
 
-function serviceproviderimage001(image) {
+function serviceproviderlogo001(image) {
   container001.src = image.src;
 }
 
-function serviceproviderimage002(image) {
+function serviceproviderlogo002(image) {
   container002.src = image.src;
 }
 
-function serviceproviderimage003(image) {
+function serviceproviderlogo003(image) {
   container003.src = image.src;
 }
 
-function serviceproviderimage004(image) {
+function serviceproviderlogo004(image) {
   container004.src = image.src;
 }
 
-function serviceproviderimage005(image) {
+function serviceproviderlogo005(image) {
   container005.src = image.src;
 }
 
-function serviceproviderimage006(image) {
+function serviceproviderlogo006(image) {
   container006.src = image.src;
 }
 
