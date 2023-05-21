@@ -3938,7 +3938,6 @@ nav .clientzonewrapper .advertising-drop {
   background-color: var(
     --color-service-provider-cards-container-background-top-section
   );
-  /* box-shadow: var(--color-box-shadow-01); */
   /* border: 1px solid red; */
 }
 
@@ -4019,8 +4018,6 @@ nav .clientzonewrapper .advertising-drop {
     --color-service-provider-cards-container-background-extra-images-section
   );
   border-radius: 0.5rem;
-  /* box-shadow: var(--color-box-shadow-01); */
-  /* border: 1px solid var(--color-service-provider-card-extra-image-border); */
   cursor: pointer;
 }
 
@@ -4063,8 +4060,6 @@ nav .clientzonewrapper .advertising-drop {
   font-weight: bolder;
   text-transform: uppercase;
   color: var(--color-service-provider-cards-title);
-  /* line-height: 1.3; */
-  /* letter-spacing: 0.05rem; */
   /* border: 1px solid red; */
 }
 
@@ -4144,9 +4139,6 @@ nav .clientzonewrapper .advertising-drop {
 /* MAIN CONTAINER */
 
 .service-provider-code-and-province-container {
-  /* position: absolute;
-  top: 4.5rem;
-  left: 0; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -4247,9 +4239,6 @@ nav .clientzonewrapper .advertising-drop {
 /* MAIN CONTAINER */
 
 .service-provider-region-and-city-container {
-  /* position: absolute;
-  top: 4.5rem;
-  left: 0; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -4337,68 +4326,6 @@ nav .clientzonewrapper .advertising-drop {
   color: var(--color-service-provider-cards-back-heading-values);
   /* border: 1px solid green; */
 }
-
-/* ================================================== */
-/* FIXME:  SERVICE PROVIDER CARD - BRIEF DESCRIPTION  */
-/* ================================================== */
-
-/* .service-provider-card-short-description {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 7rem;
-  margin: 0rem 0rem 0rem 0rem;
-  padding: 0.2rem 0.5rem 0.2rem 0.5rem;
-  font-size: 1.1rem;
-  font-weight: 500;
-  text-transform: initial;
-  text-align: justify;
-  color: var(--color-service-provider-cards-short-description);
-  border: 1px solid red;
-} */
-
-/* ===================================================================================================================== */
-/* TODO:  SERVICE PROVIDER CARD - SERVICE PRICING                                                                        */
-/* ===================================================================================================================== */
-
-/* ================================================== */
-/* FIXME:  SERVICE PROVIDER CARD - PRICING CONTAINER  */
-/* ================================================== */
-
-/* .service-provider-card-pricing-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 0rem 0.5rem 0.25rem 0.5rem;
-  border: 1px solid red;
-} */
-
-/* =================================================== */
-/* FIXME:  SERVICE PROVIDER CARD - PRICING (CURRENCY)  */
-/* =================================================== */
-
-/* .service-provider-card-price-currency {
-  font-size: 2rem;
-  font-weight: 700;
-  letter-spacing: 0.1rem;
-  text-transform: uppercase;
-  margin: 0rem 0.5rem 0rem 0rem;
-  color: var(--color-service-provider-cards-pricing-currency);
-} */
-
-/* ================================================ */
-/* FIXME:  SERVICE PROVIDER CARD - PRICING (VALUE)  */
-/* ================================================ */
-
-/* .service-provider-card-price-value {
-  font-size: 2rem;
-  font-weight: 700;
-  letter-spacing: 0.1rem;
-  text-transform: uppercase;
-  margin: 0rem 0rem 0rem 0rem;
-  color: var(--color-service-provider-cards-price-value);
-} */
 
 /* ===================================================================================================================== */
 /* TODO:  SERVICE PROVIDER CARD - BUTTON (ADD TO SHOPPING CART)                                                          */
@@ -4768,7 +4695,6 @@ nav .clientzonewrapper .advertising-drop {
   background-color: var(
     --color-service-provider-cards-container-background-top-section
   );
-  /* box-shadow: var(--color-box-shadow-01); */
   /* border: 1px solid red; */
 }
 
@@ -4859,9 +4785,6 @@ nav .clientzonewrapper .advertising-drop {
 /* MAIN CONTAINER */
 
 .service-provider-telephone-and-mobile-container {
-  /* position: absolute;
-  top: 4.5rem;
-  left: 0; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -4962,9 +4885,6 @@ nav .clientzonewrapper .advertising-drop {
 /* MAIN CONTAINER */
 
 .service-provider-whatsapp-and-email-container {
-  /* position: absolute;
-  top: 4.5rem;
-  left: 0; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -4998,6 +4918,7 @@ nav .clientzonewrapper .advertising-drop {
   text-transform: uppercase;
   width: 100%;
   height: 2rem;
+  margin-bottom: 0.25rem;
   color: var(--color-service-provider-cards-back-heading-titles);
   /* border: 1px solid yellow; */
 }
@@ -5037,6 +4958,7 @@ nav .clientzonewrapper .advertising-drop {
   text-transform: uppercase;
   width: 100%;
   height: 2rem;
+  margin-bottom: 0.25rem;
   color: var(--color-service-provider-cards-back-heading-titles);
   /* border: 1px solid yellow; */
 }
@@ -5065,9 +4987,6 @@ nav .clientzonewrapper .advertising-drop {
 /* MAIN CONTAINER */
 
 .service-provider-social-media-container {
-  /* position: absolute;
-  top: 4.5rem;
-  left: 0; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -5101,6 +5020,7 @@ nav .clientzonewrapper .advertising-drop {
   text-transform: uppercase;
   width: 100%;
   height: 2rem;
+  margin-top: 1rem;
   margin-bottom: 0.5rem;
   color: var(--color-service-provider-cards-back-heading-titles);
   /* border: 1px solid yellow; */
@@ -5216,35 +5136,42 @@ nav .clientzonewrapper .advertising-drop {
 /* TODO:  SERVICE PROVIDER - CONTACT US - SOCIAL MEDIA ICONS                                                             */
 /* ===================================================================================================================== */
 
-.footer__socialmedia {
+.spn__socialmedia {
   font-size: 2.5rem;
   font-weight: 600;
   text-align: center;
   width: 100%;
-  /* margin-top: 4rem; */
   color: black;
 }
 
-.facebook,
-.instagram,
-.twitter,
-.tiktok,
-.youtube {
+.spn_facebook,
+.spn_instagram,
+.spn_twitter,
+.spn_tiktok,
+.spn_youtube,
+.spn_whatsapp,
+.spn_email {
   width: 25px;
   height: 25px;
 }
 
+/* ============================= */
+/* MEDIA QUERY : SMALLER SCREENS */
+/* ============================= */
+
 @media screen and (min-width: 768px) {
-  .footer__socialmedia {
+  .spn__socialmedia {
     font-size: 2rem;
     margin-top: 0;
   }
 
-  .facebook,
-  .instagram,
-  .twitter,
-  .tiktok,
-  .youtube {
+  .spn_facebook,
+  .spn_instagram,
+  .spn_twitter,
+  .spn_tiktok,
+  .spn_youtube,
+  .spn_whatsapp,
+  .spn_email {
     width: 25px;
     height: 25px;
   }
@@ -5347,7 +5274,7 @@ nav .clientzonewrapper .advertising-drop {
   justify-items: center;
   text-transform: uppercase;
   width: 100%;
-  padding: 0.5rem 1rem 0.5rem 1rem;
+  padding: 0.5rem 1rem 1rem 1rem;
   background-color: var(--color-order-form-background);
   text-align: center;
   /* border: 2px solid purple; */
